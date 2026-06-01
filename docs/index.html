@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loro · 87 ans en chiffres — Loterie Romande dataviz</title>
+<meta name="description" content="Visualisations interactives de la Loterie Romande : 1938-2025, bénéfices, redistribution par canton et par secteur, bénéficiaires détaillés.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topnav">
+  <a class="brand" href="#">LORO · 1938—2025</a>
+  <nav>
+    <a href="#timeline">Histoire</a>
+    <a href="#franc">Le franc</a>
+    <a href="#flux">Flux</a>
+    <a href="#secteurs">Secteurs</a>
+    <a href="#cantons">Cantons</a>
+    <a href="#jeux">Jeux</a>
+    <a href="#covid">Covid</a>
+    <a href="explorer.html">Explorer →</a>
+  </nav>
+</header>
+
+<div id="app-error" class="col" style="display:none; padding:80px 24px; color:#c8102e; text-align:center;"></div>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="kicker">Loterie Romande · données 1938—2025</div>
+  <h1>De <em>2 millions</em> à <em>252 millions</em><br>en <span id="hero-years">87</span> ans.</h1>
+  <p class="lede">
+    Près de neuf décennies de bénéfices, ventes par canton et redistribution
+    aux associations romandes. Une exploration interactive d'un siècle de
+    jeu institutionnel en Suisse romande.
+  </p>
+
+  <div class="kpi-row">
+    <div class="kpi">
+      <div class="label">Bénéfice <span id="kpi-last-year">2025</span></div>
+      <div class="value" id="kpi-benefice">—</div>
+      <div class="sub">CHF</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Pic historique en <span id="kpi-pic-year">2024</span></div>
+      <div class="value" id="kpi-pic">—</div>
+      <div class="sub">CHF</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Redistribué <span id="kpi-redist-year">2025</span></div>
+      <div class="value" id="kpi-redist">—</div>
+      <div class="sub">CHF aux associations</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Croissance annuelle</div>
+      <div class="value" id="kpi-cagr">—</div>
+      <div class="sub">moyenne 1938—2025</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 1. TIMELINE ========== -->
+<section class="story" id="timeline">
+  <div class="col">
+    <div class="section-header">
+      <div class="kicker">§ 1 — la longue marche</div>
+      <h2>Une croissance presque ininterrompue, ponctuée d'inflexions.</h2>
+      <p class="dek">
+        Depuis 1938, le bénéfice de la Loterie Romande a été multiplié par
+        plus de 120. Trois ruptures majeures jalonnent cette histoire : la
+        démocratisation des années 1980, le décollage post-libéralisation
+        de 2003, et le passage du numérique dans les années 2010.
+      </p>
+    </div>
+
+    <div class="viz-card">
+      <p class="viz-subtitle">
+        Bénéfice (rouge) et chiffre d'affaires (bleu) en millions de CHF.
+        Survolez les points pour voir le contexte historique tiré de la presse romande.
+      </p>
+      <div id="viz-timeline" class="viz"></div>
+      <div class="viz-footer">
+        <span>Sources : Loterie Romande (rapports annuels), Office fédéral de la justice, presse romande 1938—2000.</span>
+      </div>
+    </div>
+
+    <p class="citation">
+      « 1 504 581 fr. 75 nets pour les six cantons romands. »<br>
+      — Courrier de Genève, à propos de la première loterie, 30 janvier 1938
+    </p>
+  </div>
+</section>
+
+<!-- ========== 2. LE 1 FRANC ========== -->
+<section class="story" id="franc">
+  <div class="col">
+    <div class="section-header">
+      <div class="kicker">§ 2 — anatomie d'un franc</div>
+      <h2>Sur 100 francs de produit brut des jeux, 59 partent en redistribution.</h2>
+      <p class="dek">
+        Sur le « produit brut des jeux » — c'est-à-dire les ventes moins les
+        gains versés aux joueurs — la Loterie Romande consacre près de six
+        francs sur dix au bénéfice redistribué. Le reste paie les
+        commissions aux points de vente, le marketing, et les fonds sportifs
+        et hippiques.
+      </p>
+    </div>
+
+    <div class="viz-card">
+      <p class="viz-subtitle">Décomposition du PBJ Loro 2024 (438,2 M CHF)</p>
+      <div id="viz-franc" class="viz"></div>
+      <div class="viz-footer">
+        <span>Lecture : la commission moyenne par point de vente atteint 33 816 CHF/an.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 3. SANKEY ========== -->
+<section class="story" id="flux">
+  <div class="col-wide">
+    <div class="col">
+      <div class="section-header">
+        <div class="kicker">§ 3 — le flux de l'argent</div>
+        <h2>Du ticket gratté au théâtre subventionné.</h2>
+        <p class="dek">
+          Chaque franc misé suit un parcours en trois étapes : un type de jeu,
+          un canton de vente, puis un secteur bénéficiaire. Cette
+          visualisation reconstitue ce flux pour l'année 2024.
+        </p>
+      </div>
+    </div>
+
+    <div class="viz-card">
+      <p class="viz-subtitle">Jeu → Canton → Secteur · épaisseur = montant en M CHF (2024)</p>
+      <div id="viz-sankey" class="viz"></div>
+      <div class="viz-footer">
+        <span>La redistribution aux secteurs est ventilée au prorata de la part de chaque canton dans la répartition totale.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 4. TREEMAP SECTEURS ========== -->
+<section class="story" id="secteurs">
+  <div class="col">
+    <div class="section-header">
+      <div class="kicker">§ 4 — où va l'argent</div>
+      <h2>La culture concentre près de 40 % de la redistribution.</h2>
+      <p class="dek">
+        En 2025, la Loro a réparti 230 millions de francs entre neuf
+        secteurs. La culture, l'action sociale et le sport en captent plus
+        de 70 % à eux trois — les autres secteurs (formation, environnement,
+        patrimoine, jeunesse, santé) se partagent le reste.
+      </p>
+    </div>
+
+    <div class="viz-card">
+      <p class="viz-subtitle">Répartition par secteur — 2025 (survol pour les détails)</p>
+      <div id="viz-treemap" class="viz"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 5. TILEGRAM ========== -->
+<section class="story" id="cantons">
+  <div class="col">
+    <div class="section-header">
+      <div class="kicker">§ 5 — la géographie</div>
+      <h2>Vaud génère le plus, le Valais dépense le plus par habitant.</h2>
+      <p class="dek">
+        Les six cantons romands ne pèsent pas du même poids dans les recettes
+        — Vaud représente à lui seul plus de 40 % des ventes — et leur
+        dépense par habitant raconte une autre histoire. Choisissez la
+        métrique et faites défiler les années.
+      </p>
+    </div>
+
+    <div id="viz-tilegram" class="viz"></div>
+
+    <p class="note" style="margin-top:24px;">
+      <strong>Lecture</strong> : un Valaisan dépense en moyenne 217 CHF/an
+      pour les jeux Loro en 2024, contre 144 CHF pour un Fribourgeois —
+      un écart de 50 %.
+    </p>
+  </div>
+</section>
+
+<!-- ========== 6. MIX DES JEUX ========== -->
+<section class="story" id="jeux">
+  <div class="col">
+    <div class="section-header">
+      <div class="kicker">§ 6 — la mutation des jeux</div>
+      <h2>Les paris sportifs explosent, les billets s'essoufflent.</h2>
+      <p class="dek">
+        Sur la décennie 2013—2025, la composition du portefeuille de jeux
+        s'est transformée. Les jeux de tirage restent dominants en volume
+        mais perdent en part relative, tandis que les paris sportifs et la
+        loterie électronique gagnent du terrain.
+      </p>
+    </div>
+
+    <div class="viz-card">
+      <div id="viz-mix" class="viz"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 7. COVID ========== -->
+<section class="story" id="covid">
+  <div class="col">
+    <div class="section-header">
+      <div class="kicker">§ 7 — le choc COVID</div>
+      <h2>2020 a brutalement séparé les jeux physiques des jeux à distance.</h2>
+      <p class="dek">
+        Entre 2019 et 2021, les jeux dépendant d'un déplacement (paris
+        sportifs sur lieu, PMUR, loterie électronique en café) ont
+        plongé, pendant que les jeux de tirage et billets — vendus en
+        kiosque et supermarché — ont mieux résisté.
+      </p>
+    </div>
+
+    <div class="viz-card">
+      <div id="viz-covid" class="viz"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 8. TOP BÉNÉFICIAIRES + CTA EXPLORER ========== -->
+<section class="story" id="benefs">
+  <div class="col">
+    <div class="section-header">
+      <div class="kicker">§ 8 — les bénéficiaires</div>
+      <h2>120 organisations identifiées, du Tour de Romandie à l'OSR.</h2>
+      <p class="dek">
+        Les données détaillées identifient 120 organisations bénéficiaires
+        nommées entre 2013 et 2025 — fondations culturelles, festivals,
+        clubs sportifs, EMS, projets divers. Voici les dix plus gros
+        cumulés sur la période.
+      </p>
+    </div>
+
+    <div class="viz-card">
+      <div id="viz-topbenefs" class="viz"></div>
+      <div class="viz-footer">
+        <span>
+          Cumuls 2013—2025. Tour de Romandie : 13,4 M CHF sur 12 ans
+          (organisateurs et structures associées).
+        </span>
+        <a href="explorer.html" style="color:var(--c-loro);">Explorer les 120 bénéficiaires →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div>Loro Dataviz — données issues des rapports annuels de la Loterie Romande, de l'OFJ et de la presse romande.</div>
+  <div class="links">
+    <a href="https://github.com/">Repo GitHub</a>
+    <a href="explorer.html">Explorer les bénéficiaires</a>
+    <a href="METHODOLOGY.html">Méthodologie</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
