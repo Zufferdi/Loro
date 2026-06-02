@@ -1,307 +1,83 @@
 {
   "_meta": {
-    "source": "Rapports financiers Loterie Romande 2019-2024",
+    "source": "Rapports financiers Loterie Romande 2013-2025 (13 années)",
     "url": "https://ra.loro.ch/editions-precedentes.html",
-    "extraction": "Extraction manuelle des PDFs RF2019-FR à RF2024-FR",
+    "extraction": "Extraction manuelle des PDFs RF2013-FR à RF2025-FR",
     "amounts_in": "CHF (non arrondis)",
+    "terminology_notes": {
+      "RBJ_vs_PBJ": "Avant 2018 : RBJ (Revenu Brut des Jeux). Dès 2018-2019 : PBJ (Produit Brut des Jeux). Métrique économiquement équivalente.",
+      "surveillance": "Comlot jusqu'en 2019, puis Gespa dès 2020 (LJAr).",
+      "auditor": "Deloitte SA jusqu'en 2017, puis BDO SA dès 2018.",
+      "distribution_mode": "Avant CORJA 2021 : 5/6e Organes répartition + 1/6e Sport. Dès 2021 : Sport national déduit, reste réparti 50/50 PBJ/population, puis prélèvement Conseil d'État cantonal, puis 85/15 entre organes répartition et sport cantonal."
+    },
     "last_updated": "2026-06-02"
   },
   "compte_de_resultat": {
-    "_description": "Compte de résultat détaillé, ligne par ligne, en CHF",
-    "_keys_order": ["produit_brut_jeux", "prescriptions_ajustements", "produits_refacturations", "surveillance_gespa", "prevention_jeu_excessif", "commissions", "frais_vendeurs", "fabrication_jeux", "exploitation_jeux", "informatique", "frais_personnel", "frais_generaux", "marketing", "ventes_animations", "amortissements", "couts_exploitation_total", "resultat_exploitation", "charges_produits_financiers", "resultat_ordinaire", "exceptionnel", "resultat_net"],
-    "2019": {
-      "produit_brut_jeux": 408057622,
-      "prescriptions_ajustements": 7613489,
-      "produits_refacturations": 281125,
-      "surveillance_gespa": -1182358,
-      "prevention_jeu_excessif": -2040288,
-      "commissions": -75876415,
-      "frais_vendeurs": -500827,
-      "fabrication_jeux": -3712305,
-      "exploitation_jeux": -12643967,
-      "informatique": -16664032,
-      "frais_personnel": -29662956,
-      "frais_generaux": -6416648,
-      "marketing": -13411041,
-      "ventes_animations": -1924593,
-      "amortissements": -13173498,
-      "couts_exploitation_total": -98109867,
-      "resultat_exploitation": 238743308,
-      "charges_produits_financiers": 4725820,
-      "resultat_ordinaire": 243469128,
-      "exceptionnel": 875328,
-      "resultat_net": 244344456
-    },
-    "2020": {
-      "produit_brut_jeux": 374287881,
-      "prescriptions_ajustements": 8516741,
-      "produits_refacturations": 286150,
-      "surveillance_gespa": -1426867,
-      "prevention_jeu_excessif": -1871439,
-      "commissions": -70078282,
-      "frais_vendeurs": -476026,
-      "fabrication_jeux": -3855804,
-      "exploitation_jeux": -12123509,
-      "informatique": -17044223,
-      "frais_personnel": -29337577,
-      "frais_generaux": -5694923,
-      "marketing": -11219172,
-      "ventes_animations": -1235626,
-      "amortissements": -14646002,
-      "couts_exploitation_total": -95632862,
-      "resultat_exploitation": 214081322,
-      "charges_produits_financiers": 2154850,
-      "resultat_ordinaire": 216236172,
-      "exceptionnel": 143164,
-      "resultat_net": 216379336
-    },
-    "2021": {
-      "produit_brut_jeux": 396991259,
-      "prescriptions_ajustements": 8136862,
-      "produits_refacturations": 288496,
-      "surveillance_gespa": -969814,
-      "prevention_jeu_excessif": -1984956,
-      "commissions": -75004210,
-      "frais_vendeurs": -413992,
-      "fabrication_jeux": -4632569,
-      "exploitation_jeux": -12424456,
-      "informatique": -16974560,
-      "frais_personnel": -29408801,
-      "frais_generaux": -5873361,
-      "marketing": -11374329,
-      "ventes_animations": -1160068,
-      "amortissements": -14165316,
-      "couts_exploitation_total": -96427451,
-      "resultat_exploitation": 231030186,
-      "charges_produits_financiers": 1062844,
-      "resultat_ordinaire": 232093030,
-      "exceptionnel": -3053095,
-      "resultat_net": 229039934
-    },
-    "2022": {
-      "produit_brut_jeux": 435484144,
-      "prescriptions_ajustements": 6288715,
-      "produits_refacturations": 307633,
-      "surveillance_gespa": -610943,
-      "prevention_jeu_excessif": -2177421,
-      "commissions": -80909395,
-      "frais_vendeurs": -408142,
-      "fabrication_jeux": -4045213,
-      "exploitation_jeux": -14028628,
-      "informatique": -16841314,
-      "frais_personnel": -29379118,
-      "frais_generaux": -6288926,
-      "marketing": -13264486,
-      "ventes_animations": -1557234,
-      "amortissements": -11502945,
-      "couts_exploitation_total": -97316006,
-      "resultat_exploitation": 261066727,
-      "charges_produits_financiers": -16052659,
-      "resultat_ordinaire": 245014068,
-      "exceptionnel": 1374229,
-      "resultat_net": 246388297
-    },
-    "2023": {
-      "produit_brut_jeux": 420708008,
-      "prescriptions_ajustements": 5431376,
-      "produits_refacturations": 455008,
-      "surveillance_gespa": -678730,
-      "prevention_jeu_excessif": -2103540,
-      "commissions": -79966479,
-      "frais_vendeurs": -375572,
-      "fabrication_jeux": -3381674,
-      "exploitation_jeux": -13777044,
-      "informatique": -22459812,
-      "frais_personnel": -30458388,
-      "frais_generaux": -6200915,
-      "marketing": -13000490,
-      "ventes_animations": -1990311,
-      "amortissements": -12688200,
-      "couts_exploitation_total": -104332406,
-      "resultat_exploitation": 239513237,
-      "charges_produits_financiers": 4651252,
-      "resultat_ordinaire": 244164489,
-      "exceptionnel": -417762,
-      "resultat_net": 243746727
-    },
-    "2024": {
-      "produit_brut_jeux": 438235241,
-      "prescriptions_ajustements": 7082430,
-      "produits_refacturations": 348174,
-      "surveillance_gespa": -761674,
-      "prevention_jeu_excessif": -2191176,
-      "commissions": -79386684,
-      "frais_vendeurs": -1605919,
-      "fabrication_jeux": -3894728,
-      "exploitation_jeux": -15129391,
-      "informatique": -23698245,
-      "frais_personnel": -30680734,
-      "frais_generaux": -6572677,
-      "marketing": -15354708,
-      "ventes_animations": -1622818,
-      "amortissements": -12650534,
-      "couts_exploitation_total": -111209754,
-      "resultat_exploitation": 252116556,
-      "charges_produits_financiers": 6023450,
-      "resultat_ordinaire": 258140006,
-      "exceptionnel": 96155,
-      "resultat_net": 258236160
-    }
+    "_description": "Compte de résultat ligne à ligne, en CHF, 13 années auditées",
+    "2013": {"produit_brut_jeux": 377735251, "commissions": -69596211, "frais_vendeurs": -647012, "fabrication_jeux": -5005583, "exploitation_jeux": -14975991, "informatique": -19204587, "frais_personnel": -27136993, "frais_generaux": -7218255, "marketing": -15230183, "ventes_animations": -2854779, "amortissements": -13248159, "couts_exploitation_total": -105521542, "resultat_exploitation": 206136656, "resultat_net": 209008722},
+    "2014": {"produit_brut_jeux": 387641965, "commissions": -71874502, "frais_vendeurs": -666000, "fabrication_jeux": -5047702, "exploitation_jeux": -14493180, "informatique": -18653355, "frais_personnel": -27392353, "frais_generaux": -7053482, "marketing": -15235390, "ventes_animations": -2695550, "amortissements": -16554431, "couts_exploitation_total": -107791442, "resultat_exploitation": 211019560, "resultat_net": 211444570},
+    "2015": {"produit_brut_jeux": 376822634, "commissions": -70463545, "frais_vendeurs": -632087, "fabrication_jeux": -4962429, "exploitation_jeux": -13136853, "informatique": -19053989, "frais_personnel": -27734261, "frais_generaux": -7567842, "marketing": -13817968, "ventes_animations": -2497721, "amortissements": -15365692, "couts_exploitation_total": -104768843, "resultat_exploitation": 204592958, "resultat_net": 204534261},
+    "2016": {"produit_brut_jeux": 398339061, "commissions": -74525887, "frais_vendeurs": -618677, "fabrication_jeux": -4570019, "exploitation_jeux": -12958683, "informatique": -18587396, "frais_personnel": -27985821, "frais_generaux": -7221737, "marketing": -13742552, "ventes_animations": -2714506, "amortissements": -15748785, "couts_exploitation_total": -104148177, "resultat_exploitation": 223690007, "resultat_net": 223056455},
+    "2017": {"produit_brut_jeux": 386486537, "commissions": -71623833, "frais_vendeurs": -591910, "fabrication_jeux": -3944661, "exploitation_jeux": -12569754, "informatique": -17076562, "frais_personnel": -29344361, "frais_generaux": -6969973, "marketing": -14041487, "ventes_animations": -2592704, "amortissements": -13578176, "couts_exploitation_total": -100709588, "resultat_exploitation": 214961330, "resultat_net": 216215985},
+    "2018": {"produit_brut_jeux": 387962508, "commissions": -71883425, "frais_vendeurs": -552613, "fabrication_jeux": -3828948, "exploitation_jeux": -12118491, "informatique": -16605559, "frais_personnel": -30308367, "frais_generaux": -6682921, "marketing": -14141136, "ventes_animations": -2230382, "amortissements": -10113487, "couts_exploitation_total": -96581903, "resultat_exploitation": 223592095, "resultat_net": 221432618},
+    "2019": {"produit_brut_jeux": 408057622, "commissions": -75876415, "frais_vendeurs": -500827, "fabrication_jeux": -3712305, "exploitation_jeux": -12643967, "informatique": -16664032, "frais_personnel": -29662956, "frais_generaux": -6416648, "marketing": -13411041, "ventes_animations": -1924593, "amortissements": -13173498, "couts_exploitation_total": -98109867, "resultat_exploitation": 238743308, "resultat_net": 244344456},
+    "2020": {"produit_brut_jeux": 374287881, "commissions": -70078282, "frais_vendeurs": -476026, "fabrication_jeux": -3855804, "exploitation_jeux": -12123509, "informatique": -17044223, "frais_personnel": -29337577, "frais_generaux": -5694923, "marketing": -11219172, "ventes_animations": -1235626, "amortissements": -14646002, "couts_exploitation_total": -95632862, "resultat_exploitation": 214081322, "resultat_net": 216379336},
+    "2021": {"produit_brut_jeux": 396991259, "commissions": -75004210, "frais_vendeurs": -413992, "fabrication_jeux": -4632569, "exploitation_jeux": -12424456, "informatique": -16974560, "frais_personnel": -29408801, "frais_generaux": -5873361, "marketing": -11374329, "ventes_animations": -1160068, "amortissements": -14165316, "couts_exploitation_total": -96427451, "resultat_exploitation": 231030186, "resultat_net": 229039934},
+    "2022": {"produit_brut_jeux": 435484144, "commissions": -80909395, "frais_vendeurs": -408142, "fabrication_jeux": -4045213, "exploitation_jeux": -14028628, "informatique": -16841314, "frais_personnel": -29379118, "frais_generaux": -6288926, "marketing": -13264486, "ventes_animations": -1557234, "amortissements": -11502945, "couts_exploitation_total": -97316006, "resultat_exploitation": 261066727, "resultat_net": 246388297},
+    "2023": {"produit_brut_jeux": 420708008, "commissions": -79966479, "frais_vendeurs": -375572, "fabrication_jeux": -3381674, "exploitation_jeux": -13777044, "informatique": -22459812, "frais_personnel": -30458388, "frais_generaux": -6200915, "marketing": -13000490, "ventes_animations": -1990311, "amortissements": -12688200, "couts_exploitation_total": -104332406, "resultat_exploitation": 239513237, "resultat_net": 243746727},
+    "2024": {"produit_brut_jeux": 438235241, "commissions": -79386684, "frais_vendeurs": -1605919, "fabrication_jeux": -3894728, "exploitation_jeux": -15129391, "informatique": -23698245, "frais_personnel": -30680734, "frais_generaux": -6572677, "marketing": -15354708, "ventes_animations": -1622818, "amortissements": -12650534, "couts_exploitation_total": -111209754, "resultat_exploitation": 252116556, "resultat_net": 258236160},
+    "2025": {"produit_brut_jeux": 429824985, "commissions": -79196622, "frais_vendeurs": 0, "fabrication_jeux": -3929779, "exploitation_jeux": -13682198, "informatique": -23917844, "frais_personnel": -31064236, "frais_generaux": -6460538, "marketing": -13925272, "ventes_animations": -1699946, "amortissements": -15612087, "couts_exploitation_total": -110291900, "resultat_exploitation": 248534473, "resultat_net": 252005294}
   },
   "bilan": {
-    "_description": "Postes clés du bilan, en CHF",
-    "2019": {
-      "liquidites": 142208247,
-      "depots_court_terme": 5200000,
-      "immobilisations_corporelles": 50394718,
-      "immobilisations_incorporelles_logiciels": 23790294,
-      "immobilisations_financieres": 138606247,
-      "total_actif": 408866301,
-      "capitaux_propres": 302555325,
-      "reserves_libres": 57348868,
-      "fonds_garantie": 862000
-    },
-    "2020": {
-      "liquidites": 128036265,
-      "depots_court_terme": 23000000,
-      "immobilisations_corporelles": 47673111,
-      "immobilisations_incorporelles_logiciels": 24457205,
-      "immobilisations_financieres": 117658814,
-      "total_actif": 404712779,
-      "capitaux_propres": 294590205,
-      "reserves_libres": 77348868,
-      "fonds_garantie": 862000
-    },
-    "2021": {
-      "liquidites": 130515605,
-      "depots_court_terme": 40000000,
-      "immobilisations_corporelles": 43675715,
-      "immobilisations_incorporelles_logiciels": 20421446,
-      "immobilisations_financieres": 123161177,
-      "total_actif": 408514772,
-      "capitaux_propres": 298950803,
-      "reserves_libres": 69048868,
-      "fonds_garantie": 862000
-    },
-    "2022": {
-      "liquidites": 128136375,
-      "depots_court_terme": 0,
-      "immobilisations_corporelles": 41115922,
-      "immobilisations_incorporelles_logiciels": 29563168,
-      "immobilisations_financieres": 173457532,
-      "total_actif": 420204171,
-      "capitaux_propres": 310299166,
-      "reserves_libres": 63048868,
-      "fonds_garantie": 862000
-    },
-    "2023": {
-      "liquidites": 115901303,
-      "depots_court_terme": 6930000,
-      "immobilisations_corporelles": 39853130,
-      "immobilisations_incorporelles_logiciels": 41576661,
-      "immobilisations_financieres": 176591925,
-      "total_actif": 426063450,
-      "capitaux_propres": 310657595,
-      "reserves_libres": 66048868,
-      "fonds_garantie": 862000
-    },
-    "2024": {
-      "liquidites": 44809354,
-      "depots_court_terme": 92232726,
-      "immobilisations_corporelles": 39221872,
-      "immobilisations_incorporelles_logiciels": 45970920,
-      "immobilisations_financieres": 171047828,
-      "total_actif": 438930368,
-      "capitaux_propres": 325147029,
-      "reserves_libres": 66048868,
-      "fonds_garantie": 862000
-    }
+    "_description": "Postes clés du bilan, en CHF, 13 années",
+    "2013": {"liquidites": 191068390, "immobilisations_corporelles": 41946061, "immobilisations_incorporelles_logiciels": 18340035, "immobilisations_financieres": 23086238, "total_actif": 349705397, "capitaux_propres": 252719591},
+    "2014": {"liquidites": 181304724, "immobilisations_corporelles": 49792910, "immobilisations_incorporelles_logiciels": 17931044, "immobilisations_financieres": 23086204, "total_actif": 352730592, "capitaux_propres": 258155439},
+    "2015": {"liquidites": 174014632, "immobilisations_corporelles": 57975267, "immobilisations_incorporelles_logiciels": 16666904, "immobilisations_financieres": 25661872, "total_actif": 349330343, "capitaux_propres": 252745130},
+    "2016": {"liquidites": 132643467, "immobilisations_corporelles": 58276197, "immobilisations_incorporelles_logiciels": 14520783, "immobilisations_financieres": 50210021, "total_actif": 364278442, "capitaux_propres": 266267323},
+    "2017": {"liquidites": 165019568, "immobilisations_corporelles": 52437052, "immobilisations_incorporelles_logiciels": 20382341, "immobilisations_financieres": 86299285, "total_actif": 366468323, "capitaux_propres": 269426854},
+    "2018": {"liquidites": 129553981, "immobilisations_corporelles": 50606295, "immobilisations_incorporelles_logiciels": 21707595, "immobilisations_financieres": 117097658, "total_actif": 377151252, "capitaux_propres": 274643486},
+    "2019": {"liquidites": 142208247, "immobilisations_corporelles": 50394718, "immobilisations_incorporelles_logiciels": 23790294, "immobilisations_financieres": 138606247, "total_actif": 408866301, "capitaux_propres": 302555325},
+    "2020": {"liquidites": 128036265, "immobilisations_corporelles": 47673111, "immobilisations_incorporelles_logiciels": 24457205, "immobilisations_financieres": 117658814, "total_actif": 404712779, "capitaux_propres": 294590205},
+    "2021": {"liquidites": 130515605, "immobilisations_corporelles": 43675715, "immobilisations_incorporelles_logiciels": 20421446, "immobilisations_financieres": 123161177, "total_actif": 408514772, "capitaux_propres": 298950803},
+    "2022": {"liquidites": 128136375, "immobilisations_corporelles": 41115922, "immobilisations_incorporelles_logiciels": 29563168, "immobilisations_financieres": 173457532, "total_actif": 420204171, "capitaux_propres": 310299166},
+    "2023": {"liquidites": 115901303, "immobilisations_corporelles": 39853130, "immobilisations_incorporelles_logiciels": 41576661, "immobilisations_financieres": 176591925, "total_actif": 426063450, "capitaux_propres": 310657595},
+    "2024": {"liquidites": 44809354, "immobilisations_corporelles": 39221872, "immobilisations_incorporelles_logiciels": 45970920, "immobilisations_financieres": 171047828, "total_actif": 438930368, "capitaux_propres": 325147029},
+    "2025": {"liquidites": 57509756, "immobilisations_corporelles": 38903809, "immobilisations_incorporelles_logiciels": 43774836, "immobilisations_financieres": 162644095, "total_actif": 434256640, "capitaux_propres": 318916163}
   },
   "rh": {
-    "_description": "Ressources humaines : EPT moyen + Direction",
-    "2019": {"ept_total": 221, "ept_direction": 8.8, "ca_membres": 7, "remuneration_direction": 2056104, "remuneration_ca": 461829},
-    "2020": {"ept_total": 221, "ept_direction": 9.7, "ca_membres": 7, "remuneration_direction": 2249650, "remuneration_ca": 454829},
-    "2021": {"ept_total": 217, "ept_direction": 9.8, "ca_membres": 7, "remuneration_direction": 2274249, "remuneration_ca": 451829},
-    "2022": {"ept_total": 217, "ept_direction": 9.7, "ca_membres": 7, "remuneration_direction": 2371520, "remuneration_ca": 468579},
-    "2023": {"ept_total": 210, "ept_direction": 9.7, "ca_membres": 7, "remuneration_direction": 2312064, "remuneration_ca": 480829},
-    "2024": {"ept_total": 213, "ept_direction": 9.2, "ca_membres": 7, "remuneration_direction": 2287502, "remuneration_ca": 475829}
+    "_description": "Effectifs (EPT moyens) et rémunération direction",
+    "2015": {"ept_total": 236},
+    "2016": {"ept_total": 237},
+    "2017": {"ept_total": 241},
+    "2018": {"ept_total": 235},
+    "2019": {"ept_total": 221, "ept_direction": 8.8, "remuneration_direction": 2056104},
+    "2020": {"ept_total": 221, "ept_direction": 9.7, "remuneration_direction": 2249650},
+    "2021": {"ept_total": 217, "ept_direction": 9.8, "remuneration_direction": 2274249},
+    "2022": {"ept_total": 217, "ept_direction": 9.7, "remuneration_direction": 2371520},
+    "2023": {"ept_total": 210, "ept_direction": 9.7, "remuneration_direction": 2312064},
+    "2024": {"ept_total": 213, "ept_direction": 9.2, "remuneration_direction": 2287502},
+    "2025": {"ept_total": 203, "ept_direction": 8.9, "remuneration_direction": 2241173}
   },
   "prelevement_cantonal": {
-    "_description": "Pourcentage prélevé par le Conseil d'État sur la part résiduelle, par année et canton",
-    "_source": "Tableaux 'Répartition par organe' des rapports financiers Loro 2020-2024",
-    "_note_VD_2022": "Vaud applique 0% en 2020-2021 (avant LVLJAr), 25% dès 2022 (entrée en vigueur de la LVLJAr le 1.1.2022)",
+    "_description": "% prélevé par le Conseil d'État sur la part résiduelle (système CORJA, dès 2021). Plafond légal 30 %.",
+    "_source": "Tableaux 'Répartition par organe' RF 2020-2025",
     "2020": {"VD": 0,  "FR": 7, "VS": 0, "NE": 10, "GE": 0, "JU": 17},
     "2022": {"VD": 25, "FR": 7, "VS": 0, "NE": 10, "GE": 0, "JU": 17},
     "2023": {"VD": 25, "FR": 7, "VS": 0, "NE": 10, "GE": 0, "JU": 17},
-    "2024": {"VD": 25, "FR": 9, "VS": 0, "NE": 10, "GE": 0, "JU": 17}
-  },
-  "repartition_cantonale_officielle": {
-    "_description": "Bénéfice net résiduel réparti par canton (CHF), source RF Loro tableau 'Base de répartition'",
-    "_note": "Le bénéfice résiduel = bénéfice total - sport national (FSES) - courses chevaux (FSCC)",
-    "2020": {
-      "VD": 78180390, "FR": 26871851, "VS": 35995579, "NE": 17943507, "GE": 44381517, "JU": 7193528,
-      "total_residuel": 210566372
-    },
-    "2022": {
-      "VD": 81986637, "FR": 28050996, "VS": 37417773, "NE": 18410199, "GE": 47224480, "JU": 7356234,
-      "total_residuel": 220446319
-    },
-    "2023": {
-      "VD": 81750194, "FR": 28170311, "VS": 37298570, "NE": 18073209, "GE": 48183042, "JU": 7330957,
-      "total_residuel": 220806283
-    },
-    "2024": {
-      "VD": 86761825, "FR": 30480818, "VS": 39820426, "NE": 18923163, "GE": 51636627, "JU": 7811475,
-      "total_residuel": 235434334
-    }
-  },
-  "sport_national_fsc": {
-    "_description": "Versements au sport national + Fédération suisse courses de chevaux",
-    "2020": {"sport_national": 11082441, "fsc": 3030524, "total": 14112965},
-    "2022": {"sport_national": 19507412, "fsc": 3434566, "total": 22941978},
-    "2023": {"sport_national": 19519996, "fsc": 3420448, "total": 22940444},
-    "2024": {"sport_national": 19567627, "fsc": 3234200, "total": 22801827}
+    "2024": {"VD": 25, "FR": 9, "VS": 0, "NE": 10, "GE": 0, "JU": 17},
+    "2025": {"VD": 25, "FR": 9, "VS": 0, "NE": 10, "GE": 0, "JU": 20}
   },
   "evenements_marquants": [
-    {
-      "year": 2019,
-      "label": "Pré-COVID — Réforme LJAr",
-      "detail": "Entrée en vigueur de la nouvelle Loi fédérale sur les jeux d'argent."
-    },
-    {
-      "year": 2020,
-      "label": "COVID-19",
-      "detail": "PBJ -8% (374M vs 408M). Commissions -7%. Marketing -16%. Délais paiement étendus à 90j pour les dépositaires."
-    },
-    {
-      "year": 2021,
-      "label": "Solidarité cafés-restaurants",
-      "detail": "Distribution exceptionnelle de 3,3 M CHF à plus de 800 cafés-restaurants touchés par la crise."
-    },
-    {
-      "year": 2021,
-      "label": "Entrée en vigueur CORJA",
-      "detail": "Concordat romand sur les jeux d'argent. Statuts adaptés. Loro = exploitante exclusive jusqu'en 2040."
-    },
-    {
-      "year": 2022,
-      "label": "Vaud bascule à 25%",
-      "detail": "LVLJAr entre en vigueur le 1.1.2022. Le canton de Vaud commence à prélever 25% de discrétionnaire (0% avant)."
-    },
-    {
-      "year": 2022,
-      "label": "Perte placements financiers",
-      "detail": "Marchés défavorables: -15,6 M sur les titres. Premier 'résultat financier' négatif depuis 5 ans."
-    },
-    {
-      "year": 2024,
-      "label": "Jackpot record + Euro/JO",
-      "detail": "Cycle 27 semaines Swiss Loto, gain record 64,6M CHF en mars. Euro foot + JO portent JouezSport +24%."
-    },
-    {
-      "year": 2024,
-      "label": "Fribourg passe de 7% à 9%",
-      "detail": "Augmentation du prélèvement cantonal fribourgeois, en partie pour financer le sport (REISO 2026)."
-    }
+    {"year": 2014, "label": "Lancement rénovation Provence", "detail": "Loro commence la rénovation du 14-20 av. de Provence à Lausanne. Constructions au brut : 12,8 M (2013) → 30,5 M (2016)."},
+    {"year": 2015, "label": "Décision BNS, taux négatifs", "detail": "La BNS supprime le taux plancher (jan. 2015). Loro mobilise 80+ M en placements long terme pour échapper aux intérêts négatifs."},
+    {"year": 2016, "label": "Plateforme jeux en ligne", "detail": "Lancement de jeux.loro.ch. Portefeuille joueurs apparaît au bilan (2,7 M). Première dépréciation sur la plateforme."},
+    {"year": 2018, "label": "Transition Deloitte → BDO", "detail": "Changement d'organe de révision après plus de 10 ans avec Deloitte. BDO SA prend le relais."},
+    {"year": 2019, "label": "LJAr et RBJ → PBJ", "detail": "Entrée en vigueur de la Loi fédérale sur les jeux d'argent. Terminologie change. Gains jusqu'à 1 M exonérés d'impôt anticipé."},
+    {"year": 2020, "label": "COVID-19", "detail": "PBJ -8 % (374 M vs 408 M). Commissions -7 %. Marketing -16 %. Délais paiement étendus à 90 j pour les dépositaires."},
+    {"year": 2021, "label": "CORJA + autorisation 20 ans", "detail": "Concordat romand sur les jeux d'argent entre en vigueur. Loro = exploitante exclusive jusqu'en 2040. 3,3 M distribués à 800 cafés-restaurants COVID."},
+    {"year": 2022, "label": "Vaud bascule à 25 %", "detail": "LVLJAr entre en vigueur le 1.1.2022. Vaud commence à prélever 25 % discrétionnaires (0 % avant). Pertes placements -15,6 M (marchés)."},
+    {"year": 2023, "label": "Bond informatique", "detail": "Coûts IT de 16,8 M (2022) à 22,5 M (+34 %). Lancement EuroDreams. Investissements logiciels +20,5 M (record)."},
+    {"year": 2024, "label": "Jackpot record + Fribourg 7→9 %", "detail": "Cycle 27 semaines Swiss Loto, gain record 64,6 M en mars. Euro + JO portent JouezSport +24 %. Fribourg de 7 à 9 %."},
+    {"year": 2025, "label": "Reflux + Jura 17→20 %", "detail": "PBJ -2 % à 429,8 M (cycles Euromillions courts). Bénéfice 252 M (-2,4 %). EPT -10 (à 203). Jura passe de 17 à 20 %."}
   ]
 }
