@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Méthodologie · Loro Dataviz</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+  .doc { max-width: 720px; margin: 0 auto; padding: 60px 24px 100px; }
+  .doc h1 { font-family: var(--serif); font-size: 42px; font-weight: 400; line-height: 1.15; margin: 0 0 24px; }
+  .doc h2 { font-family: var(--serif); font-size: 26px; font-weight: 400; margin: 48px 0 14px; }
+  .doc h3 { font-size: 18px; font-weight: 600; margin: 28px 0 10px; }
+  .doc p, .doc li { font-size: 17px; line-height: 1.65; }
+  .doc table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 15px; }
+  .doc table th, .doc table td { border-bottom: 1px solid var(--rule); padding: 8px 10px; text-align: left; vertical-align: top; }
+  .doc table th { font-weight: 600; color: var(--ink-soft); }
+  .doc code { background: var(--bg-soft); padding: 1px 6px; border-radius: 3px; font-size: 14px; }
+  .doc pre { background: var(--bg-soft); padding: 14px 18px; border-radius: 6px; overflow-x: auto; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<header class="topnav">
+  <a class="brand" href="index.html">LORO · 1938—2025</a>
+  <nav>
+    <a href="index.html">Récit principal</a>
+    <a href="explorer.html">Explorer</a>
+    <a href="#" style="color:var(--ink);">Méthodologie</a>
+  </nav>
+</header>
+
+<article class="doc">
+<h1 id="methodologie-et-sources">Méthodologie et sources</h1>
+<p>Ce document décrit la qualité des sources, les retraitements appliqués,
+les hypothèses formulées et les limites de comparabilité.</p>
+<h2 id="1-perimetre">1. Périmètre</h2>
+<p>Les données concernent la <strong>Loterie Romande</strong> (Loro), société coopérative
+gérant les jeux d'argent autorisés en Suisse romande pour Vaud, Fribourg,
+Valais, Neuchâtel, Genève et Jura.</p>
+<p>Couverture temporelle du dataset principal :
+- <strong>1938—2025</strong> pour le bénéfice annuel agrégé
+- <strong>1940—2018</strong> pour le chiffre d'affaires (avec lacunes)
+- <strong>2013—2025</strong> pour la ventilation par canton × type de jeu
+- <strong>2013—2025</strong> pour la répartition par secteur bénéficiaire
+- <strong>2013—2024</strong> pour la dépense par habitant
+- <strong>2013—2025</strong> pour les bénéficiaires nommés</p>
+<h2 id="2-sources-primaires">2. Sources primaires</h2>
+<h3 id="loro-rapports-annuels-et-financiers">Loro — rapports annuels et financiers</h3>
+<ul>
+<li><a href="https://ra.loro.ch/">Rapport annuel 2024</a> — PBJ 438,2 M, bénéfice 258,2 M,
+  241 collaborateurs, 2 400 points de vente, prévention 2,2 M.</li>
+<li><a href="https://ra.loro.ch/documents/RF2024-FR.pdf">Rapport financier 2024</a>.</li>
+<li><a href="https://www.loro.ch/fr/documents/communiques">Communiqué résultats 2025</a> —
+  PBJ 429,8 M, bénéfice 252 M, 2 350 points de vente, 221 collaborateurs.</li>
+</ul>
+<p><strong>Rapports financiers détaillés 2019-2024 (Acte VII)</strong> — disponibles sur
+<a href="https://ra.loro.ch/editions-precedentes.html">ra.loro.ch/editions-precedentes.html</a> :
+<a href="https://ra.loro.ch/documents/RF2019-FR.pdf">RF2019</a>,
+<a href="https://ra.loro.ch/documents/RF2020-FR.pdf">RF2020</a>,
+<a href="https://ra.loro.ch/documents/RF2021-FR.pdf">RF2021</a>,
+<a href="https://ra.loro.ch/documents/RF2022-FR.pdf">RF2022</a>,
+<a href="https://ra.loro.ch/documents/RF2023-FR.pdf">RF2023</a>,
+<a href="https://ra.loro.ch/documents/RF2024-FR.pdf">RF2024</a>.
+Comptes audités par BDO SA. Extraits manuellement : compte de résultat ligne
+à ligne (9 catégories de coûts), bilan (actif/passif), capitaux propres,
+base de répartition cantonale officielle, prélèvement Conseil d'État par
+canton. <strong>Toutes les sommes ont été vérifiées</strong> contre les sous-totaux
+(écart maximum : 1 CHF par arrondi).</p>
+<h3 id="cadre-legal-et-gouvernance">Cadre légal et gouvernance</h3>
+<ul>
+<li><a href="https://www.loro.ch/sites/default/files/2021-01/CORJA.pdf">Convention romande sur les jeux d'argent (CORJA)</a>.</li>
+<li><a href="https://www.lexfind.ch/fe/de/tol/33184/fr">Concordat sur les jeux d'argent au niveau suisse (CJA)</a>.</li>
+<li><a href="https://www.fedlex.admin.ch/eli/cc/2018/795/fr">Loi fédérale sur les jeux d'argent (LJAr)</a>, en vigueur depuis 2019.</li>
+<li>Conférence spécialisée des membres de gouvernements concernés par les jeux d'argent — <a href="https://www.fdkg.ch/fr/actualites/communiques-de-presse/Newsmeldung?newsid=22">décisions sport national</a>.</li>
+<li>Plateforme <a href="https://soutien-loro.ch">soutien-loro.ch</a> (15 organes de répartition).</li>
+</ul>
+<h3 id="swisslos-comparaison-alemanique-tessin">Swisslos (comparaison alémanique + Tessin)</h3>
+<ul>
+<li><a href="https://www.swisslos.ch/fr/informations/sur-swisslos/portrait/chiffres-cle/fait-et-chiffres.html">Chiffres clés Swisslos 2024</a> — PBJ 812,1 M (+10 %), bénéfice 595,7 M.</li>
+<li><a href="https://www.swisslos.ch/fr/informations/utilite-publique/utilisation-des-benefices-des-loteries/">Répartition Swisslos</a> — 540 M cantons, 55,7 M sport national.</li>
+</ul>
+<h3 id="tutelle-et-prevention">Tutelle et prévention</h3>
+<ul>
+<li><a href="https://www.gespa.ch/">Gespa — Autorité intercantonale de surveillance</a>.</li>
+<li><a href="https://grea.ch/dossier/jeux/">GREA — dossier "Jeux d'argent"</a> — 0,3 % du PBJ
+  va à la prévention ; 4,3 % de la population à risque.</li>
+<li><a href="https://www.grea.ch/pildj-jeu-excessif-le-programme-intercantonal-de-lutte-contre-la-dependance-au-jeu">PILDJ — Programme intercantonal de lutte contre la dépendance au jeu</a>.</li>
+</ul>
+<h3 id="analyses-independantes">Analyses indépendantes</h3>
+<ul>
+<li>Jérémie Sanchez, <a href="https://www.reiso.org/articles/themes/pratiques/15008-la-loterie-romande-source-de-financement-cle">« La Loterie Romande, source de financement clé »</a>, REISO, janvier 2026 — clé de répartition, prélèvements cantonaux, cas de dépendance.</li>
+<li><em>Tribune de Genève</em>, <a href="https://www.tdg.ch/gros-et-petits-subventionnes-de-la-loterie-romande-818687381123">« Gros et petits subventionnés de la Loterie romande »</a>, juillet 2016 — gouvernance et transparence.</li>
+<li><a href="https://dievolkswirtschaft.ch/fr/2025/07/la-reglementation-des-paris-sportifs-en-suisse/">La Vie économique</a> — bénéfice loteries CH 2024 ~850 M.</li>
+</ul>
+<h3 id="comparaisons-sectorielles">Comparaisons sectorielles</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Geneva_Public_Transport">Wikipedia / TPG Transports publics genevois</a> — budget 2025 : 325 M.</li>
+<li><a href="https://www.bfs.admin.ch/asset/en/36195848">OFS — Enquête structure des salaires 2024</a> — salaire médian suisse 7 024 CHF/mois.</li>
+<li><a href="https://www.cineforom.ch/">Cinéforom</a> — budget 10 M.</li>
+<li><a href="https://www.rts.ch/info/regions/2026/article/le-tour-de-romandie-sans-sponsor-principal-voit-son-avenir-menace-29225671.html">RTS, avril 2026</a> — budget Tour de Romandie ~5 M.</li>
+</ul>
+<h2 id="3-hypotheses-et-estimations">3. Hypothèses et estimations</h2>
+<h3 id="sankey-jeu-canton-secteur">Sankey jeu → canton → secteur</h3>
+<p>Les liens canton → secteur ne sont pas directement publiés (chaque canton
+distribue selon ses priorités propres). Nous <strong>estimons</strong> cette ventilation
+en répartissant chaque montant sectoriel proportionnellement à la part du
+canton dans la Répartition totale de l'année. Les épaisseurs des liens sont
+donc indicatives, pas exactes.</p>
+<h3 id="decomposition-du-surplus-2024">Décomposition du surplus 2024</h3>
+<p>La décomposition des +17,6 M par rapport à 2023 (jackpot 9,5 M, Euro/JO 5,5 M,
+tendance 2,6 M) est notre <strong>estimation</strong> basée sur :
+- Le DG Moner-Banet attribue le record au jackpot Swiss Loto record de 27
+  semaines (record du 2 mars 2024 : 64,6 M).
+- L'Euro de foot et les JO ont fait progresser JouezSport de +24,6 %.
+- La croissance organique implicite (~1 % du PBJ) sur la part stable.</p>
+<p>Ces poids relatifs ne sont pas publiés par la Loro ; ils représentent notre
+meilleure répartition à partir des éléments qualitatifs disponibles.</p>
+<h3 id="voyage-dun-billet">Voyage d'un billet</h3>
+<p>Modélisation simplifiée à partir de la structure de coûts publiée :
+- PBJ / mises ≈ 27 %.
+- Coûts opérationnels / PBJ = 41 % (REISO 2026).
+- Bénéfice net / PBJ = 59 %.
+- Sport national / bénéfice = 8,8 % (19,5 M sur 258,2 M).
+- Clé Valais ≈ 15 % du résiduel (population + PBJ local).
+- Prélèvement Valais = 0 % (RA Loro + REISO).</p>
+<h3 id="part-loro-chez-les-beneficiaires">Part Loro chez les bénéficiaires</h3>
+<p>Pour les associations citées (Angle C) :
+- <strong>FriSanté</strong> : 176 000 / ~550 000 = 32 % — sourcé REISO + Rapport d'activité FriSanté 2024.
+- <strong>Lanterne magique</strong> : 678 000 / ~2,5 M = 27 % — Rapport 2023-2024.
+- <strong>Tour de Romandie</strong> : ~750 k / 5 M = 15 % — <em>estimation</em> basée sur le
+  fait que le TdR est financé exclusivement par les fonds de loterie cantonaux
+  (rtsl, tourderomandie.ch) et qu'une partie significative passe par la Loro.
+- <strong>Cinéforom</strong> : ~3 M / 10 M = 30 % — <em>estimation</em> basée sur le rôle
+  prépondérant de la Loro dans le financement du fonds (aropa.ch, cineforom.ch).</p>
+<h3 id="joueurs-problematiques-angle-e">Joueurs problématiques (Angle E)</h3>
+<p>L'estimation que 40 % du PBJ provient des joueurs à risque ou problématiques
+est tirée de la <strong>littérature internationale</strong> (Royal Society of Public Health
+UK ; Productivity Commission of Australia 2010 ; Williams et al. 2014). Aucun
+chiffre officiel suisse ne mesure cette part. La fourchette internationale va
+de 30 à 50 %.</p>
+<h2 id="4-limites-connues">4. Limites connues</h2>
+<ul>
+<li><strong>Loterie électronique</strong> : la dépense par habitant pour ce sous-segment
+  contient un biais (offre Tactilo restreinte dans certains contextes).</li>
+<li><strong>Sport</strong> : ligne "Sport" de la répartition absente pour 2014, 2020—2022.</li>
+<li><strong>Bénéficiaires nommés</strong> : la liste de 120 organisations n'est pas exhaustive.
+  La Loro évoque 5 000 projets soutenus en 2024.</li>
+<li><strong>Données avant 1980</strong> : reconstituées par la presse, par construction incomplètes.</li>
+</ul>
+<h2 id="5-reproductibilite">5. Reproductibilité</h2>
+<pre><code class="language-bash">python scripts/build_data.py
+</code></pre>
+<p>Script déterministe. Pour mise à jour annuelle, remplacer <code>data/raw/Loro.xlsx</code>.</p>
+<h2 id="6-mentions-des-sources-dans-les-visualisations">6. Mentions des sources dans les visualisations</h2>
+<p>Chaque visualisation cite ses sources directement dans son <code>viz-footer</code>.
+Les chiffres "Loro" (RA 2024, RA 2025) sont primaires. Les chiffres
+externes (TPG, OFS, GREA, Swisslos, REISO) sont identifiés par leur URL.
+Les chiffres marqués <em>estimation</em> sont nos calculs avec hypothèses
+documentées dans ce fichier.</p>
+</article>
+
+</body>
+</html>
