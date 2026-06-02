@@ -122,17 +122,17 @@ function initTimelineScrolly() {
     .attr('letter-spacing', '0.04em')
     .text('Bénéfice annuel · millions de CHF · 1938—2025');
 
-  // === Ligne complète, toujours visible mais avec opacité variable ===
+  // === Ligne complète, toujours visible (la trajectoire générale est lisible d'emblée) ===
   const line = d3.line().curve(d3.curveMonotoneX)
     .x(d => x(d.annee)).y(d => y(d.benefice_M));
 
-  // ligne d'arrière-plan (estompée, montre toute la trajectoire)
+  // ligne d'arrière-plan : la TRAJECTOIRE COMPLÈTE, bien visible
   g.append('path').datum(hist)
     .attr('fill', 'none').attr('stroke', '#c8102e')
-    .attr('stroke-width', 1).attr('opacity', 0.18)
+    .attr('stroke-width', 2).attr('opacity', 0.32)
     .attr('d', line);
 
-  // ligne principale qui se révèle progressivement
+  // ligne principale qui "illumine" la portion jusqu'à l'année courante
   const totalLength = (() => {
     const tmp = g.append('path').datum(hist).attr('d', line);
     const len = tmp.node().getTotalLength();
@@ -142,7 +142,7 @@ function initTimelineScrolly() {
 
   const linePath = g.append('path').datum(hist)
     .attr('class', 't-line')
-    .attr('fill', 'none').attr('stroke', '#c8102e').attr('stroke-width', 2.8)
+    .attr('fill', 'none').attr('stroke', '#c8102e').attr('stroke-width', 3.2)
     .attr('d', line)
     .attr('stroke-dasharray', totalLength + ' ' + totalLength)
     .attr('stroke-dashoffset', totalLength);
@@ -151,16 +151,16 @@ function initTimelineScrolly() {
   const area = d3.area().curve(d3.curveMonotoneX)
     .x(d => x(d.annee)).y0(h).y1(d => y(d.benefice_M));
 
-  // Tous les points
+  // Tous les points (visibles d'emblée, low opacity)
   const pts = g.append('g').selectAll('circle.pt').data(hist).enter().append('circle')
     .attr('class', d => 'pt' + (d.annotation ? ' annot' : ''))
     .attr('data-year', d => d.annee)
     .attr('cx', d => x(d.annee)).attr('cy', d => y(d.benefice_M))
-    .attr('r', d => d.annotation ? 0 : 2.5)
+    .attr('r', d => d.annotation ? 0 : 2)
     .attr('fill', d => d.annotation ? '#fff' : '#c8102e')
     .attr('stroke', '#c8102e').attr('stroke-width', d => d.annotation ? 2 : 1)
     .style('cursor', 'pointer')
-    .style('opacity', 0);
+    .style('opacity', 0.35);
 
   pts.on('mouseover', function(ev, d) {
     let html = `<div class="t-title">${d.annee} · ${CHF1.format(d.benefice_M)} M CHF</div>`;
@@ -3143,7 +3143,8 @@ function initLoroVsSwisslos() {
   if (!DATA.swisslos) return;
   container.html('');
 
-  const m = DATA.swisslos.comparaison_loro_2024.metriques;
+  const m2024 = DATA.swisslos.comparaison_loro_2024.metriques;
+  const m2025 = DATA.swisslos.comparaison_loro_2025.metriques;
 
   // Catégorisation visuelle des métriques
   const sections = {
@@ -3154,90 +3155,193 @@ function initLoroVsSwisslos() {
     'Coussin': ['Provision risque exploitation', 'Réserves libres']
   };
 
-  const W = container.node().clientWidth, H = 720;
-  const margin = { top: 20, right: 20, bottom: 20, left: 180 };
-  const w = W - margin.left - margin.right;
+  // Helpers
+  function fmtUnit(val, unite) {
+    if (val == null) return 'n.d.';
+    const u = unite ? unite.replace('M CHF', 'M').replace('M hab.', 'M') : '';
+    return CHF1.format(val) + (u ? ' ' + u : '');
+  }
 
-  const svg = container.append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('height', H);
+  const W = container.node().clientWidth || 900;
+  // Computed height: section header (22) + each metric row (40) + section gap (12) per section + top/bottom margins
+  const rowH = 40;
+  const sectionGap = 14;
+  const sectionHeaderH = 26;
+  let totalRows = 0; let totalSections = 0;
+  Object.values(sections).forEach(arr => { totalRows += arr.length; totalSections += 1; });
+  const H = 80 + totalSections * (sectionHeaderH + sectionGap) + totalRows * rowH;
+
+  const margin = { top: 70, right: 20, bottom: 30, left: 240 };
+  const w = W - margin.left - margin.right;
+  const halfW = (w - 40) / 2; // 40px gutter in the middle for centerline
+  const centerX = margin.left + w / 2;
+
+  const svg = container.append('svg')
+    .attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('height', 'auto')
+    .style('display', 'block');
+
+  // ============== HEADERS ==============
+  // Top legend: LORO (left) / SWISSLOS (right) with year sub-legend
+  svg.append('text').attr('x', margin.left + w / 4).attr('y', 22)
+    .attr('text-anchor', 'middle').attr('font-size', 16).attr('font-weight', 700).attr('fill', '#c8102e')
+    .attr('font-family', 'Source Serif Pro, serif')
+    .text('LORO');
+  svg.append('text').attr('x', margin.left + 3 * w / 4).attr('y', 22)
+    .attr('text-anchor', 'middle').attr('font-size', 16).attr('font-weight', 700).attr('fill', inkColor())
+    .attr('font-family', 'Source Serif Pro, serif')
+    .text('SWISSLOS');
+
+  // Year sub-legend (color blocks)
+  function legendItem(g, color, label, x) {
+    g.append('rect').attr('x', x).attr('y', 0).attr('width', 14).attr('height', 14).attr('fill', color).attr('opacity', 0.55);
+    g.append('text').attr('x', x + 20).attr('y', 11).attr('font-size', 11).attr('fill', inkSoftColor()).text(label);
+  }
+  const legG = svg.append('g').attr('transform', `translate(${margin.left + w / 4 - 70}, 32)`);
+  legendItem(legG, '#c8102e', '2024', 0);
+  legendItem(legG.append('g').attr('transform', 'translate(70, 0)'), '#c8102e', '2025', 0);
+  legG.selectAll('rect').filter((d, i) => i === 1).attr('opacity', 1);
+  // For swisslos side
+  const legG2 = svg.append('g').attr('transform', `translate(${margin.left + 3 * w / 4 - 70}, 32)`);
+  legendItem(legG2, '#1a1917', '2024', 0);
+  legendItem(legG2.append('g').attr('transform', 'translate(70, 0)'), '#1a1917', '2025', 0);
+  legG2.selectAll('rect').filter((d, i) => i === 1).attr('opacity', 1);
+
+  // Centerline
+  svg.append('line').attr('x1', centerX).attr('x2', centerX).attr('y1', 60).attr('y2', H - 10)
+    .attr('stroke', ruleColor()).attr('stroke-width', 1).attr('opacity', 0.5);
 
   let cursorY = margin.top;
+
   Object.entries(sections).forEach(([sectionName, metricLabels]) => {
-    // Titre de section
+    // Section header — italic serif, full width subtle bar above
+    svg.append('line').attr('x1', margin.left).attr('x2', W - margin.right)
+      .attr('y1', cursorY).attr('y2', cursorY)
+      .attr('stroke', ruleColor()).attr('stroke-width', 0.5).attr('opacity', 0.4);
     svg.append('text')
-      .attr('x', margin.left)
-      .attr('y', cursorY + 14)
-      .attr('font-family', 'Source Serif Pro, serif')
-      .attr('font-style', 'italic')
-      .attr('font-size', 12)
-      .attr('fill', inkSoftColor())
+      .attr('x', margin.left).attr('y', cursorY + 17)
+      .attr('font-family', 'Source Serif Pro, serif').attr('font-style', 'italic')
+      .attr('font-size', 13).attr('fill', inkSoftColor())
       .text(sectionName);
-    cursorY += 22;
+    cursorY += sectionHeaderH;
 
     metricLabels.forEach(lbl => {
-      const item = m.find(x => x.label === lbl);
-      if (!item) return;
+      const item24 = m2024.find(x => x.label === lbl);
+      const item25 = m2025.find(x => x.label === lbl);
+      if (!item24 && !item25) return;
 
-      const rowH = 28;
-      const half = w / 2 - 30;
+      const unite = (item24 && item24.unite) || (item25 && item25.unite) || '';
 
-      // Label métrique
-      svg.append('text').attr('x', margin.left + w / 2).attr('y', cursorY + 16)
-        .attr('text-anchor', 'middle')
-        .attr('font-size', 11)
+      // === Label métrique à gauche (lisible !) ===
+      svg.append('text')
+        .attr('x', margin.left - 12).attr('y', cursorY + 18)
+        .attr('text-anchor', 'end')
+        .attr('font-size', 13).attr('font-weight', 500)
         .attr('fill', inkColor())
         .text(lbl);
 
-      // Détermine échelle locale (max des deux)
-      const maxVal = Math.max(item.loro, item.swisslos);
+      // Unit small below label
+      if (unite && !unite.match(/^%$/)) {
+        svg.append('text')
+          .attr('x', margin.left - 12).attr('y', cursorY + 32)
+          .attr('text-anchor', 'end')
+          .attr('font-size', 10).attr('fill', inkSoftColor())
+          .text(unite);
+      }
+
+      // === Calcule échelle locale (max des 4 valeurs disponibles) ===
+      const allVals = [item24, item25].flatMap(i => i ? [i.loro, i.swisslos] : [])
+        .filter(v => v != null && !Number.isNaN(v));
+      const maxVal = allVals.length ? Math.max(...allVals) : 0;
       if (maxVal === 0) {
+        // Just write "n.d." both sides
+        svg.append('text').attr('x', centerX - 8).attr('y', cursorY + 22).attr('text-anchor', 'end')
+          .attr('font-size', 11).attr('fill', inkSoftColor()).attr('font-style', 'italic').text('n.d.');
+        svg.append('text').attr('x', centerX + 8).attr('y', cursorY + 22).attr('text-anchor', 'start')
+          .attr('font-size', 11).attr('fill', inkSoftColor()).attr('font-style', 'italic').text('n.d.');
         cursorY += rowH;
         return;
       }
-      const x = d3.scaleLinear().domain([0, maxVal]).range([0, half]);
+      const x = d3.scaleLinear().domain([0, maxVal]).range([0, halfW]);
 
-      // Barre Loro (à gauche, croissance de droite à gauche)
-      const lW = x(item.loro);
-      svg.append('rect')
-        .attr('x', margin.left + w / 2 - 8 - lW)
-        .attr('y', cursorY + 5).attr('width', lW).attr('height', 12)
-        .attr('fill', '#c8102e').attr('opacity', 0.85);
+      // === LORO side (gauche, barres groupées 2024 sur le haut, 2025 en bas) ===
+      const barH = 11, barGap = 3;
+      // 2024 Loro
+      if (item24 && item24.loro != null) {
+        const lW = x(item24.loro);
+        svg.append('rect')
+          .attr('x', centerX - 12 - lW)
+          .attr('y', cursorY + 6).attr('width', lW).attr('height', barH)
+          .attr('fill', '#c8102e').attr('opacity', 0.55);
+        svg.append('text')
+          .attr('x', centerX - 12 - lW - 6).attr('y', cursorY + 6 + barH - 1)
+          .attr('text-anchor', 'end').attr('font-size', 11)
+          .attr('fill', '#c8102e')
+          .text(fmtUnit(item24.loro, unite) + (item24.loro_est ? ' (est.)' : ''));
+      } else {
+        svg.append('text').attr('x', centerX - 12).attr('y', cursorY + 6 + barH - 1)
+          .attr('text-anchor', 'end').attr('font-size', 10).attr('fill', inkSoftColor()).attr('font-style', 'italic').text('n.d.');
+      }
+      // 2025 Loro
+      if (item25 && item25.loro != null) {
+        const lW = x(item25.loro);
+        const rect = svg.append('rect')
+          .attr('x', centerX - 12 - lW)
+          .attr('y', cursorY + 6 + barH + barGap).attr('width', lW).attr('height', barH)
+          .attr('fill', '#c8102e').attr('opacity', 1);
+        if (item25.loro_est) rect.attr('stroke', '#c8102e').attr('stroke-width', 1.5).attr('stroke-dasharray', '3,2').attr('fill-opacity', 0.5);
+        svg.append('text')
+          .attr('x', centerX - 12 - lW - 6).attr('y', cursorY + 6 + barH + barGap + barH - 1)
+          .attr('text-anchor', 'end').attr('font-size', 11).attr('font-weight', 600)
+          .attr('fill', '#c8102e')
+          .text(fmtUnit(item25.loro, unite) + (item25.loro_est ? ' (est.)' : ''));
+      } else {
+        svg.append('text').attr('x', centerX - 12).attr('y', cursorY + 6 + barH + barGap + barH - 1)
+          .attr('text-anchor', 'end').attr('font-size', 10).attr('fill', inkSoftColor()).attr('font-style', 'italic').text('n.d.');
+      }
 
-      svg.append('text')
-        .attr('x', margin.left + w / 2 - 8 - lW - 6)
-        .attr('y', cursorY + 15)
-        .attr('text-anchor', 'end')
-        .attr('font-size', 11)
-        .attr('font-family', 'Source Serif Pro, serif')
-        .attr('fill', '#c8102e')
-        .text(CHF1.format(item.loro) + (item.unite ? ' ' + item.unite.replace('M CHF', 'M').replace('M hab.', 'M') : ''));
-
-      // Barre Swisslos (à droite)
-      const sW = x(item.swisslos);
-      svg.append('rect')
-        .attr('x', margin.left + w / 2 + 8)
-        .attr('y', cursorY + 5).attr('width', sW).attr('height', 12)
-        .attr('fill', '#1a1917').attr('opacity', 0.85);
-
-      svg.append('text')
-        .attr('x', margin.left + w / 2 + 8 + sW + 6)
-        .attr('y', cursorY + 15)
-        .attr('font-size', 11)
-        .attr('font-family', 'Source Serif Pro, serif')
-        .attr('fill', inkColor())
-        .text(CHF1.format(item.swisslos) + (item.unite ? ' ' + item.unite.replace('M CHF', 'M').replace('M hab.', 'M') : ''));
+      // === SWISSLOS side (droite) ===
+      // 2024
+      if (item24 && item24.swisslos != null) {
+        const sW = x(item24.swisslos);
+        svg.append('rect')
+          .attr('x', centerX + 12).attr('y', cursorY + 6)
+          .attr('width', sW).attr('height', barH)
+          .attr('fill', '#1a1917').attr('opacity', 0.55);
+        svg.append('text')
+          .attr('x', centerX + 12 + sW + 6).attr('y', cursorY + 6 + barH - 1)
+          .attr('font-size', 11).attr('fill', inkColor())
+          .text(fmtUnit(item24.swisslos, unite) + (item24.swisslos_est ? ' (est.)' : ''));
+      } else {
+        svg.append('text').attr('x', centerX + 12).attr('y', cursorY + 6 + barH - 1)
+          .attr('font-size', 10).attr('fill', inkSoftColor()).attr('font-style', 'italic').text('n.d.');
+      }
+      // 2025
+      if (item25 && item25.swisslos != null) {
+        const sW = x(item25.swisslos);
+        const rect = svg.append('rect')
+          .attr('x', centerX + 12).attr('y', cursorY + 6 + barH + barGap)
+          .attr('width', sW).attr('height', barH)
+          .attr('fill', '#1a1917').attr('opacity', 1);
+        if (item25.swisslos_est) rect.attr('stroke', '#1a1917').attr('stroke-width', 1.5).attr('stroke-dasharray', '3,2').attr('fill-opacity', 0.5);
+        svg.append('text')
+          .attr('x', centerX + 12 + sW + 6).attr('y', cursorY + 6 + barH + barGap + barH - 1)
+          .attr('font-size', 11).attr('font-weight', 600).attr('fill', inkColor())
+          .text(fmtUnit(item25.swisslos, unite) + (item25.swisslos_est ? ' (est.)' : ''));
+      } else {
+        svg.append('text').attr('x', centerX + 12).attr('y', cursorY + 6 + barH + barGap + barH - 1)
+          .attr('font-size', 10).attr('fill', inkSoftColor()).attr('font-style', 'italic').text('n.d.');
+      }
 
       cursorY += rowH;
     });
-    cursorY += 8;
+    cursorY += sectionGap;
   });
 
-  // En-tête « Loro · Swisslos »
-  svg.append('text').attr('x', margin.left + w / 4).attr('y', 12)
-    .attr('text-anchor', 'middle').attr('font-size', 13).attr('font-weight', 600).attr('fill', '#c8102e')
-    .text('◀ LORO');
-  svg.append('text').attr('x', margin.left + 3 * w / 4).attr('y', 12)
-    .attr('text-anchor', 'middle').attr('font-size', 13).attr('font-weight', 600).attr('fill', inkColor())
-    .text('SWISSLOS ▶');
+  // Bottom note about estimates
+  svg.append('text')
+    .attr('x', margin.left).attr('y', H - 4)
+    .attr('font-size', 10).attr('fill', inkSoftColor()).attr('font-style', 'italic')
+    .text("Barres hachurées = estimations (Geschäftsbericht Swisslos 2025 et rapport financier Loro 2025 non encore publiés à la date du build).");
 }
 
 function initEditorialTimeline() {
