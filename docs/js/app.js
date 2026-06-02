@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     DATA.editorial  = await loadJSON('editorial_loro.json');
     DATA.dependance = await loadJSON('dependance_cantons.json');
     DATA.juraHistoire = await loadJSON('jura_histoire.json');
+    DATA.brb2025      = await loadJSON('brb2025_full.json');
 
     initHero();
     initComparisons();
@@ -46,6 +47,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     initLoroVsSwisslos();
     initEditorialTimeline();
     initJuraHistoire();
+    initBrbExplorer();
+    initBrbLongtail();
+    initBrbGeomap();
     initJourney();
     initSankey();
     initReadingProgress();
@@ -3265,5 +3269,374 @@ function initEditorialTimeline() {
     (a.faits_marquants || []).forEach(f => {
       ul.append('li').text(f);
     });
+  });
+}
+
+/* ============================================================
+   ACTE IX — BRB 2025 EXPLORER (~600 bénéficiaires)
+   ============================================================ */
+
+const CANTON_COLORS = {
+  VD: '#e44d4d', FR: '#5b8def', VS: '#f0a93d',
+  NE: '#7c5bc7', GE: '#2ea08a', JU: '#c97b3a', R: '#888'
+};
+const CANTON_LABELS = {
+  VD: 'Vaud', FR: 'Fribourg', VS: 'Valais',
+  NE: 'Neuchâtel', GE: 'Genève', JU: 'Jura', R: 'Suisse rom.'
+};
+const SECTEUR_COLORS = {
+  'Action sociale': '#e44d4d',
+  'Jeunesse': '#5b8def',
+  'Santé': '#2ea08a',
+  'Culture': '#f0a93d',
+  'Formation': '#7c5bc7',
+  'Patrimoine': '#c97b3a',
+  'Environnement': '#7fb069',
+  'Tourisme': '#d96b9a',
+  'Sport': '#3d5a80'
+};
+
+function fmtCHF(v) {
+  if (v >= 1000000) return (v / 1000000).toFixed(2).replace(/\.?0+$/, '') + ' M';
+  if (v >= 1000) return (v / 1000).toFixed(0) + ' k';
+  return String(v);
+}
+
+function initBrbExplorer() {
+  const container = document.getElementById('viz-explorer');
+  if (!container || !DATA.brb2025) return;
+  const entries = DATA.brb2025.entries.slice();
+  const allCantons = ['VD', 'FR', 'VS', 'NE', 'GE', 'JU', 'R'];
+  const allSecteurs = [...new Set(entries.map(e => e.secteur))].sort();
+
+  // State
+  const state = { query: '', cantons: new Set(allCantons), secteurs: new Set(allSecteurs), sortBy: 'montant' };
+
+  // Build chrome
+  container.innerHTML = `
+    <div class="brb-controls">
+      <input type="search" class="brb-search" placeholder="Rechercher une association, une ville…">
+      <div class="brb-filter-group">
+        <span class="brb-filter-label">Canton :</span>
+        <div class="brb-pills" data-filter="canton">
+          ${allCantons.map(c => `<button class="brb-pill active" data-value="${c}" style="--pill-color:${CANTON_COLORS[c]}">${CANTON_LABELS[c]}</button>`).join('')}
+        </div>
+      </div>
+      <div class="brb-filter-group">
+        <span class="brb-filter-label">Secteur :</span>
+        <div class="brb-pills" data-filter="secteur">
+          ${allSecteurs.map(s => `<button class="brb-pill active" data-value="${s}" style="--pill-color:${SECTEUR_COLORS[s] || '#888'}">${s}</button>`).join('')}
+        </div>
+      </div>
+      <div class="brb-filter-group">
+        <span class="brb-filter-label">Tri :</span>
+        <select class="brb-sort">
+          <option value="montant">Montant décroissant</option>
+          <option value="montant_asc">Montant croissant</option>
+          <option value="nom">Nom A→Z</option>
+          <option value="canton">Canton</option>
+        </select>
+      </div>
+    </div>
+    <div class="brb-stats" id="brb-stats"></div>
+    <div class="brb-list" id="brb-list"></div>
+  `;
+
+  const searchEl = container.querySelector('.brb-search');
+  const sortEl = container.querySelector('.brb-sort');
+  const statsEl = container.querySelector('#brb-stats');
+  const listEl = container.querySelector('#brb-list');
+
+  function applyFilters() {
+    const q = state.query.toLowerCase().trim();
+    let filtered = entries.filter(e => {
+      if (!state.cantons.has(e.canton)) return false;
+      if (!state.secteurs.has(e.secteur)) return false;
+      if (q && !(
+        (e.nom || '').toLowerCase().includes(q) ||
+        (e.ville || '').toLowerCase().includes(q) ||
+        (e.description || '').toLowerCase().includes(q)
+      )) return false;
+      return true;
+    });
+
+    // Sort
+    if (state.sortBy === 'montant') filtered.sort((a, b) => b.montant_CHF - a.montant_CHF);
+    else if (state.sortBy === 'montant_asc') filtered.sort((a, b) => a.montant_CHF - b.montant_CHF);
+    else if (state.sortBy === 'nom') filtered.sort((a, b) => (a.nom || '').localeCompare(b.nom || ''));
+    else if (state.sortBy === 'canton') filtered.sort((a, b) => a.canton.localeCompare(b.canton) || b.montant_CHF - a.montant_CHF);
+
+    // Stats
+    const totalEur = filtered.reduce((s, e) => s + e.montant_CHF, 0);
+    statsEl.innerHTML = `<strong>${filtered.length}</strong> bénéficiaire${filtered.length > 1 ? 's' : ''} · <strong>${fmtCHF(totalEur)} CHF</strong> au total`;
+
+    // Render (capped at 200 for perf)
+    const SHOWN = Math.min(filtered.length, 200);
+    const max = filtered.length > 0 ? filtered[0].montant_CHF : 1;
+    const rows = filtered.slice(0, SHOWN).map(e => {
+      const widthPct = Math.max(1, (e.montant_CHF / max) * 100);
+      const cColor = CANTON_COLORS[e.canton] || '#888';
+      return `
+        <div class="brb-row">
+          <div class="brb-row-bar" style="background: ${cColor}; width: ${widthPct}%;"></div>
+          <div class="brb-row-content">
+            <div class="brb-row-main">
+              <span class="brb-canton-tag" style="background:${cColor}">${e.canton}</span>
+              <span class="brb-row-name">${e.nom}</span>
+              ${e.ville ? `<span class="brb-row-ville">· ${e.ville}</span>` : ''}
+            </div>
+            <div class="brb-row-meta">
+              <span class="brb-row-secteur">${e.secteur}</span>
+              ${e.description ? `<span class="brb-row-desc">— ${e.description}</span>` : ''}
+            </div>
+          </div>
+          <div class="brb-row-montant">${e.montant_CHF.toLocaleString('fr-CH').replace(/,/g, "'")} <span class="brb-chf">CHF</span></div>
+        </div>
+      `;
+    }).join('');
+
+    listEl.innerHTML = rows + (filtered.length > SHOWN ?
+      `<div class="brb-more">… et ${filtered.length - SHOWN} autres entrées. Affinez vos filtres pour voir plus.</div>` : '');
+  }
+
+  searchEl.addEventListener('input', e => { state.query = e.target.value; applyFilters(); });
+  sortEl.addEventListener('change', e => { state.sortBy = e.target.value; applyFilters(); });
+  container.querySelectorAll('.brb-pills').forEach(group => {
+    const filterType = group.dataset.filter;
+    group.addEventListener('click', e => {
+      const btn = e.target.closest('.brb-pill');
+      if (!btn) return;
+      const v = btn.dataset.value;
+      const set = filterType === 'canton' ? state.cantons : state.secteurs;
+      if (set.has(v)) {
+        set.delete(v);
+        btn.classList.remove('active');
+      } else {
+        set.add(v);
+        btn.classList.add('active');
+      }
+      applyFilters();
+    });
+  });
+
+  applyFilters();
+}
+
+/* ============================================================
+   ACTE IX — BRB 2025 LONG-TAIL (distribution log-scale)
+   ============================================================ */
+function initBrbLongtail() {
+  const container = document.getElementById('viz-longtail');
+  if (!container || !DATA.brb2025) return;
+  const entries = DATA.brb2025.entries
+    .filter(e => e.montant_CHF > 0)
+    .slice()
+    .sort((a, b) => b.montant_CHF - a.montant_CHF);
+
+  const W = container.clientWidth || 800;
+  const H = 480;
+  const margin = { top: 30, right: 30, bottom: 60, left: 70 };
+  const innerW = W - margin.left - margin.right;
+  const innerH = H - margin.top - margin.bottom;
+
+  const svg = d3.select(container).append('svg')
+    .attr('viewBox', `0 0 ${W} ${H}`)
+    .attr('width', '100%').attr('height', 'auto')
+    .style('overflow', 'visible');
+
+  const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+  const x = d3.scaleLinear().domain([1, entries.length]).range([0, innerW]);
+  const y = d3.scaleLog().domain([Math.max(1, d3.min(entries, e => e.montant_CHF)), d3.max(entries, e => e.montant_CHF)]).range([innerH, 0]);
+
+  // Axes
+  const xAxis = d3.axisBottom(x).ticks(8).tickFormat(d3.format('d'));
+  const yAxis = d3.axisLeft(y).tickFormat(d => fmtCHF(d) + '');
+  g.append('g').attr('transform', `translate(0,${innerH})`).call(xAxis)
+    .selectAll('text').style('fill', '#888').style('font-size', '12px');
+  g.append('g').call(yAxis)
+    .selectAll('text').style('fill', '#888').style('font-size', '12px');
+  g.selectAll('.tick line').style('stroke', '#ddd');
+  g.selectAll('.domain').style('stroke', '#ddd');
+
+  // Axis labels
+  svg.append('text').attr('x', W / 2).attr('y', H - 15)
+    .attr('text-anchor', 'middle').style('font-size', '13px').style('fill', '#666')
+    .text("rang du bénéficiaire (1 = plus gros montant)");
+  svg.append('text').attr('transform', `translate(20,${H / 2}) rotate(-90)`)
+    .attr('text-anchor', 'middle').style('font-size', '13px').style('fill', '#666')
+    .text("montant CHF (échelle log)");
+
+  // Reference lines: median, top 10
+  const medianAmount = d3.median(entries, e => e.montant_CHF);
+  g.append('line').attr('x1', 0).attr('x2', innerW)
+    .attr('y1', y(medianAmount)).attr('y2', y(medianAmount))
+    .style('stroke', '#999').style('stroke-dasharray', '3,3').style('opacity', 0.5);
+  g.append('text').attr('x', innerW - 4).attr('y', y(medianAmount) - 4)
+    .attr('text-anchor', 'end').style('font-size', '11px').style('fill', '#666')
+    .text(`médiane ≈ ${fmtCHF(medianAmount)} CHF`);
+
+  // Points
+  const tooltip = d3.select(container).append('div').attr('class', 'brb-tooltip');
+  const points = g.selectAll('circle').data(entries).join('circle')
+    .attr('cx', (_, i) => x(i + 1))
+    .attr('cy', d => y(d.montant_CHF))
+    .attr('r', d => d.montant_CHF >= 500000 ? 5 : d.montant_CHF >= 50000 ? 3 : 2)
+    .attr('fill', d => CANTON_COLORS[d.canton] || '#888')
+    .attr('opacity', 0.7)
+    .style('cursor', 'pointer')
+    .on('mouseenter', function(event, d) {
+      d3.select(this).attr('opacity', 1).attr('r', 7);
+      const rect = container.getBoundingClientRect();
+      tooltip.style('display', 'block')
+        .style('left', (event.clientX - rect.left + 12) + 'px')
+        .style('top', (event.clientY - rect.top + 12) + 'px')
+        .html(`<strong>${d.nom}</strong>${d.ville ? `<br><span style="opacity:.7">${d.ville}</span>` : ''}<br><span style="color:${CANTON_COLORS[d.canton]}">●</span> ${CANTON_LABELS[d.canton]} · ${d.secteur}<br><strong>${d.montant_CHF.toLocaleString('fr-CH').replace(/,/g, "'")} CHF</strong>`);
+    })
+    .on('mouseleave', function(event, d) {
+      d3.select(this).attr('opacity', 0.7).attr('r', d.montant_CHF >= 500000 ? 5 : d.montant_CHF >= 50000 ? 3 : 2);
+      tooltip.style('display', 'none');
+    });
+
+  // Annotate top 3
+  entries.slice(0, 3).forEach((d, i) => {
+    const cx = x(i + 1), cy = y(d.montant_CHF);
+    g.append('text').attr('x', cx + 10).attr('y', cy + i * 14 + 5)
+      .style('font-size', '11px').style('fill', '#333')
+      .text(`${d.nom.length > 40 ? d.nom.slice(0, 38) + '…' : d.nom} (${fmtCHF(d.montant_CHF)} CHF)`);
+  });
+
+  // Legend (canton colors)
+  const legendG = svg.append('g').attr('transform', `translate(${margin.left + 20}, ${margin.top + 10})`);
+  const cantons = ['VD', 'FR', 'VS', 'NE', 'GE', 'JU'];
+  cantons.forEach((c, i) => {
+    const lg = legendG.append('g').attr('transform', `translate(${i * 70}, 0)`);
+    lg.append('circle').attr('r', 5).attr('fill', CANTON_COLORS[c]);
+    lg.append('text').attr('x', 10).attr('y', 4).style('font-size', '12px').style('fill', '#666').text(CANTON_LABELS[c]);
+  });
+}
+
+/* ============================================================
+   ACTE IX — BRB 2025 GEO MAP (bulles par ville)
+   ============================================================ */
+function initBrbGeomap() {
+  const container = document.getElementById('viz-geomap');
+  if (!container || !DATA.brb2025) return;
+  const entries = DATA.brb2025.entries.filter(e => e.lat != null && e.lng != null && e.montant_CHF > 0);
+
+  // Aggregate by city
+  const cityMap = d3.group(entries, e => e.ville);
+  const cities = [];
+  cityMap.forEach((list, ville) => {
+    const total = d3.sum(list, e => e.montant_CHF);
+    const cantonPrimary = list[0].canton;
+    cities.push({
+      ville,
+      lat: list[0].lat,
+      lng: list[0].lng,
+      total,
+      count: list.length,
+      canton: cantonPrimary,
+      entries: list.slice().sort((a, b) => b.montant_CHF - a.montant_CHF)
+    });
+  });
+
+  const W = container.clientWidth || 800;
+  const H = 600;
+
+  // Suisse romande bounding box (approx)
+  const lats = cities.map(c => c.lat), lngs = cities.map(c => c.lng);
+  const latMin = Math.min(...lats) - 0.15, latMax = Math.max(...lats) + 0.15;
+  const lngMin = Math.min(...lngs) - 0.2, lngMax = Math.max(...lngs) + 0.2;
+
+  // Mercator projection
+  const projection = d3.geoMercator()
+    .center([(lngMin + lngMax) / 2, (latMin + latMax) / 2])
+    .scale(8000)
+    .translate([W / 2, H / 2]);
+
+  // Adjust scale to fit
+  const [topLeftX, topLeftY] = projection([lngMin, latMax]);
+  const [botRightX, botRightY] = projection([lngMax, latMin]);
+  const currentWidth = botRightX - topLeftX;
+  const currentHeight = botRightY - topLeftY;
+  const scaleFactor = Math.min(W / currentWidth, H / currentHeight) * 0.85;
+  projection.scale(8000 * scaleFactor);
+  const [newTopLeftX, newTopLeftY] = projection([lngMin, latMax]);
+  const [newBotRightX, newBotRightY] = projection([lngMax, latMin]);
+  projection.translate([
+    W / 2 - ((newTopLeftX + newBotRightX) / 2 - W / 2),
+    H / 2 - ((newTopLeftY + newBotRightY) / 2 - H / 2)
+  ]);
+
+  const svg = d3.select(container).append('svg')
+    .attr('viewBox', `0 0 ${W} ${H}`)
+    .attr('width', '100%').attr('height', 'auto')
+    .style('background', '#fafaf7')
+    .style('border-radius', '12px');
+
+  // Radius scale by total
+  const maxTotal = d3.max(cities, c => c.total);
+  const r = d3.scaleSqrt().domain([1000, maxTotal]).range([3, 50]);
+
+  const tooltip = d3.select(container).append('div').attr('class', 'brb-tooltip');
+
+  // Add light background lake outline (Geneva approximated)
+  // Simple: just draw circles for cities
+  svg.selectAll('circle').data(cities.sort((a, b) => b.total - a.total)).join('circle')
+    .attr('cx', d => projection([d.lng, d.lat])[0])
+    .attr('cy', d => projection([d.lng, d.lat])[1])
+    .attr('r', d => r(d.total))
+    .attr('fill', d => CANTON_COLORS[d.canton] || '#888')
+    .attr('fill-opacity', 0.45)
+    .attr('stroke', d => CANTON_COLORS[d.canton] || '#888')
+    .attr('stroke-width', 1.2)
+    .style('cursor', 'pointer')
+    .on('mouseenter', function(event, d) {
+      d3.select(this).attr('fill-opacity', 0.8);
+      const rect = container.getBoundingClientRect();
+      const topList = d.entries.slice(0, 5).map(e =>
+        `<div style="font-size:11px;margin-top:3px"><span style="opacity:.6">${e.secteur}</span> · ${e.nom.length > 45 ? e.nom.slice(0, 43) + '…' : e.nom} <strong>${fmtCHF(e.montant_CHF)} CHF</strong></div>`
+      ).join('');
+      tooltip.style('display', 'block')
+        .style('left', (event.clientX - rect.left + 12) + 'px')
+        .style('top', (event.clientY - rect.top + 12) + 'px')
+        .html(`<strong>${d.ville}</strong> · ${CANTON_LABELS[d.canton]}<br><strong>${fmtCHF(d.total)} CHF</strong> · ${d.count} bénéficiaire${d.count > 1 ? 's' : ''}<hr style="margin:6px 0; border-color: rgba(0,0,0,.1)">${topList}${d.entries.length > 5 ? `<div style="font-size:10px;opacity:.5;margin-top:4px">+ ${d.entries.length - 5} autres</div>` : ''}`);
+    })
+    .on('mouseleave', function() {
+      d3.select(this).attr('fill-opacity', 0.45);
+      tooltip.style('display', 'none');
+    });
+
+  // Labels for top cities
+  const topCities = cities.slice().sort((a, b) => b.total - a.total).slice(0, 12);
+  svg.selectAll('.city-label').data(topCities).join('text')
+    .attr('class', 'city-label')
+    .attr('x', d => projection([d.lng, d.lat])[0])
+    .attr('y', d => projection([d.lng, d.lat])[1] - r(d.total) - 5)
+    .attr('text-anchor', 'middle')
+    .style('font-size', '11px')
+    .style('font-weight', '600')
+    .style('fill', '#333')
+    .style('pointer-events', 'none')
+    .text(d => d.ville);
+
+  // Legend
+  const legend = svg.append('g').attr('transform', `translate(20, ${H - 80})`);
+  legend.append('text').attr('y', -8).style('font-size', '11px').style('fill', '#666').style('font-weight', '600').text('Total reçu en 2025');
+  const sampleSizes = [100000, 500000, 2000000];
+  sampleSizes.forEach((s, i) => {
+    legend.append('circle').attr('cx', i * 70 + 15).attr('cy', 20).attr('r', r(s))
+      .attr('fill', '#888').attr('fill-opacity', 0.3).attr('stroke', '#666');
+    legend.append('text').attr('x', i * 70 + 15).attr('y', 55).attr('text-anchor', 'middle')
+      .style('font-size', '10px').style('fill', '#666').text(fmtCHF(s) + ' CHF');
+  });
+
+  // Canton legend top right
+  const cantonLegend = svg.append('g').attr('transform', `translate(${W - 130}, 20)`);
+  ['VD', 'FR', 'VS', 'NE', 'GE', 'JU'].forEach((c, i) => {
+    const cg = cantonLegend.append('g').attr('transform', `translate(0, ${i * 18})`);
+    cg.append('circle').attr('r', 6).attr('fill', CANTON_COLORS[c]).attr('fill-opacity', 0.5).attr('stroke', CANTON_COLORS[c]);
+    cg.append('text').attr('x', 14).attr('y', 4).style('font-size', '11px').style('fill', '#444').text(CANTON_LABELS[c]);
   });
 }
