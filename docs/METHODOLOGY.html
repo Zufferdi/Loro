@@ -178,6 +178,23 @@ documentées dans ce fichier.</p>
 <li>Le poste « Marketing/Publicité+Promo » côté Swisslos additionne <code>Werbung</code> (13,1 M) + <code>Promotionen</code> (7,1 M) + <code>Sponsoring/Kooperation</code> (5,3 M). Pour Loro, c'est la ligne <code>Marketing, publicité et communication</code> (15,4 M).</li>
 <li>Les périodes comptables sont identiques (1er janvier - 31 décembre).</li>
 </ul>
+<h2 id="v8-juin-2026-audit-uxui-2025-partout">v8 (juin 2026) — Audit UX/UI + 2025 partout</h2>
+<h3 id="corrections-de-bugs">Corrections de bugs</h3>
+<ul>
+<li><code>historique.json</code> : ajout de <code>pbj_M</code> pour 2013-2025 (était lacunaire, seules 6 entrées historiques)</li>
+<li><code>per_capita.json</code> : extension à 2025 pour les 6 cantons et la Romandie</li>
+<li><code>initSankey</code> : sélecteur d'année 2013-2025 (était hardcodé 2024)</li>
+<li><code>initFranc</code> : sélecteur d'année 2013-2025, parts lues dynamiquement depuis les rapports financiers (était hardcodé 2024)</li>
+<li><code>initTilegram</code>, <code>initRealMap</code> : sliders étendus à 2025</li>
+<li><code>initGovernance</code> : tableau récapitulatif lit la dernière année disponible</li>
+<li><code>initMixByCanton</code> : étend l'axe à 2025</li>
+<li><code>initAnomaly</code> : raconte maintenant les deux mouvements — 2024 record ET 2025 reflux</li>
+</ul>
+<h3 id="mises-a-jour-html">Mises à jour HTML</h3>
+<ul>
+<li>Hero, anomaly, franc, sankey : narratifs ajustés pour parler de 2025</li>
+<li>Section gouvernance : ajout du Jura passant à 20 %, Fribourg passé à 9 %</li>
+</ul>
 </article>
 
 </body>
