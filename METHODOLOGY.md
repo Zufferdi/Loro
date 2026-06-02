@@ -279,3 +279,77 @@ VD #e44d4d · FR #5b8def · VS #f0a93d · NE #7c5bc7 · GE #2ea08a · JU #c97b3a
 ### Navigation enrichie
 
 Le lien « IX » dans la topnav pointe sur `#acte-9`. La section s'intercale entre Acte VIII bis (Jura) et le Récit incarné, formant un crescendo : du global (Actes I-V) au cas (Actes VI-VIII) à l'inventaire complet (Acte IX) au récit (voyage du billet) à la synthèse (Coda).
+
+## v13 (juin 2026) — Parse PDF complet, Loro vs Swisslos 2025, fix parallax
+
+### Dataset BRB 2025 complet (5'172 entrées)
+
+Le PDF officiel `BRB2025.pdf` (118 pages) a été parsé intégralement avec `pdfplumber` + détection géométrique des colonnes :
+
+- **5'172 entrées** structurées (vs. 594 dans v12) — couvre l'essentiel des ~5'000 projets soutenus
+- **Distribution par canton** : VD 1306, GE 889, FR 795, VS 710, NE 635, JU 620, Suisse romande 220
+- **9 secteurs** : Sport (2287), Culture (1522), Environnement (363), Action sociale (358), Jeunesse (302), Santé (124), Patrimoine (89), Formation (84), Tourisme (46)
+- **Total observé** : 211,7 M CHF (le reste = forfaits agrégés, fonds d'utilité publique non détaillés ligne par ligne)
+- **Médiane** : 8'250 CHF — la vraie longue traîne devient visible
+
+### Méthodologie de parsing
+
+Le pipeline final (`brb/parser_v4.py` + `brb/export_full.py`) :
+
+1. Extraction word-level via pdfplumber avec coordonnées (x, y) pour chaque mot
+2. Clustering en lignes (tolérance y ~3px) et colonnes (clustering x0)
+3. Tracking d'état canton via les ranges de pages connus :
+   - VAUD pages 3-30, FRIBOURG 31-48, VALAIS 49-62, NEUCHÂTEL 63-76, GENÈVE 77-98, JURA 99-110, Suisse romande 111-116
+4. Détection automatique des sections (9 domaines) et sous-sections sport
+5. Section Sport forcée quand l'organe contient "fonds du sport" ou similaire
+6. Extraction du nom et de la ville par regex (virgule + lieu en capitale)
+
+### Limites du parsing automatique
+
+- ~430 fausses "villes" extraites (descriptions mal segmentées comme "Participation au Championnat", "LNA équipe masculine") ont été filtrées en post-traitement ; le champ `ville` passe alors à `null`
+- Quelques noms restent tronqués d'un caractère (`ond. Cinéforom` au lieu de `Fond. Cinéforom`) sur les pages où les boundaries de colonnes coupent un peu trop à gauche
+- 46% des entrées ont une ville extraite, 27% sont géolocalisées (dictionnaire de ~250 communes romandes)
+- Total observé 211,7 M < 252 M réels : le différentiel correspond aux forfaits cantonaux (Conseils d'État, déléguations) qui n'apparaissent pas comme bénéficiaires individuels
+
+### Acte VIII — comparaison Loro vs Swisslos étendue à 2025
+
+La visualisation `initLoroVsSwisslos` a été refondue pour afficher les deux exercices 2024 et 2025 côte à côte sur 17 métriques.
+
+**Nouvelle lecture** : pour chaque ligne, deux barres groupées dans chaque camp — 2024 en transparence, 2025 en plein. Les barres hachurées (stroke pointillé) signalent des estimations, car ni le Rapport financier Loro 2025 ni le Geschäftsbericht Swisslos 2025 ne sont publiés à la date du build.
+
+**Sources 2025** :
+
+- **Loro** : communiqué officiel du 26 mai 2026 (PBJ 429,8 M, bénéfice 252 M, commissions 79,2 M aux 2350 points de vente, 5000 projets soutenus, taxe jeu excessif 2,15 M) ; BRB 2025
+- **Swisslos** : "Zahlen und Fakten 2025" (https://static.swisslos.ch/media/swisslos/publikationen/pdf/zahlen-und-fakten-2025.pdf), seule publication 2025 disponible. Reingewinn 562 M, 202 collaborateurs (94F + 108H, 64 Teilzeit), 506 M aux fonds cantonaux et 56 M à la Stiftung Sportförderung Schweiz.
+
+**Estimations** : pour Swisslos, le PBJ/BSE 2025 est dérivé de la répartition "25 Rp Reingewinn pour 1 franc joué" → mises ≈ 2'248 M, donc BSE ≈ 764 M (vs. 812 M en 2024). Les commissions sont estimées au prorata du ratio 2024 (15,8% du PBJ). Les autres lignes restent en `n.d.` quand non disponibles.
+
+### Lisibilité des intitulés
+
+- Labels métriques **à gauche** (au lieu de centrés et tronqués), 13px gras
+- Unité affichée en plus petit (10px) sous le label
+- Hauteur de ligne augmentée à 40px pour accueillir les deux années
+- Légende avec carrés couleur (transparent = 2024, plein = 2025) en haut de chaque camp
+- Note explicative sous le graphique sur la signification des barres hachurées
+
+### Fix parallax timeline (Acte I)
+
+Le scrolly de la timeline 1938-2025 ne montrait initialement qu'une fine ligne d'arrière-plan à opacité 0.18 (quasi invisible) ; la courbe principale ne s'animait qu'au scroll, donnant l'impression d'un graphe vide tel que visible sur la capture utilisateur.
+
+**Changement** :
+- Courbe d'arrière-plan : `stroke-width 1 → 2`, `opacity 0.18 → 0.32` — la trajectoire 1938-2025 est désormais visible d'emblée
+- Courbe principale : `stroke-width 2.8 → 3.2` — plus marquée quand elle s'illumine au scroll
+- Points : `opacity 0 → 0.35` par défaut — chaque année est visible dès le chargement, le pulse de focus reste l'élément de zoom
+
+La courbe complète apparaît donc dès le chargement, et le scrollytelling vient illuminer la portion jusqu'à l'année active sans cacher la trajectoire globale.
+
+### Données touchées
+
+- `docs/data/brb2025_full.json` : 1,77 MB, 5172 entrées, schéma `{nom, ville, montant_CHF, secteur, description, canton, lat, lng, organe, sous_section}`
+- `docs/data/swisslos.json` : ajout du bloc `comparaison_loro_2025` avec sources et `swisslos_est`/`loro_est` par ligne
+- `docs/js/app.js` : `initTimelineScrolly` (parallax), `initLoroVsSwisslos` (refonte complète 2 années)
+- `docs/index.html` : titre + sous-titre + footer de la viz Loro vs Swisslos mis à jour
+
+### Outils de parsing
+
+`brb/parser_v4.py` et `brb/export_full.py` sont versionnés dans le dépôt pour permettre de re-parser une future édition du BRB (BRB 2026 le moment venu) avec un effort minimal.
