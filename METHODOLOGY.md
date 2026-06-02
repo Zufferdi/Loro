@@ -236,3 +236,46 @@ Chaque entrée comporte : nom, secteur, montant, année, narratif explicatif, so
 - **Onglets canton** : VD / FR / GE / VS / NE / JU avec compteur de bénéficiaires et somme visible
 - **Hover détaillé** : narratif + source pour chaque cas
 - **Bordure colorée** : chaque canton a sa couleur identitaire propagée dans les cartes
+
+## v12 (juin 2026) — Acte IX : l'inventaire complet (BRB 2025)
+
+Cette version intègre la **Répartition des bénéfices 2025** publiée par la Loterie Romande (BRB 2025, ~80 pages, ~5'000 entrées) sous forme d'un dataset interrogeable de **594 bénéficiaires nommés** couvrant les 6 cantons romands.
+
+### Dataset `brb2025_full.json`
+
+- **594 entrées** structurées : `{nom, ville, montant_CHF, secteur, description, canton, lat, lng}`
+- **6 cantons couverts** : VD 236, VS 158, FR 152, NE 15, GE 15, JU 13, plus 5 entrées Suisse romande (organes intercantonaux)
+- **9 secteurs** : Culture (242), Action sociale (88), Sport (84), Patrimoine (47), Jeunesse (41), Santé (37), Tourisme (33), Environnement (11), Formation (11)
+- **140,8 M CHF observés** dans cet échantillon (sur ~252 M réels redistribués en 2025)
+- **Top 10 = 39,8 %** de la masse de l'échantillon (longue traîne)
+- **518/594 (87 %) géolocalisées** avec lat/lng pour ~250 villes de Suisse romande
+
+### Méthodologie d'extraction
+
+- Source : `https://soutien-loro.ch/sites/default/files/2026-05/BRB2025.pdf`
+- Extraction PDF via web_fetch (les ~58 premières pages du PDF — VD complet, FR complet, VS partiel jusqu'aux bourses sportives)
+- Couverture exhaustive ≥ 100 kCHF pour VD, FR, VS
+- Échantillon représentatif des montants moyens (10-100 kCHF) et de la longue traîne (< 10 kCHF) pour démontrer la forme statistique
+- NE, GE, JU : entrées documentées dans `dependance_cantons.json` + organes répartiteurs (totaux cantonaux)
+- Coordonnées géographiques attribuées manuellement à partir des noms de villes
+
+### Trois visualisations ajoutées (Acte IX)
+
+1. **Explorateur (`#viz-explorer`)** — Interface de recherche full-text avec filtres par canton (pills colorées) et secteur, tri par montant/nom/canton. Liste paginée à 200 entrées max avec barre de longueur proportionnelle au montant.
+2. **Longue traîne (`#viz-longtail`)** — Nuage de points D3 avec rang (1 → 594) en abscisse et montant en ordonnée (échelle log). Couleur par canton, ligne de référence à la médiane, top-3 annoté. Démontre visuellement la forme « few-big-many-small ».
+3. **Carte géographique (`#viz-geomap`)** — Projection Mercator centrée sur la Suisse romande. Bulles par ville agrégées (somme des montants), rayon √ (échelle sqrt). Labels pour les 12 premières villes. Tooltip détaillant les 5 plus gros bénéficiaires de chaque ville.
+
+### Couleurs cantonales (cohérence v11)
+
+VD #e44d4d · FR #5b8def · VS #f0a93d · NE #7c5bc7 · GE #2ea08a · JU #c97b3a · R #888
+
+### Limites connues
+
+- L'extraction n'est pas exhaustive : le PDF complet contient ~5'000 entrées, dont l'extraction texte se cantonne aux 58 premières pages dans le cadre des limites de tokens.
+- Les NE/GE/JU sont sous-représentés dans cet échantillon : on dispose des totaux cantonaux (organes répartiteurs) mais peu d'entrées individuelles ligne-par-ligne.
+- La médiane à 90 kCHF est artefactuelle : un échantillon non biaisé montrerait une médiane bien plus basse (de l'ordre de 5-10 kCHF) compte tenu de la masse des petits soutiens sportifs.
+- Les coordonnées géographiques ont été attribuées manuellement à partir d'un dictionnaire de villes ; quelques erreurs possibles pour les hameaux.
+
+### Navigation enrichie
+
+Le lien « IX » dans la topnav pointe sur `#acte-9`. La section s'intercale entre Acte VIII bis (Jura) et le Récit incarné, formant un crescendo : du global (Actes I-V) au cas (Actes VI-VIII) à l'inventaire complet (Acte IX) au récit (voyage du billet) à la synthèse (Coda).
