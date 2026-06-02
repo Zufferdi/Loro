@@ -100,6 +100,7 @@ function isDark() {
 }
 function inkColor()      { return isDark() ? '#f1efe7' : '#1a1917'; }
 function inkSoftColor()  { return isDark() ? '#b6b2a4' : '#5c5a52'; }
+function inkMuteColor()  { return isDark() ? '#7f7c70' : '#908d82'; }
 function ruleColor()     { return isDark() ? '#322f27' : '#e0ddd2'; }
 
 /** Animation compteur : 0 → cible sur 1.4 s */
@@ -120,3 +121,24 @@ function debounce(fn, ms = 200) {
   let h;
   return (...args) => { clearTimeout(h); h = setTimeout(() => fn(...args), ms); };
 }
+
+/** Charge le TopoJSON des cantons suisses depuis le CDN swiss-maps@4
+ *  Retourne {cantons, lakes} ou null en cas d'échec réseau. */
+async function loadSwissTopo() {
+  try {
+    const r = await fetch('https://unpkg.com/swiss-maps@4/2021/ch-combined.json');
+    if (!r.ok) return null;
+    return await r.json();
+  } catch (e) {
+    console.warn('Topojson swiss-maps indisponible :', e);
+    return null;
+  }
+}
+
+/** Map des codes canton vers id BFS (utilisé dans le topojson) */
+const CANTON_BFS = {
+  VD: 22, FR: 10, VS: 23, NE: 24, GE: 25, JU: 26,
+};
+const CANTON_BFS_REVERSE = Object.fromEntries(
+  Object.entries(CANTON_BFS).map(([k, v]) => [v, k])
+);
