@@ -200,3 +200,39 @@ documentées dans ce fichier.
 - "120 bénéficiaires" → "~5'000 projets soutenus chaque année"
 - L'échantillon de 120 noms est présenté comme tel : sélection visible tirée des BRB et rapports annuels
 - Liens directs vers la liste complète sur soutien-loro.ch
+
+## v11 (juin 2026) — Extension multi-canton + cas de dépendance documentés
+
+### Cas de dépendance enrichis (Acte VIII / dot plot)
+
+Ajout de 3 nouveaux cas documentés au `summary.cas_dependance`, désormais 6 cas, sourcés :
+
+| Bénéficiaire | Canton | % budget | Source primaire |
+|---|---|---|---|
+| FriSanté | FR | 32 % | REISO (jan. 2026) |
+| Fond. Cinéforom | Romandie | 30 % | CultureEnJeu nº53 (G. Ruey) |
+| La Lanterne magique | Romandie | 27 % | REISO (jan. 2026) |
+| Théâtre des Osses | FR | 20 % | CultureEnJeu nº53 (M.-C. Jenny) |
+| La Plage des Six Pompes | NE | 15 % | CultureEnJeu nº53 (N. Vogt) |
+| Tour de Romandie | Romandie | 15 % | Estimations presse |
+
+Les témoignages directs des directrices et présidentes d'associations (publiés dans CultureEnJeu nº53 en mars 2017) restent pertinents : « Le don de la Loro est toujours proche des 20 % du budget global » (Théâtre des Osses) ; « La perte de ce soutien serait catastrophique » (La Plage des Six Pompes).
+
+### Bénéficiaires par canton — données 2024 et 2025 (`dependance_cantons.json`)
+
+43 bénéficiaires notables identifiés et structurés sur les 6 cantons romands :
+
+- **VD** (9) : FASC 46 M (2025), Fonds sport 12,8 M (2025), Théâtre du Jorat 2,5 M, FAJE 1,5 M, Opéra Lausanne, Béjart, OCL, Hermitage, Vidy
+- **FR** (12) : Equilibre & Nuithonie 970k (2025), Ligue cancer 778k, FIFF 660k, Pro Senectute, La Tuile, Banc Public, Théâtre des Osses, OC Fribourgeois, Nouvel Opéra, Fri-Son, Belluard
+- **VS** (4) : Verbier Festival 975k, Pierre Gianadda 625k, total délégation 36 M (2025), Fonds sport 5,4 M (2025)
+- **NE** (4) : ORNE 13,7 M (2025, 485 dossiers), LoRo-Sport 2,25 M, FAC 1,57 M, La Plage des Six Pompes
+- **GE** (5) : Fonds genevois 14,15 M (1er trim. 2026, 170 institutions), OSR, Cinéforom, Fond. Hainard, ASL
+- **JU** (9) : total 7,5 M (2025), Plan climat 624k, Jura Tourisme 300k, Bien vieillir 280k, Musique des Lumières 175k, Crescendo 150k, Musée jurassien, Théâtre du Jura, Dritchino
+
+Chaque entrée comporte : nom, secteur, montant, année, narratif explicatif, source précise (presse romande ou rapport d'activité officiel).
+
+### Nouvelle UX
+- **Sélecteur d'année** dans la section bénéficiaires par canton : « Toutes », « 2024 », « 2025 », « 2026 ». Permet de comparer l'évolution.
+- **Onglets canton** : VD / FR / GE / VS / NE / JU avec compteur de bénéficiaires et somme visible
+- **Hover détaillé** : narratif + source pour chaque cas
+- **Bordure colorée** : chaque canton a sa couleur identitaire propagée dans les cartes
