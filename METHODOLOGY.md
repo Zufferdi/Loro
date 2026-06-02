@@ -153,3 +153,19 @@ documentées dans ce fichier.
 - Loro = 6 cantons, 2,36 M habitants ; Swisslos = 21 cantons (+FL), ~6,5 M habitants.
 - Le poste « Marketing/Publicité+Promo » côté Swisslos additionne `Werbung` (13,1 M) + `Promotionen` (7,1 M) + `Sponsoring/Kooperation` (5,3 M). Pour Loro, c'est la ligne `Marketing, publicité et communication` (15,4 M).
 - Les périodes comptables sont identiques (1er janvier - 31 décembre).
+
+## v8 (juin 2026) — Audit UX/UI + 2025 partout
+
+### Corrections de bugs
+- `historique.json` : ajout de `pbj_M` pour 2013-2025 (était lacunaire, seules 6 entrées historiques)
+- `per_capita.json` : extension à 2025 pour les 6 cantons et la Romandie
+- `initSankey` : sélecteur d'année 2013-2025 (était hardcodé 2024)
+- `initFranc` : sélecteur d'année 2013-2025, parts lues dynamiquement depuis les rapports financiers (était hardcodé 2024)
+- `initTilegram`, `initRealMap` : sliders étendus à 2025
+- `initGovernance` : tableau récapitulatif lit la dernière année disponible
+- `initMixByCanton` : étend l'axe à 2025
+- `initAnomaly` : raconte maintenant les deux mouvements — 2024 record ET 2025 reflux
+
+### Mises à jour HTML
+- Hero, anomaly, franc, sankey : narratifs ajustés pour parler de 2025
+- Section gouvernance : ajout du Jura passant à 20 %, Fribourg passé à 9 %
