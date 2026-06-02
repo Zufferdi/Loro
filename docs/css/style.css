@@ -976,3 +976,243 @@ footer.site-foot .links a { margin: 0 12px; color: var(--ink-soft); }
   .benef-card { background: rgba(255, 255, 255, 0.04); }
   .canton-tab:hover { background: rgba(255, 255, 255, 0.08); }
 }
+
+/* ============================================================
+   ACTE IX — BRB 2025 EXPLORER / LONG-TAIL / GEOMAP
+   ============================================================ */
+
+.brb-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background: var(--bg-soft, #faf8f3);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.brb-search {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-family: inherit;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  transition: border-color 0.15s;
+}
+.brb-search:focus {
+  outline: none;
+  border-color: #c8102e;
+}
+
+.brb-filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.brb-filter-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-right: 4px;
+}
+
+.brb-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.brb-pill {
+  --pill-color: #888;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-family: inherit;
+  border: 1.5px solid var(--pill-color);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--pill-color);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-weight: 500;
+}
+.brb-pill:hover {
+  background: var(--pill-color);
+  color: #fff;
+  opacity: 0.7;
+}
+.brb-pill.active {
+  background: var(--pill-color);
+  color: #fff;
+}
+
+.brb-sort {
+  padding: 6px 12px;
+  font-size: 13px;
+  font-family: inherit;
+  border: 1.5px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+.brb-sort:focus { outline: none; border-color: #c8102e; }
+
+.brb-stats {
+  padding: 10px 4px;
+  font-size: 13px;
+  color: #666;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+.brb-stats strong { color: #222; }
+
+.brb-list {
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.brb-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+.brb-row:hover { background: rgba(0,0,0,0.02); }
+.brb-row:last-child { border-bottom: none; }
+
+.brb-row-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.07;
+  pointer-events: none;
+  transition: opacity 0.15s;
+}
+.brb-row:hover .brb-row-bar { opacity: 0.13; }
+
+.brb-row-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}
+
+.brb-row-main {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.brb-canton-tag {
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  padding: 1px 6px;
+  border-radius: 3px;
+  letter-spacing: 0.05em;
+}
+
+.brb-row-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #222;
+}
+
+.brb-row-ville {
+  font-style: italic;
+  font-size: 13px;
+  color: #888;
+}
+
+.brb-row-meta {
+  font-size: 12px;
+  color: #666;
+}
+
+.brb-row-secteur {
+  font-weight: 500;
+  color: #444;
+}
+
+.brb-row-desc {
+  color: #888;
+  margin-left: 4px;
+}
+
+.brb-row-montant {
+  font-family: 'Inter', monospace;
+  font-weight: 700;
+  font-size: 15px;
+  color: #222;
+  text-align: right;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+}
+
+.brb-chf {
+  font-size: 11px;
+  font-weight: 500;
+  color: #888;
+  margin-left: 2px;
+}
+
+.brb-more {
+  padding: 16px;
+  text-align: center;
+  font-style: italic;
+  font-size: 13px;
+  color: #888;
+}
+
+.brb-tooltip {
+  position: absolute;
+  pointer-events: none;
+  display: none;
+  background: rgba(0, 0, 0, 0.92);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 360px;
+  z-index: 100;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.brb-tooltip strong { color: #fff; }
+
+.city-label {
+  text-shadow: 0 1px 2px rgba(255,255,255,0.8), -1px 0 2px rgba(255,255,255,0.8), 1px 0 2px rgba(255,255,255,0.8), 0 -1px 2px rgba(255,255,255,0.8);
+}
+
+@media (max-width: 700px) {
+  .brb-filter-group { flex-direction: column; align-items: flex-start; }
+  .brb-row { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .brb-row-montant { align-self: flex-end; }
+}
+
+@media (prefers-color-scheme: dark) {
+  .brb-controls { background: rgba(255,255,255,0.04); }
+  .brb-search, .brb-sort { background: rgba(255,255,255,0.06); color: inherit; border-color: rgba(255,255,255,0.15); }
+  .brb-stats { border-color: rgba(255,255,255,0.1); }
+  .brb-stats strong { color: inherit; }
+  .brb-row { border-bottom-color: rgba(255,255,255,0.08); }
+  .brb-row:hover { background: rgba(255,255,255,0.04); }
+  .brb-row-name { color: inherit; }
+}
