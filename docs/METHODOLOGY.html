@@ -178,22 +178,24 @@ documentées dans ce fichier.</p>
 <li>Le poste « Marketing/Publicité+Promo » côté Swisslos additionne <code>Werbung</code> (13,1 M) + <code>Promotionen</code> (7,1 M) + <code>Sponsoring/Kooperation</code> (5,3 M). Pour Loro, c'est la ligne <code>Marketing, publicité et communication</code> (15,4 M).</li>
 <li>Les périodes comptables sont identiques (1er janvier - 31 décembre).</li>
 </ul>
-<h2 id="v8-juin-2026-audit-uxui-2025-partout">v8 (juin 2026) — Audit UX/UI + 2025 partout</h2>
-<h3 id="corrections-de-bugs">Corrections de bugs</h3>
+<h2 id="v9-juin-2026-multi-canton-lhistoire-du-jura">v9 (juin 2026) — Multi-canton + l'histoire du Jura</h2>
+<h3 id="nouvelles-donnees">Nouvelles données</h3>
 <ul>
-<li><code>historique.json</code> : ajout de <code>pbj_M</code> pour 2013-2025 (était lacunaire, seules 6 entrées historiques)</li>
-<li><code>per_capita.json</code> : extension à 2025 pour les 6 cantons et la Romandie</li>
-<li><code>initSankey</code> : sélecteur d'année 2013-2025 (était hardcodé 2024)</li>
-<li><code>initFranc</code> : sélecteur d'année 2013-2025, parts lues dynamiquement depuis les rapports financiers (était hardcodé 2024)</li>
-<li><code>initTilegram</code>, <code>initRealMap</code> : sliders étendus à 2025</li>
-<li><code>initGovernance</code> : tableau récapitulatif lit la dernière année disponible</li>
-<li><code>initMixByCanton</code> : étend l'axe à 2025</li>
-<li><code>initAnomaly</code> : raconte maintenant les deux mouvements — 2024 record ET 2025 reflux</li>
+<li><strong><code>dependance_cantons.json</code></strong> : 29 cas notables de bénéficiaires Loro, ventilés par les 6 cantons romands (FR : 7, VD : 6, JU : 6, GE : 4, VS : 3, NE : 3). Cumul des sources : BRB 2024 et 2025, rapport délégation jurassienne 2024, communiqué Conseil d'État NE (20.5.2025), articles La Liberté / Frapp.ch / Le Matin, REISO (janvier 2026).</li>
+<li><strong><code>jura_histoire.json</code></strong> : série annuelle 1979-2025 (28 points disponibles) des montants Loro reçus par le canton du Jura depuis son entrée dans la Confédération. Cumul estimé : 102 M CHF. Source : Loterie Romande, onglet « Historique », colonne JU.</li>
 </ul>
-<h3 id="mises-a-jour-html">Mises à jour HTML</h3>
+<h3 id="nouvelles-visualisations">Nouvelles visualisations</h3>
 <ul>
-<li>Hero, anomaly, franc, sankey : narratifs ajustés pour parler de 2025</li>
-<li>Section gouvernance : ajout du Jura passant à 20 %, Fribourg passé à 9 %</li>
+<li><strong>Section « Quelle part du budget vient de la Loro ? »</strong> : enrichie avec un onglet par canton romand (VD / GE / FR / VS / NE / JU). Chaque onglet affiche les bénéficiaires notables avec montant, secteur, narratif et lorsque documenté le % du budget annuel couvert par la Loro.</li>
+<li><strong>Acte VIII bis — « le plus jeune »</strong> : nouvelle section narrative sur le Jura. Graphique en aire 1979-2025, jalons annotés (entrée 1979 à 145'786 CHF, premier million 1995, Théâtre du Jura 2016 avec +2 M exceptionnels, record 2025 à 8,7 M, et l'arrivée de Moutier au 1.1.2026).</li>
+</ul>
+<h3 id="sources-ajoutees">Sources ajoutées</h3>
+<ul>
+<li><a href="https://ra.loro.ch/documents/BRB2024.pdf">BRB 2024 (PDF, ~80 pages)</a></li>
+<li><a href="https://soutien-loro.ch/sites/default/files/2026-05/BRB2025.pdf">BRB 2025 (PDF)</a></li>
+<li><a href="https://soutien-loro.ch/sites/default/files/2025-06/Rapport%20d'activit%C3%A9%202024%20-%20D%C3%A9l%C3%A9gation%20jurassienne.pdf">Rapport délégation jurassienne 2024 (PDF)</a></li>
+<li><a href="https://www.ne.ch/medias/Pages/250520-benefices-loterie-romande-neuchatel.aspx">Communiqué Conseil d'État NE (20.5.2025)</a></li>
+<li><a href="https://www.reiso.org/articles/themes/pratiques/15008-la-loterie-romande-source-de-financement-cle">REISO — Sanchez (janvier 2026)</a></li>
 </ul>
 </article>
 
