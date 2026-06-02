@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     DATA.benefs     = await loadJSON('beneficiaires.json');
     DATA.population = await loadJSON('population.json');
     DATA.rf         = await loadJSON('rapports_financiers.json');
+    DATA.benefsVD   = await loadJSON('beneficiaires_top_vd.json');
+    DATA.swisslos   = await loadJSON('swisslos.json');
+    DATA.editorial  = await loadJSON('editorial_loro.json');
 
     initHero();
     initComparisons();
@@ -37,6 +40,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     initHexBenefs();
     initTopBenefs();
     initEvenements();
+    initTopBenefsVD();
+    initLoroVsSwisslos();
+    initEditorialTimeline();
     initJourney();
     initSankey();
     initReadingProgress();
@@ -2316,5 +2322,267 @@ function initEvenements() {
     const txt = li.append('div').attr('class', 'ev-content');
     txt.append('div').attr('class', 'ev-label').text(e.label);
     txt.append('div').attr('class', 'ev-detail').text(e.detail);
+  });
+}
+
+// ==========================================================
+//  Acte VIII — comparaisons et incarnation
+// ==========================================================
+
+function initTopBenefsVD() {
+  const container = d3.select('#viz-top-benefs-vd');
+  if (container.empty()) return;
+  if (!DATA.benefsVD) return;
+  container.html('');
+
+  // State: année sélectionnée
+  let year = '2025';
+
+  // Couleurs par secteur (réutilisables et lisibles)
+  const SECTOR_COLORS = {
+    'Culture':                  '#c8102e',
+    'Action sociale':           '#5b8def',
+    'Sport':                    '#5a8a3d',
+    'Jeunesse et éducation':    '#f0a93d',
+    'Santé et handicap':        '#7c5bc7',
+    'Formation et recherche':   '#1a1917',
+    'Conservation patrimoine':  '#c89a2e',
+    'Environnement':            '#3aa37a',
+    'Promotion et tourisme':    '#e44d4d',
+  };
+
+  // Contrôles
+  const controls = container.append('div').attr('class', 'controls-row');
+  const yearGroup = controls.append('div').attr('class', 'control-group');
+  yearGroup.append('label').text('Année : ');
+  ['2024', '2025'].forEach(y => {
+    yearGroup.append('button')
+      .attr('class', 'btn-year')
+      .attr('data-year', y)
+      .text(y)
+      .on('click', () => { year = y; render(); });
+  });
+
+  const totalDiv = controls.append('div').attr('class', 'control-info');
+
+  const wrap = container.append('div').attr('class', 'viz-inner');
+
+  function render() {
+    // Update toggles
+    yearGroup.selectAll('button.btn-year')
+      .classed('active', function() { return this.dataset.year === year; });
+
+    const key = `montant_${year}`;
+    const data = DATA.benefsVD.beneficiaires
+      .filter(d => d[key] != null && d[key] > 0)
+      .sort((a, b) => b[key] - a[key])
+      .slice(0, 30);
+
+    const totalCanton = DATA.benefsVD._meta.totaux_vd[year];
+    const totalCantonStr = totalCanton.total_distribue_canton
+      ? CHF1.format(totalCanton.total_distribue_canton / 1e6) + ' M'
+      : '–';
+    totalDiv.html(
+      `<span style="color:${inkSoftColor()}">Échantillon top 30 sur ~5'000 projets ·</span>
+       <strong>${totalCantonStr}</strong> total Vaud ${year}`
+    );
+
+    wrap.html('');
+
+    const W = wrap.node().clientWidth, H = Math.max(420, data.length * 22 + 60);
+    const margin = { top: 20, right: 220, bottom: 20, left: 280 };
+    const w = W - margin.left - margin.right, h = H - margin.top - margin.bottom;
+
+    const svg = wrap.append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('height', H);
+    const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+    const maxVal = d3.max(data, d => d[key]);
+    const x = d3.scaleLinear().domain([0, maxVal]).range([0, w]);
+    const y = d3.scaleBand().domain(data.map(d => d.nom + ' · ' + d.ville)).range([0, h]).padding(0.18);
+
+    // Axe Y (noms)
+    g.append('g').call(d3.axisLeft(y).tickSize(0))
+      .call(s => s.selectAll('text').attr('fill', inkColor()).style('font-size', '11px'))
+      .call(s => s.selectAll('path').remove());
+
+    // Barres
+    g.selectAll('rect.bar').data(data).enter().append('rect')
+      .attr('class', 'bar')
+      .attr('x', 0)
+      .attr('y', d => y(d.nom + ' · ' + d.ville))
+      .attr('width', 0)
+      .attr('height', y.bandwidth())
+      .attr('fill', d => SECTOR_COLORS[d.secteur] || '#999')
+      .attr('opacity', 0.88)
+      .transition().delay((d, i) => i * 18).duration(500)
+      .attr('width', d => x(d[key]));
+
+    // Labels valeur + secteur à droite
+    g.selectAll('.label-val').data(data).enter().append('text')
+      .attr('class', 'label-val')
+      .attr('x', d => x(d[key]) + 6)
+      .attr('y', d => y(d.nom + ' · ' + d.ville) + y.bandwidth() / 2 + 4)
+      .attr('font-size', 11)
+      .attr('fill', inkColor())
+      .attr('font-family', 'Source Serif Pro, serif')
+      .text(d => {
+        const m = d[key];
+        const v = m >= 1e6 ? CHF1.format(m / 1e6) + ' M' : (m / 1e3).toFixed(0) + ' k';
+        return v;
+      });
+
+    g.selectAll('.label-sector').data(data).enter().append('text')
+      .attr('class', 'label-sector')
+      .attr('x', d => x(d[key]) + 70)
+      .attr('y', d => y(d.nom + ' · ' + d.ville) + y.bandwidth() / 2 + 4)
+      .attr('font-size', 9)
+      .attr('fill', d => SECTOR_COLORS[d.secteur] || '#888')
+      .attr('opacity', 0.9)
+      .text(d => d.secteur + ' · ' + d.type);
+
+    // Légende secteurs (compactée, en haut)
+    const presentSectors = [...new Set(data.map(d => d.secteur))];
+    const leg = svg.append('g').attr('transform', `translate(${margin.left}, ${H - 6})`);
+    presentSectors.forEach((s, i) => {
+      const item = leg.append('g').attr('transform', `translate(${i * 140}, 0)`);
+      item.append('rect').attr('width', 8).attr('height', 8).attr('y', -8).attr('fill', SECTOR_COLORS[s] || '#999');
+      item.append('text').attr('x', 12).attr('y', 0).attr('font-size', 9).attr('fill', inkSoftColor()).text(s);
+    });
+  }
+  render();
+}
+
+function initLoroVsSwisslos() {
+  const container = d3.select('#viz-loro-vs-swisslos');
+  if (container.empty()) return;
+  if (!DATA.swisslos) return;
+  container.html('');
+
+  const m = DATA.swisslos.comparaison_loro_2024.metriques;
+
+  // Catégorisation visuelle des métriques
+  const sections = {
+    'Échelle': ['PBJ / BSE (M CHF)', 'Bénéfice net (M CHF)', 'Total actif', 'Capitaux propres / réserves'],
+    'Efficacité': ['Ratio bénéfice/PBJ', 'Commissions / PBJ'],
+    'Structure de coûts': ['Commissions points de vente', 'Informatique', 'Personnel', 'Marketing/Publicité+Promo', 'Amortissements', 'Taxe jeu excessif (0,5 %)'],
+    'Périmètre': ['EPT moyens', 'Nb cantons membres', 'Pop. desservie (M)'],
+    'Coussin': ['Provision risque exploitation', 'Réserves libres']
+  };
+
+  const W = container.node().clientWidth, H = 720;
+  const margin = { top: 20, right: 20, bottom: 20, left: 180 };
+  const w = W - margin.left - margin.right;
+
+  const svg = container.append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('height', H);
+
+  let cursorY = margin.top;
+  Object.entries(sections).forEach(([sectionName, metricLabels]) => {
+    // Titre de section
+    svg.append('text')
+      .attr('x', margin.left)
+      .attr('y', cursorY + 14)
+      .attr('font-family', 'Source Serif Pro, serif')
+      .attr('font-style', 'italic')
+      .attr('font-size', 12)
+      .attr('fill', inkSoftColor())
+      .text(sectionName);
+    cursorY += 22;
+
+    metricLabels.forEach(lbl => {
+      const item = m.find(x => x.label === lbl);
+      if (!item) return;
+
+      const rowH = 28;
+      const half = w / 2 - 30;
+
+      // Label métrique
+      svg.append('text').attr('x', margin.left + w / 2).attr('y', cursorY + 16)
+        .attr('text-anchor', 'middle')
+        .attr('font-size', 11)
+        .attr('fill', inkColor())
+        .text(lbl);
+
+      // Détermine échelle locale (max des deux)
+      const maxVal = Math.max(item.loro, item.swisslos);
+      if (maxVal === 0) {
+        cursorY += rowH;
+        return;
+      }
+      const x = d3.scaleLinear().domain([0, maxVal]).range([0, half]);
+
+      // Barre Loro (à gauche, croissance de droite à gauche)
+      const lW = x(item.loro);
+      svg.append('rect')
+        .attr('x', margin.left + w / 2 - 8 - lW)
+        .attr('y', cursorY + 5).attr('width', lW).attr('height', 12)
+        .attr('fill', '#c8102e').attr('opacity', 0.85);
+
+      svg.append('text')
+        .attr('x', margin.left + w / 2 - 8 - lW - 6)
+        .attr('y', cursorY + 15)
+        .attr('text-anchor', 'end')
+        .attr('font-size', 11)
+        .attr('font-family', 'Source Serif Pro, serif')
+        .attr('fill', '#c8102e')
+        .text(CHF1.format(item.loro) + (item.unite ? ' ' + item.unite.replace('M CHF', 'M').replace('M hab.', 'M') : ''));
+
+      // Barre Swisslos (à droite)
+      const sW = x(item.swisslos);
+      svg.append('rect')
+        .attr('x', margin.left + w / 2 + 8)
+        .attr('y', cursorY + 5).attr('width', sW).attr('height', 12)
+        .attr('fill', '#1a1917').attr('opacity', 0.85);
+
+      svg.append('text')
+        .attr('x', margin.left + w / 2 + 8 + sW + 6)
+        .attr('y', cursorY + 15)
+        .attr('font-size', 11)
+        .attr('font-family', 'Source Serif Pro, serif')
+        .attr('fill', inkColor())
+        .text(CHF1.format(item.swisslos) + (item.unite ? ' ' + item.unite.replace('M CHF', 'M').replace('M hab.', 'M') : ''));
+
+      cursorY += rowH;
+    });
+    cursorY += 8;
+  });
+
+  // En-tête « Loro · Swisslos »
+  svg.append('text').attr('x', margin.left + w / 4).attr('y', 12)
+    .attr('text-anchor', 'middle').attr('font-size', 13).attr('font-weight', 600).attr('fill', '#c8102e')
+    .text('◀ LORO');
+  svg.append('text').attr('x', margin.left + 3 * w / 4).attr('y', 12)
+    .attr('text-anchor', 'middle').attr('font-size', 13).attr('font-weight', 600).attr('fill', inkColor())
+    .text('SWISSLOS ▶');
+}
+
+function initEditorialTimeline() {
+  const container = d3.select('#viz-editorial-timeline');
+  if (container.empty()) return;
+  if (!DATA.editorial) return;
+  container.html('');
+
+  const annees = DATA.editorial.annees;
+
+  // Une carte par année, layout vertical, scrollytelling-friendly
+  const list = container.append('div').attr('class', 'editorial-list');
+
+  annees.forEach(a => {
+    const card = list.append('article').attr('class', 'editorial-card');
+
+    const head = card.append('div').attr('class', 'editorial-head');
+    head.append('span').attr('class', 'editorial-year').text(a.year);
+    head.append('h4').attr('class', 'editorial-headline').text(a.headline);
+
+    card.append('p').attr('class', 'editorial-edito').text(a.edito_court);
+
+    if (a.lancement_jeu) {
+      card.append('p').attr('class', 'editorial-launch')
+        .html(`<strong>Lancement :</strong> ${a.lancement_jeu}`);
+    }
+
+    const ul = card.append('ul').attr('class', 'editorial-facts');
+    (a.faits_marquants || []).forEach(f => {
+      ul.append('li').text(f);
+    });
   });
 }
