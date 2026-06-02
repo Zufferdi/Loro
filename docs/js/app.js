@@ -1970,7 +1970,7 @@ function initOpCosts() {
   if (!DATA.rf) return;
   container.html('');
 
-  const years = ['2019', '2020', '2021', '2022', '2023', '2024'];
+  const years = ['2013','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025'];
   const categories = [
     { key: 'informatique',      label: 'Informatique',     color: '#c8102e', highlight: true },
     { key: 'frais_personnel',   label: 'Personnel',        color: '#1a1917' },
@@ -1990,14 +1990,14 @@ function initOpCosts() {
     return row;
   });
 
-  const W = container.node().clientWidth, H = 420;
-  const margin = { top: 30, right: 170, bottom: 40, left: 50 };
+  const W = container.node().clientWidth, H = 460;
+  const margin = { top: 50, right: 170, bottom: 40, left: 50 };
   const w = W - margin.left - margin.right, h = H - margin.top - margin.bottom;
 
   const svg = container.append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('height', H);
   const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
-  const x = d3.scaleLinear().domain([2019, 2024]).range([0, w]);
+  const x = d3.scaleLinear().domain([2013, 2025]).range([0, w]);
   const stack = d3.stack().keys(categories.map(c => c.key));
   const series = stack(data);
   const maxY = d3.max(series[series.length - 1], d => d[1]);
@@ -2005,7 +2005,7 @@ function initOpCosts() {
 
   // Axes
   g.append('g').attr('transform', `translate(0,${h})`)
-    .call(d3.axisBottom(x).tickFormat(d3.format('d')).ticks(6))
+    .call(d3.axisBottom(x).tickFormat(d3.format('d')).ticks(7))
     .call(s => s.selectAll('text').attr('fill', inkSoftColor()).style('font-size', '11px'))
     .call(s => s.selectAll('path,line').attr('stroke', ruleColor()));
   g.append('g')
@@ -2024,33 +2024,52 @@ function initOpCosts() {
     .attr('d', area)
     .style('cursor', 'pointer');
 
-  // Lignes verticales d'année
-  years.forEach(y0 => {
-    g.append('line').attr('x1', x(+y0)).attr('x2', x(+y0))
+  // Lignes verticales jalons
+  [2018, 2021].forEach(y0 => {
+    g.append('line').attr('x1', x(y0)).attr('x2', x(y0))
       .attr('y1', 0).attr('y2', h)
-      .attr('stroke', ruleColor()).attr('stroke-dasharray', '2,3').attr('opacity', 0.3);
+      .attr('stroke', '#fff').attr('stroke-width', 1.5).attr('opacity', 0.6);
   });
 
-  // Highlight annotation IT
-  const ITdata = data.map(d => ({ year: d.year, val: d.informatique }));
-  const it19 = ITdata[0].val, it24 = ITdata[ITdata.length - 1].val;
-  const growth = ((it24 - it19) / it19 * 100).toFixed(0);
+  // Annotations de phases au-dessus du graph
+  const phases = [
+    { x0: 2013, x1: 2018, label: 'Régime Deloitte / Comlot · RBJ' },
+    { x0: 2018, x1: 2021, label: 'Transition LJAr' },
+    { x0: 2021, x1: 2025, label: 'CORJA · transformation IT' }
+  ];
+  phases.forEach(p => {
+    const x0 = x(p.x0), x1 = x(p.x1);
+    svg.append('text')
+      .attr('x', margin.left + (x0 + x1) / 2)
+      .attr('y', 18)
+      .attr('text-anchor', 'middle')
+      .attr('font-size', 10)
+      .attr('font-style', 'italic')
+      .attr('fill', inkSoftColor())
+      .text(p.label);
+    svg.append('line')
+      .attr('x1', margin.left + x0 + 6).attr('x2', margin.left + x1 - 6)
+      .attr('y1', 25).attr('y2', 25)
+      .attr('stroke', ruleColor()).attr('opacity', 0.6);
+  });
 
-  // Encadré annotation
-  const annoG = svg.append('g').attr('transform', `translate(${margin.left + x(2023) - 20}, ${margin.top + 30})`);
-  annoG.append('rect').attr('width', 200).attr('height', 60)
+  // Annotation IT : creux 2018 puis bond 2023
+  const it13 = data[0].informatique, it18 = data[5].informatique, it25 = data[data.length - 1].informatique;
+
+  const annoG = svg.append('g').attr('transform', `translate(${margin.left + x(2022) - 80}, ${margin.top + 35})`);
+  annoG.append('rect').attr('width', 190).attr('height', 56)
     .attr('rx', 4).attr('fill', '#c8102e').attr('opacity', 0.95);
-  annoG.append('text').attr('x', 12).attr('y', 22)
-    .attr('fill', '#fff').attr('font-size', 12).attr('font-weight', 600)
-    .text(`Informatique : +${growth} %`);
-  annoG.append('text').attr('x', 12).attr('y', 40)
-    .attr('fill', '#fff').attr('font-size', 11).attr('opacity', 0.92)
-    .text(`16,7 M → 23,7 M en 5 ans`);
-  annoG.append('text').attr('x', 12).attr('y', 54)
-    .attr('fill', '#fff').attr('font-size', 10).attr('opacity', 0.78)
-    .text('Bond surtout en 2023-2024');
+  annoG.append('text').attr('x', 10).attr('y', 20)
+    .attr('fill', '#fff').attr('font-size', 11.5).attr('font-weight', 600)
+    .text(`Informatique : cycle complet`);
+  annoG.append('text').attr('x', 10).attr('y', 36)
+    .attr('fill', '#fff').attr('font-size', 10.5).attr('opacity', 0.95)
+    .text(`19,2 M (2013) → 16,6 M (2018)`);
+  annoG.append('text').attr('x', 10).attr('y', 50)
+    .attr('fill', '#fff').attr('font-size', 10.5).attr('opacity', 0.95)
+    .text(`puis 23,9 M (2025) — record`);
 
-  // Légende à droite
+  // Légende
   const leg = svg.append('g').attr('transform', `translate(${W - margin.right + 20}, ${margin.top})`);
   categories.forEach((c, i) => {
     const item = leg.append('g').attr('transform', `translate(0, ${i * 20})`);
@@ -2061,19 +2080,22 @@ function initOpCosts() {
       .attr('font-weight', c.highlight ? 600 : 400)
       .attr('fill', c.highlight ? '#c8102e' : inkColor())
       .text(c.label);
-    // Valeur 2024
     item.append('text').attr('x', 130).attr('y', 10)
       .attr('font-size', 10).attr('fill', inkSoftColor()).attr('text-anchor', 'end')
       .attr('font-family', 'Source Serif Pro, serif')
       .text(CHF1.format(data[data.length - 1][c.key]) + ' M');
   });
 
-  // Tooltip survol
   paths.on('mouseover', function(ev, d) {
     const cat = categories.find(c => c.key === d.key);
     d3.select(this).attr('opacity', 1);
-    const vals = years.map((y, i) => CHF1.format(data[i][cat.key]) + ' M').join(' → ');
-    showTip(`<div class="t-title">${cat.label}</div><div>${vals}</div>`, ev.clientX, ev.clientY);
+    const first = data[0][cat.key], last = data[data.length - 1][cat.key];
+    const growth = ((last - first) / first * 100).toFixed(0);
+    showTip(`<div class="t-title">${cat.label}</div>
+      <div>2013 : ${CHF1.format(first)} M</div>
+      <div>2025 : ${CHF1.format(last)} M</div>
+      <div style="margin-top:4px;color:${growth >= 0 ? '#c8102e' : '#5a8a3d'}">Δ : ${growth > 0 ? '+' : ''}${growth} % en 12 ans</div>`,
+      ev.clientX, ev.clientY);
   }).on('mouseout', function(ev, d) {
     const cat = categories.find(c => c.key === d.key);
     d3.select(this).attr('opacity', cat.highlight ? 0.95 : 0.7);
@@ -2090,22 +2112,21 @@ function initPrelevementEvol() {
   if (!DATA.rf) return;
   container.html('');
 
-  const cantons = ['VD', 'GE', 'FR', 'VS', 'NE', 'JU'];
-  const years = ['2020', '2022', '2023', '2024'];
+  const cantons = ['VD', 'JU', 'NE', 'FR', 'GE', 'VS'];
 
-  const W = container.node().clientWidth, H = 380;
-  const margin = { top: 30, right: 60, bottom: 50, left: 50 };
+  const W = container.node().clientWidth, H = 400;
+  const margin = { top: 30, right: 80, bottom: 50, left: 50 };
   const w = W - margin.left - margin.right, h = H - margin.top - margin.bottom;
 
   const svg = container.append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('height', H);
   const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
-  const x = d3.scaleLinear().domain([2020, 2024]).range([0, w]);
+  const x = d3.scaleLinear().domain([2020, 2025]).range([0, w]);
   const y = d3.scaleLinear().domain([0, 30]).range([h, 0]);
 
   // Axes
   g.append('g').attr('transform', `translate(0,${h})`)
-    .call(d3.axisBottom(x).tickValues([2020, 2021, 2022, 2023, 2024]).tickFormat(d3.format('d')))
+    .call(d3.axisBottom(x).tickValues([2020, 2021, 2022, 2023, 2024, 2025]).tickFormat(d3.format('d')))
     .call(s => s.selectAll('text').attr('fill', inkSoftColor()).style('font-size', '12px'))
     .call(s => s.selectAll('path,line').attr('stroke', ruleColor()));
   g.append('g')
@@ -2122,54 +2143,58 @@ function initPrelevementEvol() {
 
   // Une ligne par canton
   cantons.forEach(c => {
-    // Pour 2021, on prend la valeur de 2020 (pas de donnée distincte)
     const series = [
       { x: 2020, y: DATA.rf.prelevement_cantonal['2020'][c] },
-      { x: 2021, y: DATA.rf.prelevement_cantonal['2020'][c] }, // pas de RF 2021 séparé, donnée 2020
+      { x: 2021, y: DATA.rf.prelevement_cantonal['2020'][c] }, // pas changé
       { x: 2022, y: DATA.rf.prelevement_cantonal['2022'][c] },
       { x: 2023, y: DATA.rf.prelevement_cantonal['2023'][c] },
       { x: 2024, y: DATA.rf.prelevement_cantonal['2024'][c] },
+      { x: 2025, y: DATA.rf.prelevement_cantonal['2025'][c] },
     ];
 
+    const isHighlight = c === 'VD' || c === 'JU' || c === 'FR';
     const line = d3.line().x(d => x(d.x)).y(d => y(d.y))
       .curve(d3.curveStepAfter);
 
     g.append('path').datum(series)
       .attr('fill', 'none').attr('stroke', CANTON_COLORS[c])
-      .attr('stroke-width', c === 'VD' ? 3.5 : 1.5)
-      .attr('opacity', c === 'VD' ? 1 : 0.6)
+      .attr('stroke-width', c === 'VD' ? 3.5 : isHighlight ? 2.5 : 1.5)
+      .attr('opacity', isHighlight ? 1 : 0.5)
       .attr('d', line);
 
-    // Marqueurs
     g.selectAll('.dot-' + c).data(series).enter().append('circle')
       .attr('cx', d => x(d.x)).attr('cy', d => y(d.y))
-      .attr('r', c === 'VD' ? 5 : 3)
+      .attr('r', isHighlight ? 4 : 2.5)
       .attr('fill', CANTON_COLORS[c])
-      .attr('opacity', c === 'VD' ? 1 : 0.6);
+      .attr('opacity', isHighlight ? 1 : 0.5);
 
     // Label au bout
     const last = series[series.length - 1];
-    g.append('text').attr('x', x(last.x) + 8).attr('y', y(last.y) + 4)
+    g.append('text').attr('x', x(last.x) + 6).attr('y', y(last.y) + 4)
       .attr('font-size', 11)
-      .attr('font-weight', c === 'VD' ? 600 : 400)
+      .attr('font-weight', isHighlight ? 600 : 400)
       .attr('fill', CANTON_COLORS[c])
-      .attr('opacity', c === 'VD' ? 1 : 0.7)
+      .attr('opacity', isHighlight ? 1 : 0.6)
       .text(`${c} · ${last.y} %`);
   });
 
-  // Annotation Vaud
-  const xVD = x(2022), yVD0 = y(0), yVD25 = y(25);
-  g.append('line').attr('x1', xVD - 30).attr('x2', xVD + 30)
-    .attr('y1', yVD0).attr('y2', yVD0).attr('stroke', '#c8102e').attr('opacity', 0.3);
-
-  const annoX = x(2021) + 20;
-  g.append('text').attr('x', annoX).attr('y', y(28))
+  // Annotation Vaud 2022
+  const annoX1 = x(2021) + 10;
+  g.append('text').attr('x', annoX1).attr('y', y(28))
     .attr('font-family', 'Source Serif Pro, serif').attr('font-style', 'italic')
-    .attr('font-size', 14).attr('fill', '#c8102e')
-    .text('1ᵉʳ janvier 2022 : Vaud passe de 0 % à 25 %');
-  g.append('text').attr('x', annoX).attr('y', y(28) + 16)
-    .attr('font-size', 11).attr('fill', inkSoftColor())
-    .text('Entrée en vigueur de la LVLJAr');
+    .attr('font-size', 13).attr('fill', '#c8102e')
+    .text('Vaud · jan. 2022 : 0 → 25 %');
+  g.append('text').attr('x', annoX1).attr('y', y(28) + 14)
+    .attr('font-size', 10).attr('fill', inkSoftColor())
+    .text('Entrée en vigueur LVLJAr');
+
+  // Annotation Fribourg 2024 et Jura 2025
+  g.append('text').attr('x', x(2023.6)).attr('y', y(13))
+    .attr('font-size', 10.5).attr('fill', CANTON_COLORS.FR).attr('font-weight', 600)
+    .text('FR : 7 → 9 % (2024)');
+  g.append('text').attr('x', x(2023.8)).attr('y', y(22))
+    .attr('font-size', 10.5).attr('fill', CANTON_COLORS.JU).attr('font-weight', 600)
+    .text('JU : 17 → 20 % (2025)');
 }
 
 /* ============================================================
@@ -2181,29 +2206,29 @@ function initCapital() {
   if (!DATA.rf) return;
   container.html('');
 
-  const years = ['2019', '2020', '2021', '2022', '2023', '2024'];
+  const years = ['2013','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025'];
   const data = years.map(y => ({
     year: +y,
     capitaux_propres: DATA.rf.bilan[y].capitaux_propres / 1e6,
     logiciels: DATA.rf.bilan[y].immobilisations_incorporelles_logiciels / 1e6,
-    placements: DATA.rf.bilan[y].immobilisations_financieres / 1e6,
     benefice: DATA.rf.compte_de_resultat[y].resultat_net / 1e6,
   }));
 
-  const W = container.node().clientWidth, H = 360;
-  const margin = { top: 30, right: 100, bottom: 50, left: 50 };
+  const W = container.node().clientWidth, H = 380;
+  const margin = { top: 30, right: 110, bottom: 50, left: 50 };
   const w = W - margin.left - margin.right, h = H - margin.top - margin.bottom;
 
   const svg = container.append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('height', H);
   const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
-  const x = d3.scaleBand().domain(years).range([0, w]).padding(0.3);
+  const x = d3.scaleBand().domain(years).range([0, w]).padding(0.2);
   const yMax = d3.max(data, d => d.capitaux_propres) * 1.1;
   const y = d3.scaleLinear().domain([0, yMax]).range([h, 0]);
 
   // Axes
   g.append('g').attr('transform', `translate(0,${h})`).call(d3.axisBottom(x))
-    .call(s => s.selectAll('text').attr('fill', inkSoftColor()).style('font-size', '12px'))
+    .call(s => s.selectAll('text').attr('fill', inkSoftColor()).style('font-size', '10px')
+              .attr('transform', 'rotate(-30)').style('text-anchor', 'end'))
     .call(s => s.selectAll('path,line').attr('stroke', ruleColor()));
   g.append('g').call(d3.axisLeft(y).tickFormat(d => d + ' M').ticks(5))
     .call(s => s.selectAll('text').attr('fill', inkSoftColor()).style('font-size', '11px'))
@@ -2215,7 +2240,7 @@ function initCapital() {
     .attr('x', d => x(String(d.year)))
     .attr('y', h).attr('width', x.bandwidth()).attr('height', 0)
     .attr('fill', '#1a1917').attr('opacity', 0.78)
-    .transition().delay((d, i) => i * 100).duration(700)
+    .transition().delay((d, i) => i * 60).duration(600)
     .attr('y', d => y(d.capitaux_propres))
     .attr('height', d => h - y(d.capitaux_propres));
 
@@ -2226,39 +2251,52 @@ function initCapital() {
     .curve(d3.curveMonotoneX);
 
   g.append('path').datum(data)
-    .attr('fill', 'none').attr('stroke', '#c8102e').attr('stroke-width', 3)
+    .attr('fill', 'none').attr('stroke', '#c8102e').attr('stroke-width', 2.5)
     .attr('d', logLine);
 
   g.selectAll('.dot-log').data(data).enter().append('circle')
     .attr('cx', d => x(String(d.year)) + x.bandwidth() / 2)
     .attr('cy', d => y(d.logiciels))
-    .attr('r', 5).attr('fill', '#c8102e');
+    .attr('r', 3.5).attr('fill', '#c8102e');
 
-  // Labels valeurs
-  g.selectAll('.lab-cp').data(data).enter().append('text')
+  // Labels valeurs sur années clés
+  const keyYears = ['2013','2019','2025'];
+  g.selectAll('.lab-cp').data(data.filter(d => keyYears.includes(String(d.year)))).enter().append('text')
     .attr('class', 'lab-cp')
     .attr('x', d => x(String(d.year)) + x.bandwidth() / 2)
-    .attr('y', d => y(d.capitaux_propres) - 8)
+    .attr('y', d => y(d.capitaux_propres) - 6)
     .attr('text-anchor', 'middle')
     .attr('font-family', 'Source Serif Pro, serif')
-    .attr('font-size', 13).attr('fill', inkColor())
+    .attr('font-size', 12).attr('fill', inkColor())
     .text(d => CHF1.format(d.capitaux_propres));
 
-  // Légende
-  const leg = svg.append('g').attr('transform', `translate(${W - margin.right + 20}, ${margin.top + 20})`);
-  leg.append('rect').attr('width', 12).attr('height', 12).attr('fill', '#1a1917').attr('opacity', 0.78);
-  leg.append('text').attr('x', 18).attr('y', 10).attr('font-size', 12).attr('fill', inkColor())
-    .text('Capitaux propres');
-  leg.append('circle').attr('cx', 6).attr('cy', 30).attr('r', 5).attr('fill', '#c8102e');
-  leg.append('text').attr('x', 18).attr('y', 34).attr('font-size', 12).attr('fill', '#c8102e')
-    .text('Logiciels (actifs)');
+  // Annotation finale logiciels
+  const last = data[data.length - 1];
+  g.append('text').attr('x', x(String(last.year)) + x.bandwidth() / 2 + 6)
+    .attr('y', y(last.logiciels) - 4)
+    .attr('font-size', 11).attr('fill', '#c8102e').attr('font-weight', 600)
+    .text('43,8 M');
 
-  // Annotation : croissance des logiciels
-  const log19 = data[0].logiciels, log24 = data[data.length - 1].logiciels;
-  const growth = ((log24 - log19) / log19 * 100).toFixed(0);
-  const annoG = svg.append('g').attr('transform', `translate(${margin.left + x('2022') + x.bandwidth() / 2}, ${margin.top + 130})`);
-  annoG.append('text').attr('font-size', 11).attr('fill', '#c8102e').attr('font-style', 'italic')
-    .text(`+${growth} % en 5 ans`);
+  // Légende
+  const leg = svg.append('g').attr('transform', `translate(${W - margin.right + 10}, ${margin.top + 10})`);
+  leg.append('rect').attr('width', 12).attr('height', 12).attr('fill', '#1a1917').attr('opacity', 0.78);
+  leg.append('text').attr('x', 18).attr('y', 10).attr('font-size', 11).attr('fill', inkColor())
+    .text('Capitaux propres');
+  leg.append('circle').attr('cx', 6).attr('cy', 32).attr('r', 4).attr('fill', '#c8102e');
+  leg.append('text').attr('x', 18).attr('y', 36).attr('font-size', 11).attr('fill', '#c8102e')
+    .text('Logiciels');
+
+  // Annotation croissance
+  const cp13 = data[0].capitaux_propres, cp25 = data[data.length - 1].capitaux_propres;
+  const log13 = data[0].logiciels, log25 = data[data.length - 1].logiciels;
+  const cpGrowth = ((cp25 - cp13) / cp13 * 100).toFixed(0);
+  const logGrowth = ((log25 - log13) / log13 * 100).toFixed(0);
+  leg.append('text').attr('x', 0).attr('y', 70).attr('font-size', 10).attr('font-style', 'italic')
+    .attr('fill', inkSoftColor()).text(`Sur 12 ans :`);
+  leg.append('text').attr('x', 0).attr('y', 86).attr('font-size', 11).attr('fill', inkColor())
+    .text(`+${cpGrowth} % capitaux`);
+  leg.append('text').attr('x', 0).attr('y', 102).attr('font-size', 11).attr('fill', '#c8102e')
+    .text(`+${logGrowth} % logiciels`);
 }
 
 /* ============================================================
