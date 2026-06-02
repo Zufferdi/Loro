@@ -1,0 +1,153 @@
+{
+  "_meta": {
+    "source": "Rapport de gestion Swisslos 2024 (Geschäftsbericht 2024)",
+    "url": "https://www.swisslos.ch/media/swisslos/publikationen/pdf/gesch%C3%A4ftsbericht-2024.pdf",
+    "auditor": "Balmer-Etienne AG (Lucerne)",
+    "language_note": "Le rapport est uniquement en allemand. Traduction des postes ci-dessous.",
+    "last_updated": "2026-06-02"
+  },
+  "structure_2024": {
+    "_description": "Données 2024 traduites de l'allemand. Tous montants en CHF.",
+    "perimetre_geographique": {
+      "cantons_couverts": ["AG","AR","AI","BL","BS","BE","GL","GR","LU","NW","OW","SH","SZ","SO","SG","TG","UR","ZG","ZH","TI","FL (Liechtenstein)"],
+      "nb_cantons": 20,
+      "fl_inclus": true,
+      "population_desservie_estim": 6500000,
+      "forme_juridique": "Coopérative inter-cantonale (Genossenschaft)"
+    },
+    "compte_resultat": {
+      "produit_brut_jeux_bse": 812106987,
+      "commissions_detail_provisions": -128718011,
+      "frais_internet": -3874006,
+      "taxe_jeu_excessif_0_5pct": -4050498,
+      "production_materiel": -15998768,
+      "moins_value_creances": -2837312,
+      "resultat_brut": 656628392,
+      "frais_personnel": -25979972,
+      "frais_locaux": -1522708,
+      "informatique": -10280498,
+      "publicite_werbung": -13110505,
+      "promotions": -7079063,
+      "sponsoring_cooperation": -5299552,
+      "surveillance_prevention": -1704200,
+      "sponsoring_srf_culture": -2162000,
+      "production_emission_image": -983603,
+      "relations_publiques": -321857,
+      "amortissements": -14474012,
+      "frais_vente_pdv": -2916001,
+      "administration": -604805,
+      "vehicules_assurance": -772359,
+      "autres": -528020,
+      "betriebsaufwand_total": -87740155,
+      "resultat_exploitation_1": 568888237,
+      "gains_prescrits": 8388602,
+      "autres_produits_exploit": 860136,
+      "resultat_financier_net": 22242458,
+      "extraordinaire_net": 356700,
+      "benefice_entreprise": 600736133,
+      "attribution_reserve_libre": -5000000,
+      "benefice_a_distribuer": 595736133,
+      "_repartition": {
+        "fondation_sport_suisse_fses": 55682372,
+        "vingt_cantons_membres": 540053760,
+        "_dont_top": {"ZH": 128801956, "BE": 82716868, "AG": 58999474, "SG": 41047475, "LU": 34360147},
+        "_dont_min": {"AI": 1262221}
+      }
+    },
+    "bilan": {
+      "actif_total": 905015801,
+      "liquidites": 603298554,
+      "placements_court_terme": 505000000,
+      "creances_pdv_brutes": 28036467,
+      "immobilisations_financieres": 205715502,
+      "immobilier_propre": 8578402,
+      "immobilier_droit_superficie": 10871500,
+      "passif": {
+        "fonds_reserve_initial": 500000,
+        "reserve_libre_gewinn": 45311458,
+        "provision_risque_geschaft": 100000000,
+        "engagements_long_terme_gains": 56089640,
+        "benefice_entreprise": 600736133,
+        "fonds_propres_total": 646547596
+      }
+    },
+    "rh": {
+      "nb_employes": 201,
+      "dont_temps_partiel": 61,
+      "ept_moyens": 181,
+      "direction_nb": 6,
+      "directeur": "Roger Fasnacht",
+      "conseil_admin_nb": 7,
+      "president_conseil": "Josef Dittli (Conseiller aux États UR)",
+      "remuneration_direction_totale": 1870000,
+      "remuneration_conseil_admin_totale": 127304,
+      "remuneration_revision": 81046
+    },
+    "produits_phares": {
+      "zahlenlottos_bse": 435300000,
+      "lose_billets_bse": 193100000,
+      "sportwetten_bse": 181700000,
+      "geschicklichkeit_bse": 2000000,
+      "taux_redistribution_gains": 0.657
+    }
+  },
+  "historique_benefice": {
+    "_description": "Évolution du bénéfice net à répartir, en M CHF",
+    "_source": "Geschäftsbericht 2024 figure 4 + 2025 chiffres-clés",
+    "annees": {
+      "2010": null, "2011": null, "2012": null, "2013": null, "2014": null,
+      "2018": 432,
+      "2019": 410,
+      "2020": 416,
+      "2021": 463,
+      "2022": 488,
+      "2023": 511,
+      "2024": 596,
+      "2025": 562
+    }
+  },
+  "comparaison_loro_2024": {
+    "_description": "Confrontation Loro Romande vs Swisslos Alémanique, exercice 2024",
+    "metriques": [
+      {"label": "PBJ / BSE (M CHF)", "loro": 438.2, "swisslos": 812.1, "unite": "M CHF"},
+      {"label": "Bénéfice net (M CHF)", "loro": 258.2, "swisslos": 595.7, "unite": "M CHF"},
+      {"label": "Ratio bénéfice/PBJ", "loro": 58.9, "swisslos": 73.4, "unite": "%"},
+      {"label": "Commissions points de vente", "loro": 79.4, "swisslos": 128.7, "unite": "M CHF"},
+      {"label": "Commissions / PBJ", "loro": 18.1, "swisslos": 15.8, "unite": "%"},
+      {"label": "Informatique", "loro": 23.7, "swisslos": 10.3, "unite": "M CHF"},
+      {"label": "Personnel", "loro": 30.7, "swisslos": 26.0, "unite": "M CHF"},
+      {"label": "Marketing/Publicité+Promo", "loro": 17.0, "swisslos": 25.5, "unite": "M CHF"},
+      {"label": "Amortissements", "loro": 12.7, "swisslos": 14.5, "unite": "M CHF"},
+      {"label": "Taxe jeu excessif (0,5 %)", "loro": 2.19, "swisslos": 4.05, "unite": "M CHF"},
+      {"label": "EPT moyens", "loro": 213, "swisslos": 181, "unite": "EPT"},
+      {"label": "Nb cantons membres", "loro": 6, "swisslos": 21, "unite": ""},
+      {"label": "Pop. desservie (M)", "loro": 2.36, "swisslos": 6.5, "unite": "M hab."},
+      {"label": "Total actif", "loro": 438.9, "swisslos": 905.0, "unite": "M CHF"},
+      {"label": "Capitaux propres / réserves", "loro": 325.1, "swisslos": 646.5, "unite": "M CHF"},
+      {"label": "Provision risque exploitation", "loro": 0, "swisslos": 100, "unite": "M CHF"},
+      {"label": "Réserves libres", "loro": 66.0, "swisslos": 45.3, "unite": "M CHF"}
+    ]
+  },
+  "gouvernance": {
+    "loro_2024": {
+      "forme_juridique": "Association à but non lucratif (art. 60 CC)",
+      "auditeur": "BDO SA",
+      "ca_membres": 7,
+      "president_ca": "Jean-René Fournier",
+      "directeur": "Jean-Luc Moner-Banet",
+      "supervision": "Gespa (Autorité intercantonale)",
+      "convention": "CORJA (Convention romande sur les jeux d'argent, depuis 2021)",
+      "decisions_par_canton": "Conseil d'État jusqu'à 30 % + Organe répartition (85/15)"
+    },
+    "swisslos_2024": {
+      "forme_juridique": "Coopérative inter-cantonale (Genossenschaft)",
+      "auditeur": "Balmer-Etienne AG",
+      "ca_membres": 7,
+      "president_ca": "Josef Dittli (Conseiller aux États UR)",
+      "directeur": "Roger Fasnacht",
+      "supervision": "Gespa (mêmes que Loro)",
+      "convention": "IKV 2020 (Concordat intercantonal jeux d'argent)",
+      "decisions_par_canton": "Bénéfice réparti selon population + enjeux, fonds cantonaux directs"
+    }
+  }
+}
