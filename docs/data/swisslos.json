@@ -128,6 +128,38 @@
       {"label": "Réserves libres", "loro": 66.0, "swisslos": 45.3, "unite": "M CHF"}
     ]
   },
+  "comparaison_loro_2025": {
+    "_description": "Confrontation Loro Romande vs Swisslos Alémanique, exercice 2025. Données Loro depuis le communiqué + BRB 2025 ; données Swisslos depuis 'Zahlen und Fakten 2025' (Geschäftsbericht 2025 non encore publié).",
+    "_estimation_note": "Les lignes marquées 'est.' pour Swisslos sont des estimations à partir des proportions 2024 maintenues sur le bénéfice 2025. À mettre à jour quand le Geschäftsbericht 2025 sera publié.",
+    "metriques": [
+      {"label": "PBJ / BSE (M CHF)", "loro": 429.8, "swisslos": 764.0, "unite": "M CHF", "swisslos_est": true},
+      {"label": "Bénéfice net (M CHF)", "loro": 252.0, "swisslos": 562.0, "unite": "M CHF"},
+      {"label": "Ratio bénéfice/PBJ", "loro": 58.6, "swisslos": 73.6, "unite": "%", "swisslos_est": true},
+      {"label": "Commissions points de vente", "loro": 79.2, "swisslos": 121.0, "unite": "M CHF", "swisslos_est": true},
+      {"label": "Commissions / PBJ", "loro": 18.4, "swisslos": 15.8, "unite": "%", "swisslos_est": true},
+      {"label": "Informatique", "loro": null, "swisslos": null, "unite": "M CHF", "note": "Données 2025 non disponibles (rapport financier non publié)"},
+      {"label": "Personnel", "loro": null, "swisslos": 28.0, "unite": "M CHF", "swisslos_est": true},
+      {"label": "Marketing/Publicité+Promo", "loro": null, "swisslos": null, "unite": "M CHF"},
+      {"label": "Amortissements", "loro": null, "swisslos": null, "unite": "M CHF"},
+      {"label": "Taxe jeu excessif (0,5 %)", "loro": 2.15, "swisslos": 3.9, "unite": "M CHF", "loro_est": true},
+      {"label": "EPT moyens", "loro": null, "swisslos": 188, "unite": "EPT", "swisslos_est": true},
+      {"label": "Nb cantons membres", "loro": 6, "swisslos": 21, "unite": ""},
+      {"label": "Pop. desservie (M)", "loro": 2.38, "swisslos": 6.55, "unite": "M hab."},
+      {"label": "Total actif", "loro": null, "swisslos": null, "unite": "M CHF"},
+      {"label": "Capitaux propres / réserves", "loro": null, "swisslos": null, "unite": "M CHF"},
+      {"label": "Provision risque exploitation", "loro": 0, "swisslos": 100, "unite": "M CHF"},
+      {"label": "Réserves libres", "loro": null, "swisslos": null, "unite": "M CHF"}
+    ],
+    "sources": {
+      "loro": [
+        "Communiqué Loterie Romande 26.5.2026 (252 M redistribués, PBJ 429,8 M, commissions 79,2 M, 5000 projets, 2350 points de vente)",
+        "BRB 2025 (https://soutien-loro.ch/sites/default/files/2026-05/BRB2025.pdf)"
+      ],
+      "swisslos": [
+        "Zahlen und Fakten 2025 (https://www.swisslos.ch/media/swisslos/publikationen/pdf/zahlen-und-fakten-2025.pdf) — Reingewinn 562 M, 202 collaborateurs, 506 M aux fonds cantonaux, 56 M à la Stiftung Sportförderung"
+      ]
+    }
+  },
   "gouvernance": {
     "loro_2024": {
       "forme_juridique": "Association à but non lucratif (art. 60 CC)",
