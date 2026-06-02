@@ -300,6 +300,131 @@ def build_summary(hist, metrics, detail_rows, benefs) -> dict:
         if r["poste"] == "Répartition" and r["annee"] == last_rep_year
     )
 
+    # Benchmarks externes (sources rigoureuses, voir METHODOLOGY.md)
+    benchmarks = {
+        # Comparaisons sectorielles
+        "tpg_budget_2025_M": 325,             # ge.ch PL 13519, https://en.wikipedia.org/wiki/Geneva_Public_Transport
+        "salaire_median_annuel_CHF": 84288,   # OFS 2024 (7024 CHF/mois × 12)
+
+        # Loteries suisses (chiffres 2024)
+        "loteries_suisses_2024_M": 850,        # CSJA fdkg.ch
+        "loro_part_loteries_suisses_pct": round(last_benefice / 850 * 100, 1),
+        "swisslos_2024_PBJ_M": 812.1,          # swisslos.ch/fr 2024
+        "swisslos_2024_benefice_M": 595.7,     # swisslos.ch
+        "swisslos_2024_cantons_M": 540.0,      # swisslos.ch
+        "swisslos_2024_sport_national_M": 55.7, # swisslos.ch
+        "swisslos_pop_couverte_M": 7.0,        # ~ 78% de la pop suisse (alémanique + Tessin)
+        "loro_pop_couverte_M": 2.023,          # Romandie
+
+        # PBJ Suisse 2023 (GREA)
+        "casinos_suisses_PBJ_2023_M": 909,
+        "loteries_suisses_PBJ_2023_M": 1158,
+        "swisslos_PBJ_2023_M": 738,
+        "loro_PBJ_2023_M": 420,
+        "casinos_online_2023_M": 285,
+        "casinos_online_2019_M": 23.5,
+
+        # Loro 2024 (rapport annuel ra.loro.ch)
+        "loro_2024_PBJ_M": 438.2,
+        "loro_2024_benefice_M": 258.2,
+        "loro_2024_couts_operationnels_M": 193.5,  # 41% du PBJ (REISO 2026)
+        "loro_2024_couts_pct_PBJ": 41,
+        "loro_2024_collaborateurs": 241,
+        "loro_2024_EPT": 218,
+        "loro_2024_pts_vente": 2400,
+        "loro_2024_emplois_indirects": 1300,
+        "loro_2024_millionnaires_CH": 35,
+        "loro_2024_jackpot_record_M": 64.585,    # Swiss Loto 2 mars 2024
+        "loro_2024_prevention_M": 2.2,
+        "loro_2024_prevention_pct": 0.5,
+
+        # Loro 2025
+        "loro_2025_PBJ_M": 429.8,
+        "loro_2025_benefice_M": 252.0,
+        "loro_2025_pts_vente": 2350,
+        "loro_2025_collaborateurs": 221,
+        "loro_2025_EPT": 203,
+        "loro_2025_prevention_M": 2.1,
+
+        # Démographie
+        "population_romande_2024": 2_023_000,
+        "population_suisse_2024": 9_048_900,
+        "pop_jeu_risque_pct": 4.3,             # GREA 2022
+
+        # Prévention nationale
+        "prevention_jeu_excessif_M": 5.8,      # GREA 2023 (toutes loteries CH)
+        "prevention_part_pbj_pct": 0.3,
+
+        # Sport national
+        "sport_national_total_2023_2026_M": 75,   # CSJA 2022
+        "sport_national_loro_part_M": 19.5,        # 2024
+        "sport_national_swisslos_part_M": 55.5,    # 2024
+        "sport_national_loro_pct_benefice": 7.6,
+        "sport_national_swisslos_pct_benefice": 9.4,
+
+        # Acteurs culturels
+        "cineforom_budget_annuel_M": 10,
+        "cinema_suisse_total_M": 85,
+        "tour_de_romandie_budget_M": 5,         # rts.ch 2026
+        "tour_de_romandie_loro_pct_estime": 15,  # estimation : 750k sur 5M
+
+        # Décisions cantonales : prélèvement Conseil d'État sur la part résiduelle (REISO 2026)
+        "prelevement_cantonal_pct": {
+            "VD": 25, "JU": 17, "NE": 10, "FR": 9, "GE": 0, "VS": 0,
+        },
+        # Clé répartition entre sport et autres
+        "cle_sport_pct": 15,
+        "cle_autres_pct": 85,
+
+        # Projets soutenus
+        "projets_soutenus_loro": 5000,
+        "projets_soutenus_swisslos": 21000,
+
+        # Organes de répartition (loro.ch — soutien-loro.ch)
+        "nb_organes_repartition": 15,
+    }
+
+    # Bénéficiaires « emblématiques » avec dépendance Loro mesurée (sourcée)
+    # Sources : REISO 2026, Tribune de Genève, rapports annuels des associations
+    cas_dependance = [
+        {
+            "nom": "FriSanté",
+            "canton": "FR",
+            "categorie": "Santé / EMS",
+            "subvention_loro_2024_CHF": 176000,
+            "budget_total_2024_CHF": 550000,
+            "part_loro_pct": 32,
+            "source": "FriSanté, Rapport d'activité 2024",
+        },
+        {
+            "nom": "La Lanterne magique",
+            "canton": "NE",
+            "categorie": "Culture / Jeunesse",
+            "subvention_loro_2023_CHF": 678000,
+            "budget_total_2023_CHF": 2500000,
+            "part_loro_pct": 27,
+            "source": "Lanterne magique, Rapport 2023-2024",
+        },
+        {
+            "nom": "Tour de Romandie",
+            "canton": "Romandie",
+            "categorie": "Sport",
+            "subvention_loro_2024_CHF": 750000,   # estimation : ~15% des 5M
+            "budget_total_2024_CHF": 5000000,
+            "part_loro_pct": 15,
+            "source": "RTS, avril 2026 (budget 5M); estimation Loro 15%",
+        },
+        {
+            "nom": "Fond. Cinéforom",
+            "canton": "Romandie",
+            "categorie": "Culture / Cinéma",
+            "subvention_loro_2024_CHF": 3000000,   # estimation
+            "budget_total_2024_CHF": 10000000,
+            "part_loro_pct": 30,
+            "source": "cineforom.ch (budget 10M); estimation Loro 30%",
+        },
+    ]
+
     return {
         "derniere_annee": last_year,
         "premiere_annee": 1938,
@@ -312,6 +437,8 @@ def build_summary(hist, metrics, detail_rows, benefs) -> dict:
         "annee_redistribue": last_rep_year,
         "nb_beneficiaires_nommes": len(benefs),
         "nb_annees_couvertes": len(set(r["annee"] for r in hist if r["benefice_M"])),
+        "benchmarks": benchmarks,
+        "cas_dependance": cas_dependance,
     }
 
 
