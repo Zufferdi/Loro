@@ -3177,7 +3177,8 @@ function initLoroVsSwisslos() {
   const centerX = margin.left + w / 2;
 
   const svg = container.append('svg')
-    .attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('height', 'auto')
+    .attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('height', H)
+    .style('height', 'auto')
     .style('display', 'block');
 
   // ============== HEADERS ==============
@@ -3380,15 +3381,13 @@ function initEditorialTimeline() {
    ACTE IX — BRB 2025 EXPLORER (~600 bénéficiaires)
    ============================================================ */
 
-const CANTON_COLORS = {
-  VD: '#e44d4d', FR: '#5b8def', VS: '#f0a93d',
-  NE: '#7c5bc7', GE: '#2ea08a', JU: '#c97b3a', R: '#888'
-};
-const CANTON_LABELS = {
+// Couleur pour Suisse romande "R" (utils.js a déjà VD/FR/VS/NE/GE/JU)
+const CANTON_COLORS_R = '#888';
+const BRB_CANTON_LABELS = {
   VD: 'Vaud', FR: 'Fribourg', VS: 'Valais',
   NE: 'Neuchâtel', GE: 'Genève', JU: 'Jura', R: 'Suisse rom.'
 };
-const SECTEUR_COLORS = {
+const BRB_SECTEUR_COLORS = {
   'Action sociale': '#e44d4d',
   'Jeunesse': '#5b8def',
   'Santé': '#2ea08a',
@@ -3400,7 +3399,13 @@ const SECTEUR_COLORS = {
   'Sport': '#3d5a80'
 };
 
-function fmtCHF(v) {
+// Helper local : couleur canton (gère "R" + 6 cantons)
+function brbCantonColor(c) {
+  return c === 'R' ? CANTON_COLORS_R : (CANTON_COLORS[c] || '#888');
+}
+
+// Format CHF compact pour BRB (utils.js a fmtCHF qui ajoute ' CHF' — ici on veut sans)
+function brbFmtAmt(v) {
   if (v >= 1000000) return (v / 1000000).toFixed(2).replace(/\.?0+$/, '') + ' M';
   if (v >= 1000) return (v / 1000).toFixed(0) + ' k';
   return String(v);
@@ -3423,13 +3428,13 @@ function initBrbExplorer() {
       <div class="brb-filter-group">
         <span class="brb-filter-label">Canton :</span>
         <div class="brb-pills" data-filter="canton">
-          ${allCantons.map(c => `<button class="brb-pill active" data-value="${c}" style="--pill-color:${CANTON_COLORS[c]}">${CANTON_LABELS[c]}</button>`).join('')}
+          ${allCantons.map(c => `<button class="brb-pill active" data-value="${c}" style="--pill-color:${brbCantonColor(c)}">${BRB_CANTON_LABELS[c]}</button>`).join('')}
         </div>
       </div>
       <div class="brb-filter-group">
         <span class="brb-filter-label">Secteur :</span>
         <div class="brb-pills" data-filter="secteur">
-          ${allSecteurs.map(s => `<button class="brb-pill active" data-value="${s}" style="--pill-color:${SECTEUR_COLORS[s] || '#888'}">${s}</button>`).join('')}
+          ${allSecteurs.map(s => `<button class="brb-pill active" data-value="${s}" style="--pill-color:${BRB_SECTEUR_COLORS[s] || '#888'}">${s}</button>`).join('')}
         </div>
       </div>
       <div class="brb-filter-group">
@@ -3472,14 +3477,14 @@ function initBrbExplorer() {
 
     // Stats
     const totalEur = filtered.reduce((s, e) => s + e.montant_CHF, 0);
-    statsEl.innerHTML = `<strong>${filtered.length}</strong> bénéficiaire${filtered.length > 1 ? 's' : ''} · <strong>${fmtCHF(totalEur)} CHF</strong> au total`;
+    statsEl.innerHTML = `<strong>${filtered.length}</strong> bénéficiaire${filtered.length > 1 ? 's' : ''} · <strong>${brbFmtAmt(totalEur)} CHF</strong> au total`;
 
     // Render (capped at 200 for perf)
     const SHOWN = Math.min(filtered.length, 200);
     const max = filtered.length > 0 ? filtered[0].montant_CHF : 1;
     const rows = filtered.slice(0, SHOWN).map(e => {
       const widthPct = Math.max(1, (e.montant_CHF / max) * 100);
-      const cColor = CANTON_COLORS[e.canton] || '#888';
+      const cColor = brbCantonColor(e.canton) || '#888';
       return `
         <div class="brb-row">
           <div class="brb-row-bar" style="background: ${cColor}; width: ${widthPct}%;"></div>
@@ -3555,7 +3560,7 @@ function initBrbLongtail() {
 
   // Axes
   const xAxis = d3.axisBottom(x).ticks(8).tickFormat(d3.format('d'));
-  const yAxis = d3.axisLeft(y).tickFormat(d => fmtCHF(d) + '');
+  const yAxis = d3.axisLeft(y).tickFormat(d => brbFmtAmt(d) + '');
   g.append('g').attr('transform', `translate(0,${innerH})`).call(xAxis)
     .selectAll('text').style('fill', '#888').style('font-size', '12px');
   g.append('g').call(yAxis)
@@ -3578,7 +3583,7 @@ function initBrbLongtail() {
     .style('stroke', '#999').style('stroke-dasharray', '3,3').style('opacity', 0.5);
   g.append('text').attr('x', innerW - 4).attr('y', y(medianAmount) - 4)
     .attr('text-anchor', 'end').style('font-size', '11px').style('fill', '#666')
-    .text(`médiane ≈ ${fmtCHF(medianAmount)} CHF`);
+    .text(`médiane ≈ ${brbFmtAmt(medianAmount)} CHF`);
 
   // Points
   const tooltip = d3.select(container).append('div').attr('class', 'brb-tooltip');
@@ -3586,7 +3591,7 @@ function initBrbLongtail() {
     .attr('cx', (_, i) => x(i + 1))
     .attr('cy', d => y(d.montant_CHF))
     .attr('r', d => d.montant_CHF >= 500000 ? 5 : d.montant_CHF >= 50000 ? 3 : 2)
-    .attr('fill', d => CANTON_COLORS[d.canton] || '#888')
+    .attr('fill', d => brbCantonColor(d.canton) || '#888')
     .attr('opacity', 0.7)
     .style('cursor', 'pointer')
     .on('mouseenter', function(event, d) {
@@ -3595,7 +3600,7 @@ function initBrbLongtail() {
       tooltip.style('display', 'block')
         .style('left', (event.clientX - rect.left + 12) + 'px')
         .style('top', (event.clientY - rect.top + 12) + 'px')
-        .html(`<strong>${d.nom}</strong>${d.ville ? `<br><span style="opacity:.7">${d.ville}</span>` : ''}<br><span style="color:${CANTON_COLORS[d.canton]}">●</span> ${CANTON_LABELS[d.canton]} · ${d.secteur}<br><strong>${d.montant_CHF.toLocaleString('fr-CH').replace(/,/g, "'")} CHF</strong>`);
+        .html(`<strong>${d.nom}</strong>${d.ville ? `<br><span style="opacity:.7">${d.ville}</span>` : ''}<br><span style="color:${brbCantonColor(d.canton)}">●</span> ${BRB_CANTON_LABELS[d.canton]} · ${d.secteur}<br><strong>${d.montant_CHF.toLocaleString('fr-CH').replace(/,/g, "'")} CHF</strong>`);
     })
     .on('mouseleave', function(event, d) {
       d3.select(this).attr('opacity', 0.7).attr('r', d.montant_CHF >= 500000 ? 5 : d.montant_CHF >= 50000 ? 3 : 2);
@@ -3607,7 +3612,7 @@ function initBrbLongtail() {
     const cx = x(i + 1), cy = y(d.montant_CHF);
     g.append('text').attr('x', cx + 10).attr('y', cy + i * 14 + 5)
       .style('font-size', '11px').style('fill', '#333')
-      .text(`${d.nom.length > 40 ? d.nom.slice(0, 38) + '…' : d.nom} (${fmtCHF(d.montant_CHF)} CHF)`);
+      .text(`${d.nom.length > 40 ? d.nom.slice(0, 38) + '…' : d.nom} (${brbFmtAmt(d.montant_CHF)} CHF)`);
   });
 
   // Legend (canton colors)
@@ -3615,8 +3620,8 @@ function initBrbLongtail() {
   const cantons = ['VD', 'FR', 'VS', 'NE', 'GE', 'JU'];
   cantons.forEach((c, i) => {
     const lg = legendG.append('g').attr('transform', `translate(${i * 70}, 0)`);
-    lg.append('circle').attr('r', 5).attr('fill', CANTON_COLORS[c]);
-    lg.append('text').attr('x', 10).attr('y', 4).style('font-size', '12px').style('fill', '#666').text(CANTON_LABELS[c]);
+    lg.append('circle').attr('r', 5).attr('fill', brbCantonColor(c));
+    lg.append('text').attr('x', 10).attr('y', 4).style('font-size', '12px').style('fill', '#666').text(BRB_CANTON_LABELS[c]);
   });
 }
 
@@ -3691,21 +3696,21 @@ function initBrbGeomap() {
     .attr('cx', d => projection([d.lng, d.lat])[0])
     .attr('cy', d => projection([d.lng, d.lat])[1])
     .attr('r', d => r(d.total))
-    .attr('fill', d => CANTON_COLORS[d.canton] || '#888')
+    .attr('fill', d => brbCantonColor(d.canton) || '#888')
     .attr('fill-opacity', 0.45)
-    .attr('stroke', d => CANTON_COLORS[d.canton] || '#888')
+    .attr('stroke', d => brbCantonColor(d.canton) || '#888')
     .attr('stroke-width', 1.2)
     .style('cursor', 'pointer')
     .on('mouseenter', function(event, d) {
       d3.select(this).attr('fill-opacity', 0.8);
       const rect = container.getBoundingClientRect();
       const topList = d.entries.slice(0, 5).map(e =>
-        `<div style="font-size:11px;margin-top:3px"><span style="opacity:.6">${e.secteur}</span> · ${e.nom.length > 45 ? e.nom.slice(0, 43) + '…' : e.nom} <strong>${fmtCHF(e.montant_CHF)} CHF</strong></div>`
+        `<div style="font-size:11px;margin-top:3px"><span style="opacity:.6">${e.secteur}</span> · ${e.nom.length > 45 ? e.nom.slice(0, 43) + '…' : e.nom} <strong>${brbFmtAmt(e.montant_CHF)} CHF</strong></div>`
       ).join('');
       tooltip.style('display', 'block')
         .style('left', (event.clientX - rect.left + 12) + 'px')
         .style('top', (event.clientY - rect.top + 12) + 'px')
-        .html(`<strong>${d.ville}</strong> · ${CANTON_LABELS[d.canton]}<br><strong>${fmtCHF(d.total)} CHF</strong> · ${d.count} bénéficiaire${d.count > 1 ? 's' : ''}<hr style="margin:6px 0; border-color: rgba(0,0,0,.1)">${topList}${d.entries.length > 5 ? `<div style="font-size:10px;opacity:.5;margin-top:4px">+ ${d.entries.length - 5} autres</div>` : ''}`);
+        .html(`<strong>${d.ville}</strong> · ${BRB_CANTON_LABELS[d.canton]}<br><strong>${brbFmtAmt(d.total)} CHF</strong> · ${d.count} bénéficiaire${d.count > 1 ? 's' : ''}<hr style="margin:6px 0; border-color: rgba(0,0,0,.1)">${topList}${d.entries.length > 5 ? `<div style="font-size:10px;opacity:.5;margin-top:4px">+ ${d.entries.length - 5} autres</div>` : ''}`);
     })
     .on('mouseleave', function() {
       d3.select(this).attr('fill-opacity', 0.45);
@@ -3733,14 +3738,14 @@ function initBrbGeomap() {
     legend.append('circle').attr('cx', i * 70 + 15).attr('cy', 20).attr('r', r(s))
       .attr('fill', '#888').attr('fill-opacity', 0.3).attr('stroke', '#666');
     legend.append('text').attr('x', i * 70 + 15).attr('y', 55).attr('text-anchor', 'middle')
-      .style('font-size', '10px').style('fill', '#666').text(fmtCHF(s) + ' CHF');
+      .style('font-size', '10px').style('fill', '#666').text(brbFmtAmt(s) + ' CHF');
   });
 
   // Canton legend top right
   const cantonLegend = svg.append('g').attr('transform', `translate(${W - 130}, 20)`);
   ['VD', 'FR', 'VS', 'NE', 'GE', 'JU'].forEach((c, i) => {
     const cg = cantonLegend.append('g').attr('transform', `translate(0, ${i * 18})`);
-    cg.append('circle').attr('r', 6).attr('fill', CANTON_COLORS[c]).attr('fill-opacity', 0.5).attr('stroke', CANTON_COLORS[c]);
-    cg.append('text').attr('x', 14).attr('y', 4).style('font-size', '11px').style('fill', '#444').text(CANTON_LABELS[c]);
+    cg.append('circle').attr('r', 6).attr('fill', brbCantonColor(c)).attr('fill-opacity', 0.5).attr('stroke', brbCantonColor(c));
+    cg.append('text').attr('x', 14).attr('y', 4).style('font-size', '11px').style('fill', '#444').text(BRB_CANTON_LABELS[c]);
   });
 }
