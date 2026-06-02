@@ -76,39 +76,63 @@
   "cas_dependance": [
     {
       "nom": "FriSanté",
+      "categorie": "Santé/social",
       "canton": "FR",
-      "categorie": "Santé / EMS",
+      "part_loro_pct": 32,
       "subvention_loro_2024_CHF": 176000,
       "budget_total_2024_CHF": 550000,
-      "part_loro_pct": 32,
-      "source": "FriSanté, Rapport d'activité 2024"
-    },
-    {
-      "nom": "La Lanterne magique",
-      "canton": "NE",
-      "categorie": "Culture / Jeunesse",
-      "subvention_loro_2023_CHF": 678000,
-      "budget_total_2023_CHF": 2500000,
-      "part_loro_pct": 27,
-      "source": "Lanterne magique, Rapport 2023-2024"
-    },
-    {
-      "nom": "Tour de Romandie",
-      "canton": "Romandie",
-      "categorie": "Sport",
-      "subvention_loro_2024_CHF": 750000,
-      "budget_total_2024_CHF": 5000000,
-      "part_loro_pct": 15,
-      "source": "RTS, avril 2026 (budget 5M); estimation Loro 15%"
+      "source": "REISO (jan. 2026) — Sanchez, La Loterie Romande source de financement clé",
+      "narratif": "Association d'accueil et de prévention pour personnes en situation de précarité sanitaire à Fribourg."
     },
     {
       "nom": "Fond. Cinéforom",
+      "categorie": "Cinéma romand",
       "canton": "Romandie",
-      "categorie": "Culture / Cinéma",
+      "part_loro_pct": 30,
       "subvention_loro_2024_CHF": 3000000,
       "budget_total_2024_CHF": 10000000,
-      "part_loro_pct": 30,
-      "source": "cineforom.ch (budget 10M); estimation Loro 30%"
+      "source": "CultureEnJeu nº53 — interview Gérard Ruey, secrétaire général ; rapports annuels Cinéforom",
+      "narratif": "Fondation romande pour le cinéma. 10 M annuels, dont une grosse part Loro depuis sa création en 2011."
+    },
+    {
+      "nom": "La Lanterne magique",
+      "categorie": "Cinéma jeunesse",
+      "canton": "Romandie",
+      "part_loro_pct": 27,
+      "subvention_loro_2024_CHF": 678000,
+      "budget_total_2024_CHF": 2500000,
+      "source": "REISO (jan. 2026) — chiffres 2023-2024",
+      "narratif": "Club de cinéma pour enfants présent dans toute la Suisse romande. Sans la Loro, l'activité ne tient pas."
+    },
+    {
+      "nom": "Théâtre des Osses",
+      "categorie": "Théâtre",
+      "canton": "FR",
+      "part_loro_pct": 20,
+      "subvention_loro_2024_CHF": 460000,
+      "budget_total_2024_CHF": 2300000,
+      "source": "CultureEnJeu nº53 (mars 2017) — témoignage Marie-Claude Jenny, directrice administrative",
+      "narratif": "Centre dramatique fribourgeois à Givisiez. « Le don de la Loro est toujours proche des 20 % du budget global. Il est essentiel au fonctionnement de notre théâtre. »"
+    },
+    {
+      "nom": "La Plage des Six Pompes",
+      "categorie": "Festival arts de la rue",
+      "canton": "NE",
+      "part_loro_pct": 15,
+      "subvention_loro_2024_CHF": 250000,
+      "budget_total_2024_CHF": 1700000,
+      "source": "CultureEnJeu nº53 (mars 2017) — témoignage Nina Vogt, présidente",
+      "narratif": "Festival international d'arts de rue à La Chaux-de-Fonds (100'000 spectateurs/an, 220 représentations, libre d'accès). « La perte de ce soutien serait catastrophique. »"
+    },
+    {
+      "nom": "Tour de Romandie",
+      "categorie": "Sport · cyclisme",
+      "canton": "Romandie",
+      "part_loro_pct": 15,
+      "subvention_loro_2024_CHF": 750000,
+      "budget_total_2024_CHF": 5000000,
+      "source": "Estimation médiatique (Le Matin, Le Temps) — soutien Loro estimé via FSES",
+      "narratif": "Cyclisme professionnel. Soutien indirect via le Fonds suisse pour l'encouragement du sport (FSES)."
     }
   ]
 }
