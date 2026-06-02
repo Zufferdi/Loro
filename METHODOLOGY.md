@@ -353,3 +353,50 @@ La courbe complète apparaît donc dès le chargement, et le scrollytelling vien
 ### Outils de parsing
 
 `brb/parser_v4.py` et `brb/export_full.py` sont versionnés dans le dépôt pour permettre de re-parser une future édition du BRB (BRB 2026 le moment venu) avec un effort minimal.
+
+## v13.1 (juin 2026) — Bugfix critique : redéclaration JavaScript
+
+### Le bug
+
+Le déploiement v13 (livré le 02.06.2026) ne rendait correctement **aucune visualisation** sur le site en production. Diagnostic via Playwright headless :
+
+```
+[PAGE_ERROR] Identifier 'CANTON_COLORS' has already been declared
+```
+
+Cause : au début du bloc Acte IX (ligne 3383 de `docs/js/app.js`), j'avais redéclaré au top-level `const CANTON_COLORS`, `const CANTON_LABELS`, `const SECTEUR_COLORS` et `function fmtCHF`. Ces 4 identifiants existaient déjà dans `docs/js/utils.js` (chargé avant `app.js`).
+
+**Pourquoi tout est cassé, pas juste l'Acte IX** : en JavaScript classique en `<script>`, **tout le fichier est parsé avant de s'exécuter**. Un `SyntaxError` au top-level empêche l'exécution complète d'`app.js`. Aucune init (timeline, comparisons, scrolly, BRB explorer, etc.) ne s'exécute. Sur le PDF que l'utilisateur m'a envoyé : 30 visualisations vides, juste les blocs HTML statiques s'affichent.
+
+### La méthodologie de check était insuffisante
+
+`node --check js/app.js` validait correctement la syntaxe **par fichier**. Mais il ne pouvait pas détecter une collision **inter-fichiers** au scope global. Pour la suite, le check doit toujours inclure un test navigateur réel (Playwright + capture des `pageerror`), pas juste `node --check`.
+
+### La correction
+
+Renommage des helpers spécifiques au BRB pour éviter toute collision future :
+
+- `CANTON_COLORS` → suppression (réutilise celui de `utils.js`) + helper `brbCantonColor(c)` qui ajoute la clé `'R'` (Suisse romande) absente de `utils.js`
+- `CANTON_LABELS` → `BRB_CANTON_LABELS` (inclut `'R'`)
+- `SECTEUR_COLORS` → `BRB_SECTEUR_COLORS` (clés courtes : 'Action sociale', 'Sport', etc., différentes de `SECTOR_COLORS` dans `utils.js` qui utilise les clés longues du PDF)
+- `fmtCHF` → `brbFmtAmt(v)` (renvoie `"X M"` / `"X k"` sans suffixe « CHF », alors que `fmtCHF` de `utils.js` renvoie `"X CHF"`)
+
+18 lignes d'usage mises à jour dans la zone BRB (initBrbExplorer, initBrbLongtail, initBrbGeomap).
+
+### Sous-titres HTML désynchronisés
+
+Pendant que j'y étais : les sous-titres HTML des trois viz de l'Acte IX disaient toujours « 594 bénéficiaires » alors que le dataset v13 en a 5172. Correction :
+
+- `<h3>594 bénéficiaires…</h3>` → `<h3>5'172 bénéficiaires…</h3>`
+- `<h3>Distribution des 594 montants…</h3>` → `<h3>Distribution des 5'172 montants…</h3>`
+- Sous-titre carte : « 250+ villes » → « communes de Suisse romande » (la couverture géocodée est de 27% sur les 5172 entrées, 129 villes uniques)
+- Footer carte : « 87% des entrées » → « environ 27% »
+
+### Validation finale
+
+Test Playwright avec D3 chargé localement → **22/28 viz rendent** (les 6 « vides » sont en réalité des viz HTML non-SVG : tables, listes, cards — qui s'affichent normalement). Aucune erreur JavaScript. BRB explorer affiche bien « 5'172 bénéficiaires · 211.27 M CHF au total » et les 200 premières rows.
+
+### Fichiers touchés en v13.1
+
+- `docs/js/app.js` : remplacement des 4 déclarations dupliquées + 18 lignes d'usage
+- `docs/index.html` : 3 sous-titres + 1 footer mis à jour
