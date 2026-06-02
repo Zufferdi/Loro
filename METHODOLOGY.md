@@ -154,19 +154,49 @@ documentées dans ce fichier.
 - Le poste « Marketing/Publicité+Promo » côté Swisslos additionne `Werbung` (13,1 M) + `Promotionen` (7,1 M) + `Sponsoring/Kooperation` (5,3 M). Pour Loro, c'est la ligne `Marketing, publicité et communication` (15,4 M).
 - Les périodes comptables sont identiques (1er janvier - 31 décembre).
 
-## v9 (juin 2026) — Multi-canton + l'histoire du Jura
+## v10 (juin 2026) — Audit UX/UI & couverture historique 2018-2025
 
-### Nouvelles données
-- **`dependance_cantons.json`** : 29 cas notables de bénéficiaires Loro, ventilés par les 6 cantons romands (FR : 7, VD : 6, JU : 6, GE : 4, VS : 3, NE : 3). Cumul des sources : BRB 2024 et 2025, rapport délégation jurassienne 2024, communiqué Conseil d'État NE (20.5.2025), articles La Liberté / Frapp.ch / Le Matin, REISO (janvier 2026).
-- **`jura_histoire.json`** : série annuelle 1979-2025 (28 points disponibles) des montants Loro reçus par le canton du Jura depuis son entrée dans la Confédération. Cumul estimé : 102 M CHF. Source : Loterie Romande, onglet « Historique », colonne JU.
+### Bugs UX corrigés
 
-### Nouvelles visualisations
-- **Section « Quelle part du budget vient de la Loro ? »** : enrichie avec un onglet par canton romand (VD / GE / FR / VS / NE / JU). Chaque onglet affiche les bénéficiaires notables avec montant, secteur, narratif et lorsque documenté le % du budget annuel couvert par la Loro.
-- **Acte VIII bis — « le plus jeune »** : nouvelle section narrative sur le Jura. Graphique en aire 1979-2025, jalons annotés (entrée 1979 à 145'786 CHF, premier million 1995, Théâtre du Jura 2016 avec +2 M exceptionnels, record 2025 à 8,7 M, et l'arrivée de Moutier au 1.1.2026).
+**Parallax Acte I (timeline scrolly)**
+- Le `clipPath` initialisé à `width:0` cachait toute la courbe quand scrollama ne se déclenchait pas (problème de timing au load)
+- Remplacé par `stroke-dasharray` + `stroke-dashoffset` (technique standard, plus robuste)
+- Ajout d'un fallback `IntersectionObserver` natif si scrollama indisponible
+- ViewBox élargi à 1100×620, layout grid passé à 1.5fr/1fr
+- Signal visuel renforcé : grand chiffre flottant qui s'actualise à chaque step, pulse animé sur le point actif
 
-### Sources ajoutées
-- [BRB 2024 (PDF, ~80 pages)](https://ra.loro.ch/documents/BRB2024.pdf)
-- [BRB 2025 (PDF)](https://soutien-loro.ch/sites/default/files/2026-05/BRB2025.pdf)
-- [Rapport délégation jurassienne 2024 (PDF)](https://soutien-loro.ch/sites/default/files/2025-06/Rapport%20d'activit%C3%A9%202024%20-%20D%C3%A9l%C3%A9gation%20jurassienne.pdf)
-- [Communiqué Conseil d'État NE (20.5.2025)](https://www.ne.ch/medias/Pages/250520-benefices-loterie-romande-neuchatel.aspx)
-- [REISO — Sanchez (janvier 2026)](https://www.reiso.org/articles/themes/pratiques/15008-la-loterie-romande-source-de-financement-cle)
+**Mêmes corrections appliquées à initMixScrolly** (Acte IV)
+- ViewBox élargi 1100×620, légende plus grande
+- Fallback IntersectionObserver
+- Steps qui réagissent au scroll up
+
+**Hardcodés 2024 éliminés**
+- Tilegram, RealMap, Governance, MixByCanton, Anomaly : tous lisent dynamiquement la dernière année disponible
+
+### Nouvelles fonctionnalités
+
+**Décomposition par année 2018-2025** (Intermède)
+- Refonte complète de `initAnomaly` : montre maintenant le bénéfice annuel 2018-2025 (waterfall)
+- Cliquez sur n'importe quelle barre pour ouvrir la décomposition narrative
+- 8 années documentées avec les facteurs explicatifs sourcés des éditos directeur :
+  - 2018 : vote LJAr (73 % de oui le 10.6.2018)
+  - 2019 : 1ère année LJAr, opérateurs étrangers bloqués (+14 M), record PBJ
+  - 2020 : Covid, fermeture cafés-restaurants (-22 M), Loterie électronique -30 %
+  - 2021 : rebond, CORJA en vigueur, soutien cafés-restaurants 3,3 M
+  - 2022 : Coupe du Monde Qatar, PBJ record 435 M, mais -15,6 M sur placements
+  - 2023 : transition, investissement IT +34 %, lancement EuroDreams
+  - 2024 : record (jackpot Swiss Loto 64,6 M, Euro + JO)
+  - 2025 : reflux (-6,2 M, cycles EuroMillions courts)
+
+**Treemap secteur animé** (Acte V)
+- Slider 2013-2025 + bouton « Animer » (transitions D3 fluides entre années)
+- La métamorphose de la culture (de 28 % à 38 % du total) devient visible
+- Bind par nom de secteur : couleurs et positions se réorganisent en douceur
+
+**Carte Suisse romande : bouton Animer ajouté** (Acte III)
+- Comme dans la version tilegram stylisé, le bouton parcourt 2013-2025
+
+**Acte VI : texte corrigé**
+- "120 bénéficiaires" → "~5'000 projets soutenus chaque année"
+- L'échantillon de 120 noms est présenté comme tel : sélection visible tirée des BRB et rapports annuels
+- Liens directs vers la liste complète sur soutien-loro.ch
