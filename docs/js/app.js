@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     DATA.benefsVD   = await loadJSON('beneficiaires_top_vd.json');
     DATA.swisslos   = await loadJSON('swisslos.json');
     DATA.editorial  = await loadJSON('editorial_loro.json');
+    DATA.dependance = await loadJSON('dependance_cantons.json');
+    DATA.juraHistoire = await loadJSON('jura_histoire.json');
 
     initHero();
     initComparisons();
@@ -43,6 +45,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     initTopBenefsVD();
     initLoroVsSwisslos();
     initEditorialTimeline();
+    initJuraHistoire();
     initJourney();
     initSankey();
     initReadingProgress();
@@ -2110,101 +2113,319 @@ function initDependency() {
   if (container.empty()) return;
   container.html('');
 
-  const cas = DATA.summary.cas_dependance;
-  if (!cas || !cas.length) return;
+  // ============================================================
+  // PARTIE 1 — DOT PLOT : cas documentés avec % du budget
+  // ============================================================
+  const cas = (DATA.summary.cas_dependance || []).slice()
+    .sort((a, b) => (b.part_loro_pct || 0) - (a.part_loro_pct || 0));
 
-  const W = container.node().clientWidth, H = 60 + cas.length * 70;
-  const margin = { top: 30, right: 100, bottom: 50, left: 200 };
+  if (cas.length) {
+    container.append('h4').attr('class', 'dep-section-title')
+      .text('Quand la Loro pèse beaucoup dans un budget');
+    container.append('p').attr('class', 'dep-section-sub')
+      .text("Cas documentés où la subvention représente une part majeure du budget annuel. La transparence sur ce ratio reste rare — ce sont des exemples révélés par les associations elles-mêmes (témoignages dans CultureEnJeu) ou par la presse spécialisée (REISO, La Liberté). Au-delà de 25 %, on parle de dépendance critique.");
+
+    const W = Math.max(700, container.node().clientWidth);
+    const rowH = 70;
+    const H = 60 + cas.length * rowH;
+    const margin = { top: 36, right: 110, bottom: 50, left: 260 };
+    const w = W - margin.left - margin.right, h = H - margin.top - margin.bottom;
+
+    const svg = container.append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('height', H);
+    const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+    const x = d3.scaleLinear().domain([0, 100]).range([0, w]);
+    const y = d3.scaleBand().domain(cas.map(c => c.nom)).range([0, h]).padding(0.25);
+
+    // Bande critique
+    g.append('rect')
+      .attr('x', x(25)).attr('y', 0)
+      .attr('width', x(100) - x(25)).attr('height', h)
+      .attr('fill', '#c8102e').attr('opacity', 0.05);
+    g.append('text')
+      .attr('x', x(25) + 6).attr('y', -10)
+      .attr('font-size', 11).attr('fill', '#c8102e').attr('font-style', 'italic')
+      .text('Zone de dépendance critique (≥ 25 %)');
+
+    g.append('g').attr('transform', `translate(0,${h})`)
+      .call(d3.axisBottom(x).tickFormat(d => d + ' %').ticks(6))
+      .call(s => s.selectAll('text').attr('fill', inkSoftColor()).style('font-size', '11px'))
+      .call(s => s.selectAll('path,line').attr('stroke', ruleColor()));
+
+    cas.forEach((c, i) => {
+      const yCenter = y(c.nom) + y.bandwidth() / 2;
+      // Track
+      g.append('rect')
+        .attr('x', 0).attr('y', yCenter - 14)
+        .attr('width', x(100)).attr('height', 28)
+        .attr('fill', isDark() ? '#2a2823' : '#e8e5da');
+      // Bar
+      g.append('rect')
+        .attr('x', 0).attr('y', yCenter - 14)
+        .attr('width', 0).attr('height', 28)
+        .attr('fill', CANTON_COLORS[c.canton] || '#c8102e')
+        .transition().delay(i * 150).duration(800)
+        .attr('width', x(c.part_loro_pct));
+
+      // Label nom
+      g.append('text')
+        .attr('x', -14).attr('y', yCenter - 4)
+        .attr('text-anchor', 'end')
+        .attr('font-size', 14).attr('font-weight', 600).attr('fill', inkColor())
+        .text(c.nom);
+      g.append('text')
+        .attr('x', -14).attr('y', yCenter + 12)
+        .attr('text-anchor', 'end')
+        .attr('font-size', 11).attr('fill', inkSoftColor())
+        .text(`${c.categorie}${c.canton ? ' · ' + c.canton : ''}`);
+
+      // %
+      g.append('text')
+        .attr('x', x(c.part_loro_pct) + 10).attr('y', yCenter)
+        .attr('dy', '0.35em')
+        .attr('font-family', 'Source Serif Pro, serif')
+        .attr('font-size', 19).attr('font-weight', 600).attr('fill', CANTON_COLORS[c.canton] || '#c8102e')
+        .style('opacity', 0)
+        .text(c.part_loro_pct + ' %')
+        .transition().delay(i * 150 + 600).duration(400).style('opacity', 1);
+
+      // Overlay tooltip
+      const subv = c.subvention_loro_2024_CHF || c.subvention_loro_2023_CHF;
+      const budget = c.budget_total_2024_CHF || c.budget_total_2023_CHF;
+      g.append('rect')
+        .attr('x', 0).attr('y', yCenter - 14)
+        .attr('width', x(100)).attr('height', 28)
+        .attr('fill', 'transparent').style('cursor', 'help')
+        .on('mouseover', ev => {
+          showTip(`<div class="t-title">${c.nom}</div>
+                   <div>Subvention Loro : ${fmtCompact(subv)} CHF</div>
+                   <div>Budget total : ${fmtCompact(budget)} CHF</div>
+                   <div class="t-meta">→ Loro = ${c.part_loro_pct} % du budget</div>
+                   ${c.narratif ? `<div class="t-meta" style="margin-top:6px;font-style:italic">${c.narratif}</div>` : ''}
+                   <div class="t-meta" style="margin-top:4px">Source : ${c.source}</div>`, ev.clientX, ev.clientY);
+        }).on('mouseout', hideTip);
+    });
+
+    svg.append('text')
+      .attr('x', margin.left).attr('y', H - 14)
+      .attr('font-size', 11).attr('fill', inkMuteColor()).attr('font-style', 'italic')
+      .text("Sources : REISO 2026, CultureEnJeu nº53, rapports d'activité des associations, rapports annuels Cinéforom.");
+  }
+
+  // ============================================================
+  // PARTIE 2 — BÉNÉFICIAIRES PAR CANTON, AVEC FILTRE D'ANNÉE
+  // ============================================================
+  if (!DATA.dependance || !DATA.dependance.cas) return;
+
+  container.append('h4').attr('class', 'dep-section-title').style('margin-top', '54px')
+    .text("Les visages de l'argent — bénéficiaires par canton");
+  container.append('p').attr('class', 'dep-section-sub')
+    .text("Pour chaque canton romand, les institutions notables identifiées dans les BRB 2024 et 2025. Cliquez sur un canton pour explorer. Le filtre d'année permet de voir l'évolution entre 2024 et 2025 (et les organes répartiteurs).");
+
+  // Year filter (tabs)
+  const yearBar = container.append('div').attr('class', 'dep-year-tabs')
+    .style('display', 'flex').style('gap', '8px').style('margin-bottom', '14px')
+    .style('align-items', 'center').style('flex-wrap', 'wrap');
+  yearBar.append('span').text('Année :')
+    .style('font-size', '11px').style('color', 'var(--ink-mute)')
+    .style('letter-spacing', '0.14em').style('text-transform', 'uppercase');
+
+  const allEntries = [];
+  Object.entries(DATA.dependance.cas).forEach(([code, list]) => {
+    list.forEach(item => allEntries.push({ ...item, canton: code }));
+  });
+  const allYears = [...new Set(allEntries.map(e => e.annee).filter(Boolean))].sort();
+  let activeYear = 'all';
+
+  // Canton tabs row
+  const tabsRow = container.append('div').attr('class', 'canton-tabs');
+  const contentDiv = container.append('div').attr('class', 'canton-content');
+
+  const cantonOrder = ['VD', 'FR', 'GE', 'VS', 'NE', 'JU'];
+  let activeCanton = 'VD';
+
+  function renderCanton(code, yr) {
+    contentDiv.html('');
+    let items = (DATA.dependance.cas[code] || []).slice();
+    if (yr !== 'all') items = items.filter(i => i.annee === yr);
+    items.sort((a, b) => (b.montant_CHF || 0) - (a.montant_CHF || 0));
+
+    if (!items.length) {
+      contentDiv.append('p').style('color', 'var(--ink-mute)').style('font-style', 'italic')
+        .text(`Aucun bénéficiaire répertorié pour ${CANTON_NAMES[code]} en ${yr === 'all' ? 'toute année' : yr}.`);
+      return;
+    }
+
+    const summary = contentDiv.append('div').attr('class', 'canton-summary')
+      .style('margin-bottom', '14px').style('font-size', '13px').style('color', 'var(--ink-soft)')
+      .html(`<strong>${items.length}</strong> bénéficiaire${items.length > 1 ? 's' : ''} listé${items.length > 1 ? 's' : ''} pour <strong>${CANTON_NAMES[code]}</strong>${yr !== 'all' ? ' en ' + yr : ''}. Total visible : <strong>${fmtCompact(items.reduce((s, x) => s + (x.montant_CHF || 0), 0))} CHF</strong>.`);
+
+    const grid = contentDiv.append('div').attr('class', 'benef-grid');
+    items.forEach(item => {
+      const card = grid.append('div').attr('class', 'benef-card')
+        .style('border-left', `4px solid ${CANTON_COLORS[code] || '#888'}`);
+
+      const top = card.append('div').attr('class', 'benef-card-top');
+      top.append('div').attr('class', 'benef-name').text(item.nom);
+      if (item.montant_CHF) {
+        top.append('div').attr('class', 'benef-amount')
+          .style('color', CANTON_COLORS[code])
+          .text(item.montant_CHF >= 1e6 ? `${(item.montant_CHF / 1e6).toFixed(2)} M` : `${(item.montant_CHF / 1000).toFixed(0)} k`);
+      }
+      card.append('div').attr('class', 'benef-meta')
+        .text(`${item.secteur}${item.annee ? ' · ' + item.annee : ''}`);
+      if (item.narratif) {
+        card.append('div').attr('class', 'benef-narratif').text(item.narratif);
+      }
+      if (item.pct_budget) {
+        card.append('div').attr('class', 'benef-pct')
+          .html(`<strong>${item.pct_budget} %</strong> du budget annuel`);
+      }
+      if (item.source) {
+        card.append('div').attr('class', 'benef-source').text(`Source : ${item.source}`);
+      }
+    });
+  }
+
+  // Year buttons
+  ['all', ...allYears].forEach(yr => {
+    yearBar.append('button')
+      .attr('class', 'btn-year' + (yr === activeYear ? ' active' : ''))
+      .text(yr === 'all' ? 'Toutes' : yr)
+      .on('click', function() {
+        activeYear = yr;
+        yearBar.selectAll('.btn-year').classed('active', false);
+        d3.select(this).classed('active', true);
+        renderCanton(activeCanton, activeYear);
+      });
+  });
+
+  // Canton tabs
+  cantonOrder.forEach(code => {
+    tabsRow.append('button')
+      .attr('class', 'canton-tab' + (code === activeCanton ? ' active' : ''))
+      .style('border-color', CANTON_COLORS[code] || '#888')
+      .html(`<span class="tab-canton-code">${code}</span> <span class="tab-canton-name">${CANTON_NAMES[code]}</span>`)
+      .on('click', function() {
+        activeCanton = code;
+        tabsRow.selectAll('.canton-tab').classed('active', false);
+        d3.select(this).classed('active', true);
+        renderCanton(activeCanton, activeYear);
+      });
+  });
+
+  renderCanton(activeCanton, activeYear);
+}
+
+/* ============================================================
+   ACTE VIII bis — Le Jura, 47 ans dans la Confédération
+   Aire chronologique 1979 → 2025 avec annotations narratives
+   ============================================================ */
+function initJuraHistoire() {
+  const container = d3.select('#viz-jura-histoire');
+  if (container.empty() || !DATA.juraHistoire) return;
+  container.html('');
+
+  const serie = (DATA.juraHistoire.serie || []).slice().sort((a, b) => a.annee - b.annee);
+  const jalons = DATA.juraHistoire.jalons || [];
+  if (!serie.length) return;
+
+  const W = 1100, H = 520;
+  const margin = { top: 70, right: 30, bottom: 60, left: 70 };
   const w = W - margin.left - margin.right, h = H - margin.top - margin.bottom;
 
-  const svg = container.append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width','100%').attr('height', H);
+  const svg = container.append('svg').attr('viewBox', `0 0 ${W} ${H}`)
+    .attr('preserveAspectRatio', 'xMidYMid meet')
+    .attr('width', '100%').attr('height', 'auto').style('max-height', '70vh');
   const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
-  // Axe X = % du budget
-  const x = d3.scaleLinear().domain([0, 100]).range([0, w]);
-  const y = d3.scaleBand().domain(cas.map(c => c.nom)).range([0, h]).padding(0.3);
+  const x = d3.scaleLinear().domain([1978, 2027]).range([0, w]);
+  const y = d3.scaleLinear().domain([0, d3.max(serie, d => d.recu_CHF) * 1.15]).range([h, 0]);
 
-  // Bande "zone critique" >= 25 %
-  g.append('rect')
-    .attr('x', x(25)).attr('y', 0)
-    .attr('width', x(100) - x(25)).attr('height', h)
-    .attr('fill', '#c8102e').attr('opacity', 0.06);
-  g.append('text')
-    .attr('x', x(25) + 6).attr('y', -8)
-    .attr('font-size', 11).attr('fill', '#c8102e').attr('font-style', 'italic')
-    .text('Zone de dépendance critique (≥ 25 %)');
+  // Reference at 1 M
+  g.append('line').attr('x1', 0).attr('x2', w).attr('y1', y(1e6)).attr('y2', y(1e6))
+    .attr('stroke', '#999').attr('stroke-dasharray', '2,4').attr('opacity', 0.55);
+  g.append('text').attr('x', w - 4).attr('y', y(1e6) - 4)
+    .attr('text-anchor', 'end').attr('font-size', 10).attr('fill', inkMuteColor())
+    .text('1 M CHF');
 
-  // Axe X
+  // Axes
   g.append('g').attr('transform', `translate(0,${h})`)
-    .call(d3.axisBottom(x).tickFormat(d => d + ' %').ticks(6))
+    .call(d3.axisBottom(x).tickFormat(d3.format('d')).ticks(10))
+    .call(s => s.selectAll('text').attr('fill', inkSoftColor()).style('font-size', '11px'))
+    .call(s => s.selectAll('path,line').attr('stroke', ruleColor()));
+  g.append('g')
+    .call(d3.axisLeft(y).tickFormat(d => d >= 1e6 ? `${d / 1e6} M` : d >= 1000 ? `${d / 1000}k` : d).ticks(6))
     .call(s => s.selectAll('text').attr('fill', inkSoftColor()).style('font-size', '11px'))
     .call(s => s.selectAll('path,line').attr('stroke', ruleColor()));
 
-  // Pour chaque cas, une rangée
-  cas.forEach((c, i) => {
-    const yCenter = y(c.nom) + y.bandwidth() / 2;
+  // Aire
+  const area = d3.area()
+    .x(d => x(d.annee)).y0(h).y1(d => y(d.recu_CHF))
+    .curve(d3.curveMonotoneX);
+  g.append('path').datum(serie)
+    .attr('fill', CANTON_COLORS.JU || '#c97b3a').attr('opacity', 0.2).attr('d', area);
 
-    // Ligne "budget total" = barre claire
-    g.append('rect')
-      .attr('x', 0).attr('y', yCenter - 12)
-      .attr('width', x(100)).attr('height', 24)
-      .attr('fill', isDark() ? '#322f27' : '#e0ddd2');
+  // Ligne
+  const line = d3.line()
+    .x(d => x(d.annee)).y(d => y(d.recu_CHF))
+    .curve(d3.curveMonotoneX);
+  g.append('path').datum(serie)
+    .attr('fill', 'none').attr('stroke', CANTON_COLORS.JU || '#c97b3a').attr('stroke-width', 2.5)
+    .attr('d', line);
 
-    // Ligne "part Loro" = barre rouge
-    g.append('rect')
-      .attr('x', 0).attr('y', yCenter - 12)
-      .attr('width', 0).attr('height', 24)
-      .attr('fill', '#c8102e')
-      .transition().delay(i * 200).duration(900)
-      .attr('width', x(c.part_loro_pct));
+  // Points
+  g.selectAll('circle.jura-pt').data(serie).enter().append('circle')
+    .attr('class', 'jura-pt')
+    .attr('cx', d => x(d.annee)).attr('cy', d => y(d.recu_CHF))
+    .attr('r', 3.5).attr('fill', CANTON_COLORS.JU || '#c97b3a').style('cursor', 'help')
+    .on('mouseover', (ev, d) => {
+      showTip(`<div class="t-title">${d.annee}</div>
+               <div>${d.recu_CHF >= 1e6 ? CHF1.format(d.recu_CHF / 1e6) + ' M CHF' : Math.round(d.recu_CHF / 1000) + 'k CHF'}</div>`,
+        ev.clientX, ev.clientY);
+    }).on('mouseout', hideTip);
 
-    // Étiquette à gauche
-    g.append('text')
-      .attr('x', -12).attr('y', yCenter)
-      .attr('dy', '0.35em').attr('text-anchor', 'end')
-      .attr('font-size', 14).attr('font-weight', 500).attr('fill', inkColor())
-      .text(c.nom);
-    g.append('text')
-      .attr('x', -12).attr('y', yCenter + 16)
-      .attr('text-anchor', 'end')
-      .attr('font-size', 11).attr('fill', inkSoftColor())
-      .text(c.categorie + (c.canton ? ` · ${c.canton}` : ''));
+  // Titre / sous-titre
+  svg.append('text').attr('x', margin.left).attr('y', 28)
+    .attr('font-family', 'Source Serif Pro, serif').attr('font-size', 20)
+    .attr('font-weight', 600).attr('fill', CANTON_COLORS.JU || '#c97b3a')
+    .text("Le Jura : 47 ans dans la Confédération, autant d'années Loro");
+  svg.append('text').attr('x', margin.left).attr('y', 50)
+    .attr('font-size', 12).attr('fill', inkSoftColor())
+    .text(`De 145'786 CHF en 1979 à ${CHF1.format(serie[serie.length - 1].recu_CHF / 1e6)} M en 2025 — cumul estimé : ~${CHF1.format(DATA.juraHistoire._meta.cumul_estime_CHF / 1e6)} M CHF`);
 
-    // Étiquette à droite : %
-    g.append('text')
-      .attr('x', x(c.part_loro_pct) + 8).attr('y', yCenter)
-      .attr('dy', '0.35em')
-      .attr('font-family', 'Source Serif Pro, serif')
-      .attr('font-size', 18).attr('font-weight', 500).attr('fill', '#c8102e')
-      .style('opacity', 0)
-      .text(c.part_loro_pct + ' %')
-      .transition().delay(i * 200 + 700).duration(400).style('opacity', 1);
-
-    // Sous-info : subvention et budget
-    const subv = c.subvention_loro_2024_CHF || c.subvention_loro_2023_CHF;
-    const budget = c.budget_total_2024_CHF || c.budget_total_2023_CHF;
-    g.append('title').text(`${fmtCompact(subv)} CHF sur un budget total de ${fmtCompact(budget)}`);
-
-    // Bulle interactive
-    g.append('rect')
-      .attr('x', 0).attr('y', yCenter - 12)
-      .attr('width', x(100)).attr('height', 24)
-      .attr('fill', 'transparent')
-      .style('cursor', 'help')
-      .on('mouseover', ev => {
-        showTip(`<div class="t-title">${c.nom}</div>
-                 <div>Subvention Loro : ${fmtCompact(subv)} CHF</div>
-                 <div>Budget total : ${fmtCompact(budget)} CHF</div>
-                 <div class="t-meta">→ Loro = ${c.part_loro_pct} % du budget</div>
-                 <div class="t-meta">${c.source}</div>`, ev.clientX, ev.clientY);
-      }).on('mouseout', hideTip);
+  // Annotations
+  const annotations = [
+    { annee: 1979, text: "1ʳᵉ année dans la Confédération · 145'786 CHF", dx: 40, dy: -32 },
+    { annee: 1995, text: "Premier million franchi (2,5 M)", dx: 20, dy: -42 },
+    { annee: 2016, text: "+2 M exceptionnels — création Théâtre du Jura", dx: -10, dy: -70 },
+    { annee: 2025, text: "Record : 8,7 M · prélèvement passe à 20 %", dx: -240, dy: -30 },
+  ];
+  annotations.forEach(a => {
+    const d = serie.find(s => s.annee === a.annee);
+    if (!d) return;
+    const cx = x(a.annee), cy = y(d.recu_CHF);
+    g.append('line')
+      .attr('x1', cx).attr('y1', cy)
+      .attr('x2', cx + a.dx).attr('y2', cy + a.dy)
+      .attr('stroke', inkSoftColor()).attr('stroke-width', 0.8).attr('stroke-dasharray', '2,2');
+    g.append('text').attr('x', cx + a.dx).attr('y', cy + a.dy - 4)
+      .attr('text-anchor', 'start')
+      .attr('font-size', 11).attr('fill', inkColor()).attr('font-weight', 500)
+      .text(a.text);
+    // Cercle d'emphase
+    g.append('circle').attr('cx', cx).attr('cy', cy)
+      .attr('r', 7).attr('fill', 'none')
+      .attr('stroke', CANTON_COLORS.JU || '#c97b3a').attr('stroke-width', 2);
   });
 
-  // Note pédagogique
-  svg.append('text')
-    .attr('x', margin.left).attr('y', H - 12)
-    .attr('font-size', 11).attr('fill', inkMuteColor()).attr('font-style', 'italic')
-    .text('Sources : REISO 2026, rapports d\'activité des associations, estimations Loro.');
+  // Annotation Moutier 2026
+  const x2026 = x(2026);
+  g.append('line').attr('x1', x2026).attr('x2', x2026)
+    .attr('y1', 0).attr('y2', h).attr('stroke', '#888').attr('stroke-dasharray', '4,3');
+  g.append('text').attr('x', x2026 - 6).attr('y', 14).attr('text-anchor', 'end')
+    .attr('font-size', 10).attr('fill', inkMuteColor()).attr('font-style', 'italic')
+    .text('1.1.2026 : Moutier rejoint le Jura');
 }
 
 /* ============================================================
