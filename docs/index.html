@@ -905,13 +905,13 @@
 <section class="standalone">
   <div class="col-wide">
     <div class="viz-card">
-      <h3 class="viz-title">594 bénéficiaires &mdash; chacun nommé, chacun localisé</h3>
+      <h3 class="viz-title">5'172 bénéficiaires &mdash; chacun nommé, chacun localisé</h3>
       <p class="viz-subtitle">
-        Recherchez une association, filtrez par canton ou secteur. Échantillon stratégique du BRB 2025 (~5'000 entrées total).
+        Recherchez une association, filtrez par canton ou secteur. Extraction complète du BRB 2025 publié par la Loterie Romande.
       </p>
       <div id="viz-explorer" class="viz"></div>
       <div class="viz-footer">
-        <span>Source : Répartition des bénéfices 2025 (Loterie Romande). Toutes les entrées ≥ 100 kCHF pour VD/FR/VS exhaustives ; échantillon documenté pour NE/GE/JU.</span>
+        <span>Source : Répartition des bénéfices 2025 (Loterie Romande). 5'172 attributions parsées depuis le PDF officiel de 118 pages, couvrant les 6 cantons romands et les projets intercantonaux.</span>
       </div>
     </div>
   </div>
@@ -933,11 +933,11 @@
 <section class="standalone">
   <div class="col-wide">
     <div class="viz-card">
-      <h3 class="viz-title">Distribution des 594 montants — échelle logarithmique</h3>
+      <h3 class="viz-title">Distribution des 5'172 montants — échelle logarithmique</h3>
       <p class="viz-subtitle">Chaque point = un bénéficiaire. Survolez pour voir le détail.</p>
       <div id="viz-longtail" class="viz"></div>
       <div class="viz-footer">
-        <span>Tri par montant décroissant. Le top 1&nbsp;% (6 bénéficiaires) capte ~24&nbsp;% du total observé ; la médiane se situe autour de 90 kCHF dans cet échantillon biaisé vers les grands montants.</span>
+        <span>Tri par montant décroissant. Le top 1&nbsp;% (≈ 50 bénéficiaires) capte une part disproportionnée du total ; la médiane est autour de 8'250 CHF — la vraie longue traîne se révèle.</span>
       </div>
     </div>
   </div>
@@ -958,11 +958,11 @@
 <section class="standalone">
   <div class="col-wide">
     <div class="viz-card">
-      <h3 class="viz-title">Carte des bénéficiaires &mdash; 250+ villes de Suisse romande</h3>
+      <h3 class="viz-title">Carte des bénéficiaires — communes de Suisse romande</h3>
       <p class="viz-subtitle">Couleur = canton, taille = total reçu en 2025.</p>
       <div id="viz-geomap" class="viz"></div>
       <div class="viz-footer">
-        <span>Coordonnées géographiques rattachées à 87&nbsp;% des entrées de l'inventaire. Les bénéficiaires sans ville identifiable (organes répartiteurs cantonaux, fondations privées) sont exclus de la carte.</span>
+        <span>Coordonnées géographiques rattachées à environ 27&nbsp;% des entrées de l'inventaire. Les bénéficiaires sans ville identifiable (organes répartiteurs cantonaux, fondations sans adresse) sont exclus de la carte.</span>
       </div>
     </div>
   </div>
