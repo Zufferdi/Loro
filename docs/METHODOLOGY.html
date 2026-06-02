@@ -178,24 +178,112 @@ documentées dans ce fichier.</p>
 <li>Le poste « Marketing/Publicité+Promo » côté Swisslos additionne <code>Werbung</code> (13,1 M) + <code>Promotionen</code> (7,1 M) + <code>Sponsoring/Kooperation</code> (5,3 M). Pour Loro, c'est la ligne <code>Marketing, publicité et communication</code> (15,4 M).</li>
 <li>Les périodes comptables sont identiques (1er janvier - 31 décembre).</li>
 </ul>
-<h2 id="v9-juin-2026-multi-canton-lhistoire-du-jura">v9 (juin 2026) — Multi-canton + l'histoire du Jura</h2>
-<h3 id="nouvelles-donnees">Nouvelles données</h3>
+<h2 id="v10-juin-2026-audit-uxui-couverture-historique-2018-2025">v10 (juin 2026) — Audit UX/UI &amp; couverture historique 2018-2025</h2>
+<h3 id="bugs-ux-corriges">Bugs UX corrigés</h3>
+<p><strong>Parallax Acte I (timeline scrolly)</strong>
+- Le <code>clipPath</code> initialisé à <code>width:0</code> cachait toute la courbe quand scrollama ne se déclenchait pas (problème de timing au load)
+- Remplacé par <code>stroke-dasharray</code> + <code>stroke-dashoffset</code> (technique standard, plus robuste)
+- Ajout d'un fallback <code>IntersectionObserver</code> natif si scrollama indisponible
+- ViewBox élargi à 1100×620, layout grid passé à 1.5fr/1fr
+- Signal visuel renforcé : grand chiffre flottant qui s'actualise à chaque step, pulse animé sur le point actif</p>
+<p><strong>Mêmes corrections appliquées à initMixScrolly</strong> (Acte IV)
+- ViewBox élargi 1100×620, légende plus grande
+- Fallback IntersectionObserver
+- Steps qui réagissent au scroll up</p>
+<p><strong>Hardcodés 2024 éliminés</strong>
+- Tilegram, RealMap, Governance, MixByCanton, Anomaly : tous lisent dynamiquement la dernière année disponible</p>
+<h3 id="nouvelles-fonctionnalites">Nouvelles fonctionnalités</h3>
+<p><strong>Décomposition par année 2018-2025</strong> (Intermède)
+- Refonte complète de <code>initAnomaly</code> : montre maintenant le bénéfice annuel 2018-2025 (waterfall)
+- Cliquez sur n'importe quelle barre pour ouvrir la décomposition narrative
+- 8 années documentées avec les facteurs explicatifs sourcés des éditos directeur :
+  - 2018 : vote LJAr (73 % de oui le 10.6.2018)
+  - 2019 : 1ère année LJAr, opérateurs étrangers bloqués (+14 M), record PBJ
+  - 2020 : Covid, fermeture cafés-restaurants (-22 M), Loterie électronique -30 %
+  - 2021 : rebond, CORJA en vigueur, soutien cafés-restaurants 3,3 M
+  - 2022 : Coupe du Monde Qatar, PBJ record 435 M, mais -15,6 M sur placements
+  - 2023 : transition, investissement IT +34 %, lancement EuroDreams
+  - 2024 : record (jackpot Swiss Loto 64,6 M, Euro + JO)
+  - 2025 : reflux (-6,2 M, cycles EuroMillions courts)</p>
+<p><strong>Treemap secteur animé</strong> (Acte V)
+- Slider 2013-2025 + bouton « Animer » (transitions D3 fluides entre années)
+- La métamorphose de la culture (de 28 % à 38 % du total) devient visible
+- Bind par nom de secteur : couleurs et positions se réorganisent en douceur</p>
+<p><strong>Carte Suisse romande : bouton Animer ajouté</strong> (Acte III)
+- Comme dans la version tilegram stylisé, le bouton parcourt 2013-2025</p>
+<p><strong>Acte VI : texte corrigé</strong>
+- "120 bénéficiaires" → "~5'000 projets soutenus chaque année"
+- L'échantillon de 120 noms est présenté comme tel : sélection visible tirée des BRB et rapports annuels
+- Liens directs vers la liste complète sur soutien-loro.ch</p>
+<h2 id="v11-juin-2026-extension-multi-canton-cas-de-dependance-documentes">v11 (juin 2026) — Extension multi-canton + cas de dépendance documentés</h2>
+<h3 id="cas-de-dependance-enrichis-acte-viii-dot-plot">Cas de dépendance enrichis (Acte VIII / dot plot)</h3>
+<p>Ajout de 3 nouveaux cas documentés au <code>summary.cas_dependance</code>, désormais 6 cas, sourcés :</p>
+<table>
+<thead>
+<tr>
+<th>Bénéficiaire</th>
+<th>Canton</th>
+<th>% budget</th>
+<th>Source primaire</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FriSanté</td>
+<td>FR</td>
+<td>32 %</td>
+<td>REISO (jan. 2026)</td>
+</tr>
+<tr>
+<td>Fond. Cinéforom</td>
+<td>Romandie</td>
+<td>30 %</td>
+<td>CultureEnJeu nº53 (G. Ruey)</td>
+</tr>
+<tr>
+<td>La Lanterne magique</td>
+<td>Romandie</td>
+<td>27 %</td>
+<td>REISO (jan. 2026)</td>
+</tr>
+<tr>
+<td>Théâtre des Osses</td>
+<td>FR</td>
+<td>20 %</td>
+<td>CultureEnJeu nº53 (M.-C. Jenny)</td>
+</tr>
+<tr>
+<td>La Plage des Six Pompes</td>
+<td>NE</td>
+<td>15 %</td>
+<td>CultureEnJeu nº53 (N. Vogt)</td>
+</tr>
+<tr>
+<td>Tour de Romandie</td>
+<td>Romandie</td>
+<td>15 %</td>
+<td>Estimations presse</td>
+</tr>
+</tbody>
+</table>
+<p>Les témoignages directs des directrices et présidentes d'associations (publiés dans CultureEnJeu nº53 en mars 2017) restent pertinents : « Le don de la Loro est toujours proche des 20 % du budget global » (Théâtre des Osses) ; « La perte de ce soutien serait catastrophique » (La Plage des Six Pompes).</p>
+<h3 id="beneficiaires-par-canton-donnees-2024-et-2025-dependance_cantonsjson">Bénéficiaires par canton — données 2024 et 2025 (<code>dependance_cantons.json</code>)</h3>
+<p>43 bénéficiaires notables identifiés et structurés sur les 6 cantons romands :</p>
 <ul>
-<li><strong><code>dependance_cantons.json</code></strong> : 29 cas notables de bénéficiaires Loro, ventilés par les 6 cantons romands (FR : 7, VD : 6, JU : 6, GE : 4, VS : 3, NE : 3). Cumul des sources : BRB 2024 et 2025, rapport délégation jurassienne 2024, communiqué Conseil d'État NE (20.5.2025), articles La Liberté / Frapp.ch / Le Matin, REISO (janvier 2026).</li>
-<li><strong><code>jura_histoire.json</code></strong> : série annuelle 1979-2025 (28 points disponibles) des montants Loro reçus par le canton du Jura depuis son entrée dans la Confédération. Cumul estimé : 102 M CHF. Source : Loterie Romande, onglet « Historique », colonne JU.</li>
+<li><strong>VD</strong> (9) : FASC 46 M (2025), Fonds sport 12,8 M (2025), Théâtre du Jorat 2,5 M, FAJE 1,5 M, Opéra Lausanne, Béjart, OCL, Hermitage, Vidy</li>
+<li><strong>FR</strong> (12) : Equilibre &amp; Nuithonie 970k (2025), Ligue cancer 778k, FIFF 660k, Pro Senectute, La Tuile, Banc Public, Théâtre des Osses, OC Fribourgeois, Nouvel Opéra, Fri-Son, Belluard</li>
+<li><strong>VS</strong> (4) : Verbier Festival 975k, Pierre Gianadda 625k, total délégation 36 M (2025), Fonds sport 5,4 M (2025)</li>
+<li><strong>NE</strong> (4) : ORNE 13,7 M (2025, 485 dossiers), LoRo-Sport 2,25 M, FAC 1,57 M, La Plage des Six Pompes</li>
+<li><strong>GE</strong> (5) : Fonds genevois 14,15 M (1er trim. 2026, 170 institutions), OSR, Cinéforom, Fond. Hainard, ASL</li>
+<li><strong>JU</strong> (9) : total 7,5 M (2025), Plan climat 624k, Jura Tourisme 300k, Bien vieillir 280k, Musique des Lumières 175k, Crescendo 150k, Musée jurassien, Théâtre du Jura, Dritchino</li>
 </ul>
-<h3 id="nouvelles-visualisations">Nouvelles visualisations</h3>
+<p>Chaque entrée comporte : nom, secteur, montant, année, narratif explicatif, source précise (presse romande ou rapport d'activité officiel).</p>
+<h3 id="nouvelle-ux">Nouvelle UX</h3>
 <ul>
-<li><strong>Section « Quelle part du budget vient de la Loro ? »</strong> : enrichie avec un onglet par canton romand (VD / GE / FR / VS / NE / JU). Chaque onglet affiche les bénéficiaires notables avec montant, secteur, narratif et lorsque documenté le % du budget annuel couvert par la Loro.</li>
-<li><strong>Acte VIII bis — « le plus jeune »</strong> : nouvelle section narrative sur le Jura. Graphique en aire 1979-2025, jalons annotés (entrée 1979 à 145'786 CHF, premier million 1995, Théâtre du Jura 2016 avec +2 M exceptionnels, record 2025 à 8,7 M, et l'arrivée de Moutier au 1.1.2026).</li>
-</ul>
-<h3 id="sources-ajoutees">Sources ajoutées</h3>
-<ul>
-<li><a href="https://ra.loro.ch/documents/BRB2024.pdf">BRB 2024 (PDF, ~80 pages)</a></li>
-<li><a href="https://soutien-loro.ch/sites/default/files/2026-05/BRB2025.pdf">BRB 2025 (PDF)</a></li>
-<li><a href="https://soutien-loro.ch/sites/default/files/2025-06/Rapport%20d'activit%C3%A9%202024%20-%20D%C3%A9l%C3%A9gation%20jurassienne.pdf">Rapport délégation jurassienne 2024 (PDF)</a></li>
-<li><a href="https://www.ne.ch/medias/Pages/250520-benefices-loterie-romande-neuchatel.aspx">Communiqué Conseil d'État NE (20.5.2025)</a></li>
-<li><a href="https://www.reiso.org/articles/themes/pratiques/15008-la-loterie-romande-source-de-financement-cle">REISO — Sanchez (janvier 2026)</a></li>
+<li><strong>Sélecteur d'année</strong> dans la section bénéficiaires par canton : « Toutes », « 2024 », « 2025 », « 2026 ». Permet de comparer l'évolution.</li>
+<li><strong>Onglets canton</strong> : VD / FR / GE / VS / NE / JU avec compteur de bénéficiaires et somme visible</li>
+<li><strong>Hover détaillé</strong> : narratif + source pour chaque cas</li>
+<li><strong>Bordure colorée</strong> : chaque canton a sa couleur identitaire propagée dans les cartes</li>
 </ul>
 </article>
 
