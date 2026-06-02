@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "description": "Cas de dépendance financière à la Loterie Romande, par canton. Pourcentages du budget annuel lorsqu'ils sont documentés ; sinon, montants en CHF.",
+    "sources": [
+      "REISO, Jérémie Sanchez (janvier 2026)",
+      "BRB 2024 Loterie Romande",
+      "Rapport délégation jurassienne 2024",
+      "Communiqué Conseil d'État NE (20.5.2025)",
+      "La Liberté (17.2.2025) ; Frapp.ch (22.5.2025)",
+      "Le Matin (20.12.2022)"
+    ],
+    "annees_couvertes": "2021-2024"
+  },
+  "cas": {
+    "FR": [
+      {"nom": "FriSanté", "canton": "FR", "secteur": "Santé et handicap", "montant_CHF": 176000, "annee": 2024, "pct_budget": 32, "narratif": "32 % de son budget annuel provient de la Loro.", "source": "REISO"},
+      {"nom": "La Lanterne magique", "canton": "FR", "secteur": "Jeunesse et éducation", "montant_CHF": 678000, "annee": 2024, "pct_budget": 27, "narratif": "27 % de son budget 2023-2024 provient de la Loro.", "source": "REISO"},
+      {"nom": "Fondation Equilibre et Nuithonie", "canton": "FR", "secteur": "Culture", "montant_CHF": 970000, "annee": 2024, "pct_budget": null, "narratif": "Plus gros bénéficiaire culturel du canton.", "source": "La Liberté"},
+      {"nom": "Ligue fribourgeoise contre le cancer", "canton": "FR", "secteur": "Santé et handicap", "montant_CHF": 778000, "annee": 2024, "pct_budget": null, "narratif": "Finance conseil, accompagnement, prévention.", "source": "Frapp.ch"},
+      {"nom": "FIFF — Festival du film de Fribourg", "canton": "FR", "secteur": "Culture", "montant_CHF": 660000, "annee": 2024, "pct_budget": null, "narratif": "Rayonnement international du festival.", "source": "La Liberté"},
+      {"nom": "La Tuile", "canton": "FR", "secteur": "Action sociale", "montant_CHF": 540000, "annee": 2024, "pct_budget": null, "narratif": "Abri d'urgence pour personnes sans-abri.", "source": "La Liberté"},
+      {"nom": "Pro Senectute Fribourg", "canton": "FR", "secteur": "Action sociale", "montant_CHF": 600000, "annee": 2024, "pct_budget": null, "narratif": "Soutien aux aîné·es du canton.", "source": "Frapp.ch"}
+    ],
+    "VD": [
+      {"nom": "Théâtre de Vidy", "canton": "VD", "secteur": "Culture", "montant_CHF": 650000, "annee": 2024, "pct_budget": null, "narratif": "Scène internationale de création contemporaine.", "source": "BRB 2024"},
+      {"nom": "Fondation pour l'accueil de jour des enfants (FAJE)", "canton": "VD", "secteur": "Jeunesse et éducation", "montant_CHF": 1500000, "annee": 2024, "pct_budget": null, "narratif": "Accueil de jour vaudois.", "source": "BRB 2024"},
+      {"nom": "Théâtre du Jorat", "canton": "VD", "secteur": "Culture", "montant_CHF": 2500000, "annee": 2024, "pct_budget": null, "narratif": "Mézières, l'un des plus gros soutiens vaudois.", "source": "BRB 2024"},
+      {"nom": "Fondation Plateforme 10", "canton": "VD", "secteur": "Culture", "montant_CHF": 600000, "annee": 2024, "pct_budget": null, "narratif": "Trois musées en un site, Lausanne.", "source": "BRB 2024"},
+      {"nom": "Béjart Ballet Lausanne", "canton": "VD", "secteur": "Culture", "montant_CHF": 450000, "annee": 2024, "pct_budget": null, "narratif": "Création artistique chorégraphique.", "source": "BRB 2024"},
+      {"nom": "Opéra de Lausanne", "canton": "VD", "secteur": "Culture", "montant_CHF": 550000, "annee": 2024, "pct_budget": null, "narratif": "Saison artistique et acquisitions.", "source": "BRB 2024"}
+    ],
+    "GE": [
+      {"nom": "Orchestre de la Suisse Romande (OSR)", "canton": "GE", "secteur": "Culture", "montant_CHF": 100000, "annee": 2024, "pct_budget": null, "narratif": "Saison artistique, basé à Genève.", "source": "BRB 2024"},
+      {"nom": "Cinéforom — Fondation romande pour le cinéma", "canton": "GE", "secteur": "Culture", "montant_CHF": 700000, "annee": 2024, "pct_budget": null, "narratif": "Principal fonds romand de production cinématographique, basé à Genève.", "source": "BRB 2024"},
+      {"nom": "Association les 6 Toits", "canton": "GE", "secteur": "Action sociale", "montant_CHF": 600000, "annee": 2021, "pct_budget": null, "narratif": "Hébergement d'urgence genevois.", "source": "Le Matin"},
+      {"nom": "Association pour la Sauvegarde du Léman (ASL)", "canton": "GE", "secteur": "Environnement", "montant_CHF": 40000, "annee": 2024, "pct_budget": null, "narratif": "Protection écologique du lac.", "source": "BRB 2024"}
+    ],
+    "VS": [
+      {"nom": "Verbier Festival", "canton": "VS", "secteur": "Culture", "montant_CHF": 975000, "annee": 2021, "pct_budget": null, "narratif": "Plus gros bénéficiaire valaisan, festival de musique classique.", "source": "Le Matin"},
+      {"nom": "Fondation Pierre Gianadda", "canton": "VS", "secteur": "Culture", "montant_CHF": 625000, "annee": 2021, "pct_budget": null, "narratif": "Musée et expositions internationales, Martigny.", "source": "Le Matin"},
+      {"nom": "Caserne de la Garde Suisse au Vatican", "canton": "VS", "secteur": "Conservation du patrimoine", "montant_CHF": null, "annee": 2023, "pct_budget": null, "narratif": "Le seul canton à affecter des fonds Loro à la rénovation. Une pétition (4'100 signatures) a contesté cette décision.", "source": "Le Matin"}
+    ],
+    "NE": [
+      {"nom": "ORNE — Commission neuchâteloise de répartition", "canton": "NE", "secteur": "(multi-secteur)", "montant_CHF": 13698000, "annee": 2024, "pct_budget": null, "narratif": "475 dossiers examinés, 385 retenus en 2024.", "source": "ne.ch"},
+      {"nom": "LoRo-Sport Neuchâtel", "canton": "NE", "secteur": "Sport", "montant_CHF": 2245520, "annee": 2024, "pct_budget": null, "narratif": "440 demandes, 355 retenues.", "source": "ne.ch"},
+      {"nom": "FAC LoRo — Conseil d'État", "canton": "NE", "secteur": "Promotion, tourisme", "montant_CHF": 890000, "annee": 2024, "pct_budget": null, "narratif": "10 % du bénéfice, soutien aux manifestations touristiques.", "source": "ne.ch"}
+    ],
+    "JU": [
+      {"nom": "Musée jurassien d'art et d'histoire (Bible Moutier-Grandval)", "canton": "JU", "secteur": "Culture", "montant_CHF": 400000, "annee": 2024, "pct_budget": null, "narratif": "Exposition exceptionnelle 2024, plus gros octroi délégation.", "source": "Délégation jurassienne 2024"},
+      {"nom": "Jura Tourisme", "canton": "JU", "secteur": "Promotion, tourisme", "montant_CHF": 300000, "annee": 2024, "pct_budget": null, "narratif": "Activités de promotion 2024.", "source": "Délégation jurassienne 2024"},
+      {"nom": "Fondation pour le Théâtre du Jura", "canton": "JU", "secteur": "Culture", "montant_CHF": 245000, "annee": 2024, "pct_budget": null, "narratif": "Saison 2024-2025. Le théâtre a reçu 2 M en 2016 pour sa création.", "source": "Délégation jurassienne 2024"},
+      {"nom": "Association Musique des Lumières", "canton": "JU", "secteur": "Culture", "montant_CHF": 200000, "annee": 2024, "pct_budget": null, "narratif": "Saison 2024-2025.", "source": "Délégation jurassienne 2024"},
+      {"nom": "Fondation Delémont'BD", "canton": "JU", "secteur": "Culture", "montant_CHF": 110000, "annee": 2024, "pct_budget": null, "narratif": "Festival 2024, via budget intercantonal CPOR.", "source": "Délégation jurassienne 2024"},
+      {"nom": "Fondation Nez Rouge Suisse, Porrentruy", "canton": "JU", "secteur": "Action sociale", "montant_CHF": 100000, "annee": 2024, "pct_budget": null, "narratif": "Activités 2024, via CPOR.", "source": "Délégation jurassienne 2024"}
+    ]
+  }
+}
