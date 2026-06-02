@@ -138,3 +138,18 @@ Les chiffres "Loro" (RA 2024, RA 2025) sont primaires. Les chiffres
 externes (TPG, OFS, GREA, Swisslos, REISO) sont identifiés par leur URL.
 Les chiffres marqués *estimation* sont nos calculs avec hypothèses
 documentées dans ce fichier.
+
+## Sources additionnelles v7 (Acte VIII)
+
+- **[BRB 2024](https://ra.loro.ch/documents/BRB2024.pdf)** et **[BRB 2025](https://soutien-loro.ch/sites/default/files/2026-05/BRB2025.pdf)** : Bulletins de Répartition des Bénéfices, ~80 pages chacun, ~5'000 bénéficiaires individuels par année. Échantillon ≥ 200 k CHF retenu pour la viz détaillée (canton de Vaud).
+- **[Rapports annuels Loro 2012-2025](https://ra.loro.ch/editions-precedentes.html)** : 14 années de récit éditorial (édito direction, faits marquants, lancements de jeux, certifications).
+- **[Swisslos Geschäftsbericht 2024](https://www.swisslos.ch/media/swisslos/publikationen/pdf/gesch%C3%A4ftsbericht-2024.pdf)** (Balmer-Etienne AG) : structure de coûts complète en allemand, traduite ici pour la comparaison structurelle Loro vs Swisslos.
+- **[Chiffres-clés Swisslos](https://www.swisslos.ch/fr/informations/sur-swisslos/portrait/chiffres-cle/fait-et-chiffres.html)** : série historique 2024-2025, 20 cantons membres + Liechtenstein.
+
+### Limites de la comparaison Loro/Swisslos
+
+- Les deux loteries opèrent sous le même cadre légal (LJAr 2019) et la même surveillance (Gespa).
+- Loro est une association à but non lucratif (art. 60 CC) ; Swisslos est une coopérative intercantonale.
+- Loro = 6 cantons, 2,36 M habitants ; Swisslos = 21 cantons (+FL), ~6,5 M habitants.
+- Le poste « Marketing/Publicité+Promo » côté Swisslos additionne `Werbung` (13,1 M) + `Promotionen` (7,1 M) + `Sponsoring/Kooperation` (5,3 M). Pour Loro, c'est la ligne `Marketing, publicité et communication` (15,4 M).
+- Les périodes comptables sont identiques (1er janvier - 31 décembre).
