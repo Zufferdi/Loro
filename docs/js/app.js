@@ -3793,7 +3793,7 @@ function ensureBrbLoaded() {
   if (DATA.brb2025) return Promise.resolve(DATA.brb2025);
   if (DATA.brb2025_loading) return DATA.brb2025_loading;
   // Show a lightweight loading indicator in each BRB container
-  ['viz-explorer', 'viz-longtail', 'viz-geomap'].forEach(id => {
+  ['viz-explorer', 'viz-multicantons', 'viz-longtail', 'viz-geomap'].forEach(id => {
     const el = document.getElementById(id);
     if (el && !el.children.length) {
       el.innerHTML = '<div style="padding:48px;text-align:center;color:var(--ink-mute);font-style:italic">Chargement de l\'inventaire BRB 2025 (≈ 1,7 Mo)…</div>';
@@ -3803,15 +3803,16 @@ function ensureBrbLoaded() {
     .then(d => {
       DATA.brb2025 = d;
       DATA.brb2025_loading = null;
-      // Now actually render the 3 viz
+      // Now actually render the 4 viz
       initBrbExplorer();
+      initBrbMulticantons();
       initBrbLongtail();
       initBrbGeomap();
       return d;
     })
     .catch(err => {
       console.error('Failed to load brb2025_full.json', err);
-      ['viz-explorer', 'viz-longtail', 'viz-geomap'].forEach(id => {
+      ['viz-explorer', 'viz-multicantons', 'viz-longtail', 'viz-geomap'].forEach(id => {
         const el = document.getElementById(id);
         if (el) el.innerHTML = '<div style="padding:24px;color:var(--c-loro)">Erreur de chargement des données BRB. Rafraîchissez la page.</div>';
       });
@@ -4004,6 +4005,186 @@ function initBrbExplorer() {
   });
 
   applyFilters();
+}
+
+/* ============================================================
+   ACTE IX — BRB 2025 MULTICANTONS (Pass 2 — D)
+   Top 20 bénéficiaires inter-cantonaux, bar horizontal empilé.
+   Une barre = un bénéficiaire (nom normalisé) ; les segments sont
+   les contributions par canton (incl. organe romand "R").
+   ============================================================ */
+function initBrbMulticantons() {
+  const container = document.getElementById('viz-multicantons');
+  if (!container || !DATA.brb2025) return;
+
+  const entries = DATA.brb2025.entries;
+
+  // Normalisation du nom — alignée sur le pattern clean_brb / explorer
+  function normName(name) {
+    if (!name) return '';
+    let s = name.toLowerCase();
+    s = s.replace(/^(assoc\.|association|fond\.|fondation|fond|sté|société|club|comité|verein|federation|féd\.)\s+/, '');
+    s = s.replace(/,\s*[a-zéèôî' -]+$/i, '');
+    s = s.normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+    s = s.replace(/[^a-z0-9]+/g, ' ').trim();
+    return s;
+  }
+
+  // Stopwords FR pour détection des merges ambigus
+  const STOPWORDS_FR = new Set([
+    'le','la','les','l','un','une','des','du','de','d',
+    'a','au','aux','et','ou','mais','donc','car','ni',
+    'pour','sur','sous','avec','sans','dans','par','vers','en','entre','contre','depuis','durant','selon',
+    'ce','cette','ces','cet','son','sa','ses','leur','leurs',
+    'qui','que','quoi','dont','ou'
+  ]);
+  function specificTokens(normalized) {
+    return normalized.split(/\s+/).filter(w => w.length >= 2 && !STOPWORDS_FR.has(w));
+  }
+  function hasAcronym(originalName) {
+    // Mot entièrement en majuscules >= 3 lettres (acronyme distinctif)
+    return /\b[A-Z]{3,}\b/.test(originalName);
+  }
+
+  // Agrégation : par nom normalisé, dict {canton -> sum}
+  const agg = new Map();
+  for (const e of entries) {
+    const k = normName(e.nom || '');
+    if (k.length < 4) continue;
+    const m = e.montant_CHF || 0;
+    if (!m) continue;
+    const canton = e.canton || '?';
+    let g = agg.get(k);
+    if (!g) {
+      g = { cantons: new Map(), total: 0, count: 0, sample_name: e.nom, sample_secteur: e.secteur, sample_ville: e.ville, originals: new Set() };
+      agg.set(k, g);
+    }
+    g.cantons.set(canton, (g.cantons.get(canton) || 0) + m);
+    g.total += m;
+    g.count += 1;
+    g.originals.add(e.nom || '');
+  }
+
+  // Filtre multi-cantons (>= 2 cantons distincts) AVEC haute confiance
+  // Confiance = >= 2 tokens spécifiques OU au moins un acronyme dans les noms originaux
+  const multi = [];
+  for (const [k, g] of agg) {
+    if (g.cantons.size < 2) continue;
+    const toks = specificTokens(k);
+    const anyAcronym = Array.from(g.originals).some(hasAcronym);
+    if (toks.length >= 2 || anyAcronym) {
+      multi.push({ key: k, ...g });
+    }
+  }
+  multi.sort((a, b) => b.total - a.total);
+
+  const top = multi.slice(0, 20);
+  if (!top.length) {
+    container.innerHTML = '<div style="padding:24px;color:var(--ink-mute)">Aucun bénéficiaire multi-cantons trouvé.</div>';
+    return;
+  }
+
+  // Ordre canonique des cantons + R en fin (pour la légende et la pile)
+  const CANTONS_USED = new Set();
+  top.forEach(t => t.cantons.forEach((_, c) => CANTONS_USED.add(c)));
+  const STACK_ORDER = ['VD', 'GE', 'VS', 'FR', 'NE', 'JU', 'R'].filter(c => CANTONS_USED.has(c));
+
+  // Échelle commune : 0 → max total
+  const maxTotal = top[0].total;
+
+  // Render
+  container.innerHTML = '';
+
+  // Légende cantons
+  const legend = document.createElement('div');
+  legend.className = 'brb-multi-legend';
+  STACK_ORDER.forEach(c => {
+    const item = document.createElement('span');
+    item.className = 'brb-multi-legend-item';
+    item.innerHTML = `<span class="brb-multi-legend-swatch" style="background:${brbCantonColor(c)}"></span>${BRB_CANTON_LABELS[c]}`;
+    legend.appendChild(item);
+  });
+  container.appendChild(legend);
+
+  // Rows
+  top.forEach((row, i) => {
+    const rowEl = document.createElement('div');
+    rowEl.className = 'brb-multi-row';
+
+    // Rank
+    const rank = document.createElement('div');
+    rank.className = 'brb-multi-rank';
+    rank.textContent = String(i + 1).padStart(2, '0');
+    rowEl.appendChild(rank);
+
+    // Name + meta
+    const nameCell = document.createElement('div');
+    nameCell.className = 'brb-multi-name-cell';
+    const cleanName = (row.sample_name || '')
+      .replace(/^Assoc\. /, 'Association ')
+      .replace(/^Fond\. /, 'Fondation ')
+      .replace(/^Sté /, 'Société ')
+      .replace(/[\s\-—–]+$/, '')   // strip trailing dash/whitespace (PDF truncation)
+      .trim();
+    nameCell.innerHTML = `
+      <div class="brb-multi-name">${cleanName}</div>
+      <div class="brb-multi-meta">
+        ${row.sample_secteur || '—'} ·
+        ${row.cantons.size} cantons · ${row.count} attribution${row.count > 1 ? 's' : ''}
+      </div>`;
+    rowEl.appendChild(nameCell);
+
+    // Bar (stacked) — width proportional to total / maxTotal
+    const barWrap = document.createElement('div');
+    barWrap.className = 'brb-multi-bar-wrap';
+    const widthPct = (row.total / maxTotal) * 100;
+    barWrap.style.width = widthPct.toFixed(2) + '%';
+
+    // Segments ordered by STACK_ORDER, only those present
+    const segs = STACK_ORDER
+      .filter(c => row.cantons.has(c))
+      .map(c => ({ canton: c, amount: row.cantons.get(c) }));
+
+    segs.forEach(s => {
+      const seg = document.createElement('div');
+      seg.className = 'brb-multi-seg';
+      const pct = (s.amount / row.total) * 100;
+      seg.style.width = pct.toFixed(2) + '%';
+      seg.style.background = brbCantonColor(s.canton);
+
+      // Label inside if segment large enough
+      if (pct >= 18) {
+        const lbl = document.createElement('span');
+        lbl.className = 'brb-multi-seg-label';
+        lbl.textContent = s.canton;
+        seg.appendChild(lbl);
+      }
+
+      // Hover tooltip
+      seg.addEventListener('mouseenter', (ev) => {
+        const r = seg.getBoundingClientRect();
+        showTip(
+          `<div class="t-title">${cleanName}</div>
+           <div><span style="display:inline-block;width:9px;height:9px;background:${brbCantonColor(s.canton)};border-radius:2px;vertical-align:1px;margin-right:6px"></span>${BRB_CANTON_LABELS[s.canton]}</div>
+           <div><strong>${brbFmtAmt(s.amount)} CHF</strong> · ${((s.amount / row.total) * 100).toFixed(0)}% du cumul</div>`,
+          r.left + r.width / 2, r.top
+        );
+      });
+      seg.addEventListener('mouseleave', hideTip);
+
+      barWrap.appendChild(seg);
+    });
+
+    rowEl.appendChild(barWrap);
+
+    // Total
+    const totalCell = document.createElement('div');
+    totalCell.className = 'brb-multi-total';
+    totalCell.innerHTML = `${brbFmtAmt(row.total)}<span>CHF cumulés</span>`;
+    rowEl.appendChild(totalCell);
+
+    container.appendChild(rowEl);
+  });
 }
 
 /* ============================================================
