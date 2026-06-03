@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     initHexBenefs();
     initTopBenefs();
     initEvenements();
+    initShareSuisse();
     initTopBenefsVD();
     initLoroVsSwisslos();
     initEditorialTimeline();
@@ -3135,6 +3136,173 @@ function initTopBenefsVD() {
     });
   }
   render();
+}
+
+/* ============================================================
+   INTERMÈDE — Part LoRo dans le total CA loterie suisse 1924-2018
+   Source : Office fédéral de la justice (BFJ)
+   ============================================================ */
+function initShareSuisse() {
+  const container = d3.select('#viz-share-suisse');
+  if (container.empty() || !DATA.historique) return;
+  container.html('');
+
+  // Garder uniquement les années où on a CA Loro ET CA total Suisse
+  // (les pré-1938 ont seulement le total, on les inclut pour le contexte mais
+  // sans calcul de ratio)
+  const hist = DATA.historique.filter(d =>
+    d.ca_total_suisse_M != null && d.annee >= 1924 && d.annee <= 2018
+  );
+  // Sous-ensemble avec ratio calculable
+  const withRatio = hist.filter(d => d.ca_M != null);
+  withRatio.forEach(d => { d.share = d.ca_M / d.ca_total_suisse_M * 100; });
+
+  const W = 1200, H = 560;
+  const margin = { top: 50, right: 120, bottom: 60, left: 70 };
+  const w = W - margin.left - margin.right;
+  const h = H - margin.top - margin.bottom;
+
+  const svg = container.append('svg')
+    .attr('viewBox', `0 0 ${W} ${H}`)
+    .attr('preserveAspectRatio', 'xMidYMid meet')
+    .attr('width', '100%').attr('height', H)
+    .style('height', 'auto')
+    .style('display', 'block');
+
+  const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+  const x = d3.scaleLinear().domain([1924, 2018]).range([0, w]);
+  const y = d3.scaleLinear().domain([0, 70]).range([h, 0]).nice();
+
+  // Grille horizontale (% par tranches de 10)
+  g.selectAll('.grid').data(y.ticks(7)).enter().append('line')
+    .attr('x1', 0).attr('x2', w).attr('y1', d => y(d)).attr('y2', d => y(d))
+    .attr('stroke', ruleColor()).attr('stroke-dasharray', '2,3').attr('opacity', 0.6);
+
+  // Axes
+  g.append('g').attr('transform', `translate(0,${h})`)
+    .call(d3.axisBottom(x).tickFormat(d3.format('d')).ticks(10))
+    .call(s => s.selectAll('text').attr('fill', inkSoftColor()).style('font-size', '12px'))
+    .call(s => s.selectAll('path,line').attr('stroke', ruleColor()));
+  g.append('g')
+    .call(d3.axisLeft(y).tickFormat(d => d + ' %').ticks(7))
+    .call(s => s.selectAll('text').attr('fill', inkSoftColor()).style('font-size', '12px'))
+    .call(s => s.selectAll('path,line').attr('stroke', ruleColor()));
+
+  // Titre + sous-titre dans la viz
+  svg.append('text')
+    .attr('x', margin.left).attr('y', 28)
+    .attr('font-size', 13).attr('fill', inkSoftColor()).attr('letter-spacing', '0.04em')
+    .text('Part de la Loterie Romande dans le CA total des loteries suisses · % par année');
+
+  // Bandes de couleur pour les époques narratives
+  const periods = [
+    { from: 1924, to: 1937, label: 'Avant LoRo',           color: 'rgba(140,140,140,0.06)' },
+    { from: 1937, to: 1969, label: 'Domination déclinante', color: 'rgba(200,16,46,0.04)' },
+    { from: 1969, to: 2006, label: 'Marginalité (Sport-Toto + SEVA)', color: 'rgba(91,141,239,0.05)' },
+    { from: 2007, to: 2018, label: 'Reprise (Sport-Toto absorbé)',   color: 'rgba(46,160,138,0.07)' },
+  ];
+  g.selectAll('.period').data(periods).enter().append('rect')
+    .attr('x', d => x(d.from))
+    .attr('y', 0)
+    .attr('width', d => x(d.to) - x(d.from))
+    .attr('height', h)
+    .attr('fill', d => d.color);
+
+  // Aire sous la courbe
+  const area = d3.area().curve(d3.curveMonotoneX)
+    .x(d => x(d.annee)).y0(h).y1(d => y(d.share));
+  g.append('path').datum(withRatio)
+    .attr('fill', '#c8102e').attr('opacity', 0.08)
+    .attr('d', area);
+
+  // Ligne principale
+  const line = d3.line().curve(d3.curveMonotoneX)
+    .x(d => x(d.annee)).y(d => y(d.share));
+  g.append('path').datum(withRatio)
+    .attr('fill', 'none').attr('stroke', '#c8102e').attr('stroke-width', 2.5)
+    .attr('d', line);
+
+  // Points sur la courbe
+  g.selectAll('.pt').data(withRatio).enter().append('circle')
+    .attr('cx', d => x(d.annee)).attr('cy', d => y(d.share))
+    .attr('r', d => [1940, 1970, 1990, 2007, 2018].includes(d.annee) ? 5 : 2.5)
+    .attr('fill', '#c8102e').attr('stroke', 'white').attr('stroke-width', 1.5)
+    .style('cursor', 'pointer')
+    .on('mouseover', function(ev, d) {
+      d3.select(this).attr('r', 7);
+      showTip(`<strong>${d.annee}</strong><br>
+        LoRo: <strong>${d3.format(',.1f')(d.ca_M)} M CHF</strong> (${d.share.toFixed(1)}%)<br>
+        Total Suisse: ${d3.format(',.0f')(d.ca_total_suisse_M)} M CHF`,
+        ev.pageX, ev.pageY);
+    })
+    .on('mouseout', function(ev, d) {
+      d3.select(this).attr('r', [1940, 1970, 1990, 2007, 2018].includes(d.annee) ? 5 : 2.5);
+      hideTip();
+    });
+
+  // Annotations clés (positionnées au-dessus des points pivots)
+  const annotations = [
+    { annee: 1940, label: '38 % à ses débuts',          dy: -25, anchor: 'start' },
+    { annee: 1970, label: '5 %  Sport-Toto + SEVA dominent', dy: 24,  anchor: 'middle' },
+    { annee: 2007, label: '2007 transfert Sport-Toto',  dy: -50, anchor: 'middle' },
+    { annee: 2018, label: '55 % aujourd\'hui',          dy: -25, anchor: 'end' },
+  ];
+  annotations.forEach(a => {
+    const d = withRatio.find(x => x.annee === a.annee);
+    if (!d) return;
+    g.append('text')
+      .attr('x', x(a.annee))
+      .attr('y', y(d.share) + a.dy)
+      .attr('text-anchor', a.anchor)
+      .attr('font-size', 12)
+      .attr('font-style', 'italic')
+      .attr('fill', '#8a0a1f')
+      .text(a.label);
+  });
+
+  // Marqueur LoRo création 1938
+  const x1938 = x(1938);
+  g.append('line')
+    .attr('x1', x1938).attr('x2', x1938).attr('y1', 0).attr('y2', h)
+    .attr('stroke', '#1a1917').attr('stroke-width', 1)
+    .attr('stroke-dasharray', '4,4').attr('opacity', 0.4);
+  g.append('text')
+    .attr('x', x1938 + 6).attr('y', 14)
+    .attr('font-size', 11).attr('font-style', 'italic').attr('fill', inkColor())
+    .text('1938 — naissance de la LoRo');
+
+  // Légende latérale (encart en haut à droite)
+  const legend = svg.append('g')
+    .attr('transform', `translate(${W - margin.right + 12},${margin.top + 20})`);
+  legend.append('text').attr('x', 0).attr('y', 0).attr('font-size', 11)
+    .attr('fill', inkSoftColor()).attr('font-weight', 600).text('Lecture :');
+  ['LoRo seule a',
+   'depuis 95 ans',
+   'connu trois',
+   'régimes. 1924',
+   'précède la LoRo.',
+   '',
+   '1938-1969 :',
+   'présence forte',
+   'dans un marché',
+   'encore petit.',
+   '',
+   '1970-2006 :',
+   'Sport-Toto et',
+   'SEVA captent',
+   'l\'essentiel.',
+   '',
+   '2007+ :',
+   'LoRo + Swisslos',
+   'reprennent',
+   'Sport-Toto.'
+  ].forEach((line, i) => {
+    legend.append('text')
+      .attr('x', 0).attr('y', 16 + i * 13)
+      .attr('font-size', 10).attr('fill', inkSoftColor())
+      .text(line);
+  });
 }
 
 function initLoroVsSwisslos() {
