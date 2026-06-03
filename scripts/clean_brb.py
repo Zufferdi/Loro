@@ -1,4 +1,16 @@
 #!/usr/bin/env python3
+"""
+============================================================
+DEPRECATED — superseded by scripts/pipeline_brb.py (v13.8)
+
+This script implements one stage of the BRB cleanup. As of
+v13.8 (Pass 5 — C), all stages are consolidated into
+pipeline_brb.py which is idempotent + auditable.
+
+Kept here as historical reference. For new work:
+    python scripts/pipeline_brb.py --input <path>
+============================================================
+"""
 """Clean up parser artifacts in brb2025_full.json.
 
 Two systematic bugs detected:
