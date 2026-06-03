@@ -551,3 +551,70 @@ Insertion d'un intermède narratif entre Acte VII et Acte VIII, juste avant la c
 ### Validation Playwright
 
 Test sur 28 viz : **23/28 rendent en SVG** (les 5 « vides » sont en HTML pur : tables, listes, cards — ces ne sont pas des viz SVG). 0 erreur console (hors warnings `height='auto'` pré-existants). Le nouveau `viz-share-suisse` rend 1214×567px avec 34 points, 44 textes, 4 bandes de période et 4 annotations. La courbe en U est immédiatement lisible.
+
+## v13.5 (juin 2026) — 12 améliorations de production
+
+Tour de finition couvrant performance, accessibilité, UX mobile, polish narratif.
+
+### Performance
+
+**#1 Lazy-load `brb2025_full.json` (1,7 Mo)**. La donnée BRB ne se charge plus au démarrage mais lorsque l'utilisateur approche de l'Acte IX. Implémentation : `IntersectionObserver` avec `rootMargin: '800px 0px'` sur `#viz-explorer`, déclenche `ensureBrbLoaded()` qui charge le JSON, met à jour `DATA.brb2025`, puis appelle `initBrbExplorer` + `initBrbLongtail` + `initBrbGeomap`. Idempotent (cache de la promise via `DATA.brb2025_loading`). Indicateur visuel « Chargement de l'inventaire BRB 2025 (≈ 1,7 Mo)… » dans les 3 containers le temps du fetch.
+
+**Mesure** : 0 requête BRB au chargement initial → 1 requête au scroll vers Acte IX. First Contentful Paint significativement plus rapide.
+
+### UX
+
+**#2 Fix des collisions de labels dans Loro vs Swisslos**. Quand une barre dépasse 65% de la demi-largeur (`INSIDE_THRESHOLD = halfW * 0.65`), l'étiquette de valeur passe **à l'intérieur** de la barre en blanc, au lieu de rester à l'extérieur où elle chevauchait l'étiquette de ligne. Appliqué symétriquement côté Loro (anchor 'end') et côté Swisslos (anchor 'start'), pour les 4 cas (2024/2025 × Loro/Swisslos).
+
+**#6 Pagination BRB explorer**. Le cap dur à 200 lignes est remplacé par un bouton « Voir 200 de plus (X restants) ». `PAGE_SIZE = 200`, `displayCount` augmente de 200 à chaque clic, smooth-scroll vers la dernière ligne précédente pour ne pas perdre la position. Quand toutes les entrées sont affichées : message « Toutes les X entrées affichées ». CSS dédié `.brb-more-btn` avec hover et focus-visible.
+
+**#7 Lien Jura → BRB explorer pré-filtré**. Nouveau lien CTA dans la section Acte VIII bis : « Voir les 200+ bénéficiaires jurassiens 2025 dans l'inventaire complet → ». Le href `#brb=canton:JU` est lu au démarrage de `initBrbExplorer` (`applyHashFilter()`), pré-sélectionne uniquement JU dans `state.cantons`. Sur clic, `hashchange` listener déclenche `ensureBrbLoaded()` + `scrollIntoView` vers Acte IX. Mesure : 620 entrées JU · 8,57 M CHF affichées correctement.
+
+**#10 Mobile UX Loro vs Swisslos**. Le SVG en viewBox 1100×~960 devenait illisible compressé à 274px sur mobile (380px viewport). Solution : `@media (max-width: 760px)` impose `min-width: 900px` sur le SVG dans un container `overflow-x: auto`. Bandeau d'aide collé à gauche : « ← faites défiler horizontalement → ». Données lisibles au prix d'un scroll latéral standard pour tables larges.
+
+**#8 viz-editorial-timeline en onglets par décennie**. La timeline éditoriale faisait 4767px de haut (14 années empilées). Refonte en 3 onglets : 2012-2015 (4), 2016-2019 (4), 2020-2025 (6, actif par défaut). Tab bar sticky à `top: 56px`, switching JS qui re-rend uniquement la décennie active. Hauteur typique par onglet : ~1500px. CSS dédié `.editorial-tabs` + `.editorial-tab` avec état actif rouge.
+
+### Accessibilité (#9)
+
+- **Skip-link** : `<a class="skip-link" href="#main-content">Aller directement au contenu</a>` visible au focus uniquement (top: -40px → top: 8px on :focus), permet aux utilisateurs clavier de sauter la navigation.
+- **Landmark `<main id="main-content">`** : enveloppe tout le contenu narratif entre header et footer.
+- **Decorateur `initA11yDecoration()`** : runs après toutes les init de viz. Pour chaque `.viz-card`, génère un `id="viz-title-N"` sur le `.viz-title`, applique `role="region"` + `aria-labelledby` sur la card, et `role="img"` + `aria-label` (depuis le titre) sur le SVG. Approche déclarative — pas besoin de toucher les 20 fonctions individuelles d'init.
+- **`<nav aria-label="Actes du récit">`** sur la topnav.
+- **`aria-hidden="true"`** sur `.reading-progress` (décoratif).
+- **`role="alert"`** sur `#app-error`.
+- **Focus styles** : `a:focus-visible, button:focus-visible, .brb-pill:focus-visible { outline: 2px solid var(--c-loro); outline-offset: 2px; }` pour ne pas laisser le navigateur stripper les indicateurs de focus.
+
+### Polish
+
+**#3 Footer timestamp**. Nouveau bloc `<div class="last-updated">Dernière mise à jour : <span id="build-date">—</span></div>`. La date est calculée côté client par `initBuildDate()` qui fait un `fetch HEAD` sur `data/historique.json` et extrait le header `Last-Modified`. Si indisponible (ex. en local), fallback à la date du jour. Format `fr-CH` (« 3 juin 2026 »).
+
+**#5 Fix des 4 warnings SVG `height='auto'`**. Pattern uniformisé : `.attr('width', '100%').attr('height', H).style('height', 'auto').style(...)`. L'attribut SVG `height` ne tolère pas `'auto'` (warning console silencieux), mais la propriété CSS oui. Appliqué aux 4 occurrences restantes (lignes 897, 2370, 3753, 3883).
+
+**#11 Print CSS**. Bloc `@media print` qui :
+- Force `-webkit-print-color-adjust: exact; print-color-adjust: exact;` sur tout (préserve les fonds noirs du `.fullbleed` qui sinon sortent blanc-sur-blanc à l'impression Chrome).
+- Désactive le `position: sticky` des `.scrolly .graphic` (qui ne s'imprime pas correctement).
+- Masque `.reading-progress` et `.topnav`.
+- Ajoute `page-break-inside: avoid` sur `.viz-card`, `.step-card`, `.fullbleed`.
+
+**#12 Glossaire numérique**. Nouvelle section juste avant le footer, dans `.glossary-section` avec fond `--bg-soft`. Tableau de définitions `<dl class="glossary">` à 7 entrées clarifiant les chiffres qui reviennent (252 M, 258 M, 1,7 Mrd, 438 M PBJ, ~5 000 projets, 5 172 entrées BRB, 2,98 Mrd cumul). Grid 2 colonnes desktop, 1 colonne mobile, séparateurs horizontaux légers.
+
+### Validation Playwright
+
+Tous les tests passent :
+- **Lazy load** : 0 requête `brb2025_full.json` au load initial → 1 requête après scroll vers Acte IX (1,7 Mo économisés sur le FCP).
+- **Pagination** : 200 rows initiales → 400 après « Voir plus ».
+- **Lien Jura** : `#brb=canton:JU` → 620 entrées, seul JU actif, scroll vers Acte IX.
+- **Onglets éditorial** : 3 tabs avec compteurs (4/4/6), switching fonctionne, cards renderent.
+- **Footer timestamp** : « 3 juin 2026 » affiché correctement.
+- **Glossaire** : 7 entrées rendues, grid responsive.
+- **A11y** : skip-link présent, `<main>` landmark, ARIA sur les .viz-card.
+- **Mobile Loro vs Swisslos** : container 274px, SVG min-width 900px, overflow-x: auto opérationnel.
+- **0 erreur JavaScript** dans la console (hors warnings sandbox CDN bloqués).
+
+### Bilan v13.5
+
+- `docs/js/app.js` : +120 lignes (initShareSuisse v13.4 + initBuildDate + initA11yDecoration + initBrbLazyTrigger + ensureBrbLoaded + applyHashFilter + pagination + editorial tabs refactor)
+- `docs/css/style.css` : +200 lignes (col-xl + glossaire + a11y + brb-more-btn + cta-link + editorial-tabs + print + mobile rescue)
+- `docs/index.html` : +90 lignes (skip-link + main + nav aria + intermède Part LoRo + glossaire + lien Jura + last-updated)
+
+Pas de régression sur les viz existantes : audit final 22 viz SVG OK, 6 viz HTML pures OK (rendent du contenu non-SVG : tables, listes, cards), aucune erreur console.
