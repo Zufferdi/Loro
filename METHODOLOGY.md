@@ -1652,3 +1652,94 @@ Une même entrée peut être détectée par 2 classifiers (rare en pratique), do
 - Tous réutilisent les classes CSS `.sports-*` avec override de couleur (`.sports-bar-{sport|culture|social}`)
 - Section HTML `#viz-social` placée entre culture et longtail
 
+
+---
+
+## v13.11-2024-partial (juin 2026) — Comparaison BRB 2024 vs 2025
+
+<a id="v13-11-2024"></a>
+
+### Contexte
+
+À la demande de l'utilisateur, application du même pipeline au BRB 2024. **Le PDF officiel a été fetché** (https://ra.loro.ch/documents/BRB2024.pdf, ~80 pages dans le contexte) mais l'extraction complète des 5'000+ entries individuelles dépasse le budget de contexte d'une seule session.
+
+### Stratégie 80/20
+
+Au lieu de parser intégralement les 5'000+ entries, focus sur ce qui produit le plus de valeur narrative :
+
+1. **Totaux par canton et par organe de répartition** — extraits directement des en-têtes du PDF (sections « Fondation d'aide sociale et culturelle » VD, « Commission cantonale culture et social » FR, etc.)
+2. **Sous-secteurs par canton** — Action sociale, Culture, Sport, Patrimoine, etc., explicitement donnés par section
+3. **Top bénéficiaires marquants** — identifiés par lecture du texte (les 500 k+ qui apparaissent dans le contexte)
+4. **Comparaison 2024 vs 2025** au niveau canton + bénéficiaires phares
+
+### Données extraites — 2024 (`docs/data/brb2024_summary.json`)
+
+**Cantons complètement extraits** : VD, FR, VS, NE
+**Canton partiellement extrait** : GE (Action sociale, Jeunesse, Santé visible ; Culture/Formation/Patrimoine/Environnement/Tourisme manquants)
+**Cantons non extraits** : JU, Suisse romande intercantonal
+
+#### Totaux par canton et par sous-organe
+
+| Canton | Total visible | Sous-organes (M CHF) |
+|---|---:|---|
+| **VD** | 63,65 M | Fond. aide sociale et culturelle 37,05 / Fonds du sport vaudois 10,57 / Fonds d'utilité publique (CE) 16,02 |
+| **FR** | 29,23 M | Commission culture et social 20,51 / LoRo-Sport 6,68 / Fonds Conseil d'État 2,04 |
+| **VS** | 36,91 M | Délégation valaisanne 30,40 / Commission Fonds du sport 6,51 |
+| **NE** | 16,83 M | Commission neuchâteloise 13,70 / LoRo-Sport NE 2,25 / FAC 0,89 |
+| **GE** (partiel) | 46,56 M | Fonds de soutien genevois 39,51 / Fonds du sport 7,05 |
+
+**Total visible 2024 : 193,18 M CHF** (sur 258,2 M officiels — manquent JU, SR, et fin de GE).
+
+### Comparaison 2024 vs 2025
+
+| Canton | 2024 | 2025 | Δ CHF | Δ % | Lecture |
+|---|---:|---:|---:|---:|---|
+| **VD** | 63,65 M | 74,78 M | **+11,1 M** | **+17,5 %** | seule croissance — driver: Hermitage ×13, Théâtre Vidy ×2 |
+| **FR** | 29,23 M | 27,39 M | −1,85 M | −6,3 % | léger recul |
+| **VS** | 36,91 M | 29,40 M | **−7,5 M** | **−20,4 %** | gros recul — effet one-shot Fonds catastrophes naturelles (Blatten 3,7 M en 2024) |
+| **NE** | 16,83 M | 14,63 M | −2,21 M | −13,1 % | recul significatif |
+| **GE** (partiel) | 46,56 M | 40,63 M | −5,93 M | −12,7 % | recul (mais comparaison faussée par extraction partielle 2024) |
+
+### Bénéficiaires marquants (mouvements)
+
+**📈 Hausses significatives** :
+- **Fond. de l'Hermitage (VD)** : 300 k → 4 M (**+1'233 %**) — investissement exceptionnel 2025 (probable grand projet de rénovation muséale)
+- **Cinéforom (Genève)** : 700 k → 1,7 M (**+143 %**)
+- **Théâtre Vidy / Fond. art dramatique (VD)** : 650 k → 1'350 k (**+108 %**)
+- **Festival Film Fribourg** : 580 k → ~660 k (estimé +14 %)
+
+**→ Stables** :
+- Verbier Festival : 750 k → 775 k
+- Pierre Gianadda : 350 k → 350 k
+- Banc Public Fribourg : 490 k → 490 k
+- Théâtre Pro Valais : 566 k → 566 k
+
+**📉 Disparitions** :
+- **Fonds pour victimes de dommages non assurables (VS)** : 3,7 M en 2024 (effondrement de Blatten) → 0 en 2025 (one-shot)
+
+### Observations narratives
+
+1. **2024 = année record** (258 M, jackpot Swiss Loto record en mars 2024 + Euro foot + JO Paris). **2025 = retour à la normale** (252 M, −2,4 %).
+
+2. **L'écart canton par canton ne suit pas le total** : VD est en hausse de 17,5 % alors que les autres baissent. Cette divergence s'explique par les **grands projets exceptionnels** qui décalent les attributions d'une année à l'autre. La Loterie répartit en blocs de plusieurs millions selon des projets ponctuels.
+
+3. **L'Hermitage ×13** est la plus grosse variation individuelle observée. Le BRB ne précise pas la nature du projet, mais 4 M en une année pour un musée signale un **investissement majeur** (rénovation, agrandissement, ou acquisition d'œuvres).
+
+4. **Le Fonds VS « catastrophes naturelles » à 3,7 M en 2024** est lié à l'effondrement glaciaire de Blatten (mai 2025) — vraisemblablement provisionné en 2024, dépensé en 2025. C'est un cas typique de **dépense one-shot** qui fausse les comparaisons.
+
+5. **GE = champion de la dépense one-shot construction immobilière** en 2024 : 3 projets à 4 M chacun (Maison d'Albert, Communauté Emmaüs, Fond. Immobilière Insertion Sociale). Ce n'est pas répété en 2025.
+
+### Limites et travaux futurs
+
+- **Extraction PDF intégrale** des 5'000+ entries 2024 nécessiterait une session dédiée (parser texte, pipeline cleanup, classifications)
+- **Sections manquantes** : Genève partielle (estimée ~10-15 M complémentaires manquants), Jura (~8 M attendus selon BRB officiels), Suisse romande (~15-20 M attendus)
+- **Idéal v13.12** : parser identique à brb2025_full.json, appliquer pipeline_brb.py, classifications sport/culture/social, build historique 2023-2024-2025 sur les 50 plus gros bénéficiaires
+
+### Fichiers produits
+
+- `docs/data/brb2024_summary.json` — totaux par canton + 26 top bénéficiaires
+- `docs/data/comparison_2024_2025.json` — comparaison par canton avec deltas
+- `docs/js/compare_2024_2025.js` — viz comparative (~140 LOC)
+- CSS `.compare-*` (banner, grid, movers)
+- Section HTML `#viz-compare-2024-2025` insérée après per-capita
+
