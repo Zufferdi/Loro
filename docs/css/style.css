@@ -387,6 +387,126 @@ section.standalone { padding: 60px 0; }
   flex-wrap: wrap; gap: 8px;
 }
 
+/* Note "qualité des données" — informationnelle, non-intrusive */
+.viz-quality-note {
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  background: var(--bg-soft);
+  border-left: 3px solid var(--c-accent);
+  padding: 10px 14px;
+  margin: 0 0 18px;
+  border-radius: 0 4px 4px 0;
+}
+.viz-quality-note strong { color: var(--ink); }
+.viz-quality-note a { color: var(--c-accent); }
+
+/* Petit badge agrégat inline pour la subtitle (pas interactif) */
+.brb-agg-badge-inline {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: var(--c-accent);
+  color: #fff;
+  vertical-align: 1px;
+}
+
+/* ===== Multi-cantons stacked bar (Pass 2 — D) ===== */
+.brb-multi-row {
+  display: grid;
+  grid-template-columns: 28px minmax(160px, 1fr) minmax(360px, 2fr) 100px;
+  gap: 14px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.brb-multi-row:last-child { border-bottom: none; }
+.brb-multi-rank {
+  font-family: var(--serif);
+  color: var(--ink-mute);
+  font-size: 14px;
+  font-style: italic;
+  text-align: right;
+}
+.brb-multi-name { font-size: 14px; font-weight: 500; line-height: 1.3; }
+.brb-multi-meta {
+  font-size: 11px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+.brb-multi-bar-wrap {
+  position: relative;
+  height: 22px;
+  background: var(--bg-soft);
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+}
+.brb-multi-seg {
+  height: 100%;
+  position: relative;
+  transition: opacity 0.15s ease;
+  cursor: pointer;
+}
+.brb-multi-seg:hover { opacity: 0.82; }
+.brb-multi-seg-label {
+  position: absolute;
+  inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 0 2px rgba(0,0,0,0.45);
+  pointer-events: none;
+  overflow: hidden;
+}
+.brb-multi-total {
+  font-family: var(--serif);
+  font-size: 16px;
+  text-align: right;
+  color: var(--ink);
+}
+.brb-multi-total span {
+  display: block;
+  font-family: var(--sans);
+  font-size: 10px;
+  color: var(--ink-mute);
+  font-weight: 400;
+}
+.brb-multi-legend {
+  display: flex; flex-wrap: wrap; gap: 14px;
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--rule);
+}
+.brb-multi-legend-item {
+  display: flex; align-items: center; gap: 6px;
+}
+.brb-multi-legend-swatch {
+  width: 11px; height: 11px;
+  border-radius: 2px;
+  display: inline-block;
+}
+@media (max-width: 720px) {
+  .brb-multi-row {
+    grid-template-columns: 22px 1fr 80px;
+    grid-template-areas:
+      "rank name total"
+      ".    bar  bar";
+    gap: 8px 10px;
+  }
+  .brb-multi-rank { grid-area: rank; }
+  .brb-multi-name-cell { grid-area: name; }
+  .brb-multi-bar-wrap { grid-area: bar; }
+  .brb-multi-total { grid-area: total; font-size: 13px; }
+  .brb-multi-name { font-size: 13px; }
+}
+
 /* ============ Controls ============ */
 .controls {
   display: flex; gap: 8px; flex-wrap: wrap;
@@ -1617,4 +1737,89 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 @media (prefers-color-scheme: dark) {
   .gov-change-badge { background: rgba(240, 169, 61, 0.18); color: #f0a93d; }
+}
+
+/* =================================================
+   Historical series v13.7-historical (Pass 4 — A)
+   ================================================= */
+.hist-series-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 16px 4px;
+}
+.hist-series-card {
+  background: var(--paper, #fff);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 8px;
+  padding: 14px 16px 12px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.hist-series-card:hover {
+  border-color: rgba(0,0,0,0.14);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+.hist-series-head {
+  margin-bottom: 14px;
+  min-height: 48px;
+}
+.hist-series-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+  color: var(--ink, #1a1a1a);
+}
+.hist-series-meta {
+  font-size: 11px;
+  color: var(--ink-mute, #666);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.hist-series-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 6px;
+  height: 116px;
+  padding-top: 16px;
+}
+.hist-series-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  height: 100%;
+}
+.hist-series-col.is-empty {
+  opacity: 0.45;
+}
+.hist-series-bar {
+  width: 100%;
+  max-width: 38px;
+  background: linear-gradient(to top, var(--c-loro, #c62828), #e85b5b);
+  border-radius: 2px 2px 0 0;
+}
+.hist-series-bar-empty {
+  height: 2px !important;
+  background: repeating-linear-gradient(45deg, #ccc, #ccc 3px, transparent 3px, transparent 6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #999;
+  text-align: center;
+}
+.hist-series-val {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink, #1a1a1a);
+  margin-top: 4px;
+  font-variant-numeric: tabular-nums;
+}
+.hist-series-yr {
+  font-size: 10px;
+  color: var(--ink-mute, #888);
+  margin-top: 2px;
 }
