@@ -459,3 +459,95 @@ Confirmation : la courbe reste maintenant collée à gauche pendant que les 5 ca
 ### Leçon
 
 `overflow-x: hidden` est un piège classique du scrollytelling. La règle : si l'on veut `position: sticky` quelque part dans la page, **ne jamais** mettre `overflow: hidden` (ou auto/scroll) sur `body` ou `html`. Utiliser `overflow-x: clip`.
+
+## v13.3 (juin 2026) — Vérification croisée avec BFJ + enrichissement contexte
+
+### Source officielle
+
+L'utilisateur a fourni le PDF officiel de l'Office fédéral de la justice (BFJ) : « LOTERIES ET PARIS PROFESSIONNELS VISANT UN BUT D'UTILITÉ PUBLIQUE OU DE BIENFAISANCE DEPUIS 1924 — Chiffres d'affaires », édition 2018. C'est la statistique fédérale de référence pour le secteur.
+
+### Cross-check des CA existants
+
+Vérification systématique des 36 valeurs `ca_M` LoRo déjà présentes dans `historique.json` (1940 à 2018) contre les chiffres BFJ : **correspondance exacte au franc près sur les 36 années**. Les données étaient déjà sourcées correctement (la BFJ était la source originale lors de la construction du dataset en v9).
+
+Les 52 années sans `ca_M` (1939, 1941-1989 sauf décennies, etc.) sont des années que **la BFJ ne publie pas non plus** — avant 1991, la statistique fédérale ne donne que des points décennaux (1940, 1950, 1960, 1970, 1980, 1990). Combler ces 52 trous nécessiterait des sources secondaires (rapports annuels Loro pré-1991, archives cantonales) — pas disponibles facilement.
+
+### Nouveautés apportées
+
+**1. Pré-histoire (1924, 1930)** : ajout de deux entrées de contexte historique. La LoRo n'existait pas encore — ces données représentent le total des loteries d'utilité publique suisses (cantonales, paroissiales, sociétés de bienfaisance) recensées par la BFJ. 1924 : 515k CHF (juillet-décembre, premier semestre statistique). 1930 : 3,5 M CHF (×7 en 6 ans, montre le besoin de financement social qui poussera à la création de la Loterie Romande en 1937-38).
+
+**2. Champ `ca_total_suisse_M`** : ajouté sur 34 années (1940-2018, là où la BFJ publie un total). Représente le CA cumulé de tous les opérateurs (LoRo + Swisslos + Sport-Toto-Gesellschaft jusqu'en 2006, SEVA jusqu'en 2002, Kleinlotterien). Permet de calculer la part de la LoRo dans l'économie loterie suisse :
+
+| Année | LoRo CA | Total Suisse | Part LoRo |
+|------:|--------:|-------------:|----------:|
+| 1940 | 9 M | 24 M | 38 % |
+| 1970 | 11 M | 224 M | 5 % |
+| 1990 | 46 M | 806 M | 6 % |
+| 2000 | 323 M | 1 374 M | 24 % |
+| 2010 | 1 599 M | 2 723 M | 59 % |
+| 2018 | 1 576 M | 2 867 M | 55 % |
+
+Cette « part LoRo » trace un récit en U : forte présence aux débuts, dilution par Sport-Toto et SEVA jusqu'aux années 80-90, puis remontée spectaculaire après le transfert opérationnel de Sport-Toto à LoRo+Swisslos en 2007. Donnée disponible pour viz future si pertinent.
+
+**3. `source_ca` standardisé** : 34 entrées voient leur citation `source_ca` harmonisée pour pointer la BFJ comme source officielle. La citation détaillée d'origine (presse romande pour certaines années très anciennes) est préservée en parenthèse.
+
+### Fichier touché
+
+- `docs/data/historique.json` : 88 → **90 entrées**, ajout de `ca_total_suisse_M` sur 34 années. Les nouvelles entrées 1924/1930 n'ont pas de `benefice_M` (pas applicable — LoRo n'existait pas) donc sont automatiquement filtrées par la viz timeline qui ne montre que les points avec bénéfice — pas d'impact visuel sur la narration actuelle, mais la donnée est disponible.
+
+### Décision narrative ouverte
+
+L'histoire « part LoRo dans le total suisse » serait un nouvel acte (entre Acte VII et Acte VIII Loro vs Swisslos). Pas implémenté dans cette release — les données sont là, la viz reste à arbitrer côté éditorial.
+
+## v13.4 (juin 2026) — Élargissement des viz + nouvelle viz « Part LoRo dans l'écosystème suisse »
+
+### Système de colonnes refondu
+
+Les 614px effectifs des viz en `.col` étaient trop serrés sur écran 1440+. Trois bumps dans `css/style.css` :
+
+```css
+/* AVANT */
+--col-max:  720px;   /* paragraphes + viz étroites → viz effective ~614px */
+--col-wide: 1120px;  /* viz standards → ~1014px */
+/* (pas de col-xl) */
+
+/* APRÈS */
+--col-max:  760px;   /* paragraphes (+5%, garde lisibilité ~70 caractères/ligne) */
+--col-wide: 1320px;  /* viz standards → ~1214px (+20%) */
+--col-xl:   1500px;  /* nouveau tier pour les viz qui réclament l'espace → ~1334px */
+```
+
+**6 viz étroites promues de `.col` à `.col-wide`** dans index.html (viz-franc, viz-prevention, viz-treemap, viz-dependency, viz-topbenefs, viz-capital). Ces viz portaient un contenu cartographique/numérique qui méritait l'espace. Les paragraphes narratifs restent en `.col` (lisibilité prime).
+
+**5 viz promues de `.col-wide` à `.col-xl`** : viz-loro-vs-swisslos (17 lignes ligne-à-ligne), viz-editorial-timeline (14 ans verticaux), viz-explorer (BRB recherchable), viz-geomap (carte 129 villes), viz-sankey (final 3 colonnes). Ces 5 viz portent le récit dense de la dernière section.
+
+Résultat mesurable (Playwright sur viewport 1440px) :
+- viz-franc : 614 → **1214px** (×2)
+- viz-treemap : 614 → **1214px**
+- viz-topbenefs : 614 → **1214px**
+- viz-explorer : 1014 → **1334px**
+
+### Nouvelle viz : « Part LoRo dans le CA loterie suisse 1924-2018 »
+
+Insertion d'un intermède narratif entre Acte VII et Acte VIII, juste avant la comparaison Loro-vs-Swisslos en valeur absolue. Le récit en U émerge clairement :
+
+- **1940** : 38 % (LoRo dominante à ses débuts)
+- **1970** : 5 % (Sport-Toto-Gesellschaft + SEVA captent l'essentiel)
+- **1990** : 6 % (creux persistant)
+- **2007** : transfert Sport-Toto à LoRo + Swisslos → saut brutal
+- **2018** : 55 % (LoRo capte la majorité du CA loterie suisse)
+
+**Implémentation** (nouvelle fonction `initShareSuisse()` dans `docs/js/app.js`, ~120 lignes) :
+- Courbe rouge sur fond avec 4 bandes verticales colorées pour les 4 régimes historiques (avant-LoRo, domination, marginalité, reprise)
+- Aire sous la courbe en rouge clair pour donner du poids
+- 5 points pivots agrandis (1940, 1970, 1990, 2007, 2018)
+- 4 annotations italiques aux moments-clés
+- Marqueur vertical pointillé à 1938 (création LoRo)
+- Légende explicative à droite
+- Tooltips sur chaque point (CA LoRo + Total Suisse + part %)
+
+**Source des données** : champ `ca_total_suisse_M` ajouté dans `historique.json` en v13.3 (PDF BFJ). Aucune nouvelle donnée ajoutée pour cette viz — elle exploite ce qui était déjà là, simplement non visualisé.
+
+### Validation Playwright
+
+Test sur 28 viz : **23/28 rendent en SVG** (les 5 « vides » sont en HTML pur : tables, listes, cards — ces ne sont pas des viz SVG). 0 erreur console (hors warnings `height='auto'` pré-existants). Le nouveau `viz-share-suisse` rend 1214×567px avec 34 points, 44 textes, 4 bandes de période et 4 annotations. La courbe en U est immédiatement lisible.
