@@ -1823,3 +1823,351 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   color: var(--ink-mute, #888);
   margin-top: 2px;
 }
+
+/* =================================================
+   Sport classification v13.10 (Pass 7)
+   ================================================= */
+.sports-stats {
+  display: flex;
+  gap: 24px;
+  padding: 12px 4px 20px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  margin-bottom: 14px;
+}
+.sports-stat {
+  flex: 1 1 220px;
+}
+.sports-stat-val {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--ink, #1a1a1a);
+  font-variant-numeric: tabular-nums;
+}
+.sports-stat-lbl {
+  font-size: 12px;
+  color: var(--ink-mute, #666);
+  margin-top: 2px;
+}
+.sports-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.sports-row {
+  padding: 8px 4px;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.sports-row:last-child { border-bottom: none; }
+.sports-row-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  gap: 12px;
+  padding-bottom: 4px;
+}
+.sports-row-head:hover .sports-name {
+  color: var(--c-loro, #c62828);
+}
+.sports-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--ink, #1a1a1a);
+  flex: 0 0 auto;
+  min-width: 140px;
+}
+.sports-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--ink-mute, #666);
+  flex-wrap: wrap;
+  font-variant-numeric: tabular-nums;
+}
+.sports-count { color: var(--ink-mute, #666); }
+.sports-cantons { display: inline-flex; gap: 3px; }
+.sports-canton {
+  display: inline-block;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: #eee;
+  color: #555;
+}
+.sports-canton.is-vd { background: #d7e4ff; color: #1a3a8c; }
+.sports-canton.is-fr { background: #ffe0e0; color: #8a1a1a; }
+.sports-canton.is-vs { background: #fff0d0; color: #8a4a1a; }
+.sports-canton.is-ne { background: #d8f0e0; color: #1a5a2a; }
+.sports-canton.is-ge { background: #f4d8f0; color: #5a1a5a; }
+.sports-canton.is-ju { background: #e8d8f0; color: #4a1a6a; }
+.sports-canton.is-r  { background: #f0f0f0; color: #444; font-style: italic; }
+.sports-mean {
+  color: var(--ink-mute, #888);
+  font-size: 11px;
+}
+.sports-total {
+  font-weight: 700;
+  color: var(--ink, #1a1a1a);
+  min-width: 90px;
+  text-align: right;
+}
+.sports-bar-wrap {
+  height: 6px;
+  background: rgba(0,0,0,0.04);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.sports-bar {
+  height: 100%;
+  background: linear-gradient(to right, var(--c-loro, #c62828), #e85b5b);
+  border-radius: 3px;
+  transition: width 0.4s;
+}
+.sports-samples {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: rgba(0,0,0,0.025);
+  border-radius: 4px;
+  font-size: 12px;
+}
+.sports-samples-title {
+  font-weight: 600;
+  color: var(--ink-mute, #555);
+  margin-bottom: 6px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.sports-sample {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 3px 0;
+  font-variant-numeric: tabular-nums;
+}
+.sports-sample-nom {
+  flex: 1;
+  font-weight: 500;
+  color: var(--ink, #333);
+}
+.sports-sample-ville {
+  color: var(--ink-mute, #888);
+  font-size: 11px;
+  font-style: italic;
+}
+.sports-sample-amt {
+  color: var(--ink, #333);
+  font-weight: 600;
+  font-size: 11px;
+}
+.sports-sample-c {
+  display: inline-block;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 600;
+}
+.sports-sample-c.is-vd { background: #d7e4ff; color: #1a3a8c; }
+.sports-sample-c.is-fr { background: #ffe0e0; color: #8a1a1a; }
+.sports-sample-c.is-vs { background: #fff0d0; color: #8a4a1a; }
+.sports-sample-c.is-ne { background: #d8f0e0; color: #1a5a2a; }
+.sports-sample-c.is-ge { background: #f4d8f0; color: #5a1a5a; }
+.sports-sample-c.is-ju { background: #e8d8f0; color: #4a1a6a; }
+.sports-sample-c.is-r  { background: #f0f0f0; color: #444; }
+.sports-row.is-open .sports-name::before {
+  content: "▾ ";
+  color: var(--c-loro, #c62828);
+}
+@media (max-width: 600px) {
+  .sports-meta { font-size: 11px; gap: 6px; }
+  .sports-row-head { flex-wrap: wrap; }
+  .sports-name { min-width: 100px; }
+}
+
+/* =================================================
+   Aggregation vizes v13.10 (Pass 8)
+   Top30, Top20 villes, Treemap, Per-capita
+   ================================================= */
+
+/* Shared banner */
+.top30-banner {
+  padding: 12px 4px 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  margin-bottom: 14px;
+}
+.top30-stat-val {
+  font-size: 24px; font-weight: 700;
+  color: var(--ink, #1a1a1a);
+  font-variant-numeric: tabular-nums;
+}
+.top30-stat-lbl {
+  font-size: 12px; color: var(--ink-mute, #666); margin-top: 4px;
+}
+
+/* Top 30 + Top 20 villes shared layout */
+.top30-list { display: flex; flex-direction: column; gap: 8px; }
+.top30-row {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 6px 0; border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.top30-row:last-child { border-bottom: none; }
+.top30-rank {
+  flex: 0 0 28px; text-align: right;
+  font-size: 13px; font-weight: 700; color: var(--ink-mute, #888);
+  font-variant-numeric: tabular-nums;
+  padding-top: 1px;
+}
+.top30-body { flex: 1; min-width: 0; }
+.top30-head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 12px; flex-wrap: wrap;
+}
+.top30-nom {
+  font-weight: 600; font-size: 13px;
+  color: var(--ink, #1a1a1a);
+  flex: 1; min-width: 200px;
+}
+.top30-multi {
+  font-size: 11px; color: var(--c-loro, #c62828);
+  margin-left: 6px; font-weight: 400;
+}
+.top30-geo {
+  font-size: 11px; margin-left: 6px;
+}
+.top30-meta {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 11px; color: var(--ink-mute, #666);
+  font-variant-numeric: tabular-nums;
+  flex-wrap: wrap;
+}
+.top30-ville { font-style: italic; }
+.top30-cantons { display: inline-flex; gap: 3px; }
+.top30-canton {
+  display: inline-block; padding: 1px 5px; border-radius: 3px;
+  font-size: 10px; font-weight: 600; letter-spacing: 0.04em;
+  background: #eee; color: #555;
+}
+.top30-canton.is-vd { background: #d7e4ff; color: #1a3a8c; }
+.top30-canton.is-fr { background: #ffe0e0; color: #8a1a1a; }
+.top30-canton.is-vs { background: #fff0d0; color: #8a4a1a; }
+.top30-canton.is-ne { background: #d8f0e0; color: #1a5a2a; }
+.top30-canton.is-ge { background: #f4d8f0; color: #5a1a5a; }
+.top30-canton.is-ju { background: #e8d8f0; color: #4a1a6a; }
+.top30-canton.is-r  { background: #f0f0f0; color: #444; font-style: italic; }
+.top30-secteur { color: var(--ink-mute, #888); font-size: 10px; }
+.top30-amt { font-weight: 700; color: var(--ink, #1a1a1a); min-width: 90px; text-align: right; }
+.top30-bar-wrap {
+  height: 5px; background: rgba(0,0,0,0.04);
+  border-radius: 3px; overflow: hidden; margin-top: 4px;
+}
+.top30-bar {
+  height: 100%; background: linear-gradient(to right, var(--c-loro, #c62828), #e85b5b);
+  border-radius: 3px; transition: width 0.4s;
+}
+.top30-note {
+  font-size: 10px; color: var(--ink-mute, #888); margin-top: 3px;
+  font-style: italic;
+}
+
+/* Treemap */
+.treemap-legend {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  padding: 8px 4px 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  margin-bottom: 14px;
+  font-size: 11px; color: var(--ink-mute, #555);
+}
+.treemap-legend-item { display: inline-flex; align-items: center; gap: 5px; }
+.treemap-swatch {
+  display: inline-block; width: 11px; height: 11px; border-radius: 2px;
+}
+.treemap-grid { display: flex; flex-direction: column; gap: 10px; }
+.treemap-row { display: flex; flex-direction: column; gap: 4px; }
+.treemap-row-head {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 12px; font-variant-numeric: tabular-nums;
+}
+.treemap-canton {
+  display: inline-block; padding: 2px 6px; border-radius: 3px;
+  font-size: 10px; font-weight: 700; letter-spacing: 0.04em;
+}
+.treemap-canton.is-vd { background: #d7e4ff; color: #1a3a8c; }
+.treemap-canton.is-fr { background: #ffe0e0; color: #8a1a1a; }
+.treemap-canton.is-vs { background: #fff0d0; color: #8a4a1a; }
+.treemap-canton.is-ne { background: #d8f0e0; color: #1a5a2a; }
+.treemap-canton.is-ge { background: #f4d8f0; color: #5a1a5a; }
+.treemap-canton.is-ju { background: #e8d8f0; color: #4a1a6a; }
+.treemap-canton.is-r  { background: #f0f0f0; color: #444; font-style: italic; }
+.treemap-canton-name { color: var(--ink, #333); font-weight: 600; flex: 1; }
+.treemap-canton-total { color: var(--ink, #333); font-weight: 700; }
+.treemap-bar-wrap { height: 38px; overflow: hidden; }
+.treemap-bar {
+  display: flex; height: 100%; border-radius: 4px; overflow: hidden;
+}
+.treemap-seg {
+  position: relative; overflow: hidden; min-width: 4px;
+  transition: opacity 0.15s;
+}
+.treemap-seg:hover { opacity: 0.85; }
+.treemap-seg-lbl {
+  display: block; color: #fff; font-size: 10px; font-weight: 600;
+  line-height: 1.1; padding: 4px 6px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+/* Per-capita */
+.percap-grid { display: flex; flex-direction: column; gap: 16px; }
+.percap-row {
+  padding: 8px 4px;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.percap-row:last-child { border-bottom: none; }
+.percap-head {
+  display: flex; align-items: baseline; gap: 10px;
+  margin-bottom: 6px;
+}
+.percap-name { font-weight: 600; color: var(--ink, #333); }
+.percap-pop {
+  flex: 1; text-align: right; font-size: 11px;
+  color: var(--ink-mute, #888); font-variant-numeric: tabular-nums;
+}
+.percap-twobars { display: flex; flex-direction: column; gap: 6px; }
+.percap-bar-row {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 11px; font-variant-numeric: tabular-nums;
+}
+.percap-bar-lbl { flex: 0 0 100px; color: var(--ink-mute, #777); }
+.percap-bar-wrap {
+  flex: 1; height: 8px;
+  background: rgba(0,0,0,0.04); border-radius: 4px; overflow: hidden;
+}
+.percap-bar { height: 100%; border-radius: 4px; }
+.percap-bar-ratio { background: linear-gradient(to right, var(--c-loro, #c62828), #e85b5b); }
+.percap-bar-total { background: linear-gradient(to right, #3a8acc, #5fb0d8); }
+.percap-bar-val {
+  flex: 0 0 75px; text-align: right;
+  font-weight: 600; color: var(--ink, #333);
+}
+
+@media (max-width: 600px) {
+  .top30-rank { flex: 0 0 22px; }
+  .top30-meta { font-size: 10px; gap: 6px; }
+  .top30-amt { min-width: 70px; }
+  .treemap-bar-wrap { height: 32px; }
+  .treemap-seg-lbl { font-size: 9px; padding: 3px 4px; }
+  .percap-bar-lbl { flex: 0 0 80px; }
+}
+
+/* Culture viz variant (uses .sports-* base, override bar color) */
+.sports-bar-culture {
+  background: linear-gradient(to right, #7e5ab8, #a079d8) !important;
+}
+
+/* Social viz variant (orange gradient) */
+.sports-bar-social {
+  background: linear-gradient(to right, #e08840, #f0a060) !important;
+}
