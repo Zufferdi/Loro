@@ -400,3 +400,62 @@ Test Playwright avec D3 chargé localement → **22/28 viz rendent** (les 6 « v
 
 - `docs/js/app.js` : remplacement des 4 déclarations dupliquées + 18 lignes d'usage
 - `docs/index.html` : 3 sous-titres + 1 footer mis à jour
+
+## v13.2 (juin 2026) — Fix parallax (sticky cassé par overflow-x: hidden)
+
+### Le bug
+
+L'utilisateur signalait qu'après scroll dans la section timeline, la courbe disparaissait et seules les cards de droite restaient visibles. Diagnostic Playwright en capturant la position du `.graphic` à 8 positions de scroll :
+
+```
+Frame 0: scrollY=1806 graphic.top=90   (visible)
+Frame 1: scrollY=2461 graphic.top=-565 (sorti par le haut !)
+Frame 2: scrollY=3115 graphic.top=-1219
+...
+```
+
+Le `position: sticky` était bien appliqué (computed style correct, `top: 60px`) mais ne s'engageait jamais — la graphique défilait comme `position: static`.
+
+### Cause
+
+Deux problèmes additifs :
+
+1. **`overflow-x: hidden` sur `body`** (style.css ligne 59) : courant pour empêcher le scroll horizontal accidentel, mais ça transforme le body en "scroll container". Conséquence : tout `position: sticky` dans la page utilise le body comme cadre de référence, pas la viewport. Le sticky devient inopérant côté viewport.
+
+2. **Grid item sans `align-self: start`** : dans un layout `display: grid`, un grid item s'étire par défaut sur la hauteur de sa ligne (`align-self: stretch`). Comme `.steps` faisait 4580px de haut, `.graphic` s'étirait aussi à 4580px, donc son `top: 60px` n'avait plus aucun espace de coulissement.
+
+### Le fix
+
+**`docs/css/style.css` ligne 59** :
+
+```css
+/* AVANT (cassé) */
+body { overflow-x: hidden; }
+/* APRÈS (sticky fonctionne) */
+body { overflow-x: clip; }
+```
+
+`overflow-x: clip` empêche le scroll horizontal **sans** créer un scroll container — exactement le comportement attendu pour position: sticky. Supporté par tous les navigateurs modernes (Chrome 90+, Firefox 81+, Safari 16+).
+
+**`docs/css/style.css` lignes 269 + 282** : ajout de `align-self: start` sur `.scrolly .graphic` (desktop + mobile) pour que l'élément sticky ne s'étire pas à la hauteur de la grid row mais conserve sa hauteur intrinsèque (`calc(100vh - 100px)`), laissant de la place pour le scroll relatif.
+
+### Validation
+
+Re-test Playwright après fix :
+
+```
+Frame 0: scrollY=1806 graphic.top=90   (arrivée, position normale)
+Frame 1: scrollY=2461 graphic.top=60   (sticky engagé ✓)
+Frame 2: scrollY=3115 graphic.top=60   (toujours collé ✓)
+Frame 3: scrollY=3769 graphic.top=60   (toujours collé ✓)
+Frame 4: scrollY=4423 graphic.top=60   (toujours collé ✓)
+Frame 5: scrollY=5078 graphic.top=60   (toujours collé ✓)
+Frame 6: scrollY=5732 graphic.top=-56  (fin de section, normal)
+Frame 7: scrollY=6386 graphic.top=-710 (hors section)
+```
+
+Confirmation : la courbe reste maintenant collée à gauche pendant que les 5 cards (1938, 1991, 2003, 2020, 2024) défilent à droite. Comportement identique sur le scrolly « mix » (Acte IV).
+
+### Leçon
+
+`overflow-x: hidden` est un piège classique du scrollytelling. La règle : si l'on veut `position: sticky` quelque part dans la page, **ne jamais** mettre `overflow: hidden` (ou auto/scroll) sur `body` ou `html`. Utiliser `overflow-x: clip`.
