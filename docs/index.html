@@ -14,10 +14,12 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main-content">Aller directement au contenu</a>
+
 <header class="topnav">
   <a class="brand" href="#">LORO · 1938—2025</a>
-  <div class="progress" id="reading-progress"></div>
-  <nav>
+  <div class="progress" id="reading-progress" aria-hidden="true"></div>
+  <nav aria-label="Actes du récit">
     <a href="#acte-1" data-anchor>I</a>
     <a href="#acte-2" data-anchor>II</a>
     <a href="#acte-3" data-anchor>III</a>
@@ -29,7 +31,9 @@
   </nav>
 </header>
 
-<div id="app-error" class="col" style="display:none; padding:80px 24px; color:#c8102e; text-align:center;"></div>
+<div id="app-error" class="col" role="alert" style="display:none; padding:80px 24px; color:#c8102e; text-align:center;"></div>
+
+<main id="main-content">
 
 <!-- ============================================================
      HERO — un seul chiffre, immense
@@ -915,6 +919,12 @@
       à plusieurs milliers de projets culturels, sportifs, sociaux et de patrimoine.&nbsp;»
       <span class="src">Rapport d'activité 2024 de la Délégation jurassienne à la Loterie Romande</span>
     </p>
+
+    <p style="margin-top: 16px; font-size: 14px;">
+      <a href="#brb=canton:JU" class="cta-link">
+        Voir les 200+ bénéficiaires jurassiens 2025 dans l'inventaire complet&nbsp;→
+      </a>
+    </p>
   </div>
 </section>
 
@@ -1055,12 +1065,50 @@
   </div>
 </section>
 
+<!-- ============================================================
+     GLOSSAIRE — clarifie les chiffres-clés qui reviennent dans le récit
+     ============================================================ -->
+<section class="standalone glossary-section">
+  <div class="col-wide">
+    <h3 class="glossary-title">Les chiffres qui reviennent · glossaire</h3>
+    <p class="glossary-intro">
+      Selon l'angle, les mêmes 252 millions peuvent apparaître sous des formes différentes.
+      Voici les principaux chiffres-clés du récit et leur périmètre exact.
+    </p>
+    <dl class="glossary">
+      <dt>252 M CHF</dt>
+      <dd>Bénéfice net <strong>2025</strong> reversé aux organes cantonaux pour redistribution. <em>(Communiqué Loro 26.05.2026)</em></dd>
+
+      <dt>258 M CHF</dt>
+      <dd>Bénéfice net <strong>2024</strong>, pic historique. La baisse 2024 → 2025 vient d'un effet jackpots et d'un reflux de la loterie électronique. <em>(Rapport financier Loro 2024)</em></dd>
+
+      <dt>1,7 milliard CHF</dt>
+      <dd>Chiffre d'affaires (mises) <strong>2024</strong>. C'est l'argent qui rentre dans la machine&nbsp;; le bénéfice est ce qui reste après gains versés aux joueurs, commissions points-de-vente, coûts opérationnels.</dd>
+
+      <dt>438 M CHF — le PBJ</dt>
+      <dd><strong>Produit brut des jeux</strong>&nbsp;: chiffre d'affaires − gains versés. Le PBJ 2024 est de 438 M, dont 59% (258 M) deviennent du bénéfice.</dd>
+
+      <dt>~5 000 projets / an</dt>
+      <dd>Nombre approximatif d'attributions annuelles d'utilité publique (Loro 2024-2025). Tous ne sont pas listés nommément dans les Bénéficiaires des Répartitions des Bénéfices&nbsp;; les plus petites attributions passent par des fondations cantonales.</dd>
+
+      <dt>5 172 entrées BRB 2025</dt>
+      <dd>Nombre exact d'attributions <strong>nommées et localisées</strong> dans le PDF officiel <em>Bénéficiaires des Répartitions des Bénéfices 2025</em> (118 pages). C'est ce qu'explore l'Acte IX. Les <em>~5 000 projets</em> du discours officiel correspondent à ce niveau de granularité.</dd>
+
+      <dt>2,98 Mrd CHF (cumul 2013-2025)</dt>
+      <dd>Total redistribué sur 13 ans, calculé en sommant les bénéfices annuels des rapports financiers Loro 2013-2025.</dd>
+    </dl>
+  </div>
+</section>
+
+</main>
+
 <footer class="site-foot">
   <div class="signoff">
     87 ans, 6 cantons, 9 secteurs, ~5'000 projets soutenus chaque année,<br>
     et un seul fil rouge&nbsp;: <em>2 milliards de francs misés</em> chaque année.
   </div>
   <div>Données : rapports annuels Loterie Romande, Office fédéral de la justice, presse romande 1938—2000.</div>
+  <div class="last-updated" id="last-updated">Dernière mise à jour : <span id="build-date">—</span></div>
   <div class="links">
     <a href="explorer.html">Explorer les bénéficiaires</a>
     <a href="METHODOLOGY.html">Méthodologie</a>
