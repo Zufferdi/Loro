@@ -618,3 +618,156 @@ Tous les tests passent :
 - `docs/index.html` : +90 lignes (skip-link + main + nav aria + intermède Part LoRo + glossaire + lien Jura + last-updated)
 
 Pas de régression sur les viz existantes : audit final 22 viz SVG OK, 6 viz HTML pures OK (rendent du contenu non-SVG : tables, listes, cards), aucune erreur console.
+
+## v13.6 (juin 2026) — Bug parser BRB, agrégation inter-cantons, règles cantonales 2025, élargissement des cas dépendance, refonte multi-année
+
+### 1. Bug parser BRB 2025 — détection et correction
+
+Audit systématique du fichier `brb2025_full.json` après vérification du cas Tremplin Martigny (signalé suspect car affiché à 10,5 M CHF pour une association locale). Vérification croisée avec le **PDF officiel BRB 2025** (`https://soutien-loro.ch/sites/default/files/2026-05/BRB2025.pdf`, page Valais — Action sociale) :
+
+> Assoc. Tremplin, Martigny · Travaux/Aménagements · **2'500.–**
+
+Bug confirmé. **Pattern parser identifié** : 2 entrées consécutives du PDF étaient parfois fusionnées en une seule, le `nom` portant `<nom1> <amount1>.- <nom2>` et `montant_CHF` portant le montant de la 2e entrée. Audit exhaustif via regex `^(.+?)\s+(\d{1,3}['']\d{3}\.-)\s+(.+)$` sur la champ `nom` :
+
+- **186 entrées corrompues sur 5172** (3,6 %)
+- **17,8 M CHF de montants mal-attribués** (8,4 % du total déclaré)
+- Cas Tremplin Martigny : le 10,5 M était en réalité le total du « Fonds mis à disposition du Conseil d'État » du Valais (section parasite agrégée comme une entrée).
+
+**Script de cleanup** (`scripts/clean_brb.py`) :
+1. Détecte le pattern de fusion via regex
+2. Split chaque entrée en 2 : la 1re récupère le montant extrait du nom, la 2e garde le `montant_CHF` actuel
+3. Détecte les sections totales parasites (mots-clés « Fonds mis à disposition », « Total pour », et montant > 500'000 CHF) et les supprime
+4. Backup automatique de l'original dans `brb2025_full.backup.json`
+
+**Résultats** :
+- 206 entrées splittées (+412 nouvelles entrées propres)
+- 1 section totale supprimée (-10,5 M parasite)
+- **Total post-cleanup : 5377 entrées, 207 M CHF** (vs 5172 entrées, 211 M CHF avant)
+- **Tremplin Martigny : 10'500'000 → 2'500 CHF** ✓
+
+### 2. Agrégation inter-cantons
+
+Demande utilisateur : « certains cantons donnent à la même structure, comment faire pour agréger leurs sommes ? ». Implémentation d'une normalisation de nom + group-by :
+
+```python
+def normalize_name(name):
+    s = name.lower()
+    s = re.sub(r"^(assoc\.|fond\.|verein|sté|club|...) +", '', s)  # strip prefix
+    s = re.sub(r",\s*[a-zéèôî' -]+$", '', s)                        # strip ville
+    s = unicodedata.normalize('NFKD', s).encode('ASCII','ignore')   # strip accents
+    return re.sub(r"[^a-z0-9]+", ' ', s).strip()
+```
+
+**Résultat** : 97 bénéficiaires uniques reçoivent de 2+ cantons, 290 entrées BRB taguées avec `agg_total_CHF`, `agg_cantons`, `agg_count`. Top multi-canton :
+
+- **Fond. développement** (GE,VS) — 1,66 M cumulé
+- **FFG Lausanne 2025** (R,VD) — 1,37 M cumulé
+- **Orchestre de Chambre** (FR,GE,VD) — 1,20 M cumulé
+- **Fond. EPFL Plus** (VD,VS) — 1,02 M cumulé
+- **Tour de Romandie** (FR,R) — 965 k cumulé
+- **Verbier Festival** (R,VS) — 925 k cumulé
+- **CORODIS** (FR,R) — 738 k cumulé
+- **Lanterne Magique** (JU,NE,R) — 678 k cumulé
+
+L'UI BRB Explorer affiche désormais :
+- Badge **+N↗** à côté du nom (tooltips listant les autres cantons)
+- Ligne **« Cumul tous cantons : XXX CHF (N cantons) »** sous le secteur
+
+### 3. Règles cantonales 2024 → 2025 : recherche et intégration
+
+Refonte de la viz `initGovernance` pour afficher la **comparaison 2024 vs 2025** par canton, avec badge « ÉVOLUTION » et description courte du changement.
+
+**Sources des règles 2024** (table de référence) :
+> *REISO — La Loterie Romande, source de financement clé*, Jérémie Sanchez, janvier 2026
+> [https://www.reiso.org/articles/themes/pratiques/15008](https://www.reiso.org/articles/themes/pratiques/15008)
+
+| Canton | 2024 | 2025 | Source du changement |
+|---|---|---|---|
+| Vaud | 25 % | 25 % | — |
+| Genève | 0 % | 0 % | — |
+| Fribourg | 9 % | 9 % | **+2 % redirigés vers sport** (500 k CHF) · La Liberté 7 oct 2024 ; Frapp 9 juin 2024 |
+| Valais | 0 % | 0 % | — |
+| Neuchâtel | 10 % | 10 % | **Création FAC-LoRo tourisme** (1,57 M / 13 dossiers) · ne.ch communiqué mai 2026 |
+| Jura | 17 % | **20 %** | Recueil officiel cantonal (FO 2025 N° 23) |
+
+### 4. Élargissement des cas de dépendance documentés
+
+Demande utilisateur : « j'aimerai avoir un peu plus d'associations critiques ». 5 nouveaux cas ajoutés à `dependance_cantons.json` avec **part Loro dans budget chiffrée et sourcée** :
+
+| Asso | Loro | Budget | % Loro | Source |
+|---|---|---|---|---|
+| **FriSanté** (FR) | 176 k | ~550 k | **32 %** | REISO janv. 2026 |
+| **Lanterne magique** (R) | 678 k | ~2,5 M | **27 %** | REISO janv. 2026 |
+| **Cinéforom** (R) | 2,65 M | 10,6 M | **25 %** | Cinéforom (site officiel) + Cinando |
+| Béjart Ballet Lausanne (VD) | 450 k | ~10 M | 5 % | 24 heures juin 2024 |
+| Cully Jazz (VD) | ~110 k | ~2 M | 5 % | Le Temps interview Cavin 2023 |
+
+Les 3 premiers cas montrent une **dépendance structurelle** (> 25 % du budget). Les 2 derniers illustrent au contraire un modèle où la Loro est un **complément**, et où le bénéficiaire serait fragilisé mais pas immédiatement menacé sans elle (Ville + billetterie/bars compensent).
+
+### 5. Refonte multi-année des viz
+
+#### `initFranc` — Décomposition du PBJ avec onglets 2023 / 2024 / 2025
+
+Refonte complète. La viz n'utilise plus de données hardcodées 2024 mais lit dynamiquement depuis `rapports_financiers.json` (compte de résultat ligne à ligne pour les 3 années). 3 onglets `[2023] [2024] [2025]` cliquables, transitions D3 animées au changement.
+
+**Décision méthodologique sur le scale de la barre** : la somme des composants (bénéfice + tous les coûts opérationnels) dépasse légèrement le PBJ chaque année (de 5-10 M) à cause du résultat financier positif (produits hors-jeux). Plutôt que de masquer cette réalité comptable, la barre est **échelonnée sur le total des composants**, et l'en-tête affiche les deux : « PBJ 2024 : 438,2 M · Bénéfice : 258,2 M ». Le pourcentage de chaque segment reste calculé par rapport au PBJ.
+
+**Suppression** de l'ancien segment synthétique « FSES + FSC » qui n'apparaît pas dans le compte de résultat (ces distributions sont incluses dans `resultat_net`).
+
+#### `initMixByCanton` — Grille 3 × 2 desktop, SVG agrandis, 2025 inclus
+
+Refonte du layout : `grid-template-columns: repeat(3, 1fr)` forcé en classe `.mc-grid-3x2`, responsive (2 cols à 920px, 1 col à 600px). SVG passés de 280×140 à **380×200** (+36 % largeur, +43 % hauteur). Ajout d'une grille horizontale en pointillé + ticks Y en M CHF (avant : pas de ticks Y). Série étendue de 2013-2024 à **2013-2025** (`d3.range(2013, 2026)`).
+
+### 6. Carte des cantons — dégradé visible
+
+Les viz `initRealMap` et `initTilegram` utilisaient un dégradé `interpolateRgb('#fbfaf6', '#c8102e')` (presque-blanc → rouge Loro) avec domain `[0, maxV]`. Résultat : toutes les valeurs entre 100 et 600 CHF/habitant tombaient dans la moitié pâle de l'échelle, et les cantons paraissaient « tous dans le même rouge ».
+
+**Remplacement** par `d3.interpolateYlOrRd` (jaune → orange → rouge soutenu) avec domain `[minV - 10%, maxV]`. Effet immédiat : sur la métrique « CHF par habitant 2025 », Fribourg (140) s'affiche en **jaune clair**, Genève (175) en **orange**, Vaud (189) en **rouge moyen**, Jura/NE/VS (194-205) en **bordeaux**. La hiérarchie visuelle est désormais évidente.
+
+### 7. Tilegram 2025
+
+Ajout des données 2025 à `per_capita.json`. Calcul fait à partir de `repartition_canton_jeu.json` :
+
+```
+per_capita_2025 = ventes_canton_2025 / population_canton_2025
+```
+
+Résultats 2025 (CHF / habitant) : VS 205, NE 202, JU 194, VD 189, GE 175, FR 140, Romandie 182. Le slider du tilegram va automatiquement jusqu'à 2025 (lit `max(years)` de `per_capita.tous_jeux.years`).
+
+### 8. Identification des bénéficiaires méritant une série 2013-2025
+
+Demande utilisateur sur la viz « L'échantillon nommé · vue d'ensemble (120 entrées sur ~5'000) ». Audit du fichier `beneficiaires.json` existant : **57 % des 120 entrées sont des sous-entités du Tour de Romandie** (commune X organise une étape de telle année). Le panel est très déséquilibré.
+
+Création de `data/beneficiaires_candidats_2013_2025.json` : **15 structures recommandées** (pérennes, ≥ 500 k CHF en 2025, secteur utilité publique central). Listées par montant 2025 décroissant :
+
+1. Fondation de l'Hermitage (VD) — 4,00 M
+2. Fondation pour la conservation des biens culturels (GE) — 3,30 M
+3. Fondation CHUV recherche médicale (VD) — 1,41 M
+4. CSP Centre Social Protestant Vaud (VD) — 1,38 M
+5. Fondation Arc en Scène (NE) — 1,35 M
+6. Fondation Equilibre et Nuithonie (FR) — 1,10 M
+7. Fondation ISREC cancer (VD) — 1,10 M
+8. Fondation EPFL Plus (VD) — 1,02 M
+9. Cinémathèque suisse (VD) — 830 k
+10. CORODIS intercantonal danse (R+FR) — 738 k
+11. FIFF Festival International Film Fribourg (FR) — 660 k
+12. Fondation Plateforme 10 musées (VD) — 600 k
+13. Fondation du Festival de la Cité Lausanne (VD) — 394 k
+14. Fondation Pierre Gianadda (VS) — 350 k
+15. Fondation Visions du Réel Nyon (VD) — 270 k
+
+**Pour finaliser** : extraire les montants 2013-2024 des 12 BRB historiques (`ra.loro.ch/documents/BRB2013.pdf` à `BRB2024.pdf`) et fusionner dans `beneficiaires.json` — travail séparé non inclus dans cette livraison.
+
+### 9. Sous-titres HTML mis à jour
+
+- Section franc : « Décomposition du produit brut des jeux Loro · 2023, 2024, 2025 »
+- Section gouvernance : « Les règles cantonales · 2024 → 2025 » avec mention explicite des 3 cantons ayant évolué
+
+### Validation finale
+
+- `node --check js/app.js` : OK
+- Playwright headless sur viewport 1500×900 : 0 erreur JS
+- viz-franc : 3 tabs, transitions OK, 2023/2024/2025 rendent (PBJ 420,7 / 438,2 / 429,8 M, bénéfice 243,7 / 258,2 / 252,0 M)
+- viz-governance : 6 lignes comparées, 3 badges ÉVOLUTION (FR, NE, JU)
+- viz-mix-canton : 6 cellules en 3×2, axe 2013-2025 effectif
+- viz-tilegram : 2025 atteint au slider, palette YlOrRd visible
