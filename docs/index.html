@@ -953,7 +953,7 @@
 <section class="standalone">
   <div class="col-xl">
     <div class="viz-card">
-      <h3 class="viz-title">5'358 bénéficiaires &mdash; chacun nommé, chacun localisé</h3>
+      <h3 class="viz-title">5'358 attributions à 4'437 bénéficiaires distincts &mdash; chacun nommé, chacun localisé</h3>
       <p class="viz-subtitle">
         Recherchez une association, filtrez par canton ou secteur. Extraction complète du BRB 2025 publié par la Loterie Romande. Les bénéficiaires actifs dans plusieurs cantons portent un badge agrégat <span class="brb-agg-badge-inline">+N↗</span> qui révèle leur cumul toutes attributions confondues.
       </p>
@@ -968,7 +968,7 @@
       </p>
       <div id="viz-explorer" class="viz"></div>
       <div class="viz-footer">
-        <span>Source&nbsp;: <em>Répartition des bénéfices 2025</em> (Loterie Romande, PDF officiel, 118&nbsp;pages). 5'358 attributions extraites couvrant les 6 cantons romands et les projets intercantonaux, pour un total de 207 M CHF.</span>
+        <span>Source&nbsp;: <em>Répartition des bénéfices 2025</em> (Loterie Romande, PDF officiel, 118&nbsp;pages). 5'358 attributions extraites couvrant les 6 cantons romands et les projets intercantonaux (4'437 bénéficiaires distincts par nom normalisé après cleanup v13.9), pour un total de 207 M CHF.</span>
       </div>
     </div>
   </div>
@@ -1001,7 +1001,7 @@
       </p>
       <div id="viz-multicantons" class="viz"></div>
       <div class="viz-footer">
-        <span>82 bénéficiaires inter-cantonaux (haute confiance) identifiés dans le BRB 2025 sur 5'358 entrées totales.
+        <span>82 bénéficiaires inter-cantonaux (haute confiance) identifiés dans le BRB 2025 sur 5'358 attributions (4'437 bénéficiaires distincts au total).
         Agrégation par nom normalisé après nettoyage v13.6 + v13.7. 24 clusters supplémentaires ont été écartés
         car leurs noms tronqués (« Assoc. pour la conservation », « Fond. pour la sauvegarde »…) ne permettent pas
         de garantir qu'il s'agit bien d'une même entité — par prudence, on les considère comme des entités distinctes.
@@ -1049,6 +1049,108 @@
 
 <section class="chapter-intro">
   <h2 style="font-size: 36px; line-height: 1.2;">
+    Quelle discipline <em>sportive</em> capte le plus de soutien&nbsp;?
+  </h2>
+  <p class="dek">
+    Le champ « secteur » du BRB regroupe 2'365 entrées sous l'étiquette « Sport »,
+    mais 70&nbsp;% n'ont aucun mot-clé sportif dans leur nom — ce sont en réalité
+    des événements culturels mal classés par le parser (pollution de header de section).
+    En ignorant ce champ et en classifiant à partir du nom + description,
+    on découpe le vrai paysage du sport romand en 30 disciplines.
+  </p>
+</section>
+
+<section class="standalone">
+  <div class="col-xl">
+    <div class="viz-card">
+      <h3 class="viz-title">Top des disciplines sportives — 31,8 M CHF identifiés sur 1'544 attributions</h3>
+      <p class="viz-subtitle">
+        Triées par montant cumulé. Cliquer sur une discipline déplie 3 à 5 bénéficiaires exemples.
+        Les pastilles colorées sont les cantons les plus contributeurs sur cette discipline.
+      </p>
+      <div id="viz-sports" class="viz"></div>
+      <div class="viz-footer">
+        <span>Méthode&nbsp;: classification par mots-clés sur nom + description
+        (30 catégories pré-définies). Une entrée n'est attribuée qu'à une seule catégorie
+        (première match dans l'ordre de spécificité). Les associations multi-sports
+        (« Assoc. Cantonale Vaudoise », « FSG ») sont rangées sous « Multi-sports ».
+        Les 71&nbsp;% d'entrées restantes (~3'800 entries) ne sont pas du sport et ne sont pas classifiées ici.
+        Voir <a href="METHODOLOGY.html#sports-classification" target="_blank" rel="noopener">METHODOLOGY · Sport classification</a>.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter-intro">
+  <h2 style="font-size: 36px; line-height: 1.2;">
+    Et côté <em>culture</em>&nbsp;: danse, cinéma, littérature, théâtre&hellip;
+    qui domine&nbsp;?
+  </h2>
+  <p class="dek">
+    Même approche que pour le sport, en ignorant le champ « secteur »
+    pollué&nbsp;: on classifie chaque entrée à partir des mots-clés du nom
+    et de la description. 14 sous-catégories culturelles, ordonnées du plus
+    spécifique (Cinéma, Danse, Cirque, Photographie) au plus large (Festival
+    multi-disciplinaire). Chaque entrée n'est attribuée qu'à une seule catégorie.
+  </p>
+</section>
+
+<section class="standalone">
+  <div class="col-xl">
+    <div class="viz-card">
+      <h3 class="viz-title">Top des sous-domaines culturels — 51 M CHF identifiés sur 813 attributions</h3>
+      <p class="viz-subtitle">
+        Triés par montant cumulé. Cliquer sur une catégorie déplie ses 5 plus grands bénéficiaires.
+        Les pastilles colorées sont les cantons les plus contributeurs sur cette sous-catégorie.
+      </p>
+      <div id="viz-culture" class="viz"></div>
+      <div class="viz-footer">
+        <span>Méthode&nbsp;: classification par mots-clés sur nom + description
+        (14 catégories pré-définies, ordre spécifique → générique). Une entrée n'est attribuée qu'à
+        une seule catégorie. Les ~85&nbsp;% d'entrées restantes (sport, action sociale, environnement,
+        santé, formation, ou descriptions trop génériques) ne sont pas classifiées ici.
+        Voir <a href="METHODOLOGY.html#culture-classification" target="_blank" rel="noopener">METHODOLOGY · Culture classification</a>.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter-intro">
+  <h2 style="font-size: 36px; line-height: 1.2;">
+    Et l'<em>action sociale</em>&nbsp;: précarité, vieillesse, handicap, migration&hellip;
+  </h2>
+  <p class="dek">
+    Troisième domaine, troisième classification. Avec une difficulté supplémentaire&nbsp;:
+    les acronymes (CSP, LAVI, EVAM, FAJE, EPER) et les noms d'organisations
+    suisses connues (Caritas, Pro Senectute, Pro Infirmis, Emmaüs, Croix-Rouge)
+    qu'on intègre directement dans les patterns. Pour les cas vraiment
+    ambigus, on est allé vérifier en ligne — sept overrides manuels documentés.
+  </p>
+</section>
+
+<section class="standalone">
+  <div class="col-xl">
+    <div class="viz-card">
+      <h3 class="viz-title">Top des sous-domaines sociaux — 27 M CHF identifiés sur 246 attributions</h3>
+      <p class="viz-subtitle">
+        Triés par montant cumulé. Cliquer sur une catégorie déplie ses 5 plus grands bénéficiaires.
+        Les pastilles colorées sont les cantons les plus contributeurs.
+      </p>
+      <div id="viz-social" class="viz"></div>
+      <div class="viz-footer">
+        <span>Méthode&nbsp;: 13 catégories sociales, patterns mots-clés + noms d'orgs suisses
+        + 7 overrides manuels vérifiés via web (Banc Public, Elderli, Au Cœur des Grottes&hellip;).
+        Le champ « secteur » du parser étant pollué (Cinémathèque taggée « Santé », Conservatoire
+        taggé « Action sociale »), la classification s'appuie uniquement sur le contenu textuel
+        nom + description. Voir
+        <a href="METHODOLOGY.html#social-classification" target="_blank" rel="noopener">METHODOLOGY · Social classification</a>.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter-intro">
+  <h2 style="font-size: 36px; line-height: 1.2;">
     Le <em>top 10</em> capte 40&nbsp;% de la masse.
   </h2>
   <p class="dek">
@@ -1063,7 +1165,7 @@
 <section class="standalone">
   <div class="col-wide">
     <div class="viz-card">
-      <h3 class="viz-title">Distribution des 5'358 montants — échelle logarithmique</h3>
+      <h3 class="viz-title">Distribution des 5'358 attributions — échelle logarithmique</h3>
       <p class="viz-subtitle">Chaque point = un bénéficiaire. Survolez pour voir le détail.</p>
       <div id="viz-longtail" class="viz"></div>
       <div class="viz-footer">
@@ -1092,7 +1194,133 @@
       <p class="viz-subtitle">Couleur = canton, taille = total reçu en 2025.</p>
       <div id="viz-geomap" class="viz"></div>
       <div class="viz-footer">
-        <span>Coordonnées géographiques rattachées à environ 27&nbsp;% des entrées de l'inventaire. Les bénéficiaires sans ville identifiable (organes répartiteurs cantonaux, fondations sans adresse) sont exclus de la carte.</span>
+        <span>Coordonnées géographiques rattachées à <strong>33&nbsp;%</strong> des entrées de l'inventaire après enrichissement v13.10
+        (audit + lookup de ~100 communes romandes ajoutées). Couverture vérifiée&nbsp;: 0 coordonnée hors-Suisse, 0 incohérence
+        entre villes. Les bénéficiaires sans ville identifiable (organes répartiteurs cantonaux, fondations sans adresse) restent exclus.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PASS 8 NEW VIZES (v13.10): Top30, Villes, Treemap, Per-capita
+     ============================================================ -->
+
+<section class="chapter-intro">
+  <h2 style="font-size: 36px; line-height: 1.2;">
+    Le <em>top 30</em> capte 21&nbsp;% du BRB.
+  </h2>
+  <p class="dek">
+    En remontant de la longue traîne vers le sommet, on découvre une
+    concentration nette&nbsp;: trente bénéficiaires distincts cumulent
+    43&nbsp;millions, soit un peu plus d'un cinquième de tout ce que la
+    Loterie Romande a distribué en 2025. Le pictogramme «&nbsp;⇆&nbsp;» signale
+    les structures qui reçoivent de plusieurs cantons à la fois.
+  </p>
+</section>
+
+<section class="standalone">
+  <div class="col-xl">
+    <div class="viz-card">
+      <h3 class="viz-title">Top 30 bénéficiaires absolus — toutes attributions cumulées</h3>
+      <p class="viz-subtitle">
+        Aggrégation par nom normalisé après cleanup v13.10. Triés par montant cumulé en 2025.
+      </p>
+      <div id="viz-top30" class="viz"></div>
+      <div class="viz-footer">
+        <span>Méthode&nbsp;: normalisation (suppression des préfixes « Assoc. », « Fond. », accents…) puis somme
+        des attributions distinctes. Une organisation présente dans plusieurs cantons (« ⇆ ») cumule ici
+        ses attributions. Source&nbsp;: BRB 2025 cleané v13.10.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter-intro">
+  <h2 style="font-size: 36px; line-height: 1.2;">
+    <em>Où</em> atterrit l'argent&nbsp;: 20 villes en captent un tiers.
+  </h2>
+  <p class="dek">
+    Géographiquement, la concentration est tout aussi marquée. Vingt
+    communes &mdash; dominées par Lausanne, Genève et Fribourg &mdash; captent un
+    tiers du BRB à elles seules. Le pictogramme «&nbsp;📍&nbsp;» indique que
+    la commune a des coordonnées géographiques connues (visible sur la carte plus haut).
+  </p>
+</section>
+
+<section class="standalone">
+  <div class="col-xl">
+    <div class="viz-card">
+      <h3 class="viz-title">Top 20 villes destinataires</h3>
+      <p class="viz-subtitle">Total cumulé reçu par les bénéficiaires dont le siège est dans cette commune.</p>
+      <div id="viz-villes" class="viz"></div>
+      <div class="viz-footer">
+        <span>Aggrégation par champ « ville ». ~53&nbsp;% des entrées BRB n'ont pas de ville renseignée
+        (organes répartiteurs, fondations sans adresse, attributions intercantonales) et ne sont pas
+        comptabilisées ici.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter-intro">
+  <h2 style="font-size: 36px; line-height: 1.2;">
+    Chaque canton a sa <em>signature</em> de répartition.
+  </h2>
+  <p class="dek">
+    Les six cantons romands + l'enveloppe intercantonale partagent les
+    207&nbsp;millions de manière très inégale, et chacun privilégie des
+    secteurs différents. Vaud met massivement dans la culture et le sport,
+    Genève redistribue beaucoup à l'action sociale, Valais oriente vers le
+    sport et l'environnement&hellip; La signature de chaque canton est
+    lisible en un coup d'œil.
+  </p>
+</section>
+
+<section class="standalone">
+  <div class="col-xl">
+    <div class="viz-card">
+      <h3 class="viz-title">Répartition canton × secteur — la signature de chaque canton</h3>
+      <p class="viz-subtitle">
+        Largeur de la ligne = total du canton (Vaud = 100&nbsp;%). Largeur de chaque segment dans une ligne = part de ce secteur.
+        Survoler un segment pour voir les top 3 bénéficiaires.
+      </p>
+      <div id="viz-treemap" class="viz"></div>
+      <div class="viz-footer">
+        <span>Aggrégation (canton × secteur) sur les 5'358 attributions. Le champ « secteur » est partiellement
+        faussé par un bug parser (voir <a href="METHODOLOGY.html#v13-10" target="_blank" rel="noopener">METHODOLOGY v13.10</a>)
+        notamment côté Sport↔Culture. Les sommes globales par canton restent correctes.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter-intro">
+  <h2 style="font-size: 36px; line-height: 1.2;">
+    Par habitant, c'est le <em>Jura</em> qui s'en sort le mieux.
+  </h2>
+  <p class="dek">
+    En montants absolus, Vaud écrase ses voisins. Mais ramené au nombre
+    d'habitants, l'image s'inverse&nbsp;: le Jura reçoit plus de
+    soutiens par tête que Genève. C'est la conséquence directe de la clé
+    de répartition romande (50&nbsp;% population, 50&nbsp;% mises) qui
+    favorise les petits cantons à plus haut taux de jeu par habitant.
+  </p>
+</section>
+
+<section class="standalone">
+  <div class="col-xl">
+    <div class="viz-card">
+      <h3 class="viz-title">CHF par habitant — qui reçoit le plus, proportionnellement</h3>
+      <p class="viz-subtitle">
+        Deux barres par canton&nbsp;: en rouge le ratio par habitant (la statistique « juste »),
+        en bleu le total absolu (la masse réelle). Le contraste explicite la clé de répartition romande.
+      </p>
+      <div id="viz-percapita" class="viz"></div>
+      <div class="viz-footer">
+        <span>Sources population&nbsp;: OFS / Statistiques cantonales 2024 (en milliers d'habitants&nbsp;:
+        VD&nbsp;825, GE&nbsp;515, VS&nbsp;360, FR&nbsp;335, NE&nbsp;175, JU&nbsp;75). Le canton intercantonal
+        « R » n'a pas de population définie et n'apparaît donc pas ici.</span>
       </div>
     </div>
   </div>
@@ -1213,6 +1441,10 @@
 <script src="js/utils.js"></script>
 <script src="js/app.js"></script>
 <script src="js/historical_series.js"></script>
+<script src="js/sports.js"></script>
+<script src="js/culture.js"></script>
+<script src="js/social.js"></script>
+<script src="js/aggregations.js"></script>
 
 </body>
 </html>
