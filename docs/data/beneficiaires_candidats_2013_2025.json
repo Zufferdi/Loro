@@ -1,0 +1,233 @@
+{
+  "_meta": {
+    "description": "Bénéficiaires Loro identifiés comme méritant une série historique 2013-2025 complète (vs. les 120 entrées existantes, dominées à 57% par le Tour de Romandie).",
+    "methodologie": "Critères : structure pérenne (vs événement one-shot), apparait dans BRB 2025 avec ≥ 500'000 CHF cumulés, secteur d'utilité publique central (culture, santé, social, patrimoine, formation).",
+    "sources": [
+      "BRB 2025 Loterie Romande (5377 entrées post-cleanup)"
+    ],
+    "date_analyse": "2026-06",
+    "todo": "Pour chaque bénéficiaire ci-dessous, extraire montants 2013-2024 depuis les BRB historiques (ra.loro.ch/documents/BRB2013.pdf à BRB2024.pdf) et fusionner dans beneficiaires.json."
+  },
+  "candidats": [
+    {
+      "nom_canonique": "Fondation de l'Hermitage",
+      "canton_principal": "VD",
+      "categorie": "Culture / Musée",
+      "justification": "Musée d'art lausannois pérenne, fondation institutionnelle",
+      "montant_2025_CHF": 4000000,
+      "cantons_2025": [
+        "VD"
+      ],
+      "secteurs_2025": [
+        "Santé",
+        "Sport"
+      ],
+      "exemple_nom_dans_brb": "Fond. de l'Hermitage"
+    },
+    {
+      "nom_canonique": "Fondation pour la conservation des biens culturels (Genève)",
+      "canton_principal": "GE",
+      "categorie": "Patrimoine",
+      "justification": "Conservation du patrimoine genevois, distribuée annuellement",
+      "montant_2025_CHF": 3300000,
+      "cantons_2025": [
+        "GE"
+      ],
+      "secteurs_2025": [
+        "Patrimoine"
+      ],
+      "exemple_nom_dans_brb": "Fond. pour la conservation des"
+    },
+    {
+      "nom_canonique": "CSP Centre Social Protestant Vaud",
+      "canton_principal": "VD",
+      "categorie": "Action sociale",
+      "justification": "Service social vaudois historique (fondé 1961), 11 lieux de consultation",
+      "montant_2025_CHF": 1376000,
+      "cantons_2025": [
+        "VD"
+      ],
+      "secteurs_2025": [
+        "Action sociale"
+      ],
+      "exemple_nom_dans_brb": "CSP Centre Social Protestant"
+    },
+    {
+      "nom_canonique": "Fondation CHUV (recherche médicale)",
+      "canton_principal": "VD",
+      "categorie": "Santé",
+      "justification": "Branche recherche du CHUV, financement structurel",
+      "montant_2025_CHF": 1413378,
+      "cantons_2025": [
+        "VD"
+      ],
+      "secteurs_2025": [
+        "Formation",
+        "Santé"
+      ],
+      "exemple_nom_dans_brb": "Fond. CHUV"
+    },
+    {
+      "nom_canonique": "Fondation Arc en Scène",
+      "canton_principal": "NE",
+      "categorie": "Culture / Théâtre",
+      "justification": "Centre culturel neuchâtelois pérenne",
+      "montant_2025_CHF": 1345000,
+      "cantons_2025": [
+        "NE"
+      ],
+      "secteurs_2025": [
+        "Culture"
+      ],
+      "exemple_nom_dans_brb": "Fond. Arc en Scène - centre"
+    },
+    {
+      "nom_canonique": "Fondation Equilibre et Nuithonie",
+      "canton_principal": "FR",
+      "categorie": "Culture / Théâtre",
+      "justification": "Plus gros bénéficiaire culturel fribourgeois, équipement structurel",
+      "montant_2025_CHF": 1100000,
+      "cantons_2025": [
+        "FR"
+      ],
+      "secteurs_2025": [
+        "Culture",
+        "Sport"
+      ],
+      "exemple_nom_dans_brb": "Fond. Équilibre et Nuithonie"
+    },
+    {
+      "nom_canonique": "Fondation ISREC (cancer)",
+      "canton_principal": "VD",
+      "categorie": "Formation/Santé",
+      "justification": "Recherche cancer, ISREC (Institut suisse de recherche expérimentale sur le cancer)",
+      "montant_2025_CHF": 1100000,
+      "cantons_2025": [
+        "VD"
+      ],
+      "secteurs_2025": [
+        "Formation"
+      ],
+      "exemple_nom_dans_brb": "Fond. ISREC"
+    },
+    {
+      "nom_canonique": "Fondation EPFL Plus",
+      "canton_principal": "VD",
+      "categorie": "Formation",
+      "justification": "Branche financement EPFL, attributions répétées",
+      "montant_2025_CHF": 1020000,
+      "cantons_2025": [
+        "VD",
+        "VS"
+      ],
+      "secteurs_2025": [
+        "Formation",
+        "Jeunesse"
+      ],
+      "exemple_nom_dans_brb": "Fond. EPFL Plus"
+    },
+    {
+      "nom_canonique": "Cinémathèque suisse",
+      "canton_principal": "VD",
+      "categorie": "Culture / Cinéma",
+      "justification": "Institution nationale, attributions récurrentes via Vaud",
+      "montant_2025_CHF": 830000,
+      "cantons_2025": [
+        "VD"
+      ],
+      "secteurs_2025": [
+        "Culture",
+        "Santé"
+      ],
+      "exemple_nom_dans_brb": "Cinémathèque suisse"
+    },
+    {
+      "nom_canonique": "Fondation Plateforme 10 (Lausanne)",
+      "canton_principal": "VD",
+      "categorie": "Culture / Musées",
+      "justification": "Pôle muséal Lausanne (Mudac, Photo Elysée, MCBA) — nouveau (depuis 2022)",
+      "montant_2025_CHF": 600000,
+      "cantons_2025": [
+        "VD"
+      ],
+      "secteurs_2025": [
+        "Sport"
+      ],
+      "exemple_nom_dans_brb": "Fond. Plateforme 10"
+    },
+    {
+      "nom_canonique": "Festival International du Film de Fribourg (FIFF)",
+      "canton_principal": "FR",
+      "categorie": "Culture / Cinéma",
+      "justification": "Festival majeur cinéma sud, attributions annuelles établies",
+      "montant_2025_CHF": 660000,
+      "cantons_2025": [
+        "FR"
+      ],
+      "secteurs_2025": [
+        "Sport"
+      ],
+      "exemple_nom_dans_brb": "Festival International du film"
+    },
+    {
+      "nom_canonique": "Fondation Pierre Gianadda",
+      "canton_principal": "VS",
+      "categorie": "Culture / Musée",
+      "justification": "Musée valaisan emblématique, attribution annuelle régulière",
+      "montant_2025_CHF": 350000,
+      "cantons_2025": [
+        "VS"
+      ],
+      "secteurs_2025": [
+        "Culture"
+      ],
+      "exemple_nom_dans_brb": "Fond. Pierre Gianadda"
+    },
+    {
+      "nom_canonique": "CORODIS (intercantonal danse)",
+      "canton_principal": "R+FR",
+      "categorie": "Culture / Danse",
+      "justification": "Coordination romande danse, 2 cantons en 2025 (Suisse romande + Fribourg)",
+      "montant_2025_CHF": 737970,
+      "cantons_2025": [
+        "FR",
+        "R"
+      ],
+      "secteurs_2025": [
+        "Culture"
+      ],
+      "exemple_nom_dans_brb": "CORODIS"
+    },
+    {
+      "nom_canonique": "Fondation Visions du Réel (Nyon)",
+      "canton_principal": "VD",
+      "categorie": "Culture / Cinéma",
+      "justification": "Festival international documentaire majeur, attributions régulières",
+      "montant_2025_CHF": 270000,
+      "cantons_2025": [
+        "R",
+        "VD"
+      ],
+      "secteurs_2025": [
+        "Culture",
+        "Sport"
+      ],
+      "exemple_nom_dans_brb": "Fond. Visions du Réel"
+    },
+    {
+      "nom_canonique": "Fondation du Festival de la Cité (Lausanne)",
+      "canton_principal": "VD",
+      "categorie": "Culture / Festival",
+      "justification": "Festival lausannois historique, attribution annuelle stable",
+      "montant_2025_CHF": 393500,
+      "cantons_2025": [
+        "VD"
+      ],
+      "secteurs_2025": [
+        "Santé",
+        "Sport"
+      ],
+      "exemple_nom_dans_brb": "Fond. du Festival de la Cité"
+    }
+  ]
+}
