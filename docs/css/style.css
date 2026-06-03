@@ -56,7 +56,10 @@ html, body {
   font-family: var(--sans);
   font-size: 17px; line-height: 1.65;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  /* overflow-x: clip (not hidden) prevents horizontal scroll WITHOUT creating a scroll container,
+     so position: sticky elements inside still observe the viewport as their reference frame.
+     overflow: hidden would silently break every sticky element on the page. */
+  overflow-x: clip;
 }
 
 a { color: var(--c-loro); text-decoration: none; border-bottom: 1px solid currentColor; }
@@ -263,6 +266,10 @@ a:hover { color: var(--c-loro-dark); }
 .scrolly .graphic {
   position: sticky;
   top: 60px;
+  /* CRITICAL: align-self: start prevents the grid item from stretching to fill the entire grid row.
+     Without this, the sticky element is as tall as the steps column (4580px), so its sticky top
+     never engages — it just scrolls with the page like position: static. */
+  align-self: start;
   height: calc(100vh - 100px);
   min-height: 500px;
   display: flex; align-items: center; justify-content: center;
@@ -272,6 +279,7 @@ a:hover { color: var(--c-loro-dark); }
   .scrolly .graphic {
     position: sticky;
     top: 50px;
+    align-self: start;
     height: 55vh;
     min-height: 380px;
     background: var(--bg);
