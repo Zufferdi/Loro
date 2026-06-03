@@ -21,7 +21,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     DATA.editorial  = await loadJSON('editorial_loro.json');
     DATA.dependance = await loadJSON('dependance_cantons.json');
     DATA.juraHistoire = await loadJSON('jura_histoire.json');
-    DATA.brb2025      = await loadJSON('brb2025_full.json');
+    // brb2025_full.json (1.7 MB) — load lazily when Acte IX nears the viewport.
+    // We don't await here — the initial paint stays fast.
+    DATA.brb2025      = null;
+    DATA.brb2025_loading = null;
 
     initHero();
     initComparisons();
@@ -48,13 +51,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     initLoroVsSwisslos();
     initEditorialTimeline();
     initJuraHistoire();
-    initBrbExplorer();
-    initBrbLongtail();
-    initBrbGeomap();
+    initBrbLazyTrigger();   // BRB viz (1.7 MB) — loaded on demand via IntersectionObserver
     initJourney();
     initSankey();
     initReadingProgress();
     initRevealOnScroll();
+    initBuildDate();
+    initA11yDecoration();
   } catch (e) {
     console.error(e);
     const errEl = document.getElementById('app-error');
@@ -893,8 +896,8 @@ function initTreemap() {
   const svg = container.append('svg')
     .attr('viewBox', `0 0 ${W} ${H}`)
     .attr('preserveAspectRatio', 'xMidYMid meet')
-    .attr('width', '100%').attr('height', 'auto')
-    .style('max-height', '70vh').style('display', 'block');
+    .attr('width', '100%').attr('height', H)
+    .style('height', 'auto').style('max-height', '70vh').style('display', 'block');
 
   const sectorOrder = Object.keys(DATA.secteurs); // stable layout key
 
@@ -1177,6 +1180,59 @@ function initRevealOnScroll() {
     });
   }, { threshold: 0.15 });
   els.forEach(el => io.observe(el));
+}
+
+/* ============================================================
+   ACCESSIBILITY DECORATOR
+   Runs after all viz are rendered. Adds:
+   - role="region" + aria-labelledby on each .viz-card (pairs the card with its title)
+   - role="img" + aria-label on each <svg> inside .viz (derives label from card title)
+   This works without touching the 20+ individual viz init functions.
+   ============================================================ */
+function initA11yDecoration() {
+  let titleSeq = 0;
+  document.querySelectorAll('.viz-card').forEach(card => {
+    const titleEl = card.querySelector('.viz-title');
+    if (!titleEl) return;
+    if (!titleEl.id) {
+      titleSeq += 1;
+      titleEl.id = `viz-title-${titleSeq}`;
+    }
+    if (!card.hasAttribute('role')) card.setAttribute('role', 'region');
+    if (!card.hasAttribute('aria-labelledby')) card.setAttribute('aria-labelledby', titleEl.id);
+
+    // For SVGs inside this card, set role=img and aria-label from the title text
+    const titleText = titleEl.textContent.trim();
+    card.querySelectorAll('svg').forEach(svg => {
+      if (!svg.hasAttribute('role')) svg.setAttribute('role', 'img');
+      if (!svg.hasAttribute('aria-label')) svg.setAttribute('aria-label', titleText);
+    });
+  });
+}
+
+/* ============================================================
+   BUILD DATE — affiche la date de la dernière mise à jour
+   Stratégie : dernière modification connue de historique.json (extraite via fetch HEAD),
+   sinon fallback au jour du chargement de la page.
+   ============================================================ */
+function initBuildDate() {
+  const el = document.getElementById('build-date');
+  if (!el) return;
+  const fmt = d => new Intl.DateTimeFormat('fr-CH', {
+    day: 'numeric', month: 'long', year: 'numeric'
+  }).format(d);
+
+  // Essai 1 : last-modified du fichier historique.json (le plus volatil)
+  fetch('data/historique.json', { method: 'HEAD' })
+    .then(r => {
+      const lm = r.headers.get('last-modified');
+      if (lm) {
+        el.textContent = fmt(new Date(lm));
+      } else {
+        el.textContent = fmt(new Date());
+      }
+    })
+    .catch(() => { el.textContent = fmt(new Date()); });
 }
 
 /* ============================================================
@@ -2341,7 +2397,7 @@ function initJuraHistoire() {
 
   const svg = container.append('svg').attr('viewBox', `0 0 ${W} ${H}`)
     .attr('preserveAspectRatio', 'xMidYMid meet')
-    .attr('width', '100%').attr('height', 'auto').style('max-height', '70vh');
+    .attr('width', '100%').attr('height', H).style('height', 'auto').style('max-height', '70vh');
   const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
   const x = d3.scaleLinear().domain([1978, 2027]).range([0, w]);
@@ -3434,6 +3490,9 @@ function initLoroVsSwisslos() {
 
       // === LORO side (gauche, barres groupées 2024 sur le haut, 2025 en bas) ===
       const barH = 11, barGap = 3;
+      // Helper: place value text inside the bar if it would collide with the row label outside.
+      // Threshold: bar fills > 65% of halfW → render inside, right-anchored, white.
+      const INSIDE_THRESHOLD = halfW * 0.65;
       // 2024 Loro
       if (item24 && item24.loro != null) {
         const lW = x(item24.loro);
@@ -3441,10 +3500,12 @@ function initLoroVsSwisslos() {
           .attr('x', centerX - 12 - lW)
           .attr('y', cursorY + 6).attr('width', lW).attr('height', barH)
           .attr('fill', '#c8102e').attr('opacity', 0.55);
+        const isWide = lW > INSIDE_THRESHOLD;
         svg.append('text')
-          .attr('x', centerX - 12 - lW - 6).attr('y', cursorY + 6 + barH - 1)
+          .attr('x', isWide ? (centerX - 12 - 6) : (centerX - 12 - lW - 6))
+          .attr('y', cursorY + 6 + barH - 1)
           .attr('text-anchor', 'end').attr('font-size', 11)
-          .attr('fill', '#c8102e')
+          .attr('fill', isWide ? 'white' : '#c8102e')
           .text(fmtUnit(item24.loro, unite) + (item24.loro_est ? ' (est.)' : ''));
       } else {
         svg.append('text').attr('x', centerX - 12).attr('y', cursorY + 6 + barH - 1)
@@ -3458,10 +3519,12 @@ function initLoroVsSwisslos() {
           .attr('y', cursorY + 6 + barH + barGap).attr('width', lW).attr('height', barH)
           .attr('fill', '#c8102e').attr('opacity', 1);
         if (item25.loro_est) rect.attr('stroke', '#c8102e').attr('stroke-width', 1.5).attr('stroke-dasharray', '3,2').attr('fill-opacity', 0.5);
+        const isWide = lW > INSIDE_THRESHOLD;
         svg.append('text')
-          .attr('x', centerX - 12 - lW - 6).attr('y', cursorY + 6 + barH + barGap + barH - 1)
+          .attr('x', isWide ? (centerX - 12 - 6) : (centerX - 12 - lW - 6))
+          .attr('y', cursorY + 6 + barH + barGap + barH - 1)
           .attr('text-anchor', 'end').attr('font-size', 11).attr('font-weight', 600)
-          .attr('fill', '#c8102e')
+          .attr('fill', isWide ? 'white' : '#c8102e')
           .text(fmtUnit(item25.loro, unite) + (item25.loro_est ? ' (est.)' : ''));
       } else {
         svg.append('text').attr('x', centerX - 12).attr('y', cursorY + 6 + barH + barGap + barH - 1)
@@ -3476,9 +3539,12 @@ function initLoroVsSwisslos() {
           .attr('x', centerX + 12).attr('y', cursorY + 6)
           .attr('width', sW).attr('height', barH)
           .attr('fill', '#1a1917').attr('opacity', 0.55);
+        const isWide = sW > INSIDE_THRESHOLD;
         svg.append('text')
-          .attr('x', centerX + 12 + sW + 6).attr('y', cursorY + 6 + barH - 1)
-          .attr('font-size', 11).attr('fill', inkColor())
+          .attr('x', isWide ? (centerX + 12 + 6) : (centerX + 12 + sW + 6))
+          .attr('y', cursorY + 6 + barH - 1)
+          .attr('text-anchor', isWide ? 'start' : 'start')
+          .attr('font-size', 11).attr('fill', isWide ? 'white' : inkColor())
           .text(fmtUnit(item24.swisslos, unite) + (item24.swisslos_est ? ' (est.)' : ''));
       } else {
         svg.append('text').attr('x', centerX + 12).attr('y', cursorY + 6 + barH - 1)
@@ -3492,9 +3558,11 @@ function initLoroVsSwisslos() {
           .attr('width', sW).attr('height', barH)
           .attr('fill', '#1a1917').attr('opacity', 1);
         if (item25.swisslos_est) rect.attr('stroke', '#1a1917').attr('stroke-width', 1.5).attr('stroke-dasharray', '3,2').attr('fill-opacity', 0.5);
+        const isWide = sW > INSIDE_THRESHOLD;
         svg.append('text')
-          .attr('x', centerX + 12 + sW + 6).attr('y', cursorY + 6 + barH + barGap + barH - 1)
-          .attr('font-size', 11).attr('font-weight', 600).attr('fill', inkColor())
+          .attr('x', isWide ? (centerX + 12 + 6) : (centerX + 12 + sW + 6))
+          .attr('y', cursorY + 6 + barH + barGap + barH - 1)
+          .attr('font-size', 11).attr('font-weight', 600).attr('fill', isWide ? 'white' : inkColor())
           .text(fmtUnit(item25.swisslos, unite) + (item25.swisslos_est ? ' (est.)' : ''));
       } else {
         svg.append('text').attr('x', centerX + 12).attr('y', cursorY + 6 + barH + barGap + barH - 1)
@@ -3521,28 +3589,66 @@ function initEditorialTimeline() {
 
   const annees = DATA.editorial.annees;
 
-  // Une carte par année, layout vertical, scrollytelling-friendly
-  const list = container.append('div').attr('class', 'editorial-list');
+  // Group years into decades: 2012-2015, 2016-2019, 2020-2025
+  const decadeBuckets = [
+    { id: 'd1', label: '2012—2015',   min: 2012, max: 2015 },
+    { id: 'd2', label: '2016—2019',   min: 2016, max: 2019 },
+    { id: 'd3', label: '2020—2025',   min: 2020, max: 2025 },
+  ];
 
-  annees.forEach(a => {
-    const card = list.append('article').attr('class', 'editorial-card');
-
-    const head = card.append('div').attr('class', 'editorial-head');
-    head.append('span').attr('class', 'editorial-year').text(a.year);
-    head.append('h4').attr('class', 'editorial-headline').text(a.headline);
-
-    card.append('p').attr('class', 'editorial-edito').text(a.edito_court);
-
-    if (a.lancement_jeu) {
-      card.append('p').attr('class', 'editorial-launch')
-        .html(`<strong>Lancement :</strong> ${a.lancement_jeu}`);
-    }
-
-    const ul = card.append('ul').attr('class', 'editorial-facts');
-    (a.faits_marquants || []).forEach(f => {
-      ul.append('li').text(f);
-    });
+  // Build the tab bar
+  const tabBar = container.append('div').attr('class', 'editorial-tabs').attr('role', 'tablist');
+  decadeBuckets.forEach((d, i) => {
+    const count = annees.filter(a => a.year >= d.min && a.year <= d.max).length;
+    tabBar.append('button')
+      .attr('class', 'editorial-tab' + (i === decadeBuckets.length - 1 ? ' active' : '')) // last decade (most recent) active by default
+      .attr('data-decade', d.id)
+      .attr('role', 'tab')
+      .attr('aria-selected', i === decadeBuckets.length - 1 ? 'true' : 'false')
+      .html(`${d.label} <span class="editorial-tab-count">(${count})</span>`);
   });
+
+  // List container — we'll render the active decade only
+  const listWrap = container.append('div').attr('class', 'editorial-list-wrap');
+
+  function renderDecade(decadeId) {
+    const decade = decadeBuckets.find(d => d.id === decadeId);
+    if (!decade) return;
+    const rows = annees
+      .filter(a => a.year >= decade.min && a.year <= decade.max)
+      .sort((a, b) => b.year - a.year);  // most recent first within decade
+
+    listWrap.html('');
+    const list = listWrap.append('div').attr('class', 'editorial-list');
+    rows.forEach(a => {
+      const card = list.append('article').attr('class', 'editorial-card');
+      const head = card.append('div').attr('class', 'editorial-head');
+      head.append('span').attr('class', 'editorial-year').text(a.year);
+      head.append('h4').attr('class', 'editorial-headline').text(a.headline);
+      card.append('p').attr('class', 'editorial-edito').text(a.edito_court);
+      if (a.lancement_jeu) {
+        card.append('p').attr('class', 'editorial-launch')
+          .html(`<strong>Lancement :</strong> ${a.lancement_jeu}`);
+      }
+      const ul = card.append('ul').attr('class', 'editorial-facts');
+      (a.faits_marquants || []).forEach(f => {
+        ul.append('li').text(f);
+      });
+    });
+  }
+
+  // Wire the tab switching
+  tabBar.selectAll('.editorial-tab').on('click', function(ev) {
+    const decadeId = this.dataset.decade;
+    tabBar.selectAll('.editorial-tab')
+      .classed('active', false)
+      .attr('aria-selected', 'false');
+    d3.select(this).classed('active', true).attr('aria-selected', 'true');
+    renderDecade(decadeId);
+  });
+
+  // Initial render — most recent decade
+  renderDecade(decadeBuckets[decadeBuckets.length - 1].id);
 }
 
 /* ============================================================
@@ -3579,6 +3685,73 @@ function brbFmtAmt(v) {
   return String(v);
 }
 
+/* ============================================================
+   BRB 2025 LAZY LOADER
+   Charges brb2025_full.json (1.7 MB) only when the user nears Acte IX.
+   Triggers all 3 BRB visualisations once the data lands.
+   Idempotent — repeated calls reuse the in-flight promise.
+   ============================================================ */
+function ensureBrbLoaded() {
+  if (DATA.brb2025) return Promise.resolve(DATA.brb2025);
+  if (DATA.brb2025_loading) return DATA.brb2025_loading;
+  // Show a lightweight loading indicator in each BRB container
+  ['viz-explorer', 'viz-longtail', 'viz-geomap'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el && !el.children.length) {
+      el.innerHTML = '<div style="padding:48px;text-align:center;color:var(--ink-mute);font-style:italic">Chargement de l\'inventaire BRB 2025 (≈ 1,7 Mo)…</div>';
+    }
+  });
+  DATA.brb2025_loading = loadJSON('brb2025_full.json')
+    .then(d => {
+      DATA.brb2025 = d;
+      DATA.brb2025_loading = null;
+      // Now actually render the 3 viz
+      initBrbExplorer();
+      initBrbLongtail();
+      initBrbGeomap();
+      return d;
+    })
+    .catch(err => {
+      console.error('Failed to load brb2025_full.json', err);
+      ['viz-explorer', 'viz-longtail', 'viz-geomap'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = '<div style="padding:24px;color:var(--c-loro)">Erreur de chargement des données BRB. Rafraîchissez la page.</div>';
+      });
+    });
+  return DATA.brb2025_loading;
+}
+
+function initBrbLazyTrigger() {
+  // First container present is enough to attach the observer to.
+  const target = document.getElementById('viz-explorer');
+  if (!target) return;
+
+  // Trigger when user clicks a hash link like #brb=canton:JU
+  // (immediate load, then scroll-into-view once data lands)
+  function maybeTriggerFromHash() {
+    if (/#brb=/.test(window.location.hash)) {
+      ensureBrbLoaded().then(() => {
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+  }
+  window.addEventListener('hashchange', maybeTriggerFromHash);
+  // On first page load if hash is already set
+  if (/#brb=/.test(window.location.hash)) maybeTriggerFromHash();
+
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver((entries) => {
+      if (entries.some(e => e.isIntersecting)) {
+        ensureBrbLoaded();
+        obs.disconnect();
+      }
+    }, { rootMargin: '800px 0px' });  // pre-load when within 800px of viewport
+    obs.observe(target);
+  } else {
+    ensureBrbLoaded();
+  }
+}
+
 function initBrbExplorer() {
   const container = document.getElementById('viz-explorer');
   if (!container || !DATA.brb2025) return;
@@ -3587,7 +3760,15 @@ function initBrbExplorer() {
   const allSecteurs = [...new Set(entries.map(e => e.secteur))].sort();
 
   // State
+  // Initialize state — check URL hash for pre-filter (e.g., #brb=canton:JU)
   const state = { query: '', cantons: new Set(allCantons), secteurs: new Set(allSecteurs), sortBy: 'montant' };
+  function applyHashFilter() {
+    const m = window.location.hash.match(/brb=canton:([A-Z]{1,2})/);
+    if (m && allCantons.includes(m[1])) {
+      state.cantons = new Set([m[1]]);
+    }
+  }
+  applyHashFilter();
 
   // Build chrome
   container.innerHTML = `
@@ -3596,13 +3777,13 @@ function initBrbExplorer() {
       <div class="brb-filter-group">
         <span class="brb-filter-label">Canton :</span>
         <div class="brb-pills" data-filter="canton">
-          ${allCantons.map(c => `<button class="brb-pill active" data-value="${c}" style="--pill-color:${brbCantonColor(c)}">${BRB_CANTON_LABELS[c]}</button>`).join('')}
+          ${allCantons.map(c => `<button class="brb-pill${state.cantons.has(c) ? ' active' : ''}" data-value="${c}" style="--pill-color:${brbCantonColor(c)}">${BRB_CANTON_LABELS[c]}</button>`).join('')}
         </div>
       </div>
       <div class="brb-filter-group">
         <span class="brb-filter-label">Secteur :</span>
         <div class="brb-pills" data-filter="secteur">
-          ${allSecteurs.map(s => `<button class="brb-pill active" data-value="${s}" style="--pill-color:${BRB_SECTEUR_COLORS[s] || '#888'}">${s}</button>`).join('')}
+          ${allSecteurs.map(s => `<button class="brb-pill${state.secteurs.has(s) ? ' active' : ''}" data-value="${s}" style="--pill-color:${BRB_SECTEUR_COLORS[s] || '#888'}">${s}</button>`).join('')}
         </div>
       </div>
       <div class="brb-filter-group">
@@ -3624,7 +3805,12 @@ function initBrbExplorer() {
   const statsEl = container.querySelector('#brb-stats');
   const listEl = container.querySelector('#brb-list');
 
-  function applyFilters() {
+  // Pagination state — initial 200 rows, +200 per "Voir plus" click
+  const PAGE_SIZE = 200;
+  let displayCount = PAGE_SIZE;
+
+  function applyFilters(resetPagination = true) {
+    if (resetPagination) displayCount = PAGE_SIZE;
     const q = state.query.toLowerCase().trim();
     let filtered = entries.filter(e => {
       if (!state.cantons.has(e.canton)) return false;
@@ -3647,8 +3833,8 @@ function initBrbExplorer() {
     const totalEur = filtered.reduce((s, e) => s + e.montant_CHF, 0);
     statsEl.innerHTML = `<strong>${filtered.length}</strong> bénéficiaire${filtered.length > 1 ? 's' : ''} · <strong>${brbFmtAmt(totalEur)} CHF</strong> au total`;
 
-    // Render (capped at 200 for perf)
-    const SHOWN = Math.min(filtered.length, 200);
+    // Render with pagination
+    const SHOWN = Math.min(filtered.length, displayCount);
     const max = filtered.length > 0 ? filtered[0].montant_CHF : 1;
     const rows = filtered.slice(0, SHOWN).map(e => {
       const widthPct = Math.max(1, (e.montant_CHF / max) * 100);
@@ -3672,8 +3858,25 @@ function initBrbExplorer() {
       `;
     }).join('');
 
-    listEl.innerHTML = rows + (filtered.length > SHOWN ?
-      `<div class="brb-more">… et ${filtered.length - SHOWN} autres entrées. Affinez vos filtres pour voir plus.</div>` : '');
+    const remaining = filtered.length - SHOWN;
+    const showMoreBtn = remaining > 0
+      ? `<div class="brb-more"><button class="brb-more-btn" type="button">Voir ${Math.min(remaining, PAGE_SIZE)} de plus <span class="brb-more-count">(${remaining} restants)</span></button></div>`
+      : (filtered.length > PAGE_SIZE
+        ? `<div class="brb-more"><span style="opacity:0.6">Toutes les ${filtered.length} entrées affichées.</span></div>`
+        : '');
+    listEl.innerHTML = rows + showMoreBtn;
+
+    // Wire the "show more" button if present
+    const moreBtn = listEl.querySelector('.brb-more-btn');
+    if (moreBtn) {
+      moreBtn.addEventListener('click', () => {
+        displayCount += PAGE_SIZE;
+        applyFilters(false);  // don't reset pagination
+        // Scroll the new rows into view
+        const lastRow = listEl.querySelectorAll('.brb-row')[SHOWN - 1];
+        if (lastRow) lastRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    }
   }
 
   searchEl.addEventListener('input', e => { state.query = e.target.value; applyFilters(); });
@@ -3718,8 +3921,8 @@ function initBrbLongtail() {
 
   const svg = d3.select(container).append('svg')
     .attr('viewBox', `0 0 ${W} ${H}`)
-    .attr('width', '100%').attr('height', 'auto')
-    .style('overflow', 'visible');
+    .attr('width', '100%').attr('height', H)
+    .style('height', 'auto').style('overflow', 'visible');
 
   const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
@@ -3848,8 +4051,8 @@ function initBrbGeomap() {
 
   const svg = d3.select(container).append('svg')
     .attr('viewBox', `0 0 ${W} ${H}`)
-    .attr('width', '100%').attr('height', 'auto')
-    .style('background', '#fafaf7')
+    .attr('width', '100%').attr('height', H)
+    .style('height', 'auto').style('background', '#fafaf7')
     .style('border-radius', '12px');
 
   // Radius scale by total
