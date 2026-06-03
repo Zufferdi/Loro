@@ -1,0 +1,889 @@
+{
+  "_meta": {
+    "source": "docs/data/brb2025_full.json (v13.10 cleaned)",
+    "method": "Keyword classification on nom + description (ignoring unreliable secteur field).",
+    "date": "2026-06-03",
+    "version": "v13.10-culture",
+    "total_entries": 5358,
+    "total_entries_classified": 828,
+    "total_chf_all": 206947411,
+    "total_chf_classified": 62700686,
+    "pct_entries_classified": 15.5,
+    "pct_chf_classified": 30.3,
+    "note": "Classification par mots-clés ordonnés du plus spécifique (Cinéma, Danse, Cirque, Photographie) au plus générique (Festival multi-disciplinaire). Une entrée n'est attribuée qu'à une seule catégorie (première qui matche). Les entrées génériques (« Saison artistique » sans précision) restent non classifiées."
+  },
+  "categories": [
+    {
+      "name": "Théâtre",
+      "count": 124,
+      "total_chf": 10669250,
+      "mean_chf": 86042,
+      "cantons": {
+        "VD": {
+          "count": 30,
+          "total_chf": 4153500
+        },
+        "FR": {
+          "count": 12,
+          "total_chf": 1150250
+        },
+        "VS": {
+          "count": 11,
+          "total_chf": 1219000
+        },
+        "NE": {
+          "count": 17,
+          "total_chf": 1877500
+        },
+        "GE": {
+          "count": 31,
+          "total_chf": 1813000
+        },
+        "JU": {
+          "count": 22,
+          "total_chf": 441000
+        },
+        "R": {
+          "count": 1,
+          "total_chf": 15000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. pour l'art dramatique",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1350000
+        },
+        {
+          "nom": "Fond. Arc en Scène - centre",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 1345000
+        },
+        {
+          "nom": "Théâtre Pro",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 566000
+        },
+        {
+          "nom": "Assoc. des Amis de la Revue",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Fond. du Théâtre des Osses",
+          "ville": "Givisiez",
+          "canton": "FR",
+          "montant_CHF": 460000
+        }
+      ]
+    },
+    {
+      "name": "Cinéma / Audiovisuel",
+      "count": 44,
+      "total_chf": 9069750,
+      "mean_chf": 206130,
+      "cantons": {
+        "VD": {
+          "count": 8,
+          "total_chf": 3680000
+        },
+        "FR": {
+          "count": 6,
+          "total_chf": 1171600
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 38000
+        },
+        "NE": {
+          "count": 4,
+          "total_chf": 470000
+        },
+        "GE": {
+          "count": 7,
+          "total_chf": 1440000
+        },
+        "JU": {
+          "count": 8,
+          "total_chf": 135150
+        },
+        "R": {
+          "count": 10,
+          "total_chf": 2135000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. des cinémas romands",
+          "ville": "Fribourg",
+          "canton": "VD",
+          "montant_CHF": 1725000
+        },
+        {
+          "nom": "Fond. Cinéforom",
+          "ville": "Genève",
+          "canton": "R",
+          "montant_CHF": 1700000
+        },
+        {
+          "nom": "Fond. romande pour le cinéma",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 700000
+        },
+        {
+          "nom": "Festival International du film de Fribourg",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 660000
+        },
+        {
+          "nom": "Fond. Cinémathèque suisse",
+          "ville": "Penthaz",
+          "canton": "VD",
+          "montant_CHF": 480000
+        }
+      ]
+    },
+    {
+      "name": "Festival multi-disciplinaire",
+      "count": 161,
+      "total_chf": 8971589,
+      "mean_chf": 55724,
+      "cantons": {
+        "VD": {
+          "count": 28,
+          "total_chf": 1652200
+        },
+        "FR": {
+          "count": 32,
+          "total_chf": 1212080
+        },
+        "VS": {
+          "count": 19,
+          "total_chf": 1333529
+        },
+        "NE": {
+          "count": 12,
+          "total_chf": 405580
+        },
+        "GE": {
+          "count": 49,
+          "total_chf": 2105700
+        },
+        "JU": {
+          "count": 18,
+          "total_chf": 412500
+        },
+        "R": {
+          "count": 3,
+          "total_chf": 1850000
+        }
+      },
+      "samples": [
+        {
+          "nom": "La Chaux-de-Fonds capitale",
+          "ville": null,
+          "canton": "R",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Fond. du Verbier Festival",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 775000
+        },
+        {
+          "nom": "Fond. du Festival de la Cité",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "Assoc. Venoge people",
+          "ville": "Renens",
+          "canton": "VD",
+          "montant_CHF": 340000
+        },
+        {
+          "nom": "Festival Belluard Bollwerk",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 229550
+        }
+      ]
+    },
+    {
+      "name": "Patrimoine bâti",
+      "count": 41,
+      "total_chf": 8486395,
+      "mean_chf": 206985,
+      "cantons": {
+        "VD": {
+          "count": 18,
+          "total_chf": 950395
+        },
+        "FR": {
+          "count": 7,
+          "total_chf": 460000
+        },
+        "VS": {
+          "count": 3,
+          "total_chf": 447000
+        },
+        "NE": {
+          "count": 2,
+          "total_chf": 100000
+        },
+        "GE": {
+          "count": 5,
+          "total_chf": 6380000
+        },
+        "JU": {
+          "count": 5,
+          "total_chf": 129000
+        },
+        "R": {
+          "count": 1,
+          "total_chf": 20000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. pour la conservation",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 3300000
+        },
+        {
+          "nom": "Église protestante de Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1250000
+        },
+        {
+          "nom": "Église anglicane de Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Colonies de vacances",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 800000
+        },
+        {
+          "nom": "Fond. SSKG (Stiftung für",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 500000
+        }
+      ]
+    },
+    {
+      "name": "Musée",
+      "count": 47,
+      "total_chf": 8304113,
+      "mean_chf": 176683,
+      "cantons": {
+        "VD": {
+          "count": 20,
+          "total_chf": 5803000
+        },
+        "FR": {
+          "count": 8,
+          "total_chf": 414113
+        },
+        "VS": {
+          "count": 4,
+          "total_chf": 438000
+        },
+        "NE": {
+          "count": 4,
+          "total_chf": 225000
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 1050000
+        },
+        "JU": {
+          "count": 9,
+          "total_chf": 374000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. de l'Hermitage",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 2500000
+        },
+        {
+          "nom": "Fond. Horopedia",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Fond. Plateforme 10",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 600000
+        },
+        {
+          "nom": "Assoc. du Musée Alexis Forel",
+          "ville": "Morges",
+          "canton": "VD",
+          "montant_CHF": 420000
+        },
+        {
+          "nom": "Fond. Pierre Gianadda",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 350000
+        }
+      ]
+    },
+    {
+      "name": "Musique classique",
+      "count": 172,
+      "total_chf": 6518744,
+      "mean_chf": 37899,
+      "cantons": {
+        "VD": {
+          "count": 45,
+          "total_chf": 1561500
+        },
+        "FR": {
+          "count": 34,
+          "total_chf": 1148361
+        },
+        "VS": {
+          "count": 22,
+          "total_chf": 801933
+        },
+        "NE": {
+          "count": 23,
+          "total_chf": 1255000
+        },
+        "GE": {
+          "count": 26,
+          "total_chf": 1183100
+        },
+        "JU": {
+          "count": 16,
+          "total_chf": 86250
+        },
+        "R": {
+          "count": 6,
+          "total_chf": 482600
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. pour l'art musical, lyrique et chorégraphique - Opéra de Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 550000
+        },
+        {
+          "nom": "Fond. du Conservatoire",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 518633
+        },
+        {
+          "nom": "Orchestre de Chambre",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Orchestre de chambre",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 432500
+        },
+        {
+          "nom": "Ensemble Symphonique",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 395000
+        }
+      ]
+    },
+    {
+      "name": "Danse",
+      "count": 42,
+      "total_chf": 2585905,
+      "mean_chf": 61569,
+      "cantons": {
+        "VD": {
+          "count": 5,
+          "total_chf": 657157
+        },
+        "FR": {
+          "count": 7,
+          "total_chf": 188515
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 2033
+        },
+        "NE": {
+          "count": 6,
+          "total_chf": 91500
+        },
+        "GE": {
+          "count": 15,
+          "total_chf": 1517500
+        },
+        "JU": {
+          "count": 6,
+          "total_chf": 19200
+        },
+        "R": {
+          "count": 2,
+          "total_chf": 110000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Conservatoire populaire",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Béjart Ballet Lausanne (BBL)",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 450000
+        },
+        {
+          "nom": "Théâtre Sévelin 36 - Un lieu",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 180000
+        },
+        {
+          "nom": "Assoc. pour la danse",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 130000
+        },
+        {
+          "nom": "Assoc. Fête de la Danse Fribourg",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 100000
+        }
+      ]
+    },
+    {
+      "name": "Centre culturel / Maison",
+      "count": 13,
+      "total_chf": 2458620,
+      "mean_chf": 189124,
+      "cantons": {
+        "VD": {
+          "count": 4,
+          "total_chf": 1699000
+        },
+        "FR": {
+          "count": 2,
+          "total_chf": 183700
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 5020
+        },
+        "NE": {
+          "count": 2,
+          "total_chf": 349500
+        },
+        "JU": {
+          "count": 4,
+          "total_chf": 221400
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. Guido Comba",
+          "ville": "Gland",
+          "canton": "VD",
+          "montant_CHF": 1250000
+        },
+        {
+          "nom": "Centre Culturel Neuchâtelois",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 340000
+        },
+        {
+          "nom": "Assoc. de la Maison des Jeunes",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Espace Culturel Le Nouveau",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 181000
+        },
+        {
+          "nom": "Assoc. de la Maison de Quartier des Faverges",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 130000
+        }
+      ]
+    },
+    {
+      "name": "Musique populaire / Jazz",
+      "count": 106,
+      "total_chf": 1782640,
+      "mean_chf": 16817,
+      "cantons": {
+        "VD": {
+          "count": 13,
+          "total_chf": 527000
+        },
+        "FR": {
+          "count": 15,
+          "total_chf": 188500
+        },
+        "VS": {
+          "count": 28,
+          "total_chf": 586200
+        },
+        "NE": {
+          "count": 14,
+          "total_chf": 107140
+        },
+        "GE": {
+          "count": 11,
+          "total_chf": 101800
+        },
+        "JU": {
+          "count": 23,
+          "total_chf": 172000
+        },
+        "R": {
+          "count": 2,
+          "total_chf": 100000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Rock Hock Verein Gampel",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 250000
+        },
+        {
+          "nom": "EJMA - École de Jazz",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 195000
+        },
+        {
+          "nom": "Montreux Jazz Artists",
+          "ville": "Foundation",
+          "canton": "VD",
+          "montant_CHF": 130000
+        },
+        {
+          "nom": "Fond. Ejma Live",
+          "ville": "Lausanne",
+          "canton": "R",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Brass Band 13 Étoiles",
+          "ville": "Conthey",
+          "canton": "VS",
+          "montant_CHF": 75000
+        }
+      ]
+    },
+    {
+      "name": "Littérature / Édition",
+      "count": 39,
+      "total_chf": 1717500,
+      "mean_chf": 44038,
+      "cantons": {
+        "VD": {
+          "count": 3,
+          "total_chf": 155000
+        },
+        "FR": {
+          "count": 7,
+          "total_chf": 324500
+        },
+        "NE": {
+          "count": 7,
+          "total_chf": 247800
+        },
+        "GE": {
+          "count": 8,
+          "total_chf": 757700
+        },
+        "JU": {
+          "count": 9,
+          "total_chf": 45500
+        },
+        "R": {
+          "count": 5,
+          "total_chf": 187000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. pour l'Écrit",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "du surendettement LivrEchange bibliothèque",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 190000
+        },
+        {
+          "nom": "Poésie en Arrosoir",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 135000
+        },
+        {
+          "nom": "Fond. de la Maison de Rousseau et de la Littérature",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Joyfully Waiting 19 & 20 et Cercle de la Librairie",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 71200
+        }
+      ]
+    },
+    {
+      "name": "Médias",
+      "count": 1,
+      "total_chf": 854000,
+      "mean_chf": 854000,
+      "cantons": {
+        "VS": {
+          "count": 1,
+          "total_chf": 854000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Canal 9/Kanal 9",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 854000
+        }
+      ]
+    },
+    {
+      "name": "Cirque / Arts de la rue",
+      "count": 18,
+      "total_chf": 619180,
+      "mean_chf": 34398,
+      "cantons": {
+        "VD": {
+          "count": 2,
+          "total_chf": 311990
+        },
+        "FR": {
+          "count": 6,
+          "total_chf": 112490
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 8000
+        },
+        "NE": {
+          "count": 3,
+          "total_chf": 75000
+        },
+        "GE": {
+          "count": 3,
+          "total_chf": 88600
+        },
+        "JU": {
+          "count": 3,
+          "total_chf": 23100
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. école de cirque Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Théâtre-Cirqule École de Cirque de Genève, Chêne-Bourg",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. Cirque Toamême",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "CCHAR Centre de Création",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Plage des Six Pompes 2026 - Assoc. Fête des Vendanges",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 30000
+        }
+      ]
+    },
+    {
+      "name": "Arts visuels",
+      "count": 10,
+      "total_chf": 461000,
+      "mean_chf": 46100,
+      "cantons": {
+        "VD": {
+          "count": 3,
+          "total_chf": 138000
+        },
+        "NE": {
+          "count": 2,
+          "total_chf": 220000
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 34000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 44000
+        },
+        "R": {
+          "count": 1,
+          "total_chf": 25000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. CAN Centre d'art",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Assoc. des Amis de l'Art Brut",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Assoc. d'Art contemporain",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "ProJura Promotion de l'identité",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Centre d'Art Contemporain",
+          "ville": "Une poétique de l'être en Genève",
+          "canton": "GE",
+          "montant_CHF": 30000
+        }
+      ]
+    },
+    {
+      "name": "Photographie",
+      "count": 10,
+      "total_chf": 202000,
+      "mean_chf": 20200,
+      "cantons": {
+        "VD": {
+          "count": 2,
+          "total_chf": 40000
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 70000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 20000
+        },
+        "GE": {
+          "count": 4,
+          "total_chf": 49000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 3000
+        },
+        "R": {
+          "count": 1,
+          "total_chf": 20000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. pour la sauvegarde",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Focale - Assoc.",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. pour la promotion",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Madre de la Culebra",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Spectrum - Photography",
+          "ville": null,
+          "canton": "R",
+          "montant_CHF": 20000
+        }
+      ]
+    }
+  ]
+}

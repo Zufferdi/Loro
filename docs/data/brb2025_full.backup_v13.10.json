@@ -89,79 +89,6 @@
         }
       },
       "idempotent": false
-    },
-    "pipeline_v13.10": {
-      "pipeline_version": "v13.10",
-      "pipeline_date": "2026-06-03",
-      "run_at": "2026-06-03T13:58:32.858854Z",
-      "input_path": "docs/data/brb2025_full.json",
-      "output_path": "docs/data/brb2025_full.json",
-      "entries_before": 5358,
-      "entries_after": 5358,
-      "total_chf_before": 206947411,
-      "total_chf_after": 206947411,
-      "audit_before": {
-        "no_canton": 0,
-        "zero_amount": 0,
-        "negative_amount": 0,
-        "huge_amount_5M+": 0,
-        "short_name": 0,
-        "truncated_name": 0,
-        "desc_in_ville": 0,
-        "exact_duplicates_remaining": 0,
-        "desc_with_embedded_amount": 0,
-        "encoding_corrupt": 0,
-        "ville_with_acronym_INFO": 6
-      },
-      "audit_after": {
-        "no_canton": 0,
-        "zero_amount": 0,
-        "negative_amount": 0,
-        "huge_amount_5M+": 0,
-        "short_name": 0,
-        "truncated_name": 0,
-        "desc_in_ville": 0,
-        "exact_duplicates_remaining": 0,
-        "desc_with_embedded_amount": 0,
-        "encoding_corrupt": 0,
-        "ville_with_acronym_INFO": 6
-      },
-      "stages": {
-        "split_glued_pairs": {
-          "glued_pairs_split": 0
-        },
-        "drop_section_totals": {
-          "section_totals_dropped": 0
-        },
-        "reconstruct_name (truncated nom)": {
-          "name_reconstructed": 14,
-          "city_extracted_in_reconstruction": 11
-        },
-        "clean_nom (trailing artifacts)": {
-          "nom_trailing_stripped": 0
-        },
-        "clean_desc (embedded amounts)": {
-          "desc_amount_stripped": 0
-        },
-        "clean_ville (desc-in-ville)": {
-          "ville_nullified": 0
-        },
-        "dedup_exact (identical rows)": {
-          "exact_duplicates_removed": 0
-        },
-        "merge_normalized (variants)": {
-          "normalized_duplicates_merged": 0
-        }
-      },
-      "idempotent": false
-    },
-    "geoloc_enrichment_v13_10": {
-      "date": "2026-06-03",
-      "method": "City lookup table (dataset existing + 100 hardcoded Romande communes)",
-      "entries_filled": 266,
-      "entries_still_missing_coords": 774,
-      "cities_in_lookup": 192,
-      "inconsistencies_detected": 0
     }
   },
   "entries": [
@@ -210,8 +137,8 @@
       "secteur": "Action sociale",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.5197,
-      "lng": 6.6323
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. de quartier",
@@ -877,8 +804,8 @@
       "secteur": "Action sociale",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.4528,
-      "lng": 6.8636
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Arc-Echange",
@@ -925,8 +852,8 @@
       "secteur": "Jeunesse",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.5197,
-      "lng": 6.6323
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. de la Maison de Quartier des Faverges",
@@ -937,8 +864,8 @@
       "secteur": "Jeunesse",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.5197,
-      "lng": 6.6323
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. de la Maison des Jeunes",
@@ -1009,8 +936,8 @@
       "secteur": "Jeunesse",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.5364,
-      "lng": 6.6028
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Pays-d'Enhaut Région",
@@ -1129,8 +1056,8 @@
       "secteur": "Jeunesse",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.5197,
-      "lng": 6.6323
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Jardin d'enfants Mille Pattes",
@@ -1394,8 +1321,8 @@
       "secteur": "Jeunesse",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.5089,
-      "lng": 6.4969
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "DiabèteVaud",
@@ -1840,8 +1767,8 @@
       "secteur": "Culture",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.5197,
-      "lng": 6.6323
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Arpège Chœur Mixte de Trélex",
@@ -2278,8 +2205,8 @@
       "secteur": "Culture",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.5197,
-      "lng": 6.6323
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. CulturAll",
@@ -2338,8 +2265,8 @@
       "secteur": "Culture",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.5089,
-      "lng": 6.5253
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. des Ami.e.s du Royal",
@@ -2421,7 +2348,7 @@
     },
     {
       "nom": "Assoc. des Amis d'Edith Carey",
-      "ville": "Lausanne",
+      "ville": "Lausanne Lausanne",
       "description": "Publication Création artistique",
       "montant_CHF": 8000,
       "canton": "VD",
@@ -2434,7 +2361,7 @@
     },
     {
       "nom": "Assoc. du Théâtre Claque",
-      "ville": "Lausanne",
+      "ville": "Lausanne Lausanne",
       "description": "Publication Création artistique",
       "montant_CHF": 25000,
       "canton": "VD",
@@ -3203,8 +3130,8 @@
       "secteur": "Culture",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.7783,
-      "lng": 6.6411
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Musée suisse du Cheval",
@@ -3311,8 +3238,8 @@
       "secteur": "Culture",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.5197,
-      "lng": 6.6323
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. pour la Maison du Récit",
@@ -3365,8 +3292,8 @@
       "secteur": "Culture",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.5197,
-      "lng": 6.6323,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 216400,
       "agg_cantons": [
         "GE",
@@ -3516,7 +3443,7 @@
     },
     {
       "nom": "Assoc. Stridule",
-      "ville": "Yverdon-les",
+      "ville": "Yverdon-les-",
       "description": "Bains Création artistique",
       "montant_CHF": 8000,
       "canton": "VD",
@@ -3841,8 +3768,8 @@
       "secteur": "Culture",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.5722,
-      "lng": 6.8333
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "CHO Centre chorégraphique",
@@ -3877,8 +3804,8 @@
       "secteur": "Culture",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.5089,
-      "lng": 6.5253
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Chœur Cantabile",
@@ -4107,8 +4034,8 @@
       "secteur": "Culture",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.4628,
-      "lng": 6.8911,
+      "lat": null,
+      "lng": null,
       "note_parser": "split-from-glued"
     },
     {
@@ -4120,8 +4047,8 @@
       "secteur": "Culture",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
-      "lat": 46.4628,
-      "lng": 6.8911,
+      "lat": null,
+      "lng": null,
       "note_parser": "split-from-glued"
     },
     {
@@ -4721,8 +4648,8 @@
       "secteur": "Sport",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": "Manifestations",
-      "lat": 46.49,
-      "lng": 6.4569
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Espace EEEEH!",
@@ -4841,8 +4768,8 @@
       "secteur": "Sport",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": "Manifestations",
-      "lat": 46.3475,
-      "lng": 7.1572
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Festivalfreunde Gstaad Menuhin",
@@ -5725,8 +5652,8 @@
       "secteur": "Sport",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": "Manifestations",
-      "lat": 46.5197,
-      "lng": 6.6323
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "La FUR Compagnie",
@@ -5933,8 +5860,8 @@
       "secteur": "Sport",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": "Manifestations",
-      "lat": 46.2044,
-      "lng": 6.1432
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "L'Improvisible Festival",
@@ -6182,8 +6109,8 @@
       "secteur": "Sport",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": "Manifestations",
-      "lat": 46.3175,
-      "lng": 6.2008,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 1198500,
       "agg_cantons": [
         "FR",
@@ -6201,8 +6128,8 @@
       "secteur": "Sport",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": "Manifestations",
-      "lat": 46.5097,
-      "lng": 6.5475,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 1198500,
       "agg_cantons": [
         "FR",
@@ -6316,8 +6243,8 @@
       "secteur": "Sport",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": "Manifestations",
-      "lat": 46.4625,
-      "lng": 6.8438
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Presses Inverses",
@@ -6412,8 +6339,8 @@
       "secteur": "Sport",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": "Manifestations",
-      "lat": 46.6125,
-      "lng": 6.2331,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 65000,
       "agg_cantons": [
         "VD",
@@ -6607,8 +6534,8 @@
       "secteur": "Sport",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": "Manifestations",
-      "lat": 46.5306,
-      "lng": 6.575
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Strates Assoc.",
@@ -7124,8 +7051,8 @@
       "secteur": "Environnement",
       "organe": "Fonds du sport vaudois, 35'000.- Le Mont-sur-Lausanne Projet de recherche",
       "sous_section": null,
-      "lat": 46.2044,
-      "lng": 6.1432,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 530500,
       "agg_cantons": [
         "GE",
@@ -7155,8 +7082,8 @@
       "secteur": "Environnement",
       "organe": "Fonds du sport vaudois, 35'000.- Le Mont-sur-Lausanne Projet de recherche",
       "sous_section": null,
-      "lat": 46.4628,
-      "lng": 6.8911
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Centre Pro Natura de Champ",
@@ -16564,8 +16491,8 @@
       "secteur": "Jeunesse",
       "organe": "Fondation d'aide 45'000.- aux sportifs vaudois Soutien annuel",
       "sous_section": null,
-      "lat": 46.5197,
-      "lng": 6.6323
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. École supérieure",
@@ -16948,8 +16875,8 @@
       "secteur": "Sport",
       "organe": "Fondation d'aide 45'000.- aux sportifs vaudois Soutien annuel",
       "sous_section": null,
-      "lat": 46.3047,
-      "lng": 6.1739
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Fête fédérale",
@@ -17370,8 +17297,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.9281,
-      "lng": 7.1144,
+      "lat": null,
+      "lng": null,
       "note_parser": "split-from-glued"
     },
     {
@@ -17383,8 +17310,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.9281,
-      "lng": 7.1144,
+      "lat": null,
+      "lng": null,
       "note_parser": "split-from-glued"
     },
     {
@@ -17510,8 +17437,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.5031,
-      "lng": 6.8528
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Ateliers et événements 2025 OSEO Fribourg",
@@ -17670,28 +17597,28 @@
       "lng": null
     },
     {
-      "nom": "Accueil Familial de Jour de la Glâne",
-      "ville": "Romont",
-      "description": "Prise en charge des enfants en 2025",
+      "nom": "Accueil Familial de Jour",
+      "ville": null,
+      "description": "de la Glâne, Romont Prise en charge des enfants en 2025",
       "montant_CHF": 86400,
       "canton": "FR",
       "secteur": "Jeunesse",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.6953,
-      "lng": 6.9119
+      "lat": null,
+      "lng": null
     },
     {
-      "nom": "Accueil Familial de Jour du district du Lac",
-      "ville": "Morat",
-      "description": "Prise en charge des enfants en 2025",
+      "nom": "Accueil Familial de Jour",
+      "ville": null,
+      "description": "du district du Lac, Morat Prise en charge des enfants en 2025",
       "montant_CHF": 43020,
       "canton": "FR",
       "secteur": "Jeunesse",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.9281,
-      "lng": 7.1144
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. AdO",
@@ -17814,40 +17741,40 @@
       "lng": 7.162
     },
     {
-      "nom": "Assoc. d'Accueil Familial de Jour de la Veveyse",
-      "ville": "Attalens",
-      "description": "Prise en charge des enfants en 2025",
+      "nom": "Assoc. d'Accueil Familial de Jour",
+      "ville": null,
+      "description": "de la Veveyse, Attalens Prise en charge des enfants en 2025",
       "montant_CHF": 55620,
       "canton": "FR",
       "secteur": "Jeunesse",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.5031,
-      "lng": 6.8528
+      "lat": null,
+      "lng": null
     },
     {
-      "nom": "Assoc. d'Accueil Familial de Jour du district de la Broye",
-      "ville": "Estavayer-le-Lac",
-      "description": "Prise en charge des enfants en 2025",
+      "nom": "Assoc. d'Accueil Familial",
+      "ville": null,
+      "description": "de Jour du district de la Broye, Estavayer-le-Lac Prise en charge des enfants en 2025",
       "montant_CHF": 130900,
       "canton": "FR",
       "secteur": "Jeunesse",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.8497,
-      "lng": 6.8483
+      "lat": null,
+      "lng": null
     },
     {
-      "nom": "Assoc. d'accueil familial de jour du district de la Gruyère",
-      "ville": "Bulle",
-      "description": "Prise en charge des enfants en 2025",
+      "nom": "Assoc. d'accueil familial de jour",
+      "ville": null,
+      "description": "du district de la Gruyère, Bulle Prise en charge des enfants en 2025",
       "montant_CHF": 128880,
       "canton": "FR",
       "secteur": "Jeunesse",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.6181,
-      "lng": 7.0567
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. de l'école maternelle de la Sonnaz",
@@ -17870,8 +17797,8 @@
       "secteur": "Jeunesse",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.8065,
-      "lng": 7.162
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. de la Maternelle Cococinel",
@@ -17906,8 +17833,8 @@
       "secteur": "Jeunesse",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.7775,
-      "lng": 7.1614
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. l'Arbre Magique",
@@ -18050,8 +17977,8 @@
       "secteur": "Jeunesse",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.5775,
-      "lng": 6.6536
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Maternelle Rondin-Picotin",
@@ -18284,20 +18211,20 @@
       "secteur": "Jeunesse",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.6181,
-      "lng": 7.0567
+      "lat": null,
+      "lng": null
     },
     {
-      "nom": "Éveil musical en Glâne et environs",
-      "ville": "Esmonts",
-      "description": "Conte musical",
+      "nom": "Éveil musical en Glâne",
+      "ville": null,
+      "description": "et environs, Esmonts Conte musical",
       "montant_CHF": 2000,
       "canton": "FR",
       "secteur": "Jeunesse",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.5722,
-      "lng": 6.7975
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Familientreff St. Ursen",
@@ -18813,8 +18740,8 @@
       "secteur": "Jeunesse",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.948,
-      "lng": 7.4474
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Singschule Sense",
@@ -18909,8 +18836,8 @@
       "secteur": "Jeunesse",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.9281,
-      "lng": 7.1144
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Verein Kita Schnäggehuus",
@@ -18921,8 +18848,8 @@
       "secteur": "Jeunesse",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.9281,
-      "lng": 7.1144
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Verein Tagesstrukturen",
@@ -19185,8 +19112,8 @@
       "secteur": "Santé",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.9281,
-      "lng": 7.1144
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "ADMA - Assoc. pour la découverte de la musique ancienne",
@@ -19197,8 +19124,8 @@
       "secteur": "Culture",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.8065,
-      "lng": 7.162
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Akademie für aktuelle Musik",
@@ -19461,8 +19388,8 @@
       "secteur": "Culture",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.9281,
-      "lng": 7.1144
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. des Amis des Concerts",
@@ -20070,8 +19997,8 @@
       "secteur": "Culture",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.5722,
-      "lng": 6.7975
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Bruit Rose",
@@ -20808,8 +20735,8 @@
       "secteur": "Sport",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": "Manifestations du 40e anniversaire de l'ensemble vocal DeMusica - commande d'oeuvres originales",
-      "lat": 46.8065,
-      "lng": 7.162,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 160000,
       "agg_cantons": [
         "FR",
@@ -21192,8 +21119,8 @@
       "secteur": "Sport",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": "Manifestations du 40e anniversaire de l'ensemble vocal DeMusica - commande d'oeuvres originales",
-      "lat": 46.5722,
-      "lng": 6.7975
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "La Spirale",
@@ -21700,8 +21627,8 @@
       "secteur": "Sport",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": "Manifestations du 40e anniversaire de l'ensemble vocal DeMusica - commande d'oeuvres originales",
-      "lat": 46.5775,
-      "lng": 6.6536
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Stiftung CANTORAMA Alte Kirche",
@@ -21946,8 +21873,8 @@
       "secteur": "Formation",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.8065,
-      "lng": 7.162
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Vitrocentre Romont",
@@ -21974,16 +21901,16 @@
       "lng": null
     },
     {
-      "nom": "Assoc. des Amis de l'Abbaye de la Fille-Dieu",
-      "ville": "Romont",
-      "description": "Restauration des façades ouest et nord",
+      "nom": "Assoc. des Amis de l'Abbaye",
+      "ville": null,
+      "description": "de la Fille-Dieu, Romont Restauration des façades ouest et nord",
       "montant_CHF": 90000,
       "canton": "FR",
       "secteur": "Patrimoine",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.6953,
-      "lng": 6.9119
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. des Musées du canton",
@@ -24487,7 +24414,7 @@
     },
     {
       "nom": "FTSU",
-      "ville": "Freiburgische Turn",
+      "ville": "Freiburgische Turn-",
       "description": "Club Olympic Domdidier",
       "montant_CHF": 500,
       "canton": "FR",
@@ -25967,7 +25894,7 @@
     },
     {
       "nom": "FTSU",
-      "ville": "Freiburgische Turn",
+      "ville": "Freiburgische Turn-",
       "description": "und Sportunion Leistungs - und Freizeitsport 2025",
       "montant_CHF": 23870,
       "canton": "FR",
@@ -26694,8 +26621,8 @@
       "secteur": "Culture",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.6953,
-      "lng": 6.9119
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "CORODIS",
@@ -27685,9 +27612,9 @@
       "lng": null
     },
     {
-      "nom": "Fond. des Maisons de la Providence, Montagnier",
+      "nom": "Fond. des Maisons",
       "ville": "Sion",
-      "description": "Animation Animation",
+      "description": "de la Providence, Montagnier Animation Animation",
       "montant_CHF": 85000,
       "canton": "VS",
       "secteur": "Action sociale",
@@ -27698,9 +27625,9 @@
       "note_parser": "split-from-glued"
     },
     {
-      "nom": "Résidence Gravelone de la Providence, Montagnier",
+      "nom": "Résidence Gravelone",
       "ville": "Sion",
-      "description": "Animation Animation",
+      "description": "de la Providence, Montagnier Animation Animation",
       "montant_CHF": 44000,
       "canton": "VS",
       "secteur": "Action sociale",
@@ -28091,8 +28018,8 @@
       "secteur": "Jeunesse",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1769,
-      "lng": 7.3083
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Championnat valaisan des solistes d'instruments de cuivre",
@@ -28103,8 +28030,8 @@
       "secteur": "Jeunesse",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2492,
-      "lng": 7.4717
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Colonie de Vacances de Martigny à Ravoire (",
@@ -28163,8 +28090,8 @@
       "secteur": "Jeunesse",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2422,
-      "lng": 6.975
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Fanfare Écho des Glaciers",
@@ -28199,8 +28126,8 @@
       "secteur": "Jeunesse",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2733,
-      "lng": 7.4242
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Fanfare Edelweiss",
@@ -28295,8 +28222,8 @@
       "secteur": "Jeunesse",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.228,
-      "lng": 7.3589
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Fond. EPFL Plus",
@@ -28577,8 +28504,8 @@
       "secteur": "Santé",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2917,
-      "lng": 7.5333
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Farah-Dogs",
@@ -28781,8 +28708,8 @@
       "secteur": "Santé",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2422,
-      "lng": 6.975
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Fond. valaisanne en Faveur des Personnes Handicapées Mentales FOVAHM",
@@ -28793,8 +28720,8 @@
       "secteur": "Santé",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.228,
-      "lng": 7.3589
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Ligue valaisanne contre",
@@ -28973,8 +28900,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2733,
-      "lng": 7.4242
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Allpages Festival",
@@ -28985,8 +28912,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2733,
-      "lng": 7.4242
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. amitalia",
@@ -29045,8 +28972,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.4628,
-      "lng": 6.8911
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Arbaz",
@@ -29468,8 +29395,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.228,
-      "lng": 7.3589
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. des amis du Festival de Valère, Sion",
@@ -30168,8 +30095,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.228,
-      "lng": 7.3589
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Les trois du T3",
@@ -30876,8 +30803,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.948,
-      "lng": 7.4474
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "BDvore",
@@ -30924,8 +30851,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1117,
-      "lng": 7.4953
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Chamber Wind Orchestra",
@@ -31032,8 +30959,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.948,
-      "lng": 7.4474
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Collectif LACS",
@@ -31140,8 +31067,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.3158,
-      "lng": 7.9886
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Ensemble Res Temporis",
@@ -31236,8 +31163,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.228,
-      "lng": 7.3589
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Festival Couleur Pavé",
@@ -31416,8 +31343,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2917,
-      "lng": 7.5333,
+      "lat": null,
+      "lng": null,
       "note_parser": "split-from-glued"
     },
     {
@@ -31429,8 +31356,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2917,
-      "lng": 7.5333,
+      "lat": null,
+      "lng": null,
       "note_parser": "split-from-glued"
     },
     {
@@ -31666,8 +31593,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.3158,
-      "lng": 7.9886
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Oberwalliser Chor- und",
@@ -32330,8 +32257,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.3158,
-      "lng": 7.9886
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Verein Gampel Jazz",
@@ -32631,8 +32558,8 @@
       "secteur": "Formation",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.228,
-      "lng": 7.3589,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 530500,
       "agg_cantons": [
         "GE",
@@ -32662,8 +32589,8 @@
       "secteur": "Formation",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.228,
-      "lng": 7.3589
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. valaisanne des musées",
@@ -32818,8 +32745,8 @@
       "secteur": "Formation",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.228,
-      "lng": 7.3589,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 1663020,
       "agg_cantons": [
         "GE",
@@ -33076,8 +33003,8 @@
       "secteur": "Environnement",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2128,
-      "lng": 7.2603
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Stiftung Bergwaldprojekt",
@@ -33160,8 +33087,8 @@
       "secteur": "Tourisme",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.228,
-      "lng": 7.3589
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. du Tour des Stations",
@@ -33238,8 +33165,8 @@
       "secteur": "Tourisme",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.3094,
-      "lng": 7.4794
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Race d'Hérens Tour",
@@ -33448,8 +33375,8 @@
       "secteur": "Tourisme",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2167,
-      "lng": 7.3
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "IVV - Interprofession",
@@ -33520,8 +33447,8 @@
       "secteur": "Tourisme",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.228,
-      "lng": 7.3589
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. cantonale valaisanne",
@@ -34794,8 +34721,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": "Achats de matériel sportif Kauf von Sportmaterial",
-      "lat": 46.2197,
-      "lng": 7.0044,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 53101,
       "agg_cantons": [
         "R",
@@ -35010,8 +34937,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": "Achats de matériel sportif Kauf von Sportmaterial",
-      "lat": 46.2733,
-      "lng": 7.4242
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Trail des Dents-du-Midi",
@@ -35399,8 +35326,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": "Achats de matériel sportif Kauf von Sportmaterial",
-      "lat": 46.3158,
-      "lng": 7.9886
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Club Danse Azur, Sion",
@@ -35821,8 +35748,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": "Achats de matériel sportif Kauf von Sportmaterial",
-      "lat": 46.3083,
-      "lng": 6.9036
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Sergei Judo Camp",
@@ -35833,8 +35760,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": "Achats de matériel sportif Kauf von Sportmaterial",
-      "lat": 46.3083,
-      "lng": 6.9036
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Ski-Club Cime de l'Est",
@@ -35845,8 +35772,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": "Achats de matériel sportif Kauf von Sportmaterial",
-      "lat": 46.2422,
-      "lng": 6.975
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Ski-Club Grône",
@@ -35893,8 +35820,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": "Achats de matériel sportif Kauf von Sportmaterial",
-      "lat": 47.0167,
-      "lng": 6.9667,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 6118,
       "agg_cantons": [
         "VD",
@@ -35947,8 +35874,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": "Achats de matériel sportif Kauf von Sportmaterial",
-      "lat": 46.2128,
-      "lng": 7.2603
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Trail des Châteaux",
@@ -36601,8 +36528,8 @@
       "secteur": "Action sociale",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9803,
-      "lng": 6.8917
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Job-Insert",
@@ -36787,8 +36714,8 @@
       "secteur": "Action sociale",
       "organe": null,
       "sous_section": null,
-      "lat": 47.1369,
-      "lng": 7.2469
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "EPER - Entraide Protestante",
@@ -36927,8 +36854,8 @@
       "secteur": "Action sociale",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9919,
-      "lng": 6.8919
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "N'Terractive",
@@ -36939,8 +36866,8 @@
       "secteur": "Action sociale",
       "organe": null,
       "sous_section": null,
-      "lat": 47.0167,
-      "lng": 6.9667,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 40000,
       "agg_cantons": [
         "NE",
@@ -37158,8 +37085,8 @@
       "secteur": "Jeunesse",
       "organe": null,
       "sous_section": null,
-      "lat": 46.228,
-      "lng": 7.3589
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Féd. neuchâteloise",
@@ -37224,8 +37151,8 @@
       "secteur": "Jeunesse",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9694,
-      "lng": 6.8694
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "La Tortue d'eau",
@@ -37236,8 +37163,8 @@
       "secteur": "Jeunesse",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9647,
-      "lng": 6.8458
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Lema Plan International",
@@ -37338,8 +37265,8 @@
       "secteur": "Santé",
       "organe": null,
       "sous_section": null,
-      "lat": 47.2197,
-      "lng": 7.1078,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 144000,
       "agg_cantons": [
         "JU",
@@ -37416,8 +37343,8 @@
       "secteur": "Santé",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9061,
-      "lng": 6.5806
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "2300 Plan 9 Nuits du cinéma",
@@ -37986,8 +37913,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9647,
-      "lng": 6.8458
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. des concerts d'Auvernier",
@@ -38245,8 +38172,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.945,
-      "lng": 6.8472
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Katch impro Festival",
@@ -38396,8 +38323,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.5197,
-      "lng": 6.6323
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Les Concerts du Centre",
@@ -38492,8 +38419,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9919,
-      "lng": 6.8919
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Lumière d'étoiles",
@@ -38620,8 +38547,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9694,
-      "lng": 6.8694
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Neuchâteloise",
@@ -38680,8 +38607,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9647,
-      "lng": 6.8458
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Overtones Productions",
@@ -38692,8 +38619,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.945,
-      "lng": 6.8472
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Paroles",
@@ -38818,8 +38745,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 47.0992,
-      "lng": 6.8264,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 216400,
       "agg_cantons": [
         "GE",
@@ -39006,8 +38933,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9389,
-      "lng": 6.8331
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Tech With Us",
@@ -39030,8 +38957,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. The One Day Project",
@@ -39066,8 +38993,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9919,
-      "lng": 6.8919
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Trouble A",
@@ -39306,8 +39233,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9919,
-      "lng": 6.8919
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Cie Entre le Ziste et le Zeste",
@@ -39402,8 +39329,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 47.2308,
-      "lng": 6.9667
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Cie théâtrale La Nouvelle",
@@ -39672,8 +39599,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9389,
-      "lng": 6.8331
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Fanfare de La Chaux-du-Milieu",
@@ -39732,8 +39659,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 47.05,
-      "lng": 7.05
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Fond. Arc en Scène - centre",
@@ -39780,8 +39707,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9694,
-      "lng": 6.8694
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "FSSTA - Féd. Suisse",
@@ -39816,8 +39743,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9069,
-      "lng": 6.6092
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Hello future me (E. Zoé)",
@@ -39864,8 +39791,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9647,
-      "lng": 6.8458
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "i-lirédition",
@@ -39876,8 +39803,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 47.05,
-      "lng": 7.05
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Institut Ferdinand Hodler",
@@ -39984,8 +39911,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9389,
-      "lng": 6.8331
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "La Tarentelle",
@@ -40020,8 +39947,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 47.0167,
-      "lng": 6.9667
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "L'avant-scène Opéra",
@@ -40080,8 +40007,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9919,
-      "lng": 6.8919
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "LEOKI - Cie de danse",
@@ -40104,8 +40031,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9803,
-      "lng": 6.8917
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Les Baladins de l'Abbaye",
@@ -40152,8 +40079,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9694,
-      "lng": 6.8694
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Maison de l'absinthe",
@@ -40164,8 +40091,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9069,
-      "lng": 6.6092
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Maison de l'Europe",
@@ -40236,8 +40163,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 47.05,
-      "lng": 7.05
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Musique au Chœur",
@@ -40284,8 +40211,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9803,
-      "lng": 6.8917,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 445000,
       "agg_cantons": [
         "NE",
@@ -40500,8 +40427,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9919,
-      "lng": 6.8919
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Tais-Toi - Théâtre",
@@ -40548,8 +40475,8 @@
       "secteur": "Culture",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9803,
-      "lng": 6.8917
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Théâtre de la Poudrière",
@@ -40758,8 +40685,8 @@
       "secteur": "Patrimoine",
       "organe": null,
       "sous_section": null,
-      "lat": 47.1369,
-      "lng": 7.2469
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Patrimoine XCS",
@@ -40842,8 +40769,8 @@
       "secteur": "Environnement",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9647,
-      "lng": 6.8458
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Black Office",
@@ -40890,8 +40817,8 @@
       "secteur": "Environnement",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9069,
-      "lng": 6.6092
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Suisse",
@@ -41154,8 +41081,8 @@
       "secteur": "Environnement",
       "organe": null,
       "sous_section": null,
-      "lat": 47.0531,
-      "lng": 6.9119
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. du Triathlon",
@@ -41214,8 +41141,8 @@
       "secteur": "Sport",
       "organe": null,
       "sous_section": "Manifestations sportives",
-      "lat": 46.9389,
-      "lng": 6.8331
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. CX des Abeilles",
@@ -41274,8 +41201,8 @@
       "secteur": "Sport",
       "organe": null,
       "sous_section": "Manifestations sportives",
-      "lat": 47.0167,
-      "lng": 6.9667
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Groove",
@@ -41310,8 +41237,8 @@
       "secteur": "Sport",
       "organe": null,
       "sous_section": "Manifestations sportives",
-      "lat": 46.945,
-      "lng": 6.8472
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Summer Girls Cup/ ASI",
@@ -41926,8 +41853,8 @@
       "secteur": "Sport",
       "organe": null,
       "sous_section": "Manifestations sportives",
-      "lat": 46.9694,
-      "lng": 6.8694
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Park'n Sun",
@@ -43145,8 +43072,8 @@
       "secteur": "Sport",
       "organe": null,
       "sous_section": "Manifestations sportives",
-      "lat": 46.9694,
-      "lng": 6.8694
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Club des Patineurs de Fleurier",
@@ -44447,8 +44374,8 @@
       "secteur": "Sport",
       "organe": null,
       "sous_section": null,
-      "lat": 46.9647,
-      "lng": 6.8458
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Swiss Canyon Trail",
@@ -44459,8 +44386,8 @@
       "secteur": "Sport",
       "organe": null,
       "sous_section": null,
-      "lat": 47.0167,
-      "lng": 6.9667
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. XTERRA Switzerland",
@@ -44483,8 +44410,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1789,
-      "lng": 6.1281
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Ama-K bro",
@@ -44621,8 +44548,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Crêpes Family",
@@ -44633,8 +44560,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.175,
-      "lng": 6.0833
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Cycle de Vie",
@@ -44645,8 +44572,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1939,
-      "lng": 6.1175
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. DécadréE",
@@ -44959,8 +44886,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1786,
-      "lng": 6.0789
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Trust to Achieve",
@@ -45127,8 +45054,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "FdnF (Frères de nos Frères)",
@@ -45163,8 +45090,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1789,
-      "lng": 6.1281
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Fegems - Fédération",
@@ -45334,7 +45261,7 @@
     },
     {
       "nom": "Équipement et mobilier de la Assoc. Free-Go Genève",
-      "ville": "Grand",
+      "ville": "Grand-",
       "description": "salle de spectacle de la Maison Lancy de retraite du Petit-Saconnex Il faut sauver Hugo le frigo !",
       "montant_CHF": 20000,
       "canton": "GE",
@@ -45431,8 +45358,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.1953
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Acquisition de médicaments Assoc. La Cordée",
@@ -45560,8 +45487,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2178,
-      "lng": 6.1136
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "initiation à la plongée pour Assoc. Santescalade",
@@ -45636,8 +45563,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Swiss Food Academy",
@@ -45660,8 +45587,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Une Transat pas si Mini",
@@ -45708,8 +45635,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2044,
-      "lng": 6.1432
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Colonies de vacances",
@@ -45828,8 +45755,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1786,
-      "lng": 6.0789
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Wisemove, Plan-les-Ouates",
@@ -45878,8 +45805,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1789,
-      "lng": 6.1281,
+      "lat": null,
+      "lng": null,
       "note_parser": "split-from-glued"
     },
     {
@@ -45891,8 +45818,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1789,
-      "lng": 6.1281,
+      "lat": null,
+      "lng": null,
       "note_parser": "split-from-glued"
     },
     {
@@ -46058,8 +45985,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2233,
-      "lng": 6.1764
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "continue des sages- Fond. Maison de l'Autonomie",
@@ -46130,8 +46057,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369,
+      "lat": null,
+      "lng": null,
       "note_parser": "split-from-glued"
     },
     {
@@ -46143,8 +46070,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369,
+      "lat": null,
+      "lng": null,
       "note_parser": "split-from-glued"
     },
     {
@@ -46156,8 +46083,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.175,
-      "lng": 6.0833
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Yacht Club de Genève",
@@ -46168,8 +46095,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2233,
-      "lng": 6.1764
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Amis de l'Orgue de l'Auditoire de Calvin",
@@ -46192,8 +46119,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Archives Henri Copponex",
@@ -46360,8 +46287,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. art-werk",
@@ -46384,8 +46311,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1614,
-      "lng": 6.145
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Atelier 101",
@@ -47065,8 +46992,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2658,
-      "lng": 6.2547
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Duo Manifesto",
@@ -47173,8 +47100,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Ensemble Batida",
@@ -47209,8 +47136,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2275,
-      "lng": 6.2336
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Ernest",
@@ -47461,8 +47388,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Honeyhoneydancedance",
@@ -47509,8 +47436,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.2031
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Inès",
@@ -47533,8 +47460,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2114,
-      "lng": 6.1186
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Jazz sur la Plage",
@@ -47683,8 +47610,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1939,
-      "lng": 6.1175
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. l'Atelier des Lutins",
@@ -47707,8 +47634,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Le Bloc",
@@ -47719,8 +47646,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Le Chariot",
@@ -47966,7 +47893,7 @@
     },
     {
       "nom": "Assoc. Lestime, Genève",
-      "ville": "Grand",
+      "ville": "Grand-",
       "description": "Pulse - Women only - weekend Lancy dédié aux identités lesbiennes, 6e édition du Pachamama queer et non binaires connexion festival",
       "montant_CHF": 10000,
       "canton": "GE",
@@ -47979,7 +47906,7 @@
     },
     {
       "nom": "Assoc. Pachamama",
-      "ville": "Grand",
+      "ville": "Grand-",
       "description": "Pulse - Women only - weekend Lancy dédié aux identités lesbiennes, 6e édition du Pachamama queer et non binaires connexion festival",
       "montant_CHF": 10000,
       "canton": "GE",
@@ -48225,8 +48152,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.2031
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. pour la publication",
@@ -48555,8 +48482,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1789,
-      "lng": 6.1281
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Théâtre du Marais",
@@ -48629,8 +48556,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1789,
-      "lng": 6.1281,
+      "lat": null,
+      "lng": null,
       "note_parser": "split-from-glued"
     },
     {
@@ -48642,8 +48569,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1789,
-      "lng": 6.1281,
+      "lat": null,
+      "lng": null,
       "note_parser": "split-from-glued"
     },
     {
@@ -48815,8 +48742,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.175,
-      "lng": 6.0833
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Chœur du CERN",
@@ -48911,8 +48838,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Cie PNJ",
@@ -49165,8 +49092,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.175,
-      "lng": 6.0833
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Compagnie La Mouette",
@@ -49379,8 +49306,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.2031
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "F.A.B. Force prod",
@@ -49487,8 +49414,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2044,
-      "lng": 6.1432
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Fond. des archives Jean Piaget",
@@ -49563,16 +49490,16 @@
       "lng": null
     },
     {
-      "nom": "Fond. pour le développement des arts et de la culture - FODAC",
-      "ville": "Vernier",
-      "description": "Équipement scénique pour le projet Concorde espace culture",
+      "nom": "Fond. pour le développement",
+      "ville": null,
+      "description": "des arts et de la culture - FODAC, Vernier Équipement scénique pour le projet Concorde espace culture",
       "montant_CHF": 1500000,
       "canton": "GE",
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2125,
-      "lng": 6.1083,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 1663020,
       "agg_cantons": [
         "GE",
@@ -49886,8 +49813,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2517,
-      "lng": 6.1939
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Une 19e saison en trait d'union Sté Jeanne Hersch (Jeanne",
@@ -49948,8 +49875,8 @@
       "secteur": "Culture",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Théâtre du Sentier",
@@ -50213,16 +50140,16 @@
       "lng": 6.1432
     },
     {
-      "nom": "Assoc. pour la Sauvegarde de la Peccadille - ASP",
-      "ville": "Vésenaz",
-      "description": "Restauration d'éléments en bois d'un bateau de 1897",
+      "nom": "Assoc. pour la Sauvegarde",
+      "ville": null,
+      "description": "de la Peccadille - ASP, Vésenaz Restauration d'éléments en bois d'un bateau de 1897",
       "montant_CHF": 80000,
       "canton": "GE",
       "secteur": "Patrimoine",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2517,
-      "lng": 6.1939,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 530500,
       "agg_cantons": [
         "GE",
@@ -50336,8 +50263,8 @@
       "secteur": "Environnement",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.2031
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. genevoise Zéro Déchets",
@@ -50467,16 +50394,16 @@
       "agg_count": 6
     },
     {
-      "nom": "Assoc. pour le Développement des Aires Protégées",
-      "ville": "Genève",
-      "description": "Suivi de la faune par pièges photographiques : Exposition interactive et équipement informatique sialaV",
+      "nom": "Assoc. pour le Développement",
+      "ville": null,
+      "description": "des Aires Protégées, Genève Suivi de la faune par pièges photographiques : Exposition interactive et équipement informatique sialaV",
       "montant_CHF": 39000,
       "canton": "GE",
       "secteur": "Environnement",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2044,
-      "lng": 6.1432,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 1663020,
       "agg_cantons": [
         "GE",
@@ -50529,8 +50456,8 @@
       "secteur": "Environnement",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1789,
-      "lng": 6.1281
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Centre de réadaptation",
@@ -50589,8 +50516,8 @@
       "secteur": "Environnement",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1517,
-      "lng": 6.0856
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "J'aime Ma Campagne",
@@ -50601,8 +50528,8 @@
       "secteur": "Environnement",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1517,
-      "lng": 6.0856
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Pôle invertébrés du bassin",
@@ -50625,8 +50552,8 @@
       "secteur": "Environnement",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.175,
-      "lng": 6.0833
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Théâtre-Cirqule École de Cirque de Genève, Chêne-Bourg",
@@ -50807,8 +50734,8 @@
       "secteur": "Tourisme",
       "organe": "Fonds du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.948,
-      "lng": 7.4474
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Cantonale de Judo",
@@ -50963,8 +50890,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.2517,
-      "lng": 6.1939
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Genevoise de Gymnastique",
@@ -51191,8 +51118,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1939,
-      "lng": 6.1175
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Athletic Club 3-Chêne",
@@ -51203,8 +51130,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.2031
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Athlétisme Viseu Genève",
@@ -51263,8 +51190,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1614,
-      "lng": 6.145
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Versoix Athlétisme",
@@ -51311,8 +51238,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.2031
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Badminton Club Genève",
@@ -51347,8 +51274,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1517,
-      "lng": 6.0856
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Badminton Club Rousseau",
@@ -51371,8 +51298,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1786,
-      "lng": 6.0789
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Batho Badminton Club Thônex",
@@ -51491,8 +51418,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1786,
-      "lng": 6.0789
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Curling Club Trois-Chêne /",
@@ -51623,8 +51550,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.175,
-      "lng": 6.0833
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Club Hippique l'Éperon",
@@ -51683,8 +51610,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.2178,
-      "lng": 6.1136
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Sté d'Escrime de Genève",
@@ -51707,8 +51634,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.2031
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Club de Gymnastique d'Onex",
@@ -51791,8 +51718,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.2178,
-      "lng": 6.1136
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "SATUS Vives",
@@ -51845,8 +51772,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.2031
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "FSG Eaux-Vives Gymnastique",
@@ -52193,8 +52120,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1789,
-      "lng": 6.1281
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Natation Sportive Genève",
@@ -52205,8 +52132,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Vernier Aquatics",
@@ -52229,8 +52156,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.2031
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "La Pétanque Genevoise",
@@ -52241,8 +52168,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Meyrin Pétanque et Longue",
@@ -52301,8 +52228,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1939,
-      "lng": 6.1175
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Club Montagnard Ouvrier",
@@ -52523,8 +52450,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.2114,
-      "lng": 6.1186
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Club Nautique de Versoix",
@@ -52631,8 +52558,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1939,
-      "lng": 6.1175
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "TC Confignon",
@@ -52679,8 +52606,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1517,
-      "lng": 6.0856
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Tennis Carouge",
@@ -52703,8 +52630,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.2031
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Tennis Club d'Anières",
@@ -52973,8 +52900,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1789,
-      "lng": 6.1281
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Meyrin CTT",
@@ -53021,8 +52948,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.2178,
-      "lng": 6.1136
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Sagittaire-Genève",
@@ -53033,8 +52960,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.2517,
-      "lng": 6.1939
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Section de Tir des Carabiniers",
@@ -53069,8 +52996,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Club Nautique de Versoix",
@@ -53117,8 +53044,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.2233,
-      "lng": 6.1764
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Yacht Club de Genève",
@@ -53129,8 +53056,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.2233,
-      "lng": 6.1764
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Groupe Genevois de Vol à Voile",
@@ -53153,8 +53080,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.2517,
-      "lng": 6.1939
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Basket Club Latino Carouge",
@@ -53189,8 +53116,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.2031
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Étoile Sportive Vernier Basket",
@@ -53297,8 +53224,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.2233,
-      "lng": 6.1764
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "GRYCC",
@@ -53333,8 +53260,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.2031
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Compesières FC",
@@ -53453,8 +53380,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.1953
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "FC Kosova Genève",
@@ -53477,8 +53404,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1939,
-      "lng": 6.1175
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "FC Perly-Certoux",
@@ -53489,8 +53416,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1517,
-      "lng": 6.0856
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "FC Plan-les-Ouates",
@@ -53561,8 +53488,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1939,
-      "lng": 6.1175
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Meyrin FC",
@@ -53597,8 +53524,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.175,
-      "lng": 6.0833
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "SRD Galaica-Onex",
@@ -53609,8 +53536,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1939,
-      "lng": 6.1175
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "UGS FC",
@@ -53633,8 +53560,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1614,
-      "lng": 6.145
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "US Genève-Poste",
@@ -53753,8 +53680,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1614,
-      "lng": 6.145
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Inline Hockey Club Aire-la-Ville",
@@ -53861,8 +53788,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.2031
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Hockey Club de Plan-les-Ouates",
@@ -53885,8 +53812,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "École de rugby Cern Meyrin Saint",
@@ -53957,8 +53884,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1956,
-      "lng": 6.2031
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Tchoukball Club Carouge",
@@ -53981,8 +53908,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.2114,
-      "lng": 6.1186
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Tchoukball Club Lancy",
@@ -53993,8 +53920,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.2114,
-      "lng": 6.1186
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Tchoukball Club Meyrin",
@@ -54017,8 +53944,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.2114,
-      "lng": 6.1186
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Tchoukball Club Puplinge",
@@ -54029,8 +53956,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.2114,
-      "lng": 6.1186
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Tchoukball Club Vernier",
@@ -54041,8 +53968,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1786,
-      "lng": 6.0789
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Geneva's Flying Disk Wizards",
@@ -54077,8 +54004,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1786,
-      "lng": 6.0789
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Chênois Genève Volley",
@@ -54101,8 +54028,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.2178,
-      "lng": 6.1136
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Lancy VBC",
@@ -54113,8 +54040,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": null,
-      "lat": 46.1939,
-      "lng": 6.1175
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Meyrin Volleyball Club",
@@ -54850,7 +54777,7 @@
     },
     {
       "nom": "BC Swing",
-      "ville": "Le Grand-Saconnex",
+      "ville": "Le Grand-Saconnex -",
       "description": "Rock'n'roll acrobatique BCS Cup 2025",
       "montant_CHF": 2000,
       "canton": "GE",
@@ -54862,7 +54789,7 @@
     },
     {
       "nom": "BC Swing",
-      "ville": "Le Grand-Saconnex",
+      "ville": "Le Grand-Saconnex -",
       "description": "Rock'n'roll acrobatique Geneva Cup 2025",
       "montant_CHF": 5000,
       "canton": "GE",
@@ -55030,7 +54957,7 @@
     },
     {
       "nom": "CTT UGS-Chênois",
-      "ville": "Ville-la-Grand",
+      "ville": "Ville-la-Grand -",
       "description": "Tennis de table Championnats Romands de Tennis de Table",
       "montant_CHF": 1000,
       "canton": "GE",
@@ -55123,8 +55050,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": "Manifestations sportives",
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "de Genève - Palexpo Rock Dance Company",
@@ -55135,12 +55062,12 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": "Manifestations sportives",
-      "lat": 46.1939,
-      "lng": 6.1175
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Geneva International Seven's - RunninGeneva",
-      "ville": "Carouge",
+      "ville": "Carouge -",
       "description": "European Clubs Seven's Contest Athlétisme Course des Ponts de Genève 2025",
       "montant_CHF": 12500,
       "canton": "GE",
@@ -55152,19 +55079,19 @@
     },
     {
       "nom": "Geneva Roller Skating",
-      "ville": "Choulex",
+      "ville": "Choulex -",
       "description": "",
       "montant_CHF": 1000,
       "canton": "GE",
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": "Manifestations sportives",
-      "lat": 46.2275,
-      "lng": 6.2336
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Patinage artistique sur roulettes RunninGeneva",
-      "ville": "Carouge",
+      "ville": "Carouge -",
       "description": "Trophée du Léman 2025 Athlétisme Geneva Urban Trail 2025",
       "montant_CHF": 13000,
       "canton": "GE",
@@ -55188,7 +55115,7 @@
     },
     {
       "nom": "Genève - Tennis RunninGeneva",
-      "ville": "Carouge",
+      "ville": "Carouge -",
       "description": "Gonet Geneva Open Athlétisme Nocturne des Evaux 2025",
       "montant_CHF": 10250,
       "canton": "GE",
@@ -55200,7 +55127,7 @@
     },
     {
       "nom": "Geneva Wind Festival",
-      "ville": "Cologny",
+      "ville": "Cologny -",
       "description": "",
       "montant_CHF": 15000,
       "canton": "GE",
@@ -55212,7 +55139,7 @@
     },
     {
       "nom": "Planche à voile RunninGeneva",
-      "ville": "Carouge",
+      "ville": "Carouge -",
       "description": "GVA Wind Festival 2025 Athlétisme Trail du Grand Genève",
       "montant_CHF": 15500,
       "canton": "GE",
@@ -55236,7 +55163,7 @@
     },
     {
       "nom": "Genève - Ultimate frisbee RunninGeneva",
-      "ville": "Carouge",
+      "ville": "Carouge -",
       "description": "Talampaya Athlétisme Trail Run Évasion Rhône",
       "montant_CHF": 13500,
       "canton": "GE",
@@ -55260,7 +55187,7 @@
     },
     {
       "nom": "Genève - Athlétisme Shung Do Kwan Budo",
-      "ville": "Genève",
+      "ville": "Genève -",
       "description": "20km de Genève Arts martiaux Coupe Kasahara 2025",
       "montant_CHF": 1500,
       "canton": "GE",
@@ -55284,7 +55211,7 @@
     },
     {
       "nom": "AquaCup 2025 Sprinter Club Lignon",
-      "ville": "Aire-la-Ville",
+      "ville": "Aire-la-Ville -",
       "description": "Cyclisme Route Genève Natation 1885",
       "montant_CHF": 3000,
       "canton": "GE",
@@ -55308,7 +55235,7 @@
     },
     {
       "nom": "de Natation artistique Swiss Juniors Cup",
-      "ville": "Petit-Lancy",
+      "ville": "Petit-Lancy -",
       "description": "Futsal Genève Natation 1885",
       "montant_CHF": 10000,
       "canton": "GE",
@@ -55371,8 +55298,8 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": "Manifestations sportives",
-      "lat": 46.1875,
-      "lng": 6.1369
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Tournoi International Marcante Union Vélocipédique Genevoise",
@@ -55388,7 +55315,7 @@
     },
     {
       "nom": "Difficulté Swiss Climbing Cup Vélo-Club Lancy",
-      "ville": "Grand-Lancy",
+      "ville": "Grand-Lancy -",
       "description": "Cyclisme Route High Diving Genève -",
       "montant_CHF": 2000,
       "canton": "GE",
@@ -55400,7 +55327,7 @@
     },
     {
       "nom": "Lancy Cliff Diving 2025 Vélo-Club Lancy",
-      "ville": "Grand-Lancy",
+      "ville": "Grand-Lancy -",
       "description": "Cyclisme Route Ippon Karaté Club Tivoli,",
       "montant_CHF": 2000,
       "canton": "GE",
@@ -55412,7 +55339,7 @@
     },
     {
       "nom": "Vernier Aquatics",
-      "ville": "La Plaine",
+      "ville": "La Plaine -",
       "description": "La Classique Genevoise, Genève -",
       "montant_CHF": 4000,
       "canton": "GE",
@@ -55424,7 +55351,7 @@
     },
     {
       "nom": "La Pétanque Genevoise",
-      "ville": "La Plaine",
+      "ville": "La Plaine -",
       "description": "Les Acacias Natation Artistique Hivernal Jeunes Swiss Youth Competition 2025",
       "montant_CHF": 4000,
       "canton": "GE",
@@ -55437,7 +55364,7 @@
     },
     {
       "nom": "Vernier Aquatics",
-      "ville": "La Plaine",
+      "ville": "La Plaine -",
       "description": "Les Acacias Natation Artistique Hivernal Jeunes Swiss Youth Competition 2025",
       "montant_CHF": 10000,
       "canton": "GE",
@@ -55591,12 +55518,12 @@
       "secteur": "Sport",
       "organe": "Fonds du sport",
       "sous_section": "Manifestations sportives",
-      "lat": 46.1956,
-      "lng": 6.2031
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Cordt-Moller Caryl",
-      "ville": "Thônex",
+      "ville": "Thônex -",
       "description": "Parkour The World Games 2025 - Chengdu, Chine",
       "montant_CHF": 7000,
       "canton": "GE",
@@ -55668,7 +55595,7 @@
     },
     {
       "nom": "Payot Leonardo",
-      "ville": "Grand Saconnex",
+      "ville": "Grand Saconnex -",
       "description": "Danse sportive Objectif : Champion du Monde Catégorie Junior Boogie-Woogie 2025",
       "montant_CHF": 4000,
       "canton": "GE",
@@ -55680,7 +55607,7 @@
     },
     {
       "nom": "Payot Valentina",
-      "ville": "Grand-Saconnex",
+      "ville": "Grand-Saconnex -",
       "description": "Danse sportive Objectif: Championne du Monde Catégorie Junior Boogie-Woogie 2025",
       "montant_CHF": 4000,
       "canton": "GE",
@@ -55728,7 +55655,7 @@
     },
     {
       "nom": "Sports Universitaires",
-      "ville": "Genève",
+      "ville": "Genève -",
       "description": "Multisports Participation au championnat d'Europe universitaire de badminton",
       "montant_CHF": 3000,
       "canton": "GE",
@@ -55752,7 +55679,7 @@
     },
     {
       "nom": "Vernier Aquatics",
-      "ville": "La Plaine",
+      "ville": "La Plaine -",
       "description": "Natation Artistique Création d'un centre cantonal Contributions réserve aides exceptionnelles (Conseil d’État) 705’300.-",
       "montant_CHF": 87260,
       "canton": "GE",
@@ -55885,8 +55812,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3667,
-      "lng": 7.3439
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Pinos",
@@ -56065,8 +55992,8 @@
       "secteur": "Action sociale",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2308,
-      "lng": 6.9667
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Université du 3e âge",
@@ -56215,8 +56142,8 @@
       "secteur": "Jeunesse",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3625,
-      "lng": 7.4036
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Espace Jeunes Delémont",
@@ -56263,8 +56190,8 @@
       "secteur": "Jeunesse",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3825,
-      "lng": 7.1903
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Fond. suisse pour la recherche",
@@ -56317,8 +56244,8 @@
       "secteur": "Jeunesse",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3375,
-      "lng": 7.2453
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Municipalité de Moutier",
@@ -56341,8 +56268,8 @@
       "secteur": "Jeunesse",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.1789,
-      "lng": 6.9558
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Tribunal des mineurs",
@@ -56377,8 +56304,8 @@
       "secteur": "Santé",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2197,
-      "lng": 7.1078,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 144000,
       "agg_cantons": [
         "JU",
@@ -56563,8 +56490,8 @@
       "secteur": "Santé",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.4831,
-      "lng": 7.1581
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Université de Berne",
@@ -56623,8 +56550,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3825,
-      "lng": 7.1903
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "AG culturel",
@@ -56683,8 +56610,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.1369,
-      "lng": 7.2469
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Culturoscope & Cie",
@@ -56695,8 +56622,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2225,
-      "lng": 7.1958
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. de danse Temps Liés",
@@ -56785,8 +56712,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3458,
-      "lng": 7.3306
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. du Volcan",
@@ -56881,8 +56808,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3825,
-      "lng": 7.1903
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. KoHalition Productions",
@@ -57013,8 +56940,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2308,
-      "lng": 6.9667
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Rock'R Sauvage",
@@ -57169,8 +57096,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3667,
-      "lng": 7.3439
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Collectif Coco Records",
@@ -57589,8 +57516,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.1789,
-      "lng": 6.9558
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Fond. du Musée jurassien des Arts",
@@ -57601,8 +57528,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2789,
-      "lng": 7.3719
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Fond. pour le Théâtre du Jura",
@@ -57637,8 +57564,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2308,
-      "lng": 6.9667
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "fOrum culture",
@@ -57649,8 +57576,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2225,
-      "lng": 7.1958
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Galactica Production",
@@ -57757,8 +57684,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3825,
-      "lng": 7.1903
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "L'Effet Papillons",
@@ -57909,8 +57836,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.1369,
-      "lng": 7.2469
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Orchestre de chambre jurassien",
@@ -58041,8 +57968,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3458,
-      "lng": 7.3306
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Théâtre Sans Gage",
@@ -58053,8 +57980,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.1789,
-      "lng": 6.9558
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Union instrumentale Delémont",
@@ -58101,8 +58028,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3625,
-      "lng": 7.4036
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "visarte.jura",
@@ -58125,8 +58052,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.1789,
-      "lng": 6.9558
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Weebee Weebee",
@@ -58185,8 +58112,8 @@
       "secteur": "Patrimoine",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3625,
-      "lng": 7.4036
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Commune de Fontenais",
@@ -58201,9 +58128,9 @@
       "lng": null
     },
     {
-      "nom": "Commune ecclésiastique de Montfaucon-Les Enfers",
+      "nom": "Commune ecclésiastique",
       "ville": null,
-      "description": "Restauration de mobilier",
+      "description": "de Montfaucon-Les Enfers Restauration de mobilier",
       "montant_CHF": 40000,
       "canton": "JU",
       "secteur": "Patrimoine",
@@ -58221,8 +58148,8 @@
       "secteur": "Patrimoine",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2308,
-      "lng": 6.9667
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Féd. des patoisants",
@@ -58281,8 +58208,8 @@
       "secteur": "Environnement",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3458,
-      "lng": 7.3306
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Bat-Voulaint",
@@ -58317,8 +58244,8 @@
       "secteur": "Environnement",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.4322,
-      "lng": 7.13
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Fond. Jurassienne Territoires",
@@ -58409,9 +58336,9 @@
       "lng": null
     },
     {
-      "nom": "Sté de Développement d'Embellissement",
-      "ville": "Les Breuleux",
-      "description": "Restauration d'un mur de pierres sèches",
+      "nom": "Sté de Développement",
+      "ville": null,
+      "description": "d'Embellissement, Les Breuleux Restauration d'un mur de pierres sèches",
       "montant_CHF": 10000,
       "canton": "JU",
       "secteur": "Environnement",
@@ -59203,8 +59130,8 @@
       "secteur": "Environnement",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3625,
-      "lng": 7.4036
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Club de plongée La Bulle",
@@ -61613,8 +61540,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3458,
-      "lng": 7.3306
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Arôme Rouge",
@@ -61655,8 +61582,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.1369,
-      "lng": 7.2469
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Ciné-Doc",
@@ -61721,8 +61648,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2308,
-      "lng": 6.9667
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. CULTUREPROD",
@@ -61906,7 +61833,7 @@
     },
     {
       "nom": "Assoc. Films Plans-Fixes",
-      "ville": "Lausanne",
+      "ville": "Lausanne Lausanne",
       "description": "Plans-Fixes Rose-Marie Pagnard Les amis, ça s'arrose combien de fois par semaine ?",
       "montant_CHF": 2500,
       "canton": "JU",
@@ -61919,7 +61846,7 @@
     },
     {
       "nom": "Assoc. Poisson Scorpion",
-      "ville": "Lausanne",
+      "ville": "Lausanne Lausanne",
       "description": "Plans-Fixes Rose-Marie Pagnard Les amis, ça s'arrose combien de fois par semaine ?",
       "montant_CHF": 10000,
       "canton": "JU",
@@ -61939,8 +61866,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3825,
-      "lng": 7.1903
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Dritchino Open air festival Assoc. RED",
@@ -61963,8 +61890,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2308,
-      "lng": 6.9667
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Rénovation sculpture Fronteras Assoc. Roadmovie",
@@ -62032,8 +61959,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.1789,
-      "lng": 6.9558
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. La Nef, Le Noirmont",
@@ -62334,8 +62261,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2225,
-      "lng": 7.1958
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Delgado Rubin",
@@ -62346,8 +62273,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2197,
-      "lng": 7.1078
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Édition de l'Aïre S.A.",
@@ -62472,8 +62399,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.2517,
-      "lng": 6.1939
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Elliot Ristic Faith Arabella",
@@ -62544,8 +62471,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2364,
-      "lng": 7.2231
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Festival du Jura",
@@ -62676,8 +62603,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3625,
-      "lng": 7.4036
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "fOrum culture",
@@ -62688,8 +62615,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2225,
-      "lng": 7.1958
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Fugu Blues Productions",
@@ -62748,8 +62675,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3458,
-      "lng": 7.3306
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Harmonie Shostakovich",
@@ -62970,8 +62897,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2789,
-      "lng": 7.3719
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Musique des Lumières",
@@ -62982,8 +62909,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.1369,
-      "lng": 7.2469
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Nussbaum Séverine",
@@ -63006,8 +62933,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 46.9803,
-      "lng": 6.8917
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Orchestre de chambre jurassien",
@@ -63078,8 +63005,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3825,
-      "lng": 7.1903
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Point Jazz",
@@ -63090,8 +63017,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3825,
-      "lng": 7.1903
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "PREMIO",
@@ -63162,8 +63089,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3458,
-      "lng": 7.3306
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Schärer Mathieu Dominique",
@@ -63222,8 +63149,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2308,
-      "lng": 6.9667
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Sté de théâtre amateur",
@@ -63390,8 +63317,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3458,
-      "lng": 7.3306
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Théâtre sans gage",
@@ -63402,8 +63329,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.1789,
-      "lng": 6.9558
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Torticolis et Frères",
@@ -63468,8 +63395,8 @@
       "secteur": "Culture",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.3625,
-      "lng": 7.4036
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "visarte.jura",
@@ -63612,8 +63539,8 @@
       "secteur": "Environnement",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
-      "lat": 47.2553,
-      "lng": 6.9994
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "ASA St-Ursanne",
@@ -63739,8 +63666,8 @@
       "secteur": "Action sociale",
       "organe": "Conférence des Présidents des Organes de Répartition du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.1875,
-      "lng": 6.1369,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 63000,
       "agg_cantons": [
         "JU",
@@ -63889,8 +63816,8 @@
       "secteur": "Action sociale",
       "organe": "Conférence des Présidents des Organes de Répartition du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.2422,
-      "lng": 6.975
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. N'terractive",
@@ -64040,8 +63967,8 @@
       "secteur": "Jeunesse",
       "organe": "Conférence des Présidents des Organes de Répartition du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.948,
-      "lng": 7.4474
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Fond. Pacte",
@@ -64190,8 +64117,8 @@
       "secteur": "Jeunesse",
       "organe": "Conférence des Présidents des Organes de Répartition du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.948,
-      "lng": 7.4474
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Street Foot Challenge",
@@ -64522,8 +64449,8 @@
       "secteur": "Culture",
       "organe": "Conférence des Présidents des Organes de Répartition du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 47.0589,
-      "lng": 7.0697
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. t.",
@@ -64534,8 +64461,8 @@
       "secteur": "Culture",
       "organe": "Conférence des Présidents des Organes de Répartition du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 47.1369,
-      "lng": 7.2469
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Agora",
@@ -64672,8 +64599,8 @@
       "secteur": "Culture",
       "organe": "Conférence des Présidents des Organes de Répartition du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 47.1369,
-      "lng": 7.2469
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Assoc. Musitorium",
@@ -65002,8 +64929,8 @@
       "secteur": "Culture",
       "organe": "Conférence des Présidents des Organes de Répartition du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.9069,
-      "lng": 6.6092
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "Opéra décentralisé",
@@ -65014,8 +64941,8 @@
       "secteur": "Culture",
       "organe": "Conférence des Présidents des Organes de Répartition du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.9803,
-      "lng": 6.8917,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 445000,
       "agg_cantons": [
         "NE",
@@ -65236,8 +65163,8 @@
       "secteur": "Patrimoine",
       "organe": "Conférence des Présidents des Organes de Répartition du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 47.3458,
-      "lng": 7.3306
+      "lat": null,
+      "lng": null
     },
     {
       "nom": "FONSART",
@@ -66054,8 +65981,8 @@
       "secteur": "Environnement",
       "organe": "Conférence des Présidents des Organes de Répartition du sport Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
-      "lat": 46.3503,
-      "lng": 7.0089,
+      "lat": null,
+      "lng": null,
       "agg_total_CHF": 9160,
       "agg_cantons": [
         "R",

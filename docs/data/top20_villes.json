@@ -1,0 +1,510 @@
+{
+  "_meta": {
+    "description": "Top 20 villes destinataires par montant cumulé en 2025",
+    "method": "Aggrégation par champ 'ville'. Les entrées sans ville (~53%) ne sont pas comptabilisées.",
+    "top20_total_chf": 68697606
+  },
+  "villes": [
+    {
+      "ville": "Lausanne",
+      "count": 198,
+      "total_chf": 20522175,
+      "cantons": [
+        "FR",
+        "GE",
+        "JU",
+        "NE",
+        "R",
+        "VD",
+        "VS"
+      ],
+      "lat": 46.5197,
+      "lng": 6.6323,
+      "top_3_beneficiaires": [
+        {
+          "nom": "de l hermitage",
+          "chf": 2500000
+        },
+        {
+          "nom": "trako",
+          "chf": 2000000
+        },
+        {
+          "nom": "pour l accueil de jour des enfants faje",
+          "chf": 1500000
+        }
+      ]
+    },
+    {
+      "ville": "Genève",
+      "count": 281,
+      "total_chf": 12874820,
+      "cantons": [
+        "FR",
+        "GE",
+        "JU",
+        "NE",
+        "R",
+        "VD",
+        "VS"
+      ],
+      "lat": 46.2044,
+      "lng": 6.1432,
+      "top_3_beneficiaires": [
+        {
+          "nom": "cineforom",
+          "chf": 1700000
+        },
+        {
+          "nom": "horopedia",
+          "chf": 1000000
+        },
+        {
+          "nom": "fifdh",
+          "chf": 520000
+        }
+      ]
+    },
+    {
+      "ville": "Fribourg",
+      "count": 134,
+      "total_chf": 7805875,
+      "cantons": [
+        "FR",
+        "GE",
+        "R",
+        "VD"
+      ],
+      "lat": 46.8065,
+      "lng": 7.162,
+      "top_3_beneficiaires": [
+        {
+          "nom": "des cinemas romands",
+          "chf": 1725000
+        },
+        {
+          "nom": "la tuile",
+          "chf": 540000
+        },
+        {
+          "nom": "banc public",
+          "chf": 490000
+        }
+      ]
+    },
+    {
+      "ville": "Sion",
+      "count": 91,
+      "total_chf": 5575454,
+      "cantons": [
+        "FR",
+        "GE",
+        "JU",
+        "NE",
+        "R",
+        "VS"
+      ],
+      "lat": 46.228,
+      "lng": 7.3589,
+      "top_3_beneficiaires": [
+        {
+          "nom": "theatre pro",
+          "chf": 566000
+        },
+        {
+          "nom": "valais wallis promotion",
+          "chf": 500000
+        },
+        {
+          "nom": "saison artistique kurt bosch stiftung kbs",
+          "chf": 450000
+        }
+      ]
+    },
+    {
+      "ville": "Neuchâtel",
+      "count": 128,
+      "total_chf": 3233620,
+      "cantons": [
+        "GE",
+        "JU",
+        "NE",
+        "R",
+        "VD"
+      ],
+      "lat": 46.993,
+      "lng": 6.9319,
+      "top_3_beneficiaires": [
+        {
+          "nom": "la lanterne magique",
+          "chf": 670000
+        },
+        {
+          "nom": "l avant scene opera",
+          "chf": 210000
+        },
+        {
+          "nom": "poesie en arrosoir",
+          "chf": 135000
+        }
+      ]
+    },
+    {
+      "ville": "Carouge",
+      "count": 38,
+      "total_chf": 2432150,
+      "cantons": [
+        "GE",
+        "R"
+      ],
+      "lat": 46.1839,
+      "lng": 6.1383,
+      "top_3_beneficiaires": [
+        {
+          "nom": "vestiaire social",
+          "chf": 1600000
+        },
+        {
+          "nom": "programme de formation fond foyer handicap",
+          "chf": 200000
+        },
+        {
+          "nom": "ines",
+          "chf": 50000
+        }
+      ]
+    },
+    {
+      "ville": "Sierre",
+      "count": 27,
+      "total_chf": 1681951,
+      "cantons": [
+        "VS"
+      ],
+      "lat": 46.2917,
+      "lng": 7.5333,
+      "top_3_beneficiaires": [
+        {
+          "nom": "canal 9 kanal 9",
+          "chf": 854000
+        },
+        {
+          "nom": "beaulieu residences",
+          "chf": 152000
+        },
+        {
+          "nom": "dreamago swiss",
+          "chf": 130000
+        }
+      ]
+    },
+    {
+      "ville": "Delémont",
+      "count": 79,
+      "total_chf": 1614230,
+      "cantons": [
+        "JU",
+        "NE",
+        "R"
+      ],
+      "lat": 47.3667,
+      "lng": 7.3439,
+      "top_3_beneficiaires": [
+        {
+          "nom": "pour le theatre du jura",
+          "chf": 321000
+        },
+        {
+          "nom": "service de l action sociale",
+          "chf": 280000
+        },
+        {
+          "nom": "centre cabi biosciences",
+          "chf": 150000
+        }
+      ]
+    },
+    {
+      "ville": "Vernier",
+      "count": 5,
+      "total_chf": 1551900,
+      "cantons": [
+        "GE"
+      ],
+      "lat": 46.2147,
+      "lng": 6.0858,
+      "top_3_beneficiaires": [
+        {
+          "nom": "pour le developpement des arts et de la culture fodac",
+          "chf": 1500000
+        },
+        {
+          "nom": "super licorne",
+          "chf": 30000
+        },
+        {
+          "nom": "etoile sportive vernier basket",
+          "chf": 10700
+        }
+      ]
+    },
+    {
+      "ville": "Porrentruy",
+      "count": 51,
+      "total_chf": 1448499,
+      "cantons": [
+        "JU",
+        "R"
+      ],
+      "lat": 47.4119,
+      "lng": 7.0744,
+      "top_3_beneficiaires": [
+        {
+          "nom": "vallee des dinosaures",
+          "chf": 450000
+        },
+        {
+          "nom": "crescendo",
+          "chf": 150000
+        },
+        {
+          "nom": "office cantonal de la culture",
+          "chf": 95000
+        }
+      ]
+    },
+    {
+      "ville": "Gland",
+      "count": 6,
+      "total_chf": 1360000,
+      "cantons": [
+        "GE",
+        "VD"
+      ],
+      "lat": 46.4225,
+      "lng": 6.27,
+      "top_3_beneficiaires": [
+        {
+          "nom": "guido comba",
+          "chf": 1250000
+        },
+        {
+          "nom": "d apiculture de nyon",
+          "chf": 50000
+        },
+        {
+          "nom": "les hivernales",
+          "chf": 20000
+        }
+      ]
+    },
+    {
+      "ville": "Pully",
+      "count": 9,
+      "total_chf": 1162000,
+      "cantons": [
+        "FR",
+        "R",
+        "VD"
+      ],
+      "lat": 46.5097,
+      "lng": 6.6614,
+      "top_3_beneficiaires": [
+        {
+          "nom": "vaud promotion",
+          "chf": 1000000
+        },
+        {
+          "nom": "compagnie linga",
+          "chf": 80000
+        },
+        {
+          "nom": "cie primalacasse assoc",
+          "chf": 30000
+        }
+      ]
+    },
+    {
+      "ville": "Nyon",
+      "count": 18,
+      "total_chf": 1154084,
+      "cantons": [
+        "FR",
+        "JU",
+        "R",
+        "VD"
+      ],
+      "lat": 46.3833,
+      "lng": 6.2406,
+      "top_3_beneficiaires": [
+        {
+          "nom": "usine a gaz",
+          "chf": 300000
+        },
+        {
+          "nom": "visions du reel",
+          "chf": 270000
+        },
+        {
+          "nom": "cma",
+          "chf": 207084
+        }
+      ]
+    },
+    {
+      "ville": "Total pour les établissements",
+      "count": 1,
+      "total_chf": 1042798,
+      "cantons": [
+        "VD"
+      ],
+      "lat": null,
+      "lng": null,
+      "top_3_beneficiaires": [
+        {
+          "nom": "camps sportifs scolaires",
+          "chf": 1042798
+        }
+      ]
+    },
+    {
+      "ville": "Bulle",
+      "count": 26,
+      "total_chf": 1018260,
+      "cantons": [
+        "FR"
+      ],
+      "lat": 46.619,
+      "lng": 7.0567,
+      "top_3_beneficiaires": [
+        {
+          "nom": "co2",
+          "chf": 197500
+        },
+        {
+          "nom": "les francomanias",
+          "chf": 130000
+        },
+        {
+          "nom": "d accueil familial de jour du district de la gruyere",
+          "chf": 128880
+        }
+      ]
+    },
+    {
+      "ville": "Les Acacias",
+      "count": 22,
+      "total_chf": 1008200,
+      "cantons": [
+        "GE",
+        "NE",
+        "R"
+      ],
+      "lat": 46.1875,
+      "lng": 6.1369,
+      "top_3_beneficiaires": [
+        {
+          "nom": "croix rouge genevoise",
+          "chf": 250000
+        },
+        {
+          "nom": "headfun",
+          "chf": 130000
+        },
+        {
+          "nom": "handisport geneve",
+          "chf": 100000
+        }
+      ]
+    },
+    {
+      "ville": "Fête Fédérale de",
+      "count": 2,
+      "total_chf": 1004000,
+      "cantons": [
+        "R",
+        "VD"
+      ],
+      "lat": null,
+      "lng": null,
+      "top_3_beneficiaires": [
+        {
+          "nom": "ffg lausanne 2025",
+          "chf": 1004000
+        }
+      ]
+    },
+    {
+      "ville": "Givisiez",
+      "count": 5,
+      "total_chf": 795000,
+      "cantons": [
+        "FR"
+      ],
+      "lat": 46.8225,
+      "lng": 7.1419,
+      "top_3_beneficiaires": [
+        {
+          "nom": "du theatre des osses",
+          "chf": 460000
+        },
+        {
+          "nom": "le magnifique theatre",
+          "chf": 148000
+        },
+        {
+          "nom": "marcello",
+          "chf": 130000
+        }
+      ]
+    },
+    {
+      "ville": "Morges",
+      "count": 10,
+      "total_chf": 716600,
+      "cantons": [
+        "VD"
+      ],
+      "lat": 46.5089,
+      "lng": 6.4969,
+      "top_3_beneficiaires": [
+        {
+          "nom": "du musee alexis forel",
+          "chf": 420000
+        },
+        {
+          "nom": "le livre sur les quais",
+          "chf": 110000
+        },
+        {
+          "nom": "creation artistique diabolo festival",
+          "chf": 60000
+        }
+      ]
+    },
+    {
+      "ville": "Renens",
+      "count": 8,
+      "total_chf": 695990,
+      "cantons": [
+        "VD"
+      ],
+      "lat": 46.5419,
+      "lng": 6.5878,
+      "top_3_beneficiaires": [
+        {
+          "nom": "venoge people",
+          "chf": 360000
+        },
+        {
+          "nom": "inartis",
+          "chf": 115000
+        },
+        {
+          "nom": "la ferme des tilleuls",
+          "chf": 110000
+        }
+      ]
+    }
+  ]
+}

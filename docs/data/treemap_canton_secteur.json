@@ -1,0 +1,1077 @@
+{
+  "_meta": {
+    "description": "Treemap canton × secteur : où va chaque CHF par canton",
+    "method": "Aggrégation par (canton, secteur). Inclut le canton 'R' pour les attributions romandes intercantonales.",
+    "note": "Le champ 'secteur' est partiellement faussé par un bug parser (voir METHODOLOGY v13.10). Les sommes globales par canton sont correctes."
+  },
+  "cantons": [
+    {
+      "canton": "VD",
+      "total_chf": 74778381,
+      "secteurs": [
+        {
+          "secteur": "Sport",
+          "total_chf": 30388731,
+          "count": 913,
+          "top_3": [
+            {
+              "nom": "de l hermitage",
+              "chf": 2500000
+            },
+            {
+              "nom": "trako",
+              "chf": 2003000
+            },
+            {
+              "nom": "pour l art dramatique",
+              "chf": 1350000
+            }
+          ]
+        },
+        {
+          "secteur": "Action sociale",
+          "total_chf": 8868471,
+          "count": 69,
+          "top_3": [
+            {
+              "nom": "csp centre social protestant",
+              "chf": 1376000
+            },
+            {
+              "nom": "reseau sante nord",
+              "chf": 1225750
+            },
+            {
+              "nom": "aras riviera",
+              "chf": 945560
+            }
+          ]
+        },
+        {
+          "secteur": "Santé",
+          "total_chf": 8316878,
+          "count": 23,
+          "top_3": [
+            {
+              "nom": "des cinemas romands",
+              "chf": 1725000
+            },
+            {
+              "nom": "de l hermitage",
+              "chf": 1500000
+            },
+            {
+              "nom": "chuv",
+              "chf": 1023378
+            }
+          ]
+        },
+        {
+          "secteur": "Jeunesse",
+          "total_chf": 7997700,
+          "count": 65,
+          "top_3": [
+            {
+              "nom": "pour l accueil de jour des enfants faje",
+              "chf": 1500000
+            },
+            {
+              "nom": "la feuillere",
+              "chf": 1000000
+            },
+            {
+              "nom": "de la maison de montagne de bretaye",
+              "chf": 800000
+            }
+          ]
+        },
+        {
+          "secteur": "Culture",
+          "total_chf": 7865500,
+          "count": 243,
+          "top_3": [
+            {
+              "nom": "bejart ballet lausanne bbl",
+              "chf": 450000
+            },
+            {
+              "nom": "cinematheque suisse",
+              "chf": 350000
+            },
+            {
+              "nom": "ecole de musique de lausanne",
+              "chf": 300000
+            }
+          ]
+        },
+        {
+          "secteur": "Formation",
+          "total_chf": 4540000,
+          "count": 5,
+          "top_3": [
+            {
+              "nom": "isrec",
+              "chf": 1100000
+            },
+            {
+              "nom": "pour la recherche",
+              "chf": 1050000
+            },
+            {
+              "nom": "epfl plus",
+              "chf": 1000000
+            }
+          ]
+        },
+        {
+          "secteur": "Environnement",
+          "total_chf": 3429601,
+          "count": 33,
+          "top_3": [
+            {
+              "nom": "vaud promotion",
+              "chf": 1000000
+            },
+            {
+              "nom": "du gite el jire sur les",
+              "chf": 501000
+            },
+            {
+              "nom": "vaudoise d astronomie",
+              "chf": 400000
+            }
+          ]
+        },
+        {
+          "secteur": "Patrimoine",
+          "total_chf": 3371500,
+          "count": 15,
+          "top_3": [
+            {
+              "nom": "guido comba",
+              "chf": 1250000
+            },
+            {
+              "nom": "sskg stiftung fur",
+              "chf": 500000
+            },
+            {
+              "nom": "caux initiatives",
+              "chf": 400000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canton": "GE",
+      "total_chf": 40625894,
+      "secteurs": [
+        {
+          "secteur": "Culture",
+          "total_chf": 14023824,
+          "count": 316,
+          "top_3": [
+            {
+              "nom": "pour le developpement des arts et de la culture fodac",
+              "chf": 1500000
+            },
+            {
+              "nom": "des amis de la revue",
+              "chf": 720000
+            },
+            {
+              "nom": "fifdh",
+              "chf": 520000
+            }
+          ]
+        },
+        {
+          "secteur": "Action sociale",
+          "total_chf": 10586270,
+          "count": 134,
+          "top_3": [
+            {
+              "nom": "vestiaire social",
+              "chf": 1600000
+            },
+            {
+              "nom": "conservatoire populaire",
+              "chf": 1000000
+            },
+            {
+              "nom": "colonies de vacances",
+              "chf": 800000
+            }
+          ]
+        },
+        {
+          "secteur": "Patrimoine",
+          "total_chf": 6787000,
+          "count": 10,
+          "top_3": [
+            {
+              "nom": "pour la conservation",
+              "chf": 3300000
+            },
+            {
+              "nom": "eglise protestante de geneve",
+              "chf": 1250000
+            },
+            {
+              "nom": "eglise anglicane de geneve",
+              "chf": 1000000
+            }
+          ]
+        },
+        {
+          "secteur": "Sport",
+          "total_chf": 5809510,
+          "count": 418,
+          "top_3": [
+            {
+              "nom": "cantonale genevoise",
+              "chf": 465100
+            },
+            {
+              "nom": "team geneve 2025",
+              "chf": 226000
+            },
+            {
+              "nom": "assoc weuro geneve 2025",
+              "chf": 200000
+            }
+          ]
+        },
+        {
+          "secteur": "Environnement",
+          "total_chf": 1432290,
+          "count": 25,
+          "top_3": [
+            {
+              "nom": "geneve montagne",
+              "chf": 420000
+            },
+            {
+              "nom": "semences de pays",
+              "chf": 270000
+            },
+            {
+              "nom": "groupe ornithologique",
+              "chf": 200000
+            }
+          ]
+        },
+        {
+          "secteur": "Formation",
+          "total_chf": 1110000,
+          "count": 11,
+          "top_3": [
+            {
+              "nom": "cite des metiers",
+              "chf": 800000
+            },
+            {
+              "nom": "faculte de traduction",
+              "chf": 150000
+            },
+            {
+              "nom": "lire et ecrire",
+              "chf": 30000
+            }
+          ]
+        },
+        {
+          "secteur": "Tourisme",
+          "total_chf": 877000,
+          "count": 13,
+          "top_3": [
+            {
+              "nom": "pour l ecrit",
+              "chf": 500000
+            },
+            {
+              "nom": "section genevoise du club alpin",
+              "chf": 120000
+            },
+            {
+              "nom": "nouvelle assoc du courrier",
+              "chf": 58000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canton": "VS",
+      "total_chf": 29396746,
+      "secteurs": [
+        {
+          "secteur": "Culture",
+          "total_chf": 10966832,
+          "count": 279,
+          "top_3": [
+            {
+              "nom": "canal 9 kanal 9",
+              "chf": 854000
+            },
+            {
+              "nom": "du verbier festival",
+              "chf": 775000
+            },
+            {
+              "nom": "theatre pro",
+              "chf": 566000
+            }
+          ]
+        },
+        {
+          "secteur": "Sport",
+          "total_chf": 5069728,
+          "count": 239,
+          "top_3": [
+            {
+              "nom": "ski valais",
+              "chf": 755298
+            },
+            {
+              "nom": "valaisanne de football",
+              "chf": 443380
+            },
+            {
+              "nom": "gym valais wallis",
+              "chf": 228435
+            }
+          ]
+        },
+        {
+          "secteur": "Tourisme",
+          "total_chf": 4358500,
+          "count": 33,
+          "top_3": [
+            {
+              "nom": "valais wallis promotion",
+              "chf": 500000
+            },
+            {
+              "nom": "the ark",
+              "chf": 400000
+            },
+            {
+              "nom": "fis ski alpin",
+              "chf": 320000
+            }
+          ]
+        },
+        {
+          "secteur": "Formation",
+          "total_chf": 3511500,
+          "count": 55,
+          "top_3": [
+            {
+              "nom": "saison artistique",
+              "chf": 681000
+            },
+            {
+              "nom": "saison artistique kurt bosch stiftung kbs",
+              "chf": 450000
+            },
+            {
+              "nom": "pour la sauvegarde du patrimoine des medias valaisans",
+              "chf": 350000
+            }
+          ]
+        },
+        {
+          "secteur": "Action sociale",
+          "total_chf": 3402636,
+          "count": 65,
+          "top_3": [
+            {
+              "nom": "groupement valaisan",
+              "chf": 196266
+            },
+            {
+              "nom": "benevoles valais wallis",
+              "chf": 153370
+            },
+            {
+              "nom": "beaulieu residences",
+              "chf": 152000
+            }
+          ]
+        },
+        {
+          "secteur": "Santé",
+          "total_chf": 1112000,
+          "count": 30,
+          "top_3": [
+            {
+              "nom": "terre des hommes valais",
+              "chf": 170000
+            },
+            {
+              "nom": "transport handicap",
+              "chf": 145000
+            },
+            {
+              "nom": "maraval maladies rares",
+              "chf": 140000
+            }
+          ]
+        },
+        {
+          "secteur": "Jeunesse",
+          "total_chf": 659050,
+          "count": 55,
+          "top_3": [
+            {
+              "nom": "colonie de vacances de martigny a ravoire",
+              "chf": 200000
+            },
+            {
+              "nom": "valaisanne des ludotheques",
+              "chf": 33000
+            },
+            {
+              "nom": "neuracademia",
+              "chf": 30000
+            }
+          ]
+        },
+        {
+          "secteur": "Environnement",
+          "total_chf": 316500,
+          "count": 7,
+          "top_3": [
+            {
+              "nom": "lebens und",
+              "chf": 127000
+            },
+            {
+              "nom": "apialpes",
+              "chf": 80000
+            },
+            {
+              "nom": "landschaftspark",
+              "chf": 60000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canton": "FR",
+      "total_chf": 27385472,
+      "secteurs": [
+        {
+          "secteur": "Sport",
+          "total_chf": 11616578,
+          "count": 418,
+          "top_3": [
+            {
+              "nom": "equilibre et nuithonie",
+              "chf": 970000
+            },
+            {
+              "nom": "festival international du film de fribourg",
+              "chf": 660000
+            },
+            {
+              "nom": "du theatre des osses",
+              "chf": 460000
+            }
+          ]
+        },
+        {
+          "secteur": "Action sociale",
+          "total_chf": 4251500,
+          "count": 45,
+          "top_3": [
+            {
+              "nom": "la tuile",
+              "chf": 540000
+            },
+            {
+              "nom": "banc public",
+              "chf": 490000
+            },
+            {
+              "nom": "pro senectute fribourg",
+              "chf": 350000
+            }
+          ]
+        },
+        {
+          "secteur": "Culture",
+          "total_chf": 4117872,
+          "count": 162,
+          "top_3": [
+            {
+              "nom": "cineforom fond romande",
+              "chf": 314600
+            },
+            {
+              "nom": "des bibliotheques",
+              "chf": 248054
+            },
+            {
+              "nom": "co2",
+              "chf": 197500
+            }
+          ]
+        },
+        {
+          "secteur": "Jeunesse",
+          "total_chf": 2830717,
+          "count": 112,
+          "top_3": [
+            {
+              "nom": "reper",
+              "chf": 405000
+            },
+            {
+              "nom": "programme culture ecole",
+              "chf": 300000
+            },
+            {
+              "nom": "famiya",
+              "chf": 200970
+            }
+          ]
+        },
+        {
+          "secteur": "Santé",
+          "total_chf": 2273940,
+          "count": 23,
+          "top_3": [
+            {
+              "nom": "ligue fribourgeoise",
+              "chf": 778000
+            },
+            {
+              "nom": "diabetefribourg assoc",
+              "chf": 250000
+            },
+            {
+              "nom": "afaap",
+              "chf": 240000
+            }
+          ]
+        },
+        {
+          "secteur": "Patrimoine",
+          "total_chf": 1927751,
+          "count": 38,
+          "top_3": [
+            {
+              "nom": "paroisse du christ roi",
+              "chf": 200000
+            },
+            {
+              "nom": "vitromusee romont",
+              "chf": 163800
+            },
+            {
+              "nom": "pour la renovation et la",
+              "chf": 139000
+            }
+          ]
+        },
+        {
+          "secteur": "Formation",
+          "total_chf": 290114,
+          "count": 6,
+          "top_3": [
+            {
+              "nom": "lire et ecrire section fribourg",
+              "chf": 170000
+            },
+            {
+              "nom": "vitrocentre romont",
+              "chf": 60000
+            },
+            {
+              "nom": "interface",
+              "chf": 26114
+            }
+          ]
+        },
+        {
+          "secteur": "Environnement",
+          "total_chf": 77000,
+          "count": 4,
+          "top_3": [
+            {
+              "nom": "ile d ogoz",
+              "chf": 50000
+            },
+            {
+              "nom": "des amis du jardin",
+              "chf": 15000
+            },
+            {
+              "nom": "macromascar",
+              "chf": 7000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canton": "NE",
+      "total_chf": 14625380,
+      "secteurs": [
+        {
+          "secteur": "Culture",
+          "total_chf": 9033700,
+          "count": 264,
+          "top_3": [
+            {
+              "nom": "arc en scene centre",
+              "chf": 1345000
+            },
+            {
+              "nom": "ensemble symphonique",
+              "chf": 395000
+            },
+            {
+              "nom": "opera decentralise",
+              "chf": 380000
+            }
+          ]
+        },
+        {
+          "secteur": "Sport",
+          "total_chf": 3321580,
+          "count": 271,
+          "top_3": [
+            {
+              "nom": "neuchatel international",
+              "chf": 375000
+            },
+            {
+              "nom": "neuchatel fantastique",
+              "chf": 300000
+            },
+            {
+              "nom": "agora la plage",
+              "chf": 230000
+            }
+          ]
+        },
+        {
+          "secteur": "Environnement",
+          "total_chf": 779000,
+          "count": 28,
+          "top_3": [
+            {
+              "nom": "maurice favre",
+              "chf": 250000
+            },
+            {
+              "nom": "pro evologia assoc des amis d evologia",
+              "chf": 80000
+            },
+            {
+              "nom": "sorbus",
+              "chf": 50000
+            }
+          ]
+        },
+        {
+          "secteur": "Action sociale",
+          "total_chf": 720900,
+          "count": 40,
+          "top_3": [
+            {
+              "nom": "centre social protestant csp",
+              "chf": 103000
+            },
+            {
+              "nom": "recif centre de rencontres et d echanges interculturels neuchatel",
+              "chf": 90000
+            },
+            {
+              "nom": "home medicalise les arbres",
+              "chf": 75000
+            }
+          ]
+        },
+        {
+          "secteur": "Jeunesse",
+          "total_chf": 284000,
+          "count": 23,
+          "top_3": [
+            {
+              "nom": "pro junior arc jurassien",
+              "chf": 75000
+            },
+            {
+              "nom": "la boite a frap baf",
+              "chf": 38000
+            },
+            {
+              "nom": "cantonale des musiques",
+              "chf": 30000
+            }
+          ]
+        },
+        {
+          "secteur": "Patrimoine",
+          "total_chf": 225800,
+          "count": 7,
+          "top_3": [
+            {
+              "nom": "shan ste d histoire d archeologie",
+              "chf": 100000
+            },
+            {
+              "nom": "du musee paysan",
+              "chf": 70000
+            },
+            {
+              "nom": "centre romand d etude",
+              "chf": 25000
+            }
+          ]
+        },
+        {
+          "secteur": "Santé",
+          "total_chf": 153400,
+          "count": 9,
+          "top_3": [
+            {
+              "nom": "les perce neige",
+              "chf": 80000
+            },
+            {
+              "nom": "itineraires",
+              "chf": 24000
+            },
+            {
+              "nom": "noa assoc fun for all",
+              "chf": 20000
+            }
+          ]
+        },
+        {
+          "secteur": "Formation",
+          "total_chf": 107000,
+          "count": 3,
+          "top_3": [
+            {
+              "nom": "academie de meuron",
+              "chf": 60000
+            },
+            {
+              "nom": "des amis du lycee blaise",
+              "chf": 32000
+            },
+            {
+              "nom": "verein naturnetz",
+              "chf": 15000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canton": "R",
+      "total_chf": 11513510,
+      "secteurs": [
+        {
+          "secteur": "Culture",
+          "total_chf": 5035000,
+          "count": 48,
+          "top_3": [
+            {
+              "nom": "cineforom",
+              "chf": 1700000
+            },
+            {
+              "nom": "la chaux de fonds capitale",
+              "chf": 1000000
+            },
+            {
+              "nom": "corodis",
+              "chf": 700000
+            }
+          ]
+        },
+        {
+          "secteur": "Environnement",
+          "total_chf": 2466910,
+          "count": 96,
+          "top_3": [
+            {
+              "nom": "tour de romandie",
+              "chf": 959800
+            },
+            {
+              "nom": "du tour de romandie",
+              "chf": 726100
+            },
+            {
+              "nom": "suisse",
+              "chf": 150000
+            }
+          ]
+        },
+        {
+          "secteur": "Jeunesse",
+          "total_chf": 1644600,
+          "count": 25,
+          "top_3": [
+            {
+              "nom": "la lanterne magique",
+              "chf": 380000
+            },
+            {
+              "nom": "osr orchestre de la suisse",
+              "chf": 317600
+            },
+            {
+              "nom": "du verbier festival",
+              "chf": 150000
+            }
+          ]
+        },
+        {
+          "secteur": "Action sociale",
+          "total_chf": 969000,
+          "count": 19,
+          "top_3": [
+            {
+              "nom": "terre des hommes",
+              "chf": 200000
+            },
+            {
+              "nom": "la main tendue",
+              "chf": 100000
+            },
+            {
+              "nom": "nez rouge",
+              "chf": 90000
+            }
+          ]
+        },
+        {
+          "secteur": "Santé",
+          "total_chf": 643000,
+          "count": 18,
+          "top_3": [
+            {
+              "nom": "swiss inclusive sport",
+              "chf": 110000
+            },
+            {
+              "nom": "medical flair",
+              "chf": 70000
+            },
+            {
+              "nom": "ecoute voir",
+              "chf": 60000
+            }
+          ]
+        },
+        {
+          "secteur": "Patrimoine",
+          "total_chf": 575000,
+          "count": 10,
+          "top_3": [
+            {
+              "nom": "fonsart",
+              "chf": 200000
+            },
+            {
+              "nom": "pour le panorama",
+              "chf": 100000
+            },
+            {
+              "nom": "world heritage",
+              "chf": 60000
+            }
+          ]
+        },
+        {
+          "secteur": "Formation",
+          "total_chf": 180000,
+          "count": 3,
+          "top_3": [
+            {
+              "nom": "centre cabi biosciences",
+              "chf": 150000
+            },
+            {
+              "nom": "groupe suisse de criminologie",
+              "chf": 15000
+            },
+            {
+              "nom": "internationale de sauvetage",
+              "chf": 15000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canton": "JU",
+      "total_chf": 8622028,
+      "secteurs": [
+        {
+          "secteur": "Culture",
+          "total_chf": 3701601,
+          "count": 279,
+          "top_3": [
+            {
+              "nom": "pour le theatre du jura",
+              "chf": 321000
+            },
+            {
+              "nom": "musique des lumieres",
+              "chf": 200000
+            },
+            {
+              "nom": "crescendo",
+              "chf": 150000
+            }
+          ]
+        },
+        {
+          "secteur": "Environnement",
+          "total_chf": 3094701,
+          "count": 172,
+          "top_3": [
+            {
+              "nom": "office de l environnement",
+              "chf": 624500
+            },
+            {
+              "nom": "vallee des dinosaures",
+              "chf": 450000
+            },
+            {
+              "nom": "jura tourisme",
+              "chf": 320000
+            }
+          ]
+        },
+        {
+          "secteur": "Action sociale",
+          "total_chf": 446300,
+          "count": 17,
+          "top_3": [
+            {
+              "nom": "service de l action sociale",
+              "chf": 280000
+            },
+            {
+              "nom": "pinos",
+              "chf": 55000
+            },
+            {
+              "nom": "residence la courtine",
+              "chf": 16000
+            }
+          ]
+        },
+        {
+          "secteur": "Sport",
+          "total_chf": 404326,
+          "count": 106,
+          "top_3": [
+            {
+              "nom": "29 423",
+              "chf": 81262
+            },
+            {
+              "nom": "a buenos aires municipalite de delemont",
+              "chf": 78000
+            },
+            {
+              "nom": "padel united courtetelle",
+              "chf": 43630
+            }
+          ]
+        },
+        {
+          "secteur": "Jeunesse",
+          "total_chf": 332900,
+          "count": 22,
+          "top_3": [
+            {
+              "nom": "tribunal des mineurs",
+              "chf": 50000
+            },
+            {
+              "nom": "commune mixte de cornol",
+              "chf": 40000
+            },
+            {
+              "nom": "municipalite de moutier",
+              "chf": 40000
+            }
+          ]
+        },
+        {
+          "secteur": "Patrimoine",
+          "total_chf": 316900,
+          "count": 9,
+          "top_3": [
+            {
+              "nom": "commune de fontenais",
+              "chf": 100000
+            },
+            {
+              "nom": "office cantonal de la culture",
+              "chf": 80000
+            },
+            {
+              "nom": "musee de la vie jurassienne",
+              "chf": 45000
+            }
+          ]
+        },
+        {
+          "secteur": "Santé",
+          "total_chf": 208300,
+          "count": 21,
+          "top_3": [
+            {
+              "nom": "itineraires",
+              "chf": 120000
+            },
+            {
+              "nom": "universite de berne",
+              "chf": 22500
+            },
+            {
+              "nom": "les castors",
+              "chf": 15650
+            }
+          ]
+        },
+        {
+          "secteur": "Formation",
+          "total_chf": 117000,
+          "count": 4,
+          "top_3": [
+            {
+              "nom": "baselarea",
+              "chf": 77000
+            },
+            {
+              "nom": "jules thurmann",
+              "chf": 20000
+            },
+            {
+              "nom": "salon interjurassien",
+              "chf": 10000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
