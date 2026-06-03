@@ -24,65 +24,6 @@
       "total_chf_before": 206971511,
       "total_chf_after": 206947411,
       "note": "Audit post-v13.6 ; strip trailing artifacts, embedded amounts in descriptions, nullify desc-villes, dedup identicals & merge normalized variants. 54 « legit » duplicates (same amount, distinct descriptions) preserved."
-    },
-    "pipeline_v13.8": {
-      "pipeline_version": "v13.8",
-      "pipeline_date": "2026-06-03",
-      "run_at": "2026-06-03T10:24:39.871890Z",
-      "input_path": "docs/data/brb2025_full.json",
-      "output_path": "docs/data/brb2025_full.json",
-      "entries_before": 5358,
-      "entries_after": 5358,
-      "total_chf_before": 206947411,
-      "total_chf_after": 206947411,
-      "audit_before": {
-        "no_canton": 0,
-        "zero_amount": 0,
-        "negative_amount": 0,
-        "huge_amount_5M+": 0,
-        "short_name": 0,
-        "truncated_name": 0,
-        "desc_in_ville": 0,
-        "exact_duplicates_remaining": 0,
-        "desc_with_embedded_amount": 0,
-        "encoding_corrupt": 0
-      },
-      "audit_after": {
-        "no_canton": 0,
-        "zero_amount": 0,
-        "negative_amount": 0,
-        "huge_amount_5M+": 0,
-        "short_name": 0,
-        "truncated_name": 0,
-        "desc_in_ville": 0,
-        "exact_duplicates_remaining": 0,
-        "desc_with_embedded_amount": 0,
-        "encoding_corrupt": 0
-      },
-      "stages": {
-        "split_glued_pairs": {
-          "glued_pairs_split": 0
-        },
-        "drop_section_totals": {
-          "section_totals_dropped": 0
-        },
-        "clean_nom (trailing artifacts)": {
-          "nom_trailing_stripped": 4
-        },
-        "clean_desc (embedded amounts)": {
-          "desc_amount_stripped": 0
-        },
-        "clean_ville (desc-in-ville)": {
-          "ville_nullified": 0
-        },
-        "dedup_exact (identical rows)": {
-          "exact_duplicates_removed": 0
-        },
-        "merge_normalized (variants)": {
-          "normalized_duplicates_merged": 0
-        }
-      },
-      "idempotent": false
     }
   },
   "entries": [
@@ -1717,7 +1658,7 @@
       "lng": 6.5878
     },
     {
-      "nom": "Amis de la Musique d'Aigle",
+      "nom": "Amis de la Musique d'Aigle et",
       "ville": "Chablais (AMAC)",
       "description": "Saison artistique",
       "montant_CHF": 15000,
@@ -4418,7 +4359,7 @@
       "lng": 6.6323
     },
     {
-      "nom": "EJMA - École de Jazz",
+      "nom": "EJMA - École de Jazz et",
       "ville": null,
       "description": "musique actuelle, Lausanne Acquisition matériel / Équipement",
       "montant_CHF": 195000,
@@ -48704,7 +48645,7 @@
       "lng": null
     },
     {
-      "nom": "Joyfully Waiting 19 & 20 et Cercle de la Librairie",
+      "nom": "Joyfully Waiting 19 & 20 et Cercle de la Librairie et",
       "ville": null,
       "description": "événements de performances l'Édition de Genève Stand du Cercle de la librairie Assoc. x collective x, Carouge",
       "montant_CHF": 71200,
@@ -57214,7 +57155,7 @@
       "lng": 7.3439
     },
     {
-      "nom": "Éditions du goudron",
+      "nom": "Éditions du goudron et",
       "ville": null,
       "description": "plumes, Chevenez Publications",
       "montant_CHF": 9500,
