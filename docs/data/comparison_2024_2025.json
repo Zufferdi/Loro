@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "description": "Comparaison BRB 2024 vs 2025 par canton",
+    "totals_officiels": {
+      "2024_total_M_CHF": 258.2,
+      "2025_total_M_CHF": 252.0,
+      "evolution_M_CHF": -6.2,
+      "evolution_pct": -2.4,
+      "note": "2024 = année record absolu, 2025 = retour à un niveau plus normal"
+    },
+    "cantons_extraits_2024": "VD, FR, VS, NE (complets) + GE (partiel)",
+    "cantons_2025": "Tous (5358 attributions cleaned)"
+  },
+  "cantons": [
+    {
+      "canton": "VD",
+      "total_2024_chf": 63649163,
+      "total_2025_chf": 74778381,
+      "delta_chf": 11129218,
+      "delta_pct": 17.5,
+      "is_partial_2024": false
+    },
+    {
+      "canton": "FR",
+      "total_2024_chf": 29232206,
+      "total_2025_chf": 27385472,
+      "delta_chf": -1846734,
+      "delta_pct": -6.3,
+      "is_partial_2024": false
+    },
+    {
+      "canton": "VS",
+      "total_2024_chf": 36909515,
+      "total_2025_chf": 29396746,
+      "delta_chf": -7512769,
+      "delta_pct": -20.4,
+      "is_partial_2024": false
+    },
+    {
+      "canton": "NE",
+      "total_2024_chf": 16833520,
+      "total_2025_chf": 14625380,
+      "delta_chf": -2208140,
+      "delta_pct": -13.1,
+      "is_partial_2024": false
+    },
+    {
+      "canton": "GE",
+      "total_2024_chf": 46560474,
+      "total_2025_chf": 40625894,
+      "delta_chf": -5934580,
+      "delta_pct": -12.7,
+      "is_partial_2024": true
+    }
+  ]
+}

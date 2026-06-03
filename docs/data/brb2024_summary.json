@@ -1,0 +1,143 @@
+{
+  "_meta": {
+    "source": "https://ra.loro.ch/documents/BRB2024.pdf (fetched via web_fetch)",
+    "method": "Extraction manuelle des totaux par section et top bénéficiaires depuis le texte du PDF",
+    "limitations": "Section Genève partielle (Culture/Formation/Patrimoine/Environnement/Tourisme manquants), sections Jura et Suisse romande non extraites — nécessite une session supplémentaire pour parser intégralement le PDF",
+    "completeness": "Sections complètes: VD, FR, VS, NE. Section partielle: GE. Manquantes: JU, Suisse romande",
+    "totals_known_official": {
+      "benefice_total_2024_M_CHF": 258.2,
+      "PBJ_2024_M_CHF": 438.2,
+      "projets_soutenus": 5000,
+      "augmentation_vs_2023_pct": 5.9
+    },
+    "version": "v13.11-2024-partial",
+    "date": "2026-06-03"
+  },
+  "cantons_2024": {
+    "VD": {
+      "total_chf": 63649163,
+      "sub_organes": {
+        "Fondation d'aide sociale et culturelle": 37054220,
+        "Fonds du sport vaudois": 10570983,
+        "Fonds d'utilité publique": 16023960
+      },
+      "sub_secteurs": {
+        "Action sociale et personnes âgées": 4704730,
+        "Jeunesse et éducation": 4153490,
+        "Santé et handicap": 2128600,
+        "Culture": 22065500,
+        "Formation et recherche": 988000,
+        "Conservation du patrimoine": 739000,
+        "Environnement": 967400,
+        "Promotion, tourisme et développement": 1307500,
+        "Sport (Fonds du sport vaudois)": 10570983,
+        "Fonds d'utilité publique (CE)": 16023960
+      }
+    },
+    "FR": {
+      "total_chf": 29232206,
+      "sub_organes": {
+        "Commission cantonale culture et social": 20505791,
+        "Commission cantonale LoRo-Sport": 6683147,
+        "Fonds du Conseil d'État": 2043268
+      },
+      "sub_secteurs": {
+        "Action sociale et personnes âgées": 5059575,
+        "Jeunesse et éducation": 2915217,
+        "Santé et handicap": 2071000,
+        "Culture": 8637025,
+        "Formation et recherche": 341000,
+        "Conservation du patrimoine": 1397174,
+        "Environnement": 70500,
+        "Promotion, tourisme et développement": 14300,
+        "Sport (LoRo-Sport)": 6683147,
+        "Fonds du Conseil d'État": 2043268
+      }
+    },
+    "VS": {
+      "total_chf": 36909515,
+      "sub_organes": {
+        "Délégation valaisanne à la Loterie Romande": 30400702,
+        "Commission Fonds du sport": 6508813
+      },
+      "sub_secteurs": {
+        "Action sociale et personnes âgées": 3632393,
+        "Jeunesse et éducation": 637000,
+        "Santé et handicap": 1907600,
+        "Culture": 11725364,
+        "Formation et recherche": 427845,
+        "Conservation du patrimoine": 5157500,
+        "Environnement": 408000,
+        "Promotion, tourisme et développement": 6505000,
+        "Sport (Fonds du sport)": 6508813
+      }
+    },
+    "NE": {
+      "total_chf": 16833520,
+      "sub_organes": {
+        "Commission neuchâteloise de répartition": 13698000,
+        "Commission LoRo-Sport Neuchâtel": 2245520,
+        "FAC - Fonds d'attributions cantonales": 890000
+      },
+      "sub_secteurs": {
+        "Action sociale et personnes âgées": 992500,
+        "Jeunesse et éducation": 1585500,
+        "Santé et handicap": 173000,
+        "Culture": 10360000,
+        "Formation et recherche": 70000,
+        "Conservation du patrimoine": 621000,
+        "Environnement": 65000,
+        "Promotion, tourisme et développement": 411000,
+        "Sport (LoRo-Sport + FAC sport)": 2555520
+      }
+    },
+    "GE_partial": {
+      "total_chf_visible": 46560474,
+      "note": "Données incomplètes — sections Culture/Formation/Patrimoine/Environnement/Tourisme du Fonds de soutien non extraites",
+      "sub_organes": {
+        "Fonds de soutien genevois (partiel)": 39507554,
+        "Fonds du sport": 7052920
+      },
+      "sub_secteurs_partial": {
+        "Action sociale et personnes âgées": 13039300,
+        "Jeunesse et éducation": 6009000,
+        "Santé et handicap": 1492500,
+        "Sport (Fonds du sport)": 7052920
+      }
+    },
+    "JU_missing": {
+      "note": "Section Jura non extraite (limite de contexte)"
+    },
+    "Suisse_romande_missing": {
+      "note": "Section intercantonale Suisse romande non extraite"
+    }
+  },
+  "top_beneficiaires_2024_visible": [
+    {"nom": "Fond. du Théâtre du Jorat", "ville": "Mézières", "canton": "VD", "secteur": "Culture", "montant_CHF": 2500000, "note": "Saison artistique + travaux"},
+    {"nom": "Fond. Foyers Valais de cœur", "ville": "Sion", "canton": "VS", "secteur": "Santé et handicap", "montant_CHF": 1000000, "note": "Investissement"},
+    {"nom": "Assoc. Vaud Promotion", "ville": "Lausanne", "canton": "VD", "secteur": "Promotion, tourisme", "montant_CHF": 1000000, "note": "Activité"},
+    {"nom": "Fond. Equilibre et Nuithonie", "ville": "Villars-sur-Glâne", "canton": "FR", "secteur": "Culture", "montant_CHF": 900000, "note": "Aide 2024"},
+    {"nom": "Fond. du Verbier Festival", "ville": "Bagnes", "canton": "VS", "secteur": "Culture", "montant_CHF": 750000, "note": "Manifestation"},
+    {"nom": "Fond. romande pour le cinéma - Cinéforom", "ville": "Genève", "canton": "VD", "secteur": "Culture", "montant_CHF": 700000, "note": "Activité — soutien production audiovisuelle"},
+    {"nom": "Fond. pour l'art dramatique - Théâtre de Vidy", "ville": "Lausanne", "canton": "VD", "secteur": "Culture", "montant_CHF": 650000, "note": "Saison artistique"},
+    {"nom": "Fond. Pierre Gianadda", "ville": "Martigny", "canton": "VS", "secteur": "Culture", "montant_CHF": 350000, "note": "Saison artistique (cf 350k stable)"},
+    {"nom": "Fond. Plateforme 10", "ville": "Lausanne", "canton": "VD", "secteur": "Culture", "montant_CHF": 600000, "note": "Saison artistique"},
+    {"nom": "Festival International du Film de Fribourg", "ville": "Fribourg", "canton": "FR", "secteur": "Culture", "montant_CHF": 580000, "note": "Édition 2024"},
+    {"nom": "Théâtre Pro", "ville": "Sion", "canton": "VS", "secteur": "Culture", "montant_CHF": 566000, "note": "Projet"},
+    {"nom": "Fond. de la Cité universitaire de Genève - Maison d'Albert", "ville": "Genève", "canton": "GE", "secteur": "Jeunesse et éducation", "montant_CHF": 4000000, "note": "Démolition et reconstruction de logements étudiants"},
+    {"nom": "Communauté des Chiffonniers d'Emmaüs Genève", "ville": "Carouge", "canton": "GE", "secteur": "Action sociale", "montant_CHF": 4000000, "note": "Immeuble PERSEVERANCE"},
+    {"nom": "Fond. Immobilière Privée pour l'Insertion Sociale", "ville": "Genève", "canton": "GE", "secteur": "Action sociale", "montant_CHF": 4000000, "note": "Construction PLO"},
+    {"nom": "Fonds pour venir en aide aux victimes de dommages non assurables", "ville": "Sion", "canton": "VS", "secteur": "Environnement", "montant_CHF": 3700000, "note": "Aide forces de la nature"},
+    {"nom": "Fond. Trajets", "ville": "Plan-les-Ouates", "canton": "GE", "secteur": "Santé et handicap", "montant_CHF": 2000000, "note": "Mise aux normes Jardins de Trajets"},
+    {"nom": "Hôpitaux vaudois (eHnv, PSPE, HRC, HIB)", "ville": "Vaud", "canton": "VD", "secteur": "Action sociale", "montant_CHF": 6323000, "note": "Création d'unités d'attente de placement EMS"},
+    {"nom": "Fond. du Festival de Jazz de Montreux", "ville": "Montreux", "canton": "VD", "secteur": "Culture", "montant_CHF": 1200000, "note": "Délocalisation festival 2024-2025"},
+    {"nom": "Assoc. vaudoise d'aide et de soins à domicile (AVASAD)", "ville": "Lausanne", "canton": "VD", "secteur": "Action sociale", "montant_CHF": 1170000, "note": "Extension programme READOM"},
+    {"nom": "Fond. Académie d'Orgue de Fribourg", "ville": "Fribourg", "canton": "FR", "secteur": "Culture", "montant_CHF": 50000, "note": "27e Festival"},
+    {"nom": "Caritas Vaud", "ville": "Lausanne", "canton": "VD", "secteur": "Action sociale", "montant_CHF": 495000, "note": "Travaux et acquisition matériel"},
+    {"nom": "Banc Public", "ville": "Fribourg", "canton": "FR", "secteur": "Action sociale", "montant_CHF": 490000, "note": "Activités 2024"},
+    {"nom": "Assoc. La Tuile", "ville": "Fribourg", "canton": "FR", "secteur": "Action sociale", "montant_CHF": 540000, "note": "Activités 2024"},
+    {"nom": "Centre dramatique fribourgeois - Théâtre des Osses", "ville": "Givisiez", "canton": "FR", "secteur": "Culture", "montant_CHF": 501250, "note": "Saison + Label+ romand"},
+    {"nom": "Fond. de l'Hermitage", "ville": "Lausanne", "canton": "VD", "secteur": "Culture", "montant_CHF": 300000, "note": "Exposition — comparer aux 4M de 2025 (×13)"},
+    {"nom": "Cinémathèque suisse", "ville": "Lausanne", "canton": "VD", "secteur": "Culture", "montant_CHF": 450000, "note": "Saison artistique"}
+  ]
+}
