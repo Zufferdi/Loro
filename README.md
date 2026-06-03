@@ -51,7 +51,13 @@ loro-dataviz/
 
 ## Déploiement
 
-GitHub Pages directement depuis `docs/`. Aucune build step requise — tout est statique (HTML/CSS/JS/JSON).
+GitHub Pages directement depuis `docs/`. Aucune build step requise — tout est statique (HTML/CSS/JS/JSON). Le fichier `docs/.nojekyll` désactive Jekyll, qui sinon planterait sur les markdown énormes du dépôt.
+
+## Pipeline de données
+
+Le nettoyage du BRB (Bénéfices Répartis Bruts) est consolidé dans `scripts/pipeline_brb.py` — un pipeline idempotent, auditable, ré-exécutable pour les BRB futurs (2026+). Voir [METHODOLOGY.md](METHODOLOGY.md) section v13.8 et v13.9 pour le détail des 8 stages (split, drop totals, reconstruct_name, clean_nom, clean_desc, clean_ville, dedup, merge_normalized) et des 11 catégories d'audit intégré.
+
+Chiffres BRB 2025 après v13.9 : **5'358 attributions à 4'431 bénéficiaires distincts**, pour un total de **206'947'411 CHF**.
 
 ## Crédits données
 

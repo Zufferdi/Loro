@@ -963,7 +963,7 @@ Critères (cohérents avec `beneficiaires_candidats_2013_2025.json`) : structure
 ### Données extraites
 
 Source : PDFs officiels `https://ra.loro.ch/documents/BRB{year}.pdf` (Loterie Romande).
-M�thode : `web_fetch` avec `text_content_token_limit=120000` puis parsing manuel du texte extrait du PDF, repérage des candidats par patterns de noms (« Fond. de l'Hermitage », « Fond. CHUV », etc.) et agrégation des montants attribués dans toutes les sections cantonales où ils apparaissent.
+Méthode : `web_fetch` avec `text_content_token_limit=120000` puis parsing manuel du texte extrait du PDF, repérage des candidats par patterns de noms (« Fond. de l'Hermitage », « Fond. CHUV », etc.) et agrégation des montants attribués dans toutes les sections cantonales où ils apparaissent.
 
 **Couverture : 36 points de données sur 45 (80 %)** :
 
@@ -1140,4 +1140,515 @@ Le pipeline v13.8 nettoie les artefacts SORTIS du parser v4, mais ne corrige pas
 Pour BRB 2026, deux pistes :
 1. **Quick win** : garder le parser v4 + pipeline v13.8 (couvre 99,9 % des cas)
 2. **Refactor profond** : écrire un parser text-based (parsing du texte plat extrait via `pdfplumber.extract_text()` ou `web_fetch` + parsing de la séquence linéaire), ce qui éliminerait les bugs de colonnes
+
+
+---
+
+## v13.9 (juin 2026) — Pass 6 bonus : Fix déploiement + reconstruction de noms
+
+Cette passe non planifiée répond à deux signaux : un échec de déploiement GitHub Pages, et une découverte d'audit lors de l'investigation des fusions possibles. Elle ne change pas les visualisations existantes ni les chiffres globaux (5'358 attributions, 206'947'411 CHF inchangés) — mais elle **révèle 70 bénéficiaires distincts supplémentaires** précédemment cachés derrière des noms tronqués.
+
+### 1. Fix déploiement GitHub Pages
+
+**Symptôme observé** : la GitHub Action `pages-build-deployment` échouait au stade `build` (Jekyll, 19s). Deux causes racines identifiées :
+
+- **Octet UTF-8 invalide** dans `METHODOLOGY.md` au byte 66946 : l'octet `0xa9` orphelin (le second octet de `é` en UTF-8, mais sans son leader `0xc3`) faisait planter le parseur markdown de Jekyll. Probablement introduit par une concaténation `heredoc` mal encodée lors d'un build précédent. Fix : remplacement direct par la séquence UTF-8 propre `0xc3 0xa9`.
+- **Pas de `.nojekyll`** dans `docs/` : sans ce fichier, GitHub Pages active Jekyll par défaut et tente de traiter le site comme un projet Jekyll, ce qui n'a aucun sens pour un site HTML/JS pur. Fix : création de `docs/.nojekyll` (fichier vide) pour désactiver entièrement Jekyll.
+
+### 2. Stage `reconstruct_name` — un bug parser majeur découvert
+
+L'investigation « quelles fusions sont encore possibles ? » a mis au jour un **bug parser systémique** beaucoup plus impactant que les artefacts cleanés précédemment.
+
+**Symptôme** : 507 clusters de « même nom normalisé + même canton » regroupant 1'376 entrées. La plupart ne sont *pas* des doublons — ce sont des entités distinctes que le parser column-based a tronquées en perdant leur continuation multi-ligne dans la description.
+
+**Exemple emblématique** : sous le nom court `"Assoc. Cantonale Vaudoise"`, on trouve 32 entrées en réalité distinctes :
+
+| nom (tronqué) | description (polluée) | identité réelle |
+|---|---|---|
+| Assoc. Cantonale Vaudoise | `d'Athlétisme Soutien annuel` | Assoc. Cantonale Vaudoise d'Athlétisme |
+| Assoc. Cantonale Vaudoise | `de Curling Soutien annuel` | Assoc. Cantonale Vaudoise de Curling |
+| Assoc. Cantonale Vaudoise | `de Football Soutien annuel` | Assoc. Cantonale Vaudoise de Football |
+| … (29 autres) | … | … |
+
+**Algorithme de reconstruction** :
+
+1. Détecter une description qui commence par un connecteur (`d'`, `de`, `de la`, `de l'`, `des`, `et`, `au`, `aux`, `du`)
+2. Localiser le premier mot-clé d'activité (`Soutien`, `Camp`, `Achat`, `Acquisition`, `Manifestation`, `Rénovation`, `Aménagement`, `Travaux`, `Saison`, `Activité`, …42 mots-clés au total)
+3. Le segment avant le mot-clé est candidat à la fusion dans le nom (longueur 3-60, max 1 virgule, max 1 séparateur ` - `)
+4. Extraire la ville si le nom reconstruit se termine par `, CityName` (Title Case, 1-3 mots)
+
+**Garde-fous de sécurité** :
+
+- `name_part` ne doit pas contenir de montant inline (`120.-`, `1'200.-`, etc.) — détecte les cas où la description elle-même était polluée par un bug parser de fusion multi-entrées
+- Le nom reconstruit ne doit pas contenir plus d'une virgule (sinon contamination probable par une entrée voisine)
+- La description complète ne doit pas contenir de motif monétaire (signal de corruption multi-entrées)
+
+**Boucle de stabilité pour `clean_nom`** : la reconstruction crée parfois des chaînes de prépositions à la fin du nom (`" et de la"`) qu'un seul passage de strip ne résout pas — `clean_nom` boucle jusqu'à 8 fois pour atteindre la stabilité (`" et de la"` → `" et"` → `""` en deux itérations).
+
+### Impact mesuré
+
+| Métrique | Avant v13.9 (v13.8) | Après v13.9 | Delta |
+|---|---:|---:|---:|
+| Entrées (attributions) | 5'358 | 5'358 | 0 |
+| Total CHF | 206'947'411 | 206'947'411 | 0 |
+| Bénéficiaires distincts (nom normalisé) | 4'361 | **4'431** | **+70** |
+| Distincts (nom, canton) | 4'488 | 4'541 | +53 |
+| Clusters multi-rows | 508 | 493 | -15 |
+| Rows dans clusters multi-rows | 1'378 | 1'310 | -68 |
+
+**Interprétation** : 70 « nouveaux » bénéficiaires apparaissent — non pas qu'ils aient été ajoutés au BRB, mais qu'ils existaient déjà comme entrées distinctes cachées derrière le même nom court. Le cleanup v13.9 leur restitue leur identité propre.
+
+### Idempotence vérifiée
+
+```
+RUN 1 (sur données v13.8) :
+  reconstruct_name        : 313 ops (229 reconstructions + 84 villes extraites)
+  clean_nom (loop fix)    : 7 ops
+  Autres stages           : 0 ops
+  Audit pre/post          : toutes catégories à 0 (sauf INFO ville_with_acronym=6)
+
+RUN 2 (sur données v13.9) :
+  Toutes stages           : 0 ops ✓
+  Audit                   : inchangé ✓
+  → Vraie idempotence confirmée
+```
+
+### Top 10 clusters restants — tous légitimes
+
+Les clusters restants après v13.9 sont des **bénéficiaires recevant plusieurs attributions distinctes la même année** (formation, infrastructure, événements ponctuels, etc.), pas des doublons à fusionner :
+
+| Bénéficiaire | Canton | Attributions | Total |
+|---|:---:|:---:|---:|
+| Assoc. Cantonale Vaudoise (multi-sports) | VD | 19 | 274'654 CHF |
+| Assoc. Fribourgeoise de patinage | FR | 13 | 22'328 CHF |
+| Assoc. Fribourgeoise de Hockey | FR | 11 | 76'443 CHF |
+| Sté Nautique Neuchâtel | NE | 11 | 11'915 CHF |
+| Club Nautique Pully | VD | 10 | 23'075 CHF |
+| Assoc. Cantonale Genevoise (multi-sports) | GE | 10 | 465'100 CHF |
+| Assoc. Fribourgeoise de Basket | FR | 9 | 48'428 CHF |
+| Cercle de la Voile de Neuchâtel | NE | 9 | 13'390 CHF |
+| Assoc. Romande de Ski | VD | 8 | 205'985 CHF |
+| Fond. Tour de Romandie | R | 8 | 959'800 CHF |
+
+Ces 10 clusters cumulent 108 attributions pour ~2,1 M CHF — c'est-à-dire des associations cantonales qui se déclinent en fédérations sportives multiples (athlétisme, curling, football, etc.). Les agréger serait incorrect : ce sont des entités juridiques séparées.
+
+### Mises à jour HTML
+
+Cohérence narrative : remplacement de « 5'358 bénéficiaires » par la formulation duale plus précise « 5'358 attributions à 4'431 bénéficiaires distincts ». Quatre emplacements concernés (`viz-explorer` title, source caption, multi-cantons note, longtail title).
+
+### Limites restantes
+
+Trois patterns de bugs parser ne sont pas atteignables par cleanup post-hoc et restent en TODO d'un éventuel Pass 6 (refactor parser PDF profond) :
+
+1. **Connecteur disparu** (~1 cas connu) : `"Fond. pour la conservation"` + desc `"temples genevois construits avant 1907, Les Acacias …"` — le parser a perdu le `" des "` qui reliait nom et continuation. Sans signal lexical (pas de `d'`/`de`/`des` en début de desc), on ne peut pas distinguer ce cas d'une description légitime commençant par un substantif.
+2. **Ville-avec-acronyme** (6 cas) : `nom="Assoc. pour la Musique"` + ville `"Improvisée de Lausanne (AMIL)"` — la continuation du nom est dans le champ ville, pas dans description. Signalé par la catégorie d'audit `ville_with_acronym_INFO`.
+3. **Description polluée multi-entrées** (~quelques cas) : entries où la desc contient un fragment d'une entrée voisine (avec montants inline `120.-`). Bloqué par les garde-fous money_in_text de v13.9.
+
+
+---
+
+## v13.10 (juin 2026) — Audit cohérence + extension reconstruct + classification sport
+
+Cette passe répond à trois questions soulevées lors de la revue : (a) vérifier la cohérence des données bénéficiaires, (b) inspecter les attributions multiples au sein d'un canton, (c) classifier les entrées sport par discipline. Elle a aussi mis au jour un bug significatif dans le champ `secteur` du parser.
+
+### 1. Extension du `stage_reconstruct_name` — 12 mots-clés ajoutés
+
+L'audit a révélé que `reconstruct_name` ratait certains cas légitimes parce que la liste des mots-clés d'activité n'incluait pas des verbes-noms d'usage courant comme `Équipement`, `Suivi`, `Animation`, `Recherche`, `Promotion`, `Réception`, `Restauration`, `Diffusion`, `Prise`, `Conte`. L'ajout permet de capturer **25 reconstructions supplémentaires**, dont :
+
+- **5 associations d'accueil familial de jour** (Glâne, Lac, Veveyse, Broye, Gruyère) chacune avait `nom="Accueil Familial de Jour"` + desc commençant par `de la X, City Prise en charge…` → maintenant `nom="Accueil Familial de Jour de la X"`, ville extraite, desc = `"Prise en charge des enfants en 2025"`
+- **FODAC vs Aires Protégées (GE)** : deux fondations différentes étaient cachées sous `nom="Fond. pour le développement"` (1,5 M CHF chacune). Désormais distinguées en `Fond. pour le développement des arts et de la culture - FODAC` (Vernier) et `Assoc. pour le Développement des Aires Protégées` (Genève).
+- **Église protestante / Abbaye / Maisons de la Providence / Sauvegarde de la Peccadille** : noms d'institutions religieuses ou patrimoniales correctement reconstitués.
+
+Total cumulé après v13.10 : **4'437 bénéficiaires distincts** (vs 4'361 avant v13.9, +76).
+
+### 2. Audit multi-attributions intra-canton
+
+Question : « certains cantons donnent-ils plusieurs fois à la même structure ? » Réponse : oui, et c'est *légitime* dans la majorité des cas — il s'agit d'organisations qui reçoivent plusieurs subventions ciblées la même année (formation, infrastructure, événement, fonctionnement annuel). Top 5 par canton :
+
+| Canton | Top bénéficiaire | Attributions | Total |
+|---|---|:---:|---:|
+| VD | Fond. de l'Hermitage | 2 | 4'000'000 CHF |
+| FR | Fond. Équilibre et Nuithonie | 2 | 1'100'000 CHF |
+| VS | Assoc. Canal 9/Kanal 9 | 1 | 854'000 CHF |
+| NE | Fond. Arc en Scène - centre | 1 | 1'345'000 CHF |
+| GE | Fond. pour la conservation | 1 | 3'300'000 CHF |
+| JU | Office de l'environnement | 1 | 624'500 CHF |
+| R (Romand) | Fond. Cinéforom | 1 | 1'700'000 CHF |
+
+Quelques clusters de plus haute fréquence (10+ attributions) restent et sont tous légitimes : `Assoc. Cantonale Vaudoise` (19 fédérations sportives distinctes), `Assoc. Cantonale Genevoise` (10 sports), associations sportives fribourgeoises (patinage, hockey, basket), Tour de Romandie (8+8 pour les déclinaisons masculin/féminin/U23).
+
+### 3. Bug `secteur` mis au jour
+
+L'investigation Q2 (« classification par sport ») a révélé un **bug systémique** du champ `secteur` :
+
+- 2'365 entrées sont taggées `secteur="Sport"`, mais **1'658 d'entre elles (70 %)** ne contiennent aucun mot-clé sportif (FC, HC, gym, ski, etc.) dans leur nom
+- Le champ `organe` confirme : beaucoup ont organe = `"Fondation d'aide et culturelle"` ou `"Fonds d'utilité publique"`, et leurs descriptions sont culturelles (`Saison artistique`, `Festival`, `Concert`)
+- Diagnostic probable : le parser de la `Loro.xlsx` source affecte le champ `secteur` à partir d'un header de section qui « stick » sur les entrées suivantes au moment d'une transition Culture↔Sport
+
+**Conséquence** : le champ `secteur` est utilisable globalement pour la part-de-gâteau dans la viz `viz-secteurs`, mais **pas fiable** pour classer une entrée individuelle. Pour la classification par sport, on ignore ce champ et on s'appuie sur des patterns lexicaux dans le nom + description.
+
+### 4. Classification par sport — Pass 7 (Q2)
+
+<a id="sports-classification"></a>
+Script `scripts/build_sport_classification.py`, output `docs/data/sports_classification.json` (~40 kB).
+
+**Méthode** : 30 patterns regex pré-définis, ordonnés du plus spécifique au plus générique. Chaque entrée est testée contre les patterns ; la première qui matche détermine la catégorie. Les entrées sans match sont écartées (71 % du corpus, qui n'est pas du sport).
+
+**Résultats — 1'548 attributions classifiées, 31,8 M CHF (15,4 % du BRB 2025)**
+
+| Rang | Discipline | Attrib. | Total CHF | Moyenne |
+|---:|---|---:|---:|---:|
+| 1 | **Multi-sports** (Assoc. Cantonale, Olympic) | 132 | 4'801'519 | 36 k |
+| 2 | **Football** | 135 | 3'807'761 | 28 k |
+| 3 | **Gymnastique** (FSG) | 144 | 3'646'150 | 25 k |
+| 4 | **Judo / Karaté** | 59 | 2'447'886 | 41 k |
+| 5 | **Cyclisme / VTT** (Tour de Romandie inclus) | 79 | 2'193'436 | 28 k |
+| 6 | **Ski / Snowboard** | 106 | 2'105'832 | 20 k |
+| 7 | **Escalade / Montagne** | 22 | 1'963'875 | 89 k |
+| 8 | **Basketball** | 81 | 1'917'328 | 24 k |
+| 9 | **Hockey sur glace** | 65 | 1'386'056 | 21 k |
+| 10 | **Tennis / Padel** | 89 | 1'337'852 | 15 k |
+| 11 | **Volleyball** | 71 | 1'169'526 | 16 k |
+| 12 | **Athlétisme** | 82 | 1'108'328 | 14 k |
+| 13-30 | (autres — natation, équitation, rugby, tir, voile, patinage, triathlon, handball, hockey sur gazon, course d'orientation, pétanque, escrime, tennis de table, boxe, aviron, arts martiaux, curling, lutte suisse) | … | … | … |
+
+**Observations narratives** :
+
+- **Le triplet de tête** capte 11,3 M CHF (35 % du total sport). C'est cohérent : football, gymnastique, ski sont les sports les plus pratiqués en Suisse romande au niveau amateur.
+- **Multi-sports = associations cantonales et clubs polysportifs** ; c'est l'enveloppe-parapluie pour les fédérations qui chapeautent plusieurs disciplines (`Assoc. Cantonale Vaudoise`, `Sport-Études`, etc.). Si on les redistribuait, le top 3 changerait.
+- **Escalade / Montagne** étonne avec une moyenne de 89 k par attribution, la plus haute du tableau. Quelques projets d'infrastructure (parois d'escalade, refuges) gonflent la moyenne.
+- **Sports à coût élevé peu présents** : Formule 1, course automobile, golf, ski alpin de haut niveau n'apparaissent pas — la Loro finance le sport amateur et populaire, pas l'élite professionnelle.
+
+**Visualisation** : nouvelle section HTML `#viz-sports`, module JS `docs/js/sports.js`, classes CSS `.sports-*`. Barres horizontales triées par total CHF, click pour déplier 3-5 exemples de bénéficiaires par discipline, pastilles colorées des 4 cantons les plus contributeurs.
+
+### Limites de la classification
+
+1. **70 % des entrées non classifiées** : c'est par construction. Seules les entrées vraiment sportives sont classifiées. Les festivals, théâtres, musées et associations sociales ne le sont pas (et ne devraient pas l'être).
+2. **Faux positifs Multi-sports** : quelques entrées contiennent le mot « sport » dans un contexte non-sportif (ex. « Soutien aux jeunes sportifs en formation »). Représentent ~2-3 % de la catégorie.
+3. **Sports manquants** : danse, ballet (rangés en Culture par la Loro), e-sports (pas encore une catégorie reconnue), arts du cirque sportifs. Si besoin, ajouter au mapping.
+
+
+---
+
+## v13.10-pass8 (juin 2026) — Audit géoloc + 4 nouvelles visualisations
+
+Suite à la classification par sport (Pass 7), cette passe répond à la demande « regarde si la géolocalisation est correcte + attaque tous les graphes proposés ». Le résultat : un audit géo complet, +316 entrées géocodées, et 4 nouvelles visualisations qui exploitent les données cleanées.
+
+### Audit géolocalisation
+
+**Méthode** : vérifier (a) que les coords lat/lng existantes sont valides (dans les bornes suisses), (b) que la même ville a toujours les mêmes coords, (c) combien d'entrées avec ville manquent de coords.
+
+**Résultats avant enrichissement** :
+- Entrées avec `ville`&nbsp;: 2'503 (47 %)
+- Entrées avec `lat/lng`&nbsp;: 1'463 (27 %)
+- **Incohérences détectées : 0** (les villes géocodées sont fiables)
+- **Hors-Suisse : 0** (toutes les coords sont dans les bornes lat 45.8–47.8, lng 5.9–10.5)
+- 79 coords hors strictement Romandie mais en Suisse — légitimes (organes Romand avec siège à Zürich, Bâle, etc.)
+- Gap principal : **1'040 entrées ont une ville mais pas de coords**
+
+**Script `enrich_geoloc.py`** :
+1. Construit un city → coords lookup depuis les 129 villes déjà géocodées (consistance vérifiée, 0 incohérence)
+2. Ajoute ~100 communes romandes hardcodées (sources : Wikipédia / swisstopo) couvrant les principales banlieues de Genève, communes jurassiennes, villages du lac de Neuchâtel, communes valaisannes, etc.
+3. Applique le lookup aux entrées avec ville sans coords
+
+**Résultats après enrichissement** :
+- Coverage : 27 % → **33 %** (+6 points, +316 entrées)
+- 0 incohérence introduite
+- Idempotent : relancer le script = 0 changements
+- Top 10 communes encore manquantes : très petites, rares ou contenant des artefacts de parser (`"Carouge -"`, `"Lausanne Lausanne"`) maintenant normalisés
+
+### Nouvelles visualisations (4 + carte vérifiée)
+
+#### Viz 1 — Top 30 bénéficiaires absolus (`#viz-top30`)
+
+Aggrégation par nom normalisé après cleanup v13.10. Les 30 plus gros bénéficiaires cumulent **43 M CHF (20,8 % du BRB 2025)**. Liste classée, barre proportionnelle, pictogramme « ⇆ » pour les multi-cantons.
+
+Top 10 :
+1. Fond. de l'Hermitage (VD) — 4 M
+2. Fond. pour la conservation (GE) — 3,3 M
+3. Assoc. Trako — 2 M
+4. Fond. pour l'art dramatique — 2 M
+5. Assoc. des cinémas romands — 1,7 M
+6. Fond. Cinéforom — 1,7 M
+7. Assoc. Vestiaire social (GE) — 1,6 M
+8. Fond. pour l'accueil de jour des enfants - FAJE (VD) — 1,5 M
+9. Fond. pour le développement des arts et de la culture - FODAC (GE) — 1,5 M
+10. Fond. CHUV (VD) — 1,4 M
+
+Observation : la concentration est très marquée — top 10 = 20,1 M CHF = ~10 % du BRB.
+
+#### Viz 2 — Top 20 villes (`#viz-villes`)
+
+Aggrégation par ville. Top 5 :
+
+| Rang | Ville | Total | Attributions |
+|---:|---|---:|---:|
+| 1 | Lausanne | 20,5 M | ~700 |
+| 2 | Genève | 12,6 M | ~480 |
+| 3 | Fribourg | 7,6 M | ~210 |
+| 4 | Sion | 4,2 M | ~125 |
+| 5 | Neuchâtel | 3,1 M | ~110 |
+
+Total top 20 villes = **68,7 M CHF (33,2 % du BRB)**. Le picto « 📍 » signale que la commune est géocodée et visible sur la carte plus haut.
+
+#### Viz 3 — Répartition canton × secteur (`#viz-treemap`)
+
+Treemap simplifié (barres horizontales empilées) — une ligne par canton, largeur de la ligne proportionnelle au total du canton, segments colorés par secteur dans chaque ligne.
+
+Lecture : on voit immédiatement les **signatures** de chaque canton :
+- **VD** : très dominant en masse, mix culture/sport/social équilibré
+- **GE** : très dominant en culture, gros segment action sociale
+- **VS** : équilibre sport/environnement/culture
+- **FR** : signature culture forte
+- **NE** : essentiellement culture
+- **JU** : tout petit mais équilibré
+
+Légende cliquable via tooltip pour les top 3 bénéficiaires de chaque segment.
+
+#### Viz 4 — CHF par habitant (`#viz-percapita`)
+
+Deux barres par canton :
+- **Rouge** : ratio CHF reçus / habitant (la statistique « juste »)
+- **Bleu** : total absolu (la masse réelle)
+
+Sources population : OFS 2024 (VD 825 k, GE 515 k, VS 360 k, FR 335 k, NE 175 k, JU 75 k).
+
+Résultat surprenant : **Jura premier** en ratio par habitant (~113 CHF/hab) alors qu'il est dernier en absolu (~8,4 M). Inversement, VD écrase en absolu (74,5 M) mais arrive 2e en ratio. Cette inversion est la **conséquence directe de la clé de répartition CORJA 2024** (50 % population + 50 % mises) qui rééquilibre vers les petits cantons à fort taux de jeu par habitant.
+
+#### Carte des bénéficiaires (`#viz-geomap`) — vérifiée
+
+L'algorithme de la carte existante est validé :
+- Projection Mercator avec bounding-box auto-calculée
+- Agrégation par ville (1 cercle par ville)
+- Rayon proportionnel au total
+- Couleur par canton
+- Tooltip avec top 5 bénéficiaires + total
+
+Avec l'enrichissement géoloc v13.10, la carte montre désormais **1'779 entrées géolocalisées (~330 villes)** vs 1'463 avant. Texte du footer mis à jour : « 33 % des entrées géocodées (audit 0 incohérence) » au lieu de l'ancien 27 %.
+
+### Datasets produits
+
+- `docs/data/top30_beneficiaires.json` — top 30 distincts avec cantons, secteur dominant, sample nom
+- `docs/data/top20_villes.json` — top 20 villes avec coords, top 3 bénéficiaires par ville
+- `docs/data/treemap_canton_secteur.json` — nested canton > secteur avec top 3 par cellule
+- `docs/data/per_capita_v2.json` — population, total, ratio par canton
+- `docs/data/sports_classification.json` (Pass 7) — 30 disciplines × cantons
+- Tous générés par `scripts/build_aggregations.py` (~280 LOC, stdlib only)
+
+### Code structure
+
+Un seul module `docs/js/aggregations.js` (~310 LOC) contient les 4 renderers :
+- `renderTop30` / `renderTop20Villes` partagent les classes CSS `.top30-*`
+- `renderTreemap` utilise une palette de couleurs par secteur (SECTEUR_COLORS) cohérente avec la viz `viz-secteurs`
+- `renderPerCapita` affiche les deux barres (ratio + total) côte à côte
+- IntersectionObserver pour lazy-loading
+
+Toutes les vizes sont indépendantes (pas de dépendance d3 / scrollama), responsive < 600 px, et utilisent les couleurs cantons existantes.
+
+
+---
+
+## v13.10-pass9 (juin 2026) — Sous-catégorisation culture
+
+Suite logique de la classification sport (Pass 7), même approche appliquée au domaine culturel : ignorer le champ `secteur` (pollué par le bug parser) et classifier chaque entrée à partir des mots-clés présents dans le nom + description.
+
+### Méthode
+
+Script `scripts/build_culture_classification.py`, output `docs/data/culture_classification.json` (~16 kB).
+
+14 sous-catégories culturelles avec patterns regex, ordonnées du plus spécifique au plus générique. Chaque entrée matche **au plus une** catégorie (première qui correspond gagne).
+
+Ordre de spécificité retenu :
+1. Cinéma / Audiovisuel (très spécifique : FIFF, NIFFF, GIFF, FIFDH, cinémathèque…)
+2. Danse (ballet, choré, compagnie de danse…)
+3. Cirque / Arts de la rue
+4. Photographie
+5. Musique classique (orchestre, philharmonique, opéra, chœur, conservatoire…)
+6. Musique populaire / Jazz (jazz, rock, fanfare, festival de musique…)
+7. Théâtre (théâtre, comédie, dramatique, scène nationale, TPR…)
+8. Littérature / Édition (librairie, écrivain, poésie, bibliothèque…)
+9. Musée (avant patrimoine pour catch Pierre Gianadda, Hermitage…)
+10. Patrimoine bâti (restauration chapelle/église/temple, monument, château…)
+11. Arts visuels (peinture, sculpture, art contemporain, galerie d'art…)
+12. Médias (radio, télévision régionale, magazine culturel…)
+13. Centre culturel / Maison de quartier (MJC, espace culturel…)
+14. Festival multi-disciplinaire (catch-all pour festivals sans genre spécifique)
+
+### Résultats — 814 attributions classifiées, 51,1 M CHF (24,7 % du BRB)
+
+<a id="culture-classification"></a>
+
+| Rang | Sous-catégorie | Attrib. | Total CHF | Moyenne |
+|---:|---|---:|---:|---:|
+| 1 | **Théâtre** | 124 | 10'669'250 | 86 k |
+| 2 | **Musée** | 46 | 7'304'113 | 159 k |
+| 3 | **Festival multi-disciplinaire** | 158 | 7'233'619 | 46 k |
+| 4 | **Musique classique** | 172 | 6'518'744 | 38 k |
+| 5 | **Cinéma / Audiovisuel** | 42 | 5'644'750 | 134 k |
+| 6 | **Patrimoine bâti** | 36 | 5'178'395 | 144 k |
+| 7 | **Danse** | 42 | 2'585'905 | 62 k |
+| 8 | **Musique populaire / Jazz** | 106 | 1'782'640 | 17 k |
+| 9 | **Littérature / Édition** | 39 | 1'717'500 | 44 k |
+| 10 | **Centre culturel / Maison** | 11 | 1'203'600 | 109 k |
+| 11 | **Cirque / Arts de la rue** | 18 | 619'180 | 34 k |
+| 12 | **Arts visuels** | 10 | 461'000 | 46 k |
+| 13 | **Photographie** | 10 | 202'000 | 20 k |
+
+### Observations narratives
+
+- **Théâtre est roi** (10,7 M, 21 % du sous-classifié). Fond. pour l'art dramatique (Vidy), Arc en Scène / TPR, Théâtre des Osses, Théâtre Pro Valais portent le budget.
+- **Musée vs Musique classique** : opposition de structure. Musée a 46 attributions à 159 k de moyenne (gros budgets institutionnels concentrés : Hermitage 2,5 M, Plateforme 10 600 k, Gianadda 350 k). Musique classique a 172 attributions à 38 k (beaucoup de petits chœurs, harmonies, conservatoires régionaux).
+- **Le top 6 capte 84 % du sous-domaine** (42,5 M sur 51,1 M). La concentration suit la même logique que le sport.
+- **Danse derrière musique populaire** en montant mais avec moyenne plus haute (62 k vs 17 k) — peu d'attributions mais ciblées sur quelques institutions chorégraphiques.
+- **Cinéma 5e en valeur, mais 134 k de moyenne** : les festivals de cinéma sont des grosses opérations institutionnelles (Visions du Réel 270 k, FIFF 660 k, NIFFF 375 k, GIFF 380 k, FIFDH 400 k). Peu d'attributions mais lourdes.
+- **Photographie et Arts visuels** sont les parents pauvres (~660 k cumulés), probablement parce que beaucoup d'expositions sont rangées sous « Musée » plutôt que sous « Arts visuels ».
+
+### Faux positifs connus
+
+La sous-catégorisation par mots-clés n'est pas parfaite. Cas connus :
+- **« Musique populaire / Jazz »** capture parfois des sociétés de chant choral d'amateurs (qui sont plus proches de musique classique amateur que de jazz). Pas critique car les sommes en jeu sont faibles.
+- **« Festival multi-disciplinaire »** absorbe les festivals qui n'ont pas de genre clairement indiqué dans leur nom. Verbier Festival y est, alors qu'on pourrait le ranger en musique classique — mais le nom seul n'indique pas le genre.
+- **« Théâtre Pro »** (Valais) — c'est le théâtre professionnel ; correctement classifié en théâtre. Le mot « Pro » est ici un nom propre, pas un signal d'amateurisme.
+
+### Visualisation
+
+- Nouvelle section HTML `#viz-culture` insérée juste après `#viz-sports`
+- Nouveau module JS `docs/js/culture.js` (~130 LOC), même pattern que `sports.js`
+- Réutilise les classes CSS `.sports-*` (style générique) avec un override `.sports-bar-culture` pour la palette violet → bleu (distinguer du rouge sport)
+- Click sur une catégorie déplie les **top 5 bénéficiaires triés par montant**
+- Pastilles colorées des 4 cantons les plus contributeurs
+
+### Note technique
+
+Le bug de tri des samples (top 5 = premiers insérés, pas plus gros) découvert sur la culture a été **rétro-appliqué au sport** (`build_sport_classification.py`). Les samples affichés sur les deux vizes sont maintenant les top 5 par montant CHF, pas les 5 premiers rencontrés.
+
+
+---
+
+## v13.10-pass10 (juin 2026) — Sous-catégorisation sociale + web-verif culture/sport
+
+Troisième et dernière classification : action sociale + vérification cross-domaine via recherches web pour les cas ambigus.
+
+### 1. Approche web-assistée
+
+Pour la première fois, intégration de **recherches web** pour résoudre les cas où les mots-clés ne suffisent pas :
+
+1. Build initial du classifier par patterns mots-clés + noms d'orgs suisses connues
+2. Identification des **top entrées non classifiées** (par montant)
+3. Recherche web sur les ambigus (`"Banc Public" Fribourg`, `"Elderli" Lausanne projet seniors`, `"Fond. Guido Comba"`, etc.)
+4. Application d'**overrides manuels** dans le code des classifiers
+
+Bénéfice : classification plus juste là où les patterns sont insuffisants, tout en restant transparente (les overrides sont documentés dans le code).
+
+### 2. Classification sociale — 13 catégories
+
+<a id="social-classification"></a>
+
+Script `scripts/build_social_classification.py`, output `docs/data/social_classification.json` (~10 kB).
+
+Patterns ordonnés du plus spécifique au plus générique, incluant les **noms d'orgs suisses majeures** : Caritas, CSP (Centre Social Protestant), Pro Senectute, Pro Infirmis, Pro Juventute, EPER (Entraide Protestante Suisse), Emmaüs, Croix-Rouge, LAVI (Loi Aide Victimes), EVAM (Établissement Vaudois Accueil Migrants), FAJE (Fondation Accueil Jour Enfants), Insieme, Procap, Cerebral, Au Cœur des Grottes, etc.
+
+**Résultats — 246 attributions, 27,05 M CHF (13,1 % du BRB)** :
+
+| Rang | Sous-catégorie | Attrib. | Total CHF | Moyenne |
+|---:|---|---:|---:|---:|
+| 1 | **Précarité / Pauvreté** | 31 | 7'265'080 | 234 k |
+| 2 | **Migration / Intégration** | 23 | 3'571'200 | 155 k |
+| 3 | **Maladies / Soins spécifiques** | 20 | 2'829'000 | 141 k |
+| 4 | **Handicap** | 35 | 2'772'160 | 79 k |
+| 5 | **Petite enfance / Crèches** | 33 | 2'618'666 | 79 k |
+| 6 | **Personnes âgées** | 41 | 2'420'810 | 59 k |
+| 7 | **Jeunes / Adolescents** | 12 | 1'825'780 | 152 k |
+| 8 | **Violences / Refuges** | 6 | 1'563'114 | 261 k |
+| 9 | **Familles / Parentalité** | 25 | 1'470'910 | 59 k |
+| 10 | **Bénévolat / Écoute** | 5 | 239'000 | 48 k |
+| 11 | **Santé mentale** | 6 | 234'000 | 39 k |
+| 12 | **Addictions** | 6 | 215'460 | 36 k |
+| 13 | **Égalité / Femmes / LGBT** | 3 | 28'500 | 10 k |
+
+### 3. Overrides manuels (web-vérifiés)
+
+7 entrées vérifiées en ligne et catégorisées manuellement :
+
+| Entrée | Catégorie | Source vérification |
+|---|---|---|
+| Banc Public (FR) | Précarité | ville-fribourg.ch, Etat de Fribourg DSAS — accueil de jour précarité 7j/7 |
+| Elderli Sàrl | Personnes âgées | HETSL, 24heures — colocation intergén. seniors-étudiants |
+| Assoc. La Tuile (FR) | Précarité | Fribourg, accueil de nuit |
+| Communauté d'Emmaüs | Précarité | Réseau Emmaüs International, bien connu |
+| Fond. Au Cœur des Grottes (GE) | Violences | Centre d'expertise pour survivantes de violences GE |
+| Assoc. Vestiaire social (GE) | Précarité | Carouge, vêtements pour précaires |
+| diabètefribourg - Assoc. | Maladies | Association cantonale du diabète |
+
+Et 1 entrée **exclue** explicitement du domaine social :
+- *Conservatoire populaire (GE)* — c'est une école de musique, pas du social (le mot « populaire » trompait le pattern). Classifié sous Culture.
+
+### 4. Observations narratives
+
+- **Précarité domine** (7,3 M, 27 % du social classifié) — driver : Vestiaire social GE 1,6 M, CSP Vaud 1,4 M, Banc Public, Emmaüs, ARAS (Association Régionale Action Sociale).
+- **Migration en 2e** (3,6 M) — alors que c'est rarement le plus médiatisé. Les Romands aident massivement l'intégration via EVAM, EPER migration, français en jeu, Caritas migrants.
+- **Violences a la plus haute moyenne** (261 k par attribution) — peu d'attributions mais grosses : Au Cœur des Grottes (500 k), Frauenhaus Fribourg (350 k), Centre LAVI Genève (650 k). Domaine où chaque structure compte.
+- **Petite enfance + Personnes âgées = 5 M** (le « care » à l'enfance et à la vieillesse). Loro couvre les deux extrêmes de la vie.
+- **Pas surprenant en queue** : Bénévolat, Santé mentale, Addictions, LGBT — peu d'orgs structurées, dons plus diffus.
+
+### 5. Améliorations culture (web-assistées)
+
+Suite à l'audit, 5 overrides manuels et 3 patterns améliorés pour la culture :
+
+**Patterns ajoutés** :
+- `Cinéforom` (Swiss film fund 1,7 M) ajouté à Cinéma
+- `Canal 9 / Kanal 9` ajouté à Médias (TV régionale Valais)
+- `cinémas romands` ajouté à Cinéma (1,7 M)
+- Patterns Patrimoine bâti élargis : `rénovation/réaménagement/assainissement église/temple/chapelle/clocher`
+- `église protestante/anglicane/catholique` ajouté à Patrimoine bâti
+
+**Overrides manuels** :
+- *Fond. Guido Comba* → Centre culturel (1,25 M — fondation pour art et culture, Nyon)
+- *Fond. Horopedia* → Musée (1 M — Maison des Arts et Culture Horlogère MACH)
+- *Fond. pour le développement (FODAC)* → Centre culturel (arts et culture)
+- *CORODIS* → Festival multi-disciplinaire (700 k — diffusion de spectacles romande)
+- *La Chaux-de-Fonds capitale culturelle 2027* → Festival multi (1 M)
+
+**Impact** : Culture passe de 51 M → **62,7 M CHF** (24,7 % → 30,3 % du BRB). Nouveau ranking :
+
+| Rang | Sous-catégorie | Avant | Après |
+|---:|---|---:|---:|
+| 1 | Théâtre | 10,7 M | 10,7 M (=) |
+| 2 | **Cinéma / Audiovisuel** | 5,6 M (5e) | **9,1 M (2e)** ⬆️ |
+| 3 | Festival multi-disciplinaire | 7,2 M (3e) | 9,0 M |
+| 4 | **Patrimoine bâti** | 5,2 M (6e) | **8,5 M (4e)** ⬆️ |
+| 5 | Musée | 7,3 M (2e) | 8,3 M |
+| 6 | Musique classique | 6,5 M | 6,5 M |
+| 7 | Danse | 2,6 M | 2,6 M |
+| 8 | **Centre culturel** | 1,2 M (10e) | **2,5 M (8e)** ⬆️ |
+| 9 | Musique populaire / Jazz | 1,8 M | 1,8 M |
+| 10 | Littérature / Édition | 1,7 M | 1,7 M |
+| 11 | **Médias** (nouveau) | 0 | **854 k** |
+| 12-14 | Cirque, Arts visuels, Photo | — | — |
+
+### 6. Améliorations sport
+
+1 raffinement (impact mineur, 1 M de CHF unclassified) :
+- `ice hockey`, `rink hockey`, `hockey academy` ajoutés au pattern Hockey sur glace
+- Sport classifié passe de 31,77 M → 31,97 M (+200 k)
+- Le reste des unclassified (~1 M) est dispersé sur trop de petites entrées pour valoir un effort dédié
+
+### 7. Récap synoptique des 3 classifications
+
+| Domaine | Catégories | Attribut. | CHF total | % du BRB |
+|---|:---:|---:|---:|---:|
+| **Culture** | 14 | 828 | 62'700'686 | 30,3 % |
+| **Sport** | 30 | 1'548 | 31'974'001 | 15,5 % |
+| **Social** | 13 | 246 | 27'053'680 | 13,1 % |
+| **Cumul** (avec recouvrements) | 57 | ≤ 2'622 | ≤ 121,7 M | ≤ 58,8 % |
+
+Une même entrée peut être détectée par 2 classifiers (rare en pratique), donc le cumul est un majorant. Les ~80 M CHF restants (recherche scientifique, environnement, tourisme, formation, descriptions trop génériques) ne sont pas classifiés ici.
+
+### 8. Code structure
+
+- `docs/js/social.js` (~120 LOC, lazy-load, palette orange) — nouveau
+- `docs/js/sports.js` (palette rouge, Pass 7)
+- `docs/js/culture.js` (palette violet/bleu, Pass 9)
+- Tous réutilisent les classes CSS `.sports-*` avec override de couleur (`.sports-bar-{sport|culture|social}`)
+- Section HTML `#viz-social` placée entre culture et longtail
 
