@@ -695,6 +695,17 @@ footer.site-foot .last-updated {
   gap: 16px;
   margin-bottom: 16px;
 }
+/* 3×2 forced on desktop : 3 cantons per row, 2 rows */
+.mc-grid-3x2 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 920px) {
+  .mc-grid-3x2 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .mc-grid-3x2 { grid-template-columns: 1fr; }
+}
 .mc-cell {
   background: var(--bg);
   border: 1px solid var(--rule);
@@ -1467,4 +1478,143 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   opacity: 0.6;
   margin-left: 4px;
   color: var(--ink-mute);
+}
+
+/* BRB cross-canton aggregate badge */
+.brb-agg-badge {
+  display: inline-block;
+  background: rgba(200, 16, 46, 0.1);
+  color: var(--c-loro);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-left: 4px;
+  cursor: help;
+  letter-spacing: 0.02em;
+}
+.brb-row-agg {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 11px;
+  color: var(--ink-mute);
+  font-style: italic;
+}
+.brb-row-agg strong {
+  color: var(--c-loro);
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ============ Décomposition franc : tabs années ============ */
+.franc-year-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.franc-year-tab {
+  font: inherit;
+  background: transparent;
+  border: 1px solid var(--rule-strong);
+  color: var(--ink-soft);
+  padding: 6px 16px;
+  border-radius: 18px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.franc-year-tab:hover {
+  background: var(--bg-soft);
+  color: var(--ink);
+}
+.franc-year-tab.active {
+  background: var(--c-loro);
+  color: white;
+  border-color: var(--c-loro);
+}
+
+/* ============ Governance — 2024 vs 2025 comparison ============ */
+.gov-section-title {
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 24px 0 6px;
+  color: var(--ink);
+}
+.gov-section-intro {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin: 0 0 16px;
+  max-width: 65ch;
+}
+.gov-compare-wrap, .gov-detail-wrap {
+  margin-bottom: 24px;
+}
+.gov-compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.gov-compare-table thead th {
+  background: var(--bg-soft);
+  padding: 10px 8px;
+  text-align: left;
+  border-bottom: 2px solid var(--rule-strong);
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+.gov-compare-table tbody td {
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: middle;
+}
+.gov-compare-table tbody tr:hover {
+  background: rgba(200, 16, 46, 0.02);
+}
+.gov-prel-cell { min-width: 80px; }
+.gov-prel-cell .gov-prel-val {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 4px;
+}
+.gov-prel-bar {
+  background: var(--rule);
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 90%;
+}
+.gov-prel-fill {
+  background: var(--c-loro);
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+.gov-prel-fill-changed { background: #f0a93d; }  /* orange for any change */
+.gov-arrow-up { color: #2ea08a; font-weight: 700; font-size: 14px; }
+.gov-arrow-down { color: var(--c-loro); font-weight: 700; font-size: 14px; }
+.gov-change-cell {
+  font-size: 12px;
+  color: var(--ink);
+  line-height: 1.4;
+}
+.gov-change-badge {
+  display: inline-block;
+  background: rgba(240, 169, 61, 0.18);
+  color: #8a5e15;
+  padding: 1px 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  .gov-change-badge { background: rgba(240, 169, 61, 0.18); color: #f0a93d; }
 }
