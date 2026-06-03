@@ -549,6 +549,13 @@ footer.site-foot .signoff {
 }
 footer.site-foot .links { margin-top: 24px; }
 footer.site-foot .links a { margin: 0 12px; color: var(--ink-soft); }
+footer.site-foot .last-updated {
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--ink-mute);
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
 
 /* ============ Explorer page ============ */
 .explorer-grid {
@@ -1229,4 +1236,235 @@ footer.site-foot .links a { margin: 0 12px; color: var(--ink-soft); }
   .brb-row { border-bottom-color: rgba(255,255,255,0.08); }
   .brb-row:hover { background: rgba(255,255,255,0.04); }
   .brb-row-name { color: inherit; }
+}
+
+/* ============ Print CSS ============
+   Preserve dark backgrounds (Chrome strips them by default to save ink).
+   Also tighten margins for cleaner PDF export. */
+@media print {
+  /* Force background colors / images to be printed as displayed */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  /* Sticky doesn't behave well in print; let scrolly graphics render in place */
+  .scrolly .graphic { position: static !important; height: auto !important; }
+  /* Hide the floating reading progress bar in print */
+  .reading-progress, .topnav { display: none !important; }
+  /* Avoid breaking individual viz cards across pages where possible */
+  .viz-card, .step-card, .fullbleed { page-break-inside: avoid; break-inside: avoid; }
+  /* Slightly smaller titles for print */
+  body { font-size: 12pt; }
+  .col, .col-wide, .col-xl { max-width: 100%; padding: 0 12px; }
+}
+
+/* "Voir plus" button for BRB explorer pagination */
+.brb-more {
+  text-align: center;
+  padding: 24px 0 8px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.brb-more-btn {
+  font: inherit;
+  background: transparent;
+  border: 1px solid var(--rule-strong);
+  color: var(--ink);
+  padding: 10px 24px;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  transition: background 0.15s, border-color 0.15s;
+}
+.brb-more-btn:hover {
+  background: var(--bg-soft);
+  border-color: var(--ink-soft);
+}
+.brb-more-btn:focus-visible {
+  outline: 2px solid var(--c-loro);
+  outline-offset: 2px;
+}
+.brb-more-count {
+  opacity: 0.55;
+  font-size: 11px;
+  margin-left: 4px;
+}
+
+/* CTA link style (used in Jura → BRB explorer link) */
+.cta-link {
+  display: inline-block;
+  padding: 8px 18px;
+  background: var(--bg-card);
+  border: 1px solid var(--rule-strong);
+  border-radius: 22px;
+  color: var(--c-loro);
+  border-bottom: 1px solid var(--rule-strong);  /* override the default a underline */
+  transition: background 0.15s, border-color 0.15s;
+  font-weight: 500;
+}
+.cta-link:hover {
+  background: var(--bg-soft);
+  border-color: var(--c-loro);
+  color: var(--c-loro-dark);
+}
+
+/* ============ Glossary (end-of-page) ============ */
+.glossary-section {
+  background: var(--bg-soft);
+  padding: 64px 0;
+  margin-top: 60px;
+}
+.glossary-title {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+.glossary-intro {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin: 0 0 28px;
+  font-style: italic;
+  max-width: 60ch;
+}
+.glossary {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) 3fr;
+  column-gap: 32px;
+  row-gap: 14px;
+  margin: 0;
+}
+.glossary dt {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--c-loro);
+  padding-top: 2px;
+}
+.glossary dd {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink);
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--rule);
+}
+.glossary dd:last-child { border-bottom: none; }
+.glossary em {
+  color: var(--ink-mute);
+  font-size: 13px;
+  font-style: italic;
+}
+@media (max-width: 760px) {
+  .glossary { grid-template-columns: 1fr; row-gap: 4px; }
+  .glossary dt { padding-top: 14px; border-top: 1px solid var(--rule); }
+  .glossary dt:first-child { border-top: none; padding-top: 0; }
+}
+
+/* ============ Accessibility ============ */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 8px;
+  background: var(--c-loro);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  z-index: 200;
+  border-bottom: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: top 0.15s;
+}
+.skip-link:focus {
+  top: 8px;
+  color: white;
+}
+/* Visible focus styles for keyboard nav (browsers strip these silently sometimes) */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--c-loro);
+  outline-offset: 2px;
+}
+.brb-pill:focus-visible {
+  outline: 2px solid var(--c-loro);
+  outline-offset: 2px;
+}
+
+/* ============ Loro vs Swisslos — mobile rescue ============
+   La viz a un viewBox 1100×~960 avec 17 lignes denses. Sur mobile, la rétrécir
+   à 274px rend tous les labels illisibles. Solution : forcer une largeur minimale
+   et permettre le scroll horizontal sur le SVG uniquement, avec une indication visuelle. */
+@media (max-width: 760px) {
+  #viz-loro-vs-swisslos {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Bandeau d'aide visuel collé à droite */
+    position: relative;
+  }
+  #viz-loro-vs-swisslos svg {
+    min-width: 900px;
+    width: 900px;
+    max-width: none;
+  }
+  #viz-loro-vs-swisslos::before {
+    content: '← faites défiler horizontalement →';
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: var(--ink-mute);
+    font-style: italic;
+    padding: 8px;
+    background: var(--bg-soft);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    position: sticky;
+    left: 0;
+  }
+}
+
+/* ============ Editorial timeline tabs ============ */
+.editorial-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--rule);
+  position: sticky;
+  top: 56px;
+  background: var(--bg);
+  z-index: 5;
+  padding-top: 12px;
+}
+.editorial-tab {
+  font: inherit;
+  background: transparent;
+  border: 1px solid var(--rule-strong);
+  color: var(--ink-soft);
+  padding: 8px 18px;
+  border-radius: 22px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.editorial-tab:hover {
+  background: var(--bg-soft);
+  color: var(--ink);
+}
+.editorial-tab.active {
+  background: var(--c-loro);
+  color: white;
+  border-color: var(--c-loro);
+}
+.editorial-tab.active .editorial-tab-count {
+  color: rgba(255, 255, 255, 0.7);
+}
+.editorial-tab-count {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-left: 4px;
+  color: var(--ink-mute);
 }
