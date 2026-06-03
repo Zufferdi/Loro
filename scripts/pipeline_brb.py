@@ -34,7 +34,7 @@ from pathlib import Path
 # Configuration
 # =====================================================================
 
-PIPELINE_VERSION = "v13.8"
+PIPELINE_VERSION = "v13.10"
 PIPELINE_DATE = "2026-06-03"
 
 # Section-total markers (these are not real beneficiaries — they're aggregate rows)
@@ -44,6 +44,32 @@ SECTION_TOTAL_KEYWORDS = [
     "Total pour les établissements",
     "soutiens annuels et divers",
 ]
+
+# Connector words that signal a desc-prefix is actually a name continuation
+RECONSTRUCT_CONNECTOR = re.compile(r"^(d'|de la |de l'|de |du |des |et |au |aux )", re.IGNORECASE)
+
+# Activity keywords that mark where description proper starts
+RECONSTRUCT_ACTIVITY_KEYWORDS = [
+    'Soutien', 'Camp', 'Achat', 'Acquisition', 'Manifestation', 'Rénovation',
+    'Aménagement', 'Travaux', 'Centre de formation', 'Centre de Perfor',
+    'Participation', 'Tournoi', 'Championnat', 'Coupe', 'Saison', 'Activité',
+    'Projet', 'Concert', 'Festival', 'Exposition', 'Création', 'Publication',
+    'Mémorial', 'Cross', 'Course', 'Formation', 'Construction', 'Aide', 'Bourse',
+    'Mise', 'Réfection', 'Remplacement', 'Installation', 'Pose', 'Organisation',
+    'Édition', 'Edition', 'Étape', 'Etape', 'Action', 'Activités', 'Préparation',
+    'Voyage', 'Stage', 'Trail',
+    # v13.10 additions: extended coverage for childcare, museums, churches, sports clubs
+    'Équipement', 'Equipement', 'Suivi', 'Animation', 'Recherche', 'Promotion',
+    'Réception', 'Reception', 'Restauration', 'Diffusion', 'Prise', 'Conte',
+]
+RECONSTRUCT_ACTIVITY_RE = re.compile(
+    r'\b(' + '|'.join(RECONSTRUCT_ACTIVITY_KEYWORDS) + r')\b'
+)
+
+# City extraction from trailing ", CityName"
+RECONSTRUCT_CITY_AT_END = re.compile(
+    r",\s*([A-ZÉÈÔÎÀÇ][a-zéèôîàç]+(?:[- ][A-ZÉÈÔÎÀÇ]?[a-zéèôîàç]+){0,3})\s*$"
+)
 
 # French stopwords for name normalization (dedup)
 STOPWORDS_FR = {
@@ -158,16 +184,91 @@ def stage_drop_section_totals(entries: list[dict]) -> tuple[list[dict], dict]:
     return keep, {'section_totals_dropped': len(entries) - len(keep)}
 
 
+def stage_reconstruct_name(entries: list[dict]) -> tuple[list[dict], dict]:
+    """
+    Stage B' (v13.9 NEW): when the parser truncated the name and left the
+    continuation in the description, reconstruct the full name.
+
+    Pattern: nom='Assoc. Cantonale Vaudoise' + desc="d'Athlétisme Soutien annuel"
+             → nom='Assoc. Cantonale Vaudoise d'Athlétisme' + desc='Soutien annuel'
+
+    Also extracts trailing ', CityName' into ville if ville was empty.
+
+    Safety constraints:
+      - desc must start with a connector word (d', de, du, des, et, au, aux)
+      - the name part (before activity keyword) must be 3-60 chars
+      - the name part must contain at most 1 comma
+      - the reconstructed nom must contain at most 1 comma
+    """
+    n_reconstructed = 0
+    n_cities_extracted = 0
+    # Pattern that indicates name_part is contaminated (contains money amount)
+    money_in_text = re.compile(r"\d+['']?\d*\.\-")
+    for e in entries:
+        desc = e.get('description') or ''
+        if not desc or not RECONSTRUCT_CONNECTOR.match(desc):
+            continue
+        m = RECONSTRUCT_ACTIVITY_RE.search(desc)
+        if not m or m.start() < 3:
+            continue
+        name_part = desc[:m.start()].strip()
+        desc_part = desc[m.start():].strip()
+        # Safety constraints
+        if not (3 <= len(name_part) <= 60):
+            continue
+        if name_part.count(',') > 1:
+            continue
+        if name_part.count(' - ') > 1:
+            continue
+        # Safety: name_part must not contain embedded money amount
+        # (indicates the desc itself was contaminated by multi-entry parser bug)
+        if money_in_text.search(name_part):
+            continue
+        # Safety: also check the full desc — if it has multiple amount patterns,
+        # the entry has parser corruption beyond what we can safely fix
+        if len(money_in_text.findall(desc)) > 0:
+            continue
+
+        new_nom = (e.get('nom', '') + ' ' + name_part).strip()
+        if new_nom.count(',') > 1:
+            continue
+
+        # Extract trailing ", CityName" if ville is empty
+        new_ville = e.get('ville')
+        if not new_ville:
+            city_m = RECONSTRUCT_CITY_AT_END.search(new_nom)
+            if city_m:
+                new_ville = city_m.group(1)
+                new_nom = new_nom[:city_m.start()].strip()
+                n_cities_extracted += 1
+
+        e['nom'] = new_nom
+        e['ville'] = new_ville
+        e['description'] = desc_part if desc_part else None
+        n_reconstructed += 1
+
+    return entries, {
+        'name_reconstructed': n_reconstructed,
+        'city_extracted_in_reconstruction': n_cities_extracted,
+    }
+
+
 def stage_clean_nom(entries: list[dict]) -> tuple[list[dict], dict]:
-    """Stage C (v13.7-A): strip trailing dashes and dangling prepositions from nom."""
+    """Stage C (v13.7-A, v13.9-fix): strip trailing dashes and dangling prepositions.
+    Loops until the nom is stable so chained strips (e.g. ' et de la' → ' et' → '')
+    are fully resolved in one pass."""
     n = 0
     for e in entries:
         orig = e.get('nom') or ''
-        cleaned = TRAILING_DASH.sub('', orig).rstrip()
-        # Strip dangling preposition only if result > 8 chars (don't decimate short names)
-        candidate = DANGLING_PREP.sub('', cleaned)
-        if len(candidate) > 8:
-            cleaned = candidate.rstrip()
+        cleaned = orig
+        for _ in range(8):  # bounded loop; nom can shrink at most a few times
+            new = TRAILING_DASH.sub('', cleaned).rstrip()
+            candidate = DANGLING_PREP.sub('', new)
+            if len(candidate) > 8:
+                new = candidate.rstrip()
+            if new == cleaned:
+                break
+            cleaned = new
         if cleaned != orig:
             e['nom'] = cleaned
             n += 1
@@ -351,6 +452,7 @@ def run_pipeline(
 
     # === Stages ===
     stages = [
+        ('reconstruct_name (truncated nom)', stage_reconstruct_name),
         ('clean_nom (trailing artifacts)', stage_clean_nom),
         ('clean_desc (embedded amounts)', stage_clean_desc),
         ('clean_ville (desc-in-ville)', stage_clean_ville),
