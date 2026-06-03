@@ -331,123 +331,151 @@ function initTimelineScrolly() {
    Barre empilée animée, segments qui apparaissent en cascade.
    ============================================================ */
 function initFranc() {
-  const pbj = 438.235;
-  const parts = [
-    { label: 'Bénéfice → cantons',           v: 258.236, color: '#c8102e', strong: true },
-    { label: 'Commission points de vente',   v: 79.387,  color: '#5b8def' },
-    { label: 'FSES (sport)',                  v: 19.568,  color: '#f0a93d' },
-    { label: 'Marketing / publicité',         v: 15.355,  color: '#7c5bc7' },
-    { label: 'FSC (courses chevaux)',         v: 3.234,   color: '#2ea08a' },
-    { label: 'Direction',                     v: 2.288,   color: '#c97b3a' },
-    { label: 'Prévention jeu excessif',       v: 2.191,   color: '#8a8a8a' },
-  ];
-  const knownTotal = parts.reduce((s, p) => s + p.v, 0);
-  parts.push({ label: 'Autres charges', v: pbj - knownTotal, color: '#bbb6a8' });
-
   const container = d3.select('#viz-franc');
   if (container.empty()) return;
+
+  // Données par année depuis rapports_financiers (compte_de_resultat)
+  // M CHF, valeurs absolues (les frais sont stockés négativement dans le JSON)
+  function getYearData(year) {
+    const cr = DATA.rf && DATA.rf.compte_de_resultat && DATA.rf.compte_de_resultat[String(year)];
+    if (!cr) return null;
+    const abs = v => Math.abs(v || 0) / 1e6;  // → millions
+    const pbj = abs(cr.produit_brut_jeux);
+    const benefice = abs(cr.resultat_net);
+    // Parts du PBJ : bénéfice + tous les coûts opérationnels du compte de résultat.
+    // Le bénéfice net inclut déjà les distributions FSES/FSC (qui sont une part de
+    // la répartition aux organes), donc on ne les compte pas séparément ici.
+    const parts = [
+      { label: 'Bénéfice → cantons',          v: benefice,                    color: '#c8102e', strong: true },
+      { label: 'Commission points de vente',  v: abs(cr.commissions),         color: '#5b8def' },
+      { label: 'Personnel',                   v: abs(cr.frais_personnel),     color: '#c97b3a' },
+      { label: 'Informatique',                v: abs(cr.informatique),        color: '#2ea08a' },
+      { label: 'Marketing / publicité',       v: abs(cr.marketing),           color: '#7c5bc7' },
+      { label: 'Exploitation jeux',           v: abs(cr.exploitation_jeux),   color: '#a37a4f' },
+      { label: 'Amortissements',              v: abs(cr.amortissements),      color: '#8a8a8a' },
+      { label: 'Autres charges',              v: abs(cr.fabrication_jeux) + abs(cr.frais_generaux) + abs(cr.ventes_animations) + Math.max(0, abs(cr.frais_vendeurs)), color: '#bbb6a8' },
+    ];
+    // Note: la somme des parts peut légèrement dépasser le PBJ (de 5-10 M selon l'année)
+    // car le bénéfice net inclut un résultat financier (produits hors-jeux).
+    // On échelonne la barre sur la somme effective des parts, pas sur le PBJ.
+    const total = parts.reduce((s, p) => s + p.v, 0);
+    return { pbj, parts, benefice, total, year };
+  }
+
+  let currentYear = 2024;
+  let dataByYear = {};
+  for (const y of [2023, 2024, 2025]) {
+    dataByYear[y] = getYearData(y);
+  }
+  if (!dataByYear[2024]) return;  // pas de données
+
+  // Build chrome : year tabs + viz container
   container.html('');
+  const tabBar = container.append('div').attr('class', 'franc-year-tabs').attr('role', 'tablist');
+  [2023, 2024, 2025].forEach(y => {
+    if (!dataByYear[y]) return;
+    tabBar.append('button')
+      .attr('class', 'franc-year-tab' + (y === currentYear ? ' active' : ''))
+      .attr('data-year', y).attr('role', 'tab')
+      .attr('aria-selected', y === currentYear ? 'true' : 'false')
+      .text(y);
+  });
+  const vizWrap = container.append('div').attr('class', 'franc-viz-wrap');
 
-  const W = container.node().clientWidth, H = 280;
-  const margin = { top: 60, right: 24, bottom: 100, left: 24 };
-  const w = W - margin.left - margin.right;
-  const h = 60; // hauteur barre
+  function render(year) {
+    const data = dataByYear[year];
+    if (!data) return;
+    const { pbj, parts, benefice, total } = data;
+    vizWrap.html('');
 
-  const svg = container.append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('height', H);
-  const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+    const W = vizWrap.node().clientWidth || 1200, H = 280;
+    const margin = { top: 60, right: 24, bottom: 100, left: 24 };
+    const w = W - margin.left - margin.right;
+    const h = 60;
 
-  const scale = d3.scaleLinear().domain([0, pbj]).range([0, w]);
+    const svg = vizWrap.append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('height', H);
+    const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+    // La barre représente la somme des parts (généralement légèrement > PBJ à cause
+    // du résultat financier net qui s'ajoute au bénéfice). On échelonne sur ce total.
+    const scale = d3.scaleLinear().domain([0, total]).range([0, w]);
 
-  // Tick : "0 CHF" gauche, "438 M PBJ" droite
-  svg.append('text')
-    .attr('x', margin.left).attr('y', margin.top - 20)
-    .attr('font-size', 11).attr('fill', inkSoftColor())
-    .attr('letter-spacing', '0.06em').text('0 CHF');
-  svg.append('text')
-    .attr('x', margin.left + w).attr('y', margin.top - 20)
-    .attr('font-size', 11).attr('text-anchor', 'end').attr('fill', inkSoftColor())
-    .attr('letter-spacing', '0.06em').text(`PBJ total · ${CHF1.format(pbj)} M`);
+    svg.append('text').attr('x', margin.left).attr('y', margin.top - 20)
+      .attr('font-size', 11).attr('fill', inkSoftColor())
+      .attr('letter-spacing', '0.06em').text('0 CHF');
+    svg.append('text').attr('x', margin.left + w).attr('y', margin.top - 20)
+      .attr('font-size', 11).attr('text-anchor', 'end').attr('fill', inkSoftColor())
+      .attr('letter-spacing', '0.06em').text(`PBJ ${year} : ${CHF1.format(pbj)} M · Bénéfice : ${CHF1.format(benefice)} M`);
 
-  let cumul = 0;
-  parts.forEach((p, i) => {
-    const xstart = scale(cumul);
-    const wseg = scale(p.v);
-    const grp = g.append('g').style('cursor', 'pointer');
+    let cumul = 0;
+    parts.forEach((p, i) => {
+      const xstart = scale(cumul);
+      const wseg = scale(p.v);
+      const grp = g.append('g').style('cursor', 'pointer');
+      grp.append('rect')
+        .attr('x', xstart).attr('y', 0).attr('width', 0).attr('height', h)
+        .attr('fill', p.color).attr('stroke', '#fff').attr('stroke-width', 1.5)
+        .transition().delay(i * 100).duration(500).ease(d3.easeCubicOut)
+        .attr('width', wseg);
+      const pct = (p.v / pbj * 100);
+      if (wseg > 60) {
+        grp.append('text').attr('x', xstart + wseg / 2).attr('y', h / 2)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+          .attr('fill', '#fff').attr('font-family', 'Source Serif Pro, serif')
+          .attr('font-size', p.strong ? 22 : 14).attr('font-weight', p.strong ? 600 : 500)
+          .style('opacity', 0).text(`${CHF1.format(pct)} %`)
+          .transition().delay(500 + i * 100).duration(400).style('opacity', 1);
+      }
+      grp.on('mouseover', ev => {
+        showTip(`<div class="t-title">${p.label}</div>
+                 <div>${CHF1.format(p.v)} M CHF</div>
+                 <div class="t-meta">${CHF1.format(pct)} % du PBJ Loro ${year}</div>`,
+          ev.clientX, ev.clientY);
+      }).on('mouseout', hideTip);
+      cumul += p.v;
+    });
 
-    grp.append('rect')
-      .attr('x', xstart).attr('y', 0).attr('width', 0).attr('height', h)
-      .attr('fill', p.color).attr('stroke', '#fff').attr('stroke-width', 1.5)
-      .transition().delay(i * 140).duration(700).ease(d3.easeCubicOut)
-      .attr('width', wseg);
+    // Labels under bar for top segments
+    const labels = parts.map((p, i) => {
+      const xMid = scale(parts.slice(0, i).reduce((s,q) => s+q.v, 0) + p.v / 2);
+      return { ...p, xMid };
+    });
+    const lblG = svg.append('g').attr('transform', `translate(${margin.left}, ${margin.top + h + 20})`);
+    labels.slice(0, 4).forEach((p, i) => {
+      lblG.append('line').attr('x1', p.xMid).attr('x2', p.xMid)
+        .attr('y1', -20).attr('y2', -6).attr('stroke', p.color).attr('stroke-width', 1).attr('opacity', 0.4);
+      const text = lblG.append('text').attr('class', 'label').attr('x', p.xMid).attr('y', 6)
+        .attr('text-anchor', 'middle').attr('font-size', 11)
+        .attr('fill', inkColor()).attr('font-weight', 500);
+      text.append('tspan').attr('x', p.xMid).attr('dy', 0).text(p.label);
+      text.append('tspan').attr('x', p.xMid).attr('dy', 14)
+        .attr('font-family', 'Source Serif Pro, serif').attr('fill', p.color)
+        .text(`${CHF1.format(p.v)} M`);
+    });
 
-    const pct = (p.v / pbj * 100);
+    // Legend for small segments
+    const legendG = svg.append('g').attr('transform', `translate(${margin.left}, ${margin.top + h + 80})`);
+    const smallParts = labels.slice(4);
+    smallParts.forEach((p, i) => {
+      const col = i % 2, row = Math.floor(i / 2);
+      const xx = col * (w / 2), yy = row * 18;
+      const grp = legendG.append('g').attr('transform', `translate(${xx},${yy})`);
+      grp.append('rect').attr('width', 10).attr('height', 10).attr('y', 2).attr('fill', p.color);
+      grp.append('text').attr('x', 16).attr('y', 11)
+        .attr('fill', inkSoftColor()).attr('font-size', 11)
+        .text(`${p.label} (${CHF1.format(p.v / pbj * 100)} %, ${CHF1.format(p.v)} M)`);
+    });
+  }
 
-    // Étiquette pourcentage dans la barre si assez large
-    if (wseg > 60) {
-      grp.append('text')
-        .attr('x', xstart + wseg / 2).attr('y', h / 2)
-        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
-        .attr('fill', '#fff')
-        .attr('font-family', 'Source Serif Pro, serif')
-        .attr('font-size', p.strong ? 22 : 14)
-        .attr('font-weight', p.strong ? 600 : 500)
-        .style('opacity', 0)
-        .text(`${CHF1.format(pct)} %`)
-        .transition().delay(700 + i * 140).duration(400).style('opacity', 1);
-    }
-
-    grp.on('mouseover', ev => {
-      showTip(
-        `<div class="t-title">${p.label}</div>
-         <div>${CHF1.format(p.v)} M CHF</div>
-         <div class="t-meta">${CHF1.format(pct)} % du PBJ Loro 2024</div>`,
-        ev.clientX, ev.clientY);
-    }).on('mouseout', hideTip);
-
-    cumul += p.v;
+  // Wire tab switching
+  tabBar.selectAll('.franc-year-tab').on('click', function() {
+    const y = +this.dataset.year;
+    currentYear = y;
+    tabBar.selectAll('.franc-year-tab').classed('active', false).attr('aria-selected', 'false');
+    d3.select(this).classed('active', true).attr('aria-selected', 'true');
+    render(y);
   });
 
-  // Lignes verticales pointillées + étiquettes sous la barre
-  const labels = parts.map((p, i) => {
-    const xMid = scale(parts.slice(0, i).reduce((s,q) => s+q.v, 0) + p.v / 2);
-    return { ...p, xMid };
-  });
-
-  // disposition manuelle en 2 lignes pour éviter chevauchement
-  const lblG = svg.append('g').attr('transform', `translate(${margin.left}, ${margin.top + h + 20})`);
-
-  // Garder seulement les 4 plus gros segments comme labels directs
-  // Les petits sont listés en bas
-  labels.slice(0, 4).forEach((p, i) => {
-    const grp = lblG.append('g').style('opacity', 0)
-      .transition().delay(1000 + i * 120).duration(500).style('opacity', 1);
-    // ligne reliant
-    lblG.append('line')
-      .attr('x1', p.xMid).attr('x2', p.xMid)
-      .attr('y1', -20).attr('y2', -6)
-      .attr('stroke', p.color).attr('stroke-width', 1).attr('opacity', 0.4);
-    const text = lblG.append('text').attr('class', 'label').attr('x', p.xMid).attr('y', 6)
-      .attr('text-anchor', 'middle')
-      .attr('font-size', 11).attr('fill', inkColor())
-      .attr('font-weight', 500);
-    text.append('tspan').attr('x', p.xMid).attr('dy', 0).text(p.label);
-    text.append('tspan').attr('x', p.xMid).attr('dy', 14)
-      .attr('font-family', 'Source Serif Pro, serif').attr('fill', p.color)
-      .text(`${CHF1.format(p.v)} M`);
-  });
-
-  // Légende pour les petits segments à droite
-  const legendG = svg.append('g').attr('transform', `translate(${margin.left}, ${margin.top + h + 80})`);
-  const smallParts = labels.slice(4);
-  smallParts.forEach((p, i) => {
-    const col = i % 2, row = Math.floor(i / 2);
-    const xx = col * (w / 2), yy = row * 18;
-    const grp = legendG.append('g').attr('transform', `translate(${xx},${yy})`);
-    grp.append('rect').attr('width', 10).attr('height', 10).attr('y', 2).attr('fill', p.color);
-    grp.append('text').attr('x', 16).attr('y', 11)
-      .attr('fill', inkSoftColor()).attr('font-size', 11)
-      .text(`${p.label} (${CHF1.format(p.v / pbj * 100)} %, ${CHF1.format(p.v)} M)`);
-  });
+  render(currentYear);
 }
 
 /* ============================================================
@@ -576,12 +604,18 @@ function initTilegram() {
     const m = metrics[curMetric];
     const maxV = d3.max(Object.values(vals));
     const minV = d3.min(Object.values(vals));
-    // ratio mode : palette divergente autour de 50%
+    // Color scale:
+    // - ratio: palette divergente around 50% (centered on parity)
+    // - other metrics: use YlOrRd, a sequential palette with strong visible contrast
+    //   between low/medium/high (yellow → orange → red).
+    //   Domain starts at minV (not 0) so the full color range is used by the 6 cantons.
     let color;
     if (curMetric === 'ratio') {
       color = d3.scaleSequential().domain([30, 70]).interpolator(d3.interpolateRdYlBu);
     } else {
-      color = d3.scaleSequential().domain([0, maxV]).interpolator(d3.interpolateRgb('#fbfaf6', '#c8102e'));
+      // Pad domain by ~10% below to ensure even the smallest canton is visibly colored
+      const lo = minV - (maxV - minV) * 0.1;
+      color = d3.scaleSequential().domain([lo, maxV]).interpolator(d3.interpolateYlOrRd);
     }
 
     // --- TILEGRAM ---
@@ -1481,11 +1515,15 @@ async function initRealMap() {
     });
 
     const maxV = d3.max(Object.values(vals));
+    const minV = d3.min(Object.values(vals));
     let color;
     if (curMetric === 'ratio') {
       color = d3.scaleSequential().domain([30, 70]).interpolator(d3.interpolateRdYlBu);
     } else {
-      color = d3.scaleSequential().domain([0, maxV]).interpolator(d3.interpolateRgb('#fbfaf6', '#c8102e'));
+      // Sequential YlOrRd palette : yellow-orange-red, much more contrasted than the
+      // previous white→red gradient that crammed all values in the pale end.
+      const lo = minV - (maxV - minV) * 0.1;
+      color = d3.scaleSequential().domain([lo, maxV]).interpolator(d3.interpolateYlOrRd);
     }
 
     cantonG.transition().duration(600)
@@ -1533,9 +1571,10 @@ function initMixByCanton() {
 
   const games = ['Billets Instantanés', 'Jeux de tirages', 'Paris sportifs', 'Loterie électronique', 'PMUR'];
   const cantons = ['VD', 'GE', 'VS', 'FR', 'NE', 'JU'];
-  const years = d3.range(2013, 2025);
+  // Étendre à 2025 (dernière année dispo)
+  const years = d3.range(2013, 2026);
+  const lastYear = years[years.length - 1];
 
-  // Pour chaque canton, construire dataset
   function buildDataset(canton) {
     return years.map(y => {
       const row = { annee: y };
@@ -1547,56 +1586,68 @@ function initMixByCanton() {
     });
   }
 
-  // Grid layout
-  const grid = container.append('div').attr('class', 'mc-grid');
+  // Grid 3 × 2 sur desktop (forcé via la classe CSS)
+  const grid = container.append('div').attr('class', 'mc-grid mc-grid-3x2');
 
   cantons.forEach(c => {
     const cell = grid.append('div').attr('class', 'mc-cell');
     cell.append('h4').html(`<span style="color:${CANTON_COLORS[c]}">●</span> ${CANTON_NAMES[c]}`);
 
     const data = buildDataset(c);
-    const W = 280, H = 140;
-    const margin = { top: 6, right: 6, bottom: 18, left: 28 };
+    // Augmenter le SVG : 380×200 au lieu de 280×140 (largeur +36 %, hauteur +43 %)
+    const W = 380, H = 200;
+    const margin = { top: 14, right: 12, bottom: 24, left: 36 };
     const w = W - margin.left - margin.right, h = H - margin.top - margin.bottom;
 
     const svg = cell.append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%');
     const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
-    // Stacked
     const stack = d3.stack().keys(games);
     const series = stack(data);
     const maxY = d3.max(series[series.length - 1], d => d[1]);
 
-    const x = d3.scaleLinear().domain([2013, 2024]).range([0, w]);
-    const y = d3.scaleLinear().domain([0, maxY]).range([h, 0]);
+    const x = d3.scaleLinear().domain([2013, lastYear]).range([0, w]);
+    const y = d3.scaleLinear().domain([0, maxY]).range([h, 0]).nice();
+
+    // Grille horizontale en pointillé
+    g.selectAll('.gridline').data(y.ticks(3)).enter().append('line')
+      .attr('x1', 0).attr('x2', w).attr('y1', d => y(d)).attr('y2', d => y(d))
+      .attr('stroke', ruleColor()).attr('stroke-dasharray', '2,2').attr('opacity', 0.5);
+
+    // Ticks Y (M CHF)
+    g.selectAll('.ytk').data(y.ticks(3)).enter().append('text')
+      .attr('x', -6).attr('y', d => y(d) + 3)
+      .attr('text-anchor', 'end').attr('font-size', 9)
+      .attr('fill', inkSoftColor()).text(d => d + ' M');
 
     const area = d3.area().curve(d3.curveMonotoneX)
       .x(d => x(d.data.annee)).y0(d => y(d[0])).y1(d => y(d[1]));
 
-    g.selectAll('path').data(series).enter().append('path')
+    g.selectAll('path.area').data(series).enter().append('path')
+      .attr('class', 'area')
       .attr('fill', d => GAME_COLORS[d.key]).attr('opacity', 0.88)
       .attr('d', area);
 
-    // Petit axe X minimaliste
-    g.append('text').attr('x', 0).attr('y', h + 12)
-      .attr('font-size', 9).attr('fill', inkSoftColor()).text('2013');
-    g.append('text').attr('x', w).attr('y', h + 12).attr('text-anchor','end')
-      .attr('font-size', 9).attr('fill', inkSoftColor()).text('2024');
+    // Petit axe X
+    g.append('text').attr('x', 0).attr('y', h + 14)
+      .attr('font-size', 10).attr('fill', inkSoftColor()).text('2013');
+    g.append('text').attr('x', w).attr('y', h + 14).attr('text-anchor','end')
+      .attr('font-size', 10).attr('fill', inkSoftColor()).text(String(lastYear));
 
-    // Total à droite
-    const lastVal = years.map(y => games.reduce((s, gk) => {
-      const r = DATA.detail.find(d => d.annee === y && d.libelle === gk);
+    // Total dernière année à droite
+    const lastVal = games.reduce((s, gk) => {
+      const r = DATA.detail.find(d => d.annee === lastYear && d.libelle === gk);
       return s + (r ? (r.cantons[c] || 0) / 1e6 : 0);
-    }, 0));
-    g.append('text').attr('x', 0).attr('y', 8)
+    }, 0);
+    g.append('text').attr('x', 0).attr('y', -2)
       .attr('font-family', 'Source Serif Pro, serif')
-      .attr('font-size', 13).attr('font-weight', 500).attr('fill', inkColor())
-      .text(`${CHF1.format(lastVal[lastVal.length-1])} M en 2024`);
+      .attr('font-size', 14).attr('font-weight', 500).attr('fill', inkColor())
+      .text(`${CHF1.format(lastVal)} M en ${lastYear}`);
 
     cell.on('mouseover', () => {
-      svg.selectAll('path').attr('opacity', 1);
+      svg.selectAll('path.area').attr('opacity', 1);
     }).on('mouseout', () => {
-      svg.selectAll('path').attr('opacity', 0.88);
+      svg.selectAll('path.area').attr('opacity', 0.88);
     });
   });
 
@@ -1771,33 +1822,89 @@ function initGovernance() {
   if (container.empty()) return;
   container.html('');
 
-  const b = DATA.summary.benchmarks;
   const cantons = ['VD', 'GE', 'FR', 'VS', 'NE', 'JU'];
 
-  // Construction d'une table comparée enrichie
-  const tableWrap = container.append('div').attr('class', 'gov-table-wrap');
-  const table = tableWrap.append('table').attr('class', 'gov-table');
+  // Règles de prélèvement cantonal (% du bénéfice net que le Conseil d'État garde
+  // pour le distribuer directement, hors organes de répartition culture/social/sport).
+  // Source 2024 : REISO « La Loterie Romande, source de financement clé », janvier 2026.
+  // Sources 2025 : ne.ch (FAC-LoRo nouveau), La Liberté (oct 2024) + Frapp (juin 2024) pour FR,
+  // recueil officiel Jura (FO 2025 N° 23) pour JU.
+  const prelevements = {
+    VD: { 2024: 25, 2025: 25,                                                 changement: null },
+    JU: { 2024: 17, 2025: 20,                                                 changement: 'Relevé de 17 % à 20 % (loi cantonale modifiée en 2024, effet 2025).' },
+    NE: { 2024: 10, 2025: 10,                                                 changement: 'Création en 2025 du Fonds d\'attributions cantonales (FAC-LoRo) — 1,57 M en 13 dossiers touristiques.' },
+    FR: { 2024: 9,  2025: 9,                                                  changement: '+2 % de l\'enveloppe redirigée vers le sport (de 7 % à 9 % du total). 500 000 CHF de plus pour le sport, sans baisse pour la culture (Conseil d\'État, juin 2024).' },
+    GE: { 2024: 0,  2025: 0,                                                  changement: null },
+    VS: { 2024: 0,  2025: 0,                                                  changement: null },
+  };
 
-  const thead = table.append('thead');
-  const headerRow = thead.append('tr');
-  // Detect the most recent year shared between detail and percapita
+  // === Comparaison 2024 vs 2025 — vue principale ===
+  const compareWrap = container.append('div').attr('class', 'gov-compare-wrap');
+  compareWrap.append('h4').attr('class', 'gov-section-title').text('Prélèvement du Conseil d\'État · 2024 → 2025');
+  compareWrap.append('p').attr('class', 'gov-section-intro').html(
+    'Pour chaque canton, la part de la Loterie Romande que le Conseil d\'État garde pour la distribuer directement (hors organes culture/social/sport). Plafond fédéral : 30 %.'
+  );
+
+  const compareTable = compareWrap.append('table').attr('class', 'gov-compare-table');
+  const ch = compareTable.append('thead').append('tr');
+  ch.append('th').text('Canton');
+  ch.append('th').text('2024');
+  ch.append('th').text('2025');
+  ch.append('th').text('Changement effectif en 2025');
+  const cb = compareTable.append('tbody');
+
+  cantons.forEach(c => {
+    const p = prelevements[c];
+    const tr = cb.append('tr');
+    tr.append('td').html(`<strong>${CANTON_NAMES[c]}</strong> <span class="gov-code">${c}</span>`);
+    // 2024 with bar
+    const td24 = tr.append('td').attr('class', 'gov-prel-cell');
+    td24.append('span').attr('class', 'gov-prel-val').text(p[2024] === 0 ? '—' : p[2024] + ' %');
+    if (p[2024] > 0) {
+      td24.append('div').attr('class', 'gov-prel-bar')
+        .append('div').attr('class', 'gov-prel-fill')
+        .style('width', (p[2024] / 30 * 100) + '%');
+    }
+    // 2025
+    const td25 = tr.append('td').attr('class', 'gov-prel-cell');
+    const evol = p[2025] - p[2024];
+    const arrow = evol > 0 ? ' <span class="gov-arrow-up">↑</span>' : (evol < 0 ? ' <span class="gov-arrow-down">↓</span>' : '');
+    td25.append('span').attr('class', 'gov-prel-val').html((p[2025] === 0 ? '—' : p[2025] + ' %') + arrow);
+    if (p[2025] > 0) {
+      td25.append('div').attr('class', 'gov-prel-bar')
+        .append('div').attr('class', 'gov-prel-fill' + (evol > 0 ? ' gov-prel-fill-changed' : ''))
+        .style('width', (p[2025] / 30 * 100) + '%');
+    }
+    // Comment column
+    const tdC = tr.append('td').attr('class', 'gov-change-cell');
+    if (p.changement) {
+      tdC.html(`<span class="gov-change-badge">Évolution</span> ${p.changement}`);
+    } else {
+      tdC.html('<span style="color:var(--ink-mute); font-style:italic;">Inchangé</span>');
+    }
+  });
+
+  // === Détail historique (année la plus récente disponible) ===
+  const detailWrap = container.append('div').attr('class', 'gov-detail-wrap');
   const detYears = [...new Set(DATA.detail.map(d => d.annee))].sort((a,b)=>a-b);
   const pcYrs = (DATA.percapita && DATA.percapita.tous_jeux && DATA.percapita.tous_jeux.years) || [];
   const govYear = Math.min(
     detYears.length ? Math.max(...detYears) : 2025,
     pcYrs.length ? Math.max(...pcYrs) : 2025
   );
+  detailWrap.append('h4').attr('class', 'gov-section-title').text(`Flux financiers · ${govYear}`);
 
+  const tableWrap = detailWrap.append('div').attr('class', 'gov-table-wrap');
+  const table = tableWrap.append('table').attr('class', 'gov-table');
+  const thead = table.append('thead');
+  const headerRow = thead.append('tr');
   headerRow.append('th').text('Canton');
-  headerRow.append('th').html('Prélèvement<br>du Conseil d\'État');
   headerRow.append('th').html(`Reçu en ${govYear}<br>(M CHF)`);
   headerRow.append('th').html('Ratio reçu /<br>dépensé').attr('title', 'Bénéfice reçu vs ventes brutes');
   headerRow.append('th').html(`Dépense par<br>habitant ${govYear}`);
-
   const tbody = table.append('tbody');
 
   cantons.forEach(c => {
-    const prelevement = b.prelevement_cantonal_pct[c];
     const rowY = DATA.detail.find(d => d.annee === govYear && d.poste === 'Répartition');
     const ventesY = DATA.detail.find(d => d.annee === govYear && d.libelle === 'Total');
     const recu = rowY ? (rowY.cantons[c] || 0) / 1e6 : 0;
@@ -1809,16 +1916,6 @@ function initGovernance() {
 
     const tr = tbody.append('tr');
     tr.append('td').html(`<strong>${CANTON_NAMES[c]}</strong> <span class="gov-code">${c}</span>`);
-
-    const prelCell = tr.append('td').attr('class', 'gov-prel');
-    prelCell.append('span').attr('class', 'gov-prel-val')
-      .text(prelevement === 0 ? '— aucun' : prelevement + ' %');
-    if (prelevement > 0) {
-      prelCell.append('div').attr('class', 'gov-prel-bar')
-        .append('div').attr('class', 'gov-prel-fill')
-        .style('width', (prelevement / 30 * 100) + '%');
-    }
-
     tr.append('td').attr('class', 'gov-num').text(CHF1.format(recu));
     tr.append('td').attr('class', 'gov-num').text(CHF1.format(ratio) + ' %');
     tr.append('td').attr('class', 'gov-num').text(CHF.format(depHab));
@@ -1826,8 +1923,9 @@ function initGovernance() {
 
   // Légende sous la table
   container.append('p').attr('class', 'note').style('margin-top', '20px')
-    .html(`<strong>Lecture :</strong> Le Conseil d'État de chaque canton peut prélever <em>jusqu'à 30 %</em> de sa part résiduelle pour la distribuer lui-même (selon les domaines couverts par la Loro). Les autres fonds passent par les organes de répartition (15 % pour le sport, 85 % pour les autres domaines). En 2024, Genève et le Valais n'ont rien prélevé, Vaud a pris 25 %.
-      <br><br><strong>Source :</strong> <em>REISO, "La Loterie Romande, source de financement clé"</em>, J. Sanchez, janvier 2026 ; CORJA (Convention romande sur les jeux d'argent).`);
+    .html(`<strong>Lecture :</strong> Plafond fédéral du prélèvement Conseil d'État : 30 % du bénéfice net cantonal. Le reste passe par les organes de répartition (15 % sport, 85 % autres domaines).
+    <br><br><strong>Sources 2024 :</strong> <em>REISO, "La Loterie Romande, source de financement clé"</em>, J. Sanchez, janvier 2026.
+    <br><strong>Changements 2025 :</strong> Jura — recueil officiel cantonal (FO 2025 N° 23, mai 2025). Fribourg — La Liberté (7 oct 2024) + Frapp (9 juin 2024). Neuchâtel — communiqué République et Canton de Neuchâtel (mai 2026, FAC-LoRo).`);
 }
 
 /* ============================================================
@@ -3839,6 +3937,10 @@ function initBrbExplorer() {
     const rows = filtered.slice(0, SHOWN).map(e => {
       const widthPct = Math.max(1, (e.montant_CHF / max) * 100);
       const cColor = brbCantonColor(e.canton) || '#888';
+      // Cross-canton aggregate badge: this beneficiary appears in multiple cantons
+      const aggBadge = (e.agg_cantons && e.agg_cantons.length >= 2)
+        ? `<span class="brb-agg-badge" title="Aussi présent dans : ${e.agg_cantons.filter(c => c !== e.canton).join(', ')}. Cumul ${e.agg_count} entrées = ${(e.agg_total_CHF/1000).toFixed(0)}'000 CHF">+${e.agg_cantons.length - 1}↗</span>`
+        : '';
       return `
         <div class="brb-row">
           <div class="brb-row-bar" style="background: ${cColor}; width: ${widthPct}%;"></div>
@@ -3846,11 +3948,13 @@ function initBrbExplorer() {
             <div class="brb-row-main">
               <span class="brb-canton-tag" style="background:${cColor}">${e.canton}</span>
               <span class="brb-row-name">${e.nom}</span>
+              ${aggBadge}
               ${e.ville ? `<span class="brb-row-ville">· ${e.ville}</span>` : ''}
             </div>
             <div class="brb-row-meta">
               <span class="brb-row-secteur">${e.secteur}</span>
               ${e.description ? `<span class="brb-row-desc">— ${e.description}</span>` : ''}
+              ${e.agg_cantons && e.agg_cantons.length >= 2 ? `<span class="brb-row-agg">Cumul tous cantons : <strong>${e.agg_total_CHF.toLocaleString('fr-CH').replace(/,/g, "'")} CHF</strong> (${e.agg_cantons.length} cantons)</span>` : ''}
             </div>
           </div>
           <div class="brb-row-montant">${e.montant_CHF.toLocaleString('fr-CH').replace(/,/g, "'")} <span class="brb-chf">CHF</span></div>
