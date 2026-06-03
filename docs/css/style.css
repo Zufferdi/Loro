@@ -29,8 +29,13 @@
   --sans:  'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --mono:  'JetBrains Mono', 'SF Mono', Consolas, monospace;
 
-  --col-max: 720px;
-  --col-wide: 1120px;
+  /* Largeur des colonnes
+     - col-max (760px) : paragraphes narratifs, lisibilité optimale ~70 caractères/ligne
+     - col-wide (1320px) : viz standards
+     - col-xl (1500px) : viz qui ont besoin d'espace (BRB, Sankey, timeline éditoriale) */
+  --col-max: 760px;
+  --col-wide: 1320px;
+  --col-xl: 1500px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -108,6 +113,7 @@ a:hover { color: var(--c-loro-dark); }
 /* ============ Layout columns ============ */
 .col { max-width: var(--col-max); margin: 0 auto; padding: 0 24px; }
 .col-wide { max-width: var(--col-wide); margin: 0 auto; padding: 0 24px; }
+.col-xl { max-width: var(--col-xl); margin: 0 auto; padding: 0 24px; }
 
 /* ============ Hero ============ */
 .hero {
