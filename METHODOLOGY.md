@@ -771,3 +771,373 @@ Création de `data/beneficiaires_candidats_2013_2025.json` : **15 structures rec
 - viz-governance : 6 lignes comparées, 3 badges ÉVOLUTION (FR, NE, JU)
 - viz-mix-canton : 6 cellules en 3×2, axe 2013-2025 effectif
 - viz-tilegram : 2025 atteint au slider, palette YlOrRd visible
+
+---
+
+## v13.7 (juin 2026) — Cohérence narrative, transparence parser, viz inter-cantons
+
+Trois petites passes complémentaires à v13.6, traitant les chantiers **E + F + G + D** identifiés dans la rétro post-cleanup.
+
+### Passe 1 — Cohérence des chiffres (E)
+
+Le cleanup parser de v13.6 a fait passer le BRB de 5'172 à **5'377 entrées** (et de 211 M à **207 M CHF**), mais quatre endroits du récit affichaient encore les anciens chiffres. Corrigés :
+
+- `docs/index.html:956` — titre de la viz Explorer : « 5'172 bénéficiaires » → « 5'377 bénéficiaires »
+- `docs/index.html:962` — footer Explorer : « 5'172 attributions » → « 5'377 attributions, 207 M CHF total »
+- `docs/index.html:984` — titre Longtail : « Distribution des 5'172 » → « Distribution des 5'377 »
+- `docs/index.html:1099` — glossaire : entrée « 5 172 entrées BRB 2025 » → « 5 377 entrées BRB 2025 · 207 M CHF »
+
+### Passe 2 — Note d'écart 207 M ≠ 252 M (F)
+
+Le BRB totalise 207 M CHF redistribués alors que le communiqué Loro 2025 annonce un bénéfice de 252 M. L'écart de ~45 M est légitime mais peut prêter à confusion — il vient du fait que le BRB ne capture pas tout. Nouvelle entrée de glossaire qui l'explique en trois points :
+
+- **(a)** versements aux sous-fonds cantonaux (FAC, fonds sport, fonds dépendance) qui sont redistribués ensuite localement, hors BRB
+- **(b)** attributions effectuées après clôture du document (versions tardives non encore publiées)
+- **(c)** soutiens sportifs liés à des manifestations (Tour de Romandie, FFG, etc.) qui passent par des canaux différents du BRB
+
+### Passe 3 — Encart « Note qualité » sur la viz Explorer (G)
+
+Au-dessus du `#viz-explorer`, une nouvelle `.viz-quality-note` (style discret, fond `--bg-soft`, accent `--c-accent`) informe l'utilisateur du cleanup v13.6 : 186 entrées splittées + 1 section parasite de 10,5 M CHF retirée. Lien direct vers `METHODOLOGY.html#v13-6`.
+
+### Passe 4 — Nouvelle viz « Top 20 inter-cantons » (D)
+
+Précédemment, l'agrégation des 290 entrées inter-cantonales était cachée dans des tooltips de l'Explorer (badge `+N↗` cliquable). Cette information méritait une viz dédiée. Insertion entre `#viz-explorer` et `#viz-longtail` :
+
+**Fonction** `initBrbMulticantons()` dans `app.js` (≈140 LOC) :
+
+- Re-agrège les 5'377 entrées par nom normalisé (même regex que `clean_brb.py` et l'Explorer pour garantir la cohérence des clés)
+- Filtre les bénéficiaires actifs dans ≥ 2 cantons (résultat : **97 entités**)
+- Top 20 par cumul, rendu en bar horizontal empilé
+- Chaque barre = un bénéficiaire ; largeur ∝ cumul (max = 100 %)
+- Segments empilés colorés par canton, ordre canonique VD-GE-VS-FR-NE-JU-R
+- Label canton inline si segment ≥ 18 % (sinon visible au survol)
+- Tooltip par segment avec montant + part en % du cumul du bénéficiaire
+
+**Wiring lazy loader** : `'viz-multicantons'` ajouté aux 3 containers existants (`viz-explorer`, `viz-longtail`, `viz-geomap`) qui partagent le même chargement de `brb2025_full.json` (1,7 Mo). Aucun fetch supplémentaire.
+
+**Cleanup affichage** : `cleanName` strippe `Assoc.` → `Association`, `Fond.` → `Fondation`, `Sté` → `Société`, et les trailing dashes/whitespace causés par les troncatures du parser PDF (« Tour de Romandie - » → « Tour de Romandie », « Centre de Contact Suisses- » → « Centre de Contact Suisses »).
+
+**Top 5 résultats** (post-cleanup, BRB 2025) :
+
+| # | Bénéficiaire | Cumul | Cantons |
+|---|---|---:|---|
+| 01 | Fondation pour le développement [tronqué] | 1,66 M | GE (94 %) + VS (6 %) |
+| 02 | Association FFG Lausanne 2025 | 1,37 M | VD (93 %) + R (7 %) |
+| 03 | Orchestre de Chambre | 1,20 M | GE (42 %) + FR (36 %) + VD (22 %) |
+| 04 | Fondation EPFL Plus | 1,02 M | VD (98 %) + VS (2 %) |
+| 05 | Tour de Romandie | 965 k | R (99,5 %) + FR (0,5 %) |
+
+### Validation
+
+- `node --check docs/js/app.js` : OK
+- Test isolé Playwright (`_test_multi.html`, supprimé après validation) sur le sandbox sans CDN d3 : 20 lignes rendues, 7 entrées de légende, barres correctement proportionnées de 100 % (rang 01) à 12 % (rang 20)
+- 0 référence orphelin à « 5'172 » dans `docs/`
+- Capture d'écran validée : noms lisibles, codes canton inline, totaux alignés à droite, légende compacte au-dessus
+
+### Limites connues (héritées du parser BRB, hors scope v13.7)
+
+- « Fondation pour le développement », « Association pour la sauvegarde », « Association pour la promotion » : noms tronqués par le parseur PDF (perte du `de l'innovation`, `du patrimoine bâti`, etc.). Reste à corriger dans une éventuelle Pass C (re-parseur propre).
+- Secteurs parfois incorrects (Orchestre de Chambre classé en `Sport` alors que culturel) : héritage des sections du PDF parfois mal détectées.
+- L'agrégation par nom normalisé reste sensible aux orthographes légèrement différentes (`Association` vs `Assoc.`) — la regex est robuste mais pas infaillible.
+
+Reste à attaquer dans les prochaines passes : **B** (audit BRB élargi : montants nuls, doublons exacts), **A** (séries historiques 2013-2024 des 15 candidats), **C** (re-parseur propre du BRB).
+
+
+---
+
+## v13.7-audit (juin 2026) — Audit BRB élargi (Pass 3 — B)
+
+Suite à v13.7 (cohérence narrative + viz multi-cantons), audit systématique des 5'377 entrées pour détecter les patterns d'erreur résiduels du parser. Script `scripts/audit_brb.py` qui diagnostique 11 catégories sans modification, puis `scripts/clean_brb_v13_7.py` qui applique les corrections sûres.
+
+### Diagnostic initial
+
+| Catégorie | Détectés | Action |
+|---|---:|---|
+| Entrées sans canton | 0 | — (clean) |
+| Montants nuls / négatifs | 0 | — (clean) |
+| Montants > 5 M CHF (rescapés de v13.6) | 0 | — (clean) |
+| Noms vides / < 3 caractères | 0 | — (clean) |
+| Caractères encodage cassé | 0 | — (clean) |
+| **Noms tronqués** (trailing dash / préposition orpheline) | **209** | Strip artefact (cleanup [A]) |
+| **Descriptions polluées** (`XX'XXX.-` du bénéficiaire suivant fusionné) | **228** | Strip post-amount (cleanup [B]) |
+| **Villes contenant des descriptions** (« Matériel athlétisme » comme ville) | **16** | Nullify ville, push to description (cleanup [C]) |
+| **Doublons exacts 100% identiques** (nom+ville+canton+montant+desc+organe identiques) | **13** | Dédup, garde le 1er (cleanup [D]) |
+| Doublons « legit » (même montant/canton mais descriptions distinctes = attributions multiples) | 54 | **Préservés** — ce sont 2 dons distincts |
+| Doublons normalisés (orthographes équivalentes : « Assoc. Lausanne Marathon » vs « Lausanne Marathon ») | 1 | Merge si ville+canton+montant+desc identiques (cleanup [E]) |
+| Ville présente mais lat/lng absent | 967 | Hors scope (limites géocodage) |
+
+### Cleanup appliqué
+
+```
+[A] 237 noms nettoyés (regex TRAILING_DASH + DANGLING_PREP, longueur post-strip > 8 chars)
+[B] 228 descriptions nettoyées (regex AMOUNT_IN_DESC = `\d{1,3}['']?\d{3}\.-\s.+$`)
+[C] 22 villes nullifiées (patterns : verbes d'action, années seules, mots génériques)
+[D] 18 doublons 100% identiques supprimés
+[E] 1 doublon normalisé fusionné
+
+Total : 5'377 → 5'358 entrées (-19), 206,971,511 → 206,947,411 CHF (-24,100 CHF, soit 0,012%)
+```
+
+Backup automatique de l'original dans `docs/data/brb2025_full.backup_v13_7.json` avant écriture.
+
+### Effet de bord détecté et corrigé : faux merges en agrégation multi-cantons
+
+Le cleanup [A] (strip des prépositions orphelines) avait pour effet secondaire d'augmenter artificiellement le nombre de bénéficiaires « inter-cantonaux » détectés par la viz `#viz-multicantons` (97 → 106). En réalité, plusieurs de ces nouveaux clusters étaient des **faux positifs** où des noms tronqués différents normalisaient vers la même clé.
+
+Exemple typique :
+- `"Assoc. pour la Conservation"` (VD, 90 k CHF) — probablement « Assoc. pour la Conservation du Patrimoine [vaudois] »
+- `"Fond. pour la conservation"` (GE, 3,3 M CHF) — probablement « Fond. pour la conservation [de l'art ancien] »
+- Après norm : tous deux → `"pour la conservation"` → faux merge attribuant 3,39 M à une seule entité fictive
+
+**Solution** : critère de confiance ajouté dans `initBrbMulticantons()` JavaScript :
+
+```javascript
+const STOPWORDS_FR = new Set([
+  'le','la','les','l','un','une','des','du','de','d',
+  'a','au','aux','et','ou','mais','donc','car','ni',
+  'pour','sur','sous','avec','sans','dans','par','vers','en',...
+]);
+function specificTokens(normalized) {
+  return normalized.split(/\s+/).filter(w => w.length >= 2 && !STOPWORDS_FR.has(w));
+}
+function hasAcronym(originalName) {
+  return /\b[A-Z]{3,}\b/.test(originalName);
+}
+// Un cluster est gardé si :
+//   - >= 2 tokens spécifiques dans le nom normalisé (ex. "tour" + "romandie")
+//   - OU au moins un acronyme >= 3 lettres en majuscules dans un des noms originaux (ex. "CORODIS", "FFG", "EPFL")
+```
+
+**Résultat** : 106 clusters bruts → 82 retenus (haute confiance) + 24 écartés (ambigus).
+
+| Avant filtre | Après filtre |
+|---|---|
+| #1 « pour la conservation » 3,39 M ❌ | #1 Association FFG Lausanne 2025 — 1,37 M ✓ |
+| #2 « pour le développement » 1,66 M ❌ | #2 Orchestre de Chambre — 1,21 M ✓ |
+| ... | #6 CORODIS — 738 k ✓ (préservé via acronyme) |
+
+Les 24 clusters écartés (« pour la sauvegarde », « pour la promotion », « romande », « suisse »…) restent visibles individuellement dans la viz Explorer comme entités séparées — par prudence, on les considère comme distincts plutôt que d'agréger à tort.
+
+### Updates HTML
+
+- Acte IX viz-explorer titre : 5'377 → **5'358 bénéficiaires** · 207 M CHF
+- Acte IX viz-longtail titre : Distribution des 5'377 → **5'358 montants**
+- Acte IX viz-multicantons : « Une centaine » → **« 80 bénéficiaires »**, footer 97/106 → **82 (haute confiance)** + explication des 24 écartés
+- Glossaire : entrée « 5 377 entrées BRB » → **« 5 358 entrées BRB · 207 M CHF »**
+- Note qualité viz Explorer enrichie : « v13.6 (186 fusions) » → **« v13.6 + v13.7 : 186 fusions, 1 section parasite, 237 noms, 228 descriptions, 19 doublons »**
+
+### Validation
+
+- `node --check docs/js/app.js` : OK
+- Test isolé Playwright : 20 lignes rendues, ordre changé vs v13.6 (#1 FFG Lausanne au lieu de « pour le développement »)
+- Re-audit : truncated_name 209→0, desc_in_ville 16→0, parser-bug duplicates 13→0
+- Doublons résiduels (59 groupes / 129 entrées) : tous avec descriptions distinctes = attributions multiples légitimes
+- 0 référence orpheline à « 5'377 » dans le HTML
+
+### Limites restantes (Pass 5 — C : refactor parser)
+
+- 945 entrées sans lat/lng — limite de la couverture géocoding (27 % des entrées avec ville)
+- Quelques noms restent ambigus après strip : "Compagnie de" (→ "Compagnie", 9 chars) — entrées probablement issues du parser PDF avec colonne tronquée
+- Le critère « acronyme » peut produire de faux merges pour les acronymes très génériques (ex. "ESPAS", "EVAM") — mais ces cas n'apparaissent pas dans les top 20
+
+Reste à attaquer : **A** (séries 2013-2024 des 15 candidats — gros morceau), **C** (re-parseur propre du BRB).
+
+
+---
+
+## v13.7-historical (juin 2026) — Séries historiques 2023-2025 (Pass 4 — A)
+
+Suite à v13.7-audit, ajout d'une vue temporelle pour 15 bénéficiaires structurels du BRB Loterie Romande. Objectif initial : étendre `beneficiaires.json` (120 entrées dominées à 57 % par le Tour de Romandie) vers un panel équilibré culture / social / recherche / patrimoine couvrant 2013-2025. Cette passe livre une **première itération sur 3 années (2023, 2024, 2025)**, l'extension aux 9 années antérieures restant un chantier ouvert documenté ci-dessous.
+
+### Les 15 bénéficiaires sélectionnés
+
+Critères (cohérents avec `beneficiaires_candidats_2013_2025.json`) : structures pérennes (vs événements one-shot), apparaissant dans le BRB 2025 avec ≥ 270 k CHF cumulés, secteurs d'utilité publique centraux. Liste finale :
+
+- **Culture / muséal** (8) : Fond. de l'Hermitage (VD), Cinémathèque suisse (VD), Fond. Plateforme 10 (VD), Fond. du Festival de la Cité (VD), Fond. Visions du Réel (VD/Nyon), Fond. Arc en Scène / TPR (NE), Fond. Pierre Gianadda (VS), Fond. Equilibre et Nuithonie (FR)
+- **Festivals** (2) : Festival International du Film de Fribourg (FIFF), CORODIS (intercantonal danse)
+- **Recherche médicale** (2) : Fond. CHUV (VD), Fond. ISREC cancer (VD)
+- **Formation / sciences** (1) : Fond. EPFL Plus (VD)
+- **Action sociale** (1) : CSP Centre Social Protestant Vaud
+- **Patrimoine** (1) : Fond. pour la conservation des biens culturels (Genève)
+
+### Données extraites
+
+Source : PDFs officiels `https://ra.loro.ch/documents/BRB{year}.pdf` (Loterie Romande).
+M�thode : `web_fetch` avec `text_content_token_limit=120000` puis parsing manuel du texte extrait du PDF, repérage des candidats par patterns de noms (« Fond. de l'Hermitage », « Fond. CHUV », etc.) et agrégation des montants attribués dans toutes les sections cantonales où ils apparaissent.
+
+**Couverture : 36 points de données sur 45 (80 %)** :
+
+| Bénéficiaire | 2023 | 2024 | 2025 |
+|---|---:|---:|---:|
+| Fond. de l'Hermitage | 400 k | 300 k | **4'000 k** |
+| Fond. pour la conservation (GE) | — | — | 3'300 k |
+| Fond. CHUV | 400 k | 68 k | 1'413 k |
+| CSP Vaud | 250 k | — | 1'376 k |
+| Fond. Arc en Scène / TPR | — | 475 k | 1'345 k |
+| Fond. Equilibre et Nuithonie | 900 k | 900 k | 1'100 k |
+| Fond. ISREC | — | — | 1'100 k |
+| Fond. EPFL Plus | 120 k | 95 k | 1'020 k |
+| Cinémathèque suisse | 300 k | 450 k | 830 k |
+| CORODIS (partiel) | — | 35 k | 738 k |
+| FIFF Fribourg | — | 580 k | 660 k |
+| Fond. Plateforme 10 | 550 k | 600 k | 600 k |
+| Fond. du Festival de la Cité | 320 k | 350 k | 394 k |
+| Fond. Pierre Gianadda | — | 350 k | 350 k |
+| Fond. Visions du Réel | 240 k | 245 k | 270 k |
+
+Les cellules « — » signalent que la section cantonale correspondante n'a pas été extraite lors de cette passe — pas que l'attribution n'existe pas. Typiquement, les sections Genève, Neuchâtel et Valais arrivent en fin de PDF (après ~80 pages de Vaud + Fribourg) et sont parfois tronquées par la limite de tokens de `web_fetch`.
+
+### Observations narratives
+
+- **2025 est anomalement haute pour plusieurs piliers** : Hermitage × 10 (300 k → 4 M), EPFL Plus × 10 (95 k → 1 M), CSP Vaud × 5 (250 k → 1,4 M), CHUV × 20 (68 k → 1,4 M). Ces sauts probablement liés à des **financements de projets exceptionnels** (rénovation Hermitage, expansion EPFL Plus, projets immobiliers CSP) plutôt qu'à une augmentation structurelle. À documenter via les rapports d'activité des fondations.
+- **Bénéficiaires stables** (variation < 20 %) : Equilibre et Nuithonie (900 k → 1,1 M), Plateforme 10 (550 → 600 → 600 k), Visions du Réel (240 → 245 → 270 k), Gianadda (350 → 350 k). Ce sont les piliers culturels avec budget récurrent.
+- **CORODIS** semble exploser entre 2024 et 2025 mais c'est un artefact d'extraction : la valeur 2024 (35 k) ne couvre que la part Fribourg. CORODIS est intercantonal (organe Romand + parts cantonales) ; les valeurs complètes nécessiteraient de sommer toutes les sections.
+
+### Implémentation technique
+
+- **Données** : `docs/data/beneficiaires_series_2023_2025.json` (4,7 kB)
+- **Visualisation** : nouveau module `docs/js/historical_series.js` (≈ 100 LOC), grille « small multiples » avec une carte par bénéficiaire, barres en échelle relative au pic local, valeurs annotées
+- **HTML** : nouvelle section entre `#viz-multicantons` et `#viz-longtail` (chapter-intro + viz-card)
+- **CSS** : nouvelles classes `.hist-series-grid`, `.hist-series-card`, `.hist-series-chart`, `.hist-series-bar`, etc.
+- **Lazy loading** : IntersectionObserver auto-trigger (~200 px avant scroll)
+- **Données manquantes** : barres rayées + texte « — » + tooltip explicatif
+
+### Limites assumées
+
+Cette passe est intentionnellement partielle. **Extension 2013-2022 reste un chantier ouvert** car :
+
+1. Chaque PDF BRB consomme ~120 k tokens via `web_fetch` (texte extrait du PDF de ~100 pages)
+2. Multiplier par 9 ans (2014-2022) = ~1 M tokens juste pour l'extraction, hors raisonnement et code
+3. Les sections cantonales sont parfois tronquées en fin de PDF, surtout Genève
+4. L'extraction étant manuelle (regex sur patterns de noms), elle ne capture pas les variations orthographiques inattendues
+
+Suites possibles :
+- **Pass 5 — C (refactor parser)** : un parseur propre du PDF permettrait l'extraction structurée par bénéficiaire × année × canton, sans dépendre de `web_fetch`
+- **Ciblage** : ne traiter qu'une année benchmark (2018 ou 2015) pour avoir 4 points de données et identifier une tendance lente vs des sauts soudains
+- **Compléter 2023** : refaire un fetch ciblé sur la fin du PDF BRB 2023 pour récupérer GE, NE, VS
+
+### Updates HTML
+
+- Nouvelle section entre `#viz-multicantons` et `#viz-longtail` : chapter-intro « 3 ans de soutien pour 15 piliers culturels et sociaux » + viz-card avec footer documentant la méthodologie et les limites
+- Footer renvoie vers `ra.loro.ch/editions-precedentes.html` (source officielle) et vers cette section de `METHODOLOGY.html#v13-7-historical`
+- Script `docs/js/historical_series.js` chargé après `app.js`
+
+### Validation
+
+- Test isolé Playwright sur `_test_hist.html` : 15 cartes rendues, tri par 2025 desc, valeurs et labels conformes au JSON
+- `node --check docs/js/historical_series.js` : OK
+- Pas de dépendance externe (pas de d3, pas de scrollama)
+
+
+---
+
+## v13.8 (juin 2026) — Pipeline unifié + idempotent (Pass 5 — C)
+
+Refactor des 3 scripts de nettoyage éparpillés (`clean_brb.py` v13.6, `clean_brb_v13_7.py`, `audit_brb.py`) en un **unique pipeline ré-exécutable**, prêt pour l'arrivée du BRB 2026. Cette passe n'altère pas la narration ni les visualisations — c'est un travail d'outillage pour garantir la reproductibilité.
+
+### Motivation
+
+Au fil des passes v13.6 et v13.7, le nettoyage de `brb2025_full.json` s'est fait par patches successifs : un script découvrait une catégorie de bugs, on l'écrivait, on tournait, on passait à la suivante. Résultat : 3 scripts dans `scripts/`, chacun avec son propre backup, sa propre logique, son propre rapport, et **aucun n'est idempotent** (relancer v13.7 sur des données déjà nettoyées rejoue des transformations partielles). Pour BRB 2026, ce serait reconduire toute la fragilité.
+
+L'objectif de cette passe : **un seul script, idempotent, auditable, documenté**.
+
+### Architecture de `scripts/pipeline_brb.py`
+
+7 stages de nettoyage, chacun étant une fonction pure `entries → (entries, report)` :
+
+1. **`stage_split_glued`** (v13.6 A) — Détecte le pattern `nom1 1'200.- nom2` (deux entrées fusionnées par le parser), split en 2 entries propres
+2. **`stage_drop_section_totals`** (v13.6 B) — Supprime les entrées qui sont des agrégats de section (« Fonds mis à disposition du Conseil d'État »…)
+3. **`stage_clean_nom`** (v13.7 A) — Strip trailing dashes + prépositions pendantes (`" - "`, `" et"`, `" de la"`…)
+4. **`stage_clean_desc`** (v13.7 B) — Strip embedded amounts in description (`XX'XXX.-` qui appartient à l'entrée suivante)
+5. **`stage_clean_ville`** (v13.7 C) — Nullify les villes qui contiennent du texte de description (activité, manifestation, équipement…)
+6. **`stage_dedup_exact`** (v13.7 D) — Supprime les doublons 100 % identiques (parser duplications)
+7. **`stage_merge_normalized`** (v13.7 E) — Fusionne les variantes orthographiques (« Assoc. X » vs « X » avec même ville/canton/montant/desc)
+
+Chacun retourne `(nouvelle_liste, dict_report)`. Le driver enchaîne, log les changements, et fait un audit pre/post.
+
+### Audit intégré
+
+10 catégories diagnostiques (toutes doivent être à 0 pour des données propres) + 1 catégorie informationnelle :
+
+| Catégorie | Critère |
+|---|---|
+| `no_canton` | Entrées sans canton attribué |
+| `zero_amount` | Montant CHF 0 ou null |
+| `negative_amount` | Montant CHF négatif |
+| `huge_amount_5M+` | Montant > 5 M (vérifier que ce ne sont pas des restes de bug parser) |
+| `short_name` | Nom vide ou < 3 caractères |
+| `truncated_name` | Trailing dash ou préposition pendante (`de`, `du`, `pour`…) |
+| `desc_in_ville` | Ville contenant des mots-clés de description (activité, manifestation…) |
+| `exact_duplicates_remaining` | Doublons identiques restants |
+| `desc_with_embedded_amount` | Description contenant un montant inline |
+| `encoding_corrupt` | Caractères mal encodés (`Ã©`, `Â`, etc.) |
+| `ville_with_acronym_INFO` | **INFO seulement** — Villes contenant un acronyme entre parens (cas de scission nom/ville par le parser column-based ; ex. nom=« Assoc. pour la Musique », ville=« Improvisée de Lausanne (AMIL) ») |
+
+La catégorie `ville_with_acronym_INFO` détecte 6 cas pré-existants où le parser v4 (column-based, pdfplumber) a éclaté un nom multi-ligne entre les colonnes nom et ville. Ces cas nécessiteraient un re-parsing du PDF pour être corrigés proprement — laissé en TODO car non bloquant pour les visualisations.
+
+### Propriétés garanties
+
+- **Idempotent** : relancer le pipeline sur des données déjà nettoyées produit 0 changements et 0 issues critiques d'audit
+- **Safe** : backup automatique avant écriture (`brb2025_full.backup_v13.8.json`)
+- **Auditable** : pre/post audit, rapport stage-par-stage avec compteurs, signature `pipeline_v13.8` dans `_meta`
+- **Self-contained** : aucune dépendance externe (stdlib uniquement)
+- **CLI** : `python scripts/pipeline_brb.py --help`
+
+### Validation
+
+Tests réalisés sur `docs/data/brb2025_full.json` :
+
+```
+RUN 1 (sur données post-v13.7) :
+  clean_nom : 4 ops (4 noms avec " et" trailing créés par v13.7 et non détectés par son audit)
+  Toutes autres stages : 0 ops
+  Audit pre/post : toutes catégories à 0 (sauf INFO ville_with_acronym=6)
+
+RUN 2 (sur données post-v13.8) :
+  Toutes stages : 0 ops ✓
+  Audit : inchangé ✓
+  → Vraie idempotence confirmée
+```
+
+Les 4 noms cleanés par RUN 1 :
+- `"Amis de la Musique d'Aigle et"` → `"Amis de la Musique d'Aigle"`
+- `"EJMA - École de Jazz et"` → `"EJMA - École de Jazz"`
+- `"Joyfully Waiting 19 & 20 et Cercle de la Librairie et"` → `"Joyfully Waiting 19 & 20 et Cercle de la Librairie"`
+- `"Éditions du goudron et"` → `"Éditions du goudron"`
+
+Ces 4 entrées avaient été créées par v13.7 elle-même (stripping d'un suffixe `du Chablais` qui laissait `" et"` orphelin, non rattrapé par l'audit v13.7 dont le pattern de détection n'incluait pas `et`). v13.8 corrige le pattern d'audit pour la cohérence cleanup ↔ audit.
+
+### Workflow pour BRB 2026
+
+Quand le BRB 2026 sera publié (typiquement juin 2027) :
+
+```bash
+# 1. Récupérer le PDF officiel et le parser via le parser v4 existant
+#    (ce parser column-based reste utilisé — pas dans le scope de Pass 5)
+python scripts/parse_pdf_v4.py --input data/raw/BRB2026.pdf \
+                               --output docs/data/brb2026_full.json
+
+# 2. Nettoyer avec le pipeline v13.8 (ou supérieur)
+python scripts/pipeline_brb.py --input docs/data/brb2026_full.json
+
+# 3. Le pipeline log les stages, fait un audit pre/post, écrit le résultat
+#    avec backup automatique. Idempotent.
+```
+
+### Scripts dépréciés
+
+Marqués comme `DEPRECATED` mais conservés dans `scripts/` pour référence historique :
+- `clean_brb.py` (v13.6) — split glued + drop section totals (intégré dans pipeline_brb.py stages 1-2)
+- `clean_brb_v13_7.py` — nom/desc/ville fixes + dedup (intégré dans stages 3-7)
+- `audit_brb.py` — diagnostic standalone (intégré comme `audit()` dans pipeline_brb.py)
+
+Pour tout nouveau travail, utiliser `pipeline_brb.py`.
+
+### Limites connues — chantier Pass 6 potentiel
+
+Le pipeline v13.8 nettoie les artefacts SORTIS du parser v4, mais ne corrige pas le parser lui-même. 6 entrées ont une ville polluée par la suite du nom (signalées par `ville_with_acronym_INFO`) — il faudrait un parser text-based qui regroupe les lignes multi-name avant attribution aux colonnes pour éliminer ces cas.
+
+Pour BRB 2026, deux pistes :
+1. **Quick win** : garder le parser v4 + pipeline v13.8 (couvre 99,9 % des cas)
+2. **Refactor profond** : écrire un parser text-based (parsing du texte plat extrait via `pdfplumber.extract_text()` ou `web_fetch` + parsing de la séquence linéaire), ce qui éliminerait les bugs de colonnes
+
