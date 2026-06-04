@@ -1363,6 +1363,65 @@
 </section>
 
 <!-- ============================================================
+     CROSS-REF 26 TOP BÉNÉFICIAIRES 2024 vs 2025 (v13.12)
+     ============================================================ -->
+<section class="standalone">
+  <div class="col-xl">
+    <div class="viz-card">
+      <h3 class="viz-title">26 bénéficiaires marquants&nbsp;: leur trajectoire 2024&nbsp;→&nbsp;2025</h3>
+      <p class="viz-subtitle">
+        Filtre par direction. Les <strong>one-shots 2024</strong> (montants importants en 2024
+        sans suite en 2025) révèlent les grands projets ponctuels qui faussent les
+        comparaisons annuelles&nbsp;: construction immobilière à Genève, fonds
+        catastrophes naturelles VS, EMS d'attente VD…
+      </p>
+      <div id="viz-cross-2024-2025" class="viz"></div>
+      <div class="viz-footer">
+        <span>Source&nbsp;: top 26 bénéficiaires identifiés dans le PDF BRB 2024 (extraction partielle)
+        croisés avec le BRB 2025 cleané. Matching par nom normalisé + overrides manuels pour
+        les noms ayant changé d'orthographe entre éditions.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRAJECTOIRES 2023-2024-2025 (v13.13)
+     ============================================================ -->
+<section class="chapter-intro">
+  <h2 style="font-size: 36px; line-height: 1.2;">
+    Trois années, <em>une seule courbe</em>&nbsp;par bénéficiaire.
+  </h2>
+  <p class="dek">
+    Voilà la lecture la plus utile pour repérer les patterns. <strong>35 bénéficiaires</strong>
+    pour qui on a au moins deux années de données (8 avec les 3 années complètes).
+    Les sparklines révèlent en un coup d'œil les vraies tendances vs les coups d'éclat
+    ponctuels.
+  </p>
+</section>
+
+<section class="standalone">
+  <div class="col-xl">
+    <div class="viz-card">
+      <h3 class="viz-title">Trajectoires 2023 → 2024 → 2025</h3>
+      <p class="viz-subtitle">
+        Chaque ligne&nbsp;: un bénéficiaire avec ses 3 montants annuels et un sparkline.
+        Liseré gauche coloré&nbsp;: orange pour les one-shots 2024 (effacés en 2025),
+        vert pour les hausses ou one-shots 2025, rouge pour les baisses, gris pour stables.
+        Filtre par catégorie.
+      </p>
+      <div id="viz-trajectories" class="viz"></div>
+      <div class="viz-footer">
+        <span>Sources&nbsp;: Pass 4 (extraction manuelle BRB 2023+2024+2025 pour 15 candidats stratégiques),
+        Pass 12B (cross-ref 26 top 2024 avec 2025), fusion par nom normalisé.
+        Données 2023 manquantes pour la majorité (extraction partielle&nbsp;; à compléter en v13.14
+        avec un parsing intégral du BRB 2023). Voir <a href="METHODOLOGY.html#v13-13" target="_blank" rel="noopener">METHODOLOGY v13.13</a>.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
      LE VOYAGE D'UN BILLET (récit incarné, angle D)
      ============================================================ -->
 <section class="chapter-intro act-dark">
@@ -1482,6 +1541,8 @@
 <script src="js/social.js"></script>
 <script src="js/aggregations.js"></script>
 <script src="js/compare_2024_2025.js"></script>
+<script src="js/cross_2024_2025.js"></script>
+<script src="js/trajectories.js"></script>
 
 </body>
 </html>
