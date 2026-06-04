@@ -31,22 +31,27 @@
 
     container.innerHTML = '<div style="padding:32px;text-align:center;color:var(--ink-mute);font-style:italic">Chargement…</div>';
 
-    // Précharge 2024 + 2025 pour calcul de delta
-    Promise.all([
-      fetch('data/sports_classification_2024.json').then(r => r.json()).catch(() => null),
-      fetch('data/sports_classification.json').then(r => r.json()).catch(() => null),
-    ]).then(([d2024, d2025]) => {
-      const data = (year === '2024') ? d2024 : d2025;
-      const other = (year === '2024') ? d2025 : d2024;
+    // Précharge toutes les années pour calcul de delta
+    const years = window.YEARS || ['2024', '2025'];
+    Promise.all(years.map(y =>
+      fetch('data/sports_classification' + window.yearSuffix(y) + '.json')
+        .then(r => r.json()).catch(() => null)
+    )).then(allData => {
+      const yearIdx = years.indexOf(year);
+      const data = allData[yearIdx];
+      // "other" = année précédente si dispo, sinon suivante (pour deltas)
+      const otherIdx = (yearIdx > 0) ? yearIdx - 1 : yearIdx + 1;
+      const other = (otherIdx >= 0 && otherIdx < allData.length) ? allData[otherIdx] : null;
+      const otherYear = (otherIdx >= 0 && otherIdx < years.length) ? years[otherIdx] : null;
       if (!data) throw new Error('no data for ' + year);
-      doRender(container, data, year, other);
+      doRender(container, data, year, other, otherYear);
     }).catch(err => {
       console.error('sports.js fetch failed', err);
       container.innerHTML = '<div style="padding:24px;color:var(--c-loro)">Erreur de chargement.</div>';
     });
   }
 
-  function doRender(container, data, year, other) {
+  function doRender(container, data, year, other, otherYear) {
     const sports = data.sports || [];
     const meta = data._meta || {};
     const maxAmount = Math.max(...sports.map(s => s.total_chf), 1);
@@ -103,7 +108,7 @@
                 const d = fmtDelta(delta);
                 if (!d) return '';
                 const cls = delta > 0 ? 'sports-delta-up' : 'sports-delta-down';
-                return '<span class="sports-delta ' + cls + '" title="vs ' + (year==='2024'?'2025':'2024') + ': ' + fmtCHF(o.total_chf) + '">' + d + '</span>';
+                return '<span class="sports-delta ' + cls + '" title="vs ' + (otherYear || '?') + ': ' + fmtCHF(o.total_chf) + '">' + d + '</span>';
               })()}
           </div>
         </div>

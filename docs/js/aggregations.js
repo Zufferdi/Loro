@@ -62,30 +62,10 @@
   }
 
   // ============= Year toggle helpers =============
-  const YEAR_TOTALS = { '2024': 155198729, '2025': 207000000 };
-  
-  function addYearSelector(container, currentYear, renderFn) {
-    const sel = document.createElement('div');
-    sel.className = 'year-selector';
-    sel.style.cssText = 'display:flex;gap:8px;margin-bottom:14px;justify-content:flex-end';
-    ['2024', '2025'].forEach(y => {
-      const btn = document.createElement('button');
-      btn.textContent = y;
-      btn.dataset.year = y;
-      const active = y === currentYear;
-      btn.style.cssText = 'background:' + (active ? 'var(--ink)' : 'transparent') +
-        ';border:1px solid ' + (active ? 'var(--ink)' : 'var(--rule)') +
-        ';padding:4px 12px;border-radius:14px;cursor:pointer;font-size:13px;' +
-        'color:' + (active ? 'white' : 'var(--ink-mute)') + ';font-family:inherit';
-      btn.addEventListener('click', () => {
-        if (y === currentYear) return;
-        container.dataset.loaded = '0';
-        renderFn(container, y);
-      });
-      sel.appendChild(btn);
-    });
-    container.appendChild(sel);
-  }
+  // addYearSelector and YEAR_TOTALS are now defined globally in year_selector.js
+  // (loaded before this file). They are accessed via window.addYearSelector.
+  const addYearSelector = window.addYearSelector;
+  const YEAR_TOTALS = window.YEAR_TOTALS;
 
 
   // ============= VIZ 1: Top 30 bénéficiaires =============
@@ -95,7 +75,7 @@
     container.dataset.loaded = '1';
     container.dataset.year = year;
     loaderMsg(container);
-    fetch('data/top30_beneficiaires' + (year === '2024' ? '_2024' : '') + '.json')
+    fetch('data/top30_beneficiaires' + window.yearSuffix(year) + '.json')
       .then(r => r.json())
       .then(data => {
         const benefs = data.beneficiaires || [];
@@ -154,7 +134,7 @@
     container.dataset.loaded = '1';
     container.dataset.year = year;
     loaderMsg(container);
-    fetch('data/top20_villes' + (year === '2024' ? '_2024' : '') + '.json')
+    fetch('data/top20_villes' + window.yearSuffix(year) + '.json')
       .then(r => r.json())
       .then(data => {
         const villes = data.villes || [];
@@ -212,7 +192,7 @@
     container.dataset.loaded = '1';
     container.dataset.year = year;
     loaderMsg(container);
-    fetch('data/treemap_canton_secteur' + (year === '2024' ? '_2024' : '') + '.json')
+    fetch('data/treemap_canton_secteur' + window.yearSuffix(year) + '.json')
       .then(r => r.json())
       .then(data => {
         const cantons = data.cantons || [];
@@ -275,7 +255,7 @@
     container.dataset.loaded = '1';
     container.dataset.year = year;
     loaderMsg(container);
-    fetch(year === '2024' ? 'data/per_capita_2024.json' : 'data/per_capita_v2.json')
+    fetch(year === '2025' ? 'data/per_capita_v2.json' : 'data/per_capita' + window.yearSuffix(year) + '.json')
       .then(r => r.json())
       .then(data => {
         const cantons = (data.cantons || []).filter(c => c.population > 0);
