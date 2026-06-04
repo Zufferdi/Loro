@@ -1915,6 +1915,20 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   min-width: 90px;
   text-align: right;
 }
+
+.sports-delta {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 7px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.sports-delta-up   { background: #e8f5e9; color: #2e7d32; }
+.sports-delta-down { background: #fdecea; color: #c62828; }
+.sports-delta-new  { background: #fff3e0; color: #ef6c00; }
+
 .sports-bar-wrap {
   height: 6px;
   background: rgba(0,0,0,0.04);
