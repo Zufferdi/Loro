@@ -1743,3 +1743,469 @@ Au lieu de parser intégralement les 5'000+ entries, focus sur ce qui produit le
 - CSS `.compare-*` (banner, grid, movers)
 - Section HTML `#viz-compare-2024-2025` insérée après per-capita
 
+
+---
+
+## v13.12 (juin 2026) — Fix secteur + listes complètes par sous-catégorie
+
+<a id="v13-12"></a>
+
+### Problème identifié par l'utilisateur
+
+> « par exemple la fondation de l'hermitage c'est culture et pas sport »
+
+L'audit a confirmé : **610 entrées du BRB 2025 avaient un champ `secteur` erroné**, provenant d'erreurs upstream du parser PDF (mauvaise association ligne→section dans le fichier source). Exemples :
+
+| Bénéficiaire | Vrai secteur | Champ pollué |
+|---|---|---|
+| Fond. de l'Hermitage (2,5 M) | **Culture** (Musée) | Sport |
+| Fond. pour la conservation (3,3 M) | **Culture** (Patrimoine bâti) | Patrimoine |
+| Assoc. des cinémas romands (1,7 M) | **Culture** (Cinéma) | Santé |
+| Fond. pour l'art dramatique - Vidy (1,35 M) | **Culture** (Théâtre) | Sport |
+| Conservatoire populaire (1 M) | **Culture** (Danse) | Action sociale |
+| Église anglicane de Genève (1 M) | **Culture** (Patrimoine bâti) | Patrimoine |
+| Fond. Horopedia (1 M) | **Culture** (Musée) | Patrimoine |
+| Fond. romande pour le cinéma (700 k) | **Culture** (Cinéma) | Sport |
+| Festival Film Fribourg (660 k) | **Culture** (Cinéma) | Sport |
+| Fond. Plateforme 10 (600 k) | **Culture** (Musée) | Sport |
+
+### Solution : `fix_secteur.py`
+
+Nouveau script qui réécrit le champ `secteur` à partir des classifications déjà construites :
+
+1. **Priorité 1** : si le classifier culture matche → `secteur = 'Culture'`
+2. **Priorité 2** : si le classifier sport matche → `secteur = 'Sport'`
+3. **Priorité 3** : si le classifier social matche → `secteur = 'Action sociale' / 'Jeunesse' / 'Santé' / 'Handicap'` selon sous-catégorie
+4. **Sinon** : on garde le `secteur` original (Recherche, Environnement, Tourisme légitimes, etc.)
+
+**Résultat sur 5'358 entrées** :
+- 610 entrées corrigées (11,4 %)
+- Total Culture passe de ~63 M à **89,3 M** (43,2 % du BRB) — révèle l'ampleur réelle du soutien culturel
+- Total Action sociale + Jeunesse + Santé + Handicap = 45,5 M (22 %)
+- Sport reste 48,6 M (23,5 %)
+
+Idempotent : marqué via `_meta.secteur_fixed=True`.
+
+### Listes complètes par sous-catégorie
+
+> « tu penses que ce serait possible d'avoir la liste par sous thème des bénéficiaires ? Comme ça je peux aussi te dire vite s'il y a des bugs et regarder ce qui joue pas »
+
+Avant v13.12, les vizes `sports.js`, `culture.js`, `social.js` affichaient seulement les **top 5 par sous-catégorie**. Maintenant elles affichent **tous les bénéficiaires** de chaque sous-catégorie quand on clique dessus.
+
+**Changements** :
+1. `build_sport_classification.py`, `build_culture_classification.py`, `build_social_classification.py` : nouveau champ `all_entries` (tous, triés par montant décroissant) en plus de `samples` (top 5 conservé pour rétro-compatibilité)
+2. Les 3 modules JS rendent maintenant `all_entries` dans un container scrollable (max-height 400px, scroll-y)
+3. Lazy render : la liste n'est construite qu'au premier clic (perf préservée pour les longues listes)
+4. CSS `.sports-samples-list` + scrollbar fine
+
+Taille des fichiers :
+- `sports_classification.json` : 41 k → 213 k
+- `culture_classification.json` : 56 k → 140 k
+- `social_classification.json` : 18 k → 55 k
+
+Toujours léger pour un fetch HTTP unique.
+
+### Pour l'utilisateur : comment chercher d'autres bugs
+
+1. **Ouvrir la viz Culture** : 14 disciplines, cliquer une à une pour vérifier que chaque bénéficiaire est bien dans la bonne catégorie
+2. **Si bug** : noter le nom, indiquer la vraie catégorie. Je rajouterai un override manuel dans le classifier
+3. Idem pour Sport (30 disciplines) et Social (13 catégories)
+
+### Fichiers modifiés / créés
+
+- `scripts/fix_secteur.py` (nouveau, 75 LOC)
+- `scripts/build_sport_classification.py` (+1 ligne pour `all_entries`)
+- `scripts/build_culture_classification.py` (+1 ligne)
+- `scripts/build_social_classification.py` (+3 lignes)
+- `docs/js/sports.js`, `culture.js`, `social.js` (lazy render + container scrollable)
+- `docs/css/style.css` (+24 lignes pour `.sports-samples-list`)
+- `docs/data/brb2025_full.json` (610 entries `secteur` corrigées, backup .json archivé)
+- `docs/data/sports_classification.json`, `culture_classification.json`, `social_classification.json` régénérés avec `all_entries`
+- `docs/data/top30_beneficiaires.json` régénéré (avec vrais secteurs maintenant)
+- `docs/data/top20_villes.json`, `treemap_canton_secteur.json` régénérés
+
+### Reste à faire (v13.13 future)
+
+L'utilisateur a aussi demandé d'étendre à 2024 (parser complet + classifications + trajectoires 2023-2025). Le PDF a été fetché et les totaux par section sont déjà dans `brb2024_summary.json`, mais l'**extraction entrée-par-entrée** des ~5'000 lignes 2024 nécessitera une session dédiée (le fetch PDF coûte ~120k tokens de contexte). Une fois fait, pipeline + classifications + trajectoires top-50 deviennent immédiates.
+
+
+---
+
+## v13.12B (juin 2026) — Cross-ref 26 bénéficiaires 2024↔2025 + recherche dans les listes
+
+<a id="v13-12b"></a>
+
+Itération courte pour terminer la session sans re-fetcher le PDF 2024.
+
+### Cross-ref 26 bénéficiaires marquants 2024 vs 2025
+
+Croisement des 26 entrées identifiées dans `brb2024_summary.json` avec leur montant 2025 correspondant via `brb2025_full.json`.
+
+**Méthode de matching** (`docs/data/cross_2024_2025_top.json`) :
+1. Normalisation des noms (lowercase, accents strippés, articles `Assoc.` / `Fond.` retirés)
+2. Match exact → 17 entrées
+3. Match approx. par substring → 1 entrée supplémentaire (« Théâtre des Osses » via override manuel pour "Centre dramatique fribourgeois - Théâtre des Osses" → "Fond. du Théâtre des Osses")
+4. Override manuel Montreux Jazz (du nom changeant entre éditions)
+
+**Résultats** : 18/26 matched (69 %). Les 8 sans correspondance 2025 sont :
+
+| One-shot 2024 (≥ 500 k sans suite 2025) | Montant 2024 | Nature |
+|---|---:|---|
+| Hôpitaux vaudois (eHnv, PSPE, HRC, HIB) | 6,32 M | Création unités d'attente EMS |
+| Fond. Cité universitaire Genève (Maison Albert) | 4 M | Démolition / reconstruction logements étudiants |
+| Communauté Emmaüs Genève | 4 M | Immeuble PERSEVERANCE |
+| Fond. Immobilière Privée Insertion Sociale | 4 M | Construction Plan-les-Ouates |
+| Fonds catastrophes naturelles VS | 3,7 M | Glacier de Blatten |
+| Fond. Trajets (GE) | 2 M | Mise aux normes Jardins de Trajets |
+| Fond. Foyers Valais de cœur | 1 M | Investissement |
+| AVASAD (VD) | 1,17 M | Extension programme READOM |
+
+**Total des one-shots 2024 ≥ 500 k = 26,2 M CHF**. Ces projets seuls expliquent **plus de 60 %** de l'écart 2024 vs 2025 visible côté grands cantons. Un argument fort pour relativiser les écarts annuels : la Loterie distribue par blocs d'investissement.
+
+### Visualisation `cross_2024_2025.js`
+
+- 3 stats : *n* total / *n* retrouvés / *n* one-shots
+- 5 filtres : Tous / En hausse / Stables / En baisse / One-shots 2024
+- Pour chaque ligne : barre 2024 (grise) + barre 2025 (rouge) + delta % avec direction
+- ~140 LOC, lazy-loaded via IntersectionObserver
+
+### Recherche texte dans les listes complètes
+
+Ajouté dans `sports.js`, `culture.js`, `social.js` : champ texte au-dessus de chaque liste complète déployée. Filtre en temps réel par nom et/ou ville. Particulièrement utile pour parcourir les longues catégories (Multi-sports = 197 entrées, Théâtre = 124, etc.).
+
+Implémentation : un seul input par catégorie, listener `input` qui toggle `.is-hidden` selon `textContent.toLowerCase().includes(query)`.
+
+### Fichiers ajoutés / modifiés
+
+- `docs/data/cross_2024_2025_top.json` (nouveau, ~6 kB)
+- `docs/js/cross_2024_2025.js` (nouveau, 140 LOC)
+- `docs/js/sports.js`, `culture.js`, `social.js` (ajout filtre recherche, ~10 LOC chacun)
+- `docs/css/style.css` (+85 lignes : `.cross-*`, `.samples-search`)
+- `docs/index.html` (section `#viz-cross-2024-2025` insérée + script tag)
+
+
+---
+
+## v13.12C (juin 2026) — Audit systématique + corrections multiples
+
+<a id="v13-12c"></a>
+
+### Audit qualité après v13.12B
+
+Trois audits automatiques exécutés sur l'état post-fix-secteur :
+
+**Audit 1 — Sport classifiés contenant des mots-clés culture**
+1 seul suspect : « Assoc. Sémaphore — Cycloton 2025 - Tour de Suisse en musique » (3 k CHF). Cas marginal et ambigu (épreuve cycliste à thème musical), maintenu en Sport.
+
+**Audit 2 — Culture classifiés contenant des mots-clés sport**
+**0 suspect** — classification culture propre.
+
+**Audit 3 — Entrées ≥ 250 k sans classification (57 cas)**
+Plusieurs vraies erreurs détectées et corrigées :
+
+| Bénéficiaire | Montant | Diagnostic | Correction |
+|---|---:|---|---|
+| Fond. Équilibre et Nuithonie (FR) | 970 k + 130 k | secteur='Sport' alors que c'est un théâtre (Villars-sur-Glâne) | override Culture/Théâtre |
+| Fond. pour le développement des arts et de la culture | 1,5 M | classifier ne matchait pas (description floue) | override Culture/Centre culturel |
+| Saison artistique Kurt Bösch Stiftung KBS | 450 k | mauvais secteur Formation | override Culture/Centre culturel |
+| Assoc. Cabane des Bossons de la Blécherette | 420 k | mauvais secteur Jeunesse — c'est une cabane d'alpinisme | override Sport/Escalade-Montagne |
+
+**Audit 4 — Échantillon social par sous-catégorie**
+3 bugs critiques de faux positifs détectés :
+
+| Faux positif | Sous-cat | Cause |
+|---|---|---|
+| **Fond. de l'Hermitage (1,5 M)** | Handicap | « Famille Bugnion » dans description matchait pattern Familles |
+| **Cinémathèque suisse (480 k)** | Familles | « famille » dans desc archivistique |
+| **Assoc. des cinémas romands (1,7 M)** | Migration | « migration vers la technologie laser » faussement pris pour migration humaine |
+| **Fond. art dramatique - Vidy (1,35 M)** | Migration | idem, « migration laser » |
+
+### Correctifs structurels
+
+**1. Règle de priorité culture > sport > social** ajoutée dans `build_social_classification.py`. Le classifier social est maintenant le dernier mot : si culture ou sport matchent, social ne classifie pas. Évite les faux positifs sur des mots polysémiques (« migration » technique, « famille » dans un nom propre).
+
+**2. `EXCLUDE_FROM_SOCIAL` étendu** explicitement pour 4 entrées critiques (Hermitage, Cinémathèque, Cinémas romands, art dramatique).
+
+**3. Pattern matching `startswith()` pour tous les overrides** (culture + sport + social) — robuste à la troncation/extension des noms.
+
+**4. Correction du mapping `fix_secteur.py`** : les sous-catégories sociales avaient des noms différents de ceux attendus par le mapper (« Précarité / Pauvreté » vs « Précarité / Aide alimentaire », « Familles / Parentalité » au pluriel, « Petite enfance / Crèches »…). Le mapper renvoyait tout au fallback « Action sociale », ratant des dizaines d'entrées qui devaient aller dans Jeunesse ou Santé.
+
+### Résultat après v13.12C
+
+**Distribution secteur finale** (5'358 entrées) :
+
+| Secteur | Entrées | Note |
+|---|---:|---|
+| Sport | 2 437 | dont 1 562 classifiés en sous-catégorie |
+| Culture | 1 846 | dont 828 classifiés en sous-catégorie |
+| Action sociale | 375 | (avant : 437 → réduit après mappings sociaux corrigés) |
+| Jeunesse | 238 | (avant : 197 → augmenté avec Petite enfance correctement mappé) |
+| Environnement | 168 | |
+| Santé | 99 | (avant : 79 → augmenté avec Maladies/Soins correctement mappé) |
+| Formation | 76 | |
+| Patrimoine | 50 | |
+| Tourisme | 44 | |
+| Handicap | 25 | (Hermitage retiré) |
+
+**Audit 5 — Doublons potentiels (142 cas)**
+Inspectés : ce sont des bénéficiaires légitimes répétés (Tour de Romandie ×8 pour différents sous-projets, Assoc. cantonale genevoise ×10 = préfixe générique pour plusieurs assocs distinctes, etc.). Pas de bug.
+
+### Validation finale (7 tests passent)
+
+```
+✓ Fond. pour l'accueil de jour des enfants → Jeunesse (était Action sociale)
+✓ Fond. de l'Hermitage → Culture (était Sport)
+✓ Fond. Équilibre et Nuithonie → Culture (était Sport)
+✓ Assoc. Cabane des Bossons → Sport
+✓ Pro Senectute → Action sociale (Personnes âgées)
+✓ CSP Centre Social Protestant → Action sociale (Précarité)
+✓ Fond. Santos Suarez → Santé (Maladies / Soins)
+```
+
+### Fichiers modifiés
+
+- `scripts/build_culture_classification.py` : +5 overrides, `startswith` matching
+- `scripts/build_sport_classification.py` : +1 override (Bossons), `startswith` matching
+- `scripts/build_social_classification.py` : +4 exclusions, règle priorité culture/sport
+- `scripts/fix_secteur.py` : mapping sous-catégories sociales corrigé
+- `docs/data/brb2025_full.json` : secteurs recalculés
+- 3 classification JSON régénérés
+- Agrégations régénérées
+
+
+---
+
+## v13.13 (juin 2026) — Trajectoires 2023 → 2024 → 2025
+
+<a id="v13-13"></a>
+
+### Objectif
+
+Plutôt que de re-parser intégralement le PDF BRB 2024 (coûteux en budget), **fusionner les données existantes** pour produire la viz manquante : la trajectoire 3 ans des principaux bénéficiaires.
+
+### Sources fusionnées
+
+1. **Pass 4 — `beneficiaires_series_2023_2025.json`** : 15 candidats stratégiques, extraction manuelle BRB 2023+2024+2025
+2. **Pass 12B — `cross_2024_2025_top.json`** : 26 top bénéficiaires 2024 cross-référencés avec leur montant 2025
+
+### Méthode de fusion
+
+Normalisation des noms via `unicodedata.normalize('NFKD')` + suppression :
+- des accents combinés
+- des apostrophes Unicode `'`/`'`/`‚`/`‛`/`′` (uniformisées en `'`)
+- des préfixes `Fondation` / `Fond.` / `Association` / `Assoc.` (**ordre critique** : longs avant courts, sinon `fond\.?` capture seulement « fond » et laisse « ation » dans la clé)
+- des suffixes entre parenthèses (ex. « (Genève) ») pour faciliter le matching cross-canton
+
+**Bug corrigé en cours de route** : le regex `fond\.?|fondation` capturait « fond » au lieu de « fondation » à cause de l'ordre alphabétique des alternatives. Permuté en `fondation|association|assoc\.?|fond\.?`. Conséquence : 5 doublons réduits, dédup propre.
+
+### Résultat (`docs/data/trajectories_2023_2025.json`)
+
+- **35 bénéficiaires uniques** après dédup
+- **8 avec les 3 années complètes** (Hermitage, CHUV, EPFL Plus, Cinémathèque, Équilibre et Nuithonie, Plateforme 10, CSP Vaud, Pierre Gianadda)
+- **24 avec ≥ 2024+2025**
+- 11 catalogués one-shots 2024 (effacés en 2025), 8 one-shots 2025, 8 stables, 4 décroissances, 4 hausses
+
+### Catégorisation automatique des trajectoires
+
+| Catégorie | Critère | Exemple |
+|---|---|---|
+| `one_shot_2024` | 2024 ≥ 500 k et 2025 absent/nul | Hôpitaux vaudois (6,3 M → ∅), Maison d'Albert GE (4 M → ∅) |
+| `one_shot_2025` | 2025 ≥ 500 k et 2024 < 30 % du 2025 | Hermitage (300 k → 4 M), ISREC (∅ → 1,1 M) |
+| `growth` | 2023 et 2025 connus, 2025 > 1,5× 2023 | Cinémathèque (300 k → 830 k = ×2,8) |
+| `decline` | 2023 et 2025 connus, 2025 < 0,5× 2023 | (rares dans top, plus à long terme) |
+| `stable` | sinon | Verbier Festival, Plateforme 10, Banc Public |
+
+### Visualisation `trajectories.js`
+
+- **5 stats** en tête : total / 3-années / hausses / one-shots 2024 / stables-baisses
+- **6 filtres** : Tous / 3 années / One-shots 2024 / One-shots 2025 / Croissance / Stables
+- Pour chaque trajectoire :
+  - Liseré gauche coloré (orange = one-shot 2024, vert = hausse, rouge = baisse, gris = stable)
+  - Drapeau canton + nom + flag d'évolution
+  - Triple valeur 2023 / 2024 / 2025 en colonnes
+  - **Sparkline SVG** miniature 100×30 px avec line + dots, ghost dots gris pour années manquantes
+  - Note 2024 (description du projet) + secteur
+
+### Fichiers ajoutés / modifiés
+
+- `docs/data/trajectories_2023_2025.json` (nouveau, ~10 kB, 35 entrées + meta)
+- `docs/js/trajectories.js` (nouveau, ~160 LOC)
+- `docs/css/style.css` (+75 lignes : `.traj-*`)
+- `docs/index.html` (section + script tag)
+
+### Pour la suite (v13.14)
+
+Pour densifier les trajectoires : **parser intégralement le BRB 2023** (extraction partielle Pass 4) afin d'avoir les 3 années sur tous les top bénéficiaires. Idéalement étendre encore à **2018 et 2013** pour avoir un benchmark décennal (article Letemps mentionnait ces années comme références).
+
+L'extraction d'un BRB complet coûte ~120 k tokens par PDF — donc 2023 seul est faisable dans une session, mais 2018+2013+2023 demande 3 sessions distinctes.
+
+
+---
+
+## v13.13B (juin 2026) — Consolidation canonique des trajectoires
+
+<a id="v13-13b"></a>
+
+### Remarques de l'utilisateur
+
+> « Reprend ces bénéficiaires et assure toi que la géolocalisation soit correcte, que le thème et sous thème aussi, réuni par exemple tout ce qui concerne le tour de Romandie ensemble, les festival sont parfois récits complet parfois que leur acronyme, et attention les orchestre de chambre c'est de la musique mais le lieu ensuite indique que l'orchestre vient d'ela ville »
+
+L'audit qualité a confirmé 4 catégories de problèmes :
+
+**1. Fragmentation — même entité, multiples attributions** :
+- Tour de Romandie : 17 entrées (2 entités légitimes : masculin + féminin)
+- Théâtre de Vidy : 5 entrées (1 entité)
+- Cinéforom : 4 entrées (1 entité, mais 1 entrée polluée par parser glitch « le cinéma - Cinéforom, Genève Musée d'art du Valais »)
+- Hermitage, Cinémathèque, Verbier Festival, Festival de la Cité, CHUV, etc. : ×2 à ×3 par entité
+
+**2. Erreurs géographiques** :
+- **Fondation Pierre Gianadda** : indiquée Sion dans certaines sources, **alors qu'elle est à Martigny** (erreur factuelle)
+- **Fondation du Verbier Festival** : indiquée Vevey dans le source, **alors qu'elle est à Bagnes/Verbier** (erreur factuelle)
+- **Cinémathèque suisse** : ville `Lausanne` ET `Penthaz` (siège des archives à Penthaz, présence à Lausanne)
+- **Orchestres de chambre** : la ville est dans le nom (« Orchestre de Chambre de Lausanne » → ville=Lausanne), mais le champ `ville` source était parfois vide ou erroné
+
+**3. Acronymes vs noms complets** :
+- FIFF ↔ Festival International du Film de Fribourg
+- OCL ↔ Orchestre de Chambre de Lausanne
+- AVASAD ↔ Aide et soins à domicile vaudoise
+- CSP ↔ Centre Social Protestant
+
+**4. Risque d'over-merging** :
+- Pro Senectute Vaud ≠ Pro Senectute Fribourg ≠ Pro Senectute Valais (entités cantonales indépendantes)
+- Caritas Vaud ≠ Caritas Genève ≠ Caritas Suisse
+- CSP Vaud ≠ CSP Neuchâtel ≠ CSP Genève
+
+### Approche : groupes canoniques explicites
+
+Fichier `scripts/consolidate_trajectories.py` qui définit 32 **groupes canoniques** :
+
+```python
+'verbier_festival': {
+    'nom': 'Fondation du Verbier Festival',
+    'ville': 'Verbier (Bagnes)',       # CORRECTION : pas Vevey
+    'canton': 'VS',
+    'secteur': 'Culture', 
+    'sous_theme': 'Musique classique',
+    'aliases': ['verbier festival'],
+}
+```
+
+Chaque groupe a :
+- Une **identité canonique** (nom, ville corrigée, canton, secteur, sous-thème)
+- Une liste d'`aliases` (substrings à chercher dans le nom source normalisé)
+- Optionnellement un `exclude_alias` pour éviter les faux positifs (ex. ne pas merger « Pro Senectute Vaud » avec « Pro Senectute Fribourg »)
+
+Le matcher applique sur le nom source normalisé (NFKD, accents strippés, apostrophes Unicode unifiées, préfixes Assoc./Fond./Fondation retirés).
+
+### Résultat de la consolidation
+
+**32 trajectoires consolidées** (à partir des ~70 entrées source 2025 + 15 historiques + 26 cross-ref).
+
+Fusions notables observées :
+
+| Entité canonique | Source 2025 | Total fusionné 2025 |
+|---|---:|---:|
+| Tour de Romandie masculin | 17 entrées | 1,69 M |
+| Théâtre de Vidy | 5 entrées | 2,01 M |
+| Cinéforom | 4 entrées | 2,05 M |
+| CHUV recherche | 3 entrées | 1,41 M |
+| Hermitage | 2 entrées | 4 M |
+| Verbier Festival | 2 entrées | 925 k |
+| FIFF | 2 entrées | 835 k |
+| Cinémathèque suisse | 2 entrées | 830 k |
+| CORODIS | 2 entrées | 738 k |
+| Festival de la Cité | 2 entrées | 394 k |
+| Caritas Vaud | 2 entrées | 400 k |
+
+### Corrections géographiques validées
+
+- ✅ Pierre Gianadda → Martigny (VS) [était Sion]
+- ✅ Verbier Festival → Verbier/Bagnes (VS) [était Vevey]
+- ✅ Cinémathèque suisse → Penthaz (VD) [siège archives officiel]
+- ✅ Cinéforom → Genève (intercantonal R) [siège]
+- ✅ Orchestre de Chambre de Lausanne → Lausanne (ville extraite du nom)
+- ✅ Arc en Scène (TPR) → La Chaux-de-Fonds (NE)
+- ✅ Théâtre des Osses → Givisiez (FR)
+
+### Viz `trajectories.js` mise à jour
+
+Affiche maintenant :
+- 📍 **Ville** corrigée sous le nom
+- **Secteur → Sous-thème** (ex. « Culture → Musée »)
+- **×N fusionnés** badge ambre quand plusieurs attributions sources sont agrégées (tooltip détaille le nombre)
+- Sparkline 3-ans inchangée
+
+### Fichiers ajoutés / modifiés
+
+- `scripts/consolidate_trajectories.py` (nouveau, ~260 LOC avec 32 groupes canoniques)
+- `docs/data/trajectories_2023_2025.json` régénéré (32 trajectoires canoniques au lieu de 35 brutes avec doublons)
+- `docs/js/trajectories.js` (affichage ville + sous-thème + badge fusion)
+- `docs/css/style.css` (+25 lignes : `.traj-meta`, `.traj-ville`, `.traj-sous`, `.traj-merge`)
+
+### Limites résiduelles
+
+- Le mapping canonique couvre **32 entités sélectionnées** (celles ≥ 250 k ou avec données historiques). Étendre à d'autres demande d'ajouter manuellement leurs groupes — l'outil est conçu pour ça.
+- Le BRB source contient parfois des noms tronqués/concaténés (parser glitch type « le cinéma - Cinéforom, Genève Musée d'art du Valais »). Le matcher canonique les rattrape via substring, mais le pipeline upstream pourrait être amélioré.
+
+
+---
+
+## v13.14 (juin 2026) — Parsing BRB 2024
+
+<a id="v13-14"></a>
+
+### Objectif
+À la demande de l'utilisateur, parser intégralement le PDF BRB 2024 (`https://ra.loro.ch/documents/BRB2024.pdf`) pour rendre les comparaisons 2024 ↔ 2025 exhaustives, et densifier les trajectoires multi-années.
+
+### Méthode pragmatique
+1. **Re-fetch** du PDF via web_fetch avec `text_content_token_limit=100000` (la majorité du document).
+2. **Parser texte structuré** : le PDF BRB suit un format reproductible (3 lignes par entrée : nom / description / montant `1'330.-`), avec en-têtes de sections cantons et sous-secteurs.
+3. **Extraction guidée** : `scripts/build_brb2024_extracted.py` capture les ~500 plus gros bénéficiaires (≥ 50 k CHF typiquement) par section, avec nom/ville/canton/secteur/montant.
+
+### Couverture
+| Canton | Couverture | Total visible |
+|---|---|---:|
+| **VD** | **Complet** — Fond. aide sociale culturelle + Fonds sport + Fonds util. publique | 42,4 M CHF |
+| **FR** | **Complet** — Commission culture/social + LoRo-Sport + Fonds CE | 22,3 M CHF |
+| **VS** | **Complet** — Délégation valaisanne + Commission Fonds du sport | 28,1 M CHF |
+| **NE** | **Partiel** — Action sociale + Jeunesse + Santé + Culture début | 4,5 M CHF |
+| **GE** | Non extrait (budget contexte limite) | — |
+| **JU** | Non extrait | — |
+| **Suisse romande** | Non extrait | — |
+
+**Total visible BRB 2024 : 97,3 M CHF** sur 258,2 M officiels (manquent GE/JU/SR — extraction future).
+
+### Impact sur les trajectoires consolidées
+
+Le `consolidate_trajectories.py` agrège maintenant aussi depuis `brb2024_full.json`. **2024 source matches : 32 entrées dans 25 groupes canoniques.** Plusieurs trajectoires gagnent leur vraie valeur 2024 :
+
+| Groupe canonique | Avant (Pass 11/12) | Après (Pass 14) |
+|---|---:|---:|
+| Cinéforom | 700 k | **970 935** (fusion 700k FA-Culture + 80k FR + 185k FR Fonds CE + 5k autres) |
+| Jazz de Montreux | 1 200 000 | **1 330 000** (1,2 M Fonds util. + 130 k Fonds aide culturelle) |
+| Pro Senectute Fribourg | — | **600 000** (visible désormais) |
+| Opéra de Lausanne | — | **550 000** (visible désormais) |
+| Orchestre Chambre Lausanne (OCL) | — | **500 000** (250 k Fonds + 250 k Util. publique) |
+| Plateforme 10 | 600 000 | **600 000** (confirmé) |
+| Théâtre Pro Valais | 566 000 | **566 000** (confirmé) |
+| FIFF | 580 000 | **580 000** (confirmé) |
+
+### Note sur les classifications
+
+Les entrées 2024 conservent leurs `secteur` originaux extraits des en-têtes de sections PDF (« Action sociale et personnes âgées », « Culture », « Sport », etc.) — qui sont fiables car ils proviennent directement de la structure documentaire officielle, contrairement aux entrées 2025 où certains secteurs avaient été pollués par le parser upstream.
+
+Les classifiers culture/sport/social sport ne sont pas réappliqués sur 2024 dans cette passe — l'utilisateur peut le faire en v13.15 si besoin (le code est réutilisable).
+
+### Fichiers ajoutés
+
+- `scripts/parse_brb2024.py` (parser générique — non utilisé finalement, le format text était trop variable)
+- `scripts/build_brb2024_extracted.py` (extracteur manuel curé, ~500 entries)
+- `docs/data/brb2024_full.json` (507 entrées, 97,3 M CHF visibles)
+- `scripts/consolidate_trajectories.py` étendu pour ingérer 2024
+
+### Travaux résiduels (v13.15+)
+
+1. **Compléter GE/JU/SR** — re-fetcher BRB 2024 avec budget contexte dédié, ou parser la 2e moitié du PDF
+2. **Appliquer pipeline_brb.py + classifications culture/sport/social sur 2024** — pour cohérence avec 2025
+3. **Étendre groupes canoniques** au-delà des 32 actuels (couvrir top 100 bénéficiaires)
+4. **BRB 2023 parsing complet** pour densifier la colonne 2023 des trajectoires

@@ -1,42 +1,4 @@
-<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Méthodologie · Loro Dataviz</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css">
-
-<style>
-  .doc { max-width: 720px; margin: 0 auto; padding: 60px 24px 100px; }
-  .doc h1 { font-family: var(--serif); font-size: 42px; font-weight: 400; line-height: 1.15; margin: 0 0 24px; }
-  .doc h2 { font-family: var(--serif); font-size: 26px; font-weight: 400; margin: 48px 0 14px; }
-  .doc h3 { font-size: 18px; font-weight: 600; margin: 28px 0 10px; }
-  .doc p, .doc li { font-size: 17px; line-height: 1.65; }
-  .doc table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 15px; }
-  .doc table th, .doc table td { border-bottom: 1px solid var(--rule); padding: 8px 10px; text-align: left; vertical-align: top; }
-  .doc table th { font-weight: 600; color: var(--ink-soft); }
-  .doc code { background: var(--bg-soft); padding: 1px 6px; border-radius: 3px; font-size: 14px; }
-  .doc pre { background: var(--bg-soft); padding: 14px 18px; border-radius: 6px; overflow-x: auto; font-size: 13px; }
-</style>
-</head>
-<body>
-
-<header class="topnav">
-  <a class="brand" href="index.html">LORO · 1938—2025</a>
-  <nav>
-    <a href="index.html">Récit principal</a>
-    <a href="explorer.html">Explorer</a>
-    <a href="#" style="color:var(--ink);">Méthodologie</a>
-  </nav>
-</header>
-
-<article class="doc">
-<h1 id="methodologie-et-sources">Méthodologie et sources</h1>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Méthodologie</title><style>body{max-width:900px;margin:auto;padding:30px;font-family:Georgia,serif;line-height:1.6;color:#1a1a1a;background:#fafaf7}h1,h2,h3{font-family:Georgia,serif;color:#333}h2{border-bottom:2px solid #c62828;padding-bottom:6px;margin-top:40px}table{border-collapse:collapse;margin:18px 0;width:100%}th,td{padding:8px 12px;border:1px solid #ddd;text-align:left}th{background:#f5f5f0}code{background:#eee;padding:2px 5px;border-radius:3px;font-family:monospace}pre{background:#1a1a1a;color:#eee;padding:14px;border-radius:6px;overflow-x:auto}a{color:#c62828}</style></head><body><h1 id="methodologie-et-sources">Méthodologie et sources</h1>
 <p>Ce document décrit la qualité des sources, les retraitements appliqués,
 les hypothèses formulées et les limites de comparabilité.</p>
 <h2 id="1-perimetre">1. Périmètre</h2>
@@ -163,7 +125,3066 @@ Les chiffres "Loro" (RA 2024, RA 2025) sont primaires. Les chiffres
 externes (TPG, OFS, GREA, Swisslos, REISO) sont identifiés par leur URL.
 Les chiffres marqués <em>estimation</em> sont nos calculs avec hypothèses
 documentées dans ce fichier.</p>
-</article>
+<h2 id="sources-additionnelles-v7-acte-viii">Sources additionnelles v7 (Acte VIII)</h2>
+<ul>
+<li><strong><a href="https://ra.loro.ch/documents/BRB2024.pdf">BRB 2024</a></strong> et <strong><a href="https://soutien-loro.ch/sites/default/files/2026-05/BRB2025.pdf">BRB 2025</a></strong> : Bulletins de Répartition des Bénéfices, ~80 pages chacun, ~5'000 bénéficiaires individuels par année. Échantillon ≥ 200 k CHF retenu pour la viz détaillée (canton de Vaud).</li>
+<li><strong><a href="https://ra.loro.ch/editions-precedentes.html">Rapports annuels Loro 2012-2025</a></strong> : 14 années de récit éditorial (édito direction, faits marquants, lancements de jeux, certifications).</li>
+<li><strong><a href="https://www.swisslos.ch/media/swisslos/publikationen/pdf/gesch%C3%A4ftsbericht-2024.pdf">Swisslos Geschäftsbericht 2024</a></strong> (Balmer-Etienne AG) : structure de coûts complète en allemand, traduite ici pour la comparaison structurelle Loro vs Swisslos.</li>
+<li><strong><a href="https://www.swisslos.ch/fr/informations/sur-swisslos/portrait/chiffres-cle/fait-et-chiffres.html">Chiffres-clés Swisslos</a></strong> : série historique 2024-2025, 20 cantons membres + Liechtenstein.</li>
+</ul>
+<h3 id="limites-de-la-comparaison-loroswisslos">Limites de la comparaison Loro/Swisslos</h3>
+<ul>
+<li>Les deux loteries opèrent sous le même cadre légal (LJAr 2019) et la même surveillance (Gespa).</li>
+<li>Loro est une association à but non lucratif (art. 60 CC) ; Swisslos est une coopérative intercantonale.</li>
+<li>Loro = 6 cantons, 2,36 M habitants ; Swisslos = 21 cantons (+FL), ~6,5 M habitants.</li>
+<li>Le poste « Marketing/Publicité+Promo » côté Swisslos additionne <code>Werbung</code> (13,1 M) + <code>Promotionen</code> (7,1 M) + <code>Sponsoring/Kooperation</code> (5,3 M). Pour Loro, c'est la ligne <code>Marketing, publicité et communication</code> (15,4 M).</li>
+<li>Les périodes comptables sont identiques (1er janvier - 31 décembre).</li>
+</ul>
+<h2 id="v10-juin-2026-audit-uxui-couverture-historique-2018-2025">v10 (juin 2026) — Audit UX/UI &amp; couverture historique 2018-2025</h2>
+<h3 id="bugs-ux-corriges">Bugs UX corrigés</h3>
+<p><strong>Parallax Acte I (timeline scrolly)</strong>
+- Le <code>clipPath</code> initialisé à <code>width:0</code> cachait toute la courbe quand scrollama ne se déclenchait pas (problème de timing au load)
+- Remplacé par <code>stroke-dasharray</code> + <code>stroke-dashoffset</code> (technique standard, plus robuste)
+- Ajout d'un fallback <code>IntersectionObserver</code> natif si scrollama indisponible
+- ViewBox élargi à 1100×620, layout grid passé à 1.5fr/1fr
+- Signal visuel renforcé : grand chiffre flottant qui s'actualise à chaque step, pulse animé sur le point actif</p>
+<p><strong>Mêmes corrections appliquées à initMixScrolly</strong> (Acte IV)
+- ViewBox élargi 1100×620, légende plus grande
+- Fallback IntersectionObserver
+- Steps qui réagissent au scroll up</p>
+<p><strong>Hardcodés 2024 éliminés</strong>
+- Tilegram, RealMap, Governance, MixByCanton, Anomaly : tous lisent dynamiquement la dernière année disponible</p>
+<h3 id="nouvelles-fonctionnalites">Nouvelles fonctionnalités</h3>
+<p><strong>Décomposition par année 2018-2025</strong> (Intermède)
+- Refonte complète de <code>initAnomaly</code> : montre maintenant le bénéfice annuel 2018-2025 (waterfall)
+- Cliquez sur n'importe quelle barre pour ouvrir la décomposition narrative
+- 8 années documentées avec les facteurs explicatifs sourcés des éditos directeur :
+  - 2018 : vote LJAr (73 % de oui le 10.6.2018)
+  - 2019 : 1ère année LJAr, opérateurs étrangers bloqués (+14 M), record PBJ
+  - 2020 : Covid, fermeture cafés-restaurants (-22 M), Loterie électronique -30 %
+  - 2021 : rebond, CORJA en vigueur, soutien cafés-restaurants 3,3 M
+  - 2022 : Coupe du Monde Qatar, PBJ record 435 M, mais -15,6 M sur placements
+  - 2023 : transition, investissement IT +34 %, lancement EuroDreams
+  - 2024 : record (jackpot Swiss Loto 64,6 M, Euro + JO)
+  - 2025 : reflux (-6,2 M, cycles EuroMillions courts)</p>
+<p><strong>Treemap secteur animé</strong> (Acte V)
+- Slider 2013-2025 + bouton « Animer » (transitions D3 fluides entre années)
+- La métamorphose de la culture (de 28 % à 38 % du total) devient visible
+- Bind par nom de secteur : couleurs et positions se réorganisent en douceur</p>
+<p><strong>Carte Suisse romande : bouton Animer ajouté</strong> (Acte III)
+- Comme dans la version tilegram stylisé, le bouton parcourt 2013-2025</p>
+<p><strong>Acte VI : texte corrigé</strong>
+- "120 bénéficiaires" → "~5'000 projets soutenus chaque année"
+- L'échantillon de 120 noms est présenté comme tel : sélection visible tirée des BRB et rapports annuels
+- Liens directs vers la liste complète sur soutien-loro.ch</p>
+<h2 id="v11-juin-2026-extension-multi-canton-cas-de-dependance-documentes">v11 (juin 2026) — Extension multi-canton + cas de dépendance documentés</h2>
+<h3 id="cas-de-dependance-enrichis-acte-viii-dot-plot">Cas de dépendance enrichis (Acte VIII / dot plot)</h3>
+<p>Ajout de 3 nouveaux cas documentés au <code>summary.cas_dependance</code>, désormais 6 cas, sourcés :</p>
+<table>
+<thead>
+<tr>
+<th>Bénéficiaire</th>
+<th>Canton</th>
+<th>% budget</th>
+<th>Source primaire</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FriSanté</td>
+<td>FR</td>
+<td>32 %</td>
+<td>REISO (jan. 2026)</td>
+</tr>
+<tr>
+<td>Fond. Cinéforom</td>
+<td>Romandie</td>
+<td>30 %</td>
+<td>CultureEnJeu nº53 (G. Ruey)</td>
+</tr>
+<tr>
+<td>La Lanterne magique</td>
+<td>Romandie</td>
+<td>27 %</td>
+<td>REISO (jan. 2026)</td>
+</tr>
+<tr>
+<td>Théâtre des Osses</td>
+<td>FR</td>
+<td>20 %</td>
+<td>CultureEnJeu nº53 (M.-C. Jenny)</td>
+</tr>
+<tr>
+<td>La Plage des Six Pompes</td>
+<td>NE</td>
+<td>15 %</td>
+<td>CultureEnJeu nº53 (N. Vogt)</td>
+</tr>
+<tr>
+<td>Tour de Romandie</td>
+<td>Romandie</td>
+<td>15 %</td>
+<td>Estimations presse</td>
+</tr>
+</tbody>
+</table>
+<p>Les témoignages directs des directrices et présidentes d'associations (publiés dans CultureEnJeu nº53 en mars 2017) restent pertinents : « Le don de la Loro est toujours proche des 20 % du budget global » (Théâtre des Osses) ; « La perte de ce soutien serait catastrophique » (La Plage des Six Pompes).</p>
+<h3 id="beneficiaires-par-canton-donnees-2024-et-2025-dependance_cantonsjson">Bénéficiaires par canton — données 2024 et 2025 (<code>dependance_cantons.json</code>)</h3>
+<p>43 bénéficiaires notables identifiés et structurés sur les 6 cantons romands :</p>
+<ul>
+<li><strong>VD</strong> (9) : FASC 46 M (2025), Fonds sport 12,8 M (2025), Théâtre du Jorat 2,5 M, FAJE 1,5 M, Opéra Lausanne, Béjart, OCL, Hermitage, Vidy</li>
+<li><strong>FR</strong> (12) : Equilibre &amp; Nuithonie 970k (2025), Ligue cancer 778k, FIFF 660k, Pro Senectute, La Tuile, Banc Public, Théâtre des Osses, OC Fribourgeois, Nouvel Opéra, Fri-Son, Belluard</li>
+<li><strong>VS</strong> (4) : Verbier Festival 975k, Pierre Gianadda 625k, total délégation 36 M (2025), Fonds sport 5,4 M (2025)</li>
+<li><strong>NE</strong> (4) : ORNE 13,7 M (2025, 485 dossiers), LoRo-Sport 2,25 M, FAC 1,57 M, La Plage des Six Pompes</li>
+<li><strong>GE</strong> (5) : Fonds genevois 14,15 M (1er trim. 2026, 170 institutions), OSR, Cinéforom, Fond. Hainard, ASL</li>
+<li><strong>JU</strong> (9) : total 7,5 M (2025), Plan climat 624k, Jura Tourisme 300k, Bien vieillir 280k, Musique des Lumières 175k, Crescendo 150k, Musée jurassien, Théâtre du Jura, Dritchino</li>
+</ul>
+<p>Chaque entrée comporte : nom, secteur, montant, année, narratif explicatif, source précise (presse romande ou rapport d'activité officiel).</p>
+<h3 id="nouvelle-ux">Nouvelle UX</h3>
+<ul>
+<li><strong>Sélecteur d'année</strong> dans la section bénéficiaires par canton : « Toutes », « 2024 », « 2025 », « 2026 ». Permet de comparer l'évolution.</li>
+<li><strong>Onglets canton</strong> : VD / FR / GE / VS / NE / JU avec compteur de bénéficiaires et somme visible</li>
+<li><strong>Hover détaillé</strong> : narratif + source pour chaque cas</li>
+<li><strong>Bordure colorée</strong> : chaque canton a sa couleur identitaire propagée dans les cartes</li>
+</ul>
+<h2 id="v12-juin-2026-acte-ix-linventaire-complet-brb-2025">v12 (juin 2026) — Acte IX : l'inventaire complet (BRB 2025)</h2>
+<p>Cette version intègre la <strong>Répartition des bénéfices 2025</strong> publiée par la Loterie Romande (BRB 2025, ~80 pages, ~5'000 entrées) sous forme d'un dataset interrogeable de <strong>594 bénéficiaires nommés</strong> couvrant les 6 cantons romands.</p>
+<h3 id="dataset-brb2025_fulljson">Dataset <code>brb2025_full.json</code></h3>
+<ul>
+<li><strong>594 entrées</strong> structurées : <code>{nom, ville, montant_CHF, secteur, description, canton, lat, lng}</code></li>
+<li><strong>6 cantons couverts</strong> : VD 236, VS 158, FR 152, NE 15, GE 15, JU 13, plus 5 entrées Suisse romande (organes intercantonaux)</li>
+<li><strong>9 secteurs</strong> : Culture (242), Action sociale (88), Sport (84), Patrimoine (47), Jeunesse (41), Santé (37), Tourisme (33), Environnement (11), Formation (11)</li>
+<li><strong>140,8 M CHF observés</strong> dans cet échantillon (sur ~252 M réels redistribués en 2025)</li>
+<li><strong>Top 10 = 39,8 %</strong> de la masse de l'échantillon (longue traîne)</li>
+<li><strong>518/594 (87 %) géolocalisées</strong> avec lat/lng pour ~250 villes de Suisse romande</li>
+</ul>
+<h3 id="methodologie-dextraction">Méthodologie d'extraction</h3>
+<ul>
+<li>Source : <code>https://soutien-loro.ch/sites/default/files/2026-05/BRB2025.pdf</code></li>
+<li>Extraction PDF via web_fetch (les ~58 premières pages du PDF — VD complet, FR complet, VS partiel jusqu'aux bourses sportives)</li>
+<li>Couverture exhaustive ≥ 100 kCHF pour VD, FR, VS</li>
+<li>Échantillon représentatif des montants moyens (10-100 kCHF) et de la longue traîne (&lt; 10 kCHF) pour démontrer la forme statistique</li>
+<li>NE, GE, JU : entrées documentées dans <code>dependance_cantons.json</code> + organes répartiteurs (totaux cantonaux)</li>
+<li>Coordonnées géographiques attribuées manuellement à partir des noms de villes</li>
+</ul>
+<h3 id="trois-visualisations-ajoutees-acte-ix">Trois visualisations ajoutées (Acte IX)</h3>
+<ol>
+<li><strong>Explorateur (<code>#viz-explorer</code>)</strong> — Interface de recherche full-text avec filtres par canton (pills colorées) et secteur, tri par montant/nom/canton. Liste paginée à 200 entrées max avec barre de longueur proportionnelle au montant.</li>
+<li><strong>Longue traîne (<code>#viz-longtail</code>)</strong> — Nuage de points D3 avec rang (1 → 594) en abscisse et montant en ordonnée (échelle log). Couleur par canton, ligne de référence à la médiane, top-3 annoté. Démontre visuellement la forme « few-big-many-small ».</li>
+<li><strong>Carte géographique (<code>#viz-geomap</code>)</strong> — Projection Mercator centrée sur la Suisse romande. Bulles par ville agrégées (somme des montants), rayon √ (échelle sqrt). Labels pour les 12 premières villes. Tooltip détaillant les 5 plus gros bénéficiaires de chaque ville.</li>
+</ol>
+<h3 id="couleurs-cantonales-coherence-v11">Couleurs cantonales (cohérence v11)</h3>
+<p>VD #e44d4d · FR #5b8def · VS #f0a93d · NE #7c5bc7 · GE #2ea08a · JU #c97b3a · R #888</p>
+<h3 id="limites-connues">Limites connues</h3>
+<ul>
+<li>L'extraction n'est pas exhaustive : le PDF complet contient ~5'000 entrées, dont l'extraction texte se cantonne aux 58 premières pages dans le cadre des limites de tokens.</li>
+<li>Les NE/GE/JU sont sous-représentés dans cet échantillon : on dispose des totaux cantonaux (organes répartiteurs) mais peu d'entrées individuelles ligne-par-ligne.</li>
+<li>La médiane à 90 kCHF est artefactuelle : un échantillon non biaisé montrerait une médiane bien plus basse (de l'ordre de 5-10 kCHF) compte tenu de la masse des petits soutiens sportifs.</li>
+<li>Les coordonnées géographiques ont été attribuées manuellement à partir d'un dictionnaire de villes ; quelques erreurs possibles pour les hameaux.</li>
+</ul>
+<h3 id="navigation-enrichie">Navigation enrichie</h3>
+<p>Le lien « IX » dans la topnav pointe sur <code>#acte-9</code>. La section s'intercale entre Acte VIII bis (Jura) et le Récit incarné, formant un crescendo : du global (Actes I-V) au cas (Actes VI-VIII) à l'inventaire complet (Acte IX) au récit (voyage du billet) à la synthèse (Coda).</p>
+<h2 id="v13-juin-2026-parse-pdf-complet-loro-vs-swisslos-2025-fix-parallax">v13 (juin 2026) — Parse PDF complet, Loro vs Swisslos 2025, fix parallax</h2>
+<h3 id="dataset-brb-2025-complet-5172-entrees">Dataset BRB 2025 complet (5'172 entrées)</h3>
+<p>Le PDF officiel <code>BRB2025.pdf</code> (118 pages) a été parsé intégralement avec <code>pdfplumber</code> + détection géométrique des colonnes :</p>
+<ul>
+<li><strong>5'172 entrées</strong> structurées (vs. 594 dans v12) — couvre l'essentiel des ~5'000 projets soutenus</li>
+<li><strong>Distribution par canton</strong> : VD 1306, GE 889, FR 795, VS 710, NE 635, JU 620, Suisse romande 220</li>
+<li><strong>9 secteurs</strong> : Sport (2287), Culture (1522), Environnement (363), Action sociale (358), Jeunesse (302), Santé (124), Patrimoine (89), Formation (84), Tourisme (46)</li>
+<li><strong>Total observé</strong> : 211,7 M CHF (le reste = forfaits agrégés, fonds d'utilité publique non détaillés ligne par ligne)</li>
+<li><strong>Médiane</strong> : 8'250 CHF — la vraie longue traîne devient visible</li>
+</ul>
+<h3 id="methodologie-de-parsing">Méthodologie de parsing</h3>
+<p>Le pipeline final (<code>brb/parser_v4.py</code> + <code>brb/export_full.py</code>) :</p>
+<ol>
+<li>Extraction word-level via pdfplumber avec coordonnées (x, y) pour chaque mot</li>
+<li>Clustering en lignes (tolérance y ~3px) et colonnes (clustering x0)</li>
+<li>Tracking d'état canton via les ranges de pages connus :</li>
+<li>VAUD pages 3-30, FRIBOURG 31-48, VALAIS 49-62, NEUCHÂTEL 63-76, GENÈVE 77-98, JURA 99-110, Suisse romande 111-116</li>
+<li>Détection automatique des sections (9 domaines) et sous-sections sport</li>
+<li>Section Sport forcée quand l'organe contient "fonds du sport" ou similaire</li>
+<li>Extraction du nom et de la ville par regex (virgule + lieu en capitale)</li>
+</ol>
+<h3 id="limites-du-parsing-automatique">Limites du parsing automatique</h3>
+<ul>
+<li>~430 fausses "villes" extraites (descriptions mal segmentées comme "Participation au Championnat", "LNA équipe masculine") ont été filtrées en post-traitement ; le champ <code>ville</code> passe alors à <code>null</code></li>
+<li>Quelques noms restent tronqués d'un caractère (<code>ond. Cinéforom</code> au lieu de <code>Fond. Cinéforom</code>) sur les pages où les boundaries de colonnes coupent un peu trop à gauche</li>
+<li>46% des entrées ont une ville extraite, 27% sont géolocalisées (dictionnaire de ~250 communes romandes)</li>
+<li>Total observé 211,7 M &lt; 252 M réels : le différentiel correspond aux forfaits cantonaux (Conseils d'État, déléguations) qui n'apparaissent pas comme bénéficiaires individuels</li>
+</ul>
+<h3 id="acte-viii-comparaison-loro-vs-swisslos-etendue-a-2025">Acte VIII — comparaison Loro vs Swisslos étendue à 2025</h3>
+<p>La visualisation <code>initLoroVsSwisslos</code> a été refondue pour afficher les deux exercices 2024 et 2025 côte à côte sur 17 métriques.</p>
+<p><strong>Nouvelle lecture</strong> : pour chaque ligne, deux barres groupées dans chaque camp — 2024 en transparence, 2025 en plein. Les barres hachurées (stroke pointillé) signalent des estimations, car ni le Rapport financier Loro 2025 ni le Geschäftsbericht Swisslos 2025 ne sont publiés à la date du build.</p>
+<p><strong>Sources 2025</strong> :</p>
+<ul>
+<li><strong>Loro</strong> : communiqué officiel du 26 mai 2026 (PBJ 429,8 M, bénéfice 252 M, commissions 79,2 M aux 2350 points de vente, 5000 projets soutenus, taxe jeu excessif 2,15 M) ; BRB 2025</li>
+<li><strong>Swisslos</strong> : "Zahlen und Fakten 2025" (https://static.swisslos.ch/media/swisslos/publikationen/pdf/zahlen-und-fakten-2025.pdf), seule publication 2025 disponible. Reingewinn 562 M, 202 collaborateurs (94F + 108H, 64 Teilzeit), 506 M aux fonds cantonaux et 56 M à la Stiftung Sportförderung Schweiz.</li>
+</ul>
+<p><strong>Estimations</strong> : pour Swisslos, le PBJ/BSE 2025 est dérivé de la répartition "25 Rp Reingewinn pour 1 franc joué" → mises ≈ 2'248 M, donc BSE ≈ 764 M (vs. 812 M en 2024). Les commissions sont estimées au prorata du ratio 2024 (15,8% du PBJ). Les autres lignes restent en <code>n.d.</code> quand non disponibles.</p>
+<h3 id="lisibilite-des-intitules">Lisibilité des intitulés</h3>
+<ul>
+<li>Labels métriques <strong>à gauche</strong> (au lieu de centrés et tronqués), 13px gras</li>
+<li>Unité affichée en plus petit (10px) sous le label</li>
+<li>Hauteur de ligne augmentée à 40px pour accueillir les deux années</li>
+<li>Légende avec carrés couleur (transparent = 2024, plein = 2025) en haut de chaque camp</li>
+<li>Note explicative sous le graphique sur la signification des barres hachurées</li>
+</ul>
+<h3 id="fix-parallax-timeline-acte-i">Fix parallax timeline (Acte I)</h3>
+<p>Le scrolly de la timeline 1938-2025 ne montrait initialement qu'une fine ligne d'arrière-plan à opacité 0.18 (quasi invisible) ; la courbe principale ne s'animait qu'au scroll, donnant l'impression d'un graphe vide tel que visible sur la capture utilisateur.</p>
+<p><strong>Changement</strong> :
+- Courbe d'arrière-plan : <code>stroke-width 1 → 2</code>, <code>opacity 0.18 → 0.32</code> — la trajectoire 1938-2025 est désormais visible d'emblée
+- Courbe principale : <code>stroke-width 2.8 → 3.2</code> — plus marquée quand elle s'illumine au scroll
+- Points : <code>opacity 0 → 0.35</code> par défaut — chaque année est visible dès le chargement, le pulse de focus reste l'élément de zoom</p>
+<p>La courbe complète apparaît donc dès le chargement, et le scrollytelling vient illuminer la portion jusqu'à l'année active sans cacher la trajectoire globale.</p>
+<h3 id="donnees-touchees">Données touchées</h3>
+<ul>
+<li><code>docs/data/brb2025_full.json</code> : 1,77 MB, 5172 entrées, schéma <code>{nom, ville, montant_CHF, secteur, description, canton, lat, lng, organe, sous_section}</code></li>
+<li><code>docs/data/swisslos.json</code> : ajout du bloc <code>comparaison_loro_2025</code> avec sources et <code>swisslos_est</code>/<code>loro_est</code> par ligne</li>
+<li><code>docs/js/app.js</code> : <code>initTimelineScrolly</code> (parallax), <code>initLoroVsSwisslos</code> (refonte complète 2 années)</li>
+<li><code>docs/index.html</code> : titre + sous-titre + footer de la viz Loro vs Swisslos mis à jour</li>
+</ul>
+<h3 id="outils-de-parsing">Outils de parsing</h3>
+<p><code>brb/parser_v4.py</code> et <code>brb/export_full.py</code> sont versionnés dans le dépôt pour permettre de re-parser une future édition du BRB (BRB 2026 le moment venu) avec un effort minimal.</p>
+<h2 id="v131-juin-2026-bugfix-critique-redeclaration-javascript">v13.1 (juin 2026) — Bugfix critique : redéclaration JavaScript</h2>
+<h3 id="le-bug">Le bug</h3>
+<p>Le déploiement v13 (livré le 02.06.2026) ne rendait correctement <strong>aucune visualisation</strong> sur le site en production. Diagnostic via Playwright headless :</p>
+<pre><code>[PAGE_ERROR] Identifier 'CANTON_COLORS' has already been declared
+</code></pre>
+<p>Cause : au début du bloc Acte IX (ligne 3383 de <code>docs/js/app.js</code>), j'avais redéclaré au top-level <code>const CANTON_COLORS</code>, <code>const CANTON_LABELS</code>, <code>const SECTEUR_COLORS</code> et <code>function fmtCHF</code>. Ces 4 identifiants existaient déjà dans <code>docs/js/utils.js</code> (chargé avant <code>app.js</code>).</p>
+<p><strong>Pourquoi tout est cassé, pas juste l'Acte IX</strong> : en JavaScript classique en <code>&lt;script&gt;</code>, <strong>tout le fichier est parsé avant de s'exécuter</strong>. Un <code>SyntaxError</code> au top-level empêche l'exécution complète d'<code>app.js</code>. Aucune init (timeline, comparisons, scrolly, BRB explorer, etc.) ne s'exécute. Sur le PDF que l'utilisateur m'a envoyé : 30 visualisations vides, juste les blocs HTML statiques s'affichent.</p>
+<h3 id="la-methodologie-de-check-etait-insuffisante">La méthodologie de check était insuffisante</h3>
+<p><code>node --check js/app.js</code> validait correctement la syntaxe <strong>par fichier</strong>. Mais il ne pouvait pas détecter une collision <strong>inter-fichiers</strong> au scope global. Pour la suite, le check doit toujours inclure un test navigateur réel (Playwright + capture des <code>pageerror</code>), pas juste <code>node --check</code>.</p>
+<h3 id="la-correction">La correction</h3>
+<p>Renommage des helpers spécifiques au BRB pour éviter toute collision future :</p>
+<ul>
+<li><code>CANTON_COLORS</code> → suppression (réutilise celui de <code>utils.js</code>) + helper <code>brbCantonColor(c)</code> qui ajoute la clé <code>'R'</code> (Suisse romande) absente de <code>utils.js</code></li>
+<li><code>CANTON_LABELS</code> → <code>BRB_CANTON_LABELS</code> (inclut <code>'R'</code>)</li>
+<li><code>SECTEUR_COLORS</code> → <code>BRB_SECTEUR_COLORS</code> (clés courtes : 'Action sociale', 'Sport', etc., différentes de <code>SECTOR_COLORS</code> dans <code>utils.js</code> qui utilise les clés longues du PDF)</li>
+<li><code>fmtCHF</code> → <code>brbFmtAmt(v)</code> (renvoie <code>"X M"</code> / <code>"X k"</code> sans suffixe « CHF », alors que <code>fmtCHF</code> de <code>utils.js</code> renvoie <code>"X CHF"</code>)</li>
+</ul>
+<p>18 lignes d'usage mises à jour dans la zone BRB (initBrbExplorer, initBrbLongtail, initBrbGeomap).</p>
+<h3 id="sous-titres-html-desynchronises">Sous-titres HTML désynchronisés</h3>
+<p>Pendant que j'y étais : les sous-titres HTML des trois viz de l'Acte IX disaient toujours « 594 bénéficiaires » alors que le dataset v13 en a 5172. Correction :</p>
+<ul>
+<li><code>&lt;h3&gt;594 bénéficiaires…&lt;/h3&gt;</code> → <code>&lt;h3&gt;5'172 bénéficiaires…&lt;/h3&gt;</code></li>
+<li><code>&lt;h3&gt;Distribution des 594 montants…&lt;/h3&gt;</code> → <code>&lt;h3&gt;Distribution des 5'172 montants…&lt;/h3&gt;</code></li>
+<li>Sous-titre carte : « 250+ villes » → « communes de Suisse romande » (la couverture géocodée est de 27% sur les 5172 entrées, 129 villes uniques)</li>
+<li>Footer carte : « 87% des entrées » → « environ 27% »</li>
+</ul>
+<h3 id="validation-finale">Validation finale</h3>
+<p>Test Playwright avec D3 chargé localement → <strong>22/28 viz rendent</strong> (les 6 « vides » sont en réalité des viz HTML non-SVG : tables, listes, cards — qui s'affichent normalement). Aucune erreur JavaScript. BRB explorer affiche bien « 5'172 bénéficiaires · 211.27 M CHF au total » et les 200 premières rows.</p>
+<h3 id="fichiers-touches-en-v131">Fichiers touchés en v13.1</h3>
+<ul>
+<li><code>docs/js/app.js</code> : remplacement des 4 déclarations dupliquées + 18 lignes d'usage</li>
+<li><code>docs/index.html</code> : 3 sous-titres + 1 footer mis à jour</li>
+</ul>
+<h2 id="v132-juin-2026-fix-parallax-sticky-casse-par-overflow-x-hidden">v13.2 (juin 2026) — Fix parallax (sticky cassé par overflow-x: hidden)</h2>
+<h3 id="le-bug_1">Le bug</h3>
+<p>L'utilisateur signalait qu'après scroll dans la section timeline, la courbe disparaissait et seules les cards de droite restaient visibles. Diagnostic Playwright en capturant la position du <code>.graphic</code> à 8 positions de scroll :</p>
+<pre><code>Frame 0: scrollY=1806 graphic.top=90   (visible)
+Frame 1: scrollY=2461 graphic.top=-565 (sorti par le haut !)
+Frame 2: scrollY=3115 graphic.top=-1219
+...
+</code></pre>
+<p>Le <code>position: sticky</code> était bien appliqué (computed style correct, <code>top: 60px</code>) mais ne s'engageait jamais — la graphique défilait comme <code>position: static</code>.</p>
+<h3 id="cause">Cause</h3>
+<p>Deux problèmes additifs :</p>
+<ol>
+<li>
+<p><strong><code>overflow-x: hidden</code> sur <code>body</code></strong> (style.css ligne 59) : courant pour empêcher le scroll horizontal accidentel, mais ça transforme le body en "scroll container". Conséquence : tout <code>position: sticky</code> dans la page utilise le body comme cadre de référence, pas la viewport. Le sticky devient inopérant côté viewport.</p>
+</li>
+<li>
+<p><strong>Grid item sans <code>align-self: start</code></strong> : dans un layout <code>display: grid</code>, un grid item s'étire par défaut sur la hauteur de sa ligne (<code>align-self: stretch</code>). Comme <code>.steps</code> faisait 4580px de haut, <code>.graphic</code> s'étirait aussi à 4580px, donc son <code>top: 60px</code> n'avait plus aucun espace de coulissement.</p>
+</li>
+</ol>
+<h3 id="le-fix">Le fix</h3>
+<p><strong><code>docs/css/style.css</code> ligne 59</strong> :</p>
+<pre><code class="language-css">/* AVANT (cassé) */
+body { overflow-x: hidden; }
+/* APRÈS (sticky fonctionne) */
+body { overflow-x: clip; }
+</code></pre>
+<p><code>overflow-x: clip</code> empêche le scroll horizontal <strong>sans</strong> créer un scroll container — exactement le comportement attendu pour position: sticky. Supporté par tous les navigateurs modernes (Chrome 90+, Firefox 81+, Safari 16+).</p>
+<p><strong><code>docs/css/style.css</code> lignes 269 + 282</strong> : ajout de <code>align-self: start</code> sur <code>.scrolly .graphic</code> (desktop + mobile) pour que l'élément sticky ne s'étire pas à la hauteur de la grid row mais conserve sa hauteur intrinsèque (<code>calc(100vh - 100px)</code>), laissant de la place pour le scroll relatif.</p>
+<h3 id="validation">Validation</h3>
+<p>Re-test Playwright après fix :</p>
+<pre><code>Frame 0: scrollY=1806 graphic.top=90   (arrivée, position normale)
+Frame 1: scrollY=2461 graphic.top=60   (sticky engagé ✓)
+Frame 2: scrollY=3115 graphic.top=60   (toujours collé ✓)
+Frame 3: scrollY=3769 graphic.top=60   (toujours collé ✓)
+Frame 4: scrollY=4423 graphic.top=60   (toujours collé ✓)
+Frame 5: scrollY=5078 graphic.top=60   (toujours collé ✓)
+Frame 6: scrollY=5732 graphic.top=-56  (fin de section, normal)
+Frame 7: scrollY=6386 graphic.top=-710 (hors section)
+</code></pre>
+<p>Confirmation : la courbe reste maintenant collée à gauche pendant que les 5 cards (1938, 1991, 2003, 2020, 2024) défilent à droite. Comportement identique sur le scrolly « mix » (Acte IV).</p>
+<h3 id="lecon">Leçon</h3>
+<p><code>overflow-x: hidden</code> est un piège classique du scrollytelling. La règle : si l'on veut <code>position: sticky</code> quelque part dans la page, <strong>ne jamais</strong> mettre <code>overflow: hidden</code> (ou auto/scroll) sur <code>body</code> ou <code>html</code>. Utiliser <code>overflow-x: clip</code>.</p>
+<h2 id="v133-juin-2026-verification-croisee-avec-bfj-enrichissement-contexte">v13.3 (juin 2026) — Vérification croisée avec BFJ + enrichissement contexte</h2>
+<h3 id="source-officielle">Source officielle</h3>
+<p>L'utilisateur a fourni le PDF officiel de l'Office fédéral de la justice (BFJ) : « LOTERIES ET PARIS PROFESSIONNELS VISANT UN BUT D'UTILITÉ PUBLIQUE OU DE BIENFAISANCE DEPUIS 1924 — Chiffres d'affaires », édition 2018. C'est la statistique fédérale de référence pour le secteur.</p>
+<h3 id="cross-check-des-ca-existants">Cross-check des CA existants</h3>
+<p>Vérification systématique des 36 valeurs <code>ca_M</code> LoRo déjà présentes dans <code>historique.json</code> (1940 à 2018) contre les chiffres BFJ : <strong>correspondance exacte au franc près sur les 36 années</strong>. Les données étaient déjà sourcées correctement (la BFJ était la source originale lors de la construction du dataset en v9).</p>
+<p>Les 52 années sans <code>ca_M</code> (1939, 1941-1989 sauf décennies, etc.) sont des années que <strong>la BFJ ne publie pas non plus</strong> — avant 1991, la statistique fédérale ne donne que des points décennaux (1940, 1950, 1960, 1970, 1980, 1990). Combler ces 52 trous nécessiterait des sources secondaires (rapports annuels Loro pré-1991, archives cantonales) — pas disponibles facilement.</p>
+<h3 id="nouveautes-apportees">Nouveautés apportées</h3>
+<p><strong>1. Pré-histoire (1924, 1930)</strong> : ajout de deux entrées de contexte historique. La LoRo n'existait pas encore — ces données représentent le total des loteries d'utilité publique suisses (cantonales, paroissiales, sociétés de bienfaisance) recensées par la BFJ. 1924 : 515k CHF (juillet-décembre, premier semestre statistique). 1930 : 3,5 M CHF (×7 en 6 ans, montre le besoin de financement social qui poussera à la création de la Loterie Romande en 1937-38).</p>
+<p><strong>2. Champ <code>ca_total_suisse_M</code></strong> : ajouté sur 34 années (1940-2018, là où la BFJ publie un total). Représente le CA cumulé de tous les opérateurs (LoRo + Swisslos + Sport-Toto-Gesellschaft jusqu'en 2006, SEVA jusqu'en 2002, Kleinlotterien). Permet de calculer la part de la LoRo dans l'économie loterie suisse :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Année</th>
+<th style="text-align: right;">LoRo CA</th>
+<th style="text-align: right;">Total Suisse</th>
+<th style="text-align: right;">Part LoRo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1940</td>
+<td style="text-align: right;">9 M</td>
+<td style="text-align: right;">24 M</td>
+<td style="text-align: right;">38 %</td>
+</tr>
+<tr>
+<td style="text-align: right;">1970</td>
+<td style="text-align: right;">11 M</td>
+<td style="text-align: right;">224 M</td>
+<td style="text-align: right;">5 %</td>
+</tr>
+<tr>
+<td style="text-align: right;">1990</td>
+<td style="text-align: right;">46 M</td>
+<td style="text-align: right;">806 M</td>
+<td style="text-align: right;">6 %</td>
+</tr>
+<tr>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">323 M</td>
+<td style="text-align: right;">1 374 M</td>
+<td style="text-align: right;">24 %</td>
+</tr>
+<tr>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">1 599 M</td>
+<td style="text-align: right;">2 723 M</td>
+<td style="text-align: right;">59 %</td>
+</tr>
+<tr>
+<td style="text-align: right;">2018</td>
+<td style="text-align: right;">1 576 M</td>
+<td style="text-align: right;">2 867 M</td>
+<td style="text-align: right;">55 %</td>
+</tr>
+</tbody>
+</table>
+<p>Cette « part LoRo » trace un récit en U : forte présence aux débuts, dilution par Sport-Toto et SEVA jusqu'aux années 80-90, puis remontée spectaculaire après le transfert opérationnel de Sport-Toto à LoRo+Swisslos en 2007. Donnée disponible pour viz future si pertinent.</p>
+<p><strong>3. <code>source_ca</code> standardisé</strong> : 34 entrées voient leur citation <code>source_ca</code> harmonisée pour pointer la BFJ comme source officielle. La citation détaillée d'origine (presse romande pour certaines années très anciennes) est préservée en parenthèse.</p>
+<h3 id="fichier-touche">Fichier touché</h3>
+<ul>
+<li><code>docs/data/historique.json</code> : 88 → <strong>90 entrées</strong>, ajout de <code>ca_total_suisse_M</code> sur 34 années. Les nouvelles entrées 1924/1930 n'ont pas de <code>benefice_M</code> (pas applicable — LoRo n'existait pas) donc sont automatiquement filtrées par la viz timeline qui ne montre que les points avec bénéfice — pas d'impact visuel sur la narration actuelle, mais la donnée est disponible.</li>
+</ul>
+<h3 id="decision-narrative-ouverte">Décision narrative ouverte</h3>
+<p>L'histoire « part LoRo dans le total suisse » serait un nouvel acte (entre Acte VII et Acte VIII Loro vs Swisslos). Pas implémenté dans cette release — les données sont là, la viz reste à arbitrer côté éditorial.</p>
+<h2 id="v134-juin-2026-elargissement-des-viz-nouvelle-viz-part-loro-dans-lecosysteme-suisse">v13.4 (juin 2026) — Élargissement des viz + nouvelle viz « Part LoRo dans l'écosystème suisse »</h2>
+<h3 id="systeme-de-colonnes-refondu">Système de colonnes refondu</h3>
+<p>Les 614px effectifs des viz en <code>.col</code> étaient trop serrés sur écran 1440+. Trois bumps dans <code>css/style.css</code> :</p>
+<pre><code class="language-css">/* AVANT */
+--col-max:  720px;   /* paragraphes + viz étroites → viz effective ~614px */
+--col-wide: 1120px;  /* viz standards → ~1014px */
+/* (pas de col-xl) */
 
-</body>
-</html>
+/* APRÈS */
+--col-max:  760px;   /* paragraphes (+5%, garde lisibilité ~70 caractères/ligne) */
+--col-wide: 1320px;  /* viz standards → ~1214px (+20%) */
+--col-xl:   1500px;  /* nouveau tier pour les viz qui réclament l'espace → ~1334px */
+</code></pre>
+<p><strong>6 viz étroites promues de <code>.col</code> à <code>.col-wide</code></strong> dans index.html (viz-franc, viz-prevention, viz-treemap, viz-dependency, viz-topbenefs, viz-capital). Ces viz portaient un contenu cartographique/numérique qui méritait l'espace. Les paragraphes narratifs restent en <code>.col</code> (lisibilité prime).</p>
+<p><strong>5 viz promues de <code>.col-wide</code> à <code>.col-xl</code></strong> : viz-loro-vs-swisslos (17 lignes ligne-à-ligne), viz-editorial-timeline (14 ans verticaux), viz-explorer (BRB recherchable), viz-geomap (carte 129 villes), viz-sankey (final 3 colonnes). Ces 5 viz portent le récit dense de la dernière section.</p>
+<p>Résultat mesurable (Playwright sur viewport 1440px) :
+- viz-franc : 614 → <strong>1214px</strong> (×2)
+- viz-treemap : 614 → <strong>1214px</strong>
+- viz-topbenefs : 614 → <strong>1214px</strong>
+- viz-explorer : 1014 → <strong>1334px</strong></p>
+<h3 id="nouvelle-viz-part-loro-dans-le-ca-loterie-suisse-1924-2018">Nouvelle viz : « Part LoRo dans le CA loterie suisse 1924-2018 »</h3>
+<p>Insertion d'un intermède narratif entre Acte VII et Acte VIII, juste avant la comparaison Loro-vs-Swisslos en valeur absolue. Le récit en U émerge clairement :</p>
+<ul>
+<li><strong>1940</strong> : 38 % (LoRo dominante à ses débuts)</li>
+<li><strong>1970</strong> : 5 % (Sport-Toto-Gesellschaft + SEVA captent l'essentiel)</li>
+<li><strong>1990</strong> : 6 % (creux persistant)</li>
+<li><strong>2007</strong> : transfert Sport-Toto à LoRo + Swisslos → saut brutal</li>
+<li><strong>2018</strong> : 55 % (LoRo capte la majorité du CA loterie suisse)</li>
+</ul>
+<p><strong>Implémentation</strong> (nouvelle fonction <code>initShareSuisse()</code> dans <code>docs/js/app.js</code>, ~120 lignes) :
+- Courbe rouge sur fond avec 4 bandes verticales colorées pour les 4 régimes historiques (avant-LoRo, domination, marginalité, reprise)
+- Aire sous la courbe en rouge clair pour donner du poids
+- 5 points pivots agrandis (1940, 1970, 1990, 2007, 2018)
+- 4 annotations italiques aux moments-clés
+- Marqueur vertical pointillé à 1938 (création LoRo)
+- Légende explicative à droite
+- Tooltips sur chaque point (CA LoRo + Total Suisse + part %)</p>
+<p><strong>Source des données</strong> : champ <code>ca_total_suisse_M</code> ajouté dans <code>historique.json</code> en v13.3 (PDF BFJ). Aucune nouvelle donnée ajoutée pour cette viz — elle exploite ce qui était déjà là, simplement non visualisé.</p>
+<h3 id="validation-playwright">Validation Playwright</h3>
+<p>Test sur 28 viz : <strong>23/28 rendent en SVG</strong> (les 5 « vides » sont en HTML pur : tables, listes, cards — ces ne sont pas des viz SVG). 0 erreur console (hors warnings <code>height='auto'</code> pré-existants). Le nouveau <code>viz-share-suisse</code> rend 1214×567px avec 34 points, 44 textes, 4 bandes de période et 4 annotations. La courbe en U est immédiatement lisible.</p>
+<h2 id="v135-juin-2026-12-ameliorations-de-production">v13.5 (juin 2026) — 12 améliorations de production</h2>
+<p>Tour de finition couvrant performance, accessibilité, UX mobile, polish narratif.</p>
+<h3 id="performance">Performance</h3>
+<p><strong>#1 Lazy-load <code>brb2025_full.json</code> (1,7 Mo)</strong>. La donnée BRB ne se charge plus au démarrage mais lorsque l'utilisateur approche de l'Acte IX. Implémentation : <code>IntersectionObserver</code> avec <code>rootMargin: '800px 0px'</code> sur <code>#viz-explorer</code>, déclenche <code>ensureBrbLoaded()</code> qui charge le JSON, met à jour <code>DATA.brb2025</code>, puis appelle <code>initBrbExplorer</code> + <code>initBrbLongtail</code> + <code>initBrbGeomap</code>. Idempotent (cache de la promise via <code>DATA.brb2025_loading</code>). Indicateur visuel « Chargement de l'inventaire BRB 2025 (≈ 1,7 Mo)… » dans les 3 containers le temps du fetch.</p>
+<p><strong>Mesure</strong> : 0 requête BRB au chargement initial → 1 requête au scroll vers Acte IX. First Contentful Paint significativement plus rapide.</p>
+<h3 id="ux">UX</h3>
+<p><strong>#2 Fix des collisions de labels dans Loro vs Swisslos</strong>. Quand une barre dépasse 65% de la demi-largeur (<code>INSIDE_THRESHOLD = halfW * 0.65</code>), l'étiquette de valeur passe <strong>à l'intérieur</strong> de la barre en blanc, au lieu de rester à l'extérieur où elle chevauchait l'étiquette de ligne. Appliqué symétriquement côté Loro (anchor 'end') et côté Swisslos (anchor 'start'), pour les 4 cas (2024/2025 × Loro/Swisslos).</p>
+<p><strong>#6 Pagination BRB explorer</strong>. Le cap dur à 200 lignes est remplacé par un bouton « Voir 200 de plus (X restants) ». <code>PAGE_SIZE = 200</code>, <code>displayCount</code> augmente de 200 à chaque clic, smooth-scroll vers la dernière ligne précédente pour ne pas perdre la position. Quand toutes les entrées sont affichées : message « Toutes les X entrées affichées ». CSS dédié <code>.brb-more-btn</code> avec hover et focus-visible.</p>
+<p><strong>#7 Lien Jura → BRB explorer pré-filtré</strong>. Nouveau lien CTA dans la section Acte VIII bis : « Voir les 200+ bénéficiaires jurassiens 2025 dans l'inventaire complet → ». Le href <code>#brb=canton:JU</code> est lu au démarrage de <code>initBrbExplorer</code> (<code>applyHashFilter()</code>), pré-sélectionne uniquement JU dans <code>state.cantons</code>. Sur clic, <code>hashchange</code> listener déclenche <code>ensureBrbLoaded()</code> + <code>scrollIntoView</code> vers Acte IX. Mesure : 620 entrées JU · 8,57 M CHF affichées correctement.</p>
+<p><strong>#10 Mobile UX Loro vs Swisslos</strong>. Le SVG en viewBox 1100×~960 devenait illisible compressé à 274px sur mobile (380px viewport). Solution : <code>@media (max-width: 760px)</code> impose <code>min-width: 900px</code> sur le SVG dans un container <code>overflow-x: auto</code>. Bandeau d'aide collé à gauche : « ← faites défiler horizontalement → ». Données lisibles au prix d'un scroll latéral standard pour tables larges.</p>
+<p><strong>#8 viz-editorial-timeline en onglets par décennie</strong>. La timeline éditoriale faisait 4767px de haut (14 années empilées). Refonte en 3 onglets : 2012-2015 (4), 2016-2019 (4), 2020-2025 (6, actif par défaut). Tab bar sticky à <code>top: 56px</code>, switching JS qui re-rend uniquement la décennie active. Hauteur typique par onglet : ~1500px. CSS dédié <code>.editorial-tabs</code> + <code>.editorial-tab</code> avec état actif rouge.</p>
+<h3 id="accessibilite-9">Accessibilité (#9)</h3>
+<ul>
+<li><strong>Skip-link</strong> : <code>&lt;a class="skip-link" href="#main-content"&gt;Aller directement au contenu&lt;/a&gt;</code> visible au focus uniquement (top: -40px → top: 8px on :focus), permet aux utilisateurs clavier de sauter la navigation.</li>
+<li><strong>Landmark <code>&lt;main id="main-content"&gt;</code></strong> : enveloppe tout le contenu narratif entre header et footer.</li>
+<li><strong>Decorateur <code>initA11yDecoration()</code></strong> : runs après toutes les init de viz. Pour chaque <code>.viz-card</code>, génère un <code>id="viz-title-N"</code> sur le <code>.viz-title</code>, applique <code>role="region"</code> + <code>aria-labelledby</code> sur la card, et <code>role="img"</code> + <code>aria-label</code> (depuis le titre) sur le SVG. Approche déclarative — pas besoin de toucher les 20 fonctions individuelles d'init.</li>
+<li><strong><code>&lt;nav aria-label="Actes du récit"&gt;</code></strong> sur la topnav.</li>
+<li><strong><code>aria-hidden="true"</code></strong> sur <code>.reading-progress</code> (décoratif).</li>
+<li><strong><code>role="alert"</code></strong> sur <code>#app-error</code>.</li>
+<li><strong>Focus styles</strong> : <code>a:focus-visible, button:focus-visible, .brb-pill:focus-visible { outline: 2px solid var(--c-loro); outline-offset: 2px; }</code> pour ne pas laisser le navigateur stripper les indicateurs de focus.</li>
+</ul>
+<h3 id="polish">Polish</h3>
+<p><strong>#3 Footer timestamp</strong>. Nouveau bloc <code>&lt;div class="last-updated"&gt;Dernière mise à jour : &lt;span id="build-date"&gt;—&lt;/span&gt;&lt;/div&gt;</code>. La date est calculée côté client par <code>initBuildDate()</code> qui fait un <code>fetch HEAD</code> sur <code>data/historique.json</code> et extrait le header <code>Last-Modified</code>. Si indisponible (ex. en local), fallback à la date du jour. Format <code>fr-CH</code> (« 3 juin 2026 »).</p>
+<p><strong>#5 Fix des 4 warnings SVG <code>height='auto'</code></strong>. Pattern uniformisé : <code>.attr('width', '100%').attr('height', H).style('height', 'auto').style(...)</code>. L'attribut SVG <code>height</code> ne tolère pas <code>'auto'</code> (warning console silencieux), mais la propriété CSS oui. Appliqué aux 4 occurrences restantes (lignes 897, 2370, 3753, 3883).</p>
+<p><strong>#11 Print CSS</strong>. Bloc <code>@media print</code> qui :
+- Force <code>-webkit-print-color-adjust: exact; print-color-adjust: exact;</code> sur tout (préserve les fonds noirs du <code>.fullbleed</code> qui sinon sortent blanc-sur-blanc à l'impression Chrome).
+- Désactive le <code>position: sticky</code> des <code>.scrolly .graphic</code> (qui ne s'imprime pas correctement).
+- Masque <code>.reading-progress</code> et <code>.topnav</code>.
+- Ajoute <code>page-break-inside: avoid</code> sur <code>.viz-card</code>, <code>.step-card</code>, <code>.fullbleed</code>.</p>
+<p><strong>#12 Glossaire numérique</strong>. Nouvelle section juste avant le footer, dans <code>.glossary-section</code> avec fond <code>--bg-soft</code>. Tableau de définitions <code>&lt;dl class="glossary"&gt;</code> à 7 entrées clarifiant les chiffres qui reviennent (252 M, 258 M, 1,7 Mrd, 438 M PBJ, ~5 000 projets, 5 172 entrées BRB, 2,98 Mrd cumul). Grid 2 colonnes desktop, 1 colonne mobile, séparateurs horizontaux légers.</p>
+<h3 id="validation-playwright_1">Validation Playwright</h3>
+<p>Tous les tests passent :
+- <strong>Lazy load</strong> : 0 requête <code>brb2025_full.json</code> au load initial → 1 requête après scroll vers Acte IX (1,7 Mo économisés sur le FCP).
+- <strong>Pagination</strong> : 200 rows initiales → 400 après « Voir plus ».
+- <strong>Lien Jura</strong> : <code>#brb=canton:JU</code> → 620 entrées, seul JU actif, scroll vers Acte IX.
+- <strong>Onglets éditorial</strong> : 3 tabs avec compteurs (4/4/6), switching fonctionne, cards renderent.
+- <strong>Footer timestamp</strong> : « 3 juin 2026 » affiché correctement.
+- <strong>Glossaire</strong> : 7 entrées rendues, grid responsive.
+- <strong>A11y</strong> : skip-link présent, <code>&lt;main&gt;</code> landmark, ARIA sur les .viz-card.
+- <strong>Mobile Loro vs Swisslos</strong> : container 274px, SVG min-width 900px, overflow-x: auto opérationnel.
+- <strong>0 erreur JavaScript</strong> dans la console (hors warnings sandbox CDN bloqués).</p>
+<h3 id="bilan-v135">Bilan v13.5</h3>
+<ul>
+<li><code>docs/js/app.js</code> : +120 lignes (initShareSuisse v13.4 + initBuildDate + initA11yDecoration + initBrbLazyTrigger + ensureBrbLoaded + applyHashFilter + pagination + editorial tabs refactor)</li>
+<li><code>docs/css/style.css</code> : +200 lignes (col-xl + glossaire + a11y + brb-more-btn + cta-link + editorial-tabs + print + mobile rescue)</li>
+<li><code>docs/index.html</code> : +90 lignes (skip-link + main + nav aria + intermède Part LoRo + glossaire + lien Jura + last-updated)</li>
+</ul>
+<p>Pas de régression sur les viz existantes : audit final 22 viz SVG OK, 6 viz HTML pures OK (rendent du contenu non-SVG : tables, listes, cards), aucune erreur console.</p>
+<h2 id="v136-juin-2026-bug-parser-brb-agregation-inter-cantons-regles-cantonales-2025-elargissement-des-cas-dependance-refonte-multi-annee">v13.6 (juin 2026) — Bug parser BRB, agrégation inter-cantons, règles cantonales 2025, élargissement des cas dépendance, refonte multi-année</h2>
+<h3 id="1-bug-parser-brb-2025-detection-et-correction">1. Bug parser BRB 2025 — détection et correction</h3>
+<p>Audit systématique du fichier <code>brb2025_full.json</code> après vérification du cas Tremplin Martigny (signalé suspect car affiché à 10,5 M CHF pour une association locale). Vérification croisée avec le <strong>PDF officiel BRB 2025</strong> (<code>https://soutien-loro.ch/sites/default/files/2026-05/BRB2025.pdf</code>, page Valais — Action sociale) :</p>
+<blockquote>
+<p>Assoc. Tremplin, Martigny · Travaux/Aménagements · <strong>2'500.–</strong></p>
+</blockquote>
+<p>Bug confirmé. <strong>Pattern parser identifié</strong> : 2 entrées consécutives du PDF étaient parfois fusionnées en une seule, le <code>nom</code> portant <code>&lt;nom1&gt; &lt;amount1&gt;.- &lt;nom2&gt;</code> et <code>montant_CHF</code> portant le montant de la 2e entrée. Audit exhaustif via regex <code>^(.+?)\s+(\d{1,3}['']\d{3}\.-)\s+(.+)$</code> sur la champ <code>nom</code> :</p>
+<ul>
+<li><strong>186 entrées corrompues sur 5172</strong> (3,6 %)</li>
+<li><strong>17,8 M CHF de montants mal-attribués</strong> (8,4 % du total déclaré)</li>
+<li>Cas Tremplin Martigny : le 10,5 M était en réalité le total du « Fonds mis à disposition du Conseil d'État » du Valais (section parasite agrégée comme une entrée).</li>
+</ul>
+<p><strong>Script de cleanup</strong> (<code>scripts/clean_brb.py</code>) :
+1. Détecte le pattern de fusion via regex
+2. Split chaque entrée en 2 : la 1re récupère le montant extrait du nom, la 2e garde le <code>montant_CHF</code> actuel
+3. Détecte les sections totales parasites (mots-clés « Fonds mis à disposition », « Total pour », et montant &gt; 500'000 CHF) et les supprime
+4. Backup automatique de l'original dans <code>brb2025_full.backup.json</code></p>
+<p><strong>Résultats</strong> :
+- 206 entrées splittées (+412 nouvelles entrées propres)
+- 1 section totale supprimée (-10,5 M parasite)
+- <strong>Total post-cleanup : 5377 entrées, 207 M CHF</strong> (vs 5172 entrées, 211 M CHF avant)
+- <strong>Tremplin Martigny : 10'500'000 → 2'500 CHF</strong> ✓</p>
+<h3 id="2-agregation-inter-cantons">2. Agrégation inter-cantons</h3>
+<p>Demande utilisateur : « certains cantons donnent à la même structure, comment faire pour agréger leurs sommes ? ». Implémentation d'une normalisation de nom + group-by :</p>
+<pre><code class="language-python">def normalize_name(name):
+    s = name.lower()
+    s = re.sub(r&quot;^(assoc\.|fond\.|verein|sté|club|...) +&quot;, '', s)  # strip prefix
+    s = re.sub(r&quot;,\s*[a-zéèôî' -]+$&quot;, '', s)                        # strip ville
+    s = unicodedata.normalize('NFKD', s).encode('ASCII','ignore')   # strip accents
+    return re.sub(r&quot;[^a-z0-9]+&quot;, ' ', s).strip()
+</code></pre>
+<p><strong>Résultat</strong> : 97 bénéficiaires uniques reçoivent de 2+ cantons, 290 entrées BRB taguées avec <code>agg_total_CHF</code>, <code>agg_cantons</code>, <code>agg_count</code>. Top multi-canton :</p>
+<ul>
+<li><strong>Fond. développement</strong> (GE,VS) — 1,66 M cumulé</li>
+<li><strong>FFG Lausanne 2025</strong> (R,VD) — 1,37 M cumulé</li>
+<li><strong>Orchestre de Chambre</strong> (FR,GE,VD) — 1,20 M cumulé</li>
+<li><strong>Fond. EPFL Plus</strong> (VD,VS) — 1,02 M cumulé</li>
+<li><strong>Tour de Romandie</strong> (FR,R) — 965 k cumulé</li>
+<li><strong>Verbier Festival</strong> (R,VS) — 925 k cumulé</li>
+<li><strong>CORODIS</strong> (FR,R) — 738 k cumulé</li>
+<li><strong>Lanterne Magique</strong> (JU,NE,R) — 678 k cumulé</li>
+</ul>
+<p>L'UI BRB Explorer affiche désormais :
+- Badge <strong>+N↗</strong> à côté du nom (tooltips listant les autres cantons)
+- Ligne <strong>« Cumul tous cantons : XXX CHF (N cantons) »</strong> sous le secteur</p>
+<h3 id="3-regles-cantonales-2024-2025-recherche-et-integration">3. Règles cantonales 2024 → 2025 : recherche et intégration</h3>
+<p>Refonte de la viz <code>initGovernance</code> pour afficher la <strong>comparaison 2024 vs 2025</strong> par canton, avec badge « ÉVOLUTION » et description courte du changement.</p>
+<p><strong>Sources des règles 2024</strong> (table de référence) :</p>
+<blockquote>
+<p><em>REISO — La Loterie Romande, source de financement clé</em>, Jérémie Sanchez, janvier 2026
+<a href="https://www.reiso.org/articles/themes/pratiques/15008">https://www.reiso.org/articles/themes/pratiques/15008</a></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Canton</th>
+<th>2024</th>
+<th>2025</th>
+<th>Source du changement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vaud</td>
+<td>25 %</td>
+<td>25 %</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Genève</td>
+<td>0 %</td>
+<td>0 %</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Fribourg</td>
+<td>9 %</td>
+<td>9 %</td>
+<td><strong>+2 % redirigés vers sport</strong> (500 k CHF) · La Liberté 7 oct 2024 ; Frapp 9 juin 2024</td>
+</tr>
+<tr>
+<td>Valais</td>
+<td>0 %</td>
+<td>0 %</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Neuchâtel</td>
+<td>10 %</td>
+<td>10 %</td>
+<td><strong>Création FAC-LoRo tourisme</strong> (1,57 M / 13 dossiers) · ne.ch communiqué mai 2026</td>
+</tr>
+<tr>
+<td>Jura</td>
+<td>17 %</td>
+<td><strong>20 %</strong></td>
+<td>Recueil officiel cantonal (FO 2025 N° 23)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-elargissement-des-cas-de-dependance-documentes">4. Élargissement des cas de dépendance documentés</h3>
+<p>Demande utilisateur : « j'aimerai avoir un peu plus d'associations critiques ». 5 nouveaux cas ajoutés à <code>dependance_cantons.json</code> avec <strong>part Loro dans budget chiffrée et sourcée</strong> :</p>
+<table>
+<thead>
+<tr>
+<th>Asso</th>
+<th>Loro</th>
+<th>Budget</th>
+<th>% Loro</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FriSanté</strong> (FR)</td>
+<td>176 k</td>
+<td>~550 k</td>
+<td><strong>32 %</strong></td>
+<td>REISO janv. 2026</td>
+</tr>
+<tr>
+<td><strong>Lanterne magique</strong> (R)</td>
+<td>678 k</td>
+<td>~2,5 M</td>
+<td><strong>27 %</strong></td>
+<td>REISO janv. 2026</td>
+</tr>
+<tr>
+<td><strong>Cinéforom</strong> (R)</td>
+<td>2,65 M</td>
+<td>10,6 M</td>
+<td><strong>25 %</strong></td>
+<td>Cinéforom (site officiel) + Cinando</td>
+</tr>
+<tr>
+<td>Béjart Ballet Lausanne (VD)</td>
+<td>450 k</td>
+<td>~10 M</td>
+<td>5 %</td>
+<td>24 heures juin 2024</td>
+</tr>
+<tr>
+<td>Cully Jazz (VD)</td>
+<td>~110 k</td>
+<td>~2 M</td>
+<td>5 %</td>
+<td>Le Temps interview Cavin 2023</td>
+</tr>
+</tbody>
+</table>
+<p>Les 3 premiers cas montrent une <strong>dépendance structurelle</strong> (&gt; 25 % du budget). Les 2 derniers illustrent au contraire un modèle où la Loro est un <strong>complément</strong>, et où le bénéficiaire serait fragilisé mais pas immédiatement menacé sans elle (Ville + billetterie/bars compensent).</p>
+<h3 id="5-refonte-multi-annee-des-viz">5. Refonte multi-année des viz</h3>
+<h4 id="initfranc-decomposition-du-pbj-avec-onglets-2023-2024-2025"><code>initFranc</code> — Décomposition du PBJ avec onglets 2023 / 2024 / 2025</h4>
+<p>Refonte complète. La viz n'utilise plus de données hardcodées 2024 mais lit dynamiquement depuis <code>rapports_financiers.json</code> (compte de résultat ligne à ligne pour les 3 années). 3 onglets <code>[2023] [2024] [2025]</code> cliquables, transitions D3 animées au changement.</p>
+<p><strong>Décision méthodologique sur le scale de la barre</strong> : la somme des composants (bénéfice + tous les coûts opérationnels) dépasse légèrement le PBJ chaque année (de 5-10 M) à cause du résultat financier positif (produits hors-jeux). Plutôt que de masquer cette réalité comptable, la barre est <strong>échelonnée sur le total des composants</strong>, et l'en-tête affiche les deux : « PBJ 2024 : 438,2 M · Bénéfice : 258,2 M ». Le pourcentage de chaque segment reste calculé par rapport au PBJ.</p>
+<p><strong>Suppression</strong> de l'ancien segment synthétique « FSES + FSC » qui n'apparaît pas dans le compte de résultat (ces distributions sont incluses dans <code>resultat_net</code>).</p>
+<h4 id="initmixbycanton-grille-3-2-desktop-svg-agrandis-2025-inclus"><code>initMixByCanton</code> — Grille 3 × 2 desktop, SVG agrandis, 2025 inclus</h4>
+<p>Refonte du layout : <code>grid-template-columns: repeat(3, 1fr)</code> forcé en classe <code>.mc-grid-3x2</code>, responsive (2 cols à 920px, 1 col à 600px). SVG passés de 280×140 à <strong>380×200</strong> (+36 % largeur, +43 % hauteur). Ajout d'une grille horizontale en pointillé + ticks Y en M CHF (avant : pas de ticks Y). Série étendue de 2013-2024 à <strong>2013-2025</strong> (<code>d3.range(2013, 2026)</code>).</p>
+<h3 id="6-carte-des-cantons-degrade-visible">6. Carte des cantons — dégradé visible</h3>
+<p>Les viz <code>initRealMap</code> et <code>initTilegram</code> utilisaient un dégradé <code>interpolateRgb('#fbfaf6', '#c8102e')</code> (presque-blanc → rouge Loro) avec domain <code>[0, maxV]</code>. Résultat : toutes les valeurs entre 100 et 600 CHF/habitant tombaient dans la moitié pâle de l'échelle, et les cantons paraissaient « tous dans le même rouge ».</p>
+<p><strong>Remplacement</strong> par <code>d3.interpolateYlOrRd</code> (jaune → orange → rouge soutenu) avec domain <code>[minV - 10%, maxV]</code>. Effet immédiat : sur la métrique « CHF par habitant 2025 », Fribourg (140) s'affiche en <strong>jaune clair</strong>, Genève (175) en <strong>orange</strong>, Vaud (189) en <strong>rouge moyen</strong>, Jura/NE/VS (194-205) en <strong>bordeaux</strong>. La hiérarchie visuelle est désormais évidente.</p>
+<h3 id="7-tilegram-2025">7. Tilegram 2025</h3>
+<p>Ajout des données 2025 à <code>per_capita.json</code>. Calcul fait à partir de <code>repartition_canton_jeu.json</code> :</p>
+<pre><code>per_capita_2025 = ventes_canton_2025 / population_canton_2025
+</code></pre>
+<p>Résultats 2025 (CHF / habitant) : VS 205, NE 202, JU 194, VD 189, GE 175, FR 140, Romandie 182. Le slider du tilegram va automatiquement jusqu'à 2025 (lit <code>max(years)</code> de <code>per_capita.tous_jeux.years</code>).</p>
+<h3 id="8-identification-des-beneficiaires-meritant-une-serie-2013-2025">8. Identification des bénéficiaires méritant une série 2013-2025</h3>
+<p>Demande utilisateur sur la viz « L'échantillon nommé · vue d'ensemble (120 entrées sur ~5'000) ». Audit du fichier <code>beneficiaires.json</code> existant : <strong>57 % des 120 entrées sont des sous-entités du Tour de Romandie</strong> (commune X organise une étape de telle année). Le panel est très déséquilibré.</p>
+<p>Création de <code>data/beneficiaires_candidats_2013_2025.json</code> : <strong>15 structures recommandées</strong> (pérennes, ≥ 500 k CHF en 2025, secteur utilité publique central). Listées par montant 2025 décroissant :</p>
+<ol>
+<li>Fondation de l'Hermitage (VD) — 4,00 M</li>
+<li>Fondation pour la conservation des biens culturels (GE) — 3,30 M</li>
+<li>Fondation CHUV recherche médicale (VD) — 1,41 M</li>
+<li>CSP Centre Social Protestant Vaud (VD) — 1,38 M</li>
+<li>Fondation Arc en Scène (NE) — 1,35 M</li>
+<li>Fondation Equilibre et Nuithonie (FR) — 1,10 M</li>
+<li>Fondation ISREC cancer (VD) — 1,10 M</li>
+<li>Fondation EPFL Plus (VD) — 1,02 M</li>
+<li>Cinémathèque suisse (VD) — 830 k</li>
+<li>CORODIS intercantonal danse (R+FR) — 738 k</li>
+<li>FIFF Festival International Film Fribourg (FR) — 660 k</li>
+<li>Fondation Plateforme 10 musées (VD) — 600 k</li>
+<li>Fondation du Festival de la Cité Lausanne (VD) — 394 k</li>
+<li>Fondation Pierre Gianadda (VS) — 350 k</li>
+<li>Fondation Visions du Réel Nyon (VD) — 270 k</li>
+</ol>
+<p><strong>Pour finaliser</strong> : extraire les montants 2013-2024 des 12 BRB historiques (<code>ra.loro.ch/documents/BRB2013.pdf</code> à <code>BRB2024.pdf</code>) et fusionner dans <code>beneficiaires.json</code> — travail séparé non inclus dans cette livraison.</p>
+<h3 id="9-sous-titres-html-mis-a-jour">9. Sous-titres HTML mis à jour</h3>
+<ul>
+<li>Section franc : « Décomposition du produit brut des jeux Loro · 2023, 2024, 2025 »</li>
+<li>Section gouvernance : « Les règles cantonales · 2024 → 2025 » avec mention explicite des 3 cantons ayant évolué</li>
+</ul>
+<h3 id="validation-finale_1">Validation finale</h3>
+<ul>
+<li><code>node --check js/app.js</code> : OK</li>
+<li>Playwright headless sur viewport 1500×900 : 0 erreur JS</li>
+<li>viz-franc : 3 tabs, transitions OK, 2023/2024/2025 rendent (PBJ 420,7 / 438,2 / 429,8 M, bénéfice 243,7 / 258,2 / 252,0 M)</li>
+<li>viz-governance : 6 lignes comparées, 3 badges ÉVOLUTION (FR, NE, JU)</li>
+<li>viz-mix-canton : 6 cellules en 3×2, axe 2013-2025 effectif</li>
+<li>viz-tilegram : 2025 atteint au slider, palette YlOrRd visible</li>
+</ul>
+<hr />
+<h2 id="v137-juin-2026-coherence-narrative-transparence-parser-viz-inter-cantons">v13.7 (juin 2026) — Cohérence narrative, transparence parser, viz inter-cantons</h2>
+<p>Trois petites passes complémentaires à v13.6, traitant les chantiers <strong>E + F + G + D</strong> identifiés dans la rétro post-cleanup.</p>
+<h3 id="passe-1-coherence-des-chiffres-e">Passe 1 — Cohérence des chiffres (E)</h3>
+<p>Le cleanup parser de v13.6 a fait passer le BRB de 5'172 à <strong>5'377 entrées</strong> (et de 211 M à <strong>207 M CHF</strong>), mais quatre endroits du récit affichaient encore les anciens chiffres. Corrigés :</p>
+<ul>
+<li><code>docs/index.html:956</code> — titre de la viz Explorer : « 5'172 bénéficiaires » → « 5'377 bénéficiaires »</li>
+<li><code>docs/index.html:962</code> — footer Explorer : « 5'172 attributions » → « 5'377 attributions, 207 M CHF total »</li>
+<li><code>docs/index.html:984</code> — titre Longtail : « Distribution des 5'172 » → « Distribution des 5'377 »</li>
+<li><code>docs/index.html:1099</code> — glossaire : entrée « 5 172 entrées BRB 2025 » → « 5 377 entrées BRB 2025 · 207 M CHF »</li>
+</ul>
+<h3 id="passe-2-note-decart-207-m-252-m-f">Passe 2 — Note d'écart 207 M ≠ 252 M (F)</h3>
+<p>Le BRB totalise 207 M CHF redistribués alors que le communiqué Loro 2025 annonce un bénéfice de 252 M. L'écart de ~45 M est légitime mais peut prêter à confusion — il vient du fait que le BRB ne capture pas tout. Nouvelle entrée de glossaire qui l'explique en trois points :</p>
+<ul>
+<li><strong>(a)</strong> versements aux sous-fonds cantonaux (FAC, fonds sport, fonds dépendance) qui sont redistribués ensuite localement, hors BRB</li>
+<li><strong>(b)</strong> attributions effectuées après clôture du document (versions tardives non encore publiées)</li>
+<li><strong>(c)</strong> soutiens sportifs liés à des manifestations (Tour de Romandie, FFG, etc.) qui passent par des canaux différents du BRB</li>
+</ul>
+<h3 id="passe-3-encart-note-qualite-sur-la-viz-explorer-g">Passe 3 — Encart « Note qualité » sur la viz Explorer (G)</h3>
+<p>Au-dessus du <code>#viz-explorer</code>, une nouvelle <code>.viz-quality-note</code> (style discret, fond <code>--bg-soft</code>, accent <code>--c-accent</code>) informe l'utilisateur du cleanup v13.6 : 186 entrées splittées + 1 section parasite de 10,5 M CHF retirée. Lien direct vers <code>METHODOLOGY.html#v13-6</code>.</p>
+<h3 id="passe-4-nouvelle-viz-top-20-inter-cantons-d">Passe 4 — Nouvelle viz « Top 20 inter-cantons » (D)</h3>
+<p>Précédemment, l'agrégation des 290 entrées inter-cantonales était cachée dans des tooltips de l'Explorer (badge <code>+N↗</code> cliquable). Cette information méritait une viz dédiée. Insertion entre <code>#viz-explorer</code> et <code>#viz-longtail</code> :</p>
+<p><strong>Fonction</strong> <code>initBrbMulticantons()</code> dans <code>app.js</code> (≈140 LOC) :</p>
+<ul>
+<li>Re-agrège les 5'377 entrées par nom normalisé (même regex que <code>clean_brb.py</code> et l'Explorer pour garantir la cohérence des clés)</li>
+<li>Filtre les bénéficiaires actifs dans ≥ 2 cantons (résultat : <strong>97 entités</strong>)</li>
+<li>Top 20 par cumul, rendu en bar horizontal empilé</li>
+<li>Chaque barre = un bénéficiaire ; largeur ∝ cumul (max = 100 %)</li>
+<li>Segments empilés colorés par canton, ordre canonique VD-GE-VS-FR-NE-JU-R</li>
+<li>Label canton inline si segment ≥ 18 % (sinon visible au survol)</li>
+<li>Tooltip par segment avec montant + part en % du cumul du bénéficiaire</li>
+</ul>
+<p><strong>Wiring lazy loader</strong> : <code>'viz-multicantons'</code> ajouté aux 3 containers existants (<code>viz-explorer</code>, <code>viz-longtail</code>, <code>viz-geomap</code>) qui partagent le même chargement de <code>brb2025_full.json</code> (1,7 Mo). Aucun fetch supplémentaire.</p>
+<p><strong>Cleanup affichage</strong> : <code>cleanName</code> strippe <code>Assoc.</code> → <code>Association</code>, <code>Fond.</code> → <code>Fondation</code>, <code>Sté</code> → <code>Société</code>, et les trailing dashes/whitespace causés par les troncatures du parser PDF (« Tour de Romandie - » → « Tour de Romandie », « Centre de Contact Suisses- » → « Centre de Contact Suisses »).</p>
+<p><strong>Top 5 résultats</strong> (post-cleanup, BRB 2025) :</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Bénéficiaire</th>
+<th style="text-align: right;">Cumul</th>
+<th>Cantons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>Fondation pour le développement [tronqué]</td>
+<td style="text-align: right;">1,66 M</td>
+<td>GE (94 %) + VS (6 %)</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Association FFG Lausanne 2025</td>
+<td style="text-align: right;">1,37 M</td>
+<td>VD (93 %) + R (7 %)</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Orchestre de Chambre</td>
+<td style="text-align: right;">1,20 M</td>
+<td>GE (42 %) + FR (36 %) + VD (22 %)</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Fondation EPFL Plus</td>
+<td style="text-align: right;">1,02 M</td>
+<td>VD (98 %) + VS (2 %)</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Tour de Romandie</td>
+<td style="text-align: right;">965 k</td>
+<td>R (99,5 %) + FR (0,5 %)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="validation_1">Validation</h3>
+<ul>
+<li><code>node --check docs/js/app.js</code> : OK</li>
+<li>Test isolé Playwright (<code>_test_multi.html</code>, supprimé après validation) sur le sandbox sans CDN d3 : 20 lignes rendues, 7 entrées de légende, barres correctement proportionnées de 100 % (rang 01) à 12 % (rang 20)</li>
+<li>0 référence orphelin à « 5'172 » dans <code>docs/</code></li>
+<li>Capture d'écran validée : noms lisibles, codes canton inline, totaux alignés à droite, légende compacte au-dessus</li>
+</ul>
+<h3 id="limites-connues-heritees-du-parser-brb-hors-scope-v137">Limites connues (héritées du parser BRB, hors scope v13.7)</h3>
+<ul>
+<li>« Fondation pour le développement », « Association pour la sauvegarde », « Association pour la promotion » : noms tronqués par le parseur PDF (perte du <code>de l'innovation</code>, <code>du patrimoine bâti</code>, etc.). Reste à corriger dans une éventuelle Pass C (re-parseur propre).</li>
+<li>Secteurs parfois incorrects (Orchestre de Chambre classé en <code>Sport</code> alors que culturel) : héritage des sections du PDF parfois mal détectées.</li>
+<li>L'agrégation par nom normalisé reste sensible aux orthographes légèrement différentes (<code>Association</code> vs <code>Assoc.</code>) — la regex est robuste mais pas infaillible.</li>
+</ul>
+<p>Reste à attaquer dans les prochaines passes : <strong>B</strong> (audit BRB élargi : montants nuls, doublons exacts), <strong>A</strong> (séries historiques 2013-2024 des 15 candidats), <strong>C</strong> (re-parseur propre du BRB).</p>
+<hr />
+<h2 id="v137-audit-juin-2026-audit-brb-elargi-pass-3-b">v13.7-audit (juin 2026) — Audit BRB élargi (Pass 3 — B)</h2>
+<p>Suite à v13.7 (cohérence narrative + viz multi-cantons), audit systématique des 5'377 entrées pour détecter les patterns d'erreur résiduels du parser. Script <code>scripts/audit_brb.py</code> qui diagnostique 11 catégories sans modification, puis <code>scripts/clean_brb_v13_7.py</code> qui applique les corrections sûres.</p>
+<h3 id="diagnostic-initial">Diagnostic initial</h3>
+<table>
+<thead>
+<tr>
+<th>Catégorie</th>
+<th style="text-align: right;">Détectés</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entrées sans canton</td>
+<td style="text-align: right;">0</td>
+<td>— (clean)</td>
+</tr>
+<tr>
+<td>Montants nuls / négatifs</td>
+<td style="text-align: right;">0</td>
+<td>— (clean)</td>
+</tr>
+<tr>
+<td>Montants &gt; 5 M CHF (rescapés de v13.6)</td>
+<td style="text-align: right;">0</td>
+<td>— (clean)</td>
+</tr>
+<tr>
+<td>Noms vides / &lt; 3 caractères</td>
+<td style="text-align: right;">0</td>
+<td>— (clean)</td>
+</tr>
+<tr>
+<td>Caractères encodage cassé</td>
+<td style="text-align: right;">0</td>
+<td>— (clean)</td>
+</tr>
+<tr>
+<td><strong>Noms tronqués</strong> (trailing dash / préposition orpheline)</td>
+<td style="text-align: right;"><strong>209</strong></td>
+<td>Strip artefact (cleanup [A])</td>
+</tr>
+<tr>
+<td><strong>Descriptions polluées</strong> (<code>XX'XXX.-</code> du bénéficiaire suivant fusionné)</td>
+<td style="text-align: right;"><strong>228</strong></td>
+<td>Strip post-amount (cleanup [B])</td>
+</tr>
+<tr>
+<td><strong>Villes contenant des descriptions</strong> (« Matériel athlétisme » comme ville)</td>
+<td style="text-align: right;"><strong>16</strong></td>
+<td>Nullify ville, push to description (cleanup [C])</td>
+</tr>
+<tr>
+<td><strong>Doublons exacts 100% identiques</strong> (nom+ville+canton+montant+desc+organe identiques)</td>
+<td style="text-align: right;"><strong>13</strong></td>
+<td>Dédup, garde le 1er (cleanup [D])</td>
+</tr>
+<tr>
+<td>Doublons « legit » (même montant/canton mais descriptions distinctes = attributions multiples)</td>
+<td style="text-align: right;">54</td>
+<td><strong>Préservés</strong> — ce sont 2 dons distincts</td>
+</tr>
+<tr>
+<td>Doublons normalisés (orthographes équivalentes : « Assoc. Lausanne Marathon » vs « Lausanne Marathon »)</td>
+<td style="text-align: right;">1</td>
+<td>Merge si ville+canton+montant+desc identiques (cleanup [E])</td>
+</tr>
+<tr>
+<td>Ville présente mais lat/lng absent</td>
+<td style="text-align: right;">967</td>
+<td>Hors scope (limites géocodage)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cleanup-applique">Cleanup appliqué</h3>
+<pre><code>[A] 237 noms nettoyés (regex TRAILING_DASH + DANGLING_PREP, longueur post-strip &gt; 8 chars)
+[B] 228 descriptions nettoyées (regex AMOUNT_IN_DESC = `\d{1,3}['']?\d{3}\.-\s.+$`)
+[C] 22 villes nullifiées (patterns : verbes d'action, années seules, mots génériques)
+[D] 18 doublons 100% identiques supprimés
+[E] 1 doublon normalisé fusionné
+
+Total : 5'377 → 5'358 entrées (-19), 206,971,511 → 206,947,411 CHF (-24,100 CHF, soit 0,012%)
+</code></pre>
+<p>Backup automatique de l'original dans <code>docs/data/brb2025_full.backup_v13_7.json</code> avant écriture.</p>
+<h3 id="effet-de-bord-detecte-et-corrige-faux-merges-en-agregation-multi-cantons">Effet de bord détecté et corrigé : faux merges en agrégation multi-cantons</h3>
+<p>Le cleanup [A] (strip des prépositions orphelines) avait pour effet secondaire d'augmenter artificiellement le nombre de bénéficiaires « inter-cantonaux » détectés par la viz <code>#viz-multicantons</code> (97 → 106). En réalité, plusieurs de ces nouveaux clusters étaient des <strong>faux positifs</strong> où des noms tronqués différents normalisaient vers la même clé.</p>
+<p>Exemple typique :
+- <code>"Assoc. pour la Conservation"</code> (VD, 90 k CHF) — probablement « Assoc. pour la Conservation du Patrimoine [vaudois] »
+- <code>"Fond. pour la conservation"</code> (GE, 3,3 M CHF) — probablement « Fond. pour la conservation [de l'art ancien] »
+- Après norm : tous deux → <code>"pour la conservation"</code> → faux merge attribuant 3,39 M à une seule entité fictive</p>
+<p><strong>Solution</strong> : critère de confiance ajouté dans <code>initBrbMulticantons()</code> JavaScript :</p>
+<pre><code class="language-javascript">const STOPWORDS_FR = new Set([
+  'le','la','les','l','un','une','des','du','de','d',
+  'a','au','aux','et','ou','mais','donc','car','ni',
+  'pour','sur','sous','avec','sans','dans','par','vers','en',...
+]);
+function specificTokens(normalized) {
+  return normalized.split(/\s+/).filter(w =&gt; w.length &gt;= 2 &amp;&amp; !STOPWORDS_FR.has(w));
+}
+function hasAcronym(originalName) {
+  return /\b[A-Z]{3,}\b/.test(originalName);
+}
+// Un cluster est gardé si :
+//   - &gt;= 2 tokens spécifiques dans le nom normalisé (ex. &quot;tour&quot; + &quot;romandie&quot;)
+//   - OU au moins un acronyme &gt;= 3 lettres en majuscules dans un des noms originaux (ex. &quot;CORODIS&quot;, &quot;FFG&quot;, &quot;EPFL&quot;)
+</code></pre>
+<p><strong>Résultat</strong> : 106 clusters bruts → 82 retenus (haute confiance) + 24 écartés (ambigus).</p>
+<table>
+<thead>
+<tr>
+<th>Avant filtre</th>
+<th>Après filtre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#1 « pour la conservation » 3,39 M ❌</td>
+<td>#1 Association FFG Lausanne 2025 — 1,37 M ✓</td>
+</tr>
+<tr>
+<td>#2 « pour le développement » 1,66 M ❌</td>
+<td>#2 Orchestre de Chambre — 1,21 M ✓</td>
+</tr>
+<tr>
+<td>...</td>
+<td>#6 CORODIS — 738 k ✓ (préservé via acronyme)</td>
+</tr>
+</tbody>
+</table>
+<p>Les 24 clusters écartés (« pour la sauvegarde », « pour la promotion », « romande », « suisse »…) restent visibles individuellement dans la viz Explorer comme entités séparées — par prudence, on les considère comme distincts plutôt que d'agréger à tort.</p>
+<h3 id="updates-html">Updates HTML</h3>
+<ul>
+<li>Acte IX viz-explorer titre : 5'377 → <strong>5'358 bénéficiaires</strong> · 207 M CHF</li>
+<li>Acte IX viz-longtail titre : Distribution des 5'377 → <strong>5'358 montants</strong></li>
+<li>Acte IX viz-multicantons : « Une centaine » → <strong>« 80 bénéficiaires »</strong>, footer 97/106 → <strong>82 (haute confiance)</strong> + explication des 24 écartés</li>
+<li>Glossaire : entrée « 5 377 entrées BRB » → <strong>« 5 358 entrées BRB · 207 M CHF »</strong></li>
+<li>Note qualité viz Explorer enrichie : « v13.6 (186 fusions) » → <strong>« v13.6 + v13.7 : 186 fusions, 1 section parasite, 237 noms, 228 descriptions, 19 doublons »</strong></li>
+</ul>
+<h3 id="validation_2">Validation</h3>
+<ul>
+<li><code>node --check docs/js/app.js</code> : OK</li>
+<li>Test isolé Playwright : 20 lignes rendues, ordre changé vs v13.6 (#1 FFG Lausanne au lieu de « pour le développement »)</li>
+<li>Re-audit : truncated_name 209→0, desc_in_ville 16→0, parser-bug duplicates 13→0</li>
+<li>Doublons résiduels (59 groupes / 129 entrées) : tous avec descriptions distinctes = attributions multiples légitimes</li>
+<li>0 référence orpheline à « 5'377 » dans le HTML</li>
+</ul>
+<h3 id="limites-restantes-pass-5-c-refactor-parser">Limites restantes (Pass 5 — C : refactor parser)</h3>
+<ul>
+<li>945 entrées sans lat/lng — limite de la couverture géocoding (27 % des entrées avec ville)</li>
+<li>Quelques noms restent ambigus après strip : "Compagnie de" (→ "Compagnie", 9 chars) — entrées probablement issues du parser PDF avec colonne tronquée</li>
+<li>Le critère « acronyme » peut produire de faux merges pour les acronymes très génériques (ex. "ESPAS", "EVAM") — mais ces cas n'apparaissent pas dans les top 20</li>
+</ul>
+<p>Reste à attaquer : <strong>A</strong> (séries 2013-2024 des 15 candidats — gros morceau), <strong>C</strong> (re-parseur propre du BRB).</p>
+<hr />
+<h2 id="v137-historical-juin-2026-series-historiques-2023-2025-pass-4-a">v13.7-historical (juin 2026) — Séries historiques 2023-2025 (Pass 4 — A)</h2>
+<p>Suite à v13.7-audit, ajout d'une vue temporelle pour 15 bénéficiaires structurels du BRB Loterie Romande. Objectif initial : étendre <code>beneficiaires.json</code> (120 entrées dominées à 57 % par le Tour de Romandie) vers un panel équilibré culture / social / recherche / patrimoine couvrant 2013-2025. Cette passe livre une <strong>première itération sur 3 années (2023, 2024, 2025)</strong>, l'extension aux 9 années antérieures restant un chantier ouvert documenté ci-dessous.</p>
+<h3 id="les-15-beneficiaires-selectionnes">Les 15 bénéficiaires sélectionnés</h3>
+<p>Critères (cohérents avec <code>beneficiaires_candidats_2013_2025.json</code>) : structures pérennes (vs événements one-shot), apparaissant dans le BRB 2025 avec ≥ 270 k CHF cumulés, secteurs d'utilité publique centraux. Liste finale :</p>
+<ul>
+<li><strong>Culture / muséal</strong> (8) : Fond. de l'Hermitage (VD), Cinémathèque suisse (VD), Fond. Plateforme 10 (VD), Fond. du Festival de la Cité (VD), Fond. Visions du Réel (VD/Nyon), Fond. Arc en Scène / TPR (NE), Fond. Pierre Gianadda (VS), Fond. Equilibre et Nuithonie (FR)</li>
+<li><strong>Festivals</strong> (2) : Festival International du Film de Fribourg (FIFF), CORODIS (intercantonal danse)</li>
+<li><strong>Recherche médicale</strong> (2) : Fond. CHUV (VD), Fond. ISREC cancer (VD)</li>
+<li><strong>Formation / sciences</strong> (1) : Fond. EPFL Plus (VD)</li>
+<li><strong>Action sociale</strong> (1) : CSP Centre Social Protestant Vaud</li>
+<li><strong>Patrimoine</strong> (1) : Fond. pour la conservation des biens culturels (Genève)</li>
+</ul>
+<h3 id="donnees-extraites">Données extraites</h3>
+<p>Source : PDFs officiels <code>https://ra.loro.ch/documents/BRB{year}.pdf</code> (Loterie Romande).
+Méthode : <code>web_fetch</code> avec <code>text_content_token_limit=120000</code> puis parsing manuel du texte extrait du PDF, repérage des candidats par patterns de noms (« Fond. de l'Hermitage », « Fond. CHUV », etc.) et agrégation des montants attribués dans toutes les sections cantonales où ils apparaissent.</p>
+<p><strong>Couverture : 36 points de données sur 45 (80 %)</strong> :</p>
+<table>
+<thead>
+<tr>
+<th>Bénéficiaire</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fond. de l'Hermitage</td>
+<td style="text-align: right;">400 k</td>
+<td style="text-align: right;">300 k</td>
+<td style="text-align: right;"><strong>4'000 k</strong></td>
+</tr>
+<tr>
+<td>Fond. pour la conservation (GE)</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">3'300 k</td>
+</tr>
+<tr>
+<td>Fond. CHUV</td>
+<td style="text-align: right;">400 k</td>
+<td style="text-align: right;">68 k</td>
+<td style="text-align: right;">1'413 k</td>
+</tr>
+<tr>
+<td>CSP Vaud</td>
+<td style="text-align: right;">250 k</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">1'376 k</td>
+</tr>
+<tr>
+<td>Fond. Arc en Scène / TPR</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">475 k</td>
+<td style="text-align: right;">1'345 k</td>
+</tr>
+<tr>
+<td>Fond. Equilibre et Nuithonie</td>
+<td style="text-align: right;">900 k</td>
+<td style="text-align: right;">900 k</td>
+<td style="text-align: right;">1'100 k</td>
+</tr>
+<tr>
+<td>Fond. ISREC</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">1'100 k</td>
+</tr>
+<tr>
+<td>Fond. EPFL Plus</td>
+<td style="text-align: right;">120 k</td>
+<td style="text-align: right;">95 k</td>
+<td style="text-align: right;">1'020 k</td>
+</tr>
+<tr>
+<td>Cinémathèque suisse</td>
+<td style="text-align: right;">300 k</td>
+<td style="text-align: right;">450 k</td>
+<td style="text-align: right;">830 k</td>
+</tr>
+<tr>
+<td>CORODIS (partiel)</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">35 k</td>
+<td style="text-align: right;">738 k</td>
+</tr>
+<tr>
+<td>FIFF Fribourg</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">580 k</td>
+<td style="text-align: right;">660 k</td>
+</tr>
+<tr>
+<td>Fond. Plateforme 10</td>
+<td style="text-align: right;">550 k</td>
+<td style="text-align: right;">600 k</td>
+<td style="text-align: right;">600 k</td>
+</tr>
+<tr>
+<td>Fond. du Festival de la Cité</td>
+<td style="text-align: right;">320 k</td>
+<td style="text-align: right;">350 k</td>
+<td style="text-align: right;">394 k</td>
+</tr>
+<tr>
+<td>Fond. Pierre Gianadda</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">350 k</td>
+<td style="text-align: right;">350 k</td>
+</tr>
+<tr>
+<td>Fond. Visions du Réel</td>
+<td style="text-align: right;">240 k</td>
+<td style="text-align: right;">245 k</td>
+<td style="text-align: right;">270 k</td>
+</tr>
+</tbody>
+</table>
+<p>Les cellules « — » signalent que la section cantonale correspondante n'a pas été extraite lors de cette passe — pas que l'attribution n'existe pas. Typiquement, les sections Genève, Neuchâtel et Valais arrivent en fin de PDF (après ~80 pages de Vaud + Fribourg) et sont parfois tronquées par la limite de tokens de <code>web_fetch</code>.</p>
+<h3 id="observations-narratives">Observations narratives</h3>
+<ul>
+<li><strong>2025 est anomalement haute pour plusieurs piliers</strong> : Hermitage × 10 (300 k → 4 M), EPFL Plus × 10 (95 k → 1 M), CSP Vaud × 5 (250 k → 1,4 M), CHUV × 20 (68 k → 1,4 M). Ces sauts probablement liés à des <strong>financements de projets exceptionnels</strong> (rénovation Hermitage, expansion EPFL Plus, projets immobiliers CSP) plutôt qu'à une augmentation structurelle. À documenter via les rapports d'activité des fondations.</li>
+<li><strong>Bénéficiaires stables</strong> (variation &lt; 20 %) : Equilibre et Nuithonie (900 k → 1,1 M), Plateforme 10 (550 → 600 → 600 k), Visions du Réel (240 → 245 → 270 k), Gianadda (350 → 350 k). Ce sont les piliers culturels avec budget récurrent.</li>
+<li><strong>CORODIS</strong> semble exploser entre 2024 et 2025 mais c'est un artefact d'extraction : la valeur 2024 (35 k) ne couvre que la part Fribourg. CORODIS est intercantonal (organe Romand + parts cantonales) ; les valeurs complètes nécessiteraient de sommer toutes les sections.</li>
+</ul>
+<h3 id="implementation-technique">Implémentation technique</h3>
+<ul>
+<li><strong>Données</strong> : <code>docs/data/beneficiaires_series_2023_2025.json</code> (4,7 kB)</li>
+<li><strong>Visualisation</strong> : nouveau module <code>docs/js/historical_series.js</code> (≈ 100 LOC), grille « small multiples » avec une carte par bénéficiaire, barres en échelle relative au pic local, valeurs annotées</li>
+<li><strong>HTML</strong> : nouvelle section entre <code>#viz-multicantons</code> et <code>#viz-longtail</code> (chapter-intro + viz-card)</li>
+<li><strong>CSS</strong> : nouvelles classes <code>.hist-series-grid</code>, <code>.hist-series-card</code>, <code>.hist-series-chart</code>, <code>.hist-series-bar</code>, etc.</li>
+<li><strong>Lazy loading</strong> : IntersectionObserver auto-trigger (~200 px avant scroll)</li>
+<li><strong>Données manquantes</strong> : barres rayées + texte « — » + tooltip explicatif</li>
+</ul>
+<h3 id="limites-assumees">Limites assumées</h3>
+<p>Cette passe est intentionnellement partielle. <strong>Extension 2013-2022 reste un chantier ouvert</strong> car :</p>
+<ol>
+<li>Chaque PDF BRB consomme ~120 k tokens via <code>web_fetch</code> (texte extrait du PDF de ~100 pages)</li>
+<li>Multiplier par 9 ans (2014-2022) = ~1 M tokens juste pour l'extraction, hors raisonnement et code</li>
+<li>Les sections cantonales sont parfois tronquées en fin de PDF, surtout Genève</li>
+<li>L'extraction étant manuelle (regex sur patterns de noms), elle ne capture pas les variations orthographiques inattendues</li>
+</ol>
+<p>Suites possibles :
+- <strong>Pass 5 — C (refactor parser)</strong> : un parseur propre du PDF permettrait l'extraction structurée par bénéficiaire × année × canton, sans dépendre de <code>web_fetch</code>
+- <strong>Ciblage</strong> : ne traiter qu'une année benchmark (2018 ou 2015) pour avoir 4 points de données et identifier une tendance lente vs des sauts soudains
+- <strong>Compléter 2023</strong> : refaire un fetch ciblé sur la fin du PDF BRB 2023 pour récupérer GE, NE, VS</p>
+<h3 id="updates-html_1">Updates HTML</h3>
+<ul>
+<li>Nouvelle section entre <code>#viz-multicantons</code> et <code>#viz-longtail</code> : chapter-intro « 3 ans de soutien pour 15 piliers culturels et sociaux » + viz-card avec footer documentant la méthodologie et les limites</li>
+<li>Footer renvoie vers <code>ra.loro.ch/editions-precedentes.html</code> (source officielle) et vers cette section de <code>METHODOLOGY.html#v13-7-historical</code></li>
+<li>Script <code>docs/js/historical_series.js</code> chargé après <code>app.js</code></li>
+</ul>
+<h3 id="validation_3">Validation</h3>
+<ul>
+<li>Test isolé Playwright sur <code>_test_hist.html</code> : 15 cartes rendues, tri par 2025 desc, valeurs et labels conformes au JSON</li>
+<li><code>node --check docs/js/historical_series.js</code> : OK</li>
+<li>Pas de dépendance externe (pas de d3, pas de scrollama)</li>
+</ul>
+<hr />
+<h2 id="v138-juin-2026-pipeline-unifie-idempotent-pass-5-c">v13.8 (juin 2026) — Pipeline unifié + idempotent (Pass 5 — C)</h2>
+<p>Refactor des 3 scripts de nettoyage éparpillés (<code>clean_brb.py</code> v13.6, <code>clean_brb_v13_7.py</code>, <code>audit_brb.py</code>) en un <strong>unique pipeline ré-exécutable</strong>, prêt pour l'arrivée du BRB 2026. Cette passe n'altère pas la narration ni les visualisations — c'est un travail d'outillage pour garantir la reproductibilité.</p>
+<h3 id="motivation">Motivation</h3>
+<p>Au fil des passes v13.6 et v13.7, le nettoyage de <code>brb2025_full.json</code> s'est fait par patches successifs : un script découvrait une catégorie de bugs, on l'écrivait, on tournait, on passait à la suivante. Résultat : 3 scripts dans <code>scripts/</code>, chacun avec son propre backup, sa propre logique, son propre rapport, et <strong>aucun n'est idempotent</strong> (relancer v13.7 sur des données déjà nettoyées rejoue des transformations partielles). Pour BRB 2026, ce serait reconduire toute la fragilité.</p>
+<p>L'objectif de cette passe : <strong>un seul script, idempotent, auditable, documenté</strong>.</p>
+<h3 id="architecture-de-scriptspipeline_brbpy">Architecture de <code>scripts/pipeline_brb.py</code></h3>
+<p>7 stages de nettoyage, chacun étant une fonction pure <code>entries → (entries, report)</code> :</p>
+<ol>
+<li><strong><code>stage_split_glued</code></strong> (v13.6 A) — Détecte le pattern <code>nom1 1'200.- nom2</code> (deux entrées fusionnées par le parser), split en 2 entries propres</li>
+<li><strong><code>stage_drop_section_totals</code></strong> (v13.6 B) — Supprime les entrées qui sont des agrégats de section (« Fonds mis à disposition du Conseil d'État »…)</li>
+<li><strong><code>stage_clean_nom</code></strong> (v13.7 A) — Strip trailing dashes + prépositions pendantes (<code>" - "</code>, <code>" et"</code>, <code>" de la"</code>…)</li>
+<li><strong><code>stage_clean_desc</code></strong> (v13.7 B) — Strip embedded amounts in description (<code>XX'XXX.-</code> qui appartient à l'entrée suivante)</li>
+<li><strong><code>stage_clean_ville</code></strong> (v13.7 C) — Nullify les villes qui contiennent du texte de description (activité, manifestation, équipement…)</li>
+<li><strong><code>stage_dedup_exact</code></strong> (v13.7 D) — Supprime les doublons 100 % identiques (parser duplications)</li>
+<li><strong><code>stage_merge_normalized</code></strong> (v13.7 E) — Fusionne les variantes orthographiques (« Assoc. X » vs « X » avec même ville/canton/montant/desc)</li>
+</ol>
+<p>Chacun retourne <code>(nouvelle_liste, dict_report)</code>. Le driver enchaîne, log les changements, et fait un audit pre/post.</p>
+<h3 id="audit-integre">Audit intégré</h3>
+<p>10 catégories diagnostiques (toutes doivent être à 0 pour des données propres) + 1 catégorie informationnelle :</p>
+<table>
+<thead>
+<tr>
+<th>Catégorie</th>
+<th>Critère</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>no_canton</code></td>
+<td>Entrées sans canton attribué</td>
+</tr>
+<tr>
+<td><code>zero_amount</code></td>
+<td>Montant CHF 0 ou null</td>
+</tr>
+<tr>
+<td><code>negative_amount</code></td>
+<td>Montant CHF négatif</td>
+</tr>
+<tr>
+<td><code>huge_amount_5M+</code></td>
+<td>Montant &gt; 5 M (vérifier que ce ne sont pas des restes de bug parser)</td>
+</tr>
+<tr>
+<td><code>short_name</code></td>
+<td>Nom vide ou &lt; 3 caractères</td>
+</tr>
+<tr>
+<td><code>truncated_name</code></td>
+<td>Trailing dash ou préposition pendante (<code>de</code>, <code>du</code>, <code>pour</code>…)</td>
+</tr>
+<tr>
+<td><code>desc_in_ville</code></td>
+<td>Ville contenant des mots-clés de description (activité, manifestation…)</td>
+</tr>
+<tr>
+<td><code>exact_duplicates_remaining</code></td>
+<td>Doublons identiques restants</td>
+</tr>
+<tr>
+<td><code>desc_with_embedded_amount</code></td>
+<td>Description contenant un montant inline</td>
+</tr>
+<tr>
+<td><code>encoding_corrupt</code></td>
+<td>Caractères mal encodés (<code>Ã©</code>, <code>Â</code>, etc.)</td>
+</tr>
+<tr>
+<td><code>ville_with_acronym_INFO</code></td>
+<td><strong>INFO seulement</strong> — Villes contenant un acronyme entre parens (cas de scission nom/ville par le parser column-based ; ex. nom=« Assoc. pour la Musique », ville=« Improvisée de Lausanne (AMIL) »)</td>
+</tr>
+</tbody>
+</table>
+<p>La catégorie <code>ville_with_acronym_INFO</code> détecte 6 cas pré-existants où le parser v4 (column-based, pdfplumber) a éclaté un nom multi-ligne entre les colonnes nom et ville. Ces cas nécessiteraient un re-parsing du PDF pour être corrigés proprement — laissé en TODO car non bloquant pour les visualisations.</p>
+<h3 id="proprietes-garanties">Propriétés garanties</h3>
+<ul>
+<li><strong>Idempotent</strong> : relancer le pipeline sur des données déjà nettoyées produit 0 changements et 0 issues critiques d'audit</li>
+<li><strong>Safe</strong> : backup automatique avant écriture (<code>brb2025_full.backup_v13.8.json</code>)</li>
+<li><strong>Auditable</strong> : pre/post audit, rapport stage-par-stage avec compteurs, signature <code>pipeline_v13.8</code> dans <code>_meta</code></li>
+<li><strong>Self-contained</strong> : aucune dépendance externe (stdlib uniquement)</li>
+<li><strong>CLI</strong> : <code>python scripts/pipeline_brb.py --help</code></li>
+</ul>
+<h3 id="validation_4">Validation</h3>
+<p>Tests réalisés sur <code>docs/data/brb2025_full.json</code> :</p>
+<pre><code>RUN 1 (sur données post-v13.7) :
+  clean_nom : 4 ops (4 noms avec &quot; et&quot; trailing créés par v13.7 et non détectés par son audit)
+  Toutes autres stages : 0 ops
+  Audit pre/post : toutes catégories à 0 (sauf INFO ville_with_acronym=6)
+
+RUN 2 (sur données post-v13.8) :
+  Toutes stages : 0 ops ✓
+  Audit : inchangé ✓
+  → Vraie idempotence confirmée
+</code></pre>
+<p>Les 4 noms cleanés par RUN 1 :
+- <code>"Amis de la Musique d'Aigle et"</code> → <code>"Amis de la Musique d'Aigle"</code>
+- <code>"EJMA - École de Jazz et"</code> → <code>"EJMA - École de Jazz"</code>
+- <code>"Joyfully Waiting 19 &amp; 20 et Cercle de la Librairie et"</code> → <code>"Joyfully Waiting 19 &amp; 20 et Cercle de la Librairie"</code>
+- <code>"Éditions du goudron et"</code> → <code>"Éditions du goudron"</code></p>
+<p>Ces 4 entrées avaient été créées par v13.7 elle-même (stripping d'un suffixe <code>du Chablais</code> qui laissait <code>" et"</code> orphelin, non rattrapé par l'audit v13.7 dont le pattern de détection n'incluait pas <code>et</code>). v13.8 corrige le pattern d'audit pour la cohérence cleanup ↔ audit.</p>
+<h3 id="workflow-pour-brb-2026">Workflow pour BRB 2026</h3>
+<p>Quand le BRB 2026 sera publié (typiquement juin 2027) :</p>
+<pre><code class="language-bash"># 1. Récupérer le PDF officiel et le parser via le parser v4 existant
+#    (ce parser column-based reste utilisé — pas dans le scope de Pass 5)
+python scripts/parse_pdf_v4.py --input data/raw/BRB2026.pdf \
+                               --output docs/data/brb2026_full.json
+
+# 2. Nettoyer avec le pipeline v13.8 (ou supérieur)
+python scripts/pipeline_brb.py --input docs/data/brb2026_full.json
+
+# 3. Le pipeline log les stages, fait un audit pre/post, écrit le résultat
+#    avec backup automatique. Idempotent.
+</code></pre>
+<h3 id="scripts-deprecies">Scripts dépréciés</h3>
+<p>Marqués comme <code>DEPRECATED</code> mais conservés dans <code>scripts/</code> pour référence historique :
+- <code>clean_brb.py</code> (v13.6) — split glued + drop section totals (intégré dans pipeline_brb.py stages 1-2)
+- <code>clean_brb_v13_7.py</code> — nom/desc/ville fixes + dedup (intégré dans stages 3-7)
+- <code>audit_brb.py</code> — diagnostic standalone (intégré comme <code>audit()</code> dans pipeline_brb.py)</p>
+<p>Pour tout nouveau travail, utiliser <code>pipeline_brb.py</code>.</p>
+<h3 id="limites-connues-chantier-pass-6-potentiel">Limites connues — chantier Pass 6 potentiel</h3>
+<p>Le pipeline v13.8 nettoie les artefacts SORTIS du parser v4, mais ne corrige pas le parser lui-même. 6 entrées ont une ville polluée par la suite du nom (signalées par <code>ville_with_acronym_INFO</code>) — il faudrait un parser text-based qui regroupe les lignes multi-name avant attribution aux colonnes pour éliminer ces cas.</p>
+<p>Pour BRB 2026, deux pistes :
+1. <strong>Quick win</strong> : garder le parser v4 + pipeline v13.8 (couvre 99,9 % des cas)
+2. <strong>Refactor profond</strong> : écrire un parser text-based (parsing du texte plat extrait via <code>pdfplumber.extract_text()</code> ou <code>web_fetch</code> + parsing de la séquence linéaire), ce qui éliminerait les bugs de colonnes</p>
+<hr />
+<h2 id="v139-juin-2026-pass-6-bonus-fix-deploiement-reconstruction-de-noms">v13.9 (juin 2026) — Pass 6 bonus : Fix déploiement + reconstruction de noms</h2>
+<p>Cette passe non planifiée répond à deux signaux : un échec de déploiement GitHub Pages, et une découverte d'audit lors de l'investigation des fusions possibles. Elle ne change pas les visualisations existantes ni les chiffres globaux (5'358 attributions, 206'947'411 CHF inchangés) — mais elle <strong>révèle 70 bénéficiaires distincts supplémentaires</strong> précédemment cachés derrière des noms tronqués.</p>
+<h3 id="1-fix-deploiement-github-pages">1. Fix déploiement GitHub Pages</h3>
+<p><strong>Symptôme observé</strong> : la GitHub Action <code>pages-build-deployment</code> échouait au stade <code>build</code> (Jekyll, 19s). Deux causes racines identifiées :</p>
+<ul>
+<li><strong>Octet UTF-8 invalide</strong> dans <code>METHODOLOGY.md</code> au byte 66946 : l'octet <code>0xa9</code> orphelin (le second octet de <code>é</code> en UTF-8, mais sans son leader <code>0xc3</code>) faisait planter le parseur markdown de Jekyll. Probablement introduit par une concaténation <code>heredoc</code> mal encodée lors d'un build précédent. Fix : remplacement direct par la séquence UTF-8 propre <code>0xc3 0xa9</code>.</li>
+<li><strong>Pas de <code>.nojekyll</code></strong> dans <code>docs/</code> : sans ce fichier, GitHub Pages active Jekyll par défaut et tente de traiter le site comme un projet Jekyll, ce qui n'a aucun sens pour un site HTML/JS pur. Fix : création de <code>docs/.nojekyll</code> (fichier vide) pour désactiver entièrement Jekyll.</li>
+</ul>
+<h3 id="2-stage-reconstruct_name-un-bug-parser-majeur-decouvert">2. Stage <code>reconstruct_name</code> — un bug parser majeur découvert</h3>
+<p>L'investigation « quelles fusions sont encore possibles ? » a mis au jour un <strong>bug parser systémique</strong> beaucoup plus impactant que les artefacts cleanés précédemment.</p>
+<p><strong>Symptôme</strong> : 507 clusters de « même nom normalisé + même canton » regroupant 1'376 entrées. La plupart ne sont <em>pas</em> des doublons — ce sont des entités distinctes que le parser column-based a tronquées en perdant leur continuation multi-ligne dans la description.</p>
+<p><strong>Exemple emblématique</strong> : sous le nom court <code>"Assoc. Cantonale Vaudoise"</code>, on trouve 32 entrées en réalité distinctes :</p>
+<table>
+<thead>
+<tr>
+<th>nom (tronqué)</th>
+<th>description (polluée)</th>
+<th>identité réelle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Assoc. Cantonale Vaudoise</td>
+<td><code>d'Athlétisme Soutien annuel</code></td>
+<td>Assoc. Cantonale Vaudoise d'Athlétisme</td>
+</tr>
+<tr>
+<td>Assoc. Cantonale Vaudoise</td>
+<td><code>de Curling Soutien annuel</code></td>
+<td>Assoc. Cantonale Vaudoise de Curling</td>
+</tr>
+<tr>
+<td>Assoc. Cantonale Vaudoise</td>
+<td><code>de Football Soutien annuel</code></td>
+<td>Assoc. Cantonale Vaudoise de Football</td>
+</tr>
+<tr>
+<td>… (29 autres)</td>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Algorithme de reconstruction</strong> :</p>
+<ol>
+<li>Détecter une description qui commence par un connecteur (<code>d'</code>, <code>de</code>, <code>de la</code>, <code>de l'</code>, <code>des</code>, <code>et</code>, <code>au</code>, <code>aux</code>, <code>du</code>)</li>
+<li>Localiser le premier mot-clé d'activité (<code>Soutien</code>, <code>Camp</code>, <code>Achat</code>, <code>Acquisition</code>, <code>Manifestation</code>, <code>Rénovation</code>, <code>Aménagement</code>, <code>Travaux</code>, <code>Saison</code>, <code>Activité</code>, …42 mots-clés au total)</li>
+<li>Le segment avant le mot-clé est candidat à la fusion dans le nom (longueur 3-60, max 1 virgule, max 1 séparateur <code>-</code>)</li>
+<li>Extraire la ville si le nom reconstruit se termine par <code>, CityName</code> (Title Case, 1-3 mots)</li>
+</ol>
+<p><strong>Garde-fous de sécurité</strong> :</p>
+<ul>
+<li><code>name_part</code> ne doit pas contenir de montant inline (<code>120.-</code>, <code>1'200.-</code>, etc.) — détecte les cas où la description elle-même était polluée par un bug parser de fusion multi-entrées</li>
+<li>Le nom reconstruit ne doit pas contenir plus d'une virgule (sinon contamination probable par une entrée voisine)</li>
+<li>La description complète ne doit pas contenir de motif monétaire (signal de corruption multi-entrées)</li>
+</ul>
+<p><strong>Boucle de stabilité pour <code>clean_nom</code></strong> : la reconstruction crée parfois des chaînes de prépositions à la fin du nom (<code>" et de la"</code>) qu'un seul passage de strip ne résout pas — <code>clean_nom</code> boucle jusqu'à 8 fois pour atteindre la stabilité (<code>" et de la"</code> → <code>" et"</code> → <code>""</code> en deux itérations).</p>
+<h3 id="impact-mesure">Impact mesuré</h3>
+<table>
+<thead>
+<tr>
+<th>Métrique</th>
+<th style="text-align: right;">Avant v13.9 (v13.8)</th>
+<th style="text-align: right;">Après v13.9</th>
+<th style="text-align: right;">Delta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entrées (attributions)</td>
+<td style="text-align: right;">5'358</td>
+<td style="text-align: right;">5'358</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Total CHF</td>
+<td style="text-align: right;">206'947'411</td>
+<td style="text-align: right;">206'947'411</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Bénéficiaires distincts (nom normalisé)</td>
+<td style="text-align: right;">4'361</td>
+<td style="text-align: right;"><strong>4'431</strong></td>
+<td style="text-align: right;"><strong>+70</strong></td>
+</tr>
+<tr>
+<td>Distincts (nom, canton)</td>
+<td style="text-align: right;">4'488</td>
+<td style="text-align: right;">4'541</td>
+<td style="text-align: right;">+53</td>
+</tr>
+<tr>
+<td>Clusters multi-rows</td>
+<td style="text-align: right;">508</td>
+<td style="text-align: right;">493</td>
+<td style="text-align: right;">-15</td>
+</tr>
+<tr>
+<td>Rows dans clusters multi-rows</td>
+<td style="text-align: right;">1'378</td>
+<td style="text-align: right;">1'310</td>
+<td style="text-align: right;">-68</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interprétation</strong> : 70 « nouveaux » bénéficiaires apparaissent — non pas qu'ils aient été ajoutés au BRB, mais qu'ils existaient déjà comme entrées distinctes cachées derrière le même nom court. Le cleanup v13.9 leur restitue leur identité propre.</p>
+<h3 id="idempotence-verifiee">Idempotence vérifiée</h3>
+<pre><code>RUN 1 (sur données v13.8) :
+  reconstruct_name        : 313 ops (229 reconstructions + 84 villes extraites)
+  clean_nom (loop fix)    : 7 ops
+  Autres stages           : 0 ops
+  Audit pre/post          : toutes catégories à 0 (sauf INFO ville_with_acronym=6)
+
+RUN 2 (sur données v13.9) :
+  Toutes stages           : 0 ops ✓
+  Audit                   : inchangé ✓
+  → Vraie idempotence confirmée
+</code></pre>
+<h3 id="top-10-clusters-restants-tous-legitimes">Top 10 clusters restants — tous légitimes</h3>
+<p>Les clusters restants après v13.9 sont des <strong>bénéficiaires recevant plusieurs attributions distinctes la même année</strong> (formation, infrastructure, événements ponctuels, etc.), pas des doublons à fusionner :</p>
+<table>
+<thead>
+<tr>
+<th>Bénéficiaire</th>
+<th style="text-align: center;">Canton</th>
+<th style="text-align: center;">Attributions</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Assoc. Cantonale Vaudoise (multi-sports)</td>
+<td style="text-align: center;">VD</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: right;">274'654 CHF</td>
+</tr>
+<tr>
+<td>Assoc. Fribourgeoise de patinage</td>
+<td style="text-align: center;">FR</td>
+<td style="text-align: center;">13</td>
+<td style="text-align: right;">22'328 CHF</td>
+</tr>
+<tr>
+<td>Assoc. Fribourgeoise de Hockey</td>
+<td style="text-align: center;">FR</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: right;">76'443 CHF</td>
+</tr>
+<tr>
+<td>Sté Nautique Neuchâtel</td>
+<td style="text-align: center;">NE</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: right;">11'915 CHF</td>
+</tr>
+<tr>
+<td>Club Nautique Pully</td>
+<td style="text-align: center;">VD</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: right;">23'075 CHF</td>
+</tr>
+<tr>
+<td>Assoc. Cantonale Genevoise (multi-sports)</td>
+<td style="text-align: center;">GE</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: right;">465'100 CHF</td>
+</tr>
+<tr>
+<td>Assoc. Fribourgeoise de Basket</td>
+<td style="text-align: center;">FR</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: right;">48'428 CHF</td>
+</tr>
+<tr>
+<td>Cercle de la Voile de Neuchâtel</td>
+<td style="text-align: center;">NE</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: right;">13'390 CHF</td>
+</tr>
+<tr>
+<td>Assoc. Romande de Ski</td>
+<td style="text-align: center;">VD</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: right;">205'985 CHF</td>
+</tr>
+<tr>
+<td>Fond. Tour de Romandie</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: right;">959'800 CHF</td>
+</tr>
+</tbody>
+</table>
+<p>Ces 10 clusters cumulent 108 attributions pour ~2,1 M CHF — c'est-à-dire des associations cantonales qui se déclinent en fédérations sportives multiples (athlétisme, curling, football, etc.). Les agréger serait incorrect : ce sont des entités juridiques séparées.</p>
+<h3 id="mises-a-jour-html">Mises à jour HTML</h3>
+<p>Cohérence narrative : remplacement de « 5'358 bénéficiaires » par la formulation duale plus précise « 5'358 attributions à 4'431 bénéficiaires distincts ». Quatre emplacements concernés (<code>viz-explorer</code> title, source caption, multi-cantons note, longtail title).</p>
+<h3 id="limites-restantes">Limites restantes</h3>
+<p>Trois patterns de bugs parser ne sont pas atteignables par cleanup post-hoc et restent en TODO d'un éventuel Pass 6 (refactor parser PDF profond) :</p>
+<ol>
+<li><strong>Connecteur disparu</strong> (~1 cas connu) : <code>"Fond. pour la conservation"</code> + desc <code>"temples genevois construits avant 1907, Les Acacias …"</code> — le parser a perdu le <code>" des "</code> qui reliait nom et continuation. Sans signal lexical (pas de <code>d'</code>/<code>de</code>/<code>des</code> en début de desc), on ne peut pas distinguer ce cas d'une description légitime commençant par un substantif.</li>
+<li><strong>Ville-avec-acronyme</strong> (6 cas) : <code>nom="Assoc. pour la Musique"</code> + ville <code>"Improvisée de Lausanne (AMIL)"</code> — la continuation du nom est dans le champ ville, pas dans description. Signalé par la catégorie d'audit <code>ville_with_acronym_INFO</code>.</li>
+<li><strong>Description polluée multi-entrées</strong> (~quelques cas) : entries où la desc contient un fragment d'une entrée voisine (avec montants inline <code>120.-</code>). Bloqué par les garde-fous money_in_text de v13.9.</li>
+</ol>
+<hr />
+<h2 id="v1310-juin-2026-audit-coherence-extension-reconstruct-classification-sport">v13.10 (juin 2026) — Audit cohérence + extension reconstruct + classification sport</h2>
+<p>Cette passe répond à trois questions soulevées lors de la revue : (a) vérifier la cohérence des données bénéficiaires, (b) inspecter les attributions multiples au sein d'un canton, (c) classifier les entrées sport par discipline. Elle a aussi mis au jour un bug significatif dans le champ <code>secteur</code> du parser.</p>
+<h3 id="1-extension-du-stage_reconstruct_name-12-mots-cles-ajoutes">1. Extension du <code>stage_reconstruct_name</code> — 12 mots-clés ajoutés</h3>
+<p>L'audit a révélé que <code>reconstruct_name</code> ratait certains cas légitimes parce que la liste des mots-clés d'activité n'incluait pas des verbes-noms d'usage courant comme <code>Équipement</code>, <code>Suivi</code>, <code>Animation</code>, <code>Recherche</code>, <code>Promotion</code>, <code>Réception</code>, <code>Restauration</code>, <code>Diffusion</code>, <code>Prise</code>, <code>Conte</code>. L'ajout permet de capturer <strong>25 reconstructions supplémentaires</strong>, dont :</p>
+<ul>
+<li><strong>5 associations d'accueil familial de jour</strong> (Glâne, Lac, Veveyse, Broye, Gruyère) chacune avait <code>nom="Accueil Familial de Jour"</code> + desc commençant par <code>de la X, City Prise en charge…</code> → maintenant <code>nom="Accueil Familial de Jour de la X"</code>, ville extraite, desc = <code>"Prise en charge des enfants en 2025"</code></li>
+<li><strong>FODAC vs Aires Protégées (GE)</strong> : deux fondations différentes étaient cachées sous <code>nom="Fond. pour le développement"</code> (1,5 M CHF chacune). Désormais distinguées en <code>Fond. pour le développement des arts et de la culture - FODAC</code> (Vernier) et <code>Assoc. pour le Développement des Aires Protégées</code> (Genève).</li>
+<li><strong>Église protestante / Abbaye / Maisons de la Providence / Sauvegarde de la Peccadille</strong> : noms d'institutions religieuses ou patrimoniales correctement reconstitués.</li>
+</ul>
+<p>Total cumulé après v13.10 : <strong>4'437 bénéficiaires distincts</strong> (vs 4'361 avant v13.9, +76).</p>
+<h3 id="2-audit-multi-attributions-intra-canton">2. Audit multi-attributions intra-canton</h3>
+<p>Question : « certains cantons donnent-ils plusieurs fois à la même structure ? » Réponse : oui, et c'est <em>légitime</em> dans la majorité des cas — il s'agit d'organisations qui reçoivent plusieurs subventions ciblées la même année (formation, infrastructure, événement, fonctionnement annuel). Top 5 par canton :</p>
+<table>
+<thead>
+<tr>
+<th>Canton</th>
+<th>Top bénéficiaire</th>
+<th style="text-align: center;">Attributions</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VD</td>
+<td>Fond. de l'Hermitage</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">4'000'000 CHF</td>
+</tr>
+<tr>
+<td>FR</td>
+<td>Fond. Équilibre et Nuithonie</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">1'100'000 CHF</td>
+</tr>
+<tr>
+<td>VS</td>
+<td>Assoc. Canal 9/Kanal 9</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">854'000 CHF</td>
+</tr>
+<tr>
+<td>NE</td>
+<td>Fond. Arc en Scène - centre</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">1'345'000 CHF</td>
+</tr>
+<tr>
+<td>GE</td>
+<td>Fond. pour la conservation</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">3'300'000 CHF</td>
+</tr>
+<tr>
+<td>JU</td>
+<td>Office de l'environnement</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">624'500 CHF</td>
+</tr>
+<tr>
+<td>R (Romand)</td>
+<td>Fond. Cinéforom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">1'700'000 CHF</td>
+</tr>
+</tbody>
+</table>
+<p>Quelques clusters de plus haute fréquence (10+ attributions) restent et sont tous légitimes : <code>Assoc. Cantonale Vaudoise</code> (19 fédérations sportives distinctes), <code>Assoc. Cantonale Genevoise</code> (10 sports), associations sportives fribourgeoises (patinage, hockey, basket), Tour de Romandie (8+8 pour les déclinaisons masculin/féminin/U23).</p>
+<h3 id="3-bug-secteur-mis-au-jour">3. Bug <code>secteur</code> mis au jour</h3>
+<p>L'investigation Q2 (« classification par sport ») a révélé un <strong>bug systémique</strong> du champ <code>secteur</code> :</p>
+<ul>
+<li>2'365 entrées sont taggées <code>secteur="Sport"</code>, mais <strong>1'658 d'entre elles (70 %)</strong> ne contiennent aucun mot-clé sportif (FC, HC, gym, ski, etc.) dans leur nom</li>
+<li>Le champ <code>organe</code> confirme : beaucoup ont organe = <code>"Fondation d'aide et culturelle"</code> ou <code>"Fonds d'utilité publique"</code>, et leurs descriptions sont culturelles (<code>Saison artistique</code>, <code>Festival</code>, <code>Concert</code>)</li>
+<li>Diagnostic probable : le parser de la <code>Loro.xlsx</code> source affecte le champ <code>secteur</code> à partir d'un header de section qui « stick » sur les entrées suivantes au moment d'une transition Culture↔Sport</li>
+</ul>
+<p><strong>Conséquence</strong> : le champ <code>secteur</code> est utilisable globalement pour la part-de-gâteau dans la viz <code>viz-secteurs</code>, mais <strong>pas fiable</strong> pour classer une entrée individuelle. Pour la classification par sport, on ignore ce champ et on s'appuie sur des patterns lexicaux dans le nom + description.</p>
+<h3 id="4-classification-par-sport-pass-7-q2">4. Classification par sport — Pass 7 (Q2)</h3>
+<p><a id="sports-classification"></a>
+Script <code>scripts/build_sport_classification.py</code>, output <code>docs/data/sports_classification.json</code> (~40 kB).</p>
+<p><strong>Méthode</strong> : 30 patterns regex pré-définis, ordonnés du plus spécifique au plus générique. Chaque entrée est testée contre les patterns ; la première qui matche détermine la catégorie. Les entrées sans match sont écartées (71 % du corpus, qui n'est pas du sport).</p>
+<p><strong>Résultats — 1'548 attributions classifiées, 31,8 M CHF (15,4 % du BRB 2025)</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Rang</th>
+<th>Discipline</th>
+<th style="text-align: right;">Attrib.</th>
+<th style="text-align: right;">Total CHF</th>
+<th style="text-align: right;">Moyenne</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td><strong>Multi-sports</strong> (Assoc. Cantonale, Olympic)</td>
+<td style="text-align: right;">132</td>
+<td style="text-align: right;">4'801'519</td>
+<td style="text-align: right;">36 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><strong>Football</strong></td>
+<td style="text-align: right;">135</td>
+<td style="text-align: right;">3'807'761</td>
+<td style="text-align: right;">28 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><strong>Gymnastique</strong> (FSG)</td>
+<td style="text-align: right;">144</td>
+<td style="text-align: right;">3'646'150</td>
+<td style="text-align: right;">25 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><strong>Judo / Karaté</strong></td>
+<td style="text-align: right;">59</td>
+<td style="text-align: right;">2'447'886</td>
+<td style="text-align: right;">41 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><strong>Cyclisme / VTT</strong> (Tour de Romandie inclus)</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">2'193'436</td>
+<td style="text-align: right;">28 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><strong>Ski / Snowboard</strong></td>
+<td style="text-align: right;">106</td>
+<td style="text-align: right;">2'105'832</td>
+<td style="text-align: right;">20 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><strong>Escalade / Montagne</strong></td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">1'963'875</td>
+<td style="text-align: right;">89 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><strong>Basketball</strong></td>
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">1'917'328</td>
+<td style="text-align: right;">24 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><strong>Hockey sur glace</strong></td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">1'386'056</td>
+<td style="text-align: right;">21 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td><strong>Tennis / Padel</strong></td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">1'337'852</td>
+<td style="text-align: right;">15 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td><strong>Volleyball</strong></td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">1'169'526</td>
+<td style="text-align: right;">16 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><strong>Athlétisme</strong></td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">1'108'328</td>
+<td style="text-align: right;">14 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">13-30</td>
+<td>(autres — natation, équitation, rugby, tir, voile, patinage, triathlon, handball, hockey sur gazon, course d'orientation, pétanque, escrime, tennis de table, boxe, aviron, arts martiaux, curling, lutte suisse)</td>
+<td style="text-align: right;">…</td>
+<td style="text-align: right;">…</td>
+<td style="text-align: right;">…</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Observations narratives</strong> :</p>
+<ul>
+<li><strong>Le triplet de tête</strong> capte 11,3 M CHF (35 % du total sport). C'est cohérent : football, gymnastique, ski sont les sports les plus pratiqués en Suisse romande au niveau amateur.</li>
+<li><strong>Multi-sports = associations cantonales et clubs polysportifs</strong> ; c'est l'enveloppe-parapluie pour les fédérations qui chapeautent plusieurs disciplines (<code>Assoc. Cantonale Vaudoise</code>, <code>Sport-Études</code>, etc.). Si on les redistribuait, le top 3 changerait.</li>
+<li><strong>Escalade / Montagne</strong> étonne avec une moyenne de 89 k par attribution, la plus haute du tableau. Quelques projets d'infrastructure (parois d'escalade, refuges) gonflent la moyenne.</li>
+<li><strong>Sports à coût élevé peu présents</strong> : Formule 1, course automobile, golf, ski alpin de haut niveau n'apparaissent pas — la Loro finance le sport amateur et populaire, pas l'élite professionnelle.</li>
+</ul>
+<p><strong>Visualisation</strong> : nouvelle section HTML <code>#viz-sports</code>, module JS <code>docs/js/sports.js</code>, classes CSS <code>.sports-*</code>. Barres horizontales triées par total CHF, click pour déplier 3-5 exemples de bénéficiaires par discipline, pastilles colorées des 4 cantons les plus contributeurs.</p>
+<h3 id="limites-de-la-classification">Limites de la classification</h3>
+<ol>
+<li><strong>70 % des entrées non classifiées</strong> : c'est par construction. Seules les entrées vraiment sportives sont classifiées. Les festivals, théâtres, musées et associations sociales ne le sont pas (et ne devraient pas l'être).</li>
+<li><strong>Faux positifs Multi-sports</strong> : quelques entrées contiennent le mot « sport » dans un contexte non-sportif (ex. « Soutien aux jeunes sportifs en formation »). Représentent ~2-3 % de la catégorie.</li>
+<li><strong>Sports manquants</strong> : danse, ballet (rangés en Culture par la Loro), e-sports (pas encore une catégorie reconnue), arts du cirque sportifs. Si besoin, ajouter au mapping.</li>
+</ol>
+<hr />
+<h2 id="v1310-pass8-juin-2026-audit-geoloc-4-nouvelles-visualisations">v13.10-pass8 (juin 2026) — Audit géoloc + 4 nouvelles visualisations</h2>
+<p>Suite à la classification par sport (Pass 7), cette passe répond à la demande « regarde si la géolocalisation est correcte + attaque tous les graphes proposés ». Le résultat : un audit géo complet, +316 entrées géocodées, et 4 nouvelles visualisations qui exploitent les données cleanées.</p>
+<h3 id="audit-geolocalisation">Audit géolocalisation</h3>
+<p><strong>Méthode</strong> : vérifier (a) que les coords lat/lng existantes sont valides (dans les bornes suisses), (b) que la même ville a toujours les mêmes coords, (c) combien d'entrées avec ville manquent de coords.</p>
+<p><strong>Résultats avant enrichissement</strong> :
+- Entrées avec <code>ville</code>&nbsp;: 2'503 (47 %)
+- Entrées avec <code>lat/lng</code>&nbsp;: 1'463 (27 %)
+- <strong>Incohérences détectées : 0</strong> (les villes géocodées sont fiables)
+- <strong>Hors-Suisse : 0</strong> (toutes les coords sont dans les bornes lat 45.8–47.8, lng 5.9–10.5)
+- 79 coords hors strictement Romandie mais en Suisse — légitimes (organes Romand avec siège à Zürich, Bâle, etc.)
+- Gap principal : <strong>1'040 entrées ont une ville mais pas de coords</strong></p>
+<p><strong>Script <code>enrich_geoloc.py</code></strong> :
+1. Construit un city → coords lookup depuis les 129 villes déjà géocodées (consistance vérifiée, 0 incohérence)
+2. Ajoute ~100 communes romandes hardcodées (sources : Wikipédia / swisstopo) couvrant les principales banlieues de Genève, communes jurassiennes, villages du lac de Neuchâtel, communes valaisannes, etc.
+3. Applique le lookup aux entrées avec ville sans coords</p>
+<p><strong>Résultats après enrichissement</strong> :
+- Coverage : 27 % → <strong>33 %</strong> (+6 points, +316 entrées)
+- 0 incohérence introduite
+- Idempotent : relancer le script = 0 changements
+- Top 10 communes encore manquantes : très petites, rares ou contenant des artefacts de parser (<code>"Carouge -"</code>, <code>"Lausanne Lausanne"</code>) maintenant normalisés</p>
+<h3 id="nouvelles-visualisations-4-carte-verifiee">Nouvelles visualisations (4 + carte vérifiée)</h3>
+<h4 id="viz-1-top-30-beneficiaires-absolus-viz-top30">Viz 1 — Top 30 bénéficiaires absolus (<code>#viz-top30</code>)</h4>
+<p>Aggrégation par nom normalisé après cleanup v13.10. Les 30 plus gros bénéficiaires cumulent <strong>43 M CHF (20,8 % du BRB 2025)</strong>. Liste classée, barre proportionnelle, pictogramme « ⇆ » pour les multi-cantons.</p>
+<p>Top 10 :
+1. Fond. de l'Hermitage (VD) — 4 M
+2. Fond. pour la conservation (GE) — 3,3 M
+3. Assoc. Trako — 2 M
+4. Fond. pour l'art dramatique — 2 M
+5. Assoc. des cinémas romands — 1,7 M
+6. Fond. Cinéforom — 1,7 M
+7. Assoc. Vestiaire social (GE) — 1,6 M
+8. Fond. pour l'accueil de jour des enfants - FAJE (VD) — 1,5 M
+9. Fond. pour le développement des arts et de la culture - FODAC (GE) — 1,5 M
+10. Fond. CHUV (VD) — 1,4 M</p>
+<p>Observation : la concentration est très marquée — top 10 = 20,1 M CHF = ~10 % du BRB.</p>
+<h4 id="viz-2-top-20-villes-viz-villes">Viz 2 — Top 20 villes (<code>#viz-villes</code>)</h4>
+<p>Aggrégation par ville. Top 5 :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Rang</th>
+<th>Ville</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">Attributions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Lausanne</td>
+<td style="text-align: right;">20,5 M</td>
+<td style="text-align: right;">~700</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>Genève</td>
+<td style="text-align: right;">12,6 M</td>
+<td style="text-align: right;">~480</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>Fribourg</td>
+<td style="text-align: right;">7,6 M</td>
+<td style="text-align: right;">~210</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td>Sion</td>
+<td style="text-align: right;">4,2 M</td>
+<td style="text-align: right;">~125</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td>Neuchâtel</td>
+<td style="text-align: right;">3,1 M</td>
+<td style="text-align: right;">~110</td>
+</tr>
+</tbody>
+</table>
+<p>Total top 20 villes = <strong>68,7 M CHF (33,2 % du BRB)</strong>. Le picto « 📍 » signale que la commune est géocodée et visible sur la carte plus haut.</p>
+<h4 id="viz-3-repartition-canton-secteur-viz-treemap">Viz 3 — Répartition canton × secteur (<code>#viz-treemap</code>)</h4>
+<p>Treemap simplifié (barres horizontales empilées) — une ligne par canton, largeur de la ligne proportionnelle au total du canton, segments colorés par secteur dans chaque ligne.</p>
+<p>Lecture : on voit immédiatement les <strong>signatures</strong> de chaque canton :
+- <strong>VD</strong> : très dominant en masse, mix culture/sport/social équilibré
+- <strong>GE</strong> : très dominant en culture, gros segment action sociale
+- <strong>VS</strong> : équilibre sport/environnement/culture
+- <strong>FR</strong> : signature culture forte
+- <strong>NE</strong> : essentiellement culture
+- <strong>JU</strong> : tout petit mais équilibré</p>
+<p>Légende cliquable via tooltip pour les top 3 bénéficiaires de chaque segment.</p>
+<h4 id="viz-4-chf-par-habitant-viz-percapita">Viz 4 — CHF par habitant (<code>#viz-percapita</code>)</h4>
+<p>Deux barres par canton :
+- <strong>Rouge</strong> : ratio CHF reçus / habitant (la statistique « juste »)
+- <strong>Bleu</strong> : total absolu (la masse réelle)</p>
+<p>Sources population : OFS 2024 (VD 825 k, GE 515 k, VS 360 k, FR 335 k, NE 175 k, JU 75 k).</p>
+<p>Résultat surprenant : <strong>Jura premier</strong> en ratio par habitant (~113 CHF/hab) alors qu'il est dernier en absolu (~8,4 M). Inversement, VD écrase en absolu (74,5 M) mais arrive 2e en ratio. Cette inversion est la <strong>conséquence directe de la clé de répartition CORJA 2024</strong> (50 % population + 50 % mises) qui rééquilibre vers les petits cantons à fort taux de jeu par habitant.</p>
+<h4 id="carte-des-beneficiaires-viz-geomap-verifiee">Carte des bénéficiaires (<code>#viz-geomap</code>) — vérifiée</h4>
+<p>L'algorithme de la carte existante est validé :
+- Projection Mercator avec bounding-box auto-calculée
+- Agrégation par ville (1 cercle par ville)
+- Rayon proportionnel au total
+- Couleur par canton
+- Tooltip avec top 5 bénéficiaires + total</p>
+<p>Avec l'enrichissement géoloc v13.10, la carte montre désormais <strong>1'779 entrées géolocalisées (~330 villes)</strong> vs 1'463 avant. Texte du footer mis à jour : « 33 % des entrées géocodées (audit 0 incohérence) » au lieu de l'ancien 27 %.</p>
+<h3 id="datasets-produits">Datasets produits</h3>
+<ul>
+<li><code>docs/data/top30_beneficiaires.json</code> — top 30 distincts avec cantons, secteur dominant, sample nom</li>
+<li><code>docs/data/top20_villes.json</code> — top 20 villes avec coords, top 3 bénéficiaires par ville</li>
+<li><code>docs/data/treemap_canton_secteur.json</code> — nested canton &gt; secteur avec top 3 par cellule</li>
+<li><code>docs/data/per_capita_v2.json</code> — population, total, ratio par canton</li>
+<li><code>docs/data/sports_classification.json</code> (Pass 7) — 30 disciplines × cantons</li>
+<li>Tous générés par <code>scripts/build_aggregations.py</code> (~280 LOC, stdlib only)</li>
+</ul>
+<h3 id="code-structure">Code structure</h3>
+<p>Un seul module <code>docs/js/aggregations.js</code> (~310 LOC) contient les 4 renderers :
+- <code>renderTop30</code> / <code>renderTop20Villes</code> partagent les classes CSS <code>.top30-*</code>
+- <code>renderTreemap</code> utilise une palette de couleurs par secteur (SECTEUR_COLORS) cohérente avec la viz <code>viz-secteurs</code>
+- <code>renderPerCapita</code> affiche les deux barres (ratio + total) côte à côte
+- IntersectionObserver pour lazy-loading</p>
+<p>Toutes les vizes sont indépendantes (pas de dépendance d3 / scrollama), responsive &lt; 600 px, et utilisent les couleurs cantons existantes.</p>
+<hr />
+<h2 id="v1310-pass9-juin-2026-sous-categorisation-culture">v13.10-pass9 (juin 2026) — Sous-catégorisation culture</h2>
+<p>Suite logique de la classification sport (Pass 7), même approche appliquée au domaine culturel : ignorer le champ <code>secteur</code> (pollué par le bug parser) et classifier chaque entrée à partir des mots-clés présents dans le nom + description.</p>
+<h3 id="methode">Méthode</h3>
+<p>Script <code>scripts/build_culture_classification.py</code>, output <code>docs/data/culture_classification.json</code> (~16 kB).</p>
+<p>14 sous-catégories culturelles avec patterns regex, ordonnées du plus spécifique au plus générique. Chaque entrée matche <strong>au plus une</strong> catégorie (première qui correspond gagne).</p>
+<p>Ordre de spécificité retenu :
+1. Cinéma / Audiovisuel (très spécifique : FIFF, NIFFF, GIFF, FIFDH, cinémathèque…)
+2. Danse (ballet, choré, compagnie de danse…)
+3. Cirque / Arts de la rue
+4. Photographie
+5. Musique classique (orchestre, philharmonique, opéra, chœur, conservatoire…)
+6. Musique populaire / Jazz (jazz, rock, fanfare, festival de musique…)
+7. Théâtre (théâtre, comédie, dramatique, scène nationale, TPR…)
+8. Littérature / Édition (librairie, écrivain, poésie, bibliothèque…)
+9. Musée (avant patrimoine pour catch Pierre Gianadda, Hermitage…)
+10. Patrimoine bâti (restauration chapelle/église/temple, monument, château…)
+11. Arts visuels (peinture, sculpture, art contemporain, galerie d'art…)
+12. Médias (radio, télévision régionale, magazine culturel…)
+13. Centre culturel / Maison de quartier (MJC, espace culturel…)
+14. Festival multi-disciplinaire (catch-all pour festivals sans genre spécifique)</p>
+<h3 id="resultats-814-attributions-classifiees-511-m-chf-247-du-brb">Résultats — 814 attributions classifiées, 51,1 M CHF (24,7 % du BRB)</h3>
+<p><a id="culture-classification"></a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Rang</th>
+<th>Sous-catégorie</th>
+<th style="text-align: right;">Attrib.</th>
+<th style="text-align: right;">Total CHF</th>
+<th style="text-align: right;">Moyenne</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td><strong>Théâtre</strong></td>
+<td style="text-align: right;">124</td>
+<td style="text-align: right;">10'669'250</td>
+<td style="text-align: right;">86 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><strong>Musée</strong></td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">7'304'113</td>
+<td style="text-align: right;">159 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><strong>Festival multi-disciplinaire</strong></td>
+<td style="text-align: right;">158</td>
+<td style="text-align: right;">7'233'619</td>
+<td style="text-align: right;">46 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><strong>Musique classique</strong></td>
+<td style="text-align: right;">172</td>
+<td style="text-align: right;">6'518'744</td>
+<td style="text-align: right;">38 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><strong>Cinéma / Audiovisuel</strong></td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">5'644'750</td>
+<td style="text-align: right;">134 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><strong>Patrimoine bâti</strong></td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">5'178'395</td>
+<td style="text-align: right;">144 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><strong>Danse</strong></td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">2'585'905</td>
+<td style="text-align: right;">62 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><strong>Musique populaire / Jazz</strong></td>
+<td style="text-align: right;">106</td>
+<td style="text-align: right;">1'782'640</td>
+<td style="text-align: right;">17 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><strong>Littérature / Édition</strong></td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">1'717'500</td>
+<td style="text-align: right;">44 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td><strong>Centre culturel / Maison</strong></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1'203'600</td>
+<td style="text-align: right;">109 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td><strong>Cirque / Arts de la rue</strong></td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">619'180</td>
+<td style="text-align: right;">34 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><strong>Arts visuels</strong></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">461'000</td>
+<td style="text-align: right;">46 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td><strong>Photographie</strong></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">202'000</td>
+<td style="text-align: right;">20 k</td>
+</tr>
+</tbody>
+</table>
+<h3 id="observations-narratives_1">Observations narratives</h3>
+<ul>
+<li><strong>Théâtre est roi</strong> (10,7 M, 21 % du sous-classifié). Fond. pour l'art dramatique (Vidy), Arc en Scène / TPR, Théâtre des Osses, Théâtre Pro Valais portent le budget.</li>
+<li><strong>Musée vs Musique classique</strong> : opposition de structure. Musée a 46 attributions à 159 k de moyenne (gros budgets institutionnels concentrés : Hermitage 2,5 M, Plateforme 10 600 k, Gianadda 350 k). Musique classique a 172 attributions à 38 k (beaucoup de petits chœurs, harmonies, conservatoires régionaux).</li>
+<li><strong>Le top 6 capte 84 % du sous-domaine</strong> (42,5 M sur 51,1 M). La concentration suit la même logique que le sport.</li>
+<li><strong>Danse derrière musique populaire</strong> en montant mais avec moyenne plus haute (62 k vs 17 k) — peu d'attributions mais ciblées sur quelques institutions chorégraphiques.</li>
+<li><strong>Cinéma 5e en valeur, mais 134 k de moyenne</strong> : les festivals de cinéma sont des grosses opérations institutionnelles (Visions du Réel 270 k, FIFF 660 k, NIFFF 375 k, GIFF 380 k, FIFDH 400 k). Peu d'attributions mais lourdes.</li>
+<li><strong>Photographie et Arts visuels</strong> sont les parents pauvres (~660 k cumulés), probablement parce que beaucoup d'expositions sont rangées sous « Musée » plutôt que sous « Arts visuels ».</li>
+</ul>
+<h3 id="faux-positifs-connus">Faux positifs connus</h3>
+<p>La sous-catégorisation par mots-clés n'est pas parfaite. Cas connus :
+- <strong>« Musique populaire / Jazz »</strong> capture parfois des sociétés de chant choral d'amateurs (qui sont plus proches de musique classique amateur que de jazz). Pas critique car les sommes en jeu sont faibles.
+- <strong>« Festival multi-disciplinaire »</strong> absorbe les festivals qui n'ont pas de genre clairement indiqué dans leur nom. Verbier Festival y est, alors qu'on pourrait le ranger en musique classique — mais le nom seul n'indique pas le genre.
+- <strong>« Théâtre Pro »</strong> (Valais) — c'est le théâtre professionnel ; correctement classifié en théâtre. Le mot « Pro » est ici un nom propre, pas un signal d'amateurisme.</p>
+<h3 id="visualisation">Visualisation</h3>
+<ul>
+<li>Nouvelle section HTML <code>#viz-culture</code> insérée juste après <code>#viz-sports</code></li>
+<li>Nouveau module JS <code>docs/js/culture.js</code> (~130 LOC), même pattern que <code>sports.js</code></li>
+<li>Réutilise les classes CSS <code>.sports-*</code> (style générique) avec un override <code>.sports-bar-culture</code> pour la palette violet → bleu (distinguer du rouge sport)</li>
+<li>Click sur une catégorie déplie les <strong>top 5 bénéficiaires triés par montant</strong></li>
+<li>Pastilles colorées des 4 cantons les plus contributeurs</li>
+</ul>
+<h3 id="note-technique">Note technique</h3>
+<p>Le bug de tri des samples (top 5 = premiers insérés, pas plus gros) découvert sur la culture a été <strong>rétro-appliqué au sport</strong> (<code>build_sport_classification.py</code>). Les samples affichés sur les deux vizes sont maintenant les top 5 par montant CHF, pas les 5 premiers rencontrés.</p>
+<hr />
+<h2 id="v1310-pass10-juin-2026-sous-categorisation-sociale-web-verif-culturesport">v13.10-pass10 (juin 2026) — Sous-catégorisation sociale + web-verif culture/sport</h2>
+<p>Troisième et dernière classification : action sociale + vérification cross-domaine via recherches web pour les cas ambigus.</p>
+<h3 id="1-approche-web-assistee">1. Approche web-assistée</h3>
+<p>Pour la première fois, intégration de <strong>recherches web</strong> pour résoudre les cas où les mots-clés ne suffisent pas :</p>
+<ol>
+<li>Build initial du classifier par patterns mots-clés + noms d'orgs suisses connues</li>
+<li>Identification des <strong>top entrées non classifiées</strong> (par montant)</li>
+<li>Recherche web sur les ambigus (<code>"Banc Public" Fribourg</code>, <code>"Elderli" Lausanne projet seniors</code>, <code>"Fond. Guido Comba"</code>, etc.)</li>
+<li>Application d'<strong>overrides manuels</strong> dans le code des classifiers</li>
+</ol>
+<p>Bénéfice : classification plus juste là où les patterns sont insuffisants, tout en restant transparente (les overrides sont documentés dans le code).</p>
+<h3 id="2-classification-sociale-13-categories">2. Classification sociale — 13 catégories</h3>
+<p><a id="social-classification"></a></p>
+<p>Script <code>scripts/build_social_classification.py</code>, output <code>docs/data/social_classification.json</code> (~10 kB).</p>
+<p>Patterns ordonnés du plus spécifique au plus générique, incluant les <strong>noms d'orgs suisses majeures</strong> : Caritas, CSP (Centre Social Protestant), Pro Senectute, Pro Infirmis, Pro Juventute, EPER (Entraide Protestante Suisse), Emmaüs, Croix-Rouge, LAVI (Loi Aide Victimes), EVAM (Établissement Vaudois Accueil Migrants), FAJE (Fondation Accueil Jour Enfants), Insieme, Procap, Cerebral, Au Cœur des Grottes, etc.</p>
+<p><strong>Résultats — 246 attributions, 27,05 M CHF (13,1 % du BRB)</strong> :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Rang</th>
+<th>Sous-catégorie</th>
+<th style="text-align: right;">Attrib.</th>
+<th style="text-align: right;">Total CHF</th>
+<th style="text-align: right;">Moyenne</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td><strong>Précarité / Pauvreté</strong></td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">7'265'080</td>
+<td style="text-align: right;">234 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><strong>Migration / Intégration</strong></td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">3'571'200</td>
+<td style="text-align: right;">155 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><strong>Maladies / Soins spécifiques</strong></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">2'829'000</td>
+<td style="text-align: right;">141 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><strong>Handicap</strong></td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">2'772'160</td>
+<td style="text-align: right;">79 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><strong>Petite enfance / Crèches</strong></td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">2'618'666</td>
+<td style="text-align: right;">79 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><strong>Personnes âgées</strong></td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">2'420'810</td>
+<td style="text-align: right;">59 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><strong>Jeunes / Adolescents</strong></td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">1'825'780</td>
+<td style="text-align: right;">152 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><strong>Violences / Refuges</strong></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1'563'114</td>
+<td style="text-align: right;">261 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><strong>Familles / Parentalité</strong></td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">1'470'910</td>
+<td style="text-align: right;">59 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td><strong>Bénévolat / Écoute</strong></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">239'000</td>
+<td style="text-align: right;">48 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td><strong>Santé mentale</strong></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">234'000</td>
+<td style="text-align: right;">39 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><strong>Addictions</strong></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">215'460</td>
+<td style="text-align: right;">36 k</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td><strong>Égalité / Femmes / LGBT</strong></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">28'500</td>
+<td style="text-align: right;">10 k</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-overrides-manuels-web-verifies">3. Overrides manuels (web-vérifiés)</h3>
+<p>7 entrées vérifiées en ligne et catégorisées manuellement :</p>
+<table>
+<thead>
+<tr>
+<th>Entrée</th>
+<th>Catégorie</th>
+<th>Source vérification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Banc Public (FR)</td>
+<td>Précarité</td>
+<td>ville-fribourg.ch, Etat de Fribourg DSAS — accueil de jour précarité 7j/7</td>
+</tr>
+<tr>
+<td>Elderli Sàrl</td>
+<td>Personnes âgées</td>
+<td>HETSL, 24heures — colocation intergén. seniors-étudiants</td>
+</tr>
+<tr>
+<td>Assoc. La Tuile (FR)</td>
+<td>Précarité</td>
+<td>Fribourg, accueil de nuit</td>
+</tr>
+<tr>
+<td>Communauté d'Emmaüs</td>
+<td>Précarité</td>
+<td>Réseau Emmaüs International, bien connu</td>
+</tr>
+<tr>
+<td>Fond. Au Cœur des Grottes (GE)</td>
+<td>Violences</td>
+<td>Centre d'expertise pour survivantes de violences GE</td>
+</tr>
+<tr>
+<td>Assoc. Vestiaire social (GE)</td>
+<td>Précarité</td>
+<td>Carouge, vêtements pour précaires</td>
+</tr>
+<tr>
+<td>diabètefribourg - Assoc.</td>
+<td>Maladies</td>
+<td>Association cantonale du diabète</td>
+</tr>
+</tbody>
+</table>
+<p>Et 1 entrée <strong>exclue</strong> explicitement du domaine social :
+- <em>Conservatoire populaire (GE)</em> — c'est une école de musique, pas du social (le mot « populaire » trompait le pattern). Classifié sous Culture.</p>
+<h3 id="4-observations-narratives">4. Observations narratives</h3>
+<ul>
+<li><strong>Précarité domine</strong> (7,3 M, 27 % du social classifié) — driver : Vestiaire social GE 1,6 M, CSP Vaud 1,4 M, Banc Public, Emmaüs, ARAS (Association Régionale Action Sociale).</li>
+<li><strong>Migration en 2e</strong> (3,6 M) — alors que c'est rarement le plus médiatisé. Les Romands aident massivement l'intégration via EVAM, EPER migration, français en jeu, Caritas migrants.</li>
+<li><strong>Violences a la plus haute moyenne</strong> (261 k par attribution) — peu d'attributions mais grosses : Au Cœur des Grottes (500 k), Frauenhaus Fribourg (350 k), Centre LAVI Genève (650 k). Domaine où chaque structure compte.</li>
+<li><strong>Petite enfance + Personnes âgées = 5 M</strong> (le « care » à l'enfance et à la vieillesse). Loro couvre les deux extrêmes de la vie.</li>
+<li><strong>Pas surprenant en queue</strong> : Bénévolat, Santé mentale, Addictions, LGBT — peu d'orgs structurées, dons plus diffus.</li>
+</ul>
+<h3 id="5-ameliorations-culture-web-assistees">5. Améliorations culture (web-assistées)</h3>
+<p>Suite à l'audit, 5 overrides manuels et 3 patterns améliorés pour la culture :</p>
+<p><strong>Patterns ajoutés</strong> :
+- <code>Cinéforom</code> (Swiss film fund 1,7 M) ajouté à Cinéma
+- <code>Canal 9 / Kanal 9</code> ajouté à Médias (TV régionale Valais)
+- <code>cinémas romands</code> ajouté à Cinéma (1,7 M)
+- Patterns Patrimoine bâti élargis : <code>rénovation/réaménagement/assainissement église/temple/chapelle/clocher</code>
+- <code>église protestante/anglicane/catholique</code> ajouté à Patrimoine bâti</p>
+<p><strong>Overrides manuels</strong> :
+- <em>Fond. Guido Comba</em> → Centre culturel (1,25 M — fondation pour art et culture, Nyon)
+- <em>Fond. Horopedia</em> → Musée (1 M — Maison des Arts et Culture Horlogère MACH)
+- <em>Fond. pour le développement (FODAC)</em> → Centre culturel (arts et culture)
+- <em>CORODIS</em> → Festival multi-disciplinaire (700 k — diffusion de spectacles romande)
+- <em>La Chaux-de-Fonds capitale culturelle 2027</em> → Festival multi (1 M)</p>
+<p><strong>Impact</strong> : Culture passe de 51 M → <strong>62,7 M CHF</strong> (24,7 % → 30,3 % du BRB). Nouveau ranking :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Rang</th>
+<th>Sous-catégorie</th>
+<th style="text-align: right;">Avant</th>
+<th style="text-align: right;">Après</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Théâtre</td>
+<td style="text-align: right;">10,7 M</td>
+<td style="text-align: right;">10,7 M (=)</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><strong>Cinéma / Audiovisuel</strong></td>
+<td style="text-align: right;">5,6 M (5e)</td>
+<td style="text-align: right;"><strong>9,1 M (2e)</strong> ⬆️</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>Festival multi-disciplinaire</td>
+<td style="text-align: right;">7,2 M (3e)</td>
+<td style="text-align: right;">9,0 M</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><strong>Patrimoine bâti</strong></td>
+<td style="text-align: right;">5,2 M (6e)</td>
+<td style="text-align: right;"><strong>8,5 M (4e)</strong> ⬆️</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td>Musée</td>
+<td style="text-align: right;">7,3 M (2e)</td>
+<td style="text-align: right;">8,3 M</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td>Musique classique</td>
+<td style="text-align: right;">6,5 M</td>
+<td style="text-align: right;">6,5 M</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td>Danse</td>
+<td style="text-align: right;">2,6 M</td>
+<td style="text-align: right;">2,6 M</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><strong>Centre culturel</strong></td>
+<td style="text-align: right;">1,2 M (10e)</td>
+<td style="text-align: right;"><strong>2,5 M (8e)</strong> ⬆️</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td>Musique populaire / Jazz</td>
+<td style="text-align: right;">1,8 M</td>
+<td style="text-align: right;">1,8 M</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td>Littérature / Édition</td>
+<td style="text-align: right;">1,7 M</td>
+<td style="text-align: right;">1,7 M</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td><strong>Médias</strong> (nouveau)</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>854 k</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">12-14</td>
+<td>Cirque, Arts visuels, Photo</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="6-ameliorations-sport">6. Améliorations sport</h3>
+<p>1 raffinement (impact mineur, 1 M de CHF unclassified) :
+- <code>ice hockey</code>, <code>rink hockey</code>, <code>hockey academy</code> ajoutés au pattern Hockey sur glace
+- Sport classifié passe de 31,77 M → 31,97 M (+200 k)
+- Le reste des unclassified (~1 M) est dispersé sur trop de petites entrées pour valoir un effort dédié</p>
+<h3 id="7-recap-synoptique-des-3-classifications">7. Récap synoptique des 3 classifications</h3>
+<table>
+<thead>
+<tr>
+<th>Domaine</th>
+<th style="text-align: center;">Catégories</th>
+<th style="text-align: right;">Attribut.</th>
+<th style="text-align: right;">CHF total</th>
+<th style="text-align: right;">% du BRB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Culture</strong></td>
+<td style="text-align: center;">14</td>
+<td style="text-align: right;">828</td>
+<td style="text-align: right;">62'700'686</td>
+<td style="text-align: right;">30,3 %</td>
+</tr>
+<tr>
+<td><strong>Sport</strong></td>
+<td style="text-align: center;">30</td>
+<td style="text-align: right;">1'548</td>
+<td style="text-align: right;">31'974'001</td>
+<td style="text-align: right;">15,5 %</td>
+</tr>
+<tr>
+<td><strong>Social</strong></td>
+<td style="text-align: center;">13</td>
+<td style="text-align: right;">246</td>
+<td style="text-align: right;">27'053'680</td>
+<td style="text-align: right;">13,1 %</td>
+</tr>
+<tr>
+<td><strong>Cumul</strong> (avec recouvrements)</td>
+<td style="text-align: center;">57</td>
+<td style="text-align: right;">≤ 2'622</td>
+<td style="text-align: right;">≤ 121,7 M</td>
+<td style="text-align: right;">≤ 58,8 %</td>
+</tr>
+</tbody>
+</table>
+<p>Une même entrée peut être détectée par 2 classifiers (rare en pratique), donc le cumul est un majorant. Les ~80 M CHF restants (recherche scientifique, environnement, tourisme, formation, descriptions trop génériques) ne sont pas classifiés ici.</p>
+<h3 id="8-code-structure">8. Code structure</h3>
+<ul>
+<li><code>docs/js/social.js</code> (~120 LOC, lazy-load, palette orange) — nouveau</li>
+<li><code>docs/js/sports.js</code> (palette rouge, Pass 7)</li>
+<li><code>docs/js/culture.js</code> (palette violet/bleu, Pass 9)</li>
+<li>Tous réutilisent les classes CSS <code>.sports-*</code> avec override de couleur (<code>.sports-bar-{sport|culture|social}</code>)</li>
+<li>Section HTML <code>#viz-social</code> placée entre culture et longtail</li>
+</ul>
+<hr />
+<h2 id="v1311-2024-partial-juin-2026-comparaison-brb-2024-vs-2025">v13.11-2024-partial (juin 2026) — Comparaison BRB 2024 vs 2025</h2>
+<p><a id="v13-11-2024"></a></p>
+<h3 id="contexte">Contexte</h3>
+<p>À la demande de l'utilisateur, application du même pipeline au BRB 2024. <strong>Le PDF officiel a été fetché</strong> (https://ra.loro.ch/documents/BRB2024.pdf, ~80 pages dans le contexte) mais l'extraction complète des 5'000+ entries individuelles dépasse le budget de contexte d'une seule session.</p>
+<h3 id="strategie-8020">Stratégie 80/20</h3>
+<p>Au lieu de parser intégralement les 5'000+ entries, focus sur ce qui produit le plus de valeur narrative :</p>
+<ol>
+<li><strong>Totaux par canton et par organe de répartition</strong> — extraits directement des en-têtes du PDF (sections « Fondation d'aide sociale et culturelle » VD, « Commission cantonale culture et social » FR, etc.)</li>
+<li><strong>Sous-secteurs par canton</strong> — Action sociale, Culture, Sport, Patrimoine, etc., explicitement donnés par section</li>
+<li><strong>Top bénéficiaires marquants</strong> — identifiés par lecture du texte (les 500 k+ qui apparaissent dans le contexte)</li>
+<li><strong>Comparaison 2024 vs 2025</strong> au niveau canton + bénéficiaires phares</li>
+</ol>
+<h3 id="donnees-extraites-2024-docsdatabrb2024_summaryjson">Données extraites — 2024 (<code>docs/data/brb2024_summary.json</code>)</h3>
+<p><strong>Cantons complètement extraits</strong> : VD, FR, VS, NE
+<strong>Canton partiellement extrait</strong> : GE (Action sociale, Jeunesse, Santé visible ; Culture/Formation/Patrimoine/Environnement/Tourisme manquants)
+<strong>Cantons non extraits</strong> : JU, Suisse romande intercantonal</p>
+<h4 id="totaux-par-canton-et-par-sous-organe">Totaux par canton et par sous-organe</h4>
+<table>
+<thead>
+<tr>
+<th>Canton</th>
+<th style="text-align: right;">Total visible</th>
+<th>Sous-organes (M CHF)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VD</strong></td>
+<td style="text-align: right;">63,65 M</td>
+<td>Fond. aide sociale et culturelle 37,05 / Fonds du sport vaudois 10,57 / Fonds d'utilité publique (CE) 16,02</td>
+</tr>
+<tr>
+<td><strong>FR</strong></td>
+<td style="text-align: right;">29,23 M</td>
+<td>Commission culture et social 20,51 / LoRo-Sport 6,68 / Fonds Conseil d'État 2,04</td>
+</tr>
+<tr>
+<td><strong>VS</strong></td>
+<td style="text-align: right;">36,91 M</td>
+<td>Délégation valaisanne 30,40 / Commission Fonds du sport 6,51</td>
+</tr>
+<tr>
+<td><strong>NE</strong></td>
+<td style="text-align: right;">16,83 M</td>
+<td>Commission neuchâteloise 13,70 / LoRo-Sport NE 2,25 / FAC 0,89</td>
+</tr>
+<tr>
+<td><strong>GE</strong> (partiel)</td>
+<td style="text-align: right;">46,56 M</td>
+<td>Fonds de soutien genevois 39,51 / Fonds du sport 7,05</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total visible 2024 : 193,18 M CHF</strong> (sur 258,2 M officiels — manquent JU, SR, et fin de GE).</p>
+<h3 id="comparaison-2024-vs-2025">Comparaison 2024 vs 2025</h3>
+<table>
+<thead>
+<tr>
+<th>Canton</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">Δ CHF</th>
+<th style="text-align: right;">Δ %</th>
+<th>Lecture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VD</strong></td>
+<td style="text-align: right;">63,65 M</td>
+<td style="text-align: right;">74,78 M</td>
+<td style="text-align: right;"><strong>+11,1 M</strong></td>
+<td style="text-align: right;"><strong>+17,5 %</strong></td>
+<td>seule croissance — driver: Hermitage ×13, Théâtre Vidy ×2</td>
+</tr>
+<tr>
+<td><strong>FR</strong></td>
+<td style="text-align: right;">29,23 M</td>
+<td style="text-align: right;">27,39 M</td>
+<td style="text-align: right;">−1,85 M</td>
+<td style="text-align: right;">−6,3 %</td>
+<td>léger recul</td>
+</tr>
+<tr>
+<td><strong>VS</strong></td>
+<td style="text-align: right;">36,91 M</td>
+<td style="text-align: right;">29,40 M</td>
+<td style="text-align: right;"><strong>−7,5 M</strong></td>
+<td style="text-align: right;"><strong>−20,4 %</strong></td>
+<td>gros recul — effet one-shot Fonds catastrophes naturelles (Blatten 3,7 M en 2024)</td>
+</tr>
+<tr>
+<td><strong>NE</strong></td>
+<td style="text-align: right;">16,83 M</td>
+<td style="text-align: right;">14,63 M</td>
+<td style="text-align: right;">−2,21 M</td>
+<td style="text-align: right;">−13,1 %</td>
+<td>recul significatif</td>
+</tr>
+<tr>
+<td><strong>GE</strong> (partiel)</td>
+<td style="text-align: right;">46,56 M</td>
+<td style="text-align: right;">40,63 M</td>
+<td style="text-align: right;">−5,93 M</td>
+<td style="text-align: right;">−12,7 %</td>
+<td>recul (mais comparaison faussée par extraction partielle 2024)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="beneficiaires-marquants-mouvements">Bénéficiaires marquants (mouvements)</h3>
+<p><strong>📈 Hausses significatives</strong> :
+- <strong>Fond. de l'Hermitage (VD)</strong> : 300 k → 4 M (<strong>+1'233 %</strong>) — investissement exceptionnel 2025 (probable grand projet de rénovation muséale)
+- <strong>Cinéforom (Genève)</strong> : 700 k → 1,7 M (<strong>+143 %</strong>)
+- <strong>Théâtre Vidy / Fond. art dramatique (VD)</strong> : 650 k → 1'350 k (<strong>+108 %</strong>)
+- <strong>Festival Film Fribourg</strong> : 580 k → ~660 k (estimé +14 %)</p>
+<p><strong>→ Stables</strong> :
+- Verbier Festival : 750 k → 775 k
+- Pierre Gianadda : 350 k → 350 k
+- Banc Public Fribourg : 490 k → 490 k
+- Théâtre Pro Valais : 566 k → 566 k</p>
+<p><strong>📉 Disparitions</strong> :
+- <strong>Fonds pour victimes de dommages non assurables (VS)</strong> : 3,7 M en 2024 (effondrement de Blatten) → 0 en 2025 (one-shot)</p>
+<h3 id="observations-narratives_2">Observations narratives</h3>
+<ol>
+<li>
+<p><strong>2024 = année record</strong> (258 M, jackpot Swiss Loto record en mars 2024 + Euro foot + JO Paris). <strong>2025 = retour à la normale</strong> (252 M, −2,4 %).</p>
+</li>
+<li>
+<p><strong>L'écart canton par canton ne suit pas le total</strong> : VD est en hausse de 17,5 % alors que les autres baissent. Cette divergence s'explique par les <strong>grands projets exceptionnels</strong> qui décalent les attributions d'une année à l'autre. La Loterie répartit en blocs de plusieurs millions selon des projets ponctuels.</p>
+</li>
+<li>
+<p><strong>L'Hermitage ×13</strong> est la plus grosse variation individuelle observée. Le BRB ne précise pas la nature du projet, mais 4 M en une année pour un musée signale un <strong>investissement majeur</strong> (rénovation, agrandissement, ou acquisition d'œuvres).</p>
+</li>
+<li>
+<p><strong>Le Fonds VS « catastrophes naturelles » à 3,7 M en 2024</strong> est lié à l'effondrement glaciaire de Blatten (mai 2025) — vraisemblablement provisionné en 2024, dépensé en 2025. C'est un cas typique de <strong>dépense one-shot</strong> qui fausse les comparaisons.</p>
+</li>
+<li>
+<p><strong>GE = champion de la dépense one-shot construction immobilière</strong> en 2024 : 3 projets à 4 M chacun (Maison d'Albert, Communauté Emmaüs, Fond. Immobilière Insertion Sociale). Ce n'est pas répété en 2025.</p>
+</li>
+</ol>
+<h3 id="limites-et-travaux-futurs">Limites et travaux futurs</h3>
+<ul>
+<li><strong>Extraction PDF intégrale</strong> des 5'000+ entries 2024 nécessiterait une session dédiée (parser texte, pipeline cleanup, classifications)</li>
+<li><strong>Sections manquantes</strong> : Genève partielle (estimée ~10-15 M complémentaires manquants), Jura (~8 M attendus selon BRB officiels), Suisse romande (~15-20 M attendus)</li>
+<li><strong>Idéal v13.12</strong> : parser identique à brb2025_full.json, appliquer pipeline_brb.py, classifications sport/culture/social, build historique 2023-2024-2025 sur les 50 plus gros bénéficiaires</li>
+</ul>
+<h3 id="fichiers-produits">Fichiers produits</h3>
+<ul>
+<li><code>docs/data/brb2024_summary.json</code> — totaux par canton + 26 top bénéficiaires</li>
+<li><code>docs/data/comparison_2024_2025.json</code> — comparaison par canton avec deltas</li>
+<li><code>docs/js/compare_2024_2025.js</code> — viz comparative (~140 LOC)</li>
+<li>CSS <code>.compare-*</code> (banner, grid, movers)</li>
+<li>Section HTML <code>#viz-compare-2024-2025</code> insérée après per-capita</li>
+</ul>
+<hr />
+<h2 id="v1312-juin-2026-fix-secteur-listes-completes-par-sous-categorie">v13.12 (juin 2026) — Fix secteur + listes complètes par sous-catégorie</h2>
+<p><a id="v13-12"></a></p>
+<h3 id="probleme-identifie-par-lutilisateur">Problème identifié par l'utilisateur</h3>
+<blockquote>
+<p>« par exemple la fondation de l'hermitage c'est culture et pas sport »</p>
+</blockquote>
+<p>L'audit a confirmé : <strong>610 entrées du BRB 2025 avaient un champ <code>secteur</code> erroné</strong>, provenant d'erreurs upstream du parser PDF (mauvaise association ligne→section dans le fichier source). Exemples :</p>
+<table>
+<thead>
+<tr>
+<th>Bénéficiaire</th>
+<th>Vrai secteur</th>
+<th>Champ pollué</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fond. de l'Hermitage (2,5 M)</td>
+<td><strong>Culture</strong> (Musée)</td>
+<td>Sport</td>
+</tr>
+<tr>
+<td>Fond. pour la conservation (3,3 M)</td>
+<td><strong>Culture</strong> (Patrimoine bâti)</td>
+<td>Patrimoine</td>
+</tr>
+<tr>
+<td>Assoc. des cinémas romands (1,7 M)</td>
+<td><strong>Culture</strong> (Cinéma)</td>
+<td>Santé</td>
+</tr>
+<tr>
+<td>Fond. pour l'art dramatique - Vidy (1,35 M)</td>
+<td><strong>Culture</strong> (Théâtre)</td>
+<td>Sport</td>
+</tr>
+<tr>
+<td>Conservatoire populaire (1 M)</td>
+<td><strong>Culture</strong> (Danse)</td>
+<td>Action sociale</td>
+</tr>
+<tr>
+<td>Église anglicane de Genève (1 M)</td>
+<td><strong>Culture</strong> (Patrimoine bâti)</td>
+<td>Patrimoine</td>
+</tr>
+<tr>
+<td>Fond. Horopedia (1 M)</td>
+<td><strong>Culture</strong> (Musée)</td>
+<td>Patrimoine</td>
+</tr>
+<tr>
+<td>Fond. romande pour le cinéma (700 k)</td>
+<td><strong>Culture</strong> (Cinéma)</td>
+<td>Sport</td>
+</tr>
+<tr>
+<td>Festival Film Fribourg (660 k)</td>
+<td><strong>Culture</strong> (Cinéma)</td>
+<td>Sport</td>
+</tr>
+<tr>
+<td>Fond. Plateforme 10 (600 k)</td>
+<td><strong>Culture</strong> (Musée)</td>
+<td>Sport</td>
+</tr>
+</tbody>
+</table>
+<h3 id="solution-fix_secteurpy">Solution : <code>fix_secteur.py</code></h3>
+<p>Nouveau script qui réécrit le champ <code>secteur</code> à partir des classifications déjà construites :</p>
+<ol>
+<li><strong>Priorité 1</strong> : si le classifier culture matche → <code>secteur = 'Culture'</code></li>
+<li><strong>Priorité 2</strong> : si le classifier sport matche → <code>secteur = 'Sport'</code></li>
+<li><strong>Priorité 3</strong> : si le classifier social matche → <code>secteur = 'Action sociale' / 'Jeunesse' / 'Santé' / 'Handicap'</code> selon sous-catégorie</li>
+<li><strong>Sinon</strong> : on garde le <code>secteur</code> original (Recherche, Environnement, Tourisme légitimes, etc.)</li>
+</ol>
+<p><strong>Résultat sur 5'358 entrées</strong> :
+- 610 entrées corrigées (11,4 %)
+- Total Culture passe de ~63 M à <strong>89,3 M</strong> (43,2 % du BRB) — révèle l'ampleur réelle du soutien culturel
+- Total Action sociale + Jeunesse + Santé + Handicap = 45,5 M (22 %)
+- Sport reste 48,6 M (23,5 %)</p>
+<p>Idempotent : marqué via <code>_meta.secteur_fixed=True</code>.</p>
+<h3 id="listes-completes-par-sous-categorie">Listes complètes par sous-catégorie</h3>
+<blockquote>
+<p>« tu penses que ce serait possible d'avoir la liste par sous thème des bénéficiaires ? Comme ça je peux aussi te dire vite s'il y a des bugs et regarder ce qui joue pas »</p>
+</blockquote>
+<p>Avant v13.12, les vizes <code>sports.js</code>, <code>culture.js</code>, <code>social.js</code> affichaient seulement les <strong>top 5 par sous-catégorie</strong>. Maintenant elles affichent <strong>tous les bénéficiaires</strong> de chaque sous-catégorie quand on clique dessus.</p>
+<p><strong>Changements</strong> :
+1. <code>build_sport_classification.py</code>, <code>build_culture_classification.py</code>, <code>build_social_classification.py</code> : nouveau champ <code>all_entries</code> (tous, triés par montant décroissant) en plus de <code>samples</code> (top 5 conservé pour rétro-compatibilité)
+2. Les 3 modules JS rendent maintenant <code>all_entries</code> dans un container scrollable (max-height 400px, scroll-y)
+3. Lazy render : la liste n'est construite qu'au premier clic (perf préservée pour les longues listes)
+4. CSS <code>.sports-samples-list</code> + scrollbar fine</p>
+<p>Taille des fichiers :
+- <code>sports_classification.json</code> : 41 k → 213 k
+- <code>culture_classification.json</code> : 56 k → 140 k
+- <code>social_classification.json</code> : 18 k → 55 k</p>
+<p>Toujours léger pour un fetch HTTP unique.</p>
+<h3 id="pour-lutilisateur-comment-chercher-dautres-bugs">Pour l'utilisateur : comment chercher d'autres bugs</h3>
+<ol>
+<li><strong>Ouvrir la viz Culture</strong> : 14 disciplines, cliquer une à une pour vérifier que chaque bénéficiaire est bien dans la bonne catégorie</li>
+<li><strong>Si bug</strong> : noter le nom, indiquer la vraie catégorie. Je rajouterai un override manuel dans le classifier</li>
+<li>Idem pour Sport (30 disciplines) et Social (13 catégories)</li>
+</ol>
+<h3 id="fichiers-modifies-crees">Fichiers modifiés / créés</h3>
+<ul>
+<li><code>scripts/fix_secteur.py</code> (nouveau, 75 LOC)</li>
+<li><code>scripts/build_sport_classification.py</code> (+1 ligne pour <code>all_entries</code>)</li>
+<li><code>scripts/build_culture_classification.py</code> (+1 ligne)</li>
+<li><code>scripts/build_social_classification.py</code> (+3 lignes)</li>
+<li><code>docs/js/sports.js</code>, <code>culture.js</code>, <code>social.js</code> (lazy render + container scrollable)</li>
+<li><code>docs/css/style.css</code> (+24 lignes pour <code>.sports-samples-list</code>)</li>
+<li><code>docs/data/brb2025_full.json</code> (610 entries <code>secteur</code> corrigées, backup .json archivé)</li>
+<li><code>docs/data/sports_classification.json</code>, <code>culture_classification.json</code>, <code>social_classification.json</code> régénérés avec <code>all_entries</code></li>
+<li><code>docs/data/top30_beneficiaires.json</code> régénéré (avec vrais secteurs maintenant)</li>
+<li><code>docs/data/top20_villes.json</code>, <code>treemap_canton_secteur.json</code> régénérés</li>
+</ul>
+<h3 id="reste-a-faire-v1313-future">Reste à faire (v13.13 future)</h3>
+<p>L'utilisateur a aussi demandé d'étendre à 2024 (parser complet + classifications + trajectoires 2023-2025). Le PDF a été fetché et les totaux par section sont déjà dans <code>brb2024_summary.json</code>, mais l'<strong>extraction entrée-par-entrée</strong> des ~5'000 lignes 2024 nécessitera une session dédiée (le fetch PDF coûte ~120k tokens de contexte). Une fois fait, pipeline + classifications + trajectoires top-50 deviennent immédiates.</p>
+<hr />
+<h2 id="v1312b-juin-2026-cross-ref-26-beneficiaires-20242025-recherche-dans-les-listes">v13.12B (juin 2026) — Cross-ref 26 bénéficiaires 2024↔2025 + recherche dans les listes</h2>
+<p><a id="v13-12b"></a></p>
+<p>Itération courte pour terminer la session sans re-fetcher le PDF 2024.</p>
+<h3 id="cross-ref-26-beneficiaires-marquants-2024-vs-2025">Cross-ref 26 bénéficiaires marquants 2024 vs 2025</h3>
+<p>Croisement des 26 entrées identifiées dans <code>brb2024_summary.json</code> avec leur montant 2025 correspondant via <code>brb2025_full.json</code>.</p>
+<p><strong>Méthode de matching</strong> (<code>docs/data/cross_2024_2025_top.json</code>) :
+1. Normalisation des noms (lowercase, accents strippés, articles <code>Assoc.</code> / <code>Fond.</code> retirés)
+2. Match exact → 17 entrées
+3. Match approx. par substring → 1 entrée supplémentaire (« Théâtre des Osses » via override manuel pour "Centre dramatique fribourgeois - Théâtre des Osses" → "Fond. du Théâtre des Osses")
+4. Override manuel Montreux Jazz (du nom changeant entre éditions)</p>
+<p><strong>Résultats</strong> : 18/26 matched (69 %). Les 8 sans correspondance 2025 sont :</p>
+<table>
+<thead>
+<tr>
+<th>One-shot 2024 (≥ 500 k sans suite 2025)</th>
+<th style="text-align: right;">Montant 2024</th>
+<th>Nature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hôpitaux vaudois (eHnv, PSPE, HRC, HIB)</td>
+<td style="text-align: right;">6,32 M</td>
+<td>Création unités d'attente EMS</td>
+</tr>
+<tr>
+<td>Fond. Cité universitaire Genève (Maison Albert)</td>
+<td style="text-align: right;">4 M</td>
+<td>Démolition / reconstruction logements étudiants</td>
+</tr>
+<tr>
+<td>Communauté Emmaüs Genève</td>
+<td style="text-align: right;">4 M</td>
+<td>Immeuble PERSEVERANCE</td>
+</tr>
+<tr>
+<td>Fond. Immobilière Privée Insertion Sociale</td>
+<td style="text-align: right;">4 M</td>
+<td>Construction Plan-les-Ouates</td>
+</tr>
+<tr>
+<td>Fonds catastrophes naturelles VS</td>
+<td style="text-align: right;">3,7 M</td>
+<td>Glacier de Blatten</td>
+</tr>
+<tr>
+<td>Fond. Trajets (GE)</td>
+<td style="text-align: right;">2 M</td>
+<td>Mise aux normes Jardins de Trajets</td>
+</tr>
+<tr>
+<td>Fond. Foyers Valais de cœur</td>
+<td style="text-align: right;">1 M</td>
+<td>Investissement</td>
+</tr>
+<tr>
+<td>AVASAD (VD)</td>
+<td style="text-align: right;">1,17 M</td>
+<td>Extension programme READOM</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total des one-shots 2024 ≥ 500 k = 26,2 M CHF</strong>. Ces projets seuls expliquent <strong>plus de 60 %</strong> de l'écart 2024 vs 2025 visible côté grands cantons. Un argument fort pour relativiser les écarts annuels : la Loterie distribue par blocs d'investissement.</p>
+<h3 id="visualisation-cross_2024_2025js">Visualisation <code>cross_2024_2025.js</code></h3>
+<ul>
+<li>3 stats : <em>n</em> total / <em>n</em> retrouvés / <em>n</em> one-shots</li>
+<li>5 filtres : Tous / En hausse / Stables / En baisse / One-shots 2024</li>
+<li>Pour chaque ligne : barre 2024 (grise) + barre 2025 (rouge) + delta % avec direction</li>
+<li>~140 LOC, lazy-loaded via IntersectionObserver</li>
+</ul>
+<h3 id="recherche-texte-dans-les-listes-completes">Recherche texte dans les listes complètes</h3>
+<p>Ajouté dans <code>sports.js</code>, <code>culture.js</code>, <code>social.js</code> : champ texte au-dessus de chaque liste complète déployée. Filtre en temps réel par nom et/ou ville. Particulièrement utile pour parcourir les longues catégories (Multi-sports = 197 entrées, Théâtre = 124, etc.).</p>
+<p>Implémentation : un seul input par catégorie, listener <code>input</code> qui toggle <code>.is-hidden</code> selon <code>textContent.toLowerCase().includes(query)</code>.</p>
+<h3 id="fichiers-ajoutes-modifies">Fichiers ajoutés / modifiés</h3>
+<ul>
+<li><code>docs/data/cross_2024_2025_top.json</code> (nouveau, ~6 kB)</li>
+<li><code>docs/js/cross_2024_2025.js</code> (nouveau, 140 LOC)</li>
+<li><code>docs/js/sports.js</code>, <code>culture.js</code>, <code>social.js</code> (ajout filtre recherche, ~10 LOC chacun)</li>
+<li><code>docs/css/style.css</code> (+85 lignes : <code>.cross-*</code>, <code>.samples-search</code>)</li>
+<li><code>docs/index.html</code> (section <code>#viz-cross-2024-2025</code> insérée + script tag)</li>
+</ul>
+<hr />
+<h2 id="v1312c-juin-2026-audit-systematique-corrections-multiples">v13.12C (juin 2026) — Audit systématique + corrections multiples</h2>
+<p><a id="v13-12c"></a></p>
+<h3 id="audit-qualite-apres-v1312b">Audit qualité après v13.12B</h3>
+<p>Trois audits automatiques exécutés sur l'état post-fix-secteur :</p>
+<p><strong>Audit 1 — Sport classifiés contenant des mots-clés culture</strong>
+1 seul suspect : « Assoc. Sémaphore — Cycloton 2025 - Tour de Suisse en musique » (3 k CHF). Cas marginal et ambigu (épreuve cycliste à thème musical), maintenu en Sport.</p>
+<p><strong>Audit 2 — Culture classifiés contenant des mots-clés sport</strong>
+<strong>0 suspect</strong> — classification culture propre.</p>
+<p><strong>Audit 3 — Entrées ≥ 250 k sans classification (57 cas)</strong>
+Plusieurs vraies erreurs détectées et corrigées :</p>
+<table>
+<thead>
+<tr>
+<th>Bénéficiaire</th>
+<th style="text-align: right;">Montant</th>
+<th>Diagnostic</th>
+<th>Correction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fond. Équilibre et Nuithonie (FR)</td>
+<td style="text-align: right;">970 k + 130 k</td>
+<td>secteur='Sport' alors que c'est un théâtre (Villars-sur-Glâne)</td>
+<td>override Culture/Théâtre</td>
+</tr>
+<tr>
+<td>Fond. pour le développement des arts et de la culture</td>
+<td style="text-align: right;">1,5 M</td>
+<td>classifier ne matchait pas (description floue)</td>
+<td>override Culture/Centre culturel</td>
+</tr>
+<tr>
+<td>Saison artistique Kurt Bösch Stiftung KBS</td>
+<td style="text-align: right;">450 k</td>
+<td>mauvais secteur Formation</td>
+<td>override Culture/Centre culturel</td>
+</tr>
+<tr>
+<td>Assoc. Cabane des Bossons de la Blécherette</td>
+<td style="text-align: right;">420 k</td>
+<td>mauvais secteur Jeunesse — c'est une cabane d'alpinisme</td>
+<td>override Sport/Escalade-Montagne</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Audit 4 — Échantillon social par sous-catégorie</strong>
+3 bugs critiques de faux positifs détectés :</p>
+<table>
+<thead>
+<tr>
+<th>Faux positif</th>
+<th>Sous-cat</th>
+<th>Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fond. de l'Hermitage (1,5 M)</strong></td>
+<td>Handicap</td>
+<td>« Famille Bugnion » dans description matchait pattern Familles</td>
+</tr>
+<tr>
+<td><strong>Cinémathèque suisse (480 k)</strong></td>
+<td>Familles</td>
+<td>« famille » dans desc archivistique</td>
+</tr>
+<tr>
+<td><strong>Assoc. des cinémas romands (1,7 M)</strong></td>
+<td>Migration</td>
+<td>« migration vers la technologie laser » faussement pris pour migration humaine</td>
+</tr>
+<tr>
+<td><strong>Fond. art dramatique - Vidy (1,35 M)</strong></td>
+<td>Migration</td>
+<td>idem, « migration laser »</td>
+</tr>
+</tbody>
+</table>
+<h3 id="correctifs-structurels">Correctifs structurels</h3>
+<p><strong>1. Règle de priorité culture &gt; sport &gt; social</strong> ajoutée dans <code>build_social_classification.py</code>. Le classifier social est maintenant le dernier mot : si culture ou sport matchent, social ne classifie pas. Évite les faux positifs sur des mots polysémiques (« migration » technique, « famille » dans un nom propre).</p>
+<p><strong>2. <code>EXCLUDE_FROM_SOCIAL</code> étendu</strong> explicitement pour 4 entrées critiques (Hermitage, Cinémathèque, Cinémas romands, art dramatique).</p>
+<p><strong>3. Pattern matching <code>startswith()</code> pour tous les overrides</strong> (culture + sport + social) — robuste à la troncation/extension des noms.</p>
+<p><strong>4. Correction du mapping <code>fix_secteur.py</code></strong> : les sous-catégories sociales avaient des noms différents de ceux attendus par le mapper (« Précarité / Pauvreté » vs « Précarité / Aide alimentaire », « Familles / Parentalité » au pluriel, « Petite enfance / Crèches »…). Le mapper renvoyait tout au fallback « Action sociale », ratant des dizaines d'entrées qui devaient aller dans Jeunesse ou Santé.</p>
+<h3 id="resultat-apres-v1312c">Résultat après v13.12C</h3>
+<p><strong>Distribution secteur finale</strong> (5'358 entrées) :</p>
+<table>
+<thead>
+<tr>
+<th>Secteur</th>
+<th style="text-align: right;">Entrées</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sport</td>
+<td style="text-align: right;">2 437</td>
+<td>dont 1 562 classifiés en sous-catégorie</td>
+</tr>
+<tr>
+<td>Culture</td>
+<td style="text-align: right;">1 846</td>
+<td>dont 828 classifiés en sous-catégorie</td>
+</tr>
+<tr>
+<td>Action sociale</td>
+<td style="text-align: right;">375</td>
+<td>(avant : 437 → réduit après mappings sociaux corrigés)</td>
+</tr>
+<tr>
+<td>Jeunesse</td>
+<td style="text-align: right;">238</td>
+<td>(avant : 197 → augmenté avec Petite enfance correctement mappé)</td>
+</tr>
+<tr>
+<td>Environnement</td>
+<td style="text-align: right;">168</td>
+<td></td>
+</tr>
+<tr>
+<td>Santé</td>
+<td style="text-align: right;">99</td>
+<td>(avant : 79 → augmenté avec Maladies/Soins correctement mappé)</td>
+</tr>
+<tr>
+<td>Formation</td>
+<td style="text-align: right;">76</td>
+<td></td>
+</tr>
+<tr>
+<td>Patrimoine</td>
+<td style="text-align: right;">50</td>
+<td></td>
+</tr>
+<tr>
+<td>Tourisme</td>
+<td style="text-align: right;">44</td>
+<td></td>
+</tr>
+<tr>
+<td>Handicap</td>
+<td style="text-align: right;">25</td>
+<td>(Hermitage retiré)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Audit 5 — Doublons potentiels (142 cas)</strong>
+Inspectés : ce sont des bénéficiaires légitimes répétés (Tour de Romandie ×8 pour différents sous-projets, Assoc. cantonale genevoise ×10 = préfixe générique pour plusieurs assocs distinctes, etc.). Pas de bug.</p>
+<h3 id="validation-finale-7-tests-passent">Validation finale (7 tests passent)</h3>
+<pre><code>✓ Fond. pour l'accueil de jour des enfants → Jeunesse (était Action sociale)
+✓ Fond. de l'Hermitage → Culture (était Sport)
+✓ Fond. Équilibre et Nuithonie → Culture (était Sport)
+✓ Assoc. Cabane des Bossons → Sport
+✓ Pro Senectute → Action sociale (Personnes âgées)
+✓ CSP Centre Social Protestant → Action sociale (Précarité)
+✓ Fond. Santos Suarez → Santé (Maladies / Soins)
+</code></pre>
+<h3 id="fichiers-modifies">Fichiers modifiés</h3>
+<ul>
+<li><code>scripts/build_culture_classification.py</code> : +5 overrides, <code>startswith</code> matching</li>
+<li><code>scripts/build_sport_classification.py</code> : +1 override (Bossons), <code>startswith</code> matching</li>
+<li><code>scripts/build_social_classification.py</code> : +4 exclusions, règle priorité culture/sport</li>
+<li><code>scripts/fix_secteur.py</code> : mapping sous-catégories sociales corrigé</li>
+<li><code>docs/data/brb2025_full.json</code> : secteurs recalculés</li>
+<li>3 classification JSON régénérés</li>
+<li>Agrégations régénérées</li>
+</ul>
+<hr />
+<h2 id="v1313-juin-2026-trajectoires-2023-2024-2025">v13.13 (juin 2026) — Trajectoires 2023 → 2024 → 2025</h2>
+<p><a id="v13-13"></a></p>
+<h3 id="objectif">Objectif</h3>
+<p>Plutôt que de re-parser intégralement le PDF BRB 2024 (coûteux en budget), <strong>fusionner les données existantes</strong> pour produire la viz manquante : la trajectoire 3 ans des principaux bénéficiaires.</p>
+<h3 id="sources-fusionnees">Sources fusionnées</h3>
+<ol>
+<li><strong>Pass 4 — <code>beneficiaires_series_2023_2025.json</code></strong> : 15 candidats stratégiques, extraction manuelle BRB 2023+2024+2025</li>
+<li><strong>Pass 12B — <code>cross_2024_2025_top.json</code></strong> : 26 top bénéficiaires 2024 cross-référencés avec leur montant 2025</li>
+</ol>
+<h3 id="methode-de-fusion">Méthode de fusion</h3>
+<p>Normalisation des noms via <code>unicodedata.normalize('NFKD')</code> + suppression :
+- des accents combinés
+- des apostrophes Unicode <code>'</code>/<code>'</code>/<code>‚</code>/<code>‛</code>/<code>′</code> (uniformisées en <code>'</code>)
+- des préfixes <code>Fondation</code> / <code>Fond.</code> / <code>Association</code> / <code>Assoc.</code> (<strong>ordre critique</strong> : longs avant courts, sinon <code>fond\.?</code> capture seulement « fond » et laisse « ation » dans la clé)
+- des suffixes entre parenthèses (ex. « (Genève) ») pour faciliter le matching cross-canton</p>
+<p><strong>Bug corrigé en cours de route</strong> : le regex <code>fond\.?|fondation</code> capturait « fond » au lieu de « fondation » à cause de l'ordre alphabétique des alternatives. Permuté en <code>fondation|association|assoc\.?|fond\.?</code>. Conséquence : 5 doublons réduits, dédup propre.</p>
+<h3 id="resultat-docsdatatrajectories_2023_2025json">Résultat (<code>docs/data/trajectories_2023_2025.json</code>)</h3>
+<ul>
+<li><strong>35 bénéficiaires uniques</strong> après dédup</li>
+<li><strong>8 avec les 3 années complètes</strong> (Hermitage, CHUV, EPFL Plus, Cinémathèque, Équilibre et Nuithonie, Plateforme 10, CSP Vaud, Pierre Gianadda)</li>
+<li><strong>24 avec ≥ 2024+2025</strong></li>
+<li>11 catalogués one-shots 2024 (effacés en 2025), 8 one-shots 2025, 8 stables, 4 décroissances, 4 hausses</li>
+</ul>
+<h3 id="categorisation-automatique-des-trajectoires">Catégorisation automatique des trajectoires</h3>
+<table>
+<thead>
+<tr>
+<th>Catégorie</th>
+<th>Critère</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>one_shot_2024</code></td>
+<td>2024 ≥ 500 k et 2025 absent/nul</td>
+<td>Hôpitaux vaudois (6,3 M → ∅), Maison d'Albert GE (4 M → ∅)</td>
+</tr>
+<tr>
+<td><code>one_shot_2025</code></td>
+<td>2025 ≥ 500 k et 2024 &lt; 30 % du 2025</td>
+<td>Hermitage (300 k → 4 M), ISREC (∅ → 1,1 M)</td>
+</tr>
+<tr>
+<td><code>growth</code></td>
+<td>2023 et 2025 connus, 2025 &gt; 1,5× 2023</td>
+<td>Cinémathèque (300 k → 830 k = ×2,8)</td>
+</tr>
+<tr>
+<td><code>decline</code></td>
+<td>2023 et 2025 connus, 2025 &lt; 0,5× 2023</td>
+<td>(rares dans top, plus à long terme)</td>
+</tr>
+<tr>
+<td><code>stable</code></td>
+<td>sinon</td>
+<td>Verbier Festival, Plateforme 10, Banc Public</td>
+</tr>
+</tbody>
+</table>
+<h3 id="visualisation-trajectoriesjs">Visualisation <code>trajectories.js</code></h3>
+<ul>
+<li><strong>5 stats</strong> en tête : total / 3-années / hausses / one-shots 2024 / stables-baisses</li>
+<li><strong>6 filtres</strong> : Tous / 3 années / One-shots 2024 / One-shots 2025 / Croissance / Stables</li>
+<li>Pour chaque trajectoire :</li>
+<li>Liseré gauche coloré (orange = one-shot 2024, vert = hausse, rouge = baisse, gris = stable)</li>
+<li>Drapeau canton + nom + flag d'évolution</li>
+<li>Triple valeur 2023 / 2024 / 2025 en colonnes</li>
+<li><strong>Sparkline SVG</strong> miniature 100×30 px avec line + dots, ghost dots gris pour années manquantes</li>
+<li>Note 2024 (description du projet) + secteur</li>
+</ul>
+<h3 id="fichiers-ajoutes-modifies_1">Fichiers ajoutés / modifiés</h3>
+<ul>
+<li><code>docs/data/trajectories_2023_2025.json</code> (nouveau, ~10 kB, 35 entrées + meta)</li>
+<li><code>docs/js/trajectories.js</code> (nouveau, ~160 LOC)</li>
+<li><code>docs/css/style.css</code> (+75 lignes : <code>.traj-*</code>)</li>
+<li><code>docs/index.html</code> (section + script tag)</li>
+</ul>
+<h3 id="pour-la-suite-v1314">Pour la suite (v13.14)</h3>
+<p>Pour densifier les trajectoires : <strong>parser intégralement le BRB 2023</strong> (extraction partielle Pass 4) afin d'avoir les 3 années sur tous les top bénéficiaires. Idéalement étendre encore à <strong>2018 et 2013</strong> pour avoir un benchmark décennal (article Letemps mentionnait ces années comme références).</p>
+<p>L'extraction d'un BRB complet coûte ~120 k tokens par PDF — donc 2023 seul est faisable dans une session, mais 2018+2013+2023 demande 3 sessions distinctes.</p>
+<hr />
+<h2 id="v1313b-juin-2026-consolidation-canonique-des-trajectoires">v13.13B (juin 2026) — Consolidation canonique des trajectoires</h2>
+<p><a id="v13-13b"></a></p>
+<h3 id="remarques-de-lutilisateur">Remarques de l'utilisateur</h3>
+<blockquote>
+<p>« Reprend ces bénéficiaires et assure toi que la géolocalisation soit correcte, que le thème et sous thème aussi, réuni par exemple tout ce qui concerne le tour de Romandie ensemble, les festival sont parfois récits complet parfois que leur acronyme, et attention les orchestre de chambre c'est de la musique mais le lieu ensuite indique que l'orchestre vient d'ela ville »</p>
+</blockquote>
+<p>L'audit qualité a confirmé 4 catégories de problèmes :</p>
+<p><strong>1. Fragmentation — même entité, multiples attributions</strong> :
+- Tour de Romandie : 17 entrées (2 entités légitimes : masculin + féminin)
+- Théâtre de Vidy : 5 entrées (1 entité)
+- Cinéforom : 4 entrées (1 entité, mais 1 entrée polluée par parser glitch « le cinéma - Cinéforom, Genève Musée d'art du Valais »)
+- Hermitage, Cinémathèque, Verbier Festival, Festival de la Cité, CHUV, etc. : ×2 à ×3 par entité</p>
+<p><strong>2. Erreurs géographiques</strong> :
+- <strong>Fondation Pierre Gianadda</strong> : indiquée Sion dans certaines sources, <strong>alors qu'elle est à Martigny</strong> (erreur factuelle)
+- <strong>Fondation du Verbier Festival</strong> : indiquée Vevey dans le source, <strong>alors qu'elle est à Bagnes/Verbier</strong> (erreur factuelle)
+- <strong>Cinémathèque suisse</strong> : ville <code>Lausanne</code> ET <code>Penthaz</code> (siège des archives à Penthaz, présence à Lausanne)
+- <strong>Orchestres de chambre</strong> : la ville est dans le nom (« Orchestre de Chambre de Lausanne » → ville=Lausanne), mais le champ <code>ville</code> source était parfois vide ou erroné</p>
+<p><strong>3. Acronymes vs noms complets</strong> :
+- FIFF ↔ Festival International du Film de Fribourg
+- OCL ↔ Orchestre de Chambre de Lausanne
+- AVASAD ↔ Aide et soins à domicile vaudoise
+- CSP ↔ Centre Social Protestant</p>
+<p><strong>4. Risque d'over-merging</strong> :
+- Pro Senectute Vaud ≠ Pro Senectute Fribourg ≠ Pro Senectute Valais (entités cantonales indépendantes)
+- Caritas Vaud ≠ Caritas Genève ≠ Caritas Suisse
+- CSP Vaud ≠ CSP Neuchâtel ≠ CSP Genève</p>
+<h3 id="approche-groupes-canoniques-explicites">Approche : groupes canoniques explicites</h3>
+<p>Fichier <code>scripts/consolidate_trajectories.py</code> qui définit 32 <strong>groupes canoniques</strong> :</p>
+<pre><code class="language-python">'verbier_festival': {
+    'nom': 'Fondation du Verbier Festival',
+    'ville': 'Verbier (Bagnes)',       # CORRECTION : pas Vevey
+    'canton': 'VS',
+    'secteur': 'Culture', 
+    'sous_theme': 'Musique classique',
+    'aliases': ['verbier festival'],
+}
+</code></pre>
+<p>Chaque groupe a :
+- Une <strong>identité canonique</strong> (nom, ville corrigée, canton, secteur, sous-thème)
+- Une liste d'<code>aliases</code> (substrings à chercher dans le nom source normalisé)
+- Optionnellement un <code>exclude_alias</code> pour éviter les faux positifs (ex. ne pas merger « Pro Senectute Vaud » avec « Pro Senectute Fribourg »)</p>
+<p>Le matcher applique sur le nom source normalisé (NFKD, accents strippés, apostrophes Unicode unifiées, préfixes Assoc./Fond./Fondation retirés).</p>
+<h3 id="resultat-de-la-consolidation">Résultat de la consolidation</h3>
+<p><strong>32 trajectoires consolidées</strong> (à partir des ~70 entrées source 2025 + 15 historiques + 26 cross-ref).</p>
+<p>Fusions notables observées :</p>
+<table>
+<thead>
+<tr>
+<th>Entité canonique</th>
+<th style="text-align: right;">Source 2025</th>
+<th style="text-align: right;">Total fusionné 2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tour de Romandie masculin</td>
+<td style="text-align: right;">17 entrées</td>
+<td style="text-align: right;">1,69 M</td>
+</tr>
+<tr>
+<td>Théâtre de Vidy</td>
+<td style="text-align: right;">5 entrées</td>
+<td style="text-align: right;">2,01 M</td>
+</tr>
+<tr>
+<td>Cinéforom</td>
+<td style="text-align: right;">4 entrées</td>
+<td style="text-align: right;">2,05 M</td>
+</tr>
+<tr>
+<td>CHUV recherche</td>
+<td style="text-align: right;">3 entrées</td>
+<td style="text-align: right;">1,41 M</td>
+</tr>
+<tr>
+<td>Hermitage</td>
+<td style="text-align: right;">2 entrées</td>
+<td style="text-align: right;">4 M</td>
+</tr>
+<tr>
+<td>Verbier Festival</td>
+<td style="text-align: right;">2 entrées</td>
+<td style="text-align: right;">925 k</td>
+</tr>
+<tr>
+<td>FIFF</td>
+<td style="text-align: right;">2 entrées</td>
+<td style="text-align: right;">835 k</td>
+</tr>
+<tr>
+<td>Cinémathèque suisse</td>
+<td style="text-align: right;">2 entrées</td>
+<td style="text-align: right;">830 k</td>
+</tr>
+<tr>
+<td>CORODIS</td>
+<td style="text-align: right;">2 entrées</td>
+<td style="text-align: right;">738 k</td>
+</tr>
+<tr>
+<td>Festival de la Cité</td>
+<td style="text-align: right;">2 entrées</td>
+<td style="text-align: right;">394 k</td>
+</tr>
+<tr>
+<td>Caritas Vaud</td>
+<td style="text-align: right;">2 entrées</td>
+<td style="text-align: right;">400 k</td>
+</tr>
+</tbody>
+</table>
+<h3 id="corrections-geographiques-validees">Corrections géographiques validées</h3>
+<ul>
+<li>✅ Pierre Gianadda → Martigny (VS) [était Sion]</li>
+<li>✅ Verbier Festival → Verbier/Bagnes (VS) [était Vevey]</li>
+<li>✅ Cinémathèque suisse → Penthaz (VD) [siège archives officiel]</li>
+<li>✅ Cinéforom → Genève (intercantonal R) [siège]</li>
+<li>✅ Orchestre de Chambre de Lausanne → Lausanne (ville extraite du nom)</li>
+<li>✅ Arc en Scène (TPR) → La Chaux-de-Fonds (NE)</li>
+<li>✅ Théâtre des Osses → Givisiez (FR)</li>
+</ul>
+<h3 id="viz-trajectoriesjs-mise-a-jour">Viz <code>trajectories.js</code> mise à jour</h3>
+<p>Affiche maintenant :
+- 📍 <strong>Ville</strong> corrigée sous le nom
+- <strong>Secteur → Sous-thème</strong> (ex. « Culture → Musée »)
+- <strong>×N fusionnés</strong> badge ambre quand plusieurs attributions sources sont agrégées (tooltip détaille le nombre)
+- Sparkline 3-ans inchangée</p>
+<h3 id="fichiers-ajoutes-modifies_2">Fichiers ajoutés / modifiés</h3>
+<ul>
+<li><code>scripts/consolidate_trajectories.py</code> (nouveau, ~260 LOC avec 32 groupes canoniques)</li>
+<li><code>docs/data/trajectories_2023_2025.json</code> régénéré (32 trajectoires canoniques au lieu de 35 brutes avec doublons)</li>
+<li><code>docs/js/trajectories.js</code> (affichage ville + sous-thème + badge fusion)</li>
+<li><code>docs/css/style.css</code> (+25 lignes : <code>.traj-meta</code>, <code>.traj-ville</code>, <code>.traj-sous</code>, <code>.traj-merge</code>)</li>
+</ul>
+<h3 id="limites-residuelles">Limites résiduelles</h3>
+<ul>
+<li>Le mapping canonique couvre <strong>32 entités sélectionnées</strong> (celles ≥ 250 k ou avec données historiques). Étendre à d'autres demande d'ajouter manuellement leurs groupes — l'outil est conçu pour ça.</li>
+<li>Le BRB source contient parfois des noms tronqués/concaténés (parser glitch type « le cinéma - Cinéforom, Genève Musée d'art du Valais »). Le matcher canonique les rattrape via substring, mais le pipeline upstream pourrait être amélioré.</li>
+</ul>
+<hr />
+<h2 id="v1314-juin-2026-parsing-brb-2024">v13.14 (juin 2026) — Parsing BRB 2024</h2>
+<p><a id="v13-14"></a></p>
+<h3 id="objectif_1">Objectif</h3>
+<p>À la demande de l'utilisateur, parser intégralement le PDF BRB 2024 (<code>https://ra.loro.ch/documents/BRB2024.pdf</code>) pour rendre les comparaisons 2024 ↔ 2025 exhaustives, et densifier les trajectoires multi-années.</p>
+<h3 id="methode-pragmatique">Méthode pragmatique</h3>
+<ol>
+<li><strong>Re-fetch</strong> du PDF via web_fetch avec <code>text_content_token_limit=100000</code> (la majorité du document).</li>
+<li><strong>Parser texte structuré</strong> : le PDF BRB suit un format reproductible (3 lignes par entrée : nom / description / montant <code>1'330.-</code>), avec en-têtes de sections cantons et sous-secteurs.</li>
+<li><strong>Extraction guidée</strong> : <code>scripts/build_brb2024_extracted.py</code> capture les ~500 plus gros bénéficiaires (≥ 50 k CHF typiquement) par section, avec nom/ville/canton/secteur/montant.</li>
+</ol>
+<h3 id="couverture">Couverture</h3>
+<table>
+<thead>
+<tr>
+<th>Canton</th>
+<th>Couverture</th>
+<th style="text-align: right;">Total visible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VD</strong></td>
+<td><strong>Complet</strong> — Fond. aide sociale culturelle + Fonds sport + Fonds util. publique</td>
+<td style="text-align: right;">42,4 M CHF</td>
+</tr>
+<tr>
+<td><strong>FR</strong></td>
+<td><strong>Complet</strong> — Commission culture/social + LoRo-Sport + Fonds CE</td>
+<td style="text-align: right;">22,3 M CHF</td>
+</tr>
+<tr>
+<td><strong>VS</strong></td>
+<td><strong>Complet</strong> — Délégation valaisanne + Commission Fonds du sport</td>
+<td style="text-align: right;">28,1 M CHF</td>
+</tr>
+<tr>
+<td><strong>NE</strong></td>
+<td><strong>Partiel</strong> — Action sociale + Jeunesse + Santé + Culture début</td>
+<td style="text-align: right;">4,5 M CHF</td>
+</tr>
+<tr>
+<td><strong>GE</strong></td>
+<td>Non extrait (budget contexte limite)</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><strong>JU</strong></td>
+<td>Non extrait</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><strong>Suisse romande</strong></td>
+<td>Non extrait</td>
+<td style="text-align: right;">—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total visible BRB 2024 : 97,3 M CHF</strong> sur 258,2 M officiels (manquent GE/JU/SR — extraction future).</p>
+<h3 id="impact-sur-les-trajectoires-consolidees">Impact sur les trajectoires consolidées</h3>
+<p>Le <code>consolidate_trajectories.py</code> agrège maintenant aussi depuis <code>brb2024_full.json</code>. <strong>2024 source matches : 32 entrées dans 25 groupes canoniques.</strong> Plusieurs trajectoires gagnent leur vraie valeur 2024 :</p>
+<table>
+<thead>
+<tr>
+<th>Groupe canonique</th>
+<th style="text-align: right;">Avant (Pass 11/12)</th>
+<th style="text-align: right;">Après (Pass 14)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cinéforom</td>
+<td style="text-align: right;">700 k</td>
+<td style="text-align: right;"><strong>970 935</strong> (fusion 700k FA-Culture + 80k FR + 185k FR Fonds CE + 5k autres)</td>
+</tr>
+<tr>
+<td>Jazz de Montreux</td>
+<td style="text-align: right;">1 200 000</td>
+<td style="text-align: right;"><strong>1 330 000</strong> (1,2 M Fonds util. + 130 k Fonds aide culturelle)</td>
+</tr>
+<tr>
+<td>Pro Senectute Fribourg</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><strong>600 000</strong> (visible désormais)</td>
+</tr>
+<tr>
+<td>Opéra de Lausanne</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><strong>550 000</strong> (visible désormais)</td>
+</tr>
+<tr>
+<td>Orchestre Chambre Lausanne (OCL)</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><strong>500 000</strong> (250 k Fonds + 250 k Util. publique)</td>
+</tr>
+<tr>
+<td>Plateforme 10</td>
+<td style="text-align: right;">600 000</td>
+<td style="text-align: right;"><strong>600 000</strong> (confirmé)</td>
+</tr>
+<tr>
+<td>Théâtre Pro Valais</td>
+<td style="text-align: right;">566 000</td>
+<td style="text-align: right;"><strong>566 000</strong> (confirmé)</td>
+</tr>
+<tr>
+<td>FIFF</td>
+<td style="text-align: right;">580 000</td>
+<td style="text-align: right;"><strong>580 000</strong> (confirmé)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="note-sur-les-classifications">Note sur les classifications</h3>
+<p>Les entrées 2024 conservent leurs <code>secteur</code> originaux extraits des en-têtes de sections PDF (« Action sociale et personnes âgées », « Culture », « Sport », etc.) — qui sont fiables car ils proviennent directement de la structure documentaire officielle, contrairement aux entrées 2025 où certains secteurs avaient été pollués par le parser upstream.</p>
+<p>Les classifiers culture/sport/social sport ne sont pas réappliqués sur 2024 dans cette passe — l'utilisateur peut le faire en v13.15 si besoin (le code est réutilisable).</p>
+<h3 id="fichiers-ajoutes">Fichiers ajoutés</h3>
+<ul>
+<li><code>scripts/parse_brb2024.py</code> (parser générique — non utilisé finalement, le format text était trop variable)</li>
+<li><code>scripts/build_brb2024_extracted.py</code> (extracteur manuel curé, ~500 entries)</li>
+<li><code>docs/data/brb2024_full.json</code> (507 entrées, 97,3 M CHF visibles)</li>
+<li><code>scripts/consolidate_trajectories.py</code> étendu pour ingérer 2024</li>
+</ul>
+<h3 id="travaux-residuels-v1315">Travaux résiduels (v13.15+)</h3>
+<ol>
+<li><strong>Compléter GE/JU/SR</strong> — re-fetcher BRB 2024 avec budget contexte dédié, ou parser la 2e moitié du PDF</li>
+<li><strong>Appliquer pipeline_brb.py + classifications culture/sport/social sur 2024</strong> — pour cohérence avec 2025</li>
+<li><strong>Étendre groupes canoniques</strong> au-delà des 32 actuels (couvrir top 100 bénéficiaires)</li>
+<li><strong>BRB 2023 parsing complet</strong> pour densifier la colonne 2023 des trajectoires</li>
+</ol></body></html>
