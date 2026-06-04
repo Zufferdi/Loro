@@ -1,0 +1,506 @@
+{
+  "_meta": {
+    "classif": "jeunesse",
+    "year": "2024",
+    "source": "brb2024_full.json",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "date": "2026-06-04",
+    "total_entries": 282,
+    "total_chf": 12978941,
+    "total_entries_classified": 62,
+    "total_chf_classified": 3184760,
+    "pct_chf_classified": 24.5,
+    "cross_year_recovered": 8,
+    "sector": "Jeunesse et éducation",
+    "sector_slug": "jeunesse",
+    "total_entries_sector": 282,
+    "total_chf_sector": 12978941,
+    "pct_entries_classified": 22.0
+  },
+  "categories": [
+    {
+      "name": "Autres",
+      "count": 220,
+      "total_chf": 9794181,
+      "mean_chf": 44519,
+      "cantons": {
+        "VD": {
+          "count": 74,
+          "total_chf": 4787500
+        },
+        "SR": {
+          "count": 15,
+          "total_chf": 415100
+        },
+        "NE": {
+          "count": 8,
+          "total_chf": 158500
+        },
+        "FR": {
+          "count": 18,
+          "total_chf": 1189781
+        },
+        "VS": {
+          "count": 37,
+          "total_chf": 1236950
+        },
+        "GE": {
+          "count": 58,
+          "total_chf": 1845400
+        },
+        "JU": {
+          "count": 10,
+          "total_chf": 160950
+        }
+      },
+      "samples": [
+        {
+          "nom": "ARSENIC",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Fond. pour un Accueil à Bas Seuil (ABS)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "Fond. Transport Handicap Vaud (THV)",
+          "ville": "Le Mont-sur-Lausanne",
+          "canton": "VD",
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "fond'IMAD, Grand-Lancy Nouvelle Unité d'accueil temporaire",
+          "ville": "Grand-Lancy",
+          "canton": "GE",
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "Fond. ATD Quart Monde Suisse, Treyvaux Les Chantiers découverte et reconstruction du Secrétariat national",
+          "ville": "Treyvaux",
+          "canton": "FR",
+          "montant_CHF": 309000
+        }
+      ]
+    },
+    {
+      "name": "Petite enfance & crèches",
+      "count": 19,
+      "total_chf": 1728570,
+      "mean_chf": 90977,
+      "cantons": {
+        "VD": {
+          "count": 3,
+          "total_chf": 1527400
+        },
+        "FR": {
+          "count": 12,
+          "total_chf": 152370
+        },
+        "SR": {
+          "count": 2,
+          "total_chf": 33800
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 10000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 5000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. pour l'accueil de jour des enfants (FAJE)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1500000
+        },
+        {
+          "nom": "Crèche La Marelle",
+          "ville": "Farvagny-le-Grand",
+          "canton": "SR",
+          "montant_CHF": 27200
+        },
+        {
+          "nom": "Assoc. Jardin d'enfants Barjabul",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 23800
+        },
+        {
+          "nom": "Assoc. Crèche Pérollino",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 20800
+        },
+        {
+          "nom": "Assoc. Crèche les Galopins",
+          "ville": "Marsens",
+          "canton": "FR",
+          "montant_CHF": 19000
+        }
+      ]
+    },
+    {
+      "name": "Soutien scolaire & lecture",
+      "count": 1,
+      "total_chf": 380000,
+      "mean_chf": 380000,
+      "cantons": {
+        "NE": {
+          "count": 1,
+          "total_chf": 380000
+        }
+      },
+      "samples": [
+        {
+          "nom": "La Lanterne Magique",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 380000
+        }
+      ]
+    },
+    {
+      "name": "Accueil parascolaire",
+      "count": 4,
+      "total_chf": 251540,
+      "mean_chf": 62885,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 18000
+        },
+        "FR": {
+          "count": 2,
+          "total_chf": 133540
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 100000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Commune de Saignelégier Maison de l'Enfance : déménagement, Saignelégier",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Accueil Familial de Jour de la Glâne",
+          "ville": "Romont",
+          "canton": "FR",
+          "montant_CHF": 87100
+        },
+        {
+          "nom": "Accueil Familial de Jour du district du Lac",
+          "ville": "Morat",
+          "canton": "FR",
+          "montant_CHF": 46440
+        },
+        {
+          "nom": "Assoc. d'Accueil de l'Enfance d'Epalinges (AAEE)",
+          "ville": "Epalinges",
+          "canton": "VD",
+          "montant_CHF": 18000
+        }
+      ]
+    },
+    {
+      "name": "Cirque & théâtre jeunes",
+      "count": 1,
+      "total_chf": 180000,
+      "mean_chf": 180000,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 180000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. École de cirque de Lausanne-Renens",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 180000
+        }
+      ]
+    },
+    {
+      "name": "Passeport vacances & camps",
+      "count": 13,
+      "total_chf": 160800,
+      "mean_chf": 12369,
+      "cantons": {
+        "VD": {
+          "count": 8,
+          "total_chf": 99000
+        },
+        "SR": {
+          "count": 2,
+          "total_chf": 18000
+        },
+        "FR": {
+          "count": 2,
+          "total_chf": 3800
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 40000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. 022 Familles, Plan-les-Ouates Plateforme digitale",
+          "ville": "Plan-les-Ouates",
+          "canton": "GE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Passeport Vacances de la Région lausannoise (APVRL)",
+          "ville": "Passeport Vacances",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. du Passeport Vacances",
+          "ville": "Morges et environs",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Passeport Vacances de Moudon et environs",
+          "ville": "Passeport Vacances",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "PASSVAC Aubonne-Gimel-Etoy - Passeport Vacances",
+          "ville": "Gimel",
+          "canton": "SR",
+          "montant_CHF": 15000
+        }
+      ]
+    },
+    {
+      "name": "Ludothèques & jeux",
+      "count": 12,
+      "total_chf": 159650,
+      "mean_chf": 13304,
+      "cantons": {
+        "VD": {
+          "count": 3,
+          "total_chf": 130850
+        },
+        "SR": {
+          "count": 3,
+          "total_chf": 8000
+        },
+        "FR": {
+          "count": 4,
+          "total_chf": 16300
+        },
+        "NE": {
+          "count": 2,
+          "total_chf": 4500
+        }
+      },
+      "samples": [
+        {
+          "nom": "Ludothèque de Nyon Région",
+          "ville": "Nyon",
+          "canton": "VD",
+          "montant_CHF": 120000
+        },
+        {
+          "nom": "La Ludothèque",
+          "ville": "Aigle",
+          "canton": "VD",
+          "montant_CHF": 9250
+        },
+        {
+          "nom": "Ludothèque de la Gruyère",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Ludothèque de la Glâne",
+          "ville": "Romont",
+          "canton": "FR",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Ludothèque de Romanel",
+          "ville": "Romanel-sur-Lausanne",
+          "canton": "SR",
+          "montant_CHF": 3900
+        }
+      ]
+    },
+    {
+      "name": "Aide à la jeunesse",
+      "count": 2,
+      "total_chf": 140000,
+      "mean_chf": 70000,
+      "cantons": {
+        "VS": {
+          "count": 2,
+          "total_chf": 140000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. La Fontanelle, Mex Optimisation du bâtiment",
+          "ville": "Mex",
+          "canton": "VS",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "Assoc. La Fontanelle",
+          "ville": "Mex",
+          "canton": "VS",
+          "montant_CHF": 50000
+        }
+      ]
+    },
+    {
+      "name": "Soutien parental",
+      "count": 3,
+      "total_chf": 108000,
+      "mean_chf": 36000,
+      "cantons": {
+        "FR": {
+          "count": 1,
+          "total_chf": 3000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 40000
+        },
+        "VD": {
+          "count": 1,
+          "total_chf": 65000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Pro Juventute-Secrétariat romand",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Assoc. Pro Junior Arc jurassien",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Point rencontre Fribourg Accompagnement des enfants vivant des situations conflictuelles",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 3000
+        }
+      ]
+    },
+    {
+      "name": "Scoutisme",
+      "count": 4,
+      "total_chf": 47700,
+      "mean_chf": 11925,
+      "cantons": {
+        "FR": {
+          "count": 1,
+          "total_chf": 36000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 10000
+        },
+        "SR": {
+          "count": 2,
+          "total_chf": 1700
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. des Scouts Fribourgeois",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 36000
+        },
+        {
+          "nom": "Assoc. CAJU 2025, Saignelégier JUBACA, camp de scouts",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Groupe Scout Notre-Dame de la route",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1100
+        },
+        {
+          "nom": "Groupe Scout St-Nicolas De Flüe",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 600
+        }
+      ]
+    },
+    {
+      "name": "Musique & arts jeunes",
+      "count": 2,
+      "total_chf": 22000,
+      "mean_chf": 11000,
+      "cantons": {
+        "SR": {
+          "count": 2,
+          "total_chf": 22000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Orchestre National des Jeunesses Musicales Suisse",
+          "ville": "Berne e",
+          "canton": "SR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Groupement des Cadets Mervelier- Corban-Montsevelier",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2000
+        }
+      ]
+    },
+    {
+      "name": "Maisons de jeunes & quartier",
+      "count": 1,
+      "total_chf": 6500,
+      "mean_chf": 6500,
+      "cantons": {
+        "NE": {
+          "count": 1,
+          "total_chf": 6500
+        }
+      },
+      "samples": [
+        {
+          "nom": "AMJB - Assoc. de la Maison des Jeunes de Bevaix - KALLO",
+          "ville": "Bevaix",
+          "canton": "NE",
+          "montant_CHF": 6500
+        }
+      ]
+    }
+  ]
+}

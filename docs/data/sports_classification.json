@@ -1,43 +1,111 @@
 {
   "_meta": {
-    "source": "docs/data/brb2025_full.json (v13.10 cleaned)",
-    "method": "Keyword classification on nom + description (ignoring unreliable secteur field)",
-    "date": "2026-06-03",
-    "version": "v13.10",
-    "total_entries": 5291,
-    "total_entries_classified": 1527,
-    "total_chf_all": 206439481,
-    "total_chf_classified": 31608076,
-    "pct_entries_classified": 28.9,
-    "pct_chf_classified": 15.3,
-    "note": "Classification basée sur les mots-clés présents dans le nom et la description. Une entrée est attribuée à une seule catégorie (la première qui matche dans l'ordre de spécificité). Les bénéficiaires inter-disciplinaires (associations cantonales multi-sports) sont rangés sous 'Multi-sports'."
+    "classif": "sports",
+    "year": "2025",
+    "source": "brb2025_full.json",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "date": "2026-06-04",
+    "total_entries": 2454,
+    "total_chf": 48901306,
+    "total_entries_classified": 1644,
+    "total_chf_classified": 33845152,
+    "pct_chf_classified": 69.2,
+    "cross_year_recovered": 393
   },
   "sports": [
     {
-      "name": "Multi-sports",
-      "count": 129,
-      "total_chf": 4782384,
-      "mean_chf": 37072,
+      "name": "Autres",
+      "count": 810,
+      "total_chf": 15056154,
+      "mean_chf": 18587,
       "cantons": {
         "VD": {
-          "count": 32,
-          "total_chf": 2668914
+          "count": 298,
+          "total_chf": 7862740
         },
         "FR": {
-          "count": 28,
-          "total_chf": 959373
+          "count": 142,
+          "total_chf": 2384476
         },
         "VS": {
-          "count": 8,
-          "total_chf": 238051
+          "count": 133,
+          "total_chf": 1979870
         },
         "NE": {
-          "count": 9,
-          "total_chf": 100985
+          "count": 77,
+          "total_chf": 1233455
         },
         "GE": {
-          "count": 21,
-          "total_chf": 582900
+          "count": 93,
+          "total_chf": 1141180
+        },
+        "JU": {
+          "count": 63,
+          "total_chf": 354433
+        },
+        "SR": {
+          "count": 4,
+          "total_chf": 100000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Cabane des Bossons de la Blécherette, Lausanne",
+          "ville": "Maison de Quartier Plateau",
+          "canton": "VD",
+          "montant_CHF": 420000
+        },
+        {
+          "nom": "Fond. Bex & Arts",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 360000
+        },
+        {
+          "nom": "LHC Academy Sàrl",
+          "ville": "Prilly",
+          "canton": "VD",
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "Usine à Gaz",
+          "ville": "Nyon",
+          "canton": "VD",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Fond. Neuchâtel Fantastique",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 300000
+        }
+      ]
+    },
+    {
+      "name": "Multi-sports",
+      "count": 151,
+      "total_chf": 5573333,
+      "mean_chf": 36909,
+      "cantons": {
+        "VD": {
+          "count": 45,
+          "total_chf": 3293611
+        },
+        "FR": {
+          "count": 31,
+          "total_chf": 989529
+        },
+        "VS": {
+          "count": 10,
+          "total_chf": 248247
+        },
+        "NE": {
+          "count": 11,
+          "total_chf": 111985
+        },
+        "GE": {
+          "count": 23,
+          "total_chf": 697800
         },
         "JU": {
           "count": 30,
@@ -57,7 +125,7 @@
         },
         {
           "nom": "Université de Lausanne",
-          "ville": "Service",
+          "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 495400
         },
@@ -68,28 +136,96 @@
           "montant_CHF": 320930
         },
         {
+          "nom": "Fond. Ruchonnet 18",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 221857
+        },
+        {
           "nom": "Assoc. Sport'Ouverte, Lausanne",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 220000
+        }
+      ]
+    },
+    {
+      "name": "Gymnastique",
+      "count": 149,
+      "total_chf": 3971644,
+      "mean_chf": 26655,
+      "cantons": {
+        "VD": {
+          "count": 62,
+          "total_chf": 3036168
+        },
+        "FR": {
+          "count": 10,
+          "total_chf": 335292
+        },
+        "VS": {
+          "count": 7,
+          "total_chf": 238154
+        },
+        "NE": {
+          "count": 23,
+          "total_chf": 168320
+        },
+        "GE": {
+          "count": 23,
+          "total_chf": 142000
+        },
+        "JU": {
+          "count": 21,
+          "total_chf": 37110
+        },
+        "SR": {
+          "count": 3,
+          "total_chf": 14600
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. FFG Lausanne 2025",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1000000
         },
         {
-          "nom": "Sport de performance",
+          "nom": "Assoc. Fête fédérale",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 800000
+        },
+        {
+          "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "FC + SHC + FSG Montagny",
           "ville": null,
           "canton": "FR",
-          "montant_CHF": 204117
+          "montant_CHF": 271872
+        },
+        {
+          "nom": "Assoc. FFG Lausanne 2025",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 271600
         }
       ]
     },
     {
       "name": "Football",
-      "count": 134,
-      "total_chf": 3657761,
-      "mean_chf": 27296,
+      "count": 143,
+      "total_chf": 3842281,
+      "mean_chf": 26869,
       "cantons": {
         "VD": {
-          "count": 38,
-          "total_chf": 913164
+          "count": 43,
+          "total_chf": 1044484
         },
         "FR": {
           "count": 24,
@@ -100,12 +236,12 @@
           "total_chf": 509987
         },
         "NE": {
-          "count": 11,
-          "total_chf": 287050
+          "count": 12,
+          "total_chf": 290850
         },
         "GE": {
-          "count": 26,
-          "total_chf": 563600
+          "count": 29,
+          "total_chf": 613000
         },
         "JU": {
           "count": 26,
@@ -136,84 +272,84 @@
           "montant_CHF": 258652
         },
         {
+          "nom": "Assoc. Fribourgeoise de Football",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 250620
+        },
+        {
           "nom": "FC Ueberstorf",
           "ville": "Kunstrasenfeld Ueberstorf",
           "canton": "FR",
           "montant_CHF": 248838
-        },
-        {
-          "nom": "Assoc.WEURO GENEVE 2025",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 200000
         }
       ]
     },
     {
-      "name": "Gymnastique",
-      "count": 142,
-      "total_chf": 3644480,
-      "mean_chf": 25665,
+      "name": "Cyclisme / VTT",
+      "count": 95,
+      "total_chf": 2446830,
+      "mean_chf": 25756,
       "cantons": {
         "VD": {
-          "count": 55,
-          "total_chf": 2698108
+          "count": 27,
+          "total_chf": 206768
         },
         "FR": {
-          "count": 11,
-          "total_chf": 346688
+          "count": 7,
+          "total_chf": 131500
         },
         "VS": {
-          "count": 7,
-          "total_chf": 238154
+          "count": 16,
+          "total_chf": 303182
         },
         "NE": {
-          "count": 22,
-          "total_chf": 167820
+          "count": 5,
+          "total_chf": 6480
         },
         "GE": {
-          "count": 23,
-          "total_chf": 142000
+          "count": 9,
+          "total_chf": 47550
         },
         "JU": {
-          "count": 21,
-          "total_chf": 37110
+          "count": 8,
+          "total_chf": 13600
         },
         "SR": {
-          "count": 3,
-          "total_chf": 14600
+          "count": 23,
+          "total_chf": 1737750
         }
       },
       "samples": [
         {
-          "nom": "Assoc. FFG Lausanne 2025",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 1000000
+          "nom": "Fond. Tour de Romandie",
+          "ville": "Aigle",
+          "canton": "SR",
+          "montant_CHF": 600000
         },
         {
-          "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
+          "nom": "Fond. du Tour de Romandie",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 269600
+        },
+        {
+          "nom": "Fond. du Tour de Romandie",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 190400
+        },
+        {
+          "nom": "Fond. Tour de Romandie",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 104000
+        },
+        {
+          "nom": "Assoc. des Amis de la Tour de l'Horloge de Burtigny",
           "ville": null,
           "canton": "VD",
-          "montant_CHF": 300000
-        },
-        {
-          "nom": "FC + SHC + FSG Montagny",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 271872
-        },
-        {
-          "nom": "Assoc. Fête fédérale",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 258000
-        },
-        {
-          "nom": "Gym Valais-Wallis",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 228435
+          "montant_CHF": 100000
         }
       ]
     },
@@ -254,6 +390,12 @@
       },
       "samples": [
         {
+          "nom": "Assoc. Trako",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 2000000
+        },
+        {
           "nom": "Assoc. Cantonale de Judo",
           "ville": null,
           "canton": "GE",
@@ -276,100 +418,26 @@
           "ville": "Vionnaz",
           "canton": "VS",
           "montant_CHF": 30000
-        },
-        {
-          "nom": "Assoc. Neuchâteloise de Judo",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 27000
-        }
-      ]
-    },
-    {
-      "name": "Cyclisme / VTT",
-      "count": 79,
-      "total_chf": 2193436,
-      "mean_chf": 27765,
-      "cantons": {
-        "VD": {
-          "count": 20,
-          "total_chf": 162668
-        },
-        "FR": {
-          "count": 6,
-          "total_chf": 101500
-        },
-        "VS": {
-          "count": 8,
-          "total_chf": 123888
-        },
-        "NE": {
-          "count": 5,
-          "total_chf": 6480
-        },
-        "GE": {
-          "count": 9,
-          "total_chf": 47550
-        },
-        "JU": {
-          "count": 8,
-          "total_chf": 13600
-        },
-        "SR": {
-          "count": 23,
-          "total_chf": 1737750
-        }
-      },
-      "samples": [
-        {
-          "nom": "Fond. Tour de Romandie",
-          "ville": "Aigle",
-          "canton": "SR",
-          "montant_CHF": 600000
-        },
-        {
-          "nom": "Assoc. des Amis de la Tour de l'Horloge de Burtigny",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 100000
-        },
-        {
-          "nom": "Fond. Général Nicolas de Gady",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 90000
-        },
-        {
-          "nom": "Fond. du Tour de Romandie",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 87620
-        },
-        {
-          "nom": "Valais Wallis Cycling",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 39345
         }
       ]
     },
     {
       "name": "Ski / Snowboard",
-      "count": 99,
-      "total_chf": 2049932,
-      "mean_chf": 20706,
+      "count": 105,
+      "total_chf": 2212524,
+      "mean_chf": 21071,
       "cantons": {
         "VD": {
-          "count": 30,
-          "total_chf": 304710
+          "count": 31,
+          "total_chf": 329710
         },
         "FR": {
-          "count": 13,
-          "total_chf": 273800
+          "count": 15,
+          "total_chf": 302100
         },
         "VS": {
-          "count": 16,
-          "total_chf": 1213525
+          "count": 21,
+          "total_chf": 1352817
         },
         "NE": {
           "count": 9,
@@ -380,8 +448,8 @@
           "total_chf": 76700
         },
         "JU": {
-          "count": 6,
-          "total_chf": 37022
+          "count": 4,
+          "total_chf": 7022
         },
         "SR": {
           "count": 9,
@@ -402,98 +470,38 @@
           "montant_CHF": 320000
         },
         {
+          "nom": "Ski Valais",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 200000
+        },
+        {
           "nom": "Assoc. Romande de Ski",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 163000
         },
         {
-          "nom": "Ski-Club Vudallaz-Epagny",
+          "nom": "Nordic Jogne",
           "ville": null,
           "canton": "FR",
-          "montant_CHF": 49500
-        },
-        {
-          "nom": "Neuchâtel Ski de Fond",
-          "ville": "Dameuse pour le centre",
-          "canton": "NE",
-          "montant_CHF": 45000
-        }
-      ]
-    },
-    {
-      "name": "Escalade / Montagne",
-      "count": 22,
-      "total_chf": 1963875,
-      "mean_chf": 89267,
-      "cantons": {
-        "VD": {
-          "count": 9,
-          "total_chf": 1307450
-        },
-        "FR": {
-          "count": 2,
-          "total_chf": 9000
-        },
-        "VS": {
-          "count": 3,
-          "total_chf": 73925
-        },
-        "GE": {
-          "count": 7,
-          "total_chf": 513500
-        },
-        "SR": {
-          "count": 1,
-          "total_chf": 60000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Fond. de la Maison de Montagne de Bretaye",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 800000
-        },
-        {
-          "nom": "Fond. Genève Montagne",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 420000
-        },
-        {
-          "nom": "Fond. de la Maison de Montagne",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 350000
-        },
-        {
-          "nom": "CARITAS Suisse",
-          "ville": "Genève",
-          "canton": "SR",
-          "montant_CHF": 60000
-        },
-        {
-          "nom": "Centre régional d'escalade",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 48600
+          "montant_CHF": 64890
         }
       ]
     },
     {
       "name": "Basketball",
-      "count": 81,
-      "total_chf": 1917328,
-      "mean_chf": 23670,
+      "count": 83,
+      "total_chf": 2029668,
+      "mean_chf": 24453,
       "cantons": {
         "VD": {
           "count": 24,
           "total_chf": 702018
         },
         "FR": {
-          "count": 20,
-          "total_chf": 552313
+          "count": 21,
+          "total_chf": 564653
         },
         "VS": {
           "count": 2,
@@ -504,8 +512,8 @@
           "total_chf": 87500
         },
         "GE": {
-          "count": 23,
-          "total_chf": 363850
+          "count": 24,
+          "total_chf": 463850
         },
         "JU": {
           "count": 2,
@@ -530,6 +538,12 @@
           "montant_CHF": 150000
         },
         {
+          "nom": "Lions de Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 100000
+        },
+        {
           "nom": "Basketball World Cup",
           "ville": null,
           "canton": "VD",
@@ -540,28 +554,78 @@
           "ville": null,
           "canton": "VS",
           "montant_CHF": 78430
+        }
+      ]
+    },
+    {
+      "name": "Escalade / Montagne",
+      "count": 23,
+      "total_chf": 1935685,
+      "mean_chf": 84160,
+      "cantons": {
+        "VD": {
+          "count": 9,
+          "total_chf": 1307450
+        },
+        "FR": {
+          "count": 3,
+          "total_chf": 23330
+        },
+        "VS": {
+          "count": 2,
+          "total_chf": 68905
+        },
+        "GE": {
+          "count": 9,
+          "total_chf": 536000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. de la Maison de Montagne de Bretaye",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 800000
         },
         {
-          "nom": "Pully Lausanne Basketball Club",
+          "nom": "Fond. Genève Montagne",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 420000
+        },
+        {
+          "nom": "Fond. de la Maison de Montagne",
           "ville": null,
           "canton": "VD",
-          "montant_CHF": 76800
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "Centre régional d'escalade",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 48600
+        },
+        {
+          "nom": "Horizon't'halle",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 45800
         }
       ]
     },
     {
       "name": "Hockey sur glace",
-      "count": 84,
-      "total_chf": 1595496,
-      "mean_chf": 18994,
+      "count": 93,
+      "total_chf": 1615731,
+      "mean_chf": 17373,
       "cantons": {
         "VD": {
-          "count": 15,
-          "total_chf": 343774
+          "count": 21,
+          "total_chf": 360709
         },
         "FR": {
-          "count": 12,
-          "total_chf": 430857
+          "count": 13,
+          "total_chf": 433857
         },
         "VS": {
           "count": 7,
@@ -576,8 +640,8 @@
           "total_chf": 250900
         },
         "JU": {
-          "count": 18,
-          "total_chf": 270890
+          "count": 20,
+          "total_chf": 271190
         }
       },
       "samples": [
@@ -594,6 +658,12 @@
           "montant_CHF": 207589
         },
         {
+          "nom": "Hockey Club Ajoie",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 90000
+        },
+        {
           "nom": "Wisemove, Plan-les-Ouates",
           "ville": "Genève",
           "canton": "GE",
@@ -604,40 +674,34 @@
           "ville": null,
           "canton": "VS",
           "montant_CHF": 77300
-        },
-        {
-          "nom": "Hockey Club Ajoie",
-          "ville": "Porrentruy",
-          "canton": "JU",
-          "montant_CHF": 67000
         }
       ]
     },
     {
       "name": "Tennis / Padel",
-      "count": 82,
-      "total_chf": 1333852,
-      "mean_chf": 16266,
+      "count": 86,
+      "total_chf": 1568632,
+      "mean_chf": 18239,
       "cantons": {
         "VD": {
           "count": 30,
           "total_chf": 356903
         },
         "FR": {
-          "count": 8,
-          "total_chf": 159500
+          "count": 10,
+          "total_chf": 204280
         },
         "VS": {
           "count": 4,
           "total_chf": 211509
         },
         "NE": {
-          "count": 5,
-          "total_chf": 83160
+          "count": 6,
+          "total_chf": 143160
         },
         "GE": {
-          "count": 26,
-          "total_chf": 468450
+          "count": 27,
+          "total_chf": 598450
         },
         "JU": {
           "count": 9,
@@ -664,32 +728,32 @@
           "montant_CHF": 150000
         },
         {
+          "nom": "Geneva Trophy Promotion Sàrl",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 130000
+        },
+        {
           "nom": "Assoc. Swiss Open",
           "ville": "Grand-Lancy",
           "canton": "GE",
           "montant_CHF": 100000
-        },
-        {
-          "nom": "Assoc. Vaud Tennis",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 80700
         }
       ]
     },
     {
       "name": "Athlétisme",
-      "count": 78,
-      "total_chf": 1104828,
-      "mean_chf": 14164,
+      "count": 84,
+      "total_chf": 1212536,
+      "mean_chf": 14434,
       "cantons": {
         "VD": {
-          "count": 25,
-          "total_chf": 364090
+          "count": 29,
+          "total_chf": 373090
         },
         "FR": {
-          "count": 4,
-          "total_chf": 108689
+          "count": 7,
+          "total_chf": 202897
         },
         "VS": {
           "count": 10,
@@ -700,8 +764,8 @@
           "total_chf": 29730
         },
         "GE": {
-          "count": 21,
-          "total_chf": 397500
+          "count": 20,
+          "total_chf": 402000
         },
         "JU": {
           "count": 11,
@@ -728,32 +792,32 @@
           "montant_CHF": 105568
         },
         {
+          "nom": "Université de Fribourg",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 91607
+        },
+        {
           "nom": "Assoc. Genevoise d'Athlétisme",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 77600
-        },
-        {
-          "nom": "Genève Marathon / 20km",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 41500
         }
       ]
     },
     {
       "name": "Volleyball",
-      "count": 68,
-      "total_chf": 1094526,
-      "mean_chf": 16095,
+      "count": 69,
+      "total_chf": 1096886,
+      "mean_chf": 15896,
       "cantons": {
         "VD": {
           "count": 13,
           "total_chf": 253750
         },
         "FR": {
-          "count": 18,
-          "total_chf": 166806
+          "count": 17,
+          "total_chf": 163166
         },
         "VS": {
           "count": 1,
@@ -764,8 +828,8 @@
           "total_chf": 116100
         },
         "GE": {
-          "count": 19,
-          "total_chf": 406950
+          "count": 21,
+          "total_chf": 412950
         },
         "JU": {
           "count": 8,
@@ -784,6 +848,12 @@
           "montant_CHF": 145800
         },
         {
+          "nom": "LUC Volleyball",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 94800
+        },
+        {
           "nom": "NUC Volleyball",
           "ville": "Neuchâtel",
           "canton": "NE",
@@ -796,44 +866,38 @@
           "montant_CHF": 64800
         },
         {
-          "nom": "Swiss Volley Région Valais",
+          "nom": "Genève Volley",
           "ville": null,
-          "canton": "VS",
-          "montant_CHF": 57720
-        },
-        {
-          "nom": "Swiss Volley Région Fribourg",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 40000
+          "canton": "GE",
+          "montant_CHF": 60200
         }
       ]
     },
     {
       "name": "Natation",
-      "count": 77,
-      "total_chf": 734491,
-      "mean_chf": 9538,
+      "count": 85,
+      "total_chf": 812739,
+      "mean_chf": 9561,
       "cantons": {
         "VD": {
-          "count": 32,
-          "total_chf": 212138
+          "count": 34,
+          "total_chf": 221388
         },
         "FR": {
-          "count": 9,
-          "total_chf": 129106
+          "count": 13,
+          "total_chf": 193404
         },
         "VS": {
           "count": 3,
           "total_chf": 37732
         },
         "NE": {
-          "count": 5,
-          "total_chf": 27205
+          "count": 6,
+          "total_chf": 27905
         },
         "GE": {
-          "count": 23,
-          "total_chf": 322760
+          "count": 24,
+          "total_chf": 326760
         },
         "JU": {
           "count": 5,
@@ -841,6 +905,12 @@
         }
       },
       "samples": [
+        {
+          "nom": "Vernier Aquatics",
+          "ville": "La Plaine",
+          "canton": "GE",
+          "montant_CHF": 87260
+        },
         {
           "nom": "Assoc. Cantonale Vaudoise",
           "ville": null,
@@ -854,46 +924,40 @@
           "montant_CHF": 41068
         },
         {
-          "nom": "Féd. valaisanne de natation",
+          "nom": "Fribourg-Natation 1925",
           "ville": null,
-          "canton": "VS",
-          "montant_CHF": 33082
+          "canton": "FR",
+          "montant_CHF": 36912
         },
         {
-          "nom": "Riviera Montreux-Vevey",
+          "nom": "Carouge Natation (Waterpolo)",
           "ville": null,
-          "canton": "VD",
-          "montant_CHF": 29500
-        },
-        {
-          "nom": "Lancy-Natation",
-          "ville": "Grand-Lancy",
           "canton": "GE",
-          "montant_CHF": 24500
+          "montant_CHF": 33100
         }
       ]
     },
     {
       "name": "Équitation",
-      "count": 29,
-      "total_chf": 458242,
-      "mean_chf": 15801,
+      "count": 37,
+      "total_chf": 444203,
+      "mean_chf": 12005,
       "cantons": {
         "VD": {
-          "count": 8,
-          "total_chf": 207500
+          "count": 15,
+          "total_chf": 197430
         },
         "FR": {
-          "count": 3,
-          "total_chf": 3000
+          "count": 5,
+          "total_chf": 4500
         },
         "VS": {
-          "count": 2,
-          "total_chf": 25702
+          "count": 3,
+          "total_chf": 27053
         },
         "NE": {
-          "count": 5,
-          "total_chf": 16440
+          "count": 3,
+          "total_chf": 9620
         },
         "GE": {
           "count": 6,
@@ -906,22 +970,16 @@
       },
       "samples": [
         {
+          "nom": "Club Équestre de Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 145000
+        },
+        {
           "nom": "Concours Hippique International",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 130000
-        },
-        {
-          "nom": "Assoc. Musée suisse du Cheval",
-          "ville": "La Sarraz",
-          "canton": "VD",
-          "montant_CHF": 100000
-        },
-        {
-          "nom": "Assoc. Journées du Théâtre",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 100000
         },
         {
           "nom": "Cie Old Masters",
@@ -934,6 +992,80 @@
           "ville": null,
           "canton": "VS",
           "montant_CHF": 15563
+        },
+        {
+          "nom": "Centre Équestre",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 11500
+        }
+      ]
+    },
+    {
+      "name": "Tir",
+      "count": 59,
+      "total_chf": 426643,
+      "mean_chf": 7231,
+      "cantons": {
+        "VD": {
+          "count": 17,
+          "total_chf": 144785
+        },
+        "FR": {
+          "count": 10,
+          "total_chf": 125305
+        },
+        "VS": {
+          "count": 2,
+          "total_chf": 60643
+        },
+        "NE": {
+          "count": 4,
+          "total_chf": 16410
+        },
+        "GE": {
+          "count": 7,
+          "total_chf": 16300
+        },
+        "JU": {
+          "count": 14,
+          "total_chf": 35750
+        },
+        "SR": {
+          "count": 5,
+          "total_chf": 27450
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Vaudoise de Tir Sportif",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 86700
+        },
+        {
+          "nom": "Sté Cantonale des Tireurs",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 79310
+        },
+        {
+          "nom": "Féd. sportive valaisanne",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 59143
+        },
+        {
+          "nom": "Féd. jurassienne de tir",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Sté de Tir Sportif 10m Gibloux",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 16526
         }
       ]
     },
@@ -1002,142 +1134,14 @@
       ]
     },
     {
-      "name": "Tir",
-      "count": 52,
-      "total_chf": 401138,
-      "mean_chf": 7714,
-      "cantons": {
-        "VD": {
-          "count": 11,
-          "total_chf": 121580
-        },
-        "FR": {
-          "count": 10,
-          "total_chf": 125305
-        },
-        "VS": {
-          "count": 2,
-          "total_chf": 60643
-        },
-        "NE": {
-          "count": 4,
-          "total_chf": 16410
-        },
-        "GE": {
-          "count": 6,
-          "total_chf": 14000
-        },
-        "JU": {
-          "count": 14,
-          "total_chf": 35750
-        },
-        "SR": {
-          "count": 5,
-          "total_chf": 27450
-        }
-      },
-      "samples": [
-        {
-          "nom": "Assoc. Vaudoise de Tir Sportif",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 86700
-        },
-        {
-          "nom": "Sté Cantonale des Tireurs",
-          "ville": "Fribourgeois",
-          "canton": "FR",
-          "montant_CHF": 79310
-        },
-        {
-          "nom": "Féd. sportive valaisanne",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 59143
-        },
-        {
-          "nom": "Féd. jurassienne de tir",
-          "ville": null,
-          "canton": "JU",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Sté de Tir Sportif 10m Gibloux",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 16526
-        }
-      ]
-    },
-    {
-      "name": "Voile / Nautique",
-      "count": 76,
-      "total_chf": 370577,
-      "mean_chf": 4876,
-      "cantons": {
-        "VD": {
-          "count": 26,
-          "total_chf": 129095
-        },
-        "FR": {
-          "count": 4,
-          "total_chf": 27482
-        },
-        "NE": {
-          "count": 28,
-          "total_chf": 45950
-        },
-        "GE": {
-          "count": 15,
-          "total_chf": 161150
-        },
-        "SR": {
-          "count": 3,
-          "total_chf": 6900
-        }
-      },
-      "samples": [
-        {
-          "nom": "Groupe Vaudois de Vol à Voile",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 29950
-        },
-        {
-          "nom": "Assoc. des Clubs de Voile de la Région Lémanique",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 27400
-        },
-        {
-          "nom": "Club Nautique de Bellevue",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Centre d'Entraînement à la",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Sté Nautique de Genève",
-          "ville": "Cologny",
-          "canton": "GE",
-          "montant_CHF": 16700
-        }
-      ]
-    },
-    {
       "name": "Patinage",
       "count": 40,
-      "total_chf": 353453,
-      "mean_chf": 8836,
+      "total_chf": 371563,
+      "mean_chf": 9289,
       "cantons": {
         "VD": {
-          "count": 9,
-          "total_chf": 74750
+          "count": 8,
+          "total_chf": 72860
         },
         "FR": {
           "count": 13,
@@ -1152,8 +1156,8 @@
           "total_chf": 70815
         },
         "GE": {
-          "count": 3,
-          "total_chf": 17600
+          "count": 4,
+          "total_chf": 37600
         },
         "JU": {
           "count": 3,
@@ -1186,10 +1190,70 @@
           "montant_CHF": 30000
         },
         {
-          "nom": "Assoc. valaisanne de patinage",
+          "nom": "Assoc. pour la promotion",
           "ville": null,
-          "canton": "VS",
-          "montant_CHF": 16450
+          "canton": "GE",
+          "montant_CHF": 20000
+        }
+      ]
+    },
+    {
+      "name": "Voile / Nautique",
+      "count": 76,
+      "total_chf": 370577,
+      "mean_chf": 4876,
+      "cantons": {
+        "VD": {
+          "count": 26,
+          "total_chf": 129095
+        },
+        "FR": {
+          "count": 4,
+          "total_chf": 27482
+        },
+        "NE": {
+          "count": 28,
+          "total_chf": 45950
+        },
+        "GE": {
+          "count": 15,
+          "total_chf": 161150
+        },
+        "SR": {
+          "count": 3,
+          "total_chf": 6900
+        }
+      },
+      "samples": [
+        {
+          "nom": "Yacht Club de Genève",
+          "ville": "Cologny",
+          "canton": "GE",
+          "montant_CHF": 31900
+        },
+        {
+          "nom": "Groupe Vaudois de Vol à Voile",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 29950
+        },
+        {
+          "nom": "Assoc. des Clubs de Voile de la Région Lémanique",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 27400
+        },
+        {
+          "nom": "Club Nautique de Bellevue",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Centre d'Entraînement à la",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 25000
         }
       ]
     },
@@ -1217,6 +1281,18 @@
         },
         {
           "nom": "Servette Hockey sur Gazon",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 28800
+        },
+        {
+          "nom": "Servette Hockey sur Gazon",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 28000
+        },
+        {
+          "nom": "Servette Hockey sur Gazon",
           "ville": "Conches",
           "canton": "GE",
           "montant_CHF": 25600
@@ -1226,82 +1302,6 @@
           "ville": null,
           "canton": "GE",
           "montant_CHF": 14800
-        },
-        {
-          "nom": "Stade Lausanne",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 10900
-        },
-        {
-          "nom": "Urania Genève Sport Hockey",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 3800
-        }
-      ]
-    },
-    {
-      "name": "Triathlon",
-      "count": 19,
-      "total_chf": 171094,
-      "mean_chf": 9004,
-      "cantons": {
-        "VD": {
-          "count": 5,
-          "total_chf": 25500
-        },
-        "FR": {
-          "count": 3,
-          "total_chf": 7500
-        },
-        "VS": {
-          "count": 4,
-          "total_chf": 18484
-        },
-        "NE": {
-          "count": 3,
-          "total_chf": 62660
-        },
-        "GE": {
-          "count": 2,
-          "total_chf": 56250
-        },
-        "JU": {
-          "count": 2,
-          "total_chf": 700
-        }
-      },
-      "samples": [
-        {
-          "nom": "Assoc. XTERRA Switzerland",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 60000
-        },
-        {
-          "nom": "Assoc. Triathlon International",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 52250
-        },
-        {
-          "nom": "Triathlon de Nyon",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 13000
-        },
-        {
-          "nom": "Assoc. Valais Triathlon",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 11372
-        },
-        {
-          "nom": "Assoc. du Triathlon de Lausanne",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 10000
         }
       ]
     },
@@ -1367,9 +1367,9 @@
     },
     {
       "name": "Course d'orientation",
-      "count": 16,
-      "total_chf": 131615,
-      "mean_chf": 8225,
+      "count": 17,
+      "total_chf": 134515,
+      "mean_chf": 7912,
       "cantons": {
         "VD": {
           "count": 8,
@@ -1380,8 +1380,8 @@
           "total_chf": 7430
         },
         "NE": {
-          "count": 5,
-          "total_chf": 70030
+          "count": 6,
+          "total_chf": 72930
         },
         "GE": {
           "count": 1,
@@ -1411,25 +1411,89 @@
           "nom": "Assoc. Neuchâteloise de Course",
           "ville": null,
           "canton": "NE",
-          "montant_CHF": 4550
+          "montant_CHF": 11400
         },
         {
-          "nom": "FOLV (Freiburger OL Verband)",
-          "ville": "Réalisations de cartes",
-          "canton": "FR",
-          "montant_CHF": 4430
+          "nom": "Assoc. Neuchâteloise de Course",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 4550
+        }
+      ]
+    },
+    {
+      "name": "Triathlon",
+      "count": 17,
+      "total_chf": 110094,
+      "mean_chf": 6476,
+      "cantons": {
+        "VD": {
+          "count": 5,
+          "total_chf": 25500
+        },
+        "FR": {
+          "count": 3,
+          "total_chf": 7500
+        },
+        "VS": {
+          "count": 3,
+          "total_chf": 17484
+        },
+        "NE": {
+          "count": 2,
+          "total_chf": 2660
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 56250
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 700
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Triathlon International",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 52250
+        },
+        {
+          "nom": "Triathlon de Nyon",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 13000
+        },
+        {
+          "nom": "Assoc. Valais Triathlon",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 11372
+        },
+        {
+          "nom": "Assoc. du Triathlon de Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Valais-Wallis Triathlon",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 5112
         }
       ]
     },
     {
       "name": "Pétanque / Boules",
-      "count": 15,
-      "total_chf": 89815,
-      "mean_chf": 5987,
+      "count": 16,
+      "total_chf": 90815,
+      "mean_chf": 5675,
       "cantons": {
         "VD": {
-          "count": 5,
-          "total_chf": 68700
+          "count": 6,
+          "total_chf": 69700
         },
         "FR": {
           "count": 1,
@@ -1486,70 +1550,74 @@
       ]
     },
     {
-      "name": "Escrime",
-      "count": 19,
-      "total_chf": 76340,
-      "mean_chf": 4017,
+      "name": "Lutte suisse",
+      "count": 24,
+      "total_chf": 85665,
+      "mean_chf": 3569,
       "cantons": {
         "VD": {
-          "count": 8,
-          "total_chf": 28990
+          "count": 5,
+          "total_chf": 26775
         },
         "FR": {
-          "count": 2,
-          "total_chf": 6070
+          "count": 5,
+          "total_chf": 11730
         },
         "VS": {
-          "count": 2,
-          "total_chf": 22350
+          "count": 1,
+          "total_chf": 8470
         },
         "NE": {
-          "count": 4,
-          "total_chf": 13130
+          "count": 5,
+          "total_chf": 31350
         },
         "GE": {
-          "count": 3,
-          "total_chf": 5800
+          "count": 1,
+          "total_chf": 1800
+        },
+        "SR": {
+          "count": 7,
+          "total_chf": 5540
         }
       },
       "samples": [
         {
-          "nom": "Assoc. valaisanne d'escrime",
+          "nom": "Assoc. NeuchAventure",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Cantonale Vaudoise",
+          "ville": "Amis du Hockey",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Cantonale Vaudoise",
+          "ville": "Football",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. valaisanne de lutte suisse",
           "ville": null,
           "canton": "VS",
-          "montant_CHF": 21350
+          "montant_CHF": 8470
         },
         {
-          "nom": "Salle d'Escrime",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 5200
-        },
-        {
-          "nom": "Assoc. Fribourgeoise d'Escrime",
+          "nom": "Assoc. fribourgeoise de lutte",
           "ville": null,
           "canton": "FR",
-          "montant_CHF": 4070
-        },
-        {
-          "nom": "Sté d'Escrime de Genève",
-          "ville": "Gymnastique",
-          "canton": "GE",
-          "montant_CHF": 3600
-        },
-        {
-          "nom": "Féd. Vaudoise d'Escrime",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 3200
+          "montant_CHF": 5730
         }
       ]
     },
     {
       "name": "Tennis de table",
-      "count": 16,
-      "total_chf": 70430,
-      "mean_chf": 4401,
+      "count": 20,
+      "total_chf": 81180,
+      "mean_chf": 4059,
       "cantons": {
         "VD": {
           "count": 6,
@@ -1564,8 +1632,8 @@
           "total_chf": 10100
         },
         "GE": {
-          "count": 6,
-          "total_chf": 11600
+          "count": 10,
+          "total_chf": 22350
         }
       },
       "samples": [
@@ -1602,58 +1670,62 @@
       ]
     },
     {
-      "name": "Boxe / Combat",
-      "count": 11,
-      "total_chf": 70195,
-      "mean_chf": 6381,
+      "name": "Escrime",
+      "count": 20,
+      "total_chf": 77340,
+      "mean_chf": 3867,
       "cantons": {
         "VD": {
+          "count": 9,
+          "total_chf": 29990
+        },
+        "FR": {
           "count": 2,
-          "total_chf": 2260
+          "total_chf": 6070
+        },
+        "VS": {
+          "count": 2,
+          "total_chf": 22350
         },
         "NE": {
           "count": 4,
-          "total_chf": 9235
+          "total_chf": 13130
         },
         "GE": {
-          "count": 4,
-          "total_chf": 56200
-        },
-        "JU": {
-          "count": 1,
-          "total_chf": 2500
+          "count": 3,
+          "total_chf": 5800
         }
       },
       "samples": [
         {
-          "nom": "Assoc. Boxing Piano",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 45000
-        },
-        {
-          "nom": "Olympic Boxing Club Genève",
+          "nom": "Assoc. valaisanne d'escrime",
           "ville": null,
-          "canton": "GE",
-          "montant_CHF": 8200
+          "canton": "VS",
+          "montant_CHF": 21350
         },
         {
-          "nom": "Boxing Club La Chaux-de-Fonds",
+          "nom": "Féd. Vaudoise d'Escrime",
+          "ville": "Escrime",
+          "canton": "VD",
+          "montant_CHF": 10700
+        },
+        {
+          "nom": "Sté d'Escrime de Neuchâtel",
           "ville": null,
           "canton": "NE",
-          "montant_CHF": 4100
+          "montant_CHF": 6500
         },
         {
-          "nom": "Full Boxing Club Porrentruy",
-          "ville": "King of the ring",
-          "canton": "JU",
-          "montant_CHF": 2500
+          "nom": "Féd. Vaudoise d'Escrime",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 6330
         },
         {
-          "nom": "Versoix Badminton Club",
-          "ville": "Versoix",
-          "canton": "GE",
-          "montant_CHF": 1800
+          "nom": "Salle d'Escrime",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 5200
         }
       ]
     },
@@ -1742,6 +1814,12 @@
           "montant_CHF": 16000
         },
         {
+          "nom": "Assoc. Lausanne Wushu Institut",
+          "ville": "Boxe en Lavaux",
+          "canton": "VD",
+          "montant_CHF": 5000
+        },
+        {
           "nom": "Dojo Lancy-Palettes",
           "ville": null,
           "canton": "GE",
@@ -1784,10 +1862,22 @@
       },
       "samples": [
         {
+          "nom": "Curling Club Trois-Chêne /",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 9000
+        },
+        {
           "nom": "Curling Valais/Wallis",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 6836
+        },
+        {
+          "nom": "Curling Club Trois-Chêne /",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 6000
         },
         {
           "nom": "Assoc. Cantonale Vaudoise de Curling",
@@ -1800,80 +1890,60 @@
           "ville": null,
           "canton": "NE",
           "montant_CHF": 3100
-        },
-        {
-          "nom": "Canoë Club de Genève",
-          "ville": "Confignon",
-          "canton": "GE",
-          "montant_CHF": 2300
-        },
-        {
-          "nom": "Curling Club Trois-Chêne /",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 2000
         }
       ]
     },
     {
-      "name": "Lutte suisse",
-      "count": 17,
-      "total_chf": 33915,
-      "mean_chf": 1995,
+      "name": "Boxe / Combat",
+      "count": 10,
+      "total_chf": 25195,
+      "mean_chf": 2519,
       "cantons": {
         "VD": {
           "count": 2,
-          "total_chf": 5275
-        },
-        "FR": {
-          "count": 4,
-          "total_chf": 9730
-        },
-        "VS": {
-          "count": 1,
-          "total_chf": 8470
+          "total_chf": 2260
         },
         "NE": {
-          "count": 2,
-          "total_chf": 3100
+          "count": 4,
+          "total_chf": 9235
         },
         "GE": {
-          "count": 1,
-          "total_chf": 1800
+          "count": 3,
+          "total_chf": 11200
         },
-        "SR": {
-          "count": 7,
-          "total_chf": 5540
+        "JU": {
+          "count": 1,
+          "total_chf": 2500
         }
       },
       "samples": [
         {
-          "nom": "Assoc. valaisanne de lutte suisse",
+          "nom": "Olympic Boxing Club Genève",
           "ville": null,
-          "canton": "VS",
-          "montant_CHF": 8470
+          "canton": "GE",
+          "montant_CHF": 8200
         },
         {
-          "nom": "Assoc. fribourgeoise de lutte",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 5730
-        },
-        {
-          "nom": "Assoc. Cantonale Vaudoise de Lutte Suisse",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 3900
-        },
-        {
-          "nom": "Assoc. Cantonale Neuchâteloise",
+          "nom": "Boxing Club La Chaux-de-Fonds",
           "ville": null,
           "canton": "NE",
-          "montant_CHF": 2600
+          "montant_CHF": 4100
         },
         {
-          "nom": "Assoc. Cantonale Genevoise",
+          "nom": "Boxing Club Colombier",
           "ville": null,
+          "canton": "NE",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Full Boxing Club Porrentruy",
+          "ville": "King of the ring",
+          "canton": "JU",
+          "montant_CHF": 2500
+        },
+        {
+          "nom": "Versoix Badminton Club",
+          "ville": "Versoix",
           "canton": "GE",
           "montant_CHF": 1800
         }

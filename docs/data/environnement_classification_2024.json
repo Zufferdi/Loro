@@ -1,0 +1,342 @@
+{
+  "_meta": {
+    "classif": "environnement",
+    "year": "2024",
+    "source": "brb2024_full.json",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "date": "2026-06-04",
+    "total_entries": 230,
+    "total_chf": 4348802,
+    "total_entries_classified": 29,
+    "total_chf_classified": 666048,
+    "pct_chf_classified": 15.3,
+    "cross_year_recovered": 8,
+    "sector": "Environnement",
+    "sector_slug": "environnement",
+    "total_entries_sector": 230,
+    "total_chf_sector": 4348802,
+    "pct_entries_classified": 12.6
+  },
+  "categories": [
+    {
+      "name": "Autres",
+      "count": 201,
+      "total_chf": 3682754,
+      "mean_chf": 18322,
+      "cantons": {
+        "VD": {
+          "count": 25,
+          "total_chf": 653525
+        },
+        "SR": {
+          "count": 37,
+          "total_chf": 1048917
+        },
+        "GE": {
+          "count": 14,
+          "total_chf": 544282
+        },
+        "FR": {
+          "count": 17,
+          "total_chf": 590920
+        },
+        "NE": {
+          "count": 5,
+          "total_chf": 48224
+        },
+        "VS": {
+          "count": 7,
+          "total_chf": 58555
+        },
+        "JU": {
+          "count": 96,
+          "total_chf": 738331
+        }
+      },
+      "samples": [
+        {
+          "nom": "Erminea",
+          "ville": "Chavornay",
+          "canton": "VD",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Maison des Amériques, Châtel-St-Denis Musée traitant de la migration des Fribourgeois-es au 19 e",
+          "ville": "Châtel-St-Denis",
+          "canton": "FR",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Va la is",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 259818
+        },
+        {
+          "nom": "Bucher Louis, Bassecourt - Cyclisme (trial) Finsterwald Nayan, Corban - Cyclisme (trial) Saucy Gaëtan",
+          "ville": "Develier - Natation",
+          "canton": "SR",
+          "montant_CHF": 225625
+        },
+        {
+          "nom": "Fond. Aigues-Vertes",
+          "ville": "Bernex",
+          "canton": "GE",
+          "montant_CHF": 200000
+        }
+      ]
+    },
+    {
+      "name": "Faune & biodiversité",
+      "count": 15,
+      "total_chf": 397448,
+      "mean_chf": 26496,
+      "cantons": {
+        "SR": {
+          "count": 8,
+          "total_chf": 339448
+        },
+        "FR": {
+          "count": 2,
+          "total_chf": 12000
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 10000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 20000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 6000
+        },
+        "VD": {
+          "count": 1,
+          "total_chf": 10000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Divers",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 132448
+        },
+        {
+          "nom": "Centre Pro Natura de Champ-Pittet",
+          "ville": "Cheseaux-Noréaz",
+          "canton": "SR",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Commune mixte de Courroux-Courcelon",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. des Amis de La Salamandre",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. VilleNature, Epauvillers Nouvelles offres pour découvrir, étudier et promouvoir la faune",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 25000
+        }
+      ]
+    },
+    {
+      "name": "Eau / Lacs / Rivières",
+      "count": 6,
+      "total_chf": 125600,
+      "mean_chf": 20933,
+      "cantons": {
+        "GE": {
+          "count": 4,
+          "total_chf": 73000
+        },
+        "SR": {
+          "count": 2,
+          "total_chf": 52600
+        }
+      },
+      "samples": [
+        {
+          "nom": "Compagnie de navigation sur le lac de Joux",
+          "ville": "Les Charbonnières",
+          "canton": "SR",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "Assoc. pour la Sauvegarde du Léman (ASL)",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. pour la Sauvegarde du Léman - ASL, Genève Net'Léman 2024 - 12 e",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Alliance Internationales pour la gestion de l'eau de pluie | IRHA, Châtelaine PLUIË : Promouvoir de manière",
+          "ville": "Châtelaine",
+          "canton": "GE",
+          "montant_CHF": 13000
+        },
+        {
+          "nom": "Genève Tiers Monde - GeTM",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 10000
+        }
+      ]
+    },
+    {
+      "name": "Flore & botanique",
+      "count": 2,
+      "total_chf": 74000,
+      "mean_chf": 37000,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 68000
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 6000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. de l'Arboretum National du Vallon de l'Aubonne (AAVA)",
+          "ville": "Aubonne",
+          "canton": "VD",
+          "montant_CHF": 68000
+        },
+        {
+          "nom": "Assoc. La Murithienne",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 6000
+        }
+      ]
+    },
+    {
+      "name": "Déchets & recyclage",
+      "count": 1,
+      "total_chf": 40000,
+      "mean_chf": 40000,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 40000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. TerrraTerrre, Prilly Sollicitation du soutien public et des acteurs clés pour une économie circulaire axée, Prilly",
+          "ville": "Prilly",
+          "canton": "VD",
+          "montant_CHF": 40000
+        }
+      ]
+    },
+    {
+      "name": "Montagne & Alpages",
+      "count": 2,
+      "total_chf": 11000,
+      "mean_chf": 5500,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 8000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 3000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. des Amis du sentier Sur les pas des Huguenots et des Vaudois du Piémont",
+          "ville": "La Chaux (Cossonay)",
+          "canton": "VD",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Parrainage suisse pour les communes de montagne",
+          "ville": "Zurich",
+          "canton": "JU",
+          "montant_CHF": 3000
+        }
+      ]
+    },
+    {
+      "name": "Éducation & sensibilisation",
+      "count": 1,
+      "total_chf": 11000,
+      "mean_chf": 11000,
+      "cantons": {
+        "GE": {
+          "count": 1,
+          "total_chf": 11000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Jeux Coopératifs",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 11000
+        }
+      ]
+    },
+    {
+      "name": "Parcs naturels",
+      "count": 1,
+      "total_chf": 5000,
+      "mean_chf": 5000,
+      "cantons": {
+        "NE": {
+          "count": 1,
+          "total_chf": 5000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Opéra Décentralisé, Neuchâtel Bal(l)ades dans le Parc du Doubs 2024 -",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 5000
+        }
+      ]
+    },
+    {
+      "name": "Agriculture durable",
+      "count": 1,
+      "total_chf": 2000,
+      "mean_chf": 2000,
+      "cantons": {
+        "SR": {
+          "count": 1,
+          "total_chf": 2000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Traditions et Découvertes",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2000
+        }
+      ]
+    }
+  ]
+}

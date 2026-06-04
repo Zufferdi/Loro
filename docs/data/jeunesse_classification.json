@@ -1,0 +1,522 @@
+{
+  "_meta": {
+    "classif": "jeunesse",
+    "year": "2025",
+    "source": "brb2025_full.json",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "date": "2026-06-04",
+    "total_entries": 231,
+    "total_chf": 9813712,
+    "total_entries_classified": 97,
+    "total_chf_classified": 6594883,
+    "pct_chf_classified": 67.2,
+    "cross_year_recovered": 8,
+    "sector": "Jeunesse et éducation",
+    "sector_slug": "jeunesse",
+    "total_entries_sector": 231,
+    "total_chf_sector": 9813712,
+    "pct_entries_classified": 42.0
+  },
+  "categories": [
+    {
+      "name": "Petite enfance & crèches",
+      "count": 40,
+      "total_chf": 3358733,
+      "mean_chf": 83968,
+      "cantons": {
+        "VD": {
+          "count": 6,
+          "total_chf": 2830000
+        },
+        "FR": {
+          "count": 33,
+          "total_chf": 408733
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 120000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. pour l'accueil de jour des enfants (FAJE)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1500000
+        },
+        {
+          "nom": "Fond. La Feuillère",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Assoc. du Centre de vie",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 148000
+        },
+        {
+          "nom": "Foyer Arabelle",
+          "ville": "Onex",
+          "canton": "GE",
+          "montant_CHF": 120000
+        },
+        {
+          "nom": "Assoc. de la Garderie d'enfants de La Sallaz-Vennes - Centre de la Petite Enfance",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 108000
+        }
+      ]
+    },
+    {
+      "name": "Autres",
+      "count": 134,
+      "total_chf": 3218829,
+      "mean_chf": 24021,
+      "cantons": {
+        "VD": {
+          "count": 31,
+          "total_chf": 1749600
+        },
+        "FR": {
+          "count": 28,
+          "total_chf": 275779
+        },
+        "VS": {
+          "count": 32,
+          "total_chf": 347050
+        },
+        "NE": {
+          "count": 15,
+          "total_chf": 168500
+        },
+        "JU": {
+          "count": 16,
+          "total_chf": 275900
+        },
+        "SR": {
+          "count": 12,
+          "total_chf": 402000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. des Immeubles de Suisse Romande MJSR, Lausanne",
+          "ville": "Mouvement de la Jeunesse",
+          "canton": "VD",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "AFIRO",
+          "ville": "Ecublens",
+          "canton": "VD",
+          "montant_CHF": 260000
+        },
+        {
+          "nom": "Fond. Claudi Russell-Eynard",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 206000
+        },
+        {
+          "nom": "Fond. Estérelle-Arcadie",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 135000
+        },
+        {
+          "nom": "Fond. Fonds des Écoliers",
+          "ville": "Vevey à la Montagne",
+          "canton": "VD",
+          "montant_CHF": 100000
+        }
+      ]
+    },
+    {
+      "name": "Passeport vacances & camps",
+      "count": 14,
+      "total_chf": 1090800,
+      "mean_chf": 77914,
+      "cantons": {
+        "VD": {
+          "count": 6,
+          "total_chf": 433000
+        },
+        "FR": {
+          "count": 5,
+          "total_chf": 7800
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 200000
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 450000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Colonie de vacances du quartier de Saint-Gervais",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Colonie Vivre",
+          "ville": "Arzier-Le Muids",
+          "canton": "VD",
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "Colonie de Vacances de Martigny à Ravoire (",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Féd. des colonies de vacances",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Passeport Vacances",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 30000
+        }
+      ]
+    },
+    {
+      "name": "Accueil parascolaire",
+      "count": 9,
+      "total_chf": 985290,
+      "mean_chf": 109476,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 39000
+        },
+        "FR": {
+          "count": 8,
+          "total_chf": 946290
+        }
+      },
+      "samples": [
+        {
+          "nom": "Programme Culture & École",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "famiya",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 200970
+        },
+        {
+          "nom": "Assoc. d'Accueil Familial de Jour du district de la Broye",
+          "ville": "Estavayer-le-Lac",
+          "canton": "FR",
+          "montant_CHF": 130900
+        },
+        {
+          "nom": "Assoc. d'accueil familial de jour du district de la Gruyère",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 128880
+        },
+        {
+          "nom": "Accueil Familial de Jour de la Glâne",
+          "ville": "Romont",
+          "canton": "FR",
+          "montant_CHF": 86400
+        }
+      ]
+    },
+    {
+      "name": "Soutien scolaire & lecture",
+      "count": 4,
+      "total_chf": 497000,
+      "mean_chf": 124250,
+      "cantons": {
+        "NE": {
+          "count": 2,
+          "total_chf": 17000
+        },
+        "SR": {
+          "count": 2,
+          "total_chf": 480000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. La Lanterne Magique",
+          "ville": "Neuchâtel",
+          "canton": "SR",
+          "montant_CHF": 380000
+        },
+        {
+          "nom": "Assoc. Bain de livres",
+          "ville": "Bressaucourt",
+          "canton": "SR",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Assoc. Graine de génie et Graine de citoyen, Neuchâtel",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. PIP - Prévention",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 7000
+        }
+      ]
+    },
+    {
+      "name": "Soutien parental",
+      "count": 6,
+      "total_chf": 437000,
+      "mean_chf": 72833,
+      "cantons": {
+        "FR": {
+          "count": 2,
+          "total_chf": 245000
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 30000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 75000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 22000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 65000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Pro Junior",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 195000
+        },
+        {
+          "nom": "Pro Junior - arc jurassien",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 75000
+        },
+        {
+          "nom": "Pro Juventute",
+          "ville": "Bureau romand",
+          "canton": "SR",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Point Rencontre Fribourg",
+          "ville": "Givisiez",
+          "canton": "FR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. Point Rencontre Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 30000
+        }
+      ]
+    },
+    {
+      "name": "Scoutisme",
+      "count": 3,
+      "total_chf": 102600,
+      "mean_chf": 34200,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 55000
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 32600
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 15000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. de Soutien du Groupe",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 55000
+        },
+        {
+          "nom": "Assoc. des Scouts Fribourgeois",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 32600
+        },
+        {
+          "nom": "Assoc. CAJU",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 15000
+        }
+      ]
+    },
+    {
+      "name": "Cirque & théâtre jeunes",
+      "count": 1,
+      "total_chf": 60000,
+      "mean_chf": 60000,
+      "cantons": {
+        "FR": {
+          "count": 1,
+          "total_chf": 60000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. de Fribourg",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 60000
+        }
+      ]
+    },
+    {
+      "name": "Ludothèques & jeux",
+      "count": 15,
+      "total_chf": 55960,
+      "mean_chf": 3730,
+      "cantons": {
+        "VD": {
+          "count": 3,
+          "total_chf": 25500
+        },
+        "FR": {
+          "count": 10,
+          "total_chf": 28460
+        },
+        "NE": {
+          "count": 2,
+          "total_chf": 2000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Ludothèque de Romanel",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 17000
+        },
+        {
+          "nom": "Ludothèque de la Gruyère",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Ludothèque de Savigny",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 4500
+        },
+        {
+          "nom": "Ludothèque Aigle",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Ludothèque de la Glâne",
+          "ville": "Romont",
+          "canton": "FR",
+          "montant_CHF": 4000
+        }
+      ]
+    },
+    {
+      "name": "Musique & arts jeunes",
+      "count": 3,
+      "total_chf": 5000,
+      "mean_chf": 1666,
+      "cantons": {
+        "FR": {
+          "count": 2,
+          "total_chf": 3000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 2000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Éveil musical en Glâne et environs",
+          "ville": "Esmonts",
+          "canton": "FR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Groupement MCM Cadets",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. Fribourgeoise des Jeunes Musiciens",
+          "ville": "Marly",
+          "canton": "FR",
+          "montant_CHF": 1000
+        }
+      ]
+    },
+    {
+      "name": "Maisons de jeunes & quartier",
+      "count": 2,
+      "total_chf": 2500,
+      "mean_chf": 1250,
+      "cantons": {
+        "VS": {
+          "count": 1,
+          "total_chf": 1000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 1500
+        }
+      },
+      "samples": [
+        {
+          "nom": "AMJB - Assoc. de la Maison",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Assoc. sierroise de Loisirs",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 1000
+        }
+      ]
+    }
+  ]
+}

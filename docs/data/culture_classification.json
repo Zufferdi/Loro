@@ -1,47 +1,115 @@
 {
   "_meta": {
-    "source": "docs/data/brb2025_full.json (v13.10 cleaned)",
-    "method": "Keyword classification on nom + description (ignoring unreliable secteur field).",
-    "date": "2026-06-03",
-    "version": "v13.10-culture",
-    "total_entries": 5291,
-    "total_entries_classified": 825,
-    "total_chf_all": 206439481,
-    "total_chf_classified": 62866686,
-    "pct_entries_classified": 15.6,
-    "pct_chf_classified": 30.5,
-    "note": "Classification par mots-clés ordonnés du plus spécifique (Cinéma, Danse, Cirque, Photographie) au plus générique (Festival multi-disciplinaire). Une entrée n'est attribuée qu'à une seule catégorie (première qui matche). Les entrées génériques (« Saison artistique » sans précision) restent non classifiées."
+    "classif": "culture",
+    "year": "2025",
+    "source": "brb2025_full.json",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "date": "2026-06-04",
+    "total_entries": 1754,
+    "total_chf": 84648954,
+    "total_entries_classified": 819,
+    "total_chf_classified": 55527436,
+    "pct_chf_classified": 65.6,
+    "cross_year_recovered": 164
   },
   "categories": [
     {
+      "name": "Autres",
+      "count": 935,
+      "total_chf": 29121518,
+      "mean_chf": 31146,
+      "cantons": {
+        "VD": {
+          "count": 155,
+          "total_chf": 5133000
+        },
+        "FR": {
+          "count": 98,
+          "total_chf": 3380314
+        },
+        "VS": {
+          "count": 202,
+          "total_chf": 5988484
+        },
+        "NE": {
+          "count": 174,
+          "total_chf": 4017000
+        },
+        "GE": {
+          "count": 148,
+          "total_chf": 6547824
+        },
+        "JU": {
+          "count": 130,
+          "total_chf": 1383896
+        },
+        "SR": {
+          "count": 28,
+          "total_chf": 2671000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. pour le développement des arts et de la culture - FODAC",
+          "ville": "Vernier",
+          "canton": "GE",
+          "montant_CHF": 1500000
+        },
+        {
+          "nom": "Fond. Guido Comba",
+          "ville": "Gland",
+          "canton": "VD",
+          "montant_CHF": 1250000
+        },
+        {
+          "nom": "Fond. Horopedia",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "La Chaux-de-Fonds capitale",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Fond. Équilibre et Nuithonie",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 970000
+        }
+      ]
+    },
+    {
       "name": "Théâtre",
-      "count": 123,
-      "total_chf": 10662250,
-      "mean_chf": 86684,
+      "count": 139,
+      "total_chf": 11163250,
+      "mean_chf": 80311,
       "cantons": {
         "VD": {
           "count": 30,
           "total_chf": 4153500
         },
         "FR": {
-          "count": 12,
-          "total_chf": 1150250
+          "count": 13,
+          "total_chf": 1152250
         },
         "VS": {
-          "count": 11,
-          "total_chf": 1219000
+          "count": 13,
+          "total_chf": 1229000
         },
         "NE": {
-          "count": 17,
-          "total_chf": 1877500
+          "count": 18,
+          "total_chf": 1900500
         },
         "GE": {
-          "count": 31,
-          "total_chf": 1813000
+          "count": 35,
+          "total_chf": 2173000
         },
         "JU": {
-          "count": 21,
-          "total_chf": 434000
+          "count": 29,
+          "total_chf": 540000
         },
         "SR": {
           "count": 1,
@@ -62,6 +130,12 @@
           "montant_CHF": 1345000
         },
         {
+          "nom": "Fond. pour l'art dramatique",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 650000
+        },
+        {
           "nom": "Théâtre Pro",
           "ville": "Sion",
           "canton": "VS",
@@ -72,20 +146,14 @@
           "ville": null,
           "canton": "GE",
           "montant_CHF": 500000
-        },
-        {
-          "nom": "Fond. du Théâtre des Osses",
-          "ville": "Givisiez",
-          "canton": "FR",
-          "montant_CHF": 460000
         }
       ]
     },
     {
       "name": "Cinéma / Audiovisuel",
       "count": 44,
-      "total_chf": 9069750,
-      "mean_chf": 206130,
+      "total_chf": 9076000,
+      "mean_chf": 206272,
       "cantons": {
         "VD": {
           "count": 8,
@@ -108,12 +176,12 @@
           "total_chf": 1440000
         },
         "JU": {
-          "count": 8,
-          "total_chf": 135150
+          "count": 9,
+          "total_chf": 161400
         },
         "SR": {
-          "count": 10,
-          "total_chf": 2135000
+          "count": 9,
+          "total_chf": 2115000
         }
       },
       "samples": [
@@ -151,46 +219,40 @@
     },
     {
       "name": "Festival multi-disciplinaire",
-      "count": 161,
-      "total_chf": 8971589,
-      "mean_chf": 55724,
+      "count": 169,
+      "total_chf": 7731039,
+      "mean_chf": 45745,
       "cantons": {
         "VD": {
-          "count": 28,
-          "total_chf": 1652200
+          "count": 30,
+          "total_chf": 1687200
         },
         "FR": {
-          "count": 32,
-          "total_chf": 1212080
+          "count": 31,
+          "total_chf": 1257110
         },
         "VS": {
           "count": 19,
           "total_chf": 1333529
         },
         "NE": {
-          "count": 12,
-          "total_chf": 405580
+          "count": 11,
+          "total_chf": 400000
         },
         "GE": {
-          "count": 49,
-          "total_chf": 2105700
+          "count": 57,
+          "total_chf": 2455700
         },
         "JU": {
-          "count": 18,
-          "total_chf": 412500
+          "count": 20,
+          "total_chf": 447500
         },
         "SR": {
-          "count": 3,
-          "total_chf": 1850000
+          "count": 1,
+          "total_chf": 150000
         }
       },
       "samples": [
-        {
-          "nom": "La Chaux-de-Fonds capitale",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 1000000
-        },
         {
           "nom": "Fond. du Verbier Festival",
           "ville": null,
@@ -214,86 +276,24 @@
           "ville": null,
           "canton": "FR",
           "montant_CHF": 229550
-        }
-      ]
-    },
-    {
-      "name": "Patrimoine bâti",
-      "count": 41,
-      "total_chf": 8486395,
-      "mean_chf": 206985,
-      "cantons": {
-        "VD": {
-          "count": 18,
-          "total_chf": 950395
         },
-        "FR": {
-          "count": 7,
-          "total_chf": 460000
-        },
-        "VS": {
-          "count": 3,
-          "total_chf": 447000
-        },
-        "NE": {
-          "count": 2,
-          "total_chf": 100000
-        },
-        "GE": {
-          "count": 5,
-          "total_chf": 6380000
-        },
-        "JU": {
-          "count": 5,
-          "total_chf": 129000
-        },
-        "SR": {
-          "count": 1,
-          "total_chf": 20000
-        }
-      },
-      "samples": [
         {
-          "nom": "Fond. pour la conservation",
+          "nom": "La Bâtie - Festival de Genève",
           "ville": null,
           "canton": "GE",
-          "montant_CHF": 3300000
-        },
-        {
-          "nom": "Église protestante de Genève",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 1250000
-        },
-        {
-          "nom": "Église anglicane de Genève",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 1000000
-        },
-        {
-          "nom": "Colonies de vacances",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 800000
-        },
-        {
-          "nom": "Fond. SSKG (Stiftung für",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 500000
+          "montant_CHF": 225000
         }
       ]
     },
     {
       "name": "Musée",
-      "count": 47,
-      "total_chf": 8304113,
-      "mean_chf": 176683,
+      "count": 45,
+      "total_chf": 7224113,
+      "mean_chf": 160535,
       "cantons": {
         "VD": {
-          "count": 20,
-          "total_chf": 5803000
+          "count": 19,
+          "total_chf": 5723000
         },
         "FR": {
           "count": 8,
@@ -308,8 +308,8 @@
           "total_chf": 225000
         },
         "GE": {
-          "count": 2,
-          "total_chf": 1050000
+          "count": 1,
+          "total_chf": 50000
         },
         "JU": {
           "count": 9,
@@ -324,10 +324,10 @@
           "montant_CHF": 2500000
         },
         {
-          "nom": "Fond. Horopedia",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 1000000
+          "nom": "Fond. de l'Hermitage",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1500000
         },
         {
           "nom": "Fond. Plateforme 10",
@@ -351,33 +351,33 @@
     },
     {
       "name": "Musique classique",
-      "count": 156,
-      "total_chf": 5081744,
-      "mean_chf": 32575,
+      "count": 162,
+      "total_chf": 5401479,
+      "mean_chf": 33342,
       "cantons": {
         "VD": {
-          "count": 39,
-          "total_chf": 1260500
+          "count": 40,
+          "total_chf": 1273500
         },
         "FR": {
-          "count": 32,
-          "total_chf": 712861
+          "count": 31,
+          "total_chf": 712361
         },
         "VS": {
           "count": 22,
-          "total_chf": 801933
+          "total_chf": 862668
         },
         "NE": {
-          "count": 20,
-          "total_chf": 1224000
+          "count": 21,
+          "total_chf": 1229000
         },
         "GE": {
-          "count": 24,
-          "total_chf": 533100
+          "count": 26,
+          "total_chf": 618600
         },
         "JU": {
-          "count": 13,
-          "total_chf": 66750
+          "count": 16,
+          "total_chf": 222750
         },
         "SR": {
           "count": 6,
@@ -418,34 +418,86 @@
       ]
     },
     {
-      "name": "Danse",
-      "count": 42,
-      "total_chf": 2585905,
-      "mean_chf": 61569,
+      "name": "Patrimoine bâti",
+      "count": 16,
+      "total_chf": 3817650,
+      "mean_chf": 238603,
       "cantons": {
         "VD": {
-          "count": 5,
-          "total_chf": 657157
+          "count": 11,
+          "total_chf": 507650
+        },
+        "FR": {
+          "count": 2,
+          "total_chf": 5000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 3300000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 5000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. pour la conservation des temples genevois construits avant 1907",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 3300000
+        },
+        {
+          "nom": "École de Musique de Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Festival au Pays des Enfants",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Capdenho, Château-d'Œx",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 39000
+        },
+        {
+          "nom": "Assoc. de l'École de Musique de Pully",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 36000
+        }
+      ]
+    },
+    {
+      "name": "Danse",
+      "count": 38,
+      "total_chf": 2578005,
+      "mean_chf": 67842,
+      "cantons": {
+        "VD": {
+          "count": 4,
+          "total_chf": 656890
         },
         "FR": {
           "count": 7,
           "total_chf": 188515
-        },
-        "VS": {
-          "count": 1,
-          "total_chf": 2033
         },
         "NE": {
           "count": 6,
           "total_chf": 91500
         },
         "GE": {
-          "count": 15,
-          "total_chf": 1517500
+          "count": 13,
+          "total_chf": 1509500
         },
         "JU": {
           "count": 6,
-          "total_chf": 19200
+          "total_chf": 21600
         },
         "SR": {
           "count": 2,
@@ -486,22 +538,210 @@
       ]
     },
     {
-      "name": "Centre culturel / Maison",
-      "count": 13,
-      "total_chf": 2458620,
-      "mean_chf": 189124,
+      "name": "Musique populaire / Jazz",
+      "count": 101,
+      "total_chf": 1943320,
+      "mean_chf": 19240,
+      "cantons": {
+        "VD": {
+          "count": 13,
+          "total_chf": 527000
+        },
+        "FR": {
+          "count": 12,
+          "total_chf": 161500
+        },
+        "VS": {
+          "count": 28,
+          "total_chf": 596200
+        },
+        "NE": {
+          "count": 14,
+          "total_chf": 281320
+        },
+        "GE": {
+          "count": 9,
+          "total_chf": 94800
+        },
+        "JU": {
+          "count": 23,
+          "total_chf": 182500
+        },
+        "SR": {
+          "count": 2,
+          "total_chf": 100000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Rock Hock Verein Gampel",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 250000
+        },
+        {
+          "nom": "EJMA - École de Jazz",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 195000
+        },
+        {
+          "nom": "Sté de Musique",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 175000
+        },
+        {
+          "nom": "Montreux Jazz Artists",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 130000
+        },
+        {
+          "nom": "Fond. Ejma Live",
+          "ville": "Lausanne",
+          "canton": "SR",
+          "montant_CHF": 80000
+        }
+      ]
+    },
+    {
+      "name": "Littérature / Édition",
+      "count": 39,
+      "total_chf": 1577500,
+      "mean_chf": 40448,
       "cantons": {
         "VD": {
           "count": 4,
-          "total_chf": 1699000
+          "total_chf": 220000
+        },
+        "FR": {
+          "count": 5,
+          "total_chf": 74500
+        },
+        "NE": {
+          "count": 7,
+          "total_chf": 247800
+        },
+        "GE": {
+          "count": 8,
+          "total_chf": 757700
+        },
+        "JU": {
+          "count": 8,
+          "total_chf": 43500
+        },
+        "SR": {
+          "count": 7,
+          "total_chf": 234000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. pour l'Écrit",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Poésie en Arrosoir",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 135000
+        },
+        {
+          "nom": "Fond. de la Maison de Rousseau et de la Littérature",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Joyfully Waiting 19 & 20 et Cercle de la Librairie",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 71200
+        },
+        {
+          "nom": "Création artistique Les amis des éditions Infolio",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 70000
+        }
+      ]
+    },
+    {
+      "name": "Orchestres de chambre",
+      "count": 14,
+      "total_chf": 1419500,
+      "mean_chf": 101392,
+      "cantons": {
+        "VD": {
+          "count": 5,
+          "total_chf": 291000
         },
         "FR": {
           "count": 2,
-          "total_chf": 183700
+          "total_chf": 435500
         },
-        "VS": {
-          "count": 1,
-          "total_chf": 5020
+        "NE": {
+          "count": 3,
+          "total_chf": 31000
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 650000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 12000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Orchestre de Chambre de Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Orchestre de chambre fribourgeois",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 432500
+        },
+        {
+          "nom": "Orchestre de Chambre de Lausanne (OCL)",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 260000
+        },
+        {
+          "nom": "Assoc. Geneva Camerata",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Camerata Ataremac",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        }
+      ]
+    },
+    {
+      "name": "Centre culturel / Maison",
+      "count": 12,
+      "total_chf": 1289600,
+      "mean_chf": 107466,
+      "cantons": {
+        "VD": {
+          "count": 3,
+          "total_chf": 449000
+        },
+        "FR": {
+          "count": 3,
+          "total_chf": 269700
         },
         "NE": {
           "count": 2,
@@ -513,12 +753,6 @@
         }
       },
       "samples": [
-        {
-          "nom": "Fond. Guido Comba",
-          "ville": "Gland",
-          "canton": "VD",
-          "montant_CHF": 1250000
-        },
         {
           "nom": "Centre Culturel Neuchâtelois",
           "ville": null,
@@ -542,198 +776,12 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 130000
-        }
-      ]
-    },
-    {
-      "name": "Musique populaire / Jazz",
-      "count": 105,
-      "total_chf": 1781140,
-      "mean_chf": 16963,
-      "cantons": {
-        "VD": {
-          "count": 13,
-          "total_chf": 527000
-        },
-        "FR": {
-          "count": 15,
-          "total_chf": 188500
-        },
-        "VS": {
-          "count": 28,
-          "total_chf": 586200
-        },
-        "NE": {
-          "count": 14,
-          "total_chf": 107140
-        },
-        "GE": {
-          "count": 11,
-          "total_chf": 101800
-        },
-        "JU": {
-          "count": 22,
-          "total_chf": 170500
-        },
-        "SR": {
-          "count": 2,
-          "total_chf": 100000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Rock Hock Verein Gampel",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 250000
         },
         {
-          "nom": "EJMA - École de Jazz",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 195000
-        },
-        {
-          "nom": "Montreux Jazz Artists",
-          "ville": "Foundation",
-          "canton": "VD",
-          "montant_CHF": 130000
-        },
-        {
-          "nom": "Fond. Ejma Live",
+          "nom": "Assoc. Centre Culturel de Grand-Vennes",
           "ville": "Lausanne",
-          "canton": "SR",
-          "montant_CHF": 80000
-        },
-        {
-          "nom": "Brass Band 13 Étoiles",
-          "ville": "Conthey",
-          "canton": "VS",
-          "montant_CHF": 75000
-        }
-      ]
-    },
-    {
-      "name": "Littérature / Édition",
-      "count": 38,
-      "total_chf": 1715500,
-      "mean_chf": 45144,
-      "cantons": {
-        "VD": {
-          "count": 3,
-          "total_chf": 155000
-        },
-        "FR": {
-          "count": 7,
-          "total_chf": 324500
-        },
-        "NE": {
-          "count": 7,
-          "total_chf": 247800
-        },
-        "GE": {
-          "count": 8,
-          "total_chf": 757700
-        },
-        "JU": {
-          "count": 8,
-          "total_chf": 43500
-        },
-        "SR": {
-          "count": 5,
-          "total_chf": 187000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Fond. pour l'Écrit",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 500000
-        },
-        {
-          "nom": "du surendettement LivrEchange bibliothèque",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 190000
-        },
-        {
-          "nom": "Poésie en Arrosoir",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 135000
-        },
-        {
-          "nom": "Fond. de la Maison de Rousseau et de la Littérature",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 100000
-        },
-        {
-          "nom": "Joyfully Waiting 19 & 20 et Cercle de la Librairie",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 71200
-        }
-      ]
-    },
-    {
-      "name": "Orchestres de chambre",
-      "count": 16,
-      "total_chf": 1613500,
-      "mean_chf": 100843,
-      "cantons": {
-        "VD": {
-          "count": 7,
-          "total_chf": 485000
-        },
-        "FR": {
-          "count": 2,
-          "total_chf": 435500
-        },
-        "NE": {
-          "count": 3,
-          "total_chf": 31000
-        },
-        "GE": {
-          "count": 2,
-          "total_chf": 650000
-        },
-        "JU": {
-          "count": 2,
-          "total_chf": 12000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Orchestre de Chambre",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 500000
-        },
-        {
-          "nom": "Orchestre de chambre",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 432500
-        },
-        {
-          "nom": "Orchestre de Chambre de Lausanne (OCL)",
-          "ville": null,
           "canton": "VD",
-          "montant_CHF": 260000
-        },
-        {
-          "nom": "Sinfonietta de Lausanne",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 190000
-        },
-        {
-          "nom": "Assoc. Geneva Camerata",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 150000
+          "montant_CHF": 119000
         }
       ]
     },
@@ -759,9 +807,9 @@
     },
     {
       "name": "Cirque / Arts de la rue",
-      "count": 18,
-      "total_chf": 619180,
-      "mean_chf": 34398,
+      "count": 17,
+      "total_chf": 595580,
+      "mean_chf": 35034,
       "cantons": {
         "VD": {
           "count": 2,
@@ -780,8 +828,8 @@
           "total_chf": 75000
         },
         "GE": {
-          "count": 3,
-          "total_chf": 88600
+          "count": 2,
+          "total_chf": 65000
         },
         "JU": {
           "count": 3,
@@ -822,14 +870,78 @@
       ]
     },
     {
-      "name": "Arts visuels",
-      "count": 10,
-      "total_chf": 461000,
-      "mean_chf": 46100,
+      "name": "Photographie",
+      "count": 14,
+      "total_chf": 438400,
+      "mean_chf": 31314,
       "cantons": {
         "VD": {
-          "count": 3,
-          "total_chf": 138000
+          "count": 4,
+          "total_chf": 260000
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 70000
+        },
+        "NE": {
+          "count": 2,
+          "total_chf": 26400
+        },
+        "GE": {
+          "count": 5,
+          "total_chf": 59000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 3000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 20000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. pour la promotion",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 110000
+        },
+        {
+          "nom": "Assoc. pour la promotion du MHL",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 110000
+        },
+        {
+          "nom": "Assoc. pour la sauvegarde",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Focale - Assoc.",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. pour la promotion",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 20000
+        }
+      ]
+    },
+    {
+      "name": "Arts visuels",
+      "count": 8,
+      "total_chf": 418000,
+      "mean_chf": 52250,
+      "cantons": {
+        "VD": {
+          "count": 2,
+          "total_chf": 130000
         },
         "NE": {
           "count": 2,
@@ -840,8 +952,8 @@
           "total_chf": 34000
         },
         "JU": {
-          "count": 2,
-          "total_chf": 44000
+          "count": 1,
+          "total_chf": 9000
         },
         "SR": {
           "count": 1,
@@ -868,80 +980,16 @@
           "montant_CHF": 60000
         },
         {
-          "nom": "ProJura Promotion de l'identité",
-          "ville": null,
-          "canton": "JU",
-          "montant_CHF": 35000
-        },
-        {
           "nom": "Centre d'Art Contemporain",
           "ville": "Une poétique de l'être en Genève",
           "canton": "GE",
           "montant_CHF": 30000
-        }
-      ]
-    },
-    {
-      "name": "Photographie",
-      "count": 10,
-      "total_chf": 202000,
-      "mean_chf": 20200,
-      "cantons": {
-        "VD": {
-          "count": 2,
-          "total_chf": 40000
-        },
-        "FR": {
-          "count": 1,
-          "total_chf": 70000
-        },
-        "NE": {
-          "count": 1,
-          "total_chf": 20000
-        },
-        "GE": {
-          "count": 4,
-          "total_chf": 49000
-        },
-        "JU": {
-          "count": 1,
-          "total_chf": 3000
-        },
-        "SR": {
-          "count": 1,
-          "total_chf": 20000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Assoc. pour la sauvegarde",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 70000
         },
         {
-          "nom": "Focale - Assoc.",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 30000
-        },
-        {
-          "nom": "Assoc. pour la promotion",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Assoc. Madre de la Culebra",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Assoc. Spectrum - Photography",
-          "ville": null,
+          "nom": "Assoc. Atelier de gravure",
+          "ville": "Moutier",
           "canton": "SR",
-          "montant_CHF": 20000
+          "montant_CHF": 25000
         }
       ]
     }

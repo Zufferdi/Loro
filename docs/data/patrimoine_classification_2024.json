@@ -1,0 +1,436 @@
+{
+  "_meta": {
+    "classif": "patrimoine",
+    "year": "2024",
+    "source": "brb2024_full.json",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "date": "2026-06-04",
+    "total_entries": 361,
+    "total_chf": 21000986,
+    "total_entries_classified": 55,
+    "total_chf_classified": 3844610,
+    "pct_chf_classified": 18.3,
+    "cross_year_recovered": 6,
+    "sector": "Conservation du patrimoine",
+    "sector_slug": "patrimoine",
+    "total_entries_sector": 361,
+    "total_chf_sector": 21000986,
+    "pct_entries_classified": 15.2
+  },
+  "categories": [
+    {
+      "name": "Autres",
+      "count": 306,
+      "total_chf": 17156376,
+      "mean_chf": 56066,
+      "cantons": {
+        "JU": {
+          "count": 67,
+          "total_chf": 2046500
+        },
+        "VD": {
+          "count": 64,
+          "total_chf": 4825900
+        },
+        "SR": {
+          "count": 51,
+          "total_chf": 2099520
+        },
+        "GE": {
+          "count": 35,
+          "total_chf": 2902390
+        },
+        "FR": {
+          "count": 26,
+          "total_chf": 933016
+        },
+        "NE": {
+          "count": 38,
+          "total_chf": 686550
+        },
+        "VS": {
+          "count": 25,
+          "total_chf": 3662500
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. pour l'organisation des Championnats du Monde MTB UCI Valais 2025",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 1500000
+        },
+        {
+          "nom": "Fond. Portail des Nations, Genève Portail des Nations, une expérience",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Assoc. pour le 750 e anniversaire de la Cathédrale de Lausanne",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 650000
+        },
+        {
+          "nom": "Assoc. Lavaux Patrimoine mondial (LPm)",
+          "ville": "Grandvaux",
+          "canton": "VD",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Fond. École Suisse d’Archéologie en Grèce (ESAG)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 500000
+        }
+      ]
+    },
+    {
+      "name": "Patrimoine religieux",
+      "count": 22,
+      "total_chf": 1244450,
+      "mean_chf": 56565,
+      "cantons": {
+        "FR": {
+          "count": 4,
+          "total_chf": 232000
+        },
+        "VD": {
+          "count": 5,
+          "total_chf": 31750
+        },
+        "VS": {
+          "count": 5,
+          "total_chf": 633000
+        },
+        "SR": {
+          "count": 4,
+          "total_chf": 231000
+        },
+        "NE": {
+          "count": 2,
+          "total_chf": 3700
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 100000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 13000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Kirchenrat der Herz-Jesu Pfarrei",
+          "ville": "Saas-Fee",
+          "canton": "VS",
+          "montant_CHF": 248000
+        },
+        {
+          "nom": "Kirchenrat der Herz-Jesu Pfarrei Brig",
+          "ville": "Brig",
+          "canton": "VS",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Kirchenrat der Pfarrei Regina Pacis",
+          "ville": "Wiler",
+          "canton": "SR",
+          "montant_CHF": 170000
+        },
+        {
+          "nom": "Fond. pour la Rénovation et la Conservation du Couvent des Cordeliers, Fribourg Erhaltung und Vermittlung der Kulturgüter, Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 125000
+        },
+        {
+          "nom": "Conseil de gestion de la paroisse catholique Saint-Jean-Baptiste",
+          "ville": "Evolène",
+          "canton": "VS",
+          "montant_CHF": 101000
+        }
+      ]
+    },
+    {
+      "name": "Châteaux & forts",
+      "count": 15,
+      "total_chf": 1199000,
+      "mean_chf": 79933,
+      "cantons": {
+        "VD": {
+          "count": 4,
+          "total_chf": 184000
+        },
+        "SR": {
+          "count": 4,
+          "total_chf": 95000
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 65000
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 700000
+        },
+        "NE": {
+          "count": 2,
+          "total_chf": 105000
+        },
+        "JU": {
+          "count": 3,
+          "total_chf": 50000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Sté des Amis de Valère",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 700000
+        },
+        {
+          "nom": "Château de Valangin",
+          "ville": "Valangin",
+          "canton": "NE",
+          "montant_CHF": 85000
+        },
+        {
+          "nom": "Fond. du Château de Gruyères",
+          "ville": "Gruyères",
+          "canton": "FR",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Fond. Edith Moret Château de Mézières",
+          "ville": "Mézières",
+          "canton": "VD",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Fond. du Château de Grandson",
+          "ville": "Grandson",
+          "canton": "VD",
+          "montant_CHF": 60000
+        }
+      ]
+    },
+    {
+      "name": "Sauvegarde du bâti",
+      "count": 3,
+      "total_chf": 820000,
+      "mean_chf": 273333,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 400000
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 20000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 400000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. Les Mollards-des-Aubert",
+          "ville": "Le Sentier",
+          "canton": "VD",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Section genevoise du Club Alpin Suisse",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Assoc. pour la sauvegarde du patrimoine photographique",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 20000
+        }
+      ]
+    },
+    {
+      "name": "Musées historiques",
+      "count": 4,
+      "total_chf": 183000,
+      "mean_chf": 45750,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 13000
+        },
+        "FR": {
+          "count": 2,
+          "total_chf": 110000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 60000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Sté des Amis du Musée (Musée d'art et d'histoire de Fribourg)",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Fond. du Musée paysan et artisanal",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Fond. du Musée de Charmey",
+          "ville": "Charmey",
+          "canton": "FR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. du Musée de l'Aviation Militaire de Payerne",
+          "ville": "Payerne",
+          "canton": "VD",
+          "montant_CHF": 13000
+        }
+      ]
+    },
+    {
+      "name": "Histoire & archives",
+      "count": 6,
+      "total_chf": 168160,
+      "mean_chf": 28026,
+      "cantons": {
+        "NE": {
+          "count": 1,
+          "total_chf": 30160
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 8000
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 5000
+        },
+        "GE": {
+          "count": 3,
+          "total_chf": 125000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Sté d'histoire et d'archéologie de Genève S.H.A.G. Traitement et mise en valeur de la collection de brochures",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Sté d'histoire de l'art en Suisse, Bern Les Monuments d'art et d'histoire du canton de Genève VI, Genève, la ceinture Fazyste",
+          "ville": "Bern",
+          "canton": "GE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Archives contestataires, Carouge Archives de l’exil chilien en Suisse – traitement et valorisation",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Académie suisse des sciences humaines et sociales",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 30160
+        },
+        {
+          "nom": "Deutscher Geschichtsforschender Verein des Kantons Freiburg",
+          "ville": "Freiburg",
+          "canton": "FR",
+          "montant_CHF": 8000
+        }
+      ]
+    },
+    {
+      "name": "Patrimoine alpestre & bisses",
+      "count": 1,
+      "total_chf": 160000,
+      "mean_chf": 160000,
+      "cantons": {
+        "VS": {
+          "count": 1,
+          "total_chf": 160000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Les Amis du Bisse",
+          "ville": "Riddes",
+          "canton": "VS",
+          "montant_CHF": 160000
+        }
+      ]
+    },
+    {
+      "name": "Archéologie",
+      "count": 3,
+      "total_chf": 60000,
+      "mean_chf": 20000,
+      "cantons": {
+        "SR": {
+          "count": 3,
+          "total_chf": 60000
+        }
+      },
+      "samples": [
+        {
+          "nom": "SHC Rolling Aventicum",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 54000
+        },
+        {
+          "nom": "SHC Rolling Aventicum",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "SHC Rolling Aventicum",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2000
+        }
+      ]
+    },
+    {
+      "name": "Patrimoine industriel & rural",
+      "count": 1,
+      "total_chf": 10000,
+      "mean_chf": 10000,
+      "cantons": {
+        "NE": {
+          "count": 1,
+          "total_chf": 10000
+        }
+      },
+      "samples": [
+        {
+          "nom": "L'Aristoloche - Moulin de Bevaix",
+          "ville": "Bevaix",
+          "canton": "NE",
+          "montant_CHF": 10000
+        }
+      ]
+    }
+  ]
+}

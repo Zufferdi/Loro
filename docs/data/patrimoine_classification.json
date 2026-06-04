@@ -1,0 +1,404 @@
+{
+  "_meta": {
+    "classif": "patrimoine",
+    "year": "2025",
+    "source": "brb2025_full.json",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "date": "2026-06-04",
+    "total_entries": 100,
+    "total_chf": 8719300,
+    "total_entries_classified": 60,
+    "total_chf_classified": 6797200,
+    "pct_chf_classified": 78.0,
+    "cross_year_recovered": 6,
+    "sector": "Conservation du patrimoine",
+    "sector_slug": "patrimoine",
+    "total_entries_sector": 100,
+    "total_chf_sector": 8719300,
+    "pct_entries_classified": 60.0
+  },
+  "categories": [
+    {
+      "name": "Patrimoine religieux",
+      "count": 27,
+      "total_chf": 4441000,
+      "mean_chf": 164481,
+      "cantons": {
+        "VD": {
+          "count": 5,
+          "total_chf": 415000
+        },
+        "FR": {
+          "count": 4,
+          "total_chf": 499000
+        },
+        "VS": {
+          "count": 8,
+          "total_chf": 370500
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 3000
+        },
+        "GE": {
+          "count": 8,
+          "total_chf": 3138500
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 15000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Église protestante de Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1250000
+        },
+        {
+          "nom": "Église anglicane de Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Colonies de vacances",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 800000
+        },
+        {
+          "nom": "Assoc. des Amis de la Chapelle de Treytorrens (AACT)",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Paroisse du Christ-Roi",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 200000
+        }
+      ]
+    },
+    {
+      "name": "Autres",
+      "count": 40,
+      "total_chf": 1922100,
+      "mean_chf": 48052,
+      "cantons": {
+        "VD": {
+          "count": 9,
+          "total_chf": 1003000
+        },
+        "FR": {
+          "count": 9,
+          "total_chf": 292800
+        },
+        "VS": {
+          "count": 4,
+          "total_chf": 43500
+        },
+        "NE": {
+          "count": 5,
+          "total_chf": 55800
+        },
+        "GE": {
+          "count": 3,
+          "total_chf": 122000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 45000
+        },
+        "SR": {
+          "count": 8,
+          "total_chf": 360000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. Caux - Initiatives",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Stiftung für Kunst",
+          "ville": "Kultur und",
+          "canton": "VD",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Vitromusée Romont",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 113800
+        },
+        {
+          "nom": "Fond. pour le Panorama",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Amis du Musée cantonal d'archéologie et d'histoire (MCAH)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 80000
+        }
+      ]
+    },
+    {
+      "name": "Châteaux & forts",
+      "count": 15,
+      "total_chf": 1253000,
+      "mean_chf": 83533,
+      "cantons": {
+        "VD": {
+          "count": 4,
+          "total_chf": 660000
+        },
+        "FR": {
+          "count": 5,
+          "total_chf": 330000
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 39000
+        },
+        "NE": {
+          "count": 2,
+          "total_chf": 100000
+        },
+        "JU": {
+          "count": 3,
+          "total_chf": 124000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. SSKG (Stiftung für",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Commune de Fontenais",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Assoc. pour la Conservation du Château d'Oron - ACCO, Oron-le-Châtel",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "Château de Valangin",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 85000
+        },
+        {
+          "nom": "Assoc. Grandson-Murten 2026",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 75000
+        }
+      ]
+    },
+    {
+      "name": "Sauvegarde du bâti",
+      "count": 9,
+      "total_chf": 794500,
+      "mean_chf": 88277,
+      "cantons": {
+        "VD": {
+          "count": 2,
+          "total_chf": 154500
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 40000
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 350000
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 110000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 120000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 20000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. pour la Sauvegarde du Patrimoine des Médias valaisans",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "Fond. Les Mollards-des-Aubert",
+          "ville": "Le Sentier",
+          "canton": "VD",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Assoc. pour la Sauvegarde de la Peccadille - ASP",
+          "ville": "Vésenaz",
+          "canton": "GE",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Office cantonal de la culture",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "GFM Historique",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 40000
+        }
+      ]
+    },
+    {
+      "name": "Histoire & archives",
+      "count": 3,
+      "total_chf": 162000,
+      "mean_chf": 54000,
+      "cantons": {
+        "FR": {
+          "count": 2,
+          "total_chf": 62000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 100000
+        }
+      },
+      "samples": [
+        {
+          "nom": "SHAN Sté d'histoire d'archéologie",
+          "ville": "Valangin",
+          "canton": "NE",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Évêché de Lausanne",
+          "ville": "Genève et",
+          "canton": "FR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Sté cantonale des patoisants",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 12000
+        }
+      ]
+    },
+    {
+      "name": "Archéologie",
+      "count": 3,
+      "total_chf": 139200,
+      "mean_chf": 46400,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 38200
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 92000
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 9000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. Pro Vallon",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 92000
+        },
+        {
+          "nom": "SHC Rolling Aventicum",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 38200
+        },
+        {
+          "nom": "Maîtrise de la Cathédrale Les Symphonistes d'Octodure de Sion Martigny",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 9000
+        }
+      ]
+    },
+    {
+      "name": "Patrimoine industriel & rural",
+      "count": 1,
+      "total_chf": 4000,
+      "mean_chf": 4000,
+      "cantons": {
+        "JU": {
+          "count": 1,
+          "total_chf": 4000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Sté de développement d'embellissement",
+          "ville": "Soulce",
+          "canton": "JU",
+          "montant_CHF": 4000
+        }
+      ]
+    },
+    {
+      "name": "Patois & traditions",
+      "count": 2,
+      "total_chf": 3500,
+      "mean_chf": 1750,
+      "cantons": {
+        "FR": {
+          "count": 1,
+          "total_chf": 2500
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 1000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Freiburgische Vereinigung für",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 2500
+        },
+        {
+          "nom": "Féd. des patoisants",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 1000
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "_meta": {
+    "classif": "sante",
+    "year": "2024",
+    "source": "brb2024_full.json",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "date": "2026-06-04",
+    "total_entries": 622,
+    "total_chf": 38456525,
+    "total_entries_classified": 45,
+    "total_chf_classified": 3231000,
+    "pct_chf_classified": 8.4,
+    "cross_year_recovered": 3,
+    "sector": "Santé et handicap",
+    "sector_slug": "sante",
+    "total_entries_sector": 622,
+    "total_chf_sector": 38456525,
+    "pct_entries_classified": 7.2
+  },
+  "categories": [
+    {
+      "name": "Autres",
+      "count": 577,
+      "total_chf": 35225525,
+      "mean_chf": 61049,
+      "cantons": {
+        "VD": {
+          "count": 298,
+          "total_chf": 20523850
+        },
+        "SR": {
+          "count": 58,
+          "total_chf": 768850
+        },
+        "JU": {
+          "count": 7,
+          "total_chf": 136000
+        },
+        "NE": {
+          "count": 8,
+          "total_chf": 173000
+        },
+        "FR": {
+          "count": 126,
+          "total_chf": 5836575
+        },
+        "GE": {
+          "count": 40,
+          "total_chf": 6944600
+        },
+        "VS": {
+          "count": 40,
+          "total_chf": 842650
+        }
+      },
+      "samples": [
+        {
+          "nom": "Établissements hospitaliers du Nord vaudois (eHnv) + Pôle santé Pays d'En-haut (PSPE) + Hôpital Riviera Chablais (HRC) + Hôpital intercantonal de la Broye (HIB)",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 6323000
+        },
+        {
+          "nom": "Fond. de la Cité universitaire de Genève Maison d'Albert - Démolition, Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 4000000
+        },
+        {
+          "nom": "Fond. Trajets, Plan-les-Ouates Mise aux normes et aménagement",
+          "ville": "Plan-les-Ouates",
+          "canton": "GE",
+          "montant_CHF": 2000000
+        },
+        {
+          "nom": "Assoc. vaudoise d’aide et de soins à domicile (AVASAD)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1170000
+        },
+        {
+          "nom": "Fond. Equilibre et Nuithonie",
+          "ville": "Villars-sur-Glâne",
+          "canton": "FR",
+          "montant_CHF": 900000
+        }
+      ]
+    },
+    {
+      "name": "Aide & assistance médicale",
+      "count": 15,
+      "total_chf": 935000,
+      "mean_chf": 62333,
+      "cantons": {
+        "VD": {
+          "count": 4,
+          "total_chf": 278000
+        },
+        "FR": {
+          "count": 2,
+          "total_chf": 252000
+        },
+        "VS": {
+          "count": 2,
+          "total_chf": 311000
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 55000
+        },
+        "SR": {
+          "count": 2,
+          "total_chf": 21000
+        },
+        "JU": {
+          "count": 3,
+          "total_chf": 18000
+        }
+      },
+      "samples": [
+        {
+          "nom": "La Croix-Rouge fribourgeoise",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 248000
+        },
+        {
+          "nom": "Terre des hommes Valais",
+          "ville": "Massongex",
+          "canton": "VS",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Assoc. Croix-Rouge Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 111000
+        },
+        {
+          "nom": "Special Olympics Switzerland",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 110000
+        },
+        {
+          "nom": "Assoc. cantonale vaudoise des Samaritains (ACVS)",
+          "ville": "Le Mont-sur-Lausanne",
+          "canton": "VD",
+          "montant_CHF": 70000
+        }
+      ]
+    },
+    {
+      "name": "Cancer & oncologie",
+      "count": 4,
+      "total_chf": 858000,
+      "mean_chf": 214500,
+      "cantons": {
+        "FR": {
+          "count": 2,
+          "total_chf": 808000
+        },
+        "VD": {
+          "count": 1,
+          "total_chf": 30000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 20000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Ligue fribourgeoise contre le cancer, Conseil et soutien, dépistage du cancer",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 778000
+        },
+        {
+          "nom": "ARFEC-Assoc. Romande des Familles d'Enfants atteints d'un Cancer",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "AVAC - Apprendre à vivre avec le cancer",
+          "ville": "Marly",
+          "canton": "FR",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Stop skin cancer",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        }
+      ]
+    },
+    {
+      "name": "Santé mentale & psychiatrie",
+      "count": 7,
+      "total_chf": 483500,
+      "mean_chf": 69071,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 20000
+        },
+        "FR": {
+          "count": 3,
+          "total_chf": 244500
+        },
+        "GE": {
+          "count": 3,
+          "total_chf": 219000
+        }
+      },
+      "samples": [
+        {
+          "nom": "AFAAP",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 240000
+        },
+        {
+          "nom": "Assoc. Parole, Genève Pairencia, accompagnement",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 132000
+        },
+        {
+          "nom": "Assoc. Arcade 84, Genève Arcadie : un tiers-lieu dédié, Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 57000
+        },
+        {
+          "nom": "Assoc. Stop Suicide",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Cantate et Parole",
+          "ville": "Chapelle (Glâne)",
+          "canton": "VD",
+          "montant_CHF": 20000
+        }
+      ]
+    },
+    {
+      "name": "Handicap physique / fauteuil",
+      "count": 6,
+      "total_chf": 472500,
+      "mean_chf": 78750,
+      "cantons": {
+        "SR": {
+          "count": 1,
+          "total_chf": 90000
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 225000
+        },
+        "VS": {
+          "count": 2,
+          "total_chf": 52000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 100000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 5500
+        }
+      },
+      "samples": [
+        {
+          "nom": "Pro Infirmis, Fribourg Consultation sociale, Conseil spécialisé en assistance 2024, Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 225000
+        },
+        {
+          "nom": "Handisport Genève, Les Acacias Compensation des cotisations Handisport Genève selon",
+          "ville": "Les Acacias",
+          "canton": "GE",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Assoc. Cérébral Vaud",
+          "ville": "Montpreveyres",
+          "canton": "SR",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "Assoc. Cérébral Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "Assoc. Forum Handicap Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 7000
+        }
+      ]
+    },
+    {
+      "name": "Handicap mental & autisme",
+      "count": 6,
+      "total_chf": 194000,
+      "mean_chf": 32333,
+      "cantons": {
+        "FR": {
+          "count": 2,
+          "total_chf": 52000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 5000
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 55000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 12000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 70000
+        }
+      },
+      "samples": [
+        {
+          "nom": "ASA Handicap Mental",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Assoc. Insieme Valais romand",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 55000
+        },
+        {
+          "nom": "Autisme Fribourg, Esmonts Conseil et Coordination",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Antenne Handicap Mental",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Cerebral Fribourg",
+          "ville": "Châbles e",
+          "canton": "SR",
+          "montant_CHF": 5000
+        }
+      ]
+    },
+    {
+      "name": "Chiens & zoothérapie",
+      "count": 2,
+      "total_chf": 105000,
+      "mean_chf": 52500,
+      "cantons": {
+        "VS": {
+          "count": 1,
+          "total_chf": 35000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 70000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Medical Flair, Chardonne Chiens spécialisés en alerte médicale",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Assoc. Farah-Dogs",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 35000
+        }
+      ]
+    },
+    {
+      "name": "Diabète & maladies chroniques",
+      "count": 1,
+      "total_chf": 70000,
+      "mean_chf": 70000,
+      "cantons": {
+        "FR": {
+          "count": 1,
+          "total_chf": 70000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Alzheimer Fribourg Freiburg",
+          "ville": "Fribourg Freiburg",
+          "canton": "FR",
+          "montant_CHF": 70000
+        }
+      ]
+    },
+    {
+      "name": "Surdité & malentendants",
+      "count": 2,
+      "total_chf": 70000,
+      "mean_chf": 35000,
+      "cantons": {
+        "VD": {
+          "count": 2,
+          "total_chf": 70000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Suisse Romande de la Langue des Signes (ASRLS)",
+          "ville": "Le Pont",
+          "canton": "VD",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Forom écoute",
+          "ville": "Pully",
+          "canton": "VD",
+          "montant_CHF": 20000
+        }
+      ]
+    },
+    {
+      "name": "Addictions",
+      "count": 1,
+      "total_chf": 40000,
+      "mean_chf": 40000,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 40000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Addiction Suisse",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 40000
+        }
+      ]
+    },
+    {
+      "name": "Maladies rares",
+      "count": 1,
+      "total_chf": 3000,
+      "mean_chf": 3000,
+      "cantons": {
+        "JU": {
+          "count": 1,
+          "total_chf": 3000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. ELA Suisse",
+          "ville": "Tavannes",
+          "canton": "JU",
+          "montant_CHF": 3000
+        }
+      ]
+    }
+  ]
+}

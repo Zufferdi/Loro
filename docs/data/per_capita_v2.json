@@ -2,7 +2,7 @@
   "_meta": {
     "description": "CHF reçus par habitant et par canton en 2025",
     "method": "Total des attributions du BRB 2025 / population résidente (sources cantonales 2024)",
-    "note": "Le canton 'R' (intercantonal romand) n'a pas de population définie ; exclu du ratio.",
+    "note": "Le canton 'SR' (intercantonal romand) n'a pas de population définie ; exclu du ratio.",
     "sources_population": "OFS / Statistiques cantonales 2024"
   },
   "cantons": [
@@ -43,9 +43,9 @@
       "chf_per_capita": 78.5
     },
     {
-      "canton": "R",
+      "canton": "SR",
       "population": 0,
-      "total_chf": 0,
+      "total_chf": 11481110,
       "chf_per_capita": 0
     }
   ]

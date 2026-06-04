@@ -2,13 +2,13 @@
   "_meta": {
     "description": "Top 20 villes destinataires par montant cumulé en 2025",
     "method": "Aggrégation par champ 'ville'. Les entrées sans ville (~53%) ne sont pas comptabilisées.",
-    "top20_total_chf": 69686958
+    "top20_total_chf": 70276958
   },
   "villes": [
     {
       "ville": "Lausanne",
-      "count": 198,
-      "total_chf": 21523925,
+      "count": 200,
+      "total_chf": 22119325,
       "cantons": [
         "FR",
         "GE",
@@ -499,18 +499,22 @@
       ]
     },
     {
-      "ville": "Service",
+      "ville": "Cully",
       "count": 2,
-      "total_chf": 595400,
+      "total_chf": 590000,
       "cantons": [
         "VD"
       ],
-      "lat": null,
-      "lng": null,
+      "lat": 46.49,
+      "lng": 6.7397,
       "top_3_beneficiaires": [
         {
-          "nom": "universite de lausanne",
-          "chf": 595400
+          "nom": "de l hopital de lavaux",
+          "chf": 500000
+        },
+        {
+          "nom": "lavaux classic",
+          "chf": 90000
         }
       ]
     }

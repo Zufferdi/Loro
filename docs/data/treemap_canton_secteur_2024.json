@@ -5,39 +5,96 @@
   "cantons": [
     {
       "canton": "VD",
-      "total_chf": 42414180,
+      "total_chf": 61287486,
       "secteurs": [
         {
+          "secteur": "Santé et handicap",
+          "count": 307,
+          "total_chf": 20961850,
+          "top_3": [
+            {
+              "nom": "Établissements hospitaliers du Nord vaudois (eHnv) + Pôle santé Pays d'En-haut (PSPE) + Hôpital Riviera Chablais (HRC) + Hôpital intercantonal de la Broye (HIB)",
+              "chf": 6323000
+            },
+            {
+              "nom": "Assoc. vaudoise d’aide et de soins à domicile (AVASAD)",
+              "chf": 1170000
+            },
+            {
+              "nom": "Fond. Plateforme 10",
+              "chf": 600000
+            }
+          ]
+        },
+        {
           "secteur": "Culture",
-          "count": 64,
-          "total_chf": 17508000,
+          "count": 77,
+          "total_chf": 9733350,
           "top_3": [
             {
               "nom": "Fond. du Théâtre du Jorat",
               "chf": 2500000
             },
             {
-              "nom": "Fond. du Festival de Jazz de Montreux",
+              "nom": "Fond. du Festival de Jazz, Montreux",
               "chf": 1200000
             },
             {
-              "nom": "Fond. romande pour le cinéma - Cinéforom",
+              "nom": "Assoc. CORODIS",
               "chf": 700000
             }
           ]
         },
         {
-          "secteur": "Action sociale et personnes âgées",
-          "count": 16,
-          "total_chf": 10267000,
+          "secteur": "Sport",
+          "count": 453,
+          "total_chf": 9538221,
           "top_3": [
             {
-              "nom": "Hôpitaux vaudois (eHnv, PSPE, HRC, HIB)",
-              "chf": 6323000
+              "nom": "cantonales vaudoises",
+              "chf": 1669649
             },
             {
-              "nom": "Assoc. vaudoise d'aide et de soins à domicile (AVASAD)",
-              "chf": 1170000
+              "nom": "Assoc. Basketball World Cup Lausanne 2025",
+              "chf": 425000
+            },
+            {
+              "nom": "Commune de Pully Transformation terrain de football",
+              "chf": 419470
+            }
+          ]
+        },
+        {
+          "secteur": "Jeunesse et éducation",
+          "count": 91,
+          "total_chf": 6807750,
+          "top_3": [
+            {
+              "nom": "Fond. pour l'accueil de jour des enfants (FAJE)",
+              "chf": 1500000
+            },
+            {
+              "nom": "ARSENIC",
+              "chf": 400000
+            },
+            {
+              "nom": "Fond. pour un Accueil à Bas Seuil (ABS)",
+              "chf": 350000
+            }
+          ]
+        },
+        {
+          "secteur": "Action sociale et personnes âgées",
+          "count": 89,
+          "total_chf": 5532340,
+          "top_3": [
+            {
+              "nom": "Centre Social Protestant - CSP",
+              "chf": 600000
+            },
+            {
+              "nom": "Fond. Yverdonnoise pour l'Accueil de l'Enfance (FYAE)",
+              "chf": 513000
             },
             {
               "nom": "Caritas Vaud",
@@ -46,47 +103,28 @@
           ]
         },
         {
-          "secteur": "Sport",
-          "count": 45,
-          "total_chf": 4259220,
+          "secteur": "Conservation du patrimoine",
+          "count": 75,
+          "total_chf": 5454650,
           "top_3": [
             {
-              "nom": "Assoc. Basketball World Cup Lausanne 2025",
-              "chf": 425000
+              "nom": "Assoc. pour le 750 e anniversaire de la Cathédrale de Lausanne",
+              "chf": 650000
             },
             {
-              "nom": "Assoc. Cantonale Vaudoise de Football",
-              "chf": 406900
+              "nom": "Assoc. Lavaux Patrimoine mondial (LPm)",
+              "chf": 500000
             },
             {
-              "nom": "Fond. Internationale Tir à l'Arc (FIDTA)",
-              "chf": 300000
-            }
-          ]
-        },
-        {
-          "secteur": "Jeunesse et éducation",
-          "count": 8,
-          "total_chf": 3172000,
-          "top_3": [
-            {
-              "nom": "Fond. pour l'accueil de jour des enfants (FAJE)",
-              "chf": 1500000
-            },
-            {
-              "nom": "Fond. Yverdonnoise pour l'Accueil de l'Enfance (FYAE)",
-              "chf": 513000
-            },
-            {
-              "nom": "Fond. de l'Enfance et de la Jeunesse",
-              "chf": 360000
+              "nom": "Fond. École Suisse d’Archéologie en Grèce (ESAG)",
+              "chf": 500000
             }
           ]
         },
         {
           "secteur": "Promotion, tourisme et développement",
-          "count": 5,
-          "total_chf": 1855000,
+          "count": 12,
+          "total_chf": 1824800,
           "top_3": [
             {
               "nom": "Assoc. Vaud Promotion",
@@ -103,78 +141,40 @@
           ]
         },
         {
-          "secteur": "Conservation du patrimoine",
-          "count": 6,
-          "total_chf": 1778000,
-          "top_3": [
-            {
-              "nom": "Assoc. pour le 750e anniversaire de la Cathédrale de Lausanne",
-              "chf": 650000
-            },
-            {
-              "nom": "Sté Vaudoise d'Astronomie (SVA)",
-              "chf": 500000
-            },
-            {
-              "nom": "Fond. Les Mollards-des-Aubert",
-              "chf": 400000
-            }
-          ]
-        },
-        {
-          "secteur": "Formation et recherche",
-          "count": 7,
-          "total_chf": 1531960,
-          "top_3": [
-            {
-              "nom": "Fond. École Suisse d'Archéologie en Grèce (ESAG)",
-              "chf": 500000
-            },
-            {
-              "nom": "Fond. pour le soutien de la recherche et du développement de l'oncologie (FSRDO)",
-              "chf": 400000
-            },
-            {
-              "nom": "NeurocelliA - Assoc. de thérapie cellulaire en neurosciences",
-              "chf": 300000
-            }
-          ]
-        },
-        {
-          "secteur": "Santé et handicap",
-          "count": 7,
-          "total_chf": 1395000,
-          "top_3": [
-            {
-              "nom": "Fond. Transport Handicap Vaud (THV)",
-              "chf": 350000
-            },
-            {
-              "nom": "Le Foyer - Centre éducatif personnes aveugles ou malvoyantes intellectuellement handicapées",
-              "chf": 250000
-            },
-            {
-              "nom": "Pôle Santé du Pays-d'Enhaut",
-              "chf": 200000
-            }
-          ]
-        },
-        {
           "secteur": "Environnement",
-          "count": 5,
-          "total_chf": 648000,
+          "count": 29,
+          "total_chf": 779525,
           "top_3": [
             {
               "nom": "Erminea",
               "chf": 400000
             },
             {
-              "nom": "Fond. La Maison de la Rivière",
-              "chf": 70000
+              "nom": "Assoc. Vaudoise de Basketball",
+              "chf": 69100
             },
             {
               "nom": "Assoc. de l'Arboretum National du Vallon de l'Aubonne (AAVA)",
               "chf": 68000
+            }
+          ]
+        },
+        {
+          "secteur": "Formation et recherche",
+          "count": 7,
+          "total_chf": 655000,
+          "top_3": [
+            {
+              "nom": "NeurocelliA - Assoc. de thérapie cellulaire en neurosciences",
+              "chf": 300000
+            },
+            {
+              "nom": "Swiss Solar Boat",
+              "chf": 140000
+            },
+            {
+              "nom": "Assoc. pour l’histoire vaudoise",
+              "chf": 75000
             }
           ]
         }
@@ -182,149 +182,172 @@
     },
     {
       "canton": "GE",
-      "total_chf": 41080174,
+      "total_chf": 43835503,
       "secteurs": [
         {
+          "secteur": "Culture",
+          "count": 253,
+          "total_chf": 18673689,
+          "top_3": [
+            {
+              "nom": "Fond. Immobilière Privée pour l'Insertion Sociale",
+              "chf": 4000000
+            },
+            {
+              "nom": "Fond. Cinéforom",
+              "chf": 1700000
+            },
+            {
+              "nom": "Switzerland for UNHCR",
+              "chf": 1500000
+            }
+          ]
+        },
+        {
+          "secteur": "Santé et handicap",
+          "count": 48,
+          "total_chf": 7408600,
+          "top_3": [
+            {
+              "nom": "Fond. de la Cité universitaire de Genève Maison d'Albert - Démolition, Genève",
+              "chf": 4000000
+            },
+            {
+              "nom": "Fond. Trajets, Plan-les-Ouates Mise aux normes et aménagement",
+              "chf": 2000000
+            },
+            {
+              "nom": "Assoc. Swiss Aware",
+              "chf": 150000
+            }
+          ]
+        },
+        {
           "secteur": "Action sociale et personnes âgées",
-          "count": 70,
-          "total_chf": 14751300,
+          "count": 30,
+          "total_chf": 7054300,
           "top_3": [
             {
               "nom": "Communauté des Chiffonniers d'Emmaüs Genève",
               "chf": 4000000
             },
             {
-              "nom": "Fond. Immobilière Privée pour l'Insertion Sociale",
-              "chf": 4000000
+              "nom": "Fond. officielle de la jeunesse",
+              "chf": 1100000
             },
             {
-              "nom": "Fond. Trajets",
-              "chf": 2000000
-            }
-          ]
-        },
-        {
-          "secteur": "Culture",
-          "count": 273,
-          "total_chf": 12862354,
-          "top_3": [
-            {
-              "nom": "Switzerland for UNHCR",
-              "chf": 1500000
-            },
-            {
-              "nom": "Fond. Hainard",
-              "chf": 1120000
-            },
-            {
-              "nom": "Assoc. Les Saisons Bleues",
-              "chf": 400000
-            }
-          ]
-        },
-        {
-          "secteur": "Sport",
-          "count": 404,
-          "total_chf": 5733120,
-          "top_3": [
-            {
-              "nom": "Team Genève 2024",
-              "chf": 188000
-            },
-            {
-              "nom": "Assoc. Cantonale Genevoise Football (ACGF)",
-              "chf": 150000
-            },
-            {
-              "nom": "Assoc. Régionale Genève Tennis (ARGT)",
-              "chf": 150000
-            }
-          ]
-        },
-        {
-          "secteur": "Jeunesse et éducation",
-          "count": 1,
-          "total_chf": 4000000,
-          "top_3": [
-            {
-              "nom": "Fond. de la Cité universitaire de Genève - Maison d'Albert",
-              "chf": 4000000
-            }
-          ]
-        },
-        {
-          "secteur": "Santé et handicap",
-          "count": 84,
-          "total_chf": 2767900,
-          "top_3": [
-            {
-              "nom": "Fond. Foyer-Handicap",
-              "chf": 200000
-            },
-            {
-              "nom": "Assoc. Parole",
-              "chf": 132000
-            },
-            {
-              "nom": "Fond. Just for Smiles",
-              "chf": 110000
+              "nom": "Assoc. Caritas Genève",
+              "chf": 450000
             }
           ]
         },
         {
           "secteur": "Conservation du patrimoine",
-          "count": 8,
-          "total_chf": 455000,
+          "count": 40,
+          "total_chf": 3527390,
+          "top_3": [
+            {
+              "nom": "Fond. Portail des Nations, Genève Portail des Nations, une expérience",
+              "chf": 1000000
+            },
+            {
+              "nom": "Section genevoise du Club Alpin Suisse",
+              "chf": 400000
+            },
+            {
+              "nom": "Fond. OSR",
+              "chf": 350000
+            }
+          ]
+        },
+        {
+          "secteur": "Sport",
+          "count": 111,
+          "total_chf": 2854942,
+          "top_3": [
+            {
+              "nom": "Assoc. Cantonale Vaudoise de Football",
+              "chf": 406900
+            },
+            {
+              "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
+              "chf": 297600
+            },
+            {
+              "nom": "Assoc. Fribourgeoise de Football",
+              "chf": 251690
+            }
+          ]
+        },
+        {
+          "secteur": "Jeunesse et éducation",
+          "count": 59,
+          "total_chf": 1885400,
+          "top_3": [
+            {
+              "nom": "fond'IMAD, Grand-Lancy Nouvelle Unité d'accueil temporaire",
+              "chf": 350000
+            },
+            {
+              "nom": "Fond. Foyer-Handicap",
+              "chf": 200000
+            },
+            {
+              "nom": "Assoc. Art'O'Danse",
+              "chf": 90000
+            }
+          ]
+        },
+        {
+          "secteur": "Promotion, tourisme et développement",
+          "count": 78,
+          "total_chf": 1722900,
+          "top_3": [
+            {
+              "nom": "Assoc. Cantonale Genevoise Football",
+              "chf": 150000
+            },
+            {
+              "nom": "Assoc. Régionale Genève Tennis",
+              "chf": 150000
+            },
+            {
+              "nom": "Assoc. Cantonale Genevoise",
+              "chf": 146900
+            }
+          ]
+        },
+        {
+          "secteur": "Environnement",
+          "count": 20,
+          "total_chf": 648282,
           "top_3": [
             {
               "nom": "Fond. Aigues-Vertes",
               "chf": 200000
             },
             {
-              "nom": "Paroisse protestante",
-              "chf": 100000
+              "nom": "Tigre - Faîtière genevoise des producteur·ice·x·s de théâtre indépendant et professionnel, Lieu de stockage et mutualisation",
+              "chf": 90000
             },
             {
-              "nom": "Fond. Autrefois Genève",
-              "chf": 75000
+              "nom": "Assoc. Éco-Citoyen, Grand-Lancy Free-Go, un réseau, Grand-Lancy",
+              "chf": 60000
             }
           ]
         },
         {
           "secteur": "Formation et recherche",
-          "count": 13,
-          "total_chf": 411000,
+          "count": 2,
+          "total_chf": 60000,
           "top_3": [
             {
-              "nom": "Assoc. Éco-Citoyen",
-              "chf": 60000
+              "nom": "Assoc. GeGrave",
+              "chf": 30000
             },
             {
-              "nom": "Assoc. Genèveroule Fond. CERN & Sté",
-              "chf": 60000
-            },
-            {
-              "nom": "Sté Coopérative Meriweza",
-              "chf": 40000
-            }
-          ]
-        },
-        {
-          "secteur": "Environnement",
-          "count": 5,
-          "total_chf": 99500,
-          "top_3": [
-            {
-              "nom": "Scène Vagabonde Festival",
-              "chf": 40000
-            },
-            {
-              "nom": "Rencontres cinématographiques Palestine : Filmer C'est Exister - PFC'E",
-              "chf": 28000
-            },
-            {
-              "nom": "Alliance Internationales",
-              "chf": 13000
+              "nom": "Fond. CERN & Sté, Meyrin Sommet Art et Science du CERN.",
+              "chf": 30000
             }
           ]
         }
@@ -332,20 +355,20 @@
     },
     {
       "canton": "VS",
-      "total_chf": 27791458,
+      "total_chf": 25783736,
       "secteurs": [
         {
           "secteur": "Culture",
-          "count": 46,
-          "total_chf": 8507364,
+          "count": 248,
+          "total_chf": 12096722,
           "top_3": [
+            {
+              "nom": "Fond. Foyers Valais de cœur",
+              "chf": 1000000
+            },
             {
               "nom": "Fond. du Verbier Festival",
               "chf": 750000
-            },
-            {
-              "nom": "Théâtre Pro",
-              "chf": 566000
             },
             {
               "nom": "Fond. du Conservatoire cantonal de musique",
@@ -354,74 +377,17 @@
           ]
         },
         {
-          "secteur": "Sport",
-          "count": 43,
-          "total_chf": 6668906,
+          "secteur": "Conservation du patrimoine",
+          "count": 33,
+          "total_chf": 5160500,
           "top_3": [
             {
-              "nom": "Assoc. organisation Championnats du Monde MTB UCI Valais 2025",
+              "nom": "Assoc. pour l'organisation des Championnats du Monde MTB UCI Valais 2025",
               "chf": 1500000
             },
             {
-              "nom": "Sté des Amis de Valère - Fonds sport",
-              "chf": 700000
-            },
-            {
-              "nom": "Assoc. valaisanne de football",
-              "chf": 433135
-            }
-          ]
-        },
-        {
-          "secteur": "Environnement",
-          "count": 5,
-          "total_chf": 4029000,
-          "top_3": [
-            {
-              "nom": "Fonds pour venir en aide aux victimes de dommages non assurables",
-              "chf": 3700000
-            },
-            {
-              "nom": "Verein Lebens- und Erlebnisraum Pfyn-Finges",
-              "chf": 138000
-            },
-            {
-              "nom": "Fond. développement durable régions montagne (FDDM)",
-              "chf": 120000
-            }
-          ]
-        },
-        {
-          "secteur": "Action sociale et personnes âgées",
-          "count": 20,
-          "total_chf": 3308393,
-          "top_3": [
-            {
-              "nom": "Fond. Foyers Valais de cœur",
-              "chf": 1000000
-            },
-            {
-              "nom": "Fonds mis à disposition du CE Solidarité",
-              "chf": 500000
-            },
-            {
-              "nom": "Bénévoles Valais-Wallis",
-              "chf": 279249
-            }
-          ]
-        },
-        {
-          "secteur": "Promotion, tourisme et développement",
-          "count": 9,
-          "total_chf": 2730000,
-          "top_3": [
-            {
               "nom": "Sté des Amis de Valère",
               "chf": 700000
-            },
-            {
-              "nom": "Valais/Wallis Promotion",
-              "chf": 500000
             },
             {
               "nom": "Fond. The Ark",
@@ -430,70 +396,135 @@
           ]
         },
         {
-          "secteur": "Conservation du patrimoine",
-          "count": 14,
-          "total_chf": 1317000,
+          "secteur": "Sport",
+          "count": 173,
+          "total_chf": 3473318,
           "top_3": [
             {
-              "nom": "Kirchenrat der Herz-Jesu Pfarrei Saas-Fee",
-              "chf": 248000
+              "nom": "Fond. Patrouille des Glaciers",
+              "chf": 225000
             },
             {
-              "nom": "Kirchenrat der Herz-Jesu Pfarrei Brig",
+              "nom": "Walliser Skiverband - Ski Valais",
               "chf": 200000
             },
             {
-              "nom": "Kirchenrat der Pfarrei Regina Pacis",
-              "chf": 170000
-            }
-          ]
-        },
-        {
-          "secteur": "Santé et handicap",
-          "count": 10,
-          "total_chf": 662500,
-          "top_3": [
-            {
-              "nom": "Fond. Terre des Hommes Valais",
-              "chf": 230000
-            },
-            {
-              "nom": "Assoc. La Parenthèse",
-              "chf": 107500
-            },
-            {
-              "nom": "Assoc. MaRaVal",
-              "chf": 86000
+              "nom": "Walliser Skiverband - Ski Valais",
+              "chf": 200000
             }
           ]
         },
         {
           "secteur": "Jeunesse et éducation",
-          "count": 11,
-          "total_chf": 320950,
+          "count": 39,
+          "total_chf": 1376950,
           "top_3": [
             {
-              "nom": "Assoc. JR",
-              "chf": 65000
+              "nom": "Assoc. Culture Valais",
+              "chf": 175000
             },
             {
-              "nom": "Assoc. La Fontanelle",
-              "chf": 50000
+              "nom": "Assoc. DreamAgo Swiss",
+              "chf": 155000
             },
             {
-              "nom": "Assoc. Mountain Performance",
-              "chf": 40000
+              "nom": "Assoc. de la Ferme-Asile",
+              "chf": 153000
+            }
+          ]
+        },
+        {
+          "secteur": "Promotion, tourisme et développement",
+          "count": 20,
+          "total_chf": 1367046,
+          "top_3": [
+            {
+              "nom": "Valais/Wallis Promotion",
+              "chf": 500000
+            },
+            {
+              "nom": "Valrando - Assoc. valaisanne de la randonnée",
+              "chf": 130000
+            },
+            {
+              "nom": "Assoc. Bike Freeride",
+              "chf": 120000
+            }
+          ]
+        },
+        {
+          "secteur": "Santé et handicap",
+          "count": 46,
+          "total_chf": 1295650,
+          "top_3": [
+            {
+              "nom": "Terre des hommes Valais",
+              "chf": 200000
+            },
+            {
+              "nom": "Assoc. Croix-Rouge Valais",
+              "chf": 111000
+            },
+            {
+              "nom": "Assoc. Fête de la Danse Fribourg (AFDDF)",
+              "chf": 95000
+            }
+          ]
+        },
+        {
+          "secteur": "Action sociale et personnes âgées",
+          "count": 28,
+          "total_chf": 528650,
+          "top_3": [
+            {
+              "nom": "Assoc. Beaulieu Résidences",
+              "chf": 122000
+            },
+            {
+              "nom": "Assoc. du Foyer St-Joseph",
+              "chf": 70000
+            },
+            {
+              "nom": "Alters- und Pflegeheim Englischgruss",
+              "chf": 57000
             }
           ]
         },
         {
           "secteur": "Formation et recherche",
-          "count": 1,
-          "total_chf": 247345,
+          "count": 7,
+          "total_chf": 410345,
           "top_3": [
             {
               "nom": "Assoc. Salon des Métiers",
               "chf": 247345
+            },
+            {
+              "nom": "Bildungshaus St. Jodern",
+              "chf": 50000
+            },
+            {
+              "nom": "Fond. IPT",
+              "chf": 50000
+            }
+          ]
+        },
+        {
+          "secteur": "Environnement",
+          "count": 9,
+          "total_chf": 74555,
+          "top_3": [
+            {
+              "nom": "Visarte.Wallis",
+              "chf": 29000
+            },
+            {
+              "nom": "Sion 2024 Journée Fédérale des lutteurs",
+              "chf": 13480
+            },
+            {
+              "nom": "PUSCH - L’environnement en pratique, Sion Voisinages fleuris ! Des prairies naturelles pour plus de biodiversité",
+              "chf": 10000
             }
           ]
         }
@@ -501,31 +532,31 @@
     },
     {
       "canton": "FR",
-      "total_chf": 22047668,
+      "total_chf": 23545590,
       "secteurs": [
         {
-          "secteur": "Culture",
-          "count": 50,
-          "total_chf": 7731135,
+          "secteur": "Santé et handicap",
+          "count": 137,
+          "total_chf": 7488075,
           "top_3": [
             {
               "nom": "Fond. Equilibre et Nuithonie",
               "chf": 900000
             },
             {
-              "nom": "Festival International du Film de Fribourg",
-              "chf": 580000
+              "nom": "Ligue fribourgeoise contre le cancer, Conseil et soutien, dépistage du cancer",
+              "chf": 778000
             },
             {
-              "nom": "Centre dramatique fribourgeois - Théâtre des Osses",
-              "chf": 501250
+              "nom": "Fri-Son",
+              "chf": 280000
             }
           ]
         },
         {
           "secteur": "Action sociale et personnes âgées",
-          "count": 29,
-          "total_chf": 5512300,
+          "count": 67,
+          "total_chf": 5142485,
           "top_3": [
             {
               "nom": "Fond. Pro Senectute Fribourg",
@@ -543,88 +574,134 @@
         },
         {
           "secteur": "Sport",
-          "count": 26,
-          "total_chf": 3237444,
+          "count": 222,
+          "total_chf": 4303947,
           "top_3": [
             {
-              "nom": "FC Châtel, Athlética Veveyse, Boxing-club, Club lutteurs",
-              "chf": 400000
-            },
-            {
-              "nom": "Centre de Gymnastique Régional de Romont",
-              "chf": 400000
-            },
-            {
               "nom": "FC Siviriez",
+              "chf": 300000
+            },
+            {
+              "nom": "Université de Fribourg Assainissement du stade",
+              "chf": 300000
+            },
+            {
+              "nom": "Université de Fribourg Assainissement de la piste d'athlétisme",
               "chf": 300000
             }
           ]
         },
         {
           "secteur": "Jeunesse et éducation",
-          "count": 16,
-          "total_chf": 2051473,
+          "count": 40,
+          "total_chf": 1534791,
           "top_3": [
             {
-              "nom": "Assoc. REPER",
-              "chf": 405000
+              "nom": "Fond. ATD Quart Monde Suisse, Treyvaux Les Chantiers découverte et reconstruction du Secrétariat national",
+              "chf": 309000
             },
             {
-              "nom": "Programme Culture & École",
-              "chf": 340000
+              "nom": "Espacefemmes-frauenraum",
+              "chf": 220000
             },
             {
-              "nom": "famiya",
-              "chf": 203100
-            }
-          ]
-        },
-        {
-          "secteur": "Santé et handicap",
-          "count": 11,
-          "total_chf": 2038000,
-          "top_3": [
-            {
-              "nom": "Ligue fribourgeoise contre le cancer",
-              "chf": 778000
-            },
-            {
-              "nom": "diabètefribourg",
-              "chf": 250000
-            },
-            {
-              "nom": "AFAAP",
-              "chf": 240000
-            }
-          ]
-        },
-        {
-          "secteur": "Conservation du patrimoine",
-          "count": 13,
-          "total_chf": 1307316,
-          "top_3": [
-            {
-              "nom": "Maison des Amériques",
-              "chf": 300000
-            },
-            {
-              "nom": "Vitrocentre Romont",
-              "chf": 160000
-            },
-            {
-              "nom": "Fond. pour la Rénovation Couvent des Cordeliers",
-              "chf": 125000
+              "nom": "Bibliothèque interculturelle, LivrEchange",
+              "chf": 190000
             }
           ]
         },
         {
           "secteur": "Formation et recherche",
-          "count": 1,
-          "total_chf": 170000,
+          "count": 25,
+          "total_chf": 1419390,
           "top_3": [
+            {
+              "nom": "Nouvel Opéra Fribourg",
+              "chf": 401000
+            },
+            {
+              "nom": "Fond. pour le soutien de la recherche et du développement de l'oncologie (FSRDO)",
+              "chf": 400000
+            },
             {
               "nom": "Lire et écrire section Fribourg",
               "chf": 170000
+            }
+          ]
+        },
+        {
+          "secteur": "Conservation du patrimoine",
+          "count": 35,
+          "total_chf": 1368016,
+          "top_3": [
+            {
+              "nom": "Vitrocentre Romont - Centre suisse de recherche sur le vitrail et les arts du verre",
+              "chf": 200000
+            },
+            {
+              "nom": "Verein Sommerfestspiele Murten",
+              "chf": 135000
+            },
+            {
+              "nom": "Tonverein Bad Bonn",
+              "chf": 125000
+            }
+          ]
+        },
+        {
+          "secteur": "Culture",
+          "count": 35,
+          "total_chf": 1290566,
+          "top_3": [
+            {
+              "nom": "Orchestre de chambre fribourgeois",
+              "chf": 425000
+            },
+            {
+              "nom": "Solidarité Femmes Fribourg",
+              "chf": 330000
+            },
+            {
+              "nom": "Proches-Aidants Fribourg",
+              "chf": 65000
+            }
+          ]
+        },
+        {
+          "secteur": "Environnement",
+          "count": 19,
+          "total_chf": 602920,
+          "top_3": [
+            {
+              "nom": "Maison des Amériques, Châtel-St-Denis Musée traitant de la migration des Fribourgeois-es au 19 e",
+              "chf": 300000
+            },
+            {
+              "nom": "RFI - Rencontres Internationales de Folklore de Fribourg",
+              "chf": 115000
+            },
+            {
+              "nom": "Fond. Pro Vallon",
+              "chf": 60000
+            }
+          ]
+        },
+        {
+          "secteur": "Promotion, tourisme et développement",
+          "count": 13,
+          "total_chf": 395400,
+          "top_3": [
+            {
+              "nom": "Stiftung BIBEL+ORIENT, Universität",
+              "chf": 100000
+            },
+            {
+              "nom": "VITROMUSEE ROMONT",
+              "chf": 80000
+            },
+            {
+              "nom": "Stiftung Museum Murten",
+              "chf": 42600
             }
           ]
         }
@@ -632,138 +709,353 @@
     },
     {
       "canton": "SR",
-      "total_chf": 9597142,
+      "total_chf": 22989022,
       "secteurs": [
         {
-          "secteur": "Culture",
-          "count": 47,
-          "total_chf": 4392000,
+          "secteur": "Sport",
+          "count": 490,
+          "total_chf": 8163877,
           "top_3": [
             {
-              "nom": "Fond. Cinéforom",
-              "chf": 1700000
+              "nom": "et sport scolaire",
+              "chf": 736197
             },
             {
-              "nom": "Assoc. CORODIS",
-              "chf": 700000
+              "nom": "FC Châtel, Athlética Veveyse, Boxing-club, Club des lutteurs Bâtiments multisports de Lussy -",
+              "chf": 400000
             },
             {
-              "nom": "Fond. OSR",
+              "nom": "Assoc. La Lanterne Magique",
+              "chf": 290000
+            }
+          ]
+        },
+        {
+          "secteur": "Culture",
+          "count": 129,
+          "total_chf": 5595310,
+          "top_3": [
+            {
+              "nom": "FAC - Fonds d’attributions",
+              "chf": 890000
+            },
+            {
+              "nom": "Fond. pour l'art dramatique -",
+              "chf": 650000
+            },
+            {
+              "nom": "Fond. GIFF - Geneva International",
+              "chf": 300000
+            }
+          ]
+        },
+        {
+          "secteur": "Promotion, tourisme et développement",
+          "count": 41,
+          "total_chf": 2569000,
+          "top_3": [
+            {
+              "nom": "Clubs – Sports collectifs",
+              "chf": 794000
+            },
+            {
+              "nom": "Clubs – Sports individuels",
+              "chf": 617050
+            },
+            {
+              "nom": "Relève athlètes – Sports",
+              "chf": 458000
+            }
+          ]
+        },
+        {
+          "secteur": "Conservation du patrimoine",
+          "count": 62,
+          "total_chf": 2485520,
+          "top_3": [
+            {
+              "nom": "Fond. pour l'Écrit",
+              "chf": 500000
+            },
+            {
+              "nom": "Fond. FIFDH",
               "chf": 350000
+            },
+            {
+              "nom": "SAC Sektion Olten",
+              "chf": 300000
+            }
+          ]
+        },
+        {
+          "secteur": "Environnement",
+          "count": 48,
+          "total_chf": 1442965,
+          "top_3": [
+            {
+              "nom": "Va la is",
+              "chf": 259818
+            },
+            {
+              "nom": "Bucher Louis, Bassecourt - Cyclisme (trial) Finsterwald Nayan, Corban - Cyclisme (trial) Saucy Gaëtan",
+              "chf": 225625
+            },
+            {
+              "nom": "Entités (activité générale)",
+              "chf": 139900
             }
           ]
         },
         {
           "secteur": "Santé et handicap",
-          "count": 48,
-          "total_chf": 2656000,
+          "count": 63,
+          "total_chf": 954850,
+          "top_3": [
+            {
+              "nom": "Assoc. Cérébral Vaud",
+              "chf": 90000
+            },
+            {
+              "nom": "Les Amis des éditions Infolio - Vaud",
+              "chf": 70000
+            },
+            {
+              "nom": "Assoc. Medical Flair, Chardonne Chiens spécialisés en alerte médicale",
+              "chf": 70000
+            }
+          ]
+        },
+        {
+          "secteur": "Action sociale et personnes âgées",
+          "count": 34,
+          "total_chf": 946400,
+          "top_3": [
+            {
+              "nom": "Assoc. pour l'Éducation Familiale",
+              "chf": 216000
+            },
+            {
+              "nom": "Assoc. Lire et Écrire",
+              "chf": 160000
+            },
+            {
+              "nom": "Assoc. Médecins du Monde Suisse",
+              "chf": 85000
+            }
+          ]
+        },
+        {
+          "secteur": "Jeunesse et éducation",
+          "count": 26,
+          "total_chf": 498600,
+          "top_3": [
+            {
+              "nom": "Institut Éthique Histoire Humanités (iEH2), Faculté de médecine",
+              "chf": 99000
+            },
+            {
+              "nom": "Fond. Les Noisetiers",
+              "chf": 44600
+            },
+            {
+              "nom": "Fond. de Vernand",
+              "chf": 40000
+            }
+          ]
+        },
+        {
+          "secteur": "Formation et recherche",
+          "count": 12,
+          "total_chf": 332500,
+          "top_3": [
+            {
+              "nom": "marionNEttes - festival international",
+              "chf": 170000
+            },
+            {
+              "nom": "La Tarentule",
+              "chf": 40000
+            },
+            {
+              "nom": "Le Lokart, collectif artistique",
+              "chf": 30000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canton": "NE",
+      "total_chf": 13002024,
+      "secteurs": [
+        {
+          "secteur": "Culture",
+          "count": 151,
+          "total_chf": 5464300,
+          "top_3": [
+            {
+              "nom": "Fond. Arc en Scène - centre neuchâtelois des arts vivants - TPR",
+              "chf": 475000
+            },
+            {
+              "nom": "Ensemble Symphonique Neuchâtel - ESN",
+              "chf": 375000
+            },
+            {
+              "nom": "Neuchâtel International Fantastic Film Festival, Neuchâtel NIFFF 2025 - Festival international",
+              "chf": 350000
+            }
+          ]
+        },
+        {
+          "secteur": "Sport",
+          "count": 111,
+          "total_chf": 2644890,
+          "top_3": [
+            {
+              "nom": "Pro Junior - arc jurassien",
+              "chf": 840000
+            },
+            {
+              "nom": "FAS Fond. neuchâteloise pour la coordination de l'action sociale",
+              "chf": 407000
+            },
+            {
+              "nom": "Fond. Bibliothèque de Neuchâtel",
+              "chf": 150000
+            }
+          ]
+        },
+        {
+          "secteur": "Formation et recherche",
+          "count": 41,
+          "total_chf": 1665500,
+          "top_3": [
+            {
+              "nom": "Opéra décentralisé",
+              "chf": 375000
+            },
+            {
+              "nom": "Môtiers - Art en plein air",
+              "chf": 300000
+            },
+            {
+              "nom": "L'avant-scène Opéra",
+              "chf": 210000
+            }
+          ]
+        },
+        {
+          "secteur": "Action sociale et personnes âgées",
+          "count": 57,
+          "total_chf": 1277700,
+          "top_3": [
+            {
+              "nom": "Assoc. des Amis du théâtre du Passage",
+              "chf": 250000
+            },
+            {
+              "nom": "Assoc. Eva Prod",
+              "chf": 130000
+            },
+            {
+              "nom": "Assoc. Alt. + 1000 - festival de photographie",
+              "chf": 130000
+            }
+          ]
+        },
+        {
+          "secteur": "Conservation du patrimoine",
+          "count": 45,
+          "total_chf": 895410,
+          "top_3": [
+            {
+              "nom": "ASPAM - assoc. pour la protection du patrimoine des Montagnes neuchâteloises",
+              "chf": 210000
+            },
+            {
+              "nom": "Fond. du Club 44",
+              "chf": 100000
+            },
+            {
+              "nom": "Château de Valangin",
+              "chf": 85000
+            }
+          ]
+        },
+        {
+          "secteur": "Jeunesse et éducation",
+          "count": 13,
+          "total_chf": 559500,
           "top_3": [
             {
               "nom": "La Lanterne Magique",
               "chf": 380000
             },
             {
-              "nom": "ATD-Quart Monde Suisse",
-              "chf": 300000
+              "nom": "Assoc. N'Terractive",
+              "chf": 40000
             },
             {
-              "nom": "Fond. du Verbier Festival",
-              "chf": 150000
+              "nom": "Assoc. Cantonale des Musiques Neuchâteloises - ACMN",
+              "chf": 30000
             }
           ]
         },
         {
-          "secteur": "Sport",
-          "count": 39,
-          "total_chf": 1269142,
+          "secteur": "Promotion, tourisme et développement",
+          "count": 12,
+          "total_chf": 256500,
           "top_3": [
             {
-              "nom": "Fond. du Tour de Romandie",
-              "chf": 286450
+              "nom": "Pro Evologia - Assoc. des amis d'Evologia",
+              "chf": 85000
             },
             {
-              "nom": "Fond. du Tour de Romandie",
-              "chf": 202300
+              "nom": "NSF - Neuchâtel Ski de Fond",
+              "chf": 45000
             },
             {
-              "nom": "Fond. Tour de Romandie",
-              "chf": 110500
+              "nom": "Sté des Gorges de la Poeta-Raisse",
+              "chf": 30000
             }
           ]
         },
         {
-          "secteur": "Conservation du patrimoine",
-          "count": 5,
-          "total_chf": 480000,
+          "secteur": "Santé et handicap",
+          "count": 9,
+          "total_chf": 185000,
           "top_3": [
             {
-              "nom": "Lausanne",
-              "chf": 200000
+              "nom": "Fond. Les Perce-Neige",
+              "chf": 138000
             },
             {
-              "nom": "Vitrocentre Romont",
-              "chf": 200000
+              "nom": "L'outil de la ressemblance",
+              "chf": 12000
             },
             {
-              "nom": "Assoc. Palafittalp",
-              "chf": 50000
-            }
-          ]
-        },
-        {
-          "secteur": "Action sociale et personnes âgées",
-          "count": 3,
-          "total_chf": 340000,
-          "top_3": [
-            {
-              "nom": "Terre des hommes Valais",
-              "chf": 200000
-            },
-            {
-              "nom": "PIJA-Assoc. du Prix International des Jeunes Auteurs",
-              "chf": 75000
-            },
-            {
-              "nom": "Pro Juventute-Secrétariat romand",
-              "chf": 65000
-            }
-          ]
-        },
-        {
-          "secteur": "Jeunesse et éducation",
-          "count": 7,
-          "total_chf": 260000,
-          "top_3": [
-            {
-              "nom": "Lausanne",
-              "chf": 65000
-            },
-            {
-              "nom": "Assoc. Cap sur le Monde",
-              "chf": 60000
-            },
-            {
-              "nom": "Assoc. AROLE",
-              "chf": 50000
+              "nom": "Antenne Handicap Mental",
+              "chf": 12000
             }
           ]
         },
         {
           "secteur": "Environnement",
-          "count": 7,
-          "total_chf": 200000,
+          "count": 6,
+          "total_chf": 53224,
           "top_3": [
             {
-              "nom": "Assoc. Zero Waste Switzerland",
-              "chf": 50000
+              "nom": "Féd. cantonale Neuchâteloise d'Apiculture",
+              "chf": 25000
             },
             {
-              "nom": "Assoc. TerrraTerrre",
-              "chf": 40000
+              "nom": "BoxUp SA Part LoRo-Sport sur la station",
+              "chf": 7408
             },
             {
-              "nom": "Organisation Pour la Protection des Alpages (OPPAL)",
-              "chf": 40000
+              "nom": "BoxUp SA Part LoRo-Sport sur la station",
+              "chf": 7408
             }
           ]
         }
@@ -771,88 +1063,88 @@
     },
     {
       "canton": "JU",
-      "total_chf": 7178113,
+      "total_chf": 7024311,
       "secteurs": [
         {
-          "secteur": "Culture",
-          "count": 200,
-          "total_chf": 2633160,
-          "top_3": [
-            {
-              "nom": "Fond. pour le Théâtre du Jura",
-              "chf": 260000
-            },
-            {
-              "nom": "Assoc. Stand'été",
-              "chf": 160000
-            },
-            {
-              "nom": "Crescendo",
-              "chf": 150000
-            }
-          ]
-        },
-        {
           "secteur": "Conservation du patrimoine",
-          "count": 39,
-          "total_chf": 1247100,
+          "count": 71,
+          "total_chf": 2109500,
           "top_3": [
             {
               "nom": "Musée jurassien d'art et d'histoire",
               "chf": 400000
             },
             {
+              "nom": "Fond. pour le Théâtre du Jura",
+              "chf": 260000
+            },
+            {
               "nom": "Musique des Lumières",
               "chf": 200000
-            },
-            {
-              "nom": "Ville de Porrentruy",
-              "chf": 125500
             }
           ]
         },
         {
-          "secteur": "Sport",
-          "count": 249,
-          "total_chf": 1079243,
+          "secteur": "Culture",
+          "count": 101,
+          "total_chf": 1331460,
           "top_3": [
             {
-              "nom": "Hockey Club Ajoie",
-              "chf": 90000
+              "nom": "Assoc. Jura'Zic",
+              "chf": 75000
             },
             {
-              "nom": "Municipalité de Delémont Gogniat Audrey",
-              "chf": 78000
+              "nom": "Tagada Prod",
+              "chf": 70000
             },
             {
-              "nom": "Associations (activité générale)",
-              "chf": 71591
+              "nom": "Assoc. Cultureprod",
+              "chf": 58000
             }
           ]
         },
         {
-          "secteur": "Santé et handicap",
-          "count": 62,
-          "total_chf": 985700,
+          "secteur": "Action sociale et personnes âgées",
+          "count": 60,
+          "total_chf": 1292550,
           "top_3": [
             {
-              "nom": "Commune de Saignelégier",
+              "nom": "Crescendo",
+              "chf": 150000
+            },
+            {
+              "nom": "Fond. Nez Rouge",
               "chf": 100000
             },
             {
               "nom": "Fond. St-Germain",
               "chf": 90000
+            }
+          ]
+        },
+        {
+          "secteur": "Environnement",
+          "count": 99,
+          "total_chf": 747331,
+          "top_3": [
+            {
+              "nom": "Assoc. Stand'été",
+              "chf": 160000
             },
             {
-              "nom": "Assoc. Lire et Écrire - Jura",
-              "chf": 75000
+              "nom": "Commune de Basse-Vendline",
+              "chf": 100000
+            },
+            {
+              "nom": "Commune de Courgenay",
+              "chf": 55000
             }
           ]
         },
         {
           "secteur": "Promotion, tourisme et développement",
-          "count": 27,
-          "total_chf": 962660,
+          "count": 21,
+          "total_chf": 692885,
           "top_3": [
             {
               "nom": "Jura Tourisme",
@@ -863,139 +1155,84 @@
               "chf": 200000
             },
             {
-              "nom": "Commune de Basse-Vendline HC Ajoie SA",
+              "nom": "Fond. rurale jurassienne",
+              "chf": 40000
+            }
+          ]
+        },
+        {
+          "secteur": "Jeunesse et éducation",
+          "count": 14,
+          "total_chf": 315950,
+          "top_3": [
+            {
+              "nom": "Commune de Saignelégier Maison de l'Enfance : déménagement, Saignelégier",
               "chf": 100000
+            },
+            {
+              "nom": "Commune mixte de Courtételle",
+              "chf": 50000
+            },
+            {
+              "nom": "Assoc. Pro Junior Arc jurassien",
+              "chf": 40000
+            }
+          ]
+        },
+        {
+          "secteur": "Sport",
+          "count": 34,
+          "total_chf": 193635,
+          "top_3": [
+            {
+              "nom": "FC Sainte-Croix/La Sagne Mise en conformité terrain de foot -",
+              "chf": 30240
+            },
+            {
+              "nom": "HC Ajoie SA",
+              "chf": 30000
+            },
+            {
+              "nom": "Fond. Les Castors",
+              "chf": 27000
             }
           ]
         },
         {
           "secteur": "Formation et recherche",
-          "count": 8,
-          "total_chf": 216000,
+          "count": 5,
+          "total_chf": 178500,
           "top_3": [
             {
               "nom": "BaselArea",
               "chf": 78000
             },
             {
-              "nom": "Fond. Delémont'BD",
-              "chf": 60000
-            },
-            {
-              "nom": "Musée de l'Hôtel-Dieu",
-              "chf": 30000
-            }
-          ]
-        },
-        {
-          "secteur": "Jeunesse et éducation",
-          "count": 9,
-          "total_chf": 37250,
-          "top_3": [
-            {
-              "nom": "Assoc. de la Médaille",
-              "chf": 15000
-            },
-            {
-              "nom": "Assoc. La Nef",
-              "chf": 7000
-            },
-            {
-              "nom": "Assoc. des 300 ans du Château",
-              "chf": 5000
-            }
-          ]
-        },
-        {
-          "secteur": "Action sociale et personnes âgées",
-          "count": 2,
-          "total_chf": 17000,
-          "top_3": [
-            {
-              "nom": "Assoc. Cirque à Présent",
-              "chf": 12000
-            },
-            {
-              "nom": "Assoc. La Nef",
-              "chf": 5000
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "canton": "NE",
-      "total_chf": 4533000,
-      "secteurs": [
-        {
-          "secteur": "Culture",
-          "count": 16,
-          "total_chf": 2161000,
-          "top_3": [
-            {
-              "nom": "ACDC - Assoc. de coordination de la Case à Chocs",
-              "chf": 320000
-            },
-            {
-              "nom": "ABC",
-              "chf": 300000
-            },
-            {
-              "nom": "Assoc. des Amis du théâtre du Passage",
-              "chf": 250000
-            }
-          ]
-        },
-        {
-          "secteur": "Jeunesse et éducation",
-          "count": 9,
-          "total_chf": 1457000,
-          "top_3": [
-            {
-              "nom": "Pro Junior - arc jurassien",
-              "chf": 840000
-            },
-            {
-              "nom": "Assoc. La Lanterne Magique",
-              "chf": 290000
-            },
-            {
-              "nom": "Fond. Bibliothèque de Neuchâtel",
-              "chf": 150000
-            }
-          ]
-        },
-        {
-          "secteur": "Action sociale et personnes âgées",
-          "count": 9,
-          "total_chf": 765000,
-          "top_3": [
-            {
-              "nom": "FAS Fond. neuchâteloise coordination action sociale",
-              "chf": 407000
-            },
-            {
-              "nom": "RECIF Centre de rencontres et d'échanges interculturels",
-              "chf": 90000
-            },
-            {
-              "nom": "Médecins du Monde",
+              "nom": "Sté d'histoire de l'art en Suisse - SHAS",
               "chf": 50000
+            },
+            {
+              "nom": "Service de l'enseignement",
+              "chf": 45000
             }
           ]
         },
         {
           "secteur": "Santé et handicap",
-          "count": 2,
-          "total_chf": 150000,
+          "count": 12,
+          "total_chf": 162500,
           "top_3": [
             {
-              "nom": "Fond. Les Perce-Neige",
-              "chf": 138000
+              "nom": "Fond. de promotion de la Croix-Bleue",
+              "chf": 55000
             },
             {
-              "nom": "Antenne Handicap Mental",
-              "chf": 12000
+              "nom": "Aphasie Suisse",
+              "chf": 30000
+            },
+            {
+              "nom": "Assoc. Eugénie Rebetez",
+              "chf": 25000
             }
           ]
         }

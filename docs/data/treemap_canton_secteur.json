@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Treemap canton × secteur : où va chaque CHF par canton",
-    "method": "Aggrégation par (canton, secteur). Inclut le canton 'R' pour les attributions romandes intercantonales.",
+    "method": "Aggrégation par (canton, secteur). Inclut le canton 'SR' pour les attributions romandes intercantonales.",
     "note": "Le champ 'secteur' est partiellement faussé par un bug parser (voir METHODOLOGY v13.10). Les sommes globales par canton sont correctes."
   },
   "cantons": [
@@ -11,8 +11,8 @@
       "secteurs": [
         {
           "secteur": "Culture",
-          "total_chf": 25915742,
-          "count": 344,
+          "total_chf": 25003730,
+          "count": 330,
           "top_3": [
             {
               "nom": "de l hermitage",
@@ -30,8 +30,8 @@
         },
         {
           "secteur": "Sport",
-          "total_chf": 22561989,
-          "count": 814,
+          "total_chf": 22531302,
+          "count": 816,
           "top_3": [
             {
               "nom": "trako",
@@ -49,8 +49,8 @@
         },
         {
           "secteur": "Action sociale et personnes âgées",
-          "total_chf": 9133271,
-          "count": 70,
+          "total_chf": 9030871,
+          "count": 69,
           "top_3": [
             {
               "nom": "csp centre social protestant",
@@ -68,8 +68,8 @@
         },
         {
           "secteur": "Jeunesse et éducation",
-          "total_chf": 5637700,
-          "count": 50,
+          "total_chf": 5132100,
+          "count": 48,
           "top_3": [
             {
               "nom": "pour l accueil de jour des enfants faje",
@@ -80,19 +80,19 @@
               "chf": 1000000
             },
             {
-              "nom": "de l hopital de lavaux",
-              "chf": 500000
+              "nom": "colonie vivre",
+              "chf": 350000
             }
           ]
         },
         {
           "secteur": "Santé et handicap",
-          "total_chf": 3561578,
-          "count": 17,
+          "total_chf": 4593578,
+          "count": 22,
           "top_3": [
             {
               "nom": "chuv",
-              "chf": 1023378
+              "chf": 1413378
             },
             {
               "nom": "santos suarez",
@@ -106,8 +106,8 @@
         },
         {
           "secteur": "Formation et recherche",
-          "total_chf": 3540000,
-          "count": 4,
+          "total_chf": 3150000,
+          "count": 3,
           "top_3": [
             {
               "nom": "isrec",
@@ -124,29 +124,14 @@
           ]
         },
         {
-          "secteur": "Environnement",
-          "total_chf": 3041601,
-          "count": 30,
-          "top_3": [
-            {
-              "nom": "vaud promotion",
-              "chf": 1000000
-            },
-            {
-              "nom": "du gite el jire sur les",
-              "chf": 501000
-            },
-            {
-              "nom": "vaudoise d astronomie",
-              "chf": 400000
-            }
-          ]
-        },
-        {
           "secteur": "Conservation du patrimoine",
-          "total_chf": 1347000,
-          "count": 8,
+          "total_chf": 2270700,
+          "count": 21,
           "top_3": [
+            {
+              "nom": "sskg stiftung fur",
+              "chf": 500000
+            },
             {
               "nom": "caux initiatives",
               "chf": 400000
@@ -154,10 +139,36 @@
             {
               "nom": "stiftung fur kunst",
               "chf": 400000
+            }
+          ]
+        },
+        {
+          "secteur": "Environnement",
+          "total_chf": 2026600,
+          "count": 27,
+          "top_3": [
+            {
+              "nom": "du gite el jire sur les",
+              "chf": 501000
             },
             {
-              "nom": "des amis de la chapelle de treytorrens aact",
-              "chf": 300000
+              "nom": "vaudoise d astronomie",
+              "chf": 400000
+            },
+            {
+              "nom": "forestiere de l arnon",
+              "chf": 318000
+            }
+          ]
+        },
+        {
+          "secteur": "Promotion, tourisme et développement",
+          "total_chf": 1000000,
+          "count": 1,
+          "top_3": [
+            {
+              "nom": "vaud promotion",
+              "chf": 1000000
             }
           ]
         }
@@ -169,11 +180,11 @@
       "secteurs": [
         {
           "secteur": "Culture",
-          "total_chf": 23098224,
-          "count": 333,
+          "total_chf": 19755124,
+          "count": 316,
           "top_3": [
             {
-              "nom": "pour la conservation",
+              "nom": "pour la conservation des temples genevois construits avant 1907",
               "chf": 3300000
             },
             {
@@ -181,34 +192,15 @@
               "chf": 1500000
             },
             {
-              "nom": "eglise protestante de geneve",
-              "chf": 1250000
-            }
-          ]
-        },
-        {
-          "secteur": "Action sociale et personnes âgées",
-          "total_chf": 6728990,
-          "count": 101,
-          "top_3": [
-            {
-              "nom": "vestiaire social",
-              "chf": 1600000
-            },
-            {
-              "nom": "centre de consultation",
-              "chf": 650000
-            },
-            {
-              "nom": "au cur des grottes",
-              "chf": 500000
+              "nom": "conservatoire populaire",
+              "chf": 1000000
             }
           ]
         },
         {
           "secteur": "Sport",
-          "total_chf": 6570710,
-          "count": 424,
+          "total_chf": 6829890,
+          "count": 437,
           "top_3": [
             {
               "nom": "geneve montagne",
@@ -225,9 +217,47 @@
           ]
         },
         {
+          "secteur": "Action sociale et personnes âgées",
+          "total_chf": 6697590,
+          "count": 100,
+          "top_3": [
+            {
+              "nom": "vestiaire social",
+              "chf": 1600000
+            },
+            {
+              "nom": "centre de consultation",
+              "chf": 650000
+            },
+            {
+              "nom": "au cur des grottes",
+              "chf": 500000
+            }
+          ]
+        },
+        {
+          "secteur": "Conservation du patrimoine",
+          "total_chf": 3370500,
+          "count": 13,
+          "top_3": [
+            {
+              "nom": "eglise protestante de geneve",
+              "chf": 1250000
+            },
+            {
+              "nom": "eglise anglicane de geneve",
+              "chf": 1000000
+            },
+            {
+              "nom": "colonies de vacances",
+              "chf": 800000
+            }
+          ]
+        },
+        {
           "secteur": "Formation et recherche",
-          "total_chf": 1110000,
-          "count": 11,
+          "total_chf": 1080000,
+          "count": 10,
           "top_3": [
             {
               "nom": "cite des metiers",
@@ -245,8 +275,8 @@
         },
         {
           "secteur": "Environnement",
-          "total_chf": 912290,
-          "count": 22,
+          "total_chf": 902290,
+          "count": 21,
           "top_3": [
             {
               "nom": "semences de pays",
@@ -264,8 +294,8 @@
         },
         {
           "secteur": "Santé et handicap",
-          "total_chf": 816500,
-          "count": 11,
+          "total_chf": 841500,
+          "count": 12,
           "top_3": [
             {
               "nom": "croix rouge genevoise",
@@ -283,8 +313,8 @@
         },
         {
           "secteur": "Jeunesse et éducation",
-          "total_chf": 583180,
-          "count": 4,
+          "total_chf": 570000,
+          "count": 3,
           "top_3": [
             {
               "nom": "colonie de vacances du quartier de saint gervais",
@@ -302,8 +332,8 @@
         },
         {
           "secteur": "Promotion, tourisme et développement",
-          "total_chf": 377000,
-          "count": 12,
+          "total_chf": 357000,
+          "count": 11,
           "top_3": [
             {
               "nom": "section genevoise du club alpin",
@@ -318,25 +348,6 @@
               "chf": 50000
             }
           ]
-        },
-        {
-          "secteur": "Conservation du patrimoine",
-          "total_chf": 207000,
-          "count": 5,
-          "top_3": [
-            {
-              "nom": "pour la sauvegarde de la peccadille asp",
-              "chf": 80000
-            },
-            {
-              "nom": "icrc alumni",
-              "chf": 45000
-            },
-            {
-              "nom": "paroisse protestante d onex",
-              "chf": 30000
-            }
-          ]
         }
       ]
     },
@@ -346,8 +357,8 @@
       "secteurs": [
         {
           "secteur": "Culture",
-          "total_chf": 11974414,
-          "count": 307,
+          "total_chf": 11347881,
+          "count": 291,
           "top_3": [
             {
               "nom": "canal 9 kanal 9",
@@ -365,8 +376,8 @@
         },
         {
           "secteur": "Sport",
-          "total_chf": 5248646,
-          "count": 234,
+          "total_chf": 5801807,
+          "count": 249,
           "top_3": [
             {
               "nom": "ski valais",
@@ -384,8 +395,8 @@
         },
         {
           "secteur": "Promotion, tourisme et développement",
-          "total_chf": 4038500,
-          "count": 32,
+          "total_chf": 3709872,
+          "count": 30,
           "top_3": [
             {
               "nom": "valais wallis promotion",
@@ -403,13 +414,9 @@
         },
         {
           "secteur": "Action sociale et personnes âgées",
-          "total_chf": 3401136,
-          "count": 67,
+          "total_chf": 2910870,
+          "count": 60,
           "top_3": [
-            {
-              "nom": "groupement valaisan",
-              "chf": 196266
-            },
             {
               "nom": "benevoles valais wallis",
               "chf": 153370
@@ -417,13 +424,17 @@
             {
               "nom": "beaulieu residences",
               "chf": 152000
+            },
+            {
+              "nom": "pro senectute valais",
+              "chf": 125000
             }
           ]
         },
         {
           "secteur": "Formation et recherche",
-          "total_chf": 2506500,
-          "count": 47,
+          "total_chf": 2186500,
+          "count": 38,
           "top_3": [
             {
               "nom": "saison artistique",
@@ -431,7 +442,7 @@
             },
             {
               "nom": "conseil de gestion",
-              "chf": 276000
+              "chf": 270000
             },
             {
               "nom": "recherches d hannibal ramha",
@@ -441,9 +452,13 @@
         },
         {
           "secteur": "Santé et handicap",
-          "total_chf": 1224000,
-          "count": 27,
+          "total_chf": 1649266,
+          "count": 32,
           "top_3": [
+            {
+              "nom": "groupement valaisan",
+              "chf": 196266
+            },
             {
               "nom": "terre des hommes valais",
               "chf": 170000
@@ -451,17 +466,32 @@
             {
               "nom": "transport handicap",
               "chf": 145000
+            }
+          ]
+        },
+        {
+          "secteur": "Conservation du patrimoine",
+          "total_chf": 812000,
+          "count": 15,
+          "top_3": [
+            {
+              "nom": "pour la sauvegarde du patrimoine des medias valaisans",
+              "chf": 350000
             },
             {
-              "nom": "croix rouge valais",
-              "chf": 142000
+              "nom": "kirchenrat der pfarrei regina",
+              "chf": 115000
+            },
+            {
+              "nom": "kirchenrat der pfarrei morel",
+              "chf": 80000
             }
           ]
         },
         {
           "secteur": "Jeunesse et éducation",
-          "total_chf": 603050,
-          "count": 36,
+          "total_chf": 578050,
+          "count": 35,
           "top_3": [
             {
               "nom": "colonie de vacances de martigny a ravoire",
@@ -504,8 +534,8 @@
       "secteurs": [
         {
           "secteur": "Culture",
-          "total_chf": 10265053,
-          "count": 240,
+          "total_chf": 9404953,
+          "count": 225,
           "top_3": [
             {
               "nom": "equilibre et nuithonie",
@@ -523,8 +553,8 @@
         },
         {
           "secteur": "Sport",
-          "total_chf": 7333376,
-          "count": 367,
+          "total_chf": 7558976,
+          "count": 377,
           "top_3": [
             {
               "nom": "fribourgeoise de basket 6 232",
@@ -542,8 +572,8 @@
         },
         {
           "secteur": "Action sociale et personnes âgées",
-          "total_chf": 4483726,
-          "count": 58,
+          "total_chf": 4673726,
+          "count": 59,
           "top_3": [
             {
               "nom": "la tuile",
@@ -561,7 +591,7 @@
         },
         {
           "secteur": "Santé et handicap",
-          "total_chf": 2141000,
+          "total_chf": 2139500,
           "count": 19,
           "top_3": [
             {
@@ -580,8 +610,8 @@
         },
         {
           "secteur": "Jeunesse et éducation",
-          "total_chf": 2020662,
-          "count": 92,
+          "total_chf": 2007662,
+          "count": 90,
           "top_3": [
             {
               "nom": "programme culture ecole",
@@ -599,39 +629,39 @@
         },
         {
           "secteur": "Conservation du patrimoine",
-          "total_chf": 799300,
-          "count": 16,
+          "total_chf": 1318300,
+          "count": 23,
           "top_3": [
+            {
+              "nom": "paroisse du christ roi",
+              "chf": 200000
+            },
             {
               "nom": "vitromusee romont",
               "chf": 163800
             },
             {
-              "nom": "pour la renovation et la",
+              "nom": "pour la renovation et",
               "chf": 139000
-            },
-            {
-              "nom": "pro vallon",
-              "chf": 92000
             }
           ]
         },
         {
           "secteur": "Formation et recherche",
-          "total_chf": 252000,
-          "count": 4,
+          "total_chf": 192000,
+          "count": 3,
           "top_3": [
             {
               "nom": "lire et ecrire section fribourg",
               "chf": 170000
             },
             {
-              "nom": "vitrocentre romont",
-              "chf": 60000
-            },
-            {
               "nom": "universite populaire du canton de fribourg",
               "chf": 21000
+            },
+            {
+              "nom": "seelandische volkshochschule",
+              "chf": 1000
             }
           ]
         },
@@ -662,8 +692,8 @@
       "secteurs": [
         {
           "secteur": "Culture",
-          "total_chf": 9676420,
-          "count": 277,
+          "total_chf": 9564020,
+          "count": 271,
           "top_3": [
             {
               "nom": "arc en scene centre",
@@ -681,8 +711,8 @@
         },
         {
           "secteur": "Sport",
-          "total_chf": 2759190,
-          "count": 257,
+          "total_chf": 2843590,
+          "count": 263,
           "top_3": [
             {
               "nom": "neuchatel fantastique",
@@ -695,25 +725,6 @@
             {
               "nom": "neuchatel fete federale",
               "chf": 200000
-            }
-          ]
-        },
-        {
-          "secteur": "Environnement",
-          "total_chf": 731000,
-          "count": 25,
-          "top_3": [
-            {
-              "nom": "maurice favre",
-              "chf": 250000
-            },
-            {
-              "nom": "pro evologia assoc des amis d evologia",
-              "chf": 80000
-            },
-            {
-              "nom": "sorbus",
-              "chf": 50000
             }
           ]
         },
@@ -737,9 +748,28 @@
           ]
         },
         {
+          "secteur": "Environnement",
+          "total_chf": 691000,
+          "count": 24,
+          "top_3": [
+            {
+              "nom": "maurice favre",
+              "chf": 250000
+            },
+            {
+              "nom": "pro evologia assoc des amis d evologia",
+              "chf": 80000
+            },
+            {
+              "nom": "sorbus",
+              "chf": 50000
+            }
+          ]
+        },
+        {
           "secteur": "Jeunesse et éducation",
-          "total_chf": 299000,
-          "count": 23,
+          "total_chf": 264000,
+          "count": 21,
           "top_3": [
             {
               "nom": "pro junior arc jurassien",
@@ -752,6 +782,25 @@
             {
               "nom": "cantonale des musiques",
               "chf": 30000
+            }
+          ]
+        },
+        {
+          "secteur": "Conservation du patrimoine",
+          "total_chf": 258800,
+          "count": 9,
+          "top_3": [
+            {
+              "nom": "shan ste d histoire d archeologie",
+              "chf": 100000
+            },
+            {
+              "nom": "chateau de valangin",
+              "chf": 85000
+            },
+            {
+              "nom": "centre romand d etude",
+              "chf": 25000
             }
           ]
         },
@@ -771,25 +820,6 @@
             {
               "nom": "noa assoc fun for all",
               "chf": 20000
-            }
-          ]
-        },
-        {
-          "secteur": "Conservation du patrimoine",
-          "total_chf": 155800,
-          "count": 6,
-          "top_3": [
-            {
-              "nom": "shan ste d histoire d archeologie",
-              "chf": 100000
-            },
-            {
-              "nom": "centre romand d etude",
-              "chf": 25000
-            },
-            {
-              "nom": "patrimoine xcs",
-              "chf": 15000
             }
           ]
         },
@@ -820,8 +850,8 @@
       "secteurs": [
         {
           "secteur": "Culture",
-          "total_chf": 5972600,
-          "count": 61,
+          "total_chf": 5922600,
+          "count": 58,
           "top_3": [
             {
               "nom": "cineforom",
@@ -839,8 +869,8 @@
         },
         {
           "secteur": "Sport",
-          "total_chf": 2076190,
-          "count": 69,
+          "total_chf": 2116190,
+          "count": 72,
           "top_3": [
             {
               "nom": "tour de romandie",
@@ -858,8 +888,8 @@
         },
         {
           "secteur": "Action sociale et personnes âgées",
-          "total_chf": 1129000,
-          "count": 19,
+          "total_chf": 1104000,
+          "count": 18,
           "top_3": [
             {
               "nom": "terre des hommes",
@@ -877,8 +907,8 @@
         },
         {
           "secteur": "Jeunesse et éducation",
-          "total_chf": 882000,
-          "count": 14,
+          "total_chf": 947000,
+          "count": 15,
           "top_3": [
             {
               "nom": "la lanterne magique",
@@ -896,8 +926,8 @@
         },
         {
           "secteur": "Santé et handicap",
-          "total_chf": 513000,
-          "count": 16,
+          "total_chf": 453000,
+          "count": 14,
           "top_3": [
             {
               "nom": "medical flair",
@@ -915,8 +945,8 @@
         },
         {
           "secteur": "Conservation du patrimoine",
-          "total_chf": 375000,
-          "count": 9,
+          "total_chf": 395000,
+          "count": 10,
           "top_3": [
             {
               "nom": "pour le panorama",
@@ -934,8 +964,8 @@
         },
         {
           "secteur": "Environnement",
-          "total_chf": 353320,
-          "count": 26,
+          "total_chf": 363320,
+          "count": 27,
           "top_3": [
             {
               "nom": "ffg lausanne 2025",
@@ -978,8 +1008,8 @@
       "secteurs": [
         {
           "secteur": "Culture",
-          "total_chf": 3822896,
-          "count": 272,
+          "total_chf": 3650646,
+          "count": 263,
           "top_3": [
             {
               "nom": "pour le theatre du jura",
@@ -997,8 +1027,8 @@
         },
         {
           "secteur": "Environnement",
-          "total_chf": 2356500,
-          "count": 54,
+          "total_chf": 2001500,
+          "count": 50,
           "top_3": [
             {
               "nom": "office de l environnement",
@@ -1009,15 +1039,15 @@
               "chf": 450000
             },
             {
-              "nom": "jura tourisme",
-              "chf": 320000
+              "nom": "sechselauten",
+              "chf": 200000
             }
           ]
         },
         {
           "secteur": "Sport",
-          "total_chf": 1111301,
-          "count": 220,
+          "total_chf": 1219551,
+          "count": 240,
           "top_3": [
             {
               "nom": "hockey club ajoie",
@@ -1053,6 +1083,21 @@
           ]
         },
         {
+          "secteur": "Promotion, tourisme et développement",
+          "total_chf": 340000,
+          "count": 3,
+          "top_3": [
+            {
+              "nom": "jura tourisme",
+              "chf": 320000
+            },
+            {
+              "nom": "slowup jura",
+              "chf": 20000
+            }
+          ]
+        },
+        {
           "secteur": "Jeunesse et éducation",
           "total_chf": 314900,
           "count": 19,
@@ -1072,9 +1117,28 @@
           ]
         },
         {
+          "secteur": "Conservation du patrimoine",
+          "total_chf": 294000,
+          "count": 9,
+          "top_3": [
+            {
+              "nom": "commune de fontenais",
+              "chf": 100000
+            },
+            {
+              "nom": "office cantonal de la culture",
+              "chf": 80000
+            },
+            {
+              "nom": "commune ecclesiastique de montfaucon les enfers",
+              "chf": 40000
+            }
+          ]
+        },
+        {
           "secteur": "Santé et handicap",
-          "total_chf": 227300,
-          "count": 22,
+          "total_chf": 182300,
+          "count": 9,
           "top_3": [
             {
               "nom": "itineraires",
@@ -1085,27 +1149,8 @@
               "chf": 22500
             },
             {
-              "nom": "les castors",
-              "chf": 15650
-            }
-          ]
-        },
-        {
-          "secteur": "Conservation du patrimoine",
-          "total_chf": 170000,
-          "count": 6,
-          "top_3": [
-            {
-              "nom": "office cantonal de la culture",
-              "chf": 80000
-            },
-            {
-              "nom": "commune ecclesiastique de montfaucon les enfers",
-              "chf": 40000
-            },
-            {
-              "nom": "kult",
-              "chf": 40000
+              "nom": "croix rouge suisse",
+              "chf": 14000
             }
           ]
         },

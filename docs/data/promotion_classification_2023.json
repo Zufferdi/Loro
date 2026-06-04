@@ -1,0 +1,402 @@
+{
+  "_meta": {
+    "classif": "promotion",
+    "year": "2023",
+    "source": "brb2023_full.json",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "date": "2026-06-04",
+    "total_entries": 204,
+    "total_chf": 15485007,
+    "total_entries_classified": 26,
+    "total_chf_classified": 6253745,
+    "pct_chf_classified": 40.4,
+    "cross_year_recovered": 0,
+    "sector": "Promotion, tourisme et développement",
+    "sector_slug": "promotion",
+    "total_entries_sector": 204,
+    "total_chf_sector": 15485007,
+    "pct_entries_classified": 12.7
+  },
+  "categories": [
+    {
+      "name": "Autres",
+      "count": 178,
+      "total_chf": 9231262,
+      "mean_chf": 51861,
+      "cantons": {
+        "VD": {
+          "count": 20,
+          "total_chf": 357785
+        },
+        "SR": {
+          "count": 23,
+          "total_chf": 534438
+        },
+        "JU": {
+          "count": 70,
+          "total_chf": 763171
+        },
+        "VS": {
+          "count": 18,
+          "total_chf": 2560000
+        },
+        "NE": {
+          "count": 13,
+          "total_chf": 803250
+        },
+        "GE": {
+          "count": 28,
+          "total_chf": 4165148
+        },
+        "FR": {
+          "count": 6,
+          "total_chf": 47470
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. pour un Musée de la Bande Dessinée et de l’Illustration",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 3200000
+        },
+        {
+          "nom": "Fond. de la Haute Chocolaterie",
+          "ville": "Môtiers",
+          "canton": "NE",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Fond. The Ark",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "Comité d'organisation des courses de ski alpin Crans- Montana",
+          "ville": "Crans-Montana",
+          "canton": "VS",
+          "montant_CHF": 310000
+        },
+        {
+          "nom": "Section Monte Rosa CAS, Cabane Schönbiel",
+          "ville": "St-Maurice",
+          "canton": "VS",
+          "montant_CHF": 300000
+        }
+      ]
+    },
+    {
+      "name": "Promotion culture régionale",
+      "count": 1,
+      "total_chf": 3000000,
+      "mean_chf": 3000000,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 3000000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. pour le rayonnement culturel du 2m2c et son Auditorium Stravinski",
+          "ville": "Montreux",
+          "canton": "VD",
+          "montant_CHF": 3000000
+        }
+      ]
+    },
+    {
+      "name": "Tourisme régional",
+      "count": 8,
+      "total_chf": 2044650,
+      "mean_chf": 255581,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 1000000
+        },
+        "VS": {
+          "count": 3,
+          "total_chf": 720000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 6650
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 13000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 305000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Vaud Promotion",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Valais/Wallis Promotion",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Jura Tourisme",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Valrando - Assoc. valaisanne de la randonnée",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 130000
+        },
+        {
+          "nom": "Crans-Montana Tourisme & Congrès",
+          "ville": "Crans-Montana",
+          "canton": "VS",
+          "montant_CHF": 90000
+        }
+      ]
+    },
+    {
+      "name": "Salons & expositions thématiques",
+      "count": 1,
+      "total_chf": 500000,
+      "mean_chf": 500000,
+      "cantons": {
+        "GE": {
+          "count": 1,
+          "total_chf": 500000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. pour l'Écrit",
+          "ville": "Le Grand-Saconnex",
+          "canton": "GE",
+          "montant_CHF": 500000
+        }
+      ]
+    },
+    {
+      "name": "Promotion économique & terroir",
+      "count": 3,
+      "total_chf": 310000,
+      "mean_chf": 103333,
+      "cantons": {
+        "VS": {
+          "count": 2,
+          "total_chf": 270000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 40000
+        }
+      },
+      "samples": [
+        {
+          "nom": "IVV - Interprofession de la Vigne et du Vin du Valais",
+          "ville": "Conthey",
+          "canton": "VS",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Interprofession Raclette du Valais AOP",
+          "ville": "Conthey",
+          "canton": "VS",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Fond. rurale interjurassienne",
+          "ville": "Courtemelon",
+          "canton": "JU",
+          "montant_CHF": 40000
+        }
+      ]
+    },
+    {
+      "name": "Parcs régionaux & nature",
+      "count": 3,
+      "total_chf": 115000,
+      "mean_chf": 38333,
+      "cantons": {
+        "JU": {
+          "count": 2,
+          "total_chf": 75000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 40000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Parc Naturel Régional du Doubs (PNRD)",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Commune de Clos du Doubs",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. pour le Parc Naturel Régional du Doubs",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 25000
+        }
+      ]
+    },
+    {
+      "name": "Cyclo & courses populaires",
+      "count": 1,
+      "total_chf": 100000,
+      "mean_chf": 100000,
+      "cantons": {
+        "VS": {
+          "count": 1,
+          "total_chf": 100000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. du Tour des Stations",
+          "ville": "Granges",
+          "canton": "VS",
+          "montant_CHF": 100000
+        }
+      ]
+    },
+    {
+      "name": "Manifestations populaires",
+      "count": 5,
+      "total_chf": 90095,
+      "mean_chf": 18019,
+      "cantons": {
+        "VS": {
+          "count": 1,
+          "total_chf": 15000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 6155
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 50000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 9000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 9940
+        }
+      },
+      "samples": [
+        {
+          "nom": "Biennale de déambulation Les Horlofolies - Braderie et Fête de la montre",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. SlowUp Valais",
+          "ville": "Granges",
+          "canton": "VS",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. cantonale jurassienne, gymnastique",
+          "ville": "gymnastique",
+          "canton": "GE",
+          "montant_CHF": 9940
+        },
+        {
+          "nom": "Assoc. slowUp Jura",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 9000
+        },
+        {
+          "nom": "Assoc. Slowup Valais",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 6155
+        }
+      ]
+    },
+    {
+      "name": "Cabanes & infrastructures montagne",
+      "count": 2,
+      "total_chf": 80000,
+      "mean_chf": 40000,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 30000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 50000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Section genevoise du Club Alpin Suisse",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Club Alpin Suisse CAS Section Yverdon",
+          "ville": "Ste-Croix",
+          "canton": "VD",
+          "montant_CHF": 30000
+        }
+      ]
+    },
+    {
+      "name": "Sentiers & randonnée",
+      "count": 2,
+      "total_chf": 14000,
+      "mean_chf": 7000,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 9000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 5000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Villars Rando Festival",
+          "ville": "Villars-sur-Ollon",
+          "canton": "VD",
+          "montant_CHF": 9000
+        },
+        {
+          "nom": "Assoc. Genève Rando",
+          "ville": "Châtelaine",
+          "canton": "GE",
+          "montant_CHF": 5000
+        }
+      ]
+    }
+  ]
+}

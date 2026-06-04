@@ -1,0 +1,206 @@
+{
+  "_meta": {
+    "classif": "formation",
+    "year": "2024",
+    "source": "brb2024_full.json",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "date": "2026-06-04",
+    "total_entries": 99,
+    "total_chf": 4721235,
+    "total_entries_classified": 7,
+    "total_chf_classified": 391345,
+    "pct_chf_classified": 8.3,
+    "cross_year_recovered": 1,
+    "sector": "Formation et recherche",
+    "sector_slug": "formation",
+    "total_entries_sector": 99,
+    "total_chf_sector": 4721235,
+    "pct_entries_classified": 7.1
+  },
+  "categories": [
+    {
+      "name": "Autres",
+      "count": 92,
+      "total_chf": 4329890,
+      "mean_chf": 47064,
+      "cantons": {
+        "VD": {
+          "count": 7,
+          "total_chf": 655000
+        },
+        "FR": {
+          "count": 23,
+          "total_chf": 1408390
+        },
+        "SR": {
+          "count": 12,
+          "total_chf": 332500
+        },
+        "NE": {
+          "count": 41,
+          "total_chf": 1665500
+        },
+        "VS": {
+          "count": 3,
+          "total_chf": 60000
+        },
+        "JU": {
+          "count": 5,
+          "total_chf": 178500
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 30000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Nouvel Opéra Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 401000
+        },
+        {
+          "nom": "Fond. pour le soutien de la recherche et du développement de l'oncologie (FSRDO)",
+          "ville": "Cugy",
+          "canton": "FR",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Opéra décentralisé",
+          "ville": "Auvernier",
+          "canton": "NE",
+          "montant_CHF": 375000
+        },
+        {
+          "nom": "NeurocelliA - Assoc. de thérapie cellulaire en neurosciences",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Môtiers - Art en plein air",
+          "ville": "Môtiers",
+          "canton": "NE",
+          "montant_CHF": 300000
+        }
+      ]
+    },
+    {
+      "name": "Salons & orientation métiers",
+      "count": 1,
+      "total_chf": 247345,
+      "mean_chf": 247345,
+      "cantons": {
+        "VS": {
+          "count": 1,
+          "total_chf": 247345
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Salon des Métiers",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 247345
+        }
+      ]
+    },
+    {
+      "name": "Apprentissage & formation continue",
+      "count": 3,
+      "total_chf": 54000,
+      "mean_chf": 18000,
+      "cantons": {
+        "FR": {
+          "count": 1,
+          "total_chf": 1000
+        },
+        "VS": {
+          "count": 2,
+          "total_chf": 53000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Bildungshaus St. Jodern",
+          "ville": "Visp",
+          "canton": "VS",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Volkshochschule Oberwallis",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Seeländische Volkshochschule Kerzers",
+          "ville": "Kerzers",
+          "canton": "FR",
+          "montant_CHF": 1000
+        }
+      ]
+    },
+    {
+      "name": "Recherche & innovation tech",
+      "count": 1,
+      "total_chf": 50000,
+      "mean_chf": 50000,
+      "cantons": {
+        "VS": {
+          "count": 1,
+          "total_chf": 50000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. IPT",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 50000
+        }
+      ]
+    },
+    {
+      "name": "Recherche scientifique",
+      "count": 1,
+      "total_chf": 30000,
+      "mean_chf": 30000,
+      "cantons": {
+        "GE": {
+          "count": 1,
+          "total_chf": 30000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. CERN & Sté, Meyrin Sommet Art et Science du CERN.",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 30000
+        }
+      ]
+    },
+    {
+      "name": "Université & hautes écoles",
+      "count": 1,
+      "total_chf": 10000,
+      "mean_chf": 10000,
+      "cantons": {
+        "FR": {
+          "count": 1,
+          "total_chf": 10000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Université populaire du canton de Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        }
+      ]
+    }
+  ]
+}
