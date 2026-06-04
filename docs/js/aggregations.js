@@ -61,18 +61,48 @@
     container.innerHTML = `<div style="padding:24px;color:var(--c-loro)">${msg}</div>`;
   }
 
+  // ============= Year toggle helpers =============
+  const YEAR_TOTALS = { '2024': 155198729, '2025': 207000000 };
+  
+  function addYearSelector(container, currentYear, renderFn) {
+    const sel = document.createElement('div');
+    sel.className = 'year-selector';
+    sel.style.cssText = 'display:flex;gap:8px;margin-bottom:14px;justify-content:flex-end';
+    ['2024', '2025'].forEach(y => {
+      const btn = document.createElement('button');
+      btn.textContent = y;
+      btn.dataset.year = y;
+      const active = y === currentYear;
+      btn.style.cssText = 'background:' + (active ? 'var(--ink)' : 'transparent') +
+        ';border:1px solid ' + (active ? 'var(--ink)' : 'var(--rule)') +
+        ';padding:4px 12px;border-radius:14px;cursor:pointer;font-size:13px;' +
+        'color:' + (active ? 'white' : 'var(--ink-mute)') + ';font-family:inherit';
+      btn.addEventListener('click', () => {
+        if (y === currentYear) return;
+        container.dataset.loaded = '0';
+        renderFn(container, y);
+      });
+      sel.appendChild(btn);
+    });
+    container.appendChild(sel);
+  }
+
+
   // ============= VIZ 1: Top 30 bénéficiaires =============
-  function renderTop30(container) {
-    if (container.dataset.loaded === '1') return;
+  function renderTop30(container, year) {
+    year = year || '2025';
+    if (container.dataset.loaded === '1' && container.dataset.year === year) return;
     container.dataset.loaded = '1';
+    container.dataset.year = year;
     loaderMsg(container);
-    fetch('data/top30_beneficiaires.json')
+    fetch('data/top30_beneficiaires' + (year === '2024' ? '_2024' : '') + '.json')
       .then(r => r.json())
       .then(data => {
         const benefs = data.beneficiaires || [];
         const meta = data._meta || {};
         const maxAmt = Math.max(...benefs.map(b => b.total_chf), 1);
         container.innerHTML = '';
+        addYearSelector(container, year, renderTop30);
 
         // Banner
         const banner = document.createElement('div');
@@ -80,7 +110,7 @@
         banner.innerHTML = `
           <div class="top30-stat">
             <div class="top30-stat-val">${fmtCHF(meta.top30_total_chf || 0)}</div>
-            <div class="top30-stat-lbl">cumul top 30 — soit ${meta.top30_pct_of_brb}&nbsp;% du BRB 2025</div>
+            <div class="top30-stat-lbl">cumul top 30 — soit ${meta.top30_pct_of_brb}&nbsp;% du BRB ${year}</div>
           </div>
         `;
         container.appendChild(banner);
@@ -118,24 +148,27 @@
   }
 
   // ============= VIZ 2: Top 20 villes =============
-  function renderTop20Villes(container) {
-    if (container.dataset.loaded === '1') return;
+  function renderTop20Villes(container, year) {
+    year = year || '2025';
+    if (container.dataset.loaded === '1' && container.dataset.year === year) return;
     container.dataset.loaded = '1';
+    container.dataset.year = year;
     loaderMsg(container);
-    fetch('data/top20_villes.json')
+    fetch('data/top20_villes' + (year === '2024' ? '_2024' : '') + '.json')
       .then(r => r.json())
       .then(data => {
         const villes = data.villes || [];
         const meta = data._meta || {};
         const maxAmt = Math.max(...villes.map(v => v.total_chf), 1);
         container.innerHTML = '';
+        addYearSelector(container, year, renderTop20Villes);
 
         const banner = document.createElement('div');
         banner.className = 'top30-banner';
         banner.innerHTML = `
           <div class="top30-stat">
             <div class="top30-stat-val">${fmtCHF(meta.top20_total_chf || 0)}</div>
-            <div class="top30-stat-lbl">cumul top 20 villes — soit ${Math.round(100*meta.top20_total_chf/206947411)}&nbsp;% du BRB 2025</div>
+            <div class="top30-stat-lbl">cumul top 20 villes — soit ${Math.round(100*meta.top20_total_chf/YEAR_TOTALS[year])}&nbsp;% du BRB ${year}</div>
           </div>
         `;
         container.appendChild(banner);
@@ -173,11 +206,13 @@
   // ============= VIZ 3: Treemap canton × secteur =============
   // Implementation: a horizontal stacked-bar grid (one row per canton)
   // because true treemap requires layout algorithm; this is cleaner on mobile.
-  function renderTreemap(container) {
-    if (container.dataset.loaded === '1') return;
+  function renderTreemap(container, year) {
+    year = year || '2025';
+    if (container.dataset.loaded === '1' && container.dataset.year === year) return;
     container.dataset.loaded = '1';
+    container.dataset.year = year;
     loaderMsg(container);
-    fetch('data/treemap_canton_secteur.json')
+    fetch('data/treemap_canton_secteur' + (year === '2024' ? '_2024' : '') + '.json')
       .then(r => r.json())
       .then(data => {
         const cantons = data.cantons || [];
@@ -185,6 +220,7 @@
         const maxCantonTotal = Math.max(...cantons.map(c => c.total_chf), 1);
         const cantonLabels = {VD:'Vaud', FR:'Fribourg', VS:'Valais', NE:'Neuchâtel', GE:'Genève', JU:'Jura', R:'Romand intercantonal'};
         container.innerHTML = '';
+        addYearSelector(container, year, renderTreemap);
 
         // Build legend
         const legend = document.createElement('div');
@@ -233,11 +269,13 @@
   }
 
   // ============= VIZ 4: Per-capita =============
-  function renderPerCapita(container) {
-    if (container.dataset.loaded === '1') return;
+  function renderPerCapita(container, year) {
+    year = year || '2025';
+    if (container.dataset.loaded === '1' && container.dataset.year === year) return;
     container.dataset.loaded = '1';
+    container.dataset.year = year;
     loaderMsg(container);
-    fetch('data/per_capita_v2.json')
+    fetch(year === '2024' ? 'data/per_capita_2024.json' : 'data/per_capita_v2.json')
       .then(r => r.json())
       .then(data => {
         const cantons = (data.cantons || []).filter(c => c.population > 0);
@@ -245,6 +283,7 @@
         const maxTotal = Math.max(...cantons.map(c => c.total_chf), 1);
         const cantonLabels = {VD:'Vaud', FR:'Fribourg', VS:'Valais', NE:'Neuchâtel', GE:'Genève', JU:'Jura'};
         container.innerHTML = '';
+        addYearSelector(container, year, renderPerCapita);
 
         const grid = document.createElement('div');
         grid.className = 'percap-grid';
@@ -287,7 +326,7 @@
   function init() {
     lazyInit('viz-top30', renderTop30);
     lazyInit('viz-villes', renderTop20Villes);
-    lazyInit('viz-treemap', renderTreemap);
+    lazyInit('viz-canton-secteur', renderTreemap);
     lazyInit('viz-percapita', renderPerCapita);
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);

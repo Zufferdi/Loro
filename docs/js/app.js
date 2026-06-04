@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     initComparisons();
     initTimelineScrolly();
     initFranc();
+    initBeneficeEvol();
     initAnomaly();
     initRealMap();
     initTilegram();
@@ -229,40 +230,56 @@ function initTimelineScrolly() {
     .attr('font-size', 13).attr('fill', inkSoftColor())
     .attr('letter-spacing', '0.06em').attr('text-transform', 'uppercase');
 
-  // === Reveal fonction qui MAJ la viz selon l'année active ===
+  // === Reveal fonction qui MAJ la viz selon l'année active (avec stagger) ===
+  let lastRevealedYear = 1937;
   function reveal(year) {
-    // 1. Révéler la ligne jusqu'à l'année
     const yearIdx = hist.findIndex(d => d.annee >= year);
     const ratio = yearIdx === -1 ? 1 :
       (hist.slice(0, yearIdx + 1).length / hist.length);
-    linePath.transition().duration(900).ease(d3.easeCubicOut)
+    linePath.transition().duration(1100).ease(d3.easeCubicOut)
       .attr('stroke-dashoffset', totalLength * (1 - ratio));
 
-    // 2. Révéler les points jusqu'à cette année
-    pts.transition().duration(500)
-      .style('opacity', d => d.annee <= year ? 1 : 0)
-      .attr('r', d => {
-        if (d.annee > year) return 0;
-        return d.annotation ? 7 : 2.5;
-      });
+    // Stagger pour les nouveaux points (effet "points montent en parallèle des explications")
+    const isAdvancing = year > lastRevealedYear;
+    pts.each(function(d) {
+      const target = d3.select(this);
+      const visible = d.annee <= year;
+      const targetOp = visible ? 1 : 0;
+      const targetR = visible ? (d.annotation ? 7 : 2.5) : 0;
 
-    // 3. Afficher les annotations jusqu'à year
-    annotG.selectAll('g').each(function() {
-      const yr = +d3.select(this).attr('data-year');
-      d3.select(this).style('opacity', yr <= year ? 1 : 0);
+      if (isAdvancing && d.annee > lastRevealedYear && d.annee <= year) {
+        const delay = (d.annee - lastRevealedYear) * 24;
+        target.transition().delay(delay).duration(380).ease(d3.easeCubicOut)
+          .style('opacity', targetOp).attr('r', targetR);
+      } else {
+        target.transition().duration(420)
+          .style('opacity', targetOp).attr('r', targetR);
+      }
     });
 
-    // 4. Positionner le focus sur le dernier point ≤ year
+    annotG.selectAll('g').each(function() {
+      const yr = +d3.select(this).attr('data-year');
+      const sel = d3.select(this);
+      if (yr <= year) {
+        const delay = isAdvancing && yr > lastRevealedYear ? (yr - lastRevealedYear) * 24 + 200 : 0;
+        sel.transition().delay(delay).duration(500).style('opacity', 1);
+      } else {
+        sel.transition().duration(300).style('opacity', 0);
+      }
+    });
+
     const focusData = [...hist].reverse().find(d => d.annee <= year);
     if (focusData) {
-      focusG.transition().duration(600)
+      const focusDelay = isAdvancing ? Math.min(800, (focusData.annee - lastRevealedYear) * 24) : 0;
+      focusG.transition().delay(focusDelay).duration(600)
         .style('opacity', 1)
         .attr('transform', `translate(${x(focusData.annee)},${y(focusData.benefice_M)})`);
-      // Update value label
-      valueLabel.transition().duration(400).style('opacity', 1);
+      valueLabel.transition().delay(focusDelay).duration(400).style('opacity', 1);
       valueText.text(CHF1.format(focusData.benefice_M) + ' M');
       yearText.text(`Bénéfice ${focusData.annee}`);
     }
+
+    lastRevealedYear = year;
   }
 
   // Init : tout à l'état 1938
@@ -364,7 +381,7 @@ function initFranc() {
 
   let currentYear = 2024;
   let dataByYear = {};
-  for (const y of [2023, 2024, 2025]) {
+  for (const y of [2019, 2020, 2021, 2022, 2023, 2024, 2025]) {
     dataByYear[y] = getYearData(y);
   }
   if (!dataByYear[2024]) return;  // pas de données
@@ -372,7 +389,7 @@ function initFranc() {
   // Build chrome : year tabs + viz container
   container.html('');
   const tabBar = container.append('div').attr('class', 'franc-year-tabs').attr('role', 'tablist');
-  [2023, 2024, 2025].forEach(y => {
+  [2019, 2020, 2021, 2022, 2023, 2024, 2025].forEach(y => {
     if (!dataByYear[y]) return;
     tabBar.append('button')
       .attr('class', 'franc-year-tab' + (y === currentYear ? ' active' : ''))
@@ -476,6 +493,92 @@ function initFranc() {
   });
 
   render(currentYear);
+}
+
+/* ============================================================
+   BÉNÉFICE 2019-2025 — barchart simple d'évolution annuelle
+   Source : historique.json (benefice_M par année)
+   ============================================================ */
+function initBeneficeEvol() {
+  const container = d3.select('#viz-benefice-evol');
+  if (container.empty()) return;
+  if (!DATA.historique || !Array.isArray(DATA.historique)) return;
+
+  const years = [2019, 2020, 2021, 2022, 2023, 2024, 2025];
+  const rows = years.map(y => {
+    const r = DATA.historique.find(x => x.annee === y);
+    return { annee: y, benefice: r ? +r.benefice_M : 0 };
+  }).filter(r => r.benefice > 0);
+  if (!rows.length) return;
+
+  container.html('');
+
+  const W = container.node().clientWidth || 900, H = 240;
+  const margin = { top: 30, right: 24, bottom: 50, left: 56 };
+  const w = W - margin.left - margin.right;
+  const h = H - margin.top - margin.bottom;
+
+  const svg = container.append('svg')
+    .attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('height', H)
+    .style('overflow', 'visible');
+
+  const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+  const x = d3.scaleBand().domain(rows.map(r => r.annee)).range([0, w]).padding(0.32);
+  const yMax = d3.max(rows, r => r.benefice) * 1.15;
+  const y = d3.scaleLinear().domain([0, yMax]).range([h, 0]);
+
+  const ticks = y.ticks(5);
+  ticks.forEach(t => {
+    g.append('line').attr('x1', 0).attr('x2', w).attr('y1', y(t)).attr('y2', y(t))
+      .attr('stroke', '#e8e6dd').attr('stroke-dasharray', '2,3');
+    g.append('text').attr('x', -8).attr('y', y(t) + 4)
+      .attr('text-anchor', 'end').attr('font-size', 11).attr('fill', inkMuteColor())
+      .text(t + ' M');
+  });
+
+  g.append('line').attr('x1', 0).attr('x2', w).attr('y1', h).attr('y2', h)
+    .attr('stroke', '#ccc');
+
+  const peak = rows.reduce((m, r) => r.benefice > m.benefice ? r : m, rows[0]);
+  rows.forEach((r, i) => {
+    const bx = x(r.annee), bw = x.bandwidth();
+    const isPic = r.annee === peak.annee;
+    const fill = isPic ? '#c8102e' : (r.annee === 2025 ? '#8a8a8a' : '#bdbab0');
+
+    const rect = g.append('rect')
+      .attr('x', bx).attr('y', h).attr('width', bw).attr('height', 0)
+      .attr('fill', fill).attr('rx', 2);
+    rect.transition().delay(i * 70).duration(500).ease(d3.easeCubicOut)
+      .attr('y', y(r.benefice)).attr('height', h - y(r.benefice));
+
+    g.append('text').attr('x', bx + bw/2).attr('y', y(r.benefice) - 6)
+      .attr('text-anchor', 'middle').attr('font-size', 12)
+      .attr('font-weight', isPic ? 600 : 500)
+      .attr('fill', isPic ? '#c8102e' : inkColor())
+      .style('opacity', 0)
+      .text(CHF1.format(r.benefice) + ' M')
+      .transition().delay(500 + i * 70).duration(300).style('opacity', 1);
+
+    g.append('text').attr('x', bx + bw/2).attr('y', h + 18)
+      .attr('text-anchor', 'middle').attr('font-size', 12).attr('fill', inkSoftColor())
+      .attr('font-weight', isPic ? 600 : 400)
+      .text(r.annee);
+  });
+
+  if (peak) {
+    const px = x(peak.annee) + x.bandwidth()/2;
+    g.append('text').attr('x', px).attr('y', y(peak.benefice) - 22)
+      .attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', '#c8102e')
+      .attr('font-style', 'italic').text('record');
+  }
+
+  const first = rows[0], last = rows[rows.length-1];
+  const delta = last.benefice - first.benefice;
+  const pct = (delta / first.benefice * 100);
+  svg.append('text').attr('x', W - 24).attr('y', 18)
+    .attr('text-anchor', 'end').attr('font-size', 12).attr('fill', inkSoftColor())
+    .text(`+${CHF1.format(delta)} M entre ${first.annee} et ${last.annee} (+${CHF1.format(pct)} %)`);
 }
 
 /* ============================================================
@@ -820,10 +923,13 @@ function initMixScrolly() {
             stepsEls.forEach(s => s.classList.remove('is-active'));
             e.target.classList.add('is-active');
             const step = e.target.dataset.step;
-            if (step === 'all')    highlight = null;
-            if (step === 'paris')  highlight = 'Paris sportifs';
-            if (step === 'elec')   highlight = 'Loterie électronique';
-            if (step === 'online') highlight = null;
+            if (step === 'all')     highlight = null;
+            if (step === 'tirages') highlight = 'Jeux de tirages';
+            if (step === 'paris')   highlight = 'Paris sportifs';
+            if (step === 'billets') highlight = 'Billets Instantanés';
+            if (step === 'elec')    highlight = 'Loterie électronique';
+            if (step === 'pmur')    highlight = 'PMUR';
+            if (step === 'online')  highlight = null;
             render();
           }
         });
@@ -839,10 +945,13 @@ function initMixScrolly() {
         document.querySelectorAll('[data-scrolly="mix"] .step').forEach(s => s.classList.remove('is-active'));
         element.classList.add('is-active');
         const step = element.dataset.step;
-        if (step === 'all')    highlight = null;
-        if (step === 'paris')  highlight = 'Paris sportifs';
-        if (step === 'elec')   highlight = 'Loterie électronique';
-        if (step === 'online') highlight = null;
+        if (step === 'all')     highlight = null;
+        if (step === 'tirages') highlight = 'Jeux de tirages';
+        if (step === 'paris')   highlight = 'Paris sportifs';
+        if (step === 'billets') highlight = 'Billets Instantanés';
+        if (step === 'elec')    highlight = 'Loterie électronique';
+        if (step === 'pmur')    highlight = 'PMUR';
+        if (step === 'online')  highlight = null;
         render();
       })
       .onStepExit(({ element, direction }) => {
@@ -852,10 +961,13 @@ function initMixScrolly() {
           if (prev && prev.classList.contains('step')) {
             prev.classList.add('is-active');
             const step = prev.dataset.step;
-            if (step === 'all')    highlight = null;
-            if (step === 'paris')  highlight = 'Paris sportifs';
-            if (step === 'elec')   highlight = 'Loterie électronique';
-            if (step === 'online') highlight = null;
+            if (step === 'all')     highlight = null;
+            if (step === 'tirages') highlight = 'Jeux de tirages';
+            if (step === 'paris')   highlight = 'Paris sportifs';
+            if (step === 'billets') highlight = 'Billets Instantanés';
+            if (step === 'elec')    highlight = 'Loterie électronique';
+            if (step === 'pmur')    highlight = 'PMUR';
+            if (step === 'online')  highlight = null;
             render();
           }
         }
@@ -1826,61 +1938,54 @@ function initGovernance() {
 
   // Règles de prélèvement cantonal (% du bénéfice net que le Conseil d'État garde
   // pour le distribuer directement, hors organes de répartition culture/social/sport).
-  // Source 2024 : REISO « La Loterie Romande, source de financement clé », janvier 2026.
-  // Sources 2025 : ne.ch (FAC-LoRo nouveau), La Liberté (oct 2024) + Frapp (juin 2024) pour FR,
-  // recueil officiel Jura (FO 2025 N° 23) pour JU.
+  // Sources : REISO janvier 2026 (chiffres 2024) ; ne.ch (FAC-LoRo 2025) ; La Liberté
+  // octobre 2024 + Frapp juin 2024 (FR 2025) ; recueil officiel Jura FO 2025 N° 23 (JU 2025).
+  // Pour 2019-2023 : règles cantonales stables sauf indication contraire.
+  const years = [2019, 2020, 2021, 2022, 2023, 2024, 2025];
   const prelevements = {
-    VD: { 2024: 25, 2025: 25,                                                 changement: null },
-    JU: { 2024: 17, 2025: 20,                                                 changement: 'Relevé de 17 % à 20 % (loi cantonale modifiée en 2024, effet 2025).' },
-    NE: { 2024: 10, 2025: 10,                                                 changement: 'Création en 2025 du Fonds d\'attributions cantonales (FAC-LoRo) — 1,57 M en 13 dossiers touristiques.' },
-    FR: { 2024: 9,  2025: 9,                                                  changement: '+2 % de l\'enveloppe redirigée vers le sport (de 7 % à 9 % du total). 500 000 CHF de plus pour le sport, sans baisse pour la culture (Conseil d\'État, juin 2024).' },
-    GE: { 2024: 0,  2025: 0,                                                  changement: null },
-    VS: { 2024: 0,  2025: 0,                                                  changement: null },
+    VD: { 2019: 25, 2020: 25, 2021: 25, 2022: 25, 2023: 25, 2024: 25, 2025: 25, changement: null },
+    JU: { 2019: 17, 2020: 17, 2021: 17, 2022: 17, 2023: 17, 2024: 17, 2025: 20, changement: 'Relevé de 17 % à 20 % (loi cantonale modifiée en 2024, effet 2025).' },
+    NE: { 2019: 10, 2020: 10, 2021: 10, 2022: 10, 2023: 10, 2024: 10, 2025: 10, changement: 'Création en 2025 du Fonds d\'attributions cantonales (FAC-LoRo) — 1,57 M en 13 dossiers touristiques.' },
+    FR: { 2019: 7,  2020: 7,  2021: 7,  2022: 7,  2023: 7,  2024: 9,  2025: 9,  changement: '+2 % de l\'enveloppe redirigée vers le sport (de 7 % à 9 % du total) à partir de 2024. 500 000 CHF de plus pour le sport, sans baisse pour la culture (Conseil d\'État, juin 2024).' },
+    GE: { 2019: 0,  2020: 0,  2021: 0,  2022: 0,  2023: 0,  2024: 0,  2025: 0,  changement: null },
+    VS: { 2019: 0,  2020: 0,  2021: 0,  2022: 0,  2023: 0,  2024: 0,  2025: 0,  changement: null },
   };
 
-  // === Comparaison 2024 vs 2025 — vue principale ===
+  // === Évolution 2019-2025 — vue principale ===
   const compareWrap = container.append('div').attr('class', 'gov-compare-wrap');
-  compareWrap.append('h4').attr('class', 'gov-section-title').text('Prélèvement du Conseil d\'État · 2024 → 2025');
+  compareWrap.append('h4').attr('class', 'gov-section-title').text('Prélèvement du Conseil d\'État · 2019 → 2025');
   compareWrap.append('p').attr('class', 'gov-section-intro').html(
-    'Pour chaque canton, la part de la Loterie Romande que le Conseil d\'État garde pour la distribuer directement (hors organes culture/social/sport). Plafond fédéral : 30 %.'
+    'Pour chaque canton, la part de la Loterie Romande que le Conseil d\'État garde pour la distribuer directement (hors organes culture/social/sport). Plafond fédéral : 30 %. <em>Les chiffres 2019-2023 supposent la stabilité des règles sauf changements documentés (FR, JU, NE).</em>'
   );
 
   const compareTable = compareWrap.append('table').attr('class', 'gov-compare-table');
   const ch = compareTable.append('thead').append('tr');
   ch.append('th').text('Canton');
-  ch.append('th').text('2024');
-  ch.append('th').text('2025');
-  ch.append('th').text('Changement effectif en 2025');
+  years.forEach(y => ch.append('th').text(y));
+  ch.append('th').text('Changement notable');
   const cb = compareTable.append('tbody');
 
   cantons.forEach(c => {
-    const p = prelevements[c];
+    const pp = prelevements[c];
     const tr = cb.append('tr');
     tr.append('td').html(`<strong>${CANTON_NAMES[c]}</strong> <span class="gov-code">${c}</span>`);
-    // 2024 with bar
-    const td24 = tr.append('td').attr('class', 'gov-prel-cell');
-    td24.append('span').attr('class', 'gov-prel-val').text(p[2024] === 0 ? '—' : p[2024] + ' %');
-    if (p[2024] > 0) {
-      td24.append('div').attr('class', 'gov-prel-bar')
-        .append('div').attr('class', 'gov-prel-fill')
-        .style('width', (p[2024] / 30 * 100) + '%');
-    }
-    // 2025
-    const td25 = tr.append('td').attr('class', 'gov-prel-cell');
-    const evol = p[2025] - p[2024];
-    const arrow = evol > 0 ? ' <span class="gov-arrow-up">↑</span>' : (evol < 0 ? ' <span class="gov-arrow-down">↓</span>' : '');
-    td25.append('span').attr('class', 'gov-prel-val').html((p[2025] === 0 ? '—' : p[2025] + ' %') + arrow);
-    if (p[2025] > 0) {
-      td25.append('div').attr('class', 'gov-prel-bar')
-        .append('div').attr('class', 'gov-prel-fill' + (evol > 0 ? ' gov-prel-fill-changed' : ''))
-        .style('width', (p[2025] / 30 * 100) + '%');
-    }
-    // Comment column
+    years.forEach((y, idx) => {
+      const td = tr.append('td').attr('class', 'gov-prel-cell');
+      const val = pp[y];
+      const prev = idx > 0 ? pp[years[idx-1]] : val;
+      const changed = val !== prev;
+      td.append('span').attr('class', 'gov-prel-val').text(val === 0 ? '—' : val + ' %');
+      if (val > 0) {
+        td.append('div').attr('class', 'gov-prel-bar')
+          .append('div').attr('class', 'gov-prel-fill' + (changed ? ' gov-prel-fill-changed' : ''))
+          .style('width', (val / 30 * 100) + '%');
+      }
+    });
     const tdC = tr.append('td').attr('class', 'gov-change-cell');
-    if (p.changement) {
-      tdC.html(`<span class="gov-change-badge">Évolution</span> ${p.changement}`);
+    if (pp.changement) {
+      tdC.html(`<span class="gov-change-badge">Évolution</span> ${pp.changement}`);
     } else {
-      tdC.html('<span style="color:var(--ink-mute); font-style:italic;">Inchangé</span>');
+      tdC.html('<span style="color:var(--ink-mute); font-style:italic;">Inchangé sur 7 ans</span>');
     }
   });
 
@@ -2795,10 +2900,14 @@ function initProblematic() {
     .attr('font-size', 16).attr('fill', inkMuteColor())
     .text('→ génèrent →');
 
-  // Note
-  svg.append('text')
-    .attr('x', 30).attr('y', H - 14)
-    .attr('font-size', 11).attr('fill', inkMuteColor()).attr('font-style', 'italic')
+  // Note — rendered as HTML caption below the SVG, so it wraps on mobile
+  container.append('p')
+    .attr('class', 'viz-caption')
+    .style('font-size', '12px')
+    .style('color', 'var(--ink-mute)')
+    .style('font-style', 'italic')
+    .style('margin-top', '12px')
+    .style('line-height', '1.5')
     .text('Le second chiffre est une estimation : aucune statistique publique suisse ne mesure cette part. Les études internationales convergent autour de 30-50 %.');
 }
 
@@ -3821,21 +3930,20 @@ function ensureBrbLoaded() {
 }
 
 function initBrbLazyTrigger() {
-  // First container present is enough to attach the observer to.
-  const target = document.getElementById('viz-explorer');
-  if (!target) return;
+  // Observers on ALL 4 BRB containers (fix bug : user could land on viz-longtail directly)
+  const targetIds = ['viz-explorer', 'viz-multicantons', 'viz-longtail', 'viz-geomap'];
+  const targets = targetIds.map(id => document.getElementById(id)).filter(Boolean);
+  if (!targets.length) return;
 
-  // Trigger when user clicks a hash link like #brb=canton:JU
-  // (immediate load, then scroll-into-view once data lands)
   function maybeTriggerFromHash() {
     if (/#brb=/.test(window.location.hash)) {
       ensureBrbLoaded().then(() => {
-        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const t = document.getElementById('viz-explorer');
+        if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     }
   }
   window.addEventListener('hashchange', maybeTriggerFromHash);
-  // On first page load if hash is already set
   if (/#brb=/.test(window.location.hash)) maybeTriggerFromHash();
 
   if ('IntersectionObserver' in window) {
@@ -3844,8 +3952,8 @@ function initBrbLazyTrigger() {
         ensureBrbLoaded();
         obs.disconnect();
       }
-    }, { rootMargin: '800px 0px' });  // pre-load when within 800px of viewport
-    obs.observe(target);
+    }, { rootMargin: '800px 0px' });
+    targets.forEach(t => obs.observe(t));
   } else {
     ensureBrbLoaded();
   }

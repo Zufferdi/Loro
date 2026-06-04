@@ -23,24 +23,32 @@
     }
   }
 
-  function render(container) {
-    if (container.dataset.loaded === '1') return;
+  function render(container, year) {
+    year = year || '2025';
+    if (container.dataset.loaded === '1' && container.dataset.year === year) return;
     container.dataset.loaded = '1';
+    container.dataset.year = year;
     container.innerHTML = '<div style="padding:32px;text-align:center;color:var(--ink-mute);font-style:italic">Chargement…</div>';
-    fetch('data/culture_classification.json')
-      .then(r => r.json())
-      .then(data => doRender(container, data))
-      .catch(err => {
-        console.error('culture.js fetch failed', err);
-        container.innerHTML = '<div style="padding:24px;color:var(--c-loro)">Erreur de chargement.</div>';
-      });
+    Promise.all([
+      fetch('data/culture_classification_2024.json').then(r => r.json()).catch(() => null),
+      fetch('data/culture_classification.json').then(r => r.json()).catch(() => null),
+    ]).then(([d2024, d2025]) => {
+      const data = (year === '2024') ? d2024 : d2025;
+      const other = (year === '2024') ? d2025 : d2024;
+      if (!data) throw new Error('no data for ' + year);
+      doRender(container, data, year, other);
+    }).catch(err => {
+      console.error('culture.js fetch failed', err);
+      container.innerHTML = '<div style="padding:24px;color:var(--c-loro)">Erreur de chargement.</div>';
+    });
   }
 
-  function doRender(container, data) {
+  function doRender(container, data, year, other) {
     const cats = data.categories || [];
     const meta = data._meta || {};
     const maxAmount = Math.max(...cats.map(c => c.total_chf), 1);
     container.innerHTML = '';
+    addYearSelector(container, year, render);
 
     // Mark this container's bars with culture variant via class on root
     container.classList.add('sports-list-culture');
@@ -79,7 +87,16 @@
             <span class="sports-count">${s.count} attributions</span>
             <span class="sports-cantons">${topCantons}</span>
             <span class="sports-mean">${meanFmt} moy.</span>
-            <span class="sports-total">${fmtCHF(s.total_chf)}</span>
+            <span class="sports-total">${fmtCHF(s.total_chf)}</span>${(() => {
+                if (!other) return '';
+                const o = findOtherCat(other, c.name);
+                if (!o) return '<span class="sports-delta sports-delta-new" title="Nouveau en ' + year + '">nouveau</span>';
+                const delta = s.total_chf - o.total_chf;
+                const d = fmtDelta(delta);
+                if (!d) return '';
+                const cls = delta > 0 ? 'sports-delta-up' : 'sports-delta-down';
+                return '<span class="sports-delta ' + cls + '" title="vs ' + (year==='2024'?'2025':'2024') + ': ' + fmtCHF(o.total_chf) + '">' + d + '</span>';
+              })()}
           </div>
         </div>
         <div class="sports-bar-wrap">
