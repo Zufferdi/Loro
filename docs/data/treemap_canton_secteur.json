@@ -7,12 +7,12 @@
   "cantons": [
     {
       "canton": "VD",
-      "total_chf": 74778381,
+      "total_chf": 74738881,
       "secteurs": [
         {
           "secteur": "Culture",
-          "total_chf": 25925742,
-          "count": 345,
+          "total_chf": 25915742,
+          "count": 344,
           "top_3": [
             {
               "nom": "de l hermitage",
@@ -30,8 +30,8 @@
         },
         {
           "secteur": "Sport",
-          "total_chf": 22591489,
-          "count": 842,
+          "total_chf": 22561989,
+          "count": 814,
           "top_3": [
             {
               "nom": "trako",
@@ -48,7 +48,7 @@
           ]
         },
         {
-          "secteur": "Action sociale",
+          "secteur": "Action sociale et personnes âgées",
           "total_chf": 9133271,
           "count": 70,
           "top_3": [
@@ -67,7 +67,7 @@
           ]
         },
         {
-          "secteur": "Jeunesse",
+          "secteur": "Jeunesse et éducation",
           "total_chf": 5637700,
           "count": 50,
           "top_3": [
@@ -86,7 +86,26 @@
           ]
         },
         {
-          "secteur": "Formation",
+          "secteur": "Santé et handicap",
+          "total_chf": 3561578,
+          "count": 17,
+          "top_3": [
+            {
+              "nom": "chuv",
+              "chf": 1023378
+            },
+            {
+              "nom": "santos suarez",
+              "chf": 1000000
+            },
+            {
+              "nom": "ecole superieure",
+              "chf": 520000
+            }
+          ]
+        },
+        {
+          "secteur": "Formation et recherche",
           "total_chf": 3540000,
           "count": 4,
           "top_3": [
@@ -101,25 +120,6 @@
             {
               "nom": "epfl plus",
               "chf": 1000000
-            }
-          ]
-        },
-        {
-          "secteur": "Santé",
-          "total_chf": 3421378,
-          "count": 14,
-          "top_3": [
-            {
-              "nom": "chuv",
-              "chf": 1023378
-            },
-            {
-              "nom": "santos suarez",
-              "chf": 1000000
-            },
-            {
-              "nom": "ecole superieure",
-              "chf": 520000
             }
           ]
         },
@@ -143,7 +143,7 @@
           ]
         },
         {
-          "secteur": "Patrimoine",
+          "secteur": "Conservation du patrimoine",
           "total_chf": 1347000,
           "count": 8,
           "top_3": [
@@ -160,31 +160,12 @@
               "chf": 300000
             }
           ]
-        },
-        {
-          "secteur": "Handicap",
-          "total_chf": 140200,
-          "count": 3,
-          "top_3": [
-            {
-              "nom": "transport handicap vaud",
-              "chf": 118000
-            },
-            {
-              "nom": "solidarite afrique farafina",
-              "chf": 20000
-            },
-            {
-              "nom": "pro infirmis vaud",
-              "chf": 2200
-            }
-          ]
         }
       ]
     },
     {
       "canton": "GE",
-      "total_chf": 40625894,
+      "total_chf": 40403894,
       "secteurs": [
         {
           "secteur": "Culture",
@@ -206,26 +187,7 @@
           ]
         },
         {
-          "secteur": "Sport",
-          "total_chf": 6752710,
-          "count": 427,
-          "top_3": [
-            {
-              "nom": "cantonale genevoise",
-              "chf": 465100
-            },
-            {
-              "nom": "geneve montagne",
-              "chf": 420000
-            },
-            {
-              "nom": "team geneve 2025",
-              "chf": 226000
-            }
-          ]
-        },
-        {
-          "secteur": "Action sociale",
+          "secteur": "Action sociale et personnes âgées",
           "total_chf": 6728990,
           "count": 101,
           "top_3": [
@@ -244,7 +206,26 @@
           ]
         },
         {
-          "secteur": "Formation",
+          "secteur": "Sport",
+          "total_chf": 6570710,
+          "count": 424,
+          "top_3": [
+            {
+              "nom": "geneve montagne",
+              "chf": 420000
+            },
+            {
+              "nom": "cantonale genevoise",
+              "chf": 315100
+            },
+            {
+              "nom": "team geneve 2025",
+              "chf": 226000
+            }
+          ]
+        },
+        {
+          "secteur": "Formation et recherche",
           "total_chf": 1110000,
           "count": 11,
           "top_3": [
@@ -264,8 +245,8 @@
         },
         {
           "secteur": "Environnement",
-          "total_chf": 952290,
-          "count": 23,
+          "total_chf": 912290,
+          "count": 22,
           "top_3": [
             {
               "nom": "semences de pays",
@@ -276,13 +257,32 @@
               "chf": 200000
             },
             {
-              "nom": "j aime ma campagne",
-              "chf": 80000
+              "nom": "genevoise zero dechets",
+              "chf": 48800
             }
           ]
         },
         {
-          "secteur": "Jeunesse",
+          "secteur": "Santé et handicap",
+          "total_chf": 816500,
+          "count": 11,
+          "top_3": [
+            {
+              "nom": "croix rouge genevoise",
+              "chf": 250000
+            },
+            {
+              "nom": "cerebral geneve",
+              "chf": 200000
+            },
+            {
+              "nom": "programme de formation fond foyer handicap",
+              "chf": 200000
+            }
+          ]
+        },
+        {
+          "secteur": "Jeunesse et éducation",
           "total_chf": 583180,
           "count": 4,
           "top_3": [
@@ -301,26 +301,7 @@
           ]
         },
         {
-          "secteur": "Handicap",
-          "total_chf": 463500,
-          "count": 7,
-          "top_3": [
-            {
-              "nom": "cerebral geneve",
-              "chf": 200000
-            },
-            {
-              "nom": "programme de formation fond foyer handicap",
-              "chf": 200000
-            },
-            {
-              "nom": "trust to achieve",
-              "chf": 20000
-            }
-          ]
-        },
-        {
-          "secteur": "Tourisme",
+          "secteur": "Promotion, tourisme et développement",
           "total_chf": 377000,
           "count": 12,
           "top_3": [
@@ -339,26 +320,7 @@
           ]
         },
         {
-          "secteur": "Santé",
-          "total_chf": 353000,
-          "count": 4,
-          "top_3": [
-            {
-              "nom": "croix rouge genevoise",
-              "chf": 250000
-            },
-            {
-              "nom": "diabete geneve",
-              "chf": 40000
-            },
-            {
-              "nom": "des cles pour sa sante mentale fond pour les enfants",
-              "chf": 35000
-            }
-          ]
-        },
-        {
-          "secteur": "Patrimoine",
+          "secteur": "Conservation du patrimoine",
           "total_chf": 207000,
           "count": 5,
           "top_3": [
@@ -380,7 +342,7 @@
     },
     {
       "canton": "VS",
-      "total_chf": 29396746,
+      "total_chf": 29312746,
       "secteurs": [
         {
           "secteur": "Culture",
@@ -403,12 +365,12 @@
         },
         {
           "secteur": "Sport",
-          "total_chf": 5332646,
-          "count": 240,
+          "total_chf": 5248646,
+          "count": 234,
           "top_3": [
             {
               "nom": "ski valais",
-              "chf": 755298
+              "chf": 705298
             },
             {
               "nom": "valaisanne de football",
@@ -421,7 +383,7 @@
           ]
         },
         {
-          "secteur": "Tourisme",
+          "secteur": "Promotion, tourisme et développement",
           "total_chf": 4038500,
           "count": 32,
           "top_3": [
@@ -440,7 +402,7 @@
           ]
         },
         {
-          "secteur": "Action sociale",
+          "secteur": "Action sociale et personnes âgées",
           "total_chf": 3401136,
           "count": 67,
           "top_3": [
@@ -459,7 +421,7 @@
           ]
         },
         {
-          "secteur": "Formation",
+          "secteur": "Formation et recherche",
           "total_chf": 2506500,
           "count": 47,
           "top_3": [
@@ -478,26 +440,26 @@
           ]
         },
         {
-          "secteur": "Santé",
-          "total_chf": 1024000,
-          "count": 25,
+          "secteur": "Santé et handicap",
+          "total_chf": 1224000,
+          "count": 27,
           "top_3": [
             {
               "nom": "terre des hommes valais",
               "chf": 170000
             },
             {
-              "nom": "croix rouge valais",
-              "chf": 142000
+              "nom": "transport handicap",
+              "chf": 145000
             },
             {
-              "nom": "maraval maladies rares",
-              "chf": 140000
+              "nom": "croix rouge valais",
+              "chf": 142000
             }
           ]
         },
         {
-          "secteur": "Jeunesse",
+          "secteur": "Jeunesse et éducation",
           "total_chf": 603050,
           "count": 36,
           "top_3": [
@@ -533,27 +495,12 @@
               "chf": 60000
             }
           ]
-        },
-        {
-          "secteur": "Handicap",
-          "total_chf": 200000,
-          "count": 2,
-          "top_3": [
-            {
-              "nom": "transport handicap",
-              "chf": 145000
-            },
-            {
-              "nom": "insieme valais romand",
-              "chf": 55000
-            }
-          ]
         }
       ]
     },
     {
       "canton": "FR",
-      "total_chf": 27385472,
+      "total_chf": 27322117,
       "secteurs": [
         {
           "secteur": "Culture",
@@ -576,8 +523,8 @@
         },
         {
           "secteur": "Sport",
-          "total_chf": 7396731,
-          "count": 376,
+          "total_chf": 7333376,
+          "count": 367,
           "top_3": [
             {
               "nom": "fribourgeoise de basket 6 232",
@@ -594,7 +541,7 @@
           ]
         },
         {
-          "secteur": "Action sociale",
+          "secteur": "Action sociale et personnes âgées",
           "total_chf": 4483726,
           "count": 58,
           "top_3": [
@@ -613,7 +560,26 @@
           ]
         },
         {
-          "secteur": "Jeunesse",
+          "secteur": "Santé et handicap",
+          "total_chf": 2141000,
+          "count": 19,
+          "top_3": [
+            {
+              "nom": "ligue fribourgeoise",
+              "chf": 778000
+            },
+            {
+              "nom": "diabetefribourg assoc",
+              "chf": 250000
+            },
+            {
+              "nom": "afaap",
+              "chf": 240000
+            }
+          ]
+        },
+        {
+          "secteur": "Jeunesse et éducation",
           "total_chf": 2020662,
           "count": 92,
           "top_3": [
@@ -632,26 +598,7 @@
           ]
         },
         {
-          "secteur": "Santé",
-          "total_chf": 1811000,
-          "count": 14,
-          "top_3": [
-            {
-              "nom": "ligue fribourgeoise",
-              "chf": 778000
-            },
-            {
-              "nom": "diabetefribourg assoc",
-              "chf": 250000
-            },
-            {
-              "nom": "afaap",
-              "chf": 240000
-            }
-          ]
-        },
-        {
-          "secteur": "Patrimoine",
+          "secteur": "Conservation du patrimoine",
           "total_chf": 799300,
           "count": 16,
           "top_3": [
@@ -670,26 +617,7 @@
           ]
         },
         {
-          "secteur": "Handicap",
-          "total_chf": 330000,
-          "count": 5,
-          "top_3": [
-            {
-              "nom": "pro infirmis fribourg",
-              "chf": 225000
-            },
-            {
-              "nom": "autisme fribourg",
-              "chf": 50000
-            },
-            {
-              "nom": "forum handicap fribourg fhaf",
-              "chf": 30000
-            }
-          ]
-        },
-        {
-          "secteur": "Formation",
+          "secteur": "Formation et recherche",
           "total_chf": 252000,
           "count": 4,
           "top_3": [
@@ -730,7 +658,7 @@
     },
     {
       "canton": "NE",
-      "total_chf": 14625380,
+      "total_chf": 14619710,
       "secteurs": [
         {
           "secteur": "Culture",
@@ -753,8 +681,8 @@
         },
         {
           "secteur": "Sport",
-          "total_chf": 2764860,
-          "count": 260,
+          "total_chf": 2759190,
+          "count": 257,
           "top_3": [
             {
               "nom": "neuchatel fantastique",
@@ -790,7 +718,7 @@
           ]
         },
         {
-          "secteur": "Action sociale",
+          "secteur": "Action sociale et personnes âgées",
           "total_chf": 707900,
           "count": 39,
           "top_3": [
@@ -809,7 +737,7 @@
           ]
         },
         {
-          "secteur": "Jeunesse",
+          "secteur": "Jeunesse et éducation",
           "total_chf": 299000,
           "count": 23,
           "top_3": [
@@ -828,9 +756,9 @@
           ]
         },
         {
-          "secteur": "Santé",
-          "total_chf": 163000,
-          "count": 9,
+          "secteur": "Santé et handicap",
+          "total_chf": 183400,
+          "count": 12,
           "top_3": [
             {
               "nom": "les perce neige",
@@ -847,7 +775,7 @@
           ]
         },
         {
-          "secteur": "Patrimoine",
+          "secteur": "Conservation du patrimoine",
           "total_chf": 155800,
           "count": 6,
           "top_3": [
@@ -866,7 +794,7 @@
           ]
         },
         {
-          "secteur": "Formation",
+          "secteur": "Formation et recherche",
           "total_chf": 107000,
           "count": 3,
           "top_3": [
@@ -883,31 +811,12 @@
               "chf": 15000
             }
           ]
-        },
-        {
-          "secteur": "Handicap",
-          "total_chf": 20400,
-          "count": 3,
-          "top_3": [
-            {
-              "nom": "mp handicap autisme",
-              "chf": 10000
-            },
-            {
-              "nom": "insieme assoc neuchateloise",
-              "chf": 8000
-            },
-            {
-              "nom": "antenne handicap mental",
-              "chf": 2400
-            }
-          ]
         }
       ]
     },
     {
-      "canton": "R",
-      "total_chf": 11513510,
+      "canton": "SR",
+      "total_chf": 11481110,
       "secteurs": [
         {
           "secteur": "Culture",
@@ -930,8 +839,8 @@
         },
         {
           "secteur": "Sport",
-          "total_chf": 2078590,
-          "count": 70,
+          "total_chf": 2076190,
+          "count": 69,
           "top_3": [
             {
               "nom": "tour de romandie",
@@ -948,9 +857,9 @@
           ]
         },
         {
-          "secteur": "Action sociale",
-          "total_chf": 1159000,
-          "count": 20,
+          "secteur": "Action sociale et personnes âgées",
+          "total_chf": 1129000,
+          "count": 19,
           "top_3": [
             {
               "nom": "terre des hommes",
@@ -967,7 +876,7 @@
           ]
         },
         {
-          "secteur": "Jeunesse",
+          "secteur": "Jeunesse et éducation",
           "total_chf": 882000,
           "count": 14,
           "top_3": [
@@ -986,9 +895,9 @@
           ]
         },
         {
-          "secteur": "Santé",
-          "total_chf": 493000,
-          "count": 15,
+          "secteur": "Santé et handicap",
+          "total_chf": 513000,
+          "count": 16,
           "top_3": [
             {
               "nom": "medical flair",
@@ -1005,7 +914,7 @@
           ]
         },
         {
-          "secteur": "Patrimoine",
+          "secteur": "Conservation du patrimoine",
           "total_chf": 375000,
           "count": 9,
           "top_3": [
@@ -1043,7 +952,7 @@
           ]
         },
         {
-          "secteur": "Formation",
+          "secteur": "Formation et recherche",
           "total_chf": 180000,
           "count": 3,
           "top_3": [
@@ -1060,28 +969,17 @@
               "chf": 15000
             }
           ]
-        },
-        {
-          "secteur": "Handicap",
-          "total_chf": 20000,
-          "count": 1,
-          "top_3": [
-            {
-              "nom": "inclusion handicap",
-              "chf": 20000
-            }
-          ]
         }
       ]
     },
     {
       "canton": "JU",
-      "total_chf": 8622028,
+      "total_chf": 8561023,
       "secteurs": [
         {
           "secteur": "Culture",
-          "total_chf": 3855701,
-          "count": 283,
+          "total_chf": 3822896,
+          "count": 272,
           "top_3": [
             {
               "nom": "pour le theatre du jura",
@@ -1118,8 +1016,8 @@
         },
         {
           "secteur": "Sport",
-          "total_chf": 1136501,
-          "count": 222,
+          "total_chf": 1111301,
+          "count": 220,
           "top_3": [
             {
               "nom": "hockey club ajoie",
@@ -1136,9 +1034,9 @@
           ]
         },
         {
-          "secteur": "Action sociale",
-          "total_chf": 444126,
-          "count": 20,
+          "secteur": "Action sociale et personnes âgées",
+          "total_chf": 441126,
+          "count": 19,
           "top_3": [
             {
               "nom": "service de l action sociale",
@@ -1155,7 +1053,7 @@
           ]
         },
         {
-          "secteur": "Jeunesse",
+          "secteur": "Jeunesse et éducation",
           "total_chf": 314900,
           "count": 19,
           "top_3": [
@@ -1174,9 +1072,9 @@
           ]
         },
         {
-          "secteur": "Santé",
-          "total_chf": 219880,
-          "count": 18,
+          "secteur": "Santé et handicap",
+          "total_chf": 227300,
+          "count": 22,
           "top_3": [
             {
               "nom": "itineraires",
@@ -1193,7 +1091,7 @@
           ]
         },
         {
-          "secteur": "Patrimoine",
+          "secteur": "Conservation du patrimoine",
           "total_chf": 170000,
           "count": 6,
           "top_3": [
@@ -1212,7 +1110,7 @@
           ]
         },
         {
-          "secteur": "Formation",
+          "secteur": "Formation et recherche",
           "total_chf": 117000,
           "count": 4,
           "top_3": [
@@ -1227,21 +1125,6 @@
             {
               "nom": "salon interjurassien",
               "chf": 10000
-            }
-          ]
-        },
-        {
-          "secteur": "Handicap",
-          "total_chf": 7420,
-          "count": 4,
-          "top_3": [
-            {
-              "nom": "procap",
-              "chf": 7240
-            },
-            {
-              "nom": "groupe de marche insieme jura",
-              "chf": 180
             }
           ]
         }

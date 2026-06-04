@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "description": "CHF reçus par habitant et par canton en 2025",
+    "method": "Total des attributions du BRB 2025 / population résidente (sources cantonales 2024)",
+    "note": "Le canton 'R' (intercantonal romand) n'a pas de population définie ; exclu du ratio.",
+    "sources_population": "OFS / Statistiques cantonales 2024"
+  },
+  "cantons": [
+    {
+      "canton": "JU",
+      "population": 75000,
+      "total_chf": 8561023,
+      "chf_per_capita": 114.1
+    },
+    {
+      "canton": "VD",
+      "population": 825000,
+      "total_chf": 74738881,
+      "chf_per_capita": 90.6
+    },
+    {
+      "canton": "NE",
+      "population": 175000,
+      "total_chf": 14619710,
+      "chf_per_capita": 83.5
+    },
+    {
+      "canton": "FR",
+      "population": 335000,
+      "total_chf": 27322117,
+      "chf_per_capita": 81.6
+    },
+    {
+      "canton": "VS",
+      "population": 360000,
+      "total_chf": 29312746,
+      "chf_per_capita": 81.4
+    },
+    {
+      "canton": "GE",
+      "population": 515000,
+      "total_chf": 40403894,
+      "chf_per_capita": 78.5
+    },
+    {
+      "canton": "R",
+      "population": 0,
+      "total_chf": 0,
+      "chf_per_capita": 0
+    }
+  ]
+}

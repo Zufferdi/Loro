@@ -2,19 +2,19 @@
   "_meta": {
     "description": "Top 20 villes destinataires par montant cumulé en 2025",
     "method": "Aggrégation par champ 'ville'. Les entrées sans ville (~53%) ne sont pas comptabilisées.",
-    "top20_total_chf": 68697606
+    "top20_total_chf": 69686958
   },
   "villes": [
     {
       "ville": "Lausanne",
       "count": 198,
-      "total_chf": 20522175,
+      "total_chf": 21523925,
       "cantons": [
         "FR",
         "GE",
         "JU",
         "NE",
-        "R",
+        "SR",
         "VD",
         "VS"
       ],
@@ -37,14 +37,14 @@
     },
     {
       "ville": "Genève",
-      "count": 281,
-      "total_chf": 12874820,
+      "count": 306,
+      "total_chf": 14016520,
       "cantons": [
         "FR",
         "GE",
         "JU",
         "NE",
-        "R",
+        "SR",
         "VD",
         "VS"
       ],
@@ -67,12 +67,12 @@
     },
     {
       "ville": "Fribourg",
-      "count": 134,
-      "total_chf": 7805875,
+      "count": 135,
+      "total_chf": 7810875,
       "cantons": [
         "FR",
         "GE",
-        "R",
+        "SR",
         "VD"
       ],
       "lat": 46.8065,
@@ -94,14 +94,14 @@
     },
     {
       "ville": "Sion",
-      "count": 91,
-      "total_chf": 5575454,
+      "count": 90,
+      "total_chf": 5574454,
       "cantons": [
         "FR",
         "GE",
         "JU",
         "NE",
-        "R",
+        "SR",
         "VS"
       ],
       "lat": 46.228,
@@ -129,7 +129,7 @@
         "GE",
         "JU",
         "NE",
-        "R",
+        "SR",
         "VD"
       ],
       "lat": 46.993,
@@ -155,7 +155,7 @@
       "total_chf": 2432150,
       "cantons": [
         "GE",
-        "R"
+        "SR"
       ],
       "lat": 46.1839,
       "lng": 6.1383,
@@ -200,12 +200,12 @@
     },
     {
       "ville": "Delémont",
-      "count": 79,
-      "total_chf": 1614230,
+      "count": 78,
+      "total_chf": 1606730,
       "cantons": [
         "JU",
         "NE",
-        "R"
+        "SR"
       ],
       "lat": 47.3667,
       "lng": 7.3439,
@@ -250,11 +250,11 @@
     },
     {
       "ville": "Porrentruy",
-      "count": 51,
-      "total_chf": 1448499,
+      "count": 50,
+      "total_chf": 1441499,
       "cantons": [
         "JU",
-        "R"
+        "SR"
       ],
       "lat": 47.4119,
       "lng": 7.0744,
@@ -304,7 +304,7 @@
       "total_chf": 1162000,
       "cantons": [
         "FR",
-        "R",
+        "SR",
         "VD"
       ],
       "lat": 46.5097,
@@ -331,7 +331,7 @@
       "cantons": [
         "FR",
         "JU",
-        "R",
+        "SR",
         "VD"
       ],
       "lat": 46.3833,
@@ -348,22 +348,6 @@
         {
           "nom": "cma",
           "chf": 207084
-        }
-      ]
-    },
-    {
-      "ville": "Total pour les établissements",
-      "count": 1,
-      "total_chf": 1042798,
-      "cantons": [
-        "VD"
-      ],
-      "lat": null,
-      "lng": null,
-      "top_3_beneficiaires": [
-        {
-          "nom": "camps sportifs scolaires",
-          "chf": 1042798
         }
       ]
     },
@@ -388,49 +372,6 @@
         {
           "nom": "d accueil familial de jour du district de la gruyere",
           "chf": 128880
-        }
-      ]
-    },
-    {
-      "ville": "Les Acacias",
-      "count": 22,
-      "total_chf": 1008200,
-      "cantons": [
-        "GE",
-        "NE",
-        "R"
-      ],
-      "lat": 46.1875,
-      "lng": 6.1369,
-      "top_3_beneficiaires": [
-        {
-          "nom": "croix rouge genevoise",
-          "chf": 250000
-        },
-        {
-          "nom": "headfun",
-          "chf": 130000
-        },
-        {
-          "nom": "handisport geneve",
-          "chf": 100000
-        }
-      ]
-    },
-    {
-      "ville": "Fête Fédérale de",
-      "count": 2,
-      "total_chf": 1004000,
-      "cantons": [
-        "R",
-        "VD"
-      ],
-      "lat": null,
-      "lng": null,
-      "top_3_beneficiaires": [
-        {
-          "nom": "ffg lausanne 2025",
-          "chf": 1004000
         }
       ]
     },
@@ -503,6 +444,73 @@
         {
           "nom": "la ferme des tilleuls",
           "chf": 110000
+        }
+      ]
+    },
+    {
+      "ville": "Aigle",
+      "count": 3,
+      "total_chf": 678000,
+      "cantons": [
+        "SR",
+        "VD",
+        "VS"
+      ],
+      "lat": 46.3175,
+      "lng": 6.9697,
+      "top_3_beneficiaires": [
+        {
+          "nom": "tour de romandie",
+          "chf": 600000
+        },
+        {
+          "nom": "cadra theatre waouw",
+          "chf": 75000
+        },
+        {
+          "nom": "la fugue chablaisanne",
+          "chf": 3000
+        }
+      ]
+    },
+    {
+      "ville": "Yverdon-les-Bains",
+      "count": 6,
+      "total_chf": 638000,
+      "cantons": [
+        "FR",
+        "VD"
+      ],
+      "lat": 46.7785,
+      "lng": 6.6411,
+      "top_3_beneficiaires": [
+        {
+          "nom": "communaute d emmaus",
+          "chf": 310000
+        },
+        {
+          "nom": "saphir",
+          "chf": 200000
+        },
+        {
+          "nom": "morija",
+          "chf": 79000
+        }
+      ]
+    },
+    {
+      "ville": "Service",
+      "count": 2,
+      "total_chf": 595400,
+      "cantons": [
+        "VD"
+      ],
+      "lat": null,
+      "lng": null,
+      "top_3_beneficiaires": [
+        {
+          "nom": "universite de lausanne",
+          "chf": 595400
         }
       ]
     }
