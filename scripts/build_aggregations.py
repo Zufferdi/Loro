@@ -164,7 +164,7 @@ def main():
         json.dump({
             '_meta': {
                 'description': 'Treemap canton × secteur : où va chaque CHF par canton',
-                'method': "Aggrégation par (canton, secteur). Inclut le canton 'R' pour les attributions romandes intercantonales.",
+                'method': "Aggrégation par (canton, secteur). Inclut le canton 'SR' pour les attributions romandes intercantonales.",
                 'note': "Le champ 'secteur' est partiellement faussé par un bug parser (voir METHODOLOGY v13.10). Les sommes globales par canton sont correctes.",
             },
             'cantons': treemap_data,
@@ -176,7 +176,7 @@ def main():
     POPULATION = {
         'VD': 825_000, 'GE': 515_000, 'VS': 360_000,
         'FR': 335_000, 'NE': 175_000, 'JU':  75_000,
-        'R':       0,  # Intercantonal — not per-capita
+        'SR':       0,  # Intercantonal — not per-capita
     }
     canton_total = defaultdict(int)
     for e in entries:
@@ -198,7 +198,7 @@ def main():
             '_meta': {
                 'description': 'CHF reçus par habitant et par canton en 2025',
                 'method': "Total des attributions du BRB 2025 / population résidente (sources cantonales 2024)",
-                'note': "Le canton 'R' (intercantonal romand) n'a pas de population définie ; exclu du ratio.",
+                'note': "Le canton 'SR' (intercantonal romand) n'a pas de population définie ; exclu du ratio.",
                 'sources_population': "OFS / Statistiques cantonales 2024",
             },
             'cantons': per_cap,
