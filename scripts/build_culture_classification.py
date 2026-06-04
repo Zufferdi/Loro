@@ -45,13 +45,23 @@ CULTURE_PATTERNS = [
     ('Photographie',
      r'\b(photographie\b|photographique|photographe|festival\s+(de\s+)?photo)\b'),
 
+        # Musique classique — orchestres de chambre (avant Musique classique générique)
+    ('Orchestres de chambre',
+     r"\b(orchestre\s+de\s+chambre|orchestre\s+de\s+ch\.|"
+     r"\bOCL\b|\bOCG\b|\bOCJ\b|\bOCV\b|\bOCF\b|"
+     r"camerata|sinfonietta|chamber\s+orchestra|"
+     r"orchestre\s+de\s+chambre\s+de\s+\w+|"
+     r"orchestre\s+de\s+chambre\s+fribourgeois|"
+     r"orchestre\s+de\s+chambre\s+jurassien|"
+     r"orchestre\s+de\s+chambre\s+des\s+étudiant)\b"),
+
     # Musique classique — orchestres, opéra, chœurs
     ('Musique classique',
      r"\b(orchestre|philharmonique|symphonique|opéra\b|opera\b|opérette|"
      r"chœur|choeur|chorale\b|chorales|ensemble\s+vocal|musique\s+de\s+chambre|"
      r"musique\s+classique|musique\s+ancienne|musique\s+sacrée|"
      r"concert\s+(choral|d'orgue|sacré)|conservatoire\s+(de\s+|populaire|cantonal)|"
-     r"camerata|harmonie\s+municipale|chant\s+choral|sonate|symphonie|récital)\b"),
+     r"harmonie\s+municipale|chant\s+choral|sonate|symphonie|récital)\b"),
 
     # Musique populaire / Jazz / Rock
     ('Musique populaire / Jazz',
