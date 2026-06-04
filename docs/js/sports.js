@@ -93,24 +93,42 @@
           <div class="sports-bar" style="width:${barWidth}%"></div>
         </div>
         <div class="sports-samples" style="display:none">
-          <div class="sports-samples-title">Exemples de bénéficiaires :</div>
-          ${s.samples.map(x => `
+          <div class="sports-samples-title">Tous les bénéficiaires (${s.count}) — triés par montant :</div>
+          <input type="text" class="samples-search" placeholder="🔎 Filtrer par nom, ville…" />
+          <div class="sports-samples-list"></div>
+        </div>
+      `;
+
+      // Click to toggle samples + lazy render full list
+      const entries = s.all_entries || s.samples || [];
+      let rendered = false;
+      row.querySelector('.sports-row-head').addEventListener('click', () => {
+        const wrap = row.querySelector('.sports-samples');
+        const open = wrap.style.display !== 'none';
+        wrap.style.display = open ? 'none' : 'block';
+        row.classList.toggle('is-open', !open);
+        if (!open && !rendered) {
+          rendered = true;
+          const listEl = wrap.querySelector('.sports-samples-list');
+          listEl.innerHTML = entries.map(x => `
             <div class="sports-sample">
               <span class="sports-sample-nom">${escapeHtml(x.nom)}</span>
               ${x.ville ? `<span class="sports-sample-ville">${escapeHtml(x.ville)}</span>` : ''}
               <span class="sports-sample-amt">${fmtCHF(x.montant_CHF)}</span>
               <span class="sports-sample-c ${cantonClass(x.canton)}">${x.canton}</span>
             </div>
-          `).join('')}
-        </div>
-      `;
-
-      // Click to toggle samples
-      row.querySelector('.sports-row-head').addEventListener('click', () => {
-        const samples = row.querySelector('.sports-samples');
-        const open = samples.style.display !== 'none';
-        samples.style.display = open ? 'none' : 'block';
-        row.classList.toggle('is-open', !open);
+          `).join('');
+          // Wire up text search
+          const searchEl = wrap.querySelector('.samples-search');
+          const items = wrap.querySelectorAll('.sports-sample');
+          searchEl.addEventListener('input', () => {
+            const q = searchEl.value.trim().toLowerCase();
+            items.forEach(it => {
+              const txt = it.textContent.toLowerCase();
+              it.classList.toggle('is-hidden', q && !txt.includes(q));
+            });
+          });
+        }
       });
 
       list.appendChild(row);
