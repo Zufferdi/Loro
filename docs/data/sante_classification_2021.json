@@ -5,36 +5,36 @@
     "source": "brb2021_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 215,
-    "total_chf": 36298182,
+    "total_entries": 214,
+    "total_chf": 15738665,
     "precise_classified_entries": 44,
     "precise_classified_chf": 5162225,
-    "pct_chf_precisely_classified": 14.2,
+    "pct_chf_precisely_classified": 32.8,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 215,
-    "total_chf_classified": 36298182,
-    "catchall_chf": 31135957,
+    "total_entries_classified": 214,
+    "total_chf_classified": 15738665,
+    "catchall_chf": 10576440,
     "cross_year_recovered": 12,
     "sector": "Santé et handicap",
     "sector_slug": "sante",
-    "total_entries_sector": 215,
-    "total_chf_sector": 36298182,
+    "total_entries_sector": 214,
+    "total_chf_sector": 15738665,
     "pct_entries_classified": 100.0
   },
   "categories": [
     {
       "name": "Soutien général à la santé / handicap",
-      "count": 171,
-      "total_chf": 31135957,
-      "mean_chf": 182081,
+      "count": 170,
+      "total_chf": 10576440,
+      "mean_chf": 62214,
       "cantons": {
         "VD": {
-          "count": 24,
-          "total_chf": 23557517
+          "count": 25,
+          "total_chf": 3012090
         },
         "FR": {
-          "count": 4,
-          "total_chf": 99090
+          "count": 2,
+          "total_chf": 85000
         },
         "GE": {
           "count": 42,
@@ -55,12 +55,6 @@
       },
       "samples": [
         {
-          "nom": "Associations, institutions et fondations bénéficiaires des contributions de la Loterie Romande Taxes prélevées par l’État de Vaud :",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 20559517
-        },
-        {
           "nom": "Fond. Valaisanne en Faveur des Personnes Handicapées Mentales",
           "ville": "Sion",
           "canton": "VS",
@@ -79,20 +73,20 @@
           "montant_CHF": 1000000
         },
         {
-          "nom": "Evénement Fond. Arc en Scène - centre neuchâtelois des arts vivants - TPR",
+          "nom": "Fond. Arc en Scène - centre neuchâtelois des arts vivants - TPR",
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
           "montant_CHF": 450000
+        },
+        {
+          "nom": "Ensemble Symphonique Neuchâtel - ESN",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 375000
         }
       ],
       "all_entries": [
         {
-          "nom": "Associations, institutions et fondations bénéficiaires des contributions de la Loterie Romande Taxes prélevées par l’État de Vaud :",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 20559517
-        },
-        {
           "nom": "Fond. Valaisanne en Faveur des Personnes Handicapées Mentales",
           "ville": "Sion",
           "canton": "VS",
@@ -111,7 +105,7 @@
           "montant_CHF": 1000000
         },
         {
-          "nom": "Evénement Fond. Arc en Scène - centre neuchâtelois des arts vivants - TPR",
+          "nom": "Fond. Arc en Scène - centre neuchâtelois des arts vivants - TPR",
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
           "montant_CHF": 450000
@@ -151,19 +145,19 @@
           "montant_CHF": 200000
         },
         {
-          "nom": "Investissement Les Ecolades",
+          "nom": "Les Ecolades",
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
           "montant_CHF": 190000
         },
         {
-          "nom": "Evénement Assoc. Rodolphe de Neuchâtel",
+          "nom": "Assoc. Rodolphe de Neuchâtel",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 150000
         },
         {
-          "nom": "Publication Fond. Neuchâtel Openair",
+          "nom": "Fond. Neuchâtel Openair",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 150000
@@ -187,7 +181,7 @@
           "montant_CHF": 120000
         },
         {
-          "nom": "Investissement Pro Junior - arc jurassien",
+          "nom": "Pro Junior - arc jurassien",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 100000
@@ -223,7 +217,7 @@
           "montant_CHF": 90000
         },
         {
-          "nom": "Investissement Circo Bello",
+          "nom": "Circo Bello",
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
           "montant_CHF": 87000
@@ -241,7 +235,7 @@
           "montant_CHF": 70000
         },
         {
-          "nom": "Evénement Assoc. Spectaclexpo",
+          "nom": "Assoc. Spectaclexpo",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 70000
@@ -295,7 +289,7 @@
           "montant_CHF": 60000
         },
         {
-          "nom": "Evénement Assoc. Pro-création",
+          "nom": "Assoc. Pro-création",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 55000
@@ -325,7 +319,7 @@
           "montant_CHF": 50000
         },
         {
-          "nom": "Evénement Café-théâtre La Grange et Casino",
+          "nom": "Café-théâtre La Grange et Casino",
           "ville": "Le Locle",
           "canton": "NE",
           "montant_CHF": 50000
@@ -367,7 +361,7 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Evénement FNAAC",
+          "nom": "FNAAC",
           "ville": "Valangin",
           "canton": "NE",
           "montant_CHF": 40000
@@ -379,7 +373,7 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Evénement Editions Alphil",
+          "nom": "Editions Alphil",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 35200
@@ -391,7 +385,7 @@
           "montant_CHF": 35000
         },
         {
-          "nom": "Publication Editions Attinger",
+          "nom": "Editions Attinger",
           "ville": "Colombier",
           "canton": "NE",
           "montant_CHF": 32000
@@ -421,7 +415,7 @@
           "montant_CHF": 30000
         },
         {
-          "nom": "Publication Assoc. Théâtre Pro NE",
+          "nom": "Assoc. Théâtre Pro NE",
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
           "montant_CHF": 30000
@@ -433,13 +427,13 @@
           "montant_CHF": 30000
         },
         {
-          "nom": "à distance et mise aux normes d'une maison d'habitation e-KIP Centre informatique pédagogique",
+          "nom": "Centre informatique pédagogique",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 30000
         },
         {
-          "nom": "équipement de la maison Clair-Vivre Fond. EducArtis",
+          "nom": "Fond. EducArtis",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 30000
@@ -469,7 +463,7 @@
           "montant_CHF": 25000
         },
         {
-          "nom": "Investissement Buskers Festival",
+          "nom": "Buskers Festival",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 25000
@@ -505,7 +499,7 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "Evénement Assoc. Mille fois le temps",
+          "nom": "Assoc. Mille fois le temps",
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
           "montant_CHF": 20000
@@ -529,7 +523,7 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "Publication Ensemble La Sestina",
+          "nom": "Ensemble La Sestina",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 20000
@@ -595,7 +589,7 @@
           "montant_CHF": 15000
         },
         {
-          "nom": "Investissement Centre de Loisirs",
+          "nom": "Centre de Loisirs",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 15000
@@ -625,7 +619,7 @@
           "montant_CHF": 15000
         },
         {
-          "nom": "Evénement Full PETAL Machine",
+          "nom": "Full PETAL Machine",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 15000
@@ -673,7 +667,7 @@
           "montant_CHF": 13200
         },
         {
-          "nom": "genevoises Féd. Genevoise MédiationS - FGeM",
+          "nom": "Féd. Genevoise MédiationS - FGeM",
           "ville": "Cologny",
           "canton": "GE",
           "montant_CHF": 12800
@@ -685,7 +679,7 @@
           "montant_CHF": 12500
         },
         {
-          "nom": "Investissement Assoc. Graine de génie et Graine de citoyen",
+          "nom": "Assoc. Graine de génie et Graine de citoyen",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 12000
@@ -697,7 +691,7 @@
           "montant_CHF": 12000
         },
         {
-          "nom": "Publication Editions de la Chatière",
+          "nom": "Editions de la Chatière",
           "ville": "Chézard-St-Martin",
           "canton": "NE",
           "montant_CHF": 12000
@@ -733,13 +727,13 @@
           "montant_CHF": 10000
         },
         {
-          "nom": "Investissement Assoc. du Crêt-Meuron, La Vue-des-Alpes",
+          "nom": "Assoc. du Crêt-Meuron, La Vue-des-Alpes",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 10000
         },
         {
-          "nom": "Evénement Assoc. Swiss International Music, Les Vieux-Prés",
+          "nom": "Assoc. Swiss International Music, Les Vieux-Prés",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 10000
@@ -751,7 +745,7 @@
           "montant_CHF": 10000
         },
         {
-          "nom": "Publication et exposition Assoc. pour la Collégiale",
+          "nom": "Assoc. pour la Collégiale",
           "ville": "Peseux",
           "canton": "NE",
           "montant_CHF": 10000
@@ -769,7 +763,7 @@
           "montant_CHF": 10000
         },
         {
-          "nom": "Evénement Découvertes musicales - Le Locle",
+          "nom": "Découvertes musicales - Le Locle",
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
           "montant_CHF": 10000
@@ -781,7 +775,7 @@
           "montant_CHF": 10000
         },
         {
-          "nom": "www.cemea.ch Club Genevois de Débat",
+          "nom": "Club Genevois de Débat",
           "ville": "Meyrin",
           "canton": "GE",
           "montant_CHF": 10000
@@ -799,7 +793,7 @@
           "montant_CHF": 10000
         },
         {
-          "nom": "Investissement Centre Jeunesse Val-de-Ruz",
+          "nom": "Centre Jeunesse Val-de-Ruz",
           "ville": "Cernier",
           "canton": "NE",
           "montant_CHF": 9000
@@ -811,7 +805,7 @@
           "montant_CHF": 8000
         },
         {
-          "nom": "Evénement Fond. IdéeSport",
+          "nom": "Fond. IdéeSport",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 8000
@@ -843,13 +837,13 @@
         {
           "nom": "Ecole de Musique Vaudoise en Réseau",
           "ville": "Bussigny",
-          "canton": "FR",
+          "canton": "VD",
           "montant_CHF": 7090
         },
         {
-          "nom": "Publication Handicamp",
+          "nom": "Handicamp",
           "ville": "Bussigny",
-          "canton": "FR",
+          "canton": "VD",
           "montant_CHF": 7000
         },
         {
@@ -865,7 +859,7 @@
           "montant_CHF": 7000
         },
         {
-          "nom": "Investissement Assoc. du scoutisme neuchâtelois",
+          "nom": "Assoc. du scoutisme neuchâtelois",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 6500
@@ -877,13 +871,13 @@
           "montant_CHF": 6000
         },
         {
-          "nom": "Evénement Assoc. Passe à l'acte-troupe de théâtre",
+          "nom": "Assoc. Passe à l'acte-troupe de théâtre",
           "ville": "Les Brenets",
           "canton": "NE",
           "montant_CHF": 6000
         },
         {
-          "nom": "Evénement Assoc. Pierrot Productions",
+          "nom": "Assoc. Pierrot Productions",
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
           "montant_CHF": 6000
@@ -907,7 +901,7 @@
           "montant_CHF": 6000
         },
         {
-          "nom": "Evénement Corn'Rock Festival",
+          "nom": "Corn'Rock Festival",
           "ville": "Cornaux",
           "canton": "NE",
           "montant_CHF": 6000
@@ -931,7 +925,7 @@
           "montant_CHF": 5000
         },
         {
-          "nom": "Evénement Assoc. MUKUNA AOC Production",
+          "nom": "Assoc. MUKUNA AOC Production",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 5000
@@ -943,7 +937,7 @@
           "montant_CHF": 5000
         },
         {
-          "nom": "Evénement Assoc. Trio Mistral",
+          "nom": "Assoc. Trio Mistral",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 5000
@@ -967,7 +961,7 @@
           "montant_CHF": 4000
         },
         {
-          "nom": "Evénement Assoc. Voices",
+          "nom": "Assoc. Voices",
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
           "montant_CHF": 4000
@@ -1003,13 +997,13 @@
           "montant_CHF": 3000
         },
         {
-          "nom": "Evénement La Chaux-de-Fonds",
+          "nom": "La Chaux-de-Fonds",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 3000
         },
         {
-          "nom": "Investissement Fond. Carrefour",
+          "nom": "Fond. Carrefour",
           "ville": "Peseux",
           "canton": "NE",
           "montant_CHF": 3000
@@ -1027,7 +1021,7 @@
           "montant_CHF": 3000
         },
         {
-          "nom": "Evénement Féd. Suisse de Scrabble",
+          "nom": "Féd. Suisse de Scrabble",
           "ville": "Couvet",
           "canton": "NE",
           "montant_CHF": 3000
@@ -1039,25 +1033,25 @@
           "montant_CHF": 3000
         },
         {
-          "nom": "Evénement Assoc. Taureau éditions",
+          "nom": "Assoc. Taureau éditions",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 2600
         },
         {
-          "nom": "Evénement Assoc. ReProMRuz",
+          "nom": "Assoc. ReProMRuz",
           "ville": "Cernier",
           "canton": "NE",
           "montant_CHF": 2500
         },
         {
-          "nom": "Evénement Le Chat Botté",
+          "nom": "Le Chat Botté",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 2000
         },
         {
-          "nom": "Evénement Les trois petits cochons",
+          "nom": "Les trois petits cochons",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 2000
@@ -1069,7 +1063,7 @@
           "montant_CHF": 2000
         },
         {
-          "nom": "Procap La Chaux-de-Fonds / Val- de-Travers",
+          "nom": "Procap La Chaux-de-Fonds / Val-de-Travers",
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
           "montant_CHF": 2000
@@ -1105,7 +1099,7 @@
           "montant_CHF": 1500
         },
         {
-          "nom": "Evénement Assoc. MAT",
+          "nom": "Assoc. MAT",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 1000
@@ -1157,7 +1151,7 @@
           "montant_CHF": 736400
         },
         {
-          "nom": "Publication Fond. CHUV",
+          "nom": "Fond. CHUV",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 260000
@@ -1189,7 +1183,7 @@
           "montant_CHF": 736400
         },
         {
-          "nom": "Publication Fond. CHUV",
+          "nom": "Fond. CHUV",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 260000
@@ -1225,7 +1219,7 @@
           "montant_CHF": 100000
         },
         {
-          "nom": "Evénement Croix-Rouge suisse - Canton de Neuchâtel",
+          "nom": "Croix-Rouge suisse - Canton de Neuchâtel",
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
           "montant_CHF": 50000
@@ -1297,7 +1291,7 @@
           "montant_CHF": 800000
         },
         {
-          "nom": "Publication Fond. Transport Handicap Vaud",
+          "nom": "Fond. Transport Handicap Vaud",
           "ville": "Le Mont-sur-Lausanne",
           "canton": "VD",
           "montant_CHF": 220000
@@ -1329,7 +1323,7 @@
           "montant_CHF": 800000
         },
         {
-          "nom": "Publication Fond. Transport Handicap Vaud",
+          "nom": "Fond. Transport Handicap Vaud",
           "ville": "Le Mont-sur-Lausanne",
           "canton": "VD",
           "montant_CHF": 220000
@@ -1371,7 +1365,7 @@
           "montant_CHF": 5000
         },
         {
-          "nom": "en fauteuil roulant CMP Centre médico- psychologique",
+          "nom": "Centre médico- psychologique",
           "ville": "Delémont",
           "canton": "JU",
           "montant_CHF": 1980
@@ -1451,7 +1445,7 @@
       },
       "samples": [
         {
-          "nom": "personnes en situation de handicap Fond. Cap Loisirs",
+          "nom": "Fond. Cap Loisirs",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 270000
@@ -1469,13 +1463,13 @@
           "montant_CHF": 100000
         },
         {
-          "nom": "Formation Assoc. Insieme Valais romand",
+          "nom": "Insieme Valais romand",
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 70000
         },
         {
-          "nom": "Equipement Espace Tourbillon Assoc. Insieme - Genève",
+          "nom": "Espace Tourbillon Assoc. Insieme - Genève",
           "ville": "Carouge",
           "canton": "GE",
           "montant_CHF": 30000
@@ -1483,7 +1477,7 @@
       ],
       "all_entries": [
         {
-          "nom": "personnes en situation de handicap Fond. Cap Loisirs",
+          "nom": "Fond. Cap Loisirs",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 270000
@@ -1501,13 +1495,13 @@
           "montant_CHF": 100000
         },
         {
-          "nom": "Formation Assoc. Insieme Valais romand",
+          "nom": "Insieme Valais romand",
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 70000
         },
         {
-          "nom": "Equipement Espace Tourbillon Assoc. Insieme - Genève",
+          "nom": "Espace Tourbillon Assoc. Insieme - Genève",
           "ville": "Carouge",
           "canton": "GE",
           "montant_CHF": 30000

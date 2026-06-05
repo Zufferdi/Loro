@@ -5,16 +5,16 @@
     "source": "brb2024_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 395,
-    "total_chf": 28294069,
-    "precise_classified_entries": 116,
-    "precise_classified_chf": 20247494,
-    "pct_chf_precisely_classified": 71.6,
+    "total_entries": 396,
+    "total_chf": 28301069,
+    "precise_classified_entries": 117,
+    "precise_classified_chf": 20184494,
+    "pct_chf_precisely_classified": 71.3,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 395,
-    "total_chf_classified": 28294069,
-    "catchall_chf": 8046575,
-    "cross_year_recovered": 76
+    "total_entries_classified": 396,
+    "total_chf_classified": 28301069,
+    "catchall_chf": 8116575,
+    "cross_year_recovered": 77
   },
   "categories": [
     {
@@ -278,12 +278,12 @@
     {
       "name": "Soutien général à l'action sociale",
       "count": 279,
-      "total_chf": 8046575,
-      "mean_chf": 28840,
+      "total_chf": 8116575,
+      "mean_chf": 29091,
       "cantons": {
         "VD": {
-          "count": 68,
-          "total_chf": 3223300
+          "count": 70,
+          "total_chf": 3242300
         },
         "SR": {
           "count": 24,
@@ -292,10 +292,6 @@
         "FR": {
           "count": 37,
           "total_chf": 1125175
-        },
-        "JU": {
-          "count": 54,
-          "total_chf": 1159050
         },
         "NE": {
           "count": 52,
@@ -307,7 +303,11 @@
         },
         "VS": {
           "count": 27,
-          "total_chf": 551650
+          "total_chf": 621650
+        },
+        "JU": {
+          "count": 52,
+          "total_chf": 1140050
         }
       },
       "samples": [
@@ -492,6 +492,12 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 85000
+        },
+        {
+          "nom": "Fond. La Résidence",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 83000
         },
         {
           "nom": "ADESSIA",
@@ -1060,7 +1066,7 @@
         {
           "nom": "AVIVO Section de Lausanne",
           "ville": null,
-          "canton": "JU",
+          "canton": "VD",
           "montant_CHF": 14000
         },
         {
@@ -1085,12 +1091,6 @@
           "nom": "École de Cirque Fun'en'Bulle",
           "ville": "Marsens",
           "canton": "FR",
-          "montant_CHF": 13000
-        },
-        {
-          "nom": "Altersheim St. Barbara Lötschental",
-          "ville": "Kippel",
-          "canton": "VS",
           "montant_CHF": 13000
         },
         {
@@ -1498,7 +1498,7 @@
         {
           "nom": "AVIVO Section de Renens et environs",
           "ville": null,
-          "canton": "JU",
+          "canton": "VD",
           "montant_CHF": 5000
         },
         {
@@ -1546,22 +1546,22 @@
       ]
     },
     {
-      "name": "Personnes âgées",
-      "count": 35,
-      "total_chf": 2145644,
-      "mean_chf": 61304,
+      "name": "EMS et personnes âgées",
+      "count": 37,
+      "total_chf": 2353644,
+      "mean_chf": 63612,
       "cantons": {
         "VD": {
-          "count": 7,
-          "total_chf": 287500
+          "count": 8,
+          "total_chf": 482500
         },
         "FR": {
           "count": 1,
           "total_chf": 600000
         },
         "VS": {
-          "count": 18,
-          "total_chf": 1012144
+          "count": 19,
+          "total_chf": 1025144
         },
         "SR": {
           "count": 6,
@@ -1590,12 +1590,18 @@
           "montant_CHF": 209144
         },
         {
+          "nom": "Fond. de l'Orme",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 195000
+        },
+        {
           "nom": "Tertianum (groupe d'EMS — 4 résidences)",
           "montant_CHF": 115000,
           "canton": "VS",
           "ville": "Saxon",
           "secteur": "",
-          "description": "Consolidation de 4 attributions : Tertianum Les Marronniers, Tertianum Les Tourelles, Tertianum Les Sources, Tertianum La Venise",
+          "description": "Consolidation de 4 attributions : Tertianum Les Sources, Tertianum La Venise, Tertianum Les Tourelles, Tertianum Les Marronniers",
           "_consolidated": true,
           "_count": 4
         },
@@ -1604,12 +1610,6 @@
           "ville": "Yverdon-les-Bains",
           "canton": "VD",
           "montant_CHF": 99000
-        },
-        {
-          "nom": "EMS Le Christ Roi",
-          "ville": "Crans-Montana",
-          "canton": "VS",
-          "montant_CHF": 80000
         }
       ],
       "all_entries": [
@@ -1626,12 +1626,18 @@
           "montant_CHF": 209144
         },
         {
+          "nom": "Fond. de l'Orme",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 195000
+        },
+        {
           "nom": "Tertianum (groupe d'EMS — 4 résidences)",
           "montant_CHF": 115000,
           "canton": "VS",
           "ville": "Saxon",
           "secteur": "",
-          "description": "Consolidation de 4 attributions : Tertianum Les Marronniers, Tertianum Les Tourelles, Tertianum Les Sources, Tertianum La Venise",
+          "description": "Consolidation de 4 attributions : Tertianum Les Sources, Tertianum La Venise, Tertianum Les Tourelles, Tertianum Les Marronniers",
           "_consolidated": true,
           "_count": 4
         },
@@ -1804,6 +1810,12 @@
           "montant_CHF": 15000
         },
         {
+          "nom": "Altersheim St. Barbara Lötschental",
+          "ville": "Kippel",
+          "canton": "VS",
+          "montant_CHF": 13000
+        },
+        {
           "nom": "Rayons de Soleil - Club des Aînés de Renens et environs",
           "ville": "Renens",
           "canton": "VD",
@@ -1813,9 +1825,9 @@
     },
     {
       "name": "Migration / Intégration",
-      "count": 8,
-      "total_chf": 1929000,
-      "mean_chf": 241125,
+      "count": 9,
+      "total_chf": 1936000,
+      "mean_chf": 215111,
       "cantons": {
         "VD": {
           "count": 2,
@@ -1826,8 +1838,8 @@
           "total_chf": 155000
         },
         "SR": {
-          "count": 1,
-          "total_chf": 25000
+          "count": 2,
+          "total_chf": 32000
         },
         "GE": {
           "count": 2,
@@ -1914,6 +1926,12 @@
           "ville": "Espace",
           "canton": "FR",
           "montant_CHF": 20000
+        },
+        {
+          "nom": "ODAE Observatoire romand du droit d'asile et des étrangers",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 7000
         }
       ]
     },
@@ -2230,7 +2248,7 @@
       },
       "samples": [
         {
-          "nom": "diabètefribourg - Assoc. fribourgeoise du diabète",
+          "nom": "Assoc. fribourgeoise du diabète",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 250000
@@ -2262,7 +2280,7 @@
       ],
       "all_entries": [
         {
-          "nom": "diabètefribourg - Assoc. fribourgeoise du diabète",
+          "nom": "Assoc. fribourgeoise du diabète",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 250000
@@ -2296,50 +2314,6 @@
           "ville": "Troistorrents",
           "canton": "SR",
           "montant_CHF": 1000
-        }
-      ]
-    },
-    {
-      "name": "EMS & personnes âgées",
-      "count": 2,
-      "total_chf": 278000,
-      "mean_chf": 139000,
-      "cantons": {
-        "VD": {
-          "count": 1,
-          "total_chf": 195000
-        },
-        "VS": {
-          "count": 1,
-          "total_chf": 83000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Fond. de l'Orme",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 195000
-        },
-        {
-          "nom": "Fond. La Résidence",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 83000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Fond. de l'Orme",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 195000
-        },
-        {
-          "nom": "Fond. La Résidence",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 83000
         }
       ]
     },

@@ -5,23 +5,23 @@
     "source": "brb2022_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 920,
-    "total_chf": 18883439,
-    "precise_classified_entries": 702,
-    "precise_classified_chf": 13498197,
-    "pct_chf_precisely_classified": 71.5,
+    "total_entries": 916,
+    "total_chf": 18825439,
+    "precise_classified_entries": 700,
+    "precise_classified_chf": 13481197,
+    "pct_chf_precisely_classified": 71.6,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 920,
-    "total_chf_classified": 18883439,
-    "catchall_chf": 5385242,
-    "cross_year_recovered": 656
+    "total_entries_classified": 916,
+    "total_chf_classified": 18825439,
+    "catchall_chf": 5344242,
+    "cross_year_recovered": 666
   },
   "sports": [
     {
       "name": "Soutien général au sport",
-      "count": 218,
-      "total_chf": 5385242,
-      "mean_chf": 24702,
+      "count": 216,
+      "total_chf": 5344242,
+      "mean_chf": 24741,
       "cantons": {
         "VD": {
           "count": 16,
@@ -32,20 +32,20 @@
           "total_chf": 1841831
         },
         "FR": {
-          "count": 50,
-          "total_chf": 496123
+          "count": 51,
+          "total_chf": 498123
         },
         "VS": {
-          "count": 30,
-          "total_chf": 656362
+          "count": 28,
+          "total_chf": 623362
         },
         "NE": {
           "count": 12,
           "total_chf": 472007
         },
         "GE": {
-          "count": 13,
-          "total_chf": 903500
+          "count": 12,
+          "total_chf": 893500
         },
         "JU": {
           "count": 12,
@@ -350,12 +350,6 @@
           "montant_CHF": 27027
         },
         {
-          "nom": "Verein Freunde der Festung Naters",
-          "ville": "Naters",
-          "canton": "VS",
-          "montant_CHF": 27000
-        },
-        {
           "nom": "Assoc. Sierre-Zinal",
           "ville": null,
           "canton": "SR",
@@ -602,12 +596,6 @@
           "montant_CHF": 10000
         },
         {
-          "nom": "Observatoire romand du droit d'asile et des étrangers",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 10000
-        },
-        {
           "nom": "Pharmaciens Sans Frontières Suisse",
           "ville": "Genève",
           "canton": "GE",
@@ -653,12 +641,6 @@
           "nom": "Social Movies Prod",
           "ville": "Fribourg",
           "canton": "FR",
-          "montant_CHF": 6000
-        },
-        {
-          "nom": "Stiftung Lötschentaler Museum",
-          "ville": "Kippel",
-          "canton": "VS",
           "montant_CHF": 6000
         },
         {
@@ -905,6 +887,12 @@
           "nom": "Sté Vaudoise d'Attelage",
           "ville": null,
           "canton": "VD",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "SHC Givisiez Skater 95",
+          "ville": "Givisiez",
+          "canton": "FR",
           "montant_CHF": 2000
         },
         {
@@ -1202,7 +1190,7 @@
           "montant_CHF": 750
         },
         {
-          "nom": "Club Haltérophile de la Chaux-de- Fonds",
+          "nom": "Club Haltérophile de la Chaux-de-Fonds",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 740
@@ -1284,18 +1272,30 @@
           "ville": null,
           "canton": "FR",
           "montant_CHF": 500
+        },
+        {
+          "nom": "Unihockey Club Rouge et Or du Locle",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "PolySport Dorothea Naters",
+          "ville": "Naters",
+          "canton": "VS",
+          "montant_CHF": 471
         }
       ]
     },
     {
       "name": "Multi-sports",
-      "count": 84,
-      "total_chf": 2997658,
-      "mean_chf": 35686,
+      "count": 83,
+      "total_chf": 2982658,
+      "mean_chf": 35935,
       "cantons": {
         "SR": {
-          "count": 30,
-          "total_chf": 666156
+          "count": 29,
+          "total_chf": 651156
         },
         "VD": {
           "count": 27,
@@ -1468,12 +1468,6 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 17400
-        },
-        {
-          "nom": "Boisset Arnaud",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 15000
         },
         {
           "nom": "MJ Gottéron",
@@ -1710,7 +1704,7 @@
           "montant_CHF": 620
         },
         {
-          "nom": "Achat de matériel sportif • suite Rowing-Club Lausanne",
+          "nom": "Club Lausanne",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 580
@@ -2133,13 +2127,9 @@
       "total_chf": 1655184,
       "mean_chf": 23645,
       "cantons": {
-        "GE": {
-          "count": 12,
-          "total_chf": 418170
-        },
         "VD": {
-          "count": 16,
-          "total_chf": 414110
+          "count": 20,
+          "total_chf": 802915
         },
         "SR": {
           "count": 32,
@@ -2148,6 +2138,10 @@
         "FR": {
           "count": 9,
           "total_chf": 495362
+        },
+        "GE": {
+          "count": 8,
+          "total_chf": 29365
         },
         "JU": {
           "count": 1,
@@ -2158,7 +2152,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Football",
           "ville": "Football",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 350000
         },
         {
@@ -2190,7 +2184,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Football",
           "ville": "Football",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 350000
         },
         {
@@ -2244,7 +2238,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Football",
           "ville": "Football",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 28200
         },
         {
@@ -2280,7 +2274,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Football",
           "ville": "Football",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 10000
         },
         {
@@ -2556,7 +2550,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Football",
           "ville": "Football",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 605
         },
         {
@@ -2611,9 +2605,9 @@
     },
     {
       "name": "Ski / Snowboard",
-      "count": 69,
-      "total_chf": 1108068,
-      "mean_chf": 16058,
+      "count": 68,
+      "total_chf": 1106068,
+      "mean_chf": 16265,
       "cantons": {
         "SR": {
           "count": 23,
@@ -2628,8 +2622,8 @@
           "total_chf": 586124
         },
         "FR": {
-          "count": 10,
-          "total_chf": 13080
+          "count": 9,
+          "total_chf": 11080
         },
         "NE": {
           "count": 5,
@@ -2892,12 +2886,6 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 2040
-        },
-        {
-          "nom": "SHC Givisiez Skater 95",
-          "ville": "Givisiez",
-          "canton": "FR",
-          "montant_CHF": 2000
         },
         {
           "nom": "Ski Nautique Club Neuchâtel",
@@ -4169,17 +4157,17 @@
       "total_chf": 450227,
       "mean_chf": 5424,
       "cantons": {
-        "GE": {
-          "count": 22,
-          "total_chf": 273654
-        },
         "VD": {
-          "count": 28,
-          "total_chf": 70737
+          "count": 29,
+          "total_chf": 71774
         },
         "SR": {
           "count": 14,
           "total_chf": 80186
+        },
+        "GE": {
+          "count": 18,
+          "total_chf": 270877
         },
         "FR": {
           "count": 5,
@@ -4190,8 +4178,8 @@
           "total_chf": 3521
         },
         "NE": {
-          "count": 5,
-          "total_chf": 5570
+          "count": 8,
+          "total_chf": 7310
         },
         "JU": {
           "count": 2,
@@ -4444,7 +4432,7 @@
         {
           "nom": "Assoc. Cantonale vaudoise, gymnastique",
           "ville": "gymnastique",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 1037
         },
         {
@@ -4510,7 +4498,7 @@
         {
           "nom": "Assoc. Cantonale Neuchâteloise, Gymnastique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "NE",
           "montant_CHF": 740
         },
         {
@@ -4546,13 +4534,13 @@
         {
           "nom": "Assoc. Cantonale Neuchâteloise de Gymnastique Artistique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "NE",
           "montant_CHF": 500
         },
         {
           "nom": "Assoc. Cantonale Neuchâteloise de Gymnastique Artistique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "NE",
           "montant_CHF": 500
         },
         {
@@ -4738,16 +4726,16 @@
       "mean_chf": 13549,
       "cantons": {
         "VD": {
-          "count": 5,
-          "total_chf": 42710
-        },
-        "FR": {
-          "count": 10,
-          "total_chf": 114883
+          "count": 6,
+          "total_chf": 43409
         },
         "SR": {
           "count": 7,
           "total_chf": 105645
+        },
+        "FR": {
+          "count": 9,
+          "total_chf": 114184
         },
         "NE": {
           "count": 2,
@@ -4902,7 +4890,7 @@
         {
           "nom": "Bussigny VBC",
           "ville": "Bussigny",
-          "canton": "FR",
+          "canton": "VD",
           "montant_CHF": 699
         },
         {
@@ -5204,7 +5192,7 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "Service des sports de la Chaux-de- Fonds",
+          "nom": "Service des sports de la Chaux-de-Fonds",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 18610
@@ -5236,7 +5224,7 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "Service des sports de la Chaux-de- Fonds",
+          "nom": "Service des sports de la Chaux-de-Fonds",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 18610
@@ -5355,17 +5343,17 @@
       "total_chf": 184606,
       "mean_chf": 7384,
       "cantons": {
-        "FR": {
-          "count": 13,
-          "total_chf": 172450
+        "VD": {
+          "count": 8,
+          "total_chf": 71304
         },
         "SR": {
           "count": 5,
           "total_chf": 2260
         },
-        "VD": {
-          "count": 5,
-          "total_chf": 3014
+        "FR": {
+          "count": 10,
+          "total_chf": 104160
         },
         "VS": {
           "count": 1,
@@ -5380,7 +5368,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
           "ville": "Hockey",
-          "canton": "FR",
+          "canton": "VD",
           "montant_CHF": 34000
         },
         {
@@ -5412,7 +5400,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
           "ville": "Hockey",
-          "canton": "FR",
+          "canton": "VD",
           "montant_CHF": 34000
         },
         {
@@ -5442,13 +5430,13 @@
         {
           "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
           "ville": "Hockey",
-          "canton": "FR",
+          "canton": "VD",
           "montant_CHF": 19050
         },
         {
           "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
           "ville": "Hockey",
-          "canton": "FR",
+          "canton": "VD",
           "montant_CHF": 15240
         },
         {

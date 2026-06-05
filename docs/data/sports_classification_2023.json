@@ -8,32 +8,32 @@
     "total_entries": 1653,
     "total_chf": 28119848,
     "precise_classified_entries": 1219,
-    "precise_classified_chf": 21809921,
-    "pct_chf_precisely_classified": 77.6,
+    "precise_classified_chf": 21733991,
+    "pct_chf_precisely_classified": 77.3,
     "pct_chf_classified": 100.0,
     "total_entries_classified": 1653,
     "total_chf_classified": 28119848,
-    "catchall_chf": 6309927,
-    "cross_year_recovered": 656
+    "catchall_chf": 6385857,
+    "cross_year_recovered": 666
   },
   "sports": [
     {
       "name": "Soutien général au sport",
       "count": 434,
-      "total_chf": 6309927,
-      "mean_chf": 14539,
+      "total_chf": 6385857,
+      "mean_chf": 14713,
       "cantons": {
         "FR": {
           "count": 49,
-          "total_chf": 420648
+          "total_chf": 421648
         },
         "VD": {
-          "count": 63,
-          "total_chf": 1202535
+          "count": 64,
+          "total_chf": 1290435
         },
         "SR": {
-          "count": 220,
-          "total_chf": 2490748
+          "count": 219,
+          "total_chf": 2477778
         },
         "NE": {
           "count": 29,
@@ -180,6 +180,12 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 92000
+        },
+        {
+          "nom": "Commune de Montreux",
+          "ville": "Montreux",
+          "canton": "VD",
+          "montant_CHF": 88000
         },
         {
           "nom": "SC Düdingen",
@@ -606,12 +612,6 @@
           "ville": "Saas-Fee",
           "canton": "VS",
           "montant_CHF": 13762
-        },
-        {
-          "nom": "Club des Lutteurs du Pays- d'Enhaut",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 12970
         },
         {
           "nom": "Union cycliste fribourgeoise",
@@ -1289,13 +1289,13 @@
     },
     {
       "name": "Multi-sports",
-      "count": 115,
-      "total_chf": 4972705,
-      "mean_chf": 43240,
+      "count": 113,
+      "total_chf": 4883805,
+      "mean_chf": 43219,
       "cantons": {
         "VD": {
-          "count": 51,
-          "total_chf": 2983112
+          "count": 49,
+          "total_chf": 2894212
         },
         "SR": {
           "count": 39,
@@ -1410,12 +1410,6 @@
           "ville": null,
           "canton": "VS",
           "montant_CHF": 110000
-        },
-        {
-          "nom": "Commune de Montreux",
-          "ville": "Montreux",
-          "canton": "VD",
-          "montant_CHF": 88000
         },
         {
           "nom": "SwissMedPro Health Services SA",
@@ -1868,12 +1862,6 @@
           "montant_CHF": 984
         },
         {
-          "nom": "Commune de Montreux",
-          "ville": "Montreux",
-          "canton": "VD",
-          "montant_CHF": 900
-        },
-        {
           "nom": "Centre Athlétique Broyard",
           "ville": null,
           "canton": "VD",
@@ -2049,17 +2037,13 @@
       "total_chf": 3709384,
       "mean_chf": 39885,
       "cantons": {
-        "GE": {
-          "count": 9,
-          "total_chf": 701122
+        "VD": {
+          "count": 23,
+          "total_chf": 1689646
         },
         "SR": {
           "count": 41,
           "total_chf": 812010
-        },
-        "VD": {
-          "count": 18,
-          "total_chf": 1213284
         },
         "JU": {
           "count": 2,
@@ -2072,13 +2056,17 @@
         "NE": {
           "count": 4,
           "total_chf": 25726
+        },
+        "GE": {
+          "count": 4,
+          "total_chf": 224760
         }
       },
       "samples": [
         {
           "nom": "Assoc. Cantonale Vaudoise, Football",
           "ville": "Football",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 408700
         },
         {
@@ -2110,7 +2098,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Football",
           "ville": "Football",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 408700
         },
         {
@@ -2254,7 +2242,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Football",
           "ville": "Football",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 33900
         },
         {
@@ -2278,7 +2266,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Football",
           "ville": "Football",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 28200
         },
         {
@@ -2392,7 +2380,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Football",
           "ville": "Football",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 5000
         },
         {
@@ -2578,7 +2566,7 @@
         {
           "nom": "Assoc. cantonale vaudoise, football",
           "ville": "football",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 562
         },
         {
@@ -3233,9 +3221,9 @@
     },
     {
       "name": "Ski / Snowboard",
-      "count": 93,
-      "total_chf": 1195391,
-      "mean_chf": 12853,
+      "count": 92,
+      "total_chf": 1193391,
+      "mean_chf": 12971,
       "cantons": {
         "SR": {
           "count": 43,
@@ -3250,8 +3238,8 @@
           "total_chf": 455445
         },
         "FR": {
-          "count": 8,
-          "total_chf": 25650
+          "count": 7,
+          "total_chf": 23650
         },
         "NE": {
           "count": 3,
@@ -3564,12 +3552,6 @@
           "ville": "snowboard",
           "canton": "VS",
           "montant_CHF": 2206
-        },
-        {
-          "nom": "SHC Givisiez Skater 95",
-          "ville": "Givisiez",
-          "canton": "FR",
-          "montant_CHF": 2000
         },
         {
           "nom": "Ski Club Riaz",
@@ -4309,33 +4291,33 @@
     },
     {
       "name": "Gymnastique",
-      "count": 114,
-      "total_chf": 1026404,
-      "mean_chf": 9003,
+      "count": 116,
+      "total_chf": 1028404,
+      "mean_chf": 8865,
       "cantons": {
-        "GE": {
-          "count": 31,
-          "total_chf": 473173
-        },
         "VD": {
-          "count": 30,
-          "total_chf": 280220
+          "count": 43,
+          "total_chf": 641350
         },
         "SR": {
           "count": 23,
           "total_chf": 182454
         },
         "FR": {
-          "count": 10,
-          "total_chf": 38399
+          "count": 9,
+          "total_chf": 36969
+        },
+        "GE": {
+          "count": 18,
+          "total_chf": 113348
         },
         "VS": {
           "count": 4,
           "total_chf": 3208
         },
         "NE": {
-          "count": 11,
-          "total_chf": 11705
+          "count": 14,
+          "total_chf": 13830
         },
         "JU": {
           "count": 5,
@@ -4346,7 +4328,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Gymnastique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 291400
         },
         {
@@ -4378,7 +4360,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Gymnastique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 291400
         },
         {
@@ -4420,7 +4402,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Gymnastique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 35020
         },
         {
@@ -4438,7 +4420,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Gymnastique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 10870
         },
         {
@@ -4468,19 +4450,19 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Gymnastique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 6550
         },
         {
           "nom": "Assoc. Cantonale Vaudoise, Gymnastique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 5930
         },
         {
           "nom": "Assoc. Cantonale Vaudoise, Gymnastique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 5700
         },
         {
@@ -4642,7 +4624,7 @@
         {
           "nom": "FSG Bussigny",
           "ville": "Bussigny",
-          "canton": "FR",
+          "canton": "VD",
           "montant_CHF": 1430
         },
         {
@@ -4678,7 +4660,7 @@
         {
           "nom": "Assoc. Cantonale Neuchâteloise de Gymnastique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "NE",
           "montant_CHF": 1125
         },
         {
@@ -4708,7 +4690,19 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Gymnastique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Badminton Club Yverdon-les- Bains",
+          "ville": "Yverdon-les- Bains",
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Badminton Club Yverdon-les- Bains",
+          "ville": "Yverdon-les- Bains",
+          "canton": "VD",
           "montant_CHF": 1000
         },
         {
@@ -4804,13 +4798,13 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Gymnastique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 500
         },
         {
           "nom": "Assoc. Cantonale Vaudoise, Gymnastique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 500
         },
         {
@@ -4864,13 +4858,13 @@
         {
           "nom": "Assoc. Cantonale Neuchâteloise de Gymnastique Artistique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "NE",
           "montant_CHF": 500
         },
         {
           "nom": "Assoc. Cantonale Neuchâteloise de Gymnastique Artistique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "NE",
           "montant_CHF": 500
         },
         {
@@ -4966,7 +4960,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Gymnastique",
           "ville": "Gymnastique",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 230
         },
         {
@@ -5803,13 +5797,9 @@
       "total_chf": 793911,
       "mean_chf": 10875,
       "cantons": {
-        "VS": {
-          "count": 12,
-          "total_chf": 133177
-        },
         "VD": {
-          "count": 26,
-          "total_chf": 295014
+          "count": 34,
+          "total_chf": 387824
         },
         "SR": {
           "count": 12,
@@ -5818,6 +5808,10 @@
         "FR": {
           "count": 1,
           "total_chf": 2000
+        },
+        "VS": {
+          "count": 4,
+          "total_chf": 40367
         },
         "NE": {
           "count": 8,
@@ -5854,7 +5848,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise pour la Natation",
           "ville": "Natation",
-          "canton": "VS",
+          "canton": "VD",
           "montant_CHF": 41900
         },
         {
@@ -5886,7 +5880,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise pour la Natation",
           "ville": "Natation",
-          "canton": "VS",
+          "canton": "VD",
           "montant_CHF": 41900
         },
         {
@@ -5928,19 +5922,19 @@
         {
           "nom": "Assoc. Cantonale Vaudoise pour la Natation",
           "ville": "Natation",
-          "canton": "VS",
+          "canton": "VD",
           "montant_CHF": 10800
         },
         {
           "nom": "Assoc. Cantonale Vaudoise pour la Natation",
           "ville": "Natation",
-          "canton": "VS",
+          "canton": "VD",
           "montant_CHF": 10600
         },
         {
           "nom": "Assoc. Cantonale Vaudoise pour la Natation",
           "ville": "Natation",
-          "canton": "VS",
+          "canton": "VD",
           "montant_CHF": 10600
         },
         {
@@ -6012,13 +6006,13 @@
         {
           "nom": "Assoc. Cantonale Vaudoise pour la Natation",
           "ville": "Natation",
-          "canton": "VS",
+          "canton": "VD",
           "montant_CHF": 6350
         },
         {
           "nom": "Assoc. Cantonale Vaudoise pour la Natation",
           "ville": "Natation",
-          "canton": "VS",
+          "canton": "VD",
           "montant_CHF": 5400
         },
         {
@@ -6030,7 +6024,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise pour la Natation",
           "ville": "Natation",
-          "canton": "VS",
+          "canton": "VD",
           "montant_CHF": 4160
         },
         {
@@ -6054,7 +6048,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise pour la Natation",
           "ville": "Natation",
-          "canton": "VS",
+          "canton": "VD",
           "montant_CHF": 3000
         },
         {
@@ -6311,17 +6305,17 @@
       "total_chf": 641026,
       "mean_chf": 12327,
       "cantons": {
-        "FR": {
-          "count": 21,
-          "total_chf": 219675
-        },
         "VD": {
-          "count": 11,
-          "total_chf": 305944
+          "count": 13,
+          "total_chf": 365794
         },
         "SR": {
           "count": 15,
           "total_chf": 91647
+        },
+        "FR": {
+          "count": 19,
+          "total_chf": 159825
         },
         "VS": {
           "count": 1,
@@ -6364,7 +6358,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
           "ville": "Hockey",
-          "canton": "FR",
+          "canton": "VD",
           "montant_CHF": 38000
         }
       ],
@@ -6396,7 +6390,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
           "ville": "Hockey",
-          "canton": "FR",
+          "canton": "VD",
           "montant_CHF": 38000
         },
         {
@@ -6426,7 +6420,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
           "ville": "Hockey",
-          "canton": "FR",
+          "canton": "VD",
           "montant_CHF": 21850
         },
         {
@@ -6849,13 +6843,13 @@
       "total_chf": 537516,
       "mean_chf": 10141,
       "cantons": {
-        "VS": {
-          "count": 26,
-          "total_chf": 140892
-        },
         "VD": {
-          "count": 7,
-          "total_chf": 201710
+          "count": 9,
+          "total_chf": 218605
+        },
+        "VS": {
+          "count": 24,
+          "total_chf": 123997
         },
         "SR": {
           "count": 12,
@@ -6958,7 +6952,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise d'Athlétisme",
           "ville": "Athlétisme",
-          "canton": "VS",
+          "canton": "VD",
           "montant_CHF": 16000
         },
         {
@@ -7132,7 +7126,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise d'Athlétisme",
           "ville": "Athlétisme",
-          "canton": "VS",
+          "canton": "VD",
           "montant_CHF": 895
         },
         {
@@ -8706,7 +8700,7 @@
           "montant_CHF": 950
         },
         {
-          "nom": "Sté de Tir à air comprimé du Val- de-Ruz",
+          "nom": "Sté de Tir à air comprimé du Val-de-Ruz",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 850
@@ -9581,13 +9575,17 @@
     },
     {
       "name": "Escrime",
-      "count": 17,
-      "total_chf": 55004,
-      "mean_chf": 3235,
+      "count": 18,
+      "total_chf": 67974,
+      "mean_chf": 3776,
       "cantons": {
         "VD": {
           "count": 13,
           "total_chf": 24559
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 12970
         },
         "VS": {
           "count": 2,
@@ -9610,6 +9608,12 @@
           "montant_CHF": 21745
         },
         {
+          "nom": "Club des Lutteurs du Pays- d'Enhaut",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 12970
+        },
+        {
           "nom": "Féd. Vaudoise d'Escrime",
           "ville": "Escrime",
           "canton": "VD",
@@ -9626,12 +9630,6 @@
           "ville": "Escrime",
           "canton": "VD",
           "montant_CHF": 6100
-        },
-        {
-          "nom": "Sté d'Escrime Sarine-Fribourg",
-          "ville": "Escrime",
-          "canton": "VD",
-          "montant_CHF": 2000
         }
       ],
       "all_entries": [
@@ -9640,6 +9638,12 @@
           "ville": null,
           "canton": "VS",
           "montant_CHF": 21745
+        },
+        {
+          "nom": "Club des Lutteurs du Pays- d'Enhaut",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 12970
         },
         {
           "nom": "Féd. Vaudoise d'Escrime",
@@ -10257,13 +10261,9 @@
       "total_chf": 11892,
       "mean_chf": 3964,
       "cantons": {
-        "GE": {
-          "count": 1,
-          "total_chf": 1700
-        },
         "VD": {
-          "count": 2,
-          "total_chf": 10192
+          "count": 3,
+          "total_chf": 11892
         }
       },
       "samples": [
@@ -10276,7 +10276,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Hockey sur gazon",
           "ville": "Hockey sur gazon",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 1700
         },
         {
@@ -10296,7 +10296,7 @@
         {
           "nom": "Assoc. Cantonale Vaudoise, Hockey sur gazon",
           "ville": "Hockey sur gazon",
-          "canton": "GE",
+          "canton": "VD",
           "montant_CHF": 1700
         },
         {

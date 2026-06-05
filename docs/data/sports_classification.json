@@ -5,43 +5,43 @@
     "source": "brb2025_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 2431,
-    "total_chf": 46088089,
-    "precise_classified_entries": 1683,
-    "precise_classified_chf": 34607465,
-    "pct_chf_precisely_classified": 75.1,
+    "total_entries": 2382,
+    "total_chf": 44170378,
+    "precise_classified_entries": 1687,
+    "precise_classified_chf": 34625920,
+    "pct_chf_precisely_classified": 78.4,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 2431,
-    "total_chf_classified": 46088089,
-    "catchall_chf": 11480624,
-    "cross_year_recovered": 656
+    "total_entries_classified": 2382,
+    "total_chf_classified": 44170378,
+    "catchall_chf": 9544458,
+    "cross_year_recovered": 666
   },
   "sports": [
     {
       "name": "Soutien général au sport",
-      "count": 748,
-      "total_chf": 11480624,
-      "mean_chf": 15348,
+      "count": 695,
+      "total_chf": 9544458,
+      "mean_chf": 13733,
       "cantons": {
         "VD": {
-          "count": 266,
-          "total_chf": 5167360
-        },
-        "FR": {
-          "count": 137,
-          "total_chf": 1932076
-        },
-        "VS": {
-          "count": 126,
-          "total_chf": 1796965
-        },
-        "NE": {
-          "count": 69,
-          "total_chf": 986310
+          "count": 218,
+          "total_chf": 3562429
         },
         "GE": {
           "count": 83,
-          "total_chf": 993680
+          "total_chf": 1028680
+        },
+        "FR": {
+          "count": 134,
+          "total_chf": 1905576
+        },
+        "VS": {
+          "count": 124,
+          "total_chf": 1756965
+        },
+        "NE": {
+          "count": 69,
+          "total_chf": 686575
         },
         "JU": {
           "count": 63,
@@ -60,12 +60,6 @@
           "montant_CHF": 350000
         },
         {
-          "nom": "Fond. Neuchâtel Fantastique",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 300000
-        },
-        {
           "nom": "Assoc. Agora - La Plage",
           "ville": null,
           "canton": "NE",
@@ -78,10 +72,16 @@
           "montant_CHF": 225000
         },
         {
-          "nom": "omnisport du Reposoir - Solde Commune d'Yverdon-les-Bains",
+          "nom": "Commune d'Yverdon-les-Bains",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 202700
+        },
+        {
+          "nom": "Assoc. Féd. Internationale de Motocyclisme",
+          "ville": "Mies",
+          "canton": "VD",
+          "montant_CHF": 200000
         }
       ],
       "all_entries": [
@@ -92,12 +92,6 @@
           "montant_CHF": 350000
         },
         {
-          "nom": "Fond. Neuchâtel Fantastique",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 300000
-        },
-        {
           "nom": "Assoc. Agora - La Plage",
           "ville": null,
           "canton": "NE",
@@ -110,7 +104,7 @@
           "montant_CHF": 225000
         },
         {
-          "nom": "omnisport du Reposoir - Solde Commune d'Yverdon-les-Bains",
+          "nom": "Commune d'Yverdon-les-Bains",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 202700
@@ -134,7 +128,7 @@
           "montant_CHF": 161500
         },
         {
-          "nom": "à destination des clubs Commune d'Yverdon-les-Bains",
+          "nom": "Commune d'Yverdon-les-Bains",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 155000
@@ -150,12 +144,6 @@
           "ville": "Courtételle",
           "canton": "JU",
           "montant_CHF": 150000
-        },
-        {
-          "nom": "Fond. Les Urbaines",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 140000
         },
         {
           "nom": "Commune d'Yverdon-les-Bains",
@@ -198,24 +186,6 @@
           "ville": "Verbier",
           "canton": "VS",
           "montant_CHF": 120000
-        },
-        {
-          "nom": "Fond. La Ferme des Tilleuls",
-          "ville": "Renens",
-          "canton": "VD",
-          "montant_CHF": 110000
-        },
-        {
-          "nom": "Fond. Le Livre sur les quais",
-          "ville": "Morges",
-          "canton": "VD",
-          "montant_CHF": 110000
-        },
-        {
-          "nom": "Fond. Promojazz",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 110000
         },
         {
           "nom": "La Spirale",
@@ -274,13 +244,7 @@
         {
           "nom": "La FUR Compagnie",
           "ville": "Versoix",
-          "canton": "VD",
-          "montant_CHF": 80000
-        },
-        {
-          "nom": "Oriental-Vevey",
-          "ville": null,
-          "canton": "VD",
+          "canton": "GE",
           "montant_CHF": 80000
         },
         {
@@ -326,18 +290,6 @@
           "montant_CHF": 74532
         },
         {
-          "nom": "Fond. de l'Espace",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 70000
-        },
-        {
-          "nom": "Manifestation / Acquisition Les Amis des Concerts J.S. Bach de matériel / Équipement de Lutry",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 70000
-        },
-        {
           "nom": "Fribourg Piano Assoc.",
           "ville": "Fribourg",
           "canton": "FR",
@@ -348,30 +300,6 @@
           "ville": null,
           "canton": "FR",
           "montant_CHF": 70000
-        },
-        {
-          "nom": "Fond. Organopole",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 65000
-        },
-        {
-          "nom": "Manifestation Le Cockpit",
-          "ville": "Genève",
-          "canton": "VD",
-          "montant_CHF": 60000
-        },
-        {
-          "nom": "Numero 23 Prod",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 60000
-        },
-        {
-          "nom": "Pulloff Théâtres",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 60000
         },
         {
           "nom": "Rencontres Internationales de Joux, Le Brassus",
@@ -434,12 +362,6 @@
           "montant_CHF": 55000
         },
         {
-          "nom": "Chavannes-le-Veyron Le Bureau Culturel Vaud",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 50000
-        },
-        {
           "nom": "Les Rencontres du 7e Art",
           "ville": "Lausanne",
           "canton": "VD",
@@ -500,24 +422,6 @@
           "montant_CHF": 47451
         },
         {
-          "nom": "Fond. Françoise Siegfried Meier",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 45000
-        },
-        {
-          "nom": "ZigZag - Saison culturelle",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 45000
-        },
-        {
-          "nom": "Théâtre du Loup",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 45000
-        },
-        {
           "nom": "Assoc. Trail Valais",
           "ville": "Venthône",
           "canton": "VS",
@@ -532,12 +436,6 @@
         {
           "nom": "Nox Orae",
           "ville": "Vevey",
-          "canton": "VD",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "Sté de Musique Contemporaine de Lausanne (SMC)",
-          "ville": null,
           "canton": "VD",
           "montant_CHF": 40000
         },
@@ -632,12 +530,6 @@
           "montant_CHF": 30075
         },
         {
-          "nom": "Fond. Espace Horloger",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 30000
-        },
-        {
           "nom": "Fond. Murs à dessins",
           "ville": "Lausanne",
           "canton": "VD",
@@ -658,12 +550,6 @@
         {
           "nom": "Les Battantes",
           "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 30000
-        },
-        {
-          "nom": "Rencontres Musicales de la Vallée de Joux",
-          "ville": "Le Sentier",
           "canton": "VD",
           "montant_CHF": 30000
         },
@@ -722,12 +608,6 @@
           "montant_CHF": 26500
         },
         {
-          "nom": "Espace EEEEH!",
-          "ville": "Nyon",
-          "canton": "VD",
-          "montant_CHF": 25000
-        },
-        {
           "nom": "Les Sommets Musicaux de Gstaad",
           "ville": "Genève",
           "canton": "VD",
@@ -746,21 +626,9 @@
           "montant_CHF": 25000
         },
         {
-          "nom": "Villa Le Lac Le Corbusier",
-          "ville": "Corseaux",
-          "canton": "VD",
-          "montant_CHF": 25000
-        },
-        {
           "nom": "KiV Assoc.",
           "ville": "Fribourg",
           "canton": "FR",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Stiftung UNESCO Welterbe",
-          "ville": null,
-          "canton": "VS",
           "montant_CHF": 25000
         },
         {
@@ -872,24 +740,6 @@
           "montant_CHF": 21000
         },
         {
-          "nom": "Espace EEEEH!",
-          "ville": "Nyon",
-          "canton": "VD",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Fond. d'Aigle pour l'Art et, Culture (FAAC)",
-          "ville": "Culture (FAAC)",
-          "canton": "VD",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Manifestation L'Élastique Citrique",
-          "ville": "Nyon",
-          "canton": "VD",
-          "montant_CHF": 20000
-        },
-        {
           "nom": "La Dérivée, Yverdon-les-Bains",
           "ville": null,
           "canton": "VD",
@@ -898,30 +748,6 @@
         {
           "nom": "Les Musicales de Coppet",
           "ville": null,
-          "canton": "VD",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Musica'Léman",
-          "ville": "Aubonne",
-          "canton": "VD",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Taureau Dansant",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Tunnel Tunnel",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Watifique",
-          "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 20000
         },
@@ -992,12 +818,6 @@
           "montant_CHF": 19010
         },
         {
-          "nom": "Fond. Blancpain pour le maintien",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 18500
-        },
-        {
           "nom": "Capsicom CUP",
           "ville": "Satigny - Football",
           "canton": "GE",
@@ -1026,12 +846,6 @@
           "ville": null,
           "canton": "VS",
           "montant_CHF": 17106
-        },
-        {
-          "nom": "Noir Volcan",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 17000
         },
         {
           "nom": "Verein Kita Schildli",
@@ -1070,12 +884,6 @@
           "montant_CHF": 15600
         },
         {
-          "nom": "Forum d'Architectures Lausanne",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 15000
-        },
-        {
           "nom": "Les Boréades",
           "ville": "Vevey",
           "canton": "VD",
@@ -1084,12 +892,6 @@
         {
           "nom": "Les Nouveaux Sons",
           "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 15000
-        },
-        {
-          "nom": "Pleine Lune",
-          "ville": "Nyon",
           "canton": "VD",
           "montant_CHF": 15000
         },
@@ -1132,12 +934,6 @@
         {
           "nom": "SBS Schweizerische Bibliothek",
           "ville": null,
-          "canton": "VS",
-          "montant_CHF": 15000
-        },
-        {
-          "nom": "Assoc. Schoss Company",
-          "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 15000
         },
@@ -1214,7 +1010,7 @@
           "montant_CHF": 13670
         },
         {
-          "nom": "fonctionnement informatique Assoc. du Scoutisme Genevois",
+          "nom": "Assoc. du Scoutisme Genevois",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 13180
@@ -1256,12 +1052,6 @@
           "montant_CHF": 12000
         },
         {
-          "nom": "Thelonica",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 12000
-        },
-        {
           "nom": "Production d'Avril",
           "ville": "Fribourg",
           "canton": "FR",
@@ -1284,18 +1074,228 @@
           "ville": "Football américain",
           "canton": "GE",
           "montant_CHF": 11900
+        },
+        {
+          "nom": "Assoc. Vaudoise de Badminton",
+          "ville": "Badminton",
+          "canton": "VD",
+          "montant_CHF": 11050
+        },
+        {
+          "nom": "Tchoukball Club Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 10800
+        },
+        {
+          "nom": "Assoc. des Sociétés Sportives",
+          "ville": "Nyonnaises",
+          "canton": "VD",
+          "montant_CHF": 10680
+        },
+        {
+          "nom": "TSV Düdingen",
+          "ville": "Stabhochsprunganlage",
+          "canton": "FR",
+          "montant_CHF": 10524
+        },
+        {
+          "nom": "Gemeinde Stalden",
+          "ville": "Bewässerung",
+          "canton": "VS",
+          "montant_CHF": 10342
+        },
+        {
+          "nom": "Fond. Culture du Bâti (CUB)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Fronda",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Le Ch'nit",
+          "ville": "Prilly",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Les Amis du Dansomètre",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "PictoBello",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Presses Inverses",
+          "ville": "Prilly",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Sté d'organisation du Mont",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Institut Suisse d'Études",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. APCL",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. SPARK/Innov-Action",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Commune d'Yverdon-les-Bains",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Coupe Landolt",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Mémorial Arthur Gander",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Vaudoise d'Éducation",
+          "ville": "Physique Scolaire | AVEPS",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "ROCK YOUR LIFE! Schweiz",
+          "ville": "Bern",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "La Revue d'Ursy",
+          "ville": "Esmonts",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Niklaus Talman",
+          "ville": "Ueberstorf",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Verein Neujahrskonzert Düdingen",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Verein Für Bessere Musik",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Fribourgeoise de Badminton",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. du scoutisme",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Oceaneye",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Capsicom CUP",
+          "ville": "Satigny - Football",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Summit25- Geneva Lights",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Poisson Scorpion",
+          "ville": "Lausanne",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Union valaisanne des échecs",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 9924
+        },
+        {
+          "nom": "MixMax Intergrative",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 9750
+        },
+        {
+          "nom": "Féd. valaisanne de lutte amateur",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 9545
+        },
+        {
+          "nom": "Compesières FC",
+          "ville": "Croix-de-Rozon",
+          "canton": "GE",
+          "montant_CHF": 9500
+        },
+        {
+          "nom": "Ruderclub Murtensee",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 9485
         }
       ]
     },
     {
       "name": "Multi-sports",
-      "count": 159,
-      "total_chf": 5142423,
-      "mean_chf": 32342,
+      "count": 160,
+      "total_chf": 5150493,
+      "mean_chf": 32190,
       "cantons": {
         "VD": {
-          "count": 54,
-          "total_chf": 2948261
+          "count": 55,
+          "total_chf": 2956331
         },
         "FR": {
           "count": 33,
@@ -1668,7 +1668,7 @@
           "montant_CHF": 15000
         },
         {
-          "nom": "le sport et les barbes Assoc. pour la Création",
+          "nom": "Assoc. pour la Création",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 15000
@@ -1774,6 +1774,12 @@
           "ville": "Unihockey hommes",
           "canton": "VD",
           "montant_CHF": 8800
+        },
+        {
+          "nom": "TAP Assoc. pour la création & la",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 8000
         },
         {
           "nom": "Service de l'Éducation Physique",
@@ -2106,6 +2112,12 @@
           "montant_CHF": 1000
         },
         {
+          "nom": "Sté de sauvetage",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
           "nom": "Twirling Sport de Nyon",
           "ville": null,
           "canton": "VD",
@@ -2140,12 +2152,6 @@
           "ville": null,
           "canton": "VD",
           "montant_CHF": 940
-        },
-        {
-          "nom": "Commune de Montreux",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 930
         },
         {
           "nom": "Union Sportive",
@@ -2274,7 +2280,7 @@
           "montant_CHF": 410
         },
         {
-          "nom": "Achat équipement de Twirling Club Lausanne",
+          "nom": "Club Lausanne",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 390
@@ -2313,13 +2319,13 @@
     },
     {
       "name": "Gymnastique",
-      "count": 150,
-      "total_chf": 3969044,
-      "mean_chf": 26460,
+      "count": 151,
+      "total_chf": 3972574,
+      "mean_chf": 26308,
       "cantons": {
         "VD": {
-          "count": 61,
-          "total_chf": 3033168
+          "count": 62,
+          "total_chf": 3036698
         },
         "FR": {
           "count": 10,
@@ -2620,6 +2626,12 @@
           "montant_CHF": 3600
         },
         {
+          "nom": "Commune d'Etoy",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 3530
+        },
+        {
           "nom": "FRG'24",
           "ville": null,
           "canton": "SR",
@@ -2722,7 +2734,7 @@
           "montant_CHF": 1820
         },
         {
-          "nom": "gymnastique légers Rugby Club Yverdon-les-Bains",
+          "nom": "Club Yverdon-les-Bains",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1800
@@ -2794,7 +2806,7 @@
           "montant_CHF": 1310
         },
         {
-          "nom": "Achat trois tapis de Lausanne Sports Section Aviron",
+          "nom": "trois tapis de Lausanne Sports Section Aviron",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1200
@@ -3283,13 +3295,13 @@
     },
     {
       "name": "Football",
-      "count": 150,
-      "total_chf": 3890257,
-      "mean_chf": 25935,
+      "count": 151,
+      "total_chf": 3893087,
+      "mean_chf": 25782,
       "cantons": {
         "VD": {
-          "count": 47,
-          "total_chf": 1066359
+          "count": 48,
+          "total_chf": 1069189
         },
         "FR": {
           "count": 26,
@@ -3578,7 +3590,7 @@
           "montant_CHF": 17700
         },
         {
-          "nom": "du terrain de football Commune de Pully",
+          "nom": "Commune de Pully",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 17170
@@ -3620,7 +3632,7 @@
           "montant_CHF": 13530
         },
         {
-          "nom": "Rénovation et mise en Commune de Savigny",
+          "nom": "Commune de Savigny",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 13270
@@ -3914,7 +3926,13 @@
           "montant_CHF": 2850
         },
         {
-          "nom": "Création de vestiaires pour le Commune de Vallorbe",
+          "nom": "Commune de Pully",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 2830
+        },
+        {
+          "nom": "Commune de Vallorbe",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 2800
@@ -4788,7 +4806,7 @@
           "montant_CHF": 1400
         },
         {
-          "nom": "de Montricher Ski-Club de Rougemont",
+          "nom": "Club de Rougemont",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1380
@@ -4878,7 +4896,7 @@
           "montant_CHF": 900
         },
         {
-          "nom": "Achat starting block Ski Club Les Diablerets",
+          "nom": "Club Les Diablerets",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 860
@@ -4974,13 +4992,13 @@
           "montant_CHF": 240
         },
         {
-          "nom": "Achat matériel Ski Club Les Diablerets",
+          "nom": "Club Les Diablerets",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 190
         },
         {
-          "nom": "Achat mousses pour tapis Ski Nautique Club de Lausanne",
+          "nom": "Club de Lausanne",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 95
@@ -6065,9 +6083,9 @@
     },
     {
       "name": "Basketball",
-      "count": 94,
-      "total_chf": 2047683,
-      "mean_chf": 21783,
+      "count": 93,
+      "total_chf": 2047418,
+      "mean_chf": 22015,
       "cantons": {
         "VD": {
           "count": 31,
@@ -6082,8 +6100,8 @@
           "total_chf": 96397
         },
         "NE": {
-          "count": 6,
-          "total_chf": 92765
+          "count": 5,
+          "total_chf": 92500
         },
         "GE": {
           "count": 25,
@@ -6660,12 +6678,6 @@
           "montant_CHF": 430
         },
         {
-          "nom": "Unihockey Club",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 265
-        },
-        {
           "nom": "Batho Badminton Club Thônex",
           "ville": "Puplinge",
           "canton": "GE",
@@ -6808,7 +6820,7 @@
           "montant_CHF": 30000
         },
         {
-          "nom": "coopération parentale autour Assoc. Le Relais de Genève",
+          "nom": "Assoc. Le Relais de Genève",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 20000
@@ -6895,13 +6907,13 @@
     },
     {
       "name": "Hockey sur glace",
-      "count": 91,
-      "total_chf": 1723881,
-      "mean_chf": 18943,
+      "count": 92,
+      "total_chf": 1724531,
+      "mean_chf": 18744,
       "cantons": {
         "VD": {
-          "count": 16,
-          "total_chf": 350659
+          "count": 17,
+          "total_chf": 351309
         },
         "FR": {
           "count": 13,
@@ -7442,6 +7454,12 @@
           "ville": null,
           "canton": "VD",
           "montant_CHF": 710
+        },
+        {
+          "nom": "Hockey-Club Château-d'Œx",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 650
         },
         {
           "nom": "Assoc. Genève-Servette-Hockey",
@@ -8107,17 +8125,17 @@
     },
     {
       "name": "Volleyball",
-      "count": 70,
-      "total_chf": 1196886,
-      "mean_chf": 17098,
+      "count": 71,
+      "total_chf": 1200526,
+      "mean_chf": 16908,
       "cantons": {
         "VD": {
           "count": 13,
           "total_chf": 253750
         },
         "FR": {
-          "count": 17,
-          "total_chf": 163166
+          "count": 18,
+          "total_chf": 166806
         },
         "VS": {
           "count": 1,
@@ -8394,6 +8412,12 @@
           "ville": null,
           "canton": "NE",
           "montant_CHF": 4000
+        },
+        {
+          "nom": "tests en Gym-Danse, janvier 2025 FriSpike Volleyball Development",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 3640
         },
         {
           "nom": "Geneva's Flying Disk Wizards",
@@ -8948,7 +8972,7 @@
           "montant_CHF": 1600
         },
         {
-          "nom": "Achat lignes de natation USY Athlétisme",
+          "nom": "lignes de natation USY Athlétisme",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1515
@@ -9140,7 +9164,7 @@
           "montant_CHF": 257
         },
         {
-          "nom": "Achat matériel de musculation USY Athlétisme",
+          "nom": "matériel de musculation USY Athlétisme",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 240
@@ -10834,7 +10858,7 @@
           "montant_CHF": 5000
         },
         {
-          "nom": "de Patinage artistique 2027 - Club Hippique d'Apples",
+          "nom": "Club Hippique d'Apples",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 4000
@@ -12130,7 +12154,7 @@
           "montant_CHF": 500
         },
         {
-          "nom": "d'Europe - Grèce 2025 Club de Course d'Orientation",
+          "nom": "Club de Course d'Orientation",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 300
@@ -12628,7 +12652,7 @@
           "montant_CHF": 3000
         },
         {
-          "nom": "de sabre et de fleuret Club des Lutteurs",
+          "nom": "Club des Lutteurs",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 3000
@@ -12720,7 +12744,7 @@
           "montant_CHF": 17929
         },
         {
-          "nom": "Achat tremplins Lausanne Sports Section Aviron",
+          "nom": "tremplins Lausanne Sports Section Aviron",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 17805
@@ -12752,7 +12776,7 @@
           "montant_CHF": 17929
         },
         {
-          "nom": "Achat tremplins Lausanne Sports Section Aviron",
+          "nom": "tremplins Lausanne Sports Section Aviron",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 17805

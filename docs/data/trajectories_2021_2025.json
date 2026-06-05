@@ -8,37 +8,22 @@
       "2024",
       "2025"
     ],
-    "count_5year": 188,
-    "count_4year": 474,
+    "count_5year": 219,
+    "count_4year": 499,
     "count_by_cat": {
-      "one_shot_2021": 242,
-      "decline": 292,
-      "one_shot_2024": 169,
-      "stable": 227,
-      "growth": 93,
-      "one_shot_2023": 199,
-      "one_shot_2022": 153,
-      "one_shot_2025": 259,
-      "sparse": 186
+      "decline": 320,
+      "one_shot_2024": 168,
+      "stable": 229,
+      "growth": 87,
+      "sparse": 180,
+      "one_shot_2023": 196,
+      "one_shot_2022": 152,
+      "one_shot_2021": 220,
+      "one_shot_2025": 254
     },
-    "total_beneficiaires": 1820
+    "total_beneficiaires": 1806
   },
   "beneficiaires": [
-    {
-      "nom": "Associations, institutions et fondations bénéficiaires des contributions de la Loterie Romande Taxes prélevées par l’État de Vaud :",
-      "canton": "VD",
-      "secteur": "Santé et handicap",
-      "amount_2021": 20559517,
-      "amount_2022": 0,
-      "amount_2023": 0,
-      "amount_2024": 0,
-      "amount_2025": 0,
-      "total": 20559517,
-      "nb_years_active": 1,
-      "trajectory_cat": "one_shot_2021",
-      "delta_pct": -100,
-      "is_consolidated": false
-    },
     {
       "nom": "Cinéforom — Fond. romande pour le cinéma",
       "canton": "GE",
@@ -190,6 +175,21 @@
       "is_consolidated": true
     },
     {
+      "nom": "Fond. pour la conservation des temples genevois construits avant 1907",
+      "canton": "GE",
+      "secteur": "Conservation du patrimoine",
+      "amount_2021": 1570000,
+      "amount_2022": 0,
+      "amount_2023": 0,
+      "amount_2024": 0,
+      "amount_2025": 3300000,
+      "total": 4870000,
+      "nb_years_active": 2,
+      "trajectory_cat": "sparse",
+      "delta_pct": 110,
+      "is_consolidated": false
+    },
+    {
       "nom": "Fond. pour l'art dramatique",
       "canton": "VD",
       "secteur": "Culture",
@@ -325,18 +325,18 @@
       "is_consolidated": true
     },
     {
-      "nom": "Fond. pour la conservation des temples genevois construits avant 1907",
-      "canton": "GE",
-      "secteur": "Culture",
-      "amount_2021": 0,
-      "amount_2022": 0,
-      "amount_2023": 0,
-      "amount_2024": 0,
-      "amount_2025": 3300000,
-      "total": 3300000,
-      "nb_years_active": 1,
-      "trajectory_cat": "one_shot_2025",
-      "delta_pct": null,
+      "nom": "Assoc. La Tuile",
+      "canton": "FR",
+      "secteur": "Action sociale et personnes âgées",
+      "amount_2021": 520000,
+      "amount_2022": 1180000,
+      "amount_2023": 531132,
+      "amount_2024": 540000,
+      "amount_2025": 540000,
+      "total": 3311132,
+      "nb_years_active": 5,
+      "trajectory_cat": "decline",
+      "delta_pct": 4,
       "is_consolidated": false
     },
     {
@@ -430,21 +430,6 @@
       "is_consolidated": true
     },
     {
-      "nom": "Assoc. La Tuile",
-      "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
-      "amount_2021": 0,
-      "amount_2022": 1180000,
-      "amount_2023": 531132,
-      "amount_2024": 540000,
-      "amount_2025": 540000,
-      "total": 2791132,
-      "nb_years_active": 4,
-      "trajectory_cat": "decline",
-      "delta_pct": null,
-      "is_consolidated": false
-    },
-    {
       "nom": "Fond. Foyer-Handicap",
       "canton": "GE",
       "secteur": "Santé et handicap",
@@ -452,10 +437,10 @@
       "amount_2022": 2500000,
       "amount_2023": 0,
       "amount_2024": 200000,
-      "amount_2025": 0,
-      "total": 2700000,
-      "nb_years_active": 2,
-      "trajectory_cat": "sparse",
+      "amount_2025": 200000,
+      "total": 2900000,
+      "nb_years_active": 3,
+      "trajectory_cat": "decline",
       "delta_pct": null,
       "is_consolidated": false
     },
@@ -475,6 +460,21 @@
       "is_consolidated": false
     },
     {
+      "nom": "Valais/Wallis Promotion",
+      "canton": "VS",
+      "secteur": "Promotion, tourisme et développement",
+      "amount_2021": 500000,
+      "amount_2022": 500000,
+      "amount_2023": 500000,
+      "amount_2024": 500000,
+      "amount_2025": 500000,
+      "total": 2500000,
+      "nb_years_active": 5,
+      "trajectory_cat": "decline",
+      "delta_pct": 0,
+      "is_consolidated": false
+    },
+    {
       "nom": "Assoc. La Chaux-de-Fonds Capitale culturelle suisse",
       "canton": "NE",
       "secteur": "Culture",
@@ -487,6 +487,21 @@
       "nb_years_active": 1,
       "trajectory_cat": "one_shot_2022",
       "delta_pct": null,
+      "is_consolidated": false
+    },
+    {
+      "nom": "Fond. CHUV",
+      "canton": "VD",
+      "secteur": "Santé et handicap",
+      "amount_2021": 260000,
+      "amount_2022": 300000,
+      "amount_2023": 400000,
+      "amount_2024": 68000,
+      "amount_2025": 1413378,
+      "total": 2441378,
+      "nb_years_active": 5,
+      "trajectory_cat": "growth",
+      "delta_pct": 444,
       "is_consolidated": false
     },
     {
@@ -565,7 +580,7 @@
       "is_consolidated": false
     },
     {
-      "nom": "vaudois en 2021 et locaux de sport",
+      "nom": "Soutien associations sportives cantonales vaudoises",
       "canton": "VD",
       "secteur": "Sport",
       "amount_2021": 2267790,
@@ -610,18 +625,18 @@
       "is_consolidated": false
     },
     {
-      "nom": "Fond. CHUV",
-      "canton": "VD",
-      "secteur": "Santé et handicap",
-      "amount_2021": 0,
-      "amount_2022": 300000,
-      "amount_2023": 400000,
-      "amount_2024": 68000,
-      "amount_2025": 1413378,
-      "total": 2181378,
-      "nb_years_active": 4,
-      "trajectory_cat": "growth",
-      "delta_pct": null,
+      "nom": "Assoc. Astural",
+      "canton": "GE",
+      "secteur": "Action sociale et personnes âgées",
+      "amount_2021": 2060000,
+      "amount_2022": 60000,
+      "amount_2023": 0,
+      "amount_2024": 0,
+      "amount_2025": 0,
+      "total": 2120000,
+      "nb_years_active": 2,
+      "trajectory_cat": "sparse",
+      "delta_pct": -100,
       "is_consolidated": false
     },
     {
@@ -673,14 +688,29 @@
       "nom": "SPA Valais",
       "canton": "VS",
       "secteur": "Environnement",
-      "amount_2021": 0,
+      "amount_2021": 15000,
       "amount_2022": 15000,
       "amount_2023": 2015000,
       "amount_2024": 20000,
       "amount_2025": 20000,
-      "total": 2070000,
-      "nb_years_active": 4,
+      "total": 2085000,
+      "nb_years_active": 5,
       "trajectory_cat": "one_shot_2023",
+      "delta_pct": 33,
+      "is_consolidated": false
+    },
+    {
+      "nom": "Commune d'Yverdon-les-Bains",
+      "canton": "VD",
+      "secteur": "Sport",
+      "amount_2021": 0,
+      "amount_2022": 457480,
+      "amount_2023": 1025348,
+      "amount_2024": 44665,
+      "amount_2025": 537270,
+      "total": 2064763,
+      "nb_years_active": 4,
+      "trajectory_cat": "decline",
       "delta_pct": null,
       "is_consolidated": false
     },
@@ -697,21 +727,6 @@
       "nb_years_active": 5,
       "trajectory_cat": "growth",
       "delta_pct": 261,
-      "is_consolidated": false
-    },
-    {
-      "nom": "Fond. Astural",
-      "canton": "GE",
-      "secteur": "Action sociale et personnes âgées",
-      "amount_2021": 2000000,
-      "amount_2022": 60000,
-      "amount_2023": 0,
-      "amount_2024": 0,
-      "amount_2025": 0,
-      "total": 2060000,
-      "nb_years_active": 2,
-      "trajectory_cat": "sparse",
-      "delta_pct": -100,
       "is_consolidated": false
     },
     {
@@ -745,7 +760,7 @@
       "is_consolidated": false
     },
     {
-      "nom": "Animations Fonds mis à disposition du Conseil d'Etat pour Actions de Solidarité",
+      "nom": "Fonds mis à disposition du Conseil d'État VS",
       "canton": "VS",
       "secteur": "Action sociale et personnes âgées",
       "amount_2021": 2000000,
@@ -760,7 +775,7 @@
       "is_consolidated": false
     },
     {
-      "nom": "Urgence covid-19 Fond. Sgipa",
+      "nom": "Fond. Sgipa",
       "canton": "GE",
       "secteur": "Action sociale et personnes âgées",
       "amount_2021": 2000000,
@@ -775,7 +790,7 @@
       "is_consolidated": false
     },
     {
-      "nom": "demande complémentaire Paroisse du Sacré-Cœur",
+      "nom": "Paroisse du Sacré-Cœur",
       "canton": "GE",
       "secteur": "Conservation du patrimoine",
       "amount_2021": 2000000,
@@ -803,21 +818,6 @@
       "trajectory_cat": "one_shot_2022",
       "delta_pct": null,
       "is_consolidated": true
-    },
-    {
-      "nom": "Valais/Wallis Promotion",
-      "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
-      "amount_2021": 0,
-      "amount_2022": 500000,
-      "amount_2023": 500000,
-      "amount_2024": 500000,
-      "amount_2025": 500000,
-      "total": 2000000,
-      "nb_years_active": 4,
-      "trajectory_cat": "stable",
-      "delta_pct": null,
-      "is_consolidated": false
     },
     {
       "nom": "Fond. Trajets, Plan-les-Ouates Mise aux normes et aménagement",
@@ -859,6 +859,21 @@
       "amount_2024": 514952,
       "amount_2025": 0,
       "total": 1903982,
+      "nb_years_active": 4,
+      "trajectory_cat": "decline",
+      "delta_pct": -100,
+      "is_consolidated": false
+    },
+    {
+      "nom": "Fond. Arc en Scène - centre neuchâtelois des arts vivants - TPR",
+      "canton": "NE",
+      "secteur": "Culture",
+      "amount_2021": 450000,
+      "amount_2022": 475000,
+      "amount_2023": 475000,
+      "amount_2024": 475000,
+      "amount_2025": 0,
+      "total": 1875000,
       "nb_years_active": 4,
       "trajectory_cat": "decline",
       "delta_pct": -100,
@@ -910,6 +925,21 @@
       "is_consolidated": false
     },
     {
+      "nom": "Fond. Aigues-Vertes",
+      "canton": "GE",
+      "secteur": "Santé et handicap",
+      "amount_2021": 550000,
+      "amount_2022": 0,
+      "amount_2023": 1000000,
+      "amount_2024": 201000,
+      "amount_2025": 0,
+      "total": 1751000,
+      "nb_years_active": 3,
+      "trajectory_cat": "decline",
+      "delta_pct": -100,
+      "is_consolidated": false
+    },
+    {
       "nom": "Assoc. des cinémas romands",
       "canton": "VD",
       "secteur": "Culture",
@@ -921,21 +951,6 @@
       "total": 1725000,
       "nb_years_active": 1,
       "trajectory_cat": "one_shot_2025",
-      "delta_pct": null,
-      "is_consolidated": false
-    },
-    {
-      "nom": "Commune d'Yverdon-les-Bains",
-      "canton": "VD",
-      "secteur": "Sport",
-      "amount_2021": 0,
-      "amount_2022": 457480,
-      "amount_2023": 1025348,
-      "amount_2024": 44665,
-      "amount_2025": 179570,
-      "total": 1707063,
-      "nb_years_active": 4,
-      "trajectory_cat": "decline",
       "delta_pct": null,
       "is_consolidated": false
     },
@@ -985,21 +1000,6 @@
       "is_consolidated": false
     },
     {
-      "nom": "cantonales vaudoises",
-      "canton": "VD",
-      "secteur": "Sport",
-      "amount_2021": 0,
-      "amount_2022": 0,
-      "amount_2023": 0,
-      "amount_2024": 1669649,
-      "amount_2025": 0,
-      "total": 1669649,
-      "nb_years_active": 1,
-      "trajectory_cat": "one_shot_2024",
-      "delta_pct": null,
-      "is_consolidated": false
-    },
-    {
       "nom": "Fond. Sainte-Famille",
       "canton": "VS",
       "secteur": "Action sociale et personnes âgées",
@@ -1011,21 +1011,6 @@
       "total": 1590000,
       "nb_years_active": 2,
       "trajectory_cat": "sparse",
-      "delta_pct": -100,
-      "is_consolidated": false
-    },
-    {
-      "nom": "Rénovation et agrandissement des orgues de Compesières Fond. pour la conservation des temples genevois construits avant 1907",
-      "canton": "GE",
-      "secteur": "Conservation du patrimoine",
-      "amount_2021": 1570000,
-      "amount_2022": 0,
-      "amount_2023": 0,
-      "amount_2024": 0,
-      "amount_2025": 0,
-      "total": 1570000,
-      "nb_years_active": 1,
-      "trajectory_cat": "one_shot_2021",
       "delta_pct": -100,
       "is_consolidated": false
     },
@@ -1090,7 +1075,7 @@
       "is_consolidated": false
     },
     {
-      "nom": "des marionnettes Fond. d'Hauterive",
+      "nom": "Fond. d'Hauterive",
       "canton": "FR",
       "secteur": "Culture",
       "amount_2021": 1500000,
@@ -1150,6 +1135,21 @@
       "is_consolidated": false
     },
     {
+      "nom": "Pro Junior - arc jurassien",
+      "canton": "JU",
+      "secteur": "Jeunesse et éducation",
+      "amount_2021": 100000,
+      "amount_2022": 53000,
+      "amount_2023": 339000,
+      "amount_2024": 880000,
+      "amount_2025": 97000,
+      "total": 1469000,
+      "nb_years_active": 5,
+      "trajectory_cat": "growth",
+      "delta_pct": -3,
+      "is_consolidated": false
+    },
+    {
       "nom": "Rock Hock Verein Gampel",
       "canton": "VS",
       "secteur": "Culture",
@@ -1162,21 +1162,6 @@
       "nb_years_active": 5,
       "trajectory_cat": "decline",
       "delta_pct": -12,
-      "is_consolidated": false
-    },
-    {
-      "nom": "Fond. Arc en Scène - centre neuchâtelois des arts vivants - TPR",
-      "canton": "NE",
-      "secteur": "Culture",
-      "amount_2021": 0,
-      "amount_2022": 475000,
-      "amount_2023": 475000,
-      "amount_2024": 475000,
-      "amount_2025": 0,
-      "total": 1425000,
-      "nb_years_active": 3,
-      "trajectory_cat": "decline",
-      "delta_pct": null,
       "is_consolidated": false
     },
     {
@@ -1270,21 +1255,6 @@
       "is_consolidated": false
     },
     {
-      "nom": "Pro Junior - arc jurassien",
-      "canton": "JU",
-      "secteur": "Jeunesse et éducation",
-      "amount_2021": 0,
-      "amount_2022": 53000,
-      "amount_2023": 339000,
-      "amount_2024": 880000,
-      "amount_2025": 97000,
-      "total": 1369000,
-      "nb_years_active": 4,
-      "trajectory_cat": "growth",
-      "delta_pct": null,
-      "is_consolidated": false
-    },
-    {
       "nom": "Assoc. FFG Lausanne 2025",
       "canton": "SR",
       "secteur": "Environnement",
@@ -1297,6 +1267,21 @@
       "nb_years_active": 1,
       "trajectory_cat": "one_shot_2025",
       "delta_pct": null,
+      "is_consolidated": false
+    },
+    {
+      "nom": "Fond. Visions du Réel",
+      "canton": "VD",
+      "secteur": "Culture",
+      "amount_2021": 320000,
+      "amount_2022": 250000,
+      "amount_2023": 240000,
+      "amount_2024": 275000,
+      "amount_2025": 270000,
+      "total": 1355000,
+      "nb_years_active": 5,
+      "trajectory_cat": "decline",
+      "delta_pct": -16,
       "is_consolidated": false
     },
     {
@@ -1360,6 +1345,21 @@
       "is_consolidated": false
     },
     {
+      "nom": "Fond. Sion Violon Musique",
+      "canton": "VS",
+      "secteur": "Culture",
+      "amount_2021": 380000,
+      "amount_2022": 302000,
+      "amount_2023": 410000,
+      "amount_2024": 250000,
+      "amount_2025": 0,
+      "total": 1342000,
+      "nb_years_active": 4,
+      "trajectory_cat": "decline",
+      "delta_pct": -100,
+      "is_consolidated": false
+    },
+    {
       "nom": "Fond. EPFL Plus",
       "canton": "VD",
       "secteur": "Formation et recherche",
@@ -1406,7 +1406,7 @@
     },
     {
       "nom": "Assoc. Cantonale Vaudoise de Football",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "amount_2021": 19000,
       "amount_2022": 0,
@@ -1417,21 +1417,6 @@
       "nb_years_active": 4,
       "trajectory_cat": "growth",
       "delta_pct": 2007,
-      "is_consolidated": false
-    },
-    {
-      "nom": "Fond. Visions du Réel",
-      "canton": "VD",
-      "secteur": "Culture",
-      "amount_2021": 250000,
-      "amount_2022": 250000,
-      "amount_2023": 240000,
-      "amount_2024": 275000,
-      "amount_2025": 270000,
-      "total": 1285000,
-      "nb_years_active": 5,
-      "trajectory_cat": "stable",
-      "delta_pct": 8,
       "is_consolidated": false
     },
     {
@@ -1510,6 +1495,21 @@
       "is_consolidated": false
     },
     {
+      "nom": "Usine à Gaz",
+      "canton": "VD",
+      "secteur": "Culture",
+      "amount_2021": 200000,
+      "amount_2022": 150000,
+      "amount_2023": 250000,
+      "amount_2024": 350000,
+      "amount_2025": 300000,
+      "total": 1250000,
+      "nb_years_active": 5,
+      "trajectory_cat": "stable",
+      "delta_pct": 50,
+      "is_consolidated": false
+    },
+    {
       "nom": "Fond. Guido Comba",
       "canton": "VD",
       "secteur": "Culture",
@@ -1582,21 +1582,6 @@
       "nb_years_active": 1,
       "trajectory_cat": "one_shot_2021",
       "delta_pct": -100,
-      "is_consolidated": false
-    },
-    {
-      "nom": "Fond. Aigues-Vertes",
-      "canton": "GE",
-      "secteur": "Santé et handicap",
-      "amount_2021": 0,
-      "amount_2022": 0,
-      "amount_2023": 1000000,
-      "amount_2024": 201000,
-      "amount_2025": 0,
-      "total": 1201000,
-      "nb_years_active": 2,
-      "trajectory_cat": "sparse",
-      "delta_pct": null,
       "is_consolidated": false
     },
     {
@@ -1702,6 +1687,36 @@
       "nb_years_active": 1,
       "trajectory_cat": "one_shot_2024",
       "delta_pct": null,
+      "is_consolidated": false
+    },
+    {
+      "nom": "Fond. Mère Sofia",
+      "canton": "VD",
+      "secteur": "Action sociale et personnes âgées",
+      "amount_2021": 190000,
+      "amount_2022": 430000,
+      "amount_2023": 120000,
+      "amount_2024": 254000,
+      "amount_2025": 170000,
+      "total": 1164000,
+      "nb_years_active": 5,
+      "trajectory_cat": "decline",
+      "delta_pct": -11,
+      "is_consolidated": false
+    },
+    {
+      "nom": "Commune de Lausanne",
+      "canton": "VD",
+      "secteur": "Promotion, tourisme et développement",
+      "amount_2021": 230000,
+      "amount_2022": 628040,
+      "amount_2023": 297650,
+      "amount_2024": 5430,
+      "amount_2025": 0,
+      "total": 1161120,
+      "nb_years_active": 4,
+      "trajectory_cat": "decline",
+      "delta_pct": -100,
       "is_consolidated": false
     },
     {
@@ -1825,6 +1840,21 @@
       "is_consolidated": true
     },
     {
+      "nom": "Assoc. Festival Antigel",
+      "canton": "GE",
+      "secteur": "Culture",
+      "amount_2021": 200000,
+      "amount_2022": 300000,
+      "amount_2023": 78345,
+      "amount_2024": 346654,
+      "amount_2025": 200000,
+      "total": 1124999,
+      "nb_years_active": 5,
+      "trajectory_cat": "stable",
+      "delta_pct": 0,
+      "is_consolidated": false
+    },
+    {
       "nom": "Centre Social Protestant - CSP",
       "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
@@ -1837,36 +1867,6 @@
       "nb_years_active": 4,
       "trajectory_cat": "growth",
       "delta_pct": 49,
-      "is_consolidated": false
-    },
-    {
-      "nom": "La Bâtie — Festival de Genève",
-      "canton": "GE",
-      "secteur": "Culture",
-      "amount_2021": 240000,
-      "amount_2022": 225000,
-      "amount_2023": 225000,
-      "amount_2024": 200000,
-      "amount_2025": 225000,
-      "total": 1115000,
-      "nb_years_active": 5,
-      "trajectory_cat": "decline",
-      "delta_pct": -6,
-      "is_consolidated": true
-    },
-    {
-      "nom": "Commune de Lausanne",
-      "canton": "VD",
-      "secteur": "Promotion, tourisme et développement",
-      "amount_2021": 175000,
-      "amount_2022": 628040,
-      "amount_2023": 297650,
-      "amount_2024": 5430,
-      "amount_2025": 0,
-      "total": 1106120,
-      "nb_years_active": 4,
-      "trajectory_cat": "decline",
-      "delta_pct": -100,
       "is_consolidated": false
     },
     {
@@ -1990,21 +1990,6 @@
       "is_consolidated": false
     },
     {
-      "nom": "Usine à Gaz",
-      "canton": "VD",
-      "secteur": "Culture",
-      "amount_2021": 0,
-      "amount_2022": 150000,
-      "amount_2023": 250000,
-      "amount_2024": 350000,
-      "amount_2025": 300000,
-      "total": 1050000,
-      "nb_years_active": 4,
-      "trajectory_cat": "growth",
-      "delta_pct": null,
-      "is_consolidated": false
-    },
-    {
       "nom": "Fond. pour la recherche",
       "canton": "VD",
       "secteur": "Formation et recherche",
@@ -2062,6 +2047,21 @@
       "nb_years_active": 4,
       "trajectory_cat": "decline",
       "delta_pct": -39,
+      "is_consolidated": false
+    },
+    {
+      "nom": "L'avant-scène Opéra",
+      "canton": "NE",
+      "secteur": "Culture",
+      "amount_2021": 200000,
+      "amount_2022": 200000,
+      "amount_2023": 210000,
+      "amount_2024": 210000,
+      "amount_2025": 210000,
+      "total": 1030000,
+      "nb_years_active": 5,
+      "trajectory_cat": "decline",
+      "delta_pct": 5,
       "is_consolidated": false
     },
     {
@@ -2151,21 +2151,6 @@
       "total": 1000000,
       "nb_years_active": 1,
       "trajectory_cat": "one_shot_2021",
-      "delta_pct": -100,
-      "is_consolidated": false
-    },
-    {
-      "nom": "diabètefribourg - Assoc. fribourgeoise du diabète",
-      "canton": "FR",
-      "secteur": "Santé et handicap",
-      "amount_2021": 250000,
-      "amount_2022": 250000,
-      "amount_2023": 250000,
-      "amount_2024": 250000,
-      "amount_2025": 0,
-      "total": 1000000,
-      "nb_years_active": 4,
-      "trajectory_cat": "decline",
       "delta_pct": -100,
       "is_consolidated": false
     },
@@ -2320,21 +2305,6 @@
       "is_consolidated": false
     },
     {
-      "nom": "Fond. Mère Sofia",
-      "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
-      "amount_2021": 190000,
-      "amount_2022": 430000,
-      "amount_2023": 120000,
-      "amount_2024": 254000,
-      "amount_2025": 0,
-      "total": 994000,
-      "nb_years_active": 4,
-      "trajectory_cat": "decline",
-      "delta_pct": -100,
-      "is_consolidated": false
-    },
-    {
       "nom": "Sinfonietta de Lausanne",
       "canton": "VD",
       "secteur": "Culture",
@@ -2380,18 +2350,18 @@
       "is_consolidated": false
     },
     {
-      "nom": "Fond. Sion Violon Musique",
+      "nom": "Comité d'organisation des courses de ski alpin Crans- Montana",
       "canton": "VS",
-      "secteur": "Culture",
-      "amount_2021": 0,
-      "amount_2022": 302000,
-      "amount_2023": 410000,
-      "amount_2024": 250000,
+      "secteur": "Promotion, tourisme et développement",
+      "amount_2021": 355000,
+      "amount_2022": 300000,
+      "amount_2023": 310000,
+      "amount_2024": 0,
       "amount_2025": 0,
-      "total": 962000,
+      "total": 965000,
       "nb_years_active": 3,
       "trajectory_cat": "decline",
-      "delta_pct": null,
+      "delta_pct": -100,
       "is_consolidated": false
     },
     {
@@ -2470,6 +2440,21 @@
       "is_consolidated": false
     },
     {
+      "nom": "Fond. Transport Handicap Vaud",
+      "canton": "VD",
+      "secteur": "Santé et handicap",
+      "amount_2021": 220000,
+      "amount_2022": 250000,
+      "amount_2023": 0,
+      "amount_2024": 350000,
+      "amount_2025": 118000,
+      "total": 938000,
+      "nb_years_active": 4,
+      "trajectory_cat": "stable",
+      "delta_pct": -46,
+      "is_consolidated": false
+    },
+    {
       "nom": "Walliser Skiverband - Ski Valais",
       "canton": "VS",
       "secteur": "Sport",
@@ -2497,21 +2482,6 @@
       "nb_years_active": 2,
       "trajectory_cat": "sparse",
       "delta_pct": -100,
-      "is_consolidated": false
-    },
-    {
-      "nom": "Assoc. Festival Antigel",
-      "canton": "GE",
-      "secteur": "Culture",
-      "amount_2021": 0,
-      "amount_2022": 300000,
-      "amount_2023": 78345,
-      "amount_2024": 346654,
-      "amount_2025": 200000,
-      "total": 924999,
-      "nb_years_active": 4,
-      "trajectory_cat": "growth",
-      "delta_pct": null,
       "is_consolidated": false
     },
     {
@@ -2635,6 +2605,36 @@
       "is_consolidated": false
     },
     {
+      "nom": "La Bâtie — Festival de Genève",
+      "canton": "GE",
+      "secteur": "Culture",
+      "amount_2021": 0,
+      "amount_2022": 225000,
+      "amount_2023": 225000,
+      "amount_2024": 200000,
+      "amount_2025": 225000,
+      "total": 875000,
+      "nb_years_active": 4,
+      "trajectory_cat": "stable",
+      "delta_pct": null,
+      "is_consolidated": true
+    },
+    {
+      "nom": "Assoc. le Spot",
+      "canton": "VS",
+      "secteur": "Culture",
+      "amount_2021": 142500,
+      "amount_2022": 167500,
+      "amount_2023": 160000,
+      "amount_2024": 200000,
+      "amount_2025": 200000,
+      "total": 870000,
+      "nb_years_active": 5,
+      "trajectory_cat": "stable",
+      "delta_pct": 40,
+      "is_consolidated": false
+    },
+    {
       "nom": "Féd. internationale de motocyclisme",
       "canton": "VD",
       "secteur": "Culture",
@@ -2651,7 +2651,7 @@
     },
     {
       "nom": "Assoc. Cantonale Vaudoise, Football",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "amount_2021": 0,
       "amount_2022": 388805,
@@ -2674,21 +2674,6 @@
       "amount_2024": 0,
       "amount_2025": 0,
       "total": 857325,
-      "nb_years_active": 1,
-      "trajectory_cat": "one_shot_2021",
-      "delta_pct": -100,
-      "is_consolidated": false
-    },
-    {
-      "nom": "Associations, institutions et fondations bénéficiaires des contributions de la Loterie Romande Contributions réserve aides exceptionnelles (CE)",
-      "canton": "GE",
-      "secteur": "Culture",
-      "amount_2021": 855000,
-      "amount_2022": 0,
-      "amount_2023": 0,
-      "amount_2024": 0,
-      "amount_2025": 0,
-      "total": 855000,
       "nb_years_active": 1,
       "trajectory_cat": "one_shot_2021",
       "delta_pct": -100,
@@ -2800,18 +2785,18 @@
       "is_consolidated": false
     },
     {
-      "nom": "L'avant-scène Opéra",
-      "canton": "NE",
-      "secteur": "Culture",
-      "amount_2021": 0,
-      "amount_2022": 200000,
-      "amount_2023": 210000,
-      "amount_2024": 210000,
-      "amount_2025": 210000,
-      "total": 830000,
-      "nb_years_active": 4,
-      "trajectory_cat": "stable",
-      "delta_pct": null,
+      "nom": "Archives de l'État du Valais",
+      "canton": "VS",
+      "secteur": "Conservation du patrimoine",
+      "amount_2021": 817500,
+      "amount_2022": 0,
+      "amount_2023": 12500,
+      "amount_2024": 5000,
+      "amount_2025": 0,
+      "total": 835000,
+      "nb_years_active": 3,
+      "trajectory_cat": "one_shot_2021",
+      "delta_pct": -100,
       "is_consolidated": false
     },
     {
@@ -2845,21 +2830,6 @@
       "is_consolidated": false
     },
     {
-      "nom": "Rénovation Archives de l'État du Valais",
-      "canton": "VS",
-      "secteur": "Conservation du patrimoine",
-      "amount_2021": 817500,
-      "amount_2022": 0,
-      "amount_2023": 0,
-      "amount_2024": 0,
-      "amount_2025": 0,
-      "total": 817500,
-      "nb_years_active": 1,
-      "trajectory_cat": "one_shot_2021",
-      "delta_pct": -100,
-      "is_consolidated": false
-    },
-    {
       "nom": "Maison d'enfants de Penthaz MEP",
       "canton": "VD",
       "secteur": "Action sociale et personnes âgées",
@@ -2887,6 +2857,21 @@
       "nb_years_active": 5,
       "trajectory_cat": "stable",
       "delta_pct": 1900,
+      "is_consolidated": false
+    },
+    {
+      "nom": "ACDC - Assoc. de coordination de la Case à Chocs",
+      "canton": "NE",
+      "secteur": "Culture",
+      "amount_2021": 20000,
+      "amount_2022": 220000,
+      "amount_2023": 247000,
+      "amount_2024": 320000,
+      "amount_2025": 0,
+      "total": 807000,
+      "nb_years_active": 4,
+      "trajectory_cat": "decline",
+      "delta_pct": -100,
       "is_consolidated": false
     },
     {
@@ -3036,21 +3021,6 @@
       "total": 789000,
       "nb_years_active": 4,
       "trajectory_cat": "stable",
-      "delta_pct": null,
-      "is_consolidated": false
-    },
-    {
-      "nom": "ACDC - Assoc. de coordination de la Case à Chocs",
-      "canton": "NE",
-      "secteur": "Culture",
-      "amount_2021": 0,
-      "amount_2022": 220000,
-      "amount_2023": 247000,
-      "amount_2024": 320000,
-      "amount_2025": 0,
-      "total": 787000,
-      "nb_years_active": 3,
-      "trajectory_cat": "decline",
       "delta_pct": null,
       "is_consolidated": false
     },
@@ -3280,6 +3250,21 @@
       "is_consolidated": false
     },
     {
+      "nom": "Assoc. fribourgeoise du diabète",
+      "canton": "FR",
+      "secteur": "Jeunesse et éducation",
+      "amount_2021": 250000,
+      "amount_2022": 0,
+      "amount_2023": 250000,
+      "amount_2024": 250000,
+      "amount_2025": 0,
+      "total": 750000,
+      "nb_years_active": 3,
+      "trajectory_cat": "decline",
+      "delta_pct": -100,
+      "is_consolidated": false
+    },
+    {
       "nom": "Animations VALTEX Multiservice",
       "canton": "VS",
       "secteur": "Action sociale et personnes âgées",
@@ -3475,6 +3460,21 @@
       "is_consolidated": false
     },
     {
+      "nom": "Assoc. Insieme Valais romand",
+      "canton": "VS",
+      "secteur": "Santé et handicap",
+      "amount_2021": 70000,
+      "amount_2022": 453000,
+      "amount_2023": 100000,
+      "amount_2024": 55000,
+      "amount_2025": 55000,
+      "total": 733000,
+      "nb_years_active": 5,
+      "trajectory_cat": "decline",
+      "delta_pct": -21,
+      "is_consolidated": false
+    },
+    {
       "nom": "Bibliothèque interculturelle, LivrEchange",
       "canton": "FR",
       "secteur": "Culture",
@@ -3516,21 +3516,6 @@
       "total": 720000,
       "nb_years_active": 1,
       "trajectory_cat": "one_shot_2025",
-      "delta_pct": null,
-      "is_consolidated": false
-    },
-    {
-      "nom": "Fond. Transport Handicap Vaud",
-      "canton": "VD",
-      "secteur": "Santé et handicap",
-      "amount_2021": 0,
-      "amount_2022": 250000,
-      "amount_2023": 0,
-      "amount_2024": 350000,
-      "amount_2025": 118000,
-      "total": 718000,
-      "nb_years_active": 3,
-      "trajectory_cat": "growth",
       "delta_pct": null,
       "is_consolidated": false
     },
@@ -3716,7 +3701,7 @@
     },
     {
       "nom": "Assoc. Cantonale Vaudoise, Gymnastique",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "amount_2021": 0,
       "amount_2022": 327217,
@@ -3835,18 +3820,18 @@
       "is_consolidated": false
     },
     {
-      "nom": "Assoc. le Spot",
-      "canton": "VS",
+      "nom": "Assoc. Les Francomanias",
+      "canton": "FR",
       "secteur": "Culture",
-      "amount_2021": 142500,
-      "amount_2022": 167500,
-      "amount_2023": 160000,
-      "amount_2024": 200000,
-      "amount_2025": 0,
+      "amount_2021": 130000,
+      "amount_2022": 130000,
+      "amount_2023": 130000,
+      "amount_2024": 150000,
+      "amount_2025": 130000,
       "total": 670000,
-      "nb_years_active": 4,
-      "trajectory_cat": "decline",
-      "delta_pct": -100,
+      "nb_years_active": 5,
+      "trajectory_cat": "stable",
+      "delta_pct": 0,
       "is_consolidated": false
     },
     {
@@ -3862,21 +3847,6 @@
       "nb_years_active": 4,
       "trajectory_cat": "decline",
       "delta_pct": -47,
-      "is_consolidated": false
-    },
-    {
-      "nom": "Assoc. Insieme Valais romand",
-      "canton": "VS",
-      "secteur": "Santé et handicap",
-      "amount_2021": 0,
-      "amount_2022": 453000,
-      "amount_2023": 100000,
-      "amount_2024": 55000,
-      "amount_2025": 55000,
-      "total": 663000,
-      "nb_years_active": 4,
-      "trajectory_cat": "decline",
-      "delta_pct": null,
       "is_consolidated": false
     },
     {
@@ -3907,6 +3877,21 @@
       "nb_years_active": 3,
       "trajectory_cat": "decline",
       "delta_pct": null,
+      "is_consolidated": false
+    },
+    {
+      "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
+      "canton": "VD",
+      "secteur": "Sport",
+      "amount_2021": 21160,
+      "amount_2022": 0,
+      "amount_2023": 0,
+      "amount_2024": 331416,
+      "amount_2025": 303245,
+      "total": 655821,
+      "nb_years_active": 3,
+      "trajectory_cat": "growth",
+      "delta_pct": 1333,
       "is_consolidated": false
     },
     {
@@ -3985,21 +3970,6 @@
       "is_consolidated": false
     },
     {
-      "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
-      "canton": "GE",
-      "secteur": "Sport",
-      "amount_2021": 6600,
-      "amount_2022": 0,
-      "amount_2023": 0,
-      "amount_2024": 331416,
-      "amount_2025": 303245,
-      "total": 641261,
-      "nb_years_active": 3,
-      "trajectory_cat": "growth",
-      "delta_pct": 4495,
-      "is_consolidated": false
-    },
-    {
       "nom": "Fond. Les Urbaines",
       "canton": "VD",
       "secteur": "Culture",
@@ -4042,6 +4012,21 @@
       "nb_years_active": 4,
       "trajectory_cat": "growth",
       "delta_pct": null,
+      "is_consolidated": false
+    },
+    {
+      "nom": "Assoc. CAN Centre d'art Neuchâtel",
+      "canton": "NE",
+      "secteur": "Culture",
+      "amount_2021": 210000,
+      "amount_2022": 210000,
+      "amount_2023": 0,
+      "amount_2024": 210000,
+      "amount_2025": 0,
+      "total": 630000,
+      "nb_years_active": 3,
+      "trajectory_cat": "decline",
+      "delta_pct": -100,
       "is_consolidated": false
     },
     {
@@ -4191,21 +4176,6 @@
       "total": 617050,
       "nb_years_active": 1,
       "trajectory_cat": "one_shot_2024",
-      "delta_pct": null,
-      "is_consolidated": false
-    },
-    {
-      "nom": "Comité d'organisation des courses de ski alpin Crans-Montana",
-      "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
-      "amount_2021": 0,
-      "amount_2022": 300000,
-      "amount_2023": 310000,
-      "amount_2024": 0,
-      "amount_2025": 0,
-      "total": 610000,
-      "nb_years_active": 2,
-      "trajectory_cat": "sparse",
       "delta_pct": null,
       "is_consolidated": false
     },
@@ -4521,6 +4491,36 @@
       "total": 585000,
       "nb_years_active": 3,
       "trajectory_cat": "decline",
+      "delta_pct": -100,
+      "is_consolidated": false
+    },
+    {
+      "nom": "Assoc. Croix-Rouge Valais",
+      "canton": "VS",
+      "secteur": "Santé et handicap",
+      "amount_2021": 108000,
+      "amount_2022": 111000,
+      "amount_2023": 110000,
+      "amount_2024": 111000,
+      "amount_2025": 142000,
+      "total": 582000,
+      "nb_years_active": 5,
+      "trajectory_cat": "stable",
+      "delta_pct": 31,
+      "is_consolidated": false
+    },
+    {
+      "nom": "culturelle 2021-2022 Fribourg",
+      "canton": "FR",
+      "secteur": "Culture",
+      "amount_2021": 580000,
+      "amount_2022": 0,
+      "amount_2023": 0,
+      "amount_2024": 0,
+      "amount_2025": 0,
+      "total": 580000,
+      "nb_years_active": 1,
+      "trajectory_cat": "one_shot_2021",
       "delta_pct": -100,
       "is_consolidated": false
     }

@@ -2,7 +2,7 @@
   "_meta": {
     "year": "2024",
     "consolidated_with_aliases": true,
-    "aliases_count": 10
+    "aliases_count": 11
   },
   "beneficiaires": [
     {
@@ -73,16 +73,6 @@
         "GE"
       ],
       "secteur_principal": "Santé et handicap",
-      "is_consolidated": false
-    },
-    {
-      "nom": "cantonales vaudoises",
-      "total_CHF": 1669649,
-      "count": 1,
-      "cantons": [
-        "VD"
-      ],
-      "secteur_principal": "Sport",
       "is_consolidated": false
     },
     {
@@ -309,6 +299,16 @@
         "SR"
       ],
       "secteur_principal": "Sport",
+      "is_consolidated": true
+    },
+    {
+      "nom": "Fond. pour l'art dramatique",
+      "total_CHF": 650000,
+      "count": 1,
+      "cantons": [
+        "SR"
+      ],
+      "secteur_principal": "Culture",
       "is_consolidated": true
     }
   ]

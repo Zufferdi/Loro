@@ -5,50 +5,56 @@
     "source": "brb2021_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 1232,
-    "total_chf": 29691913,
-    "precise_classified_entries": 961,
-    "precise_classified_chf": 22792348,
-    "pct_chf_precisely_classified": 76.8,
+    "total_entries": 1230,
+    "total_chf": 29666913,
+    "precise_classified_entries": 963,
+    "precise_classified_chf": 20528819,
+    "pct_chf_precisely_classified": 69.2,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 1232,
-    "total_chf_classified": 29691913,
-    "catchall_chf": 6899565,
-    "cross_year_recovered": 656
+    "total_entries_classified": 1230,
+    "total_chf_classified": 29666913,
+    "catchall_chf": 9138094,
+    "cross_year_recovered": 666
   },
   "sports": [
     {
       "name": "Soutien général au sport",
-      "count": 271,
-      "total_chf": 6899565,
-      "mean_chf": 25459,
+      "count": 267,
+      "total_chf": 9138094,
+      "mean_chf": 34225,
       "cantons": {
         "VD": {
-          "count": 32,
-          "total_chf": 689040
+          "count": 31,
+          "total_chf": 2935830
         },
         "FR": {
           "count": 16,
           "total_chf": 497890
         },
         "VS": {
-          "count": 68,
-          "total_chf": 2986584
+          "count": 66,
+          "total_chf": 2979643
         },
         "NE": {
-          "count": 52,
-          "total_chf": 923917
+          "count": 51,
+          "total_chf": 922597
         },
         "GE": {
-          "count": 65,
-          "total_chf": 1116010
+          "count": 64,
+          "total_chf": 1115010
         },
         "JU": {
-          "count": 38,
-          "total_chf": 686124
+          "count": 39,
+          "total_chf": 687124
         }
       },
       "samples": [
+        {
+          "nom": "Soutien associations sportives cantonales vaudoises",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 2267790
+        },
         {
           "nom": "Contributions ponctuelles / Punktuelle Unterstützungen 3’081’939.25 d’installations et infrastructures sportives / Bau und Renovation von Sportanlagen",
           "ville": null,
@@ -72,15 +78,15 @@
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 250000
-        },
-        {
-          "nom": "EKG Swiss 5 days orieentering Contributions de la Loterie Romande distribuées par le Conseil d’Etat ou par un service de l’Etat Eurogym 2022",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 250000
         }
       ],
       "all_entries": [
+        {
+          "nom": "Soutien associations sportives cantonales vaudoises",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 2267790
+        },
         {
           "nom": "Contributions ponctuelles / Punktuelle Unterstützungen 3’081’939.25 d’installations et infrastructures sportives / Bau und Renovation von Sportanlagen",
           "ville": null,
@@ -496,12 +502,6 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "Bande dessinée sur l’antisémitisme Cinéculture - Cinéma pour l’école",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 20000
-        },
-        {
           "nom": "Balades cinématographiques en Suisse romande Conseil Suisse des Activités de Jeunesse",
           "ville": "Liebefeld",
           "canton": "JU",
@@ -568,7 +568,7 @@
           "montant_CHF": 16400
         },
         {
-          "nom": "Rénovation installations tirs SAC-Ortsgruppe St. Niklaus",
+          "nom": "installations tirs SAC-Ortsgruppe St. Niklaus",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 16301
@@ -682,7 +682,7 @@
           "montant_CHF": 10000
         },
         {
-          "nom": "romande Assoc. Violence que Faire",
+          "nom": "Assoc. Violence que Faire",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 10000
@@ -700,7 +700,7 @@
           "montant_CHF": 9926
         },
         {
-          "nom": "Badminton Club La Chaux-de- Fonds",
+          "nom": "Badminton Club La Chaux-de-Fonds",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 8600
@@ -748,13 +748,13 @@
           "montant_CHF": 6600
         },
         {
-          "nom": "de réserve Assoc. Osmosis Wakeclub Lutry340.- Assoc. Osmosis Wakeclub Lutry",
+          "nom": "Assoc. Osmosis Wakeclub Lutry340.- Assoc. Osmosis Wakeclub Lutry",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 6560
         },
         {
-          "nom": "Tchoukball Club La Chaux-de- Fonds",
+          "nom": "Tchoukball Club La Chaux-de-Fonds",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 6520
@@ -829,12 +829,6 @@
           "nom": "Victoire coupe de la ligue 2021 Elfic",
           "ville": null,
           "canton": "FR",
-          "montant_CHF": 5000
-        },
-        {
-          "nom": "Stiftung Lötschentaler Museum",
-          "ville": "Kippel",
-          "canton": "VS",
           "montant_CHF": 5000
         },
         {
@@ -1156,12 +1150,6 @@
           "montant_CHF": 1945
         },
         {
-          "nom": "Rénovation terrain synthétique Fussball-Club Raron",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 1941
-        },
-        {
           "nom": "Badminton club Mandement",
           "ville": null,
           "canton": "GE",
@@ -1280,18 +1268,30 @@
           "ville": null,
           "canton": "NE",
           "montant_CHF": 1500
+        },
+        {
+          "nom": "Badminton Club Chênois",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Le Samouraï",
+          "ville": "Judo Club Bernex",
+          "canton": "GE",
+          "montant_CHF": 1500
         }
       ]
     },
     {
       "name": "Multi-sports",
-      "count": 80,
-      "total_chf": 6716964,
-      "mean_chf": 83962,
+      "count": 79,
+      "total_chf": 4449174,
+      "mean_chf": 56318,
       "cantons": {
         "VD": {
-          "count": 24,
-          "total_chf": 4086483
+          "count": 23,
+          "total_chf": 1818693
         },
         "FR": {
           "count": 10,
@@ -1316,12 +1316,6 @@
       },
       "samples": [
         {
-          "nom": "vaudois en 2021 et locaux de sport",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 2267790
-        },
-        {
           "nom": "Wakeboard Wake On The Moon 5'500 Clubs - sports collectifs",
           "ville": null,
           "canton": "GE",
@@ -1334,7 +1328,7 @@
           "montant_CHF": 550000
         },
         {
-          "nom": "féminines au Centre sportif de Chavannes (acompte) Commune de Lausanne",
+          "nom": "Centre sportif de Chavannes",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 500000
@@ -1344,15 +1338,15 @@
           "ville": null,
           "canton": "GE",
           "montant_CHF": 305000
+        },
+        {
+          "nom": "(Sports-Arts-Études)",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 263500
         }
       ],
       "all_entries": [
-        {
-          "nom": "vaudois en 2021 et locaux de sport",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 2267790
-        },
         {
           "nom": "Wakeboard Wake On The Moon 5'500 Clubs - sports collectifs",
           "ville": null,
@@ -1366,7 +1360,7 @@
           "montant_CHF": 550000
         },
         {
-          "nom": "féminines au Centre sportif de Chavannes (acompte) Commune de Lausanne",
+          "nom": "Centre sportif de Chavannes",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 500000
@@ -1396,7 +1390,7 @@
           "montant_CHF": 254400
         },
         {
-          "nom": "Rénovation d'un terrain de sports",
+          "nom": "d'un terrain de sports",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 240000
@@ -1450,7 +1444,7 @@
           "montant_CHF": 43000
         },
         {
-          "nom": "situation de handicap diabète genève (anc. Assoc. Genevoise des Diabétiques)",
+          "nom": "Assoc. Genevoise des Diabétiques",
           "ville": "Carouge",
           "canton": "GE",
           "montant_CHF": 40000
@@ -1468,7 +1462,7 @@
           "montant_CHF": 30000
         },
         {
-          "nom": "sportive au Croset (acompte) Commune d'Ormont-Dessus",
+          "nom": "Commune d'Ormont-Dessus",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 26000
@@ -1618,7 +1612,7 @@
           "montant_CHF": 5000
         },
         {
-          "nom": "Prix du mérite sportif neuchâtelois : équipe de l'année 2021 Vô-Vietnam club La Chaux-de- Fonds",
+          "nom": "Prix du mérite sportif neuchâtelois : équipe de l'année 2021 Vô-Vietnam club La Chaux-de-Fonds",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 5000
@@ -1732,7 +1726,7 @@
           "montant_CHF": 1470
         },
         {
-          "nom": "de Leysin Commune de Montreux",
+          "nom": "Commune de Montreux",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1410
@@ -1804,7 +1798,7 @@
           "montant_CHF": 810
         },
         {
-          "nom": "Groupe sportif Epauvillers220.- Groupe sportif Franches- Montagnes",
+          "nom": "Groupe sportif Epauvillers220.- Groupe sportif Franches-Montagnes",
           "ville": null,
           "canton": "JU",
           "montant_CHF": 700
@@ -1831,13 +1825,13 @@
     },
     {
       "name": "Football",
-      "count": 117,
-      "total_chf": 2852271,
-      "mean_chf": 24378,
+      "count": 118,
+      "total_chf": 2852871,
+      "mean_chf": 24176,
       "cantons": {
         "VD": {
-          "count": 23,
-          "total_chf": 1130275
+          "count": 24,
+          "total_chf": 1130875
         },
         "FR": {
           "count": 8,
@@ -1874,7 +1868,7 @@
           "montant_CHF": 368300
         },
         {
-          "nom": "pour le FC Arnex (solde) Commune d'Avenches",
+          "nom": "Commune d'Avenches",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 264000
@@ -1906,7 +1900,7 @@
           "montant_CHF": 368300
         },
         {
-          "nom": "pour le FC Arnex (solde) Commune d'Avenches",
+          "nom": "Commune d'Avenches",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 264000
@@ -1960,7 +1954,7 @@
           "montant_CHF": 60000
         },
         {
-          "nom": "romande Assoc. suisse des Centres Sociaux Protestants",
+          "nom": "Assoc. suisse des Centres Sociaux Protestants",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 50000
@@ -2068,7 +2062,7 @@
           "montant_CHF": 16000
         },
         {
-          "nom": "Rénovation et travaux d'homologation du terrain de football B en gazon synthétique de Rochettaz Commune de Romanel-sur- Lausanne",
+          "nom": "Commune de Romanel-sur- Lausanne",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 14630
@@ -2248,7 +2242,7 @@
           "montant_CHF": 2623
         },
         {
-          "nom": "Rénovation de deux terrains de tennis Football Club Bevaix140.- Agrandissement vestiaire arbitre Football Club Coffrane",
+          "nom": "Club Bevaix140.- Agrandissement vestiaire arbitre Football Club Coffrane",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 2510
@@ -2470,7 +2464,7 @@
           "montant_CHF": 960
         },
         {
-          "nom": "mobiles senior Compagnie des Archers de Lausanne",
+          "nom": "Compagnie des Archers de Lausanne",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 930
@@ -2570,6 +2564,12 @@
           "ville": null,
           "canton": "JU",
           "montant_CHF": 610
+        },
+        {
+          "nom": "Compagnie des Archers de Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 600
         },
         {
           "nom": "Football Club Haute-Sorne",
@@ -2740,7 +2740,7 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "les jeunes Ski Club International de Genève",
+          "nom": "Club International de Genève",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 40000
@@ -2824,7 +2824,7 @@
           "montant_CHF": 17500
         },
         {
-          "nom": "Rénovation de la patinoire de skater-hockey SHC Givisiez Skater 953'425.80 Refaire les structures de la patinoire sèche (intérieure) Ski Club Charmey",
+          "nom": "Club Charmey",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 12000
@@ -2896,7 +2896,7 @@
           "montant_CHF": 6000
         },
         {
-          "nom": "annulé) Assoc. fribourgeoise de ski et snowboard",
+          "nom": "Assoc. fribourgeoise de ski et snowboard",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 5000
@@ -2962,7 +2962,7 @@
           "montant_CHF": 2270
         },
         {
-          "nom": "ème Genève 2021 Club Nautique de Versoix - Section Ski nautique",
+          "nom": "Club Nautique de Versoix - Section Ski nautique",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 2000
@@ -2974,13 +2974,13 @@
           "montant_CHF": 2000
         },
         {
-          "nom": "jeunes sauteurs Ski Club Les Diablerets",
+          "nom": "Club Les Diablerets",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1840
         },
         {
-          "nom": "ski Commune de Prangins",
+          "nom": "Commune de Prangins",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1760
@@ -3004,7 +3004,7 @@
           "montant_CHF": 1400
         },
         {
-          "nom": "barreur (4x+) Ski Club du Col des Mosses",
+          "nom": "Club du Col des Mosses",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1210
@@ -3058,7 +3058,7 @@
           "montant_CHF": 900
         },
         {
-          "nom": "piquets à brosse et 1 mèche pour perceuse Ski-Club Alpina Château-d'Oex",
+          "nom": "Club Alpina Château-d'Oex",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 770
@@ -3082,7 +3082,7 @@
           "montant_CHF": 620
         },
         {
-          "nom": "compétitions Ski Club Les Diablerets",
+          "nom": "Club Les Diablerets",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 580
@@ -3486,7 +3486,7 @@
           "montant_CHF": 139910
         },
         {
-          "nom": "de la Maladaire Commune d'Ormont-Dessus",
+          "nom": "Commune d'Ormont-Dessus",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 84600
@@ -3518,7 +3518,7 @@
           "montant_CHF": 139910
         },
         {
-          "nom": "de la Maladaire Commune d'Ormont-Dessus",
+          "nom": "Commune d'Ormont-Dessus",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 84600
@@ -3620,7 +3620,7 @@
           "montant_CHF": 7320
         },
         {
-          "nom": "Sté Suisse de Sauvetage Val- de-Ruz",
+          "nom": "Sté Suisse de Sauvetage Val-de-Ruz",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 6500
@@ -3680,7 +3680,7 @@
           "montant_CHF": 1370
         },
         {
-          "nom": "gymnastique pour la salle du CMC Assoc. Cantonale Vaudoise pour la Natation",
+          "nom": "Assoc. Cantonale Vaudoise pour la Natation",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1360
@@ -3737,9 +3737,9 @@
     },
     {
       "name": "Tennis / Padel",
-      "count": 64,
-      "total_chf": 928108,
-      "mean_chf": 14501,
+      "count": 65,
+      "total_chf": 930049,
+      "mean_chf": 14308,
       "cantons": {
         "VD": {
           "count": 11,
@@ -3750,8 +3750,8 @@
           "total_chf": 30685
         },
         "VS": {
-          "count": 7,
-          "total_chf": 237308
+          "count": 8,
+          "total_chf": 239249
         },
         "NE": {
           "count": 11,
@@ -3768,7 +3768,7 @@
       },
       "samples": [
         {
-          "nom": "cantonales / Kantonale Sportverbände 1’996’199.22 Contributions annuelles / Jährliche Unterstüzungen 2’294’212.22 Assoc. régionale Valais Tennis",
+          "nom": "Assoc. régionale Valais Tennis",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 188510
@@ -3800,7 +3800,7 @@
       ],
       "all_entries": [
         {
-          "nom": "cantonales / Kantonale Sportverbände 1’996’199.22 Contributions annuelles / Jährliche Unterstüzungen 2’294’212.22 Assoc. régionale Valais Tennis",
+          "nom": "Assoc. régionale Valais Tennis",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 188510
@@ -3908,7 +3908,7 @@
           "montant_CHF": 10056
         },
         {
-          "nom": "Rénovation des vestaires 2021 Tennis Club Le Locle",
+          "nom": "Club Le Locle",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 9610
@@ -3950,7 +3950,7 @@
           "montant_CHF": 6400
         },
         {
-          "nom": "Rénovation de la halle du Tennis Club Mail Tennis Club La Chaux-de-Fonds",
+          "nom": "Club Mail Tennis Club La Chaux-de-Fonds",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 6170
@@ -3980,7 +3980,7 @@
           "montant_CHF": 5490
         },
         {
-          "nom": "Rénovation de l'éclairage des quatre courts de tennis centraux extérieurs Sté de Tir au pistolet et Revolver du Jorat",
+          "nom": "Sté de Tir au pistolet et Revolver du Jorat",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 5260
@@ -4040,7 +4040,7 @@
           "montant_CHF": 3700
         },
         {
-          "nom": "extérieurs supplémentaires (no 4 et 5) Tennis Club Yverdon",
+          "nom": "Club Yverdon",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 3630
@@ -4058,7 +4058,7 @@
           "montant_CHF": 3200
         },
         {
-          "nom": "Rénovation Tennis-Club Monthey",
+          "nom": "Tennis-Club Monthey",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 3074
@@ -4098,6 +4098,12 @@
           "ville": null,
           "canton": "GE",
           "montant_CHF": 2100
+        },
+        {
+          "nom": "Club Raron",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 1941
         },
         {
           "nom": "TC Confignon",
@@ -4154,7 +4160,7 @@
           "montant_CHF": 1000
         },
         {
-          "nom": "l'Aiglon Tennis Club Bulle",
+          "nom": "Club Bulle",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 1000
@@ -4218,7 +4224,7 @@
       },
       "samples": [
         {
-          "nom": "sport (beach volley-pétanque) Commune de Pully",
+          "nom": "Commune de Pully",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 191550
@@ -4250,7 +4256,7 @@
       ],
       "all_entries": [
         {
-          "nom": "sport (beach volley-pétanque) Commune de Pully",
+          "nom": "Commune de Pully",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 191550
@@ -4439,13 +4445,13 @@
     },
     {
       "name": "Gymnastique",
-      "count": 96,
-      "total_chf": 855983,
-      "mean_chf": 8916,
+      "count": 97,
+      "total_chf": 856983,
+      "mean_chf": 8834,
       "cantons": {
         "VD": {
-          "count": 31,
-          "total_chf": 356964
+          "count": 32,
+          "total_chf": 357964
         },
         "FR": {
           "count": 12,
@@ -4532,7 +4538,7 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "moquettes Assoc. Cantonale Vaudoise de Gymnastique",
+          "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 14560
@@ -4838,6 +4844,12 @@
           "montant_CHF": 1000
         },
         {
+          "nom": "Badminton Club Yverdon-les- Bains",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
           "nom": "à Puidoux FSG Chernex",
           "ville": null,
           "canton": "VD",
@@ -5042,7 +5054,7 @@
           "montant_CHF": 300
         },
         {
-          "nom": "cantonaux jeunesse Féd. Fribourgeoise de Gymnastique",
+          "nom": "Féd. Fribourgeoise de Gymnastique",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 288
@@ -5170,7 +5182,7 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "ème Assoc. Genève Marathon / 20km de Genève 2021",
+          "nom": "Assoc. Genève Marathon",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 16500
@@ -5242,7 +5254,7 @@
           "montant_CHF": 3600
         },
         {
-          "nom": "section Assoc. Cantonale Neuchateloise de Gymnastique Gebsonn Club et Manège Gerber",
+          "nom": "Assoc. Cantonale Neuchateloise de Gymnastique Gebsonn Club et Manège Gerber",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 2670
@@ -5686,7 +5698,7 @@
           "montant_CHF": 10000
         },
         {
-          "nom": "Hockey Club Franches- Montagnes",
+          "nom": "Hockey Club Franches-Montagnes",
           "ville": null,
           "canton": "JU",
           "montant_CHF": 10000
@@ -5734,7 +5746,7 @@
           "montant_CHF": 4000
         },
         {
-          "nom": "Unihockey Club La Chaux-de- Fonds",
+          "nom": "Unihockey Club La Chaux-de-Fonds",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 3500
@@ -5764,7 +5776,7 @@
           "montant_CHF": 2837
         },
         {
-          "nom": "Hockey Club Franches- Montagnes",
+          "nom": "Hockey Club Franches-Montagnes",
           "ville": null,
           "canton": "JU",
           "montant_CHF": 2710
@@ -5812,7 +5824,7 @@
           "montant_CHF": 1290
         },
         {
-          "nom": "transport HC Yverdon270.- hockey junior Hockey Club Villars 1908 - Mouvement Jeunesse",
+          "nom": "Club Villars 1908 - Mouvement Jeunesse",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1240
@@ -5836,13 +5848,13 @@
           "montant_CHF": 1000
         },
         {
-          "nom": "annulé) Assoc. Fribourgeoise de Hockey- sur-Glace",
+          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 1000
         },
         {
-          "nom": "ème ligue Assoc. Fribourgeoise de Hockey- sur-Glace",
+          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 1000
@@ -5878,7 +5890,7 @@
           "montant_CHF": 590
         },
         {
-          "nom": "annulé) Assoc. Fribourgeoise de Hockey- sur-Glace",
+          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 500
@@ -6076,7 +6088,7 @@
           "montant_CHF": 12800
         },
         {
-          "nom": "petit calibre (50 m) Unihockey Club Payerne170.- Union Lavaux Riviera Basket",
+          "nom": "Club Payerne170.- Union Lavaux Riviera Basket",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 12510
@@ -6354,7 +6366,7 @@
           "montant_CHF": 7250
         },
         {
-          "nom": "musculation Club Nautique Auvernier",
+          "nom": "Club Nautique Auvernier",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 6020
@@ -6366,13 +6378,13 @@
           "montant_CHF": 6000
         },
         {
-          "nom": "pratique du sport facultatif Sté Nautique de Nyon",
+          "nom": "Sté Nautique de Nyon",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 5530
         },
         {
-          "nom": "complets Sté Nautique de Nyon",
+          "nom": "Sté Nautique de Nyon",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 5520
@@ -6408,7 +6420,7 @@
           "montant_CHF": 3650
         },
         {
-          "nom": "pour un bateau de sécurité Club Nautique Pully",
+          "nom": "Club Nautique Pully",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 3350
@@ -6516,7 +6528,7 @@
           "montant_CHF": 650
         },
         {
-          "nom": "et un quad) Club Nautique Morgien",
+          "nom": "Club Nautique Morgien",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 580
@@ -6700,7 +6712,7 @@
           "montant_CHF": 900
         },
         {
-          "nom": "protection pour filles Club de Course d'Orientation Lausanne-Jorat",
+          "nom": "Club de Course d'Orientation Lausanne-Jorat",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 480
@@ -6842,7 +6854,7 @@
           "montant_CHF": 3000
         },
         {
-          "nom": "Handball Club La Chaux-de- Fonds",
+          "nom": "Handball Club La Chaux-de-Fonds",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 1800
@@ -7116,7 +7128,7 @@
           "montant_CHF": 7000
         },
         {
-          "nom": "des athlètes Judo-Club Morges",
+          "nom": "Club Morges",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 6270
@@ -7164,7 +7176,7 @@
           "montant_CHF": 3000
         },
         {
-          "nom": "pour la pratique des sports nautiques Assoc. Vaudoise de Judo et Ju-jitsu",
+          "nom": "Assoc. Vaudoise de Judo et Ju-jitsu",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 2220
@@ -7405,13 +7417,13 @@
     },
     {
       "name": "Tir",
-      "count": 31,
-      "total_chf": 186890,
-      "mean_chf": 6028,
+      "count": 30,
+      "total_chf": 186290,
+      "mean_chf": 6209,
       "cantons": {
         "VD": {
-          "count": 4,
-          "total_chf": 6100
+          "count": 3,
+          "total_chf": 5500
         },
         "FR": {
           "count": 1,
@@ -7528,7 +7540,7 @@
           "montant_CHF": 3000
         },
         {
-          "nom": "Rénovation du Dojo Sté de Tir les Armes Réunies la Côtière-Engollon",
+          "nom": "Sté de Tir les Armes Réunies la Côtière-Engollon",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 2680
@@ -7610,12 +7622,6 @@
           "ville": null,
           "canton": "JU",
           "montant_CHF": 740
-        },
-        {
-          "nom": "sportives (suite) Compagnie des Archers de Lausanne",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 600
         },
         {
           "nom": "Sté de tir La Vendeline410.- Sté de tir Les Rangiers Boécourt",
@@ -7988,13 +7994,13 @@
           "montant_CHF": 750
         },
         {
-          "nom": "Club de patinage des Franches- Montagnes",
+          "nom": "Club de patinage des Franches-Montagnes",
           "ville": null,
           "canton": "JU",
           "montant_CHF": 600
         },
         {
-          "nom": "Meeting de l’Arc Club de patinage des Franches- Montagnes",
+          "nom": "Meeting de l’Arc Club de patinage des Franches-Montagnes",
           "ville": null,
           "canton": "JU",
           "montant_CHF": 500
@@ -8236,7 +8242,7 @@
           "montant_CHF": 2050
         },
         {
-          "nom": "de pointe Club de l'Aviron de Vevey",
+          "nom": "Club de l'Aviron de Vevey",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1620
@@ -8254,13 +8260,13 @@
           "montant_CHF": 830
         },
         {
-          "nom": "sans barreur et un deux sans barreur Club de l'Aviron de Vevey",
+          "nom": "Club de l'Aviron de Vevey",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 700
         },
         {
-          "nom": "l'impression des cartes Club de l'Aviron de Vevey",
+          "nom": "Club de l'Aviron de Vevey",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 660
@@ -8302,7 +8308,7 @@
           "montant_CHF": 12675
         },
         {
-          "nom": "Salle d'Escrime La Chaux-de- Fonds",
+          "nom": "Salle d'Escrime La Chaux-de-Fonds",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 8000
@@ -8334,7 +8340,7 @@
           "montant_CHF": 12675
         },
         {
-          "nom": "Salle d'Escrime La Chaux-de- Fonds",
+          "nom": "Salle d'Escrime La Chaux-de-Fonds",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 8000
@@ -8370,7 +8376,7 @@
           "montant_CHF": 2000
         },
         {
-          "nom": "matelas de réception Sté d'escrime Vevey-Montreux",
+          "nom": "Sté d'escrime Vevey-Montreux",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1790
@@ -8504,7 +8510,7 @@
           "montant_CHF": 11500
         },
         {
-          "nom": "ème triathlon populaire et jeunesse Assoc. Groove",
+          "nom": "Assoc. Groove",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 6300
@@ -8536,7 +8542,7 @@
           "montant_CHF": 11500
         },
         {
-          "nom": "ème triathlon populaire et jeunesse Assoc. Groove",
+          "nom": "Assoc. Groove",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 6300
@@ -8672,7 +8678,7 @@
           "montant_CHF": 1330
         },
         {
-          "nom": "Curling Club Franches- Montagnes",
+          "nom": "Curling Club Franches-Montagnes",
           "ville": null,
           "canton": "JU",
           "montant_CHF": 180
@@ -8681,13 +8687,13 @@
     },
     {
       "name": "Boxe / Combat",
-      "count": 8,
-      "total_chf": 23465,
-      "mean_chf": 2933,
+      "count": 9,
+      "total_chf": 24785,
+      "mean_chf": 2753,
       "cantons": {
         "NE": {
-          "count": 4,
-          "total_chf": 8965
+          "count": 5,
+          "total_chf": 10285
         },
         "GE": {
           "count": 4,
@@ -8770,6 +8776,12 @@
           "montant_CHF": 2065
         },
         {
+          "nom": "Centre d'Education Physique Cortaillod",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 1320
+        },
+        {
           "nom": "Boxing Club Neuchâtel",
           "ville": null,
           "canton": "NE",
@@ -8790,7 +8802,7 @@
       },
       "samples": [
         {
-          "nom": "juin 2020 Club des Lutteurs du Vignoble",
+          "nom": "Club des Lutteurs du Vignoble",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 1800
@@ -8804,7 +8816,7 @@
       ],
       "all_entries": [
         {
-          "nom": "juin 2020 Club des Lutteurs du Vignoble",
+          "nom": "Club des Lutteurs du Vignoble",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 1800
