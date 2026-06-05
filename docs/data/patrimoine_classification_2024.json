@@ -5,32 +5,32 @@
     "source": "brb2024_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 333,
-    "total_chf": 15666286,
-    "precise_classified_entries": 75,
-    "precise_classified_chf": 9334926,
-    "pct_chf_precisely_classified": 59.6,
+    "total_entries": 335,
+    "total_chf": 16168286,
+    "precise_classified_entries": 77,
+    "precise_classified_chf": 9351926,
+    "pct_chf_precisely_classified": 57.8,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 333,
-    "total_chf_classified": 15666286,
-    "catchall_chf": 6331360,
-    "cross_year_recovered": 7,
+    "total_entries_classified": 335,
+    "total_chf_classified": 16168286,
+    "catchall_chf": 6816360,
+    "cross_year_recovered": 13,
     "sector": "Conservation du patrimoine",
     "sector_slug": "patrimoine",
-    "total_entries_sector": 333,
-    "total_chf_sector": 15666286,
+    "total_entries_sector": 335,
+    "total_chf_sector": 16168286,
     "pct_entries_classified": 100.0
   },
   "categories": [
     {
       "name": "Soutien général au patrimoine",
       "count": 258,
-      "total_chf": 6331360,
-      "mean_chf": 24540,
+      "total_chf": 6816360,
+      "mean_chf": 26420,
       "cantons": {
         "VD": {
           "count": 48,
-          "total_chf": 1100900
+          "total_chf": 1585900
         },
         "JU": {
           "count": 60,
@@ -59,6 +59,12 @@
       },
       "samples": [
         {
+          "nom": "Fond. École Suisse d’Archéologie en Grèce (ESAG)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 500000
+        },
+        {
           "nom": "Assoc. pour l'Organisation de l'European Masters",
           "ville": "Crans-Montana",
           "canton": "VS",
@@ -81,15 +87,15 @@
           "ville": "Porrentruy",
           "canton": "JU",
           "montant_CHF": 125500
-        },
-        {
-          "nom": "Tonverein Bad Bonn",
-          "ville": "Düdingen",
-          "canton": "FR",
-          "montant_CHF": 125000
         }
       ],
       "all_entries": [
+        {
+          "nom": "Fond. École Suisse d’Archéologie en Grèce (ESAG)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 500000
+        },
         {
           "nom": "Assoc. pour l'Organisation de l'European Masters",
           "ville": "Crans-Montana",
@@ -741,12 +747,6 @@
         {
           "nom": "Vevey Spring Classic",
           "ville": "Vevey",
-          "canton": "VD",
-          "montant_CHF": 15000
-        },
-        {
-          "nom": "Pleine Lune",
-          "ville": "Nyon",
           "canton": "VD",
           "montant_CHF": 15000
         },
@@ -1852,17 +1852,21 @@
     },
     {
       "name": "Histoire & archives",
-      "count": 8,
-      "total_chf": 718160,
-      "mean_chf": 89770,
+      "count": 10,
+      "total_chf": 793160,
+      "mean_chf": 79316,
       "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 15000
+        },
         "NE": {
           "count": 1,
           "total_chf": 30160
         },
         "FR": {
-          "count": 1,
-          "total_chf": 8000
+          "count": 2,
+          "total_chf": 68000
         },
         "VS": {
           "count": 1,
@@ -1885,6 +1889,12 @@
           "montant_CHF": 500000
         },
         {
+          "nom": "Sté des Amis du Musée (Musée d'art et d'histoire de Fribourg)",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 60000
+        },
+        {
           "nom": "Sté d'histoire et d'archéologie de Genève S.H.A.G. Traitement et mise en valeur de la collection de brochures",
           "ville": "Genève",
           "canton": "GE",
@@ -1901,12 +1911,6 @@
           "ville": "Bern",
           "canton": "GE",
           "montant_CHF": 40000
-        },
-        {
-          "nom": "Archives contestataires, Carouge Archives de l’exil chilien en Suisse – traitement et valorisation",
-          "ville": "Carouge",
-          "canton": "GE",
-          "montant_CHF": 35000
         }
       ],
       "all_entries": [
@@ -1915,6 +1919,12 @@
           "ville": "Le Grand-Saconnex e",
           "canton": "SR",
           "montant_CHF": 500000
+        },
+        {
+          "nom": "Sté des Amis du Musée (Musée d'art et d'histoire de Fribourg)",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 60000
         },
         {
           "nom": "Sté d'histoire et d'archéologie de Genève S.H.A.G. Traitement et mise en valeur de la collection de brochures",
@@ -1945,6 +1955,12 @@
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 30160
+        },
+        {
+          "nom": "Pleine Lune",
+          "ville": "Nyon",
+          "canton": "VD",
+          "montant_CHF": 15000
         },
         {
           "nom": "Deutscher Geschichtsforschender Verein des Kantons Freiburg",
@@ -2049,90 +2065,6 @@
       ]
     },
     {
-      "name": "Musées historiques",
-      "count": 5,
-      "total_chf": 190000,
-      "mean_chf": 38000,
-      "cantons": {
-        "VD": {
-          "count": 2,
-          "total_chf": 20000
-        },
-        "FR": {
-          "count": 2,
-          "total_chf": 110000
-        },
-        "NE": {
-          "count": 1,
-          "total_chf": 60000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Sté des Amis du Musée (Musée d'art et d'histoire de Fribourg)",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 60000
-        },
-        {
-          "nom": "Fond. du Musée paysan et artisanal",
-          "ville": "La Chaux-de-Fonds",
-          "canton": "NE",
-          "montant_CHF": 60000
-        },
-        {
-          "nom": "Fond. du Musée de Charmey",
-          "ville": "Charmey",
-          "canton": "FR",
-          "montant_CHF": 50000
-        },
-        {
-          "nom": "Fond. du Musée suisse de l'appareil photographique",
-          "ville": "Vevey",
-          "canton": "VD",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Fond. du Musée suisse de l'appareil photographique",
-          "ville": "Vevey",
-          "canton": "VD",
-          "montant_CHF": 10000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Sté des Amis du Musée (Musée d'art et d'histoire de Fribourg)",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 60000
-        },
-        {
-          "nom": "Fond. du Musée paysan et artisanal",
-          "ville": "La Chaux-de-Fonds",
-          "canton": "NE",
-          "montant_CHF": 60000
-        },
-        {
-          "nom": "Fond. du Musée de Charmey",
-          "ville": "Charmey",
-          "canton": "FR",
-          "montant_CHF": 50000
-        },
-        {
-          "nom": "Fond. du Musée suisse de l'appareil photographique",
-          "ville": "Vevey",
-          "canton": "VD",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Fond. du Musée suisse de l'appareil photographique",
-          "ville": "Vevey",
-          "canton": "VD",
-          "montant_CHF": 10000
-        }
-      ]
-    },
-    {
       "name": "Patrimoine alpestre & bisses",
       "count": 1,
       "total_chf": 160000,
@@ -2161,14 +2093,86 @@
       ]
     },
     {
+      "name": "Musées historiques",
+      "count": 4,
+      "total_chf": 130000,
+      "mean_chf": 32500,
+      "cantons": {
+        "VD": {
+          "count": 2,
+          "total_chf": 20000
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 50000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 60000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. du Musée paysan et artisanal",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Fond. du Musée de Charmey",
+          "ville": "Charmey",
+          "canton": "FR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. du Musée suisse de l'appareil photographique",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Fond. du Musée suisse de l'appareil photographique",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 10000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. du Musée paysan et artisanal",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Fond. du Musée de Charmey",
+          "ville": "Charmey",
+          "canton": "FR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. du Musée suisse de l'appareil photographique",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Fond. du Musée suisse de l'appareil photographique",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 10000
+        }
+      ]
+    },
+    {
       "name": "Archéologie",
-      "count": 2,
-      "total_chf": 58000,
-      "mean_chf": 29000,
+      "count": 3,
+      "total_chf": 60000,
+      "mean_chf": 20000,
       "cantons": {
         "SR": {
-          "count": 2,
-          "total_chf": 58000
+          "count": 3,
+          "total_chf": 60000
         }
       },
       "samples": [
@@ -2183,6 +2187,12 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 4000
+        },
+        {
+          "nom": "SHC Rolling Aventicum",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2000
         }
       ],
       "all_entries": [
@@ -2197,6 +2207,12 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 4000
+        },
+        {
+          "nom": "SHC Rolling Aventicum",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2000
         }
       ]
     },

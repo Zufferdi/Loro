@@ -5,20 +5,20 @@
     "source": "brb2025_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 81,
-    "total_chf": 8502879,
-    "precise_classified_entries": 31,
-    "precise_classified_chf": 6513379,
-    "pct_chf_precisely_classified": 76.6,
+    "total_entries": 77,
+    "total_chf": 8371379,
+    "precise_classified_entries": 27,
+    "precise_classified_chf": 6381879,
+    "pct_chf_precisely_classified": 76.2,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 81,
-    "total_chf_classified": 8502879,
+    "total_entries_classified": 77,
+    "total_chf_classified": 8371379,
     "catchall_chf": 1989500,
-    "cross_year_recovered": 2,
+    "cross_year_recovered": 3,
     "sector": "Formation et recherche",
     "sector_slug": "formation",
-    "total_entries_sector": 81,
-    "total_chf_sector": 8502879,
+    "total_entries_sector": 77,
+    "total_chf_sector": 8371379,
     "pct_entries_classified": 100.0
   },
   "categories": [
@@ -482,25 +482,21 @@
     },
     {
       "name": "Université & hautes écoles",
-      "count": 14,
-      "total_chf": 1964646,
-      "mean_chf": 140331,
+      "count": 11,
+      "total_chf": 1836646,
+      "mean_chf": 166967,
       "cantons": {
         "VD": {
-          "count": 5,
-          "total_chf": 1675400
+          "count": 4,
+          "total_chf": 1575400
         },
         "FR": {
-          "count": 4,
-          "total_chf": 133746
+          "count": 3,
+          "total_chf": 125746
         },
         "VS": {
           "count": 3,
           "total_chf": 113000
-        },
-        "NE": {
-          "count": 1,
-          "total_chf": 20000
         },
         "JU": {
           "count": 1,
@@ -521,12 +517,6 @@
           "montant_CHF": 495400
         },
         {
-          "nom": "Université de Lausanne",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 100000
-        },
-        {
           "nom": "Université de Fribourg",
           "ville": null,
           "canton": "FR",
@@ -537,6 +527,12 @@
           "ville": null,
           "canton": "VS",
           "montant_CHF": 87000
+        },
+        {
+          "nom": "EPFL Rocket Team",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 40000
         }
       ],
       "all_entries": [
@@ -551,12 +547,6 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 495400
-        },
-        {
-          "nom": "Université de Lausanne",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 100000
         },
         {
           "nom": "Université de Fribourg",
@@ -601,22 +591,10 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "Chœur de l'Université de Neuchâtel",
-          "ville": "Fontaines",
-          "canton": "NE",
-          "montant_CHF": 20000
-        },
-        {
           "nom": "Université de Fribourg",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 13139
-        },
-        {
-          "nom": "Chœur de Chambre",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 8000
         },
         {
           "nom": "Verein Kulturbärg, Naters",
@@ -656,9 +634,9 @@
     },
     {
       "name": "Apprentissage & formation continue",
-      "count": 7,
-      "total_chf": 770133,
-      "mean_chf": 110019,
+      "count": 6,
+      "total_chf": 766633,
+      "mean_chf": 127772,
       "cantons": {
         "FR": {
           "count": 2,
@@ -671,10 +649,6 @@
         "GE": {
           "count": 1,
           "total_chf": 30000
-        },
-        "JU": {
-          "count": 1,
-          "total_chf": 3500
         }
       },
       "samples": [
@@ -703,10 +677,10 @@
           "montant_CHF": 30000
         },
         {
-          "nom": "École jurassienne et conservatoire",
+          "nom": "von Artichoc und Oberwalliser Volkshochschule Oberwallis",
           "ville": null,
-          "canton": "JU",
-          "montant_CHF": 3500
+          "canton": "VS",
+          "montant_CHF": 3000
         }
       ],
       "all_entries": [
@@ -733,12 +707,6 @@
           "ville": null,
           "canton": "GE",
           "montant_CHF": 30000
-        },
-        {
-          "nom": "École jurassienne et conservatoire",
-          "ville": null,
-          "canton": "JU",
-          "montant_CHF": 3500
         },
         {
           "nom": "von Artichoc und Oberwalliser Volkshochschule Oberwallis",

@@ -8,7 +8,7 @@
     "canton_attribution": "via ville→canton mapping from brb2023/brb2025",
     "sector_overrides": {
       "date": "2026-06-04",
-      "count": 14,
+      "count": 0,
       "method": "Keyword-based override of `secteur` field when nom/desc contains an unambiguous indicator of a different sector. Conservative — only high-confidence patterns."
     },
     "name_fixes": {
@@ -91,7 +91,7 @@
       "ville": "Salavaux",
       "description": "Acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "montant_CHF": 69000,
       "annee": 2024
     },
@@ -199,7 +199,7 @@
       "ville": "Château-d'Œx",
       "description": "Travaux, aménagement, acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "montant_CHF": 46000,
       "annee": 2024
     },
@@ -208,7 +208,7 @@
       "ville": "Epalinges",
       "description": "Acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "montant_CHF": 17000,
       "annee": 2024
     },
@@ -3556,7 +3556,7 @@
       "ville": "Lausanne",
       "description": "Manifestation",
       "canton": "VD",
-      "secteur": "Formation et recherche",
+      "secteur": "Culture",
       "montant_CHF": 10000,
       "annee": 2024
     },
@@ -10693,7 +10693,7 @@
       "ville": null,
       "description": "Tour final du championnat suisse catégorie novices (M16)",
       "canton": "SR",
-      "secteur": "Sport",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 2000,
       "annee": 2024
     },
@@ -12538,7 +12538,7 @@
       "ville": "Lausanne",
       "description": "Soutien à l'acquisition et aux transformations d’un bâtiment à Athènes pour l’ESAG",
       "canton": "VD",
-      "secteur": "Formation et recherche",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 500000,
       "annee": 2024
     },
@@ -12583,7 +12583,7 @@
       "ville": null,
       "description": "Soutien à la création d'unités d’attente de placement en EMS dans les hôpitaux",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "montant_CHF": 6323000,
       "annee": 2024
     },
@@ -15373,7 +15373,7 @@
       "ville": "Fribourg",
       "description": "Saison musicale 2024",
       "canton": "FR",
-      "secteur": "Formation et recherche",
+      "secteur": "Culture",
       "montant_CHF": 8000,
       "annee": 2024
     },
@@ -19954,7 +19954,7 @@
       "ville": "Collombey-Muraz",
       "description": "Animation",
       "canton": "SR",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "montant_CHF": 23000,
       "annee": 2024
     },
@@ -19963,7 +19963,7 @@
       "ville": "Crans-Montana",
       "description": "Animation",
       "canton": "VS",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "montant_CHF": 80000,
       "annee": 2024
     },
@@ -19972,7 +19972,7 @@
       "ville": "Aproz",
       "description": "Animation 30'000-. EMS Résidence Jean-Paul, Riddes Animation",
       "canton": "VS",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "montant_CHF": 40000,
       "annee": 2024
     },
@@ -19981,7 +19981,7 @@
       "ville": "Vouvry",
       "description": "Animation",
       "canton": "VS",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "montant_CHF": 74000,
       "annee": 2024
     },
@@ -19990,7 +19990,7 @@
       "ville": "Sion",
       "description": "Animation",
       "canton": "VS",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "montant_CHF": 64000,
       "annee": 2024
     },
@@ -28297,7 +28297,7 @@
       "ville": "Fontaines",
       "description": "Événement",
       "canton": "NE",
-      "secteur": "Formation et recherche",
+      "secteur": "Culture",
       "montant_CHF": 15000,
       "annee": 2024
     },
@@ -31600,7 +31600,7 @@
       "ville": "Genève",
       "description": "Acquisition d'un piano à queue Steinway & Sons pour la salle Franz Liszt",
       "canton": "GE",
-      "secteur": "Formation et recherche",
+      "secteur": "Culture",
       "montant_CHF": 70000,
       "annee": 2024
     },

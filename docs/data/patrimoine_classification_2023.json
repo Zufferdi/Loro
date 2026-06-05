@@ -6,27 +6,27 @@
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
     "total_entries": 119,
-    "total_chf": 9944044,
-    "precise_classified_entries": 69,
-    "precise_classified_chf": 6571580,
-    "pct_chf_precisely_classified": 66.1,
+    "total_chf": 9704244,
+    "precise_classified_entries": 70,
+    "precise_classified_chf": 6586780,
+    "pct_chf_precisely_classified": 67.9,
     "pct_chf_classified": 100.0,
     "total_entries_classified": 119,
-    "total_chf_classified": 9944044,
-    "catchall_chf": 3372464,
-    "cross_year_recovered": 7,
+    "total_chf_classified": 9704244,
+    "catchall_chf": 3117464,
+    "cross_year_recovered": 13,
     "sector": "Conservation du patrimoine",
     "sector_slug": "patrimoine",
     "total_entries_sector": 119,
-    "total_chf_sector": 9944044,
+    "total_chf_sector": 9704244,
     "pct_entries_classified": 100.0
   },
   "categories": [
     {
       "name": "Soutien général au patrimoine",
-      "count": 50,
-      "total_chf": 3372464,
-      "mean_chf": 67449,
+      "count": 49,
+      "total_chf": 3117464,
+      "mean_chf": 63621,
       "cantons": {
         "VD": {
           "count": 4,
@@ -53,8 +53,8 @@
           "total_chf": 53000
         },
         "GE": {
-          "count": 8,
-          "total_chf": 1325000
+          "count": 7,
+          "total_chf": 1070000
         }
       },
       "samples": [
@@ -71,12 +71,6 @@
           "montant_CHF": 290000
         },
         {
-          "nom": "Musée international de la Croix-Rouge et du Croissant- Rouge",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 255000
-        },
-        {
           "nom": "Fond. Heinrich Maria et Jane Ledig-Rowohlt",
           "ville": "Lavigny",
           "canton": "SR",
@@ -87,6 +81,12 @@
           "ville": "Guttet-Feschel",
           "canton": "VS",
           "montant_CHF": 210000
+        },
+        {
+          "nom": "FONSART - Fond. pour la Sauvegarde et la mise en valeur du patrimoine audiovisuel de la RTS",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 200000
         }
       ],
       "all_entries": [
@@ -101,12 +101,6 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 290000
-        },
-        {
-          "nom": "Musée international de la Croix-Rouge et du Croissant- Rouge",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 255000
         },
         {
           "nom": "Fond. Heinrich Maria et Jane Ledig-Rowohlt",
@@ -394,9 +388,9 @@
     },
     {
       "name": "Châteaux & forts",
-      "count": 12,
-      "total_chf": 1715000,
-      "mean_chf": 142916,
+      "count": 13,
+      "total_chf": 1730200,
+      "mean_chf": 133092,
       "cantons": {
         "SR": {
           "count": 3,
@@ -407,8 +401,8 @@
           "total_chf": 445000
         },
         "FR": {
-          "count": 3,
-          "total_chf": 285000
+          "count": 4,
+          "total_chf": 300200
         },
         "VS": {
           "count": 1,
@@ -523,6 +517,12 @@
           "ville": "St-Maurice",
           "canton": "VS",
           "montant_CHF": 20000
+        },
+        {
+          "nom": "Crèche le château des enfants, Crèche",
+          "ville": "Crèche",
+          "canton": "FR",
+          "montant_CHF": 15200
         }
       ]
     },
@@ -726,17 +726,17 @@
     },
     {
       "name": "Histoire & archives",
-      "count": 9,
-      "total_chf": 1094660,
-      "mean_chf": 121628,
+      "count": 10,
+      "total_chf": 1144660,
+      "mean_chf": 114466,
       "cantons": {
         "NE": {
           "count": 1,
           "total_chf": 30160
         },
         "FR": {
-          "count": 1,
-          "total_chf": 8000
+          "count": 2,
+          "total_chf": 58000
         },
         "SR": {
           "count": 4,
@@ -765,6 +765,12 @@
           "montant_CHF": 189000
         },
         {
+          "nom": "Sté des Amis du Musée",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 50000
+        },
+        {
           "nom": "Fond. de l'Encyclopédie de",
           "ville": null,
           "canton": "SR",
@@ -775,12 +781,6 @@
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 30160
-        },
-        {
-          "nom": "Sté d’histoire du canton de",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 30000
         }
       ],
       "all_entries": [
@@ -795,6 +795,12 @@
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 189000
+        },
+        {
+          "nom": "Sté des Amis du Musée",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 50000
         },
         {
           "nom": "Fond. de l'Encyclopédie de",
@@ -1046,13 +1052,13 @@
     },
     {
       "name": "Musées historiques",
-      "count": 6,
-      "total_chf": 263300,
-      "mean_chf": 43883,
+      "count": 5,
+      "total_chf": 213300,
+      "mean_chf": 42660,
       "cantons": {
         "FR": {
-          "count": 4,
-          "total_chf": 178300
+          "count": 3,
+          "total_chf": 128300
         },
         "VS": {
           "count": 2,
@@ -1073,12 +1079,6 @@
           "montant_CHF": 50000
         },
         {
-          "nom": "Sté des Amis du Musée",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 50000
-        },
-        {
           "nom": "Fond. du Musée de Charmey",
           "ville": "Charmey",
           "canton": "FR",
@@ -1089,6 +1089,12 @@
           "ville": "Murten",
           "canton": "FR",
           "montant_CHF": 35000
+        },
+        {
+          "nom": "Assoc. du Musée Valaisan des Bisses",
+          "ville": "Ayent",
+          "canton": "VS",
+          "montant_CHF": 25000
         }
       ],
       "all_entries": [
@@ -1101,12 +1107,6 @@
         {
           "nom": "Sté des Amis du Musée gruérien",
           "ville": "Bulle",
-          "canton": "FR",
-          "montant_CHF": 50000
-        },
-        {
-          "nom": "Sté des Amis du Musée",
-          "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 50000
         },

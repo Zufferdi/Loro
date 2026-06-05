@@ -7,14 +7,14 @@
     "date": "2026-06-04",
     "total_entries": 170,
     "total_chf": 5149500,
-    "precise_classified_entries": 39,
-    "precise_classified_chf": 3364300,
-    "pct_chf_precisely_classified": 65.3,
+    "precise_classified_entries": 40,
+    "precise_classified_chf": 3381300,
+    "pct_chf_precisely_classified": 65.7,
     "pct_chf_classified": 100.0,
     "total_entries_classified": 170,
     "total_chf_classified": 5149500,
-    "catchall_chf": 1785200,
-    "cross_year_recovered": 8,
+    "catchall_chf": 1768200,
+    "cross_year_recovered": 11,
     "sector": "Environnement",
     "sector_slug": "environnement",
     "total_entries_sector": 170,
@@ -24,13 +24,13 @@
   "categories": [
     {
       "name": "Faune & biodiversité",
-      "count": 14,
-      "total_chf": 2420000,
-      "mean_chf": 172857,
+      "count": 15,
+      "total_chf": 2437000,
+      "mean_chf": 162466,
       "cantons": {
         "SR": {
-          "count": 6,
-          "total_chf": 1110000
+          "count": 7,
+          "total_chf": 1127000
         },
         "VD": {
           "count": 1,
@@ -151,6 +151,12 @@
           "montant_CHF": 20000
         },
         {
+          "nom": "Madame Frigo",
+          "ville": "Luzern",
+          "canton": "SR",
+          "montant_CHF": 17000
+        },
+        {
           "nom": "SPA Valais",
           "ville": "Ardon",
           "canton": "VS",
@@ -178,9 +184,9 @@
     },
     {
       "name": "Soutien général à l'environnement",
-      "count": 131,
-      "total_chf": 1785200,
-      "mean_chf": 13627,
+      "count": 130,
+      "total_chf": 1768200,
+      "mean_chf": 13601,
       "cantons": {
         "VD": {
           "count": 8,
@@ -191,8 +197,8 @@
           "total_chf": 196000
         },
         "SR": {
-          "count": 30,
-          "total_chf": 197445
+          "count": 29,
+          "total_chf": 180445
         },
         "JU": {
           "count": 7,
@@ -453,12 +459,6 @@
           "ville": "Travers",
           "canton": "NE",
           "montant_CHF": 18000
-        },
-        {
-          "nom": "Madame Frigo",
-          "ville": "Luzern",
-          "canton": "SR",
-          "montant_CHF": 17000
         },
         {
           "nom": "Chœur Yaroslavl'",

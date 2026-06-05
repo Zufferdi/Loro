@@ -5,40 +5,40 @@
     "source": "brb2023_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 299,
-    "total_chf": 12419198,
-    "precise_classified_entries": 145,
-    "precise_classified_chf": 9051442,
-    "pct_chf_precisely_classified": 72.9,
+    "total_entries": 298,
+    "total_chf": 12403998,
+    "precise_classified_entries": 147,
+    "precise_classified_chf": 9091242,
+    "pct_chf_precisely_classified": 73.3,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 299,
-    "total_chf_classified": 12419198,
-    "catchall_chf": 3367756,
-    "cross_year_recovered": 15,
+    "total_entries_classified": 298,
+    "total_chf_classified": 12403998,
+    "catchall_chf": 3312756,
+    "cross_year_recovered": 27,
     "sector": "Jeunesse et éducation",
     "sector_slug": "jeunesse",
-    "total_entries_sector": 299,
-    "total_chf_sector": 12419198,
+    "total_entries_sector": 298,
+    "total_chf_sector": 12403998,
     "pct_entries_classified": 100.0
   },
   "categories": [
     {
       "name": "Soutien général à la jeunesse",
-      "count": 154,
-      "total_chf": 3367756,
-      "mean_chf": 21868,
+      "count": 151,
+      "total_chf": 3312756,
+      "mean_chf": 21938,
       "cantons": {
         "VD": {
           "count": 19,
           "total_chf": 760500
         },
         "SR": {
-          "count": 19,
-          "total_chf": 210146
+          "count": 18,
+          "total_chf": 202146
         },
         "FR": {
-          "count": 32,
-          "total_chf": 386410
+          "count": 30,
+          "total_chf": 339410
         },
         "VS": {
           "count": 27,
@@ -184,12 +184,6 @@
           "nom": "Assoc. Farfadet",
           "ville": "Bière",
           "canton": "SR",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "Espace Famille le Bonheur des Touptis",
-          "ville": "Bulle",
-          "canton": "FR",
           "montant_CHF": 40000
         },
         {
@@ -685,22 +679,10 @@
           "montant_CHF": 8000
         },
         {
-          "nom": "Commune mixte de Haute-Sorne",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 8000
-        },
-        {
           "nom": "Assoc. de Soutien aux Chœurs d'Enfants et de Jeunes",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 8000
-        },
-        {
-          "nom": "Tageselternverein Sense",
-          "ville": "Tafers",
-          "canton": "FR",
-          "montant_CHF": 7000
         },
         {
           "nom": "Assoc. de la Revue (petite) enfance",
@@ -1130,17 +1112,17 @@
     },
     {
       "name": "Petite enfance & crèches",
-      "count": 44,
-      "total_chf": 1964527,
-      "mean_chf": 44648,
+      "count": 43,
+      "total_chf": 1949327,
+      "mean_chf": 45333,
       "cantons": {
         "VD": {
           "count": 6,
           "total_chf": 1556700
         },
         "FR": {
-          "count": 32,
-          "total_chf": 324127
+          "count": 31,
+          "total_chf": 308927
         },
         "SR": {
           "count": 3,
@@ -1259,12 +1241,6 @@
           "ville": "Crèche",
           "canton": "FR",
           "montant_CHF": 15500
-        },
-        {
-          "nom": "Crèche le château des enfants, Crèche",
-          "ville": "Crèche",
-          "canton": "FR",
-          "montant_CHF": 15200
         },
         {
           "nom": "Assoc. Le Terrier - Jardin d'enfants les Petits Apprentis Sages",
@@ -1568,9 +1544,9 @@
     },
     {
       "name": "Accueil parascolaire",
-      "count": 11,
-      "total_chf": 960900,
-      "mean_chf": 87354,
+      "count": 12,
+      "total_chf": 968900,
+      "mean_chf": 80741,
       "cantons": {
         "VD": {
           "count": 2,
@@ -1581,8 +1557,8 @@
           "total_chf": 689900
         },
         "SR": {
-          "count": 1,
-          "total_chf": 500
+          "count": 2,
+          "total_chf": 8500
         },
         "VS": {
           "count": 1,
@@ -1669,6 +1645,12 @@
           "ville": "Schmitten",
           "canton": "FR",
           "montant_CHF": 19000
+        },
+        {
+          "nom": "Commune mixte de Haute-Sorne",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 8000
         },
         {
           "nom": "UAPE La Courte Échelle - AAEE Assoc. d'Accueil de l'Enfance d'Épalinges",
@@ -1941,12 +1923,12 @@
     {
       "name": "Musique & arts jeunes",
       "count": 15,
-      "total_chf": 511285,
-      "mean_chf": 34085,
+      "total_chf": 428285,
+      "mean_chf": 28552,
       "cantons": {
         "FR": {
-          "count": 7,
-          "total_chf": 230340
+          "count": 8,
+          "total_chf": 237340
         },
         "SR": {
           "count": 4,
@@ -1955,10 +1937,6 @@
         "VS": {
           "count": 2,
           "total_chf": 163000
-        },
-        "GE": {
-          "count": 1,
-          "total_chf": 90000
         },
         "JU": {
           "count": 1,
@@ -1979,12 +1957,6 @@
           "montant_CHF": 160000
         },
         {
-          "nom": "Fond. Ensemble",
-          "ville": "Plan-les-Ouates",
-          "canton": "GE",
-          "montant_CHF": 90000
-        },
-        {
           "nom": "Orchestre des Jeunes de Fribourg",
           "ville": "Farvagny",
           "canton": "FR",
@@ -1995,6 +1967,12 @@
           "ville": "Zurich",
           "canton": "JU",
           "montant_CHF": 20000
+        },
+        {
+          "nom": "Tageselternverein Sense",
+          "ville": "Tafers",
+          "canton": "FR",
+          "montant_CHF": 7000
         }
       ],
       "all_entries": [
@@ -2011,12 +1989,6 @@
           "montant_CHF": 160000
         },
         {
-          "nom": "Fond. Ensemble",
-          "ville": "Plan-les-Ouates",
-          "canton": "GE",
-          "montant_CHF": 90000
-        },
-        {
           "nom": "Orchestre des Jeunes de Fribourg",
           "ville": "Farvagny",
           "canton": "FR",
@@ -2027,6 +1999,12 @@
           "ville": "Zurich",
           "canton": "JU",
           "montant_CHF": 20000
+        },
+        {
+          "nom": "Tageselternverein Sense",
+          "ville": "Tafers",
+          "canton": "FR",
+          "montant_CHF": 7000
         },
         {
           "nom": "Ensemble des Cadets de Courroux-Courcelon",
@@ -2191,98 +2169,18 @@
       ]
     },
     {
-      "name": "Cirque & théâtre jeunes",
-      "count": 5,
-      "total_chf": 99060,
-      "mean_chf": 19812,
-      "cantons": {
-        "FR": {
-          "count": 4,
-          "total_chf": 69060
-        },
-        "VS": {
-          "count": 1,
-          "total_chf": 30000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Assoc. Cirque Toamême",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 48560
-        },
-        {
-          "nom": "Labo'Cirque",
-          "ville": "Monthey",
-          "canton": "VS",
-          "montant_CHF": 30000
-        },
-        {
-          "nom": "École de Cirque Fun'en'Bulle",
-          "ville": "Marsens",
-          "canton": "FR",
-          "montant_CHF": 13000
-        },
-        {
-          "nom": "Petit théâtre de la ville de Fribourg",
-          "ville": "Villars-sur-Glâne",
-          "canton": "FR",
-          "montant_CHF": 4500
-        },
-        {
-          "nom": "Assoc. Cirqu’O jeunes",
-          "ville": "Bourguillon",
-          "canton": "FR",
-          "montant_CHF": 3000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Assoc. Cirque Toamême",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 48560
-        },
-        {
-          "nom": "Labo'Cirque",
-          "ville": "Monthey",
-          "canton": "VS",
-          "montant_CHF": 30000
-        },
-        {
-          "nom": "École de Cirque Fun'en'Bulle",
-          "ville": "Marsens",
-          "canton": "FR",
-          "montant_CHF": 13000
-        },
-        {
-          "nom": "Petit théâtre de la ville de Fribourg",
-          "ville": "Villars-sur-Glâne",
-          "canton": "FR",
-          "montant_CHF": 4500
-        },
-        {
-          "nom": "Assoc. Cirqu’O jeunes",
-          "ville": "Bourguillon",
-          "canton": "FR",
-          "montant_CHF": 3000
-        }
-      ]
-    },
-    {
       "name": "Ludothèques & jeux",
-      "count": 20,
-      "total_chf": 78050,
-      "mean_chf": 3902,
+      "count": 22,
+      "total_chf": 208050,
+      "mean_chf": 9456,
       "cantons": {
         "VD": {
           "count": 6,
           "total_chf": 26100
         },
         "FR": {
-          "count": 11,
-          "total_chf": 48460
+          "count": 12,
+          "total_chf": 88460
         },
         "SR": {
           "count": 1,
@@ -2292,12 +2190,28 @@
           "count": 1,
           "total_chf": 2000
         },
+        "GE": {
+          "count": 1,
+          "total_chf": 90000
+        },
         "JU": {
           "count": 1,
           "total_chf": 300
         }
       },
       "samples": [
+        {
+          "nom": "Fond. Ensemble",
+          "ville": "Plan-les-Ouates",
+          "canton": "GE",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "Espace Famille le Bonheur des Touptis",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 40000
+        },
         {
           "nom": "Assoc. Ludimania'K",
           "ville": "Estavayer- le-Lac",
@@ -2315,21 +2229,21 @@
           "ville": "Bulle",
           "canton": "FR",
           "montant_CHF": 8500
-        },
-        {
-          "nom": "Ludothèque de Nyon Région",
-          "ville": "Nyon",
-          "canton": "VD",
-          "montant_CHF": 7000
-        },
-        {
-          "nom": "Assoc. de la Ludothèque de Vevey - La Luciole",
-          "ville": "Vevey",
-          "canton": "VD",
-          "montant_CHF": 5500
         }
       ],
       "all_entries": [
+        {
+          "nom": "Fond. Ensemble",
+          "ville": "Plan-les-Ouates",
+          "canton": "GE",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "Espace Famille le Bonheur des Touptis",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 40000
+        },
         {
           "nom": "Assoc. Ludimania'K",
           "ville": "Estavayer- le-Lac",
@@ -2449,6 +2363,86 @@
           "ville": "Delémont",
           "canton": "JU",
           "montant_CHF": 300
+        }
+      ]
+    },
+    {
+      "name": "Cirque & théâtre jeunes",
+      "count": 5,
+      "total_chf": 99060,
+      "mean_chf": 19812,
+      "cantons": {
+        "FR": {
+          "count": 4,
+          "total_chf": 69060
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 30000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Cirque Toamême",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 48560
+        },
+        {
+          "nom": "Labo'Cirque",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "École de Cirque Fun'en'Bulle",
+          "ville": "Marsens",
+          "canton": "FR",
+          "montant_CHF": 13000
+        },
+        {
+          "nom": "Petit théâtre de la ville de Fribourg",
+          "ville": "Villars-sur-Glâne",
+          "canton": "FR",
+          "montant_CHF": 4500
+        },
+        {
+          "nom": "Assoc. Cirqu’O jeunes",
+          "ville": "Bourguillon",
+          "canton": "FR",
+          "montant_CHF": 3000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Cirque Toamême",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 48560
+        },
+        {
+          "nom": "Labo'Cirque",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "École de Cirque Fun'en'Bulle",
+          "ville": "Marsens",
+          "canton": "FR",
+          "montant_CHF": 13000
+        },
+        {
+          "nom": "Petit théâtre de la ville de Fribourg",
+          "ville": "Villars-sur-Glâne",
+          "canton": "FR",
+          "montant_CHF": 4500
+        },
+        {
+          "nom": "Assoc. Cirqu’O jeunes",
+          "ville": "Bourguillon",
+          "canton": "FR",
+          "montant_CHF": 3000
         }
       ]
     },

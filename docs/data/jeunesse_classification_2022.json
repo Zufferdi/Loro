@@ -5,28 +5,28 @@
     "source": "brb2022_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 345,
-    "total_chf": 10513702,
-    "precise_classified_entries": 121,
-    "precise_classified_chf": 6397563,
-    "pct_chf_precisely_classified": 60.8,
+    "total_entries": 346,
+    "total_chf": 10593702,
+    "precise_classified_entries": 124,
+    "precise_classified_chf": 6524563,
+    "pct_chf_precisely_classified": 61.6,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 345,
-    "total_chf_classified": 10513702,
-    "catchall_chf": 4116139,
-    "cross_year_recovered": 15,
+    "total_entries_classified": 346,
+    "total_chf_classified": 10593702,
+    "catchall_chf": 4069139,
+    "cross_year_recovered": 27,
     "sector": "Jeunesse et éducation",
     "sector_slug": "jeunesse",
-    "total_entries_sector": 345,
-    "total_chf_sector": 10513702,
+    "total_entries_sector": 346,
+    "total_chf_sector": 10593702,
     "pct_entries_classified": 100.0
   },
   "categories": [
     {
       "name": "Soutien général à la jeunesse",
-      "count": 224,
-      "total_chf": 4116139,
-      "mean_chf": 18375,
+      "count": 222,
+      "total_chf": 4069139,
+      "mean_chf": 18329,
       "cantons": {
         "VD": {
           "count": 21,
@@ -37,8 +37,8 @@
           "total_chf": 534871
         },
         "FR": {
-          "count": 29,
-          "total_chf": 420468
+          "count": 27,
+          "total_chf": 373468
         },
         "VS": {
           "count": 25,
@@ -238,12 +238,6 @@
           "nom": "Le Jars'din AAEE - Assoc. d'Accueil de l'Enfance d'Epalinges",
           "ville": "Epalinges",
           "canton": "VD",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "Espace Famille le Bonheur des Touptis",
-          "ville": "Bulle",
-          "canton": "FR",
           "montant_CHF": 40000
         },
         {
@@ -919,12 +913,6 @@
           "montant_CHF": 7200
         },
         {
-          "nom": "Tageselternverein Sense",
-          "ville": "Tafers",
-          "canton": "FR",
-          "montant_CHF": 7000
-        },
-        {
           "nom": "Assoc. Éditions sauvages",
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
@@ -1289,14 +1277,26 @@
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
           "montant_CHF": 3000
+        },
+        {
+          "nom": "Fond. suisse pour la recherche en microtechnique",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Waldspielgruppe Chlätter-Füchs",
+          "ville": "Brünisried",
+          "canton": "SR",
+          "montant_CHF": 2500
         }
       ]
     },
     {
       "name": "Petite enfance & crèches",
-      "count": 35,
-      "total_chf": 2000801,
-      "mean_chf": 57165,
+      "count": 36,
+      "total_chf": 2080801,
+      "mean_chf": 57800,
       "cantons": {
         "VD": {
           "count": 6,
@@ -1313,6 +1313,10 @@
         "NE": {
           "count": 1,
           "total_chf": 8000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 80000
         }
       },
       "samples": [
@@ -1335,16 +1339,16 @@
           "montant_CHF": 88000
         },
         {
+          "nom": "Université de Genève - Programme Horizon Académique",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 80000
+        },
+        {
           "nom": "Maison de la Petite Enfance,",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 25000
-        },
-        {
-          "nom": "Crèche La Marelle",
-          "ville": "Farvagny-le-Grand",
-          "canton": "SR",
-          "montant_CHF": 24000
         }
       ],
       "all_entries": [
@@ -1365,6 +1369,12 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 88000
+        },
+        {
+          "nom": "Université de Genève - Programme Horizon Académique",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 80000
         },
         {
           "nom": "Maison de la Petite Enfance,",
@@ -2106,13 +2116,13 @@
     },
     {
       "name": "Musique & arts jeunes",
-      "count": 8,
-      "total_chf": 242388,
-      "mean_chf": 30298,
+      "count": 9,
+      "total_chf": 249388,
+      "mean_chf": 27709,
       "cantons": {
         "FR": {
-          "count": 5,
-          "total_chf": 226953
+          "count": 6,
+          "total_chf": 233953
         },
         "SR": {
           "count": 2,
@@ -2143,16 +2153,16 @@
           "montant_CHF": 12500
         },
         {
+          "nom": "Tageselternverein Sense",
+          "ville": "Tafers",
+          "canton": "FR",
+          "montant_CHF": 7000
+        },
+        {
           "nom": "École de musique Fanfare Paroissiale de Fétigny-Ménières",
           "ville": "Fétigny",
           "canton": "FR",
           "montant_CHF": 2255
-        },
-        {
-          "nom": "Groupement Cadets de Mervelier- Corban-Montsevelier",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 2000
         }
       ],
       "all_entries": [
@@ -2173,6 +2183,12 @@
           "ville": "Zurich",
           "canton": "JU",
           "montant_CHF": 12500
+        },
+        {
+          "nom": "Tageselternverein Sense",
+          "ville": "Tafers",
+          "canton": "FR",
+          "montant_CHF": 7000
         },
         {
           "nom": "École de musique Fanfare Paroissiale de Fétigny-Ménières",
@@ -2350,17 +2366,17 @@
     },
     {
       "name": "Ludothèques & jeux",
-      "count": 17,
-      "total_chf": 84730,
-      "mean_chf": 4984,
+      "count": 18,
+      "total_chf": 124730,
+      "mean_chf": 6929,
       "cantons": {
         "VD": {
           "count": 3,
           "total_chf": 37000
         },
         "FR": {
-          "count": 9,
-          "total_chf": 34890
+          "count": 10,
+          "total_chf": 74890
         },
         "SR": {
           "count": 3,
@@ -2372,6 +2388,12 @@
         }
       },
       "samples": [
+        {
+          "nom": "Espace Famille le Bonheur des Touptis",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 40000
+        },
         {
           "nom": "Ludothèque Toujou Chouette",
           "ville": "Préverenges",
@@ -2395,15 +2417,15 @@
           "ville": "Nyon",
           "canton": "VD",
           "montant_CHF": 5000
-        },
-        {
-          "nom": "Ludothèque de la Glâne",
-          "ville": "Romont",
-          "canton": "FR",
-          "montant_CHF": 3590
         }
       ],
       "all_entries": [
+        {
+          "nom": "Espace Famille le Bonheur des Touptis",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 40000
+        },
         {
           "nom": "Ludothèque Toujou Chouette",
           "ville": "Préverenges",

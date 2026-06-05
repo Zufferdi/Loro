@@ -1,0 +1,391 @@
+{
+  "_meta": {
+    "description": "Comparaison BRB cantons sur 5 années (2021-2025)",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "totaux_par_annee_M_CHF": {
+      "2021": 204.0,
+      "2022": 181.3,
+      "2023": 202.4,
+      "2024": 197.1,
+      "2025": 206.4
+    }
+  },
+  "cantons": [
+    {
+      "canton": "VD",
+      "total_2021_chf": 64874741,
+      "total_2022_chf": 46619502,
+      "total_2023_chf": 57877620,
+      "total_2024_chf": 61287486,
+      "total_2025_chf": 74738881,
+      "delta_chf_2021_2025": 9864140,
+      "delta_pct_2021_2025": 15.2,
+      "delta_chf_2022_2025": 28119379,
+      "delta_pct_2022_2025": 60.3,
+      "delta_chf": 13451395,
+      "delta_pct": 21.9
+    },
+    {
+      "canton": "FR",
+      "total_2021_chf": 28336081,
+      "total_2022_chf": 24519579,
+      "total_2023_chf": 21884138,
+      "total_2024_chf": 23545590,
+      "total_2025_chf": 27322117,
+      "delta_chf_2021_2025": -1013964,
+      "delta_pct_2021_2025": -3.6,
+      "delta_chf_2022_2025": 2802538,
+      "delta_pct_2022_2025": 11.4,
+      "delta_chf": 3776527,
+      "delta_pct": 16.0
+    },
+    {
+      "canton": "VS",
+      "total_2021_chf": 38310045,
+      "total_2022_chf": 29792384,
+      "total_2023_chf": 29807743,
+      "total_2024_chf": 25783736,
+      "total_2025_chf": 29312746,
+      "delta_chf_2021_2025": -8997299,
+      "delta_pct_2021_2025": -23.5,
+      "delta_chf_2022_2025": -479638,
+      "delta_pct_2022_2025": -1.6,
+      "delta_chf": 3529010,
+      "delta_pct": 13.7
+    },
+    {
+      "canton": "NE",
+      "total_2021_chf": 13652635,
+      "total_2022_chf": 14137852,
+      "total_2023_chf": 11872492,
+      "total_2024_chf": 13002024,
+      "total_2025_chf": 14619710,
+      "delta_chf_2021_2025": 967075,
+      "delta_pct_2021_2025": 7.1,
+      "delta_chf_2022_2025": 481858,
+      "delta_pct_2022_2025": 3.4,
+      "delta_chf": 1617686,
+      "delta_pct": 12.4
+    },
+    {
+      "canton": "GE",
+      "total_2021_chf": 48923415,
+      "total_2022_chf": 39347991,
+      "total_2023_chf": 48348612,
+      "total_2024_chf": 43835503,
+      "total_2025_chf": 40403894,
+      "delta_chf_2021_2025": -8519521,
+      "delta_pct_2021_2025": -17.4,
+      "delta_chf_2022_2025": 1055903,
+      "delta_pct_2022_2025": 2.7,
+      "delta_chf": -3431609,
+      "delta_pct": -7.8
+    },
+    {
+      "canton": "JU",
+      "total_2021_chf": 8921343,
+      "total_2022_chf": 5858755,
+      "total_2023_chf": 7451146,
+      "total_2024_chf": 7024311,
+      "total_2025_chf": 8561023,
+      "delta_chf_2021_2025": -360320,
+      "delta_pct_2021_2025": -4.0,
+      "delta_chf_2022_2025": 2702268,
+      "delta_pct_2022_2025": 46.1,
+      "delta_chf": 1536712,
+      "delta_pct": 21.9
+    },
+    {
+      "canton": "SR",
+      "total_2021_chf": 964000,
+      "total_2022_chf": 21055341,
+      "total_2023_chf": 25163405,
+      "total_2024_chf": 22589304,
+      "total_2025_chf": 11481110,
+      "delta_chf_2021_2025": 10517110,
+      "delta_pct_2021_2025": 1091.0,
+      "delta_chf_2022_2025": -9574231,
+      "delta_pct_2022_2025": -45.5,
+      "delta_chf": -11108194,
+      "delta_pct": -49.2
+    }
+  ],
+  "movers": [
+    {
+      "nom": "Associations, institutions et fondations bénéficiaires des contributions de la Loterie Romande Taxes prélevées par l’État de Vaud :",
+      "canton": "VD",
+      "secteur": "Santé et handicap",
+      "amount_2021": 20559517,
+      "amount_2025": 0,
+      "delta_chf": -20559517,
+      "delta_pct": -100.0
+    },
+    {
+      "nom": "Fond. de l'Hermitage",
+      "canton": "VD",
+      "secteur": "Culture",
+      "amount_2021": 100000,
+      "amount_2025": 4000000,
+      "delta_chf": 3900000,
+      "delta_pct": 3900.0
+    },
+    {
+      "nom": "Fond. pour la conservation des temples genevois construits avant 1907",
+      "canton": "GE",
+      "secteur": "Culture",
+      "amount_2021": 0,
+      "amount_2025": 3300000,
+      "delta_chf": 3300000,
+      "delta_pct": null
+    },
+    {
+      "nom": "Dispositif d’aide alimentaire pour les personnes et familles en situation de précarité à Genève Fond. Partage",
+      "canton": "GE",
+      "secteur": "Action sociale et personnes âgées",
+      "amount_2021": 3200000,
+      "amount_2025": 0,
+      "delta_chf": -3200000,
+      "delta_pct": -100.0
+    },
+    {
+      "nom": "Förderverein Nordisches Zentrum Goms",
+      "canton": "VS",
+      "secteur": "Promotion, tourisme et développement",
+      "amount_2021": 2500000,
+      "amount_2025": 0,
+      "delta_chf": -2500000,
+      "delta_pct": -100.0
+    },
+    {
+      "nom": "vaudois en 2021 et locaux de sport",
+      "canton": "VD",
+      "secteur": "Sport",
+      "amount_2021": 2267790,
+      "amount_2025": 0,
+      "delta_chf": -2267790,
+      "delta_pct": -100.0
+    },
+    {
+      "nom": "Fond. Valaisanne en Faveur des Personnes Handicapées Mentales",
+      "canton": "VS",
+      "secteur": "Santé et handicap",
+      "amount_2021": 2106000,
+      "amount_2025": 0,
+      "delta_chf": -2106000,
+      "delta_pct": -100.0
+    },
+    {
+      "nom": "Assoc. Trako",
+      "canton": "VD",
+      "secteur": "Sport",
+      "amount_2021": 0,
+      "amount_2025": 2003000,
+      "delta_chf": 2003000,
+      "delta_pct": null
+    },
+    {
+      "nom": "Animations Fonds mis à disposition du Conseil d'Etat pour Actions de Solidarité",
+      "canton": "VS",
+      "secteur": "Action sociale et personnes âgées",
+      "amount_2021": 2000000,
+      "amount_2025": 0,
+      "delta_chf": -2000000,
+      "delta_pct": -100.0
+    },
+    {
+      "nom": "Fond. Astural",
+      "canton": "GE",
+      "secteur": "Action sociale et personnes âgées",
+      "amount_2021": 2000000,
+      "amount_2025": 0,
+      "delta_chf": -2000000,
+      "delta_pct": -100.0
+    },
+    {
+      "nom": "Urgence covid-19 Fond. Sgipa",
+      "canton": "GE",
+      "secteur": "Action sociale et personnes âgées",
+      "amount_2021": 2000000,
+      "amount_2025": 0,
+      "delta_chf": -2000000,
+      "delta_pct": -100.0
+    },
+    {
+      "nom": "demande complémentaire Paroisse du Sacré-Cœur",
+      "canton": "GE",
+      "secteur": "Conservation du patrimoine",
+      "amount_2021": 2000000,
+      "amount_2025": 0,
+      "delta_chf": -2000000,
+      "delta_pct": -100.0
+    },
+    {
+      "nom": "Fond. pour l'art dramatique -",
+      "canton": "SR",
+      "secteur": "Culture",
+      "amount_2021": 0,
+      "amount_2025": 2000000,
+      "delta_chf": 2000000,
+      "delta_pct": null
+    },
+    {
+      "nom": "Assoc. des cinémas romands",
+      "canton": "VD",
+      "secteur": "Culture",
+      "amount_2021": 0,
+      "amount_2025": 1725000,
+      "delta_chf": 1725000,
+      "delta_pct": null
+    },
+    {
+      "nom": "Publication de référence portant sur l’ensemble des artistes des fonds déposés Fond. Cinéforom",
+      "canton": "GE",
+      "secteur": "Culture",
+      "amount_2021": 1700000,
+      "amount_2025": 0,
+      "delta_chf": -1700000,
+      "delta_pct": -100.0
+    },
+    {
+      "nom": "Assoc. Vestiaire social",
+      "canton": "GE",
+      "secteur": "Action sociale et personnes âgées",
+      "amount_2021": 0,
+      "amount_2025": 1600000,
+      "delta_chf": 1600000,
+      "delta_pct": null
+    },
+    {
+      "nom": "Rénovation et agrandissement des orgues de Compesières Fond. pour la conservation des temples genevois construits avant 1907",
+      "canton": "GE",
+      "secteur": "Conservation du patrimoine",
+      "amount_2021": 1570000,
+      "amount_2025": 0,
+      "delta_chf": -1570000,
+      "delta_pct": -100.0
+    },
+    {
+      "nom": "Fond. pour l'accueil de jour des enfants - FAJE",
+      "canton": "VD",
+      "secteur": "Jeunesse et éducation",
+      "amount_2021": 1500000,
+      "amount_2025": 0,
+      "delta_chf": -1500000,
+      "delta_pct": -100.0
+    },
+    {
+      "nom": "des marionnettes Fond. d'Hauterive",
+      "canton": "FR",
+      "secteur": "Culture",
+      "amount_2021": 1500000,
+      "amount_2025": 0,
+      "delta_chf": -1500000,
+      "delta_pct": -100.0
+    },
+    {
+      "nom": "Fond. pour l'accueil de jour des enfants (FAJE)",
+      "canton": "VD",
+      "secteur": "Jeunesse et éducation",
+      "amount_2021": 0,
+      "amount_2025": 1500000,
+      "delta_chf": 1500000,
+      "delta_pct": null
+    },
+    {
+      "nom": "Fond. pour le développement des arts et de la culture - FODAC",
+      "canton": "GE",
+      "secteur": "Culture",
+      "amount_2021": 0,
+      "amount_2025": 1500000,
+      "delta_chf": 1500000,
+      "delta_pct": null
+    },
+    {
+      "nom": "Fond. CHUV",
+      "canton": "VD",
+      "secteur": "Santé et handicap",
+      "amount_2021": 0,
+      "amount_2025": 1413378,
+      "delta_chf": 1413378,
+      "delta_pct": null
+    },
+    {
+      "nom": "Journées du patrimoine en septembre 2021 Fond. d’Hauterive",
+      "canton": "FR",
+      "secteur": "Culture",
+      "amount_2021": 1400000,
+      "amount_2025": 0,
+      "delta_chf": -1400000,
+      "delta_pct": -100.0
+    },
+    {
+      "nom": "CSP - Centre Social Protestant,",
+      "canton": "SR",
+      "secteur": "Action sociale et personnes âgées",
+      "amount_2021": 0,
+      "amount_2025": 1376000,
+      "delta_chf": 1376000,
+      "delta_pct": null
+    },
+    {
+      "nom": "Assoc. FFG Lausanne 2025",
+      "canton": "VD",
+      "secteur": "Sport",
+      "amount_2021": 0,
+      "amount_2025": 1365850,
+      "delta_chf": 1365850,
+      "delta_pct": null
+    },
+    {
+      "nom": "Fond. Arc en Scène - centre",
+      "canton": "NE",
+      "secteur": "Culture",
+      "amount_2021": 0,
+      "amount_2025": 1345000,
+      "delta_chf": 1345000,
+      "delta_pct": null
+    },
+    {
+      "nom": "Assoc. Fête fédérale",
+      "canton": "VD",
+      "secteur": "Sport",
+      "amount_2021": 0,
+      "amount_2025": 1300000,
+      "delta_chf": 1300000,
+      "delta_pct": null
+    },
+    {
+      "nom": "Fond. Guido Comba",
+      "canton": "VD",
+      "secteur": "Culture",
+      "amount_2021": 0,
+      "amount_2025": 1250000,
+      "delta_chf": 1250000,
+      "delta_pct": null
+    },
+    {
+      "nom": "Église protestante de Genève",
+      "canton": "GE",
+      "secteur": "Conservation du patrimoine",
+      "amount_2021": 0,
+      "amount_2025": 1250000,
+      "delta_chf": 1250000,
+      "delta_pct": null
+    },
+    {
+      "nom": "Assoc. Réseau santé Nord",
+      "canton": "VD",
+      "secteur": "Santé et handicap",
+      "amount_2021": 0,
+      "amount_2025": 1225750,
+      "delta_chf": 1225750,
+      "delta_pct": null
+    }
+  ]
+}

@@ -5,20 +5,20 @@
     "source": "brb2023_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 67,
-    "total_chf": 10093235,
-    "precise_classified_entries": 44,
-    "precise_classified_chf": 8998522,
-    "pct_chf_precisely_classified": 89.2,
+    "total_entries": 59,
+    "total_chf": 9508735,
+    "precise_classified_entries": 36,
+    "precise_classified_chf": 8414022,
+    "pct_chf_precisely_classified": 88.5,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 67,
-    "total_chf_classified": 10093235,
+    "total_entries_classified": 59,
+    "total_chf_classified": 9508735,
     "catchall_chf": 1094713,
-    "cross_year_recovered": 2,
+    "cross_year_recovered": 3,
     "sector": "Formation et recherche",
     "sector_slug": "formation",
-    "total_entries_sector": 67,
-    "total_chf_sector": 10093235,
+    "total_entries_sector": 59,
+    "total_chf_sector": 9508735,
     "pct_entries_classified": 100.0
   },
   "categories": [
@@ -140,17 +140,17 @@
     },
     {
       "name": "Université & hautes écoles",
-      "count": 20,
-      "total_chf": 3002692,
-      "mean_chf": 150134,
+      "count": 16,
+      "total_chf": 2615192,
+      "mean_chf": 163449,
       "cantons": {
         "VD": {
-          "count": 10,
-          "total_chf": 1334192
+          "count": 8,
+          "total_chf": 974192
         },
         "FR": {
-          "count": 3,
-          "total_chf": 20500
+          "count": 2,
+          "total_chf": 8000
         },
         "SR": {
           "count": 2,
@@ -159,10 +159,6 @@
         "VS": {
           "count": 2,
           "total_chf": 1485000
-        },
-        "NE": {
-          "count": 1,
-          "total_chf": 15000
         },
         "JU": {
           "count": 2,
@@ -175,12 +171,6 @@
           "ville": "Brig-Glis",
           "canton": "VS",
           "montant_CHF": 1200000
-        },
-        {
-          "nom": "Institut universitaire de sciences sociales des religions, Conseil œcuménique d’aumônerie en EMS (CADEMS) et Haute École de Santé Vaud (HESAV)",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 350000
         },
         {
           "nom": "Fond. de l'Institut de Recherche Idiap",
@@ -199,6 +189,12 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 190000
+        },
+        {
+          "nom": "Haute École de Santé Vaud (HESAV)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 142818
         }
       ],
       "all_entries": [
@@ -207,12 +203,6 @@
           "ville": "Brig-Glis",
           "canton": "VS",
           "montant_CHF": 1200000
-        },
-        {
-          "nom": "Institut universitaire de sciences sociales des religions, Conseil œcuménique d’aumônerie en EMS (CADEMS) et Haute École de Santé Vaud (HESAV)",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 350000
         },
         {
           "nom": "Fond. de l'Institut de Recherche Idiap",
@@ -285,24 +275,6 @@
           "ville": "Moutier",
           "canton": "JU",
           "montant_CHF": 19000
-        },
-        {
-          "nom": "Chœur de l'Université de Neuchâtel",
-          "ville": "Fontaines",
-          "canton": "NE",
-          "montant_CHF": 15000
-        },
-        {
-          "nom": "Chœur de Chambre de l'Université de Fribourg (CCUF)",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 12500
-        },
-        {
-          "nom": "Chœur de l'Université de Lausanne et de l'EPFL",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 10000
         },
         {
           "nom": "Université populaire du canton de",
@@ -530,29 +502,21 @@
     },
     {
       "name": "Apprentissage & formation continue",
-      "count": 9,
-      "total_chf": 875130,
-      "mean_chf": 97236,
+      "count": 5,
+      "total_chf": 678130,
+      "mean_chf": 135626,
       "cantons": {
-        "VD": {
-          "count": 2,
-          "total_chf": 95000
-        },
         "FR": {
           "count": 1,
           "total_chf": 170000
         },
         "SR": {
-          "count": 2,
-          "total_chf": 41000
+          "count": 1,
+          "total_chf": 1000
         },
         "VS": {
           "count": 3,
           "total_chf": 507130
-        },
-        "JU": {
-          "count": 1,
-          "total_chf": 62000
         }
       },
       "samples": [
@@ -569,22 +533,22 @@
           "montant_CHF": 170000
         },
         {
-          "nom": "Conservatoire de Musique et École de Jazz Montreux- Vevey-Riviera",
-          "ville": "Vevey",
-          "canton": "VD",
-          "montant_CHF": 70000
-        },
-        {
-          "nom": "École jurassienne et conservatoire de musique (EJCM)",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 62000
-        },
-        {
           "nom": "Bildungshaus St. Jodern",
           "ville": "Visp",
           "canton": "VS",
           "montant_CHF": 50000
+        },
+        {
+          "nom": "Volkshochschule Oberwallis",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Seeländische Volkshochschule Kerzers",
+          "ville": "Ulmiz",
+          "canton": "SR",
+          "montant_CHF": 1000
         }
       ],
       "all_entries": [
@@ -601,34 +565,10 @@
           "montant_CHF": 170000
         },
         {
-          "nom": "Conservatoire de Musique et École de Jazz Montreux- Vevey-Riviera",
-          "ville": "Vevey",
-          "canton": "VD",
-          "montant_CHF": 70000
-        },
-        {
-          "nom": "École jurassienne et conservatoire de musique (EJCM)",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 62000
-        },
-        {
           "nom": "Bildungshaus St. Jodern",
           "ville": "Visp",
           "canton": "VS",
           "montant_CHF": 50000
-        },
-        {
-          "nom": "Conservatoire de musique de",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "Conservatoire de Musique de Terre Sainte et environs",
-          "ville": "Mies",
-          "canton": "VD",
-          "montant_CHF": 25000
         },
         {
           "nom": "Volkshochschule Oberwallis",

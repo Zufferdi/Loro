@@ -7,14 +7,14 @@
     "date": "2026-06-04",
     "total_entries": 106,
     "total_chf": 10149300,
-    "precise_classified_entries": 68,
-    "precise_classified_chf": 8201200,
-    "pct_chf_precisely_classified": 80.8,
+    "precise_classified_entries": 69,
+    "precise_classified_chf": 8301200,
+    "pct_chf_precisely_classified": 81.8,
     "pct_chf_classified": 100.0,
     "total_entries_classified": 106,
     "total_chf_classified": 10149300,
-    "catchall_chf": 1948100,
-    "cross_year_recovered": 7,
+    "catchall_chf": 1848100,
+    "cross_year_recovered": 13,
     "sector": "Conservation du patrimoine",
     "sector_slug": "patrimoine",
     "total_entries_sector": 106,
@@ -24,9 +24,9 @@
   "categories": [
     {
       "name": "Patrimoine religieux",
-      "count": 30,
-      "total_chf": 4510000,
-      "mean_chf": 150333,
+      "count": 31,
+      "total_chf": 4610000,
+      "mean_chf": 148709,
       "cantons": {
         "VD": {
           "count": 6,
@@ -49,8 +49,8 @@
           "total_chf": 3188500
         },
         "SR": {
-          "count": 1,
-          "total_chf": 15000
+          "count": 2,
+          "total_chf": 115000
         }
       },
       "samples": [
@@ -127,6 +127,12 @@
           "ville": null,
           "canton": "VS",
           "montant_CHF": 115000
+        },
+        {
+          "nom": "Fond. pour le Panorama",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 100000
         },
         {
           "nom": "Assoc. des Amis de l'Abbaye de la Fille-Dieu",
@@ -270,9 +276,9 @@
     },
     {
       "name": "Soutien général au patrimoine",
-      "count": 38,
-      "total_chf": 1948100,
-      "mean_chf": 51265,
+      "count": 37,
+      "total_chf": 1848100,
+      "mean_chf": 49948,
       "cantons": {
         "VD": {
           "count": 11,
@@ -299,8 +305,8 @@
           "total_chf": 45000
         },
         "SR": {
-          "count": 6,
-          "total_chf": 250000
+          "count": 5,
+          "total_chf": 150000
         }
       },
       "samples": [
@@ -364,12 +370,6 @@
           "nom": "Assoc. Journées du Théâtre",
           "ville": null,
           "canton": "VD",
-          "montant_CHF": 100000
-        },
-        {
-          "nom": "Fond. pour le Panorama",
-          "ville": null,
-          "canton": "SR",
           "montant_CHF": 100000
         },
         {

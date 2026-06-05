@@ -5,51 +5,51 @@
     "source": "brb2025_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 1764,
-    "total_chf": 86503792,
-    "precise_classified_entries": 852,
-    "precise_classified_chf": 63525744,
-    "pct_chf_precisely_classified": 73.4,
+    "total_entries": 1766,
+    "total_chf": 86345292,
+    "precise_classified_entries": 877,
+    "precise_classified_chf": 64147244,
+    "pct_chf_precisely_classified": 74.3,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 1764,
-    "total_chf_classified": 86503792,
-    "catchall_chf": 22978048,
-    "cross_year_recovered": 267
+    "total_entries_classified": 1766,
+    "total_chf_classified": 86345292,
+    "catchall_chf": 22198048,
+    "cross_year_recovered": 418
   },
   "categories": [
     {
       "name": "Soutien général à la culture",
-      "count": 912,
-      "total_chf": 22978048,
-      "mean_chf": 25195,
+      "count": 889,
+      "total_chf": 22198048,
+      "mean_chf": 24969,
       "cantons": {
         "VD": {
-          "count": 156,
-          "total_chf": 4670500
+          "count": 154,
+          "total_chf": 4665500
         },
         "FR": {
-          "count": 92,
-          "total_chf": 2923344
+          "count": 88,
+          "total_chf": 2892844
         },
         "VS": {
-          "count": 197,
-          "total_chf": 5367484
+          "count": 196,
+          "total_chf": 5327484
         },
         "NE": {
-          "count": 173,
-          "total_chf": 3925500
+          "count": 172,
+          "total_chf": 3915500
         },
         "GE": {
-          "count": 146,
-          "total_chf": 4147824
+          "count": 138,
+          "total_chf": 3641524
         },
         "JU": {
-          "count": 125,
-          "total_chf": 1167396
+          "count": 120,
+          "total_chf": 1094196
         },
         "SR": {
-          "count": 23,
-          "total_chf": 776000
+          "count": 21,
+          "total_chf": 661000
         }
       },
       "samples": [
@@ -126,12 +126,6 @@
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 290000
-        },
-        {
-          "nom": "Compagnie Confiture",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 280000
         },
         {
           "nom": "Assoc. Sion sous les étoiles",
@@ -314,12 +308,6 @@
           "montant_CHF": 100000
         },
         {
-          "nom": "Delémont'BD",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 100000
-        },
-        {
           "nom": "Assoc. Conthey Show",
           "ville": null,
           "canton": "VS",
@@ -414,12 +402,6 @@
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 80000
-        },
-        {
-          "nom": "Assoc. art-werk",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 76300
         },
         {
           "nom": "Fond. Rainer Maria Rilke, Sierre",
@@ -920,12 +902,6 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Assoc. les Concerts du Cœur",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 40000
-        },
-        {
           "nom": "Assoc. Rencontres Verbier",
           "ville": "Musique et Cinéma",
           "canton": "VS",
@@ -1000,12 +976,6 @@
         {
           "nom": "Assoc. La Nef",
           "ville": "St-Ursanne",
-          "canton": "JU",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "Fond. Delémont'BD",
-          "ville": null,
           "canton": "JU",
           "montant_CHF": 40000
         },
@@ -1166,12 +1136,6 @@
           "montant_CHF": 33000
         },
         {
-          "nom": "Assoc. EnQuête",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 32000
-        },
-        {
           "nom": "Assoc. Motus murmuri",
           "ville": "Monthey",
           "canton": "VS",
@@ -1284,42 +1248,78 @@
           "ville": null,
           "canton": "NE",
           "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Lieux d'Art Neuchâtel",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Mille fois le temps",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Cie Les Batteurs de Pavés",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Cie Pas sages à l'acte",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Sté des Amis des Arts - SAMBA",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Wind Band Neuchâtelois",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 30000
         }
       ]
     },
     {
       "name": "Théâtre",
-      "count": 149,
-      "total_chf": 12195750,
-      "mean_chf": 81850,
+      "count": 155,
+      "total_chf": 12695750,
+      "mean_chf": 81908,
       "cantons": {
         "VD": {
           "count": 34,
-          "total_chf": 4602500
+          "total_chf": 4600500
         },
         "FR": {
           "count": 16,
           "total_chf": 1246750
         },
         "VS": {
-          "count": 13,
-          "total_chf": 1229000
+          "count": 12,
+          "total_chf": 1223000
         },
         "NE": {
-          "count": 19,
-          "total_chf": 2035500
+          "count": 20,
+          "total_chf": 2045500
         },
         "GE": {
-          "count": 37,
-          "total_chf": 2527000
+          "count": 41,
+          "total_chf": 2885000
         },
         "JU": {
-          "count": 29,
-          "total_chf": 540000
+          "count": 30,
+          "total_chf": 580000
         },
         "SR": {
-          "count": 1,
-          "total_chf": 15000
+          "count": 2,
+          "total_chf": 115000
         }
       },
       "samples": [
@@ -1416,6 +1416,12 @@
           "montant_CHF": 295000
         },
         {
+          "nom": "Compagnie Confiture",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 280000
+        },
+        {
           "nom": "Fond. pour le Théâtre du Jura",
           "ville": "Delémont",
           "canton": "JU",
@@ -1504,6 +1510,12 @@
           "ville": null,
           "canton": "VD",
           "montant_CHF": 110000
+        },
+        {
+          "nom": "Delémont'BD",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 100000
         },
         {
           "nom": "Théâtre Boulimie",
@@ -1752,6 +1764,12 @@
           "montant_CHF": 40000
         },
         {
+          "nom": "Fond. Delémont'BD",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 40000
+        },
+        {
           "nom": "Théâtre Tumulte",
           "ville": "Neuchâtel",
           "canton": "NE",
@@ -1806,6 +1824,18 @@
           "montant_CHF": 30000
         },
         {
+          "nom": "Assoc. Compagnie Junior",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Ensemble Batida",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
           "nom": "Kultur im Podium",
           "ville": "Düdingen",
           "canton": "FR",
@@ -1815,6 +1845,12 @@
           "nom": "Assoc. du Théâtre Claque",
           "ville": "Lausanne",
           "canton": "VD",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. 3615 Dakota",
+          "ville": "Genève",
+          "canton": "GE",
           "montant_CHF": 25000
         },
         {
@@ -1887,12 +1923,6 @@
           "nom": "La Mouette, théâtre",
           "ville": null,
           "canton": "NE",
-          "montant_CHF": 15000
-        },
-        {
-          "nom": "Compagnie",
-          "ville": null,
-          "canton": "GE",
           "montant_CHF": 15000
         },
         {
@@ -1974,6 +2004,12 @@
           "montant_CHF": 10000
         },
         {
+          "nom": "Ensemble La Sestina",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
           "nom": "Val-de-Ruz Théâtre",
           "ville": "Dombresson",
           "canton": "NE",
@@ -2001,6 +2037,12 @@
           "nom": "Cie Cécile D.",
           "ville": "Fribourg",
           "canton": "FR",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. des amis de l'Ensemble",
+          "ville": null,
+          "canton": "GE",
           "montant_CHF": 8000
         },
         {
@@ -2055,12 +2097,6 @@
           "nom": "Le Théâtre Crapouille",
           "ville": "Fribourg",
           "canton": "FR",
-          "montant_CHF": 6000
-        },
-        {
-          "nom": "Assoc. Compagnie",
-          "ville": null,
-          "canton": "VS",
           "montant_CHF": 6000
         },
         {
@@ -2130,12 +2166,6 @@
           "montant_CHF": 5000
         },
         {
-          "nom": "Benno Besson (AATBB)",
-          "ville": "Assoc. Famille Jacot-Guillarmod",
-          "canton": "VD",
-          "montant_CHF": 4000
-        },
-        {
           "nom": "L'Annonciade de la Glâne Romont et environs, Vuisternens-dt-Romont",
           "ville": "Maîtrise",
           "canton": "FR",
@@ -2194,6 +2224,12 @@
           "ville": "Courtételle",
           "canton": "JU",
           "montant_CHF": 2500
+        },
+        {
+          "nom": "Assoc. des Amis de l'Ensemble",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 2000
         },
         {
           "nom": "Le Bilboquet",
@@ -2623,37 +2659,37 @@
     },
     {
       "name": "Festival multi-disciplinaire",
-      "count": 170,
-      "total_chf": 8704010,
-      "mean_chf": 51200,
+      "count": 179,
+      "total_chf": 8868810,
+      "mean_chf": 49546,
       "cantons": {
         "VD": {
-          "count": 30,
-          "total_chf": 1687200
+          "count": 32,
+          "total_chf": 1694200
         },
         "FR": {
-          "count": 31,
-          "total_chf": 1257110
+          "count": 33,
+          "total_chf": 1262610
         },
         "VS": {
-          "count": 19,
-          "total_chf": 1306500
+          "count": 21,
+          "total_chf": 1352500
         },
         "NE": {
           "count": 11,
           "total_chf": 400000
         },
         "GE": {
-          "count": 57,
-          "total_chf": 2455700
+          "count": 59,
+          "total_chf": 2547000
         },
         "JU": {
           "count": 20,
           "total_chf": 447500
         },
         "SR": {
-          "count": 2,
-          "total_chf": 1150000
+          "count": 3,
+          "total_chf": 1165000
         }
       },
       "samples": [
@@ -2882,6 +2918,12 @@
           "montant_CHF": 80000
         },
         {
+          "nom": "Assoc. art-werk",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 76300
+        },
+        {
           "nom": "Assoc. Agapé",
           "ville": "Genève",
           "canton": "GE",
@@ -2975,6 +3017,12 @@
           "nom": "Assoc. du Vevey International",
           "ville": null,
           "canton": "VD",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. les Concerts du Cœur",
+          "ville": null,
+          "canton": "VS",
           "montant_CHF": 40000
         },
         {
@@ -3260,6 +3308,12 @@
           "montant_CHF": 15000
         },
         {
+          "nom": "Compagnie",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
           "nom": "Festival Face Z",
           "ville": "Genève",
           "canton": "GE",
@@ -3281,6 +3335,12 @@
           "nom": "Fête du Peuple Jurassien",
           "ville": "Delémont",
           "canton": "JU",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Les Concerts du Cœur",
+          "ville": "Sion",
+          "canton": "SR",
           "montant_CHF": 15000
         },
         {
@@ -3506,6 +3566,12 @@
           "montant_CHF": 6000
         },
         {
+          "nom": "Assoc. Compagnie",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 6000
+        },
+        {
           "nom": "Concert Assoc. Le Centre",
           "ville": null,
           "canton": "VS",
@@ -3527,6 +3593,12 @@
           "nom": "Assoc. des Amis des Éditions",
           "ville": null,
           "canton": "VD",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. TRNSTN (TRNSTN RADIO)",
+          "ville": "Fribourg",
+          "canton": "FR",
           "montant_CHF": 5000
         },
         {
@@ -3576,6 +3648,12 @@
           "ville": null,
           "canton": "FR",
           "montant_CHF": 4460
+        },
+        {
+          "nom": "Benno Besson (AATBB)",
+          "ville": "Assoc. Famille Jacot-Guillarmod",
+          "canton": "VD",
+          "montant_CHF": 4000
         },
         {
           "nom": "Festival 4 Saisons",
@@ -3636,6 +3714,12 @@
           "ville": "Bulle",
           "canton": "FR",
           "montant_CHF": 3500
+        },
+        {
+          "nom": "Assoc. JazzContreBand",
+          "ville": "Carouge GE",
+          "canton": "VD",
+          "montant_CHF": 3000
         },
         {
           "nom": "Festival les Jean",
@@ -3705,6 +3789,12 @@
         },
         {
           "nom": "Assoc. des Amis de la Tour",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Assoc. La Petite Pinte",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 500
@@ -4037,33 +4127,33 @@
     },
     {
       "name": "Musique classique",
-      "count": 161,
-      "total_chf": 5181346,
-      "mean_chf": 32182,
+      "count": 165,
+      "total_chf": 5152111,
+      "mean_chf": 31224,
       "cantons": {
         "VD": {
           "count": 41,
           "total_chf": 1323500
         },
         "FR": {
-          "count": 30,
-          "total_chf": 704361
+          "count": 33,
+          "total_chf": 737361
         },
         "VS": {
-          "count": 22,
-          "total_chf": 434035
+          "count": 21,
+          "total_chf": 348300
         },
         "NE": {
-          "count": 20,
-          "total_chf": 1209000
+          "count": 21,
+          "total_chf": 1229000
         },
         "GE": {
           "count": 25,
           "total_chf": 608600
         },
         "JU": {
-          "count": 17,
-          "total_chf": 419250
+          "count": 18,
+          "total_chf": 422750
         },
         "SR": {
           "count": 6,
@@ -4186,12 +4276,6 @@
           "ville": null,
           "canton": "VS",
           "montant_CHF": 90000
-        },
-        {
-          "nom": "Fond. romande",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 85735
         },
         {
           "nom": "Conservatoire de Musique",
@@ -4332,6 +4416,12 @@
           "montant_CHF": 20000
         },
         {
+          "nom": "Chœur de l'Université de Neuchâtel",
+          "ville": "Fontaines",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
           "nom": "Chœur Yaroslavl'",
           "ville": "Neuchâtel",
           "canton": "NE",
@@ -4395,6 +4485,12 @@
           "nom": "Pour l'Art - Musique de Chambre",
           "ville": "Vevey",
           "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Eclatsconcerts",
+          "ville": "Fribourg",
+          "canton": "FR",
           "montant_CHF": 15000
         },
         {
@@ -4530,6 +4626,12 @@
           "montant_CHF": 10000
         },
         {
+          "nom": "Assoc. Eclatsconcerts",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
           "nom": "Assoc. Chœur du Lycée Blaise",
           "ville": null,
           "canton": "NE",
@@ -4605,6 +4707,12 @@
           "nom": "Chœur d'Oratorio de Montreux",
           "ville": "Clarens",
           "canton": "VD",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Chœur de Chambre",
+          "ville": null,
+          "canton": "FR",
           "montant_CHF": 8000
         },
         {
@@ -4840,6 +4948,12 @@
           "ville": "Auvernier",
           "canton": "JU",
           "montant_CHF": 4000
+        },
+        {
+          "nom": "École jurassienne et conservatoire",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 3500
         },
         {
           "nom": "Arpège Chœur Mixte de Trélex",
@@ -5337,9 +5451,9 @@
     },
     {
       "name": "Danse",
-      "count": 39,
-      "total_chf": 2768005,
-      "mean_chf": 70974,
+      "count": 41,
+      "total_chf": 2774705,
+      "mean_chf": 67675,
       "cantons": {
         "VD": {
           "count": 5,
@@ -5358,8 +5472,8 @@
           "total_chf": 1509500
         },
         "JU": {
-          "count": 6,
-          "total_chf": 21600
+          "count": 8,
+          "total_chf": 28300
         },
         "SR": {
           "count": 2,
@@ -5580,6 +5694,12 @@
           "montant_CHF": 5000
         },
         {
+          "nom": "AG culturel",
+          "ville": "Sion",
+          "canton": "JU",
+          "montant_CHF": 3700
+        },
+        {
           "nom": "tests en Gym-Danse, janvier 2025 FriSpike Volleyball Development",
           "ville": null,
           "canton": "FR",
@@ -5600,6 +5720,12 @@
         {
           "nom": "Afree Dance Company",
           "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "EREM Dance",
+          "ville": "Delémont",
           "canton": "JU",
           "montant_CHF": 3000
         },
@@ -5637,9 +5763,9 @@
     },
     {
       "name": "Musique populaire / Jazz",
-      "count": 106,
-      "total_chf": 2438820,
-      "mean_chf": 23007,
+      "count": 110,
+      "total_chf": 2576055,
+      "mean_chf": 23418,
       "cantons": {
         "VD": {
           "count": 14,
@@ -5650,20 +5776,20 @@
           "total_chf": 577500
         },
         "VS": {
-          "count": 28,
-          "total_chf": 596200
+          "count": 29,
+          "total_chf": 681935
         },
         "NE": {
           "count": 14,
           "total_chf": 281320
         },
         "GE": {
-          "count": 9,
-          "total_chf": 94800
+          "count": 10,
+          "total_chf": 119800
         },
         "JU": {
-          "count": 25,
-          "total_chf": 197000
+          "count": 27,
+          "total_chf": 223500
         },
         "SR": {
           "count": 2,
@@ -5738,6 +5864,12 @@
           "ville": "Bulle",
           "canton": "FR",
           "montant_CHF": 130000
+        },
+        {
+          "nom": "Fond. romande",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 85735
         },
         {
           "nom": "Fond. Ejma Live",
@@ -5830,6 +5962,12 @@
           "montant_CHF": 25000
         },
         {
+          "nom": "Assoc. d'Usagers des Bains",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 25000
+        },
+        {
           "nom": "Assoc. Zanco",
           "ville": "Genève",
           "canton": "GE",
@@ -5908,10 +6046,22 @@
           "montant_CHF": 14000
         },
         {
+          "nom": "fOrum culture",
+          "ville": "Tavannes",
+          "canton": "JU",
+          "montant_CHF": 14000
+        },
+        {
           "nom": "Assoc. de la Fête de la Musique de Bulle, La Tour-de-Trême",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 13000
+        },
+        {
+          "nom": "fOrum culture",
+          "ville": "Tavannes",
+          "canton": "JU",
+          "montant_CHF": 12500
         },
         {
           "nom": "Assoc. 24e Fête Cantonale",
@@ -6342,18 +6492,170 @@
       ]
     },
     {
+      "name": "Orchestres de chambre",
+      "count": 15,
+      "total_chf": 1609500,
+      "mean_chf": 107300,
+      "cantons": {
+        "VD": {
+          "count": 6,
+          "total_chf": 481000
+        },
+        "FR": {
+          "count": 2,
+          "total_chf": 435500
+        },
+        "NE": {
+          "count": 3,
+          "total_chf": 31000
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 650000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 12000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Orchestre de Chambre de Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Orchestre de chambre fribourgeois",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 432500
+        },
+        {
+          "nom": "Orchestre de Chambre de Lausanne (OCL)",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 260000
+        },
+        {
+          "nom": "Sinfonietta de Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 190000
+        },
+        {
+          "nom": "Assoc. Geneva Camerata",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 150000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Orchestre de Chambre de Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Orchestre de chambre fribourgeois",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 432500
+        },
+        {
+          "nom": "Orchestre de Chambre de Lausanne (OCL)",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 260000
+        },
+        {
+          "nom": "Sinfonietta de Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 190000
+        },
+        {
+          "nom": "Assoc. Geneva Camerata",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Camerata Ataremac",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Camerata Ataremac",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 19000
+        },
+        {
+          "nom": "Orchestre de chambre jurassien",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Orchestre de chambre de Neuchâtel",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Camerata Contrepoint",
+          "ville": "Commugny",
+          "canton": "VD",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. Castel Camerata",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Orchestre de Chambre des Étudiant.e.s de Lausanne (OChE)",
+          "ville": "St-Sulpice",
+          "canton": "VD",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Orchestre de chambre jurassien",
+          "ville": "Neuchâtel",
+          "canton": "JU",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Camerata Variabile",
+          "ville": "Bâle",
+          "canton": "FR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Orchestre de Chambre de Versoix (OCV)",
+          "ville": "Coppet",
+          "canton": "VD",
+          "montant_CHF": 2000
+        }
+      ]
+    },
+    {
       "name": "Littérature / Édition",
-      "count": 40,
-      "total_chf": 1767500,
-      "mean_chf": 44187,
+      "count": 39,
+      "total_chf": 1577500,
+      "mean_chf": 40448,
       "cantons": {
         "VD": {
           "count": 4,
           "total_chf": 220000
         },
         "FR": {
-          "count": 6,
-          "total_chf": 264500
+          "count": 5,
+          "total_chf": 74500
         },
         "NE": {
           "count": 7,
@@ -6380,12 +6682,6 @@
           "montant_CHF": 500000
         },
         {
-          "nom": "du surendettement LivrEchange bibliothèque",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 190000
-        },
-        {
           "nom": "Poésie en Arrosoir",
           "ville": "Neuchâtel",
           "canton": "NE",
@@ -6402,6 +6698,12 @@
           "ville": null,
           "canton": "GE",
           "montant_CHF": 71200
+        },
+        {
+          "nom": "Création artistique Les amis des éditions Infolio",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 70000
         }
       ],
       "all_entries": [
@@ -6410,12 +6712,6 @@
           "ville": null,
           "canton": "GE",
           "montant_CHF": 500000
-        },
-        {
-          "nom": "du surendettement LivrEchange bibliothèque",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 190000
         },
         {
           "nom": "Poésie en Arrosoir",
@@ -6644,158 +6940,6 @@
           "ville": "Vevey",
           "canton": "JU",
           "montant_CHF": 1000
-        }
-      ]
-    },
-    {
-      "name": "Orchestres de chambre",
-      "count": 15,
-      "total_chf": 1609500,
-      "mean_chf": 107300,
-      "cantons": {
-        "VD": {
-          "count": 6,
-          "total_chf": 481000
-        },
-        "FR": {
-          "count": 2,
-          "total_chf": 435500
-        },
-        "NE": {
-          "count": 3,
-          "total_chf": 31000
-        },
-        "GE": {
-          "count": 2,
-          "total_chf": 650000
-        },
-        "JU": {
-          "count": 2,
-          "total_chf": 12000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Orchestre de Chambre de Genève",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 500000
-        },
-        {
-          "nom": "Orchestre de chambre fribourgeois",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 432500
-        },
-        {
-          "nom": "Orchestre de Chambre de Lausanne (OCL)",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 260000
-        },
-        {
-          "nom": "Sinfonietta de Lausanne",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 190000
-        },
-        {
-          "nom": "Assoc. Geneva Camerata",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 150000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Orchestre de Chambre de Genève",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 500000
-        },
-        {
-          "nom": "Orchestre de chambre fribourgeois",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 432500
-        },
-        {
-          "nom": "Orchestre de Chambre de Lausanne (OCL)",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 260000
-        },
-        {
-          "nom": "Sinfonietta de Lausanne",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 190000
-        },
-        {
-          "nom": "Assoc. Geneva Camerata",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 150000
-        },
-        {
-          "nom": "Camerata Ataremac",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Assoc. Camerata Ataremac",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 19000
-        },
-        {
-          "nom": "Orchestre de chambre jurassien",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 8000
-        },
-        {
-          "nom": "Orchestre de chambre de Neuchâtel",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 7000
-        },
-        {
-          "nom": "Camerata Contrepoint",
-          "ville": "Commugny",
-          "canton": "VD",
-          "montant_CHF": 5000
-        },
-        {
-          "nom": "Assoc. Castel Camerata",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 5000
-        },
-        {
-          "nom": "Orchestre de Chambre des Étudiant.e.s de Lausanne (OChE)",
-          "ville": "St-Sulpice",
-          "canton": "VD",
-          "montant_CHF": 4000
-        },
-        {
-          "nom": "Orchestre de chambre jurassien",
-          "ville": "Neuchâtel",
-          "canton": "JU",
-          "montant_CHF": 4000
-        },
-        {
-          "nom": "Camerata Variabile",
-          "ville": "Bâle",
-          "canton": "FR",
-          "montant_CHF": 3000
-        },
-        {
-          "nom": "Orchestre de Chambre de Versoix (OCV)",
-          "ville": "Coppet",
-          "canton": "VD",
-          "montant_CHF": 2000
         }
       ]
     },
@@ -7287,9 +7431,9 @@
     },
     {
       "name": "Photographie",
-      "count": 14,
-      "total_chf": 438400,
-      "mean_chf": 31314,
+      "count": 15,
+      "total_chf": 470400,
+      "mean_chf": 31360,
       "cantons": {
         "VD": {
           "count": 4,
@@ -7304,8 +7448,8 @@
           "total_chf": 26400
         },
         "GE": {
-          "count": 5,
-          "total_chf": 59000
+          "count": 6,
+          "total_chf": 91000
         },
         "JU": {
           "count": 1,
@@ -7336,16 +7480,16 @@
           "montant_CHF": 70000
         },
         {
+          "nom": "Assoc. EnQuête",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 32000
+        },
+        {
           "nom": "Focale - Assoc.",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 30000
-        },
-        {
-          "nom": "Assoc. pour la promotion",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 20000
         }
       ],
       "all_entries": [
@@ -7366,6 +7510,12 @@
           "ville": null,
           "canton": "FR",
           "montant_CHF": 70000
+        },
+        {
+          "nom": "Assoc. EnQuête",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 32000
         },
         {
           "nom": "Focale - Assoc.",

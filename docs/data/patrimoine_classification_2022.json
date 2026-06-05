@@ -5,20 +5,20 @@
     "source": "brb2022_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 161,
-    "total_chf": 15580114,
-    "precise_classified_entries": 75,
-    "precise_classified_chf": 11745750,
-    "pct_chf_precisely_classified": 75.4,
+    "total_entries": 162,
+    "total_chf": 15590114,
+    "precise_classified_entries": 77,
+    "precise_classified_chf": 11905750,
+    "pct_chf_precisely_classified": 76.4,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 161,
-    "total_chf_classified": 15580114,
-    "catchall_chf": 3834364,
-    "cross_year_recovered": 7,
+    "total_entries_classified": 162,
+    "total_chf_classified": 15590114,
+    "catchall_chf": 3684364,
+    "cross_year_recovered": 13,
     "sector": "Conservation du patrimoine",
     "sector_slug": "patrimoine",
-    "total_entries_sector": 161,
-    "total_chf_sector": 15580114,
+    "total_entries_sector": 162,
+    "total_chf_sector": 15590114,
     "pct_entries_classified": 100.0
   },
   "categories": [
@@ -80,9 +80,9 @@
     },
     {
       "name": "Soutien général au patrimoine",
-      "count": 86,
-      "total_chf": 3834364,
-      "mean_chf": 44585,
+      "count": 85,
+      "total_chf": 3684364,
+      "mean_chf": 43345,
       "cantons": {
         "VD": {
           "count": 3,
@@ -93,8 +93,8 @@
           "total_chf": 625964
         },
         "FR": {
-          "count": 8,
-          "total_chf": 349000
+          "count": 7,
+          "total_chf": 199000
         },
         "GE": {
           "count": 6,
@@ -187,12 +187,6 @@
           "ville": "Chêne-Bougeries",
           "canton": "GE",
           "montant_CHF": 170000
-        },
-        {
-          "nom": "Fond. pour le Panorama de la Bataille de Morat (1476)",
-          "ville": "Morat",
-          "canton": "FR",
-          "montant_CHF": 150000
         },
         {
           "nom": "Vitromusée Romont",
@@ -766,13 +760,13 @@
     },
     {
       "name": "Patrimoine religieux",
-      "count": 26,
-      "total_chf": 2025500,
-      "mean_chf": 77903,
+      "count": 27,
+      "total_chf": 2175500,
+      "mean_chf": 80574,
       "cantons": {
         "FR": {
-          "count": 7,
-          "total_chf": 222000
+          "count": 8,
+          "total_chf": 372000
         },
         "VD": {
           "count": 2,
@@ -815,16 +809,16 @@
           "montant_CHF": 150000
         },
         {
+          "nom": "Fond. pour le Panorama de la Bataille de Morat (1476)",
+          "ville": "Morat",
+          "canton": "FR",
+          "montant_CHF": 150000
+        },
+        {
           "nom": "Kirchenrat des Katholischen Pfarramts St. Martin",
           "ville": "Visp",
           "canton": "VS",
           "montant_CHF": 105000
-        },
-        {
-          "nom": "Conseil de gestion de la paroisse de Salins",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 75000
         }
       ],
       "all_entries": [
@@ -844,6 +838,12 @@
           "nom": "Kirchenrat der Pfarrei Bürchen",
           "ville": "Unterbäch",
           "canton": "SR",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Fond. pour le Panorama de la Bataille de Morat (1476)",
+          "ville": "Morat",
+          "canton": "FR",
           "montant_CHF": 150000
         },
         {
@@ -988,9 +988,9 @@
     },
     {
       "name": "Châteaux & forts",
-      "count": 14,
-      "total_chf": 683500,
-      "mean_chf": 48821,
+      "count": 15,
+      "total_chf": 693500,
+      "mean_chf": 46233,
       "cantons": {
         "SR": {
           "count": 1,
@@ -1009,8 +1009,8 @@
           "total_chf": 289500
         },
         "NE": {
-          "count": 2,
-          "total_chf": 109000
+          "count": 3,
+          "total_chf": 119000
         }
       },
       "samples": [
@@ -1123,6 +1123,12 @@
           "ville": "Vallorbe",
           "canton": "VD",
           "montant_CHF": 15000
+        },
+        {
+          "nom": "Musée de la vigne et du vin au Château de Boudry",
+          "ville": "Boudry",
+          "canton": "NE",
+          "montant_CHF": 10000
         },
         {
           "nom": "Sté des Amis de Valère",
