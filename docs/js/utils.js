@@ -142,3 +142,23 @@ const CANTON_BFS = {
 const CANTON_BFS_REVERSE = Object.fromEntries(
   Object.entries(CANTON_BFS).map(([k, v]) => [v, k])
 );
+
+/** Cherche une sous-catégorie par nom dans un fichier de classification.
+ *  Gère les différentes clés (categories pour culture/social/sectors,
+ *  sports pour sports.js). Retourne null si introuvable. */
+function findOtherCat(other, name) {
+  if (!other) return null;
+  const list = other.categories || other.sports || other.socials || [];
+  return list.find(c => c.name === name) || null;
+}
+
+/** Format delta en CHF avec signe ± compact (k/M).
+ *  Retourne '' si delta négligeable (< 1k). */
+function fmtDelta(d) {
+  if (!d || Math.abs(d) < 1000) return '';
+  const sign = d > 0 ? '+' : '−';
+  const abs = Math.abs(d);
+  if (abs >= 1e6) return sign + (abs/1e6).toFixed(1).replace(/\.0$/, '') + ' M';
+  if (abs >= 1e3) return sign + Math.round(abs/1e3) + ' k';
+  return sign + String(abs);
+}

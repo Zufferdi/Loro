@@ -1,6 +1,7 @@
 /* ============================================================
-   compare_2024_2025.js — Pass 11 (v13.11)
-   Comparison visualization of BRB 2024 vs 2025 at canton level.
+   compare_2024_2025.js — Pass 14 (v13.14)
+   Comparison BRB sur 4 années (2022, 2023, 2024, 2025) par canton.
+   Renommé en interne mais conserve le nom de fichier + viz ID.
    ============================================================ */
 (function() {
   function init() {
@@ -25,7 +26,7 @@
     if (container.dataset.loaded === '1') return;
     container.dataset.loaded = '1';
     container.innerHTML = '<div style="padding:32px;text-align:center;color:var(--ink-mute);font-style:italic">Chargement…</div>';
-    fetch('data/comparison_2024_2025.json')
+    fetch('data/comparison_2022_2025.json')
       .then(r => r.json())
       .then(data => doRender(container, data))
       .catch(err => {
@@ -39,28 +40,27 @@
     const meta = data._meta || {};
     container.innerHTML = '';
 
-    // Find max for scaling
-    const maxAmt = Math.max(...cantons.flatMap(c => [c.total_2024_chf, c.total_2025_chf]), 1);
+    const YEARS = ['2022', '2023', '2024', '2025'];
+    const YEAR_COLORS = {
+      '2022': '#a8a399', '2023': '#7a7570', '2024': '#5b8def', '2025': '#c8102e',
+    };
+    const totals = meta.totaux_par_annee_M_CHF || {};
+    const maxAmt = Math.max(...cantons.flatMap(c => YEARS.map(y => c[`total_${y}_chf`] || 0)), 1);
 
-    // Banner with total comparison
+    // Banner — récap totaux 4 ans
     const banner = document.createElement('div');
     banner.className = 'compare-banner';
     banner.innerHTML = `
-      <div class="compare-banner-row">
-        <div class="compare-year">
-          <div class="compare-year-lbl">2024 (record)</div>
-          <div class="compare-year-val">258,2 M CHF</div>
-        </div>
-        <div class="compare-arrow">→</div>
-        <div class="compare-year">
-          <div class="compare-year-lbl">2025</div>
-          <div class="compare-year-val">252,0 M CHF</div>
-        </div>
-        <div class="compare-delta-banner">−2,4&nbsp;%</div>
+      <div class="compare-banner-row" style="display:flex;align-items:flex-end;gap:18px;justify-content:center;flex-wrap:wrap">
+        ${YEARS.map(y => `
+          <div class="compare-year" style="text-align:center">
+            <div class="compare-year-lbl" style="font-size:11px;color:var(--ink-mute);text-transform:uppercase;letter-spacing:0.4px">${y}</div>
+            <div class="compare-year-val" style="font-size:24px;font-family:'Source Serif Pro',serif;font-weight:600;color:${YEAR_COLORS[y]}">${(totals[y] || 0).toFixed(1)} M</div>
+          </div>
+        `).join('')}
       </div>
-      <div class="compare-note">
-        2024 a été une année record absolu (jackpots Swiss Loto exceptionnels, Euro de foot, JO de Paris).
-        2025 confirme un retour à un niveau plus normal.
+      <div class="compare-note" style="margin-top:12px;font-size:12.5px;color:var(--ink-mute);text-align:center">
+        Totaux distribués chaque année dans le BRB (extraction parser après nettoyage). 2024 = année record (+jackpots, JO, Euro).
       </div>
     `;
     container.appendChild(banner);
@@ -68,52 +68,51 @@
     // Per-canton comparison
     const grid = document.createElement('div');
     grid.className = 'compare-grid';
-    const cantonLabels = {VD:'Vaud', FR:'Fribourg', VS:'Valais', NE:'Neuchâtel', GE:'Genève'};
+    grid.style.cssText = 'margin-top:18px';
+    const cantonLabels = {VD:'Vaud', FR:'Fribourg', VS:'Valais', NE:'Neuchâtel', GE:'Genève', JU:'Jura', SR:'Inter-cantonal'};
+
     cantons.forEach(c => {
-      const w2024 = (c.total_2024_chf / maxAmt) * 100;
-      const w2025 = (c.total_2025_chf / maxAmt) * 100;
-      const isPositive = c.delta_pct > 0;
-      const deltaCls = isPositive ? 'is-up' : (c.delta_pct < 0 ? 'is-down' : 'is-flat');
-      const arrow = isPositive ? '▲' : (c.delta_pct < 0 ? '▼' : '→');
+      const dp = c.delta_pct_2022_2025;
+      const isPositive = dp > 0;
+      const deltaCls = isPositive ? 'is-up' : (dp < 0 ? 'is-down' : 'is-flat');
+      const arrow = isPositive ? '▲' : (dp < 0 ? '▼' : '→');
       const row = document.createElement('div');
       row.className = 'compare-row';
       row.innerHTML = `
         <div class="compare-row-head">
           <span class="treemap-canton ${cantonClass(c.canton)}">${c.canton}</span>
           <span class="compare-canton-name">${cantonLabels[c.canton] || c.canton}</span>
-          <span class="compare-delta ${deltaCls}">${arrow} ${c.delta_pct >= 0 ? '+' : ''}${c.delta_pct}%</span>
-          ${c.is_partial_2024 ? '<span class="compare-partial" title="Section partielle">⚠ partiel</span>' : ''}
+          <span class="compare-delta ${deltaCls}" title="Évolution 2022 → 2025">${arrow} ${dp >= 0 ? '+' : ''}${dp}% (2022→2025)</span>
         </div>
-        <div class="compare-bar-row">
-          <span class="compare-bar-lbl">2024</span>
-          <div class="compare-bar-wrap">
-            <div class="compare-bar compare-bar-2024" style="width:${w2024}%"></div>
-          </div>
-          <span class="compare-bar-val">${fmtCHFShort(c.total_2024_chf)}</span>
-        </div>
-        <div class="compare-bar-row">
-          <span class="compare-bar-lbl">2025</span>
-          <div class="compare-bar-wrap">
-            <div class="compare-bar compare-bar-2025" style="width:${w2025}%"></div>
-          </div>
-          <span class="compare-bar-val">${fmtCHFShort(c.total_2025_chf)}</span>
-        </div>
+        ${YEARS.map(y => {
+          const v = c[`total_${y}_chf`] || 0;
+          const w = (v / maxAmt) * 100;
+          return `
+            <div class="compare-bar-row">
+              <span class="compare-bar-lbl">${y}</span>
+              <div class="compare-bar-wrap">
+                <div class="compare-bar" style="width:${w}%;background:${YEAR_COLORS[y]}"></div>
+              </div>
+              <span class="compare-bar-val">${fmtCHFShort(v)}</span>
+            </div>
+          `;
+        }).join('')}
       `;
       grid.appendChild(row);
     });
     container.appendChild(grid);
 
-    // Notable beneficiary movements
+    // Notable beneficiary movements (élargi 2022→2025)
     const movers = document.createElement('div');
     movers.className = 'compare-movers';
     movers.innerHTML = `
-      <div class="compare-movers-title">Bénéficiaires marquants 2024 → 2025</div>
+      <div class="compare-movers-title">Bénéficiaires marquants 2022 → 2025</div>
       <div class="compare-movers-list">
-        <div class="compare-mover"><span class="compare-mover-icon up">▲</span><span class="compare-mover-name">Fond. de l'Hermitage</span><span class="compare-mover-vals">300 k → 4 M (+1'233 %)</span></div>
-        <div class="compare-mover"><span class="compare-mover-icon up">▲</span><span class="compare-mover-name">Cinéforom</span><span class="compare-mover-vals">700 k → 1,7 M (+143 %)</span></div>
-        <div class="compare-mover"><span class="compare-mover-icon up">▲</span><span class="compare-mover-name">Théâtre Vidy (art dramatique)</span><span class="compare-mover-vals">650 k → 1,35 M (+108 %)</span></div>
-        <div class="compare-mover"><span class="compare-mover-icon flat">→</span><span class="compare-mover-name">Verbier Festival, Gianadda, Banc Public</span><span class="compare-mover-vals">stable (0&nbsp;%)</span></div>
-        <div class="compare-mover"><span class="compare-mover-icon down">▼</span><span class="compare-mover-name">Fonds catastrophes naturelles VS</span><span class="compare-mover-vals">3,7 M (Blatten 2024) → 0 (cause one-shot)</span></div>
+        <div class="compare-mover"><span class="compare-mover-icon up">▲</span><span class="compare-mover-name">Fond. de l'Hermitage</span><span class="compare-mover-vals">140 k → 4 M (×29 sur 4 ans)</span></div>
+        <div class="compare-mover"><span class="compare-mover-icon up">▲</span><span class="compare-mover-name">Vaud (total canton)</span><span class="compare-mover-vals">46,6 M → 74,7 M (+60 %)</span></div>
+        <div class="compare-mover"><span class="compare-mover-icon up">▲</span><span class="compare-mover-name">Jura (total canton)</span><span class="compare-mover-vals">5,9 M → 8,6 M (+46 %)</span></div>
+        <div class="compare-mover"><span class="compare-mover-icon flat">→</span><span class="compare-mover-name">Verbier Festival, Gianadda</span><span class="compare-mover-vals">stables</span></div>
+        <div class="compare-mover"><span class="compare-mover-icon down">▼</span><span class="compare-mover-name">SR (intercantonal)</span><span class="compare-mover-vals">21,1 M → 11,5 M (−46 %, recentrage cantonal)</span></div>
       </div>
     `;
     container.appendChild(movers);

@@ -37,41 +37,48 @@
 
   function doRender(container, data) {
     const list = data.beneficiaires || [];
+    const meta = data._meta || {};
     container.innerHTML = '';
+
+    const YEARS = ['2022', '2023', '2024', '2025'];
+    const YEAR_COLORS = {
+      '2022': '#a8a399', '2023': '#7a7570', '2024': '#5b8def', '2025': '#c8102e',
+    };
 
     // Quick stats
     const n = list.length;
     const oneShots = list.filter(b => b.is_one_shot_2024).length;
-    const recurring = list.filter(b => b.montant_2025_CHF > 0).length;
+    const stable4y = list.filter(b => b.nb_years_active === 4).length;
     const stats = document.createElement('div');
     stats.className = 'cross-stats';
     stats.innerHTML = `
       <div class="cross-stat">
         <div class="cross-stat-val">${n}</div>
-        <div class="cross-stat-lbl">bénéficiaires top 2024</div>
+        <div class="cross-stat-lbl">bénéficiaires top</div>
       </div>
       <div class="cross-stat">
-        <div class="cross-stat-val">${recurring}</div>
-        <div class="cross-stat-lbl">retrouvés en 2025</div>
+        <div class="cross-stat-val">${stable4y}</div>
+        <div class="cross-stat-lbl">présents 4 années (2022-2025)</div>
       </div>
       <div class="cross-stat">
         <div class="cross-stat-val">${oneShots}</div>
-        <div class="cross-stat-lbl">projets one-shot 2024 (≥&nbsp;500&nbsp;k)</div>
+        <div class="cross-stat-lbl">one-shots 2024 (≥&nbsp;500&nbsp;k)</div>
       </div>
     `;
     container.appendChild(stats);
 
-    const maxAmt = Math.max(...list.flatMap(b => [b.montant_2024_CHF, b.montant_2025_CHF]), 1);
+    const maxAmt = Math.max(...list.flatMap(b => YEARS.map(y => b[`montant_${y}_CHF`] || 0)), 1);
 
     // Filter controls
     const ctrls = document.createElement('div');
     ctrls.className = 'cross-controls';
     ctrls.innerHTML = `
       <button class="cross-filter is-active" data-filter="all">Tous (${n})</button>
-      <button class="cross-filter" data-filter="rising">📈 En hausse</button>
+      <button class="cross-filter" data-filter="rising">📈 En hausse 22-25</button>
       <button class="cross-filter" data-filter="stable">→ Stables</button>
       <button class="cross-filter" data-filter="falling">📉 En baisse</button>
-      <button class="cross-filter" data-filter="oneshot">⚡ One-shots 2024</button>
+      <button class="cross-filter" data-filter="oneshot">⚡ One-shots</button>
+      <button class="cross-filter" data-filter="4year">4 années complètes</button>
     `;
     container.appendChild(ctrls);
 
@@ -80,46 +87,52 @@
     container.appendChild(grid);
 
     function classify(b) {
-      if (b.montant_2025_CHF === 0 && b.montant_2024_CHF >= 500000) return 'oneshot';
-      if (b.delta_pct > 20) return 'rising';
-      if (b.delta_pct < -20) return 'falling';
+      const a22 = b.montant_2022_CHF || 0;
+      const a25 = b.montant_2025_CHF || 0;
+      const a24 = b.montant_2024_CHF || 0;
+      if (a25 === 0 && a24 >= 500000) return 'oneshot';
+      // Calcul tendance sur 4 ans si dispo
+      const dp22_25 = a22 > 0 ? ((a25 - a22) / a22 * 100) : (b.delta_pct || 0);
+      if (dp22_25 > 20) return 'rising';
+      if (dp22_25 < -20) return 'falling';
       return 'stable';
     }
 
     function renderList(filter) {
       grid.innerHTML = '';
-      const filtered = filter === 'all' ? list : list.filter(b => classify(b) === filter);
+      let filtered;
+      if (filter === 'all') filtered = list;
+      else if (filter === '4year') filtered = list.filter(b => b.nb_years_active === 4);
+      else filtered = list.filter(b => classify(b) === filter);
       if (!filtered.length) {
         grid.innerHTML = '<div style="padding:14px;color:var(--ink-mute);font-style:italic">Aucun bénéficiaire dans cette catégorie.</div>';
         return;
       }
       filtered.forEach(b => {
         const cls = classify(b);
-        const w2024 = (b.montant_2024_CHF / maxAmt) * 100;
-        const w2025 = (b.montant_2025_CHF / maxAmt) * 100;
         const arrow = cls === 'rising' ? '▲' : (cls === 'falling' ? '▼' : (cls === 'oneshot' ? '⚡' : '→'));
-        const pctStr = b.montant_2025_CHF === 0
-          ? 'one-shot'
-          : (b.delta_pct >= 0 ? '+' : '') + b.delta_pct + '%';
+        const dp = (b.delta_22_25_pct != null) ? b.delta_22_25_pct : (b.delta_pct || 0);
+        const pctStr = (cls === 'oneshot' && b.montant_2025_CHF === 0) ? 'one-shot 2024' : (dp >= 0 ? '+' : '') + dp + '% (22-25)';
         const row = document.createElement('div');
         row.className = `cross-row is-${cls}`;
+        const barsHtml = YEARS.map(y => {
+          const v = b[`montant_${y}_CHF`] || 0;
+          const w = (v / maxAmt) * 100;
+          return `
+            <div class="compare-bar-row">
+              <span class="compare-bar-lbl">${y}</span>
+              <div class="compare-bar-wrap"><div class="compare-bar" style="width:${w}%;background:${YEAR_COLORS[y]}"></div></div>
+              <span class="compare-bar-val">${v === 0 ? '—' : fmtCHFShort(v)}</span>
+            </div>`;
+        }).join('');
         row.innerHTML = `
           <div class="cross-row-head">
             <span class="treemap-canton ${cantonClass(b.canton)}">${b.canton}</span>
-            <span class="cross-name" title="${escapeHtml(b.nom_2025 || b.nom_2024)}">${escapeHtml(b.nom_2024)}</span>
+            <span class="cross-name" title="${escapeHtml(b.nom_2025 || b.nom_2024)}">${escapeHtml(b.nom_2024 || b.nom_2025)}</span>
             <span class="cross-delta is-${cls}">${arrow} ${pctStr}</span>
           </div>
           ${b.note ? `<div class="cross-note">${escapeHtml(b.note)}</div>` : ''}
-          <div class="compare-bar-row">
-            <span class="compare-bar-lbl">2024</span>
-            <div class="compare-bar-wrap"><div class="compare-bar compare-bar-2024" style="width:${w2024}%"></div></div>
-            <span class="compare-bar-val">${fmtCHFShort(b.montant_2024_CHF)}</span>
-          </div>
-          <div class="compare-bar-row">
-            <span class="compare-bar-lbl">2025</span>
-            <div class="compare-bar-wrap"><div class="compare-bar compare-bar-2025" style="width:${w2025}%"></div></div>
-            <span class="compare-bar-val">${b.montant_2025_CHF === 0 ? '—' : fmtCHFShort(b.montant_2025_CHF)}</span>
-          </div>
+          ${barsHtml}
         `;
         grid.appendChild(row);
       });

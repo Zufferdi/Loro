@@ -158,8 +158,10 @@
         villes.forEach((v, i) => {
           const w = Math.max(2, (v.total_chf / maxAmt) * 100);
           const cantonsHTML = v.cantons.filter(Boolean).map(c => `<span class="top30-canton ${cantonClass(c)}">${c}</span>`).join('');
+          const nbBenefs = v.nb_beneficiaires || (v.top_beneficiaires && v.top_beneficiaires.length) || 0;
           const row = document.createElement('div');
-          row.className = 'top30-row';
+          row.className = 'top30-row villes-row';
+          row.style.cssText = 'cursor:pointer';
           row.innerHTML = `
             <div class="top30-rank">${i + 1}</div>
             <div class="top30-body">
@@ -167,16 +169,55 @@
                 <div class="top30-nom">${escapeHtml(v.ville)}${v.lat ? '<span class="top30-geo" title="Géolocalisée">📍</span>' : ''}</div>
                 <div class="top30-meta">
                   <span class="top30-cantons">${cantonsHTML}</span>
-                  <span class="top30-secteur">${v.count} attributions</span>
+                  <span class="top30-secteur">${nbBenefs || v.count} bénéficiaires</span>
                   <span class="top30-amt">${fmtCHF(v.total_chf)}</span>
+                  <span class="top30-expand" style="font-size:12px;color:var(--ink-mute);width:14px;text-align:center">▸</span>
                 </div>
               </div>
               <div class="top30-bar-wrap">
                 <div class="top30-bar" style="width:${w}%;background:linear-gradient(to right,#3a8acc,#5fb0d8)"></div>
               </div>
+              <div class="ville-detail" style="display:none;margin-top:10px;border-top:1px solid var(--rule);padding-top:10px;background:var(--bg-mute,#f7f5ee);border-radius:6px;padding:12px"></div>
             </div>
           `;
           list.appendChild(row);
+
+          // Click handler — drill-down dans cette ville
+          const head = row.querySelector('.top30-head');
+          const detail = row.querySelector('.ville-detail');
+          const expand = row.querySelector('.top30-expand');
+          let opened = false;
+          head.addEventListener('click', () => {
+            opened = !opened;
+            detail.style.display = opened ? 'block' : 'none';
+            expand.textContent = opened ? '▾' : '▸';
+            if (opened && !detail.dataset.rendered) {
+              detail.dataset.rendered = '1';
+              const benefs = v.top_beneficiaires || [];
+              if (!benefs.length) {
+                detail.innerHTML = '<div style="color:var(--ink-mute);font-style:italic;font-size:12px">Détail non disponible.</div>';
+                return;
+              }
+              const showing = benefs.length >= 30 ? 'Top 30' : `${benefs.length}`;
+              detail.innerHTML = `
+                <div style="font-family:'Source Serif Pro',serif;font-size:12.5px;font-weight:600;color:var(--ink);margin-bottom:10px">
+                  ${showing} bénéficiaires à ${escapeHtml(v.ville)} en ${year} · cumul ${fmtCHF(v.total_chf)}
+                </div>
+                <div style="display:flex;flex-direction:column;gap:3px;max-height:400px;overflow-y:auto">
+                  ${benefs.map(b => `
+                    <div style="display:flex;gap:10px;align-items:flex-start;font-size:12px;padding:5px 8px;background:var(--bg,#fff);border-radius:4px">
+                      <span class="top30-canton ${cantonClass(b.canton)}" style="font-size:10px">${b.canton}</span>
+                      <div style="flex:1">
+                        <div style="color:var(--ink)">${escapeHtml(b.nom)}</div>
+                        ${b.description ? `<div style="color:var(--ink-mute);font-size:11px;font-style:italic;margin-top:1px">› ${escapeHtml(b.description)}</div>` : ''}
+                        <div style="color:var(--ink-mute);font-size:10.5px;margin-top:2px">${escapeHtml(b.secteur || '')}</div>
+                      </div>
+                      <span style="font-family:'Source Serif Pro',serif;font-weight:600;color:var(--ink);min-width:80px;text-align:right">${fmtCHF(b.montant_CHF)}</span>
+                    </div>`).join('')}
+                </div>
+              `;
+            }
+          });
         });
         container.appendChild(list);
       })

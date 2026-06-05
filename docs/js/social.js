@@ -28,7 +28,7 @@
     container.dataset.loaded = '1';
     container.dataset.year = year;
     container.innerHTML = '<div style="padding:32px;text-align:center;color:var(--ink-mute);font-style:italic">Chargement…</div>';
-    const years = window.YEARS || ['2024', '2025'];
+    const years = window.YEARS || ['2022', '2023', '2024', '2025'];
     Promise.all(years.map(y =>
       fetch('data/social_classification' + window.yearSuffix(y) + '.json')
         .then(r => r.json()).catch(() => null)
@@ -58,7 +58,7 @@
     stats.innerHTML = `
       <div class="sports-stat">
         <div class="sports-stat-val">${(meta.total_chf_classified || 0).toLocaleString('fr-CH').replace(/,/g, "'")} CHF</div>
-        <div class="sports-stat-lbl">total identifié comme social (${meta.pct_chf_classified}% du BRB)</div>
+        <div class="sports-stat-lbl">total identifié comme social (${meta.pct_chf_precisely_classified}% du secteur)</div>
       </div>
       <div class="sports-stat">
         <div class="sports-stat-val">${meta.total_entries_classified || 0}</div>
@@ -89,7 +89,7 @@
             <span class="sports-mean">${meanFmt} moy.</span>
             <span class="sports-total">${fmtCHF(s.total_chf)}</span>${(() => {
                 if (!other) return '';
-                const o = findOtherCat(other, c.name);
+                const o = findOtherCat(other, s.name);
                 if (!o) return '<span class="sports-delta sports-delta-new" title="Nouveau en ' + year + '">nouveau</span>';
                 const delta = s.total_chf - o.total_chf;
                 const d = fmtDelta(delta);

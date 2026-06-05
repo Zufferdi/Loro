@@ -26,7 +26,7 @@
     if (container.dataset.loaded === '1') return;
     container.dataset.loaded = '1';
     container.innerHTML = '<div style="padding:32px;text-align:center;color:var(--ink-mute);font-style:italic">Chargement…</div>';
-    fetch('data/trajectories_2023_2025.json')
+    fetch('data/trajectories_2022_2025.json')
       .then(r => r.json())
       .then(data => doRender(container, data))
       .catch(err => {
@@ -41,15 +41,15 @@
     container.innerHTML = '';
 
     // Stats banner
-    const counts = { growth: 0, decline: 0, stable: 0, one_shot_2024: 0, one_shot_2025: 0 };
-    items.forEach(t => counts[t.trajectory_cat]++);
+    const counts = { growth: 0, decline: 0, stable: 0, one_shot_2022: 0, one_shot_2023: 0, one_shot_2024: 0, one_shot_2025: 0 };
+    items.forEach(t => { if (counts[t.trajectory_cat] !== undefined) counts[t.trajectory_cat]++; });
     const stats = document.createElement('div');
     stats.className = 'traj-stats';
     stats.innerHTML = `
       <div class="traj-stat"><div class="traj-stat-val">${items.length}</div><div class="traj-stat-lbl">bénéficiaires</div></div>
-      <div class="traj-stat"><div class="traj-stat-val">${meta.count_3year || 0}</div><div class="traj-stat-lbl">avec 3 années</div></div>
+      <div class="traj-stat"><div class="traj-stat-val">${meta.count_4year || meta.count_3year || 0}</div><div class="traj-stat-lbl">avec 4 années complètes</div></div>
       <div class="traj-stat"><div class="traj-stat-val" style="color:#2a7c2a">${counts.growth + counts.one_shot_2025}</div><div class="traj-stat-lbl">📈 hausses + one-shots&nbsp;2025</div></div>
-      <div class="traj-stat"><div class="traj-stat-val" style="color:#b8923a">${counts.one_shot_2024}</div><div class="traj-stat-lbl">⚡ one-shots&nbsp;2024</div></div>
+      <div class="traj-stat"><div class="traj-stat-val" style="color:#b8923a">${counts.one_shot_2024 + counts.one_shot_2023 + counts.one_shot_2022}</div><div class="traj-stat-lbl">⚡ one-shots passés</div></div>
       <div class="traj-stat"><div class="traj-stat-val" style="color:#888">${counts.stable + counts.decline}</div><div class="traj-stat-lbl">→ stables / 📉 baisses</div></div>
     `;
     container.appendChild(stats);
@@ -59,11 +59,11 @@
     ctrls.className = 'cross-controls';
     ctrls.innerHTML = `
       <button class="cross-filter is-active" data-filter="all">Tous (${items.length})</button>
-      <button class="cross-filter" data-filter="3year">3 années (${meta.count_3year})</button>
-      <button class="cross-filter" data-filter="one_shot_2024">⚡ One-shots 2024</button>
-      <button class="cross-filter" data-filter="one_shot_2025">⚡ One-shots 2025</button>
+      <button class="cross-filter" data-filter="4year">4 années (${meta.count_4year || 0})</button>
       <button class="cross-filter" data-filter="growth">📈 Croissance</button>
+      <button class="cross-filter" data-filter="one_shot_2025">⚡ One-shots 2025</button>
       <button class="cross-filter" data-filter="stable">→ Stables</button>
+      <button class="cross-filter" data-filter="decline">📉 Baisses</button>
     `;
     container.appendChild(ctrls);
 
@@ -72,26 +72,27 @@
     container.appendChild(grid);
 
     const maxAmt = Math.max(...items.flatMap(t => [
-      t.amount_2023 || 0, t.amount_2024 || 0, t.amount_2025 || 0
+      t.amount_2022 || 0, t.amount_2023 || 0, t.amount_2024 || 0, t.amount_2025 || 0
     ]), 1);
 
     function matchFilter(t, f) {
       if (f === 'all') return true;
-      if (f === '3year') return t.amount_2023 !== null && t.amount_2024 !== null && t.amount_2025 !== null;
+      if (f === '4year') return t.amount_2022 != null && t.amount_2023 != null && t.amount_2024 != null && t.amount_2025 != null;
+      if (f === '3year') return t.amount_2023 != null && t.amount_2024 != null && t.amount_2025 != null;
       return t.trajectory_cat === f;
     }
 
     function buildSparkline(t) {
-      // Mini SVG line chart: 3 points
-      const w = 100, h = 30, pad = 4;
+      // Mini SVG line chart: 4 points
+      const w = 110, h = 30, pad = 4;
       const points = [
-        { x: pad, y: t.amount_2023, lbl: '2023' },
-        { x: w / 2, y: t.amount_2024, lbl: '2024' },
+        { x: pad, y: t.amount_2022, lbl: '2022' },
+        { x: pad + (w - 2*pad) / 3, y: t.amount_2023, lbl: '2023' },
+        { x: pad + 2 * (w - 2*pad) / 3, y: t.amount_2024, lbl: '2024' },
         { x: w - pad, y: t.amount_2025, lbl: '2025' },
       ];
-      const validPts = points.filter(p => p.y !== null && p.y !== undefined);
+      const validPts = points.filter(p => p.y !== null && p.y !== undefined && p.y > 0);
       if (!validPts.length) return '';
-      // Scale
       const localMax = Math.max(...validPts.map(p => p.y), 1);
       const scale = (v) => h - pad - ((v / localMax) * (h - 2 * pad));
       let path = '';
@@ -102,8 +103,7 @@
       const dots = validPts.map(p => 
         `<circle cx="${p.x}" cy="${scale(p.y)}" r="2.5" fill="var(--c-loro,#c62828)"/>`
       ).join('');
-      // Missing year indicators as ghost dots
-      const ghosts = points.filter(p => p.y === null || p.y === undefined)
+      const ghosts = points.filter(p => !(p.y > 0))
         .map(p => `<circle cx="${p.x}" cy="${h-pad}" r="1.5" fill="#ccc" opacity="0.4"/>`).join('');
       return `
         <svg class="traj-spark" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" preserveAspectRatio="none">
@@ -152,6 +152,7 @@
           ${t.ville ? `<div class="traj-meta"><span class="traj-ville">📍 ${escapeHtml(t.ville)}</span>${t.sous_theme ? `<span class="traj-sous">${escapeHtml(t.secteur || '')} → ${escapeHtml(t.sous_theme)}</span>` : ''}</div>` : ''}
           <div class="traj-body">
             <div class="traj-values">
+              <div class="traj-y"><span class="traj-y-lbl">2022</span><span class="traj-y-val">${fmtAmt(t.amount_2022)}</span></div>
               <div class="traj-y"><span class="traj-y-lbl">2023</span><span class="traj-y-val">${fmtAmt(t.amount_2023)}</span></div>
               <div class="traj-y"><span class="traj-y-lbl">2024</span><span class="traj-y-val">${fmtAmt(t.amount_2024)}</span></div>
               <div class="traj-y"><span class="traj-y-lbl">2025</span><span class="traj-y-val">${fmtAmt(t.amount_2025)}</span></div>
