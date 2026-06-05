@@ -5,36 +5,36 @@
     "source": "brb2024_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 573,
-    "total_chf": 21923390,
-    "precise_classified_entries": 60,
-    "precise_classified_chf": 9270000,
-    "pct_chf_precisely_classified": 42.3,
+    "total_entries": 582,
+    "total_chf": 28659390,
+    "precise_classified_entries": 61,
+    "precise_classified_chf": 15593000,
+    "pct_chf_precisely_classified": 54.4,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 573,
-    "total_chf_classified": 21923390,
-    "catchall_chf": 12653390,
-    "cross_year_recovered": 10,
+    "total_entries_classified": 582,
+    "total_chf_classified": 28659390,
+    "catchall_chf": 13066390,
+    "cross_year_recovered": 12,
     "sector": "Santé et handicap",
     "sector_slug": "sante",
-    "total_entries_sector": 573,
-    "total_chf_sector": 21923390,
+    "total_entries_sector": 582,
+    "total_chf_sector": 28659390,
     "pct_entries_classified": 100.0
   },
   "categories": [
     {
       "name": "Soutien général à la santé / handicap",
-      "count": 513,
-      "total_chf": 12653390,
-      "mean_chf": 24665,
+      "count": 521,
+      "total_chf": 13066390,
+      "mean_chf": 25079,
       "cantons": {
-        "SR": {
-          "count": 56,
-          "total_chf": 735850
-        },
         "VD": {
-          "count": 260,
-          "total_chf": 7725600
+          "count": 263,
+          "total_chf": 7857600
+        },
+        "SR": {
+          "count": 57,
+          "total_chf": 758850
         },
         "JU": {
           "count": 7,
@@ -53,8 +53,8 @@
           "total_chf": 854600
         },
         "VS": {
-          "count": 36,
-          "total_chf": 584650
+          "count": 40,
+          "total_chf": 842650
         }
       },
       "samples": [
@@ -355,6 +355,12 @@
           "montant_CHF": 80000
         },
         {
+          "nom": "EMS Le Christ Roi",
+          "ville": "Crans-Montana",
+          "canton": "VS",
+          "montant_CHF": 80000
+        },
+        {
           "nom": "Compagnie Marjolaine Minot",
           "ville": "Fribourg",
           "canton": "FR",
@@ -365,6 +371,12 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 75000
+        },
+        {
+          "nom": "EMS Riond-Vert",
+          "ville": "Vouvry",
+          "canton": "VS",
+          "montant_CHF": 74000
         },
         {
           "nom": "Assoc. Cadra - Théâtre Waouw",
@@ -421,6 +433,12 @@
           "montant_CHF": 70000
         },
         {
+          "nom": "EMS Clair-Vully",
+          "ville": "Salavaux",
+          "canton": "VD",
+          "montant_CHF": 69000
+        },
+        {
           "nom": "Compagnie AGP, Fribourg Les Prodigieuses Histoires",
           "ville": "Fribourg",
           "canton": "FR",
@@ -431,6 +449,12 @@
           "ville": "Bulle",
           "canton": "FR",
           "montant_CHF": 65000
+        },
+        {
+          "nom": "EMS St-François",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 64000
         },
         {
           "nom": "Assoc. GAME Salle Amalgame",
@@ -637,6 +661,12 @@
           "montant_CHF": 50000
         },
         {
+          "nom": "Fond. Cogest'ems",
+          "ville": "Château-d'Œx",
+          "canton": "VD",
+          "montant_CHF": 46000
+        },
+        {
           "nom": "Assoc. des concerts de Montbenon (ACM)",
           "ville": "Lausanne",
           "canton": "VD",
@@ -754,6 +784,12 @@
           "nom": "Assoc. du Bicubic",
           "ville": "Romont",
           "canton": "FR",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "EMS Les Vergers",
+          "ville": "Aproz",
+          "canton": "VS",
           "montant_CHF": 40000
         },
         {
@@ -1075,6 +1111,12 @@
           "montant_CHF": 25000
         },
         {
+          "nom": "EMS La Charmaie",
+          "ville": "Collombey-Muraz",
+          "canton": "SR",
+          "montant_CHF": 23000
+        },
+        {
           "nom": "Stiftung St. Josef",
           "ville": "Susten",
           "canton": "VS",
@@ -1247,64 +1289,22 @@
           "ville": "Oberschrot",
           "canton": "SR",
           "montant_CHF": 20000
-        },
-        {
-          "nom": "Düdingen Tourismus",
-          "ville": "Düdingen",
-          "canton": "FR",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Cie Après ça je ne parle plus",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Tertianum La Venise",
-          "ville": "Monthey",
-          "canton": "VS",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Assoc. Le Relais de Genève Montagne Le Relais De Genève Montagne -",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Assoc. l'Écrin des mômes, Genève Reprends Tes Rênes -",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Assoc. Santescalade, Genève Entrainements 6-15 ans -",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Be You Network",
-          "ville": "Les Acacias",
-          "canton": "GE",
-          "montant_CHF": 20000
         }
       ]
     },
     {
       "name": "Aide & assistance médicale",
-      "count": 20,
-      "total_chf": 2891000,
-      "mean_chf": 144550,
+      "count": 21,
+      "total_chf": 9214000,
+      "mean_chf": 438761,
       "cantons": {
         "SR": {
           "count": 3,
           "total_chf": 57000
         },
         "VD": {
-          "count": 6,
-          "total_chf": 1648000
+          "count": 7,
+          "total_chf": 7971000
         },
         "FR": {
           "count": 2,
@@ -1324,6 +1324,12 @@
         }
       },
       "samples": [
+        {
+          "nom": "Établissements hospitaliers du Nord vaudois (eHnv) + Pôle santé Pays d'En-haut (PSPE) + Hôpital Riviera Chablais (HRC) + Hôpital intercantonal de la Broye (HIB)",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 6323000
+        },
         {
           "nom": "Assoc. vaudoise d’aide et de soins à domicile (AVASAD)",
           "ville": "Lausanne",
@@ -1347,15 +1353,15 @@
           "ville": "Château-d'Œx",
           "canton": "VD",
           "montant_CHF": 200000
-        },
-        {
-          "nom": "Fond. Aigues-Vertes",
-          "ville": "Bernex",
-          "canton": "GE",
-          "montant_CHF": 200000
         }
       ],
       "all_entries": [
+        {
+          "nom": "Établissements hospitaliers du Nord vaudois (eHnv) + Pôle santé Pays d'En-haut (PSPE) + Hôpital Riviera Chablais (HRC) + Hôpital intercantonal de la Broye (HIB)",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 6323000
+        },
         {
           "nom": "Assoc. vaudoise d’aide et de soins à domicile (AVASAD)",
           "ville": "Lausanne",

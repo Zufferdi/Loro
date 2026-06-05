@@ -5,43 +5,43 @@
     "source": "brb2025_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 2430,
-    "total_chf": 45988089,
-    "precise_classified_entries": 1654,
-    "precise_classified_chf": 33993306,
-    "pct_chf_precisely_classified": 73.9,
+    "total_entries": 2431,
+    "total_chf": 46088089,
+    "precise_classified_entries": 1683,
+    "precise_classified_chf": 34607465,
+    "pct_chf_precisely_classified": 75.1,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 2430,
-    "total_chf_classified": 45988089,
-    "catchall_chf": 11994783,
-    "cross_year_recovered": 485
+    "total_entries_classified": 2431,
+    "total_chf_classified": 46088089,
+    "catchall_chf": 11480624,
+    "cross_year_recovered": 656
   },
   "sports": [
     {
       "name": "Soutien général au sport",
-      "count": 776,
-      "total_chf": 11994783,
-      "mean_chf": 15457,
+      "count": 748,
+      "total_chf": 11480624,
+      "mean_chf": 15348,
       "cantons": {
         "VD": {
-          "count": 272,
-          "total_chf": 5239120
+          "count": 266,
+          "total_chf": 5167360
         },
         "FR": {
           "count": 137,
           "total_chf": 1932076
         },
         "VS": {
-          "count": 135,
-          "total_chf": 2132899
+          "count": 126,
+          "total_chf": 1796965
         },
         "NE": {
-          "count": 74,
-          "total_chf": 1063075
+          "count": 69,
+          "total_chf": 986310
         },
         "GE": {
-          "count": 91,
-          "total_chf": 1023380
+          "count": 83,
+          "total_chf": 993680
         },
         "JU": {
           "count": 63,
@@ -119,12 +119,6 @@
           "nom": "Assoc. Féd. Internationale de Motocyclisme",
           "ville": "Mies",
           "canton": "VD",
-          "montant_CHF": 200000
-        },
-        {
-          "nom": "Fond. Patrouille des Glaciers",
-          "ville": "Sion",
-          "canton": "VS",
           "montant_CHF": 200000
         },
         {
@@ -488,22 +482,10 @@
           "montant_CHF": 50000
         },
         {
-          "nom": "Assoc. Groove",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 50000
-        },
-        {
           "nom": "Assoc. Scarlett's",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 50000
-        },
-        {
-          "nom": "Grand Raid",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 48658
         },
         {
           "nom": "Solde Commune d'Ollon",
@@ -516,12 +498,6 @@
           "ville": "Sierre",
           "canton": "VS",
           "montant_CHF": 47451
-        },
-        {
-          "nom": "Commune d'Arnex-sur-Orbe",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 46100
         },
         {
           "nom": "Fond. Françoise Siegfried Meier",
@@ -650,12 +626,6 @@
           "montant_CHF": 33029
         },
         {
-          "nom": "Assoc. SwissPeaks",
-          "ville": "Torgon",
-          "canton": "VS",
-          "montant_CHF": 31197
-        },
-        {
           "nom": "Nendaz Freeride",
           "ville": null,
           "canton": "VS",
@@ -720,12 +690,6 @@
           "ville": null,
           "canton": "GE",
           "montant_CHF": 30000
-        },
-        {
-          "nom": "Assoc. Rallye du Chablais",
-          "ville": "St. Maurice",
-          "canton": "VS",
-          "montant_CHF": 29190
         },
         {
           "nom": "Féd. Genevoise Échecs (FGE)",
@@ -858,12 +822,6 @@
           "ville": null,
           "canton": "VS",
           "montant_CHF": 23800
-        },
-        {
-          "nom": "Geneva Seahawks American",
-          "ville": "Football Club",
-          "canton": "GE",
-          "montant_CHF": 23500
         },
         {
           "nom": "Assoc. du Rallye International",
@@ -1094,12 +1052,6 @@
           "montant_CHF": 16050
         },
         {
-          "nom": "Centre Régional de Performance",
-          "ville": "Hockey Montagnes",
-          "canton": "NE",
-          "montant_CHF": 16000
-        },
-        {
           "nom": "Féd. Genevoise Équestre (FGE)",
           "ville": "Carouge",
           "canton": "GE",
@@ -1262,12 +1214,6 @@
           "montant_CHF": 13670
         },
         {
-          "nom": "Assoc. Coupe du Monde",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 13359
-        },
-        {
           "nom": "fonctionnement informatique Assoc. du Scoutisme Genevois",
           "ville": "Genève",
           "canton": "GE",
@@ -1284,18 +1230,72 @@
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 12900
+        },
+        {
+          "nom": "Sportclub Lötschental",
+          "ville": "Pumptrack",
+          "canton": "VS",
+          "montant_CHF": 12500
+        },
+        {
+          "nom": "Athlètes-vaudois",
+          "ville": "Forum des athlètes vaudois",
+          "canton": "VD",
+          "montant_CHF": 12452
+        },
+        {
+          "nom": "ALSF",
+          "ville": "Châtelaine - Ski freestyle",
+          "canton": "GE",
+          "montant_CHF": 12300
+        },
+        {
+          "nom": "Riviera Classic +",
+          "ville": "La Tour-de-Peilz",
+          "canton": "VD",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Thelonica",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Production d'Avril",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Féd. motorisée valaisanne",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Mettraux Laurane",
+          "ville": "Versoix - Voile",
+          "canton": "GE",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "US Meinier",
+          "ville": "Football américain",
+          "canton": "GE",
+          "montant_CHF": 11900
         }
       ]
     },
     {
       "name": "Multi-sports",
-      "count": 162,
-      "total_chf": 5156953,
-      "mean_chf": 31833,
+      "count": 159,
+      "total_chf": 5142423,
+      "mean_chf": 32342,
       "cantons": {
         "VD": {
           "count": 54,
-          "total_chf": 2848831
+          "total_chf": 2948261
         },
         "FR": {
           "count": 33,
@@ -1303,15 +1303,15 @@
         },
         "VS": {
           "count": 10,
-          "total_chf": 248247
+          "total_chf": 254687
         },
         "NE": {
-          "count": 11,
-          "total_chf": 111985
+          "count": 10,
+          "total_chf": 106985
         },
         "GE": {
-          "count": 23,
-          "total_chf": 697800
+          "count": 21,
+          "total_chf": 582400
         },
         "JU": {
           "count": 30,
@@ -1428,6 +1428,12 @@
           "montant_CHF": 100000
         },
         {
+          "nom": "Université de Lausanne",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 100000
+        },
+        {
           "nom": "Mérite Sportif Fribourgeois",
           "ville": null,
           "canton": "FR",
@@ -1482,12 +1488,6 @@
           "montant_CHF": 55200
         },
         {
-          "nom": "Assoc. Cantonale Genevoise",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 54200
-        },
-        {
           "nom": "Fond. Centre Sport-Études",
           "ville": "Lausanne",
           "canton": "VD",
@@ -1518,12 +1518,6 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Assoc. Cantonale Genevoise",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 36000
-        },
-        {
           "nom": "Assoc. de soutien au sport",
           "ville": null,
           "canton": "NE",
@@ -1551,12 +1545,6 @@
           "nom": "Reper",
           "ville": null,
           "canton": "FR",
-          "montant_CHF": 28000
-        },
-        {
-          "nom": "Assoc. Cantonale Genevoise",
-          "ville": null,
-          "canton": "GE",
           "montant_CHF": 28000
         },
         {
@@ -1794,6 +1782,12 @@
           "montant_CHF": 8000
         },
         {
+          "nom": "Corrida d'Octodure",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 7440
+        },
+        {
           "nom": "Centre sportif de Malley SA",
           "ville": null,
           "canton": "VD",
@@ -1857,12 +1851,6 @@
           "nom": "des Sports Équestres Fribourg Rando",
           "ville": null,
           "canton": "FR",
-          "montant_CHF": 5000
-        },
-        {
-          "nom": "Badminton Club",
-          "ville": null,
-          "canton": "NE",
           "montant_CHF": 5000
         },
         {
@@ -1972,6 +1960,12 @@
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 3000
+        },
+        {
+          "nom": "Wake On The Moon",
+          "ville": "Vésenaz",
+          "canton": "GE",
+          "montant_CHF": 2800
         },
         {
           "nom": "Fribourg Rando",
@@ -2088,12 +2082,6 @@
           "montant_CHF": 1250
         },
         {
-          "nom": "Badminton Club",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1000
-        },
-        {
           "nom": "Cercle des Armes de Lausanne",
           "ville": null,
           "canton": "VD",
@@ -2130,12 +2118,6 @@
           "montant_CHF": 1000
         },
         {
-          "nom": "Badminton Club",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 1000
-        },
-        {
           "nom": "Groupe Sportif Courchapoix",
           "ville": null,
           "canton": "JU",
@@ -2158,6 +2140,12 @@
           "ville": null,
           "canton": "VD",
           "montant_CHF": 940
+        },
+        {
+          "nom": "Commune de Montreux",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 930
         },
         {
           "nom": "Union Sportive",
@@ -2224,12 +2212,6 @@
           "ville": null,
           "canton": "JU",
           "montant_CHF": 600
-        },
-        {
-          "nom": "Badminton Club",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 500
         },
         {
           "nom": "BMX Club Nord Vaudois",
@@ -2331,13 +2313,13 @@
     },
     {
       "name": "Gymnastique",
-      "count": 149,
-      "total_chf": 3971644,
-      "mean_chf": 26655,
+      "count": 150,
+      "total_chf": 3969044,
+      "mean_chf": 26460,
       "cantons": {
         "VD": {
-          "count": 62,
-          "total_chf": 3036168
+          "count": 61,
+          "total_chf": 3033168
         },
         "FR": {
           "count": 10,
@@ -2352,8 +2334,8 @@
           "total_chf": 168320
         },
         "GE": {
-          "count": 23,
-          "total_chf": 142000
+          "count": 25,
+          "total_chf": 142400
         },
         "JU": {
           "count": 21,
@@ -2654,12 +2636,6 @@
           "ville": null,
           "canton": "FR",
           "montant_CHF": 3042
-        },
-        {
-          "nom": "Féd. suisse",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 3000
         },
         {
           "nom": "FSG Eaux-Vives Gymnastique",
@@ -3244,6 +3220,18 @@
           "montant_CHF": 205
         },
         {
+          "nom": "SATUS Vives",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 200
+        },
+        {
+          "nom": "Satus Grütli Féminine",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 200
+        },
+        {
           "nom": "Gym-Dames Delémont",
           "ville": null,
           "canton": "JU",
@@ -3295,17 +3283,17 @@
     },
     {
       "name": "Football",
-      "count": 143,
-      "total_chf": 3842281,
-      "mean_chf": 26869,
+      "count": 150,
+      "total_chf": 3890257,
+      "mean_chf": 25935,
       "cantons": {
         "VD": {
-          "count": 43,
-          "total_chf": 1044484
+          "count": 47,
+          "total_chf": 1066359
         },
         "FR": {
-          "count": 24,
-          "total_chf": 1284980
+          "count": 26,
+          "total_chf": 1287581
         },
         "VS": {
           "count": 8,
@@ -3316,8 +3304,8 @@
           "total_chf": 290850
         },
         "GE": {
-          "count": 29,
-          "total_chf": 613000
+          "count": 30,
+          "total_chf": 636500
         },
         "JU": {
           "count": 26,
@@ -3530,6 +3518,12 @@
           "montant_CHF": 25769
         },
         {
+          "nom": "Geneva Seahawks American",
+          "ville": "Football Club",
+          "canton": "GE",
+          "montant_CHF": 23500
+        },
+        {
           "nom": "Commune du Landeron",
           "ville": null,
           "canton": "NE",
@@ -3668,6 +3662,12 @@
           "montant_CHF": 11700
         },
         {
+          "nom": "Compagnie des Archers de Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 10800
+        },
+        {
           "nom": "FC Fétigny-Ménières",
           "ville": null,
           "canton": "FR",
@@ -3762,6 +3762,12 @@
           "ville": null,
           "canton": "VD",
           "montant_CHF": 6690
+        },
+        {
+          "nom": "Commune de Pully",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 6015
         },
         {
           "nom": "FC Riaz",
@@ -3884,6 +3890,12 @@
           "montant_CHF": 3380
         },
         {
+          "nom": "Féd. suisse",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 3000
+        },
+        {
           "nom": "Commune de Vevey",
           "ville": null,
           "canton": "VD",
@@ -3974,6 +3986,12 @@
           "montant_CHF": 2100
         },
         {
+          "nom": "Commune de Pully",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 2060
+        },
+        {
           "nom": "Commune de Renens",
           "ville": null,
           "canton": "VD",
@@ -4040,6 +4058,12 @@
           "montant_CHF": 1550
         },
         {
+          "nom": "Assoc. Fribourgeoise",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1545
+        },
+        {
           "nom": "FC Rapid-Montreux Juniors",
           "ville": "Riviera Futsal CUP",
           "canton": "VD",
@@ -4080,6 +4104,12 @@
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1140
+        },
+        {
+          "nom": "Féd. Fribourgeoise",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1056
         },
         {
           "nom": "FC Sion U17, football",
@@ -4222,10 +4252,1170 @@
       ]
     },
     {
+      "name": "Ski / Snowboard",
+      "count": 111,
+      "total_chf": 2544348,
+      "mean_chf": 22922,
+      "cantons": {
+        "VD": {
+          "count": 31,
+          "total_chf": 329710
+        },
+        "FR": {
+          "count": 15,
+          "total_chf": 302100
+        },
+        "VS": {
+          "count": 25,
+          "total_chf": 1580841
+        },
+        "NE": {
+          "count": 10,
+          "total_chf": 127475
+        },
+        "GE": {
+          "count": 17,
+          "total_chf": 164500
+        },
+        "JU": {
+          "count": 4,
+          "total_chf": 7022
+        },
+        "SR": {
+          "count": 9,
+          "total_chf": 32700
+        }
+      },
+      "samples": [
+        {
+          "nom": "Ski Valais",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 415625
+        },
+        {
+          "nom": "Assoc. FIS Ski Alpin",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 320000
+        },
+        {
+          "nom": "Fond. Patrouille des Glaciers",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Ski Valais",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Assoc. Romande de Ski",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 163000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Ski Valais",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 415625
+        },
+        {
+          "nom": "Assoc. FIS Ski Alpin",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 320000
+        },
+        {
+          "nom": "Fond. Patrouille des Glaciers",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Ski Valais",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Assoc. Romande de Ski",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 163000
+        },
+        {
+          "nom": "Genève Snowsports",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 87800
+        },
+        {
+          "nom": "Nordic Jogne",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 64890
+        },
+        {
+          "nom": "Assoc. fribourgeoise de ski",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 56770
+        },
+        {
+          "nom": "Assoc. FIS Ski Alpin",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. NLZ Ouest Brigue",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Ski Valais",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Ski-Club Vudallaz-Epagny",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 49500
+        },
+        {
+          "nom": "Neuchâtel Ski de Fond",
+          "ville": "Dameuse pour le centre",
+          "canton": "NE",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "Ski-Club Villars",
+          "ville": "Reconstruction des cabanes",
+          "canton": "VD",
+          "montant_CHF": 44000
+        },
+        {
+          "nom": "Fond. NLZ Ouest Brigue",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 37915
+        },
+        {
+          "nom": "Assoc. World Cup Veysonnaz",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 37296
+        },
+        {
+          "nom": "Fond. NLZ Ouest Brigue",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 34371
+        },
+        {
+          "nom": "Assoc. Les Trailers Verbier",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 33156
+        },
+        {
+          "nom": "Nordic Jogne",
+          "ville": "Prestations et infrastructures",
+          "canton": "FR",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. fribourgeoise de ski et snowboard",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Ski Valais",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 29584
+        },
+        {
+          "nom": "Assoc. Rando-Ski",
+          "ville": "Morgins",
+          "canton": "VS",
+          "montant_CHF": 28657
+        },
+        {
+          "nom": "Reitklub Buecha-Sense Oberland",
+          "ville": "Regenwasserfassung",
+          "canton": "FR",
+          "montant_CHF": 27300
+        },
+        {
+          "nom": "Assoc. Skimo-Villars",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. FIS Ski Alpin",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 24395
+        },
+        {
+          "nom": "Neuchâtel Ski de Fond",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 23300
+        },
+        {
+          "nom": "Assoc. Genevoise de Ski Nautique",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 23100
+        },
+        {
+          "nom": "Ski-club Lys Albeuve-Neirivue",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Giron Jurassion des sports",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Ski-Club Nyon",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 18960
+        },
+        {
+          "nom": "Centre Régional de Performance",
+          "ville": "Hockey Montagnes",
+          "canton": "NE",
+          "montant_CHF": 16000
+        },
+        {
+          "nom": "Ski Nautique Club Neuchâtel",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 15600
+        },
+        {
+          "nom": "Assoc. Romande de Ski",
+          "ville": "Ski alpin",
+          "canton": "VD",
+          "montant_CHF": 13750
+        },
+        {
+          "nom": "Assoc. World Cup Veysonnaz",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 13679
+        },
+        {
+          "nom": "Assoc. Coupe du Monde",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 13359
+        },
+        {
+          "nom": "Assoc. Championnats du Monde",
+          "ville": "Pumptrack",
+          "canton": "VS",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Ski Club Campagne Meinier",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 11600
+        },
+        {
+          "nom": "Assoc. Rando-ski Morgins",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 10110
+        },
+        {
+          "nom": "Ski Valais",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 10089
+        },
+        {
+          "nom": "Suisse Rugby",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Romande de Ski",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 9870
+        },
+        {
+          "nom": "Reitklub Buecha-Sense Oberland",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 9600
+        },
+        {
+          "nom": "Assoc. Romande de Ski",
+          "ville": "Ski freestyle",
+          "canton": "VD",
+          "montant_CHF": 8100
+        },
+        {
+          "nom": "Assoc. Romande de Ski",
+          "ville": "Ski de fond",
+          "canton": "VD",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. Rando-ski Morgins",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 7140
+        },
+        {
+          "nom": "Snownex Ski and Snowboard",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 6900
+        },
+        {
+          "nom": "Rookie Slash",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 6300
+        },
+        {
+          "nom": "SuperTrail du Barlatay",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Assoc. Rando-ski Morgins",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 5550
+        },
+        {
+          "nom": "Ski Nautique Club Neuchâtel",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 5500
+        },
+        {
+          "nom": "Ski Club de Genève et Veyrier",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 5100
+        },
+        {
+          "nom": "Assoc. fribourgeoise de ski",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Ski-Club Cime de l'Est",
+          "ville": "Massongex",
+          "canton": "VS",
+          "montant_CHF": 4653
+        },
+        {
+          "nom": "Snowflame",
+          "ville": "Obergesteln",
+          "canton": "VS",
+          "montant_CHF": 4543
+        },
+        {
+          "nom": "Eventverein Goms",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 4542
+        },
+        {
+          "nom": "Club Nautique de Versoix",
+          "ville": "Section Ski nautique",
+          "canton": "GE",
+          "montant_CHF": 4500
+        },
+        {
+          "nom": "Ski Club Les Diablerets",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Ski Club International de Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 3900
+        },
+        {
+          "nom": "Assoc. Rando-ski Morgins",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 3900
+        },
+        {
+          "nom": "Club Nautique de Versoix",
+          "ville": "Section Ski nautique",
+          "canton": "GE",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "Commune de Develier",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 3072
+        },
+        {
+          "nom": "Bernex Ski Club",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Ski Club de Lancy",
+          "ville": "Onex",
+          "canton": "GE",
+          "montant_CHF": 2700
+        },
+        {
+          "nom": "Kayak Club Chablais",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 2665
+        },
+        {
+          "nom": "Assoc. Rando-ski Morgins",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2400
+        },
+        {
+          "nom": "Ski-Club de Rougemont",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 2240
+        },
+        {
+          "nom": "Ski Club des Dents Vertes",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Ski-Club de Siviriez",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Ski-Club Riaz",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. Romande de Ski",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1945
+        },
+        {
+          "nom": "Snow Ski Club Ajoulot",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 1850
+        },
+        {
+          "nom": "Fond. NLZ Ouest Brigue",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1800
+        },
+        {
+          "nom": "Ski Club Saignelégier",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 1600
+        },
+        {
+          "nom": "Ski-Club Ovronnaz",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 1576
+        },
+        {
+          "nom": "Assoc. Vaudoise de Ski Nautique et de Wakeboard",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Ski-Club Villars",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Ski-Club Trient",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 1461
+        },
+        {
+          "nom": "Ski Club Onex",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1400
+        },
+        {
+          "nom": "de Montricher Ski-Club de Rougemont",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1380
+        },
+        {
+          "nom": "Ski Evasion Genève",
+          "ville": "Conches",
+          "canton": "GE",
+          "montant_CHF": 1300
+        },
+        {
+          "nom": "CS Stella Alpina",
+          "ville": "Plan-les-Ouates",
+          "canton": "GE",
+          "montant_CHF": 1300
+        },
+        {
+          "nom": "Ski-Club Grône",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 1275
+        },
+        {
+          "nom": "ALSF",
+          "ville": "Châtelaine",
+          "canton": "GE",
+          "montant_CHF": 1100
+        },
+        {
+          "nom": "Club Ski Nautique",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1040
+        },
+        {
+          "nom": "Centre Nordique de Froideville",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Ski & Wake Lac de Joux",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Ski Club Goupils Alpes",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Ski Club Les Diablerets",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Ski Club UPA 10",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Ski-Club Vallée de Joux",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Championship Indoor 2025 Reitklub Buecha-Sense Oberland",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Ski-Club Plasselb",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Assoc. Rando-ski Morgins",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 900
+        },
+        {
+          "nom": "Achat starting block Ski Club Les Diablerets",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 860
+        },
+        {
+          "nom": "Ski Club de La Vue-des-Alpes",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 800
+        },
+        {
+          "nom": "Ski Club La Sagne de Neuchâtel Tour de Sagnard 2025",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 775
+        },
+        {
+          "nom": "Assoc. Romande de Ski",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 720
+        },
+        {
+          "nom": "Assoc. Romande de Ski",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 600
+        },
+        {
+          "nom": "Ski Club FMG Féd. Montagnarde",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 600
+        },
+        {
+          "nom": "Fond. NLZ Ouest Brigue",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 600
+        },
+        {
+          "nom": "Ski-Club Vallée de Joux",
+          "ville": "Polo Slalom SCVJ",
+          "canton": "VD",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Vaudoises Sté Sportive de Jouxtens de ski de fond Tchaffa",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Ski Club Les Diablerets",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Ski-Club de Rougemont",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Ski Club Saignelégier",
+          "ville": "Franches Nordiques",
+          "canton": "JU",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Ski Nautique Club Genève (SNCG)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 400
+        },
+        {
+          "nom": "Fond. NLZ Ouest Brigue",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 300
+        },
+        {
+          "nom": "Giron Jurassien des sports",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 260
+        },
+        {
+          "nom": "Ski Club La Chaux-de-Fonds",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 240
+        },
+        {
+          "nom": "Achat matériel Ski Club Les Diablerets",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 190
+        },
+        {
+          "nom": "Achat mousses pour tapis Ski Nautique Club de Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 95
+        }
+      ]
+    },
+    {
+      "name": "Judo / Karaté",
+      "count": 59,
+      "total_chf": 2476386,
+      "mean_chf": 41972,
+      "cantons": {
+        "VD": {
+          "count": 16,
+          "total_chf": 2117516
+        },
+        "FR": {
+          "count": 9,
+          "total_chf": 53946
+        },
+        "VS": {
+          "count": 4,
+          "total_chf": 84154
+        },
+        "NE": {
+          "count": 10,
+          "total_chf": 116820
+        },
+        "GE": {
+          "count": 10,
+          "total_chf": 84900
+        },
+        "JU": {
+          "count": 3,
+          "total_chf": 4000
+        },
+        "SR": {
+          "count": 7,
+          "total_chf": 15050
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Trako",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 2000000
+        },
+        {
+          "nom": "Assoc. Cantonale de Judo",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 57300
+        },
+        {
+          "nom": "Assoc. Groove",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. Vaudoise de Judo",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 40700
+        },
+        {
+          "nom": "Championnats d'Europe de Taekwondo 2025",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 30000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Trako",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 2000000
+        },
+        {
+          "nom": "Assoc. Cantonale de Judo",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 57300
+        },
+        {
+          "nom": "Assoc. Groove",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. Vaudoise de Judo",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 40700
+        },
+        {
+          "nom": "Championnats d'Europe de Taekwondo 2025",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Sergei Judo Camp",
+          "ville": "Vionnaz",
+          "canton": "VS",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Neuchâteloise de Judo",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 27000
+        },
+        {
+          "nom": "Assoc. valaisanne de randonnée",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Vaudoise de Judo",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 19700
+        },
+        {
+          "nom": "Assoc. Fribourgeoise de Judo",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 17850
+        },
+        {
+          "nom": "Assoc. valaisanne de judo",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 17454
+        },
+        {
+          "nom": "Assoc. VD-FR de Karaté",
+          "ville": "Section Fribourg",
+          "canton": "FR",
+          "montant_CHF": 12360
+        },
+        {
+          "nom": "Féd. valaisanne de karaté",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 11700
+        },
+        {
+          "nom": "Assoc. Fribourgeoise de Judo",
+          "ville": "Centre national (régional)",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Groove",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. VD-FR de Karaté",
+          "ville": "Section Fribourg",
+          "canton": "FR",
+          "montant_CHF": 8736
+        },
+        {
+          "nom": "Neuchâtel Karaté-Do",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Dojo de Neuchâtel École d'Aïkido",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 7500
+        },
+        {
+          "nom": "Assoc. Vaud-Fribourg de Karaté",
+          "ville": "Karaté",
+          "canton": "VD",
+          "montant_CHF": 7100
+        },
+        {
+          "nom": "Judo Cortaillod",
+          "ville": "Sport inclusif",
+          "canton": "NE",
+          "montant_CHF": 6500
+        },
+        {
+          "nom": "Judo Club Carouge",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 5400
+        },
+        {
+          "nom": "Assoc. CNP Ouest Suisse",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 4500
+        },
+        {
+          "nom": "Judo Club Meyrin",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 3900
+        },
+        {
+          "nom": "Judo Club Eaux-Vives",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "Ippon Karaté Club Tivoli",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "Judo Club Lémanique",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 3400
+        },
+        {
+          "nom": "Krasniqi Taekwondo",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 3370
+        },
+        {
+          "nom": "Assoc. Trako",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "École Judo Dégallier",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Krasniqi Taekwondo Villeneuve",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Judo Cortaillod",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Judo Club Delémont",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Assoc. Vaud Fribourg de Karaté",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 2900
+        },
+        {
+          "nom": "Assoc. CNP Ouest Suisse",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2400
+        },
+        {
+          "nom": "Krasniqi Taekwondo",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2380
+        },
+        {
+          "nom": "Judo Ju Jitsu Collex-Bossy/",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 2200
+        },
+        {
+          "nom": "JJJC Compesières",
+          "ville": "Croix-de-Rozon",
+          "canton": "GE",
+          "montant_CHF": 2100
+        },
+        {
+          "nom": "Krasniqi Taekwondo Villeneuve",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Judo Club Versoix",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Judo-Karaté Club",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 1960
+        },
+        {
+          "nom": "École de Judo Rolle",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1778
+        },
+        {
+          "nom": "Judo Club Satigny",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1600
+        },
+        {
+          "nom": "2e International Taekwondo Les Traîne-Savates",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "CS Neirivue",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Judo Club Hara Sport Murten",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Judo Cortaillod",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 1460
+        },
+        {
+          "nom": "Judo Cortaillod",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 1400
+        },
+        {
+          "nom": "Krasniqi Taekwondo",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1300
+        },
+        {
+          "nom": "Judo Club Cheseaux",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1268
+        },
+        {
+          "nom": "Judo Club Marly",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Équipe de compétition les",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 943
+        },
+        {
+          "nom": "Krasniqi Taekwondo",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 800
+        },
+        {
+          "nom": "Shin-Tai Karate-Do Delémont",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 750
+        },
+        {
+          "nom": "Judo Club Morges",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Assoc. Fribourgeoise de Judo",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Assoc. VD-FR de Karaté",
+          "ville": "Section Fribourg",
+          "canton": "FR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Krasniqi Taekwondo",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 300
+        },
+        {
+          "nom": "Judo-Club Boécourt",
+          "ville": "Manches du Champ. JU",
+          "canton": "JU",
+          "montant_CHF": 250
+        },
+        {
+          "nom": "Judo Club Nyon",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 127
+        }
+      ]
+    },
+    {
       "name": "Cyclisme / VTT",
-      "count": 95,
-      "total_chf": 2437730,
-      "mean_chf": 25660,
+      "count": 97,
+      "total_chf": 2438930,
+      "mean_chf": 25143,
       "cantons": {
         "VD": {
           "count": 27,
@@ -4244,8 +5434,8 @@
           "total_chf": 9380
         },
         "GE": {
-          "count": 9,
-          "total_chf": 47550
+          "count": 11,
+          "total_chf": 48750
         },
         "JU": {
           "count": 8,
@@ -4788,6 +5978,12 @@
           "montant_CHF": 750
         },
         {
+          "nom": "Étoile cycliste Meyrin",
+          "ville": "Échecs",
+          "canton": "GE",
+          "montant_CHF": 700
+        },
+        {
           "nom": "Vélo Club Vallorbe",
           "ville": null,
           "canton": "VD",
@@ -4848,6 +6044,12 @@
           "montant_CHF": 500
         },
         {
+          "nom": "Pédale des Eaux-Vives Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 500
+        },
+        {
           "nom": "Le Noirmont VTT Club",
           "ville": "Brevet VTT",
           "canton": "JU",
@@ -4862,1154 +6064,30 @@
       ]
     },
     {
-      "name": "Judo / Karaté",
-      "count": 57,
-      "total_chf": 2416386,
-      "mean_chf": 42392,
-      "cantons": {
-        "VD": {
-          "count": 16,
-          "total_chf": 2117516
-        },
-        "FR": {
-          "count": 9,
-          "total_chf": 53946
-        },
-        "VS": {
-          "count": 4,
-          "total_chf": 84154
-        },
-        "NE": {
-          "count": 8,
-          "total_chf": 56820
-        },
-        "GE": {
-          "count": 10,
-          "total_chf": 84900
-        },
-        "JU": {
-          "count": 3,
-          "total_chf": 4000
-        },
-        "SR": {
-          "count": 7,
-          "total_chf": 15050
-        }
-      },
-      "samples": [
-        {
-          "nom": "Assoc. Trako",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 2000000
-        },
-        {
-          "nom": "Assoc. Cantonale de Judo",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 57300
-        },
-        {
-          "nom": "Assoc. Vaudoise de Judo",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 40700
-        },
-        {
-          "nom": "Championnats d'Europe de Taekwondo 2025",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 30000
-        },
-        {
-          "nom": "Sergei Judo Camp",
-          "ville": "Vionnaz",
-          "canton": "VS",
-          "montant_CHF": 30000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Assoc. Trako",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 2000000
-        },
-        {
-          "nom": "Assoc. Cantonale de Judo",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 57300
-        },
-        {
-          "nom": "Assoc. Vaudoise de Judo",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 40700
-        },
-        {
-          "nom": "Championnats d'Europe de Taekwondo 2025",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 30000
-        },
-        {
-          "nom": "Sergei Judo Camp",
-          "ville": "Vionnaz",
-          "canton": "VS",
-          "montant_CHF": 30000
-        },
-        {
-          "nom": "Assoc. Neuchâteloise de Judo",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 27000
-        },
-        {
-          "nom": "Assoc. valaisanne de randonnée",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Assoc. Vaudoise de Judo",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 19700
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Judo",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 17850
-        },
-        {
-          "nom": "Assoc. valaisanne de judo",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 17454
-        },
-        {
-          "nom": "Assoc. VD-FR de Karaté",
-          "ville": "Section Fribourg",
-          "canton": "FR",
-          "montant_CHF": 12360
-        },
-        {
-          "nom": "Féd. valaisanne de karaté",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 11700
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Judo",
-          "ville": "Centre national (régional)",
-          "canton": "FR",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Assoc. VD-FR de Karaté",
-          "ville": "Section Fribourg",
-          "canton": "FR",
-          "montant_CHF": 8736
-        },
-        {
-          "nom": "Neuchâtel Karaté-Do",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 8000
-        },
-        {
-          "nom": "Dojo de Neuchâtel École d'Aïkido",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 7500
-        },
-        {
-          "nom": "Assoc. Vaud-Fribourg de Karaté",
-          "ville": "Karaté",
-          "canton": "VD",
-          "montant_CHF": 7100
-        },
-        {
-          "nom": "Judo Cortaillod",
-          "ville": "Sport inclusif",
-          "canton": "NE",
-          "montant_CHF": 6500
-        },
-        {
-          "nom": "Judo Club Carouge",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 5400
-        },
-        {
-          "nom": "Assoc. CNP Ouest Suisse",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 4500
-        },
-        {
-          "nom": "Judo Club Meyrin",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 3900
-        },
-        {
-          "nom": "Judo Club Eaux-Vives",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 3500
-        },
-        {
-          "nom": "Ippon Karaté Club Tivoli",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 3500
-        },
-        {
-          "nom": "Judo Club Lémanique",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 3400
-        },
-        {
-          "nom": "Krasniqi Taekwondo",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 3370
-        },
-        {
-          "nom": "Assoc. Trako",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 3000
-        },
-        {
-          "nom": "École Judo Dégallier",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 3000
-        },
-        {
-          "nom": "Krasniqi Taekwondo Villeneuve",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 3000
-        },
-        {
-          "nom": "Judo Cortaillod",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 3000
-        },
-        {
-          "nom": "Judo Club Delémont",
-          "ville": null,
-          "canton": "JU",
-          "montant_CHF": 3000
-        },
-        {
-          "nom": "Assoc. Vaud Fribourg de Karaté",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 2900
-        },
-        {
-          "nom": "Assoc. CNP Ouest Suisse",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 2400
-        },
-        {
-          "nom": "Krasniqi Taekwondo",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 2380
-        },
-        {
-          "nom": "Judo Ju Jitsu Collex-Bossy/",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 2200
-        },
-        {
-          "nom": "JJJC Compesières",
-          "ville": "Croix-de-Rozon",
-          "canton": "GE",
-          "montant_CHF": 2100
-        },
-        {
-          "nom": "Krasniqi Taekwondo Villeneuve",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 2000
-        },
-        {
-          "nom": "Judo Club Versoix",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 2000
-        },
-        {
-          "nom": "Judo-Karaté Club",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 1960
-        },
-        {
-          "nom": "École de Judo Rolle",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1778
-        },
-        {
-          "nom": "Judo Club Satigny",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 1600
-        },
-        {
-          "nom": "2e International Taekwondo Les Traîne-Savates",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1500
-        },
-        {
-          "nom": "CS Neirivue",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1500
-        },
-        {
-          "nom": "Judo Club Hara Sport Murten",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1500
-        },
-        {
-          "nom": "Judo Cortaillod",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 1460
-        },
-        {
-          "nom": "Judo Cortaillod",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 1400
-        },
-        {
-          "nom": "Krasniqi Taekwondo",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 1300
-        },
-        {
-          "nom": "Judo Club Cheseaux",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1268
-        },
-        {
-          "nom": "Judo Club Marly",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Équipe de compétition les",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 943
-        },
-        {
-          "nom": "Krasniqi Taekwondo",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 800
-        },
-        {
-          "nom": "Shin-Tai Karate-Do Delémont",
-          "ville": null,
-          "canton": "JU",
-          "montant_CHF": 750
-        },
-        {
-          "nom": "Judo Club Morges",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Judo",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Assoc. VD-FR de Karaté",
-          "ville": "Section Fribourg",
-          "canton": "FR",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Krasniqi Taekwondo",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 300
-        },
-        {
-          "nom": "Judo-Club Boécourt",
-          "ville": "Manches du Champ. JU",
-          "canton": "JU",
-          "montant_CHF": 250
-        },
-        {
-          "nom": "Judo Club Nyon",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 127
-        }
-      ]
-    },
-    {
-      "name": "Ski / Snowboard",
-      "count": 107,
-      "total_chf": 2312324,
-      "mean_chf": 21610,
+      "name": "Basketball",
+      "count": 94,
+      "total_chf": 2047683,
+      "mean_chf": 21783,
       "cantons": {
         "VD": {
           "count": 31,
-          "total_chf": 329710
-        },
-        "FR": {
-          "count": 15,
-          "total_chf": 302100
-        },
-        "VS": {
-          "count": 22,
-          "total_chf": 1364817
-        },
-        "NE": {
-          "count": 9,
-          "total_chf": 111475
-        },
-        "GE": {
-          "count": 17,
-          "total_chf": 164500
-        },
-        "JU": {
-          "count": 4,
-          "total_chf": 7022
-        },
-        "SR": {
-          "count": 9,
-          "total_chf": 32700
-        }
-      },
-      "samples": [
-        {
-          "nom": "Ski Valais",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 415625
-        },
-        {
-          "nom": "Assoc. FIS Ski Alpin",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 320000
-        },
-        {
-          "nom": "Ski Valais",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 200000
-        },
-        {
-          "nom": "Assoc. Romande de Ski",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 163000
-        },
-        {
-          "nom": "Genève Snowsports",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 87800
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Ski Valais",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 415625
-        },
-        {
-          "nom": "Assoc. FIS Ski Alpin",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 320000
-        },
-        {
-          "nom": "Ski Valais",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 200000
-        },
-        {
-          "nom": "Assoc. Romande de Ski",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 163000
-        },
-        {
-          "nom": "Genève Snowsports",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 87800
-        },
-        {
-          "nom": "Nordic Jogne",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 64890
-        },
-        {
-          "nom": "Assoc. fribourgeoise de ski",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 56770
-        },
-        {
-          "nom": "Assoc. FIS Ski Alpin",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 50000
-        },
-        {
-          "nom": "Fond. NLZ Ouest Brigue",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 50000
-        },
-        {
-          "nom": "Ski Valais",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 50000
-        },
-        {
-          "nom": "Ski-Club Vudallaz-Epagny",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 49500
-        },
-        {
-          "nom": "Neuchâtel Ski de Fond",
-          "ville": "Dameuse pour le centre",
-          "canton": "NE",
-          "montant_CHF": 45000
-        },
-        {
-          "nom": "Ski-Club Villars",
-          "ville": "Reconstruction des cabanes",
-          "canton": "VD",
-          "montant_CHF": 44000
-        },
-        {
-          "nom": "Fond. NLZ Ouest Brigue",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 37915
-        },
-        {
-          "nom": "Assoc. World Cup Veysonnaz",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 37296
-        },
-        {
-          "nom": "Fond. NLZ Ouest Brigue",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 34371
-        },
-        {
-          "nom": "Assoc. Les Trailers Verbier",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 33156
-        },
-        {
-          "nom": "Nordic Jogne",
-          "ville": "Prestations et infrastructures",
-          "canton": "FR",
-          "montant_CHF": 30000
-        },
-        {
-          "nom": "Assoc. fribourgeoise de ski et snowboard",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 30000
-        },
-        {
-          "nom": "Ski Valais",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 29584
-        },
-        {
-          "nom": "Assoc. Rando-Ski",
-          "ville": "Morgins",
-          "canton": "VS",
-          "montant_CHF": 28657
-        },
-        {
-          "nom": "Reitklub Buecha-Sense Oberland",
-          "ville": "Regenwasserfassung",
-          "canton": "FR",
-          "montant_CHF": 27300
-        },
-        {
-          "nom": "Assoc. Skimo-Villars",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Assoc. FIS Ski Alpin",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 24395
-        },
-        {
-          "nom": "Neuchâtel Ski de Fond",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 23300
-        },
-        {
-          "nom": "Assoc. Genevoise de Ski Nautique",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 23100
-        },
-        {
-          "nom": "Ski-club Lys Albeuve-Neirivue",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Giron Jurassion des sports",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Ski-Club Nyon",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 18960
-        },
-        {
-          "nom": "Ski Nautique Club Neuchâtel",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 15600
-        },
-        {
-          "nom": "Assoc. Romande de Ski",
-          "ville": "Ski alpin",
-          "canton": "VD",
-          "montant_CHF": 13750
-        },
-        {
-          "nom": "Assoc. World Cup Veysonnaz",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 13679
-        },
-        {
-          "nom": "Assoc. Championnats du Monde",
-          "ville": "Pumptrack",
-          "canton": "VS",
-          "montant_CHF": 12000
-        },
-        {
-          "nom": "Ski Club Campagne Meinier",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 11600
-        },
-        {
-          "nom": "Assoc. Rando-ski Morgins",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 10110
-        },
-        {
-          "nom": "Ski Valais",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 10089
-        },
-        {
-          "nom": "Suisse Rugby",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Assoc. Romande de Ski",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 9870
-        },
-        {
-          "nom": "Reitklub Buecha-Sense Oberland",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 9600
-        },
-        {
-          "nom": "Assoc. Romande de Ski",
-          "ville": "Ski freestyle",
-          "canton": "VD",
-          "montant_CHF": 8100
-        },
-        {
-          "nom": "Assoc. Romande de Ski",
-          "ville": "Ski de fond",
-          "canton": "VD",
-          "montant_CHF": 8000
-        },
-        {
-          "nom": "Assoc. Rando-ski Morgins",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 7140
-        },
-        {
-          "nom": "Snownex Ski and Snowboard",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 6900
-        },
-        {
-          "nom": "Rookie Slash",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 6300
-        },
-        {
-          "nom": "SuperTrail du Barlatay",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 6000
-        },
-        {
-          "nom": "Assoc. Rando-ski Morgins",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 5550
-        },
-        {
-          "nom": "Ski Nautique Club Neuchâtel",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 5500
-        },
-        {
-          "nom": "Ski Club de Genève et Veyrier",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 5100
-        },
-        {
-          "nom": "Assoc. fribourgeoise de ski",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 5000
-        },
-        {
-          "nom": "Ski-Club Cime de l'Est",
-          "ville": "Massongex",
-          "canton": "VS",
-          "montant_CHF": 4653
-        },
-        {
-          "nom": "Snowflame",
-          "ville": "Obergesteln",
-          "canton": "VS",
-          "montant_CHF": 4543
-        },
-        {
-          "nom": "Eventverein Goms",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 4542
-        },
-        {
-          "nom": "Club Nautique de Versoix",
-          "ville": "Section Ski nautique",
-          "canton": "GE",
-          "montant_CHF": 4500
-        },
-        {
-          "nom": "Ski Club Les Diablerets",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 4000
-        },
-        {
-          "nom": "Ski Club International de Genève",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 3900
-        },
-        {
-          "nom": "Assoc. Rando-ski Morgins",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 3900
-        },
-        {
-          "nom": "Club Nautique de Versoix",
-          "ville": "Section Ski nautique",
-          "canton": "GE",
-          "montant_CHF": 3500
-        },
-        {
-          "nom": "Commune de Develier",
-          "ville": null,
-          "canton": "JU",
-          "montant_CHF": 3072
-        },
-        {
-          "nom": "Bernex Ski Club",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 3000
-        },
-        {
-          "nom": "Ski Club de Lancy",
-          "ville": "Onex",
-          "canton": "GE",
-          "montant_CHF": 2700
-        },
-        {
-          "nom": "Assoc. Rando-ski Morgins",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 2400
-        },
-        {
-          "nom": "Ski-Club de Rougemont",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 2240
-        },
-        {
-          "nom": "Ski Club des Dents Vertes",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 2000
-        },
-        {
-          "nom": "Ski-Club de Siviriez",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 2000
-        },
-        {
-          "nom": "Ski-Club Riaz",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 2000
-        },
-        {
-          "nom": "Assoc. Romande de Ski",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1945
-        },
-        {
-          "nom": "Snow Ski Club Ajoulot",
-          "ville": null,
-          "canton": "JU",
-          "montant_CHF": 1850
-        },
-        {
-          "nom": "Fond. NLZ Ouest Brigue",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 1800
-        },
-        {
-          "nom": "Ski Club Saignelégier",
-          "ville": null,
-          "canton": "JU",
-          "montant_CHF": 1600
-        },
-        {
-          "nom": "Ski-Club Ovronnaz",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 1576
-        },
-        {
-          "nom": "Assoc. Vaudoise de Ski Nautique et de Wakeboard",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1500
-        },
-        {
-          "nom": "Ski-Club Villars",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1500
-        },
-        {
-          "nom": "Ski-Club Trient",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 1461
-        },
-        {
-          "nom": "Ski Club Onex",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 1400
-        },
-        {
-          "nom": "de Montricher Ski-Club de Rougemont",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1380
-        },
-        {
-          "nom": "Ski Evasion Genève",
-          "ville": "Conches",
-          "canton": "GE",
-          "montant_CHF": 1300
-        },
-        {
-          "nom": "CS Stella Alpina",
-          "ville": "Plan-les-Ouates",
-          "canton": "GE",
-          "montant_CHF": 1300
-        },
-        {
-          "nom": "Ski-Club Grône",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 1275
-        },
-        {
-          "nom": "ALSF",
-          "ville": "Châtelaine",
-          "canton": "GE",
-          "montant_CHF": 1100
-        },
-        {
-          "nom": "Club Ski Nautique",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1040
-        },
-        {
-          "nom": "Centre Nordique de Froideville",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Ski & Wake Lac de Joux",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Ski Club Goupils Alpes",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Ski Club Les Diablerets",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Ski Club UPA 10",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Ski-Club Vallée de Joux",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Championship Indoor 2025 Reitklub Buecha-Sense Oberland",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Ski-Club Plasselb",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Assoc. Rando-ski Morgins",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 900
-        },
-        {
-          "nom": "Achat starting block Ski Club Les Diablerets",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 860
-        },
-        {
-          "nom": "Ski Club de La Vue-des-Alpes",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 800
-        },
-        {
-          "nom": "Ski Club La Sagne de Neuchâtel Tour de Sagnard 2025",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 775
-        },
-        {
-          "nom": "Assoc. Romande de Ski",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 720
-        },
-        {
-          "nom": "Assoc. Romande de Ski",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 600
-        },
-        {
-          "nom": "Ski Club FMG Féd. Montagnarde",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 600
-        },
-        {
-          "nom": "Fond. NLZ Ouest Brigue",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 600
-        },
-        {
-          "nom": "Ski-Club Vallée de Joux",
-          "ville": "Polo Slalom SCVJ",
-          "canton": "VD",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Vaudoises Sté Sportive de Jouxtens de ski de fond Tchaffa",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Ski Club Les Diablerets",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Ski-Club de Rougemont",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Ski Club Saignelégier",
-          "ville": "Franches Nordiques",
-          "canton": "JU",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Ski Nautique Club Genève (SNCG)",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 400
-        },
-        {
-          "nom": "Fond. NLZ Ouest Brigue",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 300
-        },
-        {
-          "nom": "Giron Jurassien des sports",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 260
-        },
-        {
-          "nom": "Ski Club La Chaux-de-Fonds",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 240
-        },
-        {
-          "nom": "Achat matériel Ski Club Les Diablerets",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 190
-        },
-        {
-          "nom": "Achat mousses pour tapis Ski Nautique Club de Lausanne",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 95
-        }
-      ]
-    },
-    {
-      "name": "Basketball",
-      "count": 88,
-      "total_chf": 2039718,
-      "mean_chf": 23178,
-      "cantons": {
-        "VD": {
-          "count": 29,
-          "total_chf": 712068
+          "total_chf": 713568
         },
         "FR": {
           "count": 21,
           "total_chf": 564653
         },
         "VS": {
-          "count": 2,
-          "total_chf": 95397
+          "count": 3,
+          "total_chf": 96397
         },
         "NE": {
-          "count": 4,
-          "total_chf": 87500
+          "count": 6,
+          "total_chf": 92765
         },
         "GE": {
-          "count": 24,
-          "total_chf": 463850
+          "count": 25,
+          "total_chf": 464050
         },
         "JU": {
           "count": 2,
@@ -6402,6 +6480,12 @@
           "montant_CHF": 5000
         },
         {
+          "nom": "Badminton Club",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 5000
+        },
+        {
           "nom": "BC Swing",
           "ville": "Le Grand-Saconnex",
           "canton": "GE",
@@ -6498,6 +6582,12 @@
           "montant_CHF": 1500
         },
         {
+          "nom": "Badminton Club",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
           "nom": "BC Bulle",
           "ville": null,
           "canton": "FR",
@@ -6507,6 +6597,12 @@
           "nom": "Basketball Champions League - Outdoor lab",
           "ville": null,
           "canton": "FR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Badminton Club",
+          "ville": "Sion",
+          "canton": "VS",
           "montant_CHF": 1000
         },
         {
@@ -6520,6 +6616,12 @@
           "ville": null,
           "canton": "GE",
           "montant_CHF": 700
+        },
+        {
+          "nom": "Badminton Club",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 500
         },
         {
           "nom": "Swiss Basketball",
@@ -6556,6 +6658,18 @@
           "ville": null,
           "canton": "VD",
           "montant_CHF": 430
+        },
+        {
+          "nom": "Unihockey Club",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 265
+        },
+        {
+          "nom": "Batho Badminton Club Thônex",
+          "ville": "Puplinge",
+          "canton": "GE",
+          "montant_CHF": 200
         },
         {
           "nom": "Assoc. Fribourgeoise de Basket",
@@ -6781,9 +6895,9 @@
     },
     {
       "name": "Hockey sur glace",
-      "count": 88,
-      "total_chf": 1605681,
-      "mean_chf": 18246,
+      "count": 91,
+      "total_chf": 1723881,
+      "mean_chf": 18943,
       "cantons": {
         "VD": {
           "count": 16,
@@ -6802,8 +6916,8 @@
           "total_chf": 161135
         },
         "GE": {
-          "count": 17,
-          "total_chf": 250900
+          "count": 20,
+          "total_chf": 369100
         },
         "JU": {
           "count": 20,
@@ -6880,6 +6994,12 @@
           "montant_CHF": 67000
         },
         {
+          "nom": "Assoc. Cantonale Genevoise",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 54200
+        },
+        {
           "nom": "Interprofession du Gruyère",
           "ville": null,
           "canton": "FR",
@@ -6898,6 +7018,12 @@
           "montant_CHF": 37600
         },
         {
+          "nom": "Assoc. Cantonale Genevoise",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 36000
+        },
+        {
           "nom": "HC La Chaux-de-Fonds Academy",
           "ville": null,
           "canton": "NE",
@@ -6908,6 +7034,12 @@
           "ville": "Porrentruy",
           "canton": "JU",
           "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Cantonale Genevoise",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 28000
         },
         {
           "nom": "Trophée du St-Bernard 2024 Ice Hockey Valais Wallis",
@@ -7375,21 +7507,21 @@
     },
     {
       "name": "Tennis / Padel",
-      "count": 85,
-      "total_chf": 1438632,
-      "mean_chf": 16925,
+      "count": 89,
+      "total_chf": 1529489,
+      "mean_chf": 17185,
       "cantons": {
         "VD": {
-          "count": 30,
-          "total_chf": 356903
+          "count": 33,
+          "total_chf": 416563
         },
         "FR": {
           "count": 10,
           "total_chf": 204280
         },
         "VS": {
-          "count": 4,
-          "total_chf": 211509
+          "count": 5,
+          "total_chf": 242706
         },
         "NE": {
           "count": 6,
@@ -7504,6 +7636,12 @@
           "montant_CHF": 50000
         },
         {
+          "nom": "Commune d'Arnex-sur-Orbe",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 46100
+        },
+        {
           "nom": "Padel United Courtételle",
           "ville": null,
           "canton": "JU",
@@ -7520,6 +7658,12 @@
           "ville": "Refonte des courts site de Couvet",
           "canton": "NE",
           "montant_CHF": 32880
+        },
+        {
+          "nom": "Assoc. SwissPeaks",
+          "ville": "Torgon",
+          "canton": "VS",
+          "montant_CHF": 31197
         },
         {
           "nom": "Tennis Club Le Landeron",
@@ -7571,6 +7715,12 @@
         },
         {
           "nom": "Assoc. Team Lausanne Tennis",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "World Archery Excellence",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 10000
@@ -7682,6 +7832,12 @@
           "ville": "Petit-Lancy",
           "canton": "GE",
           "montant_CHF": 3600
+        },
+        {
+          "nom": "World Archery Excellence",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 3560
         },
         {
           "nom": "Tennis Club de la Seymaz",
@@ -8441,21 +8597,21 @@
     },
     {
       "name": "Athlétisme",
-      "count": 81,
-      "total_chf": 1106245,
-      "mean_chf": 13657,
+      "count": 82,
+      "total_chf": 1154847,
+      "mean_chf": 14083,
       "cantons": {
         "VD": {
-          "count": 29,
-          "total_chf": 373090
+          "count": 30,
+          "total_chf": 374090
         },
         "FR": {
-          "count": 4,
-          "total_chf": 96606
+          "count": 3,
+          "total_chf": 95550
         },
         "VS": {
-          "count": 10,
-          "total_chf": 162094
+          "count": 11,
+          "total_chf": 210752
         },
         "NE": {
           "count": 7,
@@ -8496,10 +8652,10 @@
           "montant_CHF": 77600
         },
         {
-          "nom": "Genève Marathon / 20km",
+          "nom": "Grand Raid",
           "ville": null,
-          "canton": "GE",
-          "montant_CHF": 41500
+          "canton": "VS",
+          "montant_CHF": 48658
         }
       ],
       "all_entries": [
@@ -8526,6 +8682,12 @@
           "ville": null,
           "canton": "GE",
           "montant_CHF": 77600
+        },
+        {
+          "nom": "Grand Raid",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 48658
         },
         {
           "nom": "Genève Marathon / 20km",
@@ -8834,16 +8996,16 @@
           "montant_CHF": 1090
         },
         {
-          "nom": "Féd. Fribourgeoise",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1056
-        },
-        {
           "nom": "Club d'athlétisme Fontenais",
           "ville": null,
           "canton": "JU",
           "montant_CHF": 1050
+        },
+        {
+          "nom": "Assoc. LG Trail",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1000
         },
         {
           "nom": "Stade-Lausanne Athlétisme",
@@ -9569,13 +9731,13 @@
     },
     {
       "name": "Équitation",
-      "count": 37,
-      "total_chf": 444203,
-      "mean_chf": 12005,
+      "count": 36,
+      "total_chf": 442703,
+      "mean_chf": 12297,
       "cantons": {
         "VD": {
-          "count": 15,
-          "total_chf": 197430
+          "count": 14,
+          "total_chf": 195930
         },
         "FR": {
           "count": 5,
@@ -9758,12 +9920,6 @@
           "montant_CHF": 1500
         },
         {
-          "nom": "Club Équestre",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1500
-        },
-        {
           "nom": "Verein Ice Climbing Saas-Fee",
           "ville": null,
           "canton": "VS",
@@ -9856,14 +10012,42 @@
       ]
     },
     {
-      "name": "Tir",
-      "count": 59,
-      "total_chf": 426643,
-      "mean_chf": 7231,
+      "name": "Aviation / Sports aériens",
+      "count": 1,
+      "total_chf": 420000,
+      "mean_chf": 420000,
       "cantons": {
         "VD": {
-          "count": 17,
-          "total_chf": 144785
+          "count": 1,
+          "total_chf": 420000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Cabane des Bossons de la Blécherette, Lausanne",
+          "ville": "Maison de Quartier Plateau",
+          "canton": "VD",
+          "montant_CHF": 420000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Cabane des Bossons de la Blécherette, Lausanne",
+          "ville": "Maison de Quartier Plateau",
+          "canton": "VD",
+          "montant_CHF": 420000
+        }
+      ]
+    },
+    {
+      "name": "Tir",
+      "count": 56,
+      "total_chf": 405438,
+      "mean_chf": 7239,
+      "cantons": {
+        "VD": {
+          "count": 13,
+          "total_chf": 123080
         },
         "FR": {
           "count": 10,
@@ -9874,8 +10058,8 @@
           "total_chf": 60643
         },
         "NE": {
-          "count": 4,
-          "total_chf": 16410
+          "count": 5,
+          "total_chf": 16910
         },
         "GE": {
           "count": 7,
@@ -9966,12 +10150,6 @@
           "montant_CHF": 14000
         },
         {
-          "nom": "Compagnie des Archers de Lausanne",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 10800
-        },
-        {
           "nom": "Assoc. vaudoise et valaisanne",
           "ville": null,
           "canton": "SR",
@@ -10000,12 +10178,6 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 7140
-        },
-        {
-          "nom": "Commune de Pully",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 6015
         },
         {
           "nom": "Arc Club Jussy - Tir à l'arc",
@@ -10050,12 +10222,6 @@
           "montant_CHF": 3100
         },
         {
-          "nom": "annexes - Acompte Commune de Pully",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 2830
-        },
-        {
           "nom": "Assoc. vaudoise et valaisanne",
           "ville": null,
           "canton": "SR",
@@ -10066,12 +10232,6 @@
           "ville": null,
           "canton": "GE",
           "montant_CHF": 2300
-        },
-        {
-          "nom": "Commune de Pully",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 2060
         },
         {
           "nom": "Silver-Star CTT",
@@ -10242,6 +10402,12 @@
           "montant_CHF": 500
         },
         {
+          "nom": "Les Compagnons de Sherwood",
+          "ville": "Le Locle",
+          "canton": "NE",
+          "montant_CHF": 500
+        },
+        {
           "nom": "Sté de tir Petit calibre et Pistolet",
           "ville": "FM",
           "canton": "JU",
@@ -10276,34 +10442,6 @@
           "ville": null,
           "canton": "JU",
           "montant_CHF": 200
-        }
-      ]
-    },
-    {
-      "name": "Aviation / Sports aériens",
-      "count": 1,
-      "total_chf": 420000,
-      "mean_chf": 420000,
-      "cantons": {
-        "VD": {
-          "count": 1,
-          "total_chf": 420000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Assoc. Cabane des Bossons de la Blécherette, Lausanne",
-          "ville": "Maison de Quartier Plateau",
-          "canton": "VD",
-          "montant_CHF": 420000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Assoc. Cabane des Bossons de la Blécherette, Lausanne",
-          "ville": "Maison de Quartier Plateau",
-          "canton": "VD",
-          "montant_CHF": 420000
         }
       ]
     },
@@ -11367,13 +11505,13 @@
     },
     {
       "name": "Hockey sur gazon",
-      "count": 9,
-      "total_chf": 177000,
-      "mean_chf": 19666,
+      "count": 11,
+      "total_chf": 197000,
+      "mean_chf": 17909,
       "cantons": {
         "VD": {
-          "count": 2,
-          "total_chf": 12800
+          "count": 4,
+          "total_chf": 32800
         },
         "GE": {
           "count": 7,
@@ -11454,6 +11592,18 @@
           "ville": null,
           "canton": "VD",
           "montant_CHF": 10900
+        },
+        {
+          "nom": "Assoc. Cantonale Vaudoise",
+          "ville": "Amis du Hockey",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Cantonale Vaudoise",
+          "ville": "Football",
+          "canton": "VD",
+          "montant_CHF": 10000
         },
         {
           "nom": "Urania Genève Sport Hockey",
@@ -11662,10 +11812,196 @@
       ]
     },
     {
+      "name": "Pétanque / Boules",
+      "count": 20,
+      "total_chf": 135425,
+      "mean_chf": 6771,
+      "cantons": {
+        "VD": {
+          "count": 8,
+          "total_chf": 82700
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 3330
+        },
+        "VS": {
+          "count": 3,
+          "total_chf": 41650
+        },
+        "NE": {
+          "count": 2,
+          "total_chf": 1445
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 1200
+        },
+        "JU": {
+          "count": 4,
+          "total_chf": 5100
+        }
+      },
+      "samples": [
+        {
+          "nom": "Pétanque de Bussigny",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. Rallye du Chablais",
+          "ville": "St. Maurice",
+          "canton": "VS",
+          "montant_CHF": 29190
+        },
+        {
+          "nom": "Assoc. Vaudoise de Pétanque",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 26200
+        },
+        {
+          "nom": "Assoc. cantonale valaisanne",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 10040
+        },
+        {
+          "nom": "Rallye du Chablais",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 10000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Pétanque de Bussigny",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. Rallye du Chablais",
+          "ville": "St. Maurice",
+          "canton": "VS",
+          "montant_CHF": 29190
+        },
+        {
+          "nom": "Assoc. Vaudoise de Pétanque",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 26200
+        },
+        {
+          "nom": "Assoc. cantonale valaisanne",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 10040
+        },
+        {
+          "nom": "Rallye du Chablais",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Cantonale Fribourgeoise",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 3330
+        },
+        {
+          "nom": "Rallye du Chablais",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Assoc. du Chablais",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 2420
+        },
+        {
+          "nom": "Club de pétanque le Béridier",
+          "ville": "Finale du Swiss Pétanque",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Club de Pétanque Ça Marche",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Club de pétanque Les Poissonnets",
+          "ville": "Vicques",
+          "canton": "JU",
+          "montant_CHF": 1200
+        },
+        {
+          "nom": "Boule Ferrée Vallée de Joux",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Assoc. jurassienne de pétanque",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 950
+        },
+        {
+          "nom": "Club de pétanque Le Béridier",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 950
+        },
+        {
+          "nom": "Club de pétanque La Bricole",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 945
+        },
+        {
+          "nom": "La Pétanque Genevoise",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 600
+        },
+        {
+          "nom": "Meyrin Pétanque et Longue",
+          "ville": "Plongée",
+          "canton": "GE",
+          "montant_CHF": 600
+        },
+        {
+          "nom": "Pétanque de Clarens",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Pétanque Les Narcisse",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Club de pétanque La Bricole",
+          "ville": "Colombier",
+          "canton": "NE",
+          "montant_CHF": 500
+        }
+      ]
+    },
+    {
       "name": "Course d'orientation",
-      "count": 16,
-      "total_chf": 131615,
-      "mean_chf": 8225,
+      "count": 17,
+      "total_chf": 132620,
+      "mean_chf": 7801,
       "cantons": {
         "VD": {
           "count": 8,
@@ -11674,6 +12010,10 @@
         "FR": {
           "count": 2,
           "total_chf": 7430
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 1005
         },
         "NE": {
           "count": 5,
@@ -11770,6 +12110,12 @@
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1610
+        },
+        {
+          "nom": "Féd. Cycliste valaisanne",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 1005
         },
         {
           "nom": "Club de Course d'Orientation",
@@ -11984,388 +12330,10 @@
       ]
     },
     {
-      "name": "Pétanque / Boules",
-      "count": 17,
-      "total_chf": 92360,
-      "mean_chf": 5432,
-      "cantons": {
-        "VD": {
-          "count": 6,
-          "total_chf": 69700
-        },
-        "FR": {
-          "count": 2,
-          "total_chf": 4875
-        },
-        "VS": {
-          "count": 1,
-          "total_chf": 10040
-        },
-        "NE": {
-          "count": 2,
-          "total_chf": 1445
-        },
-        "GE": {
-          "count": 2,
-          "total_chf": 1200
-        },
-        "JU": {
-          "count": 4,
-          "total_chf": 5100
-        }
-      },
-      "samples": [
-        {
-          "nom": "Pétanque de Bussigny",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "Assoc. Vaudoise de Pétanque",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 26200
-        },
-        {
-          "nom": "Assoc. cantonale valaisanne",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 10040
-        },
-        {
-          "nom": "Assoc. Cantonale Fribourgeoise",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 3330
-        },
-        {
-          "nom": "Club de pétanque le Béridier",
-          "ville": "Finale du Swiss Pétanque",
-          "canton": "JU",
-          "montant_CHF": 2000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Pétanque de Bussigny",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "Assoc. Vaudoise de Pétanque",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 26200
-        },
-        {
-          "nom": "Assoc. cantonale valaisanne",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 10040
-        },
-        {
-          "nom": "Assoc. Cantonale Fribourgeoise",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 3330
-        },
-        {
-          "nom": "Club de pétanque le Béridier",
-          "ville": "Finale du Swiss Pétanque",
-          "canton": "JU",
-          "montant_CHF": 2000
-        },
-        {
-          "nom": "Assoc. Fribourgeoise",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1545
-        },
-        {
-          "nom": "Club de Pétanque Ça Marche",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1500
-        },
-        {
-          "nom": "Club de pétanque Les Poissonnets",
-          "ville": "Vicques",
-          "canton": "JU",
-          "montant_CHF": 1200
-        },
-        {
-          "nom": "Boule Ferrée Vallée de Joux",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Assoc. jurassienne de pétanque",
-          "ville": null,
-          "canton": "JU",
-          "montant_CHF": 950
-        },
-        {
-          "nom": "Club de pétanque Le Béridier",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 950
-        },
-        {
-          "nom": "Club de pétanque La Bricole",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 945
-        },
-        {
-          "nom": "La Pétanque Genevoise",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 600
-        },
-        {
-          "nom": "Meyrin Pétanque et Longue",
-          "ville": "Plongée",
-          "canton": "GE",
-          "montant_CHF": 600
-        },
-        {
-          "nom": "Pétanque de Clarens",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Pétanque Les Narcisse",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Club de pétanque La Bricole",
-          "ville": "Colombier",
-          "canton": "NE",
-          "montant_CHF": 500
-        }
-      ]
-    },
-    {
-      "name": "Lutte suisse",
-      "count": 24,
-      "total_chf": 85665,
-      "mean_chf": 3569,
-      "cantons": {
-        "VD": {
-          "count": 5,
-          "total_chf": 26775
-        },
-        "FR": {
-          "count": 5,
-          "total_chf": 11730
-        },
-        "VS": {
-          "count": 1,
-          "total_chf": 8470
-        },
-        "NE": {
-          "count": 5,
-          "total_chf": 31350
-        },
-        "GE": {
-          "count": 1,
-          "total_chf": 1800
-        },
-        "SR": {
-          "count": 7,
-          "total_chf": 5540
-        }
-      },
-      "samples": [
-        {
-          "nom": "Assoc. NeuchAventure",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Assoc. Cantonale Vaudoise",
-          "ville": "Amis du Hockey",
-          "canton": "VD",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Assoc. Cantonale Vaudoise",
-          "ville": "Football",
-          "canton": "VD",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Assoc. valaisanne de lutte suisse",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 8470
-        },
-        {
-          "nom": "Assoc. fribourgeoise de lutte",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 5730
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Assoc. NeuchAventure",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Assoc. Cantonale Vaudoise",
-          "ville": "Amis du Hockey",
-          "canton": "VD",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Assoc. Cantonale Vaudoise",
-          "ville": "Football",
-          "canton": "VD",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Assoc. valaisanne de lutte suisse",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 8470
-        },
-        {
-          "nom": "Assoc. fribourgeoise de lutte",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 5730
-        },
-        {
-          "nom": "Assoc. Cantonale Vaudoise de Lutte Suisse",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 3900
-        },
-        {
-          "nom": "Assoc. Cantonale Neuchâteloise",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 2600
-        },
-        {
-          "nom": "Club des lutteurs Veveyse",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 2000
-        },
-        {
-          "nom": "Club des Lutteurs du Vignoble",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 1860
-        },
-        {
-          "nom": "Assoc. Cantonale Genevoise",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 1800
-        },
-        {
-          "nom": "Club des Lutteurs du Vignoble",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 1685
-        },
-        {
-          "nom": "Club des Lutteurs de Lausanne",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1500
-        },
-        {
-          "nom": "Club des lutteurs de Cottens",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1500
-        },
-        {
-          "nom": "Club des lutteurs de Fribourg",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1500
-        },
-        {
-          "nom": "Raid Neuchaventure",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 1390
-        },
-        {
-          "nom": "Assoc. Cantonale Vaudoise de Lutte Suisse",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 1375
-        },
-        {
-          "nom": "Club des Lutteurs du Vignoble",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 1190
-        },
-        {
-          "nom": "Schwingklub Sense",
-          "ville": "Südwestschweizer",
-          "canton": "FR",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Club des Lutteurs du Vignoble",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 925
-        },
-        {
-          "nom": "Club des lutteurs du Vignoble",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 650
-        },
-        {
-          "nom": "Fête Romande de Lutte Suisse",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 540
-        },
-        {
-          "nom": "140e Fête Romande Raid Neuchaventure",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Club des Lutteurs du Vignoble",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 400
-        },
-        {
-          "nom": "Club des Lutteurs du Vignoble",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 150
-        }
-      ]
-    },
-    {
       "name": "Tennis de table",
-      "count": 20,
-      "total_chf": 81180,
-      "mean_chf": 4059,
+      "count": 21,
+      "total_chf": 82780,
+      "mean_chf": 3941,
       "cantons": {
         "VD": {
           "count": 6,
@@ -12380,8 +12348,8 @@
           "total_chf": 10100
         },
         "GE": {
-          "count": 10,
-          "total_chf": 22350
+          "count": 11,
+          "total_chf": 23950
         }
       },
       "samples": [
@@ -12482,6 +12450,12 @@
           "ville": null,
           "canton": "GE",
           "montant_CHF": 1700
+        },
+        {
+          "nom": "Carouge TTC",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1600
         },
         {
           "nom": "Club de Tennis de table Veyrier",
@@ -12848,6 +12822,210 @@
           "ville": null,
           "canton": "NE",
           "montant_CHF": 500
+        }
+      ]
+    },
+    {
+      "name": "Lutte suisse",
+      "count": 23,
+      "total_chf": 67165,
+      "mean_chf": 2920,
+      "cantons": {
+        "VD": {
+          "count": 4,
+          "total_chf": 8275
+        },
+        "FR": {
+          "count": 5,
+          "total_chf": 11730
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 8470
+        },
+        "NE": {
+          "count": 5,
+          "total_chf": 31350
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 1800
+        },
+        "SR": {
+          "count": 7,
+          "total_chf": 5540
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. NeuchAventure",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. valaisanne de lutte suisse",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 8470
+        },
+        {
+          "nom": "Assoc. fribourgeoise de lutte",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 5730
+        },
+        {
+          "nom": "Assoc. Cantonale Vaudoise de Lutte Suisse",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 3900
+        },
+        {
+          "nom": "Assoc. Cantonale Neuchâteloise",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 2600
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. NeuchAventure",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. valaisanne de lutte suisse",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 8470
+        },
+        {
+          "nom": "Assoc. fribourgeoise de lutte",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 5730
+        },
+        {
+          "nom": "Assoc. Cantonale Vaudoise de Lutte Suisse",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 3900
+        },
+        {
+          "nom": "Assoc. Cantonale Neuchâteloise",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 2600
+        },
+        {
+          "nom": "Club des lutteurs Veveyse",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Club des Lutteurs du Vignoble",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 1860
+        },
+        {
+          "nom": "Assoc. Cantonale Genevoise",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1800
+        },
+        {
+          "nom": "Club des Lutteurs du Vignoble",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1685
+        },
+        {
+          "nom": "Club des Lutteurs de Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Club Équestre",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Club des lutteurs de Cottens",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Club des lutteurs de Fribourg",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Raid Neuchaventure",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 1390
+        },
+        {
+          "nom": "Assoc. Cantonale Vaudoise de Lutte Suisse",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1375
+        },
+        {
+          "nom": "Club des Lutteurs du Vignoble",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1190
+        },
+        {
+          "nom": "Schwingklub Sense",
+          "ville": "Südwestschweizer",
+          "canton": "FR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Club des Lutteurs du Vignoble",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 925
+        },
+        {
+          "nom": "Club des lutteurs du Vignoble",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 650
+        },
+        {
+          "nom": "Fête Romande de Lutte Suisse",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 540
+        },
+        {
+          "nom": "140e Fête Romande Raid Neuchaventure",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Club des Lutteurs du Vignoble",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 400
+        },
+        {
+          "nom": "Club des Lutteurs du Vignoble",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 150
         }
       ]
     },

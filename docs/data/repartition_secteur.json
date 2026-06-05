@@ -61,11 +61,15 @@
   },
   "Sport": {
     "2013": 34334787.0,
+    "2014": 34309498,
     "2015": 34284209.0,
     "2016": 35500584.0,
     "2017": 35440433.0,
     "2018": 35507503.0,
     "2019": 36838440.0,
+    "2020": 37124077,
+    "2021": 37409714,
+    "2022": 37695351,
     "2023": 37980988.0,
     "2024": 37788655.0,
     "2025": 41977691.0
@@ -129,5 +133,18 @@
     "2023": 8729413.0,
     "2024": 3131345.0,
     "2025": 7070114.0
+  },
+  "_meta": {
+    "sport_estimates": {
+      "description": "Valeurs Sport manquantes du PDF source — comblées par interpolation linéaire entre années connues",
+      "method": "2014 : moyenne 2013/2015. 2020-2022 : interpolation linéaire 2019→2023.",
+      "estimated_years": {
+        "2014": 34309498,
+        "2020": 37124077,
+        "2021": 37409714,
+        "2022": 37695351
+      },
+      "note": "Cohérent avec : 19,5 M sport national LoRo 2022 (Swiss Olympic) + ~18 M sport amateur cantonal ≈ 37,7 M total."
+    }
   }
 }

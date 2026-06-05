@@ -5,31 +5,31 @@
     "source": "brb2025_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 363,
-    "total_chf": 24073099,
-    "precise_classified_entries": 127,
-    "precise_classified_chf": 14350188,
-    "pct_chf_precisely_classified": 59.6,
+    "total_entries": 357,
+    "total_chf": 23760833,
+    "precise_classified_entries": 124,
+    "precise_classified_chf": 14068922,
+    "pct_chf_precisely_classified": 59.2,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 363,
-    "total_chf_classified": 24073099,
-    "catchall_chf": 9722911,
-    "cross_year_recovered": 44
+    "total_entries_classified": 357,
+    "total_chf_classified": 23760833,
+    "catchall_chf": 9691911,
+    "cross_year_recovered": 67
   },
   "categories": [
     {
       "name": "Soutien général à l'action sociale",
-      "count": 236,
-      "total_chf": 9722911,
-      "mean_chf": 41198,
+      "count": 233,
+      "total_chf": 9691911,
+      "mean_chf": 41596,
       "cantons": {
         "VD": {
           "count": 46,
           "total_chf": 2231051
         },
         "FR": {
-          "count": 23,
-          "total_chf": 1327000
+          "count": 22,
+          "total_chf": 1324000
         },
         "VS": {
           "count": 47,
@@ -40,12 +40,12 @@
           "total_chf": 349900
         },
         "GE": {
-          "count": 73,
-          "total_chf": 2859190
+          "count": 72,
+          "total_chf": 2834190
         },
         "JU": {
-          "count": 9,
-          "total_chf": 104400
+          "count": 8,
+          "total_chf": 101400
         },
         "SR": {
           "count": 10,
@@ -752,12 +752,6 @@
           "montant_CHF": 25000
         },
         {
-          "nom": "Centre de Liaison",
-          "ville": "Associations féminines",
-          "canton": "GE",
-          "montant_CHF": 25000
-        },
-        {
           "nom": "Féd. genevoise de coopération",
           "ville": "Genève",
           "canton": "GE",
@@ -1284,22 +1278,28 @@
           "ville": null,
           "canton": "NE",
           "montant_CHF": 5000
+        },
+        {
+          "nom": "Noël autrement",
+          "ville": "Peseux",
+          "canton": "NE",
+          "montant_CHF": 5000
         }
       ]
     },
     {
       "name": "Précarité / Pauvreté",
-      "count": 34,
-      "total_chf": 7309080,
-      "mean_chf": 214972,
+      "count": 35,
+      "total_chf": 7499080,
+      "mean_chf": 214259,
       "cantons": {
         "VD": {
           "count": 8,
           "total_chf": 3664018
         },
         "FR": {
-          "count": 12,
-          "total_chf": 1573062
+          "count": 13,
+          "total_chf": 1763062
         },
         "VS": {
           "count": 1,
@@ -1402,6 +1402,12 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 226000
+        },
+        {
+          "nom": "du surendettement LivrEchange bibliothèque",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 190000
         },
         {
           "nom": "Caritas service gestion de dettes",
@@ -1563,21 +1569,21 @@
     },
     {
       "name": "Personnes âgées",
-      "count": 31,
-      "total_chf": 2286244,
-      "mean_chf": 73749,
+      "count": 24,
+      "total_chf": 1783978,
+      "mean_chf": 74332,
       "cantons": {
         "VD": {
-          "count": 6,
-          "total_chf": 653052
+          "count": 5,
+          "total_chf": 619052
         },
         "FR": {
           "count": 4,
           "total_chf": 457000
         },
         "VS": {
-          "count": 10,
-          "total_chf": 721266
+          "count": 4,
+          "total_chf": 253000
         },
         "NE": {
           "count": 3,
@@ -1618,10 +1624,10 @@
           "montant_CHF": 200000
         },
         {
-          "nom": "Groupement valaisan",
+          "nom": "Fond. Pro Senectute Valais",
           "ville": null,
           "canton": "VS",
-          "montant_CHF": 196266
+          "montant_CHF": 125000
         }
       ],
       "all_entries": [
@@ -1650,28 +1656,10 @@
           "montant_CHF": 200000
         },
         {
-          "nom": "Groupement valaisan",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 196266
-        },
-        {
           "nom": "Fond. Pro Senectute Valais",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 125000
-        },
-        {
-          "nom": "EMS Riond-Vert, Vouvry",
-          "ville": "Sierre",
-          "canton": "VS",
-          "montant_CHF": 86000
-        },
-        {
-          "nom": "EMS St-François, Sion",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 76000
         },
         {
           "nom": "Home médicalisé Les Arbres",
@@ -1710,40 +1698,16 @@
           "montant_CHF": 55000
         },
         {
-          "nom": "EMS Les Vergers, Aproz",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 49000
-        },
-        {
           "nom": "Sté des Amis du MAHF",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 36500
         },
         {
-          "nom": "Activité Fond. Cogest'ems",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 34000
-        },
-        {
-          "nom": "EMS Résidence Jean-Paul",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 34000
-        },
-        {
           "nom": "Contact-Seniors",
           "ville": "Carouge",
           "canton": "GE",
           "montant_CHF": 30000
-        },
-        {
-          "nom": "EMS La Charmaie",
-          "ville": "Chamoson",
-          "canton": "VS",
-          "montant_CHF": 27000
         },
         {
           "nom": "Pro Senectute Arc Jurassien",
@@ -1906,8 +1870,8 @@
     {
       "name": "Migration / Intégration",
       "count": 23,
-      "total_chf": 1083700,
-      "mean_chf": 47117,
+      "total_chf": 1073700,
+      "mean_chf": 46682,
       "cantons": {
         "VD": {
           "count": 2,
@@ -1927,7 +1891,7 @@
         },
         "GE": {
           "count": 9,
-          "total_chf": 248000
+          "total_chf": 238000
         },
         "JU": {
           "count": 1,
@@ -2014,12 +1978,6 @@
           "montant_CHF": 60000
         },
         {
-          "nom": "Assoc. Découvrir",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 35000
-        },
-        {
           "nom": "Coopérative SucréSalé",
           "ville": "Bulle",
           "canton": "FR",
@@ -2041,6 +1999,12 @@
           "nom": "Assoc. ParMi-Fribourg soutien",
           "ville": null,
           "canton": "FR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Centre de Liaison",
+          "ville": "Associations féminines",
+          "canton": "GE",
           "montant_CHF": 25000
         },
         {
@@ -2113,9 +2077,9 @@
     },
     {
       "name": "Familles / Parentalité",
-      "count": 17,
-      "total_chf": 837550,
-      "mean_chf": 49267,
+      "count": 18,
+      "total_chf": 840550,
+      "mean_chf": 46697,
       "cantons": {
         "VD": {
           "count": 3,
@@ -2132,6 +2096,10 @@
         "GE": {
           "count": 3,
           "total_chf": 100000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 3000
         },
         "SR": {
           "count": 3,
@@ -2268,6 +2236,12 @@
           "montant_CHF": 5000
         },
         {
+          "nom": "Fond. Maison d'accueil",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 3000
+        },
+        {
           "nom": "Journée des familles gruériennes",
           "ville": "Vuadens",
           "canton": "FR",
@@ -2277,17 +2251,17 @@
     },
     {
       "name": "Égalité / Femmes / LGBT",
-      "count": 2,
-      "total_chf": 648500,
-      "mean_chf": 324250,
+      "count": 3,
+      "total_chf": 683500,
+      "mean_chf": 227833,
       "cantons": {
         "VD": {
           "count": 1,
           "total_chf": 640000
         },
         "GE": {
-          "count": 1,
-          "total_chf": 8500
+          "count": 2,
+          "total_chf": 43500
         }
       },
       "samples": [
@@ -2296,6 +2270,12 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 640000
+        },
+        {
+          "nom": "Assoc. Découvrir",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 35000
         },
         {
           "nom": "Assoc. Apparatus",
@@ -2310,6 +2290,12 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 640000
+        },
+        {
+          "nom": "Assoc. Découvrir",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 35000
         },
         {
           "nom": "Assoc. Apparatus",
@@ -2542,6 +2528,34 @@
           "ville": "Villeneuve",
           "canton": "VD",
           "montant_CHF": 6000
+        }
+      ]
+    },
+    {
+      "name": "Maladies / Soins spécifiques",
+      "count": 1,
+      "total_chf": 3000,
+      "mean_chf": 3000,
+      "cantons": {
+        "FR": {
+          "count": 1,
+          "total_chf": 3000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Verein Spitex Sense",
+          "ville": "Tafers",
+          "canton": "FR",
+          "montant_CHF": 3000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Verein Spitex Sense",
+          "ville": "Tafers",
+          "canton": "FR",
+          "montant_CHF": 3000
         }
       ]
     }

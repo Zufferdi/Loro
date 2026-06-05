@@ -5,40 +5,40 @@
     "source": "brb2025_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 113,
-    "total_chf": 10685528,
+    "total_entries": 120,
+    "total_chf": 11187794,
     "precise_classified_entries": 60,
     "precise_classified_chf": 6868028,
-    "pct_chf_precisely_classified": 64.3,
+    "pct_chf_precisely_classified": 61.4,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 113,
-    "total_chf_classified": 10685528,
-    "catchall_chf": 3817500,
-    "cross_year_recovered": 10,
+    "total_entries_classified": 120,
+    "total_chf_classified": 11187794,
+    "catchall_chf": 4319766,
+    "cross_year_recovered": 12,
     "sector": "Santé et handicap",
     "sector_slug": "sante",
-    "total_entries_sector": 113,
-    "total_chf_sector": 10685528,
+    "total_entries_sector": 120,
+    "total_chf_sector": 11187794,
     "pct_entries_classified": 100.0
   },
   "categories": [
     {
       "name": "Soutien général à la santé / handicap",
-      "count": 53,
-      "total_chf": 3817500,
-      "mean_chf": 72028,
+      "count": 60,
+      "total_chf": 4319766,
+      "mean_chf": 71996,
       "cantons": {
         "VD": {
-          "count": 12,
-          "total_chf": 2867000
+          "count": 13,
+          "total_chf": 2901000
         },
         "FR": {
           "count": 7,
           "total_chf": 157000
         },
         "VS": {
-          "count": 17,
-          "total_chf": 324000
+          "count": 23,
+          "total_chf": 792266
         },
         "NE": {
           "count": 5,
@@ -83,10 +83,10 @@
           "montant_CHF": 300000
         },
         {
-          "nom": "Fond. Marie-Eléonore d'Olcah",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 150000
+          "nom": "Groupement valaisan",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 196266
         }
       ],
       "all_entries": [
@@ -113,6 +113,12 @@
           "ville": null,
           "canton": "VD",
           "montant_CHF": 300000
+        },
+        {
+          "nom": "Groupement valaisan",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 196266
         },
         {
           "nom": "Fond. Marie-Eléonore d'Olcah",
@@ -145,10 +151,22 @@
           "montant_CHF": 100000
         },
         {
+          "nom": "EMS Riond-Vert, Vouvry",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 86000
+        },
+        {
           "nom": "Fond. Les Perce-Neige",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 80000
+        },
+        {
+          "nom": "EMS St-François, Sion",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 76000
         },
         {
           "nom": "Féd. Cantonale Vaudoise",
@@ -181,6 +199,12 @@
           "montant_CHF": 50000
         },
         {
+          "nom": "EMS Les Vergers, Aproz",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 49000
+        },
+        {
           "nom": "Fond. valaisanne en Faveur des Personnes Handicapées Mentales FOVAHM",
           "ville": "Sion",
           "canton": "VS",
@@ -211,6 +235,18 @@
           "montant_CHF": 35000
         },
         {
+          "nom": "Activité Fond. Cogest'ems",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 34000
+        },
+        {
+          "nom": "EMS Résidence Jean-Paul",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 34000
+        },
+        {
           "nom": "Verein home treatment Freiburg",
           "ville": "Murten",
           "canton": "FR",
@@ -227,6 +263,12 @@
           "ville": "Lucerne",
           "canton": "SR",
           "montant_CHF": 30000
+        },
+        {
+          "nom": "EMS La Charmaie",
+          "ville": "Chamoson",
+          "canton": "VS",
+          "montant_CHF": 27000
         },
         {
           "nom": "Féd. valaisanne des Centres",
@@ -412,9 +454,9 @@
     },
     {
       "name": "Aide & assistance médicale",
-      "count": 13,
-      "total_chf": 3251128,
-      "mean_chf": 250086,
+      "count": 12,
+      "total_chf": 3231128,
+      "mean_chf": 269260,
       "cantons": {
         "VD": {
           "count": 5,
@@ -435,10 +477,6 @@
         "JU": {
           "count": 2,
           "total_chf": 14000
-        },
-        "SR": {
-          "count": 1,
-          "total_chf": 20000
         }
       },
       "samples": [
@@ -515,12 +553,6 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 142000
-        },
-        {
-          "nom": "Assoc. Suisse",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 20000
         },
         {
           "nom": "Croix-Rouge suisse",
@@ -865,6 +897,78 @@
       ]
     },
     {
+      "name": "Santé mentale & psychiatrie",
+      "count": 4,
+      "total_chf": 323000,
+      "mean_chf": 80750,
+      "cantons": {
+        "FR": {
+          "count": 1,
+          "total_chf": 240000
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 63000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 20000
+        }
+      },
+      "samples": [
+        {
+          "nom": "AFAAP",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 240000
+        },
+        {
+          "nom": "Des clés pour sa santé mentale : Fond. pour les Enfants",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Pairencia, Accompagnement Fond. Save a Life",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 28000
+        },
+        {
+          "nom": "Assoc. Suisse",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 20000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "AFAAP",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 240000
+        },
+        {
+          "nom": "Des clés pour sa santé mentale : Fond. pour les Enfants",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Pairencia, Accompagnement Fond. Save a Life",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 28000
+        },
+        {
+          "nom": "Assoc. Suisse",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 20000
+        }
+      ]
+    },
+    {
       "name": "Diabète & maladies chroniques",
       "count": 5,
       "total_chf": 315000,
@@ -949,62 +1053,6 @@
           "ville": "Senèdes",
           "canton": "FR",
           "montant_CHF": 5000
-        }
-      ]
-    },
-    {
-      "name": "Santé mentale & psychiatrie",
-      "count": 3,
-      "total_chf": 303000,
-      "mean_chf": 101000,
-      "cantons": {
-        "FR": {
-          "count": 1,
-          "total_chf": 240000
-        },
-        "GE": {
-          "count": 2,
-          "total_chf": 63000
-        }
-      },
-      "samples": [
-        {
-          "nom": "AFAAP",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 240000
-        },
-        {
-          "nom": "Des clés pour sa santé mentale : Fond. pour les Enfants",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 35000
-        },
-        {
-          "nom": "Pairencia, Accompagnement Fond. Save a Life",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 28000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "AFAAP",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 240000
-        },
-        {
-          "nom": "Des clés pour sa santé mentale : Fond. pour les Enfants",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 35000
-        },
-        {
-          "nom": "Pairencia, Accompagnement Fond. Save a Life",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 28000
         }
       ]
     },

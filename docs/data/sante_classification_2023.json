@@ -5,104 +5,48 @@
     "source": "brb2023_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 176,
-    "total_chf": 18824754,
-    "precise_classified_entries": 91,
-    "precise_classified_chf": 14189724,
-    "pct_chf_precisely_classified": 75.4,
+    "total_entries": 186,
+    "total_chf": 19785754,
+    "precise_classified_entries": 94,
+    "precise_classified_chf": 14524724,
+    "pct_chf_precisely_classified": 73.4,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 176,
-    "total_chf_classified": 18824754,
-    "catchall_chf": 4635030,
-    "cross_year_recovered": 10,
+    "total_entries_classified": 186,
+    "total_chf_classified": 19785754,
+    "catchall_chf": 5261030,
+    "cross_year_recovered": 12,
     "sector": "Santé et handicap",
     "sector_slug": "sante",
-    "total_entries_sector": 176,
-    "total_chf_sector": 18824754,
+    "total_entries_sector": 186,
+    "total_chf_sector": 19785754,
     "pct_entries_classified": 100.0
   },
   "categories": [
     {
-      "name": "Handicap mental / intellectuel",
-      "count": 3,
-      "total_chf": 4710000,
-      "mean_chf": 1570000,
-      "cantons": {
-        "VD": {
-          "count": 2,
-          "total_chf": 1010000
-        },
-        "GE": {
-          "count": 1,
-          "total_chf": 3700000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Établissements publics pour l'intégration EPI",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 3700000
-        },
-        {
-          "nom": "Assoc. Intervalle",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 1000000
-        },
-        {
-          "nom": "Assoc. Intervalle",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 10000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Établissements publics pour l'intégration EPI",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 3700000
-        },
-        {
-          "nom": "Assoc. Intervalle",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 1000000
-        },
-        {
-          "nom": "Assoc. Intervalle",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 10000
-        }
-      ]
-    },
-    {
       "name": "Soutien général à la santé / handicap",
-      "count": 85,
-      "total_chf": 4635030,
-      "mean_chf": 54529,
+      "count": 92,
+      "total_chf": 5261030,
+      "mean_chf": 57185,
       "cantons": {
         "VD": {
-          "count": 25,
-          "total_chf": 1614180
+          "count": 27,
+          "total_chf": 1987180
         },
         "SR": {
-          "count": 10,
-          "total_chf": 547750
+          "count": 11,
+          "total_chf": 581750
         },
         "GE": {
-          "count": 19,
-          "total_chf": 1083700
+          "count": 18,
+          "total_chf": 1023700
         },
         "FR": {
           "count": 7,
           "total_chf": 120400
         },
         "VS": {
-          "count": 17,
-          "total_chf": 1033000
+          "count": 22,
+          "total_chf": 1312000
         },
         "JU": {
           "count": 6,
@@ -127,6 +71,12 @@
           "montant_CHF": 430000
         },
         {
+          "nom": "Institut universitaire de sciences sociales des religions, Conseil œcuménique d’aumônerie en EMS (CADEMS) et Haute École de Santé Vaud (HESAV)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 350000
+        },
+        {
           "nom": "AFIRO",
           "ville": "Ecublens",
           "canton": "VD",
@@ -136,12 +86,6 @@
           "nom": "Fond. Jeanne Kunkler",
           "ville": "Villariaz",
           "canton": "SR",
-          "montant_CHF": 200000
-        },
-        {
-          "nom": "Fond. Perceval",
-          "ville": "St-Prex",
-          "canton": "VD",
           "montant_CHF": 200000
         }
       ],
@@ -157,6 +101,12 @@
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 430000
+        },
+        {
+          "nom": "Institut universitaire de sciences sociales des religions, Conseil œcuménique d’aumônerie en EMS (CADEMS) et Haute École de Santé Vaud (HESAV)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 350000
         },
         {
           "nom": "AFIRO",
@@ -231,6 +181,12 @@
           "montant_CHF": 85000
         },
         {
+          "nom": "EMS St-François",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 83000
+        },
+        {
           "nom": "Fond. Valaisanne en Faveur des Personnes Handicapées Mentales",
           "ville": "Sion",
           "canton": "VS",
@@ -273,6 +229,18 @@
           "montant_CHF": 65000
         },
         {
+          "nom": "EMS Le Christ Roi",
+          "ville": "Crans- Montana",
+          "canton": "VS",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "EMS Riond-Vert",
+          "ville": "Vouvry",
+          "canton": "VS",
+          "montant_CHF": 61000
+        },
+        {
           "nom": "Fond. As'trame",
           "ville": "Lausanne",
           "canton": "VD",
@@ -282,12 +250,6 @@
           "nom": "Fond. Les Oliviers",
           "ville": "Le Mont-sur-Lausanne",
           "canton": "VD",
-          "montant_CHF": 60000
-        },
-        {
-          "nom": "Assoc. Courir...ensemble",
-          "ville": "Athenaz (Avusy)",
-          "canton": "GE",
           "montant_CHF": 60000
         },
         {
@@ -333,6 +295,12 @@
           "montant_CHF": 50000
         },
         {
+          "nom": "EMS Les Vergers",
+          "ville": "Aproz",
+          "canton": "VS",
+          "montant_CHF": 42000
+        },
+        {
           "nom": "Assoc. S5",
           "ville": "Genève",
           "canton": "GE",
@@ -343,6 +311,12 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 35000
+        },
+        {
+          "nom": "EMS La Charmaie",
+          "ville": "Collombey- Muraz",
+          "canton": "SR",
+          "montant_CHF": 34000
         },
         {
           "nom": "Fishing Battle Association",
@@ -387,6 +361,12 @@
           "montant_CHF": 30000
         },
         {
+          "nom": "EMS Résidence Jean-Paul",
+          "ville": "Riddes",
+          "canton": "VS",
+          "montant_CHF": 28000
+        },
+        {
           "nom": "noetic",
           "ville": "Fribourg",
           "canton": "FR",
@@ -403,6 +383,12 @@
           "ville": "Granges",
           "canton": "VS",
           "montant_CHF": 24000
+        },
+        {
+          "nom": "EMS Cottier Boys",
+          "ville": "Orny",
+          "canton": "VD",
+          "montant_CHF": 23000
         },
         {
           "nom": "Handicap Solidarité",
@@ -660,9 +646,9 @@
     },
     {
       "name": "Aide & assistance médicale",
-      "count": 29,
-      "total_chf": 4608695,
-      "mean_chf": 158920,
+      "count": 30,
+      "total_chf": 4863695,
+      "mean_chf": 162123,
       "cantons": {
         "VD": {
           "count": 17,
@@ -677,8 +663,8 @@
           "total_chf": 248000
         },
         "GE": {
-          "count": 3,
-          "total_chf": 1635000
+          "count": 4,
+          "total_chf": 1890000
         },
         "VS": {
           "count": 3,
@@ -709,16 +695,16 @@
           "montant_CHF": 400000
         },
         {
+          "nom": "Musée international de la Croix-Rouge et du Croissant- Rouge",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 255000
+        },
+        {
           "nom": "La Croix-Rouge fribourgeoise",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 248000
-        },
-        {
-          "nom": "Centre hospitalier universitaire vaudois (CHUV)",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 229680
         }
       ],
       "all_entries": [
@@ -739,6 +725,12 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 400000
+        },
+        {
+          "nom": "Musée international de la Croix-Rouge et du Croissant- Rouge",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 255000
         },
         {
           "nom": "La Croix-Rouge fribourgeoise",
@@ -895,6 +887,62 @@
           "ville": "Berne",
           "canton": "JU",
           "montant_CHF": 2000
+        }
+      ]
+    },
+    {
+      "name": "Handicap mental / intellectuel",
+      "count": 3,
+      "total_chf": 4710000,
+      "mean_chf": 1570000,
+      "cantons": {
+        "VD": {
+          "count": 2,
+          "total_chf": 1010000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 3700000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Établissements publics pour l'intégration EPI",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 3700000
+        },
+        {
+          "nom": "Assoc. Intervalle",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Assoc. Intervalle",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 10000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Établissements publics pour l'intégration EPI",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 3700000
+        },
+        {
+          "nom": "Assoc. Intervalle",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Assoc. Intervalle",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 10000
         }
       ]
     },
@@ -1102,17 +1150,17 @@
     },
     {
       "name": "Handicap physique / fauteuil",
-      "count": 10,
-      "total_chf": 813018,
-      "mean_chf": 81301,
+      "count": 11,
+      "total_chf": 833018,
+      "mean_chf": 75728,
       "cantons": {
         "VD": {
           "count": 2,
           "total_chf": 311000
         },
         "FR": {
-          "count": 3,
-          "total_chf": 224618
+          "count": 4,
+          "total_chf": 244618
         },
         "VS": {
           "count": 1,
@@ -1189,6 +1237,12 @@
           "ville": "Grand-Lancy",
           "canton": "GE",
           "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. Jeanne-Milloud, EMS Les Grèves du Lac",
+          "ville": "Gletterens",
+          "canton": "FR",
+          "montant_CHF": 20000
         },
         {
           "nom": "Sté suisse de la sclérose en plaques - SEP",
@@ -1312,9 +1366,9 @@
     },
     {
       "name": "Handicap mental & autisme",
-      "count": 8,
-      "total_chf": 489000,
-      "mean_chf": 61125,
+      "count": 9,
+      "total_chf": 549000,
+      "mean_chf": 61000,
       "cantons": {
         "FR": {
           "count": 1,
@@ -1325,8 +1379,8 @@
           "total_chf": 139000
         },
         "GE": {
-          "count": 4,
-          "total_chf": 288000
+          "count": 5,
+          "total_chf": 348000
         }
       },
       "samples": [
@@ -1349,16 +1403,16 @@
           "montant_CHF": 62000
         },
         {
+          "nom": "Assoc. Courir...ensemble",
+          "ville": "Athenaz (Avusy)",
+          "canton": "GE",
+          "montant_CHF": 60000
+        },
+        {
           "nom": "Assoc. Autisme Genève",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 50000
-        },
-        {
-          "nom": "ASA Handicap Mental",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 40000
         }
       ],
       "all_entries": [
@@ -1379,6 +1433,12 @@
           "ville": "Esmonts",
           "canton": "FR",
           "montant_CHF": 62000
+        },
+        {
+          "nom": "Assoc. Courir...ensemble",
+          "ville": "Athenaz (Avusy)",
+          "canton": "GE",
+          "montant_CHF": 60000
         },
         {
           "nom": "Assoc. Autisme Genève",

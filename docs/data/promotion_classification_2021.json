@@ -1,0 +1,1596 @@
+{
+  "_meta": {
+    "classif": "promotion",
+    "year": "2021",
+    "source": "brb2021_full.json",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
+    "date": "2026-06-04",
+    "total_entries": 193,
+    "total_chf": 15544690,
+    "precise_classified_entries": 34,
+    "precise_classified_chf": 3888200,
+    "pct_chf_precisely_classified": 25.0,
+    "pct_chf_classified": 100.0,
+    "total_entries_classified": 193,
+    "total_chf_classified": 15544690,
+    "catchall_chf": 11656490,
+    "cross_year_recovered": 7,
+    "sector": "Promotion, tourisme et développement",
+    "sector_slug": "promotion",
+    "total_entries_sector": 193,
+    "total_chf_sector": 15544690,
+    "pct_entries_classified": 100.0
+  },
+  "categories": [
+    {
+      "name": "Soutien général à la promotion / tourisme",
+      "count": 159,
+      "total_chf": 11656490,
+      "mean_chf": 73311,
+      "cantons": {
+        "VD": {
+          "count": 28,
+          "total_chf": 1803120
+        },
+        "JU": {
+          "count": 32,
+          "total_chf": 907870
+        },
+        "VS": {
+          "count": 24,
+          "total_chf": 4447500
+        },
+        "NE": {
+          "count": 18,
+          "total_chf": 728000
+        },
+        "GE": {
+          "count": 56,
+          "total_chf": 3754000
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 16000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Förderverein Nordisches Zentrum Goms",
+          "ville": "Goms",
+          "canton": "VS",
+          "montant_CHF": 2500000
+        },
+        {
+          "nom": "Mon Ecole Zéro Déchet - Pilier 1 : La mallette pédagogique Associations cantonales",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1095500
+        },
+        {
+          "nom": "Clubs - sports individuels",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 628300
+        },
+        {
+          "nom": "Fond. Espace Ballon, Château-d’Œx",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 600000
+        },
+        {
+          "nom": "Assoc. Hameau de Colombire, Mollens",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 400000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Förderverein Nordisches Zentrum Goms",
+          "ville": "Goms",
+          "canton": "VS",
+          "montant_CHF": 2500000
+        },
+        {
+          "nom": "Mon Ecole Zéro Déchet - Pilier 1 : La mallette pédagogique Associations cantonales",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1095500
+        },
+        {
+          "nom": "Clubs - sports individuels",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 628300
+        },
+        {
+          "nom": "Fond. Espace Ballon, Château-d’Œx",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 600000
+        },
+        {
+          "nom": "Assoc. Hameau de Colombire, Mollens",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Lieu de stockage - Maco SOS Chats",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Courroux et Moutier République et Canton du Jura",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Rénovation Comité d'organisation des courses de ski alpin Crans- Montana",
+          "ville": "Crans-Montana",
+          "canton": "VS",
+          "montant_CHF": 355000
+        },
+        {
+          "nom": "Assoc. du Veysonnaz Timing",
+          "ville": "Veysonnaz",
+          "canton": "VS",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "LS-Vaud Foot SA",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 178200
+        },
+        {
+          "nom": "Commune de Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 175000
+        },
+        {
+          "nom": "Assoc. Promotion du cheval en Valais",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 155000
+        },
+        {
+          "nom": "Assoc. pour l'Organisation de l'European Masters",
+          "ville": "Crans-Montana",
+          "canton": "VS",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Assoc. Cantonale Genevoise Football (ACGF)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Assoc. Régionale Genève Tennis (ARGT)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Assoc. Xtreme",
+          "ville": "Verbier",
+          "canton": "VS",
+          "montant_CHF": 140000
+        },
+        {
+          "nom": "Fond. du Grand-Cachot-de-Vent",
+          "ville": "La Chaux-du-Milieu",
+          "canton": "NE",
+          "montant_CHF": 135000
+        },
+        {
+          "nom": "Lausanne Hockey Club SA",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 132000
+        },
+        {
+          "nom": "La Grange (Centre de vacances Chrétien)",
+          "ville": "L'Auberson",
+          "canton": "VD",
+          "montant_CHF": 120000
+        },
+        {
+          "nom": "Voies__là, buvette associative et culturelle Assoc. A l'Eau Wilson",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 120000
+        },
+        {
+          "nom": "Assoc. Bike Freeride",
+          "ville": "Verbier",
+          "canton": "VS",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Réaménagement des locaux et nouveau matériel informatique & électroménager Nouvelle Assoc. du Courrier",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Portraits de Géants - Arbres de Genève MACO",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Assoc. Svizra27",
+          "ville": "Aarau",
+          "canton": "NE",
+          "montant_CHF": 97000
+        },
+        {
+          "nom": "Hockey Club Ajoie",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "Installation d'un arrosage automatique sur les terrains de football Au Marais Commune de Vevey",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 87000
+        },
+        {
+          "nom": "Assoc. Cantonale Genevoise de Basketball Amateur (ACGBA)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 85000
+        },
+        {
+          "nom": "Swiss Volley Région Genève (SVRG)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 83800
+        },
+        {
+          "nom": "Assoc. du Rallye du Valais",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Rénovation Assoc. Nendaz Freeride, Haute-Nendaz",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Publication Pro Evologia - Assoc. des amis d'Evologia",
+          "ville": "Cernier",
+          "canton": "NE",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Grappillage et partage autour du Pressoir label-Vie Agence suisse pour les droits humains",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 78000
+        },
+        {
+          "nom": "Numerik Games",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Assoc. Rallye du Chablais, Lavey-Village",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Valorisation des collections ADAJE",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Sté de Développement d'Aubonne et Environs",
+          "ville": "Aubonne",
+          "canton": "VD",
+          "montant_CHF": 62000
+        },
+        {
+          "nom": "Genève Snowsports",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 61900
+        },
+        {
+          "nom": "Assoc. pour la Sauvegarde de Morges - ASM",
+          "ville": "Morges",
+          "canton": "VD",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. Crans-Montana Parks",
+          "ville": "Crans-Montana",
+          "canton": "VS",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "accoucheur en Ajoie Assoc. Cultureprod",
+          "ville": "Rossemaison",
+          "canton": "JU",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Hockey Club Ajoie",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 56700
+        },
+        {
+          "nom": "d'entraînement sur un terrain annexe du Stade de la Pontaise (acompte) Commune de Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 55000
+        },
+        {
+          "nom": "Institut suisse de spéléologie et de karstologie - ISSKA",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Pavillon Le Courrier Service Social International - ISS",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Adaptation de leurs éléments de travail Assoc. Materiuum",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Rénovations et manifestations 2022 Fond. du Musée Chappuis- Fähndrich",
+          "ville": "Develier",
+          "canton": "JU",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. Cantonale de Judo et Ju- Jitsu (ACGJJ)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 49700
+        },
+        {
+          "nom": "Assoc. Genevoise d'Athlétisme (AGA)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 47500
+        },
+        {
+          "nom": "Assainissement, réfection, amélioration et remplacement d'équipements au Stade de la Pontaise (acompte) Commune de Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "Investissement Assoc. des Amis de la Ferme Robert",
+          "ville": "Couvet",
+          "canton": "NE",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "Evénement Biennale de déambulation Les Horlofolies",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "Investissement et activités annuelles Fond. St-Jean",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 42000
+        },
+        {
+          "nom": "Union Vélocipédique Genevoise (UVG)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 42000
+        },
+        {
+          "nom": "Amicale des vieilles traditions, Grandfontaine",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 42000
+        },
+        {
+          "nom": "Métamorphose-Construction du stade de football de la Tuilière (solde) Commune de Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 39300
+        },
+        {
+          "nom": "Assoc. du Rallye du Valais",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Groupe de liaison genevois des Associations de jeunesse - GLAJ",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 34400
+        },
+        {
+          "nom": "Investissement Assoc. Ecoparc",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Vivre La Chaux-de-Fonds",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "bureaux à Genève Animons les Voies de Saint-Jean",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Melt, unit, fold it, acquisition d'une presse à plastique Les cinq sens de la nature",
+          "ville": "Troinex",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Genevoise des Sports (AGS)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Saint-Ursanne Commune mixte de Lajoux",
+          "ville": "Lajoux",
+          "canton": "JU",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Cantonale Genevoise Badminton",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 28000
+        },
+        {
+          "nom": "Rénovation charpente Musée de la poterie Université de Bâle",
+          "ville": "Bâle",
+          "canton": "JU",
+          "montant_CHF": 26000
+        },
+        {
+          "nom": "Pose d'un nouveau revêtement synthétique sur une place en enrobé Commune de Cudrefin",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 25340
+        },
+        {
+          "nom": "Investissement Fond. en faveur de la mise en valeur du site de La Chaux- de-Fonds / Locle patrimoine mondial UNESCO",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 24500
+        },
+        {
+          "nom": "US Yverdon Handball",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 23200
+        },
+        {
+          "nom": "Renouvellement du skate-park de la place Corminjoz Commune de Pully",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 22300
+        },
+        {
+          "nom": "Verein Wissenschaft Uri, Altdorf",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 22000
+        },
+        {
+          "nom": "Evénement Watt Air Concept",
+          "ville": "St-Blaise",
+          "canton": "NE",
+          "montant_CHF": 22000
+        },
+        {
+          "nom": "Assoc. Cantonale Genevoise Rugby (ACGR)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 20900
+        },
+        {
+          "nom": "Publication Assoc. de soutien au lait équitable - ASLE",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Objectif Terre",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Slow Food CH",
+          "ville": "Zürich",
+          "canton": "JU",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Pro Fortins, Boveresse",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "infrastructures Assoc. Garaj Garaj",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Journée jardin urbains ouverts Assoc. Jardin de la Bécassine",
+          "ville": "Versoix",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Couloirs de nage et de baignade au quai Wilson Fond. du Grand Prix d'Horlogerie de Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Parole de Plastique Féd. Genevoise des Jardins Familiaux",
+          "ville": "Vernier",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Analyse des sols de 280/2138 parcelles Glitter Association",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Revitalisation de la Combe des Beusses Coopérative Marché Saint- Germain",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "COMMUNS, le podcast et l'Agora d'Après ZeroWaste Switzerland",
+          "ville": "Cottens",
+          "canton": "FR",
+          "montant_CHF": 16000
+        },
+        {
+          "nom": "Rénovation du système électrique de la piscine de Mon-Repos (acompte) Commune de Prilly",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 15680
+        },
+        {
+          "nom": "Féd. Genevoise Echecs (FGE)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 15100
+        },
+        {
+          "nom": "Assoc. Brain project",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Fond. Moulin Semblanet",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. du pain de seigle valaisan AO P",
+          "ville": "Châteauneuf-Conthey",
+          "canton": "VS",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Publication SPA Valais",
+          "ville": "Ardon",
+          "canton": "VS",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Le Champ des possibles Assoc. Genève Cultive",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Réduction de déchets de construction et de conception Assoc. pour la Sauvegarde du Léman - ASL",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "TRASH QUIZ - Halte aux déchets sauvages Assoc. Tricrochet",
+          "ville": "Grand-Lancy",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Féd. Genevoise Equestre (FGE)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 14600
+        },
+        {
+          "nom": "Rugby Club Genève Plan-les- Ouates",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 14600
+        },
+        {
+          "nom": "Réfection de deux courts de tennis extérieurs Commune de Goumoëns",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 13700
+        },
+        {
+          "nom": "Assoc. Cantonale Genève Unihockey",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 13700
+        },
+        {
+          "nom": "Assoc. Cantonale Genevoise de Tchoukball (ACGT)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 13400
+        },
+        {
+          "nom": "Club équestre de Chevenez",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 12500
+        },
+        {
+          "nom": "Assoc. Forum Economique Rhodanien",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Assoc. Neurhone - Connecteur d'idées",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Evénement Sté neuchâteloise des Sciences naturelles",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Assoc. Label-Vie",
+          "ville": "Chêne-Bougeries",
+          "canton": "GE",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Féd. jurassienne de tir",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 10350
+        },
+        {
+          "nom": "Assoc. Genevoise Hockey sur Gazon (AGHG)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 10200
+        },
+        {
+          "nom": "Sté de sauvetage de Villette",
+          "ville": "Cully",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "FSRM-KIDS 2022 Afrim'Immo",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Commune ecclésiastique catholique-romaine, Lugnez",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Poste de Conservateur et Gestion des collections (2021-2023) Sté des Œuvres Catholiques de Bonfol",
+          "ville": "Bonfol",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Hockey Club Delémont-Vallée",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. du Bois des Brigands",
+          "ville": "Thierrens",
+          "canton": "VD",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Evénement Assoc. Nature & Loisirs, Auboranges",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Un rallye dansé dans la commune de Meyrin Cie NoTa & Guests",
+          "ville": "Plan-les-Ouates",
+          "canton": "GE",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Amicale des sapeurs-pompiers de la commune de Sion",
+          "ville": "Bramois",
+          "canton": "VS",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Musée régional de La Sagne, La Sagne",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Assoc. Vallée de la Brévine - Sibérie de la Suisse, La Brévine",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Skater-Hockey Club Rossemaison",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Rétro Circuit Porrentruy- Courtedoux",
+          "ville": "Cœuve",
+          "canton": "JU",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Verger Conservatoire - Aux Fruits défendus Assoc. Chouette Nature",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 5500
+        },
+        {
+          "nom": "Roulotte-Poulailler locale, fédératrice, pédagogique pour l'élevage biologique d'une espèce menacée Assoc. aux fruits défendus",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Judo Kwai Lancy",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Jura Culture - chronique RFJ (période de deux ans) Assoc. GRRIF",
+          "ville": "Rossemaison",
+          "canton": "JU",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Rétro Circuit Porrentruy-Courtedoux 2021 Ville de Delémont",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Bushido Club Versoix Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 4700
+        },
+        {
+          "nom": "Rugby Hermance Région Rugby Club",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 4700
+        },
+        {
+          "nom": "Rugby Club Avusy",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 4700
+        },
+        {
+          "nom": "Assoc. Genevoise de Footgolf",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 4300
+        },
+        {
+          "nom": "Shung Do Kwan Budo",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 4300
+        },
+        {
+          "nom": "Ultimate frisbee Geneva's Flying Disk Wizards",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 4200
+        },
+        {
+          "nom": "Skater-Hockey Club Buix",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Arts martiaux Assoc. Genevoise de Vietvodao (AGV)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 3800
+        },
+        {
+          "nom": "Centre d'excellence et de compétence (CEDD-Agro-Eco-Clim) Fond. suisse pour la recherche en microtechnique",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "Commune ecclésiastique catholique-romaine",
+          "ville": "Le Noirmont",
+          "canton": "JU",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "Assoc. Cantonale Genevoise de Karaté-do",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 3100
+        },
+        {
+          "nom": "Organisation de la manifestation La Suisse bouge Commune de Morges",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Assoc. à La Plaine Campagne",
+          "ville": "La Plaine",
+          "canton": "GE",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Assoc. des Archers Genevois (ADAGE)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "ème anniversaire d'Ursanne Equipe-FM Suisse",
+          "ville": "La Joux",
+          "canton": "JU",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Jura Defi",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Promoskate Events",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Tchoukball Club Meyrin",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 2500
+        },
+        {
+          "nom": "Agrandissement du Musée agricole Commune ecclésiastique",
+          "ville": "Montfaucon",
+          "canton": "JU",
+          "montant_CHF": 2500
+        },
+        {
+          "nom": "Semaine suisse du Goût 2022 Sté de développement et d'embellissement",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 2500
+        },
+        {
+          "nom": "Assoc. Centralcamps, Thyon-Les-Collons",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. Tour du Jura",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. Cantonale Genevoise de Lutte suisse",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1600
+        },
+        {
+          "nom": "La Fugue chablaisienne",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Genève-Lutte (Lutte Olympique)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1300
+        },
+        {
+          "nom": "VTT Club Jura",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 1140
+        },
+        {
+          "nom": "Assoc. Cantonale Genevoise de Gym et de Sports SATUS",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1100
+        },
+        {
+          "nom": "Organisation de deux réunions sur piste à Aigle Commune de Bex",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Organisation de la Semaine Bex Bouge Commune de Montreux",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Publication Sté Valaisanne de Biologie de la Faune",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Sté de cavalerie Delémont et environs",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 900
+        },
+        {
+          "nom": "Réfection de l’éclairage et agrandissement du local matériel Contributions extraordinaires 14’438.50 Commune de Courtételle",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 900
+        },
+        {
+          "nom": "Vélo Club Franches-Montagnes",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 880
+        },
+        {
+          "nom": "Club de Pétanque La Villeneuvoise",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 600
+        },
+        {
+          "nom": "JET Roller Club Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 600
+        },
+        {
+          "nom": "Curling Club Lausanne Olympique",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Club de course d'orientation Lausanne-Jorat",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 300
+        }
+      ]
+    },
+    {
+      "name": "Tourisme régional",
+      "count": 7,
+      "total_chf": 2137000,
+      "mean_chf": 305285,
+      "cantons": {
+        "VD": {
+          "count": 2,
+          "total_chf": 1030000
+        },
+        "VS": {
+          "count": 3,
+          "total_chf": 687000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 420000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Vaud Promotion",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Rénovation Valais/Wallis Promotion",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Jura Tourisme",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Valrando - Assoc. valaisanne de la randonnée",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 130000
+        },
+        {
+          "nom": "plaquette commémorative Jura Tourisme",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 120000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Vaud Promotion",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Rénovation Valais/Wallis Promotion",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Jura Tourisme",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Valrando - Assoc. valaisanne de la randonnée",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 130000
+        },
+        {
+          "nom": "plaquette commémorative Jura Tourisme",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 120000
+        },
+        {
+          "nom": "Crans-Montana Tourisme & Congrès",
+          "ville": "Crans-Montana",
+          "canton": "VS",
+          "montant_CHF": 57000
+        },
+        {
+          "nom": "Assoc. Pays-d'Enhaut Economie et Tourisme",
+          "ville": "Château-d'Œx",
+          "canton": "VD",
+          "montant_CHF": 30000
+        }
+      ]
+    },
+    {
+      "name": "Promotion économique & terroir",
+      "count": 7,
+      "total_chf": 986500,
+      "mean_chf": 140928,
+      "cantons": {
+        "VS": {
+          "count": 3,
+          "total_chf": 685000
+        },
+        "JU": {
+          "count": 3,
+          "total_chf": 300000
+        },
+        "VD": {
+          "count": 1,
+          "total_chf": 1500
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. The Ark",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Fond. rurale interjurassienne",
+          "ville": "Courtételle",
+          "canton": "JU",
+          "montant_CHF": 250000
+        },
+        {
+          "nom": "IVV - Interprofession de la Vigne et du Vin du Valais",
+          "ville": "Conthey",
+          "canton": "VS",
+          "montant_CHF": 225000
+        },
+        {
+          "nom": "Investissement Interprofession Raclette du Valais AOP",
+          "ville": "Conthey",
+          "canton": "VS",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Fond. rurale interjurassienne",
+          "ville": "Courtemelon",
+          "canton": "JU",
+          "montant_CHF": 40000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. The Ark",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Fond. rurale interjurassienne",
+          "ville": "Courtételle",
+          "canton": "JU",
+          "montant_CHF": 250000
+        },
+        {
+          "nom": "IVV - Interprofession de la Vigne et du Vin du Valais",
+          "ville": "Conthey",
+          "canton": "VS",
+          "montant_CHF": 225000
+        },
+        {
+          "nom": "Investissement Interprofession Raclette du Valais AOP",
+          "ville": "Conthey",
+          "canton": "VS",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Fond. rurale interjurassienne",
+          "ville": "Courtemelon",
+          "canton": "JU",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Route du Poisson 2021 Fond. rurale interjurassienne",
+          "ville": "Courtételle",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "ème concours suisse des produits du terroir La Semaine du Goût",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1500
+        }
+      ]
+    },
+    {
+      "name": "Parcs régionaux & nature",
+      "count": 4,
+      "total_chf": 272000,
+      "mean_chf": 68000,
+      "cantons": {
+        "VS": {
+          "count": 2,
+          "total_chf": 214000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 58000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Verein Lebens- und Erlebnisraum Pfyn-Finges",
+          "ville": "Salgesch",
+          "canton": "VS",
+          "montant_CHF": 156000
+        },
+        {
+          "nom": "Verein Landschaftspark Binntal",
+          "ville": "Binn",
+          "canton": "VS",
+          "montant_CHF": 58000
+        },
+        {
+          "nom": "Parc Naturel Régional du Doubs",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 38000
+        },
+        {
+          "nom": "Assoc. pour le Parc Naturel Régional du Doubs",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 20000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Verein Lebens- und Erlebnisraum Pfyn-Finges",
+          "ville": "Salgesch",
+          "canton": "VS",
+          "montant_CHF": 156000
+        },
+        {
+          "nom": "Verein Landschaftspark Binntal",
+          "ville": "Binn",
+          "canton": "VS",
+          "montant_CHF": 58000
+        },
+        {
+          "nom": "Parc Naturel Régional du Doubs",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 38000
+        },
+        {
+          "nom": "Assoc. pour le Parc Naturel Régional du Doubs",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 20000
+        }
+      ]
+    },
+    {
+      "name": "Cabanes & infrastructures montagne",
+      "count": 6,
+      "total_chf": 266700,
+      "mean_chf": 44450,
+      "cantons": {
+        "VS": {
+          "count": 1,
+          "total_chf": 3000
+        },
+        "VD": {
+          "count": 1,
+          "total_chf": 200000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 20000
+        },
+        "GE": {
+          "count": 3,
+          "total_chf": 43700
+        }
+      },
+      "samples": [
+        {
+          "nom": "Publication Club alpin suisse - Section des Diablerets, cabane de Trient",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Utopia3",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Evénement Club Alpin Suisse - section Neuchâteloise",
+          "ville": "Colombier",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Section Genevoise du Club Alpin Suisse",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 10400
+        },
+        {
+          "nom": "Alpinisme Club Alpin Suisse - section carougeoise",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 8300
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Publication Club alpin suisse - Section des Diablerets, cabane de Trient",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Utopia3",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Evénement Club Alpin Suisse - section Neuchâteloise",
+          "ville": "Colombier",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Section Genevoise du Club Alpin Suisse",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 10400
+        },
+        {
+          "nom": "Alpinisme Club Alpin Suisse - section carougeoise",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 8300
+        },
+        {
+          "nom": "CAS - Section Monte Rosa - Groupe de Monthey",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 3000
+        }
+      ]
+    },
+    {
+      "name": "Cyclo & courses populaires",
+      "count": 1,
+      "total_chf": 90000,
+      "mean_chf": 90000,
+      "cantons": {
+        "VS": {
+          "count": 1,
+          "total_chf": 90000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. du Tour des Stations",
+          "ville": "Granges",
+          "canton": "VS",
+          "montant_CHF": 90000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. du Tour des Stations",
+          "ville": "Granges",
+          "canton": "VS",
+          "montant_CHF": 90000
+        }
+      ]
+    },
+    {
+      "name": "Promotion culture régionale",
+      "count": 1,
+      "total_chf": 50000,
+      "mean_chf": 50000,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 50000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. Othenin d'Haussonville pour le rayonnement de l'esprit de Coppet",
+          "ville": "Coppet",
+          "canton": "VD",
+          "montant_CHF": 50000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Othenin d'Haussonville pour le rayonnement de l'esprit de Coppet",
+          "ville": "Coppet",
+          "canton": "VD",
+          "montant_CHF": 50000
+        }
+      ]
+    },
+    {
+      "name": "Manifestations populaires",
+      "count": 4,
+      "total_chf": 44000,
+      "mean_chf": 11000,
+      "cantons": {
+        "FR": {
+          "count": 2,
+          "total_chf": 3000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 41000
+        }
+      },
+      "samples": [
+        {
+          "nom": "SlowUp Jura 2021 et Edition alternative Commune de Clos du Doubs",
+          "ville": "St-Ursanne",
+          "canton": "JU",
+          "montant_CHF": 37000
+        },
+        {
+          "nom": "Hors d'œuvre : chronique culturelle jurassienne de GRRIF Assoc. slowUp Jura",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Coupes fribourgeoises Assoc. slowUp La Gruyère",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "SlowUp de la Gruyère (Covid-19 annulé) Assoc. suisse romande de Minigolf",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "SlowUp Jura 2021 et Edition alternative Commune de Clos du Doubs",
+          "ville": "St-Ursanne",
+          "canton": "JU",
+          "montant_CHF": 37000
+        },
+        {
+          "nom": "Hors d'œuvre : chronique culturelle jurassienne de GRRIF Assoc. slowUp Jura",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Coupes fribourgeoises Assoc. slowUp La Gruyère",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "SlowUp de la Gruyère (Covid-19 annulé) Assoc. suisse romande de Minigolf",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1000
+        }
+      ]
+    },
+    {
+      "name": "Sentiers & randonnée",
+      "count": 4,
+      "total_chf": 42000,
+      "mean_chf": 10500,
+      "cantons": {
+        "VD": {
+          "count": 2,
+          "total_chf": 29000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 5000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 8000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Sentier didactique du bois de résonance",
+          "ville": "Le Sentier",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Villars Rando Festival",
+          "ville": "Villars-sur-Ollon",
+          "canton": "VD",
+          "montant_CHF": 9000
+        },
+        {
+          "nom": "Jura Rando, Châtillon",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Evénement Neuchâtel Rando - ANTP",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 5000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Sentier didactique du bois de résonance",
+          "ville": "Le Sentier",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Villars Rando Festival",
+          "ville": "Villars-sur-Ollon",
+          "canton": "VD",
+          "montant_CHF": 9000
+        },
+        {
+          "nom": "Jura Rando, Châtillon",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Evénement Neuchâtel Rando - ANTP",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 5000
+        }
+      ]
+    }
+  ]
+}

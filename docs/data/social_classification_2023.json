@@ -5,23 +5,23 @@
     "source": "brb2023_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 319,
-    "total_chf": 28255395,
-    "precise_classified_entries": 120,
-    "precise_classified_chf": 16809848,
-    "pct_chf_precisely_classified": 59.5,
+    "total_entries": 311,
+    "total_chf": 27899395,
+    "precise_classified_entries": 116,
+    "precise_classified_chf": 16326732,
+    "pct_chf_precisely_classified": 58.5,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 319,
-    "total_chf_classified": 28255395,
-    "catchall_chf": 11445547,
-    "cross_year_recovered": 44
+    "total_entries_classified": 311,
+    "total_chf_classified": 27899395,
+    "catchall_chf": 11572663,
+    "cross_year_recovered": 67
   },
   "categories": [
     {
       "name": "Précarité / Pauvreté",
-      "count": 37,
-      "total_chf": 10463566,
-      "mean_chf": 282799,
+      "count": 38,
+      "total_chf": 10468170,
+      "mean_chf": 275478,
       "cantons": {
         "VD": {
           "count": 10,
@@ -35,6 +35,10 @@
           "count": 10,
           "total_chf": 1921122
         },
+        "JU": {
+          "count": 3,
+          "total_chf": 59604
+        },
         "VS": {
           "count": 2,
           "total_chf": 72000
@@ -46,10 +50,6 @@
         "GE": {
           "count": 9,
           "total_chf": 6106500
-        },
-        "JU": {
-          "count": 2,
-          "total_chf": 55000
         }
       },
       "samples": [
@@ -296,6 +296,12 @@
           "montant_CHF": 5000
         },
         {
+          "nom": "Infoentraide / Selbsthilfe KOSCH",
+          "ville": "Bâle",
+          "canton": "JU",
+          "montant_CHF": 4604
+        },
+        {
           "nom": "Assoc. Samedi du partage Vaud",
           "ville": "Lausanne",
           "canton": "VD",
@@ -311,37 +317,37 @@
     },
     {
       "name": "Soutien général à l'action sociale",
-      "count": 198,
-      "total_chf": 9645547,
-      "mean_chf": 48714,
+      "count": 194,
+      "total_chf": 9772663,
+      "mean_chf": 50374,
       "cantons": {
         "VD": {
-          "count": 61,
-          "total_chf": 3412647
+          "count": 60,
+          "total_chf": 3392647
         },
         "SR": {
           "count": 18,
           "total_chf": 1416100
         },
         "FR": {
-          "count": 22,
-          "total_chf": 724046
+          "count": 20,
+          "total_chf": 718546
         },
         "JU": {
-          "count": 10,
-          "total_chf": 292604
+          "count": 9,
+          "total_chf": 288000
         },
         "VS": {
-          "count": 43,
-          "total_chf": 2288000
+          "count": 44,
+          "total_chf": 2502220
         },
         "NE": {
           "count": 18,
           "total_chf": 290500
         },
         "GE": {
-          "count": 26,
-          "total_chf": 1221650
+          "count": 25,
+          "total_chf": 1164650
         }
       },
       "samples": [
@@ -430,6 +436,12 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 220000
+        },
+        {
+          "nom": "Groupement valaisan des Centres médico-sociaux CMS",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 214220
         },
         {
           "nom": "Fond. ESP'ASSE",
@@ -664,12 +676,6 @@
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 57546
-        },
-        {
-          "nom": "Assoc. Genèveroule",
-          "ville": "Plan-les-Ouates",
-          "canton": "GE",
-          "montant_CHF": 57000
         },
         {
           "nom": "Unisanté",
@@ -997,12 +1003,6 @@
         },
         {
           "nom": "Assoc. du quartier du Vallon AQV",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Fond. Pro-XY",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 20000
@@ -1362,12 +1362,6 @@
           "montant_CHF": 5000
         },
         {
-          "nom": "Infoentraide / Selbsthilfe KOSCH",
-          "ville": "Bâle",
-          "canton": "JU",
-          "montant_CHF": 4604
-        },
-        {
           "nom": "Assoc. Canes @ Homines",
           "ville": null,
           "canton": "SR",
@@ -1428,12 +1422,6 @@
           "montant_CHF": 3000
         },
         {
-          "nom": "Verein Spitex Sense",
-          "ville": "Tafers",
-          "canton": "FR",
-          "montant_CHF": 3000
-        },
-        {
           "nom": "Assoc. Pars pas / Gang nit",
           "ville": "Sion",
           "canton": "VS",
@@ -1449,12 +1437,6 @@
           "nom": "Entraide familiale de Chexbres, Puidoux, Rivaz, St-Saphorin",
           "ville": "Chexbres",
           "canton": "VD",
-          "montant_CHF": 2500
-        },
-        {
-          "nom": "ToutEnSoi",
-          "ville": "Domdidier",
-          "canton": "FR",
           "montant_CHF": 2500
         },
         {
@@ -1569,33 +1551,33 @@
     },
     {
       "name": "Personnes âgées",
-      "count": 32,
-      "total_chf": 2661197,
-      "mean_chf": 83162,
+      "count": 24,
+      "total_chf": 2147977,
+      "mean_chf": 89499,
       "cantons": {
         "VD": {
-          "count": 10,
-          "total_chf": 728777
+          "count": 9,
+          "total_chf": 705777
         },
         "FR": {
-          "count": 3,
-          "total_chf": 634000
+          "count": 2,
+          "total_chf": 614000
         },
         "VS": {
-          "count": 8,
-          "total_chf": 650220
+          "count": 2,
+          "total_chf": 157000
         },
         "SR": {
-          "count": 3,
-          "total_chf": 84000
+          "count": 2,
+          "total_chf": 50000
         },
         "JU": {
           "count": 5,
           "total_chf": 134200
         },
         "GE": {
-          "count": 3,
-          "total_chf": 430000
+          "count": 4,
+          "total_chf": 487000
         }
       },
       "samples": [
@@ -1612,12 +1594,6 @@
           "montant_CHF": 400000
         },
         {
-          "nom": "Groupement valaisan des Centres médico-sociaux CMS",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 214220
-        },
-        {
           "nom": "Pro Senectute Vaud",
           "ville": "Lausanne",
           "canton": "VD",
@@ -1628,6 +1604,12 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 154000
+        },
+        {
+          "nom": "Pro Senectute Vaud",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 149680
         }
       ],
       "all_entries": [
@@ -1642,12 +1624,6 @@
           "ville": "Carouge",
           "canton": "GE",
           "montant_CHF": 400000
-        },
-        {
-          "nom": "Groupement valaisan des Centres médico-sociaux CMS",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 214220
         },
         {
           "nom": "Pro Senectute Vaud",
@@ -1686,22 +1662,10 @@
           "montant_CHF": 85300
         },
         {
-          "nom": "EMS St-François",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 83000
-        },
-        {
-          "nom": "EMS Le Christ Roi",
-          "ville": "Crans- Montana",
-          "canton": "VS",
-          "montant_CHF": 65000
-        },
-        {
-          "nom": "EMS Riond-Vert",
-          "ville": "Vouvry",
-          "canton": "VS",
-          "montant_CHF": 61000
+          "nom": "Assoc. Genèveroule",
+          "ville": "Plan-les-Ouates",
+          "canton": "GE",
+          "montant_CHF": 57000
         },
         {
           "nom": "Pro Senectute Arc Jurassien",
@@ -1722,22 +1686,10 @@
           "montant_CHF": 43820
         },
         {
-          "nom": "EMS Les Vergers",
-          "ville": "Aproz",
-          "canton": "VS",
-          "montant_CHF": 42000
-        },
-        {
           "nom": "Le Carillon - maison de retraite",
           "ville": "Saint-Léonard",
           "canton": "SR",
           "montant_CHF": 37000
-        },
-        {
-          "nom": "EMS La Charmaie",
-          "ville": "Collombey- Muraz",
-          "canton": "SR",
-          "montant_CHF": 34000
         },
         {
           "nom": "Pro Senectute Vaud",
@@ -1752,34 +1704,16 @@
           "montant_CHF": 30000
         },
         {
-          "nom": "EMS Résidence Jean-Paul",
-          "ville": "Riddes",
-          "canton": "VS",
-          "montant_CHF": 28000
-        },
-        {
           "nom": "Contact-Seniors",
           "ville": "Carouge",
           "canton": "GE",
           "montant_CHF": 25000
         },
         {
-          "nom": "EMS Cottier Boys",
-          "ville": "Orny",
-          "canton": "VD",
-          "montant_CHF": 23000
-        },
-        {
           "nom": "Pro Senectute Vaud",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 20890
-        },
-        {
-          "nom": "Fond. Jeanne-Milloud, EMS Les Grèves du Lac",
-          "ville": "Gletterens",
-          "canton": "FR",
-          "montant_CHF": 20000
         },
         {
           "nom": "Les Chapiteaux du cœur",
@@ -2347,13 +2281,17 @@
     },
     {
       "name": "Égalité / Femmes / LGBT",
-      "count": 1,
-      "total_chf": 250000,
-      "mean_chf": 250000,
+      "count": 2,
+      "total_chf": 252500,
+      "mean_chf": 126250,
       "cantons": {
         "VD": {
           "count": 1,
           "total_chf": 250000
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 2500
         }
       },
       "samples": [
@@ -2362,6 +2300,12 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 250000
+        },
+        {
+          "nom": "ToutEnSoi",
+          "ville": "Domdidier",
+          "canton": "FR",
+          "montant_CHF": 2500
         }
       ],
       "all_entries": [
@@ -2370,6 +2314,12 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 250000
+        },
+        {
+          "nom": "ToutEnSoi",
+          "ville": "Domdidier",
+          "canton": "FR",
+          "montant_CHF": 2500
         }
       ]
     },
@@ -2458,6 +2408,90 @@
       ]
     },
     {
+      "name": "Maladies / Soins spécifiques",
+      "count": 5,
+      "total_chf": 216500,
+      "mean_chf": 43300,
+      "cantons": {
+        "VD": {
+          "count": 3,
+          "total_chf": 203500
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 3000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 10000
+        }
+      },
+      "samples": [
+        {
+          "nom": "HESAV, Assoc. La paix du Soir, Lausanne, Le Mont-sur-",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 180000
+        },
+        {
+          "nom": "Fond. Pro-XY",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "ANDPA - assoc. neuchâteloise des proches aidants",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Marraines du cancer du sein",
+          "ville": "Bofflens",
+          "canton": "VD",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "Verein Spitex Sense",
+          "ville": "Tafers",
+          "canton": "FR",
+          "montant_CHF": 3000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "HESAV, Assoc. La paix du Soir, Lausanne, Le Mont-sur-",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 180000
+        },
+        {
+          "nom": "Fond. Pro-XY",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "ANDPA - assoc. neuchâteloise des proches aidants",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Marraines du cancer du sein",
+          "ville": "Bofflens",
+          "canton": "VD",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "Verein Spitex Sense",
+          "ville": "Tafers",
+          "canton": "FR",
+          "montant_CHF": 3000
+        }
+      ]
+    },
+    {
       "name": "Addictions",
       "count": 3,
       "total_chf": 193840,
@@ -2514,62 +2548,6 @@
           "ville": "Martigny",
           "canton": "VS",
           "montant_CHF": 20000
-        }
-      ]
-    },
-    {
-      "name": "Maladies / Soins spécifiques",
-      "count": 3,
-      "total_chf": 193500,
-      "mean_chf": 64500,
-      "cantons": {
-        "VD": {
-          "count": 2,
-          "total_chf": 183500
-        },
-        "NE": {
-          "count": 1,
-          "total_chf": 10000
-        }
-      },
-      "samples": [
-        {
-          "nom": "HESAV, Assoc. La paix du Soir, Lausanne, Le Mont-sur-",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 180000
-        },
-        {
-          "nom": "ANDPA - assoc. neuchâteloise des proches aidants",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Marraines du cancer du sein",
-          "ville": "Bofflens",
-          "canton": "VD",
-          "montant_CHF": 3500
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "HESAV, Assoc. La paix du Soir, Lausanne, Le Mont-sur-",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 180000
-        },
-        {
-          "nom": "ANDPA - assoc. neuchâteloise des proches aidants",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Marraines du cancer du sein",
-          "ville": "Bofflens",
-          "canton": "VD",
-          "montant_CHF": 3500
         }
       ]
     }

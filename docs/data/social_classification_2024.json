@@ -5,16 +5,16 @@
     "source": "brb2024_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 375,
-    "total_chf": 33501925,
-    "precise_classified_entries": 97,
-    "precise_classified_chf": 25357350,
-    "pct_chf_precisely_classified": 75.7,
+    "total_entries": 366,
+    "total_chf": 26765925,
+    "precise_classified_entries": 89,
+    "precise_classified_chf": 18811350,
+    "pct_chf_precisely_classified": 70.3,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 375,
-    "total_chf_classified": 33501925,
-    "catchall_chf": 8144575,
-    "cross_year_recovered": 44
+    "total_entries_classified": 366,
+    "total_chf_classified": 26765925,
+    "catchall_chf": 7954575,
+    "cross_year_recovered": 67
   },
   "categories": [
     {
@@ -277,9 +277,9 @@
     },
     {
       "name": "Soutien général à l'action sociale",
-      "count": 278,
-      "total_chf": 8144575,
-      "mean_chf": 29297,
+      "count": 277,
+      "total_chf": 7954575,
+      "mean_chf": 28716,
       "cantons": {
         "VD": {
           "count": 68,
@@ -290,8 +290,8 @@
           "total_chf": 475400
         },
         "FR": {
-          "count": 38,
-          "total_chf": 1315175
+          "count": 37,
+          "total_chf": 1125175
         },
         "JU": {
           "count": 54,
@@ -377,12 +377,6 @@
           "nom": "Centre de Contact Suisses-Immigrés (CCSI) Fribourg",
           "ville": null,
           "canton": "VD",
-          "montant_CHF": 190000
-        },
-        {
-          "nom": "Assoc. Cirque Toamême",
-          "ville": "Fribourg",
-          "canton": "FR",
           "montant_CHF": 190000
         },
         {
@@ -1542,180 +1536,12 @@
           "ville": "Leukerbad",
           "canton": "VS",
           "montant_CHF": 5000
-        }
-      ]
-    },
-    {
-      "name": "Personnes âgées",
-      "count": 18,
-      "total_chf": 7528500,
-      "mean_chf": 418250,
-      "cantons": {
-        "VD": {
-          "count": 7,
-          "total_chf": 6511500
-        },
-        "FR": {
-          "count": 1,
-          "total_chf": 600000
-        },
-        "SR": {
-          "count": 3,
-          "total_chf": 86000
-        },
-        "VS": {
-          "count": 4,
-          "total_chf": 258000
-        },
-        "NE": {
-          "count": 1,
-          "total_chf": 15000
-        },
-        "JU": {
-          "count": 2,
-          "total_chf": 58000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Établissements hospitaliers du Nord vaudois (eHnv) + Pôle santé Pays d'En-haut (PSPE) + Hôpital Riviera Chablais (HRC) + Hôpital intercantonal de la Broye (HIB)",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 6323000
         },
         {
-          "nom": "Fond. Pro Senectute Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 600000
-        },
-        {
-          "nom": "EMS Le Christ Roi",
-          "ville": "Crans-Montana",
-          "canton": "VS",
-          "montant_CHF": 80000
-        },
-        {
-          "nom": "EMS Riond-Vert",
-          "ville": "Vouvry",
-          "canton": "VS",
-          "montant_CHF": 74000
-        },
-        {
-          "nom": "EMS Clair-Vully",
-          "ville": "Salavaux",
-          "canton": "VD",
-          "montant_CHF": 69000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Établissements hospitaliers du Nord vaudois (eHnv) + Pôle santé Pays d'En-haut (PSPE) + Hôpital Riviera Chablais (HRC) + Hôpital intercantonal de la Broye (HIB)",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 6323000
-        },
-        {
-          "nom": "Fond. Pro Senectute Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 600000
-        },
-        {
-          "nom": "EMS Le Christ Roi",
-          "ville": "Crans-Montana",
-          "canton": "VS",
-          "montant_CHF": 80000
-        },
-        {
-          "nom": "EMS Riond-Vert",
-          "ville": "Vouvry",
-          "canton": "VS",
-          "montant_CHF": 74000
-        },
-        {
-          "nom": "EMS Clair-Vully",
-          "ville": "Salavaux",
-          "canton": "VD",
-          "montant_CHF": 69000
-        },
-        {
-          "nom": "EMS St-François",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 64000
-        },
-        {
-          "nom": "Fond. Cogest'ems",
-          "ville": "Château-d'Œx",
-          "canton": "VD",
-          "montant_CHF": 46000
-        },
-        {
-          "nom": "Le Carillon - maison de retraite",
-          "ville": "Saint-Léonard",
-          "canton": "SR",
-          "montant_CHF": 41000
-        },
-        {
-          "nom": "EMS Les Vergers",
-          "ville": "Aproz",
-          "canton": "VS",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "Les Planchettes",
-          "ville": "Porrentruy",
-          "canton": "JU",
-          "montant_CHF": 37000
-        },
-        {
-          "nom": "Pro Senectute Vaud",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 29000
-        },
-        {
-          "nom": "Pro Senectute Vaud, Lausanne Accompagnement et maintien des seniors en activité, un enjeu",
-          "ville": "Vaud",
-          "canton": "VD",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "EMS La Charmaie",
-          "ville": "Collombey-Muraz",
-          "canton": "SR",
-          "montant_CHF": 23000
-        },
-        {
-          "nom": "Pro Senectute Valais-Wallis",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 22000
-        },
-        {
-          "nom": "Ville de Delémont Concept communal et catalogue",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 21000
-        },
-        {
-          "nom": "Fond. du Relais - EMS le Flon - Résidence La Girarde",
-          "ville": "Epalinges",
-          "canton": "VD",
-          "montant_CHF": 17000
-        },
-        {
-          "nom": "Assoc., Neuchâtel",
-          "ville": "Neuchâtel",
+          "nom": "Assoc. Je Tène !",
+          "ville": "Marin- Epagnier",
           "canton": "NE",
-          "montant_CHF": 15000
-        },
-        {
-          "nom": "Rayons de Soleil - Club des Aînés de Renens et environs",
-          "ville": "Renens",
-          "canton": "VD",
-          "montant_CHF": 2500
+          "montant_CHF": 5000
         }
       ]
     },
@@ -1826,18 +1652,134 @@
       ]
     },
     {
+      "name": "Personnes âgées",
+      "count": 9,
+      "total_chf": 792500,
+      "mean_chf": 88055,
+      "cantons": {
+        "VD": {
+          "count": 3,
+          "total_chf": 56500
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 600000
+        },
+        "SR": {
+          "count": 2,
+          "total_chf": 63000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 15000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 58000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. Pro Senectute Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 600000
+        },
+        {
+          "nom": "Le Carillon - maison de retraite",
+          "ville": "Saint-Léonard",
+          "canton": "SR",
+          "montant_CHF": 41000
+        },
+        {
+          "nom": "Les Planchettes",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 37000
+        },
+        {
+          "nom": "Pro Senectute Vaud",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 29000
+        },
+        {
+          "nom": "Pro Senectute Vaud, Lausanne Accompagnement et maintien des seniors en activité, un enjeu",
+          "ville": "Vaud",
+          "canton": "VD",
+          "montant_CHF": 25000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Pro Senectute Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 600000
+        },
+        {
+          "nom": "Le Carillon - maison de retraite",
+          "ville": "Saint-Léonard",
+          "canton": "SR",
+          "montant_CHF": 41000
+        },
+        {
+          "nom": "Les Planchettes",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 37000
+        },
+        {
+          "nom": "Pro Senectute Vaud",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 29000
+        },
+        {
+          "nom": "Pro Senectute Vaud, Lausanne Accompagnement et maintien des seniors en activité, un enjeu",
+          "ville": "Vaud",
+          "canton": "VD",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Pro Senectute Valais-Wallis",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 22000
+        },
+        {
+          "nom": "Ville de Delémont Concept communal et catalogue",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 21000
+        },
+        {
+          "nom": "Assoc., Neuchâtel",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Rayons de Soleil - Club des Aînés de Renens et environs",
+          "ville": "Renens",
+          "canton": "VD",
+          "montant_CHF": 2500
+        }
+      ]
+    },
+    {
       "name": "Familles / Parentalité",
-      "count": 10,
-      "total_chf": 495000,
-      "mean_chf": 49500,
+      "count": 11,
+      "total_chf": 685000,
+      "mean_chf": 62272,
       "cantons": {
         "VD": {
           "count": 1,
           "total_chf": 60000
         },
         "FR": {
-          "count": 4,
-          "total_chf": 119000
+          "count": 5,
+          "total_chf": 309000
         },
         "SR": {
           "count": 1,
@@ -1860,6 +1802,12 @@
           "montant_CHF": 216000
         },
         {
+          "nom": "Assoc. Cirque Toamême",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 190000
+        },
+        {
           "nom": "Pro Junior",
           "ville": "Fribourg",
           "canton": "FR",
@@ -1876,12 +1824,6 @@
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 50000
-        },
-        {
-          "nom": "Espace Famille le Bonheur des Touptis",
-          "ville": "Bulle",
-          "canton": "FR",
-          "montant_CHF": 41000
         }
       ],
       "all_entries": [
@@ -1890,6 +1832,12 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 216000
+        },
+        {
+          "nom": "Assoc. Cirque Toamême",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 190000
         },
         {
           "nom": "Pro Junior",
