@@ -13,7 +13,7 @@ import json
 import re
 from pathlib import Path
 
-DATA = Path('/home/claude/audit2/Loro-main/docs/data')
+DATA = Path('/home/claude/audit3/Loro-main/docs/data')
 
 OVERRIDE_RULES_V3 = [
     # ─── CULTURE (entries currently elsewhere) ─────────────────────────
@@ -93,7 +93,7 @@ def find_override_sector(entry: dict) -> str | None:
 
 def main():
     total_overrides = 0
-    for y in ['2022', '2023', '2024', '2025']:
+    for y in ['2021', '2022', '2023', '2024', '2025']:
         p = DATA / f'brb{y}_full.json'
         d = json.load(open(p))
         overrides_log = []

@@ -40,7 +40,15 @@ SOCIAL_PATTERNS = [
      r"maison\s+de\s+retraite|résidence\s+(pour\s+)?seniors|home\s+médicalisé|home\s+médicalis|"
      r"vieillesse|vieillir|retraite\s+(active|d'or|positive)|mouvement\s+des\s+aînés|"
      r"elderli\b|colocation\s+intergén|inter-?générationnel|grands-?parents|pause\s+café\s+aîné|"
-     r"bénévole\s+aînés|atelier\s+seniors|repas\s+communautaire\s+seniors|seniorenrat)\b"),
+     r"bénévole\s+aînés|atelier\s+seniors|repas\s+communautaire\s+seniors|seniorenrat|"
+     r"tertianum|seniorenzentrum|senioren[-\s]+und\s+pflege|pflegeheim|"
+     r"^home\s+\w|fond\.\s+du\s+home|"
+     r"^foyer\s+(?:les?\s+)?(?:3\s+sapins?|pierre-?olivier|haut-de-cry|ma\s+vallée|saint-?joseph|beau-?site)|"
+     r"^résidence\s+(?:gravelone|plantzette|belle-vue|st-sylvain|beausite|le\s+cottage|beau-?soleil|soleilmont|tour-d[\u2019']?aï|forel|d[\u2019']?anavière|don\s+bosco)|"
+     r"\bfegems\b|cogest[\u2019']?ems?|pro[-\s]+home|"
+     r"\bmaison\s+(?:de\s+|du\s+)?(?:retraite|soins\s+et\s+de\s+réhabilitation|de\s+repos)|"
+     r"maison\s+du\s+vélan|le\s+carillon\s*-\s*maison\s+de\s+retraite|"
+     r"fond\.\s+du\s+foyer)\b"),
 
     # === Handicap ===
     ('Handicap',

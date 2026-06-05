@@ -33,11 +33,11 @@ import unicodedata
 from pathlib import Path
 from collections import defaultdict, Counter
 
-ROOT = Path('/home/claude/audit2/Loro-main')
+ROOT = Path('/home/claude/audit3/Loro-main')
 DATA = ROOT / 'docs' / 'data'
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-YEARS = ['2022', '2023', '2024', '2025']
+YEARS = ['2021', '2022', '2023', '2024', '2025']
 SUFFIX = {y: '' if y == '2025' else f'_{y}' for y in YEARS}
 
 

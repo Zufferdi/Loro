@@ -4,7 +4,7 @@ fix_sectors_via_keywords_v5.py — Final pass
 """
 import json, re
 from pathlib import Path
-DATA = Path('/home/claude/audit2/Loro-main/docs/data')
+DATA = Path('/home/claude/audit3/Loro-main/docs/data')
 
 RULES = [
     # Culture
@@ -48,7 +48,7 @@ def find(entry):
         if re.search(p, text, re.IGNORECASE): return s
     return None
 
-for y in ['2022', '2023', '2024', '2025']:
+for y in ['2021', '2022', '2023', '2024', '2025']:
     p = DATA / f'brb{y}_full.json'
     d = json.load(open(p))
     n = 0

@@ -2,7 +2,7 @@
 """fix_sectors_via_keywords_v7.py — derniers bugs secteurs."""
 import json, re
 from pathlib import Path
-DATA = Path('/home/claude/audit2/Loro-main/docs/data')
+DATA = Path('/home/claude/audit3/Loro-main/docs/data')
 
 RULES = [
     # ─── EMS → Action sociale et personnes âgées
@@ -43,7 +43,7 @@ def find(entry):
 
 
 total = 0
-for y in ['2022', '2023', '2024', '2025']:
+for y in ['2021', '2022', '2023', '2024', '2025']:
     p = DATA / f'brb{y}_full.json'
     d = json.load(open(p))
     n = 0

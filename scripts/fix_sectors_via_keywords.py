@@ -22,7 +22,7 @@ import json
 import re
 from pathlib import Path
 
-DATA = Path('/home/claude/audit2/Loro-main/docs/data')
+DATA = Path('/home/claude/audit3/Loro-main/docs/data')
 
 # ─── Override rules ──────────────────────────────────────────────────────
 # Each rule: (regex pattern on text, target sector)
@@ -171,7 +171,7 @@ def find_override_sector(entry: dict) -> str | None:
 
 
 def main():
-    years = ['2022', '2023', '2024', '2025']
+    years = ['2021', '2022', '2023', '2024', '2025']
     total_overrides = 0
 
     for y in years:
