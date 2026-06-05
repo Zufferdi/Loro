@@ -7,6 +7,7 @@
   --bg:          #fbfaf6;
   --bg-card:    #ffffff;
   --bg-soft:    #f1efe7;
+  --bg-mute:    #f1efe7;
   --bg-dark:    #15140f;
   --ink:        #1a1917;
   --ink-soft:   #5c5a52;
@@ -43,6 +44,7 @@
     --bg:          #15140f;
     --bg-card:    #1f1d18;
     --bg-soft:    #25231d;
+    --bg-mute:    #25231d;
     --bg-dark:    #0a0907;
     --ink:        #f1efe7;
     --ink-soft:   #b6b2a4;
@@ -365,6 +367,16 @@ section.standalone { padding: 60px 0; }
   border-radius: 6px;
   padding: 28px;
   margin: 24px 0;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.viz-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  border-color: var(--rule-strong);
+}
+@media (prefers-color-scheme: dark) {
+  .viz-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
 }
 .viz-title {
   font-family: var(--serif);
@@ -2711,4 +2723,72 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   padding: 1px 5px; border-radius: 3px;
   font-style: italic;
   cursor: help;
+}
+
+/* ════════════════════════════════════════════════════════════
+   ANIMATIONS — apparitions douces, micro-interactions
+   ════════════════════════════════════════════════════════════ */
+
+/* Apparition douce des chiffres clés au scroll */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Pulse subtil pour attirer l'œil sur les grandes valeurs */
+@keyframes subtlePulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.015); }
+}
+
+/* Shimmer pour les loaders */
+@keyframes shimmer {
+  0%   { background-position: -100% 0; }
+  100% { background-position: 100% 0; }
+}
+
+/* Loaders : effet shimmer pendant le chargement */
+.viz [style*="Chargement"] {
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(200, 16, 46, 0.06) 50%,
+    transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* Hover sur boutons toggle d'année */
+.year-toggle button, .ystory-btn, .editorial-tab {
+  transition: background 0.18s ease, color 0.18s ease,
+              border-color 0.18s ease, transform 0.12s ease;
+}
+.year-toggle button:hover, .ystory-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Smooth scroll par défaut (sauf si l'utilisateur préfère réduire les animations) */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  *, *::before, *::after {
+    animation-duration: 0.001s !important;
+    transition-duration: 0.001s !important;
+  }
+}
+
+/* Tooltip animation */
+.brb-tooltip, [class*="tooltip"] {
+  animation: fadeUp 0.2s ease-out;
+}
+
+/* Cards drill-down qui s'ouvrent */
+.cumul-detail, .ville-detail, .brb-multi-detail {
+  animation: fadeUp 0.25s ease-out;
+}
+
+/* Loader minimal style */
+.brb-loading, [data-loaded="0"] {
+  position: relative;
+  min-height: 80px;
 }
