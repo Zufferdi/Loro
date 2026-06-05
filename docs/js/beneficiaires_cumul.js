@@ -27,7 +27,7 @@
     if (container.dataset.loaded === '1') return;
     container.dataset.loaded = '1';
     container.innerHTML = '<div style="padding:32px;text-align:center;color:var(--ink-mute);font-style:italic">Chargement…</div>';
-    fetch('data/beneficiaires_cumul_2022_2025.json')
+    fetch('data/beneficiaires_cumul_2021_2025.json')
       .then(r => r.json())
       .then(data => doRender(container, data))
       .catch(err => {
@@ -55,11 +55,11 @@
     stats.innerHTML = `
       <div class="sports-stat">
         <div class="sports-stat-val">${benefs.length.toLocaleString('fr-CH').replace(/,/g, "'")}</div>
-        <div class="sports-stat-lbl">bénéficiaires top 200 (cumulés 4 ans)</div>
+        <div class="sports-stat-lbl">bénéficiaires top 200 (cumulés 5 ans)</div>
       </div>
       <div class="sports-stat">
         <div class="sports-stat-val">${(meta.total_in_top200 / 1e6).toFixed(0)} M CHF</div>
-        <div class="sports-stat-lbl">soit ${meta.top200_pct_of_4y}% du total redistribué 2022-2025</div>
+        <div class="sports-stat-lbl">soit ${meta.top200_pct_of_5y}% du total redistribué 2021-2025</div>
       </div>
       <div class="sports-stat">
         <div class="sports-stat-val">${meta.total_beneficiaires_distincts.toLocaleString('fr-CH').replace(/,/g, "'")}</div>
@@ -77,8 +77,8 @@
              style="flex:1;min-width:200px;padding:8px 12px;border:1px solid var(--rule);border-radius:18px;font-size:13px;font-family:inherit;background:transparent;color:var(--ink)">
       <div class="cumul-filters" style="display:flex;gap:6px;flex-wrap:wrap">
         <button class="cumul-filter is-active" data-filter="all">Tous</button>
-        <button class="cumul-filter" data-filter="4y">4 années</button>
-        <button class="cumul-filter" data-filter="3y">≥ 3 années</button>
+        <button class="cumul-filter" data-filter="5y">5 années</button>
+        <button class="cumul-filter" data-filter="4y">≥ 4 années</button>
         <button class="cumul-filter" data-filter="growth">📈 Croissance</button>
         <button class="cumul-filter" data-filter="multi-cantonal">🔀 Multi-cantonal</button>
       </div>
@@ -98,13 +98,14 @@
 
     function matchFilter(b, f) {
       if (f === 'all') return true;
-      if (f === '4y') return b.nb_years_active === 4;
+      if (f === '5y') return b.nb_years_active === 5;
+      if (f === '4y') return b.nb_years_active >= 4;
       if (f === '3y') return b.nb_years_active >= 3;
       if (f === 'multi-cantonal') return b.cantons.length >= 2;
       if (f === 'growth') {
-        const a22 = b.totaux_par_an['2022'] || 0;
+        const a21 = b.totaux_par_an['2021'] || 0;
         const a25 = b.totaux_par_an['2025'] || 0;
-        return a25 > a22 * 1.5;
+        return a25 > a21 * 1.5;
       }
       return true;
     }
@@ -144,7 +145,7 @@
       filtered.forEach((b, idx) => {
         const cantonChips = b.cantons.map(c =>
           `<span class="treemap-canton ${cantonClass(c)}">${c}</span>`).join(' ');
-        const yearChips = ['2022','2023','2024','2025'].map(y => {
+        const yearChips = ['2021','2022','2023','2024','2025'].map(y => {
           const v = b.totaux_par_an[y] || 0;
           const dim = v === 0 ? 'opacity:0.25' : '';
           return `<span style="font-size:11px;padding:2px 7px;border:1px solid var(--rule);border-radius:10px;${dim}">${y}: ${v === 0 ? '—' : fmtCHF(v)}</span>`;

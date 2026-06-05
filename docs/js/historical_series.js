@@ -1,7 +1,7 @@
 /* ============================================================
    initBrbHistoricalSeries() — small multiples chart
    ------------------------------------------------------------
-   15 bénéficiaires "piliers" sur 4 années (2022, 2023, 2024, 2025).
+   15 bénéficiaires "piliers" sur 5 années (2021, 2022, 2023, 2024, 2025).
    Source : BRB officiels Loterie Romande (extraction manuelle).
    ============================================================ */
 (function() {
@@ -13,7 +13,7 @@
 
     container.innerHTML = '<div style="padding:32px;text-align:center;color:var(--ink-mute);font-style:italic">Chargement de la série historique…</div>';
 
-    fetch('data/beneficiaires_series_2022_2025.json')
+    fetch('data/beneficiaires_series_2021_2025.json')
       .then(r => r.json())
       .then(data => render(container, data))
       .catch(err => {
@@ -24,7 +24,7 @@
 
   function render(container, data) {
     const cands = data.candidats || [];
-    const years = [2022, 2023, 2024, 2025];
+    const years = [2021, 2022, 2023, 2024, 2025];
 
     // Sort by 2025 desc
     const sorted = cands.slice().sort((a, b) => (b.series['2025'] || 0) - (a.series['2025'] || 0));

@@ -26,7 +26,7 @@
     if (container.dataset.loaded === '1') return;
     container.dataset.loaded = '1';
     container.innerHTML = '<div style="padding:32px;text-align:center;color:var(--ink-mute);font-style:italic">Chargement…</div>';
-    fetch('data/trajectories_2022_2025.json')
+    fetch('data/trajectories_2021_2025.json')
       .then(r => r.json())
       .then(data => doRender(container, data))
       .catch(err => {
@@ -59,7 +59,7 @@
     ctrls.className = 'cross-controls';
     ctrls.innerHTML = `
       <button class="cross-filter is-active" data-filter="all">Tous (${items.length})</button>
-      <button class="cross-filter" data-filter="4year">4 années (${meta.count_4year || 0})</button>
+      <button class="cross-filter" data-filter="5year">5 années (${meta.count_5year || 0})</button>
       <button class="cross-filter" data-filter="growth">📈 Croissance</button>
       <button class="cross-filter" data-filter="one_shot_2025">⚡ One-shots 2025</button>
       <button class="cross-filter" data-filter="stable">→ Stables</button>
@@ -72,23 +72,26 @@
     container.appendChild(grid);
 
     const maxAmt = Math.max(...items.flatMap(t => [
-      t.amount_2022 || 0, t.amount_2023 || 0, t.amount_2024 || 0, t.amount_2025 || 0
+      t.amount_2021 || 0, t.amount_2022 || 0, t.amount_2023 || 0, t.amount_2024 || 0, t.amount_2025 || 0
     ]), 1);
 
     function matchFilter(t, f) {
       if (f === 'all') return true;
-      if (f === '4year') return t.amount_2022 != null && t.amount_2023 != null && t.amount_2024 != null && t.amount_2025 != null;
-      if (f === '3year') return t.amount_2023 != null && t.amount_2024 != null && t.amount_2025 != null;
+      if (f === '5year') return t.amount_2021 > 0 && t.amount_2022 > 0 && t.amount_2023 > 0 && t.amount_2024 > 0 && t.amount_2025 > 0;
+      if (f === '4year') return t.amount_2022 > 0 && t.amount_2023 > 0 && t.amount_2024 > 0 && t.amount_2025 > 0;
+      if (f === '3year') return t.amount_2023 > 0 && t.amount_2024 > 0 && t.amount_2025 > 0;
       return t.trajectory_cat === f;
     }
 
     function buildSparkline(t) {
-      // Mini SVG line chart: 4 points
-      const w = 110, h = 30, pad = 4;
+      // Mini SVG line chart: 5 points
+      const w = 130, h = 30, pad = 4;
+      const xStep = (w - 2*pad) / 4;
       const points = [
-        { x: pad, y: t.amount_2022, lbl: '2022' },
-        { x: pad + (w - 2*pad) / 3, y: t.amount_2023, lbl: '2023' },
-        { x: pad + 2 * (w - 2*pad) / 3, y: t.amount_2024, lbl: '2024' },
+        { x: pad, y: t.amount_2021, lbl: '2021' },
+        { x: pad + xStep, y: t.amount_2022, lbl: '2022' },
+        { x: pad + 2*xStep, y: t.amount_2023, lbl: '2023' },
+        { x: pad + 3*xStep, y: t.amount_2024, lbl: '2024' },
         { x: w - pad, y: t.amount_2025, lbl: '2025' },
       ];
       const validPts = points.filter(p => p.y !== null && p.y !== undefined && p.y > 0);
@@ -152,6 +155,7 @@
           ${t.ville ? `<div class="traj-meta"><span class="traj-ville">📍 ${escapeHtml(t.ville)}</span>${t.sous_theme ? `<span class="traj-sous">${escapeHtml(t.secteur || '')} → ${escapeHtml(t.sous_theme)}</span>` : ''}</div>` : ''}
           <div class="traj-body">
             <div class="traj-values">
+              <div class="traj-y"><span class="traj-y-lbl">2021</span><span class="traj-y-val">${fmtAmt(t.amount_2021)}</span></div>
               <div class="traj-y"><span class="traj-y-lbl">2022</span><span class="traj-y-val">${fmtAmt(t.amount_2022)}</span></div>
               <div class="traj-y"><span class="traj-y-lbl">2023</span><span class="traj-y-val">${fmtAmt(t.amount_2023)}</span></div>
               <div class="traj-y"><span class="traj-y-lbl">2024</span><span class="traj-y-val">${fmtAmt(t.amount_2024)}</span></div>

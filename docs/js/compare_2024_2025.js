@@ -26,7 +26,7 @@
     if (container.dataset.loaded === '1') return;
     container.dataset.loaded = '1';
     container.innerHTML = '<div style="padding:32px;text-align:center;color:var(--ink-mute);font-style:italic">Chargement…</div>';
-    fetch('data/comparison_2022_2025.json')
+    fetch('data/comparison_2021_2025.json')
       .then(r => r.json())
       .then(data => doRender(container, data))
       .catch(err => {
@@ -40,14 +40,14 @@
     const meta = data._meta || {};
     container.innerHTML = '';
 
-    const YEARS = ['2022', '2023', '2024', '2025'];
+    const YEARS = ['2021', '2022', '2023', '2024', '2025'];
     const YEAR_COLORS = {
-      '2022': '#a8a399', '2023': '#7a7570', '2024': '#5b8def', '2025': '#c8102e',
+      '2021': '#bbb6a8', '2022': '#a8a399', '2023': '#7a7570', '2024': '#5b8def', '2025': '#c8102e',
     };
     const totals = meta.totaux_par_annee_M_CHF || {};
     const maxAmt = Math.max(...cantons.flatMap(c => YEARS.map(y => c[`total_${y}_chf`] || 0)), 1);
 
-    // Banner — récap totaux 4 ans
+    // Banner — récap totaux 5 ans
     const banner = document.createElement('div');
     banner.className = 'compare-banner';
     banner.innerHTML = `
@@ -60,7 +60,7 @@
         `).join('')}
       </div>
       <div class="compare-note" style="margin-top:12px;font-size:12.5px;color:var(--ink-mute);text-align:center">
-        Totaux distribués chaque année dans le BRB (extraction parser après nettoyage). 2024 = année record (+jackpots, JO, Euro).
+        Totaux distribués chaque année dans le BRB. 2024 = année record (+jackpots, JO, Euro).
       </div>
     `;
     container.appendChild(banner);
@@ -72,7 +72,7 @@
     const cantonLabels = {VD:'Vaud', FR:'Fribourg', VS:'Valais', NE:'Neuchâtel', GE:'Genève', JU:'Jura', SR:'Inter-cantonal'};
 
     cantons.forEach(c => {
-      const dp = c.delta_pct_2022_2025;
+      const dp = c.delta_pct_2021_2025;
       const isPositive = dp > 0;
       const deltaCls = isPositive ? 'is-up' : (dp < 0 ? 'is-down' : 'is-flat');
       const arrow = isPositive ? '▲' : (dp < 0 ? '▼' : '→');
@@ -82,7 +82,7 @@
         <div class="compare-row-head">
           <span class="treemap-canton ${cantonClass(c.canton)}">${c.canton}</span>
           <span class="compare-canton-name">${cantonLabels[c.canton] || c.canton}</span>
-          <span class="compare-delta ${deltaCls}" title="Évolution 2022 → 2025">${arrow} ${dp >= 0 ? '+' : ''}${dp}% (2022→2025)</span>
+          <span class="compare-delta ${deltaCls}" title="Évolution 2021 → 2025">${arrow} ${dp >= 0 ? '+' : ''}${dp}% (2021→2025)</span>
         </div>
         ${YEARS.map(y => {
           const v = c[`total_${y}_chf`] || 0;

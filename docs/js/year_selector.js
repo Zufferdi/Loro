@@ -7,7 +7,7 @@
 
   // Available years (left-to-right in the UI). To add a year, just add it here
   // and ensure the corresponding _YYYY.json files exist in data/.
-  const YEARS = ['2023', '2024', '2025'];
+  const YEARS = ['2021', '2022', '2023', '2024', '2025'];
 
   function addYearSelector(container, currentYear, renderFn) {
     const sel = document.createElement('div');
@@ -43,6 +43,8 @@
   window.addYearSelector = addYearSelector;
   window.yearSuffix = yearSuffix;
   window.YEAR_TOTALS = {
+    '2021': 203982260,  // brb2021_full.json (post-cleanup v1)
+    '2022': 181331404,  // brb2022_full.json (post-nettoyage qualité approfondi)
     '2023': 202405156,  // brb2023_full.json (post-nettoyage qualité approfondi)
     '2024': 197467672,  // brb2024_full.json (post-nettoyage qualité approfondi)
     '2025': 206439481,  // brb2025_full.json (post-nettoyage qualité approfondi)

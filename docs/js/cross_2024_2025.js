@@ -40,15 +40,15 @@
     const meta = data._meta || {};
     container.innerHTML = '';
 
-    const YEARS = ['2022', '2023', '2024', '2025'];
+    const YEARS = ['2021', '2022', '2023', '2024', '2025'];
     const YEAR_COLORS = {
-      '2022': '#a8a399', '2023': '#7a7570', '2024': '#5b8def', '2025': '#c8102e',
+      '2021': '#bbb6a8', '2022': '#a8a399', '2023': '#7a7570', '2024': '#5b8def', '2025': '#c8102e',
     };
 
     // Quick stats
     const n = list.length;
     const oneShots = list.filter(b => b.is_one_shot_2024).length;
-    const stable4y = list.filter(b => b.nb_years_active === 4).length;
+    const stable5y = list.filter(b => b.nb_years_active === 5).length;
     const stats = document.createElement('div');
     stats.className = 'cross-stats';
     stats.innerHTML = `
@@ -57,8 +57,8 @@
         <div class="cross-stat-lbl">bénéficiaires top</div>
       </div>
       <div class="cross-stat">
-        <div class="cross-stat-val">${stable4y}</div>
-        <div class="cross-stat-lbl">présents 4 années (2022-2025)</div>
+        <div class="cross-stat-val">${stable5y}</div>
+        <div class="cross-stat-lbl">présents 5 années (2021-2025)</div>
       </div>
       <div class="cross-stat">
         <div class="cross-stat-val">${oneShots}</div>
@@ -87,14 +87,14 @@
     container.appendChild(grid);
 
     function classify(b) {
-      const a22 = b.montant_2022_CHF || 0;
+      const a21 = b.montant_2021_CHF || 0;
       const a25 = b.montant_2025_CHF || 0;
       const a24 = b.montant_2024_CHF || 0;
       if (a25 === 0 && a24 >= 500000) return 'oneshot';
-      // Calcul tendance sur 4 ans si dispo
-      const dp22_25 = a22 > 0 ? ((a25 - a22) / a22 * 100) : (b.delta_pct || 0);
-      if (dp22_25 > 20) return 'rising';
-      if (dp22_25 < -20) return 'falling';
+      // Calcul tendance sur 5 ans si dispo
+      const dp21_25 = a21 > 0 ? ((a25 - a21) / a21 * 100) : (b.delta_pct || 0);
+      if (dp21_25 > 20) return 'rising';
+      if (dp21_25 < -20) return 'falling';
       return 'stable';
     }
 
@@ -102,6 +102,7 @@
       grid.innerHTML = '';
       let filtered;
       if (filter === 'all') filtered = list;
+      else if (filter === '5year') filtered = list.filter(b => b.nb_years_active === 5);
       else if (filter === '4year') filtered = list.filter(b => b.nb_years_active === 4);
       else filtered = list.filter(b => classify(b) === filter);
       if (!filtered.length) {
@@ -111,8 +112,10 @@
       filtered.forEach(b => {
         const cls = classify(b);
         const arrow = cls === 'rising' ? '▲' : (cls === 'falling' ? '▼' : (cls === 'oneshot' ? '⚡' : '→'));
-        const dp = (b.delta_22_25_pct != null) ? b.delta_22_25_pct : (b.delta_pct || 0);
-        const pctStr = (cls === 'oneshot' && b.montant_2025_CHF === 0) ? 'one-shot 2024' : (dp >= 0 ? '+' : '') + dp + '% (22-25)';
+        const a21 = b.montant_2021_CHF || 0;
+        const a25 = b.montant_2025_CHF || 0;
+        const dp21_25 = a21 > 0 ? Math.round(((a25 - a21) / a21) * 100) : 0;
+        const pctStr = (cls === 'oneshot' && b.montant_2025_CHF === 0) ? 'one-shot 2024' : (dp21_25 >= 0 ? '+' : '') + dp21_25 + '% (21-25)';
         const row = document.createElement('div');
         row.className = `cross-row is-${cls}`;
         const barsHtml = YEARS.map(y => {

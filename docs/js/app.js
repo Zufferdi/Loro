@@ -992,9 +992,10 @@ function initTreemap() {
   if (container.empty()) return;
   container.html('');
 
-  // Years available in repartition_secteur
+  // Years available in repartition_secteur (skip _meta)
   const allYears = new Set();
-  Object.values(DATA.secteurs).forEach(series => {
+  Object.entries(DATA.secteurs).forEach(([sec, series]) => {
+    if (sec === '_meta') return;
     Object.keys(series).forEach(y => { if (/^\d{4}$/.test(y)) allYears.add(+y); });
   });
   const years = [...allYears].sort((a,b)=>a-b);
@@ -1046,15 +1047,34 @@ function initTreemap() {
     .attr('width', '100%').attr('height', H)
     .style('height', 'auto').style('max-height', '70vh').style('display', 'block');
 
-  const sectorOrder = Object.keys(DATA.secteurs); // stable layout key
+  // <defs> pour pattern hachuré (estimations)
+  const defs = svg.append('defs');
+  const pat = defs.append('pattern').attr('id', 'estimated-hatch')
+    .attr('patternUnits', 'userSpaceOnUse')
+    .attr('width', 8).attr('height', 8)
+    .attr('patternTransform', 'rotate(45)');
+  pat.append('rect').attr('width', 8).attr('height', 8).attr('fill', 'rgba(255,255,255,0)');
+  pat.append('line').attr('x1', 0).attr('y1', 0).attr('x2', 0).attr('y2', 8)
+    .attr('stroke', 'rgba(255,255,255,0.35)').attr('stroke-width', 2);
+
+  const sectorOrder = Object.keys(DATA.secteurs).filter(k => k !== "_meta"); // stable layout key
+
+  // Années estimées (interpolation) — à signaler visuellement
+  const estimatedSportYears = new Set([2014, 2020, 2021, 2022]);
 
   function render() {
     // Build hierarchy for current year
     const root = { name: 'Loro', children: [] };
     Object.entries(DATA.secteurs).forEach(([sec, series]) => {
+      if (sec === '_meta') return;  // skip meta
       const v = series[String(curYear)];
       if (!v) return;
-      root.children.push({ name: sec, value: v, color: SECTOR_COLORS[sec] || '#999' });
+      const isEstimated = (sec === 'Sport' && estimatedSportYears.has(curYear));
+      root.children.push({
+        name: sec, value: v,
+        color: SECTOR_COLORS[sec] || '#999',
+        estimated: isEstimated,
+      });
     });
     const total = root.children.reduce((s,c) => s+c.value, 0);
     totalLabel.text(`${CHF1.format(total/1e6)} M CHF redistribués`);
@@ -1072,6 +1092,11 @@ function initTreemap() {
       .style('cursor', 'pointer');
     gEnter.append('rect').attr('width', 0).attr('height', 0)
       .attr('fill', d => d.data.color).attr('opacity', 0.92);
+    // Overlay hachuré pour les estimations (Sport 2014, 2020-2022)
+    gEnter.append('rect').attr('class', 'estimated-overlay')
+      .attr('width', 0).attr('height', 0)
+      .attr('fill', d => d.data.estimated ? 'url(#estimated-hatch)' : 'none')
+      .attr('pointer-events', 'none');
     gEnter.append('text').attr('class','t-name').attr('x', 14).attr('y', 28)
       .attr('fill', '#fff').attr('font-weight', 500).attr('font-size', 16);
     gEnter.append('text').attr('class','t-val').attr('x', 14).attr('y', 54)
@@ -1079,13 +1104,20 @@ function initTreemap() {
       .attr('font-size', 22).attr('font-family', 'Source Serif Pro, serif');
     gEnter.append('text').attr('class','t-pct').attr('x', 14).attr('y', 74)
       .attr('fill', '#fff').attr('opacity', 0.7).attr('font-size', 12);
+    gEnter.append('text').attr('class','t-est').attr('x', 14).attr('y', 94)
+      .attr('fill', '#fff').attr('opacity', 0.7).attr('font-size', 10)
+      .attr('font-style', 'italic')
+      .text(d => d.data.estimated ? '~ valeur estimée' : '');
 
     // MERGE + UPDATE
     const gAll = gEnter.merge(g);
     gAll.transition().duration(800).ease(d3.easeCubicInOut)
       .attr('transform', d => `translate(${d.x0},${d.y0})`);
-    gAll.select('rect').transition().duration(800).ease(d3.easeCubicInOut)
+    gAll.select('rect:not(.estimated-overlay)').transition().duration(800).ease(d3.easeCubicInOut)
       .attr('width', d => d.x1 - d.x0).attr('height', d => d.y1 - d.y0);
+    gAll.select('rect.estimated-overlay').transition().duration(800).ease(d3.easeCubicInOut)
+      .attr('width', d => d.x1 - d.x0).attr('height', d => d.y1 - d.y0)
+      .attr('fill', d => d.data.estimated ? 'url(#estimated-hatch)' : 'none');
     gAll.select('.t-name')
       .text(d => SECTOR_SHORT[d.data.name] || d.data.name)
       .style('opacity', d => ((d.x1 - d.x0) >= 90 && (d.y1 - d.y0) >= 32) ? 1 : 0);
@@ -1095,11 +1127,17 @@ function initTreemap() {
     gAll.select('.t-pct')
       .text(d => CHF1.format(d.value / r.value * 100) + ' % du total')
       .style('opacity', d => ((d.x1 - d.x0) >= 90 && (d.y1 - d.y0) >= 80) ? 0.7 : 0);
+    gAll.select('.t-est')
+      .text(d => d.data.estimated ? '~ valeur estimée' : '')
+      .style('opacity', d => (d.data.estimated && (d.x1 - d.x0) >= 90 && (d.y1 - d.y0) >= 105) ? 0.85 : 0);
 
     gAll.on('mouseover', function(ev, d) {
+      const estNote = d.data.estimated
+        ? '<div class="t-meta" style="color:#f0a93d;margin-top:4px">~ valeur estimée par interpolation (donnée manquante dans le PDF source)</div>'
+        : '';
       showTip(`<div class="t-title">${d.data.name}</div>
                <div>${CHF1.format(d.value / 1e6)} M CHF en ${curYear}</div>
-               <div class="t-meta">${CHF1.format(d.value / r.value * 100)} % du redistribué</div>`,
+               <div class="t-meta">${CHF1.format(d.value / r.value * 100)} % du redistribué</div>${estNote}`,
               ev.clientX, ev.clientY);
     }).on('mouseout', hideTip);
 
@@ -1236,7 +1274,7 @@ function initSankey() {
 
   const games = ['Billets Instantanés', 'Jeux de tirages', 'Paris sportifs', 'Loterie électronique', 'PMUR'];
   const cantons = ['VD', 'GE', 'VS', 'FR', 'NE', 'JU'];
-  const sectorsList = Object.keys(DATA.secteurs);
+  const sectorsList = Object.keys(DATA.secteurs).filter(k => k !== "_meta");
 
   const detailYear = DATA.detail.filter(d => d.annee === year);
   const nodes = [];
