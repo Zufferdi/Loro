@@ -35,7 +35,7 @@ SOCIAL_PATTERNS = [
      r"pré-scolaire|preschool|jardin\s+d'enfants|UAPE\b|jardin\s+d'enfance|maman\s+de\s+jour)\b"),
 
     # === Personnes âgées ===
-    ('Personnes âgées',
+    ('EMS et personnes âgées',
      r"\b(pro\s+senectute|EMS\b|personnes\s+âgées|aînés|seniors\b|alzheimer|3e\s+âge|troisième\s+âge|"
      r"maison\s+de\s+retraite|résidence\s+(pour\s+)?seniors|home\s+médicalisé|home\s+médicalis|"
      r"vieillesse|vieillir|retraite\s+(active|d'or|positive)|mouvement\s+des\s+aînés|"
@@ -141,7 +141,7 @@ COMPILED = [(name, re.compile(p, re.IGNORECASE)) for name, p in SOCIAL_PATTERNS]
 # but web-research has determined the right category. Match by exact nom (case-sensitive).
 MANUAL_OVERRIDES = {
     "Banc Public":                    'Précarité / Pauvreté',     # accueil de jour Fribourg
-    "Elderli Sàrl":                   'Personnes âgées',           # colocation intergénérationnelle
+    "Elderli Sàrl":                   'EMS et personnes âgées',           # colocation intergénérationnelle
     "Assoc. La Tuile":                'Précarité / Pauvreté',     # accueil de nuit Fribourg
     "Communauté d'Emmaüs":            'Précarité / Pauvreté',     # bien connu
     "Fond. Au Cœur des Grottes":      'Violences / Refuges',       # survivantes violences GE
