@@ -26,7 +26,7 @@ from pathlib import Path
 from collections import defaultdict
 
 DATA = Path('/home/claude/audit2/Loro-main/docs/data')
-YEARS = ['2023', '2024', '2025']
+YEARS = ['2022', '2023', '2024', '2025']
 
 # Cantonal adjectives that sometimes leak into the `ville` field
 ADJECTIVE_VILLES = {

@@ -171,7 +171,7 @@ def find_override_sector(entry: dict) -> str | None:
 
 
 def main():
-    years = ['2023', '2024', '2025']
+    years = ['2022', '2023', '2024', '2025']
     total_overrides = 0
 
     for y in years:

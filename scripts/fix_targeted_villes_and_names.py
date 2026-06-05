@@ -25,7 +25,7 @@ import re
 from pathlib import Path
 
 DATA = Path('/home/claude/audit2/Loro-main/docs/data')
-YEARS = ['2023', '2024', '2025']
+YEARS = ['2022', '2023', '2024', '2025']
 
 # Villes that are actually REGIONS or artifacts — to null out
 REGION_OR_ARTIFACT_VILLES = {
