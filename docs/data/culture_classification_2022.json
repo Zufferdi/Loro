@@ -5,47 +5,47 @@
     "source": "brb2022_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 1269,
-    "total_chf": 69219054,
-    "precise_classified_entries": 567,
-    "precise_classified_chf": 50258572,
-    "pct_chf_precisely_classified": 72.6,
+    "total_entries": 1271,
+    "total_chf": 69261054,
+    "precise_classified_entries": 565,
+    "precise_classified_chf": 50193572,
+    "pct_chf_precisely_classified": 72.5,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 1269,
-    "total_chf_classified": 69219054,
-    "catchall_chf": 18960482,
-    "cross_year_recovered": 418
+    "total_entries_classified": 1271,
+    "total_chf_classified": 69261054,
+    "catchall_chf": 19067482,
+    "cross_year_recovered": 419
   },
   "categories": [
     {
       "name": "Soutien général à la culture",
-      "count": 702,
-      "total_chf": 18960482,
-      "mean_chf": 27009,
+      "count": 706,
+      "total_chf": 19067482,
+      "mean_chf": 27007,
       "cantons": {
         "VD": {
-          "count": 245,
-          "total_chf": 7587500
+          "count": 244,
+          "total_chf": 7557500
         },
         "FR": {
           "count": 106,
           "total_chf": 2459046
         },
         "SR": {
-          "count": 93,
-          "total_chf": 1570526
+          "count": 94,
+          "total_chf": 1585526
         },
         "GE": {
-          "count": 111,
-          "total_chf": 2505110
+          "count": 114,
+          "total_chf": 2600110
         },
         "JU": {
           "count": 36,
           "total_chf": 804000
         },
         "VS": {
-          "count": 61,
-          "total_chf": 2269400
+          "count": 62,
+          "total_chf": 2296400
         },
         "NE": {
           "count": 50,
@@ -1022,6 +1022,12 @@
           "montant_CHF": 40000
         },
         {
+          "nom": "Assoc. JazzContreBand",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 40000
+        },
+        {
           "nom": "Assoc. Roadmovie",
           "ville": "Lausanne",
           "canton": "VD",
@@ -1246,7 +1252,7 @@
         {
           "nom": "La Division de la Joie",
           "ville": "Carouge GE",
-          "canton": "VD",
+          "canton": "GE",
           "montant_CHF": 30000
         },
         {
@@ -1277,12 +1283,6 @@
           "nom": "Assoc. BadNewsFromTheStars",
           "ville": "Chandolin",
           "canton": "SR",
-          "montant_CHF": 30000
-        },
-        {
-          "nom": "Nouvelle revue neuchâteloise",
-          "ville": "La Chaux-de-Fonds",
-          "canton": "NE",
           "montant_CHF": 30000
         }
       ]
@@ -1423,7 +1423,7 @@
           "canton": "JU",
           "ville": "Delémont",
           "secteur": "",
-          "description": "Consolidation de 2 attributions : Fond. Théâtre du Jura, Fond. pour le Théâtre du Jura",
+          "description": "Consolidation de 2 attributions : Fond. pour le Théâtre du Jura, Fond. Théâtre du Jura",
           "_consolidated": true,
           "_count": 2
         },
@@ -2085,9 +2085,9 @@
     },
     {
       "name": "Festival multi-disciplinaire",
-      "count": 134,
-      "total_chf": 10314500,
-      "mean_chf": 76973,
+      "count": 130,
+      "total_chf": 10209500,
+      "mean_chf": 78534,
       "cantons": {
         "VD": {
           "count": 22,
@@ -2106,8 +2106,8 @@
           "total_chf": 2079500
         },
         "GE": {
-          "count": 48,
-          "total_chf": 2068000
+          "count": 44,
+          "total_chf": 1963000
         },
         "NE": {
           "count": 4,
@@ -2131,7 +2131,7 @@
           "canton": "VD+VS",
           "ville": "Verbier",
           "secteur": "",
-          "description": "Consolidation de 2 attributions : Fond. Verbier Festival, Fond. du Verbier Festival",
+          "description": "Consolidation de 2 attributions : Fond. du Verbier Festival, Fond. Verbier Festival",
           "_consolidated": true,
           "_count": 2
         },
@@ -2167,7 +2167,7 @@
           "canton": "VD+VS",
           "ville": "Verbier",
           "secteur": "",
-          "description": "Consolidation de 2 attributions : Fond. Verbier Festival, Fond. du Verbier Festival",
+          "description": "Consolidation de 2 attributions : Fond. du Verbier Festival, Fond. Verbier Festival",
           "_consolidated": true,
           "_count": 2
         },
@@ -2468,12 +2468,6 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Assoc. JazzContreBand",
-          "ville": "Carouge",
-          "canton": "GE",
-          "montant_CHF": 40000
-        },
-        {
           "nom": "Assoc. Sub-Session",
           "ville": "Meyrin",
           "canton": "GE",
@@ -2552,12 +2546,6 @@
           "montant_CHF": 25000
         },
         {
-          "nom": "Assoc. Agneta & Cie",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 25000
-        },
-        {
           "nom": "Sté Frédéric Chopin Genève",
           "ville": "Vésenaz",
           "canton": "GE",
@@ -2602,18 +2590,6 @@
         {
           "nom": "Assoc. Plein-les-Watts",
           "ville": "Grand-Lancy",
-          "canton": "GE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Assoc. PontiCello",
-          "ville": "Carouge",
-          "canton": "GE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Assoc. PontiCello",
-          "ville": "Carouge",
           "canton": "GE",
           "montant_CHF": 20000
         },
@@ -2969,9 +2945,9 @@
     },
     {
       "name": "Musique classique",
-      "count": 113,
-      "total_chf": 7703820,
-      "mean_chf": 68175,
+      "count": 115,
+      "total_chf": 7743820,
+      "mean_chf": 67337,
       "cantons": {
         "VD": {
           "count": 33,
@@ -2994,8 +2970,8 @@
           "total_chf": 1105500
         },
         "GE": {
-          "count": 22,
-          "total_chf": 734000
+          "count": 24,
+          "total_chf": 774000
         },
         "JU": {
           "count": 6,
@@ -3015,7 +2991,7 @@
           "canton": "GE+VD",
           "ville": "Genève",
           "secteur": "",
-          "description": "Consolidation de 3 attributions : AVAOSR - Assoc. Vaudoise des Amis de l'Orchestre de la Suisse Romande, OSR - Orchestre de la Suisse Romande",
+          "description": "Consolidation de 3 attributions : OSR - Orchestre de la Suisse Romande, AVAOSR - Assoc. Vaudoise des Amis de l'Orchestre de la Suisse Romande",
           "_consolidated": true,
           "_count": 3
         },
@@ -3051,7 +3027,7 @@
           "canton": "GE+VD",
           "ville": "Genève",
           "secteur": "",
-          "description": "Consolidation de 3 attributions : AVAOSR - Assoc. Vaudoise des Amis de l'Orchestre de la Suisse Romande, OSR - Orchestre de la Suisse Romande",
+          "description": "Consolidation de 3 attributions : OSR - Orchestre de la Suisse Romande, AVAOSR - Assoc. Vaudoise des Amis de l'Orchestre de la Suisse Romande",
           "_consolidated": true,
           "_count": 3
         },
@@ -3191,6 +3167,18 @@
           "nom": "Pour l'Art - Musique de Chambre",
           "ville": "Vevey",
           "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. PontiCello",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. PontiCello",
+          "ville": "Carouge",
+          "canton": "GE",
           "montant_CHF": 20000
         },
         {
@@ -3749,7 +3737,7 @@
           "canton": "GE",
           "ville": "Genève",
           "secteur": "",
-          "description": "Consolidation de 5 attributions : Fond. Cinéforom, Fond. romande pour le cinéma - Cinéforom",
+          "description": "Consolidation de 5 attributions : Fond. romande pour le cinéma - Cinéforom, Fond. Cinéforom",
           "_consolidated": true,
           "_count": 5
         },
@@ -3785,7 +3773,7 @@
           "canton": "GE",
           "ville": "Genève",
           "secteur": "",
-          "description": "Consolidation de 5 attributions : Fond. Cinéforom, Fond. romande pour le cinéma - Cinéforom",
+          "description": "Consolidation de 5 attributions : Fond. romande pour le cinéma - Cinéforom, Fond. Cinéforom",
           "_consolidated": true,
           "_count": 5
         },
@@ -4373,7 +4361,7 @@
           "canton": "VD",
           "ville": "Lausanne",
           "secteur": "",
-          "description": "Consolidation de 2 attributions : CORODIS - Commission Romande de Diffusion des Spectacles, Assoc. CORODIS",
+          "description": "Consolidation de 2 attributions : Assoc. CORODIS, CORODIS - Commission Romande de Diffusion des Spectacles",
           "_consolidated": true,
           "_count": 2
         },
@@ -4409,7 +4397,7 @@
           "canton": "VD",
           "ville": "Lausanne",
           "secteur": "",
-          "description": "Consolidation de 2 attributions : CORODIS - Commission Romande de Diffusion des Spectacles, Assoc. CORODIS",
+          "description": "Consolidation de 2 attributions : Assoc. CORODIS, CORODIS - Commission Romande de Diffusion des Spectacles",
           "_consolidated": true,
           "_count": 2
         },

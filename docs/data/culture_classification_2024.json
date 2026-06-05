@@ -5,23 +5,23 @@
     "source": "brb2024_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 1057,
-    "total_chf": 59625476,
-    "precise_classified_entries": 410,
-    "precise_classified_chf": 39246679,
-    "pct_chf_precisely_classified": 65.8,
+    "total_entries": 1060,
+    "total_chf": 59791576,
+    "precise_classified_entries": 411,
+    "precise_classified_chf": 39391779,
+    "pct_chf_precisely_classified": 65.9,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 1057,
-    "total_chf_classified": 59625476,
-    "catchall_chf": 20378797,
-    "cross_year_recovered": 418
+    "total_entries_classified": 1060,
+    "total_chf_classified": 59791576,
+    "catchall_chf": 20399797,
+    "cross_year_recovered": 419
   },
   "categories": [
     {
       "name": "Soutien général à la culture",
-      "count": 647,
-      "total_chf": 20378797,
-      "mean_chf": 31497,
+      "count": 649,
+      "total_chf": 20399797,
+      "mean_chf": 31432,
       "cantons": {
         "VD": {
           "count": 49,
@@ -32,8 +32,8 @@
           "total_chf": 826701
         },
         "SR": {
-          "count": 81,
-          "total_chf": 2857690
+          "count": 82,
+          "total_chf": 2877690
         },
         "JU": {
           "count": 53,
@@ -48,8 +48,8 @@
           "total_chf": 5826746
         },
         "GE": {
-          "count": 136,
-          "total_chf": 3860050
+          "count": 137,
+          "total_chf": 3861050
         }
       },
       "samples": [
@@ -1935,9 +1935,9 @@
     },
     {
       "name": "Festival multi-disciplinaire",
-      "count": 83,
-      "total_chf": 6454654,
-      "mean_chf": 77766,
+      "count": 80,
+      "total_chf": 6413654,
+      "mean_chf": 80170,
       "cantons": {
         "VD": {
           "count": 7,
@@ -1948,16 +1948,12 @@
           "total_chf": 389000
         },
         "SR": {
-          "count": 16,
-          "total_chf": 1097000
+          "count": 15,
+          "total_chf": 1077000
         },
         "VS": {
           "count": 14,
           "total_chf": 1613500
-        },
-        "GE": {
-          "count": 27,
-          "total_chf": 1818654
         },
         "JU": {
           "count": 11,
@@ -1966,6 +1962,10 @@
         "NE": {
           "count": 5,
           "total_chf": 200000
+        },
+        "GE": {
+          "count": 25,
+          "total_chf": 1797654
         }
       },
       "samples": [
@@ -2306,21 +2306,9 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "Assoc. Geneva Brass Quintet",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 20000
-        },
-        {
           "nom": "Assoc. Plein-les-Watts",
           "ville": "Grand-Lancy e",
           "canton": "SR",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Assoc. PontiCello",
-          "ville": "Genève",
-          "canton": "GE",
           "montant_CHF": 20000
         },
         {
@@ -2502,12 +2490,6 @@
           "ville": "Delémont",
           "canton": "JU",
           "montant_CHF": 2500
-        },
-        {
-          "nom": "Assoc. JazzContreBand",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 1000
         }
       ]
     },
@@ -2549,7 +2531,7 @@
           "canton": "GE",
           "ville": "Genève",
           "secteur": "",
-          "description": "Consolidation de 7 attributions : Fond. Cinéforom, Cinéforom, Fond. romande pour le cinéma - Cinéforom, Cinéforom - Fond. romande pour le cinéma",
+          "description": "Consolidation de 7 attributions : Cinéforom, Cinéforom - Fond. romande pour le cinéma, Fond. romande pour le cinéma - Cinéforom, Fond. Cinéforom",
           "_consolidated": true,
           "_count": 7
         },
@@ -2589,7 +2571,7 @@
           "canton": "GE",
           "ville": "Genève",
           "secteur": "",
-          "description": "Consolidation de 7 attributions : Fond. Cinéforom, Cinéforom, Fond. romande pour le cinéma - Cinéforom, Cinéforom - Fond. romande pour le cinéma",
+          "description": "Consolidation de 7 attributions : Cinéforom, Cinéforom - Fond. romande pour le cinéma, Fond. romande pour le cinéma - Cinéforom, Fond. Cinéforom",
           "_consolidated": true,
           "_count": 7
         },
@@ -2761,9 +2743,9 @@
     },
     {
       "name": "Musique classique",
-      "count": 82,
-      "total_chf": 4911800,
-      "mean_chf": 59900,
+      "count": 83,
+      "total_chf": 4931800,
+      "mean_chf": 59419,
       "cantons": {
         "SR": {
           "count": 11,
@@ -2774,8 +2756,8 @@
           "total_chf": 870000
         },
         "GE": {
-          "count": 21,
-          "total_chf": 1796700
+          "count": 22,
+          "total_chf": 1816700
         },
         "FR": {
           "count": 6,
@@ -2965,6 +2947,12 @@
           "nom": "Chœur de la Cité Lausanne",
           "ville": "Genolier",
           "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. PontiCello",
+          "ville": "Genève",
+          "canton": "GE",
           "montant_CHF": 20000
         },
         {
@@ -3947,7 +3935,7 @@
           "canton": "VD",
           "ville": "Lausanne",
           "secteur": "",
-          "description": "Consolidation de 2 attributions : Corodis, Assoc. CORODIS",
+          "description": "Consolidation de 2 attributions : Assoc. CORODIS, Corodis",
           "_consolidated": true,
           "_count": 2
         },
@@ -3977,7 +3965,7 @@
           "canton": "VD",
           "ville": "Lausanne",
           "secteur": "",
-          "description": "Consolidation de 2 attributions : Corodis, Assoc. CORODIS",
+          "description": "Consolidation de 2 attributions : Assoc. CORODIS, Corodis",
           "_consolidated": true,
           "_count": 2
         },
@@ -4002,86 +3990,18 @@
       ]
     },
     {
-      "name": "Arts visuels",
-      "count": 4,
-      "total_chf": 842900,
-      "mean_chf": 210725,
-      "cantons": {
-        "VD": {
-          "count": 2,
-          "total_chf": 800000
-        },
-        "GE": {
-          "count": 2,
-          "total_chf": 42900
-        }
-      },
-      "samples": [
-        {
-          "nom": "ARSENIC",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 400000
-        },
-        {
-          "nom": "Fond. Arsenic, Lausanne - Centre d'art scénique contemporain",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 400000
-        },
-        {
-          "nom": "Assoc. La Meute",
-          "ville": "Meyrin",
-          "canton": "GE",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "Assoc. La Ruche, Carouge Éditer la biographie d'un peintre",
-          "ville": "Carouge",
-          "canton": "GE",
-          "montant_CHF": 2900
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "ARSENIC",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 400000
-        },
-        {
-          "nom": "Fond. Arsenic, Lausanne - Centre d'art scénique contemporain",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 400000
-        },
-        {
-          "nom": "Assoc. La Meute",
-          "ville": "Meyrin",
-          "canton": "GE",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "Assoc. La Ruche, Carouge Éditer la biographie d'un peintre",
-          "ville": "Carouge",
-          "canton": "GE",
-          "montant_CHF": 2900
-        }
-      ]
-    },
-    {
       "name": "Danse",
-      "count": 14,
-      "total_chf": 842500,
-      "mean_chf": 60178,
+      "count": 16,
+      "total_chf": 858600,
+      "mean_chf": 53662,
       "cantons": {
         "VD": {
-          "count": 3,
-          "total_chf": 530000
+          "count": 4,
+          "total_chf": 543100
         },
         "NE": {
-          "count": 3,
-          "total_chf": 220000
+          "count": 4,
+          "total_chf": 223000
         },
         "GE": {
           "count": 6,
@@ -4174,6 +4094,12 @@
           "montant_CHF": 15000
         },
         {
+          "nom": "Reso - Réseau Danse Suisse",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 13100
+        },
+        {
           "nom": "Assoc. de danse Temps Liés",
           "ville": "Delémont",
           "canton": "JU",
@@ -4204,6 +4130,12 @@
           "montant_CHF": 4000
         },
         {
+          "nom": "Collectif Danse",
+          "ville": "Dombresson",
+          "canton": "NE",
+          "montant_CHF": 3000
+        },
+        {
           "nom": "Assoc. KoHalition Productions",
           "ville": "Delémont",
           "canton": "JU",
@@ -4212,18 +4144,86 @@
       ]
     },
     {
+      "name": "Arts visuels",
+      "count": 4,
+      "total_chf": 842900,
+      "mean_chf": 210725,
+      "cantons": {
+        "VD": {
+          "count": 2,
+          "total_chf": 800000
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 42900
+        }
+      },
+      "samples": [
+        {
+          "nom": "ARSENIC",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Fond. Arsenic, Lausanne - Centre d'art scénique contemporain",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Assoc. La Meute",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. La Ruche, Carouge Éditer la biographie d'un peintre",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 2900
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "ARSENIC",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Fond. Arsenic, Lausanne - Centre d'art scénique contemporain",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Assoc. La Meute",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. La Ruche, Carouge Éditer la biographie d'un peintre",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 2900
+        }
+      ]
+    },
+    {
       "name": "Littérature / Édition",
-      "count": 10,
-      "total_chf": 609200,
-      "mean_chf": 60920,
+      "count": 11,
+      "total_chf": 759200,
+      "mean_chf": 69018,
       "cantons": {
         "FR": {
           "count": 1,
           "total_chf": 190000
         },
         "NE": {
-          "count": 2,
-          "total_chf": 160000
+          "count": 3,
+          "total_chf": 310000
         },
         "SR": {
           "count": 2,
@@ -4246,6 +4246,12 @@
           "montant_CHF": 190000
         },
         {
+          "nom": "Fond. Bibliothèque de Neuchâtel",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 150000
+        },
+        {
           "nom": "Poésie en Arrosoir",
           "ville": "Neuchâtel",
           "canton": "NE",
@@ -4262,12 +4268,6 @@
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 71200
-        },
-        {
-          "nom": "Assoc. Le Roman des Romands",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 50000
         }
       ],
       "all_entries": [
@@ -4276,6 +4276,12 @@
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 190000
+        },
+        {
+          "nom": "Fond. Bibliothèque de Neuchâtel",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 150000
         },
         {
           "nom": "Poésie en Arrosoir",

@@ -69,6 +69,31 @@
     "fixes": {
       "v13_ems": {
         "count": 29
+      },
+      "v14_names": {
+        "count": 1
+      },
+      "v15_locations": {
+        "count": 33
+      },
+      "v16_ocr": {
+        "count": 4
+      },
+      "v18_aggregates": {
+        "count": 1,
+        "total_chf": 1669649
+      },
+      "v20_ville_canton": {
+        "count": 3
+      },
+      "v21_sport_culture": {
+        "count": 4
+      },
+      "v23_fiff_truncated": {
+        "count": 2
+      },
+      "v24_osses_canton": {
+        "count": 1
       }
     }
   },
@@ -401,7 +426,7 @@
       "nom": "AVIVO Section de Lausanne",
       "ville": null,
       "description": "Manifestation",
-      "canton": "JU",
+      "canton": "VD",
       "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 14000,
       "annee": 2024
@@ -410,7 +435,7 @@
       "nom": "AVIVO Section de Renens et environs",
       "ville": null,
       "description": "Manifestation",
-      "canton": "JU",
+      "canton": "VD",
       "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 5000,
       "annee": 2024
@@ -3200,7 +3225,7 @@
       "nom": "École de Musique Vaudoise en Réseau (EMVR)",
       "ville": "Bussigny",
       "description": "Acquisition matériel et équipement",
-      "canton": "FR",
+      "canton": "VD",
       "secteur": "Santé et handicap",
       "montant_CHF": 44000,
       "annee": 2024
@@ -5792,7 +5817,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
       "ville": "Gymnastique",
       "description": "7 camps sportifs",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 1066,
       "annee": 2024
@@ -6197,18 +6222,9 @@
       "nom": "Assoc. Cantonale Vaudoise de Football",
       "ville": "Football",
       "description": "2 camps sportifs",
-      "canton": "GE",
-      "secteur": "Sport",
-      "montant_CHF": 618,
-      "annee": 2024
-    },
-    {
-      "nom": "cantonales vaudoises",
-      "ville": null,
-      "description": "(soutiens annuels et divers)",
       "canton": "VD",
       "secteur": "Sport",
-      "montant_CHF": 1669649,
+      "montant_CHF": 618,
       "annee": 2024
     },
     {
@@ -6224,7 +6240,7 @@
       "nom": "Assoc. Cantonale Vaudoise d'Athlétisme",
       "ville": "Athlétisme",
       "description": "Soutien annuel",
-      "canton": "VS",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 15800,
       "annee": 2024
@@ -6242,7 +6258,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Football",
       "ville": "Football",
       "description": "Participation loyer",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 28200,
       "annee": 2024
@@ -6251,7 +6267,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Football",
       "ville": "Football",
       "description": "Soutien annuel",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 406900,
       "annee": 2024
@@ -6260,7 +6276,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
       "ville": "Gymnastique",
       "description": "Participation loyer",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 10870,
       "annee": 2024
@@ -6269,7 +6285,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
       "ville": "Gymnastique",
       "description": "Soutien annuel",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 297600,
       "annee": 2024
@@ -6287,7 +6303,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
       "ville": "Hockey",
       "description": "Soutien annuel",
-      "canton": "FR",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 37600,
       "annee": 2024
@@ -6305,7 +6321,7 @@
       "nom": "Assoc. Cantonale Vaudoise pour la Natation",
       "ville": "Natation",
       "description": "Soutien annuel",
-      "canton": "VS",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 41400,
       "annee": 2024
@@ -7178,7 +7194,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
       "ville": "Gymnastique",
       "description": "Achat de matériel pour le CRP Vaud",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 1430,
       "annee": 2024
@@ -7187,7 +7203,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
       "ville": "Gymnastique",
       "description": "Achat d'une remorque pour le transport de portique d'anneaux",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 4380,
       "annee": 2024
@@ -7196,7 +7212,7 @@
       "nom": "Assoc. Cantonale Vaudoise pour la Natation",
       "ville": "Natation",
       "description": "Achat de deux sets de haut-parleurs mobiles pour le start",
-      "canton": "VS",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 1100,
       "annee": 2024
@@ -7205,7 +7221,7 @@
       "nom": "Assoc. Cantonale Vaudoise pour la Natation",
       "ville": "Natation",
       "description": "Achat d'un ordinateur pour la gestion du système de chronométrage",
-      "canton": "VS",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 120,
       "annee": 2024
@@ -7385,7 +7401,7 @@
       "nom": "Pétanque de Bussigny",
       "ville": "Bussigny",
       "description": "Création d'un Boulodrome couvert - Acompte",
-      "canton": "FR",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 80000,
       "annee": 2024
@@ -7538,7 +7554,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Football",
       "ville": "Football",
       "description": "Appareil de chronométrage",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 500,
       "annee": 2024
@@ -7547,7 +7563,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
       "ville": "Gymnastique",
       "description": "Achat de chariots enrouleurs pour tapis",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 1800,
       "annee": 2024
@@ -7556,7 +7572,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
       "ville": "Gymnastique",
       "description": "Achat de matériel pour le Centre d'Entrainement Cantonal",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 1170,
       "annee": 2024
@@ -7682,7 +7698,7 @@
       "nom": "Assoc. Cantonale Vaudoise d'Athlétisme",
       "ville": "Athlétisme",
       "description": "Championnat vaudois d’athlétisme",
-      "canton": "VS",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 500,
       "annee": 2024
@@ -7691,7 +7707,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Football",
       "ville": "Football",
       "description": "Graines de foot 2024",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 10000,
       "annee": 2024
@@ -7700,7 +7716,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Football",
       "ville": "Football",
       "description": "UEFA Région CUP",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 15000,
       "annee": 2024
@@ -7709,7 +7725,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
       "ville": "Gymnastique",
       "description": "Master 2 – Région NORD – 2024",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 1000,
       "annee": 2024
@@ -7727,7 +7743,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Lutte Suisse Fête cantonale vaudoise",
       "ville": "Fête",
       "description": "des jeunes lutteurs",
-      "canton": "VS",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 3000,
       "annee": 2024
@@ -7736,7 +7752,7 @@
       "nom": "Assoc. Cantonale Vaudoise pour la Natation",
       "ville": "Natation",
       "description": "Championnats Vaudois 2024",
-      "canton": "VS",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 3000,
       "annee": 2024
@@ -10076,7 +10092,7 @@
       "nom": "FSG Bussigny - Master 1",
       "ville": "Bussigny",
       "description": "Régions Ouest",
-      "canton": "FR",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 500,
       "annee": 2024
@@ -12002,7 +12018,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Football",
       "ville": "Football",
       "description": "Football hommes",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 37050,
       "annee": 2024
@@ -12011,7 +12027,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
       "ville": "Gymnastique",
       "description": "Gymnastique rythmique",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 6400,
       "annee": 2024
@@ -12020,7 +12036,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
       "ville": "Gymnastique",
       "description": "Trampoline",
-      "canton": "GE",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 5700,
       "annee": 2024
@@ -12029,7 +12045,7 @@
       "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
       "ville": "Hockey",
       "description": "Hockey sur glace hommes",
-      "canton": "FR",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 19450,
       "annee": 2024
@@ -12038,7 +12054,7 @@
       "nom": "Assoc. Cantonale Vaudoise pour la Natation",
       "ville": "Natation",
       "description": "Artistic Swimming",
-      "canton": "VS",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 11650,
       "annee": 2024
@@ -12047,7 +12063,7 @@
       "nom": "Assoc. Cantonale Vaudoise pour la Natation",
       "ville": "Natation",
       "description": "Natation",
-      "canton": "VS",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 12000,
       "annee": 2024
@@ -12056,7 +12072,7 @@
       "nom": "Assoc. Cantonale Vaudoise pour la Natation",
       "ville": "Natation",
       "description": "Plongeon",
-      "canton": "VS",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 6500,
       "annee": 2024
@@ -12065,7 +12081,7 @@
       "nom": "Assoc. Cantonale Vaudoise pour la Natation",
       "ville": "Natation",
       "description": "Waterpolo femmes",
-      "canton": "VS",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 6700,
       "annee": 2024
@@ -12074,7 +12090,7 @@
       "nom": "Assoc. Cantonale Vaudoise pour la Natation",
       "ville": "Natation",
       "description": "Waterpolo hommes",
-      "canton": "VS",
+      "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 11500,
       "annee": 2024
@@ -13709,9 +13725,9 @@
       "annee": 2024
     },
     {
-      "nom": "diabètefribourg - Assoc. fribourgeoise du diabète",
+      "nom": "Assoc. fribourgeoise du diabète",
       "ville": "Fribourg",
-      "description": "Activités 2024",
+      "description": "diabètefribourg -. Activités 2024",
       "canton": "FR",
       "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 250000,
@@ -15338,18 +15354,18 @@
       "annee": 2024
     },
     {
-      "nom": "Centre dramatique fribourgeois",
-      "ville": null,
+      "nom": "Centre dramatique fribourgeois - Théâtre des Osses",
+      "ville": "Givisiez",
       "description": "Théâtre des Osses, Givisiez Saison 2024-2025 et Projet Label+ romand La Visite de la vieille dame de Friedrich Dürrenmatt",
-      "canton": "VD",
+      "canton": "FR",
       "secteur": "Culture",
       "montant_CHF": 501250,
       "annee": 2024
     },
     {
-      "nom": "ch Stiftung für eidgenössische Zusammenarbeit, Bern aller-retour",
+      "nom": "Stiftung für eidgenössische Zusammenarbeit",
       "ville": "Festival für",
-      "description": "Übersetzung und Literatur 2024",
+      "description": "ch. Übersetzung und Literatur 2024",
       "canton": "SR",
       "secteur": "Santé et handicap",
       "montant_CHF": 9000,
@@ -19316,10 +19332,10 @@
       "annee": 2024
     },
     {
-      "nom": "FIFF - Festival International du Film de",
-      "ville": null,
+      "nom": "Festival International du Film de Fribourg - FIFF",
+      "ville": "Fribourg",
       "description": "",
-      "canton": "SR",
+      "canton": "FR",
       "secteur": "Culture",
       "montant_CHF": 75000,
       "annee": 2024
@@ -19608,7 +19624,7 @@
       "ville": "Lausanne",
       "description": "Activités 2024 (part fribourgeoise)",
       "canton": "VD",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 13100,
       "annee": 2024
     },
@@ -26061,7 +26077,7 @@
       "ville": "Dombresson",
       "description": "Création artistique",
       "canton": "NE",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 3000,
       "annee": 2024
     },
@@ -26079,7 +26095,7 @@
       "ville": "Neuchâtel",
       "description": "Investissement",
       "canton": "NE",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 150000,
       "annee": 2024
     },
@@ -26241,7 +26257,7 @@
       "ville": null,
       "description": "Exposition",
       "canton": "SR",
-      "secteur": "Sport",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 7000,
       "annee": 2024
     },
@@ -26426,7 +26442,7 @@
       "annee": 2024
     },
     {
-      "nom": "Avivo La Chaux-de-Fonds",
+      "nom": "AVIVO La Chaux-de-Fonds",
       "ville": "La Chaux-de-Fonds",
       "description": "Activités annuelles",
       "canton": "NE",
@@ -34967,9 +34983,9 @@
       "annee": 2024
     },
     {
-      "nom": "itopie informatique, Sté coopérative, Transmutopie : Mutation d’itopie pour davantage d’informatique",
+      "nom": "Sté coopérative",
       "ville": null,
-      "description": "éthique et durable",
+      "description": "itopie informatique,. éthique et durable",
       "canton": "SR",
       "secteur": "Conservation du patrimoine",
       "montant_CHF": 50000,
@@ -41339,9 +41355,9 @@
       "annee": 2024
     },
     {
-      "nom": "aha - Centre d'Allergie Suisse, Berne Amélioration du site",
+      "nom": "Centre d'Allergie Suisse",
       "ville": null,
-      "description": "pollenundallergie.ch et de l'Application",
+      "description": "aha -. pollenundallergie.ch et de l'Application",
       "canton": "VD",
       "secteur": "Santé et handicap",
       "montant_CHF": 7500,

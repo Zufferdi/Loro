@@ -5,20 +5,20 @@
     "source": "brb2021_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 71,
-    "total_chf": 9926880,
-    "precise_classified_entries": 49,
-    "precise_classified_chf": 6528380,
+    "total_entries": 72,
+    "total_chf": 9931880,
+    "precise_classified_entries": 50,
+    "precise_classified_chf": 6538380,
     "pct_chf_precisely_classified": 65.8,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 71,
-    "total_chf_classified": 9926880,
-    "catchall_chf": 3398500,
+    "total_entries_classified": 72,
+    "total_chf_classified": 9931880,
+    "catchall_chf": 3393500,
     "cross_year_recovered": 13,
     "sector": "Conservation du patrimoine",
     "sector_slug": "patrimoine",
-    "total_entries_sector": 71,
-    "total_chf_sector": 9926880,
+    "total_entries_sector": 72,
+    "total_chf_sector": 9931880,
     "pct_entries_classified": 100.0
   },
   "categories": [
@@ -51,7 +51,7 @@
       },
       "samples": [
         {
-          "nom": "demande complémentaire Paroisse du Sacré-Cœur",
+          "nom": "Paroisse du Sacré-Cœur",
           "ville": "Vessy",
           "canton": "GE",
           "montant_CHF": 2000000
@@ -63,19 +63,19 @@
           "montant_CHF": 500000
         },
         {
-          "nom": "Rénovation Conseil de gestion de la Paroisse St-Nicolas d'Hérémence",
+          "nom": "Conseil de gestion de la Paroisse St-Nicolas d'Hérémence",
           "ville": "Hérémence",
           "canton": "VS",
           "montant_CHF": 283000
         },
         {
-          "nom": "Rénovation Kirchenrat der Pfarrei St. Mauritius",
+          "nom": "Kirchenrat der Pfarrei St. Mauritius",
           "ville": "Naters",
           "canton": "VS",
           "montant_CHF": 283000
         },
         {
-          "nom": "Rénovation Conseil de gestion de la Paroisse St-Maurice de Laques, Mollens",
+          "nom": "Conseil de gestion de la Paroisse St-Maurice de Laques, Mollens",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 195000
@@ -83,7 +83,7 @@
       ],
       "all_entries": [
         {
-          "nom": "demande complémentaire Paroisse du Sacré-Cœur",
+          "nom": "Paroisse du Sacré-Cœur",
           "ville": "Vessy",
           "canton": "GE",
           "montant_CHF": 2000000
@@ -95,19 +95,19 @@
           "montant_CHF": 500000
         },
         {
-          "nom": "Rénovation Conseil de gestion de la Paroisse St-Nicolas d'Hérémence",
+          "nom": "Conseil de gestion de la Paroisse St-Nicolas d'Hérémence",
           "ville": "Hérémence",
           "canton": "VS",
           "montant_CHF": 283000
         },
         {
-          "nom": "Rénovation Kirchenrat der Pfarrei St. Mauritius",
+          "nom": "Kirchenrat der Pfarrei St. Mauritius",
           "ville": "Naters",
           "canton": "VS",
           "montant_CHF": 283000
         },
         {
-          "nom": "Rénovation Conseil de gestion de la Paroisse St-Maurice de Laques, Mollens",
+          "nom": "Conseil de gestion de la Paroisse St-Maurice de Laques, Mollens",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 195000
@@ -125,7 +125,7 @@
           "montant_CHF": 150000
         },
         {
-          "nom": "d'Hauterive Fond. du Château de Gruyères",
+          "nom": "Fond. du Château de Gruyères",
           "ville": "Gruyères",
           "canton": "FR",
           "montant_CHF": 107000
@@ -143,13 +143,13 @@
           "montant_CHF": 31000
         },
         {
-          "nom": "Publication Assoc. des Amis de l'Abbaye de Montheron",
+          "nom": "Assoc. des Amis de l'Abbaye de Montheron",
           "ville": "Cugy",
           "canton": "FR",
           "montant_CHF": 30000
         },
         {
-          "nom": "Rénovation Kirchenrat der Pfarrei St. Theodul Visperterminen",
+          "nom": "Kirchenrat der Pfarrei St. Theodul Visperterminen",
           "ville": "Visperterminen",
           "canton": "VS",
           "montant_CHF": 30000
@@ -167,7 +167,7 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "investissements Fond. pour la rénovation et la conservation du Couvent des Cordeliers de Fribourg",
+          "nom": "Fond. pour la rénovation et la conservation du Couvent des Cordeliers de Fribourg",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 20000
@@ -203,13 +203,13 @@
           "montant_CHF": 8000
         },
         {
-          "nom": "Publication Assoc. pour l'Eglise de Montcherand, Montcherand",
+          "nom": "Assoc. pour l'Eglise de Montcherand, Montcherand",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 5000
         },
         {
-          "nom": "Publication étude historique chapelle Sainte-Croix de Fontenais plumes",
+          "nom": "étude historique chapelle Sainte-Croix de Fontenais plumes",
           "ville": "Chevenez",
           "canton": "JU",
           "montant_CHF": 3500
@@ -227,7 +227,7 @@
           "montant_CHF": 2000
         },
         {
-          "nom": "Rénovation Conseil de gestion de la Paroisse protestante de Monthey",
+          "nom": "Conseil de gestion de la Paroisse protestante de Monthey",
           "ville": "Monthey",
           "canton": "VS",
           "montant_CHF": 2000
@@ -237,20 +237,20 @@
     {
       "name": "Soutien général au patrimoine",
       "count": 22,
-      "total_chf": 3398500,
-      "mean_chf": 154477,
+      "total_chf": 3393500,
+      "mean_chf": 154250,
       "cantons": {
         "FR": {
           "count": 3,
           "total_chf": 180000
         },
         "VD": {
-          "count": 6,
-          "total_chf": 181000
+          "count": 5,
+          "total_chf": 171000
         },
         "VS": {
-          "count": 6,
-          "total_chf": 1066000
+          "count": 7,
+          "total_chf": 1071000
         },
         "NE": {
           "count": 3,
@@ -267,7 +267,7 @@
       },
       "samples": [
         {
-          "nom": "Rénovation et agrandissement des orgues de Compesières Fond. pour la conservation des temples genevois construits avant 1907",
+          "nom": "Fond. pour la conservation des temples genevois construits avant 1907",
           "ville": "Les Acacias",
           "canton": "GE",
           "montant_CHF": 1570000
@@ -299,7 +299,7 @@
       ],
       "all_entries": [
         {
-          "nom": "Rénovation et agrandissement des orgues de Compesières Fond. pour la conservation des temples genevois construits avant 1907",
+          "nom": "Fond. pour la conservation des temples genevois construits avant 1907",
           "ville": "Les Acacias",
           "canton": "GE",
           "montant_CHF": 1570000
@@ -353,7 +353,7 @@
           "montant_CHF": 50000
         },
         {
-          "nom": "Publication Assoc. Pro Lousonna",
+          "nom": "Assoc. Pro Lousonna",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 40000
@@ -365,7 +365,7 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Rénovation Vereinigung Alpines Museum Zermatt - Assoc. du Musée Alpin de Zermatt",
+          "nom": "Vereinigung Alpines Museum Zermatt - Assoc. du Musée Alpin de Zermatt",
           "ville": "Zermatt",
           "canton": "VS",
           "montant_CHF": 30000
@@ -389,7 +389,7 @@
           "montant_CHF": 19000
         },
         {
-          "nom": "Publication des résultats archéologiques Université d'Eté du Cinéma Suisse",
+          "nom": "des résultats archéologiques Université d'Eté du Cinéma Suisse",
           "ville": "Delémont",
           "canton": "JU",
           "montant_CHF": 15000
@@ -401,19 +401,13 @@
           "montant_CHF": 12000
         },
         {
-          "nom": "Publication Fond. du Centre Historique de l'Agriculture et du Musée de la Machine Agricole",
-          "ville": "Gingins",
-          "canton": "VD",
-          "montant_CHF": 10000
-        },
-        {
           "nom": "Assoc. Colonia Libera Italiana",
           "ville": "Renens",
           "canton": "VD",
           "montant_CHF": 6000
         },
         {
-          "nom": "Evénement Assoc. William Pierrehumbert",
+          "nom": "Assoc. William Pierrehumbert",
           "ville": "Cortaillod",
           "canton": "NE",
           "montant_CHF": 6000
@@ -425,7 +419,13 @@
           "montant_CHF": 5000
         },
         {
-          "nom": "Investissement Assoc. neuchâteloise de soutien à la Semaine suisse du Goût",
+          "nom": "Stiftung Lötschentaler Museum",
+          "ville": "Kippel",
+          "canton": "VS",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. neuchâteloise de soutien à la Semaine suisse du Goût",
           "ville": "Cernier",
           "canton": "NE",
           "montant_CHF": 2500
@@ -434,10 +434,14 @@
     },
     {
       "name": "Histoire & archives",
-      "count": 9,
-      "total_chf": 1928880,
-      "mean_chf": 214320,
+      "count": 10,
+      "total_chf": 1938880,
+      "mean_chf": 193888,
       "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 10000
+        },
         "NE": {
           "count": 2,
           "total_chf": 129380
@@ -457,7 +461,7 @@
       },
       "samples": [
         {
-          "nom": "Rénovation Archives de l'État du Valais",
+          "nom": "Archives de l'État du Valais",
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 817500
@@ -469,7 +473,7 @@
           "montant_CHF": 750000
         },
         {
-          "nom": "Investissement SHAN Sté d'histoire et d'archéologie",
+          "nom": "SHAN Sté d'histoire et d'archéologie",
           "ville": "Valangin",
           "canton": "NE",
           "montant_CHF": 100000
@@ -489,7 +493,7 @@
       ],
       "all_entries": [
         {
-          "nom": "Rénovation Archives de l'État du Valais",
+          "nom": "Archives de l'État du Valais",
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 817500
@@ -501,7 +505,7 @@
           "montant_CHF": 750000
         },
         {
-          "nom": "Investissement SHAN Sté d'histoire et d'archéologie",
+          "nom": "SHAN Sté d'histoire et d'archéologie",
           "ville": "Valangin",
           "canton": "NE",
           "montant_CHF": 100000
@@ -537,6 +541,12 @@
           "montant_CHF": 15000
         },
         {
+          "nom": "Fond. du Centre Historique de l'Agriculture et du Musée de la Machine Agricole",
+          "ville": "Gingins",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
           "nom": "Deutscher Geschichtsforschender Verein des kantons Freiburg",
           "ville": "Fribourg",
           "canton": "FR",
@@ -565,13 +575,13 @@
       },
       "samples": [
         {
-          "nom": "Rénovation des toitures 2021-2023 Fond. Edith Moret Château de Mézières",
+          "nom": "Fond. Edith Moret Château de Mézières",
           "ville": "Mézières",
           "canton": "VD",
           "montant_CHF": 181000
         },
         {
-          "nom": "Publication Château de Valangin",
+          "nom": "Château de Valangin",
           "ville": "Valangin",
           "canton": "NE",
           "montant_CHF": 82000
@@ -583,13 +593,13 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Evénement Assoc. Le Péristyle - Château de Cormondrèche",
+          "nom": "Assoc. Le Péristyle - Château de Cormondrèche",
           "ville": "Cormondrèche",
           "canton": "NE",
           "montant_CHF": 25000
         },
         {
-          "nom": "Evénement Musée de la vigne et du vin au Château de Boudry",
+          "nom": "Musée de la vigne et du vin au Château de Boudry",
           "ville": "Boudry",
           "canton": "NE",
           "montant_CHF": 12000
@@ -597,13 +607,13 @@
       ],
       "all_entries": [
         {
-          "nom": "Rénovation des toitures 2021-2023 Fond. Edith Moret Château de Mézières",
+          "nom": "Fond. Edith Moret Château de Mézières",
           "ville": "Mézières",
           "canton": "VD",
           "montant_CHF": 181000
         },
         {
-          "nom": "Publication Château de Valangin",
+          "nom": "Château de Valangin",
           "ville": "Valangin",
           "canton": "NE",
           "montant_CHF": 82000
@@ -615,13 +625,13 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Evénement Assoc. Le Péristyle - Château de Cormondrèche",
+          "nom": "Assoc. Le Péristyle - Château de Cormondrèche",
           "ville": "Cormondrèche",
           "canton": "NE",
           "montant_CHF": 25000
         },
         {
-          "nom": "Evénement Musée de la vigne et du vin au Château de Boudry",
+          "nom": "Musée de la vigne et du vin au Château de Boudry",
           "ville": "Boudry",
           "canton": "NE",
           "montant_CHF": 12000
@@ -695,7 +705,7 @@
       },
       "samples": [
         {
-          "nom": "interactive du Panorama de la Bataille de Morat 1476 Fond. Pro Vallon - Musée romain de Vallon",
+          "nom": "Fond. Pro Vallon - Musée romain de Vallon",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 80000
@@ -709,7 +719,7 @@
       ],
       "all_entries": [
         {
-          "nom": "interactive du Panorama de la Bataille de Morat 1476 Fond. Pro Vallon - Musée romain de Vallon",
+          "nom": "Fond. Pro Vallon - Musée romain de Vallon",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 80000
@@ -761,7 +771,7 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "Investissement FONSART - Fond. pour la sauvegarde du patrimoine audiovisuel de la RTS",
+          "nom": "FONSART - Fond. pour la sauvegarde du patrimoine audiovisuel de la RTS",
           "ville": "Vessy",
           "canton": "GE",
           "montant_CHF": 5000
@@ -787,7 +797,7 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "Investissement FONSART - Fond. pour la sauvegarde du patrimoine audiovisuel de la RTS",
+          "nom": "FONSART - Fond. pour la sauvegarde du patrimoine audiovisuel de la RTS",
           "ville": "Vessy",
           "canton": "GE",
           "montant_CHF": 5000

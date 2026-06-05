@@ -39,6 +39,28 @@
     "fixes": {
       "v13_ems": {
         "count": 20
+      },
+      "v14_names": {
+        "count": 264
+      },
+      "v15_locations": {
+        "count": 2
+      },
+      "v16_ocr": {
+        "count": 196
+      },
+      "v18_aggregates": {
+        "count": 2,
+        "total_chf": 21414517
+      },
+      "v20_ville_canton": {
+        "count": 5
+      },
+      "v21_sport_culture": {
+        "count": 2
+      },
+      "v22_top_cleanup": {
+        "count": 4
       }
     }
   },
@@ -300,11 +322,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "Publication Fond. Bois-Gentil",
+      "nom": "Fond. Bois-Gentil",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 94000
     },
     {
@@ -372,11 +394,11 @@
       "montant_CHF": 50000
     },
     {
-      "nom": "aménagements Fond. Marc-Aurèle",
+      "nom": "Fond. Marc-Aurèle",
       "ville": "Avenches",
       "canton": "VD",
       "secteur": "Action sociale et personnes âgées",
-      "description": "Acquisition matériel, équipement et",
+      "description": "aménagements. Acquisition matériel, équipement et",
       "montant_CHF": 110000
     },
     {
@@ -828,11 +850,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "Publication Handicamp",
+      "nom": "Handicamp",
       "ville": "Bussigny",
-      "canton": "FR",
+      "canton": "VD",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 7000
     },
     {
@@ -940,11 +962,11 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "Publication Fond. Transport Handicap Vaud",
+      "nom": "Fond. Transport Handicap Vaud",
       "ville": "Le Mont-sur-Lausanne",
       "canton": "VD",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 220000
     },
     {
@@ -956,14 +978,6 @@
       "montant_CHF": 11000
     },
     {
-      "nom": "Associations, institutions et fondations bénéficiaires des contributions de la Loterie Romande Taxes prélevées par l’État de Vaud :",
-      "ville": null,
-      "canton": "VD",
-      "secteur": "Santé et handicap",
-      "description": "Activité",
-      "montant_CHF": 20559517
-    },
-    {
       "nom": "3AP - Assoc. des Amis de Anne Pantillon",
       "ville": "Lausanne",
       "canton": "VD",
@@ -972,11 +986,11 @@
       "montant_CHF": 8000
     },
     {
-      "nom": "Publication Abraxas",
+      "nom": "Abraxas",
       "ville": "Préverenges",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 5000
     },
     {
@@ -1060,11 +1074,11 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "Publication Amis des Musées de Pully",
+      "nom": "Amis des Musées de Pully",
       "ville": "Pully",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 60000
     },
     {
@@ -1108,11 +1122,11 @@
       "montant_CHF": 80000
     },
     {
-      "nom": "Publication ART-Association",
+      "nom": "ART-Association",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 8000
     },
     {
@@ -1148,11 +1162,11 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "Publication Assoc. Eustache",
+      "nom": "Assoc. Eustache",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 60000
     },
     {
@@ -1380,27 +1394,27 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "Publication Assoc. des Amis de Claire Nicole",
+      "nom": "Assoc. des Amis de Claire Nicole",
       "ville": "Vevey",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 28000
     },
     {
-      "nom": "Publication Assoc. des Amis de Hélice Hélas",
+      "nom": "Assoc. des Amis de Hélice Hélas",
       "ville": "Vevey",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 15000
     },
     {
-      "nom": "Publication Assoc. des Amis de l'Abbaye de Montheron",
+      "nom": "Assoc. des Amis de l'Abbaye de Montheron",
       "ville": "Cugy",
       "canton": "FR",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 30000
     },
     {
@@ -1420,11 +1434,11 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "Publication Assoc. des Amis de l'Atelier De Grandi",
+      "nom": "Assoc. des Amis de l'Atelier De Grandi",
       "ville": "Corseaux",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 50000
     },
     {
@@ -1444,27 +1458,27 @@
       "montant_CHF": 100000
     },
     {
-      "nom": "Publication Assoc. des Amis de Manuel Müller",
+      "nom": "Assoc. des Amis de Manuel Müller",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 20000
     },
     {
-      "nom": "Publication Assoc. des Amis des Editions Zoé",
+      "nom": "Assoc. des Amis des Editions Zoé",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 15000
     },
     {
-      "nom": "Publication Assoc. des Amis des Musée et Jardin Botaniques de Lausanne",
+      "nom": "Assoc. des Amis des Musée et Jardin Botaniques de Lausanne",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 40000
     },
     {
@@ -1500,11 +1514,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "Publication Assoc. des Amis du Théâtre d'enfants de La Paternelle",
+      "nom": "Assoc. des Amis du Théâtre d'enfants de La Paternelle",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 5000
     },
     {
@@ -1580,11 +1594,11 @@
       "montant_CHF": 100000
     },
     {
-      "nom": "équipement Assoc. du Quartier de la Valsainte - AQV",
+      "nom": "Assoc. du Quartier de la Valsainte - AQV",
       "ville": "Vevey",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "Manifestation, acquisition de matériel et",
+      "description": "équipement. Manifestation, acquisition de matériel et",
       "montant_CHF": 7000
     },
     {
@@ -1596,11 +1610,11 @@
       "montant_CHF": 70000
     },
     {
-      "nom": "équipement Assoc. du Théâtre Contexte Silo",
+      "nom": "Assoc. du Théâtre Contexte Silo",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "Saison artistique, acquisition de matériel et",
+      "description": "équipement. Saison artistique, acquisition de matériel et",
       "montant_CHF": 60000
     },
     {
@@ -1758,7 +1772,7 @@
     {
       "nom": "Assoc. Maecenas",
       "ville": "Bussigny",
-      "canton": "FR",
+      "canton": "VD",
       "secteur": "Culture",
       "description": "Création artistique",
       "montant_CHF": 50000
@@ -1804,11 +1818,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "Publication Assoc. Niedermeyer Nyon",
+      "nom": "Assoc. Niedermeyer Nyon",
       "ville": "Nyon",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 3500
     },
     {
@@ -1852,11 +1866,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "Publication Assoc. Plus - Cie Nicole Seiler",
+      "nom": "Assoc. Plus - Cie Nicole Seiler",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 60000
     },
     {
@@ -1876,11 +1890,11 @@
       "montant_CHF": 6000
     },
     {
-      "nom": "Publication Assoc. pour l'animation de Vuarrens, Vuarrens",
+      "nom": "Assoc. pour l'animation de Vuarrens, Vuarrens",
       "ville": null,
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 4000
     },
     {
@@ -1900,11 +1914,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "Publication Assoc. pour le Théâtre en Chantier - ASSTEC",
+      "nom": "Assoc. pour le Théâtre en Chantier - ASSTEC",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 10000
     },
     {
@@ -1916,11 +1930,11 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "Publication Assoc. Reliefs",
+      "nom": "Assoc. Reliefs",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 2000
     },
     {
@@ -1932,19 +1946,19 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "Publication Assoc. Rubis Films",
+      "nom": "Assoc. Rubis Films",
       "ville": "Territet",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 8000
     },
     {
-      "nom": "Publication Assoc. Ruya Connection",
+      "nom": "Assoc. Ruya Connection",
       "ville": "Les Acacias",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 5000
     },
     {
@@ -1972,11 +1986,11 @@
       "montant_CHF": 1000
     },
     {
-      "nom": "Publication Assoc. Sunapsis (des amis de Shanju)",
+      "nom": "Assoc. Sunapsis (des amis de Shanju)",
       "ville": "Préverenges",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 50000
     },
     {
@@ -2246,7 +2260,7 @@
     {
       "nom": "Cie Amaryllis 17",
       "ville": "Carouge GE",
-      "canton": "VD",
+      "canton": "GE",
       "secteur": "Culture",
       "description": "Saison artistique",
       "montant_CHF": 20000
@@ -2574,7 +2588,7 @@
     {
       "nom": "Ecole de Musique Vaudoise en Réseau",
       "ville": "Bussigny",
-      "canton": "FR",
+      "canton": "VD",
       "secteur": "Santé et handicap",
       "description": "Acquisition matériel et équipement",
       "montant_CHF": 7090
@@ -2588,11 +2602,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "Publication EEEEH!",
+      "nom": "EEEEH!",
       "ville": "Nyon",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 15000
     },
     {
@@ -2924,11 +2938,11 @@
       "montant_CHF": 150000
     },
     {
-      "nom": "Publication Fond. Françoise Siegfried Meier- La Becque",
+      "nom": "Fond. Françoise Siegfried Meier- La Becque",
       "ville": "La Tour-de-Peilz",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 30000
     },
     {
@@ -2940,11 +2954,11 @@
       "montant_CHF": 50000
     },
     {
-      "nom": "Publication Fond. La Ferme des Tilleuls",
+      "nom": "Fond. La Ferme des Tilleuls",
       "ville": "Renens",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 100000
     },
     {
@@ -3164,11 +3178,11 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "Publication L'Assoc. des Concerts de St-Saphorin, Monts-de-Corsier",
+      "nom": "L'Assoc. des Concerts de St-Saphorin, Monts-de-Corsier",
       "ville": null,
       "canton": "VD",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 4000
     },
     {
@@ -3196,11 +3210,11 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "Publication Les Amateurs de bon son",
+      "nom": "Les Amateurs de bon son",
       "ville": "Etagnières",
       "canton": "VD",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 8000
     },
     {
@@ -3228,11 +3242,11 @@
       "montant_CHF": 45000
     },
     {
-      "nom": "Publication Les arTpenteurs",
+      "nom": "Les arTpenteurs",
       "ville": "Yverdon-les-Bains",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 110000
     },
     {
@@ -3276,11 +3290,11 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "Publication Midi Théâtre",
+      "nom": "Midi Théâtre",
       "ville": "Genève",
       "canton": "GE",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 20000
     },
     {
@@ -3412,11 +3426,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "Publication Pulloff Théâtres",
+      "nom": "Pulloff Théâtres",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 90000
     },
     {
@@ -3628,11 +3642,11 @@
       "montant_CHF": 2000
     },
     {
-      "nom": "Publication Usine à Gaz",
+      "nom": "Usine à Gaz",
       "ville": "Nyon",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 200000
     },
     {
@@ -3668,11 +3682,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "Publication Fond. CHUV",
+      "nom": "Fond. CHUV",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 260000
     },
     {
@@ -3724,33 +3738,33 @@
       "montant_CHF": 6000
     },
     {
-      "nom": "Publication Assoc. pour l'Eglise de Montcherand, Montcherand",
+      "nom": "Assoc. pour l'Eglise de Montcherand, Montcherand",
       "ville": null,
       "canton": "VD",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 5000
     },
     {
-      "nom": "Publication Assoc. Pro Lousonna",
+      "nom": "Assoc. Pro Lousonna",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 40000
     },
     {
-      "nom": "Publication Fond. du Centre Historique de l'Agriculture et du Musée de la Machine Agricole",
+      "nom": "Fond. du Centre Historique de l'Agriculture et du Musée de la Machine Agricole",
       "ville": "Gingins",
       "canton": "VD",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 10000
     },
     {
       "nom": "Annivert",
       "ville": "Bussigny",
-      "canton": "FR",
+      "canton": "VD",
       "secteur": "Environnement",
       "description": "",
       "montant_CHF": 15000
@@ -3868,11 +3882,11 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "Publication Assoc. de soutien au lait équitable - ASLE",
+      "nom": "Assoc. de soutien au lait équitable - ASLE",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 20000
     },
     {
@@ -4460,11 +4474,11 @@
       "montant_CHF": 78753
     },
     {
-      "nom": "vaudois en 2021 et locaux de sport",
+      "nom": "Soutien associations sportives cantonales vaudoises",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Aménagement de terrains",
+      "description": "Aménagement de terrains (entry agrégée 2021)",
       "montant_CHF": 2267790
     },
     {
@@ -4476,11 +4490,11 @@
       "montant_CHF": 6110
     },
     {
-      "nom": "pour la pratique des sports nautiques Assoc. Vaudoise de Judo et Ju-jitsu",
+      "nom": "Assoc. Vaudoise de Judo et Ju-jitsu",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Aménagement d'un pont flottant Cubideck",
+      "description": "pour la pratique des sports nautiques. Aménagement d'un pont flottant Cubideck",
       "montant_CHF": 2220
     },
     {
@@ -4516,19 +4530,19 @@
       "montant_CHF": 19000
     },
     {
-      "nom": "Rénovation de la piste de BMX Centre Mondial du Cyclisme UCI",
+      "nom": "Centre Mondial du Cyclisme UCI",
       "ville": null,
       "canton": "VD",
       "secteur": null,
-      "description": "",
+      "description": "de la piste de BMX. Rénovation",
       "montant_CHF": 2130
     },
     {
-      "nom": "Rénovation de la zone de sécurité de la piste du vélodrome Club Veveysan de Tennis",
+      "nom": "Club Veveysan de Tennis",
       "ville": null,
       "canton": "VD",
       "secteur": null,
-      "description": "",
+      "description": "de la zone de sécurité de la piste du vélodrome. Rénovation",
       "montant_CHF": 18880
     },
     {
@@ -4540,11 +4554,11 @@
       "montant_CHF": 80500
     },
     {
-      "nom": "pour le FC Arnex (solde) Commune d'Avenches",
+      "nom": "Commune d'Avenches",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Construction de vestiaires et de sanitaires",
+      "description": "pour le FC Arnex (solde). Construction de vestiaires et de sanitaires",
       "montant_CHF": 264000
     },
     {
@@ -4588,19 +4602,19 @@
       "montant_CHF": 45000
     },
     {
-      "nom": "d'entraînement sur un terrain annexe du Stade de la Pontaise (acompte) Commune de Lausanne",
+      "nom": "Commune de Lausanne",
       "ville": null,
       "canton": "VD",
       "secteur": "Promotion, tourisme et développement",
-      "description": "Construction de pistes et d'un anneau",
+      "description": "d'entraînement sur un terrain annexe du Stade de la Pontaise (acompte). Construction de pistes et d'un anneau",
       "montant_CHF": 55000
     },
     {
-      "nom": "féminines au Centre sportif de Chavannes (acompte) Commune de Lausanne",
+      "nom": "Centre sportif de Chavannes",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Construction d'un vestiaire pour les équipes",
+      "description": "féminines au. Construction d'un vestiaire pour les équipes",
       "montant_CHF": 500000
     },
     {
@@ -4628,11 +4642,11 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "Rénovation du système électrique de la piscine de Mon-Repos (acompte) Commune de Prilly",
+      "nom": "Commune de Prilly",
       "ville": null,
       "canton": "VD",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "du système électrique de la piscine de Mon-Repos (acompte). Rénovation",
       "montant_CHF": 15680
     },
     {
@@ -4652,19 +4666,19 @@
       "montant_CHF": 8890
     },
     {
-      "nom": "sport (beach volley-pétanque) Commune de Pully",
+      "nom": "Commune de Pully",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Création d'une zone publique dédiée au",
+      "description": "sport (beach volley-pétanque). Création d'une zone publique dédiée au",
       "montant_CHF": 191550
     },
     {
-      "nom": "Rénovation et travaux d'homologation du terrain de football B en gazon synthétique de Rochettaz Commune de Romanel-sur- Lausanne",
+      "nom": "Commune de Romanel-sur- Lausanne",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "",
+      "description": "et travaux d'homologation du terrain de football B en gazon synthétique de Rochettaz. Rénovation",
       "montant_CHF": 14630
     },
     {
@@ -4684,11 +4698,11 @@
       "montant_CHF": 150000
     },
     {
-      "nom": "sportive au Croset (acompte) Commune d'Ormont-Dessus",
+      "nom": "Commune d'Ormont-Dessus",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Construction d'une nouvelle infrastructure",
+      "description": "sportive au Croset (acompte). Construction d'une nouvelle infrastructure",
       "montant_CHF": 26000
     },
     {
@@ -4724,11 +4738,11 @@
       "montant_CHF": 23320
     },
     {
-      "nom": "Rénovation de l'éclairage des quatre courts de tennis centraux extérieurs Sté de Tir au pistolet et Revolver du Jorat",
+      "nom": "Sté de Tir au pistolet et Revolver du Jorat",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "",
+      "description": "de l'éclairage des quatre courts de tennis centraux extérieurs. Rénovation",
       "montant_CHF": 5260
     },
     {
@@ -4772,11 +4786,11 @@
       "montant_CHF": 43700
     },
     {
-      "nom": "extérieurs supplémentaires (no 4 et 5) Tennis Club Yverdon",
+      "nom": "Club Yverdon",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Construction de deux courts de tennis",
+      "description": "extérieurs supplémentaires (no 4 et 5) Tennis. Construction de deux courts de tennis",
       "montant_CHF": 3630
     },
     {
@@ -4804,27 +4818,27 @@
       "montant_CHF": 3280
     },
     {
-      "nom": "moquettes Assoc. Cantonale Vaudoise de Gymnastique",
+      "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de 8 chariots enrouleurs de",
+      "description": "moquettes. Achat de 8 chariots enrouleurs de",
       "montant_CHF": 14560
     },
     {
-      "nom": "gymnastique pour la salle du CMC Assoc. Cantonale Vaudoise pour la Natation",
+      "nom": "Assoc. Cantonale Vaudoise pour la Natation",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat d'un nouveau praticable de",
+      "description": "gymnastique pour la salle du CMC. Achat d'un nouveau praticable de",
       "montant_CHF": 1360
     },
     {
-      "nom": "de réserve Assoc. Osmosis Wakeclub Lutry340.- Assoc. Osmosis Wakeclub Lutry",
+      "nom": "Assoc. Osmosis Wakeclub Lutry340.- Assoc. Osmosis Wakeclub Lutry",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de deux plaques de chronométrage Achat de 15 gilets de sauvetage",
+      "description": "de réserve. Achat de deux plaques de chronométrage Achat de 15 gilets de sauvetage",
       "montant_CHF": 6560
     },
     {
@@ -4900,11 +4914,11 @@
       "montant_CHF": 1380
     },
     {
-      "nom": "protection pour filles Club de Course d'Orientation Lausanne-Jorat",
+      "nom": "Club de Course d'Orientation Lausanne-Jorat",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de vestes pour enfants et juniors et de",
+      "description": "protection pour filles. Achat de vestes pour enfants et juniors et de",
       "montant_CHF": 480
     },
     {
@@ -4916,11 +4930,11 @@
       "montant_CHF": 420
     },
     {
-      "nom": "l'impression des cartes Club de l'Aviron de Vevey",
+      "nom": "Club de l'Aviron de Vevey",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat d'une imprimante spécifique pour",
+      "description": "l'impression des cartes. Achat d'une imprimante spécifique pour",
       "montant_CHF": 660
     },
     {
@@ -4940,19 +4954,19 @@
       "montant_CHF": 7890
     },
     {
-      "nom": "sans barreur et un deux sans barreur Club de l'Aviron de Vevey",
+      "nom": "Club de l'Aviron de Vevey",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de deux bateaux d'aviron, un quatre",
+      "description": "sans barreur et un deux sans barreur. Achat de deux bateaux d'aviron, un quatre",
       "montant_CHF": 700
     },
     {
-      "nom": "de pointe Club de l'Aviron de Vevey",
+      "nom": "Club de l'Aviron de Vevey",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de quatre nouvelles paires de rames",
+      "description": "de pointe. Achat de quatre nouvelles paires de rames",
       "montant_CHF": 1620
     },
     {
@@ -4988,11 +5002,11 @@
       "montant_CHF": 5340
     },
     {
-      "nom": "et un quad) Club Nautique Morgien",
+      "nom": "Club Nautique Morgien",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de deux bateaux d'aviron (un double",
+      "description": "et un quad). Achat de deux bateaux d'aviron (un double",
       "montant_CHF": 580
     },
     {
@@ -5004,11 +5018,11 @@
       "montant_CHF": 940
     },
     {
-      "nom": "pour un bateau de sécurité Club Nautique Pully",
+      "nom": "Club Nautique Pully",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat d'un nouveau moteur Yamaha F40",
+      "description": "pour un bateau de sécurité. Achat d'un nouveau moteur Yamaha F40",
       "montant_CHF": 3350
     },
     {
@@ -5028,11 +5042,11 @@
       "montant_CHF": 830
     },
     {
-      "nom": "barres de saut perche et hauteur Commune d'Aigle",
+      "nom": "Commune d'Aigle",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de poids indoor, blocs chiffres et",
+      "description": "barres de saut perche et hauteur. Achat de poids indoor, blocs chiffres et",
       "montant_CHF": 660
     },
     {
@@ -5052,35 +5066,35 @@
       "montant_CHF": 3150
     },
     {
-      "nom": "de Leysin Commune de Montreux",
+      "nom": "Commune de Montreux",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de tatamis pour les centres sportifs",
+      "description": "de Leysin. Achat de tatamis pour les centres sportifs",
       "montant_CHF": 1410
     },
     {
-      "nom": "de la Maladaire Commune d'Ormont-Dessus",
+      "nom": "Commune d'Ormont-Dessus",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de buts de water-polo pour la piscine",
+      "description": "de la Maladaire. Achat de buts de water-polo pour la piscine",
       "montant_CHF": 84600
     },
     {
-      "nom": "ski Commune de Prangins",
+      "nom": "Commune de Prangins",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de matériel sportif pour les pistes de",
+      "description": "ski. Achat de matériel sportif pour les pistes de",
       "montant_CHF": 1760
     },
     {
-      "nom": "mobiles senior Compagnie des Archers de Lausanne",
+      "nom": "Compagnie des Archers de Lausanne",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat d'une paire de buts de football",
+      "description": "mobiles senior. Achat d'une paire de buts de football",
       "montant_CHF": 930
     },
     {
@@ -5252,11 +5266,11 @@
       "montant_CHF": 1040
     },
     {
-      "nom": "transport HC Yverdon270.- hockey junior Hockey Club Villars 1908 - Mouvement Jeunesse",
+      "nom": "Club Villars 1908 - Mouvement Jeunesse",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat d'un AirTrack avec chariot de Achat de matériel pour un gardien de",
+      "description": "transport HC Yverdon270.- hockey junior Hockey. Achat d'un AirTrack avec chariot de Achat de matériel pour un gardien de",
       "montant_CHF": 1240
     },
     {
@@ -5268,11 +5282,11 @@
       "montant_CHF": 6000
     },
     {
-      "nom": "des athlètes Judo-Club Morges",
+      "nom": "Club Morges",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat d'un bus de 9 places pour le transport",
+      "description": "des athlètes Judo-. Achat d'un bus de 9 places pour le transport",
       "montant_CHF": 6270
     },
     {
@@ -5380,35 +5394,35 @@
       "montant_CHF": 3650
     },
     {
-      "nom": "barreur (4x+) Ski Club du Col des Mosses",
+      "nom": "Club du Col des Mosses",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat d'un bateau pour 4 rameurs et un",
+      "description": "barreur (4x+) Ski. Achat d'un bateau pour 4 rameurs et un",
       "montant_CHF": 1210
     },
     {
-      "nom": "compétitions Ski Club Les Diablerets",
+      "nom": "Club Les Diablerets",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de filets de sécurité pour les",
+      "description": "compétitions Ski. Achat de filets de sécurité pour les",
       "montant_CHF": 580
     },
     {
-      "nom": "jeunes sauteurs Ski Club Les Diablerets",
+      "nom": "Club Les Diablerets",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de matériel de saut à ski pour les",
+      "description": "jeunes sauteurs Ski. Achat de matériel de saut à ski pour les",
       "montant_CHF": 1840
     },
     {
-      "nom": "piquets à brosse et 1 mèche pour perceuse Ski-Club Alpina Château-d'Oex",
+      "nom": "Club Alpina Château-d'Oex",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de mini-piquets d'entraînement,",
+      "description": "piquets à brosse et 1 mèche pour perceuse Ski-. Achat de mini-piquets d'entraînement,",
       "montant_CHF": 770
     },
     {
@@ -5428,27 +5442,27 @@
       "montant_CHF": 1050
     },
     {
-      "nom": "matelas de réception Sté d'escrime Vevey-Montreux",
+      "nom": "Sté d'escrime Vevey-Montreux",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de deux mini-trampolines et d'un",
+      "description": "matelas de réception. Achat de deux mini-trampolines et d'un",
       "montant_CHF": 1790
     },
     {
-      "nom": "pratique du sport facultatif Sté Nautique de Nyon",
+      "nom": "Sté Nautique de Nyon",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat d'équipements pour enfants pour la",
+      "description": "pratique du sport facultatif. Achat d'équipements pour enfants pour la",
       "montant_CHF": 5530
     },
     {
-      "nom": "complets Sté Nautique de Nyon",
+      "nom": "Sté Nautique de Nyon",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de quatre Optimists de régate",
+      "description": "complets. Achat de quatre Optimists de régate",
       "montant_CHF": 5520
     },
     {
@@ -5460,11 +5474,11 @@
       "montant_CHF": 1800
     },
     {
-      "nom": "petit calibre (50 m) Unihockey Club Payerne170.- Union Lavaux Riviera Basket",
+      "nom": "Club Payerne170.- Union Lavaux Riviera Basket",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Achat de quatre crosses pour carabines de Achat de quatre buts juniors E et D",
+      "description": "petit calibre (50 m) Unihockey. Achat de quatre crosses pour carabines de Achat de quatre buts juniors E et D",
       "montant_CHF": 12510
     },
     {
@@ -5804,11 +5818,11 @@
       "montant_CHF": 600
     },
     {
-      "nom": "suisse 2021 U10-U16 à Payerne Club des Patineurs de Lausanne et Malley",
+      "nom": "Club des Patineurs de Lausanne et Malley",
       "ville": null,
       "canton": "VD",
       "secteur": null,
-      "description": "Tournoi de qualification du Championnat",
+      "description": "suisse 2021 U10-U16 à Payerne. Tournoi de qualification du Championnat",
       "montant_CHF": 500
     },
     {
@@ -5924,11 +5938,11 @@
       "montant_CHF": 500
     },
     {
-      "nom": "sportives (suite) Compagnie des Archers de Lausanne",
+      "nom": "Compagnie des Archers de Lausanne",
       "ville": null,
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Championnat Suisse Field 2021 à Lausanne Manifestations",
+      "description": "sportives (suite). Championnat Suisse Field 2021 à Lausanne Manifestations",
       "montant_CHF": 600
     },
     {
@@ -5996,11 +6010,11 @@
       "montant_CHF": 2500
     },
     {
-      "nom": "e Edition du Meeting international Equissima en 2020 (Annulée COVID-19) Féd. d'élevage du cheval de sport",
+      "nom": "Féd. d'élevage du cheval de sport",
       "ville": null,
       "canton": "VD",
       "secteur": null,
-      "description": "",
+      "description": "e e Edition du Meeting international Equissima en 2020 (Annulée COVID-19)",
       "montant_CHF": 3000
     },
     {
@@ -7180,11 +7194,11 @@
       "montant_CHF": 40000
     },
     {
-      "nom": "adultes en 2021 Assoc. La Tuile",
+      "nom": "Assoc. La Tuile",
       "ville": "Fribourg",
       "canton": "FR",
       "secteur": "Action sociale et personnes âgées",
-      "description": "Soutien aux parents adolescents et jeunes",
+      "description": "adultes en 2021. Soutien aux parents adolescents et jeunes",
       "montant_CHF": 520000
     },
     {
@@ -7356,11 +7370,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "Rénovation des salles de bain du foyer Béthanie La famille au Jardin",
+      "nom": "des salles de bain du foyer Béthanie La famille au Jardin",
       "ville": "St-Ursen",
       "canton": "FR",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 8000
     },
     {
@@ -7500,11 +7514,11 @@
       "montant_CHF": 8500
     },
     {
-      "nom": "l'animation socioculturelle itinérante Assoc. Catimini",
+      "nom": "Assoc. Catimini",
       "ville": "Cottens",
       "canton": "FR",
       "secteur": "Action sociale et personnes âgées",
-      "description": "Acquisition d'un bus pour faire de",
+      "description": "l'animation socioculturelle itinérante. Acquisition d'un bus pour faire de",
       "montant_CHF": 1375
     },
     {
@@ -7516,11 +7530,11 @@
       "montant_CHF": 3000
     },
     {
-      "nom": "ème édition du Festival Cirqu’Ô Jeunes Assoc. Cirque Toamême",
+      "nom": "Festival Cirqu",
       "ville": "Fribourg",
       "canton": "FR",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "ème édition du",
       "montant_CHF": 40000
     },
     {
@@ -8324,11 +8338,11 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "aux personnes en chaises roulantes Assoc. ELA Suisse",
+      "nom": "Assoc. ELA Suisse",
       "ville": "Tavannes",
       "canton": "JU",
       "secteur": "Jeunesse et éducation",
-      "description": "Création du premier char à fondue adapté",
+      "description": "aux personnes en chaises roulantes. Création du premier char à fondue adapté",
       "montant_CHF": 4000
     },
     {
@@ -8340,11 +8354,11 @@
       "montant_CHF": 176000
     },
     {
-      "nom": "renforcement de la prévention Assoc. pour les Langues Parlées Complétées",
+      "nom": "Assoc. pour les Langues Parlées Complétées",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Jeunesse et éducation",
-      "description": "Activité 2021 - centre de soins, Grisélidis et",
+      "description": "renforcement de la prévention. Activité 2021 - centre de soins, Grisélidis et",
       "montant_CHF": 3000
     },
     {
@@ -8364,11 +8378,11 @@
       "montant_CHF": 50000
     },
     {
-      "nom": "diabètefribourg - Assoc. fribourgeoise du diabète",
+      "nom": "Assoc. fribourgeoise du diabète",
       "ville": "Fribourg",
       "canton": "FR",
       "secteur": "Jeunesse et éducation",
-      "description": "Activités 2021",
+      "description": "diabètefribourg -. Activités 2021",
       "montant_CHF": 250000
     },
     {
@@ -8708,11 +8722,11 @@
       "montant_CHF": 4000
     },
     {
-      "nom": "ème édition Assoc. Fête de la Musique de Fribourg",
+      "nom": "Assoc. Fête de la Musique de Fribourg",
       "ville": "Fribourg",
       "canton": "FR",
       "secteur": null,
-      "description": "",
+      "description": "ème édition",
       "montant_CHF": 25000
     },
     {
@@ -8764,11 +8778,11 @@
       "montant_CHF": 150000
     },
     {
-      "nom": "médiation culturelle Assoc. Les Francomanias",
+      "nom": "Assoc. Les Francomanias",
       "ville": "Bulle",
       "canton": "FR",
       "secteur": "Culture",
-      "description": "Création Qui a peur de Virginia Woolf et",
+      "description": "médiation culturelle. Création Qui a peur de Virginia Woolf et",
       "montant_CHF": 130000
     },
     {
@@ -8860,11 +8874,11 @@
       "montant_CHF": 29000
     },
     {
-      "nom": "ème édition du Festival Swing In The Wind et médiation culturelle Assoc. TRNSTN",
+      "nom": "Festival Swing In The Wind et médiation culturelle Assoc. TRNSTN",
       "ville": "Fribourg",
       "canton": "FR",
       "secteur": "Culture",
-      "description": "",
+      "description": "ème édition du",
       "montant_CHF": 3000
     },
     {
@@ -9028,11 +9042,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "projet Cie Bloom Bloom",
+      "nom": "Cie Bloom Bloom",
       "ville": "Villars-sur-Glâne",
       "canton": "FR",
       "secteur": "Culture",
-      "description": "Spectacle Petit Prince - complément au",
+      "description": "projet. Spectacle Petit Prince - complément au",
       "montant_CHF": 15000
     },
     {
@@ -9244,19 +9258,19 @@
       "montant_CHF": 35000
     },
     {
-      "nom": "e Fribourg Fond. Cinéforom",
+      "nom": "Fond. Cinéforom",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Festival International d’Orgue de",
+      "description": "e e Fribourg. Festival International d’Orgue de",
       "montant_CHF": 80000
     },
     {
-      "nom": "audiovisuelle indépendante - part Fribourg Fond. Equilibre et Nuithonie",
+      "nom": "Fond. Equilibre et Nuithonie",
       "ville": "Villars-sur-Glâne",
       "canton": "FR",
       "secteur": "Culture",
-      "description": "Soutien à la diversité de la production",
+      "description": "audiovisuelle indépendante - part Fribourg. Soutien à la diversité de la production",
       "montant_CHF": 700000
     },
     {
@@ -9812,11 +9826,11 @@
       "montant_CHF": 59000
     },
     {
-      "nom": "bourg médiéval d'Arconciel - abattage et débardage du bois Assoc. Oscar Moret",
+      "nom": "Assoc. Oscar Moret",
       "ville": "Villars-sur-Glâne",
       "canton": "FR",
       "secteur": null,
-      "description": "Projet de préservation des ruines du",
+      "description": "bourg médiéval d'Arconciel - abattage et débardage du bois. Projet de préservation des ruines du",
       "montant_CHF": 1000
     },
     {
@@ -9836,11 +9850,11 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "reconstruction du centre de Villars-sous- Mont Assoc. Transhumance & Traditions",
+      "nom": "Assoc. Transhumance",
       "ville": "Charmey",
       "canton": "FR",
       "secteur": null,
-      "description": "Concours d'architecture pour la",
+      "description": "reconstruction du centre de Villars-sous- Mont. Concours d'architecture pour la",
       "montant_CHF": 20000
     },
     {
@@ -9860,19 +9874,19 @@
       "montant_CHF": 37000
     },
     {
-      "nom": "des marionnettes Fond. d'Hauterive",
+      "nom": "Fond. d'Hauterive",
       "ville": "Posieux",
       "canton": "FR",
       "secteur": "Culture",
-      "description": "Expositions temporaires 2021 et inventaire",
+      "description": "des marionnettes. Expositions temporaires 2021 et inventaire",
       "montant_CHF": 1500000
     },
     {
-      "nom": "d'Hauterive Fond. du Château de Gruyères",
+      "nom": "Fond. du Château de Gruyères",
       "ville": "Gruyères",
       "canton": "FR",
       "secteur": "Conservation du patrimoine",
-      "description": "Restauration des bâtiments de l'abbaye",
+      "description": "d'Hauterive. Restauration des bâtiments de l'abbaye",
       "montant_CHF": 107000
     },
     {
@@ -9892,11 +9906,11 @@
       "montant_CHF": 75000
     },
     {
-      "nom": "Rénovation des toitures 2021-2023 Fond. Edith Moret Château de Mézières",
+      "nom": "Fond. Edith Moret Château de Mézières",
       "ville": "Mézières",
       "canton": "VD",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "des toitures 2021-2023. Rénovation",
       "montant_CHF": 181000
     },
     {
@@ -9924,19 +9938,19 @@
       "montant_CHF": 500000
     },
     {
-      "nom": "interactive du Panorama de la Bataille de Morat 1476 Fond. Pro Vallon - Musée romain de Vallon",
+      "nom": "Fond. Pro Vallon - Musée romain de Vallon",
       "ville": "Fribourg",
       "canton": "FR",
       "secteur": "Conservation du patrimoine",
-      "description": "Projet de numérisation et installation",
+      "description": "interactive du Panorama de la Bataille de Morat 1476. Projet de numérisation et installation",
       "montant_CHF": 80000
     },
     {
-      "nom": "investissements Fond. pour la rénovation et la conservation du Couvent des Cordeliers de Fribourg",
+      "nom": "Fond. pour la rénovation et la conservation du Couvent des Cordeliers de Fribourg",
       "ville": "Fribourg",
       "canton": "FR",
       "secteur": "Conservation du patrimoine",
-      "description": "Expositions temporaires 2021 et",
+      "description": "investissements. Expositions temporaires 2021 et",
       "montant_CHF": 20000
     },
     {
@@ -9988,11 +10002,11 @@
       "montant_CHF": 150000
     },
     {
-      "nom": "Rénovation des façades Pro Ethnographica",
+      "nom": "des façades Pro Ethnographica",
       "ville": "Fribourg",
       "canton": "FR",
       "secteur": null,
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 10000
     },
     {
@@ -10140,11 +10154,11 @@
       "montant_CHF": 40690
     },
     {
-      "nom": "Rénovation de la patinoire de skater-hockey SHC Givisiez Skater 953'425.80 Refaire les structures de la patinoire sèche (intérieure) Ski Club Charmey",
+      "nom": "Club Charmey",
       "ville": null,
       "canton": "FR",
       "secteur": "Sport",
-      "description": "",
+      "description": "de la patinoire de skater-hockey SHC Givisiez Skater 953'425.80 Refaire les structures de la patinoire sèche (intérieure) Ski. Rénovation",
       "montant_CHF": 12000
     },
     {
@@ -10332,11 +10346,11 @@
       "montant_CHF": 500
     },
     {
-      "nom": "cantonal pour non-licenciés Assoc. Fribourgeoise de Badminton",
+      "nom": "Assoc. Fribourgeoise de Badminton",
       "ville": null,
       "canton": "FR",
       "secteur": null,
-      "description": "Championnats fribourgeois et tournoi",
+      "description": "cantonal pour non-licenciés. Championnats fribourgeois et tournoi",
       "montant_CHF": 2000
     },
     {
@@ -10364,27 +10378,27 @@
       "montant_CHF": 1000
     },
     {
-      "nom": "annulé) Assoc. Fribourgeoise de Hockey- sur-Glace",
+      "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
       "ville": null,
       "canton": "FR",
       "secteur": "Sport",
-      "description": "Tournoi national Bibi Torriani U14 (Covid-19",
+      "description": "annulé). Tournoi national Bibi Torriani U14 (Covid-19",
       "montant_CHF": 1000
     },
     {
-      "nom": "annulé) Assoc. Fribourgeoise de Hockey- sur-Glace",
+      "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
       "ville": null,
       "canton": "FR",
       "secteur": "Sport",
-      "description": "Tournoi Hockey Crosse d'Or U9 (Covid-19",
+      "description": "annulé). Tournoi Hockey Crosse d'Or U9 (Covid-19",
       "montant_CHF": 500
     },
     {
-      "nom": "ème ligue Assoc. Fribourgeoise de Hockey- sur-Glace",
+      "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
       "ville": null,
       "canton": "FR",
       "secteur": "Sport",
-      "description": "Tournoi 2",
+      "description": "ème ligue. Tournoi 2",
       "montant_CHF": 1000
     },
     {
@@ -10404,11 +10418,11 @@
       "montant_CHF": 500
     },
     {
-      "nom": "annulé) Assoc. fribourgeoise de ski et snowboard",
+      "nom": "Assoc. fribourgeoise de ski et snowboard",
       "ville": null,
       "canton": "FR",
       "secteur": "Sport",
-      "description": "Championnats fribourgeois (Covid-19",
+      "description": "annulé). Championnats fribourgeois (Covid-19",
       "montant_CHF": 5000
     },
     {
@@ -10492,11 +10506,11 @@
       "montant_CHF": 4000
     },
     {
-      "nom": "suisse de relais et course nationale Canoé-Club Fribourg",
+      "nom": "Club Fribourg",
       "ville": null,
       "canton": "FR",
       "secteur": null,
-      "description": "Courses d'orientation avec championnat",
+      "description": "suisse de relais et course nationale Canoé-. Courses d'orientation avec championnat",
       "montant_CHF": 1000
     },
     {
@@ -10788,11 +10802,11 @@
       "montant_CHF": 1500
     },
     {
-      "nom": "glace (Covid-19 annulé) Minigolf Club Bulle",
+      "nom": "Club Bulle",
       "ville": null,
       "canton": "FR",
       "secteur": null,
-      "description": "Tournoi international junior de hockey sur",
+      "description": "glace (Covid-19 annulé) Minigolf. Tournoi international junior de hockey sur",
       "montant_CHF": 500
     },
     {
@@ -11044,11 +11058,11 @@
       "montant_CHF": 1000
     },
     {
-      "nom": "l'Aiglon Tennis Club Bulle",
+      "nom": "Club Bulle",
       "ville": null,
       "canton": "FR",
       "secteur": "Sport",
-      "description": "Tournoi de tennis Open Dany Sport de",
+      "description": "l'Aiglon Tennis. Tournoi de tennis Open Dany Sport de",
       "montant_CHF": 1000
     },
     {
@@ -11172,11 +11186,11 @@
       "montant_CHF": 840
     },
     {
-      "nom": "cantonaux jeunesse Féd. Fribourgeoise de Gymnastique",
+      "nom": "Féd. Fribourgeoise de Gymnastique",
       "ville": null,
       "canton": "FR",
       "secteur": "Sport",
-      "description": "Camp d'entraînement des cadres",
+      "description": "cantonaux jeunesse. Camp d'entraînement des cadres",
       "montant_CHF": 288
     },
     {
@@ -12100,11 +12114,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "sexuels Féd. suisse des patients",
+      "nom": "Féd. suisse des patients",
       "ville": "Fribourg",
       "canton": "FR",
       "secteur": "Action sociale et personnes âgées",
-      "description": "Soutien aux personnes ayant subi des abus",
+      "description": "sexuels. Soutien aux personnes ayant subi des abus",
       "montant_CHF": 15000
     },
     {
@@ -12340,11 +12354,11 @@
       "montant_CHF": 50000
     },
     {
-      "nom": "Rénovation de la caserne Freilichtmuseum Ballenberg, Hofstetten",
+      "nom": "de la caserne Freilichtmuseum Ballenberg, Hofstetten",
       "ville": null,
       "canton": "FR",
       "secteur": "Culture",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 30000
     },
     {
@@ -12700,11 +12714,11 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "Fond. Pro Senectute Valais- Wallis / Pour la Vieillesse",
+      "nom": "Fond. Pro Senectute Valais-Wallis",
       "ville": "Sion",
       "canton": "VS",
       "secteur": "Action sociale et personnes âgées",
-      "description": "Projet",
+      "description": "Fond. Pro Senectute Va. Projet",
       "montant_CHF": 37000
     },
     {
@@ -12716,11 +12730,11 @@
       "montant_CHF": 90000
     },
     {
-      "nom": "Rénovation Fond. Ste-Thérèse, EMS Résidence Jean-Paul",
+      "nom": "Fond. Ste-Thérèse, EMS Résidence Jean-Paul",
       "ville": "Riddes",
       "canton": "VS",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 29250
     },
     {
@@ -12740,11 +12754,11 @@
       "montant_CHF": 40950
     },
     {
-      "nom": "Animations Fonds mis à disposition du Conseil d'Etat pour Actions de Solidarité",
+      "nom": "Fonds mis à disposition du Conseil d'État VS",
       "ville": "Sion",
       "canton": "VS",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Animations · ",
       "montant_CHF": 2000000
     },
     {
@@ -12916,11 +12930,11 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "Publication du livre Urgence. L'Etat de Fribourg face au Covid-19 Troupe théâtrale de Courtepin, l'Autruche bleue, Courtepin",
+      "nom": "du livre Urgence. L'Etat de Fribourg face au Covid-19 Troupe théâtrale de Courtepin, l'Autruche bleue, Courtepin",
       "ville": null,
       "canton": "FR",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 1000
     },
     {
@@ -12996,11 +13010,11 @@
       "montant_CHF": 150000
     },
     {
-      "nom": "Rénovation Sozialmedizinisches Regionalzentrum OW",
+      "nom": "Sozialmedizinisches Regionalzentrum OW",
       "ville": "Brig",
       "canton": "VS",
       "secteur": null,
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 17022
     },
     {
@@ -13044,11 +13058,11 @@
       "montant_CHF": 750000
     },
     {
-      "nom": "Investissement Verein Altershilfe Leukerbad",
+      "nom": "Verein Altershilfe Leukerbad",
       "ville": "Leukerbad",
       "canton": "VS",
       "secteur": null,
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 6500
     },
     {
@@ -13076,11 +13090,11 @@
       "montant_CHF": 3000
     },
     {
-      "nom": "Publication Assoc. Hérisson sous gazon",
+      "nom": "Assoc. Hérisson sous gazon",
       "ville": "Charrat",
       "canton": "VS",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 13000
     },
     {
@@ -13188,11 +13202,11 @@
       "montant_CHF": 60000
     },
     {
-      "nom": "Investissement Interprofession des fruits et légumes du Valais",
+      "nom": "Interprofession des fruits et légumes du Valais",
       "ville": "Conthey",
       "canton": "VS",
       "secteur": null,
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 35000
     },
     {
@@ -13236,11 +13250,11 @@
       "montant_CHF": 25000
     },
     {
-      "nom": "Formation Assoc. Insieme Valais romand",
+      "nom": "Insieme Valais romand",
       "ville": "Sion",
       "canton": "VS",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Formation Assoc.",
       "montant_CHF": 70000
     },
     {
@@ -13324,11 +13338,11 @@
       "montant_CHF": 2106000
     },
     {
-      "nom": "Rénovation et exposition La Cyclosportive des Vins du Valais",
+      "nom": "et exposition La Cyclosportive des Vins du Valais",
       "ville": "Sion",
       "canton": "VS",
       "secteur": null,
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 8000
     },
     {
@@ -13372,11 +13386,11 @@
       "montant_CHF": 257250
     },
     {
-      "nom": "Formation Assoc. 2e EnQuête Photographique Valaisanne",
+      "nom": "2e EnQuête Photographique Valaisanne",
       "ville": "Sion",
       "canton": "VS",
       "secteur": "Culture",
-      "description": "",
+      "description": "Formation Assoc.",
       "montant_CHF": 15000
     },
     {
@@ -13476,11 +13490,11 @@
       "montant_CHF": 203000
     },
     {
-      "nom": "Formation Assoc. Catharsis",
+      "nom": "Catharsis",
       "ville": "Orsières",
       "canton": "VS",
       "secteur": "Culture",
-      "description": "",
+      "description": "Formation Assoc.",
       "montant_CHF": 15000
     },
     {
@@ -13644,11 +13658,11 @@
       "montant_CHF": 4000
     },
     {
-      "nom": "Publication Assoc. des Amis de la Maison des contes et légendes d'Outre- Rhône",
+      "nom": "Assoc. des Amis de la Maison des contes et légendes d'Outre- Rhône",
       "ville": "Dorénaz",
       "canton": "VS",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 26000
     },
     {
@@ -13860,11 +13874,11 @@
       "montant_CHF": 1000000
     },
     {
-      "nom": "Rénovation Stiftung St. Josef",
+      "nom": "Stiftung St. Josef",
       "ville": "Leuk",
       "canton": "VS",
       "secteur": "Culture",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 30000
     },
     {
@@ -14060,19 +14074,19 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "Publication Assoc. Les Amis de Josette Taramarcaz",
+      "nom": "Assoc. Les Amis de Josette Taramarcaz",
       "ville": "Fully",
       "canton": "VS",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 18000
     },
     {
-      "nom": "Publication Assoc. Les Amis du Village du Livre St-Pierre-de-Clages, St-Pierre-de-Clages",
+      "nom": "Assoc. Les Amis du Village du Livre St-Pierre-de-Clages, St-Pierre-de-Clages",
       "ville": null,
       "canton": "VS",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 42000
     },
     {
@@ -14132,11 +14146,11 @@
       "montant_CHF": 4000
     },
     {
-      "nom": "Publication Assoc. L'itinérante",
+      "nom": "Assoc. L'itinérante",
       "ville": "Sion",
       "canton": "VS",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 10500
     },
     {
@@ -14580,11 +14594,11 @@
       "montant_CHF": 130000
     },
     {
-      "nom": "audiovisuelle indépendante Fond. Sion Violon Musique",
+      "nom": "Fond. Sion Violon Musique",
       "ville": "Sion",
       "canton": "VS",
       "secteur": "Culture",
-      "description": "Soutien à la diversité de la production",
+      "description": "audiovisuelle indépendante. Soutien à la diversité de la production",
       "montant_CHF": 380000
     },
     {
@@ -14628,11 +14642,11 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "Publication Kulturverein Grächen, Grächen",
+      "nom": "Kulturverein Grächen, Grächen",
       "ville": null,
       "canton": "VS",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 4500
     },
     {
@@ -14732,11 +14746,11 @@
       "montant_CHF": 11000
     },
     {
-      "nom": "Publication Pro Senectute Suisse",
+      "nom": "Pro Senectute Suisse",
       "ville": "Vevey",
       "canton": "VD",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 9000
     },
     {
@@ -14812,11 +14826,11 @@
       "montant_CHF": 40000
     },
     {
-      "nom": "Publication Stiftung Kulturzentrum Päpstliche Schweizergarde",
+      "nom": "Stiftung Kulturzentrum Päpstliche Schweizergarde",
       "ville": "Naters",
       "canton": "VS",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 85000
     },
     {
@@ -15076,11 +15090,11 @@
       "montant_CHF": 6000
     },
     {
-      "nom": "Publication Visarte.Valais",
+      "nom": "Visarte.Valais",
       "ville": "Sion",
       "canton": "VS",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 4000
     },
     {
@@ -15156,11 +15170,11 @@
       "montant_CHF": 7000
     },
     {
-      "nom": "Rénovation Archives de l'État du Valais",
+      "nom": "Archives de l'État du Valais",
       "ville": "Sion",
       "canton": "VS",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 817500
     },
     {
@@ -15172,11 +15186,11 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "Rénovation Assoc. pour la sauvegarde des fresques des Caves Henri Carron",
+      "nom": "Assoc. pour la sauvegarde des fresques des Caves Henri Carron",
       "ville": "Fully",
       "canton": "VS",
       "secteur": null,
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 40000
     },
     {
@@ -15188,11 +15202,11 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "Rénovation Assoc. valaisanne des musées",
+      "nom": "Assoc. valaisanne des musées",
       "ville": "Sion",
       "canton": "VS",
       "secteur": null,
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 25000
     },
     {
@@ -15220,27 +15234,27 @@
       "montant_CHF": 22000
     },
     {
-      "nom": "Rénovation Conseil de gestion de la Paroisse protestante de Monthey",
+      "nom": "Conseil de gestion de la Paroisse protestante de Monthey",
       "ville": "Monthey",
       "canton": "VS",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 2000
     },
     {
-      "nom": "Rénovation Conseil de gestion de la Paroisse St-Maurice de Laques, Mollens",
+      "nom": "Conseil de gestion de la Paroisse St-Maurice de Laques, Mollens",
       "ville": null,
       "canton": "VS",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 195000
     },
     {
-      "nom": "Rénovation Conseil de gestion de la Paroisse St-Nicolas d'Hérémence",
+      "nom": "Conseil de gestion de la Paroisse St-Nicolas d'Hérémence",
       "ville": "Hérémence",
       "canton": "VS",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 283000
     },
     {
@@ -15252,11 +15266,11 @@
       "montant_CHF": 31000
     },
     {
-      "nom": "Rénovation Fond. du Bienheureux Maurice Tornay et Ass. des Amis de la Fond. du Bx Maurice Tornay",
+      "nom": "Fond. du Bienheureux Maurice Tornay et Ass. des Amis de la Fond. du Bx Maurice Tornay",
       "ville": "Orsières",
       "canton": "VS",
       "secteur": null,
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 20000
     },
     {
@@ -15276,11 +15290,11 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "Rénovation Fond. pour le développement et la promotion du patois",
+      "nom": "Fond. pour le développement et la promotion du patois",
       "ville": "Sion",
       "canton": "VS",
       "secteur": null,
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 30000
     },
     {
@@ -15316,34 +15330,34 @@
       "montant_CHF": 160000
     },
     {
-      "nom": "Rénovation Kirchenrat der Pfarrei St. Mauritius",
+      "nom": "Kirchenrat der Pfarrei St. Mauritius",
       "ville": "Naters",
       "canton": "VS",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 283000
     },
     {
-      "nom": "Rénovation Kirchenrat der Pfarrei St. Theodul Visperterminen",
+      "nom": "Kirchenrat der Pfarrei St. Theodul Visperterminen",
       "ville": "Visperterminen",
       "canton": "VS",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 30000
     },
     {
-      "nom": "Rénovation Sté d’histoire du Valais romand",
+      "nom": "Sté d’histoire du Valais romand",
       "ville": "Martigny",
       "canton": "VS",
       "secteur": null,
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 17000
     },
     {
       "nom": "Stiftung Lötschentaler Museum",
       "ville": "Kippel",
       "canton": "VS",
-      "secteur": "Sport",
+      "secteur": "Conservation du patrimoine",
       "description": "Projets",
       "montant_CHF": 5000
     },
@@ -15356,11 +15370,11 @@
       "montant_CHF": 75000
     },
     {
-      "nom": "Rénovation Vereinigung Alpines Museum Zermatt - Assoc. du Musée Alpin de Zermatt",
+      "nom": "Vereinigung Alpines Museum Zermatt - Assoc. du Musée Alpin de Zermatt",
       "ville": "Zermatt",
       "canton": "VS",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 30000
     },
     {
@@ -15484,11 +15498,11 @@
       "montant_CHF": 400000
     },
     {
-      "nom": "Rénovation Assoc. Nendaz Freeride, Haute-Nendaz",
+      "nom": "Assoc. Nendaz Freeride, Haute-Nendaz",
       "ville": null,
       "canton": "VS",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 80000
     },
     {
@@ -15540,27 +15554,27 @@
       "montant_CHF": 6000
     },
     {
-      "nom": "Publication Pro Natura Zentrum Aletsch, Riederalp",
+      "nom": "Pro Natura Zentrum Aletsch, Riederalp",
       "ville": null,
       "canton": "VS",
       "secteur": "Environnement",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 3000
     },
     {
-      "nom": "Publication Sté Valaisanne de Biologie de la Faune",
+      "nom": "Sté Valaisanne de Biologie de la Faune",
       "ville": "Sion",
       "canton": "VS",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 1000
     },
     {
-      "nom": "Publication SPA Valais",
+      "nom": "SPA Valais",
       "ville": "Ardon",
       "canton": "VS",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 15000
     },
     {
@@ -15604,19 +15618,19 @@
       "montant_CHF": 3000
     },
     {
-      "nom": "Publication Club alpin suisse - Section des Diablerets, cabane de Trient",
+      "nom": "Club alpin suisse - Section des Diablerets, cabane de Trient",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 200000
     },
     {
-      "nom": "Rénovation Comité d'organisation des courses de ski alpin Crans- Montana",
+      "nom": "Comité d'organisation des courses de ski alpin Crans- Montana",
       "ville": "Crans-Montana",
       "canton": "VS",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 355000
     },
     {
@@ -15644,11 +15658,11 @@
       "montant_CHF": 2500000
     },
     {
-      "nom": "Investissement Interprofession Raclette du Valais AOP",
+      "nom": "Interprofession Raclette du Valais AOP",
       "ville": "Conthey",
       "canton": "VS",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 60000
     },
     {
@@ -15676,11 +15690,11 @@
       "montant_CHF": 200000
     },
     {
-      "nom": "Rénovation Valais/Wallis Promotion",
+      "nom": "Valais/Wallis Promotion",
       "ville": "Sion",
       "canton": "VS",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 500000
     },
     {
@@ -15692,11 +15706,11 @@
       "montant_CHF": 130000
     },
     {
-      "nom": "cantonales / Kantonale Sportverbände 1’996’199.22 Contributions annuelles / Jährliche Unterstüzungen 2’294’212.22 Assoc. régionale Valais Tennis",
+      "nom": "Assoc. régionale Valais Tennis",
       "ville": null,
       "canton": "VS",
       "secteur": "Sport",
-      "description": "",
+      "description": "cantonales / Kantonale Sportverbände 1’996’199.22 Contributions annuelles / Jährliche Unterstüzungen 2’294’212.22",
       "montant_CHF": 188510
     },
     {
@@ -16132,11 +16146,11 @@
       "montant_CHF": 121180
     },
     {
-      "nom": "Rénovation terrain synthétique Fussball-Club Raron",
+      "nom": "Club Raron",
       "ville": null,
       "canton": "VS",
       "secteur": "Sport",
-      "description": "",
+      "description": "terrain synthétique Fussball-. Rénovation",
       "montant_CHF": 1941
     },
     {
@@ -16164,11 +16178,11 @@
       "montant_CHF": 77812
     },
     {
-      "nom": "Rénovation installations tirs SAC-Ortsgruppe St. Niklaus",
+      "nom": "installations tirs SAC-Ortsgruppe St. Niklaus",
       "ville": null,
       "canton": "VS",
       "secteur": "Sport",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 16301
     },
     {
@@ -16196,11 +16210,11 @@
       "montant_CHF": 25487
     },
     {
-      "nom": "Rénovation Tennis-Club Monthey",
+      "nom": "Tennis-Club Monthey",
       "ville": null,
       "canton": "VS",
       "secteur": "Sport",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 3074
     },
     {
@@ -16932,35 +16946,35 @@
       "montant_CHF": 6500
     },
     {
-      "nom": "Publication Assoc. Atelier Fil",
+      "nom": "Assoc. Atelier Fil",
       "ville": "Couvet",
       "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 35000
     },
     {
-      "nom": "Investissement Assoc. ATIC",
+      "nom": "Assoc. ATIC",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 20000
     },
     {
-      "nom": "Investissement Assoc. Les jardins du Mycélium",
+      "nom": "Assoc. Les jardins du Mycélium",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 5000
     },
     {
-      "nom": "Investissement Assoc. LGBTIQ+ canton de Neuchâtel - Togayther",
+      "nom": "Assoc. LGBTIQ+ canton de Neuchâtel - Togayther",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 1800
     },
     {
@@ -16972,27 +16986,27 @@
       "montant_CHF": 80000
     },
     {
-      "nom": "Investissement Assoc. Un jour sans faim",
+      "nom": "Assoc. Un jour sans faim",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 6500
     },
     {
-      "nom": "Investissement AVIVO Val-de-Travers",
+      "nom": "AVIVO Val-de-Travers",
       "ville": "Couvet",
       "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 1000
     },
     {
-      "nom": "Evénement Bénévolat Neuchâtel",
+      "nom": "Bénévolat Neuchâtel",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 18000
     },
     {
@@ -17004,35 +17018,35 @@
       "montant_CHF": 89000
     },
     {
-      "nom": "Investissement et activités annuelles Collectif Sui Generis",
+      "nom": "et activités annuelles Collectif Sui Generis",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 3000
     },
     {
-      "nom": "Evénement Cora Centre œc. de rencontre et d'animation",
+      "nom": "Cora Centre œc. de rencontre et d'animation",
       "ville": "Fleurier",
       "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 1000
     },
     {
-      "nom": "Evénement Croix-Rouge suisse - Canton de Neuchâtel",
+      "nom": "Croix-Rouge suisse - Canton de Neuchâtel",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 50000
     },
     {
-      "nom": "Investissement EPER - Entraide Protestante Suisse",
+      "nom": "EPER - Entraide Protestante Suisse",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 20000
     },
     {
@@ -17044,11 +17058,11 @@
       "montant_CHF": 100000
     },
     {
-      "nom": "Investissement La Main Tendue Neuchâteloise",
+      "nom": "La Main Tendue Neuchâteloise",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 3000
     },
     {
@@ -17060,19 +17074,19 @@
       "montant_CHF": 40000
     },
     {
-      "nom": "Investissement Noël autrement",
+      "nom": "Noël autrement",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 6000
     },
     {
-      "nom": "Evénement OSEO Neuchâtel - Œuvre Suisse d'Entraide Ouvrière, Traver s",
+      "nom": "OSEO Neuchâtel - Œuvre Suisse d'Entraide Ouvrière, Traver s",
       "ville": null,
-      "canton": "VS",
+      "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 15000
     },
     {
@@ -17100,27 +17114,27 @@
       "montant_CHF": 17000
     },
     {
-      "nom": "Investissement Assoc. du Crêt-Meuron, La Vue-des-Alpes",
+      "nom": "Assoc. du Crêt-Meuron, La Vue-des-Alpes",
       "ville": null,
       "canton": "VS",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 10000
     },
     {
-      "nom": "Investissement Assoc. du scoutisme neuchâtelois",
+      "nom": "Assoc. du scoutisme neuchâtelois",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 6500
     },
     {
-      "nom": "Investissement Assoc. Graine de génie et Graine de citoyen",
+      "nom": "Assoc. Graine de génie et Graine de citoyen",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 12000
     },
     {
@@ -17148,51 +17162,51 @@
       "montant_CHF": 17000
     },
     {
-      "nom": "Evénement Assoc. ReProMRuz",
+      "nom": "Assoc. ReProMRuz",
       "ville": "Cernier",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 2500
     },
     {
-      "nom": "Evénement Assoc. Swiss International Music, Les Vieux-Prés",
+      "nom": "Assoc. Swiss International Music, Les Vieux-Prés",
       "ville": null,
       "canton": "VS",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 10000
     },
     {
-      "nom": "Evénement La Chaux-de-Fonds",
+      "nom": "La Chaux-de-Fonds",
       "ville": null,
       "canton": "VS",
       "secteur": "Santé et handicap",
-      "description": "Atelier créatif La Ronde,",
+      "description": "Evénement. Atelier créatif La Ronde,",
       "montant_CHF": 3000
     },
     {
-      "nom": "Investissement Centre de Loisirs",
+      "nom": "Centre de Loisirs",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 15000
     },
     {
-      "nom": "Investissement Centre Jeunesse Val-de-Ruz",
+      "nom": "Centre Jeunesse Val-de-Ruz",
       "ville": "Cernier",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 9000
     },
     {
-      "nom": "Investissement Circo Bello",
+      "nom": "Circo Bello",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 87000
     },
     {
@@ -17212,19 +17226,19 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "Investissement Fond. Carrefour",
+      "nom": "Fond. Carrefour",
       "ville": "Peseux",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 3000
     },
     {
-      "nom": "Evénement Fond. IdéeSport",
+      "nom": "Fond. IdéeSport",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 8000
     },
     {
@@ -17244,51 +17258,51 @@
       "montant_CHF": 5500
     },
     {
-      "nom": "Evénement Le Chat Botté",
+      "nom": "Le Chat Botté",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 2000
     },
     {
-      "nom": "Investissement Les Ecolades",
+      "nom": "Les Ecolades",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 190000
     },
     {
-      "nom": "Evénement Les trois petits cochons",
+      "nom": "Les trois petits cochons",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 2000
     },
     {
-      "nom": "Investissement Ludothèque de la Basse Areuse",
+      "nom": "Ludothèque de la Basse Areuse",
       "ville": "Boudry",
       "canton": "NE",
       "secteur": "Jeunesse et éducation",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 1500
     },
     {
-      "nom": "Investissement Ludothèque Le Locle",
+      "nom": "Ludothèque Le Locle",
       "ville": "Le Locle",
       "canton": "NE",
       "secteur": "Jeunesse et éducation",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 2500
     },
     {
-      "nom": "Investissement Pro Junior - arc jurassien",
+      "nom": "Pro Junior - arc jurassien",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 100000
     },
     {
@@ -17316,11 +17330,11 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "Procap La Chaux-de-Fonds / Val- de-Travers",
+      "nom": "Procap La Chaux-de-Fonds / Val-de-Travers",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "Activités annuelles",
+      "description": "P. Activités annuelles",
       "montant_CHF": 2000
     },
     {
@@ -17340,35 +17354,35 @@
       "montant_CHF": 3000
     },
     {
-      "nom": "Investissement Sté de Sauvetage du Bas-Lac",
+      "nom": "Sté de Sauvetage du Bas-Lac",
       "ville": "St-Blaise",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 8000
     },
     {
-      "nom": "Investissement Sté Suisse des Troupes Sanitaires - STS Neuchâtel",
+      "nom": "Sté Suisse des Troupes Sanitaires - STS Neuchâtel",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 5000
     },
     {
-      "nom": "Investissement 2300 Plan 9 Nuits du cinéma",
+      "nom": "2300 Plan 9 Nuits du cinéma",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 13000
     },
     {
-      "nom": "Evénement ABC",
+      "nom": "ABC",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 280000
     },
     {
@@ -17380,11 +17394,11 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "Evénement ACDC - Assoc. de coordination de la Case à Chocs",
+      "nom": "ACDC - Assoc. de coordination de la Case à Chocs",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 20000
     },
     {
@@ -17396,19 +17410,19 @@
       "montant_CHF": 6000
     },
     {
-      "nom": "Evénement Agora - la Plage des Six Pompes",
+      "nom": "Agora - la Plage des Six Pompes",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 130000
     },
     {
-      "nom": "Evénement Amis neuchâtelois de la HEM",
+      "nom": "Amis neuchâtelois de la HEM",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 40000
     },
     {
@@ -17420,11 +17434,11 @@
       "montant_CHF": 45000
     },
     {
-      "nom": "Publication Assoc. Les Chambristes - ensemble instrumental",
+      "nom": "Assoc. Les Chambristes - ensemble instrumental",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 70000
     },
     {
@@ -17444,27 +17458,27 @@
       "montant_CHF": 8000
     },
     {
-      "nom": "Evénement Assoc. Arty Show",
+      "nom": "Assoc. Arty Show",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 7000
     },
     {
-      "nom": "Evénement Assoc. Arty Show",
+      "nom": "Assoc. Arty Show",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 8000
     },
     {
-      "nom": "Evénement Assoc. astérisque*",
+      "nom": "Assoc. astérisque*",
       "ville": "Cortaillod",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 8000
     },
     {
@@ -17484,27 +17498,27 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "Evénement Assoc. bon pied bon art",
+      "nom": "Assoc. bon pied bon art",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 5000
     },
     {
-      "nom": "Evénement Assoc. Camerata Ataremac, St-Aubin-Sauges",
+      "nom": "Assoc. Camerata Ataremac, St-Aubin-Sauges",
       "ville": null,
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 2000
     },
     {
-      "nom": "Evénement Assoc. CAN Centre d'art Neuchâtel",
+      "nom": "Assoc. CAN Centre d'art Neuchâtel",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 210000
     },
     {
@@ -17540,11 +17554,11 @@
       "montant_CHF": 8000
     },
     {
-      "nom": "Evénement Assoc. Culture Nomade",
+      "nom": "Assoc. Culture Nomade",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 12000
     },
     {
@@ -17564,19 +17578,19 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "Publication Assoc. des Amis de Boillat X",
+      "nom": "Assoc. des Amis de Boillat X",
       "ville": "Cernier",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 8500
     },
     {
-      "nom": "Publication Assoc. des Amis de la Musique Scolaire du Locle",
+      "nom": "Assoc. des Amis de la Musique Scolaire du Locle",
       "ville": "Le Locle",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 21000
     },
     {
@@ -17588,11 +17602,11 @@
       "montant_CHF": 64000
     },
     {
-      "nom": "Publication Assoc. des Amis Flous",
+      "nom": "Assoc. des Amis Flous",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 25000
     },
     {
@@ -17644,11 +17658,11 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "Evénement Assoc. En Show",
+      "nom": "Assoc. En Show",
       "ville": "Brot-Plamboz",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 8000
     },
     {
@@ -17676,11 +17690,11 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "Evénement Assoc. Flee",
+      "nom": "Assoc. Flee",
       "ville": "Cormondrèche",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 5000
     },
     {
@@ -17692,19 +17706,19 @@
       "montant_CHF": 12000
     },
     {
-      "nom": "Evénement Assoc. Hibernatus",
+      "nom": "Assoc. Hibernatus",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 5000
     },
     {
-      "nom": "Evénement Assoc. Ibaté",
+      "nom": "Assoc. Ibaté",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 5000
     },
     {
@@ -17732,19 +17746,19 @@
       "montant_CHF": 18000
     },
     {
-      "nom": "Evénement Assoc. La Batoille",
+      "nom": "Assoc. La Batoille",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 7000
     },
     {
-      "nom": "Publication Assoc. La Décharge",
+      "nom": "Assoc. La Décharge",
       "ville": "Fontaines",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 70000
     },
     {
@@ -17756,11 +17770,11 @@
       "montant_CHF": 7000
     },
     {
-      "nom": "Evénement Assoc. Le Balkkon",
+      "nom": "Assoc. Le Balkkon",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 6000
     },
     {
@@ -17780,11 +17794,11 @@
       "montant_CHF": 3000
     },
     {
-      "nom": "Evénement Assoc. Le Péristyle - Château de Cormondrèche",
+      "nom": "Assoc. Le Péristyle - Château de Cormondrèche",
       "ville": "Cormondrèche",
       "canton": "NE",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 25000
     },
     {
@@ -17796,11 +17810,11 @@
       "montant_CHF": 11000
     },
     {
-      "nom": "Publication Assoc. Les Amis de l'Opéra",
+      "nom": "Assoc. Les Amis de l'Opéra",
       "ville": "Môtiers",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 60000
     },
     {
@@ -17812,27 +17826,27 @@
       "montant_CHF": 12600
     },
     {
-      "nom": "Publication Assoc. L'Eté au Kiosque",
+      "nom": "Assoc. L'Eté au Kiosque",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 5000
     },
     {
-      "nom": "Evénement Assoc. Lieux d'Art Neuchâtel",
+      "nom": "Assoc. Lieux d'Art Neuchâtel",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 30000
     },
     {
-      "nom": "Evénement Assoc. Luterne 1.000",
+      "nom": "Assoc. Luterne 1.000",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 10000
     },
     {
@@ -17852,11 +17866,11 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "Evénement Assoc. MAT",
+      "nom": "Assoc. MAT",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 1000
     },
     {
@@ -17868,19 +17882,19 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "Evénement Assoc. Mille fois le temps",
+      "nom": "Assoc. Mille fois le temps",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 20000
     },
     {
-      "nom": "Evénement Assoc. MUKUNA AOC Production",
+      "nom": "Assoc. MUKUNA AOC Production",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 5000
     },
     {
@@ -17924,11 +17938,11 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "Evénement Assoc. Passe à l'acte-troupe de théâtre",
+      "nom": "Assoc. Passe à l'acte-troupe de théâtre",
       "ville": "Les Brenets",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 6000
     },
     {
@@ -17940,11 +17954,11 @@
       "montant_CHF": 2000
     },
     {
-      "nom": "Evénement Assoc. Pierrot Productions",
+      "nom": "Assoc. Pierrot Productions",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 6000
     },
     {
@@ -17964,11 +17978,11 @@
       "montant_CHF": 25000
     },
     {
-      "nom": "Publication et exposition Assoc. pour la Collégiale",
+      "nom": "Assoc. pour la Collégiale",
       "ville": "Peseux",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "et exposition. Publication",
       "montant_CHF": 10000
     },
     {
@@ -17980,11 +17994,11 @@
       "montant_CHF": 40000
     },
     {
-      "nom": "Evénement Assoc. Pro-création",
+      "nom": "Assoc. Pro-création",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 55000
     },
     {
@@ -18004,11 +18018,11 @@
       "montant_CHF": 25000
     },
     {
-      "nom": "Evénement Assoc. Rodolphe de Neuchâtel",
+      "nom": "Assoc. Rodolphe de Neuchâtel",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 150000
     },
     {
@@ -18020,11 +18034,11 @@
       "montant_CHF": 8000
     },
     {
-      "nom": "Evénement Assoc. Spectaclexpo",
+      "nom": "Assoc. Spectaclexpo",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 70000
     },
     {
@@ -18036,35 +18050,35 @@
       "montant_CHF": 6000
     },
     {
-      "nom": "Evénement Assoc. Taureau éditions",
+      "nom": "Assoc. Taureau éditions",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 2600
     },
     {
-      "nom": "Publication Assoc. Théâtre Pro NE",
+      "nom": "Assoc. Théâtre Pro NE",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 30000
     },
     {
-      "nom": "Evénement Assoc. Trio Mistral",
+      "nom": "Assoc. Trio Mistral",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 5000
     },
     {
-      "nom": "Evénement Assoc. Voices",
+      "nom": "Assoc. Voices",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 4000
     },
     {
@@ -18076,19 +18090,19 @@
       "montant_CHF": 6000
     },
     {
-      "nom": "Investissement Buskers Festival",
+      "nom": "Buskers Festival",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 25000
     },
     {
-      "nom": "Evénement Café-théâtre La Grange et Casino",
+      "nom": "Café-théâtre La Grange et Casino",
       "ville": "Le Locle",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 50000
     },
     {
@@ -18260,19 +18274,19 @@
       "montant_CHF": 25000
     },
     {
-      "nom": "Evénement Corn'Rock Festival",
+      "nom": "Corn'Rock Festival",
       "ville": "Cornaux",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 6000
     },
     {
-      "nom": "Evénement Découvertes musicales - Le Locle",
+      "nom": "Découvertes musicales - Le Locle",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 10000
     },
     {
@@ -18284,35 +18298,35 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "Evénement Editions Alphil",
+      "nom": "Editions Alphil",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 35200
     },
     {
-      "nom": "Publication Editions Attinger",
+      "nom": "Editions Attinger",
       "ville": "Colombier",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 32000
     },
     {
-      "nom": "Publication Editions de la Chatière",
+      "nom": "Editions de la Chatière",
       "ville": "Chézard-St-Martin",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 12000
     },
     {
-      "nom": "Publication Ensemble La Sestina",
+      "nom": "Ensemble La Sestina",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 20000
     },
     {
@@ -18348,27 +18362,27 @@
       "montant_CHF": 12000
     },
     {
-      "nom": "Evénement Féd. Suisse de Scrabble",
+      "nom": "Féd. Suisse de Scrabble",
       "ville": "Couvet",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 3000
     },
     {
-      "nom": "Evénement FNAAC",
+      "nom": "FNAAC",
       "ville": "Valangin",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 40000
     },
     {
-      "nom": "Evénement Fond. Arc en Scène - centre neuchâtelois des arts vivants - TPR",
+      "nom": "Fond. Arc en Scène - centre neuchâtelois des arts vivants - TPR",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 450000
     },
     {
@@ -18396,19 +18410,19 @@
       "montant_CHF": 3500
     },
     {
-      "nom": "Publication Fond. Neuchâtel Openair",
+      "nom": "Fond. Neuchâtel Openair",
       "ville": null,
       "canton": "NE",
       "secteur": "Santé et handicap",
-      "description": "Festival - Festi'Neuch, Neuchâtel",
+      "description": "Publication. Festival - Festi'Neuch, Neuchâtel",
       "montant_CHF": 150000
     },
     {
-      "nom": "Evénement Full PETAL Machine",
+      "nom": "Full PETAL Machine",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 15000
     },
     {
@@ -18444,19 +18458,19 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "Evénement i-lirédition",
+      "nom": "i-lirédition",
       "ville": "Cressier",
       "canton": "NE",
       "secteur": null,
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 6500
     },
     {
-      "nom": "Publication Institut Ferdinand Hodler - Archives Jura Brüschweiler",
+      "nom": "Institut Ferdinand Hodler - Archives Jura Brüschweiler",
       "ville": "Delémont",
       "canton": "JU",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 10000
     },
     {
@@ -18468,11 +18482,11 @@
       "montant_CHF": 3000
     },
     {
-      "nom": "Publication La Boîte à Swing",
+      "nom": "La Boîte à Swing",
       "ville": "Le Locle",
       "canton": "NE",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 3000
     },
     {
@@ -18508,11 +18522,11 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "Evénement L'Avant-Scène Opéra",
+      "nom": "L'Avant-Scène Opéra",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 200000
     },
     {
@@ -18548,11 +18562,11 @@
       "montant_CHF": 135000
     },
     {
-      "nom": "Evénement Les Chemins de Traverse",
+      "nom": "Les Chemins de Traverse",
       "ville": "Peseux",
       "canton": "NE",
       "secteur": null,
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 45000
     },
     {
@@ -18628,19 +18642,19 @@
       "montant_CHF": 50000
     },
     {
-      "nom": "Evénement Neuchâtel International Fantastic Film Festival - NIFFF",
+      "nom": "Neuchâtel International Fantastic Film Festival - NIFFF",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 283000
     },
     {
-      "nom": "Evénement et investissement Nouvel Ensemble Contemporain - NEC",
+      "nom": "et investissement Nouvel Ensemble Contemporain - NEC",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 175000
     },
     {
@@ -18652,19 +18666,19 @@
       "montant_CHF": 25000
     },
     {
-      "nom": "Publication NZZ Libro",
+      "nom": "NZZ Libro",
       "ville": "Bâle",
       "canton": "JU",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 2000
     },
     {
-      "nom": "Publication OJA orchestre des jeunes accordéonistes, Vernayaz",
+      "nom": "OJA orchestre des jeunes accordéonistes, Vernayaz",
       "ville": null,
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 5000
     },
     {
@@ -18684,11 +18698,11 @@
       "montant_CHF": 390000
     },
     {
-      "nom": "Evénement Passion cinéma",
+      "nom": "Passion cinéma",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": null,
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 60000
     },
     {
@@ -18708,19 +18722,19 @@
       "montant_CHF": 150000
     },
     {
-      "nom": "Evénement Réhabilitation Education Aide sociale - REA - Cameroun",
+      "nom": "Réhabilitation Education Aide sociale - REA - Cameroun",
       "ville": "Le Locle",
       "canton": "NE",
       "secteur": null,
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 7000
     },
     {
-      "nom": "Evénement Rust Roest Kollectif - RRK",
+      "nom": "Rust Roest Kollectif - RRK",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": null,
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 40000
     },
     {
@@ -18748,7 +18762,7 @@
       "montant_CHF": 110000
     },
     {
-      "nom": "Sté de Musique La Chaux-de- Fonds",
+      "nom": "Sté de Musique La Chaux-de-Fonds",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Culture",
@@ -18788,11 +18802,11 @@
       "montant_CHF": 4000
     },
     {
-      "nom": "Investissement Théâtre Frenesi",
+      "nom": "Théâtre Frenesi",
       "ville": "Corcelles",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 45000
     },
     {
@@ -18812,11 +18826,11 @@
       "montant_CHF": 2000
     },
     {
-      "nom": "Publication Visarte.neuchâtel, Chambrelien",
+      "nom": "Visarte.neuchâtel, Chambrelien",
       "ville": null,
       "canton": "NE",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 2000
     },
     {
@@ -18828,27 +18842,27 @@
       "montant_CHF": 80000
     },
     {
-      "nom": "Assoc. FabLab La Chaux-de- Fonds",
+      "nom": "Assoc. FabLab La Chaux-de-Fonds",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Formation et recherche",
-      "description": "",
+      "description": "A",
       "montant_CHF": 12000
     },
     {
-      "nom": "Investissement Assoc. PerspectivePlus, Thielle-Wavre",
+      "nom": "Assoc. PerspectivePlus, Thielle-Wavre",
       "ville": null,
       "canton": "NE",
       "secteur": "Formation et recherche",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 15000
     },
     {
-      "nom": "Investissement Capa'cité - Cité des métiers",
+      "nom": "Capa'cité - Cité des métiers",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Formation et recherche",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 200000
     },
     {
@@ -18860,27 +18874,27 @@
       "montant_CHF": 58000
     },
     {
-      "nom": "Investissement Assoc. neuchâteloise de soutien à la Semaine suisse du Goût",
+      "nom": "Assoc. neuchâteloise de soutien à la Semaine suisse du Goût",
       "ville": "Cernier",
       "canton": "NE",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 2500
     },
     {
-      "nom": "Evénement Assoc. William Pierrehumbert",
+      "nom": "Assoc. William Pierrehumbert",
       "ville": "Cortaillod",
       "canton": "NE",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 6000
     },
     {
-      "nom": "Publication Château de Valangin",
+      "nom": "Château de Valangin",
       "ville": "Valangin",
       "canton": "NE",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 82000
     },
     {
@@ -18892,27 +18906,27 @@
       "montant_CHF": 135000
     },
     {
-      "nom": "Investissement et activités annuelles Fond. St-Jean",
+      "nom": "Fond. St-Jean",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "et activités annuelles. Investissement",
       "montant_CHF": 42000
     },
     {
-      "nom": "Investissement FONSART - Fond. pour la sauvegarde du patrimoine audiovisuel de la RTS",
+      "nom": "FONSART - Fond. pour la sauvegarde du patrimoine audiovisuel de la RTS",
       "ville": "Vessy",
       "canton": "GE",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 5000
     },
     {
-      "nom": "Evénement Musée de la vigne et du vin au Château de Boudry",
+      "nom": "Musée de la vigne et du vin au Château de Boudry",
       "ville": "Boudry",
       "canton": "NE",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 12000
     },
     {
@@ -18932,11 +18946,11 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "Investissement SHAN Sté d'histoire et d'archéologie",
+      "nom": "SHAN Sté d'histoire et d'archéologie",
       "ville": "Valangin",
       "canton": "NE",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 100000
     },
     {
@@ -18956,11 +18970,11 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "Evénement Assoc. Nature & Loisirs, Auboranges",
+      "nom": "Assoc. Nature & Loisirs, Auboranges",
       "ville": null,
       "canton": "NE",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 8000
     },
     {
@@ -18972,27 +18986,27 @@
       "montant_CHF": 50000
     },
     {
-      "nom": "Evénement Sté neuchâteloise des Sciences naturelles",
+      "nom": "Sté neuchâteloise des Sciences naturelles",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 12000
     },
     {
-      "nom": "Investissement Assoc. des Amis de la Ferme Robert",
+      "nom": "Assoc. des Amis de la Ferme Robert",
       "ville": "Couvet",
       "canton": "NE",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 45000
     },
     {
-      "nom": "Investissement Assoc. Ecoparc",
+      "nom": "Assoc. Ecoparc",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 30000
     },
     {
@@ -19012,43 +19026,43 @@
       "montant_CHF": 7000
     },
     {
-      "nom": "Evénement Biennale de déambulation Les Horlofolies",
+      "nom": "Biennale de déambulation Les Horlofolies",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 45000
     },
     {
-      "nom": "Evénement Club Alpin Suisse - section Neuchâteloise",
+      "nom": "Club Alpin Suisse - section Neuchâteloise",
       "ville": "Colombier",
       "canton": "NE",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 20000
     },
     {
-      "nom": "Investissement Fond. en faveur de la mise en valeur du site de La Chaux- de-Fonds / Locle patrimoine mondial UNESCO",
+      "nom": "Fond. en faveur de la mise en valeur du site de La Chaux- de-Fonds / Locle patrimoine mondial UNESCO",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Investissement",
       "montant_CHF": 24500
     },
     {
-      "nom": "Evénement Neuchâtel Rando - ANTP",
+      "nom": "Neuchâtel Rando - ANTP",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 5000
     },
     {
-      "nom": "Publication Pro Evologia - Assoc. des amis d'Evologia",
+      "nom": "Pro Evologia - Assoc. des amis d'Evologia",
       "ville": "Cernier",
       "canton": "NE",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 80000
     },
     {
@@ -19060,11 +19074,11 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "Evénement Watt Air Concept",
+      "nom": "Watt Air Concept",
       "ville": "St-Blaise",
       "canton": "NE",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Evénement",
       "montant_CHF": 22000
     },
     {
@@ -19108,11 +19122,11 @@
       "montant_CHF": 1360
     },
     {
-      "nom": "ème triathlon populaire et jeunesse Assoc. Groove",
+      "nom": "Assoc. Groove",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "",
+      "description": "ème triathlon populaire et jeunesse",
       "montant_CHF": 6300
     },
     {
@@ -19148,11 +19162,11 @@
       "montant_CHF": 500
     },
     {
-      "nom": "juin 2020 Club des Lutteurs du Vignoble",
+      "nom": "Club des Lutteurs du Vignoble",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "Championnat suisse par point Laser 20 et 21",
+      "description": "juin 2020. Championnat suisse par point Laser 20 et 21",
       "montant_CHF": 1800
     },
     {
@@ -19172,11 +19186,11 @@
       "montant_CHF": 500
     },
     {
-      "nom": "section Assoc. Cantonale Neuchateloise de Gymnastique Gebsonn Club et Manège Gerber",
+      "nom": "Assoc. Cantonale Neuchateloise de Gymnastique Gebsonn Club et Manège Gerber",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "Championnat cantonal d'athlétisme de",
+      "description": "section. Championnat cantonal d'athlétisme de",
       "montant_CHF": 2670
     },
     {
@@ -19316,11 +19330,11 @@
       "montant_CHF": 2810
     },
     {
-      "nom": "public des Jeannerets au Locle Centre d'Education Physique Cortaillod",
+      "nom": "Centre d'Education Physique Cortaillod",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "Aménagement participatif de l'espace",
+      "description": "public des Jeannerets au Locle. Aménagement participatif de l'espace",
       "montant_CHF": 1320
     },
     {
@@ -19332,11 +19346,11 @@
       "montant_CHF": 26500
     },
     {
-      "nom": "Rénovation de deux terrains de tennis Football Club Bevaix140.- Agrandissement vestiaire arbitre Football Club Coffrane",
+      "nom": "Club Bevaix140.- Agrandissement vestiaire arbitre Football Club Coffrane",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "",
+      "description": "de deux terrains de tennis Football. Rénovation",
       "montant_CHF": 2510
     },
     {
@@ -19388,11 +19402,11 @@
       "montant_CHF": 1155
     },
     {
-      "nom": "Rénovation du Dojo Sté de Tir les Armes Réunies la Côtière-Engollon",
+      "nom": "Sté de Tir les Armes Réunies la Côtière-Engollon",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "",
+      "description": "du Dojo. Rénovation",
       "montant_CHF": 2680
     },
     {
@@ -19404,19 +19418,19 @@
       "montant_CHF": 63290
     },
     {
-      "nom": "Rénovation de la halle du Tennis Club Mail Tennis Club La Chaux-de-Fonds",
+      "nom": "Club Mail Tennis Club La Chaux-de-Fonds",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "",
+      "description": "de la halle du Tennis. Rénovation",
       "montant_CHF": 6170
     },
     {
-      "nom": "Rénovation des vestaires 2021 Tennis Club Le Locle",
+      "nom": "Club Le Locle",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "",
+      "description": "des vestaires 2021 Tennis. Rénovation",
       "montant_CHF": 9610
     },
     {
@@ -19436,11 +19450,11 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "Rénovation d'un terrain de sports",
+      "nom": "d'un terrain de sports",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "Soutiens individuels",
+      "description": "Rénovation. Soutiens individuels",
       "montant_CHF": 240000
     },
     {
@@ -19500,11 +19514,11 @@
       "montant_CHF": 1265
     },
     {
-      "nom": "musculation Club Nautique Auvernier",
+      "nom": "Club Nautique Auvernier",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "Aménagement plateau et engin de",
+      "description": "musculation. Aménagement plateau et engin de",
       "montant_CHF": 6020
     },
     {
@@ -19868,11 +19882,11 @@
       "montant_CHF": 1000
     },
     {
-      "nom": "Badminton Club La Chaux-de- Fonds",
+      "nom": "Badminton Club La Chaux-de-Fonds",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "",
+      "description": "B",
       "montant_CHF": 8600
     },
     {
@@ -20020,11 +20034,11 @@
       "montant_CHF": 4000
     },
     {
-      "nom": "Club Haltérophile La Chaux-de- Fonds",
+      "nom": "Club Haltérophile La Chaux-de-Fonds",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "",
+      "description": "C",
       "montant_CHF": 1000
     },
     {
@@ -20116,11 +20130,11 @@
       "montant_CHF": 2000
     },
     {
-      "nom": "Handball Club La Chaux-de- Fonds",
+      "nom": "Handball Club La Chaux-de-Fonds",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "",
+      "description": "H",
       "montant_CHF": 1800
     },
     {
@@ -20204,11 +20218,11 @@
       "montant_CHF": 6000
     },
     {
-      "nom": "Salle d'Escrime La Chaux-de- Fonds",
+      "nom": "Salle d'Escrime La Chaux-de-Fonds",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "",
+      "description": "S",
       "montant_CHF": 8000
     },
     {
@@ -20252,11 +20266,11 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "Sté Suisse de Sauvetage Val- de-Ruz",
+      "nom": "Sté Suisse de Sauvetage Val-de-Ruz",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "",
+      "description": "S",
       "montant_CHF": 6500
     },
     {
@@ -20292,11 +20306,11 @@
       "montant_CHF": 117000
     },
     {
-      "nom": "Tchoukball Club La Chaux-de- Fonds",
+      "nom": "Tchoukball Club La Chaux-de-Fonds",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "",
+      "description": "T",
       "montant_CHF": 6520
     },
     {
@@ -20340,11 +20354,11 @@
       "montant_CHF": 1000
     },
     {
-      "nom": "Unihockey Club La Chaux-de- Fonds",
+      "nom": "Unihockey Club La Chaux-de-Fonds",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "",
+      "description": "U",
       "montant_CHF": 3500
     },
     {
@@ -20612,11 +20626,11 @@
       "montant_CHF": 4000
     },
     {
-      "nom": "Prix du mérite sportif neuchâtelois : équipe de l'année 2021 Vô-Vietnam club La Chaux-de- Fonds",
+      "nom": "Prix du mérite sportif neuchâtelois : équipe de l'année 2021 Vô-Vietnam club La Chaux-de-Fonds",
       "ville": null,
       "canton": "NE",
       "secteur": "Sport",
-      "description": "",
+      "description": "P",
       "montant_CHF": 5000
     },
     {
@@ -20668,11 +20682,11 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "Rénovation et aménagement d'un atelier Assoc. Astural",
+      "nom": "Assoc. Astural",
       "ville": "Grand-Lancy",
       "canton": "GE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "et aménagement d'un atelier. Rénovation",
       "montant_CHF": 60000
     },
     {
@@ -20692,11 +20706,11 @@
       "montant_CHF": 8000
     },
     {
-      "nom": "pour personnes fragilisées et désocialisées Assoc. Cuisine Lab",
+      "nom": "Assoc. Cuisine Lab",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "Création d'un lieu d'accueil libre itinérant",
+      "description": "pour personnes fragilisées et désocialisées. Création d'un lieu d'accueil libre itinérant",
       "montant_CHF": 467500
     },
     {
@@ -20748,11 +20762,11 @@
       "montant_CHF": 40000
     },
     {
-      "nom": "Equipement Espace Tourbillon Assoc. Insieme - Genève",
+      "nom": "Espace Tourbillon Assoc. Insieme - Genève",
       "ville": "Carouge",
       "canton": "GE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "Equipement",
       "montant_CHF": 30000
     },
     {
@@ -20764,11 +20778,11 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "professionnel genevois Assoc. La Rose des Vents",
+      "nom": "Assoc. La Rose des Vents",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "Soutien au démarrage du service",
+      "description": "professionnel genevois. Soutien au démarrage du service",
       "montant_CHF": 15000
     },
     {
@@ -20860,11 +20874,11 @@
       "montant_CHF": 7900
     },
     {
-      "nom": "malgré les normes COVID Assoc. Tchendukua Ici et Ailleurs - Suisse",
+      "nom": "Assoc. Tchendukua Ici et Ailleurs - Suisse",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "Aménagements pour accueillir avec qualité",
+      "description": "malgré les normes COVID. Aménagements pour accueillir avec qualité",
       "montant_CHF": 5000
     },
     {
@@ -20884,11 +20898,11 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "états Assoc. Yojoa",
+      "nom": "Assoc. Yojoa",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "Festival Le Consentement dans tous ses",
+      "description": "états. Festival Le Consentement dans tous ses",
       "montant_CHF": 40000
     },
     {
@@ -20972,11 +20986,11 @@
       "montant_CHF": 3200000
     },
     {
-      "nom": "Urgence covid-19 Fond. Sgipa",
+      "nom": "Fond. Sgipa",
       "ville": "Conches",
       "canton": "GE",
       "secteur": "Action sociale et personnes âgées",
-      "description": "Achat de biens de première nécessité -",
+      "description": "Urgence COVID-19 · Achat de biens de première nécessité -",
       "montant_CHF": 2000000
     },
     {
@@ -21244,11 +21258,11 @@
       "montant_CHF": 8000
     },
     {
-      "nom": "www.cemea.ch Club Genevois de Débat",
+      "nom": "Club Genevois de Débat",
       "ville": "Meyrin",
       "canton": "GE",
       "secteur": "Santé et handicap",
-      "description": "Mise à jour de notre site internet",
+      "description": "www.cemea.ch. Mise à jour de notre site internet",
       "montant_CHF": 10000
     },
     {
@@ -21276,11 +21290,11 @@
       "montant_CHF": 1150000
     },
     {
-      "nom": "à distance et mise aux normes d'une maison d'habitation e-KIP Centre informatique pédagogique",
+      "nom": "Centre informatique pédagogique",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Santé et handicap",
-      "description": "Construction d'une maison, d'un chauffage",
+      "description": "à distance et mise aux normes d'une maison d'habitation e-KIP. Construction d'une maison, d'un chauffage",
       "montant_CHF": 30000
     },
     {
@@ -21292,11 +21306,11 @@
       "montant_CHF": 50000
     },
     {
-      "nom": "genevoises Féd. Genevoise MédiationS - FGeM",
+      "nom": "Féd. Genevoise MédiationS - FGeM",
       "ville": "Cologny",
       "canton": "GE",
       "secteur": "Santé et handicap",
-      "description": "Soutien aux colonies de vacances",
+      "description": "genevoises. Soutien aux colonies de vacances",
       "montant_CHF": 12800
     },
     {
@@ -21316,11 +21330,11 @@
       "montant_CHF": 50000
     },
     {
-      "nom": "équipement de la maison Clair-Vivre Fond. EducArtis",
+      "nom": "Fond. EducArtis",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Santé et handicap",
-      "description": "",
+      "description": "équipement de la maison Clair-Vivre",
       "montant_CHF": 30000
     },
     {
@@ -21396,11 +21410,11 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "entre dans le 21 ème siècle Maison des quartiers de Thônex",
+      "nom": "Maison des quartiers de Thônex",
       "ville": "Thônex",
       "canton": "GE",
       "secteur": "Jeunesse et éducation",
-      "description": "Aménagement de la ludothèque de Meyrin",
+      "description": "entre dans le 21 ème siècle. Aménagement de la ludothèque de Meyrin",
       "montant_CHF": 12000
     },
     {
@@ -21540,11 +21554,11 @@
       "montant_CHF": 9000
     },
     {
-      "nom": "situation de handicap diabète genève (anc. Assoc. Genevoise des Diabétiques)",
+      "nom": "Assoc. Genevoise des Diabétiques",
       "ville": "Carouge",
       "canton": "GE",
       "secteur": "Sport",
-      "description": "Soutien 2020 aux sportives et sportifs en",
+      "description": "situation de handicap diabète genève (anc.. Soutien 2020 aux sportives et sportifs en",
       "montant_CHF": 40000
     },
     {
@@ -21564,19 +21578,19 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "les résidents Fond. Aigues-Vertes",
+      "nom": "Fond. Aigues-Vertes",
       "ville": "Bernex",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Achat d'un véhicule utilitaire électrique pour",
+      "description": "les résidents. Achat d'un véhicule utilitaire électrique pour",
       "montant_CHF": 550000
     },
     {
-      "nom": "personnes en situation de handicap Fond. Cap Loisirs",
+      "nom": "Fond. Cap Loisirs",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Santé et handicap",
-      "description": "Projet de formation professionnelle de",
+      "description": "personnes en situation de handicap. Projet de formation professionnelle de",
       "montant_CHF": 270000
     },
     {
@@ -21644,19 +21658,19 @@
       "montant_CHF": 1086000
     },
     {
-      "nom": "Déménagement à l'Espace Tourbillon Procap pour personnes avec handicap - section de Genève",
+      "nom": "Procap pour personnes avec handicap - section de Genève",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Déménagement à l'Espace Tourbillon",
       "montant_CHF": 5000
     },
     {
-      "nom": "rencontres, 2 e semestre Sté des Sourds de Genève - SSG",
+      "nom": "Sté des Sourds de Genève - SSG",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Projet enfants et programme d'activités /",
+      "description": "rencontres, 2 e semestre. Projet enfants et programme d'activités /",
       "montant_CHF": 110000
     },
     {
@@ -21716,35 +21730,35 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "e édition du festival Afrik, rire & culture Assoc. Agapé",
+      "nom": "Assoc. Agapé",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e édition du festival Afrik, rire & culture",
       "montant_CHF": 70000
     },
     {
-      "nom": "e sacré - Festival des Enfants Assoc. Agneta & Cie",
+      "nom": "Festival des Enfants Assoc. Agneta",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Festival Agapé de musique et d'art",
+      "description": "e e sacré -. Festival Agapé de musique et d'art",
       "montant_CHF": 10000
     },
     {
-      "nom": "magique ? Assoc. Akouphène",
+      "nom": "Assoc. Akouphène",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Création musique et danse Et si c'était",
+      "description": "magique ?. Création musique et danse Et si c'était",
       "montant_CHF": 15000
     },
     {
-      "nom": "e festival Akouphène Assoc. Alliance Créative",
+      "nom": "Assoc. Alliance Créative",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e festival Akouphène",
       "montant_CHF": 8000
     },
     {
@@ -21756,11 +21770,11 @@
       "montant_CHF": 8000
     },
     {
-      "nom": "merde ! Assoc. Alternatiba Léman",
+      "nom": "Assoc. Alternatiba Léman",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Création théâtrale Des trucs qui font rêver,",
+      "description": "merde !. Création théâtrale Des trucs qui font rêver,",
       "montant_CHF": 30000
     },
     {
@@ -21772,11 +21786,11 @@
       "montant_CHF": 80000
     },
     {
-      "nom": "e édition du Festival international du film d'animation Animatou Assoc. Apsara Arts",
+      "nom": "Festival international du film d'animation Animatou Assoc. Apsara Arts",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e édition du",
       "montant_CHF": 50000
     },
     {
@@ -21812,19 +21826,19 @@
       "montant_CHF": 40000
     },
     {
-      "nom": "chorégraphiques Dance First Think Later Assoc. Artisanarts",
+      "nom": "Assoc. Artisanarts",
       "ville": "Presinge",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Exposition, publication et performances",
+      "description": "chorégraphiques Dance First Think Later. Exposition, publication et performances",
       "montant_CHF": 10000
     },
     {
-      "nom": "un fil Assoc. Artisticamente",
+      "nom": "Assoc. Artisticamente",
       "ville": "Onex",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Création d'un spectacle d'improvisation sur",
+      "description": "un fil. Création d'un spectacle d'improvisation sur",
       "montant_CHF": 20000
     },
     {
@@ -21836,35 +21850,35 @@
       "montant_CHF": 100000
     },
     {
-      "nom": "e édition Assoc. art-werk",
+      "nom": "Assoc. art-werk",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Festival Groove'n'Move 12",
+      "description": "e e édition. Festival Groove'n'Move 12",
       "montant_CHF": 19000
     },
     {
-      "nom": "urbaine (Re)connecting with Earthly Delights Assoc. Asdiwal",
+      "nom": "Assoc. Asdiwal",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Environnement",
-      "description": "Exposition et ateliers sur la biodiversité",
+      "description": "urbaine (Re)connecting with Earthly Delights. Exposition et ateliers sur la biodiversité",
       "montant_CHF": 7500
     },
     {
-      "nom": "numéros 15 à 17 de la revue genevoise d'anthropologie Assoc. Assemblage'S",
+      "nom": "Assoc. Assemblage'S",
       "ville": "Troinex",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Édition, impression et diffusion des",
+      "description": "numéros 15 à 17 de la revue genevoise d'anthropologie. Édition, impression et diffusion des",
       "montant_CHF": 25000
     },
     {
-      "nom": "e anniversaire Assoc. Au Tour des Grottes",
+      "nom": "Assoc. Au Tour des Grottes",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Festival Assemblage'S - 10",
+      "description": "e e anniversaire. Festival Assemblage'S - 10",
       "montant_CHF": 19400
     },
     {
@@ -21876,11 +21890,11 @@
       "montant_CHF": 35000
     },
     {
-      "nom": "articulés autour de deux projets « Hors Scène » et « Mix27 live » Assoc. bijoubijou.x",
+      "nom": "Assoc. bijoubijou.x",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Spectacles de danse « Danser malgré tout ! »",
+      "description": "articulés autour de deux projets « Hors Scène » et « Mix27 live ». Spectacles de danse « Danser malgré tout ! »",
       "montant_CHF": 20000
     },
     {
@@ -21892,19 +21906,19 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "provisoire) Assoc. C Com Comédies",
+      "nom": "Assoc. C Com Comédies",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Exposition Ephémère et durable (titre",
+      "description": "provisoire). Exposition Ephémère et durable (titre",
       "montant_CHF": 30000
     },
     {
-      "nom": "et les autres d'après Jean-Michel Ribes Assoc. Camerata Venia",
+      "nom": "Assoc. Camerata Venia",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Création théâtrale Monique, Jean, Claudine",
+      "description": "et les autres d'après Jean-Michel Ribes. Création théâtrale Monique, Jean, Claudine",
       "montant_CHF": 20000
     },
     {
@@ -21980,19 +21994,19 @@
       "montant_CHF": 40000
     },
     {
-      "nom": "ème édition (reportée) - (Dés)Ordres de Grandeur Assoc. Cinéma des Trois Mondes",
+      "nom": "Assoc. Cinéma des Trois Mondes",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Festival International de Films CineGlobe -",
+      "description": "ème édition (reportée) - (Dés)Ordres de Grandeur. Festival International de Films CineGlobe -",
       "montant_CHF": 40000
     },
     {
-      "nom": "e édition du Festival FILMAR en América Latina Assoc. CinéTransat",
+      "nom": "Festival FILMAR en América Latina Assoc. CinéTransat",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e édition du",
       "montant_CHF": 40000
     },
     {
@@ -22004,11 +22018,11 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "d'Aimée Stitelmann Assoc. Col-loc",
+      "nom": "Assoc. Col-loc",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Création théâtrale Haviva d'après la vie",
+      "description": "d'Aimée Stitelmann. Création théâtrale Haviva d'après la vie",
       "montant_CHF": 20000
     },
     {
@@ -22076,11 +22090,11 @@
       "montant_CHF": 150000
     },
     {
-      "nom": "e édition - Festival Voix de Fête Assoc. de théâtre Palcoscenico",
+      "nom": "Festival Voix de Fête Assoc. de théâtre Palcoscenico",
       "ville": "Carouge",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e édition -",
       "montant_CHF": 4000
     },
     {
@@ -22100,11 +22114,11 @@
       "montant_CHF": 8000
     },
     {
-      "nom": "itinérante La playlist de Robert Dow Assoc. des Amis de l'espace culturel Mots Arts",
+      "nom": "Assoc. des Amis de l'espace culturel Mots Arts",
       "ville": "Chêne-Bougeries",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Concerts les Dow Partbooks et exposition",
+      "description": "itinérante La playlist de Robert Dow. Concerts les Dow Partbooks et exposition",
       "montant_CHF": 1000
     },
     {
@@ -22116,11 +22130,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "e édition Assoc. des Amis des Cameristi della Scala, Lonay",
+      "nom": "Assoc. des Amis des Cameristi della Scala",
       "ville": null,
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Festival L’orgue fait son cinéma ! 8",
+      "description": "e e édition. Festival L’orgue fait son cinéma ! 8",
       "montant_CHF": 25000
     },
     {
@@ -22156,19 +22170,19 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "ème édition Assoc. des productions rire sous cape",
+      "nom": "Assoc. des productions rire sous cape",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Festival Spielact, 3",
+      "description": "ème édition. Festival Spielact, 3",
       "montant_CHF": 12000
     },
     {
-      "nom": "fils depuis 1883 environ... des frères Bugnon Assoc. des Utilisateurs de l’Alhambra ADUDA",
+      "nom": "Assoc. des Utilisateurs de l",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Création théâtrale Ambianceurs de père en",
+      "description": "fils depuis 1883 environ... des frères Bugnon. Création théâtrale Ambianceurs de père en",
       "montant_CHF": 10000
     },
     {
@@ -22196,11 +22210,11 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "accords d'Evian : D'une rive à l'autre, 60 ans après Assoc. Dreams Come True",
+      "nom": "Assoc. Dreams Come True",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Exposition photographique La Suisse et les",
+      "description": "accords d'Evian : D'une rive à l'autre, 60 ans après. Exposition photographique La Suisse et les",
       "montant_CHF": 10000
     },
     {
@@ -22212,11 +22226,11 @@
       "montant_CHF": 32500
     },
     {
-      "nom": "e édition du festival Baz'Art 2021 Assoc. du Festival Archipel, musique d'aujourd'hui",
+      "nom": "Assoc. du Festival Archipel",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e édition du festival Baz'Art 2021",
       "montant_CHF": 120000
     },
     {
@@ -22228,11 +22242,11 @@
       "montant_CHF": 13000
     },
     {
-      "nom": "e édition du Festival Rock d'Arare Assoc. d'Usagers des Bains des Pâquis",
+      "nom": "Festival Rock d'Arare Assoc. d'Usagers des Bains des Pâquis",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e édition du",
       "montant_CHF": 30000
     },
     {
@@ -22244,19 +22258,19 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "ligne de vies Assoc. en Déroute",
+      "nom": "Assoc. en Déroute",
       "ville": "Carouge",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Exposition de photos en plein air Inside out /",
+      "description": "ligne de vies. Exposition de photos en plein air Inside out /",
       "montant_CHF": 20000
     },
     {
-      "nom": "gros Assoc. EnQuête",
+      "nom": "Assoc. EnQuête",
       "ville": "Les Acacias",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Création théâtrale Un jeune homme trop",
+      "description": "gros. Création théâtrale Un jeune homme trop",
       "montant_CHF": 25000
     },
     {
@@ -22308,11 +22322,11 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "e édition du festival Everybody's Perfect Assoc. Exogen",
+      "nom": "Assoc. Exogen",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e édition du festival Everybody's Perfect",
       "montant_CHF": 12000
     },
     {
@@ -22324,19 +22338,19 @@
       "montant_CHF": 96000
     },
     {
-      "nom": "e saison musicale 2021-2022 Assoc. Faune Genève",
+      "nom": "Assoc. Faune Genève",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e saison musicale 2021-2022",
       "montant_CHF": 140000
     },
     {
-      "nom": "Publication d'un ouvrage sur les coléoptères du bassin genevois Assoc. Festival Antigel",
+      "nom": "Assoc. Festival Antigel",
       "ville": "Le Lignon",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "d'un ouvrage sur les coléoptères du bassin genevois. Publication",
       "montant_CHF": 200000
     },
     {
@@ -22364,11 +22378,11 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "ère rencontre photographique Pipas Assoc. Geneva Brass Quintet",
+      "nom": "Assoc. Geneva Brass Quintet",
       "ville": "Thônex",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "ère rencontre photographique Pipas",
       "montant_CHF": 10000
     },
     {
@@ -22380,11 +22394,11 @@
       "montant_CHF": 4000
     },
     {
-      "nom": "collaboratives Ludopedia Assoc. Géographie(s)",
+      "nom": "Assoc. Géographie",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Création d'une base de données",
+      "description": "collaboratives Ludopedia. Création d'une base de données",
       "montant_CHF": 9000
     },
     {
@@ -22396,11 +22410,11 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "ème édition de la foire d'art alternative Get a Nerve ! Assoc. Grimaces éditions",
+      "nom": "Assoc. Grimaces éditions",
       "ville": "Bernex",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "ème édition de la foire d'art alternative Get a Nerve !",
       "montant_CHF": 1500
     },
     {
@@ -22436,19 +22450,19 @@
       "montant_CHF": 15000
     },
     {
-      "nom": "épisodes Il aurait pu être une fois Assoc. ImpaScience",
+      "nom": "Assoc. ImpaScience",
       "ville": "Thônex",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Création d'une série audio comique de vingt",
+      "description": "épisodes Il aurait pu être une fois. Création d'une série audio comique de vingt",
       "montant_CHF": 10000
     },
     {
-      "nom": "Publication d'un ouvrage Du pâté d'éléphant chez Calvin Assoc. IO/ONE",
+      "nom": "d'un ouvrage Du pâté d'éléphant chez Calvin Assoc. IO/ONE",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 20000
     },
     {
@@ -22468,11 +22482,11 @@
       "montant_CHF": 25000
     },
     {
-      "nom": "e festival JazzContreBand Assoc. Kalvingrad",
+      "nom": "Assoc. Kalvingrad",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e festival JazzContreBand",
       "montant_CHF": 25000
     },
     {
@@ -22508,11 +22522,11 @@
       "montant_CHF": 6000
     },
     {
-      "nom": "matériel de sonorisation et de captation Assoc. La division de la joie",
+      "nom": "Assoc. La division de la joie",
       "ville": "Genève",
       "canton": "GE",
       "secteur": null,
-      "description": "Construction d'un plancher, achat de",
+      "description": "matériel de sonorisation et de captation. Construction d'un plancher, achat de",
       "montant_CHF": 15000
     },
     {
@@ -22524,11 +22538,11 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "infinies, infinies Amours Assoc. la Sté du spectacle",
+      "nom": "Assoc. la Sté du spectacle",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Concert en création La Passion - Amours",
+      "description": "infinies, infinies Amours. Concert en création La Passion - Amours",
       "montant_CHF": 10000
     },
     {
@@ -22668,11 +22682,11 @@
       "montant_CHF": 25000
     },
     {
-      "nom": "lyriques de Genève 2021 Assoc. LesConcerts.ch",
+      "nom": "Assoc. LesConcerts.ch",
       "ville": "Genève",
       "canton": "GE",
       "secteur": null,
-      "description": "Ateliers et concerts gratuits, les Rencontres",
+      "description": "lyriques de Genève 2021. Ateliers et concerts gratuits, les Rencontres",
       "montant_CHF": 20000
     },
     {
@@ -22684,19 +22698,19 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "e de la Messe pour double chœur de F. Martin Assoc. l'Ours Blanc",
+      "nom": "Assoc. l'Ours Blanc",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Concert a cappella pour le 100",
+      "description": "e e de la Messe pour double chœur de F. Martin. Concert a cappella pour le 100",
       "montant_CHF": 3000
     },
     {
-      "nom": "Publication conjointe des numéros 31 et 32 de la revue L'Ours Blanc Assoc. Lyrique en Scène",
+      "nom": "Assoc. Lyrique en Scène",
       "ville": "Perly",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "conjointe des numéros 31 et 32 de la revue L'Ours Blanc. Publication",
       "montant_CHF": 120000
     },
     {
@@ -22724,19 +22738,19 @@
       "montant_CHF": 21500
     },
     {
-      "nom": "e édition du festival MOS_ESPA (art, musique et conférences) Assoc. Nateshwar",
+      "nom": "Assoc. Nateshwar",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e édition du festival MOS_ESPA (art, musique et conférences)",
       "montant_CHF": 2000
     },
     {
-      "nom": "à Genève Assoc. New Helvetic Shakespeare Company",
+      "nom": "Assoc. New Helvetic Shakespeare Company",
       "ville": "Genève",
       "canton": "GE",
       "secteur": null,
-      "description": "Spectacles interactifs de danse L'été indien",
+      "description": "à Genève. Spectacles interactifs de danse L'été indien",
       "montant_CHF": 35000
     },
     {
@@ -22772,11 +22786,11 @@
       "montant_CHF": 50000
     },
     {
-      "nom": "soucoupe est pleine Assoc. Other Nature",
+      "nom": "Assoc. Other Nature",
       "ville": "Carouge",
       "canton": "GE",
       "secteur": null,
-      "description": "Projet d'action culturelle et de médiation La",
+      "description": "soucoupe est pleine. Projet d'action culturelle et de médiation La",
       "montant_CHF": 10000
     },
     {
@@ -22796,11 +22810,11 @@
       "montant_CHF": 25000
     },
     {
-      "nom": "jeunes genevois Danse (in) Assoc. Pacifique",
+      "nom": "Assoc. Pacifique",
       "ville": "Carouge",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Ateliers participatifs pour jeunes migrants et",
+      "description": "jeunes genevois Danse (in). Ateliers participatifs pour jeunes migrants et",
       "montant_CHF": 100000
     },
     {
@@ -22828,11 +22842,11 @@
       "montant_CHF": 12000
     },
     {
-      "nom": "e édition Plein-les-Watts Festival 2021 Assoc. PontiCello",
+      "nom": "Assoc. PontiCello",
       "ville": "Carouge",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e édition Plein-les-Watts Festival 2021",
       "montant_CHF": 20000
     },
     {
@@ -22860,11 +22874,11 @@
       "montant_CHF": 25000
     },
     {
-      "nom": "la saison 2021-22 Assoc. pour l'étude de l'histoire du mouvement ouvrier",
+      "nom": "Assoc. pour l'étude de l'histoire du mouvement ouvrier",
       "ville": "Petit-Lancy",
       "canton": "GE",
       "secteur": null,
-      "description": "Soutien aux activités de l'AMAmusique pour",
+      "description": "la saison 2021-22. Soutien aux activités de l'AMAmusique pour",
       "montant_CHF": 25000
     },
     {
@@ -22892,19 +22906,19 @@
       "montant_CHF": 6000
     },
     {
-      "nom": "des outils numériques Assoc. Puplinge Classique",
+      "nom": "Assoc. Puplinge Classique",
       "ville": "Puplinge",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Projet de transformation - un site internet et",
+      "description": "des outils numériques. Projet de transformation - un site internet et",
       "montant_CHF": 45000
     },
     {
-      "nom": "e édition Assoc. Radio Vostok",
+      "nom": "Assoc. Radio Vostok",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Festival Puplinge Classique 2022, 13",
+      "description": "e e édition. Festival Puplinge Classique 2022, 13",
       "montant_CHF": 122000
     },
     {
@@ -22948,11 +22962,11 @@
       "montant_CHF": 160000
     },
     {
-      "nom": "ème édition Assoc. Soulitude",
+      "nom": "Assoc. Soulitude",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Festival Black Movie - 23",
+      "description": "ème édition. Festival Black Movie - 23",
       "montant_CHF": 15000
     },
     {
@@ -22972,11 +22986,11 @@
       "montant_CHF": 60000
     },
     {
-      "nom": "pour la saison 2021-2022 Assoc. syndicat d'initiatives",
+      "nom": "Assoc. syndicat d'initiatives",
       "ville": "Genève",
       "canton": "GE",
       "secteur": null,
-      "description": "Concerts de musique classique Lux Musica",
+      "description": "pour la saison 2021-2022. Concerts de musique classique Lux Musica",
       "montant_CHF": 35000
     },
     {
@@ -23084,11 +23098,11 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "possibilities Assoc. Walkorn",
+      "nom": "Assoc. Walkorn",
       "ville": "Genève",
       "canton": "GE",
       "secteur": null,
-      "description": "Création chorégraphique Dwelling in",
+      "description": "possibilities. Création chorégraphique Dwelling in",
       "montant_CHF": 3400
     },
     {
@@ -23116,11 +23130,11 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "er volet Assoc. ZIC Zag Zoug",
+      "nom": "Assoc. ZIC Zag Zoug",
       "ville": "Carouge",
       "canton": "GE",
       "secteur": null,
-      "description": "Création théâtrale Ourse, 1",
+      "description": "er volet. Création théâtrale Ourse, 1",
       "montant_CHF": 20000
     },
     {
@@ -23188,11 +23202,11 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "poésie Centre d'édition contemporaine",
+      "nom": "Centre d'édition contemporaine",
       "ville": "Genève",
       "canton": "GE",
       "secteur": null,
-      "description": "Exposition de livres d'artistes et récital de",
+      "description": "poésie. Exposition de livres d'artistes et récital de",
       "montant_CHF": 50000
     },
     {
@@ -23220,11 +23234,11 @@
       "montant_CHF": 3500
     },
     {
-      "nom": "représentations musulmanes dans le monde occidental Cie Alma Alba",
+      "nom": "Cie Alma Alba",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Exposition photographique sur les",
+      "description": "représentations musulmanes dans le monde occidental. Exposition photographique sur les",
       "montant_CHF": 30000
     },
     {
@@ -23308,11 +23322,11 @@
       "montant_CHF": 25000
     },
     {
-      "nom": "maison de mon esprit Cie où sommes-nous",
+      "nom": "Cie où sommes-nous",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Création de théâtre chorégraphique La",
+      "description": "maison de mon esprit. Création de théâtre chorégraphique La",
       "montant_CHF": 10000
     },
     {
@@ -23332,11 +23346,11 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "cherches ? Cie théâtrale Folledeparole",
+      "nom": "Cie théâtrale Folledeparole",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Création chorégraphique Est-ce moi que tu",
+      "description": "cherches ?. Création chorégraphique Est-ce moi que tu",
       "montant_CHF": 25000
     },
     {
@@ -23604,11 +23618,11 @@
       "montant_CHF": 35000
     },
     {
-      "nom": "adaptation de quatre contes d'E. Zola Compagnie Passacaille",
+      "nom": "Compagnie Passacaille",
       "ville": "Genève",
       "canton": "GE",
       "secteur": null,
-      "description": "Création théâtrale Le paradis des chats,",
+      "description": "adaptation de quatre contes d'E. Zola. Création théâtrale Le paradis des chats,",
       "montant_CHF": 15000
     },
     {
@@ -23620,11 +23634,11 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "pas pingouins Compagnie Pré-Scriptum",
+      "nom": "Compagnie Pré-Scriptum",
       "ville": "Genève",
       "canton": "GE",
       "secteur": null,
-      "description": "Création théâtrale Tous les parents ne sont",
+      "description": "pas pingouins. Création théâtrale Tous les parents ne sont",
       "montant_CHF": 15000
     },
     {
@@ -23684,11 +23698,11 @@
       "montant_CHF": 3500
     },
     {
-      "nom": "Publication du roman Sur le pont de Charlotte Frossard Eklekto Geneva Percussion Center",
+      "nom": "du roman Sur le pont de Charlotte Frossard Eklekto Geneva Percussion Center",
       "ville": "Genève",
       "canton": "GE",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 45000
     },
     {
@@ -23844,11 +23858,11 @@
       "montant_CHF": 300000
     },
     {
-      "nom": "ème édition du Festival du film et forum international sur les droits humains Fond. GIFF - Geneva International Film Festival",
+      "nom": "Festival du film et forum international sur les droits humains Fond. GIFF - Geneva Interna",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "ème édition du",
       "montant_CHF": 300000
     },
     {
@@ -23868,11 +23882,11 @@
       "montant_CHF": 500000
     },
     {
-      "nom": "e édition du Salon du livre de Genève Fond. Visions du Réel",
+      "nom": "Fond. Visions du Réel",
       "ville": "Nyon",
       "canton": "VD",
       "secteur": null,
-      "description": "",
+      "description": "e e édition du Salon du livre de Genève",
       "montant_CHF": 70000
     },
     {
@@ -23916,19 +23930,19 @@
       "montant_CHF": 40000
     },
     {
-      "nom": "théâtrale 2021-2022 La Bâtie - Festival de Genève",
+      "nom": "Festival de Genève",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Spectacles professionnels d'improvisation",
+      "description": "théâtrale 2021-2022 La Bâtie -. Spectacles professionnels d'improvisation",
       "montant_CHF": 225000
     },
     {
-      "nom": "e édition de La Bâtie - Festival de Genève La Cie Alors voilà",
+      "nom": "Festival de Genève La Cie Alors voilà",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e édition de La Bâtie -",
       "montant_CHF": 15000
     },
     {
@@ -24020,19 +24034,19 @@
       "montant_CHF": 80000
     },
     {
-      "nom": "e édition Festival Histoire et Cité Matières Productions",
+      "nom": "Festival Histoire et Cité Matières Productions",
       "ville": "Troinex",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e édition",
       "montant_CHF": 20000
     },
     {
-      "nom": "Publication d'un ouvrage Infini 2 - carnet de paysages Ochikochi Studio",
+      "nom": "d'un ouvrage Infini 2 - carnet de paysages Ochikochi Studio",
       "ville": "Genève",
       "canton": "GE",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 20000
     },
     {
@@ -24100,11 +24114,11 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "du printemps 2022 Sté suisse d'histoire",
+      "nom": "Sté suisse d'histoire",
       "ville": "Berne",
       "canton": "JU",
       "secteur": "Culture",
-      "description": "Festival Chopin 2021 - masterclass - concert",
+      "description": "du printemps 2022. Festival Chopin 2021 - masterclass - concert",
       "montant_CHF": 25000
     },
     {
@@ -24156,11 +24170,11 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "lettres de Jean Potocki Théâtre de l'Usine",
+      "nom": "Théâtre de l'Usine",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Spectacle théâtral Cassandre homme de",
+      "description": "lettres de Jean Potocki. Spectacle théâtral Cassandre homme de",
       "montant_CHF": 13000
     },
     {
@@ -24172,11 +24186,11 @@
       "montant_CHF": 50000
     },
     {
-      "nom": "d'après Jack London Théâtre du Galpon",
+      "nom": "Théâtre du Galpon",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Spectacle de marionnettes L'appel sauvage",
+      "description": "d'après Jack London. Spectacle de marionnettes L'appel sauvage",
       "montant_CHF": 23640
     },
     {
@@ -24236,11 +24250,11 @@
       "montant_CHF": 6000
     },
     {
-      "nom": "Publication Quand tu ouvres i A Verein Schweizerisches Theatermuseum",
+      "nom": "Quand tu ouvres i A Verein Schweizerisches Theatermuseum",
       "ville": "Zürich",
       "canton": "JU",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 30000
     },
     {
@@ -24268,11 +24282,11 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "espaces de Catalyse Assoc. GeGrave",
+      "nom": "Assoc. GeGrave",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Formation et recherche",
-      "description": "Projet d’aménagement modulable des",
+      "description": "espaces de Catalyse. Projet d’aménagement modulable des",
       "montant_CHF": 51000
     },
     {
@@ -24332,19 +24346,19 @@
       "montant_CHF": 750000
     },
     {
-      "nom": "Rénovation et agrandissement des orgues de Compesières Fond. pour la conservation des temples genevois construits avant 1907",
+      "nom": "Fond. pour la conservation des temples genevois construits avant 1907",
       "ville": "Les Acacias",
       "canton": "GE",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "et agrandissement des orgues de Compesières. Rénovation",
       "montant_CHF": 1570000
     },
     {
-      "nom": "demande complémentaire Paroisse du Sacré-Cœur",
+      "nom": "Paroisse du Sacré-Cœur",
       "ville": "Vessy",
       "canton": "GE",
       "secteur": "Conservation du patrimoine",
-      "description": "Restauration Temple de la Fusterie -",
+      "description": "demande complémentaire · Restauration Temple de la Fusterie -",
       "montant_CHF": 2000000
     },
     {
@@ -24380,11 +24394,11 @@
       "montant_CHF": 5500
     },
     {
-      "nom": "infrastructures Assoc. Garaj Garaj",
+      "nom": "Assoc. Garaj Garaj",
       "ville": "Monthey",
       "canton": "VS",
       "secteur": "Promotion, tourisme et développement",
-      "description": "Achat d'une remorque pour stocker nos",
+      "description": "infrastructures. Achat d'une remorque pour stocker nos",
       "montant_CHF": 20000
     },
     {
@@ -27068,11 +27082,11 @@
       "montant_CHF": 100000
     },
     {
-      "nom": "ème Assoc. Genève Marathon / 20km de Genève 2021",
+      "nom": "Assoc. Genève Marathon",
       "ville": null,
       "canton": "GE",
       "secteur": "Sport",
-      "description": "Course de l'Escalade 2021",
+      "description": "ème. Course de l'Escalade 2021",
       "montant_CHF": 16500
     },
     {
@@ -27132,11 +27146,11 @@
       "montant_CHF": 100000
     },
     {
-      "nom": "ème Genève 2021 Club Nautique de Versoix - Section Ski nautique",
+      "nom": "Club Nautique de Versoix - Section Ski nautique",
       "ville": null,
       "canton": "GE",
       "secteur": "Sport",
-      "description": "Concours Hippique International de",
+      "description": "ème Genève 2021. Concours Hippique International de",
       "montant_CHF": 2000
     },
     {
@@ -27484,11 +27498,11 @@
       "montant_CHF": 6800
     },
     {
-      "nom": "les jeunes Ski Club International de Genève",
+      "nom": "Club International de Genève",
       "ville": null,
       "canton": "GE",
       "secteur": "Sport",
-      "description": "Achat de matériel de ski de randonnée pour",
+      "description": "les jeunes Ski. Achat de matériel de ski de randonnée pour",
       "montant_CHF": 40000
     },
     {
@@ -27556,19 +27570,19 @@
       "montant_CHF": 1200
     },
     {
-      "nom": "Organisation du Noël de l'Amitié 2021 Pro Senectute Arc Jurassien",
+      "nom": "de l'Amitié 2021 Pro Senectute Arc Jurassien",
       "ville": "Delémont",
       "canton": "JU",
       "secteur": "Action sociale et personnes âgées",
-      "description": "",
+      "description": "Organisation du Noël",
       "montant_CHF": 20000
     },
     {
-      "nom": "à domicile Sté de carnaval, Le Noirmont",
+      "nom": "Sté de carnaval",
       "ville": "Le Noirmont",
       "canton": "JU",
       "secteur": "Action sociale et personnes âgées",
-      "description": "Achat de matériel pour le secteur des repas",
+      "description": "à domicile. Achat de matériel pour le secteur des repas",
       "montant_CHF": 1000
     },
     {
@@ -27654,17 +27668,17 @@
     {
       "nom": "Assoc. Jura Indoors, Courtedoux",
       "ville": null,
-      "canton": "GE",
+      "canton": "JU",
       "secteur": "Sport",
       "description": "Activités sportives 2021",
       "montant_CHF": 1000
     },
     {
-      "nom": "en fauteuil roulant CMP Centre médico- psychologique",
+      "nom": "Centre médico- psychologique",
       "ville": "Delémont",
       "canton": "JU",
       "secteur": "Santé et handicap",
-      "description": "Championnats suisses interclubs de tennis",
+      "description": "en fauteuil roulant CMP. Championnats suisses interclubs de tennis",
       "montant_CHF": 1980
     },
     {
@@ -27748,11 +27762,11 @@
       "montant_CHF": 1995
     },
     {
-      "nom": "PROCAP, Section Franches- Montagnes",
+      "nom": "PROCAP, Section Franches-Montagnes",
       "ville": "Saignelégier",
       "canton": "JU",
       "secteur": "Sport",
-      "description": "Activités sportives 2021",
+      "description": "P. Activités sportives 2021",
       "montant_CHF": 345
     },
     {
@@ -27812,11 +27826,11 @@
       "montant_CHF": 30000
     },
     {
-      "nom": "Publication d'une monographie de René Myrha Assoc. Cinq",
+      "nom": "Assoc. Cinq",
       "ville": "Neuchâtel",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "",
+      "description": "d'une monographie de René Myrha. Publication",
       "montant_CHF": 4600
     },
     {
@@ -27836,36 +27850,28 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "de mine de Delémont Assoc. des Amis de Plonk et Replonk pour l'Espace muséographique de Porrentruy",
+      "nom": "Assoc. des Amis de Plonk et Replonk pour l'Espace muséographique de Porrentruy",
       "ville": "Porrentruy",
       "canton": "JU",
       "secteur": "Culture",
-      "description": "Exposition permanente de la Tête du puits",
+      "description": "de mine de Delémont. Exposition permanente de la Tête du puits",
       "montant_CHF": 8300
     },
     {
-      "nom": "d'après Assoc. des Editions du Sauvage",
+      "nom": "Assoc. des Editions du Sauvage",
       "ville": "Porrentruy",
       "canton": "JU",
       "secteur": "Culture",
-      "description": "Exposition temporaire 2021 Le Monde",
+      "description": "d'après. Exposition temporaire 2021 Le Monde",
       "montant_CHF": 10000
     },
     {
-      "nom": "Publication Sublime & Sournoise Assoc. du Laaf",
+      "nom": "Sublime & Sournoise Assoc. du Laaf",
       "ville": "Courtételle",
       "canton": "JU",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 4000
-    },
-    {
-      "nom": "Associations, institutions et fondations bénéficiaires des contributions de la Loterie Romande Contributions réserve aides exceptionnelles (CE)",
-      "ville": null,
-      "canton": "GE",
-      "secteur": "Culture",
-      "description": "Saison 2021-2022",
-      "montant_CHF": 855000
     },
     {
       "nom": "Célia Dupré, Aviron",
@@ -27940,11 +27946,11 @@
       "montant_CHF": 3000
     },
     {
-      "nom": "Publication Dans les bras de Dieu. Jeanne de la Bosse Assoc. La Nef",
+      "nom": "Dans les bras de Dieu. Jeanne de la Bosse Assoc. La Nef",
       "ville": "Le Noirmont",
       "canton": "JU",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 8500
     },
     {
@@ -27956,11 +27962,11 @@
       "montant_CHF": 7000
     },
     {
-      "nom": "Publication True advices for friends d'Augustin Rebetez Assoc. Les Estivades",
+      "nom": "True advices for friends d'Augustin Rebetez Assoc. Les Estivades",
       "ville": "St-Ursanne",
       "canton": "JU",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 2000
     },
     {
@@ -28164,11 +28170,11 @@
       "montant_CHF": 20000
     },
     {
-      "nom": "Publication L'Univers de la Tête de Moine Editions du goudron et des plumes, Chenevez",
+      "nom": "L'Univers de la Tête de Moine Editions du goudron et des plumes, Chenevez",
       "ville": null,
       "canton": "JU",
       "secteur": null,
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 11500
     },
     {
@@ -28260,11 +28266,11 @@
       "montant_CHF": 2000
     },
     {
-      "nom": "musiciens d'Ajoie Festival du Jura",
+      "nom": "Festival du Jura",
       "ville": "Delémont",
       "canton": "JU",
       "secteur": "Culture",
-      "description": "Camp 2021 de l'Ensemble des jeunes",
+      "description": "musiciens d'Ajoie. Camp 2021 de l'Ensemble des jeunes",
       "montant_CHF": 29000
     },
     {
@@ -28292,11 +28298,11 @@
       "montant_CHF": 65000
     },
     {
-      "nom": "Publication de 2 livres pour les 125 ans de l'Ecole d'agriculture Fond. Sur-la-Velle",
+      "nom": "Ecole d'agriculture Fond. Sur-la-Velle",
       "ville": "Le Noirmont",
       "canton": "JU",
       "secteur": null,
-      "description": "",
+      "description": "de 2 livres pour les 125 ans de l'. Publication",
       "montant_CHF": 2000
     },
     {
@@ -28484,11 +28490,11 @@
       "montant_CHF": 6500
     },
     {
-      "nom": "Publication La Sucrine royale d'Arc-et- Senans Sté des amis du Théâtre Porrentruy et environs",
+      "nom": "La Sucrine royale d'Arc-et- Senans Sté des amis du Théâtre Porrentruy et environs",
       "ville": "Porrentruy",
       "canton": "JU",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 10000
     },
     {
@@ -28524,11 +28530,11 @@
       "montant_CHF": 17000
     },
     {
-      "nom": "Publication des résultats archéologiques Université d'Eté du Cinéma Suisse",
+      "nom": "des résultats archéologiques Université d'Eté du Cinéma Suisse",
       "ville": "Delémont",
       "canton": "JU",
       "secteur": "Conservation du patrimoine",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 15000
     },
     {
@@ -28636,11 +28642,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "Rénovation charpente Musée de la poterie Université de Bâle",
+      "nom": "charpente Musée de la poterie Université de Bâle",
       "ville": "Bâle",
       "canton": "JU",
       "secteur": "Promotion, tourisme et développement",
-      "description": "",
+      "description": "Rénovation",
       "montant_CHF": 26000
     },
     {
@@ -28676,11 +28682,11 @@
       "montant_CHF": 6000
     },
     {
-      "nom": "accoucheur en Ajoie Assoc. Cultureprod",
+      "nom": "Assoc. Cultureprod",
       "ville": "Rossemaison",
       "canton": "JU",
       "secteur": "Promotion, tourisme et développement",
-      "description": "Projet de conservation du Crapaud",
+      "description": "accoucheur en Ajoie. Projet de conservation du Crapaud",
       "montant_CHF": 60000
     },
     {
@@ -28780,11 +28786,11 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "village Sté d'embellissement de Soubey, Soubey",
+      "nom": "Sté d'embellissement de Soubey",
       "ville": null,
       "canton": "JU",
       "secteur": "Culture",
-      "description": "Construction d'un abri touristique dans le",
+      "description": "village. Construction d'un abri touristique dans le",
       "montant_CHF": 10000
     },
     {
@@ -28828,11 +28834,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "Hockey Club Franches- Montagnes",
+      "nom": "Hockey Club Franches-Montagnes",
       "ville": null,
       "canton": "JU",
       "secteur": "Sport",
-      "description": "",
+      "description": "H",
       "montant_CHF": 10000
     },
     {
@@ -29164,11 +29170,11 @@
       "montant_CHF": 1720
     },
     {
-      "nom": "Club de patinage des Franches- Montagnes",
+      "nom": "Club de patinage des Franches-Montagnes",
       "ville": null,
       "canton": "JU",
       "secteur": "Sport",
-      "description": "",
+      "description": "C",
       "montant_CHF": 600
     },
     {
@@ -29260,11 +29266,11 @@
       "montant_CHF": 1150
     },
     {
-      "nom": "Curling Club Franches- Montagnes",
+      "nom": "Curling Club Franches-Montagnes",
       "ville": null,
       "canton": "JU",
       "secteur": "Sport",
-      "description": "",
+      "description": "C",
       "montant_CHF": 180
     },
     {
@@ -29708,11 +29714,11 @@
       "montant_CHF": 1400
     },
     {
-      "nom": "Groupe sportif Epauvillers220.- Groupe sportif Franches- Montagnes",
+      "nom": "Groupe sportif Epauvillers220.- Groupe sportif Franches-Montagnes",
       "ville": null,
       "canton": "JU",
       "secteur": "Sport",
-      "description": "",
+      "description": "G",
       "montant_CHF": 700
     },
     {
@@ -29748,11 +29754,11 @@
       "montant_CHF": 1810
     },
     {
-      "nom": "Hockey Club Franches- Montagnes",
+      "nom": "Hockey Club Franches-Montagnes",
       "ville": null,
       "canton": "JU",
       "secteur": "Sport",
-      "description": "",
+      "description": "H",
       "montant_CHF": 2710
     },
     {
@@ -29852,11 +29858,11 @@
       "montant_CHF": 670
     },
     {
-      "nom": "Sté de cavalerie des Franches- Montagnes",
+      "nom": "Sté de cavalerie des Franches-Montagnes",
       "ville": null,
       "canton": "JU",
       "secteur": "Sport",
-      "description": "",
+      "description": "S",
       "montant_CHF": 510
     },
     {
@@ -30100,11 +30106,11 @@
       "montant_CHF": 500
     },
     {
-      "nom": "Meeting de l’Arc Club de patinage des Franches- Montagnes",
+      "nom": "Meeting de l’Arc Club de patinage des Franches-Montagnes",
       "ville": null,
       "canton": "JU",
       "secteur": "Sport",
-      "description": "",
+      "description": "M",
       "montant_CHF": 500
     },
     {
@@ -30260,11 +30266,11 @@
       "montant_CHF": 900
     },
     {
-      "nom": "Sté de cavalerie des Franches- Montagnes",
+      "nom": "Sté de cavalerie des Franches-Montagnes",
       "ville": null,
       "canton": "JU",
       "secteur": null,
-      "description": "Concours d’attelage",
+      "description": "S. Concours d’attelage",
       "montant_CHF": 1000
     },
     {
@@ -30332,11 +30338,11 @@
       "montant_CHF": 8690
     },
     {
-      "nom": "Football Club Franches- Montagnes",
+      "nom": "Football Club Franches-Montagnes",
       "ville": null,
       "canton": "JU",
       "secteur": null,
-      "description": "Mise aux normes de l’éclairage",
+      "description": "F. Mise aux normes de l’éclairage",
       "montant_CHF": 47077
     },
     {
@@ -30580,11 +30586,11 @@
       "montant_CHF": 5000
     },
     {
-      "nom": "ans du Kiosque à Musiques Assoc. des Amis du Patchwork",
+      "nom": "Assoc. des Amis du Patchwork",
       "ville": null,
       "canton": "JU",
       "secteur": "Culture",
-      "description": "Création et diffusion du spectacle des 50 Festival, Delémont",
+      "description": "ans du Kiosque à Musiques. Création et diffusion du spectacle des 50 Festival, Delémont",
       "montant_CHF": 8000
     },
     {
@@ -30604,11 +30610,11 @@
       "montant_CHF": 1050
     },
     {
-      "nom": "Publication Qui vive d'Alexandre Voisard Assoc. Faune de Flèches",
+      "nom": "Qui vive d'Alexandre Voisard Assoc. Faune de Flèches",
       "ville": "Porrentruy",
       "canton": "JU",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 5000
     },
     {
@@ -30780,11 +30786,11 @@
       "montant_CHF": 2000
     },
     {
-      "nom": "Publication photographies de murs de pierres sèches Christophe Meyer-Fou",
+      "nom": "photographies de murs de pierres sèches Christophe Meyer-Fou",
       "ville": "Asuel",
       "canton": "JU",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 15000
     },
     {
@@ -30828,11 +30834,11 @@
       "montant_CHF": 4000
     },
     {
-      "nom": "des cailloux ! Compagnie de la Tour Carrée",
+      "nom": "Compagnie de la Tour Carrée",
       "ville": "La Neuveville",
       "canton": "NE",
       "secteur": "Culture",
-      "description": "Tournée du spectacle Rebelle-toi, il pleut",
+      "description": "des cailloux !. Tournée du spectacle Rebelle-toi, il pleut",
       "montant_CHF": 2000
     },
     {
@@ -30972,11 +30978,11 @@
       "montant_CHF": 1000
     },
     {
-      "nom": "Publication étude historique chapelle Sainte-Croix de Fontenais plumes",
+      "nom": "étude historique chapelle Sainte-Croix de Fontenais plumes",
       "ville": "Chevenez",
       "canton": "JU",
       "secteur": "Conservation du patrimoine",
-      "description": "Éditions du goudron et des",
+      "description": "Publication. Éditions du goudron et des",
       "montant_CHF": 3500
     },
     {
@@ -31116,11 +31122,11 @@
       "montant_CHF": 500
     },
     {
-      "nom": "Publication Eclats de chocolat du collectif GAHeLiG Jacqueline Steen",
+      "nom": "Eclats de chocolat du collectif GAHeLiG Jacqueline Steen",
       "ville": "Vicques",
       "canton": "JU",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 8500
     },
     {
@@ -31132,11 +31138,11 @@
       "montant_CHF": 2500
     },
     {
-      "nom": "Publication Faire vivre et grandir un beau projet Journées de Soleure",
+      "nom": "Faire vivre et grandir un beau projet Journées de Soleure",
       "ville": "Soleure",
       "canton": "JU",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 500
     },
     {
@@ -31268,11 +31274,11 @@
       "montant_CHF": 12000
     },
     {
-      "nom": "Publication Gérard Bregnard, 100 ans Musée jurassien d'art et d'histoire",
+      "nom": "Gérard Bregnard, 100 ans Musée jurassien d'art et d'histoire",
       "ville": "Delémont",
       "canton": "JU",
       "secteur": "Culture",
-      "description": "",
+      "description": "Publication",
       "montant_CHF": 25000
     },
     {
@@ -31572,11 +31578,11 @@
       "montant_CHF": 60000
     },
     {
-      "nom": "romande Assoc. Violence que Faire",
+      "nom": "Assoc. Violence que Faire",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Campagne de prévention en Suisse",
+      "description": "romande. Campagne de prévention en Suisse",
       "montant_CHF": 10000
     },
     {
@@ -31748,11 +31754,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "romande Assoc. suisse des Centres Sociaux Protestants",
+      "nom": "Assoc. suisse des Centres Sociaux Protestants",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Sport",
-      "description": "Tournoi de football urbain en Suisse",
+      "description": "romande. Tournoi de football urbain en Suisse",
       "montant_CHF": 50000
     },
     {
@@ -31783,7 +31789,7 @@
       "nom": "Bande dessinée sur l’antisémitisme Cinéculture - Cinéma pour l’école",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 20000
     },
@@ -31916,11 +31922,11 @@
       "montant_CHF": 70000
     },
     {
-      "nom": "Recueil de textes des Jeunes Auteurs 2021 Pro Juventute, Bureau Romand",
+      "nom": "Pro Juventute, Bureau Romand",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Jeunesse et éducation",
-      "description": "",
+      "description": "Recueil de textes des Jeunes Auteurs 2021",
       "montant_CHF": 65000
     },
     {
@@ -31972,11 +31978,11 @@
       "montant_CHF": 10000
     },
     {
-      "nom": "romande Assoc. CH2021, Arzo",
+      "nom": "Assoc. CH2021",
       "ville": null,
       "canton": "SR",
       "secteur": "Culture",
-      "description": "Tournée musicale de Tango Nuevo en Suisse",
+      "description": "romande. Tournée musicale de Tango Nuevo en Suisse",
       "montant_CHF": 20000
     },
     {
@@ -32116,11 +32122,11 @@
       "montant_CHF": 50000
     },
     {
-      "nom": "du Kiosque à musiques Assoc. Esprit du Cercle",
+      "nom": "Assoc. Esprit du Cercle",
       "ville": "Sion",
       "canton": "VS",
       "secteur": "Culture",
-      "description": "Tournée de spectacles pour fêter les 50 ans",
+      "description": "du Kiosque à musiques. Tournée de spectacles pour fêter les 50 ans",
       "montant_CHF": 20000
     },
     {
@@ -32132,11 +32138,11 @@
       "montant_CHF": 100000
     },
     {
-      "nom": "vérité Assoc. La Courte-Paille, Crassier",
+      "nom": "Assoc. La Courte-Paille",
       "ville": null,
       "canton": "SR",
       "secteur": "Culture",
-      "description": "Exposition itinérante à la recherche de la",
+      "description": "vérité. Exposition itinérante à la recherche de la",
       "montant_CHF": 15000
     },
     {
@@ -32156,19 +32162,19 @@
       "montant_CHF": 50000
     },
     {
-      "nom": "e édition du Festival du Film Vert en 2021 Assoc. Les Films Verts",
+      "nom": "Festival du Film Vert en 2021 Assoc. Les Films Verts",
       "ville": "Le Sentier",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e édition du",
       "montant_CHF": 50000
     },
     {
-      "nom": "e édition du Festival du Film Vert en 2022 Assoc. meta-cata-tanz suisse",
+      "nom": "Festival du Film Vert en 2022 Assoc. meta-cata-tanz suisse",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "e e édition du",
       "montant_CHF": 50000
     },
     {
@@ -32212,11 +32218,11 @@
       "montant_CHF": 40000
     },
     {
-      "nom": "itinérant Assoc. romande des musiques populaires",
+      "nom": "Assoc. romande des musiques populaires",
       "ville": "Vevey",
       "canton": "VD",
       "secteur": "Culture",
-      "description": "Tournée Roadmovie 2021 de cinéma",
+      "description": "itinérant. Tournée Roadmovie 2021 de cinéma",
       "montant_CHF": 50000
     },
     {
@@ -32276,11 +32282,11 @@
       "montant_CHF": 40000
     },
     {
-      "nom": "Publication de référence portant sur l’ensemble des artistes des fonds déposés Fond. Cinéforom",
+      "nom": "Fond. Cinéforom",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "",
+      "description": "de référence portant sur l’ensemble des artistes des fonds déposés. Publication",
       "montant_CHF": 1700000
     },
     {
@@ -32428,11 +32434,11 @@
       "montant_CHF": 200000
     },
     {
-      "nom": "d’architecture Assoc. romande pour la promotion du patrimoine",
+      "nom": "Assoc. romande pour la promotion du patrimoine",
       "ville": "Genève",
       "canton": "GE",
       "secteur": "Culture",
-      "description": "Exposition itinérante Concours",
+      "description": "d’architecture. Exposition itinérante Concours",
       "montant_CHF": 15000
     },
     {
@@ -32444,11 +32450,11 @@
       "montant_CHF": 1400000
     },
     {
-      "nom": "e étape Stiftung Kulturzentrum Päpstliche Schweizergarde",
+      "nom": "Stiftung Kulturzentrum Päpstliche Schweizergarde",
       "ville": "Naters",
       "canton": "VS",
       "secteur": "Culture",
-      "description": "Travaux de restauration, 2",
+      "description": "e e étape. Travaux de restauration, 2",
       "montant_CHF": 85000
     },
     {
@@ -32492,11 +32498,11 @@
       "montant_CHF": 45000
     },
     {
-      "nom": "profil dans les école de Suisse romande Assoc. Fête de la Nature",
+      "nom": "Assoc. Fête de la Nature",
       "ville": "Lausanne",
       "canton": "VD",
       "secteur": "Formation et recherche",
-      "description": "Projet eCO",
+      "description": "profil dans les école de Suisse romande. Projet eCO",
       "montant_CHF": 17000
     },
     {

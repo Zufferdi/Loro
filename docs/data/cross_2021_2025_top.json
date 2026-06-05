@@ -8,8 +8,8 @@
       "2024",
       "2025"
     ],
-    "total_inter_cantonaux": 943,
-    "top100_cumul_CHF": 107896846,
+    "total_inter_cantonaux": 941,
+    "top100_cumul_CHF": 107017405,
     "method": "aliases TDR/Cinéforom/FIFF/etc. + fallback normalisation"
   },
   "beneficiaires": [
@@ -282,6 +282,28 @@
       "is_consolidated": true
     },
     {
+      "nom": "Fond. Aigues-Vertes",
+      "canton": "GE",
+      "secteur": "Santé et handicap",
+      "cantons": [
+        "GE",
+        "SR"
+      ],
+      "nb_cantons": 2,
+      "nb_years_active": 3,
+      "montant_2021_CHF": 550000,
+      "montant_2022_CHF": 0,
+      "montant_2023_CHF": 1000000,
+      "montant_2024_CHF": 201000,
+      "montant_2025_CHF": 0,
+      "montant_total_CHF": 1751000,
+      "montants_par_canton": {
+        "GE": 1750000,
+        "SR": 1000
+      },
+      "is_consolidated": false
+    },
+    {
       "nom": "Fond. Sainte-Famille",
       "canton": "VS",
       "secteur": "Action sociale et personnes âgées",
@@ -326,6 +348,28 @@
       "is_consolidated": false
     },
     {
+      "nom": "Pro Junior - arc jurassien",
+      "canton": "JU",
+      "secteur": "Jeunesse et éducation",
+      "cantons": [
+        "JU",
+        "NE"
+      ],
+      "nb_cantons": 2,
+      "nb_years_active": 5,
+      "montant_2021_CHF": 100000,
+      "montant_2022_CHF": 53000,
+      "montant_2023_CHF": 339000,
+      "montant_2024_CHF": 880000,
+      "montant_2025_CHF": 97000,
+      "montant_total_CHF": 1469000,
+      "montants_par_canton": {
+        "NE": 1025000,
+        "JU": 444000
+      },
+      "is_consolidated": false
+    },
+    {
       "nom": "CSP - Centre Social Protestant,",
       "canton": "SR",
       "secteur": "Action sociale et personnes âgées",
@@ -344,28 +388,6 @@
       "montants_par_canton": {
         "SR": 40000,
         "VD": 1376000
-      },
-      "is_consolidated": false
-    },
-    {
-      "nom": "Pro Junior - arc jurassien",
-      "canton": "JU",
-      "secteur": "Jeunesse et éducation",
-      "cantons": [
-        "JU",
-        "NE"
-      ],
-      "nb_cantons": 2,
-      "nb_years_active": 4,
-      "montant_2021_CHF": 0,
-      "montant_2022_CHF": 53000,
-      "montant_2023_CHF": 339000,
-      "montant_2024_CHF": 880000,
-      "montant_2025_CHF": 97000,
-      "montant_total_CHF": 1369000,
-      "montants_par_canton": {
-        "NE": 925000,
-        "JU": 444000
       },
       "is_consolidated": false
     },
@@ -392,6 +414,28 @@
       "is_consolidated": false
     },
     {
+      "nom": "Fond. Visions du Réel",
+      "canton": "VD",
+      "secteur": "Culture",
+      "cantons": [
+        "SR",
+        "VD"
+      ],
+      "nb_cantons": 2,
+      "nb_years_active": 5,
+      "montant_2021_CHF": 320000,
+      "montant_2022_CHF": 250000,
+      "montant_2023_CHF": 240000,
+      "montant_2024_CHF": 275000,
+      "montant_2025_CHF": 270000,
+      "montant_total_CHF": 1355000,
+      "montants_par_canton": {
+        "VD": 1325000,
+        "SR": 30000
+      },
+      "is_consolidated": false
+    },
+    {
       "nom": "Fond. EPFL Plus",
       "canton": "VD",
       "secteur": "Formation et recherche",
@@ -410,50 +454,6 @@
       "montants_par_canton": {
         "VD": 1310000,
         "VS": 20000
-      },
-      "is_consolidated": false
-    },
-    {
-      "nom": "Assoc. Cantonale Vaudoise de Football",
-      "canton": "GE",
-      "secteur": "Sport",
-      "cantons": [
-        "GE",
-        "VD"
-      ],
-      "nb_cantons": 2,
-      "nb_years_active": 4,
-      "montant_2021_CHF": 19000,
-      "montant_2022_CHF": 0,
-      "montant_2023_CHF": 375000,
-      "montant_2024_CHF": 498268,
-      "montant_2025_CHF": 400330,
-      "montant_total_CHF": 1292598,
-      "montants_par_canton": {
-        "VD": 794330,
-        "GE": 498268
-      },
-      "is_consolidated": false
-    },
-    {
-      "nom": "Fond. Visions du Réel",
-      "canton": "VD",
-      "secteur": "Culture",
-      "cantons": [
-        "SR",
-        "VD"
-      ],
-      "nb_cantons": 2,
-      "nb_years_active": 5,
-      "montant_2021_CHF": 250000,
-      "montant_2022_CHF": 250000,
-      "montant_2023_CHF": 240000,
-      "montant_2024_CHF": 275000,
-      "montant_2025_CHF": 270000,
-      "montant_total_CHF": 1285000,
-      "montants_par_canton": {
-        "VD": 1255000,
-        "SR": 30000
       },
       "is_consolidated": false
     },
@@ -480,6 +480,28 @@
       "is_consolidated": false
     },
     {
+      "nom": "Usine à Gaz",
+      "canton": "VD",
+      "secteur": "Culture",
+      "cantons": [
+        "SR",
+        "VD"
+      ],
+      "nb_cantons": 2,
+      "nb_years_active": 5,
+      "montant_2021_CHF": 200000,
+      "montant_2022_CHF": 150000,
+      "montant_2023_CHF": 250000,
+      "montant_2024_CHF": 350000,
+      "montant_2025_CHF": 300000,
+      "montant_total_CHF": 1250000,
+      "montants_par_canton": {
+        "VD": 1100000,
+        "SR": 150000
+      },
+      "is_consolidated": false
+    },
+    {
       "nom": "Assoc. Fribourgeoise de Football",
       "canton": "FR",
       "secteur": "Sport",
@@ -498,28 +520,6 @@
       "montants_par_canton": {
         "FR": 991424,
         "GE": 255818
-      },
-      "is_consolidated": false
-    },
-    {
-      "nom": "Fond. Aigues-Vertes",
-      "canton": "GE",
-      "secteur": "Santé et handicap",
-      "cantons": [
-        "GE",
-        "SR"
-      ],
-      "nb_cantons": 2,
-      "nb_years_active": 2,
-      "montant_2021_CHF": 0,
-      "montant_2022_CHF": 0,
-      "montant_2023_CHF": 1000000,
-      "montant_2024_CHF": 201000,
-      "montant_2025_CHF": 0,
-      "montant_total_CHF": 1201000,
-      "montants_par_canton": {
-        "GE": 1200000,
-        "SR": 1000
       },
       "is_consolidated": false
     },
@@ -594,28 +594,6 @@
       "is_consolidated": false
     },
     {
-      "nom": "La Bâtie — Festival de Genève",
-      "canton": "GE",
-      "secteur": "Culture",
-      "cantons": [
-        "GE",
-        "VD"
-      ],
-      "nb_cantons": 2,
-      "nb_years_active": 5,
-      "montant_2021_CHF": 240000,
-      "montant_2022_CHF": 225000,
-      "montant_2023_CHF": 225000,
-      "montant_2024_CHF": 200000,
-      "montant_2025_CHF": 225000,
-      "montant_total_CHF": 1115000,
-      "montants_par_canton": {
-        "GE": 1100000,
-        "VD": 15000
-      },
-      "is_consolidated": true
-    },
-    {
       "nom": "Caritas Suisse",
       "canton": "FR",
       "secteur": "Action sociale et personnes âgées",
@@ -660,28 +638,6 @@
       "montants_par_canton": {
         "VD": 1040000,
         "FR": 30000
-      },
-      "is_consolidated": false
-    },
-    {
-      "nom": "Usine à Gaz",
-      "canton": "VD",
-      "secteur": "Culture",
-      "cantons": [
-        "SR",
-        "VD"
-      ],
-      "nb_cantons": 2,
-      "nb_years_active": 4,
-      "montant_2021_CHF": 0,
-      "montant_2022_CHF": 150000,
-      "montant_2023_CHF": 250000,
-      "montant_2024_CHF": 350000,
-      "montant_2025_CHF": 300000,
-      "montant_total_CHF": 1050000,
-      "montants_par_canton": {
-        "VD": 900000,
-        "SR": 150000
       },
       "is_consolidated": false
     },
@@ -1024,12 +980,10 @@
       "canton": "VD",
       "secteur": "Culture",
       "cantons": [
-        "FR",
-        "JU",
         "SR",
         "VD"
       ],
-      "nb_cantons": 4,
+      "nb_cantons": 2,
       "nb_years_active": 4,
       "montant_2021_CHF": 120000,
       "montant_2022_CHF": 125000,
@@ -1038,10 +992,8 @@
       "montant_2025_CHF": 207084,
       "montant_total_CHF": 697084,
       "montants_par_canton": {
-        "VD": 485000,
-        "SR": 185000,
-        "FR": 17084,
-        "JU": 10000
+        "VD": 512084,
+        "SR": 185000
       },
       "is_consolidated": false
     },
@@ -1156,28 +1108,6 @@
       "is_consolidated": false
     },
     {
-      "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
-      "canton": "GE",
-      "secteur": "Sport",
-      "cantons": [
-        "GE",
-        "VD"
-      ],
-      "nb_cantons": 2,
-      "nb_years_active": 3,
-      "montant_2021_CHF": 6600,
-      "montant_2022_CHF": 0,
-      "montant_2023_CHF": 0,
-      "montant_2024_CHF": 331416,
-      "montant_2025_CHF": 303245,
-      "montant_total_CHF": 641261,
-      "montants_par_canton": {
-        "VD": 309845,
-        "GE": 331416
-      },
-      "is_consolidated": false
-    },
-    {
       "nom": "Assoc. Lire et Écrire",
       "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
@@ -1200,6 +1130,28 @@
         "SR": 230000,
         "VD": 295000,
         "GE": 60000
+      },
+      "is_consolidated": false
+    },
+    {
+      "nom": "Assoc. CAN Centre d'art Neuchâtel",
+      "canton": "NE",
+      "secteur": "Culture",
+      "cantons": [
+        "NE",
+        "VD"
+      ],
+      "nb_cantons": 2,
+      "nb_years_active": 3,
+      "montant_2021_CHF": 210000,
+      "montant_2022_CHF": 210000,
+      "montant_2023_CHF": 0,
+      "montant_2024_CHF": 210000,
+      "montant_2025_CHF": 0,
+      "montant_total_CHF": 630000,
+      "montants_par_canton": {
+        "NE": 420000,
+        "VD": 210000
       },
       "is_consolidated": false
     },
@@ -1604,28 +1556,6 @@
       "is_consolidated": false
     },
     {
-      "nom": "Assoc. CAN Centre d'art Neuchâtel",
-      "canton": "NE",
-      "secteur": "Culture",
-      "cantons": [
-        "NE",
-        "VD"
-      ],
-      "nb_cantons": 2,
-      "nb_years_active": 2,
-      "montant_2021_CHF": 0,
-      "montant_2022_CHF": 210000,
-      "montant_2023_CHF": 0,
-      "montant_2024_CHF": 210000,
-      "montant_2025_CHF": 0,
-      "montant_total_CHF": 420000,
-      "montants_par_canton": {
-        "NE": 210000,
-        "VD": 210000
-      },
-      "is_consolidated": false
-    },
-    {
       "nom": "Assoc. Grandson-Murten 2026",
       "canton": "FR",
       "secteur": "Promotion, tourisme et développement",
@@ -1718,6 +1648,28 @@
       "is_consolidated": false
     },
     {
+      "nom": "Capa'cité - Cité des métiers",
+      "canton": "NE",
+      "secteur": "Formation et recherche",
+      "cantons": [
+        "NE",
+        "SR"
+      ],
+      "nb_cantons": 2,
+      "nb_years_active": 2,
+      "montant_2021_CHF": 200000,
+      "montant_2022_CHF": 0,
+      "montant_2023_CHF": 200000,
+      "montant_2024_CHF": 0,
+      "montant_2025_CHF": 0,
+      "montant_total_CHF": 400000,
+      "montants_par_canton": {
+        "NE": 200000,
+        "SR": 200000
+      },
+      "is_consolidated": false
+    },
+    {
       "nom": "La Main Tendue",
       "canton": "VD",
       "secteur": "Action sociale et personnes âgées",
@@ -1793,14 +1745,14 @@
       ],
       "nb_cantons": 2,
       "nb_years_active": 4,
-      "montant_2021_CHF": 5694,
+      "montant_2021_CHF": 5982,
       "montant_2022_CHF": 270841,
       "montant_2023_CHF": 0,
       "montant_2024_CHF": 114103,
       "montant_2025_CHF": 6642,
-      "montant_total_CHF": 397280,
+      "montant_total_CHF": 397568,
       "montants_par_canton": {
-        "FR": 12336,
+        "FR": 12624,
         "GE": 384944
       },
       "is_consolidated": false
@@ -2026,6 +1978,34 @@
       "is_consolidated": false
     },
     {
+      "nom": "Assoc. Midi théâtre",
+      "canton": "GE",
+      "secteur": "Culture",
+      "cantons": [
+        "FR",
+        "GE",
+        "JU",
+        "NE",
+        "SR"
+      ],
+      "nb_cantons": 5,
+      "nb_years_active": 5,
+      "montant_2021_CHF": 37000,
+      "montant_2022_CHF": 82000,
+      "montant_2023_CHF": 69000,
+      "montant_2024_CHF": 73000,
+      "montant_2025_CHF": 69000,
+      "montant_total_CHF": 330000,
+      "montants_par_canton": {
+        "GE": 205000,
+        "FR": 93000,
+        "SR": 7000,
+        "NE": 10000,
+        "JU": 15000
+      },
+      "is_consolidated": false
+    },
+    {
       "nom": "Assoc. Cirque Toamême",
       "canton": "FR",
       "secteur": "Jeunesse et éducation",
@@ -2092,32 +2072,24 @@
       "is_consolidated": false
     },
     {
-      "nom": "Assoc. Midi théâtre",
-      "canton": "GE",
-      "secteur": "Culture",
+      "nom": "Fond. Edith Moret Château de Mézières",
+      "canton": "VD",
+      "secteur": "Conservation du patrimoine",
       "cantons": [
         "FR",
-        "GE",
-        "JU",
-        "NE",
-        "SR",
         "VD"
       ],
-      "nb_cantons": 6,
-      "nb_years_active": 5,
-      "montant_2021_CHF": 17000,
-      "montant_2022_CHF": 82000,
-      "montant_2023_CHF": 69000,
-      "montant_2024_CHF": 73000,
-      "montant_2025_CHF": 69000,
-      "montant_total_CHF": 310000,
+      "nb_cantons": 2,
+      "nb_years_active": 3,
+      "montant_2021_CHF": 181000,
+      "montant_2022_CHF": 0,
+      "montant_2023_CHF": 0,
+      "montant_2024_CHF": 65000,
+      "montant_2025_CHF": 65000,
+      "montant_total_CHF": 311000,
       "montants_par_canton": {
-        "GE": 185000,
-        "FR": 63000,
-        "SR": 7000,
-        "VD": 30000,
-        "NE": 10000,
-        "JU": 15000
+        "VD": 246000,
+        "FR": 65000
       },
       "is_consolidated": false
     },
@@ -2140,6 +2112,28 @@
       "montants_par_canton": {
         "VS": 237451,
         "SR": 69417
+      },
+      "is_consolidated": false
+    },
+    {
+      "nom": "Passion cinéma",
+      "canton": "NE",
+      "secteur": "Culture",
+      "cantons": [
+        "JU",
+        "NE"
+      ],
+      "nb_cantons": 2,
+      "nb_years_active": 5,
+      "montant_2021_CHF": 60000,
+      "montant_2022_CHF": 68000,
+      "montant_2023_CHF": 66000,
+      "montant_2024_CHF": 56000,
+      "montant_2025_CHF": 56000,
+      "montant_total_CHF": 306000,
+      "montants_par_canton": {
+        "NE": 300000,
+        "JU": 6000
       },
       "is_consolidated": false
     },
@@ -2199,14 +2193,14 @@
       ],
       "nb_cantons": 2,
       "nb_years_active": 4,
-      "montant_2021_CHF": 73000,
+      "montant_2021_CHF": 75130,
       "montant_2022_CHF": 153200,
       "montant_2023_CHF": 57520,
       "montant_2024_CHF": 2000,
       "montant_2025_CHF": 0,
-      "montant_total_CHF": 285720,
+      "montant_total_CHF": 287850,
       "montants_par_canton": {
-        "VD": 132520,
+        "VD": 134650,
         "SR": 153200
       },
       "is_consolidated": false
