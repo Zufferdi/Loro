@@ -9,7 +9,29 @@
   "structure_2024": {
     "_description": "Données 2024 traduites de l'allemand. Tous montants en CHF.",
     "perimetre_geographique": {
-      "cantons_couverts": ["AG","AR","AI","BL","BS","BE","GL","GR","LU","NW","OW","SH","SZ","SO","SG","TG","UR","ZG","ZH","TI","FL (Liechtenstein)"],
+      "cantons_couverts": [
+        "AG",
+        "AR",
+        "AI",
+        "BL",
+        "BS",
+        "BE",
+        "GL",
+        "GR",
+        "LU",
+        "NW",
+        "OW",
+        "SH",
+        "SZ",
+        "SO",
+        "SG",
+        "TG",
+        "UR",
+        "ZG",
+        "ZH",
+        "TI",
+        "FL (Liechtenstein)"
+      ],
       "nb_cantons": 20,
       "fl_inclus": true,
       "population_desservie_estim": 6500000,
@@ -50,8 +72,16 @@
       "_repartition": {
         "fondation_sport_suisse_fses": 55682372,
         "vingt_cantons_membres": 540053760,
-        "_dont_top": {"ZH": 128801956, "BE": 82716868, "AG": 58999474, "SG": 41047475, "LU": 34360147},
-        "_dont_min": {"AI": 1262221}
+        "_dont_top": {
+          "ZH": 128801956,
+          "BE": 82716868,
+          "AG": 58999474,
+          "SG": 41047475,
+          "LU": 34360147
+        },
+        "_dont_min": {
+          "AI": 1262221
+        }
       }
     },
     "bilan": {
@@ -95,7 +125,11 @@
     "_description": "Évolution du bénéfice net à répartir, en M CHF",
     "_source": "Geschäftsbericht 2024 figure 4 + 2025 chiffres-clés",
     "annees": {
-      "2010": null, "2011": null, "2012": null, "2013": null, "2014": null,
+      "2010": null,
+      "2011": null,
+      "2012": null,
+      "2013": null,
+      "2014": null,
       "2018": 432,
       "2019": 410,
       "2020": 416,
@@ -109,46 +143,224 @@
   "comparaison_loro_2024": {
     "_description": "Confrontation Loro Romande vs Swisslos Alémanique, exercice 2024",
     "metriques": [
-      {"label": "PBJ / BSE (M CHF)", "loro": 438.2, "swisslos": 812.1, "unite": "M CHF"},
-      {"label": "Bénéfice net (M CHF)", "loro": 258.2, "swisslos": 595.7, "unite": "M CHF"},
-      {"label": "Ratio bénéfice/PBJ", "loro": 58.9, "swisslos": 73.4, "unite": "%"},
-      {"label": "Commissions points de vente", "loro": 79.4, "swisslos": 128.7, "unite": "M CHF"},
-      {"label": "Commissions / PBJ", "loro": 18.1, "swisslos": 15.8, "unite": "%"},
-      {"label": "Informatique", "loro": 23.7, "swisslos": 10.3, "unite": "M CHF"},
-      {"label": "Personnel", "loro": 30.7, "swisslos": 26.0, "unite": "M CHF"},
-      {"label": "Marketing/Publicité+Promo", "loro": 17.0, "swisslos": 25.5, "unite": "M CHF"},
-      {"label": "Amortissements", "loro": 12.7, "swisslos": 14.5, "unite": "M CHF"},
-      {"label": "Taxe jeu excessif (0,5 %)", "loro": 2.19, "swisslos": 4.05, "unite": "M CHF"},
-      {"label": "EPT moyens", "loro": 213, "swisslos": 181, "unite": "EPT"},
-      {"label": "Nb cantons membres", "loro": 6, "swisslos": 21, "unite": ""},
-      {"label": "Pop. desservie (M)", "loro": 2.36, "swisslos": 6.5, "unite": "M hab."},
-      {"label": "Total actif", "loro": 438.9, "swisslos": 905.0, "unite": "M CHF"},
-      {"label": "Capitaux propres / réserves", "loro": 325.1, "swisslos": 646.5, "unite": "M CHF"},
-      {"label": "Provision risque exploitation", "loro": 0, "swisslos": 100, "unite": "M CHF"},
-      {"label": "Réserves libres", "loro": 66.0, "swisslos": 45.3, "unite": "M CHF"}
+      {
+        "label": "PBJ / BSE (M CHF)",
+        "loro": 438.2,
+        "swisslos": 812.1,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Bénéfice net (M CHF)",
+        "loro": 258.2,
+        "swisslos": 595.7,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Ratio bénéfice/PBJ",
+        "loro": 58.9,
+        "swisslos": 73.4,
+        "unite": "%"
+      },
+      {
+        "label": "Commissions points de vente",
+        "loro": 79.4,
+        "swisslos": 128.7,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Commissions / PBJ",
+        "loro": 18.1,
+        "swisslos": 15.8,
+        "unite": "%"
+      },
+      {
+        "label": "Informatique",
+        "loro": 23.7,
+        "swisslos": 10.3,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Personnel",
+        "loro": 30.7,
+        "swisslos": 26.0,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Marketing/Publicité+Promo",
+        "loro": 17.0,
+        "swisslos": 25.5,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Amortissements",
+        "loro": 12.7,
+        "swisslos": 14.5,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Taxe jeu excessif (0,5 %)",
+        "loro": 2.19,
+        "swisslos": 4.05,
+        "unite": "M CHF"
+      },
+      {
+        "label": "EPT moyens",
+        "loro": 213,
+        "swisslos": 181,
+        "unite": "EPT"
+      },
+      {
+        "label": "Nb cantons membres",
+        "loro": 6,
+        "swisslos": 21,
+        "unite": ""
+      },
+      {
+        "label": "Pop. desservie (M)",
+        "loro": 2.36,
+        "swisslos": 6.5,
+        "unite": "M hab."
+      },
+      {
+        "label": "Total actif",
+        "loro": 438.9,
+        "swisslos": 905.0,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Capitaux propres / réserves",
+        "loro": 325.1,
+        "swisslos": 646.5,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Provision risque exploitation",
+        "loro": 0,
+        "swisslos": 100,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Réserves libres",
+        "loro": 66.0,
+        "swisslos": 45.3,
+        "unite": "M CHF"
+      }
     ]
   },
   "comparaison_loro_2025": {
     "_description": "Confrontation Loro Romande vs Swisslos Alémanique, exercice 2025. Données Loro depuis le communiqué + BRB 2025 ; données Swisslos depuis 'Zahlen und Fakten 2025' (Geschäftsbericht 2025 non encore publié).",
     "_estimation_note": "Les lignes marquées 'est.' pour Swisslos sont des estimations à partir des proportions 2024 maintenues sur le bénéfice 2025. À mettre à jour quand le Geschäftsbericht 2025 sera publié.",
     "metriques": [
-      {"label": "PBJ / BSE (M CHF)", "loro": 429.8, "swisslos": 764.0, "unite": "M CHF", "swisslos_est": true},
-      {"label": "Bénéfice net (M CHF)", "loro": 252.0, "swisslos": 562.0, "unite": "M CHF"},
-      {"label": "Ratio bénéfice/PBJ", "loro": 58.6, "swisslos": 73.6, "unite": "%", "swisslos_est": true},
-      {"label": "Commissions points de vente", "loro": 79.2, "swisslos": 121.0, "unite": "M CHF", "swisslos_est": true},
-      {"label": "Commissions / PBJ", "loro": 18.4, "swisslos": 15.8, "unite": "%", "swisslos_est": true},
-      {"label": "Informatique", "loro": null, "swisslos": null, "unite": "M CHF", "note": "Données 2025 non disponibles (rapport financier non publié)"},
-      {"label": "Personnel", "loro": null, "swisslos": 28.0, "unite": "M CHF", "swisslos_est": true},
-      {"label": "Marketing/Publicité+Promo", "loro": null, "swisslos": null, "unite": "M CHF"},
-      {"label": "Amortissements", "loro": null, "swisslos": null, "unite": "M CHF"},
-      {"label": "Taxe jeu excessif (0,5 %)", "loro": 2.15, "swisslos": 3.9, "unite": "M CHF", "loro_est": true},
-      {"label": "EPT moyens", "loro": null, "swisslos": 188, "unite": "EPT", "swisslos_est": true},
-      {"label": "Nb cantons membres", "loro": 6, "swisslos": 21, "unite": ""},
-      {"label": "Pop. desservie (M)", "loro": 2.38, "swisslos": 6.55, "unite": "M hab."},
-      {"label": "Total actif", "loro": null, "swisslos": null, "unite": "M CHF"},
-      {"label": "Capitaux propres / réserves", "loro": null, "swisslos": null, "unite": "M CHF"},
-      {"label": "Provision risque exploitation", "loro": 0, "swisslos": 100, "unite": "M CHF"},
-      {"label": "Réserves libres", "loro": null, "swisslos": null, "unite": "M CHF"}
+      {
+        "label": "PBJ / BSE (M CHF)",
+        "loro": 429.8,
+        "swisslos": 764.0,
+        "unite": "M CHF",
+        "swisslos_est": true
+      },
+      {
+        "label": "Bénéfice net (M CHF)",
+        "loro": 252.0,
+        "swisslos": 562.0,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Ratio bénéfice/PBJ",
+        "loro": 58.6,
+        "swisslos": 73.6,
+        "unite": "%",
+        "swisslos_est": true
+      },
+      {
+        "label": "Commissions points de vente",
+        "loro": 79.2,
+        "swisslos": 121.0,
+        "unite": "M CHF",
+        "swisslos_est": true
+      },
+      {
+        "label": "Commissions / PBJ",
+        "loro": 18.4,
+        "swisslos": 15.8,
+        "unite": "%",
+        "swisslos_est": true
+      },
+      {
+        "label": "Informatique",
+        "loro": null,
+        "swisslos": null,
+        "unite": "M CHF",
+        "note": "Données 2025 non disponibles (rapport financier non publié)"
+      },
+      {
+        "label": "Personnel",
+        "loro": null,
+        "swisslos": 28.0,
+        "unite": "M CHF",
+        "swisslos_est": true
+      },
+      {
+        "label": "Marketing/Publicité+Promo",
+        "loro": null,
+        "swisslos": null,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Amortissements",
+        "loro": null,
+        "swisslos": null,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Taxe jeu excessif (0,5 %)",
+        "loro": 2.15,
+        "swisslos": 3.9,
+        "unite": "M CHF",
+        "loro_est": true
+      },
+      {
+        "label": "EPT moyens",
+        "loro": null,
+        "swisslos": 188,
+        "unite": "EPT",
+        "swisslos_est": true
+      },
+      {
+        "label": "Nb cantons membres",
+        "loro": 6,
+        "swisslos": 21,
+        "unite": ""
+      },
+      {
+        "label": "Pop. desservie (M)",
+        "loro": 2.38,
+        "swisslos": 6.55,
+        "unite": "M hab."
+      },
+      {
+        "label": "Total actif",
+        "loro": null,
+        "swisslos": null,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Capitaux propres / réserves",
+        "loro": null,
+        "swisslos": null,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Provision risque exploitation",
+        "loro": 0,
+        "swisslos": 100,
+        "unite": "M CHF"
+      },
+      {
+        "label": "Réserves libres",
+        "loro": null,
+        "swisslos": null,
+        "unite": "M CHF"
+      }
     ],
     "sources": {
       "loro": [
@@ -181,5 +393,68 @@
       "convention": "IKV 2020 (Concordat intercantonal jeux d'argent)",
       "decisions_par_canton": "Bénéfice réparti selon population + enjeux, fonds cantonaux directs"
     }
+  },
+  "casinos_suisses": {
+    "_description": "Casinos suisses (21 maisons de jeu terrestres + 10 plateformes en ligne)",
+    "_source": "Commission fédérale des maisons de jeu (CFMJ/ESBK), rapports annuels 2019-2024",
+    "_caveat": "Les casinos versent leur impôt à l'AVS, PAS à l'utilité publique (différence majeure avec Loro/Swisslos)",
+    "historique_impot_avs_M_CHF": {
+      "2019": null,
+      "2020": null,
+      "2021": 249,
+      "2022": null,
+      "2023": null,
+      "2024": 358
+    },
+    "pbj_terrestres_M_CHF": {
+      "2019": 742,
+      "2020": 452,
+      "2021": 406,
+      "2022": null,
+      "2023": null,
+      "2024": null
+    },
+    "pbj_en_ligne_M_CHF": {
+      "2019": 23.5,
+      "2020": 187,
+      "2021": 234,
+      "2022": null,
+      "2023": 285,
+      "2024": null
+    },
+    "nb_casinos_terrestres": 21,
+    "nb_casinos_en_ligne": 10,
+    "destination_impot": "AVS (assurance vieillesse et survivants)",
+    "difference_avec_loto": "Casinos = AVS · Loteries (Loro/Swisslos) = utilité publique"
+  },
+  "ecosysteme_jeux_2024": {
+    "_description": "Vue d'ensemble écosystème jeux d'argent suisse 2024 — bénéfices/impôts reversés",
+    "_unite": "M CHF",
+    "acteurs": [
+      {
+        "nom": "Loterie Romande (Loro)",
+        "benefice_M": 258.2,
+        "destination": "Utilité publique (culture, sport, social, environnement)",
+        "perimetre": "Romandie (6 cantons, 22% population)",
+        "couleur": "#c8102e"
+      },
+      {
+        "nom": "Swisslos",
+        "benefice_M": 596,
+        "destination": "Utilité publique (culture, sport, social, environnement)",
+        "perimetre": "18 cantons alémaniques + Tessin (78% population)",
+        "couleur": "#3a3633"
+      },
+      {
+        "nom": "Casinos suisses (21)",
+        "benefice_M": 358,
+        "destination": "AVS (assurance vieillesse)",
+        "perimetre": "Toute la Suisse",
+        "couleur": "#7c5bc7"
+      }
+    ],
+    "total_reverse_M": 1212.2,
+    "part_utilite_publique_pct": 70.5,
+    "part_avs_pct": 29.5
   }
 }

@@ -1,0 +1,568 @@
+{
+  "_meta": {
+    "classif": "formation",
+    "year": "2022",
+    "source": "brb2022_full.json",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
+    "date": "2026-06-04",
+    "total_entries": 44,
+    "total_chf": 5205886,
+    "precise_classified_entries": 26,
+    "precise_classified_chf": 4633000,
+    "pct_chf_precisely_classified": 89.0,
+    "pct_chf_classified": 100.0,
+    "total_entries_classified": 44,
+    "total_chf_classified": 5205886,
+    "catchall_chf": 572886,
+    "cross_year_recovered": 2,
+    "sector": "Formation et recherche",
+    "sector_slug": "formation",
+    "total_entries_sector": 44,
+    "total_chf_sector": 5205886,
+    "pct_entries_classified": 100.0
+  },
+  "categories": [
+    {
+      "name": "Apprentissage & formation continue",
+      "count": 7,
+      "total_chf": 1701000,
+      "mean_chf": 243000,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 500000
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 170000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 1000
+        },
+        "VS": {
+          "count": 3,
+          "total_chf": 530000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 500000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. de l'école Rudolf Steiner de Lausanne",
+          "ville": "Crissier",
+          "canton": "VD",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Assoc. cours de formation des Installateurs en chauffage genevois",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Fond. du Conservatoire cantonal de musique",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 462000
+        },
+        {
+          "nom": "Lire et écrire section Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 170000
+        },
+        {
+          "nom": "Bildungshaus St. Jodern",
+          "ville": "Visp",
+          "canton": "VS",
+          "montant_CHF": 60000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. de l'école Rudolf Steiner de Lausanne",
+          "ville": "Crissier",
+          "canton": "VD",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Assoc. cours de formation des Installateurs en chauffage genevois",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Fond. du Conservatoire cantonal de musique",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 462000
+        },
+        {
+          "nom": "Lire et écrire section Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 170000
+        },
+        {
+          "nom": "Bildungshaus St. Jodern",
+          "ville": "Visp",
+          "canton": "VS",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Volkshochschule Oberwallis",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Seeländische Volkshochschule Kerzers",
+          "ville": "Ulmiz",
+          "canton": "SR",
+          "montant_CHF": 1000
+        }
+      ]
+    },
+    {
+      "name": "Recherche scientifique",
+      "count": 7,
+      "total_chf": 1457000,
+      "mean_chf": 208142,
+      "cantons": {
+        "VD": {
+          "count": 3,
+          "total_chf": 1090000
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 300000
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 60000
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 7000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. Dind Cottier pour la recherche sur la peau",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "EuroVacc Foundation",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 390000
+        },
+        {
+          "nom": "Swiss Biobanking Platform",
+          "ville": "Epalinges",
+          "canton": "VD",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Fond. EspeRare",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Fond. EspeRare",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 150000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Dind Cottier pour la recherche sur la peau",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "EuroVacc Foundation",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 390000
+        },
+        {
+          "nom": "Swiss Biobanking Platform",
+          "ville": "Epalinges",
+          "canton": "VD",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Fond. EspeRare",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Fond. EspeRare",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Vitrocentre Romont",
+          "ville": "Romont",
+          "canton": "FR",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Fond. de l'Observatoire",
+          "ville": "St-Maurice",
+          "canton": "VS",
+          "montant_CHF": 7000
+        }
+      ]
+    },
+    {
+      "name": "Université & hautes écoles",
+      "count": 11,
+      "total_chf": 1429000,
+      "mean_chf": 129909,
+      "cantons": {
+        "VD": {
+          "count": 4,
+          "total_chf": 360000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 25000
+        },
+        "FR": {
+          "count": 2,
+          "total_chf": 25000
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 33000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 6000
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 980000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. pour l'Institut de Hautes Études Internationales et du Développement",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 900000
+        },
+        {
+          "nom": "Université de Lausanne, Service Culture et Médiation scientifique",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 140000
+        },
+        {
+          "nom": "Fond. EPFL Plus",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 95000
+        },
+        {
+          "nom": "Université de Genève - Programme Horizon Académique",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "EPFL - Wish Foundation",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 75000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. pour l'Institut de Hautes Études Internationales et du Développement",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 900000
+        },
+        {
+          "nom": "Université de Lausanne, Service Culture et Médiation scientifique",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 140000
+        },
+        {
+          "nom": "Fond. EPFL Plus",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 95000
+        },
+        {
+          "nom": "Université de Genève - Programme Horizon Académique",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "EPFL - Wish Foundation",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 75000
+        },
+        {
+          "nom": "EPFL Rocket Team",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. de Soutien à l'École de Design et Haute École d'Art du Valais",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 33000
+        },
+        {
+          "nom": "Service des Sports UNIL-EPFL",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Chœur de Chambre de l'Université de Fribourg - CCUF",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Université populaire",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Chœur de l'Université de Neuchâtel",
+          "ville": "Fontaines",
+          "canton": "NE",
+          "montant_CHF": 6000
+        }
+      ]
+    },
+    {
+      "name": "Soutien général à la formation / recherche",
+      "count": 18,
+      "total_chf": 572886,
+      "mean_chf": 31827,
+      "cantons": {
+        "VD": {
+          "count": 2,
+          "total_chf": 115000
+        },
+        "FR": {
+          "count": 4,
+          "total_chf": 174886
+        },
+        "NE": {
+          "count": 4,
+          "total_chf": 162000
+        },
+        "VS": {
+          "count": 4,
+          "total_chf": 76000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 15000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 5000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 25000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Jobtrek",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Académie de Meuron",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Stiftung BIBEL+ORIENT",
+          "ville": "Freiburg",
+          "canton": "FR",
+          "montant_CHF": 79000
+        },
+        {
+          "nom": "Société de Navigation sur les lacs de Neuchâtel et Morat S.A.",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Cyber Resilience Ltd",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 40000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Jobtrek",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Académie de Meuron",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Stiftung BIBEL+ORIENT",
+          "ville": "Freiburg",
+          "canton": "FR",
+          "montant_CHF": 79000
+        },
+        {
+          "nom": "Société de Navigation sur les lacs de Neuchâtel et Morat S.A.",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Cyber Resilience Ltd",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Interface",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 35886
+        },
+        {
+          "nom": "Fond. pour une École de théâtre",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Assoc. École Suisse de Vitrail & Création",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Kinderkrippe der Universität Freiburg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Sté des Etudes Bosporanes",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Accademia d'Archi",
+          "ville": "Chêne-Bougeries",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Arud Zentrum für Suchtmedizin",
+          "ville": "Zürich",
+          "canton": "JU",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Verein Wirtschaftsforum Oberwallis",
+          "ville": "Naters",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Salon interjurassien de la formation",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. ATIC",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Assoc. Valaisanne pour la Promotion du Réseau Scientifique Valaisan (VS-NET)",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Assoc. groupe neuchâtelois de la sté romande de philosophie",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Centre intercantonal d'information sur les croyances,",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 5000
+        }
+      ]
+    },
+    {
+      "name": "Recherche & innovation tech",
+      "count": 1,
+      "total_chf": 46000,
+      "mean_chf": 46000,
+      "cantons": {
+        "VS": {
+          "count": 1,
+          "total_chf": 46000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. IPT",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 46000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. IPT",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 46000
+        }
+      ]
+    }
+  ]
+}

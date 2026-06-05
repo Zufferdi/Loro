@@ -3,63 +3,61 @@
     "classif": "patrimoine",
     "year": "2023",
     "source": "brb2023_full.json",
-    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
     "total_entries": 119,
-    "total_chf": 9162244,
-    "total_entries_classified": 63,
-    "total_chf_classified": 5274780,
-    "pct_chf_classified": 57.6,
-    "cross_year_recovered": 6,
+    "total_chf": 9944044,
+    "precise_classified_entries": 69,
+    "precise_classified_chf": 6571580,
+    "pct_chf_precisely_classified": 66.1,
+    "pct_chf_classified": 100.0,
+    "total_entries_classified": 119,
+    "total_chf_classified": 9944044,
+    "catchall_chf": 3372464,
+    "cross_year_recovered": 7,
     "sector": "Conservation du patrimoine",
     "sector_slug": "patrimoine",
     "total_entries_sector": 119,
-    "total_chf_sector": 9162244,
-    "pct_entries_classified": 52.9
+    "total_chf_sector": 9944044,
+    "pct_entries_classified": 100.0
   },
   "categories": [
     {
-      "name": "Autres",
-      "count": 56,
-      "total_chf": 3887464,
-      "mean_chf": 69419,
+      "name": "Soutien général au patrimoine",
+      "count": 50,
+      "total_chf": 3372464,
+      "mean_chf": 67449,
       "cantons": {
-        "JU": {
-          "count": 6,
-          "total_chf": 74000
-        },
         "VD": {
-          "count": 2,
-          "total_chf": 80000
+          "count": 4,
+          "total_chf": 245000
+        },
+        "JU": {
+          "count": 4,
+          "total_chf": 46000
         },
         "SR": {
-          "count": 12,
-          "total_chf": 922464
+          "count": 11,
+          "total_chf": 472464
         },
         "FR": {
-          "count": 11,
-          "total_chf": 300000
+          "count": 8,
+          "total_chf": 151000
         },
         "VS": {
-          "count": 14,
-          "total_chf": 1120000
+          "count": 13,
+          "total_chf": 1080000
         },
         "NE": {
           "count": 2,
           "total_chf": 53000
         },
         "GE": {
-          "count": 9,
-          "total_chf": 1338000
+          "count": 8,
+          "total_chf": 1325000
         }
       },
       "samples": [
-        {
-          "nom": "Assoc. Automates et Merveilles",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 450000
-        },
         {
           "nom": "Groupement des Cinémas Genevois",
           "ville": "Genève",
@@ -73,36 +71,344 @@
           "montant_CHF": 290000
         },
         {
-          "nom": "Fond. Hainard",
-          "ville": "Bernex",
+          "nom": "Musée international de la Croix-Rouge et du Croissant- Rouge",
+          "ville": "Genève",
           "canton": "GE",
-          "montant_CHF": 260000
+          "montant_CHF": 255000
         },
         {
           "nom": "Fond. Heinrich Maria et Jane Ledig-Rowohlt",
           "ville": "Lavigny",
           "canton": "SR",
           "montant_CHF": 220000
+        },
+        {
+          "nom": "Stiftung TriPLUS",
+          "ville": "Guttet-Feschel",
+          "canton": "VS",
+          "montant_CHF": 210000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Groupement des Cinémas Genevois",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Fonds pour venir en aide aux victimes de dommages non assurables causés par les forces de la nature",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 290000
+        },
+        {
+          "nom": "Musée international de la Croix-Rouge et du Croissant- Rouge",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 255000
+        },
+        {
+          "nom": "Fond. Heinrich Maria et Jane Ledig-Rowohlt",
+          "ville": "Lavigny",
+          "canton": "SR",
+          "montant_CHF": 220000
+        },
+        {
+          "nom": "Stiftung TriPLUS",
+          "ville": "Guttet-Feschel",
+          "canton": "VS",
+          "montant_CHF": 210000
+        },
+        {
+          "nom": "FONSART - Fond. pour la Sauvegarde et la mise en valeur du patrimoine audiovisuel de la RTS",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Bourgeoisie de Sion",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 170000
+        },
+        {
+          "nom": "Assoc. Genevoise du Musée des Tramways",
+          "ville": "Veyrier",
+          "canton": "GE",
+          "montant_CHF": 165000
+        },
+        {
+          "nom": "Théâtre de l'Usine",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 165000
+        },
+        {
+          "nom": "Consortage de l'Alpage du Tronc",
+          "ville": "Vollèges",
+          "canton": "VS",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Assoc. Michel Soutter",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 95000
+        },
+        {
+          "nom": "Amis des Musées de Nyon",
+          "ville": "Nyon",
+          "canton": "VD",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Amis des Musées de Pully",
+          "ville": "Pully",
+          "canton": "VD",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Assoc. Pro Ethnographica",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 74000
+        },
+        {
+          "nom": "Assoc. Valais-Wallis Time Machine",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 72000
+        },
+        {
+          "nom": "Vitromusée Romont",
+          "ville": "Romont",
+          "canton": "FR",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. pour la valorisation des bâtiments et lieux dignes d'intérêts sur la Commune, Leytron",
+          "ville": "Leytron",
+          "canton": "VS",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. valaisanne des musées",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 53000
+        },
+        {
+          "nom": "Assoc. des musées de Lausanne et Pully",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Consortage de l'alpage de la Lée",
+          "ville": "Ayer",
+          "canton": "SR",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. le portail de Berthe",
+          "ville": "Bevaix",
+          "canton": "NE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. Correspondances",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 38000
+        },
+        {
+          "nom": "141.R.568",
+          "ville": "Vallorbe",
+          "canton": "VD",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Assoc. Champsec Ensemble",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Consortage de l'alpage du jeune bétail du Val Ferret",
+          "ville": "Orsières",
+          "canton": "VS",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Palafittalp",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Verein für nachhaltigen Journalismus",
+          "ville": "St. Gallen",
+          "canton": "SR",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Fond. Bindschedler pour la promotion de l'art de la marionnette",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Fond. Patrimoine Ville de Rue",
+          "ville": "Rue",
+          "canton": "FR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Archéologie Suisse",
+          "ville": "Bâle",
+          "canton": "JU",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Histoire et avenir de l'hôtellerie Goms - Obergoms",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 17000
+        },
+        {
+          "nom": "Mouvement Pro Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Stiftung Sensler Museum",
+          "ville": "Tafers",
+          "canton": "FR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Dataroom",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. romande pour la promotion du patrimoine",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Cercle d'Archéologie de la SJE",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 14000
+        },
+        {
+          "nom": "Assoc. de la Route du Sel",
+          "ville": "Buttes",
+          "canton": "NE",
+          "montant_CHF": 13000
+        },
+        {
+          "nom": "Assoc. du Gor du Vauseyon",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Sté vaudoise d'histoire et d'archéologie SVHA",
+          "ville": "Chavannes-près-Renens",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "SIA section Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Geschichtsforschender Verein Oberwallis",
+          "ville": "Brig",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Fond. François Fine",
+          "ville": "Salvan",
+          "canton": "SR",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Fond. Pro Octoduro",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Stiftung Lötschentaler Museum",
+          "ville": "Kippel",
+          "canton": "VS",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Alpage D'ER DE LENS",
+          "ville": "LENS",
+          "canton": "VS",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Schweizerdeutsches Wörterbuch",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 3464
+        },
+        {
+          "nom": "Assoc. Musées en Gruyère, Glâne, Pays-d'Enhaut",
+          "ville": "Gruyères",
+          "canton": "FR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Conseil di Dzouno dè la Grevire",
+          "ville": "La Tour-de-Trême",
+          "canton": "FR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Kirchenchor Bürchen",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Écho du Vorbourg",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 2000
         }
       ]
     },
     {
       "name": "Châteaux & forts",
-      "count": 13,
-      "total_chf": 1450200,
-      "mean_chf": 111553,
+      "count": 12,
+      "total_chf": 1715000,
+      "mean_chf": 142916,
       "cantons": {
         "SR": {
-          "count": 4,
-          "total_chf": 895000
+          "count": 3,
+          "total_chf": 875000
         },
         "VD": {
-          "count": 2,
-          "total_chf": 145000
+          "count": 3,
+          "total_chf": 445000
         },
         "FR": {
-          "count": 4,
-          "total_chf": 300200
+          "count": 3,
+          "total_chf": 285000
         },
         "VS": {
           "count": 1,
@@ -119,6 +425,44 @@
           "ville": "St-Triphon",
           "canton": "SR",
           "montant_CHF": 700000
+        },
+        {
+          "nom": "Fort de Chillon",
+          "ville": "Veytaux",
+          "canton": "VD",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Fond. du Château de la Sarraz",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Centre de Formation Prof. et Sociale du Château de Seedorf",
+          "ville": "Noréaz",
+          "canton": "FR",
+          "montant_CHF": 125000
+        },
+        {
+          "nom": "Fond. Pro Gruyères",
+          "ville": "Gruyères",
+          "canton": "FR",
+          "montant_CHF": 100000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Château de la Roche",
+          "ville": "St-Triphon",
+          "canton": "SR",
+          "montant_CHF": 700000
+        },
+        {
+          "nom": "Fort de Chillon",
+          "ville": "Veytaux",
+          "canton": "VD",
+          "montant_CHF": 300000
         },
         {
           "nom": "Fond. du Château de la Sarraz",
@@ -143,30 +487,70 @@
           "ville": "Yverdon-les-Bains",
           "canton": "VD",
           "montant_CHF": 80000
+        },
+        {
+          "nom": "Fond. Edith Moret Château, Mézières",
+          "ville": "Mézières",
+          "canton": "VD",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Château de Valangin",
+          "ville": "Valangin",
+          "canton": "NE",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Fond. du Château de Gruyères",
+          "ville": "Gruyères",
+          "canton": "FR",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Fond. Château de Constantine",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Le Péristyle - Château, Cormondrèche",
+          "ville": "Cormondrèche",
+          "canton": "NE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Fond. du Château de St-Maurice",
+          "ville": "St-Maurice",
+          "canton": "VS",
+          "montant_CHF": 20000
         }
       ]
     },
     {
       "name": "Patrimoine religieux",
-      "count": 19,
-      "total_chf": 1209000,
-      "mean_chf": 63631,
+      "count": 22,
+      "total_chf": 1261000,
+      "mean_chf": 57318,
       "cantons": {
         "FR": {
-          "count": 8,
-          "total_chf": 446000
+          "count": 9,
+          "total_chf": 450000
         },
         "SR": {
           "count": 5,
           "total_chf": 478000
         },
         "VS": {
-          "count": 4,
-          "total_chf": 217000
+          "count": 5,
+          "total_chf": 257000
         },
         "NE": {
           "count": 1,
           "total_chf": 3000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 8000
         },
         "JU": {
           "count": 1,
@@ -203,6 +587,140 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 115000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Kirchenrat Pfarrei Ried-Mörel",
+          "ville": "Riederalp",
+          "canton": "SR",
+          "montant_CHF": 218000
+        },
+        {
+          "nom": "Paroisse catholique",
+          "ville": "Châtel-St- Denis",
+          "canton": "FR",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Conseil de gestion de la paroisse de Bovernier",
+          "ville": "Les Valettes",
+          "canton": "SR",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Fond. pour la Rénovation et la Conservation du Couvent des Cordeliers",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 115000
+        },
+        {
+          "nom": "Conseil de gestion de la paroisse St-Laurent Bramois",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 115000
+        },
+        {
+          "nom": "Fond. Espace Jean Tinguely - Niki de Saint Phalle",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Fond. pour la Chapelle Sainte- Croix",
+          "ville": "Fontenais",
+          "canton": "JU",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Conseil de gestion de la paroisse St-Georges, Chermignon",
+          "ville": "Chermignon",
+          "canton": "VS",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. Musique sacrée et Maîtrise de la Cathédrale, Sion",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. des Amis de l'Abbaye de Montheron",
+          "ville": "Cugy",
+          "canton": "FR",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Kirchenrat Pfarrei St. Josef Goms",
+          "ville": "Gluringen",
+          "canton": "SR",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Kirchenrat Pfarrei St. Theodul",
+          "ville": "Visperterminen",
+          "canton": "VS",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Les Amis du Chœur de la Cathédrale Saint-Pierre de",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Conseil de gestion de la paroisse d'Orsières",
+          "ville": "Orsières",
+          "canton": "VS",
+          "montant_CHF": 22000
+        },
+        {
+          "nom": "Assoc. des Amis de la Basilique Notre-Dame de Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Paroisse Val-de-Charmey",
+          "ville": "Val-de-Charmey",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. des Amis de l'Abbaye d'Hauterive",
+          "ville": "Posieux",
+          "canton": "FR",
+          "montant_CHF": 9000
+        },
+        {
+          "nom": "Fond. Les Concerts de la Cathédrale",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Paroisse de Saint-Bernard et Saint-Maurice",
+          "ville": "Le Châtelard",
+          "canton": "SR",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. des Concerts de la Cathédrale St-Nicolas",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Les Baladins de l'Abbaye",
+          "ville": "Bevaix",
+          "canton": "NE",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Assoc. des Amis de l'Abbaye d'Hauterive",
+          "ville": "Posieux",
+          "canton": "FR",
+          "montant_CHF": 2000
         }
       ]
     },
@@ -264,6 +782,118 @@
           "canton": "SR",
           "montant_CHF": 30000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. des Sources du droit de l'Assoc. suisse des juristes",
+          "ville": "St. Gallen",
+          "canton": "SR",
+          "montant_CHF": 750000
+        },
+        {
+          "nom": "Service Social International - SSI",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 189000
+        },
+        {
+          "nom": "Fond. de l'Encyclopédie de",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Académie suisse des sciences humaines et sociales",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 30160
+        },
+        {
+          "nom": "Sté d’histoire du canton de",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Sté d'histoire du Valais romand",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 17000
+        },
+        {
+          "nom": "Archives de l'État du Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 12500
+        },
+        {
+          "nom": "Deutscher Geschichtsforschender Verein des kantons Freiburg",
+          "ville": "Freiburg",
+          "canton": "FR",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Sté d'histoire du canton de",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 8000
+        }
+      ]
+    },
+    {
+      "name": "Musées spécialisés",
+      "count": 3,
+      "total_chf": 950000,
+      "mean_chf": 316666,
+      "cantons": {
+        "VS": {
+          "count": 2,
+          "total_chf": 500000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 450000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Automates et Merveilles",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 450000
+        },
+        {
+          "nom": "Fond. Pierre Gianadda",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "Fond. Opale",
+          "ville": "Lens",
+          "canton": "VS",
+          "montant_CHF": 150000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Automates et Merveilles",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 450000
+        },
+        {
+          "nom": "Fond. Pierre Gianadda",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "Fond. Opale",
+          "ville": "Lens",
+          "canton": "VS",
+          "montant_CHF": 150000
+        }
       ]
     },
     {
@@ -314,6 +944,32 @@
           "canton": "SR",
           "montant_CHF": 10000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Sté des Arts de Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "Fond. pour la Sauvegarde du Patrimoine historique de Drône",
+          "ville": "Savièse",
+          "canton": "VS",
+          "montant_CHF": 66000
+        },
+        {
+          "nom": "Assoc. pour la sauvegarde du patrimoine photographique",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Assoc. pour la restauration du Four Communal & la sauvegarde du Patrimoine de la Commune",
+          "ville": "Saubraz",
+          "canton": "SR",
+          "montant_CHF": 10000
+        }
       ]
     },
     {
@@ -336,6 +992,32 @@
         }
       },
       "samples": [
+        {
+          "nom": "Assoc. Aventicum MMXV",
+          "ville": "Avenches",
+          "canton": "VD",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Fond. Pro Vallon Musée romain de Vallon",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "SHC Rolling Aventicum",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 44520
+        },
+        {
+          "nom": "SHC Rolling Aventicum",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Assoc. Aventicum MMXV",
           "ville": "Avenches",
@@ -408,6 +1090,44 @@
           "canton": "FR",
           "montant_CHF": 35000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. du musée valaisan de la vigne et du vin",
+          "ville": "Salgesch",
+          "canton": "VS",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Sté des Amis du Musée gruérien",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Sté des Amis du Musée",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. du Musée de Charmey",
+          "ville": "Charmey",
+          "canton": "FR",
+          "montant_CHF": 43300
+        },
+        {
+          "nom": "Stiftung Museum Murten",
+          "ville": "Murten",
+          "canton": "FR",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Assoc. du Musée Valaisan des Bisses",
+          "ville": "Ayent",
+          "canton": "VS",
+          "montant_CHF": 25000
+        }
       ]
     },
     {
@@ -426,6 +1146,38 @@
         }
       },
       "samples": [
+        {
+          "nom": "Westschweizer Jodlerfest Raron",
+          "ville": "Raron",
+          "canton": "VS",
+          "montant_CHF": 75000
+        },
+        {
+          "nom": "Fond. du Patrimoine de Val- d'Illiez et Assoc. du patrimoine champérolain",
+          "ville": "Champéry",
+          "canton": "VS",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Fond. pour le développement et la promotion du patois",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Sté cantonale des patoisants fribourgeois",
+          "ville": "Vuadens",
+          "canton": "FR",
+          "montant_CHF": 8100
+        },
+        {
+          "nom": "Freiburgische Vereinigung für Tracht und Brauch (FVTB)",
+          "ville": "Plaffeien",
+          "canton": "FR",
+          "montant_CHF": 5000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Westschweizer Jodlerfest Raron",
           "ville": "Raron",
@@ -476,6 +1228,14 @@
           "canton": "SR",
           "montant_CHF": 100000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Stiftung Suone Niwärch",
+          "ville": "Ausserberg",
+          "canton": "SR",
+          "montant_CHF": 100000
+        }
       ]
     },
     {
@@ -496,6 +1256,42 @@
           "canton": "SR",
           "montant_CHF": 100000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Champ-du-Moulin",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 100000
+        }
+      ]
+    },
+    {
+      "name": "Sites UNESCO / Patrimoine mondial",
+      "count": 1,
+      "total_chf": 30000,
+      "mean_chf": 30000,
+      "cantons": {
+        "FR": {
+          "count": 1,
+          "total_chf": 30000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Union fribourgeoise du Tourisme (UFT)",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 30000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Union fribourgeoise du Tourisme (UFT)",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 30000
+        }
       ]
     },
     {
@@ -510,6 +1306,14 @@
         }
       },
       "samples": [
+        {
+          "nom": "Verein 200 Jahre SSV",
+          "ville": "Luzern",
+          "canton": "SR",
+          "montant_CHF": 20000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Verein 200 Jahre SSV",
           "ville": "Luzern",

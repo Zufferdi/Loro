@@ -3,26 +3,30 @@
     "classif": "formation",
     "year": "2025",
     "source": "brb2025_full.json",
-    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 64,
-    "total_chf": 7012500,
-    "total_entries_classified": 10,
-    "total_chf_classified": 2673000,
-    "pct_chf_classified": 38.1,
-    "cross_year_recovered": 1,
+    "total_entries": 81,
+    "total_chf": 8502879,
+    "precise_classified_entries": 31,
+    "precise_classified_chf": 6513379,
+    "pct_chf_precisely_classified": 76.6,
+    "pct_chf_classified": 100.0,
+    "total_entries_classified": 81,
+    "total_chf_classified": 8502879,
+    "catchall_chf": 1989500,
+    "cross_year_recovered": 2,
     "sector": "Formation et recherche",
     "sector_slug": "formation",
-    "total_entries_sector": 64,
-    "total_chf_sector": 7012500,
-    "pct_entries_classified": 15.6
+    "total_entries_sector": 81,
+    "total_chf_sector": 8502879,
+    "pct_entries_classified": 100.0
   },
   "categories": [
     {
-      "name": "Autres",
-      "count": 54,
-      "total_chf": 4339500,
-      "mean_chf": 80361,
+      "name": "Recherche scientifique",
+      "count": 7,
+      "total_chf": 2267600,
+      "mean_chf": 323942,
       "cantons": {
         "VD": {
           "count": 2,
@@ -30,27 +34,11 @@
         },
         "FR": {
           "count": 1,
-          "total_chf": 170000
-        },
-        "VS": {
-          "count": 32,
-          "total_chf": 1335500
-        },
-        "NE": {
-          "count": 3,
-          "total_chf": 107000
+          "total_chf": 60000
         },
         "GE": {
-          "count": 9,
-          "total_chf": 280000
-        },
-        "JU": {
           "count": 4,
-          "total_chf": 117000
-        },
-        "SR": {
-          "count": 3,
-          "total_chf": 180000
+          "total_chf": 57600
         }
       },
       "samples": [
@@ -67,6 +55,98 @@
           "montant_CHF": 1050000
         },
         {
+          "nom": "Vitrocentre Romont",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Fond. CERN & Sté",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Chœur du CERN",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 10000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. ISREC",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1100000
+        },
+        {
+          "nom": "Fond. pour la recherche",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1050000
+        },
+        {
+          "nom": "Vitrocentre Romont",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Fond. CERN & Sté",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Chœur du CERN",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "École de rugby Cern Meyrin",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 9400
+        },
+        {
+          "nom": "École de rugby Cern Meyrin Saint",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 8200
+        }
+      ]
+    },
+    {
+      "name": "Soutien général à la formation / recherche",
+      "count": 50,
+      "total_chf": 1989500,
+      "mean_chf": 39790,
+      "cantons": {
+        "VS": {
+          "count": 32,
+          "total_chf": 1335500
+        },
+        "NE": {
+          "count": 3,
+          "total_chf": 107000
+        },
+        "GE": {
+          "count": 8,
+          "total_chf": 250000
+        },
+        "JU": {
+          "count": 4,
+          "total_chf": 117000
+        },
+        "SR": {
+          "count": 3,
+          "total_chf": 180000
+        }
+      },
+      "samples": [
+        {
           "nom": "Conseil de gestion",
           "ville": "Paroisse de Troistorrents",
           "canton": "VS",
@@ -79,30 +159,352 @@
           "montant_CHF": 210000
         },
         {
-          "nom": "Lire et écrire section Fribourg",
+          "nom": "Verein Musikdorf Ernen",
           "ville": null,
-          "canton": "FR",
-          "montant_CHF": 170000
+          "canton": "VS",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Faculté de traduction",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Centre CABI Biosciences",
+          "ville": "Delémont",
+          "canton": "SR",
+          "montant_CHF": 150000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Conseil de gestion",
+          "ville": "Paroisse de Troistorrents",
+          "canton": "VS",
+          "montant_CHF": 220000
+        },
+        {
+          "nom": "Assoc. Recherches d'Hannibal RAMHA, Liddes",
+          "ville": "Archéologiques Mur (dit)",
+          "canton": "VS",
+          "montant_CHF": 210000
+        },
+        {
+          "nom": "Verein Musikdorf Ernen",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Faculté de traduction",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Centre CABI Biosciences",
+          "ville": "Delémont",
+          "canton": "SR",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Bourgeoisie de Sion",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "BaselArea",
+          "ville": "Courroux",
+          "canton": "JU",
+          "montant_CHF": 77000
+        },
+        {
+          "nom": "Verein Alte Säge Turtmann",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 64500
+        },
+        {
+          "nom": "Verein Internationales",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Stiftung Pro Safrandorf Mund",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Académie de Meuron",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Conseil de gestion",
+          "ville": "Paroisse de Vissoie",
+          "canton": "VS",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. Monthey Patrimoine",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 47000
+        },
+        {
+          "nom": "Assoc. Valais-Wallis Time",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 47000
+        },
+        {
+          "nom": "Bourgeoisie de Savièse",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. des Amis du Lycée Blaise",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 32000
+        },
+        {
+          "nom": "Assoc. pour la sauvegarde du patois de Fully",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Fond. Moulin Semblanet",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Genossenschaft Alt-Reckingen",
+          "ville": "Goms",
+          "canton": "VS",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. École Suisse de Vitrail",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Stiftung Pro Raronia Historica",
+          "ville": "Raron",
+          "canton": "VS",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "MEETING FOR MINDS",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Ynternet.org",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Fond. Jules Thurmann",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Fond. Martial Ançay",
+          "ville": "Fully",
+          "canton": "VS",
+          "montant_CHF": 19000
+        },
+        {
+          "nom": "Verein Kultur Baltschieder",
+          "ville": "Visp",
+          "canton": "VS",
+          "montant_CHF": 18000
+        },
+        {
+          "nom": "Sté d'histoire du Valais romand",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 17500
+        },
+        {
+          "nom": "Assoc. Arava",
+          "ville": "Vissoie",
+          "canton": "VS",
+          "montant_CHF": 17000
+        },
+        {
+          "nom": "Assoc. Verein Naturnetz",
+          "ville": "Dietikon",
+          "canton": "NE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. GeGrave",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Ses Yeux Couleur Planète",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Groupe suisse de criminologie",
+          "ville": "Fribourg",
+          "canton": "SR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Sté Internationale de Sauvetage",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Verein Oberwalliser Tanzinstitut",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 11000
+        },
+        {
+          "nom": "Fond. Pro Octoduro",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 11000
+        },
+        {
+          "nom": "für Liedkunst, Brig Archives de l'État du Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Brauchtumswoche Fiesch",
+          "ville": "Tafers",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Alps Foundation",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Geneva International Model",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Sté Astronomique de Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Salon interjurassien",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Chancellerie d'Etat",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Fond. atelier de Marie Métrailler",
+          "ville": "Evolène",
+          "canton": "VS",
+          "montant_CHF": 9000
+        },
+        {
+          "nom": "Geschichtsforschender Verein",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Verein RHONEFESTIVAL",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 5500
+        },
+        {
+          "nom": "Verein Gommer",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 4500
+        },
+        {
+          "nom": "Assoc. Astrochablais",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Verein MusikValais",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Jodlerklub Safran Mund",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Verein RaBar Bühne",
+          "ville": "Zug",
+          "canton": "VS",
+          "montant_CHF": 1000
         }
       ]
     },
     {
       "name": "Université & hautes écoles",
-      "count": 4,
-      "total_chf": 1114000,
-      "mean_chf": 278500,
+      "count": 14,
+      "total_chf": 1964646,
+      "mean_chf": 140331,
       "cantons": {
         "VD": {
-          "count": 1,
-          "total_chf": 1000000
+          "count": 5,
+          "total_chf": 1675400
         },
         "FR": {
-          "count": 1,
-          "total_chf": 21000
+          "count": 4,
+          "total_chf": 133746
         },
         "VS": {
-          "count": 2,
-          "total_chf": 93000
+          "count": 3,
+          "total_chf": 113000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 20000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 22500
         }
       },
       "samples": [
@@ -113,16 +515,108 @@
           "montant_CHF": 1000000
         },
         {
+          "nom": "Université de Lausanne",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 495400
+        },
+        {
+          "nom": "Université de Lausanne",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Université de Fribourg",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 91607
+        },
+        {
+          "nom": "Fond. de l'Institut de Recherche",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 87000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. EPFL Plus",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Université de Lausanne",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 495400
+        },
+        {
+          "nom": "Université de Lausanne",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Université de Fribourg",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 91607
+        },
+        {
           "nom": "Fond. de l'Institut de Recherche",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 87000
         },
         {
+          "nom": "EPFL Rocket Team",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Service des Sports UNIL-EPFL",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Université de Berne",
+          "ville": "Vers des soins médicaux intégrés",
+          "canton": "JU",
+          "montant_CHF": 22500
+        },
+        {
           "nom": "Université populaire du canton de Fribourg",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 21000
+        },
+        {
+          "nom": "Fond. EPFL Plus",
+          "ville": "Lausanne",
+          "canton": "VS",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Chœur de l'Université de Neuchâtel",
+          "ville": "Fontaines",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Université de Fribourg",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 13139
+        },
+        {
+          "nom": "Chœur de Chambre",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 8000
         },
         {
           "nom": "Verein Kulturbärg, Naters",
@@ -150,6 +644,114 @@
           "canton": "GE",
           "montant_CHF": 800000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Cité des Métiers",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 800000
+        }
+      ]
+    },
+    {
+      "name": "Apprentissage & formation continue",
+      "count": 7,
+      "total_chf": 770133,
+      "mean_chf": 110019,
+      "cantons": {
+        "FR": {
+          "count": 2,
+          "total_chf": 171000
+        },
+        "VS": {
+          "count": 3,
+          "total_chf": 565633
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 30000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 3500
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. du Conservatoire",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 518633
+        },
+        {
+          "nom": "Lire et écrire section Fribourg",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 170000
+        },
+        {
+          "nom": "Bildungshaus St. Jodern",
+          "ville": "Visp",
+          "canton": "VS",
+          "montant_CHF": 44000
+        },
+        {
+          "nom": "Assoc. Lire et Écrire",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "École jurassienne et conservatoire",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 3500
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. du Conservatoire",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 518633
+        },
+        {
+          "nom": "Lire et écrire section Fribourg",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 170000
+        },
+        {
+          "nom": "Bildungshaus St. Jodern",
+          "ville": "Visp",
+          "canton": "VS",
+          "montant_CHF": 44000
+        },
+        {
+          "nom": "Assoc. Lire et Écrire",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "École jurassienne et conservatoire",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "von Artichoc und Oberwalliser Volkshochschule Oberwallis",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Seeländische Volkshochschule",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1000
+        }
       ]
     },
     {
@@ -176,41 +778,19 @@
           "canton": "VS",
           "montant_CHF": 30000
         }
-      ]
-    },
-    {
-      "name": "Apprentissage & formation continue",
-      "count": 3,
-      "total_chf": 48000,
-      "mean_chf": 16000,
-      "cantons": {
-        "FR": {
-          "count": 1,
-          "total_chf": 1000
-        },
-        "VS": {
-          "count": 2,
-          "total_chf": 47000
-        }
-      },
-      "samples": [
+      ],
+      "all_entries": [
         {
-          "nom": "Bildungshaus St. Jodern",
-          "ville": "Visp",
-          "canton": "VS",
-          "montant_CHF": 44000
-        },
-        {
-          "nom": "von Artichoc und Oberwalliser Volkshochschule Oberwallis",
+          "nom": "Saison artistique",
           "ville": null,
           "canton": "VS",
-          "montant_CHF": 3000
+          "montant_CHF": 681000
         },
         {
-          "nom": "Seeländische Volkshochschule",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1000
+          "nom": "Saison artistique et résidence Fond. IPT",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 30000
         }
       ]
     }

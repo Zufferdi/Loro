@@ -3,98 +3,34 @@
     "classif": "formation",
     "year": "2023",
     "source": "brb2023_full.json",
-    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 48,
-    "total_chf": 8164413,
-    "total_entries_classified": 20,
-    "total_chf_classified": 2049700,
-    "pct_chf_classified": 25.1,
-    "cross_year_recovered": 1,
+    "total_entries": 67,
+    "total_chf": 10093235,
+    "precise_classified_entries": 44,
+    "precise_classified_chf": 8998522,
+    "pct_chf_precisely_classified": 89.2,
+    "pct_chf_classified": 100.0,
+    "total_entries_classified": 67,
+    "total_chf_classified": 10093235,
+    "catchall_chf": 1094713,
+    "cross_year_recovered": 2,
     "sector": "Formation et recherche",
     "sector_slug": "formation",
-    "total_entries_sector": 48,
-    "total_chf_sector": 8164413,
-    "pct_entries_classified": 41.7
+    "total_entries_sector": 67,
+    "total_chf_sector": 10093235,
+    "pct_entries_classified": 100.0
   },
   "categories": [
     {
-      "name": "Autres",
-      "count": 28,
-      "total_chf": 6114713,
-      "mean_chf": 218382,
-      "cantons": {
-        "VD": {
-          "count": 2,
-          "total_chf": 650000
-        },
-        "FR": {
-          "count": 3,
-          "total_chf": 224833
-        },
-        "JU": {
-          "count": 5,
-          "total_chf": 176680
-        },
-        "VS": {
-          "count": 5,
-          "total_chf": 1535000
-        },
-        "SR": {
-          "count": 4,
-          "total_chf": 150000
-        },
-        "NE": {
-          "count": 3,
-          "total_chf": 93000
-        },
-        "GE": {
-          "count": 6,
-          "total_chf": 3285200
-        }
-      },
-      "samples": [
-        {
-          "nom": "Fond. CERN & Société",
-          "ville": "Meyrin",
-          "canton": "GE",
-          "montant_CHF": 3000000
-        },
-        {
-          "nom": "Stiftung Fernfachhochschule Schweiz, Brig (FFH-CH)",
-          "ville": "Brig-Glis",
-          "canton": "VS",
-          "montant_CHF": 1200000
-        },
-        {
-          "nom": "Fond. pour la recherche en biologie et médecine",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 600000
-        },
-        {
-          "nom": "Assoc. École Suisse de Vitrail & Création",
-          "ville": "Monthey",
-          "canton": "VS",
-          "montant_CHF": 200000
-        },
-        {
-          "nom": "Centre Ornithologique de Réadaptation (COR)",
-          "ville": "Genthod",
-          "canton": "GE",
-          "montant_CHF": 200000
-        }
-      ]
-    },
-    {
       "name": "Recherche scientifique",
-      "count": 5,
-      "total_chf": 545000,
-      "mean_chf": 109000,
+      "count": 9,
+      "total_chf": 4205000,
+      "mean_chf": 467222,
       "cantons": {
         "VD": {
-          "count": 1,
-          "total_chf": 400000
+          "count": 3,
+          "total_chf": 1050000
         },
         "FR": {
           "count": 1,
@@ -107,9 +43,57 @@
         "SR": {
           "count": 2,
           "total_chf": 80000
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 3010000
         }
       },
       "samples": [
+        {
+          "nom": "Fond. CERN & Société",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 3000000
+        },
+        {
+          "nom": "Fond. pour la recherche en biologie et médecine",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 600000
+        },
+        {
+          "nom": "Fond. Pathologie 2000",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Vitrocentre Romont",
+          "ville": "Romont",
+          "canton": "FR",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Space Exploration Institute",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 60000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. CERN & Société",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 3000000
+        },
+        {
+          "nom": "Fond. pour la recherche en biologie et médecine",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 600000
+        },
         {
           "nom": "Fond. Pathologie 2000",
           "ville": "Lausanne",
@@ -129,10 +113,22 @@
           "montant_CHF": 60000
         },
         {
+          "nom": "Fond. pour la Recherche en faveur des Personnes Handicapées FRH",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 50000
+        },
+        {
           "nom": "Fond. pour l'innovation et la diversité dans l'information",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 20000
+        },
+        {
+          "nom": "Chœur du CERN",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 10000
         },
         {
           "nom": "Fond. de l'Observatoire François-Xavier Bagnoud",
@@ -144,21 +140,29 @@
     },
     {
       "name": "Université & hautes écoles",
-      "count": 6,
-      "total_chf": 533000,
-      "mean_chf": 88833,
+      "count": 20,
+      "total_chf": 3002692,
+      "mean_chf": 150134,
       "cantons": {
+        "VD": {
+          "count": 10,
+          "total_chf": 1334192
+        },
+        "FR": {
+          "count": 3,
+          "total_chf": 20500
+        },
         "SR": {
           "count": 2,
           "total_chf": 102000
         },
         "VS": {
-          "count": 1,
-          "total_chf": 285000
+          "count": 2,
+          "total_chf": 1485000
         },
-        "VD": {
+        "NE": {
           "count": 1,
-          "total_chf": 100000
+          "total_chf": 15000
         },
         "JU": {
           "count": 2,
@@ -167,10 +171,84 @@
       },
       "samples": [
         {
+          "nom": "Stiftung Fernfachhochschule Schweiz, Brig (FFH-CH)",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 1200000
+        },
+        {
+          "nom": "Institut universitaire de sciences sociales des religions, Conseil œcuménique d’aumônerie en EMS (CADEMS) et Haute École de Santé Vaud (HESAV)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 350000
+        },
+        {
           "nom": "Fond. de l'Institut de Recherche Idiap",
           "ville": "Martigny",
           "canton": "VS",
           "montant_CHF": 285000
+        },
+        {
+          "nom": "Haute École de travail social et de la santé Lausanne (HETSL)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Université de Lausanne",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 190000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Stiftung Fernfachhochschule Schweiz, Brig (FFH-CH)",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 1200000
+        },
+        {
+          "nom": "Institut universitaire de sciences sociales des religions, Conseil œcuménique d’aumônerie en EMS (CADEMS) et Haute École de Santé Vaud (HESAV)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "Fond. de l'Institut de Recherche Idiap",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 285000
+        },
+        {
+          "nom": "Haute École de travail social et de la santé Lausanne (HETSL)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Université de Lausanne",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 190000
+        },
+        {
+          "nom": "Haute École de Santé Vaud (HESAV)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 142818
+        },
+        {
+          "nom": "Haute École d'Ingénierie et de Gestion du Canton de Vaud (HEIG-VD)",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 135700
+        },
+        {
+          "nom": "Fond. EPFL Plus",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 120000
         },
         {
           "nom": "Section de Biologie, UNIGE",
@@ -185,16 +263,384 @@
           "montant_CHF": 92000
         },
         {
+          "nom": "Haute École de travail social et de la santé Lausanne (HETSL)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 60674
+        },
+        {
           "nom": "Université de Bâle",
           "ville": "Bâle",
           "canton": "JU",
           "montant_CHF": 27000
         },
         {
+          "nom": "Service des Sports UNIL-EPFL",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 25000
+        },
+        {
           "nom": "Université populaire jurassienne - Secrétariat central (UPJ)",
           "ville": "Moutier",
           "canton": "JU",
           "montant_CHF": 19000
+        },
+        {
+          "nom": "Chœur de l'Université de Neuchâtel",
+          "ville": "Fontaines",
+          "canton": "NE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Chœur de Chambre de l'Université de Fribourg (CCUF)",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 12500
+        },
+        {
+          "nom": "Chœur de l'Université de Lausanne et de l'EPFL",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Université populaire du canton de",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Orchestre de la Ville et de l'Université de Fribourg",
+          "ville": "Givisiez",
+          "canton": "FR",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Musée romain de Vallon 20'000.- Université de Fribourg",
+          "ville": "Vallon",
+          "canton": "FR",
+          "montant_CHF": 4000
+        }
+      ]
+    },
+    {
+      "name": "Soutien général à la formation / recherche",
+      "count": 23,
+      "total_chf": 1094713,
+      "mean_chf": 47596,
+      "cantons": {
+        "FR": {
+          "count": 2,
+          "total_chf": 54833
+        },
+        "JU": {
+          "count": 5,
+          "total_chf": 176680
+        },
+        "VS": {
+          "count": 4,
+          "total_chf": 335000
+        },
+        "SR": {
+          "count": 4,
+          "total_chf": 150000
+        },
+        "NE": {
+          "count": 3,
+          "total_chf": 93000
+        },
+        "GE": {
+          "count": 5,
+          "total_chf": 285200
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. École Suisse de Vitrail & Création",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Centre Ornithologique de Réadaptation (COR)",
+          "ville": "Genthod",
+          "canton": "GE",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Fond. Jules Thurmann",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 129000
+        },
+        {
+          "nom": "Fond. des sources du droit",
+          "ville": "Saint-Gall",
+          "canton": "SR",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Fond. Senso5",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 60000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. École Suisse de Vitrail & Création",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Centre Ornithologique de Réadaptation (COR)",
+          "ville": "Genthod",
+          "canton": "GE",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Fond. Jules Thurmann",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 129000
+        },
+        {
+          "nom": "Fond. des sources du droit",
+          "ville": "Saint-Gall",
+          "canton": "SR",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Fond. Senso5",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Académie de Meuron",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 55000
+        },
+        {
+          "nom": "Pôle invertébrés du bassin genevois",
+          "ville": "Corsier",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Interface",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 44833
+        },
+        {
+          "nom": "Groupement d'Intervention Médicale en Montagne (GRIMM)",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Fond. pour une École de théâtre",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Sozialinfo.ch",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 31300
+        },
+        {
+          "nom": "Assoc. Jobtrotter",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "BaselArea",
+          "ville": "Allschwil",
+          "canton": "SR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Parc naturel régional Gruyère Pays-d'Enhaut",
+          "ville": "Château d'Œx",
+          "canton": "SR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Sté Astronomique de Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 16000
+        },
+        {
+          "nom": "Assoc. Ses Yeux Couleur Planète",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Gruyère Space Program",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Centre Régional d'Études des Populations Alpines - CREPA",
+          "ville": "Sembrancher",
+          "canton": "SR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. solidarité Jura-Corse",
+          "ville": "Epiquerez",
+          "canton": "JU",
+          "montant_CHF": 9600
+        },
+        {
+          "nom": "Assoc. ATIC",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Centre de santé sexuelle - planning familial Jura",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 5780
+        },
+        {
+          "nom": "Assoc. romande d'autodéfense et de prévention des agressions - ARAPA",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 4200
+        },
+        {
+          "nom": "Douma Mathys",
+          "ville": "Courroux",
+          "canton": "JU",
+          "montant_CHF": 1000
+        }
+      ]
+    },
+    {
+      "name": "Apprentissage & formation continue",
+      "count": 9,
+      "total_chf": 875130,
+      "mean_chf": 97236,
+      "cantons": {
+        "VD": {
+          "count": 2,
+          "total_chf": 95000
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 170000
+        },
+        "SR": {
+          "count": 2,
+          "total_chf": 41000
+        },
+        "VS": {
+          "count": 3,
+          "total_chf": 507130
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 62000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. du Conservatoire cantonal de musique",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 452130
+        },
+        {
+          "nom": "Lire et écrire section Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 170000
+        },
+        {
+          "nom": "Conservatoire de Musique et École de Jazz Montreux- Vevey-Riviera",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "École jurassienne et conservatoire de musique (EJCM)",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 62000
+        },
+        {
+          "nom": "Bildungshaus St. Jodern",
+          "ville": "Visp",
+          "canton": "VS",
+          "montant_CHF": 50000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. du Conservatoire cantonal de musique",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 452130
+        },
+        {
+          "nom": "Lire et écrire section Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 170000
+        },
+        {
+          "nom": "Conservatoire de Musique et École de Jazz Montreux- Vevey-Riviera",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "École jurassienne et conservatoire de musique (EJCM)",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 62000
+        },
+        {
+          "nom": "Bildungshaus St. Jodern",
+          "ville": "Visp",
+          "canton": "VS",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Conservatoire de musique de",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Conservatoire de Musique de Terre Sainte et environs",
+          "ville": "Mies",
+          "canton": "VD",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Volkshochschule Oberwallis",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Seeländische Volkshochschule Kerzers",
+          "ville": "Ulmiz",
+          "canton": "SR",
+          "montant_CHF": 1000
         }
       ]
     },
@@ -214,6 +660,20 @@
         }
       },
       "samples": [
+        {
+          "nom": "Assoc. Salon des Métiers",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 210700
+        },
+        {
+          "nom": "Capa'cité - Cité des métiers",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 200000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Assoc. Salon des Métiers",
           "ville": "Martigny",
@@ -246,41 +706,13 @@
           "canton": "VD",
           "montant_CHF": 400000
         }
-      ]
-    },
-    {
-      "name": "Apprentissage & formation continue",
-      "count": 3,
-      "total_chf": 56000,
-      "mean_chf": 18666,
-      "cantons": {
-        "SR": {
-          "count": 1,
-          "total_chf": 1000
-        },
-        "VS": {
-          "count": 2,
-          "total_chf": 55000
-        }
-      },
-      "samples": [
+      ],
+      "all_entries": [
         {
-          "nom": "Bildungshaus St. Jodern",
-          "ville": "Visp",
-          "canton": "VS",
-          "montant_CHF": 50000
-        },
-        {
-          "nom": "Volkshochschule Oberwallis",
-          "ville": "Brig-Glis",
-          "canton": "VS",
-          "montant_CHF": 5000
-        },
-        {
-          "nom": "Seeländische Volkshochschule Kerzers",
-          "ville": "Ulmiz",
-          "canton": "SR",
-          "montant_CHF": 1000
+          "nom": "Fond. Solidar Immun",
+          "ville": "Épalinges",
+          "canton": "VD",
+          "montant_CHF": 400000
         }
       ]
     },
@@ -312,6 +744,20 @@
           "canton": "FR",
           "montant_CHF": 15000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Onl'fait",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. Romande des Artisans Boulangers-Pâtissiers- Confiseurs",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 15000
+        }
       ]
     },
     {
@@ -326,6 +772,14 @@
         }
       },
       "samples": [
+        {
+          "nom": "Fond. IPT",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 50000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Fond. IPT",
           "ville": "Sion",

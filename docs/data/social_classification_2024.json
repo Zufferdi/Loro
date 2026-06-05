@@ -3,97 +3,33 @@
     "classif": "social",
     "year": "2024",
     "source": "brb2024_full.json",
-    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 365,
-    "total_chf": 21774425,
-    "total_entries_classified": 77,
-    "total_chf_classified": 11010850,
-    "pct_chf_classified": 50.6,
-    "cross_year_recovered": 30
+    "total_entries": 375,
+    "total_chf": 33501925,
+    "precise_classified_entries": 97,
+    "precise_classified_chf": 25357350,
+    "pct_chf_precisely_classified": 75.7,
+    "pct_chf_classified": 100.0,
+    "total_entries_classified": 375,
+    "total_chf_classified": 33501925,
+    "catchall_chf": 8144575,
+    "cross_year_recovered": 44
   },
   "categories": [
     {
-      "name": "Autres",
-      "count": 288,
-      "total_chf": 10763575,
-      "mean_chf": 37373,
-      "cantons": {
-        "VD": {
-          "count": 69,
-          "total_chf": 3666300
-        },
-        "SR": {
-          "count": 26,
-          "total_chf": 561400
-        },
-        "FR": {
-          "count": 41,
-          "total_chf": 1826175
-        },
-        "JU": {
-          "count": 55,
-          "total_chf": 1168050
-        },
-        "NE": {
-          "count": 53,
-          "total_chf": 1217700
-        },
-        "GE": {
-          "count": 19,
-          "total_chf": 1864300
-        },
-        "VS": {
-          "count": 25,
-          "total_chf": 459650
-        }
-      },
-      "samples": [
-        {
-          "nom": "Fond. officielle de la jeunesse",
-          "ville": "Petit-Lancy",
-          "canton": "GE",
-          "montant_CHF": 1100000
-        },
-        {
-          "nom": "Fond. Yverdonnoise pour l'Accueil de l'Enfance (FYAE)",
-          "ville": "Yverdon-les-Bains",
-          "canton": "VD",
-          "montant_CHF": 513000
-        },
-        {
-          "nom": "Assoc. REPER",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 405000
-        },
-        {
-          "nom": "Fond. de l'Enfance et de la Jeunesse",
-          "ville": "Pully",
-          "canton": "VD",
-          "montant_CHF": 360000
-        },
-        {
-          "nom": "Assoc. Argos",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 340000
-        }
-      ]
-    },
-    {
       "name": "Précarité / Pauvreté",
-      "count": 26,
-      "total_chf": 8166000,
-      "mean_chf": 314076,
+      "count": 32,
+      "total_chf": 13361500,
+      "mean_chf": 417546,
       "cantons": {
         "VD": {
-          "count": 8,
-          "total_chf": 1434000
+          "count": 11,
+          "total_chf": 2020500
         },
         "FR": {
-          "count": 7,
-          "total_chf": 1825000
+          "count": 9,
+          "total_chf": 2434000
         },
         "VS": {
           "count": 2,
@@ -104,8 +40,8 @@
           "total_chf": 35000
         },
         "GE": {
-          "count": 5,
-          "total_chf": 4760000
+          "count": 6,
+          "total_chf": 8760000
         },
         "JU": {
           "count": 2,
@@ -116,6 +52,44 @@
         {
           "nom": "Communauté des Chiffonniers d'Emmaüs Genève",
           "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 4000000
+        },
+        {
+          "nom": "Fond. Immobilière Privée pour l'Insertion Sociale",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 4000000
+        },
+        {
+          "nom": "Centre Social Protestant - CSP",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 600000
+        },
+        {
+          "nom": "Assoc. La Tuile",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 540000
+        },
+        {
+          "nom": "Caritas Vaud",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 495000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Communauté des Chiffonniers d'Emmaüs Genève",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 4000000
+        },
+        {
+          "nom": "Fond. Immobilière Privée pour l'Insertion Sociale",
+          "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 4000000
         },
@@ -142,26 +116,1460 @@
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 490000
+        },
+        {
+          "nom": "Assoc. Caritas Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 450000
+        },
+        {
+          "nom": "Fond. pour un Accueil à Bas Seuil (ABS)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "Fond. ATD Quart Monde Suisse, Treyvaux Les Chantiers découverte et reconstruction du Secrétariat national",
+          "ville": "Treyvaux",
+          "canton": "FR",
+          "montant_CHF": 309000
+        },
+        {
+          "nom": "ATD-Quart Monde Suisse",
+          "ville": "Treyvaux",
+          "canton": "FR",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Caritas Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 245000
+        },
+        {
+          "nom": "Fond. Entraide Protestante Suisse (EPER)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 210000
+        },
+        {
+          "nom": "Coopérative Cité Derrière",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Fond. Colis du Cœur, Carouge Dispositif d'aide alimentaire pour les personnes et familles",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Assoc. fribourgeoise SOS futures mamans",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 190000
+        },
+        {
+          "nom": "Caritas Suisse",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 165000
+        },
+        {
+          "nom": "Caritas Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 125000
+        },
+        {
+          "nom": "Caritas Suisse",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Assoc. Banque Alimentaire Fribourgeoise",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Caritas Jura",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Centre Social Protestant - CSP",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 48000
+        },
+        {
+          "nom": "Assoc. la Soliderie",
+          "ville": "Nyon",
+          "canton": "VD",
+          "montant_CHF": 46000
+        },
+        {
+          "nom": "OSEO VAUD (SEMO RIVIERA)",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 36500
+        },
+        {
+          "nom": "Assoc. Café Cornavin, Carouge Grande précarité, aide alimentaire, vestimentaire, Carouge",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. d'Emmaüs Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 29000
+        },
+        {
+          "nom": "Assoc. des Colis du Cœur de Monthey",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "EPER - Entraide Protestante Suisse",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Communauté d'Emmaüs",
+          "ville": "Etagnières",
+          "canton": "VD",
+          "montant_CHF": 16000
+        },
+        {
+          "nom": "Les Concerts du Cœur -",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Samedi du partage Vaud",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Accueil Psy et social Précarité et Exclusion (APPE)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Caritas Suisse",
+          "ville": "Lucerne",
+          "canton": "JU",
+          "montant_CHF": 3000
+        }
+      ]
+    },
+    {
+      "name": "Soutien général à l'action sociale",
+      "count": 278,
+      "total_chf": 8144575,
+      "mean_chf": 29297,
+      "cantons": {
+        "VD": {
+          "count": 68,
+          "total_chf": 3223300
+        },
+        "SR": {
+          "count": 24,
+          "total_chf": 475400
+        },
+        "FR": {
+          "count": 38,
+          "total_chf": 1315175
+        },
+        "JU": {
+          "count": 54,
+          "total_chf": 1159050
+        },
+        "NE": {
+          "count": 52,
+          "total_chf": 1087700
+        },
+        "GE": {
+          "count": 17,
+          "total_chf": 424300
+        },
+        "VS": {
+          "count": 25,
+          "total_chf": 459650
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. Morija",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 250000
+        },
+        {
+          "nom": "Assoc. des Amis du théâtre du Passage",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 250000
+        },
+        {
+          "nom": "Espacefemmes-frauenraum",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 220000
+        },
+        {
+          "nom": "Assoc. CAN Centre d'art Neuchâtel",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 210000
+        },
+        {
+          "nom": "famiya",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 203100
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Morija",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 250000
+        },
+        {
+          "nom": "Assoc. des Amis du théâtre du Passage",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 250000
+        },
+        {
+          "nom": "Espacefemmes-frauenraum",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 220000
+        },
+        {
+          "nom": "Assoc. CAN Centre d'art Neuchâtel",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 210000
+        },
+        {
+          "nom": "famiya",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 203100
+        },
+        {
+          "nom": "Centre de Contact Suisses-Immigrés (CCSI) Fribourg",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 190000
+        },
+        {
+          "nom": "Assoc. Cirque Toamême",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 190000
+        },
+        {
+          "nom": "Conservatoire de Fribourg",
+          "ville": "Granges-Paccot",
+          "canton": "FR",
+          "montant_CHF": 187523
+        },
+        {
+          "nom": "FASL Fond. pour l'animation socioculturelle lausannoise",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 180000
+        },
+        {
+          "nom": "Fond. ESP'ASSE",
+          "ville": "Nyon",
+          "canton": "VD",
+          "montant_CHF": 165000
+        },
+        {
+          "nom": "Assoc. Mobilet'",
+          "ville": "Renens",
+          "canton": "VD",
+          "montant_CHF": 164000
+        },
+        {
+          "nom": "Assoc. Lire et Écrire",
+          "ville": "Dompierre (FR)",
+          "canton": "SR",
+          "montant_CHF": 160000
+        },
+        {
+          "nom": "Le Repuis Centre de Formation professionnelle spécialisée",
+          "ville": "Grandson",
+          "canton": "VD",
+          "montant_CHF": 154000
+        },
+        {
+          "nom": "Crescendo",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Ligue pulmonaire fribourgeoise",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 140000
+        },
+        {
+          "nom": "Fond. Bartimée",
+          "ville": "Grandson",
+          "canton": "VD",
+          "montant_CHF": 136000
+        },
+        {
+          "nom": "Assoc. Fleur de Pavé",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 130000
+        },
+        {
+          "nom": "Assoc. Alt. + 1000 - festival de photographie",
+          "ville": "Le Locle",
+          "canton": "NE",
+          "montant_CHF": 130000
+        },
+        {
+          "nom": "Assoc. Beaulieu Résidences",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 122000
+        },
+        {
+          "nom": "Espace 44 Animation des Bergières",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 110000
+        },
+        {
+          "nom": "Assoc. Atelier de Berlin",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Fond. Nez Rouge",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Fond. St-Germain",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "CCDP - Centre Culturel du District de Porrentruy Programmation 2024-2025",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "ESPRI Entreprises sociales pour l'insertion",
+          "ville": "Aigle",
+          "canton": "VD",
+          "montant_CHF": 88000
+        },
+        {
+          "nom": "Assoc. Médecins du Monde Suisse",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 85000
+        },
+        {
+          "nom": "ADESSIA",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Assoc. Actifs",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "CCRD - Centre culturel régional Delémont",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "OSAR - Organisation Suisse d'Aide aux Réfugiés",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Reso - Réseau Danse Suisse",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Espace Dickens",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 75000
+        },
+        {
+          "nom": "Assoc. Lire et Écrire - Jura, Delémont Sensibilisation aux compétences",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 75000
+        },
+        {
+          "nom": "La Bataille des Livres",
+          "ville": "Tatroz e",
+          "canton": "SR",
+          "montant_CHF": 75000
+        },
+        {
+          "nom": "Fond. Solidarité Logement pour les étudiants (FSLE)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Assoc. du Foyer St-Joseph",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Assoc. lausannoise pour les soins et le maintien à domicile (ALSMAD)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Vacances Nouvelles",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. Cap sur le Monde",
+          "ville": "Morges",
+          "canton": "VD",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Alters- und Pflegeheim Englischgruss",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 57000
+        },
+        {
+          "nom": "Fond. Hirondelle",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. Art-en-Ciel",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. des Centres de vie enfantine La Ruche",
+          "ville": "Gland",
+          "canton": "VD",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. Les Chambristes - ensemble instrumental",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "ESPAS-Espace de soutien et de prévention-abus sexuels",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. VaudFamille.ch",
+          "ville": "Cugy",
+          "canton": "FR",
+          "montant_CHF": 48000
+        },
+        {
+          "nom": "Fond. Balcons du Lac",
+          "ville": "Montreux",
+          "canton": "VD",
+          "montant_CHF": 46000
+        },
+        {
+          "nom": "L'ARC, une autre école",
+          "ville": "Thônex",
+          "canton": "GE",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "IRAS-COTIS",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "Féd. vaudoise de coopération (FEDEVACO)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Interprofession des fruits et légumes du Valais",
+          "ville": "Conthey",
+          "canton": "VS",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. des amis du Forum tous différents tous égaux",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. Culturoscope et Cie",
+          "ville": "Tavannes",
+          "canton": "JU",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. Violence que Faire",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Pink Cross",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Pro Familia Suisse",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. des Amis du Griffon",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 38200
+        },
+        {
+          "nom": "CJC-SAS - Centre de la Jeunesse et de la Culture",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 38000
+        },
+        {
+          "nom": "BH Orchestra",
+          "ville": "Courrendlin",
+          "canton": "JU",
+          "montant_CHF": 36000
+        },
+        {
+          "nom": "Assoc. pour des projets Multiculturels et Interculturels (AMIS)",
+          "ville": "Aigle",
+          "canton": "VD",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "BAT - Bourse à Travail",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Espace culturel du Café du Soleil",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Assoc. La Nef",
+          "ville": "St-Ursanne",
+          "canton": "JU",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Revue Musicale de Suisse romande",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Assoc. Appartenances Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 33000
+        },
+        {
+          "nom": "Fond. Claire Magnin",
+          "ville": "Clarens",
+          "canton": "VD",
+          "montant_CHF": 32000
+        },
+        {
+          "nom": "Assoc. L'Astrid Paratte",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 32000
+        },
+        {
+          "nom": "Assoc. des Paysannes Vaudoises (APV)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Fond. Centre Sport-Études Lausanne",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Point d'Ancrage",
+          "ville": "Granges-Paccot",
+          "canton": "FR",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Fond. IdéeSport",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Cora Centre œc. de rencontre et d'animation",
+          "ville": "Fleurier",
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. 1001 Harmonies",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Cie Rue Serendip",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. La Marmite",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Danse Transition",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "LOS - Organisation Suisse des Lesbiennes",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Sté suisse d'histoire économique et sociale (SSHES)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "SPS - Service de Presse Suisse",
+          "ville": "Zurich",
+          "canton": "JU",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Entraide Familiale de Villeneuve et de la Plaine du Rhône",
+          "ville": "Villeneuve",
+          "canton": "VD",
+          "montant_CHF": 28000
+        },
+        {
+          "nom": "Assoc. Asnova",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 27000
+        },
+        {
+          "nom": "La Coccinelle Jardins d'enfants intégratif",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "noetic, Fribourg noetic Academy : pour une pratique",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Lire et Écrire",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Comiqu'Opéra",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Table Couvre-toi",
+          "ville": "Winterthour",
+          "canton": "SR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. de quartier de Prélaz-Valency",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 21600
+        },
+        {
+          "nom": "Embellimesure",
+          "ville": "L'Auberson",
+          "canton": "VD",
+          "montant_CHF": 21000
+        },
+        {
+          "nom": "Assoc. pour la Maison du Récit",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Découvrir, antenne de Lausanne",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Asnova",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. EKIR - restaurant social",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Groove",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Les Murs du son",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Barocc'opéra",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Camerata Ataremac",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Groupe de liaison genevois des Assoc. de jeunesse - GLAJ, Genève Nouvelle identité visuelle",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. ProCore",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Verein Sport & Vielfalt, Basel Traduction du livre et podcast Le droit de jouer au foot. L'histoire, Basel",
+          "ville": "Basel",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Entraide Familiale de Renens et Environs (EFRE)",
+          "ville": "Renens",
+          "canton": "VD",
+          "montant_CHF": 19000
+        },
+        {
+          "nom": "Les Trolls en Tablier Bleu",
+          "ville": "Ste-Croix",
+          "canton": "VD",
+          "montant_CHF": 19000
+        },
+        {
+          "nom": "Le Bois Husson, Porrentruy Aménagement des nouveaux locaux",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 18500
+        },
+        {
+          "nom": "Ensemble de Cuivres Jurassien",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 18000
+        },
+        {
+          "nom": "Assoc. Papy Chou et Mamie Mone",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 18000
+        },
+        {
+          "nom": "Assoc. Les amis de La Chenille",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 17300
+        },
+        {
+          "nom": "Assoc. Casa Moonrise",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 16300
+        },
+        {
+          "nom": "CAP Conseil et Accompagnement professionnel",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 16000
+        },
+        {
+          "nom": "Cirque-en-Ciel",
+          "ville": "Prez-vers-Noréaz",
+          "canton": "FR",
+          "montant_CHF": 16000
+        },
+        {
+          "nom": "APH Ringacker",
+          "ville": "Leuk",
+          "canton": "VS",
+          "montant_CHF": 16000
+        },
+        {
+          "nom": "Assoc. L'ôdieuse compagnie",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Alma",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Fête Multiculturelle de Vevey",
+          "ville": "Fête",
+          "canton": "VS",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. L'île aux trésors",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Rassemblement des Jeunesses Valaisannes 2024",
+          "ville": "Orsières",
+          "canton": "VS",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Fête de la Danse - canton de Neuchâtel",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Blizzard Audio Club",
+          "ville": "Le Locle",
+          "canton": "NE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Collectif Ü",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Journées Littéraires de Soleure",
+          "ville": "Soleure e",
+          "canton": "SR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "AVIVO Section de Lausanne",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 14000
+        },
+        {
+          "nom": "Assoc. ESPAS",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 14000
+        },
+        {
+          "nom": "Assoc. de l’Indispensable",
+          "ville": "Nyon",
+          "canton": "VD",
+          "montant_CHF": 14000
+        },
+        {
+          "nom": "Assoc. Ludimania'K",
+          "ville": "Estavayer-le-Lac",
+          "canton": "FR",
+          "montant_CHF": 13000
+        },
+        {
+          "nom": "École de Cirque Fun'en'Bulle",
+          "ville": "Marsens",
+          "canton": "FR",
+          "montant_CHF": 13000
+        },
+        {
+          "nom": "Altersheim St. Barbara Lötschental",
+          "ville": "Kippel",
+          "canton": "VS",
+          "montant_CHF": 13000
+        },
+        {
+          "nom": "Assoc. Y-FabLab",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 12700
+        },
+        {
+          "nom": "Assoc. maxi beaux arts",
+          "ville": "Marly",
+          "canton": "FR",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Assoc. des sociétés locales - La Sagne",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Assoc. Culture Nomade",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Fond. Agnodice",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 11900
+        },
+        {
+          "nom": "Alterswohnung Sunnuschii",
+          "ville": "Guttet-Feschel",
+          "canton": "VS",
+          "montant_CHF": 11000
+        },
+        {
+          "nom": "Assoc. Le Relais",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 11000
+        },
+        {
+          "nom": "Fond. des structures d'accueil de l'enfance de La Tour-de-Peilz",
+          "ville": "La Tour-de-Peilz",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Fond. du Centre de ressources en éducation de l'enfance (CREDE)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "I Work U play",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "TRAMES",
+          "ville": "Prilly",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Espace-Temps",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Frisbee",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Stop-Violence",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Accueil Hôtel-Dieu",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Triegel-Zunft / Jugendverein",
+          "ville": "Visperterminen",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Verein Singschule Oberwallis",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Elan",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. La Roulotte du Corbusier",
+          "ville": "Le Locle",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Machine à Fumée",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. des Amis de la Bibliothèque de la Ville",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. EDEN",
+          "ville": "Gorgier",
+          "canton": "SR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Festival 12",
+          "ville": "Fleurier",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Flexfab",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Au Bord Du Jazz",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Cargo 15",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Con Fuoco",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Action Solidaire pour l'Éducation et le Développement ASED",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Fond. Maison de la Créativité, Conches Demande de soutien financier",
+          "ville": "Conches",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Mathscope (SwissMAP - UNIGE)",
+          "ville": "Journée grand public",
+          "canton": "SR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Effe Espace de formations",
+          "ville": "Bienne",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Fond. Les Castors, Porrentruy Aménagement et équipement",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Compagnie La Dalle",
+          "ville": "Bienne",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Espace Choral",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. La Balade de Séprais",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Braderie de Porrentruy",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Lire et Écrire, Dompierre Actualisation guide pratique",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "La Chouette, Assoc. pour la production de beaux livres qui font rire et réfléchir",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Sté de Tambours L'Écho des Bois de La Joux - Le Crêt, Sâles e Fête romande des tambours",
+          "ville": "La Joux",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Arty Show",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 9000
+        },
+        {
+          "nom": "Espace de Vie enfantine Colibri, Espace",
+          "ville": "Espace",
+          "canton": "FR",
+          "montant_CHF": 8800
+        },
+        {
+          "nom": "La Concordia de Vétroz",
+          "ville": "Vétroz",
+          "canton": "VS",
+          "montant_CHF": 8250
+        },
+        {
+          "nom": "Oberwalliser Musikverband",
+          "ville": "Leukerbad",
+          "canton": "VS",
+          "montant_CHF": 8100
+        },
+        {
+          "nom": "Sté de musique L'Avenir de Bagnes",
+          "ville": "Le Châble",
+          "canton": "VS",
+          "montant_CHF": 8100
+        },
+        {
+          "nom": "APH Hengert",
+          "ville": "Visperterminen",
+          "canton": "VS",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Jugendarbeitsstellen Oberwallis",
+          "ville": "Visp",
+          "canton": "VS",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. des Amis de la Musique Scolaire du Locle",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. Dilwale",
+          "ville": "Corcelles",
+          "canton": "NE",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. Arty Show",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. 60X60, Genève Pavillon de la Baleine - aménagement d'un local associatif",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. La Diva",
+          "ville": "Lajoux",
+          "canton": "JU",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. SignEcriture",
+          "ville": "Givrins",
+          "canton": "SR",
+          "montant_CHF": 7500
+        },
+        {
+          "nom": "Assoc. Cinq",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 7500
+        },
+        {
+          "nom": "Arcade Sages-Femmes, Sages-Femmes à domicile",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 7500
+        },
+        {
+          "nom": "Assoc. DécadréE, Genève Journée d'échange sur le traitement",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 7500
+        },
+        {
+          "nom": "FriTime",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Assoc. École de Cirque TAJum's",
+          "ville": "Chêne-Bourg",
+          "canton": "GE",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Assoc. ACP",
+          "ville": "Fenin",
+          "canton": "NE",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "EREM dance / Tommy Cattin",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Assoc. Les Amis du Coffret magique",
+          "ville": "Villars-sur-Glâne",
+          "canton": "FR",
+          "montant_CHF": 6500
+        },
+        {
+          "nom": "AVIVO Chablais Vaudois",
+          "ville": "Aigle",
+          "canton": "VD",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Fond. Enfance Emma Couvreu",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 5800
+        },
+        {
+          "nom": "Assoc. Familiale de Prilly et Jouxtens-Mézery",
+          "ville": "Prilly",
+          "canton": "VD",
+          "montant_CHF": 5600
+        },
+        {
+          "nom": "Assoc. L'Arbre Magique & Les Renardeaux",
+          "ville": "Romont",
+          "canton": "FR",
+          "montant_CHF": 5600
+        },
+        {
+          "nom": "Assoc. Palabres",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 5200
+        },
+        {
+          "nom": "Assoc. Z (Symposium international 2025)",
+          "ville": "Vallorbe",
+          "canton": "VD",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "AVIVO Section de Renens et environs",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. de médiatrices interculturelles (AMIC)",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. Pouvoir d'Agir",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Fond. IdéeSport",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Les Bobines de Valency",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. TRAMES, Prilly Développer et diffuser le projet",
+          "ville": "Prilly",
+          "canton": "VD",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Fête cantonale des Jeunes Musiciens",
+          "ville": "Villarlod",
+          "canton": "FR",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Discuss it, Zürich Roll-Out de l'approche",
+          "ville": "Zürich",
+          "canton": "JU",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. Au fil de l'Ondena",
+          "ville": "Bonnefontaine",
+          "canton": "SR",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Alterswohnung Leukerbad",
+          "ville": "Leukerbad",
+          "canton": "VS",
+          "montant_CHF": 5000
         }
       ]
     },
     {
       "name": "Personnes âgées",
-      "count": 8,
-      "total_chf": 777500,
-      "mean_chf": 97187,
+      "count": 18,
+      "total_chf": 7528500,
+      "mean_chf": 418250,
       "cantons": {
         "VD": {
-          "count": 3,
-          "total_chf": 56500
+          "count": 7,
+          "total_chf": 6511500
         },
         "FR": {
           "count": 1,
           "total_chf": 600000
         },
         "SR": {
-          "count": 2,
-          "total_chf": 63000
+          "count": 3,
+          "total_chf": 86000
+        },
+        "VS": {
+          "count": 4,
+          "total_chf": 258000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 15000
         },
         "JU": {
           "count": 2,
@@ -170,16 +1578,90 @@
       },
       "samples": [
         {
+          "nom": "Établissements hospitaliers du Nord vaudois (eHnv) + Pôle santé Pays d'En-haut (PSPE) + Hôpital Riviera Chablais (HRC) + Hôpital intercantonal de la Broye (HIB)",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 6323000
+        },
+        {
           "nom": "Fond. Pro Senectute Fribourg",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 600000
         },
         {
+          "nom": "EMS Le Christ Roi",
+          "ville": "Crans-Montana",
+          "canton": "VS",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "EMS Riond-Vert",
+          "ville": "Vouvry",
+          "canton": "VS",
+          "montant_CHF": 74000
+        },
+        {
+          "nom": "EMS Clair-Vully",
+          "ville": "Salavaux",
+          "canton": "VD",
+          "montant_CHF": 69000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Établissements hospitaliers du Nord vaudois (eHnv) + Pôle santé Pays d'En-haut (PSPE) + Hôpital Riviera Chablais (HRC) + Hôpital intercantonal de la Broye (HIB)",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 6323000
+        },
+        {
+          "nom": "Fond. Pro Senectute Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 600000
+        },
+        {
+          "nom": "EMS Le Christ Roi",
+          "ville": "Crans-Montana",
+          "canton": "VS",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "EMS Riond-Vert",
+          "ville": "Vouvry",
+          "canton": "VS",
+          "montant_CHF": 74000
+        },
+        {
+          "nom": "EMS Clair-Vully",
+          "ville": "Salavaux",
+          "canton": "VD",
+          "montant_CHF": 69000
+        },
+        {
+          "nom": "EMS St-François",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 64000
+        },
+        {
+          "nom": "Fond. Cogest'ems",
+          "ville": "Château-d'Œx",
+          "canton": "VD",
+          "montant_CHF": 46000
+        },
+        {
           "nom": "Le Carillon - maison de retraite",
           "ville": "Saint-Léonard",
           "canton": "SR",
           "montant_CHF": 41000
+        },
+        {
+          "nom": "EMS Les Vergers",
+          "ville": "Aproz",
+          "canton": "VS",
+          "montant_CHF": 40000
         },
         {
           "nom": "Les Planchettes",
@@ -198,6 +1680,148 @@
           "ville": "Vaud",
           "canton": "VD",
           "montant_CHF": 25000
+        },
+        {
+          "nom": "EMS La Charmaie",
+          "ville": "Collombey-Muraz",
+          "canton": "SR",
+          "montant_CHF": 23000
+        },
+        {
+          "nom": "Pro Senectute Valais-Wallis",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 22000
+        },
+        {
+          "nom": "Ville de Delémont Concept communal et catalogue",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 21000
+        },
+        {
+          "nom": "Fond. du Relais - EMS le Flon - Résidence La Girarde",
+          "ville": "Epalinges",
+          "canton": "VD",
+          "montant_CHF": 17000
+        },
+        {
+          "nom": "Assoc., Neuchâtel",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Rayons de Soleil - Club des Aînés de Renens et environs",
+          "ville": "Renens",
+          "canton": "VD",
+          "montant_CHF": 2500
+        }
+      ]
+    },
+    {
+      "name": "Migration / Intégration",
+      "count": 8,
+      "total_chf": 1929000,
+      "mean_chf": 241125,
+      "cantons": {
+        "VD": {
+          "count": 2,
+          "total_chf": 99000
+        },
+        "FR": {
+          "count": 3,
+          "total_chf": 155000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 25000
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 1650000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Switzerland for UNHCR",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 1500000
+        },
+        {
+          "nom": "Assoc. Découvrir, Genève Découvrir le français pour réduire la barrière linguistique et faciliter",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Assoc. Ensemble",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Assoc. Passerelles, Espace Rencontres Interculturel",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Établissement vaudois d’accueil des migrants (EVAM)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 64000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Switzerland for UNHCR",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 1500000
+        },
+        {
+          "nom": "Assoc. Découvrir, Genève Découvrir le français pour réduire la barrière linguistique et faciliter",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Assoc. Ensemble",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Assoc. Passerelles, Espace Rencontres Interculturel",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Établissement vaudois d’accueil des migrants (EVAM)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 64000
+        },
+        {
+          "nom": "Fond. Intégration pour Tous (IPT)",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Assoc. ParMi-Fribourg Parrainages de jeunes migrant.e.s",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Espace Interculturel Sierre",
+          "ville": "Espace",
+          "canton": "FR",
+          "montant_CHF": 20000
         }
       ]
     },
@@ -259,61 +1883,67 @@
           "canton": "FR",
           "montant_CHF": 41000
         }
-      ]
-    },
-    {
-      "name": "Migration / Intégration",
-      "count": 7,
-      "total_chf": 429000,
-      "mean_chf": 61285,
-      "cantons": {
-        "VD": {
-          "count": 2,
-          "total_chf": 99000
-        },
-        "FR": {
-          "count": 3,
-          "total_chf": 155000
-        },
-        "SR": {
-          "count": 1,
-          "total_chf": 25000
-        },
-        "GE": {
-          "count": 1,
-          "total_chf": 150000
-        }
-      },
-      "samples": [
+      ],
+      "all_entries": [
         {
-          "nom": "Assoc. Découvrir, Genève Découvrir le français pour réduire la barrière linguistique et faciliter",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 150000
+          "nom": "Assoc. pour l'Éducation Familiale",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 216000
         },
         {
-          "nom": "Assoc. Ensemble",
+          "nom": "Pro Junior",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 70000
         },
         {
-          "nom": "Assoc. Passerelles, Espace Rencontres Interculturel",
+          "nom": "Assoc. des Familles du Quart Monde de l'Ouest lausannois",
+          "ville": "Renens",
+          "canton": "VD",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. Carrefour Orientation Solidarité - COS, Genève Accompagnement psycho-social",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Espace Famille le Bonheur des Touptis",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 41000
+        },
+        {
+          "nom": "Assoc. Avenir Familles",
+          "ville": "Confignon",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Famille Jacot-Guillarmod",
+          "ville": "St-Blaise",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Astural, Thônex Cahier de l'Astural -",
+          "ville": "Thônex",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. PanAae",
           "ville": "Fribourg",
           "canton": "FR",
-          "montant_CHF": 65000
+          "montant_CHF": 5000
         },
         {
-          "nom": "Établissement vaudois d’accueil des migrants (EVAM)",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 64000
-        },
-        {
-          "nom": "Fond. Intégration pour Tous (IPT)",
-          "ville": "Vevey",
-          "canton": "VD",
-          "montant_CHF": 35000
+          "nom": "Assoc. La Maison des Pitchounes",
+          "ville": "Massonnens",
+          "canton": "FR",
+          "montant_CHF": 3000
         }
       ]
     },
@@ -363,13 +1993,125 @@
           "canton": "FR",
           "montant_CHF": 7000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. d'Accueil Familial de Jour",
+          "ville": "Estavayer-le-Lac",
+          "canton": "FR",
+          "montant_CHF": 137160
+        },
+        {
+          "nom": "Assoc. d'Accueil familial de jour du district de la Gruyère",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 127530
+        },
+        {
+          "nom": "Fond. Piccolino pour l'accueil de jour des enfants de Lavaux",
+          "ville": "Cully",
+          "canton": "VD",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Assoc. d'Accueil Familial de Jour de la Veveyse",
+          "ville": "Attalens",
+          "canton": "FR",
+          "montant_CHF": 55620
+        },
+        {
+          "nom": "Fond. de la petite enfance de Granges-Paccot",
+          "ville": "Granges-Paccot",
+          "canton": "FR",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Assoc. Arc-en-Ciel",
+          "ville": "Villeneuve",
+          "canton": "VD",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Ausserschulische Betreuung ds'Atelier",
+          "ville": "Giffers",
+          "canton": "FR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Assoc. La ferme-école",
+          "ville": "Givisiez",
+          "canton": "FR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Jardin d'enfants Arc-en-Ciel",
+          "ville": "Etagnières",
+          "canton": "VD",
+          "montant_CHF": 540
+        }
+      ]
+    },
+    {
+      "name": "Aide à la jeunesse",
+      "count": 1,
+      "total_chf": 340000,
+      "mean_chf": 340000,
+      "cantons": {
+        "GE": {
+          "count": 1,
+          "total_chf": 340000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Argos",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 340000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Argos",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 340000
+        }
+      ]
+    },
+    {
+      "name": "Violences / Refuges",
+      "count": 1,
+      "total_chf": 330000,
+      "mean_chf": 330000,
+      "cantons": {
+        "FR": {
+          "count": 1,
+          "total_chf": 330000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Solidarité Femmes Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 330000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Solidarité Femmes Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 330000
+        }
       ]
     },
     {
       "name": "Maladies / Soins spécifiques",
-      "count": 7,
-      "total_chf": 303000,
-      "mean_chf": 43285,
+      "count": 6,
+      "total_chf": 288000,
+      "mean_chf": 48000,
       "cantons": {
         "FR": {
           "count": 3,
@@ -380,8 +2122,8 @@
           "total_chf": 1000
         },
         "NE": {
-          "count": 2,
-          "total_chf": 20000
+          "count": 1,
+          "total_chf": 5000
         },
         "VD": {
           "count": 1,
@@ -402,10 +2144,36 @@
           "montant_CHF": 25000
         },
         {
-          "nom": "Assoc., Neuchâtel",
+          "nom": "Groupe Parkinson de Fribourg",
+          "ville": "Senèdes",
+          "canton": "FR",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "ANDPA - Assoc. neuchâteloise des proches aidants",
           "ville": "Neuchâtel",
           "canton": "NE",
-          "montant_CHF": 15000
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Palliative Fribourg - Freiburg",
+          "ville": "Conseils aux proches aidants et",
+          "canton": "FR",
+          "montant_CHF": 2000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "diabètefribourg - Assoc. fribourgeoise du diabète",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 250000
+        },
+        {
+          "nom": "SEP - Sté suisse de la sclérose en plaques",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 25000
         },
         {
           "nom": "Groupe Parkinson de Fribourg",
@@ -418,6 +2186,46 @@
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 5000
+        },
+        {
+          "nom": "Palliative Fribourg - Freiburg",
+          "ville": "Conseils aux proches aidants et",
+          "canton": "FR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Accovimo Chablais - Accompagnement de la personne en fin de vie",
+          "ville": "Troistorrents",
+          "canton": "SR",
+          "montant_CHF": 1000
+        }
+      ]
+    },
+    {
+      "name": "EMS & personnes âgées",
+      "count": 1,
+      "total_chf": 195000,
+      "mean_chf": 195000,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 195000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. de l'Orme",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 195000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. de l'Orme",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 195000
         }
       ]
     },
@@ -433,6 +2241,20 @@
         }
       },
       "samples": [
+        {
+          "nom": "Assoc. Cerebral Genève, Onex SPOTS, un projet artistique et touristique inclusif + 5 week-ends",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 140000
+        },
+        {
+          "nom": "Assoc. Autisme Genève Aménagement café des membres",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 50000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Assoc. Cerebral Genève, Onex SPOTS, un projet artistique et touristique inclusif + 5 week-ends",
           "ville": "Genève",
@@ -467,6 +2289,32 @@
         }
       },
       "samples": [
+        {
+          "nom": "La Main Tendue",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Bénévolat Neuchâtel",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Tél 143 - La Main Tendue Vaud",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Bénévolat Jura",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 3500
+        }
+      ],
+      "all_entries": [
         {
           "nom": "La Main Tendue",
           "ville": "Lausanne",
@@ -531,6 +2379,54 @@
           "canton": "FR",
           "montant_CHF": 5000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Immobilière des éclaireurs Noirmont-Gland",
+          "ville": "Vich",
+          "canton": "SR",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "Sté pour le Développement de la Jeunesse en Anniviers",
+          "ville": "Vissoie",
+          "canton": "VS",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Junges Theater Kerzers",
+          "ville": "Kerzers",
+          "canton": "FR",
+          "montant_CHF": 5000
+        }
+      ]
+    },
+    {
+      "name": "Logement / Hébergement",
+      "count": 1,
+      "total_chf": 50000,
+      "mean_chf": 50000,
+      "cantons": {
+        "SR": {
+          "count": 1,
+          "total_chf": 50000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. de Fribourg pour la Jeunesse",
+          "ville": "Accompagnement Socio-",
+          "canton": "SR",
+          "montant_CHF": 50000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. de Fribourg pour la Jeunesse",
+          "ville": "Accompagnement Socio-",
+          "canton": "SR",
+          "montant_CHF": 50000
+        }
       ]
     },
     {
@@ -545,6 +2441,14 @@
         }
       },
       "samples": [
+        {
+          "nom": "Fond. Le Tremplin, Fribourg Coordination de l'instance",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 24000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Fond. Le Tremplin, Fribourg Coordination de l'instance",
           "ville": "Fribourg",

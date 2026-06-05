@@ -3,30 +3,134 @@
     "classif": "environnement",
     "year": "2023",
     "source": "brb2023_full.json",
-    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 61,
-    "total_chf": 5307460,
-    "total_entries_classified": 24,
-    "total_chf_classified": 3154460,
-    "pct_chf_classified": 59.4,
+    "total_entries": 64,
+    "total_chf": 5474460,
+    "precise_classified_entries": 29,
+    "precise_classified_chf": 4377660,
+    "pct_chf_precisely_classified": 80.0,
+    "pct_chf_classified": 100.0,
+    "total_entries_classified": 64,
+    "total_chf_classified": 5474460,
+    "catchall_chf": 1096800,
     "cross_year_recovered": 8,
     "sector": "Environnement",
     "sector_slug": "environnement",
-    "total_entries_sector": 61,
-    "total_chf_sector": 5307460,
-    "pct_entries_classified": 39.3
+    "total_entries_sector": 64,
+    "total_chf_sector": 5474460,
+    "pct_entries_classified": 100.0
   },
   "categories": [
     {
-      "name": "Autres",
-      "count": 37,
-      "total_chf": 2153000,
-      "mean_chf": 58189,
+      "name": "Faune & biodiversité",
+      "count": 7,
+      "total_chf": 2777200,
+      "mean_chf": 396742,
+      "cantons": {
+        "NE": {
+          "count": 2,
+          "total_chf": 50000
+        },
+        "VD": {
+          "count": 1,
+          "total_chf": 700000
+        },
+        "VS": {
+          "count": 2,
+          "total_chf": 2016000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 11200
+        }
+      },
+      "samples": [
+        {
+          "nom": "SPA Valais",
+          "ville": "Ardon",
+          "canton": "VS",
+          "montant_CHF": 2015000
+        },
+        {
+          "nom": "Assoc. Jardin Urbain",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 700000
+        },
+        {
+          "nom": "Assoc. des Amis de La Salamandre",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. des amis de La Salamandre",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Commune mixte de Courtételle",
+          "ville": "Courtételle",
+          "canton": "JU",
+          "montant_CHF": 10000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "SPA Valais",
+          "ville": "Ardon",
+          "canton": "VS",
+          "montant_CHF": 2015000
+        },
+        {
+          "nom": "Assoc. Jardin Urbain",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 700000
+        },
+        {
+          "nom": "Assoc. des Amis de La Salamandre",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. des amis de La Salamandre",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Commune mixte de Courtételle",
+          "ville": "Courtételle",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Sté jurassienne d'astronomie",
+          "ville": "Bassecourt",
+          "canton": "JU",
+          "montant_CHF": 1200
+        },
+        {
+          "nom": "Sté Valaisanne de Biologie de la Faune",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 1000
+        }
+      ]
+    },
+    {
+      "name": "Soutien général à l'environnement",
+      "count": 35,
+      "total_chf": 1096800,
+      "mean_chf": 31337,
       "cantons": {
         "VD": {
-          "count": 5,
-          "total_chf": 1121000
+          "count": 4,
+          "total_chf": 66000
         },
         "VS": {
           "count": 4,
@@ -49,23 +153,11 @@
           "total_chf": 535000
         },
         "JU": {
-          "count": 5,
-          "total_chf": 35200
+          "count": 4,
+          "total_chf": 34000
         }
       },
       "samples": [
-        {
-          "nom": "Assoc. Jardin Urbain",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 700000
-        },
-        {
-          "nom": "Fond. des Grangettes",
-          "ville": "Villeneuve",
-          "canton": "VD",
-          "montant_CHF": 400000
-        },
         {
           "nom": "La Manivelle Genève",
           "ville": "Genève",
@@ -83,57 +175,229 @@
           "ville": "Grindelwald",
           "canton": "SR",
           "montant_CHF": 60000
-        }
-      ]
-    },
-    {
-      "name": "Faune & biodiversité",
-      "count": 5,
-      "total_chf": 2076000,
-      "mean_chf": 415200,
-      "cantons": {
-        "NE": {
-          "count": 2,
-          "total_chf": 50000
-        },
-        "VS": {
-          "count": 2,
-          "total_chf": 2016000
-        },
-        "JU": {
-          "count": 1,
-          "total_chf": 10000
-        }
-      },
-      "samples": [
-        {
-          "nom": "SPA Valais",
-          "ville": "Ardon",
-          "canton": "VS",
-          "montant_CHF": 2015000
         },
         {
-          "nom": "Assoc. des Amis de La Salamandre",
-          "ville": "Neuchâtel",
+          "nom": "APSSA",
+          "ville": "Chézard-St-Martin",
           "canton": "NE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. Le Jardin des Couleurs",
+          "ville": "Chancy",
+          "canton": "GE",
+          "montant_CHF": 60000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "La Manivelle Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "OPPAL Organisation Pour la Protection des Alpages",
+          "ville": "Vollèges",
+          "canton": "VS",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "Genossenschaft Mönchsjochhütte",
+          "ville": "Grindelwald",
+          "canton": "SR",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "APSSA",
+          "ville": "Chézard-St-Martin",
+          "canton": "NE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. Le Jardin des Couleurs",
+          "ville": "Chancy",
+          "canton": "GE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Sté de Sauvetage de Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Collectif Chevêche",
+          "ville": "Charmoille",
+          "canton": "SR",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Glitter Assoc.",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. NatureCulture - Verein NaturKultur",
+          "ville": "Ollon",
+          "canton": "VD",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "Verein Landschaftspark Binntal",
+          "ville": "Binn",
+          "canton": "VS",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "J'aime Ma Campagne",
+          "ville": "Perly",
+          "canton": "GE",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "J'aime Ma Campagne",
+          "ville": "Perly",
+          "canton": "GE",
           "montant_CHF": 40000
         },
         {
-          "nom": "Assoc. des amis de La Salamandre",
+          "nom": "Assoc. Ecoparc",
           "ville": "Neuchâtel",
           "canton": "NE",
-          "montant_CHF": 10000
+          "montant_CHF": 26000
         },
         {
-          "nom": "Commune mixte de Courtételle",
+          "nom": "Assoc. Tricrochet",
+          "ville": "Grand-Lancy",
+          "canton": "GE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Une pression urbaine",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Alpgeteilschaft Obern-Galm",
+          "ville": "Guttet-Feschel",
+          "canton": "VS",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. en Déroute",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Planète Bleue",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Au Potager de Rolle",
+          "ville": "Rolle",
+          "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Conviviabule",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "CEAS - Centre Ecologique Albert Schweitzer",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Histoire sans chute",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Speak in Silence",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "ECO2Challenge",
           "ville": "Courtételle",
           "canton": "JU",
-          "montant_CHF": 10000
+          "montant_CHF": 15000
         },
         {
-          "nom": "Sté Valaisanne de Biologie de la Faune",
+          "nom": "Féd. Jurassienne d'Apiculture",
+          "ville": "Soyhières",
+          "canton": "JU",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Institut suisse de spéléologie et de karstologie (ISSKA)",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 11000
+        },
+        {
+          "nom": "Assoc. Les Jardins d'Henry",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 7800
+        },
+        {
+          "nom": "Assoc. Les Chats Perchés Vaud",
+          "ville": "Leysin",
+          "canton": "VD",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. FreeTheBees",
+          "ville": "Montévraz",
+          "canton": "SR",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Nicippé",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Le Vilebrequin",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 2500
+        },
+        {
+          "nom": "Bourgeoisie d'Undervelier",
+          "ville": "Undervelier",
+          "canton": "JU",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Les Pouces Verts",
+          "ville": "Clarens",
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Le Rougegorge - Assoc. des amis et des curieux de la nature",
           "ville": "Sion",
           "canton": "VS",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Assoc. neuchâteloise de soutien à la Semaine suisse du Goût",
+          "ville": "Cernier",
+          "canton": "NE",
           "montant_CHF": 1000
         }
       ]
@@ -172,6 +436,98 @@
           "canton": "JU",
           "montant_CHF": 2000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Genève Montagne",
+          "ville": "Le Grand-Saconnex",
+          "canton": "GE",
+          "montant_CHF": 325000
+        },
+        {
+          "nom": "Section genevoise du Club Alpin Suisse",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Parrainage suisse pour les communes de montagne",
+          "ville": "Zurich",
+          "canton": "JU",
+          "montant_CHF": 2000
+        }
+      ]
+    },
+    {
+      "name": "Eau / Lacs / Rivières",
+      "count": 4,
+      "total_chf": 534000,
+      "mean_chf": 133500,
+      "cantons": {
+        "VD": {
+          "count": 2,
+          "total_chf": 484000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 2000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 48000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. des Grangettes",
+          "ville": "Villeneuve",
+          "canton": "VD",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Fond. La Maison de la Rivière",
+          "ville": "Tolochenaz",
+          "canton": "VD",
+          "montant_CHF": 84000
+        },
+        {
+          "nom": "Assoc. pour la Sauvegarde du Léman - ASL",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 48000
+        },
+        {
+          "nom": "Chœur mixte la Cécilienne de Grangettes",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. des Grangettes",
+          "ville": "Villeneuve",
+          "canton": "VD",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Fond. La Maison de la Rivière",
+          "ville": "Tolochenaz",
+          "canton": "VD",
+          "montant_CHF": 84000
+        },
+        {
+          "nom": "Assoc. pour la Sauvegarde du Léman - ASL",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 48000
+        },
+        {
+          "nom": "Chœur mixte la Cécilienne de Grangettes",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2000
+        }
       ]
     },
     {
@@ -208,35 +564,53 @@
           "canton": "JU",
           "montant_CHF": 8000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Verein Lebens- und Erlebnisraum Pfyn-Finges",
+          "ville": "Salgesch",
+          "canton": "VS",
+          "montant_CHF": 158000
+        },
+        {
+          "nom": "Assoc. Pro Doubs",
+          "ville": "St-Ursanne",
+          "canton": "JU",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Parc Naturel Régional du Doubs",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 8000
+        }
       ]
     },
     {
-      "name": "Eau / Lacs / Rivières",
-      "count": 2,
-      "total_chf": 132000,
-      "mean_chf": 66000,
+      "name": "Énergie & climat",
+      "count": 1,
+      "total_chf": 120000,
+      "mean_chf": 120000,
       "cantons": {
-        "VD": {
+        "FR": {
           "count": 1,
-          "total_chf": 84000
-        },
-        "GE": {
-          "count": 1,
-          "total_chf": 48000
+          "total_chf": 120000
         }
       },
       "samples": [
         {
-          "nom": "Fond. La Maison de la Rivière",
-          "ville": "Tolochenaz",
-          "canton": "VD",
-          "montant_CHF": 84000
-        },
+          "nom": "Assoc. CO2",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 120000
+        }
+      ],
+      "all_entries": [
         {
-          "nom": "Assoc. pour la Sauvegarde du Léman - ASL",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 48000
+          "nom": "Assoc. CO2",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 120000
         }
       ]
     },
@@ -260,6 +634,26 @@
         }
       },
       "samples": [
+        {
+          "nom": "Assoc. least",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. des Amis du Jardin botanique de Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Assoc. La Murithienne",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 6000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Assoc. least",
           "ville": "Genève",
@@ -308,6 +702,20 @@
           "canton": "JU",
           "montant_CHF": 3160
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Zero Waste Switzerland",
+          "ville": "Cottens (VD)",
+          "canton": "SR",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Ecopaper",
+          "ville": "Bâle",
+          "canton": "JU",
+          "montant_CHF": 3160
+        }
       ]
     },
     {
@@ -326,6 +734,26 @@
         }
       },
       "samples": [
+        {
+          "nom": "Assoc. de la Fête de la nature",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "DIY Zerowaste Assoc.",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 9800
+        },
+        {
+          "nom": "Assoc. Magasin du Monde, Vevey",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 3000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Assoc. de la Fête de la nature",
           "ville": "Lausanne",
@@ -374,6 +802,20 @@
           "canton": "VD",
           "montant_CHF": 4000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Genevoise pour la Promotion du Goût",
+          "ville": "Satigny",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Mellifera",
+          "ville": "Aubonne",
+          "canton": "VD",
+          "montant_CHF": 4000
+        }
       ]
     },
     {
@@ -388,6 +830,14 @@
         }
       },
       "samples": [
+        {
+          "nom": "Pro Vélo Riviera",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 5500
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Pro Vélo Riviera",
           "ville": "Vevey",

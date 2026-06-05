@@ -15,19 +15,63 @@
     },
     "sector_overrides": {
       "date": "2026-06-04",
-      "count": 0,
+      "count": 14,
       "method": "Keyword-based override of `secteur` field when nom/desc contains an unambiguous indicator of a different sector. Conservative — only high-confidence patterns."
     },
     "name_fixes": {
-      "villes_adjectifs_fixed": 9,
+      "villes_adjectifs_fixed": 0,
       "names_reconstructed_from_rules": 0,
-      "names_reconstructed_via_ville": 111,
+      "names_reconstructed_via_ville": 0,
       "artifacts_dropped": 0
     },
     "targeted_fixes": {
       "date": "2026-06-04",
-      "region_artifact_villes_nulled": 44,
+      "region_artifact_villes_nulled": 0,
       "specific_names_fixed": 0
+    },
+    "sector_overrides_v2": {
+      "count": 5,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v3": {
+      "count": 1,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v4": {
+      "count": 3,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v5": {
+      "count": 0,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v6": {
+      "count": 0,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v7": {
+      "count": 10,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v8": {
+      "count": 6,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v9": {
+      "count": 5,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v10": {
+      "count": 0,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v11": {
+      "count": 6,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v12": {
+      "count": 2,
+      "date": "2026-06-04"
     }
   },
   "entries": [
@@ -72,7 +116,7 @@
       "ville": "Orny",
       "description": "Acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 23000,
       "annee": 2023
     },
@@ -891,7 +935,7 @@
       "ville": "Penthaz",
       "description": "Travaux / Aménagements",
       "canton": "VD",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 815000,
       "annee": 2023
     },
@@ -1377,7 +1421,7 @@
       "ville": "Nyon",
       "description": "Travaux / Aménagements",
       "canton": "VD",
-      "secteur": "Culture",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 80000,
       "annee": 2023
     },
@@ -1386,7 +1430,7 @@
       "ville": "Pully",
       "description": "Expositions",
       "canton": "VD",
-      "secteur": "Culture",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 80000,
       "annee": 2023
     },
@@ -1971,7 +2015,7 @@
       "ville": "Lausanne",
       "description": "Nuit des Musées",
       "canton": "VD",
-      "secteur": "Culture",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 50000,
       "annee": 2023
     },
@@ -2889,7 +2933,7 @@
       "ville": "Lausanne",
       "description": "Manifestation",
       "canton": "VD",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 10000,
       "annee": 2023
     },
@@ -3582,7 +3626,7 @@
       "ville": "Mies",
       "description": "Acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 25000,
       "annee": 2023
     },
@@ -3591,7 +3635,7 @@
       "ville": "Vevey",
       "description": "Acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 70000,
       "annee": 2023
     },
@@ -4122,7 +4166,7 @@
       "ville": "Lausanne",
       "description": "Exposition et Publication",
       "canton": "VD",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 120000,
       "annee": 2023
     },
@@ -5436,7 +5480,7 @@
       "ville": "Ollon",
       "description": "Activité",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Environnement",
       "montant_CHF": 45000,
       "annee": 2023
     },
@@ -7182,7 +7226,7 @@
       "ville": "Alpin Suisse",
       "description": "Rénovation de la cabane du Trient - Solde",
       "canton": "VD",
-      "secteur": "Sport",
+      "secteur": "Promotion, tourisme et développement",
       "montant_CHF": 45000,
       "annee": 2023
     },
@@ -11106,7 +11150,7 @@
       "ville": null,
       "description": "Championnat vaudois de Water Polo 2022",
       "canton": "SR",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 300,
       "annee": 2023
     },
@@ -11115,7 +11159,7 @@
       "ville": null,
       "description": "Tournoi Masters Water-Polo",
       "canton": "SR",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 500,
       "annee": 2023
     },
@@ -12213,7 +12257,7 @@
       "ville": null,
       "description": "Soutien aux clubs élites en sport collectif - Saison 2023-",
       "canton": "SR",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 25920,
       "annee": 2023
     },
@@ -12645,7 +12689,7 @@
       "ville": null,
       "description": "Soutien annuel CSS 2024",
       "canton": "VD",
-      "secteur": "Sport",
+      "secteur": "Formation et recherche",
       "montant_CHF": 25000,
       "annee": 2023
     },
@@ -12798,7 +12842,7 @@
       "ville": null,
       "description": "Projet de développement de collaboration interprofessionnelle",
       "canton": "SR",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "montant_CHF": 619247,
       "annee": 2023
     },
@@ -12834,7 +12878,7 @@
       "ville": "Lausanne",
       "description": "Projet Mouvement des générations Vaud",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Formation et recherche",
       "montant_CHF": 142818,
       "annee": 2023
     },
@@ -12843,7 +12887,7 @@
       "ville": "Lausanne",
       "description": "Projet DemSCAPE-VD",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Formation et recherche",
       "montant_CHF": 200000,
       "annee": 2023
     },
@@ -12852,7 +12896,7 @@
       "ville": "Lausanne",
       "description": "Projet Elderli la colocation intergénérationnelle accompagnée",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Formation et recherche",
       "montant_CHF": 60674,
       "annee": 2023
     },
@@ -12861,7 +12905,7 @@
       "ville": "Yverdon-les-Bains",
       "description": "Projet Améliorer l'accès aux directives anticipées en cas d'urgence",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Formation et recherche",
       "montant_CHF": 135700,
       "annee": 2023
     },
@@ -12888,7 +12932,7 @@
       "ville": "Lausanne",
       "description": "Projet ASEPÀ",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Formation et recherche",
       "montant_CHF": 350000,
       "annee": 2023
     },
@@ -12960,7 +13004,7 @@
       "ville": "Rennaz",
       "description": "Projet Repérage des patients en situation de précarité",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "montant_CHF": 200000,
       "annee": 2023
     },
@@ -12969,7 +13013,7 @@
       "ville": "Rennaz",
       "description": "Projet Anticiper le changement",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "montant_CHF": 109400,
       "annee": 2023
     },
@@ -12978,7 +13022,7 @@
       "ville": null,
       "description": "Développement d'une plateforme de coordination régionale",
       "canton": "SR",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "montant_CHF": 158000,
       "annee": 2023
     },
@@ -13059,7 +13103,7 @@
       "ville": "Veytaux",
       "description": "Développement d'un plan de promotion",
       "canton": "VD",
-      "secteur": "Culture",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 300000,
       "annee": 2023
     },
@@ -13176,7 +13220,7 @@
       "ville": "Lausanne",
       "description": "Étude sur les violences dans le sport",
       "canton": "VD",
-      "secteur": "Sport",
+      "secteur": "Formation et recherche",
       "montant_CHF": 190000,
       "annee": 2023
     },
@@ -13347,7 +13391,7 @@
       "ville": "Fribourg",
       "description": "Soutien 2023",
       "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Culture",
       "montant_CHF": 180000,
       "annee": 2023
     },
@@ -13410,7 +13454,7 @@
       "ville": "Fribourg",
       "description": "Activités 2023 et Prise en charge allophones 2023",
       "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Culture",
       "montant_CHF": 135000,
       "annee": 2023
     },
@@ -13428,7 +13472,7 @@
       "ville": "Gletterens",
       "description": "Achat d'un véhicule à mobilité réduite",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 20000,
       "annee": 2023
     },
@@ -13950,7 +13994,7 @@
       "ville": "Bulle",
       "description": "Saison jeune public 2022-2023",
       "canton": "FR",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Culture",
       "montant_CHF": 10000,
       "annee": 2023
     },
@@ -14076,7 +14120,7 @@
       "ville": "Crèche",
       "description": "Activités pédagogiques 2023",
       "canton": "FR",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Jeunesse et éducation",
       "montant_CHF": 15200,
       "annee": 2023
     },
@@ -14967,7 +15011,7 @@
       "ville": "Bulle",
       "description": "Saison culturelle 2023-2024",
       "canton": "FR",
-      "secteur": "Culture",
+      "secteur": "Environnement",
       "montant_CHF": 120000,
       "annee": 2023
     },
@@ -15552,7 +15596,7 @@
       "ville": "Fribourg",
       "description": "Saison musicale 2023",
       "canton": "FR",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 12500,
       "annee": 2023
     },
@@ -15615,7 +15659,7 @@
       "ville": null,
       "description": "Fête du 50 e du chœur",
       "canton": "SR",
-      "secteur": "Culture",
+      "secteur": "Environnement",
       "montant_CHF": 2000,
       "annee": 2023
     },
@@ -16407,7 +16451,7 @@
       "ville": "Givisiez",
       "description": "Concerts 2023",
       "canton": "FR",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 4000,
       "annee": 2023
     },
@@ -16902,7 +16946,7 @@
       "ville": "Fribourg",
       "description": "Festival 2023 et amélioration des conditions d'hébergement des artistes",
       "canton": "FR",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 115000,
       "annee": 2023
     },
@@ -20052,7 +20096,7 @@
       "ville": "Vallon",
       "description": "Exposition Ukraine-Luhansk : un musée sur la ligne du feu",
       "canton": "FR",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 4000,
       "annee": 2023
     },
@@ -20061,7 +20105,7 @@
       "ville": null,
       "description": "Célébration des 550 ans des batailles de Grandson et de Morat",
       "canton": "SR",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Promotion, tourisme et développement",
       "montant_CHF": 20000,
       "annee": 2023
     },
@@ -20322,7 +20366,7 @@
       "ville": "Fribourg",
       "description": "Camp renforçant les connaissances éducatives, la confiance et l'autonomie",
       "canton": "FR",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Sport",
       "montant_CHF": 5000,
       "annee": 2023
     },
@@ -20907,7 +20951,7 @@
       "ville": "Collombey- Muraz",
       "description": "Animation",
       "canton": "SR",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 34000,
       "annee": 2023
     },
@@ -20916,7 +20960,7 @@
       "ville": "Crans- Montana",
       "description": "Animation",
       "canton": "VS",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 65000,
       "annee": 2023
     },
@@ -20925,7 +20969,7 @@
       "ville": "Aproz",
       "description": "Animation",
       "canton": "VS",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 42000,
       "annee": 2023
     },
@@ -20934,7 +20978,7 @@
       "ville": "Riddes",
       "description": "Animation",
       "canton": "VS",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 28000,
       "annee": 2023
     },
@@ -20943,7 +20987,7 @@
       "ville": "Vouvry",
       "description": "Animation",
       "canton": "VS",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 61000,
       "annee": 2023
     },
@@ -20952,7 +20996,7 @@
       "ville": "Sion",
       "description": "Animation",
       "canton": "VS",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 83000,
       "annee": 2023
     },
@@ -21366,7 +21410,7 @@
       "ville": "Collombey-Muraz",
       "description": "Achat et rénovation",
       "canton": "SR",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 385000,
       "annee": 2023
     },
@@ -23256,7 +23300,7 @@
       "ville": "Sion",
       "description": "Formation",
       "canton": "VS",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 452130,
       "annee": 2023
     },
@@ -23355,7 +23399,7 @@
       "ville": "Lens",
       "description": "Expositions",
       "canton": "VS",
-      "secteur": "Culture",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 150000,
       "annee": 2023
     },
@@ -23364,7 +23408,7 @@
       "ville": "Martigny",
       "description": "Saison artistique",
       "canton": "VS",
-      "secteur": "Culture",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 350000,
       "annee": 2023
     },
@@ -24732,7 +24776,7 @@
       "ville": "Verbier",
       "description": "Manifestation",
       "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 120000,
       "annee": 2023
     },
@@ -28422,7 +28466,7 @@
       "ville": "Fontaines",
       "description": "Événement",
       "canton": "NE",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 15000,
       "annee": 2023
     },
@@ -30573,7 +30617,7 @@
       "ville": null,
       "description": "Réalisation d'une place multisports 2022",
       "canton": "SR",
-      "secteur": "Sport",
+      "secteur": "Jeunesse et éducation",
       "montant_CHF": 10250,
       "annee": 2023
     },
@@ -31779,7 +31823,7 @@
       "ville": "Bernex",
       "description": "Opportunités professionnelles dans le secteur agricole - Reconstruction et expansion de la ferme",
       "canton": "GE",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "montant_CHF": 1000000,
       "annee": 2023
     },
@@ -32157,7 +32201,7 @@
       "ville": "Carouge",
       "description": "Pièce de théâtre réalisée par des jeunes en situation de vulnérabilité : Spectacle de la saison 9",
       "canton": "GE",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Culture",
       "montant_CHF": 70000,
       "annee": 2023
     },
@@ -34821,7 +34865,7 @@
       "ville": "Genève",
       "description": "Concert au Victoria-Hall : Requiem de Giuseppe Verdi",
       "canton": "GE",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 10000,
       "annee": 2023
     },
@@ -36090,7 +36134,7 @@
       "ville": null,
       "description": "Intégration et développement de l'enfant au sein de l'orchestre MusicEnsemble",
       "canton": "SR",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 40000,
       "annee": 2023
     },
@@ -36216,7 +36260,7 @@
       "ville": "Bernex",
       "description": "Conservation, inventaire, numérisation et diffusion des œuvres d’art de la Fond. Hainard",
       "canton": "GE",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 260000,
       "annee": 2023
     },
@@ -36486,7 +36530,7 @@
       "ville": "Genève",
       "description": "Musée de la bande dessinée de Genève",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Culture",
       "montant_CHF": 3200000,
       "annee": 2023
     },
@@ -36495,7 +36539,7 @@
       "ville": "Genève",
       "description": "22e édition du FIFDH - festival",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Culture",
       "montant_CHF": 300000,
       "annee": 2023
     },
@@ -36522,7 +36566,7 @@
       "ville": "Genève",
       "description": "Transformation des espaces d'accueil du Musée",
       "canton": "GE",
-      "secteur": "Santé et handicap",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 255000,
       "annee": 2023
     },
@@ -36540,7 +36584,7 @@
       "ville": "Genève",
       "description": "LNB équipe féminine",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 28000,
       "annee": 2023
     },
@@ -36549,7 +36593,7 @@
       "ville": "Le Grand-Saconnex",
       "description": "LNA équipe masculine",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 100000,
       "annee": 2023
     },
@@ -37026,7 +37070,7 @@
       "ville": null,
       "description": "Gonet Geneva Open",
       "canton": "SR",
-      "secteur": "Sport",
+      "secteur": "Promotion, tourisme et développement",
       "montant_CHF": 100000,
       "annee": 2023
     },
@@ -37404,7 +37448,7 @@
       "ville": "Plan-les-Ouates - Multisports",
       "description": "Trajets Sporting Club",
       "canton": "SR",
-      "secteur": "Sport",
+      "secteur": "Santé et handicap",
       "montant_CHF": 23000,
       "annee": 2023
     },
@@ -38790,7 +38834,7 @@
       "ville": "Delémont",
       "description": "Acquisition d'instruments",
       "canton": "JU",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 62000,
       "annee": 2023
     },
@@ -39492,7 +39536,7 @@
       "ville": "Develier",
       "description": "Activités 2023",
       "canton": "JU",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 10000,
       "annee": 2023
     },
@@ -39501,7 +39545,7 @@
       "ville": "Porrentruy",
       "description": "Mise en valeur de la Pharmacie",
       "canton": "JU",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 18000,
       "annee": 2023
     },
@@ -39861,7 +39905,7 @@
       "ville": "Vicques",
       "description": "Championnat de Suisse de triplette",
       "canton": "JU",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 2500,
       "annee": 2023
     },
@@ -39987,7 +40031,7 @@
       "ville": "Porrentruy",
       "description": "Championnat jurassien de pumptrack kids",
       "canton": "JU",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 200,
       "annee": 2023
     },
@@ -40284,7 +40328,7 @@
       "ville": "Saignelégier",
       "description": "Championnat de Suisse de la montagne",
       "canton": "JU",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 3000,
       "annee": 2023
     },
@@ -42066,7 +42110,7 @@
       "ville": "Fribourg",
       "description": "Cours de vacances",
       "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Sport",
       "montant_CHF": 60000,
       "annee": 2023
     },

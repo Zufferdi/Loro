@@ -3,50 +3,54 @@
     "classif": "jeunesse",
     "year": "2023",
     "source": "brb2023_full.json",
-    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 302,
-    "total_chf": 13678748,
-    "total_entries_classified": 139,
-    "total_chf_classified": 7825242,
-    "pct_chf_classified": 57.2,
-    "cross_year_recovered": 8,
+    "total_entries": 299,
+    "total_chf": 12419198,
+    "precise_classified_entries": 145,
+    "precise_classified_chf": 9051442,
+    "pct_chf_precisely_classified": 72.9,
+    "pct_chf_classified": 100.0,
+    "total_entries_classified": 299,
+    "total_chf_classified": 12419198,
+    "catchall_chf": 3367756,
+    "cross_year_recovered": 15,
     "sector": "Jeunesse et éducation",
     "sector_slug": "jeunesse",
-    "total_entries_sector": 302,
-    "total_chf_sector": 13678748,
-    "pct_entries_classified": 46.0
+    "total_entries_sector": 299,
+    "total_chf_sector": 12419198,
+    "pct_entries_classified": 100.0
   },
   "categories": [
     {
-      "name": "Autres",
-      "count": 163,
-      "total_chf": 5853506,
-      "mean_chf": 35911,
+      "name": "Soutien général à la jeunesse",
+      "count": 154,
+      "total_chf": 3367756,
+      "mean_chf": 21868,
       "cantons": {
         "VD": {
-          "count": 20,
-          "total_chf": 1575500
+          "count": 19,
+          "total_chf": 760500
         },
         "SR": {
-          "count": 21,
-          "total_chf": 1093896
+          "count": 19,
+          "total_chf": 210146
         },
         "FR": {
-          "count": 35,
-          "total_chf": 403410
+          "count": 32,
+          "total_chf": 386410
         },
         "VS": {
-          "count": 28,
-          "total_chf": 732000
+          "count": 27,
+          "total_chf": 432000
         },
         "JU": {
           "count": 23,
           "total_chf": 415200
         },
         "GE": {
-          "count": 23,
-          "total_chf": 1440500
+          "count": 21,
+          "total_chf": 970500
         },
         "NE": {
           "count": 13,
@@ -55,16 +59,992 @@
       },
       "samples": [
         {
-          "nom": "Maison d'enfants de Penthaz MEP",
-          "ville": "Penthaz",
-          "canton": "VD",
-          "montant_CHF": 815000
+          "nom": "Fond. Universitaire pour Le Logement des Étudiants - FULE",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 250000
         },
         {
-          "nom": "Fond. Le Camp",
-          "ville": "Vaumarcus",
+          "nom": "KBS Parkour",
+          "ville": "Petit-Lancy",
+          "canton": "GE",
+          "montant_CHF": 250000
+        },
+        {
+          "nom": "Assoc. régionale pour l'enfance et la jeunesse ARPEJE",
+          "ville": "Avenches",
+          "canton": "VD",
+          "montant_CHF": 175000
+        },
+        {
+          "nom": "Assoc. de l'École des Jordils",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 120000
+        },
+        {
+          "nom": "Fond. de la CVCI",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 100000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Universitaire pour Le Logement des Étudiants - FULE",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 250000
+        },
+        {
+          "nom": "KBS Parkour",
+          "ville": "Petit-Lancy",
+          "canton": "GE",
+          "montant_CHF": 250000
+        },
+        {
+          "nom": "Assoc. régionale pour l'enfance et la jeunesse ARPEJE",
+          "ville": "Avenches",
+          "canton": "VD",
+          "montant_CHF": 175000
+        },
+        {
+          "nom": "Assoc. de l'École des Jordils",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 120000
+        },
+        {
+          "nom": "Fond. de la CVCI",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Assoc. Ondine Genevoise",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Commune mixte de Develier",
+          "ville": "Develier",
+          "canton": "JU",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Assoc. Politools",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "PIJA - Assoc. du Prix Interrégional des Jeunes Auteurs",
+          "ville": "Charmey",
+          "canton": "FR",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Assoc. AdO",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Fond. des Centres de vie enfantine La Ruche",
+          "ville": "Gland",
+          "canton": "VD",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. de la Ferme Foraine Bonaventure",
+          "ville": "Corsier",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "L'ARC, une autre école",
+          "ville": "Thônex",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. pour la Promotion du Goût",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "L'Agora d'Hypatie",
+          "ville": "Gland",
+          "canton": "VD",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "Assoc. Farfadet",
+          "ville": "Bière",
           "canton": "SR",
-          "montant_CHF": 500000
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Espace Famille le Bonheur des Touptis",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Fond. IdéeSport",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. régionale professionnelle pour l'insertion - ARPI",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Fond. Cité Printemps",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Collège Musical",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Unité Scientifique Mobile",
+          "ville": "Plan-les-Ouates",
+          "canton": "GE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Ville de Delémont",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. Esprit Du Cercle",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Fond. des Acacias",
+          "ville": "Prilly",
+          "canton": "VD",
+          "montant_CHF": 38000
+        },
+        {
+          "nom": "Assoc. JR",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Interprofession des fruits et légumes du Valais",
+          "ville": "Conthey",
+          "canton": "VS",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Féd. des Parlements des Jeunes",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 33000
+        },
+        {
+          "nom": "Assoc. valaisanne des ludothèques",
+          "ville": "Nendaz",
+          "canton": "VS",
+          "montant_CHF": 31500
+        },
+        {
+          "nom": "Noetic",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Cantonale des Musiques Neuchâteloises - ACMN",
+          "ville": "Le Landeron",
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. dev.tv",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. noetic",
+          "ville": "Yverdon-les- Bains",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. #cine",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Reatch ! Research. Think. Change",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Le Relais de Genève Montagne",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 28000
+        },
+        {
+          "nom": "Assoc. Hérisson sous gazon",
+          "ville": "Charrat",
+          "canton": "VS",
+          "montant_CHF": 27000
+        },
+        {
+          "nom": "La Coccinelle Jardins d'enfants intégratif",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "La Roulotte des mots",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Licra-Genève",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Solidarité Afrique Farafina",
+          "ville": "Baulmes",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Le Trait d'Union",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "JardinSuisse Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Verein Mach Müsig",
+          "ville": "Visp",
+          "canton": "VS",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Verein Singschule Oberwallis",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. All Kids Inclusive",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Rivages",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Santescalade",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Centre Genevois du Bénévolat",
+          "ville": "Grand-Lancy",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Collectif InteRob / Jardin Robinson de Meyrin",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Judo Club Lémanique",
+          "ville": "Collex",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Cinéculture",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Mathématiques sans Frontières",
+          "ville": "Bassecourt",
+          "canton": "JU",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Contributions de la Loterie Romande distribuées par la Conférence Schtifti Foundation",
+          "ville": "Zurich",
+          "canton": "JU",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Championnat valaisan des solistes d'instruments de cuivre",
+          "ville": "Grône",
+          "canton": "VS",
+          "montant_CHF": 18000
+        },
+        {
+          "nom": "Fond. Connectivia",
+          "ville": "Bussigny",
+          "canton": "FR",
+          "montant_CHF": 18000
+        },
+        {
+          "nom": "Assoc. les amis de La Chenille",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 17300
+        },
+        {
+          "nom": "Assoc. maxi beaux arts",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 17000
+        },
+        {
+          "nom": "Assoc. AG culturel | Kultur-GA",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 16000
+        },
+        {
+          "nom": "Cirque-en-Ciel",
+          "ville": "Prez-vers-Noreaz",
+          "canton": "FR",
+          "montant_CHF": 16000
+        },
+        {
+          "nom": "Commune de Courrendlin",
+          "ville": "Courrendlin",
+          "canton": "JU",
+          "montant_CHF": 15500
+        },
+        {
+          "nom": "MOD-ELLE",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Rassemblement des Jeunesses Valaisannes 2023",
+          "ville": "Chalais",
+          "canton": "VS",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. BBM74 goes live",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Bariolée",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Un Brin Créatif",
+          "ville": "Les Acacias",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Commune de Muriaux",
+          "ville": "Muriaux",
+          "canton": "JU",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Compagnie en boîte",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Fond. Dialogue",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. des amis et anciens élèves du Lycée Denis-de-Rougemont",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 14000
+        },
+        {
+          "nom": "Espace-Jeunes Delémont",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Assoc. ParticiMedia",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Assoc. L'Appart",
+          "ville": "Courtételle",
+          "canton": "JU",
+          "montant_CHF": 11000
+        },
+        {
+          "nom": "Club des amis de la Rouvraie",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 10250
+        },
+        {
+          "nom": "A Ton Tour !",
+          "ville": "La Tour-de-Peilz",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Les Mots-Clés à Molette",
+          "ville": "Rue",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Fond. PAMFri",
+          "ville": "Marly",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Frisbee",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Reformierte Krippe",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Triegel-Zunft / Jugendverein",
+          "ville": "Visperterminen",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "ASEC - Assoc. de soutien aux étudiants du Conservatoire",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Fond. Suisse pour la Recherche en Microtechnique - FSRM",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. À la forêt ! groupe de jeu en forêt",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Fourchette verte",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Genève débat",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Swiss Food Academy",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Mathématiques sans Frontières",
+          "ville": "Courrendlin",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Street Foot Challenge",
+          "ville": "Thielle",
+          "canton": "SR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "CSAJ - Conseil Suisse des Activités de Jeunesse",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. L'Accueil - structure d'accueil parascolaire",
+          "ville": "Saint-Blaise",
+          "canton": "NE",
+          "montant_CHF": 9000
+        },
+        {
+          "nom": "Espace de Vie enfantine Colibri, Espace",
+          "ville": "Espace",
+          "canton": "FR",
+          "montant_CHF": 8800
+        },
+        {
+          "nom": "Verein Kinderbetreuung Düdingen, Kindertagesstätte Balthasar",
+          "ville": "Düdingen",
+          "canton": "FR",
+          "montant_CHF": 8800
+        },
+        {
+          "nom": "Assoc. Arc-Echange",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. Îles aux Enfants",
+          "ville": "Ardon",
+          "canton": "VS",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Verein Jumbo 2023",
+          "ville": "Turtmann",
+          "canton": "VS",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Fond. IdéeSport",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. Pro-Philo",
+          "ville": "Chêne-Bougeries",
+          "canton": "GE",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Sté Suisse des Ingénieurs et Architectes - SIA",
+          "ville": "Zurich",
+          "canton": "JU",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. Jurassienne des Maisons pour Enfants et Adultes",
+          "ville": "Courrendlin",
+          "canton": "JU",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Commune mixte de Haute-Sorne",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. de Soutien aux Chœurs d'Enfants et de Jeunes",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Tageselternverein Sense",
+          "ville": "Tafers",
+          "canton": "FR",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Assoc. de la Revue (petite) enfance",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Assoc. Les Amis du Coffret magique",
+          "ville": "Villars-sur-Glâne",
+          "canton": "FR",
+          "montant_CHF": 6500
+        },
+        {
+          "nom": "Théâtre Crapouille",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Assoc. Autonomia",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Féd. Jurassienne de Musique",
+          "ville": "Courgenay",
+          "canton": "JU",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Collège Sainte-Croix",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 5837
+        },
+        {
+          "nom": "Centre de puériculture jurassien",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 5500
+        },
+        {
+          "nom": "Junges Theater Kerzers",
+          "ville": "Bern",
+          "canton": "GE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. DIS NO",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Les Bobines de Valency",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 4500
+        },
+        {
+          "nom": "Chœur St-Michel",
+          "ville": "Corpataux",
+          "canton": "FR",
+          "montant_CHF": 4180
+        },
+        {
+          "nom": "Assoc. St-Jean Rock",
+          "ville": "Levron",
+          "canton": "VS",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Fond. Organisation des Suisses de l'étranger",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Groupe Valaisan des Jeux Mathématiques",
+          "ville": "Bramois",
+          "canton": "VS",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Società Dante Alighieri del canton Vallese",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Assoc. SKILL",
+          "ville": "Le Locle",
+          "canton": "NE",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "RomandÉcole.ch",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "ATE Pedibus",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Groupe de jeux Les P'tits Amis",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 3556
+        },
+        {
+          "nom": "Assoc. Godzillab",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "Fond. suisse pour la recherche en microtechnique",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "Assoc., groupe de jeux, les lutins",
+          "ville": "Avry-devant-Pont",
+          "canton": "SR",
+          "montant_CHF": 3040
+        },
+        {
+          "nom": "Assoc. Junior Slow Melody Contest",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Assoc. Helvetia Rockt",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Assoc. IlotMots",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Assoc. Nature & Loisirs",
+          "ville": "Auboranges",
+          "canton": "SR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Féd. des Fanfares d'Ajoie",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Famylieträff Tafers",
+          "ville": "Tafers",
+          "canton": "FR",
+          "montant_CHF": 2667
+        },
+        {
+          "nom": "Assoc. des bibliothèques neuchâteloises - BiblioNeuchâtel",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 2500
+        },
+        {
+          "nom": "Assoc. Les Amis du Jardin Câlin",
+          "ville": "Posieux",
+          "canton": "FR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Fond. Science et jeunesse",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Nationales Jugend Akkordeon Orchester Schweiz",
+          "ville": "Aarburg",
+          "canton": "SR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. Festival des Combins",
+          "ville": "Verbier",
+          "canton": "VS",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. Magimalice",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Orchestre Valaisan Amateur",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. Flèche",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Les trois petits cochons",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. Jura Urban Tour",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Atelier forêt Hêtre heureux",
+          "ville": "Gletterens",
+          "canton": "FR",
+          "montant_CHF": 1800
+        },
+        {
+          "nom": "Atelier de jeux Arc-En-Ciel",
+          "ville": "Botterens",
+          "canton": "FR",
+          "montant_CHF": 1600
+        },
+        {
+          "nom": "Atelier de Jeux Les Koalas",
+          "ville": "Porsel",
+          "canton": "FR",
+          "montant_CHF": 1600
+        },
+        {
+          "nom": "Les Enchanteurs de Ste-Thérèse",
+          "ville": "Villars-sur-Glâne",
+          "canton": "FR",
+          "montant_CHF": 1560
+        },
+        {
+          "nom": "Féd. fribourgeoise des chorales",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Journée des familles gruériennes",
+          "ville": "Vuadens",
+          "canton": "FR",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Jeunesse de Lens-Icogne",
+          "ville": "Lens",
+          "canton": "VS",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Les Zéphyrs",
+          "ville": "Châtonnaye",
+          "canton": "FR",
+          "montant_CHF": 1200
+        },
+        {
+          "nom": "Féd. Cantonale des Accordéonistes Fribourgeois",
+          "ville": "Curtilles",
+          "canton": "FR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Waldspielgruppe Chlätter-Füchs",
+          "ville": "Giffers",
+          "canton": "FR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Assoc. Les Amis de Valençon",
+          "ville": "Flanthey",
+          "canton": "VS",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "APEV - Assoc. de Parents d'Elèves de Villars-sur-Glâne",
+          "ville": "Villars-sur-Glâne",
+          "canton": "FR",
+          "montant_CHF": 600
+        },
+        {
+          "nom": "Waldspielgruppe Ärgeraschnägge",
+          "ville": "Plasselb",
+          "canton": "FR",
+          "montant_CHF": 266
+        },
+        {
+          "nom": "Conseil Suisse des Activités de la Jeunesse",
+          "ville": "Liebefeld",
+          "canton": "JU",
+          "montant_CHF": 200
+        }
+      ]
+    },
+    {
+      "name": "Aide à la jeunesse",
+      "count": 9,
+      "total_chf": 2162000,
+      "mean_chf": 240222,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 125000
+        },
+        "FR": {
+          "count": 2,
+          "total_chf": 330000
+        },
+        "VS": {
+          "count": 3,
+          "total_chf": 354000
+        },
+        "GE": {
+          "count": 3,
+          "total_chf": 1353000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. Officielle de la jeunesse",
+          "ville": "Petit-Lancy",
+          "canton": "GE",
+          "montant_CHF": 933000
         },
         {
           "nom": "Fond. du centre Universitaire protestant",
@@ -73,32 +1053,94 @@
           "montant_CHF": 400000
         },
         {
-          "nom": "Assoc. La Chaloupe",
-          "ville": "Collombey-Muraz",
-          "canton": "SR",
-          "montant_CHF": 385000
+          "nom": "Assoc. REPER",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 320000
         },
         {
           "nom": "Assoc. Jeunes-Loisirs- Rencontres",
           "ville": "Martigny",
           "canton": "VS",
           "montant_CHF": 300000
+        },
+        {
+          "nom": "Centre vaudois d'aide à la jeunesse CVAJ",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 125000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Officielle de la jeunesse",
+          "ville": "Petit-Lancy",
+          "canton": "GE",
+          "montant_CHF": 933000
+        },
+        {
+          "nom": "Fond. du centre Universitaire protestant",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "Assoc. REPER",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 320000
+        },
+        {
+          "nom": "Assoc. Jeunes-Loisirs- Rencontres",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Centre vaudois d'aide à la jeunesse CVAJ",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 125000
+        },
+        {
+          "nom": "Assoc. La Fontanelle",
+          "ville": "Mex",
+          "canton": "VS",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. Stop Suicide",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Compagnie Boréale",
+          "ville": "Villars-sur-Glâne",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Relais-JRC",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 4000
         }
       ]
     },
     {
       "name": "Petite enfance & crèches",
-      "count": 41,
-      "total_chf": 1942327,
-      "mean_chf": 47373,
+      "count": 44,
+      "total_chf": 1964527,
+      "mean_chf": 44648,
       "cantons": {
         "VD": {
           "count": 6,
           "total_chf": 1556700
         },
         "FR": {
-          "count": 29,
-          "total_chf": 301927
+          "count": 32,
+          "total_chf": 324127
         },
         "SR": {
           "count": 3,
@@ -144,73 +1186,283 @@
           "canton": "SR",
           "montant_CHF": 25000
         }
-      ]
-    },
-    {
-      "name": "Aide à la jeunesse",
-      "count": 7,
-      "total_chf": 1462000,
-      "mean_chf": 208857,
-      "cantons": {
-        "VD": {
-          "count": 1,
-          "total_chf": 125000
-        },
-        "FR": {
-          "count": 2,
-          "total_chf": 330000
-        },
-        "VS": {
-          "count": 2,
-          "total_chf": 54000
-        },
-        "GE": {
-          "count": 2,
-          "total_chf": 953000
-        }
-      },
-      "samples": [
+      ],
+      "all_entries": [
         {
-          "nom": "Fond. Officielle de la jeunesse",
-          "ville": "Petit-Lancy",
-          "canton": "GE",
-          "montant_CHF": 933000
-        },
-        {
-          "nom": "Assoc. REPER",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 320000
-        },
-        {
-          "nom": "Centre vaudois d'aide à la jeunesse CVAJ",
+          "nom": "Fond. pour l'accueil de jour des enfants FAJE",
           "ville": "Lausanne",
           "canton": "VD",
-          "montant_CHF": 125000
+          "montant_CHF": 1500000
         },
         {
-          "nom": "Assoc. La Fontanelle",
-          "ville": "Mex",
-          "canton": "VS",
-          "montant_CHF": 50000
+          "nom": "Assoc. Les P'tits Pruneaux",
+          "ville": "St- Aubin",
+          "canton": "FR",
+          "montant_CHF": 38700
         },
         {
-          "nom": "Assoc. Stop Suicide",
-          "ville": "Genève",
+          "nom": "Assoc. de parents du jardin d'enfants du Croqu'pomme",
+          "ville": "St-Sulpice",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Crèche La Marelle, Farvagny-le-",
+          "ville": "Grand",
           "canton": "GE",
+          "montant_CHF": 27200
+        },
+        {
+          "nom": "Maison de la Petite Enfance",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Crèche les Galopins",
+          "ville": "Marsens",
+          "canton": "FR",
+          "montant_CHF": 21600
+        },
+        {
+          "nom": "Assoc. Crèche Pérollino",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 20800
+        },
+        {
+          "nom": "Kinderkrippe der Universität",
+          "ville": "Freiburg",
+          "canton": "FR",
           "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Le P'tit Bonheur",
+          "ville": "Neyruz",
+          "canton": "FR",
+          "montant_CHF": 17200
+        },
+        {
+          "nom": "Assoc. de la Crèche des Petits Poucets",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 16000
+        },
+        {
+          "nom": "Fond. La Poype / Crèche de la Providence",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 16000
+        },
+        {
+          "nom": "Crèche L'arche des enfants, Crèche",
+          "ville": "Crèche",
+          "canton": "FR",
+          "montant_CHF": 15500
+        },
+        {
+          "nom": "Crèche le château des enfants, Crèche",
+          "ville": "Crèche",
+          "canton": "FR",
+          "montant_CHF": 15200
+        },
+        {
+          "nom": "Assoc. Le Terrier - Jardin d'enfants les Petits Apprentis Sages",
+          "ville": "Prilly",
+          "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Jardin d'enfants Les Poupy's",
+          "ville": "Bussigny",
+          "canton": "FR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Cours de langue pour migrantes avec garderie Kiwi",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Crèche Mandarine",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Crèche Croqu'lune",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 14500
+        },
+        {
+          "nom": "Assoc. Crèche Le Bourillon",
+          "ville": "Ursy",
+          "canton": "FR",
+          "montant_CHF": 13200
+        },
+        {
+          "nom": "Assoc. Crèche le Bac-à-sages",
+          "ville": "Grandsivaz",
+          "canton": "FR",
+          "montant_CHF": 11600
+        },
+        {
+          "nom": "Assoc. Crèche Mosaïque",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 8500
+        },
+        {
+          "nom": "Verein Kita Schnäggehuus",
+          "ville": "Murten",
+          "canton": "FR",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Jardin d’enfants L’Alvéole",
+          "ville": "Cornol",
+          "canton": "JU",
+          "montant_CHF": 7600
+        },
+        {
+          "nom": "Fond. de la petite enfance, Granges-Paccot",
+          "ville": "Granges-Paccot",
+          "canton": "FR",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Assoc. Crèche Les P'tits Gamins",
+          "ville": "Chénens",
+          "canton": "SR",
+          "montant_CHF": 6900
+        },
+        {
+          "nom": "Jardin d'enfants La Bouêberie",
+          "ville": "Le Sentier",
+          "canton": "VD",
+          "montant_CHF": 6700
+        },
+        {
+          "nom": "Crèche les Poussins, Avry-sur-",
+          "ville": "Matran",
+          "canton": "FR",
+          "montant_CHF": 6600
+        },
+        {
+          "nom": "Crèche Brin d'Eveil",
+          "ville": "Berlens",
+          "canton": "FR",
+          "montant_CHF": 6400
+        },
+        {
+          "nom": "Kita Zauberschlössli",
+          "ville": "Tafers",
+          "canton": "FR",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Assoc. l'Arbre Magique & Les Renardeaux",
+          "ville": "Romont",
+          "canton": "FR",
+          "montant_CHF": 5600
+        },
+        {
+          "nom": "Assoc. Crèche Le Tsamala",
+          "ville": "La Roche",
+          "canton": "FR",
+          "montant_CHF": 4495
+        },
+        {
+          "nom": "Accueil extrascolaire Commune Hauterive",
+          "ville": "Posieux",
+          "canton": "FR",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Spielgruppe Düdingen",
+          "ville": "Düdingen",
+          "canton": "FR",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "Maternelle des Budzons du Lac",
+          "ville": "Forel",
+          "canton": "VD",
+          "montant_CHF": 3200
+        },
+        {
+          "nom": "Verein Singschule Sense",
+          "ville": "Giffers",
+          "canton": "FR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Assoc. Maternelle Rondin-Picotin",
+          "ville": "Morat",
+          "canton": "FR",
+          "montant_CHF": 2667
+        },
+        {
+          "nom": "Assoc. de la maternelle les Lapins Bleus",
+          "ville": "Charmey",
+          "canton": "FR",
+          "montant_CHF": 2133
+        },
+        {
+          "nom": "Jardin d'enfants Pierre de soleil",
+          "ville": "Develier",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Halte-Jeux /Garderie Les Lucioles",
+          "ville": "Vers-l'Eglise",
+          "canton": "VD",
+          "montant_CHF": 1800
+        },
+        {
+          "nom": "Spielgruppe Teddy-Huus",
+          "ville": "St. Antoni",
+          "canton": "FR",
+          "montant_CHF": 1600
+        },
+        {
+          "nom": "Assoc. les Castors",
+          "ville": "Cugy",
+          "canton": "FR",
+          "montant_CHF": 1200
+        },
+        {
+          "nom": "Assoc. de l'école maternelle de la Sonnaz",
+          "ville": "Lossy",
+          "canton": "FR",
+          "montant_CHF": 1066
+        },
+        {
+          "nom": "Assoc. de la Maternelle Cococinel",
+          "ville": "Châtonnaye",
+          "canton": "FR",
+          "montant_CHF": 1066
+        },
+        {
+          "nom": "Spielgruppe Härgottsgüegi",
+          "ville": "Plasselb",
+          "canton": "FR",
+          "montant_CHF": 1000
         }
       ]
     },
     {
       "name": "Soutien parental",
-      "count": 10,
-      "total_chf": 1193000,
-      "mean_chf": 119300,
+      "count": 9,
+      "total_chf": 1188000,
+      "mean_chf": 132000,
       "cantons": {
         "FR": {
-          "count": 5,
-          "total_chf": 694000
+          "count": 4,
+          "total_chf": 689000
         },
         "VS": {
           "count": 1,
@@ -255,6 +1507,62 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 65000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. JeunesParents",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 450000
+        },
+        {
+          "nom": "Pro Junior - arc jurassien",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 279000
+        },
+        {
+          "nom": "Assoc. Pro Junior",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 140000
+        },
+        {
+          "nom": "Point Rencontre Fribourg",
+          "ville": "Givisiez",
+          "canton": "FR",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "Pro Juventute, Bureau romand",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Pro Juventute",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Assoc. Pro Junior Arc jurassien",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. Point Rencontre Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. JeunesParents Suisse romande",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 9000
         }
       ]
     },
@@ -312,6 +1620,222 @@
           "canton": "FR",
           "montant_CHF": 81600
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Programme Culture & École, Culture",
+          "ville": "Culture",
+          "canton": "VS",
+          "montant_CHF": 260000
+        },
+        {
+          "nom": "famiya",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 202550
+        },
+        {
+          "nom": "Assoc. d'Accueil Familial de Jour du district de la Broye",
+          "ville": "Estavayer- le-Lac",
+          "canton": "FR",
+          "montant_CHF": 137000
+        },
+        {
+          "nom": "Assoc. d'accueil familial de jour du district de la Gruyère",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 135000
+        },
+        {
+          "nom": "Accueil Familial de Jour de la Glâne",
+          "ville": "Romont",
+          "canton": "FR",
+          "montant_CHF": 81600
+        },
+        {
+          "nom": "Kibelac - accueil d'enfants du district du Lac",
+          "ville": "Morat",
+          "canton": "FR",
+          "montant_CHF": 59130
+        },
+        {
+          "nom": "Assoc. d'Accueil Familial de Jour de la Veveyse",
+          "ville": "Attalens",
+          "canton": "FR",
+          "montant_CHF": 55620
+        },
+        {
+          "nom": "Verein Tagesstrukturen",
+          "ville": "Schmitten",
+          "canton": "FR",
+          "montant_CHF": 19000
+        },
+        {
+          "nom": "UAPE La Courte Échelle - AAEE Assoc. d'Accueil de l'Enfance d'Épalinges",
+          "ville": "Épalinges",
+          "canton": "VD",
+          "montant_CHF": 5500
+        },
+        {
+          "nom": "UAPE la Trottinette - AAEE Assoc. d'Accueil de l'Enfance d'Épalinges",
+          "ville": "Épalinges",
+          "canton": "VD",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Familientreff St. Ursen",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 500
+        }
+      ]
+    },
+    {
+      "name": "Passeport vacances & camps",
+      "count": 15,
+      "total_chf": 910500,
+      "mean_chf": 60700,
+      "cantons": {
+        "VD": {
+          "count": 5,
+          "total_chf": 251000
+        },
+        "SR": {
+          "count": 5,
+          "total_chf": 533000
+        },
+        "FR": {
+          "count": 3,
+          "total_chf": 6500
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 120000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. Le Camp",
+          "ville": "Vaumarcus",
+          "canton": "SR",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Colonie Vivre",
+          "ville": "Arzier-Le Muids",
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Sté de Colonies de Vacances La Joie de Vivre",
+          "ville": "Plan-les-Ouates",
+          "canton": "GE",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Féd. des colonies de vacances catholiques romaines du canton de Genève",
+          "ville": "Plan-les-Ouates",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Passeport Vacances de la Région lausannoise APVRL",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 30000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Le Camp",
+          "ville": "Vaumarcus",
+          "canton": "SR",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Colonie Vivre",
+          "ville": "Arzier-Le Muids",
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Sté de Colonies de Vacances La Joie de Vivre",
+          "ville": "Plan-les-Ouates",
+          "canton": "GE",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Féd. des colonies de vacances catholiques romaines du canton de Genève",
+          "ville": "Plan-les-Ouates",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Passeport Vacances de la Région lausannoise APVRL",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. du Passeport Vacances",
+          "ville": "Morges et environs",
+          "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "PASSVAC Aubonne-Gimel-Etoy (Passeport Vacances)",
+          "ville": "Gimel",
+          "canton": "SR",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Assoc. Passeport-Vacances d'Oron - Jorat",
+          "ville": "Oron-le-Châtel",
+          "canton": "SR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Allegro Musique",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 9000
+        },
+        {
+          "nom": "Passeport Vacances Bex",
+          "ville": "Passeport Vacances",
+          "canton": "VD",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Passeport Vacances de la Veveyse",
+          "ville": "Châtel-St-Denis",
+          "canton": "FR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Institut Les Peupliers",
+          "ville": "Oberried",
+          "canton": "SR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Verein Ferienpass Murten",
+          "ville": "Muntelier",
+          "canton": "FR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Croque Vacances",
+          "ville": "Arconciel",
+          "canton": "FR",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Passeport Vacances Domdidier",
+          "ville": "Passeport Vacances",
+          "canton": "VD",
+          "montant_CHF": 1000
+        }
       ]
     },
     {
@@ -367,6 +1891,50 @@
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 20000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. La Lanterne Magique",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 380000
+        },
+        {
+          "nom": "Assoc. La Lanterne Magique",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Assoc. du Bibliobus - Bain de Livres",
+          "ville": "Bressaucourt",
+          "canton": "JU",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Fond. Graines de Paix",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. Graine de génie et Graine de citoyen",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. PIP - Prévention de l'Illetrisme au préscolaire",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Assoc. Lire et Faire Lire",
+          "ville": "Chêne-Bougeries",
+          "canton": "GE",
+          "montant_CHF": 6000
         }
       ]
     },
@@ -428,61 +1996,97 @@
           "canton": "JU",
           "montant_CHF": 20000
         }
-      ]
-    },
-    {
-      "name": "Passeport vacances & camps",
-      "count": 13,
-      "total_chf": 401500,
-      "mean_chf": 30884,
-      "cantons": {
-        "VD": {
-          "count": 5,
-          "total_chf": 251000
-        },
-        "SR": {
-          "count": 3,
-          "total_chf": 24000
-        },
-        "FR": {
-          "count": 3,
-          "total_chf": 6500
-        },
-        "GE": {
-          "count": 2,
-          "total_chf": 120000
-        }
-      },
-      "samples": [
+      ],
+      "all_entries": [
         {
-          "nom": "Colonie Vivre",
-          "ville": "Arzier-Le Muids",
-          "canton": "VD",
-          "montant_CHF": 200000
+          "nom": "Conservatoire de Fribourg",
+          "ville": "Granges-Paccot",
+          "canton": "FR",
+          "montant_CHF": 185460
         },
         {
-          "nom": "Sté de Colonies de Vacances La Joie de Vivre",
+          "nom": "Fond. du Festival de Verbier",
+          "ville": "Verbier",
+          "canton": "VS",
+          "montant_CHF": 160000
+        },
+        {
+          "nom": "Fond. Ensemble",
           "ville": "Plan-les-Ouates",
           "canton": "GE",
-          "montant_CHF": 70000
+          "montant_CHF": 90000
         },
         {
-          "nom": "Féd. des colonies de vacances catholiques romaines du canton de Genève",
-          "ville": "Plan-les-Ouates",
-          "canton": "GE",
-          "montant_CHF": 50000
+          "nom": "Orchestre des Jeunes de Fribourg",
+          "ville": "Farvagny",
+          "canton": "FR",
+          "montant_CHF": 36000
         },
         {
-          "nom": "Passeport Vacances de la Région lausannoise APVRL",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 30000
+          "nom": "Orchestre National des Jeunesses Musicales Suisse",
+          "ville": "Zurich",
+          "canton": "JU",
+          "montant_CHF": 20000
         },
         {
-          "nom": "Assoc. du Passeport Vacances",
-          "ville": "Morges et environs",
-          "canton": "VD",
-          "montant_CHF": 15000
+          "nom": "Ensemble des Cadets de Courroux-Courcelon",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 3900
+        },
+        {
+          "nom": "Eveil musical en Glâne et environs",
+          "ville": "Esmonts",
+          "canton": "FR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Jugendmusik Brig",
+          "ville": "Brig",
+          "canton": "VS",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Corps des Cadets de la Ville de Bulle",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Groupement Cadets Mervelier- Corban-Montsevelier",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Maîtrise Saint-Pierre-aux-Liens, Maîtrise",
+          "ville": "Maîtrise",
+          "canton": "FR",
+          "montant_CHF": 1880
+        },
+        {
+          "nom": "Sté de musique La Villageoise",
+          "ville": "Rueyres-les-Prés",
+          "canton": "SR",
+          "montant_CHF": 1045
+        },
+        {
+          "nom": "Assoc. Fribourgeoise des Jeunes Musiciens",
+          "ville": "Marly",
+          "canton": "FR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Jeunesses Musicales Fribourg",
+          "ville": "Vaulruz",
+          "canton": "SR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Musikkverband der Sense",
+          "ville": "Ueberstorf",
+          "canton": "FR",
+          "montant_CHF": 1000
         }
       ]
     },
@@ -540,6 +2144,50 @@
           "canton": "VS",
           "montant_CHF": 7000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Maison de Quartier du Désert",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Centre de Loisirs",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. Espace Undertown",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "La Pagode - Centre de quartier de Malley-Montelly",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. sierroise de Loisirs et Culture - ASLEC",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Maison de quartier, Avanchets",
+          "ville": "Avanchets",
+          "canton": "GE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "AMJB - Assoc. de la Maison des Jeunes de Bevaix - KALLO",
+          "ville": "Bevaix",
+          "canton": "NE",
+          "montant_CHF": 3000
+        }
       ]
     },
     {
@@ -558,6 +2206,38 @@
         }
       },
       "samples": [
+        {
+          "nom": "Assoc. Cirque Toamême",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 48560
+        },
+        {
+          "nom": "Labo'Cirque",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "École de Cirque Fun'en'Bulle",
+          "ville": "Marsens",
+          "canton": "FR",
+          "montant_CHF": 13000
+        },
+        {
+          "nom": "Petit théâtre de la ville de Fribourg",
+          "ville": "Villars-sur-Glâne",
+          "canton": "FR",
+          "montant_CHF": 4500
+        },
+        {
+          "nom": "Assoc. Cirqu’O jeunes",
+          "ville": "Bourguillon",
+          "canton": "FR",
+          "montant_CHF": 3000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Assoc. Cirque Toamême",
           "ville": "Fribourg",
@@ -648,6 +2328,128 @@
           "canton": "VD",
           "montant_CHF": 5500
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Ludimania'K",
+          "ville": "Estavayer- le-Lac",
+          "canton": "FR",
+          "montant_CHF": 13000
+        },
+        {
+          "nom": "Ludimania'K",
+          "ville": "Estavayer-le-Lac",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Ludothèque de la Gruyère",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 8500
+        },
+        {
+          "nom": "Ludothèque de Nyon Région",
+          "ville": "Nyon",
+          "canton": "VD",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Assoc. de la Ludothèque de Vevey - La Luciole",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 5500
+        },
+        {
+          "nom": "La Ludothèque",
+          "ville": "Aigle",
+          "canton": "VD",
+          "montant_CHF": 5500
+        },
+        {
+          "nom": "Ludothèque de la Glâne",
+          "ville": "Romont",
+          "canton": "FR",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Ludothèque La Cigale",
+          "ville": "Savigny",
+          "canton": "VD",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "Ludothek Murten",
+          "ville": "Murten",
+          "canton": "FR",
+          "montant_CHF": 3200
+        },
+        {
+          "nom": "Ludothèque Schtroumpf de Neyruz et environs",
+          "ville": "Neyruz",
+          "canton": "FR",
+          "montant_CHF": 2800
+        },
+        {
+          "nom": "Assoc. de la Ludothèque de Chailly-sur-Lausanne",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 2600
+        },
+        {
+          "nom": "Ludothek Düdingen",
+          "ville": "Düdingen",
+          "canton": "FR",
+          "montant_CHF": 2560
+        },
+        {
+          "nom": "Ludothèque Boule de Gomme",
+          "ville": "Grandson",
+          "canton": "VD",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Ludothèque de la Basse Areuse",
+          "ville": "Boudry",
+          "canton": "NE",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Ludothèque de la Broye",
+          "ville": "Estavayer-le-Lac",
+          "canton": "FR",
+          "montant_CHF": 1700
+        },
+        {
+          "nom": "Ludothek Plaffeien und Umgebung",
+          "ville": "Plaffeien",
+          "canton": "FR",
+          "montant_CHF": 1200
+        },
+        {
+          "nom": "Ludothek SPUKI",
+          "ville": "Wünnewil (FR)",
+          "canton": "SR",
+          "montant_CHF": 1190
+        },
+        {
+          "nom": "Elternverein Giffers-Tentlingen / Ludothek",
+          "ville": "Giffers",
+          "canton": "FR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Ludothek Tafers",
+          "ville": "Tafers",
+          "canton": "FR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Ludothèque de Delémont",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 300
+        }
       ]
     },
     {
@@ -670,6 +2472,26 @@
         }
       },
       "samples": [
+        {
+          "nom": "Assoc. des Scouts Fribourgeois",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 29120
+        },
+        {
+          "nom": "Assoc. du scoutisme neuchâtelois",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. de Soutien des Scouts Nautiques",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Assoc. des Scouts Fribourgeois",
           "ville": null,

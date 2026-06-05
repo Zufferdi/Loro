@@ -3,42 +3,46 @@
     "classif": "environnement",
     "year": "2024",
     "source": "brb2024_full.json",
-    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 230,
-    "total_chf": 4348802,
-    "total_entries_classified": 29,
-    "total_chf_classified": 666048,
-    "pct_chf_classified": 15.3,
+    "total_entries": 221,
+    "total_chf": 3438934,
+    "precise_classified_entries": 31,
+    "precise_classified_chf": 1380698,
+    "pct_chf_precisely_classified": 40.1,
+    "pct_chf_classified": 100.0,
+    "total_entries_classified": 221,
+    "total_chf_classified": 3438934,
+    "catchall_chf": 2058236,
     "cross_year_recovered": 8,
     "sector": "Environnement",
     "sector_slug": "environnement",
-    "total_entries_sector": 230,
-    "total_chf_sector": 4348802,
-    "pct_entries_classified": 12.6
+    "total_entries_sector": 221,
+    "total_chf_sector": 3438934,
+    "pct_entries_classified": 100.0
   },
   "categories": [
     {
-      "name": "Autres",
-      "count": 201,
-      "total_chf": 3682754,
-      "mean_chf": 18322,
+      "name": "Soutien général à l'environnement",
+      "count": 190,
+      "total_chf": 2058236,
+      "mean_chf": 10832,
       "cantons": {
-        "VD": {
-          "count": 25,
-          "total_chf": 653525
-        },
-        "SR": {
-          "count": 37,
-          "total_chf": 1048917
-        },
         "GE": {
           "count": 14,
-          "total_chf": 544282
+          "total_chf": 383782
+        },
+        "SR": {
+          "count": 35,
+          "total_chf": 649199
+        },
+        "VD": {
+          "count": 23,
+          "total_chf": 216125
         },
         "FR": {
-          "count": 17,
-          "total_chf": 590920
+          "count": 14,
+          "total_chf": 125920
         },
         "NE": {
           "count": 5,
@@ -49,8 +53,1214 @@
           "total_chf": 58555
         },
         "JU": {
-          "count": 96,
-          "total_chf": 738331
+          "count": 92,
+          "total_chf": 576431
+        }
+      },
+      "samples": [
+        {
+          "nom": "Bucher Louis, Bassecourt - Cyclisme (trial) Finsterwald Nayan, Corban - Cyclisme (trial) Saucy Gaëtan",
+          "ville": "Develier - Natation",
+          "canton": "SR",
+          "montant_CHF": 225625
+        },
+        {
+          "nom": "Élite, individuels",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 111690
+        },
+        {
+          "nom": "Commune de Basse-Vendline",
+          "ville": "Revitalisation extraordinaire",
+          "canton": "JU",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Tigre - Faîtière genevoise des producteur·ice·x·s de théâtre indépendant et professionnel, Lieu de stockage et mutualisation",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "Associations",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 71591
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Bucher Louis, Bassecourt - Cyclisme (trial) Finsterwald Nayan, Corban - Cyclisme (trial) Saucy Gaëtan",
+          "ville": "Develier - Natation",
+          "canton": "SR",
+          "montant_CHF": 225625
+        },
+        {
+          "nom": "Élite, individuels",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 111690
+        },
+        {
+          "nom": "Commune de Basse-Vendline",
+          "ville": "Revitalisation extraordinaire",
+          "canton": "JU",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Tigre - Faîtière genevoise des producteur·ice·x·s de théâtre indépendant et professionnel, Lieu de stockage et mutualisation",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "Associations",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 71591
+        },
+        {
+          "nom": "Patinoire régionale de la Glâne",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 71072
+        },
+        {
+          "nom": "Assoc. Vaudoise de Basketball",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 69100
+        },
+        {
+          "nom": "Fond. Pro Vallon",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. Éco-Citoyen, Grand-Lancy Free-Go, un réseau, Grand-Lancy",
+          "ville": "Grand-Lancy",
+          "canton": "GE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. Genèveroule, Plan-les-Ouates Caddie Service : un service",
+          "ville": "Plan-les-Ouates",
+          "canton": "GE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Commune de Courgenay",
+          "ville": "Courgenay",
+          "canton": "JU",
+          "montant_CHF": 55000
+        },
+        {
+          "nom": "Fond. Fleur d’Épine",
+          "ville": "L' I s l e",
+          "canton": "SR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Volleyball Club Franches-Montagnes, Volleyball",
+          "ville": "Volleyball",
+          "canton": "GE",
+          "montant_CHF": 48600
+        },
+        {
+          "nom": "Volleyball Club Franches-Montagnes, Volleyball",
+          "ville": "Volleyball",
+          "canton": "GE",
+          "montant_CHF": 32400
+        },
+        {
+          "nom": "Assoc. pour la Sauvegarde du Léman (ASL)",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Teenergy production",
+          "ville": "Montreux",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Vaud-Valais-Fribourg de Tennis de Table",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 29200
+        },
+        {
+          "nom": "Visarte.Wallis",
+          "ville": "Brig",
+          "canton": "VS",
+          "montant_CHF": 29000
+        },
+        {
+          "nom": "Assoc. Vaudoise de Pétanque",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 25900
+        },
+        {
+          "nom": "Assoc. Vaudoise des Sociétés",
+          "ville": "Hippiques",
+          "canton": "VD",
+          "montant_CHF": 25800
+        },
+        {
+          "nom": "Féd. cantonale Neuchâteloise d'Apiculture",
+          "ville": "Cernier",
+          "canton": "NE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Commune de Courgenay",
+          "ville": "Courgenay",
+          "canton": "JU",
+          "montant_CHF": 23130
+        },
+        {
+          "nom": "Assoc. pour la Sauvegarde du Léman - ASL, Genève Net'Léman 2024 - 12 e",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "ECO2Challenge",
+          "ville": "Courtételle",
+          "canton": "JU",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Hockey Club Franches-Montagnes, Hockey",
+          "ville": "Hockey",
+          "canton": "FR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Rock'R Sauvage",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. des Amis de l'Espace Courant d'Art",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 18000
+        },
+        {
+          "nom": "ASA St-Ursanne - Les Rangiers",
+          "ville": "St-Ursanne",
+          "canton": "JU",
+          "montant_CHF": 17000
+        },
+        {
+          "nom": "Commune de Courtedoux Réaménagement",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 16000
+        },
+        {
+          "nom": "Assoc. Tir cantonal jurassien 2024",
+          "ville": "Montmelon e",
+          "canton": "JU",
+          "montant_CHF": 15500
+        },
+        {
+          "nom": "Vaud Unihockey",
+          "ville": "Vaud",
+          "canton": "VD",
+          "montant_CHF": 15300
+        },
+        {
+          "nom": "Assoc. Héros Ordinaires",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Mouvement Pro Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Sipy",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Université Populaire Albanaise",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. des Naturalistes Franc-Montagnards (ANFM)",
+          "ville": "Montfaucon",
+          "canton": "JU",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. de la Médaille",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. ECCO",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. La Hopscène",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. La Nef",
+          "ville": "Le Noirmont",
+          "canton": "JU",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Sémaphore",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Critérium jurassien",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 14500
+        },
+        {
+          "nom": "Assoc. FRG24",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 13480
+        },
+        {
+          "nom": "Sion 2024 Journée Fédérale des lutteurs",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 13480
+        },
+        {
+          "nom": "Club équestre Chevenez",
+          "ville": "Chevenez",
+          "canton": "JU",
+          "montant_CHF": 12500
+        },
+        {
+          "nom": "Assoc. Papy Mouche et Mamie Mone",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Assoc. Cirque à Présent, Vicques Cie Quotidienne - La Tournée",
+          "ville": "Vicques",
+          "canton": "JU",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Sté cantonale des patoisants fribourgeois",
+          "ville": "Vuadens",
+          "canton": "FR",
+          "montant_CHF": 10200
+        },
+        {
+          "nom": "Assoc. Onl'fait, Genève Woolshed - revitaliser",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Sté de Cavalerie d'Ajoie",
+          "ville": "Mont de Cœuve",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Jura'Zic",
+          "ville": "Courgenay",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Comité d'organisation, Journées fédérales des jeunes Lutteuses/Lutteurs",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 9520
+        },
+        {
+          "nom": "FRG'24 Genève",
+          "ville": "Fête Romande de",
+          "canton": "SR",
+          "montant_CHF": 9520
+        },
+        {
+          "nom": "Assoc. Madame Frigo",
+          "ville": "Lucerne",
+          "canton": "JU",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. des Amis du Patchwork Festival",
+          "ville": "Vicques",
+          "canton": "JU",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Commune de Courtételle",
+          "ville": "Courtételle",
+          "canton": "JU",
+          "montant_CHF": 7650
+        },
+        {
+          "nom": "BoxUp SA Part LoRo-Sport sur la station",
+          "ville": "BoxUp",
+          "canton": "NE",
+          "montant_CHF": 7408
+        },
+        {
+          "nom": "BoxUp SA Part LoRo-Sport sur la station",
+          "ville": "BoxUp",
+          "canton": "NE",
+          "montant_CHF": 7408
+        },
+        {
+          "nom": "BoxUp SA Part LoRo-Sport sur la station",
+          "ville": "BoxUp",
+          "canton": "NE",
+          "montant_CHF": 7408
+        },
+        {
+          "nom": "Assoc. La Nef",
+          "ville": "Le Noirmont",
+          "canton": "JU",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Assoc. des Amis du Patchwork Festival",
+          "ville": "Vicques",
+          "canton": "JU",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Féd. Vaudoise d'Escrime",
+          "ville": "Escrime",
+          "canton": "VD",
+          "montant_CHF": 6700
+        },
+        {
+          "nom": "Club de lutte de Lausanne et environ",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 6500
+        },
+        {
+          "nom": "Brêchet Vincent, Montsevelier Chèvre Mathieu, Bassecourt Gogniat Audrey, Le Noirmont Griffis Kalyssa, Delémont Hauert Jordan, Porrentruy Vogel Jephté, Courchavon Office des sports",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 6211
+        },
+        {
+          "nom": "Assoc. Midi Théâtre",
+          "ville": "Villars-sur-Glâne",
+          "canton": "FR",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Sion 2024 Journée Fédérale des lutteurs",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 5200
+        },
+        {
+          "nom": "Féd. Jurassienne d'Apiculture",
+          "ville": "Soyhières",
+          "canton": "JU",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Fond. suisse pour la pratique environnementale Pusch",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. La Nef",
+          "ville": "Le Noirmont",
+          "canton": "JU",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. RED",
+          "ville": "Mervelier",
+          "canton": "JU",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. Temps Liés",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. des 300 ans du Château, Delémont Festivités dans le cadre du 300 e",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. KoHalition production",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. La Diva",
+          "ville": "Lajoux",
+          "canton": "JU",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. du Laaf Théâtre",
+          "ville": "Courtételle",
+          "canton": "JU",
+          "montant_CHF": 4500
+        },
+        {
+          "nom": "Assoc. La Lanterne Magique",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Commune de Develier",
+          "ville": "Develier",
+          "canton": "JU",
+          "montant_CHF": 3650
+        },
+        {
+          "nom": "Giron jurassien des clubs",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "Schweizerdeutsches Wörterbuch",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 3464
+        },
+        {
+          "nom": "Assoc. cycliste cantonale Vaudoise",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 3370
+        },
+        {
+          "nom": "Boécourt Moto Racing Team",
+          "ville": "Boécourt",
+          "canton": "JU",
+          "montant_CHF": 3300
+        },
+        {
+          "nom": "Skater Hockey Club Rossemaison",
+          "ville": "Hockey",
+          "canton": "FR",
+          "montant_CHF": 3220
+        },
+        {
+          "nom": "Visarte.Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "ATE Jura, Delémont Vélo-cargo pour les habitants",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Promoskate Events",
+          "ville": "Rossemaison",
+          "canton": "JU",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Skater Hockey Club Rossemaison",
+          "ville": "Hockey",
+          "canton": "FR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Autocross jurassien",
+          "ville": "Bure",
+          "canton": "JU",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Assoc. Le Roman des Romands",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Assoc. Les Estivaliers",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Assoc. Tartare de miettes",
+          "ville": "Les Bois",
+          "canton": "JU",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Assoc. Ecoute Voir",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Skater Hockey Club Bassecourt",
+          "ville": "Hockey",
+          "canton": "FR",
+          "montant_CHF": 2900
+        },
+        {
+          "nom": "Fond. Leysin Big Air Bag",
+          "ville": "Leysin",
+          "canton": "VD",
+          "montant_CHF": 2696
+        },
+        {
+          "nom": "Freiburgische Vereinigung für Tracht und Brauch (FVTB)",
+          "ville": "Plaffeien",
+          "canton": "FR",
+          "montant_CHF": 2500
+        },
+        {
+          "nom": "Club d'athlétisme Fontenais",
+          "ville": "Fontenais",
+          "canton": "JU",
+          "montant_CHF": 2500
+        },
+        {
+          "nom": "Assoc. cycliste cantonale vaudoise",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 2380
+        },
+        {
+          "nom": "Féd. Vaudoise des Échecs",
+          "ville": "Échecs",
+          "canton": "GE",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Vélo Club Franches-Montagnes",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. Jura Challenge",
+          "ville": "Develier",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. jurassienne de lutte suisse",
+          "ville": "Alle",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. Tour du Jura",
+          "ville": "Montsevelier",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. projet film File l'Allaine",
+          "ville": "Courgenay",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. RAJ",
+          "ville": "Courgenay",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. Serpent Journey",
+          "ville": "Les Bois",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. culturelle Espace Ste-Croix",
+          "ville": "Bressaucourt",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. des amis du PIRE, Porrentruy Une vision anticipée du Jura en 2074",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. La Balade de Séprais",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Commune de Val-Terbi",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1920
+        },
+        {
+          "nom": "Fond. Leysin Big Air Bag",
+          "ville": "Leysin",
+          "canton": "VD",
+          "montant_CHF": 1904
+        },
+        {
+          "nom": "Assoc. Vaudoise de Basketball",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1820
+        },
+        {
+          "nom": "e Fête Romande de Lutte Suisse à Riaz",
+          "ville": "Fête",
+          "canton": "VS",
+          "montant_CHF": 1685
+        },
+        {
+          "nom": "Trophée Jurassien",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Hockey Club Ajoie",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Slalom de Bure",
+          "ville": "Bure",
+          "canton": "JU",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Championnat jurassien des sports motorisés",
+          "ville": "Boncourt",
+          "canton": "JU",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Assoc. Tetralyre",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Assoc. Éditions Empreintes, Chavannes-près-Renens Alexandre Voisard, une mémoire",
+          "ville": "Chavannes-près-Renens",
+          "canton": "JU",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Comité d'organisation",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1332
+        },
+        {
+          "nom": "Assoc. cycliste cantonale vaudoise",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 1300
+        },
+        {
+          "nom": "Assoc. Roadmovie",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1250
+        },
+        {
+          "nom": "Assoc. FRG24",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1200
+        },
+        {
+          "nom": "Club des lutteurs Ls et environs Journée fédérale des Jeunes",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1200
+        },
+        {
+          "nom": "Club des Lutteurs de la Gruyère e Fête romande de lutte",
+          "ville": "Fête",
+          "canton": "VS",
+          "montant_CHF": 1190
+        },
+        {
+          "nom": "Sté de cavalerie de Delémont",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 1150
+        },
+        {
+          "nom": "Sté Suisse de Sauvetage",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1050
+        },
+        {
+          "nom": "Assoc. Regards Croisés",
+          "ville": "Savagnier",
+          "canton": "NE",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Sté de cavalerie",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Sté de Cavalerie Delémont et environs",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Stés réunies Rebeuvelier",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Valterbimania Sport",
+          "ville": "Mervelier",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Vélo Club Jurassia",
+          "ville": "Bassecourt",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Groupe équestre des Franches-Montagnes",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Hockey Events",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Manège du Pré-Mo",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Auto-Moto-Club Ederswiler",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Club équestre Chevenez",
+          "ville": "Chevenez",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Club équestre St-Hubert",
+          "ville": "Bassecourt",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Assoc. Label Rapace",
+          "ville": "Mervelier",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Assoc. nationale Médiation Culturelle Suisse",
+          "ville": "Zurich",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Assoc. PIJA Suisse, Charmey Prix interrégional",
+          "ville": "Charmey",
+          "canton": "FR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Assoc. Undersound",
+          "ville": "Undervelier",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Assoc. Danse Transition",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Assoc. Esprit Danse",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Club des lutteurs de la Gruyère",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 925
+        },
+        {
+          "nom": "Vélo Club Franches-Montagnes",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 800
+        },
+        {
+          "nom": "Sté de Cavalerie Delémont et environs",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 800
+        },
+        {
+          "nom": "Assoc. cycliste cantonale Vaudoise",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 800
+        },
+        {
+          "nom": "Assoc. cycliste cantonale Vaudoise",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 785
+        },
+        {
+          "nom": "Hockey Club Delémont-Vallée",
+          "ville": "Hockey",
+          "canton": "FR",
+          "montant_CHF": 750
+        },
+        {
+          "nom": "Club des lutteurs de la Gruyère e",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 650
+        },
+        {
+          "nom": "Fond. Leysin Big Air Bag",
+          "ville": "Leysin",
+          "canton": "VD",
+          "montant_CHF": 640
+        },
+        {
+          "nom": "Hockey Club Delémont-Vallée, Hockey",
+          "ville": "Hockey",
+          "canton": "FR",
+          "montant_CHF": 600
+        },
+        {
+          "nom": "VTT Club Jura",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 600
+        },
+        {
+          "nom": "Assoc. Vaudoise de Billard",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Attalen'stock",
+          "ville": "Attalens",
+          "canton": "FR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Club d'athlétisme",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Club de pétanque La Parisienne",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Club de pétanque Les Poissonnets",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Vélo Club Franches-Montagnes",
+          "ville": "Les Genevez",
+          "canton": "JU",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Curling Club Porrentruy",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Domoniak Triathlon",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Enduro du Jura",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Groupe Jeunesse Haute-Ajoie",
+          "ville": "Damvant",
+          "canton": "SR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "La Relaide",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Le Noirmont VTT Club",
+          "ville": "Le Noirmont",
+          "canton": "JU",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "BUDO-KAN Porrentruy",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Club Cycliste Les Vouivres",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Club des Patineurs d'Ajoie",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Crea’move Delémont Championnat jurassien",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Football Club Olympic Fahy",
+          "ville": "Football Club",
+          "canton": "GE",
+          "montant_CHF": 470
+        },
+        {
+          "nom": "Club de pétanque La Boule Franche",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 450
+        },
+        {
+          "nom": "Assoc. Phil Steulet",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 400
+        },
+        {
+          "nom": "Club des Lutteurs de la Gruyère",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 400
+        },
+        {
+          "nom": "Omnisport Boncourt",
+          "ville": "Boncourt",
+          "canton": "JU",
+          "montant_CHF": 300
+        },
+        {
+          "nom": "Assoc. Neuchâteloise de Course d'Orientation",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 300
+        },
+        {
+          "nom": "Assoc. cantonale des tireurs vétérans",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 260
+        },
+        {
+          "nom": "Hockey Club Delémont-Vallée",
+          "ville": "Hockey",
+          "canton": "FR",
+          "montant_CHF": 250
+        },
+        {
+          "nom": "Judo-Club Boécourt",
+          "ville": "Boécourt",
+          "canton": "JU",
+          "montant_CHF": 250
+        },
+        {
+          "nom": "Club de l'Orque",
+          "ville": "Boncourt",
+          "canton": "JU",
+          "montant_CHF": 250
+        },
+        {
+          "nom": "Fond. Leysin Big Air Bag",
+          "ville": "Leysin",
+          "canton": "VD",
+          "montant_CHF": 240
+        },
+        {
+          "nom": "Unihockey Club Ajoie",
+          "ville": "Bure",
+          "canton": "JU",
+          "montant_CHF": 200
+        },
+        {
+          "nom": "Volleyball Club Porrentruy",
+          "ville": "Volleyball",
+          "canton": "GE",
+          "montant_CHF": 200
+        },
+        {
+          "nom": "Domoniak Triathlon",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 200
+        },
+        {
+          "nom": "Energym Fahy",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 200
+        },
+        {
+          "nom": "Gym-Dames Delémont",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 200
+        },
+        {
+          "nom": "Club de pétanque Escargolet",
+          "ville": "Develier",
+          "canton": "JU",
+          "montant_CHF": 200
+        },
+        {
+          "nom": "Club des lutteurs de la Gruyère",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 150
+        },
+        {
+          "nom": "Assoc. jurassienne des gymnastes",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 140
+        },
+        {
+          "nom": "Assoc. FFG Lausanne 2025 Solde Fête fédérale",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 140
+        },
+        {
+          "nom": "Assoc. FRG24 Genève Solde Fête romande",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 112
+        }
+      ]
+    },
+    {
+      "name": "Faune & biodiversité",
+      "count": 17,
+      "total_chf": 817448,
+      "mean_chf": 48085,
+      "cantons": {
+        "SR": {
+          "count": 8,
+          "total_chf": 339448
+        },
+        "VD": {
+          "count": 2,
+          "total_chf": 410000
+        },
+        "FR": {
+          "count": 2,
+          "total_chf": 12000
+        },
+        "VS": {
+          "count": 2,
+          "total_chf": 30000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 20000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 6000
         }
       },
       "samples": [
@@ -61,63 +1271,37 @@
           "montant_CHF": 400000
         },
         {
-          "nom": "Maison des Amériques, Châtel-St-Denis Musée traitant de la migration des Fribourgeois-es au 19 e",
-          "ville": "Châtel-St-Denis",
-          "canton": "FR",
-          "montant_CHF": 300000
-        },
-        {
-          "nom": "Va la is",
+          "nom": "Divers",
           "ville": null,
           "canton": "SR",
-          "montant_CHF": 259818
+          "montant_CHF": 132448
         },
         {
-          "nom": "Bucher Louis, Bassecourt - Cyclisme (trial) Finsterwald Nayan, Corban - Cyclisme (trial) Saucy Gaëtan",
-          "ville": "Develier - Natation",
+          "nom": "Centre Pro Natura de Champ-Pittet",
+          "ville": "Cheseaux-Noréaz",
           "canton": "SR",
-          "montant_CHF": 225625
+          "montant_CHF": 60000
         },
         {
-          "nom": "Fond. Aigues-Vertes",
-          "ville": "Bernex",
-          "canton": "GE",
-          "montant_CHF": 200000
+          "nom": "Commune mixte de Courroux-Courcelon",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. des Amis de La Salamandre",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 40000
         }
-      ]
-    },
-    {
-      "name": "Faune & biodiversité",
-      "count": 15,
-      "total_chf": 397448,
-      "mean_chf": 26496,
-      "cantons": {
-        "SR": {
-          "count": 8,
-          "total_chf": 339448
+      ],
+      "all_entries": [
+        {
+          "nom": "Erminea",
+          "ville": "Chavornay",
+          "canton": "VD",
+          "montant_CHF": 400000
         },
-        "FR": {
-          "count": 2,
-          "total_chf": 12000
-        },
-        "VS": {
-          "count": 1,
-          "total_chf": 10000
-        },
-        "GE": {
-          "count": 1,
-          "total_chf": 20000
-        },
-        "JU": {
-          "count": 2,
-          "total_chf": 6000
-        },
-        "VD": {
-          "count": 1,
-          "total_chf": 10000
-        }
-      },
-      "samples": [
         {
           "nom": "Divers",
           "ville": null,
@@ -147,22 +1331,188 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 25000
+        },
+        {
+          "nom": "SPA Valais",
+          "ville": "Ardon",
+          "canton": "VS",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Pro Natura Genève Éducation à la nature -",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Fond. des marais de Damphreux Sauvegarde et augmentation",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "PUSCH - L’environnement en pratique, Sion Voisinages fleuris ! Des prairies naturelles pour plus de biodiversité",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Pro Natura Zentrum Aletsch",
+          "ville": "Riederalp",
+          "canton": "SR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Fête de la Nature",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "BirdLife Suisse - Assoc. suisse pour la protection des oiseaux (ASPO)",
+          "ville": "Cudrefin",
+          "canton": "FR",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Centre-Nature BirdLife de La Sauge, Cudrefin Aborder la biodiversité à l'école",
+          "ville": "Cudrefin",
+          "canton": "FR",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Groupe pour la protection de la nature de Glovelier",
+          "ville": "Glovelier",
+          "canton": "JU",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "ALLJ Assoc. Avenir Loup Lynx Jura",
+          "ville": "Arzier-le-Muids",
+          "canton": "SR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Pro Natura Jura",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 2000
+        }
+      ]
+    },
+    {
+      "name": "Énergie & climat",
+      "count": 2,
+      "total_chf": 189650,
+      "mean_chf": 94825,
+      "cantons": {
+        "FR": {
+          "count": 2,
+          "total_chf": 189650
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. CO2",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 183750
+        },
+        {
+          "nom": "Assoc. CO2",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 5900
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. CO2",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 183750
+        },
+        {
+          "nom": "Assoc. CO2",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 5900
+        }
+      ]
+    },
+    {
+      "name": "Montagne & Alpages",
+      "count": 3,
+      "total_chf": 171000,
+      "mean_chf": 57000,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 8000
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 160000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 3000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Alpage de Serin",
+          "ville": "Ayent",
+          "canton": "VS",
+          "montant_CHF": 160000
+        },
+        {
+          "nom": "Assoc. des Amis du sentier Sur les pas des Huguenots et des Vaudois du Piémont",
+          "ville": "La Chaux (Cossonay)",
+          "canton": "VD",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Parrainage suisse pour les communes de montagne",
+          "ville": "Zurich",
+          "canton": "JU",
+          "montant_CHF": 3000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Alpage de Serin",
+          "ville": "Ayent",
+          "canton": "VS",
+          "montant_CHF": 160000
+        },
+        {
+          "nom": "Assoc. des Amis du sentier Sur les pas des Huguenots et des Vaudois du Piémont",
+          "ville": "La Chaux (Cossonay)",
+          "canton": "VD",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Parrainage suisse pour les communes de montagne",
+          "ville": "Zurich",
+          "canton": "JU",
+          "montant_CHF": 3000
         }
       ]
     },
     {
       "name": "Eau / Lacs / Rivières",
-      "count": 6,
-      "total_chf": 125600,
-      "mean_chf": 20933,
+      "count": 4,
+      "total_chf": 75600,
+      "mean_chf": 18900,
       "cantons": {
-        "GE": {
-          "count": 4,
-          "total_chf": 73000
-        },
         "SR": {
           "count": 2,
           "total_chf": 52600
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 23000
         }
       },
       "samples": [
@@ -171,18 +1521,6 @@
           "ville": "Les Charbonnières",
           "canton": "SR",
           "montant_CHF": 45000
-        },
-        {
-          "nom": "Assoc. pour la Sauvegarde du Léman (ASL)",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 30000
-        },
-        {
-          "nom": "Assoc. pour la Sauvegarde du Léman - ASL, Genève Net'Léman 2024 - 12 e",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 20000
         },
         {
           "nom": "Alliance Internationales pour la gestion de l'eau de pluie | IRHA, Châtelaine PLUIË : Promouvoir de manière",
@@ -195,6 +1533,38 @@
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 10000
+        },
+        {
+          "nom": "Sté Internationale de Sauvetage du Lac Léman",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 7600
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Compagnie de navigation sur le lac de Joux",
+          "ville": "Les Charbonnières",
+          "canton": "SR",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "Alliance Internationales pour la gestion de l'eau de pluie | IRHA, Châtelaine PLUIË : Promouvoir de manière",
+          "ville": "Châtelaine",
+          "canton": "GE",
+          "montant_CHF": 13000
+        },
+        {
+          "nom": "Genève Tiers Monde - GeTM",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Sté Internationale de Sauvetage du Lac Léman",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 7600
         }
       ]
     },
@@ -214,6 +1584,20 @@
         }
       },
       "samples": [
+        {
+          "nom": "Assoc. de l'Arboretum National du Vallon de l'Aubonne (AAVA)",
+          "ville": "Aubonne",
+          "canton": "VD",
+          "montant_CHF": 68000
+        },
+        {
+          "nom": "Assoc. La Murithienne",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 6000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Assoc. de l'Arboretum National du Vallon de l'Aubonne (AAVA)",
           "ville": "Aubonne",
@@ -246,35 +1630,13 @@
           "canton": "VD",
           "montant_CHF": 40000
         }
-      ]
-    },
-    {
-      "name": "Montagne & Alpages",
-      "count": 2,
-      "total_chf": 11000,
-      "mean_chf": 5500,
-      "cantons": {
-        "VD": {
-          "count": 1,
-          "total_chf": 8000
-        },
-        "JU": {
-          "count": 1,
-          "total_chf": 3000
-        }
-      },
-      "samples": [
+      ],
+      "all_entries": [
         {
-          "nom": "Assoc. des Amis du sentier Sur les pas des Huguenots et des Vaudois du Piémont",
-          "ville": "La Chaux (Cossonay)",
+          "nom": "Assoc. TerrraTerrre, Prilly Sollicitation du soutien public et des acteurs clés pour une économie circulaire axée, Prilly",
+          "ville": "Prilly",
           "canton": "VD",
-          "montant_CHF": 8000
-        },
-        {
-          "nom": "Parrainage suisse pour les communes de montagne",
-          "ville": "Zurich",
-          "canton": "JU",
-          "montant_CHF": 3000
+          "montant_CHF": 40000
         }
       ]
     },
@@ -296,25 +1658,13 @@
           "canton": "GE",
           "montant_CHF": 11000
         }
-      ]
-    },
-    {
-      "name": "Parcs naturels",
-      "count": 1,
-      "total_chf": 5000,
-      "mean_chf": 5000,
-      "cantons": {
-        "NE": {
-          "count": 1,
-          "total_chf": 5000
-        }
-      },
-      "samples": [
+      ],
+      "all_entries": [
         {
-          "nom": "Assoc. Opéra Décentralisé, Neuchâtel Bal(l)ades dans le Parc du Doubs 2024 -",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 5000
+          "nom": "Assoc. Jeux Coopératifs",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 11000
         }
       ]
     },
@@ -330,6 +1680,14 @@
         }
       },
       "samples": [
+        {
+          "nom": "Assoc. Traditions et Découvertes",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Assoc. Traditions et Découvertes",
           "ville": null,

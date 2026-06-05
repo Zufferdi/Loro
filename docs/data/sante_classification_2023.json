@@ -3,54 +3,38 @@
     "classif": "sante",
     "year": "2023",
     "source": "brb2023_full.json",
-    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 180,
-    "total_chf": 17676107,
-    "total_entries_classified": 80,
-    "total_chf_classified": 7266812,
-    "pct_chf_classified": 41.1,
-    "cross_year_recovered": 3,
+    "total_entries": 176,
+    "total_chf": 18824754,
+    "precise_classified_entries": 91,
+    "precise_classified_chf": 14189724,
+    "pct_chf_precisely_classified": 75.4,
+    "pct_chf_classified": 100.0,
+    "total_entries_classified": 176,
+    "total_chf_classified": 18824754,
+    "catchall_chf": 4635030,
+    "cross_year_recovered": 10,
     "sector": "Santé et handicap",
     "sector_slug": "sante",
-    "total_entries_sector": 180,
-    "total_chf_sector": 17676107,
-    "pct_entries_classified": 44.4
+    "total_entries_sector": 176,
+    "total_chf_sector": 18824754,
+    "pct_entries_classified": 100.0
   },
   "categories": [
     {
-      "name": "Autres",
-      "count": 100,
-      "total_chf": 10409295,
-      "mean_chf": 104092,
+      "name": "Handicap mental / intellectuel",
+      "count": 3,
+      "total_chf": 4710000,
+      "mean_chf": 1570000,
       "cantons": {
         "VD": {
-          "count": 32,
-          "total_chf": 3365445
-        },
-        "SR": {
-          "count": 11,
-          "total_chf": 581750
+          "count": 2,
+          "total_chf": 1010000
         },
         "GE": {
-          "count": 20,
-          "total_chf": 4783700
-        },
-        "FR": {
-          "count": 8,
-          "total_chf": 130400
-        },
-        "VS": {
-          "count": 22,
-          "total_chf": 1312000
-        },
-        "JU": {
-          "count": 6,
-          "total_chf": 146000
-        },
-        "NE": {
           "count": 1,
-          "total_chf": 90000
+          "total_chf": 3700000
         }
       },
       "samples": [
@@ -67,6 +51,70 @@
           "montant_CHF": 1000000
         },
         {
+          "nom": "Assoc. Intervalle",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 10000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Établissements publics pour l'intégration EPI",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 3700000
+        },
+        {
+          "nom": "Assoc. Intervalle",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Assoc. Intervalle",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 10000
+        }
+      ]
+    },
+    {
+      "name": "Soutien général à la santé / handicap",
+      "count": 85,
+      "total_chf": 4635030,
+      "mean_chf": 54529,
+      "cantons": {
+        "VD": {
+          "count": 25,
+          "total_chf": 1614180
+        },
+        "SR": {
+          "count": 10,
+          "total_chf": 547750
+        },
+        "GE": {
+          "count": 19,
+          "total_chf": 1083700
+        },
+        "FR": {
+          "count": 7,
+          "total_chf": 120400
+        },
+        "VS": {
+          "count": 17,
+          "total_chf": 1033000
+        },
+        "JU": {
+          "count": 6,
+          "total_chf": 146000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 90000
+        }
+      },
+      "samples": [
+        {
           "nom": "Fond. Domus",
           "ville": "Ardon",
           "canton": "VS",
@@ -79,22 +127,550 @@
           "montant_CHF": 430000
         },
         {
-          "nom": "Institut universitaire de sciences sociales des religions, Conseil œcuménique d’aumônerie en EMS (CADEMS) et Haute École de Santé Vaud (HESAV)",
+          "nom": "AFIRO",
+          "ville": "Ecublens",
+          "canton": "VD",
+          "montant_CHF": 240000
+        },
+        {
+          "nom": "Fond. Jeanne Kunkler",
+          "ville": "Villariaz",
+          "canton": "SR",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Fond. Perceval",
+          "ville": "St-Prex",
+          "canton": "VD",
+          "montant_CHF": 200000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Domus",
+          "ville": "Ardon",
+          "canton": "VS",
+          "montant_CHF": 700000
+        },
+        {
+          "nom": "Fond. privée des HUG",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 430000
+        },
+        {
+          "nom": "AFIRO",
+          "ville": "Ecublens",
+          "canton": "VD",
+          "montant_CHF": 240000
+        },
+        {
+          "nom": "Fond. Jeanne Kunkler",
+          "ville": "Villariaz",
+          "canton": "SR",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Fond. Perceval",
+          "ville": "St-Prex",
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Féd. genevoise des Associations de personnes handicapées et de leurs proches",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 145000
+        },
+        {
+          "nom": "Assoc. DiabèteVaud",
           "ville": "Lausanne",
           "canton": "VD",
-          "montant_CHF": 350000
+          "montant_CHF": 140000
+        },
+        {
+          "nom": "La Branche",
+          "ville": "Mollie-Margot",
+          "canton": "SR",
+          "montant_CHF": 120000
+        },
+        {
+          "nom": "Fond. Bois-Gentil",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 116000
+        },
+        {
+          "nom": "Fond. Les Eglantines",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 113000
+        },
+        {
+          "nom": "Special Oympics Switzerland",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Le ColLaboratoire, Université, Lausanne",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 95780
+        },
+        {
+          "nom": "Fond. Les Perce-Neige",
+          "ville": "Les Hauts-Geneveys",
+          "canton": "NE",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "Assoc. Anyatas",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 85000
+        },
+        {
+          "nom": "Fond. Valaisanne en Faveur des Personnes Handicapées Mentales",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Fond. A Capella",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Fond. Pérène",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 72000
+        },
+        {
+          "nom": "Assoc. Go Tandem",
+          "ville": "Yvorne",
+          "canton": "VD",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "CREAHM Fribourg",
+          "ville": "Villars-sur- Glâne",
+          "canton": "FR",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Swiss Emergency Responders",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 68000
+        },
+        {
+          "nom": "Fond. Coup d'Pouce",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Fond. As'trame",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Fond. Les Oliviers",
+          "ville": "Le Mont-sur-Lausanne",
+          "canton": "VD",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. Courir...ensemble",
+          "ville": "Athenaz (Avusy)",
+          "canton": "GE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. Hôpiclowns",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. SurdiBus",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "ASK-All Special Kids",
+          "ville": "Le Grand-Saconnex",
+          "canton": "GE",
+          "montant_CHF": 55000
+        },
+        {
+          "nom": "Assoc. La Parenthèse",
+          "ville": "St- Gingolph",
+          "canton": "VS",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. Le Copain",
+          "ville": "Granges",
+          "canton": "VS",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. des logements pour personnes âgées ou isolées",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Handicap International",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. S5",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. Autrement-Aujourd'hui",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Fishing Battle Association",
+          "ville": "Renens",
+          "canton": "VD",
+          "montant_CHF": 33000
+        },
+        {
+          "nom": "Relax Culture",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Genevoise de Foot fauteuil",
+          "ville": "Bellevue",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Fond. As'trame",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Aphasie Suisse",
+          "ville": "Lucerne",
+          "canton": "JU",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Différences Solidaires",
+          "ville": "Crésuz",
+          "canton": "SR",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Slowlution",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "noetic",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Suisse des Fibromyalgiques",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Rayon de Soleil / Sonnenblume",
+          "ville": "Granges",
+          "canton": "VS",
+          "montant_CHF": 24000
+        },
+        {
+          "nom": "Handicap Solidarité",
+          "ville": "Buix",
+          "canton": "JU",
+          "montant_CHF": 21000
+        },
+        {
+          "nom": "Assoc. Villars Escalade",
+          "ville": "Villars-sur-Ollon",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Ligue valaisanne contre le rhumatisme",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Stiftung St. Josef",
+          "ville": "Susten",
+          "canton": "VS",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Corps solidaires - Assoc. Suisse Romande Assistance Sexuelle et Handicaps",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Fond. Suisse de la Chaîne du Bonheur",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Fond. Le Copain",
+          "ville": "Granges",
+          "canton": "VS",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Fond. As'trame",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. re-pairs",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 18000
+        },
+        {
+          "nom": "Assoc. PluSport Sport Handicap Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 17000
+        },
+        {
+          "nom": "Laboratoire en Santé de l'enfant et de la famille - HEdS",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 16750
+        },
+        {
+          "nom": "Schweizerische Bibliothek für Blinde, Seh- und Lesebehinderte-SBS, Étoile sonore",
+          "ville": "Zurich",
+          "canton": "JU",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Arcade Sages-Femmes, Sages-Femmes à domicile",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. S5",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. So Close",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 12500
+        },
+        {
+          "nom": "Capdenho",
+          "ville": "Château-d'Œx",
+          "canton": "VD",
+          "montant_CHF": 11000
+        },
+        {
+          "nom": "Sté suisse des médecins- dentistes",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. du Marathon des terroirs du Valais",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Sportpress.ch/Valais-Wallis",
+          "ville": "Saillon",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Verein ERWOplus (Erwachsenenbildung Oberwallis+)",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Fond. Maison d'accueil Sainte- Catherine",
+          "ville": "Lucelle",
+          "canton": "SR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Label Fait Maison",
+          "ville": "Pully",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Fond. AACTS",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 9000
+        },
+        {
+          "nom": "Assoc. So Close",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 8700
+        },
+        {
+          "nom": "Palliative Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Sté des Sourds de Genève - SSG",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Commission cantonale d'aide au sport",
+          "ville": "Conches",
+          "canton": "GE",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Assoc. valaisanne pour l'enfance infirme",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Fond. Pro-Domus Soutien",
+          "ville": "Ardon",
+          "canton": "VS",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Sté des Sourds du Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. des Étudiants en Médecine de Genève - Hôpital des Nounours",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Hôpital du Jura",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. Le Relais",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 4500
+        },
+        {
+          "nom": "ABA Assoc. Boulimie et Anorexie",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 4400
+        },
+        {
+          "nom": "Centre athlétique de Sion",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "SOSWI Valais/Wallis",
+          "ville": "Vex",
+          "canton": "VS",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Applico (Stiftung für Menschen mit psychischer Beeinträchtig)",
+          "ville": "Schmitten",
+          "canton": "FR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Prix de la réadaptation professionnelle",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Sailability Suisse Romande",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Sentiers pour Tous",
+          "ville": "Bonfol",
+          "canton": "JU",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "PARA-DIGME, Moléson-sur-",
+          "ville": "Gruyères",
+          "canton": "FR",
+          "montant_CHF": 2400
+        },
+        {
+          "nom": "Espace d'Évasion - groupe des aphasiques neuchâtelois, Espace",
+          "ville": "Espace",
+          "canton": "FR",
+          "montant_CHF": 2000
         }
       ]
     },
     {
       "name": "Aide & assistance médicale",
-      "count": 23,
-      "total_chf": 3028030,
-      "mean_chf": 131653,
+      "count": 29,
+      "total_chf": 4608695,
+      "mean_chf": 158920,
       "cantons": {
         "VD": {
-          "count": 12,
-          "total_chf": 1509030
+          "count": 17,
+          "total_chf": 2186695
+        },
+        "SR": {
+          "count": 4,
+          "total_chf": 327000
         },
         "FR": {
           "count": 1,
@@ -102,15 +678,11 @@
         },
         "GE": {
           "count": 3,
-          "total_chf": 890000
+          "total_chf": 1635000
         },
         "VS": {
           "count": 3,
           "total_chf": 210000
-        },
-        "SR": {
-          "count": 3,
-          "total_chf": 169000
         },
         "JU": {
           "count": 1,
@@ -118,6 +690,12 @@
         }
       },
       "samples": [
+        {
+          "nom": "Fond. Aigues-Vertes",
+          "ville": "Bernex",
+          "canton": "GE",
+          "montant_CHF": 1000000
+        },
         {
           "nom": "Croix-Rouge genevoise",
           "ville": "Les Acacias",
@@ -131,10 +709,36 @@
           "montant_CHF": 400000
         },
         {
-          "nom": "Musée international de la Croix-Rouge et du Croissant- Rouge",
-          "ville": "Genève",
+          "nom": "La Croix-Rouge fribourgeoise",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 248000
+        },
+        {
+          "nom": "Centre hospitalier universitaire vaudois (CHUV)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 229680
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Aigues-Vertes",
+          "ville": "Bernex",
           "canton": "GE",
-          "montant_CHF": 255000
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Croix-Rouge genevoise",
+          "ville": "Les Acacias",
+          "canton": "GE",
+          "montant_CHF": 630000
+        },
+        {
+          "nom": "Fond. CHUV",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 400000
         },
         {
           "nom": "La Croix-Rouge fribourgeoise",
@@ -147,6 +751,150 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 229680
+        },
+        {
+          "nom": "Pôle Santé du Pays-d'Enhaut",
+          "ville": "Château-d'Œx",
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Centre hospitalier universitaire vaudois (CHUV)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Réseau Santé Haut Léman",
+          "ville": "Rennaz",
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Centre hospitalier universitaire vaudois (CHUV)",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Réseau Santé Nord Broye",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 158000
+        },
+        {
+          "nom": "Centre hospitalier universitaire vaudois (CHUV)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Fond. Special Olympics Switzerland",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 144000
+        },
+        {
+          "nom": "Sté Internationale de Sauvetage du Léman SISL",
+          "ville": "Aigle",
+          "canton": "VD",
+          "montant_CHF": 130000
+        },
+        {
+          "nom": "Assoc. Croix-Rouge Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 110000
+        },
+        {
+          "nom": "Réseau santé Haut-Léman",
+          "ville": "Rennaz",
+          "canton": "VD",
+          "montant_CHF": 109400
+        },
+        {
+          "nom": "Sauvetage de Rivaz",
+          "ville": "Rivaz",
+          "canton": "VD",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "CMS de l'Est vaudois (Asanté Sana), Assoc. vaudoise d'aide et de soins à domicile (AVASAD) – Silab La Source, Montreux",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 99685
+        },
+        {
+          "nom": "Fond. Terre des Hommes - Valais",
+          "ville": "Massongex",
+          "canton": "VS",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "Bénévolat Vaud et AVASAD",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 68580
+        },
+        {
+          "nom": "Assoc. des Samaritains de Gland section La Serine",
+          "ville": "Gland",
+          "canton": "VD",
+          "montant_CHF": 67000
+        },
+        {
+          "nom": "Croix-Rouge suisse",
+          "ville": "Canton du",
+          "canton": "SR",
+          "montant_CHF": 16000
+        },
+        {
+          "nom": "Assoc. Un nez rouge pour tous",
+          "ville": "Bex",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Centre SportAdo - DFME - CHUV",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. des Sections de Samaritains du Valais Romand",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Special Olympics Switzerland",
+          "ville": "Yverdon-les-Bains - Multisports",
+          "canton": "SR",
+          "montant_CHF": 9000
+        },
+        {
+          "nom": "Centre SportAdo - DFME - CHUV",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 6350
+        },
+        {
+          "nom": "Section des samaritains d'Orbe",
+          "ville": "Montagny-près-Yverdon",
+          "canton": "VD",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Fond. Paint a Smile",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Croix-Rouge Suisse",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 2000
         }
       ]
     },
@@ -200,13 +948,45 @@
           "canton": "GE",
           "montant_CHF": 10000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Ligue fribourgeoise contre le cancer",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 868000
+        },
+        {
+          "nom": "Ligue genevoise contre le cancer",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Club d'Aviron de la Ville de Fribourg (CAVF)",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Ligue jurassienne contre le cancer",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 13500
+        },
+        {
+          "nom": "Assoc. Stopskincancer.ch",
+          "ville": "Chêne-Bougeries",
+          "canton": "GE",
+          "montant_CHF": 10000
+        }
       ]
     },
     {
       "name": "Santé mentale & psychiatrie",
-      "count": 9,
-      "total_chf": 846564,
-      "mean_chf": 94062,
+      "count": 10,
+      "total_chf": 869564,
+      "mean_chf": 86956,
       "cantons": {
         "GE": {
           "count": 4,
@@ -215,6 +995,10 @@
         "FR": {
           "count": 4,
           "total_chf": 417564
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 23000
         },
         "VD": {
           "count": 1,
@@ -252,21 +1036,83 @@
           "canton": "GE",
           "montant_CHF": 97000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "AFAAP",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 230000
+        },
+        {
+          "nom": "Assoc. Fri-Santé",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 176000
+        },
+        {
+          "nom": "Assoc. minds",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Assoc. romande Pro Mente Sana",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 97000
+        },
+        {
+          "nom": "Assoc. romande Pro Mente Sana",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 97000
+        },
+        {
+          "nom": "Assoc. Parole",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 85000
+        },
+        {
+          "nom": "Assoc. PositiveMinder",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. Trajets",
+          "ville": "Plan-les-Ouates - Multisports",
+          "canton": "SR",
+          "montant_CHF": 23000
+        },
+        {
+          "nom": "Assoc. Les Traversées",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Réseau fribourgeois de santé mentale",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 1564
+        }
       ]
     },
     {
       "name": "Handicap physique / fauteuil",
-      "count": 11,
-      "total_chf": 833018,
-      "mean_chf": 75728,
+      "count": 10,
+      "total_chf": 813018,
+      "mean_chf": 81301,
       "cantons": {
         "VD": {
           "count": 2,
           "total_chf": 311000
         },
         "FR": {
-          "count": 4,
-          "total_chf": 244618
+          "count": 3,
+          "total_chf": 224618
         },
         "VS": {
           "count": 1,
@@ -311,6 +1157,156 @@
           "ville": "Grand-Lancy",
           "canton": "GE",
           "montant_CHF": 50000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Transport Handicap Vaud THV",
+          "ville": "Le Mont-sur-Lausanne",
+          "canton": "VD",
+          "montant_CHF": 296000
+        },
+        {
+          "nom": "Pro Infirmis",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 215000
+        },
+        {
+          "nom": "Pro Infirmis Genève",
+          "ville": "Les Acacias",
+          "canton": "GE",
+          "montant_CHF": 150000
+        },
+        {
+          "nom": "Fond. Haefeli",
+          "ville": "Cologny",
+          "canton": "GE",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Assoc. Swiss Open",
+          "ville": "Grand-Lancy",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Sté suisse de la sclérose en plaques - SEP",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Forum Handicap Fribourg (FHaF)",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 7900
+        },
+        {
+          "nom": "Assoc. Sion Indoor, tournoi de tennis en fauteuil roulant",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Pro Infirmis Jura",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 2400
+        },
+        {
+          "nom": "Pro Infirmis",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 1718
+        }
+      ]
+    },
+    {
+      "name": "Prévention & promotion santé",
+      "count": 5,
+      "total_chf": 701247,
+      "mean_chf": 140249,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 27000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 619247
+        },
+        "FR": {
+          "count": 2,
+          "total_chf": 15000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 40000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Ensemble hospitalier de la Côte (EHC), Assoc. pour la prévention et le maintien à domicile dans l’Ouest lausannois (APREMADOL), Assoc. pour la promotion de la santé et le maintien à domicile de la couronne lausannoise (APROMAD) et la Fond. de la Côte (FLC)",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 619247
+        },
+        {
+          "nom": "Sté Suisse de Nutrition",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. pour l'aide, les soins à domicile et la prévention de l'Est Vaudois ASANTE SANA",
+          "ville": "Montreux",
+          "canton": "VD",
+          "montant_CHF": 27000
+        },
+        {
+          "nom": "Fri-Santé",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "OrTra Santé social Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 5000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Ensemble hospitalier de la Côte (EHC), Assoc. pour la prévention et le maintien à domicile dans l’Ouest lausannois (APREMADOL), Assoc. pour la promotion de la santé et le maintien à domicile de la couronne lausannoise (APROMAD) et la Fond. de la Côte (FLC)",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 619247
+        },
+        {
+          "nom": "Sté Suisse de Nutrition",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. pour l'aide, les soins à domicile et la prévention de l'Est Vaudois ASANTE SANA",
+          "ville": "Montreux",
+          "canton": "VD",
+          "montant_CHF": 27000
+        },
+        {
+          "nom": "Fri-Santé",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "OrTra Santé social Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 5000
         }
       ]
     },
@@ -364,6 +1360,56 @@
           "canton": "GE",
           "montant_CHF": 40000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Insieme-Genève",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 175000
+        },
+        {
+          "nom": "Assoc. Insieme Valais romand",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Autisme Fribourg",
+          "ville": "Esmonts",
+          "canton": "FR",
+          "montant_CHF": 62000
+        },
+        {
+          "nom": "Assoc. Autisme Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "ASA Handicap Mental",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. Cerebral Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 23000
+        },
+        {
+          "nom": "Fond. Cap Loisirs",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 23000
+        },
+        {
+          "nom": "Stiftung Atelier Manus",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 16000
+        }
       ]
     },
     {
@@ -386,6 +1432,38 @@
         }
       },
       "samples": [
+        {
+          "nom": "diabètefribourg - Assoc. fribourgeoise du diabète",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 250000
+        },
+        {
+          "nom": "Assoc. Alzheimer Fribourg",
+          "ville": "Freiburg",
+          "canton": "FR",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Diabète Genève",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. Alzheimer Valais Wallis",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Groupe Parkinson de Fribourg",
+          "ville": "Treyvaux",
+          "canton": "FR",
+          "montant_CHF": 5000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "diabètefribourg - Assoc. fribourgeoise du diabète",
           "ville": "Fribourg",
@@ -452,6 +1530,26 @@
           "canton": "FR",
           "montant_CHF": 24000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Ligue pulmonaire fribourgeoise",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 135000
+        },
+        {
+          "nom": "Fond. Addiction Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Fond. Le Tremplin",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 24000
+        }
       ]
     },
     {
@@ -470,6 +1568,38 @@
         }
       },
       "samples": [
+        {
+          "nom": "Assoc. Écoute voir",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. S5",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. Écoute Voir",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 24000
+        },
+        {
+          "nom": "Assoc. S5",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 23500
+        },
+        {
+          "nom": "FOROM écoute",
+          "ville": "Pully",
+          "canton": "VD",
+          "montant_CHF": 20000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Assoc. Écoute voir",
           "ville": "Yverdon-les-Bains",
@@ -550,6 +1680,32 @@
           "canton": "GE",
           "montant_CHF": 8200
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Medical Flair",
+          "ville": "Chardonne",
+          "canton": "SR",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Chiki Foundation",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Farah-Dogs",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Fond. Arthanis",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 8200
+        }
       ]
     },
     {
@@ -590,45 +1746,25 @@
           "canton": "JU",
           "montant_CHF": 4000
         }
-      ]
-    },
-    {
-      "name": "Prévention & promotion santé",
-      "count": 3,
-      "total_chf": 72000,
-      "mean_chf": 24000,
-      "cantons": {
-        "VD": {
-          "count": 1,
-          "total_chf": 27000
-        },
-        "FR": {
-          "count": 1,
-          "total_chf": 5000
-        },
-        "JU": {
-          "count": 1,
-          "total_chf": 40000
-        }
-      },
-      "samples": [
+      ],
+      "all_entries": [
         {
-          "nom": "Sté Suisse de Nutrition",
-          "ville": "Berne",
+          "nom": "Assoc. MaRaVal - maladies rares Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 68000
+        },
+        {
+          "nom": "Assoc. A côté de toi",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. ELA Suisse",
+          "ville": "Tavannes",
           "canton": "JU",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "Assoc. pour l'aide, les soins à domicile et la prévention de l'Est Vaudois ASANTE SANA",
-          "ville": "Montreux",
-          "canton": "VD",
-          "montant_CHF": 27000
-        },
-        {
-          "nom": "OrTra Santé social Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 5000
+          "montant_CHF": 4000
         }
       ]
     },
@@ -644,6 +1780,14 @@
         }
       },
       "samples": [
+        {
+          "nom": "Union centrale suisse pour le bien des aveugles UCBA",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 65000
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Union centrale suisse pour le bien des aveugles UCBA",
           "ville": "Lausanne",

@@ -3,94 +3,1042 @@
     "classif": "promotion",
     "year": "2024",
     "source": "brb2024_full.json",
-    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 197,
-    "total_chf": 8828531,
-    "total_entries_classified": 16,
-    "total_chf_classified": 2116146,
-    "pct_chf_classified": 24.0,
-    "cross_year_recovered": 0,
+    "total_entries": 185,
+    "total_chf": 7206481,
+    "precise_classified_entries": 28,
+    "precise_classified_chf": 4496446,
+    "pct_chf_precisely_classified": 62.4,
+    "pct_chf_classified": 100.0,
+    "total_entries_classified": 185,
+    "total_chf_classified": 7206481,
+    "catchall_chf": 2710035,
+    "cross_year_recovered": 4,
     "sector": "Promotion, tourisme et développement",
     "sector_slug": "promotion",
-    "total_entries_sector": 197,
-    "total_chf_sector": 8828531,
-    "pct_entries_classified": 8.1
+    "total_entries_sector": 185,
+    "total_chf_sector": 7206481,
+    "pct_entries_classified": 100.0
   },
   "categories": [
     {
-      "name": "Autres",
-      "count": 181,
-      "total_chf": 6712385,
-      "mean_chf": 37085,
+      "name": "Soutien général à la promotion / tourisme",
+      "count": 157,
+      "total_chf": 2710035,
+      "mean_chf": 17261,
       "cantons": {
         "VD": {
-          "count": 11,
-          "total_chf": 824800
+          "count": 9,
+          "total_chf": 124800
         },
         "SR": {
-          "count": 41,
-          "total_chf": 2569000
+          "count": 36,
+          "total_chf": 499650
         },
         "FR": {
-          "count": 13,
-          "total_chf": 395400
+          "count": 12,
+          "total_chf": 295400
         },
         "VS": {
-          "count": 14,
-          "total_chf": 671200
+          "count": 12,
+          "total_chf": 469100
         },
         "NE": {
           "count": 11,
           "total_chf": 254000
         },
         "GE": {
-          "count": 78,
-          "total_chf": 1722900
+          "count": 65,
+          "total_chf": 992000
         },
         "JU": {
-          "count": 13,
-          "total_chf": 275085
+          "count": 12,
+          "total_chf": 75085
         }
       },
       "samples": [
         {
-          "nom": "Clubs – Sports collectifs",
+          "nom": "Assoc. Cantonale Genevoise",
           "ville": null,
-          "canton": "SR",
-          "montant_CHF": 794000
+          "canton": "GE",
+          "montant_CHF": 146900
         },
         {
-          "nom": "Clubs – Sports individuels",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 617050
+          "nom": "Pro Evologia - Assoc. des amis d'Evologia",
+          "ville": "Cernier",
+          "canton": "NE",
+          "montant_CHF": 85000
         },
         {
-          "nom": "Fort de Chillon SA",
-          "ville": "Veytaux",
+          "nom": "VITROMUSEE ROMONT",
+          "ville": "ROMONT",
+          "canton": "FR",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Fond. du musée valaisan de la vigne et du vin",
+          "ville": "Salgesch",
+          "canton": "VS",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Handball Chênois Genève Handball",
+          "ville": "Handball",
+          "canton": "VS",
+          "montant_CHF": 72600
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Cantonale Genevoise",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 146900
+        },
+        {
+          "nom": "Pro Evologia - Assoc. des amis d'Evologia",
+          "ville": "Cernier",
+          "canton": "NE",
+          "montant_CHF": 85000
+        },
+        {
+          "nom": "VITROMUSEE ROMONT",
+          "ville": "ROMONT",
+          "canton": "FR",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Fond. du musée valaisan de la vigne et du vin",
+          "ville": "Salgesch",
+          "canton": "VS",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Handball Chênois Genève Handball",
+          "ville": "Handball",
+          "canton": "VS",
+          "montant_CHF": 72600
+        },
+        {
+          "nom": "Volleyball Chênois Genève Volley",
+          "ville": "Volleyball",
+          "canton": "GE",
+          "montant_CHF": 72600
+        },
+        {
+          "nom": "Assoc. du Rallye International du Valais",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Genève Volley",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 64000
+        },
+        {
+          "nom": "Assoc. Cantonale de Judo et Ju-Jitsu",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 63600
+        },
+        {
+          "nom": "Fond. pour le Musée du Léman",
+          "ville": "Nyon",
           "canton": "VD",
-          "montant_CHF": 500000
+          "montant_CHF": 58000
         },
         {
-          "nom": "Relève athlètes – Sports",
+          "nom": "Basketball Lancy Plan-les-Ouates Basket",
+          "ville": "Lancy",
+          "canton": "GE",
+          "montant_CHF": 51900
+        },
+        {
+          "nom": "Assoc. Triathlon International de Genève",
+          "ville": "Triathlon",
+          "canton": "VS",
+          "montant_CHF": 51000
+        },
+        {
+          "nom": "Assoc. Zero Waste Switzerland",
+          "ville": "Cottens (VD)",
+          "canton": "SR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. Cantonale Genevoise",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 48500
+        },
+        {
+          "nom": "Union Vélocipédique Genevoise (UVG)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 48000
+        },
+        {
+          "nom": "NSF - Neuchâtel Ski de Fond",
+          "ville": "Les Hauts-Geneveys",
+          "canton": "NE",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "Fond. Martial Ançay",
+          "ville": "Fully",
+          "canton": "VS",
+          "montant_CHF": 43000
+        },
+        {
+          "nom": "Stiftung Museum Murten",
+          "ville": "Murten",
+          "canton": "FR",
+          "montant_CHF": 42600
+        },
+        {
+          "nom": "Erlebniswelt Roggen Erschmatt",
           "ville": null,
           "canton": "SR",
-          "montant_CHF": 458000
+          "montant_CHF": 42000
         },
         {
-          "nom": "Assoc. Grandson-Murten 2026",
-          "ville": "Grandson",
+          "nom": "Genève Marathon / 20km de Genève",
+          "ville": "Athlétisme",
+          "canton": "VS",
+          "montant_CHF": 42000
+        },
+        {
+          "nom": "Förderverein Ammern",
+          "ville": "Blitzingen",
+          "canton": "SR",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Fond. Moulin Semblanet",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 38000
+        },
+        {
+          "nom": "Servette Hockey sur Gazon",
+          "ville": "Hockey",
+          "canton": "FR",
+          "montant_CHF": 35900
+        },
+        {
+          "nom": "Servette Hockey sur Gazon",
+          "ville": "Hockey",
+          "canton": "FR",
+          "montant_CHF": 34900
+        },
+        {
+          "nom": "Assoc. pour l'organisation des 4 Jours du Vélodrome de Genève, Les Acacias - Cyclisme Piste",
+          "ville": "Les Acacias",
+          "canton": "GE",
+          "montant_CHF": 31600
+        },
+        {
+          "nom": "Stiftung Sensler Museum, Tafe r s Sammlungskonzept 2024 und Ausstellungen 2024, Übernahme Sammlung Pius Käser und",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 31000
+        },
+        {
+          "nom": "Sté d'histoire du Valais romand",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 31000
+        },
+        {
+          "nom": "Rinkhockey Genève Rink Hockey",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 30200
+        },
+        {
+          "nom": "AFIBAC Assoc. Festival International de Ballons à air chaud",
+          "ville": "Château-d'Œx",
           "canton": "VD",
-          "montant_CHF": 200000
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Sté des Gorges de la Poeta-Raisse",
+          "ville": "Fleurier",
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. Genevoise des Sports (AGS)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Université d'été du Cinéma Suisse",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "visarte.jura",
+          "ville": "Delémont XX e",
+          "canton": "SR",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Black Boys Hockey Club Genève",
+          "ville": "Hockey",
+          "canton": "FR",
+          "montant_CHF": 29300
+        },
+        {
+          "nom": "Assoc. Cantonale Genevoise",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 28300
+        },
+        {
+          "nom": "Assoc. Sfair Management",
+          "ville": "Meyrin - Football",
+          "canton": "SR",
+          "montant_CHF": 28000
+        },
+        {
+          "nom": "Assoc. Ludesco",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Fond. en faveur de la mise en valeur du site de Chaux-de-Fonds / Locle patrimoine mondial UNESCO",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "CdN 1934",
+          "ville": "Genève - Natation",
+          "canton": "GE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Cressier Solidaires",
+          "ville": "Cressier",
+          "canton": "NE",
+          "montant_CHF": 24000
+        },
+        {
+          "nom": "Football américain Geneva Seahawks American Football Club",
+          "ville": "Football Club",
+          "canton": "GE",
+          "montant_CHF": 23600
+        },
+        {
+          "nom": "Waterpolo Carouge Natation (Waterpolo)",
+          "ville": "Waterpolo",
+          "canton": "GE",
+          "montant_CHF": 23600
+        },
+        {
+          "nom": "Geneva Seahawks American Football Club",
+          "ville": "Football Club",
+          "canton": "GE",
+          "montant_CHF": 22200
+        },
+        {
+          "nom": "Assoc. Cantonale Genevoise Rugby",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 22100
+        },
+        {
+          "nom": "Stiftung Urgestein, Guggisberg Stones + Stories 2024-26 - Fertigstellung",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. des Championnats du Monde de la Raclette (ACMR)",
+          "ville": "Dents-du-Midi",
+          "canton": "SR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Genève Natation 1885 CIG 2024 - 57 e Championnat",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Romande des Magasins du Monde",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Natur & Freizeit - Assoc. Nature & Loisirs",
+          "ville": "Auboranges",
+          "canton": "SR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Hockey sur gazon Black Boys Hockey Club Genève",
+          "ville": "Hockey",
+          "canton": "FR",
+          "montant_CHF": 19600
+        },
+        {
+          "nom": "Geneva International Seven's",
+          "ville": "Meyrin - Rugby",
+          "canton": "SR",
+          "montant_CHF": 18150
+        },
+        {
+          "nom": "Fond. pour le développement et la promotion du patois",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 18000
+        },
+        {
+          "nom": "Switzers Geneva Rugby",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 17500
+        },
+        {
+          "nom": "Féd. Genevoise Équestre (FGE)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 16600
+        },
+        {
+          "nom": "Assoc. cantonale Genève unihockey, Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 15400
+        },
+        {
+          "nom": "Assoc. Fribourgissima",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Jardins Jonction",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. des Amis de la Combe Tabeillon",
+          "ville": "Glovelier",
+          "canton": "JU",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Chancellerie d'Etat",
+          "ville": "Delémont e",
+          "canton": "SR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "ecoLive Assoc.",
+          "ville": "Bellevue",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Hermance Région Rugby Club",
+          "ville": "Hermance",
+          "canton": "GE",
+          "montant_CHF": 14200
+        },
+        {
+          "nom": "Rugby Club Avusy",
+          "ville": "Avusy",
+          "canton": "GE",
+          "montant_CHF": 14200
+        },
+        {
+          "nom": "Rugby Club Genève Plan-les-Ouates",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 14200
+        },
+        {
+          "nom": "Stiftung Altes Bellwald",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 14000
+        },
+        {
+          "nom": "Geneva Wind Festival",
+          "ville": "Cologny - Planche à voile",
+          "canton": "SR",
+          "montant_CHF": 12500
+        },
+        {
+          "nom": "Club nautique de Versoix - Voile International Swiss Optimist",
+          "ville": "Versoix",
+          "canton": "GE",
+          "montant_CHF": 12500
+        },
+        {
+          "nom": "Assoc. Genevoise Hockey sur Gazon",
+          "ville": "Hockey",
+          "canton": "FR",
+          "montant_CHF": 12300
+        },
+        {
+          "nom": "Switzers Geneva Rugby",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 11800
+        },
+        {
+          "nom": "ABL Mobilité",
+          "ville": "Le Mont-sur-Lausanne",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Geschichtsforschender Verein Oberwallis",
+          "ville": "Brig",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Genève-Servette Hockey Club",
+          "ville": "Hockey",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Genève Rink Hockey",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Meyrin FC - Football",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Boxing Club Genevois",
+          "ville": "Les Acacias - Boxe",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Carouge Natation",
+          "ville": "Carouge - Waterpolo e",
+          "canton": "SR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Hermance Région Rugby Club, Hermance",
+          "ville": "Hermance",
+          "canton": "GE",
+          "montant_CHF": 9600
+        },
+        {
+          "nom": "Tchoukball Tchoukball Club Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 9600
+        },
+        {
+          "nom": "JET Roller Club Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 8800
+        },
+        {
+          "nom": "Lancy Plan-les-Ouates Basket, Lancy",
+          "ville": "Lancy",
+          "canton": "GE",
+          "montant_CHF": 8400
+        },
+        {
+          "nom": "Sté Nautique de Genève section hélice, Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Amicale des vieilles traditions, Grandfontaine Aménagement sanitaires adaptés",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "STAMM Studio",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Sté d'histoire du canton de Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 7500
+        },
+        {
+          "nom": "Assoc. Le four à pain",
+          "ville": "Dombresson",
+          "canton": "NE",
+          "montant_CHF": 7500
+        },
+        {
+          "nom": "Stiftung Lötschentaler Museum",
+          "ville": "Kippel",
+          "canton": "VS",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Chênois Genève Handball, Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 6950
+        },
+        {
+          "nom": "Fribourg Films",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 6700
+        },
+        {
+          "nom": "Servette Football Club Chênois féminin, Football Club",
+          "ville": "Football Club",
+          "canton": "GE",
+          "montant_CHF": 6700
+        },
+        {
+          "nom": "Assoc. Bossonn'Art, Bossonnens Illumin'Art by Bossonn'Art -",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 6600
+        },
+        {
+          "nom": "Snownex Ski and Snowboard School, Snowboard",
+          "ville": "Snowboard",
+          "canton": "VS",
+          "montant_CHF": 6500
+        },
+        {
+          "nom": "Geneva's Flying Disk Wizards",
+          "ville": "Genève - Ultimate frisbee",
+          "canton": "SR",
+          "montant_CHF": 6500
+        },
+        {
+          "nom": "Curling Club Trois-Chêne / Genève",
+          "ville": "Thônex e",
+          "canton": "SR",
+          "montant_CHF": 6500
+        },
+        {
+          "nom": "Genève Natation 1885",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Assoc. de la Vy aux Moines",
+          "ville": "Fleurier",
+          "canton": "NE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Club Jurassien - section Treymont",
+          "ville": "Boudry",
+          "canton": "NE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Ski nautique Club Nautique de Versoix -",
+          "ville": "Versoix",
+          "canton": "GE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "La Classique Genevoise, Genève - Cyclisme Route La Classique Genevoise 2024 - e",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. Interprofessionnelle de la Damassine",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "ViCulturelle",
+          "ville": "Vicques",
+          "canton": "JU",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Féd. Genevoise des Clubs de Voile",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 4500
+        },
+        {
+          "nom": "Assoc. des Guides touristiques de Delémont et environs",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 4500
+        },
+        {
+          "nom": "Football américain Geneva Seahawks American Football",
+          "ville": "Football",
+          "canton": "GE",
+          "montant_CHF": 4300
+        },
+        {
+          "nom": "Lancy Plan-les-Ouates Handball, Lancy",
+          "ville": "Lancy",
+          "canton": "GE",
+          "montant_CHF": 4200
+        },
+        {
+          "nom": "Assoc. des Archers Genevois (ADAGE)",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Féd. Genevoise Échecs (FGE)",
+          "ville": "Genève e",
+          "canton": "GE",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Genève Natation 1885",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "La Pétanque Genevoise, Les Acacias Hivernal Jeunes de la Pétanque",
+          "ville": "Les Acacias",
+          "canton": "GE",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Le défi Boscardin",
+          "ville": "Meyrin - Cyclisme Route",
+          "canton": "SR",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Club nautique de Versoix - Voile e",
+          "ville": "Versoix",
+          "canton": "GE",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Tchoukball Club Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 3800
+        },
+        {
+          "nom": "Cross Pour Tous",
+          "ville": "Genève - Athlétisme",
+          "canton": "GE",
+          "montant_CHF": 3750
+        },
+        {
+          "nom": "Curling Curling Club Trois-Chêne / Genève, Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 3600
+        },
+        {
+          "nom": "Av i r on Sté Nautique de Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 3300
+        },
+        {
+          "nom": "Assoc. Cantonale Genevoise",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 3300
+        },
+        {
+          "nom": "Geneva Region Youth Cricket Club, Cricket",
+          "ville": "Cricket",
+          "canton": "GE",
+          "montant_CHF": 3100
+        },
+        {
+          "nom": "Pro Ursins - Assoc. pour la promotion du site gallo-romain d'Ursins",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Taekwondo Assoc. Taekwondo et Jiu-Jitsu Brésilien",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Groupe Genevois de Vol à Voile, Versoix Championnat Régional",
+          "ville": "Versoix",
+          "canton": "GE",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Club Nautique de Versoix -",
+          "ville": "Section Ski nautique",
+          "canton": "GE",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Équitation Mounted Games Association",
+          "ville": "Équitation",
+          "canton": "GE",
+          "montant_CHF": 2800
+        },
+        {
+          "nom": "Patinage artistique Club des Patineurs Trois-Chêne",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2800
+        },
+        {
+          "nom": "Shinbudo Martial Arts Academy Onex, Onex",
+          "ville": "Onex",
+          "canton": "GE",
+          "montant_CHF": 2700
+        },
+        {
+          "nom": "Urania Genève Sport Hockey sur Gazon",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 2700
+        },
+        {
+          "nom": "Ellipse Production Vidéo, Saignelégier Documentaire 50 e",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 2660
+        },
+        {
+          "nom": "Centre Athlétique de Genève C.A.G., Centre",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 2600
+        },
+        {
+          "nom": "Ultimate frisbee Geneva's Flying Disk Wizards",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2500
+        },
+        {
+          "nom": "Voi le Centre d'Entrainement à la Régate",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 2300
+        },
+        {
+          "nom": "Tchoukball Club Meyrin",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 2300
+        },
+        {
+          "nom": "Slow-Val",
+          "ville": "Les Ponts-de-Martel",
+          "canton": "NE",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Ligue genevoise de fléchettes (GDL) Geneva Darts League",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Common Ground",
+          "ville": "Meyrin - Basketball",
+          "canton": "SR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "CTT ZZ-Lancy, Grand-Lancy - Tennis de table",
+          "ville": "Grand-Lancy",
+          "canton": "GE",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Sté jurassienne d'émulation",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. cantonale genevoise",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1900
+        },
+        {
+          "nom": "Sté féminine de gymnastique",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1900
+        },
+        {
+          "nom": "CNBC Club Nautique de la Baie de",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1700
+        },
+        {
+          "nom": "Tchoukball Club Vernier",
+          "ville": "Vernier",
+          "canton": "GE",
+          "montant_CHF": 1700
+        },
+        {
+          "nom": "Genève-Lutte (Lutte Olympique), Olympique",
+          "ville": "Olympique",
+          "canton": "FR",
+          "montant_CHF": 1600
+        },
+        {
+          "nom": "Satus sport individuel Assoc. Club Montagnard Ouvrier",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1600
+        },
+        {
+          "nom": "Carouge Natation",
+          "ville": "Carouge - Waterpolo",
+          "canton": "SR",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Fond. pour la promotion du goût",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Vol à voile Groupe Genevois de Vol à Voile",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 1400
+        },
+        {
+          "nom": "Gymnastique Artistique École de Gymnastique Artistique",
+          "ville": "Gymnastique",
+          "canton": "GE",
+          "montant_CHF": 1200
+        },
+        {
+          "nom": "t.professions du Spectacle suisse",
+          "ville": "Bienne",
+          "canton": "JU",
+          "montant_CHF": 1075
+        },
+        {
+          "nom": "Les Amis des Paccots",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "CHP - Club Hygiénique de Plainpalais",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Féd. Genevoise Échecs (FGE), Genève e Open International",
+          "ville": "Échecs",
+          "canton": "GE",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Ocho Vision, Perly-Certoux - Course d'orientation",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Carouge Natation",
+          "ville": "Carouge - Waterpolo",
+          "canton": "SR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Assoc. jurassienne de catch Swiss Wrestling Zone",
+          "ville": "Develier",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Genève Eaux-Vives Handball Club, Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 800
+        },
+        {
+          "nom": "Pontonniers (navigation) Sté des Pontonniers – Section Genève",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 600
+        },
+        {
+          "nom": "Club de tir à l'arc Les Robins",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Torticolis et Frères",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Voisard Milo",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 250
+        },
+        {
+          "nom": "Badminton Amicale de Badminton de Confignon",
+          "ville": "Badminton",
+          "canton": "VD",
+          "montant_CHF": 200
+        },
+        {
+          "nom": "Batho Badminton Club Thônex, Badminton",
+          "ville": "Badminton",
+          "canton": "VD",
+          "montant_CHF": 200
         }
       ]
     },
     {
       "name": "Tourisme régional",
-      "count": 4,
-      "total_chf": 1930000,
-      "mean_chf": 482500,
+      "count": 5,
+      "total_chf": 2030000,
+      "mean_chf": 406000,
       "cantons": {
         "VD": {
           "count": 1,
@@ -99,6 +1047,10 @@
         "VS": {
           "count": 2,
           "total_chf": 630000
+        },
+        "SR": {
+          "count": 1,
+          "total_chf": 100000
         },
         "JU": {
           "count": 1,
@@ -129,25 +1081,211 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 130000
+        },
+        {
+          "nom": "Vapeur Val-de-Travers - VVT",
+          "ville": "Saint-Sulpice",
+          "canton": "SR",
+          "montant_CHF": 100000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Vaud Promotion",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1000000
+        },
+        {
+          "nom": "Valais/Wallis Promotion",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Jura Tourisme",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Valrando - Assoc. valaisanne de la randonnée",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 130000
+        },
+        {
+          "nom": "Vapeur Val-de-Travers - VVT",
+          "ville": "Saint-Sulpice",
+          "canton": "SR",
+          "montant_CHF": 100000
+        }
+      ]
+    },
+    {
+      "name": "Cabanes & infrastructures montagne",
+      "count": 5,
+      "total_chf": 1026300,
+      "mean_chf": 205260,
+      "cantons": {
+        "SR": {
+          "count": 1,
+          "total_chf": 300000
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 700000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 26300
+        }
+      },
+      "samples": [
+        {
+          "nom": "Section genevoise du Club Alpin Suisse",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "SAC Sektion Olten",
+          "ville": "Cabane Weissmies",
+          "canton": "SR",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Club Alpin Suisse CAS - Section genevoise, Cabane du Vélan",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Section Genevoise",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 16500
+        },
+        {
+          "nom": "Alpinisme Section Carougeoise",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 9800
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Section genevoise du Club Alpin Suisse",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "SAC Sektion Olten",
+          "ville": "Cabane Weissmies",
+          "canton": "SR",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Club Alpin Suisse CAS - Section genevoise, Cabane du Vélan",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Section Genevoise",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 16500
+        },
+        {
+          "nom": "Alpinisme Section Carougeoise",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 9800
         }
       ]
     },
     {
       "name": "Manifestations populaires",
-      "count": 6,
-      "total_chf": 77346,
-      "mean_chf": 12891,
+      "count": 11,
+      "total_chf": 747646,
+      "mean_chf": 67967,
       "cantons": {
+        "VD": {
+          "count": 2,
+          "total_chf": 210000
+        },
         "VS": {
           "count": 3,
           "total_chf": 50846
         },
+        "SR": {
+          "count": 1,
+          "total_chf": 100300
+        },
         "JU": {
-          "count": 3,
-          "total_chf": 26500
+          "count": 5,
+          "total_chf": 386500
         }
       },
       "samples": [
+        {
+          "nom": "Assoc. Grandson-Murten 2026",
+          "ville": "Grandson",
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Assoc. Jura-24",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Assoc. Stand'été",
+          "ville": "Moutier",
+          "canton": "JU",
+          "montant_CHF": 160000
+        },
+        {
+          "nom": "Geneva Trophy Promotion Sàrl",
+          "ville": "Genève - Tennis",
+          "canton": "SR",
+          "montant_CHF": 100300
+        },
+        {
+          "nom": "Assoc. Fête des Vendanges, Neuchâtel Corso fleuri 2024 - Corso fleuri dans le cadre de la Fête des Vendanges",
+          "ville": "Fête",
+          "canton": "VS",
+          "montant_CHF": 30000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Grandson-Murten 2026",
+          "ville": "Grandson",
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Assoc. Jura-24",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Assoc. Stand'été",
+          "ville": "Moutier",
+          "canton": "JU",
+          "montant_CHF": 160000
+        },
+        {
+          "nom": "Geneva Trophy Promotion Sàrl",
+          "ville": "Genève - Tennis",
+          "canton": "SR",
+          "montant_CHF": 100300
+        },
         {
           "nom": "Assoc. Fête des Vendanges, Neuchâtel Corso fleuri 2024 - Corso fleuri dans le cadre de la Fête des Vendanges",
           "ville": "Fête",
@@ -167,6 +1305,12 @@
           "montant_CHF": 15000
         },
         {
+          "nom": "Assoc. Grandson-Murten 2026 G-M26",
+          "ville": "Grandson",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
           "nom": "Assoc. slowUp Valais",
           "ville": "Sion",
           "canton": "VS",
@@ -177,25 +1321,43 @@
           "ville": "Porrentruy",
           "canton": "JU",
           "montant_CHF": 4000
+        },
+        {
+          "nom": "Assoc. SlowUp Jura Agglo'balade",
+          "ville": "Bassecourt",
+          "canton": "JU",
+          "montant_CHF": 2500
         }
       ]
     },
     {
       "name": "Promotion économique & terroir",
-      "count": 2,
-      "total_chf": 55000,
-      "mean_chf": 27500,
+      "count": 5,
+      "total_chf": 665000,
+      "mean_chf": 133000,
       "cantons": {
         "VS": {
-          "count": 1,
-          "total_chf": 15000
+          "count": 3,
+          "total_chf": 615000
         },
         "JU": {
-          "count": 1,
-          "total_chf": 40000
+          "count": 2,
+          "total_chf": 50000
         }
       },
       "samples": [
+        {
+          "nom": "Fond. The Ark",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "IVV - Interprofession de la Vigne et du Vin du Valais",
+          "ville": "Conthey",
+          "canton": "VS",
+          "montant_CHF": 200000
+        },
         {
           "nom": "Fond. rurale jurassienne",
           "ville": "Delémont e",
@@ -207,32 +1369,44 @@
           "ville": "Châteauneuf-Conthey",
           "canton": "VS",
           "montant_CHF": 15000
-        }
-      ]
-    },
-    {
-      "name": "Cabanes & infrastructures montagne",
-      "count": 2,
-      "total_chf": 26300,
-      "mean_chf": 13150,
-      "cantons": {
-        "JU": {
-          "count": 2,
-          "total_chf": 26300
-        }
-      },
-      "samples": [
-        {
-          "nom": "Section Genevoise",
-          "ville": null,
-          "canton": "JU",
-          "montant_CHF": 16500
         },
         {
-          "nom": "Alpinisme Section Carougeoise",
-          "ville": null,
+          "nom": "Fond. rurale interjurassienne",
+          "ville": "Courtételle e",
           "canton": "JU",
-          "montant_CHF": 9800
+          "montant_CHF": 10000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. The Ark",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 400000
+        },
+        {
+          "nom": "IVV - Interprofession de la Vigne et du Vin du Valais",
+          "ville": "Conthey",
+          "canton": "VS",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Fond. rurale jurassienne",
+          "ville": "Delémont e",
+          "canton": "JU",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. du pain de seigle valaisan AOP",
+          "ville": "Châteauneuf-Conthey",
+          "canton": "VS",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Fond. rurale interjurassienne",
+          "ville": "Courtételle e",
+          "canton": "JU",
+          "montant_CHF": 10000
         }
       ]
     },
@@ -254,6 +1428,14 @@
           "canton": "JU",
           "montant_CHF": 25000
         }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. pour le Parc Naturel Régional du Doubs",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 25000
+        }
       ]
     },
     {
@@ -268,6 +1450,14 @@
         }
       },
       "samples": [
+        {
+          "nom": "Neuchâtel Rando - ANTP",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 2500
+        }
+      ],
+      "all_entries": [
         {
           "nom": "Neuchâtel Rando - ANTP",
           "ville": "La Chaux-de-Fonds",

@@ -3,24 +3,68 @@
     "source": "BRB2024.pdf (ra.loro.ch/documents/BRB2024.pdf)",
     "parsed_from": "BRB2024.md (re-parse v2 with ## prefix handling)",
     "annee": 2024,
-    "total_entries": 4744,
-    "total_chf": 197467672,
+    "total_entries": 4742,
+    "total_chf": 197067954,
     "canton_attribution": "via ville→canton mapping from brb2023/brb2025",
     "sector_overrides": {
       "date": "2026-06-04",
-      "count": 0,
+      "count": 14,
       "method": "Keyword-based override of `secteur` field when nom/desc contains an unambiguous indicator of a different sector. Conservative — only high-confidence patterns."
     },
     "name_fixes": {
-      "villes_adjectifs_fixed": 13,
+      "villes_adjectifs_fixed": 0,
       "names_reconstructed_from_rules": 0,
-      "names_reconstructed_via_ville": 108,
-      "artifacts_dropped": 3
+      "names_reconstructed_via_ville": 0,
+      "artifacts_dropped": 0
     },
     "targeted_fixes": {
       "date": "2026-06-04",
-      "region_artifact_villes_nulled": 59,
-      "specific_names_fixed": 4
+      "region_artifact_villes_nulled": 0,
+      "specific_names_fixed": 0
+    },
+    "sector_overrides_v2": {
+      "count": 7,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v3": {
+      "count": 2,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v4": {
+      "count": 14,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v5": {
+      "count": 0,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v6": {
+      "count": 0,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v7": {
+      "count": 9,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v8": {
+      "count": 12,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v9": {
+      "count": 4,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v10": {
+      "count": 11,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v11": {
+      "count": 18,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v12": {
+      "count": 5,
+      "date": "2026-06-04"
     }
   },
   "entries": [
@@ -47,7 +91,7 @@
       "ville": "Salavaux",
       "description": "Acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 69000,
       "annee": 2024
     },
@@ -155,7 +199,7 @@
       "ville": "Château-d'Œx",
       "description": "Travaux, aménagement, acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 46000,
       "annee": 2024
     },
@@ -164,7 +208,7 @@
       "ville": "Epalinges",
       "description": "Acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 17000,
       "annee": 2024
     },
@@ -272,7 +316,7 @@
       "ville": "Montagny-Chamard",
       "description": "Acquisition matériel et équipement",
       "canton": "SR",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "montant_CHF": 36000,
       "annee": 2024
     },
@@ -578,7 +622,7 @@
       "ville": "Pully",
       "description": "Travaux, aménagement, acquisition matériel et mobilier",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Jeunesse et éducation",
       "montant_CHF": 360000,
       "annee": 2024
     },
@@ -668,7 +712,7 @@
       "ville": "Yverdon-les-Bains",
       "description": "Acquisition matériel, équipement et travaux",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Jeunesse et éducation",
       "montant_CHF": 513000,
       "annee": 2024
     },
@@ -704,7 +748,7 @@
       "ville": "Yverdon-les-Bains",
       "description": "Acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Formation et recherche",
       "montant_CHF": 10000,
       "annee": 2024
     },
@@ -911,7 +955,7 @@
       "ville": "Lausanne",
       "description": "Travaux / Aménagements",
       "canton": "VD",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 200000,
       "annee": 2024
     },
@@ -956,7 +1000,7 @@
       "ville": "Yverdon-les-Bains",
       "description": "Travaux et aménagements",
       "canton": "VD",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 250000,
       "annee": 2024
     },
@@ -965,7 +1009,7 @@
       "ville": "Lausanne",
       "description": "Travaux, aménagements, acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 350000,
       "annee": 2024
     },
@@ -1136,7 +1180,7 @@
       "ville": "Vevey",
       "description": "Acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 36500,
       "annee": 2024
     },
@@ -1208,7 +1252,7 @@
       "ville": "Pully",
       "description": "Exposition",
       "canton": "VD",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 80000,
       "annee": 2024
     },
@@ -1244,7 +1288,7 @@
       "ville": "Lausanne",
       "description": "Saison artistique et acquisition de matériel",
       "canton": "VD",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Culture",
       "montant_CHF": 400000,
       "annee": 2024
     },
@@ -1406,7 +1450,7 @@
       "ville": "Lausanne",
       "description": "Manifestation",
       "canton": "VD",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Formation et recherche",
       "montant_CHF": 50000,
       "annee": 2024
     },
@@ -1424,7 +1468,7 @@
       "ville": "Le Mont-sur-Lausanne",
       "description": "Acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Santé et handicap",
       "montant_CHF": 350000,
       "annee": 2024
     },
@@ -1433,7 +1477,7 @@
       "ville": "Lausanne",
       "description": "Acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Santé et handicap",
       "montant_CHF": 250000,
       "annee": 2024
     },
@@ -1451,7 +1495,7 @@
       "ville": "Château-d'Œx",
       "description": "Travaux et aménagements",
       "canton": "VD",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Santé et handicap",
       "montant_CHF": 200000,
       "annee": 2024
     },
@@ -1730,7 +1774,7 @@
       "ville": "Lausanne",
       "description": "Acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 195000,
       "annee": 2024
     },
@@ -1766,7 +1810,7 @@
       "ville": "Lausanne",
       "description": "Saison artistique",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 40000,
       "annee": 2024
     },
@@ -1784,7 +1828,7 @@
       "ville": "Vevey",
       "description": "Saison artistique",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 50000,
       "annee": 2024
     },
@@ -1937,7 +1981,7 @@
       "ville": "Grandson",
       "description": "Saison artistique",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Promotion, tourisme et développement",
       "montant_CHF": 10000,
       "annee": 2024
     },
@@ -2072,7 +2116,7 @@
       "ville": "Lausanne",
       "description": "Exposition et Publication",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 80000,
       "annee": 2024
     },
@@ -2099,7 +2143,7 @@
       "ville": "Lausanne",
       "description": "Manifestation",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 50000,
       "annee": 2024
     },
@@ -2351,7 +2395,7 @@
       "ville": "La Tour-de-Peilz",
       "description": "Création artistique",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 60000,
       "annee": 2024
     },
@@ -2360,7 +2404,7 @@
       "ville": "La Chaux-Cossonay",
       "description": "Manifestation",
       "canton": "SR",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 10000,
       "annee": 2024
     },
@@ -2369,7 +2413,7 @@
       "ville": "Lausanne",
       "description": "Saison artistique",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 30000,
       "annee": 2024
     },
@@ -2504,7 +2548,7 @@
       "ville": "Lausanne",
       "description": "Exposition",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 150000,
       "annee": 2024
     },
@@ -2513,7 +2557,7 @@
       "ville": "Lausanne",
       "description": "Création artistique et acquisition de matériel",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 300000,
       "annee": 2024
     },
@@ -2972,7 +3016,7 @@
       "ville": "La Sarraz",
       "description": "Exposition, acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 8000,
       "annee": 2024
     },
@@ -3512,7 +3556,7 @@
       "ville": "Lausanne",
       "description": "Manifestation",
       "canton": "VD",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 10000,
       "annee": 2024
     },
@@ -3638,7 +3682,7 @@
       "ville": "Vevey",
       "description": "Exposition 2024",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 10000,
       "annee": 2024
     },
@@ -3647,7 +3691,7 @@
       "ville": "Vevey",
       "description": "Exposition 2026",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 10000,
       "annee": 2024
     },
@@ -3665,7 +3709,7 @@
       "ville": "Lausanne",
       "description": "Saison artistique",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 200000,
       "annee": 2024
     },
@@ -3701,7 +3745,7 @@
       "ville": "Lausanne",
       "description": "Activité fin 2024",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 40000,
       "annee": 2024
     },
@@ -3710,7 +3754,7 @@
       "ville": "Lausanne",
       "description": "Activité 2025",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 190000,
       "annee": 2024
     },
@@ -3773,7 +3817,7 @@
       "ville": "Montreux",
       "description": "Saison artistique",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 150000,
       "annee": 2024
     },
@@ -3791,7 +3835,7 @@
       "ville": "Lausanne",
       "description": "Saison artistique",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 600000,
       "annee": 2024
     },
@@ -3818,7 +3862,7 @@
       "ville": "Morat",
       "description": "Exposition",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 10000,
       "annee": 2024
     },
@@ -3827,7 +3871,7 @@
       "ville": "Lausanne",
       "description": "Saison artistique",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 240000,
       "annee": 2024
     },
@@ -3872,7 +3916,7 @@
       "ville": "Servion",
       "description": "Saison artistique et acquisition de matériel",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 220000,
       "annee": 2024
     },
@@ -3890,7 +3934,7 @@
       "ville": "Yverdon-les-Bains",
       "description": "Exposition",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 30000,
       "annee": 2024
     },
@@ -3908,7 +3952,7 @@
       "ville": "Lausanne",
       "description": "Exposition",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 300000,
       "annee": 2024
     },
@@ -3926,7 +3970,7 @@
       "ville": "Vevey",
       "description": "Acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 320000,
       "annee": 2024
     },
@@ -3989,7 +4033,7 @@
       "ville": "Lausanne",
       "description": "Manifestation",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 350000,
       "annee": 2024
     },
@@ -4115,7 +4159,7 @@
       "ville": "Lausanne",
       "description": "Saison artistique",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 150000,
       "annee": 2024
     },
@@ -4205,7 +4249,7 @@
       "ville": "Nyon",
       "description": "Manifestation",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 150000,
       "annee": 2024
     },
@@ -4286,7 +4330,7 @@
       "ville": "Morges",
       "description": "Exposition",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 40000,
       "annee": 2024
     },
@@ -4466,7 +4510,7 @@
       "ville": "Gryon",
       "description": "Travaux et aménagements",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 250000,
       "annee": 2024
     },
@@ -4682,7 +4726,7 @@
       "ville": "Nyon",
       "description": "Saison artistique, acquisition de matériel et équipement",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 245000,
       "annee": 2024
     },
@@ -4727,7 +4771,7 @@
       "ville": "Lausanne",
       "description": "Manifestation",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 150000,
       "annee": 2024
     },
@@ -5015,7 +5059,7 @@
       "ville": "Gingins",
       "description": "Travaux et aménagements",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 50000,
       "annee": 2024
     },
@@ -5024,7 +5068,7 @@
       "ville": "Payerne",
       "description": "Acquisition matériel et équipement",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 13000,
       "annee": 2024
     },
@@ -5069,7 +5113,7 @@
       "ville": "Thierrens",
       "description": "Acquisition instruments et Activité",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 180000,
       "annee": 2024
     },
@@ -5141,7 +5185,7 @@
       "ville": "Renens",
       "description": "Saison artistique et Acquisition de matériel",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 280000,
       "annee": 2024
     },
@@ -5177,7 +5221,7 @@
       "ville": "Nyon",
       "description": "Saison artistique",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 200000,
       "annee": 2024
     },
@@ -5384,7 +5428,7 @@
       "ville": "Territet",
       "description": "Manifestation",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 150000,
       "annee": 2024
     },
@@ -5393,7 +5437,7 @@
       "ville": "Lausanne",
       "description": "Saison artistique, acquisition de matériel et équipement",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 220000,
       "annee": 2024
     },
@@ -5411,7 +5455,7 @@
       "ville": "Lausanne",
       "description": "Exposition",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 18000,
       "annee": 2024
     },
@@ -5492,7 +5536,7 @@
       "ville": "Lausanne",
       "description": "Activité",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Formation et recherche",
       "montant_CHF": 60000,
       "annee": 2024
     },
@@ -5501,7 +5545,7 @@
       "ville": "Lausanne",
       "description": "Manifestation",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Formation et recherche",
       "montant_CHF": 95000,
       "annee": 2024
     },
@@ -6122,7 +6166,7 @@
       "ville": "Vaud",
       "description": "Soutien annuel",
       "canton": "VD",
-      "secteur": "Environnement",
+      "secteur": "Sport",
       "montant_CHF": 37400,
       "annee": 2024
     },
@@ -10595,7 +10639,7 @@
       "ville": null,
       "description": "Tournoi Masters 2024",
       "canton": "SR",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 1000,
       "annee": 2024
     },
@@ -10649,7 +10693,7 @@
       "ville": null,
       "description": "Tour final du championnat suisse catégorie novices (M16)",
       "canton": "SR",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Sport",
       "montant_CHF": 2000,
       "annee": 2024
     },
@@ -12287,7 +12331,7 @@
       "ville": null,
       "description": "Soutien annuel",
       "canton": "SR",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 41280,
       "annee": 2024
     },
@@ -12314,7 +12358,7 @@
       "ville": null,
       "description": "Soutien annuel Centre Sport Santé",
       "canton": "VD",
-      "secteur": "Sport",
+      "secteur": "Formation et recherche",
       "montant_CHF": 40000,
       "annee": 2024
     },
@@ -12377,7 +12421,7 @@
       "ville": "Veytaux",
       "description": "Soutien au programme d’actions et plan marketing pour la pérennisation du musée",
       "canton": "VD",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 500000,
       "annee": 2024
     },
@@ -12404,7 +12448,7 @@
       "ville": "Nyon - Théâtre",
       "description": "Soutien au passage à la technologie LED",
       "canton": "SR",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 150000,
       "annee": 2024
     },
@@ -12422,7 +12466,7 @@
       "ville": "Lausanne",
       "description": "Soutien à l'équipement LED",
       "canton": "VD",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 400000,
       "annee": 2024
     },
@@ -12431,7 +12475,7 @@
       "ville": "Vevey",
       "description": "Soutien aux frais d’investissement d'un lieu pour le jeune public",
       "canton": "VD",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 250000,
       "annee": 2024
     },
@@ -12458,7 +12502,7 @@
       "ville": null,
       "description": "Soutien à la délocalisation de la manifestation pour les années 2024-2025",
       "canton": "SR",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 150000,
       "annee": 2024
     },
@@ -12494,7 +12538,7 @@
       "ville": "Lausanne",
       "description": "Soutien à l'acquisition et aux transformations d’un bâtiment à Athènes pour l’ESAG",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Formation et recherche",
       "montant_CHF": 500000,
       "annee": 2024
     },
@@ -12539,7 +12583,7 @@
       "ville": null,
       "description": "Soutien à la création d'unités d’attente de placement en EMS dans les hôpitaux",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 6323000,
       "annee": 2024
     },
@@ -12575,7 +12619,7 @@
       "ville": "Echallens",
       "description": "Soutien dans le projet de développement d’un espace muséal moderne à Echallens",
       "canton": "VD",
-      "secteur": "Culture",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 600000,
       "annee": 2024
     },
@@ -12674,7 +12718,7 @@
       "ville": "Fribourg",
       "description": "Aide pour 2024",
       "canton": "FR",
-      "secteur": "Culture",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 330000,
       "annee": 2024
     },
@@ -12782,7 +12826,7 @@
       "ville": "Fribourg",
       "description": "Soutien 2024",
       "canton": "FR",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Culture",
       "montant_CHF": 190000,
       "annee": 2024
     },
@@ -12809,7 +12853,7 @@
       "ville": null,
       "description": "Activités 2024",
       "canton": "VD",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 190000,
       "annee": 2024
     },
@@ -12827,7 +12871,7 @@
       "ville": "Fribourg",
       "description": "Activités 2024",
       "canton": "FR",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 220000,
       "annee": 2024
     },
@@ -12836,7 +12880,7 @@
       "ville": "Fribourg",
       "description": "Activités 2024, prise en charge allophones 2024 et représentation de sensibilisation à la violence domestique",
       "canton": "FR",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Culture",
       "montant_CHF": 140000,
       "annee": 2024
     },
@@ -12845,7 +12889,7 @@
       "ville": "Treyvaux",
       "description": "du Mouvement ATD à Treyvaux",
       "canton": "FR",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 309000,
       "annee": 2024
     },
@@ -13223,7 +13267,7 @@
       "ville": "Freiburg",
       "description": "Activités pédagogiques 2024",
       "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Formation et recherche",
       "montant_CHF": 20000,
       "annee": 2024
     },
@@ -13340,7 +13384,7 @@
       "ville": "Fribourg",
       "description": "Activités 2024",
       "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Jeunesse et éducation",
       "montant_CHF": 405000,
       "annee": 2024
     },
@@ -13592,7 +13636,7 @@
       "ville": "Fribourg",
       "description": "Saison 2024-2025",
       "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Culture",
       "montant_CHF": 6000,
       "annee": 2024
     },
@@ -14222,7 +14266,7 @@
       "ville": "Fribourg Freiburg",
       "description": "Aide pour 2024-2025 et projet Appel d'Air",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Sport",
       "montant_CHF": 210000,
       "annee": 2024
     },
@@ -14411,7 +14455,7 @@
       "ville": "Fribourg",
       "description": "Édition 2024, médiation culturelle et investissement",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 249000,
       "annee": 2024
     },
@@ -14618,7 +14662,7 @@
       "ville": "Givisiez",
       "description": "Création jean t. et la bande, médiation culturelle et activités 2024",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 160700,
       "annee": 2024
     },
@@ -14645,7 +14689,7 @@
       "ville": "Bulle",
       "description": "Édition 2024",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 150000,
       "annee": 2024
     },
@@ -14726,7 +14770,7 @@
       "ville": "Bulle",
       "description": "Saison 2024-2025",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Environnement",
       "montant_CHF": 183750,
       "annee": 2024
     },
@@ -14816,7 +14860,7 @@
       "ville": "Fribourg",
       "description": "Contribution annuelle pour les bibliothèques en 2024",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 239435,
       "annee": 2024
     },
@@ -14906,7 +14950,7 @@
       "ville": "Villars-sur-Glâne",
       "description": "Aide pour 2024",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 900000,
       "annee": 2024
     },
@@ -14924,7 +14968,7 @@
       "ville": "Ferpicloz",
       "description": "Activités 2024 et Renouvellement et achat d'infrastructures",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 210000,
       "annee": 2024
     },
@@ -14960,7 +15004,7 @@
       "ville": "Fribourg",
       "description": "Activités 2024",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 280000,
       "annee": 2024
     },
@@ -15014,7 +15058,7 @@
       "ville": "Düdingen",
       "description": "Saison culturelle 2024-2025",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 28000,
       "annee": 2024
     },
@@ -15023,7 +15067,7 @@
       "ville": "Fribourg",
       "description": "Activités 2024",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 230000,
       "annee": 2024
     },
@@ -15239,7 +15283,7 @@
       "ville": "Espace",
       "description": "Activités 2024",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 170000,
       "annee": 2024
     },
@@ -15293,7 +15337,7 @@
       "ville": null,
       "description": "Théâtre des Osses, Givisiez Saison 2024-2025 et Projet Label+ romand La Visite de la vieille dame de Friedrich Dürrenmatt",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 501250,
       "annee": 2024
     },
@@ -15329,7 +15373,7 @@
       "ville": "Fribourg",
       "description": "Saison musicale 2024",
       "canton": "FR",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 8000,
       "annee": 2024
     },
@@ -15419,7 +15463,7 @@
       "ville": "Fribourg",
       "description": "Ne surtout pas diminuer les nuisances",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 6000,
       "annee": 2024
     },
@@ -15473,7 +15517,7 @@
       "ville": "Romont",
       "description": "Projets de recherche scientifique en 2024 et Recensement du patrimoine verrier fribourgeois (atelier Kirsch et Fleckner)",
       "canton": "FR",
-      "secteur": "Santé et handicap",
+      "secteur": "Formation et recherche",
       "montant_CHF": 160000,
       "annee": 2024
     },
@@ -15824,7 +15868,7 @@
       "ville": "Fribourg",
       "description": "Saison 2024-2025 et Investissements pour le matériel et la technique",
       "canton": "FR",
-      "secteur": "Formation et recherche",
+      "secteur": "Culture",
       "montant_CHF": 401000,
       "annee": 2024
     },
@@ -16076,7 +16120,7 @@
       "ville": "Freiburg",
       "description": "20 Jahre Museum",
       "canton": "FR",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Formation et recherche",
       "montant_CHF": 100000,
       "annee": 2024
     },
@@ -16148,7 +16192,7 @@
       "ville": "Morat",
       "description": "de Morat (expositions et site Internet)",
       "canton": "FR",
-      "secteur": "Environnement",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 50000,
       "annee": 2024
     },
@@ -16175,7 +16219,7 @@
       "ville": "Châtel-St-Denis",
       "description": "siècle",
       "canton": "FR",
-      "secteur": "Environnement",
+      "secteur": "Culture",
       "montant_CHF": 300000,
       "annee": 2024
     },
@@ -16193,7 +16237,7 @@
       "ville": "Fribourg",
       "description": "Festival 2024",
       "canton": "FR",
-      "secteur": "Environnement",
+      "secteur": "Culture",
       "montant_CHF": 115000,
       "annee": 2024
     },
@@ -16490,7 +16534,7 @@
       "ville": "Fribourg",
       "description": "de St-Léonard - part extraordinaire",
       "canton": "FR",
-      "secteur": "Sport",
+      "secteur": "Formation et recherche",
       "montant_CHF": 100000,
       "annee": 2024
     },
@@ -17012,7 +17056,7 @@
       "ville": "Fribourg",
       "description": "St-Léonard Fribourg - LOT 1",
       "canton": "FR",
-      "secteur": "Sport",
+      "secteur": "Formation et recherche",
       "montant_CHF": 300000,
       "annee": 2024
     },
@@ -17021,7 +17065,7 @@
       "ville": "Fribourg",
       "description": "de St-Léonard - part construction",
       "canton": "FR",
-      "secteur": "Sport",
+      "secteur": "Formation et recherche",
       "montant_CHF": 300000,
       "annee": 2024
     },
@@ -19433,7 +19477,7 @@
       "ville": "Bulle",
       "description": "Diffusion de créations fribourgeoises",
       "canton": "FR",
-      "secteur": "Sport",
+      "secteur": "Environnement",
       "montant_CHF": 5900,
       "annee": 2024
     },
@@ -19469,7 +19513,7 @@
       "ville": "Lausanne",
       "description": "Activités 2024 (part fribourgeoise)",
       "canton": "VD",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 34500,
       "annee": 2024
     },
@@ -19496,7 +19540,7 @@
       "ville": "Villars-sur-Glâne",
       "description": "Résidences en arts de la scène 2024",
       "canton": "FR",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 120000,
       "annee": 2024
     },
@@ -19514,7 +19558,7 @@
       "ville": "Fribourg",
       "description": "Résidences en musiques actuelles",
       "canton": "FR",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 26510,
       "annee": 2024
     },
@@ -19523,7 +19567,7 @@
       "ville": "Düdingen",
       "description": "Diffusion de créations fribourgeoises",
       "canton": "FR",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "montant_CHF": 10000,
       "annee": 2024
     },
@@ -19595,7 +19639,7 @@
       "ville": "Fribourg",
       "description": "ayant un comportement violent",
       "canton": "FR",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Culture",
       "montant_CHF": 15000,
       "annee": 2024
     },
@@ -19910,7 +19954,7 @@
       "ville": "Collombey-Muraz",
       "description": "Animation",
       "canton": "SR",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 23000,
       "annee": 2024
     },
@@ -19919,7 +19963,7 @@
       "ville": "Crans-Montana",
       "description": "Animation",
       "canton": "VS",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 80000,
       "annee": 2024
     },
@@ -19928,7 +19972,7 @@
       "ville": "Aproz",
       "description": "Animation 30'000-. EMS Résidence Jean-Paul, Riddes Animation",
       "canton": "VS",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 40000,
       "annee": 2024
     },
@@ -19937,7 +19981,7 @@
       "ville": "Vouvry",
       "description": "Animation",
       "canton": "VS",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 74000,
       "annee": 2024
     },
@@ -19946,7 +19990,7 @@
       "ville": "Sion",
       "description": "Animation",
       "canton": "VS",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 64000,
       "annee": 2024
     },
@@ -20846,7 +20890,7 @@
       "ville": "Crans-Montana",
       "description": "Saison artistique",
       "canton": "VS",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Culture",
       "montant_CHF": 115000,
       "annee": 2024
     },
@@ -20873,7 +20917,7 @@
       "ville": "Sion",
       "description": "Projet",
       "canton": "VS",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Culture",
       "montant_CHF": 175000,
       "annee": 2024
     },
@@ -20882,7 +20926,7 @@
       "ville": "Sion",
       "description": "Saison artistique",
       "canton": "VS",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Culture",
       "montant_CHF": 153000,
       "annee": 2024
     },
@@ -20945,7 +20989,7 @@
       "ville": "Sierre",
       "description": "Manifestation",
       "canton": "VS",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Culture",
       "montant_CHF": 155000,
       "annee": 2024
     },
@@ -21305,7 +21349,7 @@
       "ville": "Sion",
       "description": "Investissement",
       "canton": "VS",
-      "secteur": "Culture",
+      "secteur": "Santé et handicap",
       "montant_CHF": 1000000,
       "annee": 2024
     },
@@ -22088,7 +22132,7 @@
       "ville": "Sierre",
       "description": "Projet",
       "canton": "VS",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 41000,
       "annee": 2024
     },
@@ -22106,7 +22150,7 @@
       "ville": "Sion",
       "description": "Formation",
       "canton": "VS",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 514952,
       "annee": 2024
     },
@@ -22214,7 +22258,7 @@
       "ville": "Lens",
       "description": "Exposition",
       "canton": "VS",
-      "secteur": "Culture",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 180000,
       "annee": 2024
     },
@@ -22223,7 +22267,7 @@
       "ville": "Martigny",
       "description": "Saison artistique",
       "canton": "VS",
-      "secteur": "Culture",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 350000,
       "annee": 2024
     },
@@ -23501,7 +23545,7 @@
       "ville": "Ardon",
       "description": "Projet",
       "canton": "VS",
-      "secteur": "Culture",
+      "secteur": "Environnement",
       "montant_CHF": 20000,
       "annee": 2024
     },
@@ -23555,7 +23599,7 @@
       "ville": "Verbier",
       "description": "Manifestation",
       "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 120000,
       "annee": 2024
     },
@@ -23852,7 +23896,7 @@
       "ville": "Ayent",
       "description": "Rénovation",
       "canton": "VS",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Environnement",
       "montant_CHF": 160000,
       "annee": 2024
     },
@@ -23933,7 +23977,7 @@
       "ville": "Conthey",
       "description": "Projet",
       "canton": "VS",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Promotion, tourisme et développement",
       "montant_CHF": 200000,
       "annee": 2024
     },
@@ -23951,7 +23995,7 @@
       "ville": "Cabane Weissmies",
       "description": "Rénovation",
       "canton": "SR",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Promotion, tourisme et développement",
       "montant_CHF": 300000,
       "annee": 2024
     },
@@ -24077,7 +24121,7 @@
       "ville": "Veysonnaz",
       "description": "Manifestation",
       "canton": "VS",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Sport",
       "montant_CHF": 165000,
       "annee": 2024
     },
@@ -24104,7 +24148,7 @@
       "ville": "Genève",
       "description": "Rénovation",
       "canton": "GE",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Promotion, tourisme et développement",
       "montant_CHF": 300000,
       "annee": 2024
     },
@@ -24122,7 +24166,7 @@
       "ville": "Sion",
       "description": "Projet",
       "canton": "VS",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Promotion, tourisme et développement",
       "montant_CHF": 400000,
       "annee": 2024
     },
@@ -24140,7 +24184,7 @@
       "ville": "Ski Alpin",
       "description": "Manifestation",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Sport",
       "montant_CHF": 320000,
       "annee": 2024
     },
@@ -24203,7 +24247,7 @@
       "ville": "Sion",
       "description": "Manifestation",
       "canton": "VS",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Sport",
       "montant_CHF": 1500000,
       "annee": 2024
     },
@@ -26579,7 +26623,7 @@
       "ville": "La Chaux-de-Fonds",
       "description": "Création artistique",
       "canton": "NE",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Culture",
       "montant_CHF": 130000,
       "annee": 2024
     },
@@ -28253,7 +28297,7 @@
       "ville": "Fontaines",
       "description": "Événement",
       "canton": "NE",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 15000,
       "annee": 2024
     },
@@ -28505,7 +28549,7 @@
       "ville": null,
       "description": "Événement",
       "canton": "SR",
-      "secteur": "Formation et recherche",
+      "secteur": "Culture",
       "montant_CHF": 170000,
       "annee": 2024
     },
@@ -28523,7 +28567,7 @@
       "ville": "Môtiers",
       "description": "Événement",
       "canton": "NE",
-      "secteur": "Formation et recherche",
+      "secteur": "Culture",
       "montant_CHF": 300000,
       "annee": 2024
     },
@@ -28559,7 +28603,7 @@
       "ville": "Auvernier",
       "description": "Saison artistique",
       "canton": "NE",
-      "secteur": "Formation et recherche",
+      "secteur": "Culture",
       "montant_CHF": 375000,
       "annee": 2024
     },
@@ -28622,7 +28666,7 @@
       "ville": "Neuchâtel",
       "description": "Événement",
       "canton": "NE",
-      "secteur": "Formation et recherche",
+      "secteur": "Culture",
       "montant_CHF": 140000,
       "annee": 2024
     },
@@ -28829,7 +28873,7 @@
       "ville": "Neuchâtel",
       "description": "Saison musicale",
       "canton": "NE",
-      "secteur": "Formation et recherche",
+      "secteur": "Culture",
       "montant_CHF": 210000,
       "annee": 2024
     },
@@ -29162,7 +29206,7 @@
       "ville": "La Chaux-de-Fonds",
       "description": "Investissement",
       "canton": "NE",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 100000,
       "annee": 2024
     },
@@ -29270,7 +29314,7 @@
       "ville": "Neuchâtel",
       "description": "rock'n'roll acrobatique 2024",
       "canton": "NE",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Sport",
       "montant_CHF": 3010,
       "annee": 2024
     },
@@ -29315,7 +29359,7 @@
       "ville": "Neuchâtel",
       "description": "Tournoi des 3 mousquetaires et Championnat suisse par équipe 2024",
       "canton": "NE",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Sport",
       "montant_CHF": 800,
       "annee": 2024
     },
@@ -29441,7 +29485,7 @@
       "ville": "St-Blaise",
       "description": "à voile wingfoil et pumpfoil",
       "canton": "NE",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Sport",
       "montant_CHF": 500,
       "annee": 2024
     },
@@ -29495,7 +29539,7 @@
       "ville": "Gymnastique",
       "description": "qualification 2024",
       "canton": "GE",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Sport",
       "montant_CHF": 890,
       "annee": 2024
     },
@@ -29531,7 +29575,7 @@
       "ville": "Neuchâtel",
       "description": "ligue B par équipe",
       "canton": "NE",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Sport",
       "montant_CHF": 500,
       "annee": 2024
     },
@@ -30953,7 +30997,7 @@
       "ville": "Genève",
       "description": "Projet de construction d'un bâtiment sur la parcelle 6686 de la commune de PLO",
       "canton": "GE",
-      "secteur": "Culture",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 4000000,
       "annee": 2024
     },
@@ -31277,7 +31321,7 @@
       "ville": "Petit-Lancy",
       "description": "Recherche de fonds pour des travaux d'aménagement",
       "canton": "GE",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Jeunesse et éducation",
       "montant_CHF": 1100000,
       "annee": 2024
     },
@@ -31511,7 +31555,7 @@
       "ville": "Carouge",
       "description": "Spectacle saison 10",
       "canton": "GE",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "montant_CHF": 90000,
       "annee": 2024
     },
@@ -31556,7 +31600,7 @@
       "ville": "Genève",
       "description": "Acquisition d'un piano à queue Steinway & Sons pour la salle Franz Liszt",
       "canton": "GE",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 70000,
       "annee": 2024
     },
@@ -31583,7 +31627,7 @@
       "ville": "Genève",
       "description": "reconstruction de logements étudiants",
       "canton": "GE",
-      "secteur": "Santé et handicap",
+      "secteur": "Formation et recherche",
       "montant_CHF": 4000000,
       "annee": 2024
     },
@@ -32177,7 +32221,7 @@
       "ville": "Carouge",
       "description": "Renouvellement bus, électrification flotte et changement outil planification",
       "canton": "GE",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Santé et handicap",
       "montant_CHF": 200000,
       "annee": 2024
     },
@@ -32204,7 +32248,7 @@
       "ville": "Grand-Lancy",
       "description": "de répit (UATR) au Petit-Saconnex",
       "canton": "GE",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Santé et handicap",
       "montant_CHF": 350000,
       "annee": 2024
     },
@@ -33734,7 +33778,7 @@
       "ville": "Genève",
       "description": "Concert de musique baroque napolitaine",
       "canton": "GE",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 5000,
       "annee": 2024
     },
@@ -34301,7 +34345,7 @@
       "ville": "Cologny",
       "description": "et de modification du musée",
       "canton": "GE",
-      "secteur": "Culture",
+      "secteur": "Conservation du patrimoine",
       "montant_CHF": 200000,
       "annee": 2024
     },
@@ -34553,7 +34597,7 @@
       "ville": "Genève",
       "description": "Rénovation du Garage des Nations",
       "canton": "GE",
-      "secteur": "Culture",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 1500000,
       "annee": 2024
     },
@@ -34634,7 +34678,7 @@
       "ville": "Bernex",
       "description": "Projet d’autonomie énergétique",
       "canton": "GE",
-      "secteur": "Environnement",
+      "secteur": "Santé et handicap",
       "montant_CHF": 200000,
       "annee": 2024
     },
@@ -34688,7 +34732,7 @@
       "ville": "Carouge",
       "description": "Spectacle de marionnettes La flûte enchantée",
       "canton": "GE",
-      "secteur": "Environnement",
+      "secteur": "Culture",
       "montant_CHF": 10500,
       "annee": 2024
     },
@@ -34976,7 +35020,7 @@
       "ville": "Genève e",
       "description": "édition du FIFDH - festival",
       "canton": "SR",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 350000,
       "annee": 2024
     },
@@ -35003,7 +35047,7 @@
       "ville": "Genève",
       "description": "Restauration de la cabane du Vélan",
       "canton": "GE",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Promotion, tourisme et développement",
       "montant_CHF": 400000,
       "annee": 2024
     },
@@ -35057,7 +35101,7 @@
       "ville": "Genève",
       "description": "",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 137900,
       "annee": 2024
     },
@@ -35075,7 +35119,7 @@
       "ville": null,
       "description": "e t d ’é q u i p e",
       "canton": "SR",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 617050,
       "annee": 2024
     },
@@ -35219,7 +35263,7 @@
       "ville": "Football",
       "description": "(ACGF), Genève",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 150000,
       "annee": 2024
     },
@@ -35246,7 +35290,7 @@
       "ville": "Athlétisme",
       "description": "",
       "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 82100,
       "annee": 2024
     },
@@ -35309,7 +35353,7 @@
       "ville": "Genève",
       "description": "(ARGT), Genève",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 150000,
       "annee": 2024
     },
@@ -35345,7 +35389,7 @@
       "ville": "Genève",
       "description": "Chêne-Bougeries",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 97500,
       "annee": 2024
     },
@@ -35588,7 +35632,7 @@
       "ville": null,
       "description": "",
       "canton": "SR",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 794000,
       "annee": 2024
     },
@@ -35606,7 +35650,7 @@
       "ville": "Genève",
       "description": "Grand-Saconnex",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 13700,
       "annee": 2024
     },
@@ -35660,7 +35704,7 @@
       "ville": null,
       "description": "individuels et d’équipe",
       "canton": "SR",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 458000,
       "annee": 2024
     },
@@ -35687,7 +35731,7 @@
       "ville": "Meyrin",
       "description": "Saint-Genis, Genève",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Formation et recherche",
       "montant_CHF": 9200,
       "annee": 2024
     },
@@ -35813,7 +35857,7 @@
       "ville": "Meyrin",
       "description": "LNA équipe féminine",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Formation et recherche",
       "montant_CHF": 9600,
       "annee": 2024
     },
@@ -35885,7 +35929,7 @@
       "ville": "Genève",
       "description": "LNA équipe masculine",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 100000,
       "annee": 2024
     },
@@ -35894,7 +35938,7 @@
       "ville": "Genève",
       "description": "Tournoi Suisse des écoles",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Formation et recherche",
       "montant_CHF": 4000,
       "annee": 2024
     },
@@ -36164,7 +36208,7 @@
       "ville": "Les Acacias",
       "description": "artistique et danse sur glace",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 10000,
       "annee": 2024
     },
@@ -36200,7 +36244,7 @@
       "ville": "Versoix",
       "description": "Open, Catégories & Paraski",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 4000,
       "annee": 2024
     },
@@ -36227,7 +36271,7 @@
       "ville": "Les Acacias",
       "description": "Cyclisme CLM et route",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 40000,
       "annee": 2024
     },
@@ -36254,7 +36298,7 @@
       "ville": "Genève",
       "description": "hommes & femmes",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "montant_CHF": 5000,
       "annee": 2024
     },
@@ -36578,7 +36622,7 @@
       "ville": null,
       "description": "Participation des jeunes du canton à la finale de la Coupe de Suisse du 2 juin 2024",
       "canton": "SR",
-      "secteur": "Sport",
+      "secteur": "Jeunesse et éducation",
       "montant_CHF": 10320,
       "annee": 2024
     },
@@ -36632,7 +36676,7 @@
       "ville": "Plan-les-Ouates",
       "description": "Trajets Sporting Club",
       "canton": "GE",
-      "secteur": "Sport",
+      "secteur": "Santé et handicap",
       "montant_CHF": 23000,
       "annee": 2024
     },
@@ -37766,7 +37810,7 @@
       "ville": "Delémont",
       "description": "Film documentaire",
       "canton": "JU",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Culture",
       "montant_CHF": 9000,
       "annee": 2024
     },
@@ -38180,7 +38224,7 @@
       "ville": "Develier",
       "description": "Activités 2024",
       "canton": "JU",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 7000,
       "annee": 2024
     },
@@ -38324,7 +38368,7 @@
       "ville": "Porrentruy",
       "description": "Activités 2024",
       "canton": "JU",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 30000,
       "annee": 2024
     },
@@ -38351,7 +38395,7 @@
       "ville": "Bienne",
       "description": "Saison 2024-2025",
       "canton": "JU",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 200000,
       "annee": 2024
     },
@@ -38360,7 +38404,7 @@
       "ville": "Auvernier",
       "description": "Les Jardins musicaux 2024",
       "canton": "NE",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 5000,
       "annee": 2024
     },
@@ -38576,7 +38620,7 @@
       "ville": "Delémont",
       "description": "Saison 2024-2025 et Evidanse",
       "canton": "JU",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 260000,
       "annee": 2024
     },
@@ -38612,7 +38656,7 @@
       "ville": "Porrentruy",
       "description": "Exposition",
       "canton": "JU",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 7000,
       "annee": 2024
     },
@@ -38702,7 +38746,7 @@
       "ville": "Courtételle e",
       "description": "Concours suisse des produits du terroir",
       "canton": "JU",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Promotion, tourisme et développement",
       "montant_CHF": 10000,
       "annee": 2024
     },
@@ -39001,15 +39045,6 @@
       "canton": "JU",
       "secteur": "Environnement",
       "montant_CHF": 3500,
-      "annee": 2024
-    },
-    {
-      "nom": "Entités (activité générale)",
-      "ville": null,
-      "description": "",
-      "canton": "SR",
-      "secteur": "Environnement",
-      "montant_CHF": 139900,
       "annee": 2024
     },
     {
@@ -39413,7 +39448,7 @@
       "ville": "Delémont",
       "description": "Championnat suisse seniors",
       "canton": "JU",
-      "secteur": "Environnement",
+      "secteur": "Sport",
       "montant_CHF": 200,
       "annee": 2024
     },
@@ -39467,7 +39502,7 @@
       "ville": "Fontenais",
       "description": "Championnat jurassien",
       "canton": "JU",
-      "secteur": "Environnement",
+      "secteur": "Sport",
       "montant_CHF": 200,
       "annee": 2024
     },
@@ -39728,7 +39763,7 @@
       "ville": "Delémont",
       "description": "Course par étape MTB",
       "canton": "JU",
-      "secteur": "Environnement",
+      "secteur": "Sport",
       "montant_CHF": 1500,
       "annee": 2024
     },
@@ -40025,7 +40060,7 @@
       "ville": "Neuchâtel",
       "description": "Les jardins musicaux",
       "canton": "NE",
-      "secteur": "Environnement",
+      "secteur": "Culture",
       "montant_CHF": 5000,
       "annee": 2024
     },
@@ -40106,7 +40141,7 @@
       "ville": "Moutier",
       "description": "Stand'été 2025",
       "canton": "JU",
-      "secteur": "Environnement",
+      "secteur": "Promotion, tourisme et développement",
       "montant_CHF": 160000,
       "annee": 2024
     },
@@ -41888,7 +41923,7 @@
       "ville": "Lausanne",
       "description": "d'une collection",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 200000,
       "annee": 2024
     },
@@ -41897,7 +41932,7 @@
       "ville": "Romont",
       "description": "Œuvres de M. Eltschinger, maître verrier",
       "canton": "FR",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Formation et recherche",
       "montant_CHF": 200000,
       "annee": 2024
     },
@@ -41987,7 +42022,7 @@
       "ville": "Lausanne",
       "description": "Saison 2024-2025 Paysages de Noël",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 15000,
       "annee": 2024
     },
@@ -42014,7 +42049,7 @@
       "ville": "Nyon",
       "description": "artistique en 2025",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 180000,
       "annee": 2024
     },
@@ -42050,7 +42085,7 @@
       "ville": "Genève",
       "description": "Tournée de concerts éducatifs en Suisse romande 2024/2025",
       "canton": "GE",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 350000,
       "annee": 2024
     },
@@ -42086,7 +42121,7 @@
       "ville": "Nyon",
       "description": "Visions du Réel on Tour public",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 30000,
       "annee": 2024
     },
@@ -42466,15 +42501,6 @@
       "canton": "VD",
       "secteur": "Environnement",
       "montant_CHF": 240,
-      "annee": 2024
-    },
-    {
-      "nom": "Va la is",
-      "ville": null,
-      "description": "",
-      "canton": "SR",
-      "secteur": "Environnement",
-      "montant_CHF": 259818,
       "annee": 2024
     },
     {

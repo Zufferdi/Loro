@@ -3,42 +3,180 @@
     "classif": "formation",
     "year": "2024",
     "source": "brb2024_full.json",
-    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2)",
+    "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 99,
-    "total_chf": 4721235,
-    "total_entries_classified": 7,
-    "total_chf_classified": 391345,
-    "pct_chf_classified": 8.3,
-    "cross_year_recovered": 1,
+    "total_entries": 117,
+    "total_chf": 9746987,
+    "precise_classified_entries": 32,
+    "precise_classified_chf": 7893097,
+    "pct_chf_precisely_classified": 81.0,
+    "pct_chf_classified": 100.0,
+    "total_entries_classified": 117,
+    "total_chf_classified": 9746987,
+    "catchall_chf": 1853890,
+    "cross_year_recovered": 2,
     "sector": "Formation et recherche",
     "sector_slug": "formation",
-    "total_entries_sector": 99,
-    "total_chf_sector": 4721235,
-    "pct_entries_classified": 7.1
+    "total_entries_sector": 117,
+    "total_chf_sector": 9746987,
+    "pct_entries_classified": 100.0
   },
   "categories": [
     {
-      "name": "Autres",
-      "count": 92,
-      "total_chf": 4329890,
-      "mean_chf": 47064,
+      "name": "Université & hautes écoles",
+      "count": 12,
+      "total_chf": 4979000,
+      "mean_chf": 414916,
       "cantons": {
         "VD": {
-          "count": 7,
-          "total_chf": 655000
+          "count": 4,
+          "total_chf": 205000
         },
         "FR": {
-          "count": 23,
-          "total_chf": 1408390
+          "count": 5,
+          "total_chf": 718000
         },
-        "SR": {
-          "count": 12,
-          "total_chf": 332500
+        "VS": {
+          "count": 1,
+          "total_chf": 41000
         },
         "NE": {
-          "count": 41,
-          "total_chf": 1665500
+          "count": 1,
+          "total_chf": 15000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 4000000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. de la Cité universitaire de Genève Maison d'Albert - Démolition, Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 4000000
+        },
+        {
+          "nom": "Université de Fribourg Assainissement du stade",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Université de Fribourg Assainissement de la piste d'athlétisme",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Université de Fribourg Assainissement de la piste d'athlétisme",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Fond. EPFL Plus",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 95000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. de la Cité universitaire de Genève Maison d'Albert - Démolition, Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 4000000
+        },
+        {
+          "nom": "Université de Fribourg Assainissement du stade",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Université de Fribourg Assainissement de la piste d'athlétisme",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Université de Fribourg Assainissement de la piste d'athlétisme",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Fond. EPFL Plus",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 95000
+        },
+        {
+          "nom": "EPFL Rocket Team",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Fond. de Soutien à l'École de Design et Haute École d'Art du Valais",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 41000
+        },
+        {
+          "nom": "Service des Sports UNIL-EPFL",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Chœur de l'Université de Neuchâtel",
+          "ville": "Fontaines",
+          "canton": "NE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Chœur de l'Université de Lausanne et de l'EPFL",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Université populaire du canton de Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Chœur de Chambre de l'Université de Fribourg (CCUF)",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 8000
+        }
+      ]
+    },
+    {
+      "name": "Soutien général à la formation / recherche",
+      "count": 85,
+      "total_chf": 1853890,
+      "mean_chf": 21810,
+      "cantons": {
+        "VD": {
+          "count": 6,
+          "total_chf": 225000
+        },
+        "SR": {
+          "count": 11,
+          "total_chf": 162500
+        },
+        "FR": {
+          "count": 22,
+          "total_chf": 557390
+        },
+        "NE": {
+          "count": 37,
+          "total_chf": 640500
         },
         "VS": {
           "count": 3,
@@ -55,10 +193,574 @@
       },
       "samples": [
         {
-          "nom": "Nouvel Opéra Fribourg",
+          "nom": "Opéra des Champs, Broc CARMEN - 20 e",
+          "ville": "Broc",
+          "canton": "FR",
+          "montant_CHF": 120000
+        },
+        {
+          "nom": "Stiftung BIBEL+ORIENT, Universität",
+          "ville": "Freiburg",
+          "canton": "FR",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Sté des Concerts de Fribourg",
           "ville": "Fribourg",
           "canton": "FR",
-          "montant_CHF": 401000
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "Perspectives Musiques",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "BaselArea",
+          "ville": "Courroux",
+          "canton": "JU",
+          "montant_CHF": 78000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Opéra des Champs, Broc CARMEN - 20 e",
+          "ville": "Broc",
+          "canton": "FR",
+          "montant_CHF": 120000
+        },
+        {
+          "nom": "Stiftung BIBEL+ORIENT, Universität",
+          "ville": "Freiburg",
+          "canton": "FR",
+          "montant_CHF": 100000
+        },
+        {
+          "nom": "Sté des Concerts de Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "Perspectives Musiques",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 90000
+        },
+        {
+          "nom": "BaselArea",
+          "ville": "Courroux",
+          "canton": "JU",
+          "montant_CHF": 78000
+        },
+        {
+          "nom": "Assoc. pour l’histoire vaudoise",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 75000
+        },
+        {
+          "nom": "Lyrica",
+          "ville": "Colombier",
+          "canton": "NE",
+          "montant_CHF": 75000
+        },
+        {
+          "nom": "Flavie - Assoc. Suisse romande pour les victimes de brûlures",
+          "ville": "Epalinges",
+          "canton": "VD",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Le Théâtre du Concert",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Orlando Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Sté d'histoire de l'art en Suisse - SHAS",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Passion cinéma",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Service de l'enseignement",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "Fond. pour une École de théâtre",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Music festival Promo",
+          "ville": "Le Locle",
+          "canton": "NE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "La Tarentule",
+          "ville": "Saint-Augin",
+          "canton": "SR",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Sté Internationale de sauvetage du Lac Léman",
+          "ville": "Aigle",
+          "canton": "VD",
+          "montant_CHF": 35000
+        },
+        {
+          "nom": "Parc naturel régional Gruyère Pays-d'Enhaut",
+          "ville": "Château-d'Œx",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Nouvelle revue neuchâteloise",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Le Lokart, collectif artistique",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. GeGrave",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Music ô Vignes",
+          "ville": "Cressier",
+          "canton": "NE",
+          "montant_CHF": 27000
+        },
+        {
+          "nom": "Médiation Culturelle Fribourg - Kulturvermittlung Freiburg Constitution d'une Assoc. faitière",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 26890
+        },
+        {
+          "nom": "Musica Virtuosa",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. École Suisse de Vitrail &",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "ParaBôle Festival",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Hors Tribu",
+          "ville": "Fleurier",
+          "canton": "NE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Le Théâtre des 39 marches",
+          "ville": "Fontainemelon",
+          "canton": "NE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Kinderkrippe der Universität Freiburg",
+          "ville": "Freiburg",
+          "canton": "FR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "HAKILI I Conscientisation & Éducation",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Rust Roest Kollectif - RRK",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Smallville - Espace d'art contemporain, Espace",
+          "ville": "Espace",
+          "canton": "FR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "i-lirédition",
+          "ville": "Cressier",
+          "canton": "NE",
+          "montant_CHF": 17000
+        },
+        {
+          "nom": "Sté des concerts de la Ville de Bulle",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Les Sales Gosses - cie de théâtre amateur",
+          "ville": "Cormondrèche",
+          "canton": "NE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Street-Foot Challenge",
+          "ville": "Thielle",
+          "canton": "SR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Sté cantonale des musiques fribourgeoises",
+          "ville": "Cordast",
+          "canton": "FR",
+          "montant_CHF": 13500
+        },
+        {
+          "nom": "Jobtrek",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Schweizer Leberpatienten Verein Swiss HePa",
+          "ville": "Zollikerberg",
+          "canton": "SR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Social Movies Prod",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Sté de Tambour Écho-des-Bois, La Joux-Le Crêt Fête Romandes des Fifres",
+          "ville": "Fête",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "La BOB (Bibliothèque d'objets de la Broye)",
+          "ville": "Estavayer-le-Lac",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Verein Wirtschaftsforum Oberwallis",
+          "ville": "Naters",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Ligue d'Improvisation Neuchâteloise (LINE)",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Sté chorale de Neuchâtel",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "La Croche Chœur",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "La petite chaise",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "La Théâtrale",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Les Concerts de Camille",
+          "ville": "St-Blaise",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Sté de Développement de Rue",
+          "ville": "Promasens",
+          "canton": "SR",
+          "montant_CHF": 9000
+        },
+        {
+          "nom": "Stiftung Cantorama Alte Kirche Jaun",
+          "ville": "Alte Kirche Jaun",
+          "canton": "FR",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "La Boîte d'Enchois",
+          "ville": "Enges",
+          "canton": "NE",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Réhabilitation Éducation Aide sociale - REA-Cameroun",
+          "ville": "Le Locle",
+          "canton": "NE",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "RencontresGuitares de Bulle",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "La Boîte à Swing",
+          "ville": "Le Locle",
+          "canton": "NE",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Le Madrigal, ensemble vocal Le Landeron",
+          "ville": "Bôle",
+          "canton": "NE",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Quatuor Essor",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Rec Bulle",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. Réalités sociales Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "La Beline",
+          "ville": "Chez-le-Bart",
+          "canton": "NE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "La Mouette, théâtre de la Béroche",
+          "ville": "St-Aubin-Sauges",
+          "canton": "SR",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Le Fleuron - chœur mixte de Bôle",
+          "ville": "Bôle",
+          "canton": "NE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Les lundis des Mots",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Centre intercantonal d'information sur les croyances, Genève Phase médias et forums participatifs",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Moment Baroque",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "OVUF",
+          "ville": "Givisiez",
+          "canton": "FR",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "PORTAZ Open Air",
+          "ville": "Delley",
+          "canton": "SR",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "MOOD boy Music",
+          "ville": "Môtiers",
+          "canton": "NE",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "I Love Old Jazz",
+          "ville": "Bôle",
+          "canton": "NE",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "La Chanson d'Hauterive",
+          "ville": "Le Landeron",
+          "canton": "NE",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Point76",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "Maison de l'Europe Transjurassienne",
+          "ville": null,
+          "canton": "JU",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "Photo Club Fribourg",
+          "ville": "Marly",
+          "canton": "FR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Kick Bill",
+          "ville": "Cortaillod",
+          "canton": "NE",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "L'Ensemble Mnémosyne",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Centre Régional d'Études des Populations Alpines - CREPA",
+          "ville": "Sembrancher",
+          "canton": "SR",
+          "montant_CHF": 2500
+        },
+        {
+          "nom": "Photoclub de la ville de Neuchâtel",
+          "ville": "Saules",
+          "canton": "SR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Sinfonisches Blasorchester aulos",
+          "ville": "Liebefeld",
+          "canton": "JU",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "La Tarentelle",
+          "ville": "Fontainemelon",
+          "canton": "NE",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Laténa orchestral",
+          "ville": "Hauterive",
+          "canton": "NE",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Femmes à Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Quatuor Amoroso",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Orchesterverein Düdingen 2 Frühlingskonzerte und",
+          "ville": "Düdingen",
+          "canton": "FR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Orchestre d'accordéons Patria",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Les Cordes Sensibles",
+          "ville": "Marin-Epagnier",
+          "canton": "NE",
+          "montant_CHF": 1000
+        }
+      ]
+    },
+    {
+      "name": "Recherche scientifique",
+      "count": 11,
+      "total_chf": 1667800,
+      "mean_chf": 151618,
+      "cantons": {
+        "VD": {
+          "count": 3,
+          "total_chf": 850000
+        },
+        "FR": {
+          "count": 3,
+          "total_chf": 760000
+        },
+        "GE": {
+          "count": 5,
+          "total_chf": 57800
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. École Suisse d’Archéologie en Grèce (ESAG)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 500000
         },
         {
           "nom": "Fond. pour le soutien de la recherche et du développement de l'oncologie (FSRDO)",
@@ -67,10 +769,36 @@
           "montant_CHF": 400000
         },
         {
-          "nom": "Opéra décentralisé",
-          "ville": "Auvernier",
-          "canton": "NE",
-          "montant_CHF": 375000
+          "nom": "NeurocelliA - Assoc. de thérapie cellulaire en neurosciences",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 300000
+        },
+        {
+          "nom": "Vitrocentre Romont - Centre suisse de recherche sur le vitrail et les arts du verre",
+          "ville": "Romont",
+          "canton": "FR",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Vitrocentre Romont",
+          "ville": "Romont",
+          "canton": "FR",
+          "montant_CHF": 160000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. École Suisse d’Archéologie en Grèce (ESAG)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 500000
+        },
+        {
+          "nom": "Fond. pour le soutien de la recherche et du développement de l'oncologie (FSRDO)",
+          "ville": "Cugy",
+          "canton": "FR",
+          "montant_CHF": 400000
         },
         {
           "nom": "NeurocelliA - Assoc. de thérapie cellulaire en neurosciences",
@@ -79,49 +807,125 @@
           "montant_CHF": 300000
         },
         {
-          "nom": "Môtiers - Art en plein air",
-          "ville": "Môtiers",
-          "canton": "NE",
-          "montant_CHF": 300000
-        }
-      ]
-    },
-    {
-      "name": "Salons & orientation métiers",
-      "count": 1,
-      "total_chf": 247345,
-      "mean_chf": 247345,
-      "cantons": {
-        "VS": {
-          "count": 1,
-          "total_chf": 247345
-        }
-      },
-      "samples": [
+          "nom": "Vitrocentre Romont - Centre suisse de recherche sur le vitrail et les arts du verre",
+          "ville": "Romont",
+          "canton": "FR",
+          "montant_CHF": 200000
+        },
         {
-          "nom": "Assoc. Salon des Métiers",
-          "ville": "Martigny",
-          "canton": "VS",
-          "montant_CHF": 247345
+          "nom": "Vitrocentre Romont",
+          "ville": "Romont",
+          "canton": "FR",
+          "montant_CHF": 160000
+        },
+        {
+          "nom": "Fond. pour la Recherche en faveur des Personnes Handicapées (FRH)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. CERN & Sté, Meyrin Sommet Art et Science du CERN.",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Rugby École de rugby Cern Meyrin Saint- Genis",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 9600
+        },
+        {
+          "nom": "Rugby École de rugby Cern Meyrin",
+          "ville": "Meyrin",
+          "canton": "GE",
+          "montant_CHF": 9200
+        },
+        {
+          "nom": "Chœur du CERN",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "École de rugby Cern Meyrin Saint-Genis",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 4000
         }
       ]
     },
     {
       "name": "Apprentissage & formation continue",
-      "count": 3,
-      "total_chf": 54000,
-      "mean_chf": 18000,
+      "count": 6,
+      "total_chf": 808952,
+      "mean_chf": 134825,
       "cantons": {
         "FR": {
-          "count": 1,
-          "total_chf": 1000
+          "count": 2,
+          "total_chf": 171000
         },
         "VS": {
-          "count": 2,
-          "total_chf": 53000
+          "count": 3,
+          "total_chf": 567952
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 70000
         }
       },
       "samples": [
+        {
+          "nom": "Fond. du Conservatoire cantonal de musique",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 514952
+        },
+        {
+          "nom": "Lire et écrire section Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 170000
+        },
+        {
+          "nom": "Conservatoire de musique de Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Bildungshaus St. Jodern",
+          "ville": "Visp",
+          "canton": "VS",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Volkshochschule Oberwallis",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 3000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. du Conservatoire cantonal de musique",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 514952
+        },
+        {
+          "nom": "Lire et écrire section Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 170000
+        },
+        {
+          "nom": "Conservatoire de musique de Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 70000
+        },
         {
           "nom": "Bildungshaus St. Jodern",
           "ville": "Visp",
@@ -143,11 +947,43 @@
       ]
     },
     {
-      "name": "Recherche & innovation tech",
+      "name": "Salons & orientation métiers",
       "count": 1,
-      "total_chf": 50000,
-      "mean_chf": 50000,
+      "total_chf": 247345,
+      "mean_chf": 247345,
       "cantons": {
+        "VS": {
+          "count": 1,
+          "total_chf": 247345
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Salon des Métiers",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 247345
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Salon des Métiers",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 247345
+        }
+      ]
+    },
+    {
+      "name": "Recherche & innovation tech",
+      "count": 2,
+      "total_chf": 190000,
+      "mean_chf": 95000,
+      "cantons": {
+        "VD": {
+          "count": 1,
+          "total_chf": 140000
+        },
         "VS": {
           "count": 1,
           "total_chf": 50000
@@ -155,50 +991,30 @@
       },
       "samples": [
         {
+          "nom": "Swiss Solar Boat",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 140000
+        },
+        {
           "nom": "Fond. IPT",
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 50000
         }
-      ]
-    },
-    {
-      "name": "Recherche scientifique",
-      "count": 1,
-      "total_chf": 30000,
-      "mean_chf": 30000,
-      "cantons": {
-        "GE": {
-          "count": 1,
-          "total_chf": 30000
-        }
-      },
-      "samples": [
+      ],
+      "all_entries": [
         {
-          "nom": "Fond. CERN & Sté, Meyrin Sommet Art et Science du CERN.",
-          "ville": "Meyrin",
-          "canton": "GE",
-          "montant_CHF": 30000
-        }
-      ]
-    },
-    {
-      "name": "Université & hautes écoles",
-      "count": 1,
-      "total_chf": 10000,
-      "mean_chf": 10000,
-      "cantons": {
-        "FR": {
-          "count": 1,
-          "total_chf": 10000
-        }
-      },
-      "samples": [
+          "nom": "Swiss Solar Boat",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 140000
+        },
         {
-          "nom": "Université populaire du canton de Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 10000
+          "nom": "Fond. IPT",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 50000
         }
       ]
     }
