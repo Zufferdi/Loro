@@ -175,6 +175,12 @@
           "montant_CHF": 58000
         },
         {
+          "nom": "Assoc. Patouch",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 50000
+        },
+        {
           "nom": "La Ribambelle - Assoc. Garde d'enfants",
           "ville": "Nyon",
           "canton": "VD",
@@ -214,12 +220,6 @@
           "nom": "Assoc. École de Harpe Onex- Genève",
           "ville": "Onex",
           "canton": "GE",
-          "montant_CHF": 50000
-        },
-        {
-          "nom": "Assoc. Patouch",
-          "ville": "Sion",
-          "canton": "VS",
           "montant_CHF": 50000
         },
         {
@@ -877,6 +877,12 @@
           "montant_CHF": 9000
         },
         {
+          "nom": "Fond. IdéeSport",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 8000
+        },
+        {
           "nom": "Verein Kinderbetreuung Düdingen Kindertagesstätte Balthasar",
           "ville": "Düdingen",
           "canton": "FR",
@@ -886,12 +892,6 @@
           "nom": "Assoc. Rencontres arrangées,",
           "ville": null,
           "canton": "SR",
-          "montant_CHF": 8000
-        },
-        {
-          "nom": "Fond. IdéeSport",
-          "ville": "Lausanne",
-          "canton": "VD",
           "montant_CHF": 8000
         },
         {
@@ -943,6 +943,12 @@
           "montant_CHF": 6500
         },
         {
+          "nom": "Assoc. Lazare Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 6000
+        },
+        {
           "nom": "Théâtre Crapouille",
           "ville": "Fribourg",
           "canton": "FR",
@@ -988,12 +994,6 @@
           "nom": "Assoc. Pierrot Productions",
           "ville": "Colombier",
           "canton": "NE",
-          "montant_CHF": 6000
-        },
-        {
-          "nom": "Assoc. Lazare Genève",
-          "ville": "Genève",
-          "canton": "GE",
           "montant_CHF": 6000
         },
         {
@@ -1321,10 +1321,14 @@
       },
       "samples": [
         {
-          "nom": "Fond. pour l'accueil de jour des enfants FAJE",
-          "ville": "Lausanne",
+          "nom": "FAJE — Fond. pour l'accueil de jour des enfants",
+          "montant_CHF": 1500000,
           "canton": "VD",
-          "montant_CHF": 1500000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. pour l'accueil de jour des enfants FAJE",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Assoc. de la Garderie d'enfants de La Sallaz-Vennes - Centre de la Petite Enfance",
@@ -1353,10 +1357,14 @@
       ],
       "all_entries": [
         {
-          "nom": "Fond. pour l'accueil de jour des enfants FAJE",
-          "ville": "Lausanne",
+          "nom": "FAJE — Fond. pour l'accueil de jour des enfants",
+          "montant_CHF": 1500000,
           "canton": "VD",
-          "montant_CHF": 1500000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. pour l'accueil de jour des enfants FAJE",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Assoc. de la Garderie d'enfants de La Sallaz-Vennes - Centre de la Petite Enfance",
@@ -1807,16 +1815,14 @@
       },
       "samples": [
         {
-          "nom": "Assoc. La Lanterne Magique,",
-          "ville": null,
+          "nom": "La Lanterne Magique",
+          "montant_CHF": 695000,
           "canton": "SR",
-          "montant_CHF": 395000
-        },
-        {
-          "nom": "Assoc. La Lanterne Magique,",
           "ville": null,
-          "canton": "SR",
-          "montant_CHF": 300000
+          "secteur": "",
+          "description": "Consolidation de 2 attributions : Assoc. La Lanterne Magique,",
+          "_consolidated": true,
+          "_count": 2
         },
         {
           "nom": "Centre d'Appui Scolaire",
@@ -1835,20 +1841,24 @@
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 12000
+        },
+        {
+          "nom": "Jeunesse et éducation • suite Assoc. PIP - Prévention de l'Illetrisme au préscolaire",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 4000
         }
       ],
       "all_entries": [
         {
-          "nom": "Assoc. La Lanterne Magique,",
-          "ville": null,
+          "nom": "La Lanterne Magique",
+          "montant_CHF": 695000,
           "canton": "SR",
-          "montant_CHF": 395000
-        },
-        {
-          "nom": "Assoc. La Lanterne Magique,",
           "ville": null,
-          "canton": "SR",
-          "montant_CHF": 300000
+          "secteur": "",
+          "description": "Consolidation de 2 attributions : Assoc. La Lanterne Magique,",
+          "_consolidated": true,
+          "_count": 2
         },
         {
           "nom": "Centre d'Appui Scolaire",

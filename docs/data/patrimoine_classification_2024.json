@@ -223,6 +223,12 @@
           "montant_CHF": 80000
         },
         {
+          "nom": "Ville de Porrentruy",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 75000
+        },
+        {
           "nom": "Assoc. du conservatoire Suisse des cépages résistants, Hermance Finalisation du conservatoire",
           "ville": "Hermance",
           "canton": "GE",
@@ -232,12 +238,6 @@
           "nom": "Fond. Autrefois Genève, Plan-les-Ouates Protéger la mémoire du Club Alpin",
           "ville": "Genève",
           "canton": "GE",
-          "montant_CHF": 75000
-        },
-        {
-          "nom": "Ville de Porrentruy",
-          "ville": "Porrentruy",
-          "canton": "JU",
           "montant_CHF": 75000
         },
         {
@@ -277,6 +277,12 @@
           "montant_CHF": 70000
         },
         {
+          "nom": "Fond. Delémont'BD",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 60000
+        },
+        {
           "nom": "Variations Musicales de Tannay",
           "ville": "Tannay",
           "canton": "VD",
@@ -304,12 +310,6 @@
           "nom": "Assoc. Rallye du Chablais",
           "ville": "St-Maurice",
           "canton": "VS",
-          "montant_CHF": 60000
-        },
-        {
-          "nom": "Fond. Delémont'BD",
-          "ville": "Delémont",
-          "canton": "JU",
           "montant_CHF": 60000
         },
         {
@@ -1560,9 +1560,13 @@
         },
         {
           "nom": "Fond. Pierre Gianadda",
-          "ville": "Martigny",
+          "montant_CHF": 350000,
           "canton": "VS",
-          "montant_CHF": 350000
+          "ville": "Martigny",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. Pierre Gianadda",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Sauvetage de la Belotte-Bellerive, Cologny Nouvelle vedette d'intervention",
@@ -1592,9 +1596,13 @@
         },
         {
           "nom": "Fond. Pierre Gianadda",
-          "ville": "Martigny",
+          "montant_CHF": 350000,
           "canton": "VS",
-          "montant_CHF": 350000
+          "ville": "Martigny",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. Pierre Gianadda",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Sauvetage de la Belotte-Bellerive, Cologny Nouvelle vedette d'intervention",
@@ -1895,13 +1903,13 @@
           "montant_CHF": 60000
         },
         {
-          "nom": "Sté d'histoire et d'archéologie de Genève S.H.A.G. Traitement et mise en valeur de la collection de brochures",
+          "nom": "Fond. pour l'Écrit",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 50000
         },
         {
-          "nom": "Fond. pour l'Écrit",
+          "nom": "Sté d'histoire et d'archéologie de Genève S.H.A.G. Traitement et mise en valeur de la collection de brochures",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 50000
@@ -1927,13 +1935,13 @@
           "montant_CHF": 60000
         },
         {
-          "nom": "Sté d'histoire et d'archéologie de Genève S.H.A.G. Traitement et mise en valeur de la collection de brochures",
+          "nom": "Fond. pour l'Écrit",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 50000
         },
         {
-          "nom": "Fond. pour l'Écrit",
+          "nom": "Sté d'histoire et d'archéologie de Genève S.H.A.G. Traitement et mise en valeur de la collection de brochures",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 50000

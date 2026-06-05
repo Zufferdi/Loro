@@ -5,32 +5,32 @@
     "source": "brb2024_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 265,
-    "total_chf": 10988761,
+    "total_entries": 264,
+    "total_chf": 10889761,
     "precise_classified_entries": 71,
     "precise_classified_chf": 5904080,
-    "pct_chf_precisely_classified": 53.7,
+    "pct_chf_precisely_classified": 54.2,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 265,
-    "total_chf_classified": 10988761,
-    "catchall_chf": 5084681,
+    "total_entries_classified": 264,
+    "total_chf_classified": 10889761,
+    "catchall_chf": 4985681,
     "cross_year_recovered": 27,
     "sector": "Jeunesse et éducation",
     "sector_slug": "jeunesse",
-    "total_entries_sector": 265,
-    "total_chf_sector": 10988761,
+    "total_entries_sector": 264,
+    "total_chf_sector": 10889761,
     "pct_entries_classified": 100.0
   },
   "categories": [
     {
       "name": "Soutien général à la jeunesse",
-      "count": 194,
-      "total_chf": 5084681,
-      "mean_chf": 26209,
+      "count": 193,
+      "total_chf": 4985681,
+      "mean_chf": 25832,
       "cantons": {
         "VD": {
-          "count": 62,
-          "total_chf": 2177000
+          "count": 61,
+          "total_chf": 2078000
         },
         "SR": {
           "count": 14,
@@ -125,12 +125,6 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 100000
-        },
-        {
-          "nom": "Fond. Pro-Home",
-          "ville": "Yverdon-les-Bains",
-          "canton": "VD",
-          "montant_CHF": 99000
         },
         {
           "nom": "Institut Éthique Histoire Humanités (iEH2), Faculté de médecine",
@@ -535,6 +529,12 @@
           "montant_CHF": 22000
         },
         {
+          "nom": "Assoc. Applause - Week-End Musical de Pully",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
           "nom": "La Ruche d'art Riviera",
           "ville": "Jongny",
           "canton": "VD",
@@ -550,12 +550,6 @@
           "nom": "Ars Gratia Artis",
           "ville": "Neuchâtel",
           "canton": "NE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Assoc. Applause - Week-End Musical de Pully",
-          "ville": "Lausanne",
-          "canton": "VD",
           "montant_CHF": 20000
         },
         {
@@ -1395,10 +1389,14 @@
       },
       "samples": [
         {
-          "nom": "Fond. pour l'accueil de jour des enfants (FAJE)",
-          "ville": "Lausanne",
+          "nom": "FAJE — Fond. pour l'accueil de jour des enfants",
+          "montant_CHF": 1500000,
           "canton": "VD",
-          "montant_CHF": 1500000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. pour l'accueil de jour des enfants (FAJE)",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Fond. Yverdonnoise pour l'Accueil de l'Enfance (FYAE)",
@@ -1427,10 +1425,14 @@
       ],
       "all_entries": [
         {
-          "nom": "Fond. pour l'accueil de jour des enfants (FAJE)",
-          "ville": "Lausanne",
+          "nom": "FAJE — Fond. pour l'accueil de jour des enfants",
+          "montant_CHF": 1500000,
           "canton": "VD",
-          "montant_CHF": 1500000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. pour l'accueil de jour des enfants (FAJE)",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Fond. Yverdonnoise pour l'Accueil de l'Enfance (FYAE)",
@@ -1574,17 +1576,25 @@
       "samples": [
         {
           "nom": "La Lanterne Magique",
-          "ville": "Neuchâtel",
+          "montant_CHF": 380000,
           "canton": "NE",
-          "montant_CHF": 380000
+          "ville": "Neuchâtel",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : La Lanterne Magique",
+          "_consolidated": true,
+          "_count": 1
         }
       ],
       "all_entries": [
         {
           "nom": "La Lanterne Magique",
-          "ville": "Neuchâtel",
+          "montant_CHF": 380000,
           "canton": "NE",
-          "montant_CHF": 380000
+          "ville": "Neuchâtel",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : La Lanterne Magique",
+          "_consolidated": true,
+          "_count": 1
         }
       ]
     },

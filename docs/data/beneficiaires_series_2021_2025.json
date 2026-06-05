@@ -1,31 +1,44 @@
 {
   "_meta": {
+    "description": "15 bénéficiaires structurels (≥4/5 ans actifs, ≥1M cumulé)",
     "years": [
-      "2021",
-      "2022",
-      "2023",
-      "2024",
-      "2025"
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
     ],
-    "count": 200
+    "criteria": "Top 15 par cumul 5 ans, présents ≥4 années, ≥1 M CHF cumulés",
+    "with_full_5_years": 14
   },
-  "beneficiaires": [
+  "candidats": [
     {
-      "nom": "Fond. Cinéforom",
-      "canton": "GE",
+      "nom_canonique": "Cinéforom — Fond. romande pour le cinéma",
+      "canton_principal": "GE",
       "secteur": "Culture",
       "series": {
-        "2021": 986800,
-        "2022": 1785735,
-        "2023": 1785735,
-        "2024": 1865735,
-        "2025": 1700000
-      },
-      "total": 8124005
+        "2021": 2951800,
+        "2022": 2750935,
+        "2023": 2750935,
+        "2024": 2825935,
+        "2025": 2752600
+      }
     },
     {
-      "nom": "Fond. du Théâtre du Jorat",
-      "canton": "VD",
+      "nom_canonique": "FAJE — Fond. pour l'accueil de jour des enfants",
+      "canton_principal": "VD",
+      "secteur": "Jeunesse et éducation",
+      "series": {
+        "2021": 1500000,
+        "2022": 1500000,
+        "2023": 1500000,
+        "2024": 1500000,
+        "2025": 1500000
+      }
+    },
+    {
+      "nom_canonique": "Théâtre du Jorat",
+      "canton_principal": "VD",
       "secteur": "Culture",
       "series": {
         "2021": 255000,
@@ -33,25 +46,35 @@
         "2023": 250000,
         "2024": 2500000,
         "2025": 200000
-      },
-      "total": 7405000
+      }
     },
     {
-      "nom": "Fond. Partage",
-      "canton": "GE",
-      "secteur": "Action sociale et personnes âgées",
+      "nom_canonique": "Tour de Romandie",
+      "canton_principal": "SR",
+      "secteur": "Sport",
       "series": {
-        "2021": 0,
-        "2022": 3800000,
-        "2023": 2000000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 5800000
+        "2021": 14419,
+        "2022": 1400000,
+        "2023": 1838866,
+        "2024": 1295143,
+        "2025": 1690900
+      }
     },
     {
-      "nom": "Assoc. Vaud Promotion",
-      "canton": "VD",
+      "nom_canonique": "Fond. Equilibre et Nuithonie",
+      "canton_principal": "FR",
+      "secteur": "Culture",
+      "series": {
+        "2021": 700000,
+        "2022": 1368000,
+        "2023": 1108750,
+        "2024": 1020000,
+        "2025": 1100000
+      }
+    },
+    {
+      "nom_canonique": "Assoc. Vaud Promotion",
+      "canton_principal": "VD",
       "secteur": "Promotion, tourisme et développement",
       "series": {
         "2021": 1000000,
@@ -59,12 +82,11 @@
         "2023": 1000000,
         "2024": 1000000,
         "2025": 1000000
-      },
-      "total": 5000000
+      }
     },
     {
-      "nom": "Fond. de l'Hermitage",
-      "canton": "VD",
+      "nom_canonique": "Fond. de l'Hermitage",
+      "canton_principal": "VD",
       "secteur": "Culture",
       "series": {
         "2021": 100000,
@@ -72,129 +94,71 @@
         "2023": 400000,
         "2024": 300000,
         "2025": 4000000
-      },
-      "total": 4940000
+      }
     },
     {
-      "nom": "Fond. du Verbier Festival",
-      "canton": "VS",
+      "nom_canonique": "Verbier Festival",
+      "canton_principal": "VS",
       "secteur": "Culture",
       "series": {
         "2021": 975000,
-        "2022": 975000,
+        "2022": 1125000,
         "2023": 975000,
         "2024": 900000,
         "2025": 925000
-      },
-      "total": 4750000
+      }
     },
     {
-      "nom": "Fond. Equilibre et Nuithonie",
-      "canton": "FR",
+      "nom_canonique": "Fond. pour l'art dramatique",
+      "canton_principal": "VD",
       "secteur": "Culture",
       "series": {
-        "2021": 0,
-        "2022": 1368000,
-        "2023": 1108750,
-        "2024": 1020000,
-        "2025": 1100000
-      },
-      "total": 4596750
+        "2021": 440000,
+        "2022": 600000,
+        "2023": 600000,
+        "2024": 650000,
+        "2025": 2000000
+      }
     },
     {
-      "nom": "Fond. pour l'accueil de jour des enfants - FAJE",
-      "canton": "VD",
-      "secteur": "Jeunesse et éducation",
-      "series": {
-        "2021": 1500000,
-        "2022": 1500000,
-        "2023": 1500000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 4500000
-    },
-    {
-      "nom": "Fond. du Tour de Romandie",
-      "canton": "SR",
-      "secteur": "Sport",
-      "series": {
-        "2021": 0,
-        "2022": 1400000,
-        "2023": 987840,
-        "2024": 753250,
-        "2025": 726100
-      },
-      "total": 3867190
-    },
-    {
-      "nom": "CORODIS",
-      "canton": "VD",
+      "nom_canonique": "CORODIS",
+      "canton_principal": "VD",
       "secteur": "Culture",
       "series": {
-        "2021": 700000,
-        "2022": 700000,
+        "2021": 774500,
+        "2022": 734500,
         "2023": 734500,
         "2024": 734500,
         "2025": 737970
-      },
-      "total": 3606970
+      }
     },
     {
-      "nom": "Assoc. Vestiaire social",
-      "canton": "GE",
-      "secteur": "Action sociale et personnes âgées",
+      "nom_canonique": "La Lanterne Magique",
+      "canton_principal": "SR",
+      "secteur": "Jeunesse et éducation",
       "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 1600000,
-        "2024": 0,
-        "2025": 1600000
-      },
-      "total": 3200000
-    },
-    {
-      "nom": "Assoc. La Lanterne Magique",
-      "canton": "NE",
-      "secteur": "Santé et handicap",
-      "series": {
-        "2021": 300000,
+        "2021": 695000,
         "2022": 695000,
         "2023": 684000,
         "2024": 678000,
         "2025": 677500
-      },
-      "total": 3034500
+      }
     },
     {
-      "nom": "Fond. pour l'accueil de jour des enfants (FAJE)",
-      "canton": "VD",
-      "secteur": "Jeunesse et éducation",
-      "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 0,
-        "2024": 1500000,
-        "2025": 1500000
-      },
-      "total": 3000000
-    },
-    {
-      "nom": "Fond. pour l'Écrit",
-      "canton": "GE",
+      "nom_canonique": "Fond. pour l'Écrit",
+      "canton_principal": "GE",
       "secteur": "Culture",
       "series": {
         "2021": 500000,
-        "2022": 810000,
+        "2022": 750000,
         "2023": 560000,
         "2024": 550000,
         "2025": 550000
-      },
-      "total": 2970000
+      }
     },
     {
-      "nom": "Fond. Plateforme 10",
-      "canton": "VD",
+      "nom_canonique": "Plateforme 10",
+      "canton_principal": "VD",
       "secteur": "Culture",
       "series": {
         "2021": 600000,
@@ -202,64 +166,23 @@
         "2023": 550000,
         "2024": 600000,
         "2025": 600000
-      },
-      "total": 2900000
+      }
     },
     {
-      "nom": "Assoc. La Tuile",
-      "canton": "FR",
+      "nom_canonique": "Assoc. La Tuile",
+      "canton_principal": "FR",
       "secteur": "Action sociale et personnes âgées",
       "series": {
-        "2021": 0,
+        "2021": null,
         "2022": 1180000,
         "2023": 531132,
         "2024": 540000,
         "2025": 540000
-      },
-      "total": 2791132
+      }
     },
     {
-      "nom": "Fond. Foyer-Handicap",
-      "canton": "GE",
-      "secteur": "Santé et handicap",
-      "series": {
-        "2021": 0,
-        "2022": 2500000,
-        "2023": 0,
-        "2024": 200000,
-        "2025": 0
-      },
-      "total": 2700000
-    },
-    {
-      "nom": "Fond. pour l'art dramatique -",
-      "canton": "SR",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 0,
-        "2024": 650000,
-        "2025": 2000000
-      },
-      "total": 2650000
-    },
-    {
-      "nom": "Fond. romande pour le cinéma - Cinéforom",
-      "canton": "GE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 965200,
-        "2023": 780000,
-        "2024": 700000,
-        "2025": 0
-      },
-      "total": 2445200
-    },
-    {
-      "nom": "Assoc. Canal 9/Kanal 9",
-      "canton": "VS",
+      "nom_canonique": "Assoc. Canal 9/Kanal 9",
+      "canton_principal": "VS",
       "secteur": "Culture",
       "series": {
         "2021": 262000,
@@ -267,2348 +190,189 @@
         "2023": 650000,
         "2024": 350000,
         "2025": 854000
-      },
-      "total": 2436000
-    },
+      }
+    }
+  ],
+  "beneficiaires": [
     {
-      "nom": "Banc Public",
-      "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 470000,
-        "2022": 488000,
-        "2023": 495000,
-        "2024": 490000,
-        "2025": 490000
-      },
-      "total": 2433000
-    },
-    {
-      "nom": "Fond. Pierre Gianadda",
-      "canton": "VS",
+      "nom_canonique": "Cinéforom — Fond. romande pour le cinéma",
+      "canton_principal": "GE",
       "secteur": "Culture",
       "series": {
-        "2021": 625000,
-        "2022": 625000,
-        "2023": 350000,
-        "2024": 350000,
-        "2025": 350000
-      },
-      "total": 2300000
+        "2021": 2951800,
+        "2022": 2750935,
+        "2023": 2750935,
+        "2024": 2825935,
+        "2025": 2752600
+      }
     },
     {
-      "nom": "Ligue fribourgeoise contre le cancer",
-      "canton": "FR",
-      "secteur": "Santé et handicap",
+      "nom_canonique": "FAJE — Fond. pour l'accueil de jour des enfants",
+      "canton_principal": "VD",
+      "secteur": "Jeunesse et éducation",
       "series": {
-        "2021": 745000,
-        "2022": 675000,
-        "2023": 868000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 2288000
+        "2021": 1500000,
+        "2022": 1500000,
+        "2023": 1500000,
+        "2024": 1500000,
+        "2025": 1500000
+      }
     },
     {
-      "nom": "Tour de Romandie",
-      "canton": "SR",
+      "nom_canonique": "Théâtre du Jorat",
+      "canton_principal": "VD",
+      "secteur": "Culture",
+      "series": {
+        "2021": 255000,
+        "2022": 4200000,
+        "2023": 250000,
+        "2024": 2500000,
+        "2025": 200000
+      }
+    },
+    {
+      "nom_canonique": "Tour de Romandie",
+      "canton_principal": "SR",
       "secteur": "Sport",
       "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 851026,
-        "2024": 431893,
-        "2025": 964800
-      },
-      "total": 2247719
+        "2021": 14419,
+        "2022": 1400000,
+        "2023": 1838866,
+        "2024": 1295143,
+        "2025": 1690900
+      }
     },
     {
-      "nom": "Fond. Pro Senectute Fribourg",
-      "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
+      "nom_canonique": "Fond. Equilibre et Nuithonie",
+      "canton_principal": "FR",
+      "secteur": "Culture",
       "series": {
-        "2021": 300000,
-        "2022": 350000,
-        "2023": 612000,
-        "2024": 600000,
-        "2025": 350000
-      },
-      "total": 2212000
+        "2021": 700000,
+        "2022": 1368000,
+        "2023": 1108750,
+        "2024": 1020000,
+        "2025": 1100000
+      }
     },
     {
-      "nom": "Fond. Valaisanne en Faveur des Personnes Handicapées Mentales",
-      "canton": "VS",
-      "secteur": "Santé et handicap",
+      "nom_canonique": "Assoc. Vaud Promotion",
+      "canton_principal": "VD",
+      "secteur": "Promotion, tourisme et développement",
       "series": {
-        "2021": 2106000,
-        "2022": 3000,
-        "2023": 80000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 2189000
+        "2021": 1000000,
+        "2022": 1000000,
+        "2023": 1000000,
+        "2024": 1000000,
+        "2025": 1000000
+      }
     },
     {
-      "nom": "Fond. CHUV",
-      "canton": "VD",
-      "secteur": "Santé et handicap",
+      "nom_canonique": "Fond. de l'Hermitage",
+      "canton_principal": "VD",
+      "secteur": "Culture",
       "series": {
-        "2021": 0,
-        "2022": 300000,
+        "2021": 100000,
+        "2022": 140000,
         "2023": 400000,
-        "2024": 68000,
-        "2025": 1413378
-      },
-      "total": 2181378
+        "2024": 300000,
+        "2025": 4000000
+      }
     },
     {
-      "nom": "Orchestre de chambre fribourgeois",
-      "canton": "FR",
+      "nom_canonique": "Verbier Festival",
+      "canton_principal": "VS",
       "secteur": "Culture",
       "series": {
-        "2021": 410000,
-        "2022": 410000,
-        "2023": 410000,
-        "2024": 434100,
-        "2025": 432500
-      },
-      "total": 2096600
+        "2021": 975000,
+        "2022": 1125000,
+        "2023": 975000,
+        "2024": 900000,
+        "2025": 925000
+      }
     },
     {
-      "nom": "Fond. Opale",
-      "canton": "VS",
-      "secteur": "Culture",
-      "series": {
-        "2021": 135000,
-        "2022": 1625000,
-        "2023": 150000,
-        "2024": 180000,
-        "2025": 0
-      },
-      "total": 2090000
-    },
-    {
-      "nom": "SPA Valais",
-      "canton": "VS",
-      "secteur": "Environnement",
-      "series": {
-        "2021": 0,
-        "2022": 15000,
-        "2023": 2015000,
-        "2024": 20000,
-        "2025": 20000
-      },
-      "total": 2070000
-    },
-    {
-      "nom": "Cinémathèque suisse",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 230000,
-        "2022": 250000,
-        "2023": 300000,
-        "2024": 450000,
-        "2025": 830000
-      },
-      "total": 2060000
-    },
-    {
-      "nom": "Fond. Astural",
-      "canton": "GE",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 2000000,
-        "2022": 60000,
-        "2023": 0,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 2060000
-    },
-    {
-      "nom": "Fond. Officielle de la jeunesse",
-      "canton": "GE",
-      "secteur": "Jeunesse et éducation",
-      "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 933000,
-        "2024": 1110320,
-        "2025": 0
-      },
-      "total": 2043320
-    },
-    {
-      "nom": "Opéra décentralisé",
-      "canton": "NE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 390000,
-        "2022": 390000,
-        "2023": 405000,
-        "2024": 375000,
-        "2025": 445000
-      },
-      "total": 2005000
-    },
-    {
-      "nom": "Valais/Wallis Promotion",
-      "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 0,
-        "2022": 500000,
-        "2023": 500000,
-        "2024": 500000,
-        "2025": 500000
-      },
-      "total": 2000000
-    },
-    {
-      "nom": "Fond. du Conservatoire cantonal de musique",
-      "canton": "VS",
-      "secteur": "Culture",
-      "series": {
-        "2021": 474900,
-        "2022": 462000,
-        "2023": 452130,
-        "2024": 514952,
-        "2025": 0
-      },
-      "total": 1903982
-    },
-    {
-      "nom": "Assoc. REPER",
-      "canton": "FR",
-      "secteur": "Jeunesse et éducation",
-      "series": {
-        "2021": 350000,
-        "2022": 350000,
-        "2023": 320000,
-        "2024": 405000,
-        "2025": 433000
-      },
-      "total": 1858000
-    },
-    {
-      "nom": "Fond. The Ark",
-      "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 400000,
-        "2022": 300000,
-        "2023": 350000,
-        "2024": 400000,
-        "2025": 400000
-      },
-      "total": 1850000
-    },
-    {
-      "nom": "Fond. du Festival de la Cité",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 320000,
-        "2022": 320000,
-        "2023": 320000,
-        "2024": 350000,
-        "2025": 393500
-      },
-      "total": 1703500
-    },
-    {
-      "nom": "Orchestre de Chambre de Genève",
-      "canton": "GE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 350000,
-        "2023": 450000,
-        "2024": 400000,
-        "2025": 500000
-      },
-      "total": 1700000
-    },
-    {
-      "nom": "Théâtre Pro Valais",
-      "canton": "VS",
-      "secteur": "Culture",
-      "series": {
-        "2021": 566000,
-        "2022": 566000,
-        "2023": 566000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 1698000
-    },
-    {
-      "nom": "Fond. pour l'art dramatique - Théâtre de Vidy",
-      "canton": "VD",
+      "nom_canonique": "Fond. pour l'art dramatique",
+      "canton_principal": "VD",
       "secteur": "Culture",
       "series": {
         "2021": 440000,
         "2022": 600000,
         "2023": 600000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 1640000
+        "2024": 650000,
+        "2025": 2000000
+      }
     },
     {
-      "nom": "Fond. Sainte-Famille",
-      "canton": "VS",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 90000,
-        "2022": 1500000,
-        "2023": 0,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 1590000
-    },
-    {
-      "nom": "Fond. FIFDH",
-      "canton": "GE",
+      "nom_canonique": "CORODIS",
+      "canton_principal": "VD",
       "secteur": "Culture",
       "series": {
-        "2021": 0,
-        "2022": 400000,
-        "2023": 300000,
-        "2024": 350000,
-        "2025": 520000
-      },
-      "total": 1570000
+        "2021": 774500,
+        "2022": 734500,
+        "2023": 734500,
+        "2024": 734500,
+        "2025": 737970
+      }
     },
     {
-      "nom": "Ensemble Symphonique Neuchâtel - ESN",
-      "canton": "NE",
-      "secteur": "Santé et handicap",
+      "nom_canonique": "La Lanterne Magique",
+      "canton_principal": "SR",
+      "secteur": "Jeunesse et éducation",
       "series": {
-        "2021": 375000,
-        "2022": 375000,
-        "2023": 395000,
-        "2024": 375000,
-        "2025": 0
-      },
-      "total": 1520000
+        "2021": 695000,
+        "2022": 695000,
+        "2023": 684000,
+        "2024": 678000,
+        "2025": 677500
+      }
     },
     {
-      "nom": "Jura Tourisme",
-      "canton": "JU",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 300000,
-        "2022": 300000,
-        "2023": 300000,
-        "2024": 300000,
-        "2025": 320000
-      },
-      "total": 1520000
-    },
-    {
-      "nom": "Fond. pour l'art musical, lyrique et chorégraphique - Opéra de Lausanne",
-      "canton": "VD",
+      "nom_canonique": "Fond. pour l'Écrit",
+      "canton_principal": "GE",
       "secteur": "Culture",
       "series": {
-        "2021": 410000,
-        "2022": 0,
-        "2023": 0,
+        "2021": 500000,
+        "2022": 750000,
+        "2023": 560000,
         "2024": 550000,
         "2025": 550000
-      },
-      "total": 1510000
+      }
     },
     {
-      "nom": "Rock Hock Verein Gampel",
-      "canton": "VS",
+      "nom_canonique": "Plateforme 10",
+      "canton_principal": "VD",
       "secteur": "Culture",
       "series": {
-        "2021": 285000,
-        "2022": 445000,
-        "2023": 200000,
-        "2024": 250000,
-        "2025": 250000
-      },
-      "total": 1430000
-    },
-    {
-      "nom": "Fond. Arc en Scène - centre neuchâtelois des arts vivants - TPR",
-      "canton": "NE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 475000,
-        "2023": 475000,
-        "2024": 475000,
-        "2025": 0
-      },
-      "total": 1425000
-    },
-    {
-      "nom": "CSP - Centre Social Protestant,",
-      "canton": "SR",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 0,
-        "2022": 40000,
-        "2023": 0,
-        "2024": 0,
-        "2025": 1376000
-      },
-      "total": 1416000
-    },
-    {
-      "nom": "Fond. pour la recherche en biologie et médecine",
-      "canton": "VD",
-      "secteur": "Formation et recherche",
-      "series": {
-        "2021": 800000,
-        "2022": 0,
-        "2023": 600000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 1400000
-    },
-    {
-      "nom": "Assoc. Grand Mirific",
-      "canton": "VS",
-      "secteur": "Culture",
-      "series": {
-        "2021": 385000,
-        "2022": 380000,
-        "2023": 305000,
-        "2024": 310000,
-        "2025": 0
-      },
-      "total": 1380000
-    },
-    {
-      "nom": "Fond. Hainard",
-      "canton": "GE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 260000,
-        "2024": 1120000,
-        "2025": 0
-      },
-      "total": 1380000
-    },
-    {
-      "nom": "Pro Junior Arc Jurassien",
-      "canton": "NE",
-      "secteur": "Jeunesse et éducation",
-      "series": {
-        "2021": 0,
-        "2022": 53000,
-        "2023": 339000,
-        "2024": 880000,
-        "2025": 97000
-      },
-      "total": 1369000
-    },
-    {
-      "nom": "Compagnie Confiture",
-      "canton": "GE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 280000,
-        "2022": 280000,
-        "2023": 230000,
-        "2024": 280000,
-        "2025": 280000
-      },
-      "total": 1350000
-    },
-    {
-      "nom": "Sté des Arts de Genève",
-      "canton": "GE",
-      "secteur": "Conservation du patrimoine",
-      "series": {
-        "2021": 0,
-        "2022": 1000000,
-        "2023": 350000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 1350000
-    },
-    {
-      "nom": "Fond. EPFL Plus",
-      "canton": "VD",
-      "secteur": "Formation et recherche",
-      "series": {
-        "2021": 0,
-        "2022": 95000,
-        "2023": 120000,
-        "2024": 95000,
-        "2025": 1020000
-      },
-      "total": 1330000
-    },
-    {
-      "nom": "Fri-Son",
-      "canton": "FR",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 280000,
-        "2023": 456120,
-        "2024": 306510,
-        "2025": 286000
-      },
-      "total": 1328630
-    },
-    {
-      "nom": "Assoc. cantonale vaudoise de football",
-      "canton": "VD",
-      "secteur": "Sport",
-      "series": {
-        "2021": 19000,
-        "2022": 0,
-        "2023": 375000,
-        "2024": 498268,
-        "2025": 400330
-      },
-      "total": 1292598
-    },
-    {
-      "nom": "Fond. Visions du Réel",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 250000,
-        "2022": 250000,
-        "2023": 240000,
-        "2024": 275000,
-        "2025": 270000
-      },
-      "total": 1285000
-    },
-    {
-      "nom": "Caritas Vaud",
-      "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 0,
-        "2022": 60000,
-        "2023": 323000,
-        "2024": 495000,
-        "2025": 400150
-      },
-      "total": 1278150
-    },
-    {
-      "nom": "Fond. Point d'Eau Lausanne",
-      "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 1100000,
-        "2022": 0,
-        "2023": 0,
-        "2024": 0,
-        "2025": 170000
-      },
-      "total": 1270000
-    },
-    {
-      "nom": "Caritas Fribourg",
-      "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 250000,
-        "2022": 255000,
-        "2023": 390000,
-        "2024": 370000,
-        "2025": 0
-      },
-      "total": 1265000
-    },
-    {
-      "nom": "Assoc. La Parenthèse",
-      "canton": "VS",
-      "secteur": "Santé et handicap",
-      "series": {
-        "2021": 40000,
-        "2022": 1010000,
-        "2023": 50000,
-        "2024": 107500,
-        "2025": 50000
-      },
-      "total": 1257500
-    },
-    {
-      "nom": "Assoc. fribourgeoise de football",
-      "canton": "FR",
-      "secteur": "Sport",
-      "series": {
-        "2021": 2160,
-        "2022": 468198,
-        "2023": 270144,
-        "2024": 253760,
-        "2025": 252980
-      },
-      "total": 1247242
-    },
-    {
-      "nom": "Fond. Aigues-Vertes",
-      "canton": "GE",
-      "secteur": "Santé et handicap",
-      "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 1000000,
-        "2024": 201000,
-        "2025": 0
-      },
-      "total": 1201000
-    },
-    {
-      "nom": "Assoc. Les Saisons Bleues",
-      "canton": "GE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 100000,
-        "2023": 700000,
-        "2024": 400000,
-        "2025": 0
-      },
-      "total": 1200000
-    },
-    {
-      "nom": "Commune d'Yverdon- les-Bains",
-      "canton": "VD",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 0,
-        "2022": 457480,
-        "2023": 503950,
-        "2024": 44665,
-        "2025": 179570
-      },
-      "total": 1185665
-    },
-    {
-      "nom": "Verein Zermatt Unplugged",
-      "canton": "VS",
-      "secteur": "Culture",
-      "series": {
-        "2021": 135000,
-        "2022": 300000,
-        "2023": 250000,
-        "2024": 250000,
-        "2025": 250000
-      },
-      "total": 1185000
-    },
-    {
-      "nom": "Fond. Terre des Hommes-Valais",
-      "canton": "VS",
-      "secteur": "Santé et handicap",
-      "series": {
-        "2021": 180000,
-        "2022": 100000,
-        "2023": 290000,
-        "2024": 430000,
-        "2025": 170000
-      },
-      "total": 1170000
-    },
-    {
-      "nom": "Fonds pour venir en aide aux victimes de dommages non assurables causés par les forces de la nature",
-      "canton": "VS",
-      "secteur": "Conservation du patrimoine",
-      "series": {
-        "2021": 880000,
-        "2022": 0,
-        "2023": 290000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 1170000
-    },
-    {
-      "nom": "Fond. pour le Théâtre du Jura",
-      "canton": "JU",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 245000,
-        "2023": 289000,
-        "2024": 315000,
-        "2025": 321000
-      },
-      "total": 1170000
-    },
-    {
-      "nom": "Festival International du Film de",
-      "canton": "SR",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 580000,
-        "2023": 580000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 1160000
-    },
-    {
-      "nom": "Commune d'Echallens",
-      "canton": "VD",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 0,
-        "2022": 19480,
-        "2023": 1137000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 1156480
-    },
-    {
-      "nom": "AFAAP",
-      "canton": "FR",
-      "secteur": "Santé et handicap",
-      "series": {
-        "2021": 220000,
-        "2022": 225000,
-        "2023": 230000,
-        "2024": 240000,
-        "2025": 240000
-      },
-      "total": 1155000
-    },
-    {
-      "nom": "Vaud Générations Champions",
-      "canton": "VD",
-      "secteur": "Sport",
-      "series": {
-        "2021": 0,
-        "2022": 1000000,
-        "2023": 0,
-        "2024": 0,
-        "2025": 150000
-      },
-      "total": 1150000
-    },
-    {
-      "nom": "Assoc. Caritas Genève",
-      "canton": "GE",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 0,
-        "2022": 336000,
-        "2023": 250000,
-        "2024": 450000,
-        "2025": 100000
-      },
-      "total": 1136000
-    },
-    {
-      "nom": "Centre Social Protestant - CSP",
-      "canton": "NE",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 89000,
-        "2022": 250000,
-        "2023": 0,
-        "2024": 648000,
-        "2025": 133000
-      },
-      "total": 1120000
-    },
-    {
-      "nom": "Commune de Lausanne",
-      "canton": "VD",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 175000,
-        "2022": 628040,
-        "2023": 297650,
-        "2024": 5430,
-        "2025": 0
-      },
-      "total": 1106120
-    },
-    {
-      "nom": "Nouvel Opéra Fribourg",
-      "canton": "FR",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 350000,
-        "2023": 350000,
-        "2024": 401000,
-        "2025": 0
-      },
-      "total": 1101000
-    },
-    {
-      "nom": "Allgemeine Musikschule Oberwallis",
-      "canton": "VS",
-      "secteur": "Culture",
-      "series": {
-        "2021": 257250,
-        "2022": 264600,
-        "2023": 284196,
-        "2024": 291297,
-        "2025": 0
-      },
-      "total": 1097343
-    },
-    {
-      "nom": "Caritas Suisse",
-      "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 181000,
-        "2022": 312000,
-        "2023": 273000,
-        "2024": 248000,
-        "2025": 63000
-      },
-      "total": 1077000
-    },
-    {
-      "nom": "Assoc. Intervalle",
-      "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 10000,
-        "2022": 10000,
-        "2023": 1010000,
-        "2024": 10000,
-        "2025": 30000
-      },
-      "total": 1070000
-    },
-    {
-      "nom": "Le Foyer - Centre éducatif pour personnes aveugles ou malvoyantes intellectuellement handicapées",
-      "canton": "VD",
-      "secteur": "Santé et handicap",
-      "series": {
-        "2021": 800000,
-        "2022": 0,
-        "2023": 0,
-        "2024": 250000,
-        "2025": 0
-      },
-      "total": 1050000
-    },
-    {
-      "nom": "Usine à Gaz",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 150000,
-        "2023": 250000,
-        "2024": 350000,
-        "2025": 300000
-      },
-      "total": 1050000
-    },
-    {
-      "nom": "Centre Culturel Neuchâtelois - CCN",
-      "canton": "NE",
-      "secteur": "Santé et handicap",
-      "series": {
-        "2021": 310000,
-        "2022": 400000,
-        "2023": 335000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 1045000
-    },
-    {
-      "nom": "Fond. Terre des Hommes",
-      "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 330000,
-        "2022": 200000,
-        "2023": 300000,
-        "2024": 0,
-        "2025": 200000
-      },
-      "total": 1030000
-    },
-    {
-      "nom": "Croix-Rouge genevoise",
-      "canton": "GE",
-      "secteur": "Santé et handicap",
-      "series": {
-        "2021": 0,
-        "2022": 150000,
-        "2023": 630000,
-        "2024": 0,
-        "2025": 250000
-      },
-      "total": 1030000
-    },
-    {
-      "nom": "famiya",
-      "canton": "FR",
-      "secteur": "Jeunesse et éducation",
-      "series": {
-        "2021": 200160,
-        "2022": 200070,
-        "2023": 202550,
-        "2024": 203100,
-        "2025": 200970
-      },
-      "total": 1006850
-    },
-    {
-      "nom": "diabètefribourg - Assoc. fribourgeoise du diabète",
-      "canton": "FR",
-      "secteur": "Jeunesse et éducation",
-      "series": {
-        "2021": 250000,
-        "2022": 250000,
-        "2023": 250000,
-        "2024": 250000,
-        "2025": 0
-      },
-      "total": 1000000
-    },
-    {
-      "nom": "Fond. Mère Sofia",
-      "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 190000,
-        "2022": 430000,
-        "2023": 120000,
-        "2024": 254000,
-        "2025": 0
-      },
-      "total": 994000
-    },
-    {
-      "nom": "Sinfonietta de Lausanne",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 180000,
-        "2022": 180000,
-        "2023": 215000,
-        "2024": 220000,
-        "2025": 190000
-      },
-      "total": 985000
-    },
-    {
-      "nom": "Gli Angeli Genève",
-      "canton": "GE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 180000,
-        "2022": 250000,
-        "2023": 250000,
-        "2024": 0,
-        "2025": 300000
-      },
-      "total": 980000
-    },
-    {
-      "nom": "Fond. pour l'art musical, lyrique et chorégraphique - Opéra, Lausanne",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 420000,
-        "2023": 550000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 970000
-    },
-    {
-      "nom": "Fond. Sion Violon Musique",
-      "canton": "VS",
-      "secteur": "Conservation du patrimoine",
-      "series": {
-        "2021": 0,
-        "2022": 302000,
-        "2023": 410000,
-        "2024": 250000,
-        "2025": 0
-      },
-      "total": 962000
-    },
-    {
-      "nom": "Fond. Barnabé",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 190000,
-        "2022": 150000,
-        "2023": 180000,
-        "2024": 220000,
-        "2025": 220000
-      },
-      "total": 960000
-    },
-    {
-      "nom": "Solidarité Femmes Fribourg",
-      "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 0,
-        "2022": 280000,
-        "2023": 350000,
-        "2024": 330000,
-        "2025": 0
-      },
-      "total": 960000
-    },
-    {
-      "nom": "Assoc. Sion sous les étoiles",
-      "canton": "GE",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 0,
-        "2022": 200000,
-        "2023": 250000,
-        "2024": 250000,
-        "2025": 250000
-      },
-      "total": 950000
-    },
-    {
-      "nom": "Conservatoire de Fribourg",
-      "canton": "FR",
-      "secteur": "Jeunesse et éducation",
-      "series": {
-        "2021": 195120,
-        "2022": 186698,
-        "2023": 185460,
-        "2024": 187523,
-        "2025": 191400
-      },
-      "total": 946201
-    },
-    {
-      "nom": "Walliser Skiverband-Ski Valais",
-      "canton": "VS",
-      "secteur": "Sport",
-      "series": {
-        "2021": 72065,
-        "2022": 260063,
-        "2023": 98864,
-        "2024": 496954,
-        "2025": 0
-      },
-      "total": 927946
-    },
-    {
-      "nom": "Fond. Pro Urba",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 300000,
-        "2022": 0,
-        "2023": 625000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 925000
-    },
-    {
-      "nom": "Assoc. Festival Antigel",
-      "canton": "GE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 300000,
-        "2023": 78345,
-        "2024": 346654,
-        "2025": 200000
-      },
-      "total": 924999
-    },
-    {
-      "nom": "Assoc. pour l'Education Familiale",
-      "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 100000,
-        "2022": 100000,
-        "2023": 198000,
-        "2024": 216000,
-        "2025": 286000
-      },
-      "total": 900000
-    },
-    {
-      "nom": "Centre dramatique fribourgeois - Théâtre des Osses",
-      "canton": "FR",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 440000,
-        "2023": 460000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 900000
-    },
-    {
-      "nom": "Fond. Au Cœur des Grottes",
-      "canton": "GE",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 148000,
-        "2022": 250000,
-        "2023": 0,
-        "2024": 0,
-        "2025": 500000
-      },
-      "total": 898000
-    },
-    {
-      "nom": "ARSENIC",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 130000,
-        "2022": 110000,
-        "2023": 150000,
-        "2024": 400000,
-        "2025": 100000
-      },
-      "total": 890000
-    },
-    {
-      "nom": "Assoc. cantonale des musiques valaisannes",
-      "canton": "VS",
-      "secteur": "Culture",
-      "series": {
-        "2021": 203000,
-        "2022": 216000,
-        "2023": 235100,
-        "2024": 224000,
-        "2025": 0
-      },
-      "total": 878100
-    },
-    {
-      "nom": "Féd. internationale de motocyclisme",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 666667,
-        "2023": 0,
-        "2024": 0,
-        "2025": 200000
-      },
-      "total": 866667
-    },
-    {
-      "nom": "Assoc. Cantonale Vaudoise, Football",
-      "canton": "GE",
-      "secteur": "Sport",
-      "series": {
-        "2021": 0,
-        "2022": 388805,
-        "2023": 476362,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 865167
-    },
-    {
-      "nom": "Assoc. Xtreme",
-      "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 140000,
-        "2022": 140000,
-        "2023": 140000,
-        "2024": 210000,
-        "2025": 222400
-      },
-      "total": 852400
-    },
-    {
-      "nom": "Béjart Ballet Lausanne - BBL",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 350000,
-        "2022": 200000,
-        "2023": 300000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 850000
-    },
-    {
-      "nom": "Assoc. Lire et Ecrire, section Fribourg",
-      "canton": "FR",
-      "secteur": "Formation et recherche",
-      "series": {
-        "2021": 170000,
-        "2022": 170000,
-        "2023": 170000,
-        "2024": 170000,
-        "2025": 170000
-      },
-      "total": 850000
-    },
-    {
-      "nom": "IVV - Interprofession de la Vigne et du Vin du Valais",
-      "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 225000,
-        "2022": 225000,
-        "2023": 200000,
-        "2024": 200000,
-        "2025": 0
-      },
-      "total": 850000
-    },
-    {
-      "nom": "Fond. de l'Abbaye de Saint-Maurice",
-      "canton": "SR",
-      "secteur": "Conservation du patrimoine",
-      "series": {
-        "2021": 0,
-        "2022": 812500,
-        "2023": 0,
-        "2024": 0,
-        "2025": 29000
-      },
-      "total": 841500
-    },
-    {
-      "nom": "L'avant-scène Opéra",
-      "canton": "NE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 200000,
-        "2023": 210000,
-        "2024": 210000,
-        "2025": 210000
-      },
-      "total": 830000
-    },
-    {
-      "nom": "TKM - Fond. du Théâtre Kléber- Méleau",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 270000,
-        "2022": 275000,
-        "2023": 0,
-        "2024": 280000,
-        "2025": 0
-      },
-      "total": 825000
-    },
-    {
-      "nom": "Fond. du Petit Théâtre de Lausanne",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 200000,
-        "2022": 200000,
-        "2023": 0,
-        "2024": 200000,
-        "2025": 220000
-      },
-      "total": 820000
-    },
-    {
-      "nom": "Assoc. Musique des Lumières",
-      "canton": "JU",
-      "secteur": "Culture",
-      "series": {
-        "2021": 10000,
-        "2022": 200000,
-        "2023": 200000,
-        "2024": 200000,
-        "2025": 200000
-      },
-      "total": 810000
-    },
-    {
-      "nom": "Fond. pour le soutien de la recherche et du développement de l'oncologie",
-      "canton": "VD",
-      "secteur": "Formation et recherche",
-      "series": {
-        "2021": 400000,
-        "2022": 0,
-        "2023": 0,
-        "2024": 400000,
-        "2025": 0
-      },
-      "total": 800000
-    },
-    {
-      "nom": "Fonds mis à disposition du CE pour Actions de Solidarité",
-      "canton": "VS",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 0,
-        "2022": 300000,
-        "2023": 500000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 800000
-    },
-    {
-      "nom": "Fond. École de jazz et de musique actuelle du Valais EJMA",
-      "canton": "VS",
-      "secteur": "Culture",
-      "series": {
-        "2021": 174800,
-        "2022": 180000,
-        "2023": 223770,
-        "2024": 217380,
-        "2025": 0
-      },
-      "total": 795950
-    },
-    {
-      "nom": "Verein Musikdorf Ernen",
-      "canton": "VS",
-      "secteur": "Culture",
-      "series": {
-        "2021": 170000,
-        "2022": 170000,
-        "2023": 150000,
-        "2024": 150000,
-        "2025": 150000
-      },
-      "total": 790000
-    },
-    {
-      "nom": "Assoc. Fri-Santé",
-      "canton": "FR",
-      "secteur": "Santé et handicap",
-      "series": {
-        "2021": 0,
-        "2022": 192000,
-        "2023": 186000,
-        "2024": 206000,
-        "2025": 205000
-      },
-      "total": 789000
-    },
-    {
-      "nom": "ACDC - Assoc. de coordination de la Case à Chocs",
-      "canton": "NE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 220000,
-        "2023": 247000,
-        "2024": 320000,
-        "2025": 0
-      },
-      "total": 787000
-    },
-    {
-      "nom": "Université de Lausanne",
-      "canton": "VD",
-      "secteur": "Formation et recherche",
-      "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 190000,
-        "2024": 0,
-        "2025": 595400
-      },
-      "total": 785400
-    },
-    {
-      "nom": "Assoc. Autrement-Aujourd'hui",
-      "canton": "GE",
-      "secteur": "Santé et handicap",
-      "series": {
-        "2021": 155000,
-        "2022": 155000,
-        "2023": 155000,
-        "2024": 160000,
-        "2025": 160000
-      },
-      "total": 785000
-    },
-    {
-      "nom": "Assoc. Culture Valais",
-      "canton": "VS",
-      "secteur": "Culture",
-      "series": {
-        "2021": 120000,
-        "2022": 155000,
-        "2023": 155000,
-        "2024": 175000,
-        "2025": 175000
-      },
-      "total": 780000
-    },
-    {
-      "nom": "Assoc. Pro Junior",
-      "canton": "FR",
-      "secteur": "Jeunesse et éducation",
-      "series": {
-        "2021": 0,
-        "2022": 297700,
-        "2023": 140000,
-        "2024": 70000,
-        "2025": 265000
-      },
-      "total": 772700
-    },
-    {
-      "nom": "Section Genevoise du Club Alpin Suisse",
-      "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 10400,
-        "2022": 0,
-        "2023": 360000,
-        "2024": 400000,
-        "2025": 0
-      },
-      "total": 770400
-    },
-    {
-      "nom": "Assoc. DreamAgo Swiss",
-      "canton": "VS",
-      "secteur": "Culture",
-      "series": {
-        "2021": 180000,
-        "2022": 180000,
-        "2023": 120000,
-        "2024": 155000,
-        "2025": 130000
-      },
-      "total": 765000
-    },
-    {
-      "nom": "Crescendo",
-      "canton": "JU",
-      "secteur": "Culture",
-      "series": {
-        "2021": 150000,
-        "2022": 155000,
-        "2023": 150000,
-        "2024": 150000,
-        "2025": 155000
-      },
-      "total": 760000
-    },
-    {
-      "nom": "Fond. Bex & Arts",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 400000,
-        "2023": 0,
-        "2024": 0,
-        "2025": 360000
-      },
-      "total": 760000
-    },
-    {
-      "nom": "Orchestre de Chambre de Lausanne (OCL)",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 0,
-        "2024": 500000,
-        "2025": 260000
-      },
-      "total": 760000
-    },
-    {
-      "nom": "Sté des Beaux-Arts et du Musée du Locle",
-      "canton": "NE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 170000,
-        "2022": 125000,
-        "2023": 130000,
-        "2024": 230000,
-        "2025": 100000
-      },
-      "total": 755000
-    },
-    {
-      "nom": "Swiss AQ Assoc.",
-      "canton": "VS",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 250000,
-        "2024": 250000,
-        "2025": 250000
-      },
-      "total": 750000
-    },
-    {
-      "nom": "Béjart Ballet Lausanne (BBL)",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 0,
-        "2024": 300000,
-        "2025": 450000
-      },
-      "total": 750000
-    },
-    {
-      "nom": "Fond. Château Mercier",
-      "canton": "VS",
-      "secteur": "Culture",
-      "series": {
-        "2021": 210000,
-        "2022": 187500,
-        "2023": 175000,
-        "2024": 175000,
-        "2025": 0
-      },
-      "total": 747500
-    },
-    {
-      "nom": "Fond. Genève Montagne",
-      "canton": "GE",
-      "secteur": "Environnement",
-      "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 325000,
-        "2024": 0,
-        "2025": 420000
-      },
-      "total": 745000
-    },
-    {
-      "nom": "Assoc. Romande de Ski",
-      "canton": "VD",
-      "secteur": "Sport",
-      "series": {
-        "2021": 4560,
-        "2022": 169100,
-        "2023": 171420,
-        "2024": 192350,
-        "2025": 205985
-      },
-      "total": 743415
-    },
-    {
-      "nom": "Bénévoles Valais-Wallis",
-      "canton": "VS",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 152953,
-        "2022": 148461,
-        "2023": 0,
-        "2024": 286749,
-        "2025": 153370
-      },
-      "total": 741533
-    },
-    {
-      "nom": "Jumeaux Jazz Club",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 400000,
-        "2022": 0,
-        "2023": 280000,
-        "2024": 60000,
-        "2025": 0
-      },
-      "total": 740000
-    },
-    {
-      "nom": "Fond. Ruchonnet 18",
-      "canton": "SR",
-      "secteur": "Sport",
-      "series": {
-        "2021": 0,
-        "2022": 150000,
-        "2023": 314674,
-        "2024": 0,
-        "2025": 271857
-      },
-      "total": 736531
-    },
-    {
-      "nom": "Bibliothèque interculturelle, LivrEchange",
-      "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 180000,
-        "2022": 180000,
-        "2023": 180000,
-        "2024": 190000,
-        "2025": 0
-      },
-      "total": 730000
-    },
-    {
-      "nom": "Delémont'BD",
-      "canton": "JU",
-      "secteur": "Culture",
-      "series": {
-        "2021": 40000,
-        "2022": 80000,
-        "2023": 200000,
-        "2024": 210000,
-        "2025": 200000
-      },
-      "total": 730000
-    },
-    {
-      "nom": "Assoc. JeunesParents",
-      "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 70000,
-        "2022": 80000,
-        "2023": 550000,
-        "2024": 0,
-        "2025": 20000
-      },
-      "total": 720000
-    },
-    {
-      "nom": "Fond. Transport Handicap Vaud",
-      "canton": "VD",
-      "secteur": "Santé et handicap",
-      "series": {
-        "2021": 0,
-        "2022": 250000,
-        "2023": 0,
-        "2024": 350000,
-        "2025": 118000
-      },
-      "total": 718000
-    },
-    {
-      "nom": "Fond. Patrouille des Glaciers",
-      "canton": "VS",
-      "secteur": "Sport",
-      "series": {
-        "2021": 0,
-        "2022": 225000,
-        "2023": 0,
-        "2024": 290441,
-        "2025": 200000
-      },
-      "total": 715441
-    },
-    {
-      "nom": "FAR Festival",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 130000,
-        "2022": 130000,
-        "2023": 135000,
-        "2024": 150000,
-        "2025": 160000
-      },
-      "total": 705000
-    },
-    {
-      "nom": "Sté des Amis de Valère",
-      "canton": "VS",
-      "secteur": "Conservation du patrimoine",
-      "series": {
-        "2021": 0,
-        "2022": 2000,
-        "2023": 0,
-        "2024": 700000,
-        "2025": 1000
-      },
-      "total": 703000
-    },
-    {
-      "nom": "Poésie en Arrosoir",
-      "canton": "NE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 150000,
-        "2022": 135000,
-        "2023": 140000,
-        "2024": 140000,
-        "2025": 135000
-      },
-      "total": 700000
-    },
-    {
-      "nom": "Belluard Bollwerk",
-      "canton": "FR",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 230000,
-        "2023": 220000,
-        "2024": 249000,
-        "2025": 0
-      },
-      "total": 699000
-    },
-    {
-      "nom": "Fond. CMA",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 120000,
-        "2022": 125000,
-        "2023": 245000,
-        "2024": 0,
-        "2025": 207084
-      },
-      "total": 697084
-    },
-    {
-      "nom": "Kunsthalle Friart Fribourg",
-      "canton": "FR",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 230000,
-        "2024": 230000,
-        "2025": 230000
-      },
-      "total": 690000
-    },
-    {
-      "nom": "Lausanne Hockey Club",
-      "canton": "VD",
-      "secteur": "Sport",
-      "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 245465,
-        "2024": 235200,
-        "2025": 207589
-      },
-      "total": 688254
-    },
-    {
-      "nom": "Assoc. Cantonale Vaudoise, Gymnastique",
-      "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 0,
-        "2022": 327217,
-        "2023": 357700,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 684917
-    },
-    {
-      "nom": "Assoc. Bike Freeride",
-      "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 100000,
-        "2022": 145686,
-        "2023": 163409,
-        "2024": 120000,
-        "2025": 153029
-      },
-      "total": 682124
-    },
-    {
-      "nom": "Club 44",
-      "canton": "NE",
-      "secteur": "Santé et handicap",
-      "series": {
-        "2021": 132000,
-        "2022": 135000,
-        "2023": 145000,
-        "2024": 135000,
-        "2025": 135000
-      },
-      "total": 682000
-    },
-    {
-      "nom": "Kultur im Podium",
-      "canton": "FR",
-      "secteur": "Culture",
-      "series": {
-        "2021": 35000,
+        "2021": 600000,
         "2022": 550000,
-        "2023": 28000,
-        "2024": 38000,
-        "2025": 28000
-      },
-      "total": 679000
+        "2023": 550000,
+        "2024": 600000,
+        "2025": 600000
+      }
     },
     {
-      "nom": "LS-Vaud foot",
-      "canton": "SR",
-      "secteur": "Sport",
-      "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 248880,
-        "2024": 210000,
-        "2025": 218150
-      },
-      "total": 677030
-    },
-    {
-      "nom": "FAS - Fond. neuchâteloise pour la coordination de l'action sociale,",
-      "canton": "NE",
+      "nom_canonique": "Assoc. La Tuile",
+      "canton_principal": "FR",
       "secteur": "Action sociale et personnes âgées",
       "series": {
-        "2021": 0,
-        "2022": 270000,
-        "2023": 0,
-        "2024": 407000,
-        "2025": 0
-      },
-      "total": 677000
+        "2021": null,
+        "2022": 1180000,
+        "2023": 531132,
+        "2024": 540000,
+        "2025": 540000
+      }
     },
     {
-      "nom": "La Bâtie - Festival de Genève",
-      "canton": "GE",
+      "nom_canonique": "Assoc. Canal 9/Kanal 9",
+      "canton_principal": "VS",
       "secteur": "Culture",
       "series": {
-        "2021": 0,
-        "2022": 225000,
-        "2023": 225000,
-        "2024": 0,
-        "2025": 225000
-      },
-      "total": 675000
-    },
-    {
-      "nom": "Fond. du Festival du Rire de Montreux",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 90000,
-        "2022": 0,
-        "2023": 0,
-        "2024": 470000,
-        "2025": 110000
-      },
-      "total": 670000
-    },
-    {
-      "nom": "Assoc. le Spot",
-      "canton": "VS",
-      "secteur": "Culture",
-      "series": {
-        "2021": 142500,
-        "2022": 167500,
-        "2023": 160000,
-        "2024": 200000,
-        "2025": 0
-      },
-      "total": 670000
-    },
-    {
-      "nom": "Théâtre Le Baladin",
-      "canton": "VS",
-      "secteur": "Culture",
-      "series": {
-        "2021": 225000,
-        "2022": 210000,
-        "2023": 110000,
-        "2024": 0,
-        "2025": 120000
-      },
-      "total": 665000
-    },
-    {
-      "nom": "Assoc. Insieme Valais romand",
-      "canton": "VS",
-      "secteur": "Santé et handicap",
-      "series": {
-        "2021": 0,
-        "2022": 453000,
-        "2023": 100000,
-        "2024": 55000,
-        "2025": 55000
-      },
-      "total": 663000
-    },
-    {
-      "nom": "Espacefemmes-frauenraum,",
-      "canton": "SR",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 0,
-        "2022": 220000,
-        "2023": 220000,
-        "2024": 220000,
-        "2025": 0
-      },
-      "total": 660000
-    },
-    {
-      "nom": "Commune de Leysin",
-      "canton": "VD",
-      "secteur": "Sport",
-      "series": {
-        "2021": 3150,
-        "2022": 426790,
-        "2023": 212370,
-        "2024": 7000,
-        "2025": 6350
-      },
-      "total": 655660
-    },
-    {
-      "nom": "Assoc. du Tour des Stations",
-      "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 90000,
-        "2022": 100000,
-        "2023": 149380,
-        "2024": 166220,
-        "2025": 147047
-      },
-      "total": 652647
-    },
-    {
-      "nom": "Assoc. de l'école Rudolf Steiner de Lausanne",
-      "canton": "VD",
-      "secteur": "Jeunesse et éducation",
-      "series": {
-        "2021": 150000,
-        "2022": 500000,
-        "2023": 0,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 650000
-    },
-    {
-      "nom": "Valrando - Assoc. valaisanne de la randonnée",
-      "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 130000,
-        "2022": 130000,
-        "2023": 130000,
-        "2024": 130000,
-        "2025": 130000
-      },
-      "total": 650000
-    },
-    {
-      "nom": "OSR - Orchestre de la Suisse Romande",
-      "canton": "GE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 450000,
-        "2023": 200000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 650000
-    },
-    {
-      "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
-      "canton": "VD",
-      "secteur": "Sport",
-      "series": {
-        "2021": 6600,
-        "2022": 0,
-        "2023": 0,
-        "2024": 331416,
-        "2025": 303245
-      },
-      "total": 641261
-    },
-    {
-      "nom": "Fond. Les Urbaines",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 120000,
-        "2022": 120000,
-        "2023": 120000,
-        "2024": 140000,
-        "2025": 140000
-      },
-      "total": 640000
-    },
-    {
-      "nom": "Assoc. Lire et Ecrire",
-      "canton": "NE",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 0,
-        "2022": 40000,
-        "2023": 197500,
-        "2024": 185000,
-        "2025": 215000
-      },
-      "total": 637500
-    },
-    {
-      "nom": "T-Interactions",
-      "canton": "GE",
-      "secteur": "Sport",
-      "series": {
-        "2021": 0,
-        "2022": 529000,
-        "2023": 100000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 629000
-    },
-    {
-      "nom": "Assoc. CO2",
-      "canton": "FR",
-      "secteur": "Environnement",
-      "series": {
-        "2021": 0,
-        "2022": 120000,
-        "2023": 120000,
-        "2024": 189650,
-        "2025": 197500
-      },
-      "total": 627150
-    },
-    {
-      "nom": "Assoc. Pôle Nord",
-      "canton": "NE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 300000,
-        "2024": 175000,
-        "2025": 150000
-      },
-      "total": 625000
-    },
-    {
-      "nom": "Orchestre de Chambre de Lausanne - OCL",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 200000,
-        "2022": 200000,
-        "2023": 220000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 620000
-    },
-    {
-      "nom": "Assoc. Le Magnifique Théâtre",
-      "canton": "FR",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 165000,
-        "2023": 146000,
-        "2024": 160700,
-        "2025": 148000
-      },
-      "total": 619700
-    },
-    {
-      "nom": "Comité d'organisation des courses de ski alpin Crans-Montana",
-      "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 0,
-        "2022": 300000,
-        "2023": 310000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 610000
-    },
-    {
-      "nom": "Commune de Nyon",
-      "canton": "VD",
-      "secteur": "Sport",
-      "series": {
-        "2021": 0,
-        "2022": 300000,
-        "2023": 8000,
-        "2024": 300000,
-        "2025": 0
-      },
-      "total": 608000
-    },
-    {
-      "nom": "Assoc. de soutien à La Grange",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 75000,
-        "2023": 80000,
-        "2024": 70000,
-        "2025": 380000
-      },
-      "total": 605000
-    },
-    {
-      "nom": "Fond. Saphir",
-      "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 0,
-        "2022": 92000,
-        "2023": 310880,
-        "2024": 0,
-        "2025": 200000
-      },
-      "total": 602880
-    },
-    {
-      "nom": "Assoc. pour l'Organisation de l'European Masters",
-      "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 150000,
-        "2022": 0,
-        "2023": 150000,
-        "2024": 150000,
-        "2025": 150000
-      },
-      "total": 600000
-    },
-    {
-      "nom": "Fond. Colis du Cœur",
-      "canton": "GE",
-      "secteur": "Action sociale et personnes âgées",
-      "series": {
-        "2021": 0,
-        "2022": 300000,
-        "2023": 300000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 600000
-    },
-    {
-      "nom": "Fond. GIFF - Geneva International Film Festival",
-      "canton": "GE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 300000,
-        "2023": 300000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 600000
-    },
-    {
-      "nom": "Verein Lebens- und Erlebnisraum Pfyn-Finges",
-      "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 156000,
-        "2022": 142000,
-        "2023": 158000,
-        "2024": 138000,
-        "2025": 0
-      },
-      "total": 594000
-    },
-    {
-      "nom": "JazzOnze + Festival",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 16000,
-        "2022": 140000,
-        "2023": 145000,
-        "2024": 150000,
-        "2025": 140000
-      },
-      "total": 591000
-    },
-    {
-      "nom": "Assoc. Castrum & Compagnie",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 100000,
-        "2022": 110000,
-        "2023": 110000,
-        "2024": 130000,
-        "2025": 140000
-      },
-      "total": 590000
-    },
-    {
-      "nom": "BDFil - Fond. lausannoise pour le rayonnement de la bande dessinée",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 110000,
-        "2022": 180000,
-        "2023": 150000,
-        "2024": 150000,
-        "2025": 0
-      },
-      "total": 590000
-    },
-    {
-      "nom": "Assoc. Headfun",
-      "canton": "GE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 220000,
-        "2023": 0,
-        "2024": 240000,
-        "2025": 130000
-      },
-      "total": 590000
-    },
-    {
-      "nom": "Assoc. Course de l'Escalade",
-      "canton": "GE",
-      "secteur": "Sport",
-      "series": {
-        "2021": 100000,
-        "2022": 100000,
-        "2023": 102000,
-        "2024": 153500,
-        "2025": 133500
-      },
-      "total": 589000
-    },
-    {
-      "nom": "Théâtre Sévelin 36 - Un lieu pour la Danse",
-      "canton": "VD",
-      "secteur": "Culture",
-      "series": {
-        "2021": 200000,
-        "2022": 165000,
-        "2023": 220000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 585000
-    },
-    {
-      "nom": "Assoc. Croix-Rouge Valais",
-      "canton": "VS",
-      "secteur": "Santé et handicap",
-      "series": {
-        "2021": 108000,
-        "2022": 111000,
-        "2023": 110000,
-        "2024": 111000,
-        "2025": 142000
-      },
-      "total": 582000
-    },
-    {
-      "nom": "Tonverein Bad Bonn",
-      "canton": "FR",
-      "secteur": "Culture",
-      "series": {
-        "2021": 110000,
-        "2022": 110000,
-        "2023": 110000,
-        "2024": 125000,
-        "2025": 125000
-      },
-      "total": 580000
-    },
-    {
-      "nom": "Assoc. Sirocco // Festival Black Movie",
-      "canton": "GE",
-      "secteur": "Culture",
-      "series": {
-        "2021": 0,
-        "2022": 165000,
-        "2023": 195000,
-        "2024": 210000,
-        "2025": 0
-      },
-      "total": 570000
-    },
-    {
-      "nom": "Fond. rurale interjurassienne",
-      "canton": "JU",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 290000,
-        "2022": 177750,
-        "2023": 40000,
-        "2024": 10000,
-        "2025": 50000
-      },
-      "total": 567750
-    },
-    {
-      "nom": "Assoc. du Veysonnaz Timing",
-      "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 200000,
-        "2022": 200000,
-        "2023": 165000,
-        "2024": 0,
-        "2025": 0
-      },
-      "total": 565000
-    },
-    {
-      "nom": "Assoc. Cantonale Genevoise",
-      "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
-      "series": {
-        "2021": 0,
-        "2022": 0,
-        "2023": 0,
-        "2024": 247100,
-        "2025": 315100
-      },
-      "total": 562200
-    },
-    {
-      "nom": "Assoc. Les Georges",
-      "canton": "FR",
-      "secteur": "Culture",
-      "series": {
-        "2021": 100000,
-        "2022": 100000,
-        "2023": 100000,
-        "2024": 120900,
-        "2025": 141000
-      },
-      "total": 561900
+        "2021": 262000,
+        "2022": 320000,
+        "2023": 650000,
+        "2024": 350000,
+        "2025": 854000
+      }
     }
   ]
 }

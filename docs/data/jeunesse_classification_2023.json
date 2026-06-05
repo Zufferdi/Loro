@@ -529,6 +529,12 @@
           "montant_CHF": 10250
         },
         {
+          "nom": "Mathématiques sans Frontières",
+          "ville": "Courrendlin",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
           "nom": "A Ton Tour !",
           "ville": "La Tour-de-Peilz",
           "canton": "VD",
@@ -601,12 +607,6 @@
           "montant_CHF": 10000
         },
         {
-          "nom": "Mathématiques sans Frontières",
-          "ville": "Courrendlin",
-          "canton": "JU",
-          "montant_CHF": 10000
-        },
-        {
           "nom": "Assoc. Street Foot Challenge",
           "ville": "Thielle",
           "canton": "SR",
@@ -637,6 +637,12 @@
           "montant_CHF": 8800
         },
         {
+          "nom": "Fond. IdéeSport",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 8000
+        },
+        {
           "nom": "Assoc. Arc-Echange",
           "ville": "Lausanne",
           "canton": "VD",
@@ -652,12 +658,6 @@
           "nom": "Verein Jumbo 2023",
           "ville": "Turtmann",
           "canton": "VS",
-          "montant_CHF": 8000
-        },
-        {
-          "nom": "Fond. IdéeSport",
-          "ville": "Lausanne",
-          "canton": "VD",
           "montant_CHF": 8000
         },
         {
@@ -1139,10 +1139,14 @@
       },
       "samples": [
         {
-          "nom": "Fond. pour l'accueil de jour des enfants FAJE",
-          "ville": "Lausanne",
+          "nom": "FAJE — Fond. pour l'accueil de jour des enfants",
+          "montant_CHF": 1500000,
           "canton": "VD",
-          "montant_CHF": 1500000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. pour l'accueil de jour des enfants FAJE",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Assoc. Les P'tits Pruneaux",
@@ -1171,10 +1175,14 @@
       ],
       "all_entries": [
         {
-          "nom": "Fond. pour l'accueil de jour des enfants FAJE",
-          "ville": "Lausanne",
+          "nom": "FAJE — Fond. pour l'accueil de jour des enfants",
+          "montant_CHF": 1500000,
           "canton": "VD",
-          "montant_CHF": 1500000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. pour l'accueil de jour des enfants FAJE",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Assoc. Les P'tits Pruneaux",
@@ -1845,16 +1853,14 @@
       },
       "samples": [
         {
-          "nom": "Assoc. La Lanterne Magique",
-          "ville": null,
+          "nom": "La Lanterne Magique",
+          "montant_CHF": 680000,
           "canton": "SR",
-          "montant_CHF": 380000
-        },
-        {
-          "nom": "Assoc. La Lanterne Magique",
           "ville": null,
-          "canton": "SR",
-          "montant_CHF": 300000
+          "secteur": "",
+          "description": "Consolidation de 2 attributions : Assoc. La Lanterne Magique",
+          "_consolidated": true,
+          "_count": 2
         },
         {
           "nom": "Assoc. du Bibliobus - Bain de Livres",
@@ -1873,20 +1879,24 @@
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. PIP - Prévention de l'Illetrisme au préscolaire",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 7000
         }
       ],
       "all_entries": [
         {
-          "nom": "Assoc. La Lanterne Magique",
-          "ville": null,
+          "nom": "La Lanterne Magique",
+          "montant_CHF": 680000,
           "canton": "SR",
-          "montant_CHF": 380000
-        },
-        {
-          "nom": "Assoc. La Lanterne Magique",
           "ville": null,
-          "canton": "SR",
-          "montant_CHF": 300000
+          "secteur": "",
+          "description": "Consolidation de 2 attributions : Assoc. La Lanterne Magique",
+          "_consolidated": true,
+          "_count": 2
         },
         {
           "nom": "Assoc. du Bibliobus - Bain de Livres",

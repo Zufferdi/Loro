@@ -5,23 +5,23 @@
     "source": "brb2024_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 1071,
-    "total_chf": 60466620,
+    "total_entries": 1057,
+    "total_chf": 59625476,
     "precise_classified_entries": 410,
     "precise_classified_chf": 39246679,
-    "pct_chf_precisely_classified": 64.9,
+    "pct_chf_precisely_classified": 65.8,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 1071,
-    "total_chf_classified": 60466620,
-    "catchall_chf": 21219941,
+    "total_entries_classified": 1057,
+    "total_chf_classified": 59625476,
+    "catchall_chf": 20378797,
     "cross_year_recovered": 418
   },
   "categories": [
     {
       "name": "Soutien général à la culture",
-      "count": 661,
-      "total_chf": 21219941,
-      "mean_chf": 32102,
+      "count": 647,
+      "total_chf": 20378797,
+      "mean_chf": 31497,
       "cantons": {
         "VD": {
           "count": 49,
@@ -32,8 +32,8 @@
           "total_chf": 826701
         },
         "SR": {
-          "count": 82,
-          "total_chf": 2884690
+          "count": 81,
+          "total_chf": 2857690
         },
         "JU": {
           "count": 53,
@@ -44,8 +44,8 @@
           "total_chf": 3261300
         },
         "VS": {
-          "count": 201,
-          "total_chf": 6640890
+          "count": 188,
+          "total_chf": 5826746
         },
         "GE": {
           "count": 136,
@@ -186,12 +186,6 @@
           "ville": "Servion",
           "canton": "VD",
           "montant_CHF": 220000
-        },
-        {
-          "nom": "Foyer Pierre-Olivier",
-          "ville": "Chamoson",
-          "canton": "VS",
-          "montant_CHF": 209144
         },
         {
           "nom": "Office familial / Familienberatung",
@@ -422,12 +416,6 @@
           "montant_CHF": 85000
         },
         {
-          "nom": "Fond. La Résidence",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 83000
-        },
-        {
           "nom": "Assoc. Lemanic Modern Ensemble, Trois concerts d'abonnement",
           "ville": null,
           "canton": "SR",
@@ -530,18 +518,6 @@
           "montant_CHF": 65000
         },
         {
-          "nom": "Home Les Tilleuls",
-          "ville": "Monthey",
-          "canton": "VS",
-          "montant_CHF": 64000
-        },
-        {
-          "nom": "Seniorenzentrum Naters",
-          "ville": "Naters",
-          "canton": "VS",
-          "montant_CHF": 60000
-        },
-        {
           "nom": "Assoc. Barberine 100",
           "ville": "Vernayaz",
           "canton": "SR",
@@ -614,12 +590,6 @@
           "montant_CHF": 55000
         },
         {
-          "nom": "Fond. du Home de Zambotte",
-          "ville": "Savièse",
-          "canton": "VS",
-          "montant_CHF": 55000
-        },
-        {
           "nom": "Assoc. Luxor Factory",
           "ville": "Le Locle",
           "canton": "NE",
@@ -664,12 +634,6 @@
         {
           "nom": "Job Transit Services",
           "ville": "Sierre",
-          "canton": "VS",
-          "montant_CHF": 50000
-        },
-        {
-          "nom": "Regionales Alters-, Wohn- und Pflegeheim St. Theodul",
-          "ville": "Fiesch",
           "canton": "VS",
           "montant_CHF": 50000
         },
@@ -740,12 +704,6 @@
           "montant_CHF": 50000
         },
         {
-          "nom": "St. Antonius Alters- und Pflegeheim",
-          "ville": "Saas-Grund",
-          "canton": "VS",
-          "montant_CHF": 48000
-        },
-        {
           "nom": "Assoc. J.-J. Rousseau",
           "ville": "Neuchâtel",
           "canton": "NE",
@@ -756,12 +714,6 @@
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 47500
-        },
-        {
-          "nom": "Home Le Glarier",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 47000
         },
         {
           "nom": "Assoc. Archaeo Tourism",
@@ -810,12 +762,6 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 44000
-        },
-        {
-          "nom": "Résidence Plantzette",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 43000
         },
         {
           "nom": "Circo Bello",
@@ -932,34 +878,10 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Foyer Ma Vallée",
-          "ville": "Basse-Nendaz",
-          "canton": "VS",
-          "montant_CHF": 39000
-        },
-        {
-          "nom": "Résidence Gravelone",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 39000
-        },
-        {
-          "nom": "Sankt Nikolaus, Senioren- und Pflegeheim",
-          "ville": "St. Niklaus",
-          "canton": "VS",
-          "montant_CHF": 39000
-        },
-        {
           "nom": "Stiftung Santa Rita",
           "ville": "Ried-Brig",
           "canton": "VS",
           "montant_CHF": 39000
-        },
-        {
-          "nom": "Fond. Foyer Haut-de-Cry",
-          "ville": "Vétroz",
-          "canton": "VS",
-          "montant_CHF": 38000
         },
         {
           "nom": "Assoc. Topos, Genève Lieu des possibles -",
@@ -1220,12 +1142,6 @@
           "montant_CHF": 27000
         },
         {
-          "nom": "Fond. du Foyer les 3 Sapins",
-          "ville": "Troistorrents",
-          "canton": "SR",
-          "montant_CHF": 27000
-        },
-        {
           "nom": "Assoc. Metabisse",
           "ville": "Ayent",
           "canton": "VS",
@@ -1284,6 +1200,90 @@
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Odd Productions",
+          "ville": "Cortaillod",
+          "canton": "NE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Féd. Spontiste",
+          "ville": "Grand-Lancy",
+          "canton": "GE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Laps",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Ex Aequo",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. SZKMD production",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Collectif du Feu de dieu, Genève Stratégies souterraines -",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Compagnie LACSaP",
+          "ville": "Courtételle",
+          "canton": "JU",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. CultureEnjeu",
+          "ville": "Vuibroye",
+          "canton": "SR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Jusqu'à m'y fondre",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 24000
+        },
+        {
+          "nom": "Verein Tagesstrukturen Schmitten",
+          "ville": "Schmitten",
+          "canton": "FR",
+          "montant_CHF": 23700
+        },
+        {
+          "nom": "Assoc. Rayon de Soleil / Sonnenblume",
+          "ville": "Granges",
+          "canton": "VS",
+          "montant_CHF": 23000
+        },
+        {
+          "nom": "Assoc. Flatus",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 23000
+        },
+        {
+          "nom": "Assoc. Pro Vallensi",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 23000
+        },
+        {
+          "nom": "Assoc. Avocat Studio",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 22000
         }
       ]
     },
@@ -1324,10 +1324,14 @@
       },
       "samples": [
         {
-          "nom": "Fond. du Théâtre du Jorat",
-          "ville": "Mézières",
+          "nom": "Théâtre du Jorat",
+          "montant_CHF": 2500000,
           "canton": "VD",
-          "montant_CHF": 2500000
+          "ville": "Mézières",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. du Théâtre du Jorat",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Fond. Equilibre et Nuithonie",
@@ -1356,10 +1360,14 @@
       ],
       "all_entries": [
         {
-          "nom": "Fond. du Théâtre du Jorat",
-          "ville": "Mézières",
+          "nom": "Théâtre du Jorat",
+          "montant_CHF": 2500000,
           "canton": "VD",
-          "montant_CHF": 2500000
+          "ville": "Mézières",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. du Théâtre du Jorat",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Fond. Equilibre et Nuithonie",
@@ -1392,6 +1400,16 @@
           "montant_CHF": 320000
         },
         {
+          "nom": "Théâtre du Jura",
+          "montant_CHF": 315000,
+          "canton": "JU",
+          "ville": "Delémont",
+          "secteur": "",
+          "description": "Consolidation de 2 attributions : Fond. pour le Théâtre du Jura",
+          "_consolidated": true,
+          "_count": 2
+        },
+        {
           "nom": "TKM - Fond. du Théâtre Kléber-Méleau",
           "ville": "Renens",
           "canton": "VD",
@@ -1402,12 +1420,6 @@
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 280000
-        },
-        {
-          "nom": "Fond. pour le Théâtre du Jura",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 260000
         },
         {
           "nom": "Fond. des Arts et Spectacles de Vevey (FAS)",
@@ -1539,12 +1551,6 @@
           "nom": "Assoc. du Théâtre Ad Hoc, Genève Les voisins du dessus (anciennement Les voisins d'en haut",
           "ville": "Genève",
           "canton": "GE",
-          "montant_CHF": 55000
-        },
-        {
-          "nom": "Fond. pour le Théâtre du Jura",
-          "ville": "Delémont",
-          "canton": "JU",
           "montant_CHF": 55000
         },
         {
@@ -1782,15 +1788,15 @@
           "montant_CHF": 10500
         },
         {
-          "nom": "Assoc. Théâtre du Comsi",
-          "ville": "La Chaux-Cossonay",
-          "canton": "SR",
-          "montant_CHF": 10000
-        },
-        {
           "nom": "Kultur im Podium",
           "ville": "Düdingen",
           "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Théâtre du Comsi",
+          "ville": "La Chaux-Cossonay",
+          "canton": "SR",
           "montant_CHF": 10000
         },
         {
@@ -1964,10 +1970,14 @@
       },
       "samples": [
         {
-          "nom": "Fond. du Verbier Festival",
+          "nom": "Verbier Festival",
+          "montant_CHF": 900000,
+          "canton": "VD+VS",
           "ville": "Bagnes",
-          "canton": "VS",
-          "montant_CHF": 750000
+          "secteur": "",
+          "description": "Consolidation de 2 attributions : Fond. du Verbier Festival",
+          "_consolidated": true,
+          "_count": 2
         },
         {
           "nom": "Assoc. Les Saisons Bleues",
@@ -1996,10 +2006,14 @@
       ],
       "all_entries": [
         {
-          "nom": "Fond. du Verbier Festival",
+          "nom": "Verbier Festival",
+          "montant_CHF": 900000,
+          "canton": "VD+VS",
           "ville": "Bagnes",
-          "canton": "VS",
-          "montant_CHF": 750000
+          "secteur": "",
+          "description": "Consolidation de 2 attributions : Fond. du Verbier Festival",
+          "_consolidated": true,
+          "_count": 2
         },
         {
           "nom": "Assoc. Les Saisons Bleues",
@@ -2032,10 +2046,14 @@
           "montant_CHF": 250000
         },
         {
-          "nom": "Belluard Bollwerk",
-          "ville": "Fribourg",
+          "nom": "Belluard Bollwerk Festival",
+          "montant_CHF": 249000,
           "canton": "FR",
-          "montant_CHF": 249000
+          "ville": "Fribourg",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Belluard Bollwerk",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Assoc. Headfun",
@@ -2056,10 +2074,14 @@
           "montant_CHF": 200000
         },
         {
-          "nom": "La Bâtie - Festival de Genève e",
-          "ville": "Genève",
+          "nom": "La Bâtie — Festival de Genève",
+          "montant_CHF": 200000,
           "canton": "GE",
-          "montant_CHF": 200000
+          "ville": "Genève",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : La Bâtie - Festival de Genève e",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "marionNEttes - festival international",
@@ -2089,12 +2111,6 @@
           "nom": "Assoc. de Soutien à la Musique Vivante - ASMV",
           "ville": "Carouge e",
           "canton": "SR",
-          "montant_CHF": 150000
-        },
-        {
-          "nom": "Fond. du Verbier Festival",
-          "ville": "Vevey",
-          "canton": "VD",
           "montant_CHF": 150000
         },
         {
@@ -2528,16 +2544,14 @@
       },
       "samples": [
         {
-          "nom": "Fond. Cinéforom",
-          "ville": "Genève",
+          "nom": "Cinéforom — Fond. romande pour le cinéma",
+          "montant_CHF": 2825935,
           "canton": "GE",
-          "montant_CHF": 1700000
-        },
-        {
-          "nom": "Fond. romande pour le cinéma - Cinéforom",
           "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 700000
+          "secteur": "",
+          "description": "Consolidation de 7 attributions : Fond. Cinéforom, Cinéforom, Fond. romande pour le cinéma - Cinéforom, Cinéforom - Fond. romande pour le cinéma",
+          "_consolidated": true,
+          "_count": 7
         },
         {
           "nom": "Cinémathèque suisse",
@@ -2546,30 +2560,38 @@
           "montant_CHF": 450000
         },
         {
-          "nom": "Neuchâtel International Fantastic Film Festival, Neuchâtel NIFFF 2025 - Festival international",
-          "ville": "Neuchâtel",
+          "nom": "NIFFF — Neuchâtel Int. Fantastic Film Festival",
+          "montant_CHF": 350000,
           "canton": "NE",
-          "montant_CHF": 350000
+          "ville": "Neuchâtel",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Neuchâtel International Fantastic Film Festival, Neuchâtel NIFFF 2025 - Festival international",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Fond. FIFDH",
           "ville": "Genève e",
           "canton": "SR",
           "montant_CHF": 350000
+        },
+        {
+          "nom": "Fond. GIFF - Geneva International",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 300000
         }
       ],
       "all_entries": [
         {
-          "nom": "Fond. Cinéforom",
-          "ville": "Genève",
+          "nom": "Cinéforom — Fond. romande pour le cinéma",
+          "montant_CHF": 2825935,
           "canton": "GE",
-          "montant_CHF": 1700000
-        },
-        {
-          "nom": "Fond. romande pour le cinéma - Cinéforom",
           "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 700000
+          "secteur": "",
+          "description": "Consolidation de 7 attributions : Fond. Cinéforom, Cinéforom, Fond. romande pour le cinéma - Cinéforom, Cinéforom - Fond. romande pour le cinéma",
+          "_consolidated": true,
+          "_count": 7
         },
         {
           "nom": "Cinémathèque suisse",
@@ -2578,10 +2600,14 @@
           "montant_CHF": 450000
         },
         {
-          "nom": "Neuchâtel International Fantastic Film Festival, Neuchâtel NIFFF 2025 - Festival international",
-          "ville": "Neuchâtel",
+          "nom": "NIFFF — Neuchâtel Int. Fantastic Film Festival",
+          "montant_CHF": 350000,
           "canton": "NE",
-          "montant_CHF": 350000
+          "ville": "Neuchâtel",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Neuchâtel International Fantastic Film Festival, Neuchâtel NIFFF 2025 - Festival international",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Fond. FIFDH",
@@ -2602,33 +2628,15 @@
           "montant_CHF": 245000
         },
         {
-          "nom": "Cinéforom - Fond. romande pour le cinéma",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 185200
-        },
-        {
           "nom": "Assoc. Cinéma Spoutnik",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 92000
         },
         {
-          "nom": "Fond. Cinéforom",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 85735
-        },
-        {
           "nom": "Assoc. des Amis du Festival International du Film Alpin des Diablerets (FIFAD)",
           "ville": "Les Diablerets",
           "canton": "VD",
-          "montant_CHF": 80000
-        },
-        {
-          "nom": "Cinéforom",
-          "ville": "Genève",
-          "canton": "GE",
           "montant_CHF": 80000
         },
         {
@@ -2638,10 +2646,14 @@
           "montant_CHF": 80000
         },
         {
-          "nom": "FIFF - Festival International du Film de",
-          "ville": null,
+          "nom": "FIFF — Festival International du Film de Fribourg",
+          "montant_CHF": 75000,
           "canton": "SR",
-          "montant_CHF": 75000
+          "ville": null,
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : FIFF - Festival International du Film de",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Tagada Prod",
@@ -2660,12 +2672,6 @@
           "ville": "Le Sentier e",
           "canton": "SR",
           "montant_CHF": 55000
-        },
-        {
-          "nom": "Cinéforom - Fond. romande pour le cinéma",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 50000
         },
         {
           "nom": "Assoc. Ciné-Doc",
@@ -2695,12 +2701,6 @@
           "nom": "Assoc. Cash Duo",
           "ville": "Lausanne",
           "canton": "VD",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Cinéforom - Fond. romande pour le cinéma",
-          "ville": "Genève",
-          "canton": "GE",
           "montant_CHF": 25000
         },
         {
@@ -2740,15 +2740,15 @@
           "montant_CHF": 6500
         },
         {
-          "nom": "Fond. Fellini pour le cinéma",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 3000
-        },
-        {
           "nom": "Assoc. Ciné-Doc",
           "ville": "Lausanne",
           "canton": "VD",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Fond. Fellini pour le cinéma",
+          "ville": "Sion",
+          "canton": "VS",
           "montant_CHF": 3000
         },
         {
@@ -2808,6 +2808,16 @@
           "montant_CHF": 550000
         },
         {
+          "nom": "OSR — Orchestre de la Suisse Romande",
+          "montant_CHF": 450000,
+          "canton": "GE",
+          "ville": "Genève",
+          "secteur": "",
+          "description": "Consolidation de 2 attributions : Fond. de l'Orchestre de la Suisse Romande - OSR, Fond. OSR",
+          "_consolidated": true,
+          "_count": 2
+        },
+        {
           "nom": "Nouvel Opéra Fribourg",
           "ville": "Fribourg",
           "canton": "FR",
@@ -2816,12 +2826,6 @@
         {
           "nom": "Ensemble Symphonique Neuchâtel - ESN",
           "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 375000
-        },
-        {
-          "nom": "Opéra décentralisé",
-          "ville": "Auvernier",
           "canton": "NE",
           "montant_CHF": 375000
         }
@@ -2840,6 +2844,16 @@
           "montant_CHF": 550000
         },
         {
+          "nom": "OSR — Orchestre de la Suisse Romande",
+          "montant_CHF": 450000,
+          "canton": "GE",
+          "ville": "Genève",
+          "secteur": "",
+          "description": "Consolidation de 2 attributions : Fond. de l'Orchestre de la Suisse Romande - OSR, Fond. OSR",
+          "_consolidated": true,
+          "_count": 2
+        },
+        {
           "nom": "Nouvel Opéra Fribourg",
           "ville": "Fribourg",
           "canton": "FR",
@@ -2856,12 +2870,6 @@
           "ville": "Auvernier",
           "canton": "NE",
           "montant_CHF": 375000
-        },
-        {
-          "nom": "Fond. OSR",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 350000
         },
         {
           "nom": "L'avant-scène Opéra",
@@ -2886,12 +2894,6 @@
           "ville": "Crans-Montana",
           "canton": "VS",
           "montant_CHF": 115000
-        },
-        {
-          "nom": "Fond. de l'Orchestre de la Suisse Romande - OSR",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 100000
         },
         {
           "nom": "Conservatoire de Musique et École de Jazz Montreux-Vevey-Riviera (CMVR)",
@@ -3146,6 +3148,12 @@
           "montant_CHF": 7500
         },
         {
+          "nom": "Chœur de chambre jurassien",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 7000
+        },
+        {
           "nom": "Ensemble Vocal de Martigny",
           "ville": "Martigny",
           "canton": "VS",
@@ -3155,12 +3163,6 @@
           "nom": "Compagnie Esperluette",
           "ville": "Cologny",
           "canton": "GE",
-          "montant_CHF": 7000
-        },
-        {
-          "nom": "Chœur de chambre jurassien",
-          "ville": "Delémont",
-          "canton": "JU",
           "montant_CHF": 7000
         },
         {
@@ -3632,10 +3634,14 @@
       },
       "samples": [
         {
-          "nom": "Fond. Plateforme 10",
-          "ville": "Lausanne",
+          "nom": "Plateforme 10",
+          "montant_CHF": 600000,
           "canton": "VD",
-          "montant_CHF": 600000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. Plateforme 10",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Musées cantonaux du Valais",
@@ -3645,9 +3651,13 @@
         },
         {
           "nom": "Fond. de l'Hermitage",
-          "ville": "Lausanne",
+          "montant_CHF": 300000,
           "canton": "VD",
-          "montant_CHF": 300000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. de l'Hermitage",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Maison des Amériques, Châtel-St-Denis Musée traitant de la migration des Fribourgeois-es au 19 e",
@@ -3664,10 +3674,14 @@
       ],
       "all_entries": [
         {
-          "nom": "Fond. Plateforme 10",
-          "ville": "Lausanne",
+          "nom": "Plateforme 10",
+          "montant_CHF": 600000,
           "canton": "VD",
-          "montant_CHF": 600000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. Plateforme 10",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Musées cantonaux du Valais",
@@ -3677,9 +3691,13 @@
         },
         {
           "nom": "Fond. de l'Hermitage",
-          "ville": "Lausanne",
+          "montant_CHF": 300000,
           "canton": "VD",
-          "montant_CHF": 300000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. de l'Hermitage",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Maison des Amériques, Châtel-St-Denis Musée traitant de la migration des Fribourgeois-es au 19 e",
@@ -3924,10 +3942,14 @@
       },
       "samples": [
         {
-          "nom": "Assoc. CORODIS",
-          "ville": "Lausanne",
+          "nom": "CORODIS",
+          "montant_CHF": 734500,
           "canton": "VD",
-          "montant_CHF": 700000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 2 attributions : Corodis, Assoc. CORODIS",
+          "_consolidated": true,
+          "_count": 2
         },
         {
           "nom": "Assoc. Culture Valais",
@@ -3946,20 +3968,18 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 153000
-        },
-        {
-          "nom": "Corodis",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 34500
         }
       ],
       "all_entries": [
         {
-          "nom": "Assoc. CORODIS",
-          "ville": "Lausanne",
+          "nom": "CORODIS",
+          "montant_CHF": 734500,
           "canton": "VD",
-          "montant_CHF": 700000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 2 attributions : Corodis, Assoc. CORODIS",
+          "_consolidated": true,
+          "_count": 2
         },
         {
           "nom": "Assoc. Culture Valais",
@@ -3978,12 +3998,6 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 153000
-        },
-        {
-          "nom": "Corodis",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 34500
         }
       ]
     },

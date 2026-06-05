@@ -1,5 +1,6 @@
 {
   "_meta": {
+    "description": "Bénéficiaires inter-cantonaux (≥2 cantons) 2021-2025, consolidés via aliases",
     "years": [
       "2021",
       "2022",
@@ -7,33 +8,71 @@
       "2024",
       "2025"
     ],
-    "description": "Top inter-cantonaux ≥2 cantons sur 5 ans"
+    "total_inter_cantonaux": 943,
+    "top100_cumul_CHF": 107896846,
+    "method": "aliases TDR/Cinéforom/FIFF/etc. + fallback normalisation"
   },
   "beneficiaires": [
     {
-      "nom": "Fond. Cinéforom",
+      "nom": "Cinéforom — Fond. romande pour le cinéma",
       "canton": "GE",
       "secteur": "Culture",
       "cantons": [
+        "FR",
         "GE",
-        "SR"
+        "SR",
+        "VD",
+        "VS"
       ],
-      "nb_cantons": 2,
+      "nb_cantons": 5,
       "nb_years_active": 5,
-      "montant_2021_CHF": 986800,
-      "montant_2022_CHF": 1785735,
-      "montant_2023_CHF": 1785735,
-      "montant_2024_CHF": 1865735,
-      "montant_2025_CHF": 1700000,
-      "montant_total_CHF": 8124005,
+      "montant_2021_CHF": 2951800,
+      "montant_2022_CHF": 2750935,
+      "montant_2023_CHF": 2750935,
+      "montant_2024_CHF": 2825935,
+      "montant_2025_CHF": 2752600,
+      "montant_total_CHF": 14032205,
       "montants_par_canton": {
-        "GE": 6424005,
+        "GE": 11279605,
+        "VD": 700000,
+        "FR": 314600,
+        "VS": 38000,
         "SR": 1700000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": true
     },
     {
-      "nom": "Fond. du Verbier Festival",
+      "nom": "Tour de Romandie",
+      "canton": "SR",
+      "secteur": "Sport",
+      "cantons": [
+        "FR",
+        "GE",
+        "NE",
+        "SR",
+        "VD",
+        "VS"
+      ],
+      "nb_cantons": 6,
+      "nb_years_active": 5,
+      "montant_2021_CHF": 14419,
+      "montant_2022_CHF": 1400000,
+      "montant_2023_CHF": 1838866,
+      "montant_2024_CHF": 1295143,
+      "montant_2025_CHF": 1690900,
+      "montant_total_CHF": 6239328,
+      "montants_par_canton": {
+        "FR": 269099,
+        "VS": 2713,
+        "SR": 5317516,
+        "VD": 600000,
+        "NE": 40000,
+        "GE": 10000
+      },
+      "is_consolidated": true
+    },
+    {
+      "nom": "Verbier Festival",
       "canton": "VS",
       "secteur": "Culture",
       "cantons": [
@@ -44,17 +83,39 @@
       "nb_cantons": 3,
       "nb_years_active": 5,
       "montant_2021_CHF": 975000,
-      "montant_2022_CHF": 975000,
+      "montant_2022_CHF": 1125000,
       "montant_2023_CHF": 975000,
       "montant_2024_CHF": 900000,
       "montant_2025_CHF": 925000,
-      "montant_total_CHF": 4750000,
+      "montant_total_CHF": 4900000,
       "montants_par_canton": {
         "VS": 4450000,
-        "VD": 150000,
+        "VD": 300000,
         "SR": 150000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": true
+    },
+    {
+      "nom": "Fond. pour l'art dramatique",
+      "canton": "VD",
+      "secteur": "Culture",
+      "cantons": [
+        "SR",
+        "VD"
+      ],
+      "nb_cantons": 2,
+      "nb_years_active": 5,
+      "montant_2021_CHF": 440000,
+      "montant_2022_CHF": 600000,
+      "montant_2023_CHF": 600000,
+      "montant_2024_CHF": 650000,
+      "montant_2025_CHF": 2000000,
+      "montant_total_CHF": 4290000,
+      "montants_par_canton": {
+        "VD": 3640000,
+        "SR": 650000
+      },
+      "is_consolidated": true
     },
     {
       "nom": "CORODIS",
@@ -63,27 +124,29 @@
       "cantons": [
         "FR",
         "SR",
-        "VD"
+        "VD",
+        "VS"
       ],
-      "nb_cantons": 3,
+      "nb_cantons": 4,
       "nb_years_active": 5,
-      "montant_2021_CHF": 700000,
-      "montant_2022_CHF": 700000,
+      "montant_2021_CHF": 774500,
+      "montant_2022_CHF": 734500,
       "montant_2023_CHF": 734500,
       "montant_2024_CHF": 734500,
       "montant_2025_CHF": 737970,
-      "montant_total_CHF": 3606970,
+      "montant_total_CHF": 3715970,
       "montants_par_canton": {
-        "VD": 2869000,
+        "VD": 2938000,
+        "VS": 40000,
         "FR": 37970,
         "SR": 700000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": true
     },
     {
-      "nom": "Assoc. La Lanterne Magique",
-      "canton": "NE",
-      "secteur": "Santé et handicap",
+      "nom": "La Lanterne Magique",
+      "canton": "SR",
+      "secteur": "Jeunesse et éducation",
       "cantons": [
         "JU",
         "NE",
@@ -91,18 +154,18 @@
       ],
       "nb_cantons": 3,
       "nb_years_active": 5,
-      "montant_2021_CHF": 300000,
+      "montant_2021_CHF": 695000,
       "montant_2022_CHF": 695000,
       "montant_2023_CHF": 684000,
       "montant_2024_CHF": 678000,
       "montant_2025_CHF": 677500,
-      "montant_total_CHF": 3034500,
+      "montant_total_CHF": 3429500,
       "montants_par_canton": {
-        "NE": 978000,
+        "NE": 1373000,
         "SR": 2049000,
         "JU": 7500
       },
-      "is_one_shot_2024": false
+      "is_consolidated": true
     },
     {
       "nom": "Fond. pour l'Écrit",
@@ -115,62 +178,40 @@
       "nb_cantons": 2,
       "nb_years_active": 5,
       "montant_2021_CHF": 500000,
-      "montant_2022_CHF": 810000,
+      "montant_2022_CHF": 750000,
       "montant_2023_CHF": 560000,
       "montant_2024_CHF": 550000,
       "montant_2025_CHF": 550000,
-      "montant_total_CHF": 2970000,
+      "montant_total_CHF": 2910000,
       "montants_par_canton": {
-        "GE": 2360000,
+        "GE": 2300000,
         "SR": 610000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": true
     },
     {
-      "nom": "Fond. pour l'art dramatique -",
-      "canton": "SR",
+      "nom": "OSR — Orchestre de la Suisse Romande",
+      "canton": "GE",
       "secteur": "Culture",
       "cantons": [
-        "SR",
-        "VD"
-      ],
-      "nb_cantons": 2,
-      "nb_years_active": 2,
-      "montant_2021_CHF": 0,
-      "montant_2022_CHF": 0,
-      "montant_2023_CHF": 0,
-      "montant_2024_CHF": 650000,
-      "montant_2025_CHF": 2000000,
-      "montant_total_CHF": 2650000,
-      "montants_par_canton": {
-        "SR": 650000,
-        "VD": 2000000
-      },
-      "is_one_shot_2024": false
-    },
-    {
-      "nom": "Tour de Romandie",
-      "canton": "SR",
-      "secteur": "Sport",
-      "cantons": [
-        "FR",
+        "GE",
         "SR",
         "VD"
       ],
       "nb_cantons": 3,
-      "nb_years_active": 3,
-      "montant_2021_CHF": 0,
-      "montant_2022_CHF": 0,
-      "montant_2023_CHF": 851026,
-      "montant_2024_CHF": 431893,
-      "montant_2025_CHF": 964800,
-      "montant_total_CHF": 2247719,
+      "nb_years_active": 5,
+      "montant_2021_CHF": 400000,
+      "montant_2022_CHF": 650000,
+      "montant_2023_CHF": 290000,
+      "montant_2024_CHF": 450000,
+      "montant_2025_CHF": 537600,
+      "montant_total_CHF": 2327600,
       "montants_par_canton": {
-        "SR": 1390326,
-        "VD": 600000,
-        "FR": 257393
+        "GE": 1620000,
+        "VD": 390000,
+        "SR": 317600
       },
-      "is_one_shot_2024": false
+      "is_consolidated": true
     },
     {
       "nom": "Fond. Officielle de la jeunesse",
@@ -181,40 +222,42 @@
         "SR"
       ],
       "nb_cantons": 2,
-      "nb_years_active": 2,
-      "montant_2021_CHF": 0,
+      "nb_years_active": 3,
+      "montant_2021_CHF": 70000,
       "montant_2022_CHF": 0,
       "montant_2023_CHF": 933000,
       "montant_2024_CHF": 1110320,
       "montant_2025_CHF": 0,
-      "montant_total_CHF": 2043320,
+      "montant_total_CHF": 2113320,
       "montants_par_canton": {
-        "GE": 2033000,
+        "GE": 2103000,
         "SR": 10320
       },
-      "is_one_shot_2024": true
+      "is_consolidated": true
     },
     {
       "nom": "Opéra décentralisé",
       "canton": "NE",
       "secteur": "Culture",
       "cantons": [
+        "JU",
         "NE",
         "SR"
       ],
-      "nb_cantons": 2,
+      "nb_cantons": 3,
       "nb_years_active": 5,
-      "montant_2021_CHF": 390000,
-      "montant_2022_CHF": 390000,
+      "montant_2021_CHF": 405000,
+      "montant_2022_CHF": 395000,
       "montant_2023_CHF": 405000,
-      "montant_2024_CHF": 375000,
-      "montant_2025_CHF": 445000,
-      "montant_total_CHF": 2005000,
+      "montant_2024_CHF": 385000,
+      "montant_2025_CHF": 449000,
+      "montant_total_CHF": 2039000,
       "montants_par_canton": {
-        "NE": 1940000,
+        "NE": 1970000,
+        "JU": 4000,
         "SR": 65000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": true
     },
     {
       "nom": "Fond. Papiliorama",
@@ -236,7 +279,7 @@
         "FR": 1100000,
         "SR": 900000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": true
     },
     {
       "nom": "Fond. Sainte-Famille",
@@ -258,7 +301,7 @@
         "VS": 90000,
         "VD": 1500000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. FIFDH",
@@ -280,7 +323,7 @@
         "GE": 1220000,
         "SR": 350000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "CSP - Centre Social Protestant,",
@@ -302,11 +345,11 @@
         "SR": 40000,
         "VD": 1376000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
-      "nom": "Pro Junior Arc Jurassien",
-      "canton": "NE",
+      "nom": "Pro Junior - arc jurassien",
+      "canton": "JU",
       "secteur": "Jeunesse et éducation",
       "cantons": [
         "JU",
@@ -324,12 +367,12 @@
         "NE": 925000,
         "JU": 444000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. FFG Lausanne 2025",
-      "canton": "VD",
-      "secteur": "Sport",
+      "canton": "SR",
+      "secteur": "Environnement",
       "cantons": [
         "SR",
         "VD"
@@ -346,7 +389,7 @@
         "VD": 1271600,
         "SR": 94250
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. EPFL Plus",
@@ -368,11 +411,11 @@
         "VD": 1310000,
         "VS": 20000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
-      "nom": "Assoc. cantonale vaudoise de football",
-      "canton": "VD",
+      "nom": "Assoc. Cantonale Vaudoise de Football",
+      "canton": "GE",
       "secteur": "Sport",
       "cantons": [
         "GE",
@@ -390,7 +433,7 @@
         "VD": 794330,
         "GE": 498268
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. Visions du Réel",
@@ -412,7 +455,7 @@
         "VD": 1255000,
         "SR": 30000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. La Parenthèse",
@@ -434,10 +477,10 @@
         "VS": 1197500,
         "JU": 60000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
-      "nom": "Assoc. fribourgeoise de football",
+      "nom": "Assoc. Fribourgeoise de Football",
       "canton": "FR",
       "secteur": "Sport",
       "cantons": [
@@ -456,7 +499,7 @@
         "FR": 991424,
         "GE": 255818
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. Aigues-Vertes",
@@ -478,7 +521,7 @@
         "GE": 1200000,
         "SR": 1000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Les Saisons Bleues",
@@ -500,7 +543,29 @@
         "GE": 500000,
         "SR": 700000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
+    },
+    {
+      "nom": "FIFF — Festival International du Film de Fribourg",
+      "canton": "FR",
+      "secteur": "Culture",
+      "cantons": [
+        "FR",
+        "SR"
+      ],
+      "nb_cantons": 2,
+      "nb_years_active": 3,
+      "montant_2021_CHF": 0,
+      "montant_2022_CHF": 0,
+      "montant_2023_CHF": 215000,
+      "montant_2024_CHF": 75000,
+      "montant_2025_CHF": 835000,
+      "montant_total_CHF": 1125000,
+      "montants_par_canton": {
+        "FR": 1050000,
+        "SR": 75000
+      },
+      "is_consolidated": true
     },
     {
       "nom": "Centre Social Protestant - CSP",
@@ -526,7 +591,29 @@
         "VD": 648000,
         "GE": 30000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
+    },
+    {
+      "nom": "La Bâtie — Festival de Genève",
+      "canton": "GE",
+      "secteur": "Culture",
+      "cantons": [
+        "GE",
+        "VD"
+      ],
+      "nb_cantons": 2,
+      "nb_years_active": 5,
+      "montant_2021_CHF": 240000,
+      "montant_2022_CHF": 225000,
+      "montant_2023_CHF": 225000,
+      "montant_2024_CHF": 200000,
+      "montant_2025_CHF": 225000,
+      "montant_total_CHF": 1115000,
+      "montants_par_canton": {
+        "GE": 1100000,
+        "VD": 15000
+      },
+      "is_consolidated": true
     },
     {
       "nom": "Caritas Suisse",
@@ -552,12 +639,12 @@
         "SR": 84000,
         "GE": 280000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Intervalle",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "cantons": [
         "FR",
         "VD"
@@ -574,7 +661,7 @@
         "VD": 1040000,
         "FR": 30000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Usine à Gaz",
@@ -596,7 +683,7 @@
         "VD": 900000,
         "SR": 150000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. Terre des Hommes",
@@ -620,12 +707,12 @@
         "VS": 400000,
         "SR": 200000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Sion sous les étoiles",
       "canton": "GE",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Culture",
       "cantons": [
         "GE",
         "VS"
@@ -642,11 +729,11 @@
         "GE": 700000,
         "VS": 250000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
-      "nom": "Assoc. pour l'Education Familiale",
-      "canton": "FR",
+      "nom": "Assoc. pour l'Éducation Familiale",
+      "canton": "SR",
       "secteur": "Action sociale et personnes âgées",
       "cantons": [
         "FR",
@@ -664,7 +751,7 @@
         "FR": 386000,
         "SR": 514000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. Au Cœur des Grottes",
@@ -686,7 +773,7 @@
         "GE": 648000,
         "SR": 250000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. de l'Abbaye de Saint-Maurice",
@@ -708,7 +795,7 @@
         "SR": 812500,
         "VS": 29000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. pour le soutien de la recherche et du développement de l'oncologie",
@@ -730,10 +817,10 @@
         "VD": 400000,
         "FR": 400000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
-      "nom": "Assoc. Autrement-Aujourd'hui",
+      "nom": "Autrement-Aujourd'hui",
       "canton": "GE",
       "secteur": "Santé et handicap",
       "cantons": [
@@ -754,7 +841,29 @@
         "SR": 230000,
         "VD": 35000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
+    },
+    {
+      "nom": "Delémont'BD",
+      "canton": "JU",
+      "secteur": "Culture",
+      "cantons": [
+        "JU",
+        "SR"
+      ],
+      "nb_cantons": 2,
+      "nb_years_active": 5,
+      "montant_2021_CHF": 90000,
+      "montant_2022_CHF": 80000,
+      "montant_2023_CHF": 200000,
+      "montant_2024_CHF": 210000,
+      "montant_2025_CHF": 200000,
+      "montant_total_CHF": 780000,
+      "montants_par_canton": {
+        "JU": 550000,
+        "SR": 230000
+      },
+      "is_consolidated": true
     },
     {
       "nom": "Assoc. Pro Junior",
@@ -776,7 +885,7 @@
         "FR": 702700,
         "SR": 70000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Crescendo",
@@ -798,11 +907,11 @@
         "JU": 750000,
         "NE": 10000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Sté des Beaux-Arts et du Musée du Locle",
-      "canton": "NE",
+      "canton": "SR",
       "secteur": "Culture",
       "cantons": [
         "NE",
@@ -820,11 +929,11 @@
         "NE": 270000,
         "SR": 485000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Romande de Ski",
-      "canton": "VD",
+      "canton": "SR",
       "secteur": "Sport",
       "cantons": [
         "SR",
@@ -842,7 +951,7 @@
         "VD": 210545,
         "SR": 532870
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Bénévoles Valais-Wallis",
@@ -864,7 +973,7 @@
         "VS": 734033,
         "SR": 7500
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. Ruchonnet 18",
@@ -886,29 +995,7 @@
         "SR": 464674,
         "VD": 271857
       },
-      "is_one_shot_2024": false
-    },
-    {
-      "nom": "Delémont'BD",
-      "canton": "JU",
-      "secteur": "Culture",
-      "cantons": [
-        "JU",
-        "SR"
-      ],
-      "nb_cantons": 2,
-      "nb_years_active": 5,
-      "montant_2021_CHF": 40000,
-      "montant_2022_CHF": 80000,
-      "montant_2023_CHF": 200000,
-      "montant_2024_CHF": 210000,
-      "montant_2025_CHF": 200000,
-      "montant_total_CHF": 730000,
-      "montants_par_canton": {
-        "JU": 500000,
-        "SR": 230000
-      },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. JeunesParents",
@@ -930,7 +1017,7 @@
         "FR": 690000,
         "SR": 30000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. CMA",
@@ -956,12 +1043,34 @@
         "FR": 17084,
         "JU": 10000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
+    },
+    {
+      "nom": "Septembre Musical Montreux- Vevey",
+      "canton": "VD",
+      "secteur": "Culture",
+      "cantons": [
+        "SR",
+        "VD"
+      ],
+      "nb_cantons": 2,
+      "nb_years_active": 4,
+      "montant_2021_CHF": 130000,
+      "montant_2022_CHF": 130000,
+      "montant_2023_CHF": 130000,
+      "montant_2024_CHF": 300000,
+      "montant_2025_CHF": 0,
+      "montant_total_CHF": 690000,
+      "montants_par_canton": {
+        "VD": 540000,
+        "SR": 150000
+      },
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Bike Freeride",
       "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "cantons": [
         "SR",
         "VS"
@@ -978,7 +1087,7 @@
         "VS": 593029,
         "SR": 89095
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "LS-Vaud foot",
@@ -1000,10 +1109,10 @@
         "SR": 458880,
         "VD": 218150
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
-      "nom": "Espacefemmes-frauenraum,",
+      "nom": "Espacefemmes-frauenraum",
       "canton": "SR",
       "secteur": "Action sociale et personnes âgées",
       "cantons": [
@@ -1022,7 +1131,7 @@
         "SR": 440000,
         "FR": 220000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. du Tour des Stations",
@@ -1044,11 +1153,11 @@
         "VS": 603267,
         "SR": 49380
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Cantonale Vaudoise de Gymnastique",
-      "canton": "VD",
+      "canton": "GE",
       "secteur": "Sport",
       "cantons": [
         "GE",
@@ -1066,10 +1175,10 @@
         "VD": 309845,
         "GE": 331416
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
-      "nom": "Assoc. Lire et Ecrire",
+      "nom": "Assoc. Lire et Écrire",
       "canton": "NE",
       "secteur": "Action sociale et personnes âgées",
       "cantons": [
@@ -1092,7 +1201,7 @@
         "VD": 295000,
         "GE": 60000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. GIFF - Geneva International Film Festival",
@@ -1114,7 +1223,29 @@
         "GE": 300000,
         "SR": 300000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
+    },
+    {
+      "nom": "Assoc. du Grand Raid",
+      "canton": "VS",
+      "secteur": "Sport",
+      "cantons": [
+        "GE",
+        "VS"
+      ],
+      "nb_cantons": 2,
+      "nb_years_active": 5,
+      "montant_2021_CHF": 120000,
+      "montant_2022_CHF": 80000,
+      "montant_2023_CHF": 134210,
+      "montant_2024_CHF": 132080,
+      "montant_2025_CHF": 128658,
+      "montant_total_CHF": 594948,
+      "montants_par_canton": {
+        "VS": 540738,
+        "GE": 54210
+      },
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Headfun",
@@ -1136,7 +1267,7 @@
         "GE": 350000,
         "SR": 240000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Course de l'Escalade",
@@ -1158,7 +1289,7 @@
         "GE": 539000,
         "SR": 50000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. rurale interjurassienne",
@@ -1180,12 +1311,12 @@
         "JU": 517750,
         "SR": 50000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Verein Matterhorn Cervino Speed Opening",
-      "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
+      "canton": "SR",
+      "secteur": "Sport",
       "cantons": [
         "SR",
         "VS"
@@ -1202,7 +1333,7 @@
         "VS": 280000,
         "SR": 240000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Special Olympics Switzerland",
@@ -1224,12 +1355,12 @@
         "VD": 310000,
         "SR": 193000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Villars Escalade",
       "canton": "SR",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "cantons": [
         "SR",
         "VD"
@@ -1246,12 +1377,12 @@
         "SR": 455000,
         "VD": 40000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
-      "nom": "Fond. Carrefour-Rue & Coulou,",
+      "nom": "Fond. Carrefour-Rue & Coulou",
       "canton": "SR",
-      "secteur": "Sport",
+      "secteur": "Action sociale et personnes âgées",
       "cantons": [
         "GE",
         "SR"
@@ -1268,7 +1399,7 @@
         "SR": 390000,
         "GE": 100000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Ensemble",
@@ -1290,11 +1421,11 @@
         "FR": 310000,
         "GE": 172000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
-      "nom": "Athlétissima",
-      "canton": "VD",
+      "nom": "Athletissima",
+      "canton": "SR",
       "secteur": "Sport",
       "cantons": [
         "SR",
@@ -1312,12 +1443,12 @@
         "VD": 168000,
         "SR": 302000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. de Soutien à la Musique Vivante - ASMV",
       "canton": "GE",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Culture",
       "cantons": [
         "GE",
         "SR"
@@ -1334,12 +1465,12 @@
         "GE": 300000,
         "SR": 150000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. As'trame",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "cantons": [
         "GE",
         "NE",
@@ -1360,7 +1491,7 @@
         "NE": 5000,
         "SR": 20000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Biennale Son",
@@ -1382,12 +1513,12 @@
         "VS": 240000,
         "SR": 200000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Geneva Trophy Promotion Sàrl",
       "canton": "GE",
-      "secteur": "Sport",
+      "secteur": "Promotion, tourisme et développement",
       "cantons": [
         "GE",
         "SR"
@@ -1404,7 +1535,7 @@
         "GE": 230000,
         "SR": 200300
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. CAN Centre d'art",
@@ -1426,7 +1557,7 @@
         "VD": 230000,
         "NE": 200000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Contribution sportifs de pointe",
@@ -1448,7 +1579,7 @@
         "SR": 104600,
         "FR": 320930
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Animatou",
@@ -1470,7 +1601,7 @@
         "GE": 340000,
         "SR": 80000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. CAN Centre d'art Neuchâtel",
@@ -1492,11 +1623,11 @@
         "NE": 210000,
         "VD": 210000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Grandson-Murten 2026",
-      "canton": "SR",
+      "canton": "FR",
       "secteur": "Promotion, tourisme et développement",
       "cantons": [
         "FR",
@@ -1516,7 +1647,7 @@
         "VD": 200000,
         "FR": 195000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "marionNEttes - festival international",
@@ -1538,7 +1669,7 @@
         "NE": 240000,
         "SR": 170000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Neuchâteloise de Football",
@@ -1560,12 +1691,12 @@
         "NE": 404780,
         "GE": 3345
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
-      "nom": "Rallye du Chablais",
-      "canton": "SR",
-      "secteur": "Promotion, tourisme et développement",
+      "nom": "Assoc. Rallye du Chablais",
+      "canton": "VD",
+      "secteur": "Sport",
       "cantons": [
         "SR",
         "VD",
@@ -1584,12 +1715,12 @@
         "VD": 61287,
         "VS": 236194
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "La Main Tendue",
       "canton": "VD",
-      "secteur": "Sport",
+      "secteur": "Action sociale et personnes âgées",
       "cantons": [
         "SR",
         "VD"
@@ -1606,7 +1737,7 @@
         "VD": 300000,
         "SR": 100000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Les Créatives",
@@ -1628,10 +1759,10 @@
         "GE": 300000,
         "SR": 100000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
-      "nom": "Les Concerts de l'Athénée 4,",
+      "nom": "Les Concerts de l'Athénée 4",
       "canton": "SR",
       "secteur": "Culture",
       "cantons": [
@@ -1650,11 +1781,11 @@
         "SR": 180000,
         "GE": 220000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Féd. Fribourgeoise de Gymnastique",
-      "canton": "FR",
+      "canton": "GE",
       "secteur": "Sport",
       "cantons": [
         "FR",
@@ -1672,12 +1803,12 @@
         "FR": 12336,
         "GE": 384944
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "LUC Volleyball",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "cantons": [
         "GE",
         "VD"
@@ -1694,7 +1825,7 @@
         "GE": 289032,
         "VD": 102370
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. Nez Rouge",
@@ -1716,11 +1847,11 @@
         "JU": 300000,
         "SR": 90000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Entraide Protestante Suisse",
-      "canton": "SR",
+      "canton": "VD",
       "secteur": "Action sociale et personnes âgées",
       "cantons": [
         "SR",
@@ -1738,7 +1869,7 @@
         "SR": 24000,
         "VD": 360000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Base-Court",
@@ -1760,12 +1891,12 @@
         "VD": 338000,
         "SR": 40000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. NLZ - Centre national",
-      "canton": "SR",
-      "secteur": "Promotion, tourisme et développement",
+      "canton": "VD",
+      "secteur": "Sport",
       "cantons": [
         "SR",
         "VD"
@@ -1782,11 +1913,11 @@
         "SR": 137678,
         "VD": 238515
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Oriental-Vevey",
-      "canton": "VD",
+      "canton": "SR",
       "secteur": "Culture",
       "cantons": [
         "SR",
@@ -1804,7 +1935,7 @@
         "VD": 150000,
         "SR": 220000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "La Bataille des Livres",
@@ -1826,7 +1957,7 @@
         "VD": 220000,
         "SR": 150000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "LS-Vaud Foot SA",
@@ -1848,7 +1979,7 @@
         "VD": 178200,
         "SR": 190720
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Fanfareduloup Orchestra",
@@ -1870,7 +2001,7 @@
         "GE": 262000,
         "SR": 100000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Commune de Daillens",
@@ -1892,7 +2023,7 @@
         "SR": 240000,
         "VD": 118000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Cirque Toamême",
@@ -1914,7 +2045,7 @@
         "FR": 321050,
         "SR": 6140
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Fond. de la Maison de Rousseau et de la Littérature",
@@ -1936,7 +2067,7 @@
         "GE": 244000,
         "SR": 80000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Stand'été",
@@ -1958,7 +2089,7 @@
         "SR": 160000,
         "JU": 160000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Midi théâtre",
@@ -1988,7 +2119,7 @@
         "NE": 10000,
         "JU": 15000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Sierre-Zinal",
@@ -2010,12 +2141,12 @@
         "VS": 237451,
         "SR": 69417
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
-      "nom": "Association t.",
-      "canton": "FR",
-      "secteur": "Promotion, tourisme et développement",
+      "nom": "Assoc. t.",
+      "canton": "JU",
+      "secteur": "Culture",
       "cantons": [
         "FR",
         "JU",
@@ -2034,7 +2165,7 @@
         "JU": 225000,
         "SR": 75000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Nendaz Freeride",
@@ -2056,7 +2187,7 @@
         "SR": 180000,
         "VS": 120075
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Centre Mondial du Cyclisme UCI",
@@ -2078,11 +2209,11 @@
         "VD": 132520,
         "SR": 153200
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Job Transit Services",
-      "canton": "SR",
+      "canton": "VS",
       "secteur": "Action sociale et personnes âgées",
       "cantons": [
         "SR",
@@ -2100,11 +2231,11 @@
         "SR": 50000,
         "VS": 235000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. noetic",
-      "canton": "GE",
+      "canton": "FR",
       "secteur": "Jeunesse et éducation",
       "cantons": [
         "FR",
@@ -2124,12 +2255,12 @@
         "FR": 115000,
         "VD": 90000
       },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Giro Valais",
       "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "cantons": [
         "SR",
         "VS"
@@ -2146,119 +2277,7 @@
         "VS": 198870,
         "SR": 80800
       },
-      "is_one_shot_2024": false
-    },
-    {
-      "nom": "Fond. IPT",
-      "canton": "VS",
-      "secteur": null,
-      "cantons": [
-        "FR",
-        "GE",
-        "VS"
-      ],
-      "nb_cantons": 3,
-      "nb_years_active": 4,
-      "montant_2021_CHF": 50000,
-      "montant_2022_CHF": 76000,
-      "montant_2023_CHF": 100000,
-      "montant_2024_CHF": 50000,
-      "montant_2025_CHF": 0,
-      "montant_total_CHF": 276000,
-      "montants_par_canton": {
-        "VS": 196000,
-        "FR": 30000,
-        "GE": 50000
-      },
-      "is_one_shot_2024": false
-    },
-    {
-      "nom": "Villars Roule",
-      "canton": "SR",
-      "secteur": "Promotion, tourisme et développement",
-      "cantons": [
-        "SR",
-        "VD"
-      ],
-      "nb_cantons": 2,
-      "nb_years_active": 4,
-      "montant_2021_CHF": 0,
-      "montant_2022_CHF": 26000,
-      "montant_2023_CHF": 142500,
-      "montant_2024_CHF": 81000,
-      "montant_2025_CHF": 25900,
-      "montant_total_CHF": 275400,
-      "montants_par_canton": {
-        "SR": 249500,
-        "VD": 25900
-      },
-      "is_one_shot_2024": false
-    },
-    {
-      "nom": "Assoc. La Nef",
-      "canton": "JU",
-      "secteur": "Culture",
-      "cantons": [
-        "JU",
-        "SR"
-      ],
-      "nb_cantons": 2,
-      "nb_years_active": 4,
-      "montant_2021_CHF": 0,
-      "montant_2022_CHF": 102000,
-      "montant_2023_CHF": 69000,
-      "montant_2024_CHF": 62000,
-      "montant_2025_CHF": 40000,
-      "montant_total_CHF": 273000,
-      "montants_par_canton": {
-        "JU": 233000,
-        "SR": 40000
-      },
-      "is_one_shot_2024": false
-    },
-    {
-      "nom": "Genève Volley",
-      "canton": "GE",
-      "secteur": "Sport",
-      "cantons": [
-        "GE",
-        "SR"
-      ],
-      "nb_cantons": 2,
-      "nb_years_active": 4,
-      "montant_2021_CHF": 11300,
-      "montant_2022_CHF": 0,
-      "montant_2023_CHF": 80000,
-      "montant_2024_CHF": 69000,
-      "montant_2025_CHF": 109500,
-      "montant_total_CHF": 269800,
-      "montants_par_canton": {
-        "GE": 264800,
-        "SR": 5000
-      },
-      "is_one_shot_2024": false
-    },
-    {
-      "nom": "Assoc. Fête de la Danse Fribourg (AFDDF)",
-      "canton": "VS",
-      "secteur": "Culture",
-      "cantons": [
-        "FR",
-        "VS"
-      ],
-      "nb_cantons": 2,
-      "nb_years_active": 3,
-      "montant_2021_CHF": 0,
-      "montant_2022_CHF": 0,
-      "montant_2023_CHF": 70000,
-      "montant_2024_CHF": 95000,
-      "montant_2025_CHF": 100000,
-      "montant_total_CHF": 265000,
-      "montants_par_canton": {
-        "VS": 165000,
-        "FR": 100000
-      },
-      "is_one_shot_2024": false
+      "is_consolidated": false
     }
   ]
 }

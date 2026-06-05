@@ -1400,10 +1400,14 @@
           "montant_CHF": 270000
         },
         {
-          "nom": "Fond. du Théâtre du Jorat",
-          "ville": "Mézières",
+          "nom": "Théâtre du Jorat",
+          "montant_CHF": 255000,
           "canton": "VD",
-          "montant_CHF": 255000
+          "ville": "Mézières",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. du Théâtre du Jorat",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Théâtre du Crochetan",
@@ -1442,10 +1446,14 @@
           "montant_CHF": 150000
         },
         {
-          "nom": "Delémont'BD 2021 Fond. pour le Théâtre du Jura",
-          "ville": "Delémont",
+          "nom": "Théâtre du Jura",
+          "montant_CHF": 150000,
           "canton": "JU",
-          "montant_CHF": 150000
+          "ville": "Delémont",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Delémont'BD 2021 Fond. pour le Théâtre du Jura",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Théâtre Les Halles - Sierre",
@@ -1998,10 +2006,14 @@
       },
       "samples": [
         {
-          "nom": "Fond. du Verbier Festival",
-          "ville": "Verbier",
+          "nom": "Verbier Festival",
+          "montant_CHF": 975000,
           "canton": "VS",
-          "montant_CHF": 975000
+          "ville": "Verbier",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. du Verbier Festival",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "culturelle 2021-2022 Fribourg",
@@ -2030,10 +2042,14 @@
       ],
       "all_entries": [
         {
-          "nom": "Fond. du Verbier Festival",
-          "ville": "Verbier",
+          "nom": "Verbier Festival",
+          "montant_CHF": 975000,
           "canton": "VS",
-          "montant_CHF": 975000
+          "ville": "Verbier",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. du Verbier Festival",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "culturelle 2021-2022 Fribourg",
@@ -2060,16 +2076,24 @@
           "montant_CHF": 250000
         },
         {
-          "nom": "Free Art Sunday Belluard Bollwerk",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 230000
+          "nom": "La Bâtie — Festival de Genève",
+          "montant_CHF": 240000,
+          "canton": "GE+VD",
+          "ville": "Genève",
+          "secteur": "",
+          "description": "Consolidation de 2 attributions : théâtrale 2021-2022 La Bâtie - Festival de Genève, e édition de La Bâtie - Festival de Genève La Cie Alors voilà",
+          "_consolidated": true,
+          "_count": 2
         },
         {
-          "nom": "théâtrale 2021-2022 La Bâtie - Festival de Genève",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 225000
+          "nom": "Belluard Bollwerk Festival",
+          "montant_CHF": 230000,
+          "canton": "FR",
+          "ville": "Fribourg",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Free Art Sunday Belluard Bollwerk",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Publication d'un ouvrage sur les coléoptères du bassin genevois Assoc. Festival Antigel",
@@ -2528,12 +2552,6 @@
           "montant_CHF": 15000
         },
         {
-          "nom": "e édition de La Bâtie - Festival de Genève La Cie Alors voilà",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 15000
-        },
-        {
           "nom": "Assoc. du Festival de musique des Haudères, Les Haudères",
           "ville": null,
           "canton": "VS",
@@ -2770,16 +2788,14 @@
       },
       "samples": [
         {
-          "nom": "Publication de référence portant sur l’ensemble des artistes des fonds déposés Fond. Cinéforom",
-          "ville": "Genève",
+          "nom": "Cinéforom — Fond. romande pour le cinéma",
+          "montant_CHF": 2951800,
           "canton": "GE",
-          "montant_CHF": 1700000
-        },
-        {
-          "nom": "Fond. Cinéforom",
           "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 700000
+          "secteur": "",
+          "description": "Consolidation de 6 attributions : Fond. Cinéforom, Publication de référence portant sur l’ensemble des artistes des fonds déposés Fond. Cinéforom, e Fribourg Fond. Cinéforom, Diffusion créations fribourgeoises 2021 Cinéforom - Fond. r",
+          "_consolidated": true,
+          "_count": 6
         },
         {
           "nom": "ème édition du Festival du film et forum international sur les droits humains Fond. GIFF - Geneva International Film Festival",
@@ -2788,30 +2804,38 @@
           "montant_CHF": 300000
         },
         {
-          "nom": "Evénement Neuchâtel International Fantastic Film Festival - NIFFF",
-          "ville": "Neuchâtel",
+          "nom": "NIFFF — Neuchâtel Int. Fantastic Film Festival",
+          "montant_CHF": 283000,
           "canton": "NE",
-          "montant_CHF": 283000
+          "ville": "Neuchâtel",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Evénement Neuchâtel International Fantastic Film Festival - NIFFF",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Cinémathèque suisse",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 230000
+        },
+        {
+          "nom": "Fond. Visions du Réel",
+          "ville": "Nyon",
+          "canton": "VD",
+          "montant_CHF": 220000
         }
       ],
       "all_entries": [
         {
-          "nom": "Publication de référence portant sur l’ensemble des artistes des fonds déposés Fond. Cinéforom",
-          "ville": "Genève",
+          "nom": "Cinéforom — Fond. romande pour le cinéma",
+          "montant_CHF": 2951800,
           "canton": "GE",
-          "montant_CHF": 1700000
-        },
-        {
-          "nom": "Fond. Cinéforom",
           "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 700000
+          "secteur": "",
+          "description": "Consolidation de 6 attributions : Fond. Cinéforom, Publication de référence portant sur l’ensemble des artistes des fonds déposés Fond. Cinéforom, e Fribourg Fond. Cinéforom, Diffusion créations fribourgeoises 2021 Cinéforom - Fond. r",
+          "_consolidated": true,
+          "_count": 6
         },
         {
           "nom": "ème édition du Festival du film et forum international sur les droits humains Fond. GIFF - Geneva International Film Festival",
@@ -2820,10 +2844,14 @@
           "montant_CHF": 300000
         },
         {
-          "nom": "Evénement Neuchâtel International Fantastic Film Festival - NIFFF",
-          "ville": "Neuchâtel",
+          "nom": "NIFFF — Neuchâtel Int. Fantastic Film Festival",
+          "montant_CHF": 283000,
           "canton": "NE",
-          "montant_CHF": 283000
+          "ville": "Neuchâtel",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Evénement Neuchâtel International Fantastic Film Festival - NIFFF",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Cinémathèque suisse",
@@ -2838,34 +2866,10 @@
           "montant_CHF": 220000
         },
         {
-          "nom": "Diffusion créations fribourgeoises 2021 Cinéforom - Fond. romande pour le cinéma",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 185000
-        },
-        {
-          "nom": "Fond. Cinéforom",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 156800
-        },
-        {
-          "nom": "Fond. Cinéforom",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 130000
-        },
-        {
           "nom": "Assoc. culturelle des mines d’asphalte de la presta, Traver s",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 105000
-        },
-        {
-          "nom": "e Fribourg Fond. Cinéforom",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 80000
         },
         {
           "nom": "Formation et acquisition d'instruments Fond. Fellini pour le cinéma",
@@ -3082,10 +3086,14 @@
           "montant_CHF": 410000
         },
         {
-          "nom": "Programme de formation 2021 OSR - Orchestre de la Suisse Romande",
-          "ville": "Genève",
+          "nom": "OSR — Orchestre de la Suisse Romande",
+          "montant_CHF": 400000,
           "canton": "GE",
-          "montant_CHF": 400000
+          "ville": "Genève",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Programme de formation 2021 OSR - Orchestre de la Suisse Romande",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Opéra décentralisé",
@@ -3114,10 +3122,14 @@
           "montant_CHF": 410000
         },
         {
-          "nom": "Programme de formation 2021 OSR - Orchestre de la Suisse Romande",
-          "ville": "Genève",
+          "nom": "OSR — Orchestre de la Suisse Romande",
+          "montant_CHF": 400000,
           "canton": "GE",
-          "montant_CHF": 400000
+          "ville": "Genève",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Programme de formation 2021 OSR - Orchestre de la Suisse Romande",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Opéra décentralisé",
@@ -3571,15 +3583,23 @@
       "samples": [
         {
           "nom": "Fond. Pierre Gianadda",
-          "ville": "Martigny",
+          "montant_CHF": 625000,
           "canton": "VS",
-          "montant_CHF": 625000
+          "ville": "Martigny",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. Pierre Gianadda",
+          "_consolidated": true,
+          "_count": 1
         },
         {
-          "nom": "Fond. Plateforme 10",
-          "ville": "Lausanne",
+          "nom": "Plateforme 10",
+          "montant_CHF": 600000,
           "canton": "VD",
-          "montant_CHF": 600000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. Plateforme 10",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Fond. Pro Urba",
@@ -3603,15 +3623,23 @@
       "all_entries": [
         {
           "nom": "Fond. Pierre Gianadda",
-          "ville": "Martigny",
+          "montant_CHF": 625000,
           "canton": "VS",
-          "montant_CHF": 625000
+          "ville": "Martigny",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. Pierre Gianadda",
+          "_consolidated": true,
+          "_count": 1
         },
         {
-          "nom": "Fond. Plateforme 10",
-          "ville": "Lausanne",
+          "nom": "Plateforme 10",
+          "montant_CHF": 600000,
           "canton": "VD",
-          "montant_CHF": 600000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. Plateforme 10",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Fond. Pro Urba",
@@ -3639,9 +3667,13 @@
         },
         {
           "nom": "Fond. de l'Hermitage",
-          "ville": "Lausanne",
+          "montant_CHF": 100000,
           "canton": "VD",
-          "montant_CHF": 100000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. de l'Hermitage",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Fond. des Amis du Musée Jenisch Vevey",
@@ -3836,10 +3868,14 @@
           "montant_CHF": 130000
         },
         {
-          "nom": "Montreux Jazz Artists Foundation",
-          "ville": "Montreux",
+          "nom": "Montreux Jazz Festival",
+          "montant_CHF": 120000,
           "canton": "VD",
-          "montant_CHF": 120000
+          "ville": "Montreux",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Montreux Jazz Artists Foundation",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Assoc. du Cully Jazz Festival",
@@ -4387,9 +4423,13 @@
       "samples": [
         {
           "nom": "CORODIS",
+          "montant_CHF": 774500,
+          "canton": "VD+VS",
           "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 700000
+          "secteur": "",
+          "description": "Consolidation de 3 attributions : Fonds de soutien à la diffusion de spectacles CORODIS-LOTERIE 2021 Fond. Ateliers d’artiste, CORODIS, Exercice 2021 (part fribourgeoise) Corodis",
+          "_consolidated": true,
+          "_count": 3
         },
         {
           "nom": "Assoc. DreamAgo Swiss",
@@ -4408,20 +4448,18 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 44000
-        },
-        {
-          "nom": "Fonds de soutien à la diffusion de spectacles CORODIS-LOTERIE 2021 Fond. Ateliers d’artiste",
-          "ville": "St-Maurice",
-          "canton": "VS",
-          "montant_CHF": 40000
         }
       ],
       "all_entries": [
         {
           "nom": "CORODIS",
+          "montant_CHF": 774500,
+          "canton": "VD+VS",
           "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 700000
+          "secteur": "",
+          "description": "Consolidation de 3 attributions : Fonds de soutien à la diffusion de spectacles CORODIS-LOTERIE 2021 Fond. Ateliers d’artiste, CORODIS, Exercice 2021 (part fribourgeoise) Corodis",
+          "_consolidated": true,
+          "_count": 3
         },
         {
           "nom": "Assoc. DreamAgo Swiss",
@@ -4440,18 +4478,6 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 44000
-        },
-        {
-          "nom": "Fonds de soutien à la diffusion de spectacles CORODIS-LOTERIE 2021 Fond. Ateliers d’artiste",
-          "ville": "St-Maurice",
-          "canton": "VS",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "Exercice 2021 (part fribourgeoise) Corodis",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 34500
         }
       ]
     },
