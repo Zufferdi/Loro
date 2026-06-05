@@ -36,7 +36,7 @@
   }
 
   function doRender(container, data) {
-    const items = data.trajectories || [];
+    const items = data.beneficiaires || data.trajectories || [];
     const meta = data._meta || {};
     container.innerHTML = '';
 

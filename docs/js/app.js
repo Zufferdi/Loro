@@ -129,7 +129,7 @@ function initTimelineScrolly() {
     .text('Bénéfice annuel · millions de CHF · 1938—2025');
 
   // === Ligne complète, toujours visible (la trajectoire générale est lisible d'emblée) ===
-  const line = d3.line().curve(d3.curveMonotoneX)
+  const line = d3.line().curve(d3.curveCatmullRom.alpha(0.5))
     .x(d => x(d.annee)).y(d => y(d.benefice_M));
 
   // ligne d'arrière-plan : la TRAJECTOIRE COMPLÈTE, bien visible
@@ -2775,17 +2775,17 @@ function initJuraHistoire() {
   }
 
   // Populations (estimation OFS, pour le calcul CHF/habitant)
-  // Jura : 64k en 1979, 71k en 2000, 74k en 2025
-  // Neuchâtel : 158k en 1979, 169k en 2000, 178k en 2025
+  // Jura : 64k en 1979, 71k en 2000, 75k en 2024 (74'840 fin 2024)
+  // Neuchâtel : 158k en 1979, 169k en 2000, 180k en 2025 (180'302 fin 2025)
   function popJU(an) {
     if (an <= 1979) return 64000;
-    if (an >= 2025) return 74500;
-    return Math.round(64000 + (74500 - 64000) * (an - 1979) / (2025 - 1979));
+    if (an >= 2025) return 75000;
+    return Math.round(64000 + (75000 - 64000) * (an - 1979) / (2025 - 1979));
   }
   function popNE(an) {
     if (an <= 1979) return 158000;
-    if (an >= 2025) return 178000;
-    return Math.round(158000 + (178000 - 158000) * (an - 1979) / (2025 - 1979));
+    if (an >= 2025) return 180000;
+    return Math.round(158000 + (180000 - 158000) * (an - 1979) / (2025 - 1979));
   }
   // Modes : 'absolu' (CHF) ou 'proportionnel' (CHF/habitant)
   let curMode = 'absolu';
@@ -3838,10 +3838,47 @@ function initShareSuisse() {
 function initEcosystemeJeux() {
   const container = d3.select('#viz-ecosysteme-jeux');
   if (container.empty() || !DATA.swisslos) return;
-  const eco = DATA.swisslos.ecosysteme_jeux_2024;
-  if (!eco) return;
+  const eco2024 = DATA.swisslos.ecosysteme_jeux_2024;
+  const eco2025 = DATA.swisslos.ecosysteme_jeux_2025;
+  if (!eco2024) return;
   container.html('');
+  let curEco = eco2025 || eco2024;
+  let curYear = (eco2025 ? 2025 : 2024);
 
+  // Toggle 2024/2025
+  if (eco2024 && eco2025) {
+    const toggle = container.append('div')
+      .style('display', 'flex').style('justify-content', 'flex-end')
+      .style('gap', '8px').style('margin-bottom', '12px');
+    [['2024', eco2024], ['2025', eco2025]].forEach(([year, data]) => {
+      toggle.append('button')
+        .text(year)
+        .attr('data-year', year)
+        .style('background', String(year) === String(curYear) ? 'var(--ink)' : 'transparent')
+        .style('border', '1px solid ' + (String(year) === String(curYear) ? 'var(--ink)' : 'var(--rule)'))
+        .style('color', String(year) === String(curYear) ? 'white' : 'var(--ink-mute)')
+        .style('padding', '5px 14px').style('border-radius', '14px')
+        .style('cursor', 'pointer').style('font-size', '12.5px').style('font-family', 'inherit')
+        .on('click', function() {
+          curYear = this.dataset.year;
+          curEco = (curYear === '2024') ? eco2024 : eco2025;
+          toggle.selectAll('button').each(function() {
+            const y2 = this.dataset.year;
+            d3.select(this)
+              .style('background', String(y2) === String(curYear) ? 'var(--ink)' : 'transparent')
+              .style('border', '1px solid ' + (String(y2) === String(curYear) ? 'var(--ink)' : 'var(--rule)'))
+              .style('color', String(y2) === String(curYear) ? 'white' : 'var(--ink-mute)');
+          });
+          svgWrap.html('');
+          drawEcoChart();
+        });
+    });
+  }
+
+  const svgWrap = container.append('div');
+
+  function drawEcoChart() {
+  const eco = curEco;
   const acteurs = eco.acteurs || [];
   const totalReversed = eco.total_reverse_M || 1;
 
@@ -3940,7 +3977,9 @@ function initEcosystemeJeux() {
   // Note de bas
   svg.append('text').attr('x', margin.left).attr('y', H - 12)
     .attr('font-size', 11).attr('font-style', 'italic').attr('fill', inkMuteColor())
-    .text(`Utilité publique : ${eco.part_utilite_publique_pct} % · AVS : ${eco.part_avs_pct} %`);
+    .text(`Utilité publique : ${eco.part_utilite_publique_pct || ((eco.acteurs.filter(a=>a.destination.includes('Utilité')).reduce((s,a)=>s+a.benefice_M,0)/eco.total_reverse_M*100).toFixed(0))} % · AVS : ${eco.part_avs_pct || ((eco.acteurs.filter(a=>a.destination.includes('AVS')).reduce((s,a)=>s+a.benefice_M,0)/eco.total_reverse_M*100).toFixed(0))} %`);
+  }  // fin drawEcoChart
+  drawEcoChart();
 }
 
 function initLoroVsSwisslos() {
@@ -4619,8 +4658,41 @@ function initBrbMulticantons() {
   const entries = DATA.brb2025.entries;
 
   // Normalisation du nom — alignée sur le pattern clean_brb / explorer
+  // + aliases explicites pour fusion (TDR, Cinéforom, FIFF, OSR, Verbier, etc.)
   function normName(name) {
     if (!name) return '';
+    // === ALIASES — priorité haute ===
+    // (testé contre nom ORIGINAL avant normalisation)
+    const aliases = [
+      { re: /\bFond\.?\s+(?:du\s+)?Tour\s+de\s+Romandie(?!\s+Féminin)|^Tour\s+de\s+Romandie(?!\s+Féminin)|\bArrivée\s+du\s+Tour\s+de\s+Romandie\b/i, key: 'tour de romandie' },
+      { re: /\bTour\s+de\s+Romandie\s+Féminin\b/i, key: 'tour de romandie feminin' },
+      { re: /\bCinéforom\b|\bFond\.\s+romande\s+pour\s+le\s+cinéma\b/i, key: 'cineforom' },
+      { re: /\bFIFF\b|^Festival\s+International\s+du\s+film\s+de\s+Fribourg\b/i, key: 'fiff' },
+      { re: /\bVerbier\s+Festival\b/i, key: 'verbier festival' },
+      { re: /\bOrchestre\s+de\s+la\s+Suisse\s+Romande\b|\bOSR\b/i, key: 'osr' },
+      { re: /^Tertianum\s+/i, key: 'tertianum' },
+      { re: /\bThéâtre\s+du\s+Jura\b/i, key: 'theatre du jura' },
+      { re: /\bThéâtre\s+du\s+Jorat\b/i, key: 'theatre du jorat' },
+      { re: /\b(?:Fond\.\s+(?:Pierre\s+)?)?Gianadda\b/i, key: 'gianadda' },
+      { re: /\bPaléo\b/i, key: 'paleo' },
+      { re: /\bMontreux\s+Jazz\b|\bFestival\s+(?:de\s+Jazz\s+)?(?:de\s+)?Montreux\b/i, key: 'montreux jazz' },
+      { re: /\bNIFFF\b/i, key: 'nifff' },
+      { re: /\bBelluard\b/i, key: 'belluard' },
+      { re: /\bLa\s+Bâtie\b|\bBâtie[-\s]+Festival\b/i, key: 'la batie' },
+      { re: /\bCORODIS\b/i, key: 'corodis' },
+      { re: /\bFAJE\b|\bFond\.\s+pour\s+l['\u2019]?accueil\s+de\s+jour\s+des\s+enfants\b/i, key: 'faje' },
+      { re: /\bLanterne\s+[Mm]agique\b/i, key: 'lanterne magique' },
+      { re: /\b(?:Fond\.\s+de\s+l['\u2019]?)?Hermitage\b/i, key: 'hermitage' },
+      { re: /\bPlateforme\s+10\b/i, key: 'plateforme 10' },
+      { re: /\bFond\.\s+Partage\b/i, key: 'fond partage' },
+      { re: /\bVaud\s+Promotion\b/i, key: 'vaud promotion' },
+      { re: /\bSport-?Toto\b/i, key: 'sport toto' },
+      { re: /\b(?:Fond\.\s+de\s+l['\u2019]?)?Aide\s+Sportive\b/i, key: 'aide sportive' },
+    ];
+    for (const a of aliases) {
+      if (a.re.test(name)) return a.key;
+    }
+    // === Fallback normalisation ===
     let s = name.toLowerCase();
     s = s.replace(/^(assoc\.|association|fond\.|fondation|fond|sté|société|club|comité|verein|federation|féd\.)\s+/, '');
     s = s.replace(/,\s*[a-zéèôî' -]+$/i, '');
