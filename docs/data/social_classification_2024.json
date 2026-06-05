@@ -5,16 +5,16 @@
     "source": "brb2024_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 366,
-    "total_chf": 26765925,
-    "precise_classified_entries": 89,
-    "precise_classified_chf": 18811350,
-    "pct_chf_precisely_classified": 70.3,
+    "total_entries": 395,
+    "total_chf": 28294069,
+    "precise_classified_entries": 116,
+    "precise_classified_chf": 20247494,
+    "pct_chf_precisely_classified": 71.6,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 366,
-    "total_chf_classified": 26765925,
-    "catchall_chf": 7954575,
-    "cross_year_recovered": 67
+    "total_entries_classified": 395,
+    "total_chf_classified": 28294069,
+    "catchall_chf": 8046575,
+    "cross_year_recovered": 76
   },
   "categories": [
     {
@@ -277,9 +277,9 @@
     },
     {
       "name": "Soutien général à l'action sociale",
-      "count": 277,
-      "total_chf": 7954575,
-      "mean_chf": 28716,
+      "count": 279,
+      "total_chf": 8046575,
+      "mean_chf": 28840,
       "cantons": {
         "VD": {
           "count": 68,
@@ -306,8 +306,8 @@
           "total_chf": 424300
         },
         "VS": {
-          "count": 25,
-          "total_chf": 459650
+          "count": 27,
+          "total_chf": 551650
         }
       },
       "samples": [
@@ -554,6 +554,12 @@
           "montant_CHF": 70000
         },
         {
+          "nom": "Home Les Tilleuls",
+          "ville": "Monthey",
+          "canton": "VS",
+          "montant_CHF": 64000
+        },
+        {
           "nom": "Assoc. lausannoise pour les soins et le maintien à domicile (ALSMAD)",
           "ville": "Lausanne",
           "canton": "VD",
@@ -570,12 +576,6 @@
           "ville": "Morges",
           "canton": "VD",
           "montant_CHF": 60000
-        },
-        {
-          "nom": "Alters- und Pflegeheim Englischgruss",
-          "ville": "Brig-Glis",
-          "canton": "VS",
-          "montant_CHF": 57000
         },
         {
           "nom": "Fond. Hirondelle",
@@ -612,6 +612,12 @@
           "ville": "Cugy",
           "canton": "FR",
           "montant_CHF": 48000
+        },
+        {
+          "nom": "Home Le Glarier",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 47000
         },
         {
           "nom": "Fond. Balcons du Lac",
@@ -678,6 +684,12 @@
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 38200
+        },
+        {
+          "nom": "Fond. Foyer Haut-de-Cry",
+          "ville": "Vétroz",
+          "canton": "VS",
+          "montant_CHF": 38000
         },
         {
           "nom": "CJC-SAS - Centre de la Jeunesse et de la Culture",
@@ -824,6 +836,12 @@
           "montant_CHF": 27000
         },
         {
+          "nom": "Assoc. Lire et Écrire",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 25000
+        },
+        {
           "nom": "La Coccinelle Jardins d'enfants intégratif",
           "ville": "Fribourg",
           "canton": "FR",
@@ -833,12 +851,6 @@
           "nom": "noetic, Fribourg noetic Academy : pour une pratique",
           "ville": "Fribourg",
           "canton": "FR",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Assoc. Lire et Écrire",
-          "ville": "La Chaux-de-Fonds",
-          "canton": "NE",
           "montant_CHF": 25000
         },
         {
@@ -866,6 +878,12 @@
           "montant_CHF": 21000
         },
         {
+          "nom": "Assoc. Asnova",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
           "nom": "Assoc. pour la Maison du Récit",
           "ville": "Lausanne",
           "canton": "VD",
@@ -873,12 +891,6 @@
         },
         {
           "nom": "Assoc. Découvrir, antenne de Lausanne",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Assoc. Asnova",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 20000
@@ -1346,6 +1358,12 @@
           "montant_CHF": 8100
         },
         {
+          "nom": "Assoc. Arty Show",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 8000
+        },
+        {
           "nom": "APH Hengert",
           "ville": "Visperterminen",
           "canton": "VS",
@@ -1366,12 +1384,6 @@
         {
           "nom": "Assoc. Dilwale",
           "ville": "Corcelles",
-          "canton": "NE",
-          "montant_CHF": 8000
-        },
-        {
-          "nom": "Assoc. Arty Show",
-          "ville": "La Chaux-de-Fonds",
           "canton": "NE",
           "montant_CHF": 8000
         },
@@ -1472,6 +1484,12 @@
           "montant_CHF": 5200
         },
         {
+          "nom": "Fond. IdéeSport",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 5000
+        },
+        {
           "nom": "Assoc. Z (Symposium international 2025)",
           "ville": "Vallorbe",
           "canton": "VD",
@@ -1491,12 +1509,6 @@
         },
         {
           "nom": "Assoc. Pouvoir d'Agir",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 5000
-        },
-        {
-          "nom": "Fond. IdéeSport",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 5000
@@ -1530,18 +1542,272 @@
           "ville": "Bonnefontaine",
           "canton": "SR",
           "montant_CHF": 5000
+        }
+      ]
+    },
+    {
+      "name": "Personnes âgées",
+      "count": 35,
+      "total_chf": 2145644,
+      "mean_chf": 61304,
+      "cantons": {
+        "VD": {
+          "count": 7,
+          "total_chf": 287500
+        },
+        "FR": {
+          "count": 1,
+          "total_chf": 600000
+        },
+        "VS": {
+          "count": 18,
+          "total_chf": 1012144
+        },
+        "SR": {
+          "count": 6,
+          "total_chf": 173000
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 15000
+        },
+        "JU": {
+          "count": 2,
+          "total_chf": 58000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. Pro Senectute Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 600000
         },
         {
-          "nom": "Alterswohnung Leukerbad",
-          "ville": "Leukerbad",
+          "nom": "Foyer Pierre-Olivier",
+          "ville": "Chamoson",
           "canton": "VS",
-          "montant_CHF": 5000
+          "montant_CHF": 209144
         },
         {
-          "nom": "Assoc. Je Tène !",
-          "ville": "Marin- Epagnier",
+          "nom": "Tertianum (groupe d'EMS — 4 résidences)",
+          "montant_CHF": 115000,
+          "canton": "VS",
+          "ville": "Saxon",
+          "secteur": "",
+          "description": "Consolidation de 4 attributions : Tertianum Les Marronniers, Tertianum Les Tourelles, Tertianum Les Sources, Tertianum La Venise",
+          "_consolidated": true,
+          "_count": 4
+        },
+        {
+          "nom": "Fond. Pro-Home",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 99000
+        },
+        {
+          "nom": "EMS Le Christ Roi",
+          "ville": "Crans-Montana",
+          "canton": "VS",
+          "montant_CHF": 80000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Pro Senectute Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 600000
+        },
+        {
+          "nom": "Foyer Pierre-Olivier",
+          "ville": "Chamoson",
+          "canton": "VS",
+          "montant_CHF": 209144
+        },
+        {
+          "nom": "Tertianum (groupe d'EMS — 4 résidences)",
+          "montant_CHF": 115000,
+          "canton": "VS",
+          "ville": "Saxon",
+          "secteur": "",
+          "description": "Consolidation de 4 attributions : Tertianum Les Marronniers, Tertianum Les Tourelles, Tertianum Les Sources, Tertianum La Venise",
+          "_consolidated": true,
+          "_count": 4
+        },
+        {
+          "nom": "Fond. Pro-Home",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 99000
+        },
+        {
+          "nom": "EMS Le Christ Roi",
+          "ville": "Crans-Montana",
+          "canton": "VS",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "EMS Riond-Vert",
+          "ville": "Vouvry",
+          "canton": "VS",
+          "montant_CHF": 74000
+        },
+        {
+          "nom": "EMS Clair-Vully",
+          "ville": "Salavaux",
+          "canton": "VD",
+          "montant_CHF": 69000
+        },
+        {
+          "nom": "EMS St-François",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 64000
+        },
+        {
+          "nom": "Seniorenzentrum Naters",
+          "ville": "Naters",
+          "canton": "VS",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Alters- und Pflegeheim Englischgruss",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 57000
+        },
+        {
+          "nom": "Fond. du Home de Zambotte",
+          "ville": "Savièse",
+          "canton": "VS",
+          "montant_CHF": 55000
+        },
+        {
+          "nom": "Regionales Alters-, Wohn- und Pflegeheim St. Theodul",
+          "ville": "Fiesch",
+          "canton": "VS",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "St. Antonius Alters- und Pflegeheim",
+          "ville": "Saas-Grund",
+          "canton": "VS",
+          "montant_CHF": 48000
+        },
+        {
+          "nom": "Fond. Cogest'ems",
+          "ville": "Château-d'Œx",
+          "canton": "VD",
+          "montant_CHF": 46000
+        },
+        {
+          "nom": "Résidence Plantzette",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 43000
+        },
+        {
+          "nom": "Le Carillon - maison de retraite",
+          "ville": "Saint-Léonard",
+          "canton": "SR",
+          "montant_CHF": 41000
+        },
+        {
+          "nom": "EMS Les Vergers",
+          "ville": "Aproz",
+          "canton": "VS",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Home médicalisé Les Charmettes",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Foyer Ma Vallée",
+          "ville": "Basse-Nendaz",
+          "canton": "VS",
+          "montant_CHF": 39000
+        },
+        {
+          "nom": "Résidence Gravelone",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 39000
+        },
+        {
+          "nom": "Sankt Nikolaus, Senioren- und Pflegeheim",
+          "ville": "St. Niklaus",
+          "canton": "VS",
+          "montant_CHF": 39000
+        },
+        {
+          "nom": "Les Planchettes",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 37000
+        },
+        {
+          "nom": "Pro Senectute Vaud",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 29000
+        },
+        {
+          "nom": "Fond. du Foyer les 3 Sapins",
+          "ville": "Troistorrents",
+          "canton": "SR",
+          "montant_CHF": 27000
+        },
+        {
+          "nom": "Pro Senectute Vaud, Lausanne Accompagnement et maintien des seniors en activité, un enjeu",
+          "ville": "Vaud",
+          "canton": "VD",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "EMS La Charmaie",
+          "ville": "Collombey-Muraz",
+          "canton": "SR",
+          "montant_CHF": 23000
+        },
+        {
+          "nom": "Pro Senectute Valais-Wallis",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 22000
+        },
+        {
+          "nom": "Ville de Delémont Concept communal et catalogue",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 21000
+        },
+        {
+          "nom": "Home médicalisé Le Foyer",
+          "ville": "La Sagne",
+          "canton": "SR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Fond. du Relais - EMS le Flon - Résidence La Girarde",
+          "ville": "Epalinges",
+          "canton": "VD",
+          "montant_CHF": 17000
+        },
+        {
+          "nom": "Assoc., Neuchâtel",
+          "ville": "Neuchâtel",
           "canton": "NE",
-          "montant_CHF": 5000
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Rayons de Soleil - Club des Aînés de Renens et environs",
+          "ville": "Renens",
+          "canton": "VD",
+          "montant_CHF": 2500
         }
       ]
     },
@@ -1648,122 +1914,6 @@
           "ville": "Espace",
           "canton": "FR",
           "montant_CHF": 20000
-        }
-      ]
-    },
-    {
-      "name": "Personnes âgées",
-      "count": 9,
-      "total_chf": 792500,
-      "mean_chf": 88055,
-      "cantons": {
-        "VD": {
-          "count": 3,
-          "total_chf": 56500
-        },
-        "FR": {
-          "count": 1,
-          "total_chf": 600000
-        },
-        "SR": {
-          "count": 2,
-          "total_chf": 63000
-        },
-        "NE": {
-          "count": 1,
-          "total_chf": 15000
-        },
-        "JU": {
-          "count": 2,
-          "total_chf": 58000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Fond. Pro Senectute Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 600000
-        },
-        {
-          "nom": "Le Carillon - maison de retraite",
-          "ville": "Saint-Léonard",
-          "canton": "SR",
-          "montant_CHF": 41000
-        },
-        {
-          "nom": "Les Planchettes",
-          "ville": "Porrentruy",
-          "canton": "JU",
-          "montant_CHF": 37000
-        },
-        {
-          "nom": "Pro Senectute Vaud",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 29000
-        },
-        {
-          "nom": "Pro Senectute Vaud, Lausanne Accompagnement et maintien des seniors en activité, un enjeu",
-          "ville": "Vaud",
-          "canton": "VD",
-          "montant_CHF": 25000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Fond. Pro Senectute Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 600000
-        },
-        {
-          "nom": "Le Carillon - maison de retraite",
-          "ville": "Saint-Léonard",
-          "canton": "SR",
-          "montant_CHF": 41000
-        },
-        {
-          "nom": "Les Planchettes",
-          "ville": "Porrentruy",
-          "canton": "JU",
-          "montant_CHF": 37000
-        },
-        {
-          "nom": "Pro Senectute Vaud",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 29000
-        },
-        {
-          "nom": "Pro Senectute Vaud, Lausanne Accompagnement et maintien des seniors en activité, un enjeu",
-          "ville": "Vaud",
-          "canton": "VD",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Pro Senectute Valais-Wallis",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 22000
-        },
-        {
-          "nom": "Ville de Delémont Concept communal et catalogue",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 21000
-        },
-        {
-          "nom": "Assoc., Neuchâtel",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 15000
-        },
-        {
-          "nom": "Rayons de Soleil - Club des Aînés de Renens et environs",
-          "ville": "Renens",
-          "canton": "VD",
-          "montant_CHF": 2500
         }
       ]
     },
@@ -2151,13 +2301,17 @@
     },
     {
       "name": "EMS & personnes âgées",
-      "count": 1,
-      "total_chf": 195000,
-      "mean_chf": 195000,
+      "count": 2,
+      "total_chf": 278000,
+      "mean_chf": 139000,
       "cantons": {
         "VD": {
           "count": 1,
           "total_chf": 195000
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 83000
         }
       },
       "samples": [
@@ -2166,6 +2320,12 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 195000
+        },
+        {
+          "nom": "Fond. La Résidence",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 83000
         }
       ],
       "all_entries": [
@@ -2174,6 +2334,12 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 195000
+        },
+        {
+          "nom": "Fond. La Résidence",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 83000
         }
       ]
     },

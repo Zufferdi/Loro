@@ -5,16 +5,16 @@
     "source": "brb2023_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 311,
-    "total_chf": 27899395,
-    "precise_classified_entries": 116,
-    "precise_classified_chf": 16326732,
-    "pct_chf_precisely_classified": 58.5,
+    "total_entries": 319,
+    "total_chf": 28255395,
+    "precise_classified_entries": 139,
+    "precise_classified_chf": 17311732,
+    "pct_chf_precisely_classified": 61.3,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 311,
-    "total_chf_classified": 27899395,
-    "catchall_chf": 11572663,
-    "cross_year_recovered": 67
+    "total_entries_classified": 319,
+    "total_chf_classified": 28255395,
+    "catchall_chf": 10943663,
+    "cross_year_recovered": 76
   },
   "categories": [
     {
@@ -55,9 +55,13 @@
       "samples": [
         {
           "nom": "Fond. Partage",
-          "ville": "Plan-les-Ouates",
+          "montant_CHF": 2000000,
           "canton": "GE",
-          "montant_CHF": 2000000
+          "ville": "Plan-les-Ouates",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. Partage",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Assoc. Vestiaire social",
@@ -87,9 +91,13 @@
       "all_entries": [
         {
           "nom": "Fond. Partage",
-          "ville": "Plan-les-Ouates",
+          "montant_CHF": 2000000,
           "canton": "GE",
-          "montant_CHF": 2000000
+          "ville": "Plan-les-Ouates",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. Partage",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Assoc. Vestiaire social",
@@ -317,17 +325,17 @@
     },
     {
       "name": "Soutien général à l'action sociale",
-      "count": 194,
-      "total_chf": 9772663,
-      "mean_chf": 50374,
+      "count": 179,
+      "total_chf": 9143663,
+      "mean_chf": 51081,
       "cantons": {
         "VD": {
           "count": 60,
           "total_chf": 3392647
         },
         "SR": {
-          "count": 18,
-          "total_chf": 1416100
+          "count": 17,
+          "total_chf": 1388100
         },
         "FR": {
           "count": 20,
@@ -338,8 +346,8 @@
           "total_chf": 288000
         },
         "VS": {
-          "count": 44,
-          "total_chf": 2502220
+          "count": 30,
+          "total_chf": 1901220
         },
         "NE": {
           "count": 18,
@@ -534,12 +542,6 @@
           "montant_CHF": 90000
         },
         {
-          "nom": "Seniorenzentrum Naters",
-          "ville": "Naters",
-          "canton": "VS",
-          "montant_CHF": 85000
-        },
-        {
           "nom": "Home Les Tilleuls",
           "ville": "Monthey",
           "canton": "VS",
@@ -610,18 +612,6 @@
           "ville": "St-Maurice",
           "canton": "VS",
           "montant_CHF": 66000
-        },
-        {
-          "nom": "Alters- und Pflegeheim Englischgruss",
-          "ville": "Brig-Glis",
-          "canton": "VS",
-          "montant_CHF": 65000
-        },
-        {
-          "nom": "Stiftung Martinsheim",
-          "ville": "Visp",
-          "canton": "VS",
-          "montant_CHF": 65000
         },
         {
           "nom": "Fond. Castel Notre Dame",
@@ -750,18 +740,6 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Foyer Pierre-Olivier",
-          "ville": "Chamoson",
-          "canton": "VS",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "St. Antonius Alters- und Pflegeheim",
-          "ville": "Saas-Grund",
-          "canton": "VS",
-          "montant_CHF": 40000
-        },
-        {
           "nom": "Journée mondiale de la Croix- Rouge et du Croissant-Rouge à Genève",
           "ville": "Genève",
           "canton": "GE",
@@ -778,30 +756,6 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 39000
-        },
-        {
-          "nom": "Regionales Alters-, Wohn- und Pflegeheim St. Theodul",
-          "ville": "Fiesch",
-          "canton": "VS",
-          "montant_CHF": 39000
-        },
-        {
-          "nom": "Tertianum Les Sources",
-          "ville": "Saxon",
-          "canton": "VS",
-          "montant_CHF": 39000
-        },
-        {
-          "nom": "Fond. du Home de Zambotte",
-          "ville": "Savièse",
-          "canton": "VS",
-          "montant_CHF": 38000
-        },
-        {
-          "nom": "Stiftung Santa Rita",
-          "ville": "Ried-Brig",
-          "canton": "VS",
-          "montant_CHF": 38000
         },
         {
           "nom": "Voie F, Espace de formation pour les femmes",
@@ -840,28 +794,10 @@
           "montant_CHF": 34000
         },
         {
-          "nom": "Foyer Ma Vallée",
-          "ville": "Basse-Nendaz",
-          "canton": "VS",
-          "montant_CHF": 34000
-        },
-        {
           "nom": "Fond. Home St-Sylve",
           "ville": "Vex",
           "canton": "VS",
           "montant_CHF": 33000
-        },
-        {
-          "nom": "Sankt Nikolaus, Senioren- und Pflegeheim",
-          "ville": "St. Niklaus",
-          "canton": "VS",
-          "montant_CHF": 33000
-        },
-        {
-          "nom": "Tertianum Les Tourelles",
-          "ville": "Martigny",
-          "canton": "VS",
-          "montant_CHF": 32000
         },
         {
           "nom": "Assoc. des Paysannes Vaudoises APV",
@@ -888,12 +824,6 @@
           "montant_CHF": 30000
         },
         {
-          "nom": "Tertianum Les Marronniers",
-          "ville": "Martigny",
-          "canton": "VS",
-          "montant_CHF": 30000
-        },
-        {
           "nom": "Fond. Les Lilas",
           "ville": "Chézard-St-Martin",
           "canton": "NE",
@@ -915,12 +845,6 @@
           "nom": "Assoc. DuoL",
           "ville": "Lausanne",
           "canton": "VD",
-          "montant_CHF": 28000
-        },
-        {
-          "nom": "Fond. du Foyer les 3 Sapins",
-          "ville": "Troistorrents",
-          "canton": "SR",
           "montant_CHF": 28000
         },
         {
@@ -975,12 +899,6 @@
           "nom": "Médecins Sans Frontières",
           "ville": null,
           "canton": "SR",
-          "montant_CHF": 23000
-        },
-        {
-          "nom": "Tertianum La Venise",
-          "ville": "Monthey",
-          "canton": "VS",
           "montant_CHF": 23000
         },
         {
@@ -1551,25 +1469,25 @@
     },
     {
       "name": "Personnes âgées",
-      "count": 24,
-      "total_chf": 2147977,
-      "mean_chf": 89499,
+      "count": 49,
+      "total_chf": 3214977,
+      "mean_chf": 65611,
       "cantons": {
         "VD": {
-          "count": 9,
-          "total_chf": 705777
+          "count": 10,
+          "total_chf": 728777
         },
         "FR": {
-          "count": 2,
-          "total_chf": 614000
+          "count": 3,
+          "total_chf": 634000
         },
         "VS": {
-          "count": 2,
-          "total_chf": 157000
+          "count": 23,
+          "total_chf": 1119000
         },
         "SR": {
-          "count": 2,
-          "total_chf": 50000
+          "count": 4,
+          "total_chf": 112000
         },
         "JU": {
           "count": 5,
@@ -1644,6 +1562,16 @@
           "montant_CHF": 149680
         },
         {
+          "nom": "Tertianum (groupe d'EMS — 4 résidences)",
+          "montant_CHF": 124000,
+          "canton": "VS",
+          "ville": "Saxon",
+          "secteur": "",
+          "description": "Consolidation de 4 attributions : Tertianum Les Marronniers, Tertianum Les Tourelles, Tertianum Les Sources, Tertianum La Venise",
+          "_consolidated": true,
+          "_count": 4
+        },
+        {
           "nom": "Assoc. Vogay",
           "ville": "Lausanne",
           "canton": "VD",
@@ -1660,6 +1588,42 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 85300
+        },
+        {
+          "nom": "Seniorenzentrum Naters",
+          "ville": "Naters",
+          "canton": "VS",
+          "montant_CHF": 85000
+        },
+        {
+          "nom": "EMS St-François",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 83000
+        },
+        {
+          "nom": "Alters- und Pflegeheim Englischgruss",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "EMS Le Christ Roi",
+          "ville": "Crans- Montana",
+          "canton": "VS",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Stiftung Martinsheim",
+          "ville": "Visp",
+          "canton": "VS",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "EMS Riond-Vert",
+          "ville": "Vouvry",
+          "canton": "VS",
+          "montant_CHF": 61000
         },
         {
           "nom": "Assoc. Genèveroule",
@@ -1686,10 +1650,76 @@
           "montant_CHF": 43820
         },
         {
+          "nom": "Résidence Plantzette",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 43000
+        },
+        {
+          "nom": "EMS Les Vergers",
+          "ville": "Aproz",
+          "canton": "VS",
+          "montant_CHF": 42000
+        },
+        {
+          "nom": "Foyer Pierre-Olivier",
+          "ville": "Chamoson",
+          "canton": "VS",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "St. Antonius Alters- und Pflegeheim",
+          "ville": "Saas-Grund",
+          "canton": "VS",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Regionales Alters-, Wohn- und Pflegeheim St. Theodul",
+          "ville": "Fiesch",
+          "canton": "VS",
+          "montant_CHF": 39000
+        },
+        {
+          "nom": "Résidence Gravelone",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 39000
+        },
+        {
+          "nom": "Fond. du Home de Zambotte",
+          "ville": "Savièse",
+          "canton": "VS",
+          "montant_CHF": 38000
+        },
+        {
+          "nom": "Stiftung Santa Rita",
+          "ville": "Ried-Brig",
+          "canton": "VS",
+          "montant_CHF": 38000
+        },
+        {
           "nom": "Le Carillon - maison de retraite",
           "ville": "Saint-Léonard",
           "canton": "SR",
           "montant_CHF": 37000
+        },
+        {
+          "nom": "EMS La Charmaie",
+          "ville": "Collombey- Muraz",
+          "canton": "SR",
+          "montant_CHF": 34000
+        },
+        {
+          "nom": "Foyer Ma Vallée",
+          "ville": "Basse-Nendaz",
+          "canton": "VS",
+          "montant_CHF": 34000
+        },
+        {
+          "nom": "Sankt Nikolaus, Senioren- und Pflegeheim",
+          "ville": "St. Niklaus",
+          "canton": "VS",
+          "montant_CHF": 33000
         },
         {
           "nom": "Pro Senectute Vaud",
@@ -1704,16 +1734,40 @@
           "montant_CHF": 30000
         },
         {
+          "nom": "EMS Résidence Jean-Paul",
+          "ville": "Riddes",
+          "canton": "VS",
+          "montant_CHF": 28000
+        },
+        {
+          "nom": "Fond. du Foyer les 3 Sapins",
+          "ville": "Troistorrents",
+          "canton": "SR",
+          "montant_CHF": 28000
+        },
+        {
           "nom": "Contact-Seniors",
           "ville": "Carouge",
           "canton": "GE",
           "montant_CHF": 25000
         },
         {
+          "nom": "EMS Cottier Boys",
+          "ville": "Orny",
+          "canton": "VD",
+          "montant_CHF": 23000
+        },
+        {
           "nom": "Pro Senectute Vaud",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 20890
+        },
+        {
+          "nom": "Fond. Jeanne-Milloud, EMS Les Grèves du Lac",
+          "ville": "Gletterens",
+          "canton": "FR",
+          "montant_CHF": 20000
         },
         {
           "nom": "Les Chapiteaux du cœur",
@@ -2324,90 +2378,6 @@
       ]
     },
     {
-      "name": "EMS & personnes âgées",
-      "count": 5,
-      "total_chf": 239000,
-      "mean_chf": 47800,
-      "cantons": {
-        "VS": {
-          "count": 3,
-          "total_chf": 175000
-        },
-        "GE": {
-          "count": 1,
-          "total_chf": 60000
-        },
-        "JU": {
-          "count": 1,
-          "total_chf": 4000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Fond. La Résidence",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 93000
-        },
-        {
-          "nom": "Assoc. Trois Lunes",
-          "ville": "Confignon",
-          "canton": "GE",
-          "montant_CHF": 60000
-        },
-        {
-          "nom": "Résidence Plantzette",
-          "ville": "Sierre",
-          "canton": "VS",
-          "montant_CHF": 43000
-        },
-        {
-          "nom": "Résidence Gravelone",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 39000
-        },
-        {
-          "nom": "Résidence La Courtine",
-          "ville": "Lajoux",
-          "canton": "JU",
-          "montant_CHF": 4000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Fond. La Résidence",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 93000
-        },
-        {
-          "nom": "Assoc. Trois Lunes",
-          "ville": "Confignon",
-          "canton": "GE",
-          "montant_CHF": 60000
-        },
-        {
-          "nom": "Résidence Plantzette",
-          "ville": "Sierre",
-          "canton": "VS",
-          "montant_CHF": 43000
-        },
-        {
-          "nom": "Résidence Gravelone",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 39000
-        },
-        {
-          "nom": "Résidence La Courtine",
-          "ville": "Lajoux",
-          "canton": "JU",
-          "montant_CHF": 4000
-        }
-      ]
-    },
-    {
       "name": "Maladies / Soins spécifiques",
       "count": 5,
       "total_chf": 216500,
@@ -2548,6 +2518,66 @@
           "ville": "Martigny",
           "canton": "VS",
           "montant_CHF": 20000
+        }
+      ]
+    },
+    {
+      "name": "EMS & personnes âgées",
+      "count": 3,
+      "total_chf": 157000,
+      "mean_chf": 52333,
+      "cantons": {
+        "VS": {
+          "count": 1,
+          "total_chf": 93000
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 60000
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 4000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. La Résidence",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 93000
+        },
+        {
+          "nom": "Assoc. Trois Lunes",
+          "ville": "Confignon",
+          "canton": "GE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Résidence La Courtine",
+          "ville": "Lajoux",
+          "canton": "JU",
+          "montant_CHF": 4000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. La Résidence",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 93000
+        },
+        {
+          "nom": "Assoc. Trois Lunes",
+          "ville": "Confignon",
+          "canton": "GE",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Résidence La Courtine",
+          "ville": "Lajoux",
+          "canton": "JU",
+          "montant_CHF": 4000
         }
       ]
     }

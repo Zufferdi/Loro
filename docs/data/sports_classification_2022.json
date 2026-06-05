@@ -5,23 +5,23 @@
     "source": "brb2022_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 930,
-    "total_chf": 19269439,
+    "total_entries": 920,
+    "total_chf": 18883439,
     "precise_classified_entries": 702,
     "precise_classified_chf": 13498197,
-    "pct_chf_precisely_classified": 70.0,
+    "pct_chf_precisely_classified": 71.5,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 930,
-    "total_chf_classified": 19269439,
-    "catchall_chf": 5771242,
+    "total_entries_classified": 920,
+    "total_chf_classified": 18883439,
+    "catchall_chf": 5385242,
     "cross_year_recovered": 656
   },
   "sports": [
     {
       "name": "Soutien général au sport",
-      "count": 228,
-      "total_chf": 5771242,
-      "mean_chf": 25312,
+      "count": 218,
+      "total_chf": 5385242,
+      "mean_chf": 24702,
       "cantons": {
         "VD": {
           "count": 16,
@@ -36,8 +36,8 @@
           "total_chf": 496123
         },
         "VS": {
-          "count": 40,
-          "total_chf": 1042362
+          "count": 30,
+          "total_chf": 656362
         },
         "NE": {
           "count": 12,
@@ -164,12 +164,6 @@
           "montant_CHF": 96000
         },
         {
-          "nom": "Seniorenzentrum Naters",
-          "ville": "Naters",
-          "canton": "VS",
-          "montant_CHF": 87000
-        },
-        {
           "nom": "Gemeindeverwaltung Brig",
           "ville": "Brig",
           "canton": "VS",
@@ -266,40 +260,16 @@
           "montant_CHF": 45000
         },
         {
-          "nom": "Résidence Plantzette",
-          "ville": "Sierre",
-          "canton": "VS",
-          "montant_CHF": 43000
-        },
-        {
-          "nom": "FRIBOURGFRIBOURG Regionales Alters-, Wohn- und Pflegeheim St. Theodul",
-          "ville": "Fiesch",
-          "canton": "VS",
-          "montant_CHF": 41000
-        },
-        {
           "nom": "Handisport Genève",
           "ville": "Les Acacias",
           "canton": "GE",
           "montant_CHF": 40000
         },
         {
-          "nom": "Résidence Gravelone",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 39000
-        },
-        {
           "nom": "Stiftung St. Josef",
           "ville": "Susten",
           "canton": "VS",
           "montant_CHF": 39000
-        },
-        {
-          "nom": "Tertianum Les Sources",
-          "ville": "Saxon",
-          "canton": "VS",
-          "montant_CHF": 37000
         },
         {
           "nom": "Assoc. du Rallye du Valais",
@@ -326,18 +296,6 @@
           "montant_CHF": 33000
         },
         {
-          "nom": "Sankt Nikolaus, Senioren- und Pflegeheim",
-          "ville": "St. Niklaus",
-          "canton": "VS",
-          "montant_CHF": 32000
-        },
-        {
-          "nom": "St. Antonius Alters- und Pflegeheim",
-          "ville": "Saas-Grund",
-          "canton": "VS",
-          "montant_CHF": 32000
-        },
-        {
           "nom": "Verein Minigolf Schwarzsee",
           "ville": null,
           "canton": "SR",
@@ -362,12 +320,6 @@
           "montant_CHF": 30000
         },
         {
-          "nom": "Tertianum Les Marroniers",
-          "ville": "Martigny",
-          "canton": "VS",
-          "montant_CHF": 30000
-        },
-        {
           "nom": "Stiftung TriPLUS",
           "ville": "Guttet-Feschel",
           "canton": "VS",
@@ -378,12 +330,6 @@
           "ville": "Delémont",
           "canton": "JU",
           "montant_CHF": 29350
-        },
-        {
-          "nom": "Tertianum Les Tourelles",
-          "ville": "Martigny",
-          "canton": "VS",
-          "montant_CHF": 29000
         },
         {
           "nom": "Université Populaire Albanaise,",
@@ -516,12 +462,6 @@
           "ville": "Hockey",
           "canton": "FR",
           "montant_CHF": 17740
-        },
-        {
-          "nom": "Tertianum La Venise",
-          "ville": "Monthey",
-          "canton": "VS",
-          "montant_CHF": 16000
         },
         {
           "nom": "Sté d'histoire du Valais romand",
@@ -1284,6 +1224,66 @@
           "ville": "Freiburg",
           "canton": "FR",
           "montant_CHF": 620
+        },
+        {
+          "nom": "Segelfluggruppe Freiburg",
+          "ville": "Freiburg",
+          "canton": "FR",
+          "montant_CHF": 620
+        },
+        {
+          "nom": "Assoc. Fribourgeoise de Badminton",
+          "ville": "Badminton",
+          "canton": "VD",
+          "montant_CHF": 540
+        },
+        {
+          "nom": "Laufteam Oberwallis",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 526
+        },
+        {
+          "nom": "Twirling club Arc-en-ciel",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "UHC Moudon",
+          "ville": "Moudon",
+          "canton": "VD",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Club de Vol libre de la Gruyère",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "FRIBOURGFRIBOURG Minigolf Club Bulle",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "OLC Omström Sense",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Uni Futsal Team Bulle",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Union cycliste fribourgeoise",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 500
         }
       ]
     },

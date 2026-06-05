@@ -5,23 +5,23 @@
     "source": "brb2024_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 1605,
-    "total_chf": 34229570,
+    "total_entries": 1603,
+    "total_chf": 34169570,
     "precise_classified_entries": 1139,
     "precise_classified_chf": 26262541,
-    "pct_chf_precisely_classified": 76.7,
+    "pct_chf_precisely_classified": 76.9,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 1605,
-    "total_chf_classified": 34229570,
-    "catchall_chf": 7967029,
+    "total_entries_classified": 1603,
+    "total_chf_classified": 34169570,
+    "catchall_chf": 7907029,
     "cross_year_recovered": 656
   },
   "sports": [
     {
       "name": "Soutien général au sport",
-      "count": 466,
-      "total_chf": 7967029,
-      "mean_chf": 17096,
+      "count": 464,
+      "total_chf": 7907029,
+      "mean_chf": 17041,
       "cantons": {
         "VD": {
           "count": 89,
@@ -32,8 +32,8 @@
           "total_chf": 548419
         },
         "SR": {
-          "count": 202,
-          "total_chf": 2281879
+          "count": 200,
+          "total_chf": 2221879
         },
         "NE": {
           "count": 42,
@@ -296,12 +296,6 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Home médicalisé Les Charmettes",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 40000
-        },
-        {
           "nom": "Teen Services",
           "ville": "Neuchâtel",
           "canton": "NE",
@@ -515,12 +509,6 @@
           "nom": "Assoc. Jobtrotter",
           "ville": "Neuchâtel",
           "canton": "NE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Home médicalisé Le Foyer",
-          "ville": "La Sagne",
-          "canton": "SR",
           "montant_CHF": 20000
         },
         {
@@ -1281,6 +1269,18 @@
         },
         {
           "nom": "Féd. suisse du franches-montagnes",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "FIBA Foundation",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Coupe Landolt",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 3000

@@ -456,5 +456,59 @@
     "total_reverse_M": 1212.2,
     "part_utilite_publique_pct": 70.5,
     "part_avs_pct": 29.5
+  },
+  "ecosysteme_jeux_2025": {
+    "annee": 2025,
+    "titre": "L'écosystème jeux d'argent suisse 2025",
+    "total_reverse_M": 1170,
+    "acteurs": [
+      {
+        "nom": "Loterie Romande (Loro)",
+        "benefice_M": 252.0,
+        "destination": "Utilité publique (culture, sport, social, environnement, santé, recherche, patrimoine, tourisme, formation)",
+        "perimetre": "6 cantons romands · 2 350 commerces partenaires · 5 000 projets soutenus en 2025",
+        "couleur": "#c8102e",
+        "pbj_M": 429.8
+      },
+      {
+        "nom": "Swisslos",
+        "benefice_M": 570.0,
+        "destination": "Utilité publique (cousine alémanique, 18 cantons + Tessin)",
+        "perimetre": "18 cantons alémaniques + Tessin · ~5x la population romande",
+        "couleur": "#1e88e5",
+        "pbj_M": 1280
+      },
+      {
+        "nom": "Casinos suisses (22)",
+        "benefice_M": 348,
+        "destination": "AVS (assurance vieillesse) + cantons d'implantation",
+        "perimetre": "22 maisons de jeu terrestres + 12 plateformes en ligne agréées (CFMJ)",
+        "couleur": "#5e35b1",
+        "pbj_M": 920
+      }
+    ],
+    "sources": [
+      "Loro RA2025 : 252 M bénéfice, 429,8 M PBJ",
+      "Swisslos GB 2024 (596 M), estimation 2025 ajustée -4 % (effet jackpots)",
+      "CFMJ rapport annuel 2024 et estimations 2025 (PBJ casinos + en ligne)"
+    ],
+    "evolution_vs_2024": {
+      "loro": {
+        "benefice_M": -6.2,
+        "pct": "-2.4%"
+      },
+      "swisslos": {
+        "benefice_M": -26.0,
+        "pct": "-4.4% (est.)"
+      },
+      "casinos": {
+        "benefice_M": -10.0,
+        "pct": "-2.8% (est.)"
+      },
+      "total": {
+        "benefice_M": -42.2,
+        "pct": "-3.5%"
+      }
+    }
   }
 }

@@ -1,342 +1,313 @@
 {
   "_meta": {
-    "description": "Top 30 (2022)",
-    "method": "normalized",
-    "top30_total_chf": 47359457,
-    "top30_pct_of_brb": 26.1
+    "year": "2022",
+    "consolidated_with_aliases": true,
+    "aliases_count": 13
   },
   "beneficiaires": [
     {
-      "nom": "Fond. du Théâtre du Jorat",
-      "ville": "Mézières",
+      "nom": "Théâtre du Jorat",
+      "total_CHF": 4200000,
+      "count": 2,
       "cantons": [
         "VD"
       ],
-      "is_multi_canton": false,
-      "attributions": 2,
-      "total_chf": 4200000,
-      "top_secteur": "Culture"
+      "secteur_principal": "Culture",
+      "is_consolidated": true
     },
     {
       "nom": "Fond. Partage",
-      "ville": "Plan-les-Ouates",
+      "total_CHF": 3800000,
+      "count": 1,
       "cantons": [
         "GE"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 3800000,
-      "top_secteur": "Action sociale et personnes âgées"
+      "secteur_principal": "Action sociale et personnes âgées",
+      "is_consolidated": true
     },
     {
       "nom": "Fond. Martin Bodmer",
-      "ville": "Cologny",
+      "total_CHF": 3600000,
+      "count": 1,
       "cantons": [
         "GE"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 3600000,
-      "top_secteur": "Conservation du patrimoine"
+      "secteur_principal": "Conservation du patrimoine",
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Pôle Musique Sion",
-      "ville": "Sion",
+      "total_CHF": 3500000,
+      "count": 1,
       "cantons": [
         "VS"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 3500000,
-      "top_secteur": "Culture"
+      "secteur_principal": "Culture",
+      "is_consolidated": false
     },
     {
-      "nom": "Assoc. La Chaux-de-Fonds Capitale culturelle suisse",
-      "ville": "La Chaux-de-Fonds",
-      "cantons": [
-        "NE"
-      ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 2500000,
-      "top_secteur": "Culture"
-    },
-    {
-      "nom": "Fond. Foyer-Handicap",
-      "ville": "Carouge",
+      "nom": "Cinéforom — Fond. romande pour le cinéma",
+      "total_CHF": 2750935,
+      "count": 5,
       "cantons": [
         "GE"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 2500000,
-      "top_secteur": "Santé et handicap"
+      "secteur_principal": "Culture",
+      "is_consolidated": true
+    },
+    {
+      "nom": "Assoc. La Chaux-de-Fonds Capitale culturelle suisse",
+      "total_CHF": 2500000,
+      "count": 1,
+      "cantons": [
+        "NE"
+      ],
+      "secteur_principal": "Culture",
+      "is_consolidated": false
+    },
+    {
+      "nom": "Fond. Foyer-Handicap",
+      "total_CHF": 2500000,
+      "count": 1,
+      "cantons": [
+        "GE"
+      ],
+      "secteur_principal": "Santé et handicap",
+      "is_consolidated": false
     },
     {
       "nom": "Fond. Papiliorama",
-      "ville": "Kerzers",
+      "total_CHF": 2000000,
+      "count": 2,
       "cantons": [
         "FR",
         "SR"
       ],
-      "is_multi_canton": true,
-      "attributions": 2,
-      "total_chf": 2000000,
-      "top_secteur": "Environnement"
+      "secteur_principal": "Environnement",
+      "is_consolidated": true
     },
     {
       "nom": "Assoc. le C.A.R.É",
-      "ville": "Genève",
+      "total_CHF": 1965000,
+      "count": 1,
       "cantons": [
         "GE"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 1965000,
-      "top_secteur": "Action sociale et personnes âgées"
-    },
-    {
-      "nom": "Fond. Cinéforom",
-      "ville": "Genève",
-      "cantons": [
-        "GE"
-      ],
-      "is_multi_canton": false,
-      "attributions": 2,
-      "total_chf": 1785735,
-      "top_secteur": "Culture"
+      "secteur_principal": "Action sociale et personnes âgées",
+      "is_consolidated": false
     },
     {
       "nom": "Fond. Opale",
-      "ville": "Lens",
+      "total_CHF": 1625000,
+      "count": 1,
       "cantons": [
         "VS"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 1625000,
-      "top_secteur": "Conservation du patrimoine"
+      "secteur_principal": "Conservation du patrimoine",
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Sainte Famille",
-      "ville": "Epalinges",
+      "total_CHF": 1500000,
+      "count": 1,
       "cantons": [
         "VD"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 1500000,
-      "top_secteur": "Action sociale et personnes âgées"
+      "secteur_principal": "Action sociale et personnes âgées",
+      "is_consolidated": false
     },
     {
-      "nom": "Fond. pour l'accueil de jour des enfants FAJE",
-      "ville": "Lausanne",
+      "nom": "FAJE — Fond. accueil de jour enfants",
+      "total_CHF": 1500000,
+      "count": 1,
       "cantons": [
         "VD"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 1500000,
-      "top_secteur": "Jeunesse et éducation"
+      "secteur_principal": "Jeunesse et éducation",
+      "is_consolidated": true
     },
     {
-      "nom": "Fond. du Tour de Romandie",
-      "ville": null,
+      "nom": "Tour de Romandie",
+      "total_CHF": 1400000,
+      "count": 12,
       "cantons": [
         "SR"
       ],
-      "is_multi_canton": false,
-      "attributions": 12,
-      "total_chf": 1400000,
-      "top_secteur": "Sport"
+      "secteur_principal": "Sport",
+      "is_consolidated": true
     },
     {
       "nom": "Fond. Equilibre et Nuithonie",
-      "ville": "Villars-sur-Glâne",
+      "total_CHF": 1368000,
+      "count": 3,
       "cantons": [
         "FR"
       ],
-      "is_multi_canton": false,
-      "attributions": 3,
-      "total_chf": 1368000,
-      "top_secteur": "Culture"
+      "secteur_principal": "Culture",
+      "is_consolidated": true
     },
     {
-      "nom": "La Tuile",
-      "ville": "Fribourg",
+      "nom": "Assoc. La Tuile",
+      "total_CHF": 1180000,
+      "count": 2,
       "cantons": [
         "FR"
       ],
-      "is_multi_canton": false,
-      "attributions": 2,
-      "total_chf": 1180000,
-      "top_secteur": "Action sociale et personnes âgées"
+      "secteur_principal": "Action sociale et personnes âgées",
+      "is_consolidated": false
     },
     {
-      "nom": "La Parenthèse",
-      "ville": "St-Gingolph",
+      "nom": "Verbier Festival",
+      "total_CHF": 1125000,
+      "count": 2,
+      "cantons": [
+        "VD",
+        "VS"
+      ],
+      "secteur_principal": "Culture",
+      "is_consolidated": true
+    },
+    {
+      "nom": "Assoc. La Parenthèse",
+      "total_CHF": 1010000,
+      "count": 2,
       "cantons": [
         "JU",
         "VS"
       ],
-      "is_multi_canton": true,
-      "attributions": 2,
-      "total_chf": 1010000,
-      "top_secteur": "Santé et handicap"
+      "secteur_principal": "Santé et handicap",
+      "is_consolidated": false
     },
     {
       "nom": "Assoc. Vaud Promotion",
-      "ville": "Lausanne",
+      "total_CHF": 1000000,
+      "count": 1,
       "cantons": [
         "VD"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 1000000,
-      "top_secteur": "Promotion, tourisme et développement"
+      "secteur_principal": "Promotion, tourisme et développement",
+      "is_consolidated": true
     },
     {
       "nom": "Vaud Générations Champions",
-      "ville": "Vaud",
+      "total_CHF": 1000000,
+      "count": 1,
       "cantons": [
         "VD"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 1000000,
-      "top_secteur": "Sport"
+      "secteur_principal": "Sport",
+      "is_consolidated": false
     },
     {
       "nom": "Fond. Immobilière des Unions Chrétiennes de Genève",
-      "ville": "Genève",
+      "total_CHF": 1000000,
+      "count": 1,
       "cantons": [
         "GE"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 1000000,
-      "top_secteur": "Action sociale et personnes âgées"
+      "secteur_principal": "Action sociale et personnes âgées",
+      "is_consolidated": false
     },
     {
       "nom": "Sté des Arts de Genève",
-      "ville": "Genève",
+      "total_CHF": 1000000,
+      "count": 1,
       "cantons": [
         "GE"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 1000000,
-      "top_secteur": "Conservation du patrimoine"
-    },
-    {
-      "nom": "Fond. du Verbier Festival",
-      "ville": "Verbier",
-      "cantons": [
-        "VS"
-      ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 975000,
-      "top_secteur": "Culture"
-    },
-    {
-      "nom": "Fond. romande pour le cinéma - Cinéforom",
-      "ville": "Genève",
-      "cantons": [
-        "GE"
-      ],
-      "is_multi_canton": false,
-      "attributions": 3,
-      "total_chf": 965200,
-      "top_secteur": "Culture"
+      "secteur_principal": "Conservation du patrimoine",
+      "is_consolidated": false
     },
     {
       "nom": "Fond. pour l'Institut de Hautes Études Internationales et du Développement",
-      "ville": "Genève",
+      "total_CHF": 900000,
+      "count": 1,
       "cantons": [
         "GE"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 900000,
-      "top_secteur": "Formation et recherche"
+      "secteur_principal": "Formation et recherche",
+      "is_consolidated": false
     },
     {
       "nom": "Fond. de l'Abbaye de Saint-Maurice",
-      "ville": null,
+      "total_CHF": 812500,
+      "count": 1,
       "cantons": [
         "SR"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 812500,
-      "top_secteur": "Conservation du patrimoine"
+      "secteur_principal": "Conservation du patrimoine",
+      "is_consolidated": false
     },
     {
       "nom": "Fond. pour l'Écrit",
-      "ville": "Le Grand-Saconnex",
+      "total_CHF": 750000,
+      "count": 2,
       "cantons": [
         "GE"
       ],
-      "is_multi_canton": false,
-      "attributions": 3,
-      "total_chf": 810000,
-      "top_secteur": "Culture"
+      "secteur_principal": "Culture",
+      "is_consolidated": true
     },
     {
-      "nom": "Assoc. Cantonale Vaudoise, Football",
-      "ville": "Football",
-      "cantons": [
-        "GE"
-      ],
-      "is_multi_canton": false,
-      "attributions": 14,
-      "total_chf": 718022,
-      "top_secteur": "Sport"
-    },
-    {
-      "nom": "Assoc. CORODIS",
-      "ville": "Lausanne",
+      "nom": "CORODIS",
+      "total_CHF": 734500,
+      "count": 2,
       "cantons": [
         "VD"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 700000,
-      "top_secteur": "Culture"
+      "secteur_principal": "Culture",
+      "is_consolidated": true
     },
     {
-      "nom": "Assoc. La Lanterne Magique,",
-      "ville": null,
+      "nom": "La Lanterne Magique",
+      "total_CHF": 695000,
+      "count": 2,
       "cantons": [
         "SR"
       ],
-      "is_multi_canton": false,
-      "attributions": 2,
-      "total_chf": 695000,
-      "top_secteur": "Jeunesse et éducation"
+      "secteur_principal": "Jeunesse et éducation",
+      "is_consolidated": true
     },
     {
       "nom": "Ligue fribourgeoise contre le cancer",
-      "ville": "Fribourg",
+      "total_CHF": 675000,
+      "count": 1,
       "cantons": [
         "FR"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 675000,
-      "top_secteur": "Santé et handicap"
+      "secteur_principal": "Santé et handicap",
+      "is_consolidated": false
     },
     {
       "nom": "Corporation Ecclésiatique catholique du Canton de Fribourg, Fribourg",
-      "ville": "Fribourg",
+      "total_CHF": 675000,
+      "count": 1,
       "cantons": [
         "FR"
       ],
-      "is_multi_canton": false,
-      "attributions": 1,
-      "total_chf": 675000,
-      "top_secteur": "Conservation du patrimoine"
+      "secteur_principal": "Conservation du patrimoine",
+      "is_consolidated": false
+    },
+    {
+      "nom": "Féd. internationale de motocyclisme",
+      "total_CHF": 666667,
+      "count": 1,
+      "cantons": [
+        "VD"
+      ],
+      "secteur_principal": "Culture",
+      "is_consolidated": false
+    },
+    {
+      "nom": "OSR — Orchestre de la Suisse Romande",
+      "total_CHF": 650000,
+      "count": 3,
+      "cantons": [
+        "GE",
+        "VD"
+      ],
+      "secteur_principal": "Culture",
+      "is_consolidated": true
     }
   ]
 }

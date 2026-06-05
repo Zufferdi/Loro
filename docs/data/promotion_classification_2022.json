@@ -475,6 +475,12 @@
           "montant_CHF": 51100
         },
         {
+          "nom": "Walliser Skiverband - Ski Valais",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 50000
+        },
+        {
           "nom": "Commune de Lutry",
           "ville": "Lutry",
           "canton": "VD",
@@ -502,12 +508,6 @@
           "nom": "Fond. NLZ - Centre national",
           "ville": null,
           "canton": "SR",
-          "montant_CHF": 50000
-        },
-        {
-          "nom": "Walliser Skiverband - Ski Valais",
-          "ville": null,
-          "canton": "VS",
           "montant_CHF": 50000
         },
         {
@@ -937,6 +937,12 @@
           "montant_CHF": 20517
         },
         {
+          "nom": "Visarte-Jura",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 20000
+        },
+        {
           "nom": "Assoc. 3x3 Basket",
           "ville": "Basket",
           "canton": "VD",
@@ -957,12 +963,6 @@
         {
           "nom": "Signe Production",
           "ville": "Claude Stadelmann",
-          "canton": "SR",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Visarte-Jura",
-          "ville": null,
           "canton": "SR",
           "montant_CHF": 20000
         },
@@ -1045,6 +1045,18 @@
           "montant_CHF": 15500
         },
         {
+          "nom": "Golf de Lavaux",
+          "ville": "Golf",
+          "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Genève Natation 1885",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
           "nom": "Assoc. 56e Tir Cantonal Vaudois Payerne 2022",
           "ville": "Payerne",
           "canton": "VD",
@@ -1063,12 +1075,6 @@
           "montant_CHF": 15000
         },
         {
-          "nom": "Golf de Lavaux",
-          "ville": "Golf",
-          "canton": "VD",
-          "montant_CHF": 15000
-        },
-        {
           "nom": "Villars Roule",
           "ville": null,
           "canton": "SR",
@@ -1083,12 +1089,6 @@
         {
           "nom": "Assoc. Coupe Fred Fellay, Thônex -",
           "ville": "Volleyball",
-          "canton": "GE",
-          "montant_CHF": 15000
-        },
-        {
-          "nom": "Genève Natation 1885",
-          "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 15000
         },
@@ -1219,15 +1219,15 @@
           "montant_CHF": 12000
         },
         {
-          "nom": "Montreux Hockey",
-          "ville": "Montreux",
-          "canton": "VD",
-          "montant_CHF": 11600
-        },
-        {
           "nom": "Assoc. Cantonale Vaudoise pour, Natation",
           "ville": "Natation",
           "canton": "VS",
+          "montant_CHF": 11600
+        },
+        {
+          "nom": "Montreux Hockey",
+          "ville": "Montreux",
+          "canton": "VD",
           "montant_CHF": 11600
         },
         {
@@ -1318,9 +1318,13 @@
       "samples": [
         {
           "nom": "Assoc. Vaud Promotion",
-          "ville": "Lausanne",
+          "montant_CHF": 1000000,
           "canton": "VD",
-          "montant_CHF": 1000000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Assoc. Vaud Promotion",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Valais/Wallis Promotion",
@@ -1350,9 +1354,13 @@
       "all_entries": [
         {
           "nom": "Assoc. Vaud Promotion",
-          "ville": "Lausanne",
+          "montant_CHF": 1000000,
           "canton": "VD",
-          "montant_CHF": 1000000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Assoc. Vaud Promotion",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Valais/Wallis Promotion",
@@ -1471,15 +1479,15 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Assoc. du pain de seigle valaisan AOP",
-          "ville": "Châteauneuf-Conthey",
-          "canton": "VS",
-          "montant_CHF": 10000
-        },
-        {
           "nom": "Fond. rurale interjurassienne",
           "ville": "Courtételle",
           "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. du pain de seigle valaisan AOP",
+          "ville": "Châteauneuf-Conthey",
+          "canton": "VS",
           "montant_CHF": 10000
         }
       ]

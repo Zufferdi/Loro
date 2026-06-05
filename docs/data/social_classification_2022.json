@@ -5,16 +5,16 @@
     "source": "brb2022_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 377,
-    "total_chf": 27148179,
-    "precise_classified_entries": 97,
-    "precise_classified_chf": 17092148,
-    "pct_chf_precisely_classified": 63.0,
+    "total_entries": 395,
+    "total_chf": 27901179,
+    "precise_classified_entries": 122,
+    "precise_classified_chf": 18167148,
+    "pct_chf_precisely_classified": 65.1,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 377,
-    "total_chf_classified": 27148179,
-    "catchall_chf": 10056031,
-    "cross_year_recovered": 67
+    "total_entries_classified": 395,
+    "total_chf_classified": 27901179,
+    "catchall_chf": 9734031,
+    "cross_year_recovered": 76
   },
   "categories": [
     {
@@ -51,9 +51,13 @@
       "samples": [
         {
           "nom": "Fond. Partage",
-          "ville": "Plan-les-Ouates",
+          "montant_CHF": 3800000,
           "canton": "GE",
-          "montant_CHF": 3800000
+          "ville": "Plan-les-Ouates",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. Partage",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Assoc. La Tuile",
@@ -83,9 +87,13 @@
       "all_entries": [
         {
           "nom": "Fond. Partage",
-          "ville": "Plan-les-Ouates",
+          "montant_CHF": 3800000,
           "canton": "GE",
-          "montant_CHF": 3800000
+          "ville": "Plan-les-Ouates",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Fond. Partage",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Assoc. La Tuile",
@@ -166,6 +174,12 @@
           "montant_CHF": 170000
         },
         {
+          "nom": "Caritas Suisse",
+          "ville": "Les Acacias",
+          "canton": "GE",
+          "montant_CHF": 100000
+        },
+        {
           "nom": "Caritas Valais-Wallis",
           "ville": "Sion",
           "canton": "VS",
@@ -174,12 +188,6 @@
         {
           "nom": "Collectif d'Associations pour l'urgence sociale",
           "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 100000
-        },
-        {
-          "nom": "Caritas Suisse",
-          "ville": "Les Acacias",
           "canton": "GE",
           "montant_CHF": 100000
         },
@@ -283,25 +291,25 @@
     },
     {
       "name": "Soutien général à l'action sociale",
-      "count": 280,
-      "total_chf": 10056031,
-      "mean_chf": 35914,
+      "count": 273,
+      "total_chf": 9734031,
+      "mean_chf": 35655,
       "cantons": {
         "VD": {
-          "count": 51,
-          "total_chf": 1759200
+          "count": 50,
+          "total_chf": 1692200
         },
         "SR": {
-          "count": 30,
-          "total_chf": 727500
+          "count": 29,
+          "total_chf": 698500
         },
         "FR": {
           "count": 25,
           "total_chf": 848350
         },
         "VS": {
-          "count": 85,
-          "total_chf": 3495081
+          "count": 80,
+          "total_chf": 3269081
         },
         "GE": {
           "count": 68,
@@ -566,12 +574,6 @@
           "montant_CHF": 75000
         },
         {
-          "nom": "Alters- und Pflegeheim Englischgruss",
-          "ville": "Brig-Glis",
-          "canton": "VS",
-          "montant_CHF": 75000
-        },
-        {
           "nom": "Assoc. du Foyer St-Joseph",
           "ville": "Sierre",
           "canton": "VS",
@@ -614,16 +616,16 @@
           "montant_CHF": 70000
         },
         {
-          "nom": "Fond. Eben-Hézer",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 67000
-        },
-        {
           "nom": "Fond. Foyer Haut-de-Cry",
           "ville": "Vétroz",
           "canton": "VS",
           "montant_CHF": 63000
+        },
+        {
+          "nom": "Assoc. Pacifique",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 60000
         },
         {
           "nom": "Assoc. atelier Sphinx",
@@ -640,12 +642,6 @@
         {
           "nom": "Assoc. Dansehabile",
           "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 60000
-        },
-        {
-          "nom": "Assoc. Pacifique",
-          "ville": "Carouge",
           "canton": "GE",
           "montant_CHF": 60000
         },
@@ -722,12 +718,6 @@
           "montant_CHF": 45000
         },
         {
-          "nom": "Fond. Chez Paou",
-          "ville": "Saxon",
-          "canton": "VS",
-          "montant_CHF": 43000
-        },
-        {
           "nom": "Assoc. Les Amis du Village du Livre St-Pierre-de-Clages",
           "ville": "Chamoson",
           "canton": "VS",
@@ -761,12 +751,6 @@
           "nom": "Impuls SeeBezirk",
           "ville": "Murten",
           "canton": "FR",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "Fond. du home de Zambotte",
-          "ville": "Savièse",
-          "canton": "VS",
           "montant_CHF": 40000
         },
         {
@@ -806,12 +790,6 @@
           "montant_CHF": 38000
         },
         {
-          "nom": "Foyer Pierre-Olivier",
-          "ville": "Chamoson",
-          "canton": "VS",
-          "montant_CHF": 38000
-        },
-        {
           "nom": "Assoc. New Patrimoine",
           "ville": "Chermignon",
           "canton": "VS",
@@ -842,6 +820,12 @@
           "montant_CHF": 34500
         },
         {
+          "nom": "Assoc. Danse Transition",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
           "nom": "Fond. Hirondelle",
           "ville": "Lausanne",
           "canton": "VD",
@@ -857,12 +841,6 @@
           "nom": "Ritec",
           "ville": "Düdingen",
           "canton": "FR",
-          "montant_CHF": 30000
-        },
-        {
-          "nom": "Foyer Ma Vallée",
-          "ville": "Basse-Nendaz",
-          "canton": "VS",
           "montant_CHF": 30000
         },
         {
@@ -908,12 +886,6 @@
           "montant_CHF": 30000
         },
         {
-          "nom": "Assoc. Danse Transition",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 30000
-        },
-        {
           "nom": "Assoc. Dis No",
           "ville": "Lausanne",
           "canton": "VD",
@@ -936,12 +908,6 @@
           "ville": "Les Paccots",
           "canton": "FR",
           "montant_CHF": 30000
-        },
-        {
-          "nom": "Fond. du foyer les 3 Sapins",
-          "ville": "Troistorrents",
-          "canton": "SR",
-          "montant_CHF": 29000
         },
         {
           "nom": "Haus der Generationen St. Anna",
@@ -1388,6 +1354,12 @@
           "montant_CHF": 10500
         },
         {
+          "nom": "Assoc. Lire et Ecrire",
+          "ville": "La Chaux-de-Fonds",
+          "canton": "NE",
+          "montant_CHF": 10000
+        },
+        {
           "nom": "Fond. Surgir",
           "ville": "Lausanne",
           "canton": "VD",
@@ -1451,12 +1423,6 @@
           "nom": "Assoc. Le Relais",
           "ville": "Monthey",
           "canton": "VS",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Assoc. Lire et Ecrire",
-          "ville": "La Chaux-de-Fonds",
-          "canton": "NE",
           "montant_CHF": 10000
         },
         {
@@ -1548,6 +1514,48 @@
           "ville": "Finhaut",
           "canton": "SR",
           "montant_CHF": 9000
+        },
+        {
+          "nom": "Assoc. Artisticamente",
+          "ville": "Onex",
+          "canton": "GE",
+          "montant_CHF": 9000
+        },
+        {
+          "nom": "Fond. Pacte",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "La Fondation - Assoc. pour l'activité culturelle et humaine",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Les Concerts du Cœur Vaudois",
+          "ville": "Vucherens",
+          "canton": "VD",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Citoyens en Action pour la Démocratie et le Développement,",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. Le Cairn",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. Chat de Bla",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 8000
         }
       ]
     },
@@ -1804,6 +1812,294 @@
       ]
     },
     {
+      "name": "Personnes âgées",
+      "count": 38,
+      "total_chf": 1649500,
+      "mean_chf": 43407,
+      "cantons": {
+        "VD": {
+          "count": 6,
+          "total_chf": 166500
+        },
+        "FR": {
+          "count": 2,
+          "total_chf": 352000
+        },
+        "VS": {
+          "count": 21,
+          "total_chf": 938000
+        },
+        "SR": {
+          "count": 5,
+          "total_chf": 142500
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 20000
+        },
+        "GE": {
+          "count": 2,
+          "total_chf": 29500
+        },
+        "JU": {
+          "count": 1,
+          "total_chf": 1000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. Pro Senectute Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "Tertianum (groupe d'EMS — 4 résidences)",
+          "montant_CHF": 112000,
+          "canton": "VS",
+          "ville": "Saxon",
+          "secteur": "",
+          "description": "Consolidation de 4 attributions : Tertianum Les Tourelles, Tertianum Les Sources, Tertianum Les Marroniers, Tertianum La Venise",
+          "_consolidated": true,
+          "_count": 4
+        },
+        {
+          "nom": "Seniorenzentrum Naters",
+          "ville": "Naters",
+          "canton": "VS",
+          "montant_CHF": 87000
+        },
+        {
+          "nom": "EMS St-François",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 83000
+        },
+        {
+          "nom": "Alters- und Pflegeheim Englischgruss",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 75000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Pro Senectute Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 350000
+        },
+        {
+          "nom": "Tertianum (groupe d'EMS — 4 résidences)",
+          "montant_CHF": 112000,
+          "canton": "VS",
+          "ville": "Saxon",
+          "secteur": "",
+          "description": "Consolidation de 4 attributions : Tertianum Les Tourelles, Tertianum Les Sources, Tertianum Les Marroniers, Tertianum La Venise",
+          "_consolidated": true,
+          "_count": 4
+        },
+        {
+          "nom": "Seniorenzentrum Naters",
+          "ville": "Naters",
+          "canton": "VS",
+          "montant_CHF": 87000
+        },
+        {
+          "nom": "EMS St-François",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 83000
+        },
+        {
+          "nom": "Alters- und Pflegeheim Englischgruss",
+          "ville": "Brig-Glis",
+          "canton": "VS",
+          "montant_CHF": 75000
+        },
+        {
+          "nom": "Fond. Eben-Hézer",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 67000
+        },
+        {
+          "nom": "Fond. Pro Senectute Valais-Wallis / Pour la Vieillesse",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 63000
+        },
+        {
+          "nom": "EMS Riond-Vert",
+          "ville": "Vouvry",
+          "canton": "VS",
+          "montant_CHF": 58000
+        },
+        {
+          "nom": "Fond. du Relais - EMS le Flon - Résidence La Girarde",
+          "ville": "Epalinges",
+          "canton": "VD",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "EMS Le Christ Roi",
+          "ville": "Crans-Montana",
+          "canton": "VS",
+          "montant_CHF": 49000
+        },
+        {
+          "nom": "EMS Les Vergers",
+          "ville": "Aproz",
+          "canton": "VS",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "Résidence Plantzette",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 43000
+        },
+        {
+          "nom": "Fond. Chez Paou",
+          "ville": "Saxon",
+          "canton": "VS",
+          "montant_CHF": 43000
+        },
+        {
+          "nom": "FRIBOURGFRIBOURG Regionales Alters-, Wohn- und Pflegeheim St. Theodul",
+          "ville": "Fiesch",
+          "canton": "VS",
+          "montant_CHF": 41000
+        },
+        {
+          "nom": "Fond. du home de Zambotte",
+          "ville": "Savièse",
+          "canton": "VS",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Résidence Gravelone",
+          "ville": "Sion",
+          "canton": "VS",
+          "montant_CHF": 39000
+        },
+        {
+          "nom": "Foyer Pierre-Olivier",
+          "ville": "Chamoson",
+          "canton": "VS",
+          "montant_CHF": 38000
+        },
+        {
+          "nom": "Le Carillon - maison de retraite",
+          "ville": "St-Léonard",
+          "canton": "SR",
+          "montant_CHF": 38000
+        },
+        {
+          "nom": "EMS La Charmaie",
+          "ville": "Muraz-Collombey",
+          "canton": "SR",
+          "montant_CHF": 33000
+        },
+        {
+          "nom": "Sankt Nikolaus, Senioren- und Pflegeheim",
+          "ville": "St. Niklaus",
+          "canton": "VS",
+          "montant_CHF": 32000
+        },
+        {
+          "nom": "St. Antonius Alters- und Pflegeheim",
+          "ville": "Saas-Grund",
+          "canton": "VS",
+          "montant_CHF": 32000
+        },
+        {
+          "nom": "Foyer Ma Vallée",
+          "ville": "Basse-Nendaz",
+          "canton": "VS",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Fond. du foyer les 3 Sapins",
+          "ville": "Troistorrents",
+          "canton": "SR",
+          "montant_CHF": 29000
+        },
+        {
+          "nom": "EMS Résidence Jean-Paul",
+          "ville": "Riddes",
+          "canton": "VS",
+          "montant_CHF": 28000
+        },
+        {
+          "nom": "Home médicalisé Les Charmettes,",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "#### Loterie Romande RÉPARTITION DES BÉNÉFICES 2022 Le plaisir des uns fait le bonheur des autres Après paiement des lots, des commissions de vente et des frais généraux, les bénéfices de la Loterie Romande sont intégralement consacrés au soutien d’institutions d’utilité publique actives dans les domaines de l’action sociale, de la culture, du sport, de l’environnement, de l’éducation, de la recherche et du patrimoine. Ces contributions ne peuvent en aucun cas être affectées à des obligations légales de collectivités publiques. Dans toute la Suisse romande, des milliers d’associations bénéficient ainsi, chaque année, des contributions financières de la Loterie Romande. Les montants mentionnés dans ce fascicule concernent les contributions accordées durant l’année civile 2022. Ils ne correspondent toutefois pas au bénéfice remis par la Loterie Romande aux Organes de répartition, ces contributions étant recensées sur la base d’un exercice annuel allant du 1er juillet au 30 juin. D’autre part, ces montants concernent les décisions d’attribution par les Organes cantonaux au cours de l’exercice 2022. Ils n’ont pas de valeur comptable. Dans certains cas, l’attribution est versée sur un exercice comptable ultérieur. Dans d’autres cas, les institutions renoncent en tout ou partie au montant attribué. Les activités et les comptes de chaque Organe de répartition sont soumis à la haute surveillance et au contrôle des six Gouvernements romands. La rubrique « Suisse romande » contient les soutiens intercantonaux qui concernent au moins quatre cantons. Ils sont attribués par la Conférence des Présidents des Organes cantonaux de répartition (CPOR) ou la Conférence des Présidents des Organes de Répartition du sport (CPORS), puis ratifiés par les Organes cantonaux. Depuis sa fondation en 1937, la Loterie Romande a pour mission d’organiser, à titre exclusif, des loteries et des paris dans les six cantons romands (Vaud, Fribourg, Valais, Neuchâtel, Genève, Jura). Sommaire Vaud 2 Fribourg 27 Valais 44 Neuchâtel 55 Genève 66 Jura 84 Suisse romande 94 Fond. Cogest'ems",
+          "ville": "Château-d'Œx",
+          "canton": "VD",
+          "montant_CHF": 21000
+        },
+        {
+          "nom": "Pro Senectute Vaud",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "ANEMPA - Assoc. neuchâteloise des établissements et maisons pour personnes âgées",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Genèveroule",
+          "ville": "Plan-les- Ouates",
+          "canton": "GE",
+          "montant_CHF": 19500
+        },
+        {
+          "nom": "Les Chapiteaux du cœur",
+          "ville": "La Tzoumaz",
+          "canton": "SR",
+          "montant_CHF": 17500
+        },
+        {
+          "nom": "Assoc. Arcodis",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Connaissance 3 - L'Université des Seniors",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 6000
+        },
+        {
+          "nom": "Rayons de Soleil - Club des Aînés de Renens et environs",
+          "ville": "Renens",
+          "canton": "VD",
+          "montant_CHF": 2500
+        },
+        {
+          "nom": "Mouvement des aînés Fribourg",
+          "ville": "Marly",
+          "canton": "FR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Sté de carnaval",
+          "ville": "Le Noirmont",
+          "canton": "JU",
+          "montant_CHF": 1000
+        }
+      ]
+    },
+    {
       "name": "EMS & personnes âgées",
       "count": 8,
       "total_chf": 1101000,
@@ -1906,154 +2202,6 @@
           "ville": "Lajoux",
           "canton": "JU",
           "montant_CHF": 6000
-        }
-      ]
-    },
-    {
-      "name": "Personnes âgées",
-      "count": 13,
-      "total_chf": 574500,
-      "mean_chf": 44192,
-      "cantons": {
-        "VD": {
-          "count": 3,
-          "total_chf": 28500
-        },
-        "FR": {
-          "count": 2,
-          "total_chf": 352000
-        },
-        "VS": {
-          "count": 1,
-          "total_chf": 63000
-        },
-        "SR": {
-          "count": 3,
-          "total_chf": 80500
-        },
-        "NE": {
-          "count": 1,
-          "total_chf": 20000
-        },
-        "GE": {
-          "count": 2,
-          "total_chf": 29500
-        },
-        "JU": {
-          "count": 1,
-          "total_chf": 1000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Fond. Pro Senectute Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 350000
-        },
-        {
-          "nom": "Fond. Pro Senectute Valais-Wallis / Pour la Vieillesse",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 63000
-        },
-        {
-          "nom": "Le Carillon - maison de retraite",
-          "ville": "St-Léonard",
-          "canton": "SR",
-          "montant_CHF": 38000
-        },
-        {
-          "nom": "Home médicalisé Les Charmettes,",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Pro Senectute Vaud",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 20000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Fond. Pro Senectute Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 350000
-        },
-        {
-          "nom": "Fond. Pro Senectute Valais-Wallis / Pour la Vieillesse",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 63000
-        },
-        {
-          "nom": "Le Carillon - maison de retraite",
-          "ville": "St-Léonard",
-          "canton": "SR",
-          "montant_CHF": 38000
-        },
-        {
-          "nom": "Home médicalisé Les Charmettes,",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Pro Senectute Vaud",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "ANEMPA - Assoc. neuchâteloise des établissements et maisons pour personnes âgées",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Assoc. Genèveroule",
-          "ville": "Plan-les- Ouates",
-          "canton": "GE",
-          "montant_CHF": 19500
-        },
-        {
-          "nom": "Les Chapiteaux du cœur",
-          "ville": "La Tzoumaz",
-          "canton": "SR",
-          "montant_CHF": 17500
-        },
-        {
-          "nom": "Assoc. Arcodis",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Connaissance 3 - L'Université des Seniors",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 6000
-        },
-        {
-          "nom": "Rayons de Soleil - Club des Aînés de Renens et environs",
-          "ville": "Renens",
-          "canton": "VD",
-          "montant_CHF": 2500
-        },
-        {
-          "nom": "Mouvement des aînés Fribourg",
-          "ville": "Marly",
-          "canton": "FR",
-          "montant_CHF": 2000
-        },
-        {
-          "nom": "Sté de carnaval",
-          "ville": "Le Noirmont",
-          "canton": "JU",
-          "montant_CHF": 1000
         }
       ]
     },

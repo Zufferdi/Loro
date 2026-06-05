@@ -5,36 +5,36 @@
     "source": "brb2024_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 582,
-    "total_chf": 28659390,
+    "total_entries": 570,
+    "total_chf": 28131390,
     "precise_classified_entries": 61,
     "precise_classified_chf": 15593000,
-    "pct_chf_precisely_classified": 54.4,
+    "pct_chf_precisely_classified": 55.4,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 582,
-    "total_chf_classified": 28659390,
-    "catchall_chf": 13066390,
+    "total_entries_classified": 570,
+    "total_chf_classified": 28131390,
+    "catchall_chf": 12538390,
     "cross_year_recovered": 12,
     "sector": "Santé et handicap",
     "sector_slug": "sante",
-    "total_entries_sector": 582,
-    "total_chf_sector": 28659390,
+    "total_entries_sector": 570,
+    "total_chf_sector": 28131390,
     "pct_entries_classified": 100.0
   },
   "categories": [
     {
       "name": "Soutien général à la santé / handicap",
-      "count": 521,
-      "total_chf": 13066390,
-      "mean_chf": 25079,
+      "count": 509,
+      "total_chf": 12538390,
+      "mean_chf": 24633,
       "cantons": {
-        "VD": {
-          "count": 263,
-          "total_chf": 7857600
-        },
         "SR": {
-          "count": 57,
-          "total_chf": 758850
+          "count": 56,
+          "total_chf": 735850
+        },
+        "VD": {
+          "count": 260,
+          "total_chf": 7725600
         },
         "JU": {
           "count": 7,
@@ -53,8 +53,8 @@
           "total_chf": 854600
         },
         "VS": {
-          "count": 40,
-          "total_chf": 842650
+          "count": 32,
+          "total_chf": 469650
         }
       },
       "samples": [
@@ -83,10 +83,14 @@
           "montant_CHF": 130000
         },
         {
-          "nom": "Montreux Jazz Artists Foundation",
-          "ville": "Montreux",
+          "nom": "Montreux Jazz Festival",
+          "montant_CHF": 130000,
           "canton": "VD",
-          "montant_CHF": 130000
+          "ville": "Montreux",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Montreux Jazz Artists Foundation",
+          "_consolidated": true,
+          "_count": 1
         }
       ],
       "all_entries": [
@@ -115,10 +119,14 @@
           "montant_CHF": 130000
         },
         {
-          "nom": "Montreux Jazz Artists Foundation",
-          "ville": "Montreux",
+          "nom": "Montreux Jazz Festival",
+          "montant_CHF": 130000,
           "canton": "VD",
-          "montant_CHF": 130000
+          "ville": "Montreux",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Montreux Jazz Artists Foundation",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Estivale Open Air",
@@ -355,12 +363,6 @@
           "montant_CHF": 80000
         },
         {
-          "nom": "EMS Le Christ Roi",
-          "ville": "Crans-Montana",
-          "canton": "VS",
-          "montant_CHF": 80000
-        },
-        {
           "nom": "Compagnie Marjolaine Minot",
           "ville": "Fribourg",
           "canton": "FR",
@@ -371,12 +373,6 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 75000
-        },
-        {
-          "nom": "EMS Riond-Vert",
-          "ville": "Vouvry",
-          "canton": "VS",
-          "montant_CHF": 74000
         },
         {
           "nom": "Assoc. Cadra - Théâtre Waouw",
@@ -433,12 +429,6 @@
           "montant_CHF": 70000
         },
         {
-          "nom": "EMS Clair-Vully",
-          "ville": "Salavaux",
-          "canton": "VD",
-          "montant_CHF": 69000
-        },
-        {
           "nom": "Compagnie AGP, Fribourg Les Prodigieuses Histoires",
           "ville": "Fribourg",
           "canton": "FR",
@@ -451,26 +441,20 @@
           "montant_CHF": 65000
         },
         {
-          "nom": "EMS St-François",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 64000
-        },
-        {
           "nom": "Assoc. GAME Salle Amalgame",
           "ville": "Yverdon-les-Bains",
           "canton": "VD",
           "montant_CHF": 62000
         },
         {
-          "nom": "Assoc. Eustache",
-          "ville": "Lausanne",
+          "nom": "Assoc. GAME Salle Amalgame",
+          "ville": "Yverdon-les-Bains",
           "canton": "VD",
           "montant_CHF": 60000
         },
         {
-          "nom": "Assoc. GAME Salle Amalgame",
-          "ville": "Yverdon-les-Bains",
+          "nom": "Assoc. Eustache",
+          "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 60000
         },
@@ -661,12 +645,6 @@
           "montant_CHF": 50000
         },
         {
-          "nom": "Fond. Cogest'ems",
-          "ville": "Château-d'Œx",
-          "canton": "VD",
-          "montant_CHF": 46000
-        },
-        {
           "nom": "Assoc. des concerts de Montbenon (ACM)",
           "ville": "Lausanne",
           "canton": "VD",
@@ -713,6 +691,12 @@
           "ville": "Bussigny",
           "canton": "FR",
           "montant_CHF": 44000
+        },
+        {
+          "nom": "Fond. Françoise Siegfried Meier - La Becque",
+          "ville": "La Tour-de-Peilz",
+          "canton": "VD",
+          "montant_CHF": 40000
         },
         {
           "nom": "Assoc. Autrement-Aujourd'hui",
@@ -769,12 +753,6 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Fond. Françoise Siegfried Meier - La Becque",
-          "ville": "La Tour-de-Peilz",
-          "canton": "VD",
-          "montant_CHF": 40000
-        },
-        {
           "nom": "K7 productions",
           "ville": "Lausanne",
           "canton": "VD",
@@ -784,12 +762,6 @@
           "nom": "Assoc. du Bicubic",
           "ville": "Romont",
           "canton": "FR",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "EMS Les Vergers",
-          "ville": "Aproz",
-          "canton": "VS",
           "montant_CHF": 40000
         },
         {
@@ -829,12 +801,6 @@
           "montant_CHF": 35000
         },
         {
-          "nom": "Tertianum Les Sources",
-          "ville": "Saxon",
-          "canton": "VS",
-          "montant_CHF": 35000
-        },
-        {
           "nom": "Assoc. S5, Genève Équipement multimédia, bureautique, informatique, Genève",
           "ville": "Genève",
           "canton": "GE",
@@ -869,12 +835,6 @@
           "ville": "Nendaz",
           "canton": "VS",
           "montant_CHF": 31500
-        },
-        {
-          "nom": "Tertianum Les Marronniers",
-          "ville": "Martigny",
-          "canton": "VS",
-          "montant_CHF": 31000
         },
         {
           "nom": "Assoc. V&D",
@@ -991,12 +951,6 @@
           "montant_CHF": 30000
         },
         {
-          "nom": "Tertianum Les Tourelles",
-          "ville": "Martigny",
-          "canton": "VS",
-          "montant_CHF": 29000
-        },
-        {
           "nom": "Compagnie des Arts du Récit Professionnels En Sarine",
           "ville": null,
           "canton": "SR",
@@ -1109,12 +1063,6 @@
           "ville": "Yverdon-les-Bains",
           "canton": "VD",
           "montant_CHF": 25000
-        },
-        {
-          "nom": "EMS La Charmaie",
-          "ville": "Collombey-Muraz",
-          "canton": "SR",
-          "montant_CHF": 23000
         },
         {
           "nom": "Stiftung St. Josef",
@@ -1289,6 +1237,66 @@
           "ville": "Oberschrot",
           "canton": "SR",
           "montant_CHF": 20000
+        },
+        {
+          "nom": "Düdingen Tourismus",
+          "ville": "Düdingen",
+          "canton": "FR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Cie Après ça je ne parle plus",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Le Relais de Genève Montagne Le Relais De Genève Montagne -",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. l'Écrin des mômes, Genève Reprends Tes Rênes -",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Assoc. Santescalade, Genève Entrainements 6-15 ans -",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Be You Network",
+          "ville": "Les Acacias",
+          "canton": "GE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Fond. Maison d'accueil Sainte-Catherine",
+          "ville": "Lucelle",
+          "canton": "SR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Championnat valaisan des solistes d'instruments de cuivre",
+          "ville": "Grône",
+          "canton": "VS",
+          "montant_CHF": 18000
+        },
+        {
+          "nom": "Fond. Connectivia",
+          "ville": "Leytron",
+          "canton": "VS",
+          "montant_CHF": 18000
+        },
+        {
+          "nom": "Assoc. So Close, Genève Audiodescriptions Théâtres",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 17500
         }
       ]
     },

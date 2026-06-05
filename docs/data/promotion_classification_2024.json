@@ -709,6 +709,12 @@
           "montant_CHF": 4200
         },
         {
+          "nom": "Genève Natation 1885",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 4000
+        },
+        {
           "nom": "Assoc. des Archers Genevois (ADAGE)",
           "ville": null,
           "canton": "GE",
@@ -717,12 +723,6 @@
         {
           "nom": "Féd. Genevoise Échecs (FGE)",
           "ville": "Genève e",
-          "canton": "GE",
-          "montant_CHF": 4000
-        },
-        {
-          "nom": "Genève Natation 1885",
-          "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 4000
         },
@@ -763,14 +763,14 @@
           "montant_CHF": 3600
         },
         {
-          "nom": "Av i r on Sté Nautique de Genève",
-          "ville": "Genève",
+          "nom": "Assoc. Cantonale Genevoise",
+          "ville": null,
           "canton": "GE",
           "montant_CHF": 3300
         },
         {
-          "nom": "Assoc. Cantonale Genevoise",
-          "ville": null,
+          "nom": "Av i r on Sté Nautique de Genève",
+          "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 3300
         },
@@ -955,6 +955,12 @@
           "montant_CHF": 1075
         },
         {
+          "nom": "Carouge Natation",
+          "ville": "Carouge - Waterpolo",
+          "canton": "SR",
+          "montant_CHF": 1000
+        },
+        {
           "nom": "Les Amis des Paccots",
           "ville": null,
           "canton": "SR",
@@ -975,12 +981,6 @@
         {
           "nom": "Ocho Vision, Perly-Certoux - Course d'orientation",
           "ville": null,
-          "canton": "SR",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Carouge Natation",
-          "ville": "Carouge - Waterpolo",
           "canton": "SR",
           "montant_CHF": 1000
         },
@@ -1060,9 +1060,13 @@
       "samples": [
         {
           "nom": "Assoc. Vaud Promotion",
-          "ville": "Lausanne",
+          "montant_CHF": 1000000,
           "canton": "VD",
-          "montant_CHF": 1000000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Assoc. Vaud Promotion",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Valais/Wallis Promotion",
@@ -1092,9 +1096,13 @@
       "all_entries": [
         {
           "nom": "Assoc. Vaud Promotion",
-          "ville": "Lausanne",
+          "montant_CHF": 1000000,
           "canton": "VD",
-          "montant_CHF": 1000000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Assoc. Vaud Promotion",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Valais/Wallis Promotion",

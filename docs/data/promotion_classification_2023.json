@@ -823,6 +823,18 @@
           "montant_CHF": 1010
         },
         {
+          "nom": "Club équestre de Chevenez",
+          "ville": "Chevenez",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Club équestre de Chevenez",
+          "ville": "Chevenez",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
           "nom": "Aéromodèle Club Ajoie",
           "ville": null,
           "canton": "SR",
@@ -832,18 +844,6 @@
           "nom": "Auto Moto Club Ederswiler",
           "ville": null,
           "canton": "SR",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Club équestre de Chevenez",
-          "ville": "Chevenez",
-          "canton": "JU",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Club équestre de Chevenez",
-          "ville": "Chevenez",
-          "canton": "JU",
           "montant_CHF": 1000
         },
         {
@@ -955,6 +955,12 @@
           "montant_CHF": 539
         },
         {
+          "nom": "Vélo Club Franches-Montagnes",
+          "ville": "Saignelégier",
+          "canton": "JU",
+          "montant_CHF": 500
+        },
+        {
           "nom": "Budo-Kan Porrentruy",
           "ville": "Porrentruy",
           "canton": "JU",
@@ -1003,12 +1009,6 @@
           "montant_CHF": 500
         },
         {
-          "nom": "Vélo Club Franches-Montagnes",
-          "ville": "Saignelégier",
-          "canton": "JU",
-          "montant_CHF": 500
-        },
-        {
           "nom": "Ajoie Badminton Club",
           "ville": "Porrentruy",
           "canton": "JU",
@@ -1033,15 +1033,15 @@
           "montant_CHF": 290
         },
         {
-          "nom": "Club de l'Orque",
-          "ville": "Boncourt",
-          "canton": "JU",
-          "montant_CHF": 250
-        },
-        {
           "nom": "Hockey Club Delémont-Vallée",
           "ville": "Hockey",
           "canton": "FR",
+          "montant_CHF": 250
+        },
+        {
+          "nom": "Club de l'Orque",
+          "ville": "Boncourt",
+          "canton": "JU",
           "montant_CHF": 250
         },
         {
@@ -1146,9 +1146,13 @@
       "samples": [
         {
           "nom": "Assoc. Vaud Promotion",
-          "ville": "Lausanne",
+          "montant_CHF": 1000000,
           "canton": "VD",
-          "montant_CHF": 1000000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Assoc. Vaud Promotion",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Valais/Wallis Promotion",
@@ -1178,9 +1182,13 @@
       "all_entries": [
         {
           "nom": "Assoc. Vaud Promotion",
-          "ville": "Lausanne",
+          "montant_CHF": 1000000,
           "canton": "VD",
-          "montant_CHF": 1000000
+          "ville": "Lausanne",
+          "secteur": "",
+          "description": "Consolidation de 1 attributions : Assoc. Vaud Promotion",
+          "_consolidated": true,
+          "_count": 1
         },
         {
           "nom": "Valais/Wallis Promotion",
