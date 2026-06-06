@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Loro · 87 ans en chiffres</title>
-<meta name="description" content="252 millions redistribués en 2025. Comment on en arrive là ? Voyage en six actes dans les données de la Loterie Romande, 1937—2025.">
+<meta name="description" content="252 millions redistribués en 2025. Comment on en arrive là ? Voyage en neuf actes dans les données de la Loterie Romande, 1937—2025.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,19 +17,21 @@
 <a class="skip-link" href="#main-content">Aller directement au contenu</a>
 
 <header class="topnav">
-  <a class="brand" href="#">LORO · 1937—2025</a>
+  <a class="brand" href="#" aria-label="Retour en haut">LORO · 1937—2025</a>
   <div class="progress" id="reading-progress" aria-hidden="true"></div>
   <nav aria-label="Actes du récit">
-    <a href="#acte-1" data-anchor>I</a>
-    <a href="#acte-2" data-anchor>II</a>
-    <a href="#acte-3" data-anchor>III</a>
-    <a href="#acte-4" data-anchor>IV</a>
-    <a href="#acte-5" data-anchor>V</a>
-    <a href="#acte-6" data-anchor>VI</a>
-    <a href="#acte-9" data-anchor>IX</a>
-    <a href="explorer.html" class="always">Explorer →</a>
+    <a href="#acte-1" data-anchor aria-label="Acte I — Histoire">I</a>
+    <a href="#acte-2" data-anchor aria-label="Acte II — Anatomie du franc">II</a>
+    <a href="#acte-3" data-anchor aria-label="Acte III — Géographie">III</a>
+    <a href="#acte-4" data-anchor aria-label="Acte IV — Mix de jeux">IV</a>
+    <a href="#acte-5" data-anchor aria-label="Acte V — Prévention">V</a>
+    <a href="#acte-6" data-anchor aria-label="Acte VI — Bénéficiaires">VI</a>
+    <a href="#acte-9" data-anchor aria-label="Acte IX — Inventaire complet (BRB)">IX</a>
+    <a href="explorer.html" class="always" aria-label="Explorer les données en profondeur">Explorer →</a>
   </nav>
 </header>
+
+<a href="#main-content" class="skip-link" style="position:absolute;top:-40px;left:0;background:#c8102e;color:white;padding:8px;z-index:9999;" onfocus="this.style.top='0'" onblur="this.style.top='-40px'">Aller au contenu principal</a>
 
 <div id="app-error" class="col" role="alert" style="display:none; padding:80px 24px; color:#c8102e; text-align:center;"></div>
 
@@ -45,7 +47,7 @@
 
   <h1>Comment on en arrive là ?</h1>
   <p class="lede">
-    Une exploration en six actes des 87 années de données de la Loterie
+    Une exploration en neuf actes des 87 années de données de la Loterie
     Romande&nbsp;: des deux millions de 1937 aux 252 millions
     d'aujourd'hui — et de tout ce qu'on découvre en regardant les chiffres
     de près.
@@ -95,11 +97,13 @@
           En pleine dépression, cinq cantons romands signent le 26 juillet 1937
           la convention intercantonale fondant la Société de la Loterie de la
           Suisse Romande. Le premier tirage a lieu le 22 décembre 1937 au Théâtre
-          de Sion&nbsp;: une sage-femme valaisanne rafle le gros lot de 250'000 CHF.
+          de Sion devant un public captivé par les six grandes sphères qui tournent
+          sur la scène&nbsp;: une sage-femme valaisanne résidant à Martigny rafle le
+          gros lot de 250'000 CHF.
           Bénéfice cumulé du premier exercice (1937-1938)&nbsp;:
         </p>
         <div class="big-stat">2,1 M CHF</div>
-        <div class="stat-label">·  équivalent à ~50 M actuels après inflation</div>
+        <div class="stat-label">·  équivalent à ~15 M actuels (IPC OFS, base déc 2020)</div>
       </div>
     </div>
     <div class="step" data-step="1991">
@@ -110,9 +114,9 @@
           Après cinquante ans de croissance régulière, la barre des
           50 millions de bénéfice est franchie. Le portefeuille combine
           les tirages traditionnels — <em>Loterie suisse à numéros</em>
-          (lancée en 1969), <em>Tribolo</em> (1985, le premier billet à
+          (lancée en 1970), <em>Tribolo</em> (1985, le premier billet à
           gratter à succès) — et les nouveautés des années 1990&nbsp;:
-          le <em>PMU Romand</em> (1990, partenariat avec le PMU français)
+          le <em>PMU Romand</em> (1991, partenariat avec le PMU français)
           et le <em>Sport-Toto</em>.
         </p>
       </div>
@@ -166,8 +170,9 @@
         <h3>Le seul <em>recul d'activité</em> en vingt ans.</h3>
         <p>
           Les ventes en café-restaurant s'effondrent avec les fermetures
-          (37 % de PBJ perdu sur la Loterie électronique). Le bénéfice net
-          reste pourtant stable à 224,7 M&nbsp;: la Loterie puise dans ses
+          (37 % de PBJ perdu sur le circuit café-restaurant — Loto Express,
+          Loterie électronique, PMU — fermé 14 semaines en 2020 selon le RA Loro).
+          Le bénéfice net reste pourtant stable à 224,7 M&nbsp;: la Loterie puise dans ses
           réserves pour ne pas couper les soutiens. Rebond complet du PBJ
           dès 2022 (435,5 M, dépassant déjà l'avant-Covid).
         </p>
@@ -274,9 +279,10 @@
     </div>
 
     <p class="citation reveal" style="margin-top:32px;">
-      Sur 1,7 milliard de francs misés par les Romands en 2024, environ
-      <span class="highlight">73 % retournent aux joueurs sous forme de gains</span>.
-      Les 27 % restants forment le PBJ, dont 59 % seulement deviennent du bénéfice.
+      Sur ~1,5 milliard de francs misés par les Romands en 2024, environ
+      <span class="highlight">70 % retournent aux joueurs sous forme de gains</span>
+      (≈ 1 milliard CHF selon le RA Loro 2024). Les 30 % restants forment le
+      PBJ (438 M), dont 59 % seulement deviennent du bénéfice (258 M).
     </p>
   </div>
 </section>
@@ -610,23 +616,23 @@
     <div class="stat-row" style="margin-top: 40px;">
       <div class="stat">
         <div class="label">Culture</div>
-        <div class="value">38 %</div>
-        <div class="sub">88,6 M CHF en 2025</div>
+        <div class="value">43 %</div>
+        <div class="sub">88,2 M CHF en 2025</div>
       </div>
       <div class="stat">
         <div class="label">Sport</div>
-        <div class="value">18 %</div>
-        <div class="sub">42 M CHF en 2025</div>
+        <div class="value">21 %</div>
+        <div class="sub">44,2 M CHF en 2025</div>
       </div>
       <div class="stat">
         <div class="label">Action sociale</div>
-        <div class="value">16 %</div>
-        <div class="sub">37 M CHF en 2025</div>
+        <div class="value">12 %</div>
+        <div class="sub">24,2 M CHF en 2025</div>
       </div>
       <div class="stat">
         <div class="label">Tout le reste</div>
-        <div class="value">28 %</div>
-        <div class="sub">6 secteurs se partagent 62 M</div>
+        <div class="value">24 %</div>
+        <div class="sub">6 secteurs se partagent 49,8 M</div>
       </div>
     </div>
 
@@ -660,8 +666,9 @@
     fondations cantonales. La Loterie Romande indique avoir soutenu environ
     <strong>5'000 projets</strong> par an d'utilité publique en 2024 et 2025
     (<a href="https://ra.loro.ch/utilite-publique/portraits-de-beneficiaires.html" target="_blank" rel="noopener">source</a>).
-    Notre échantillon nominatif contient <strong>46 piliers</strong> tirés
-    des rapports annuels Loro&nbsp;: pour la plupart, ils reçoivent un soutien
+    Notre échantillon contient <strong>50 bénéficiaires marquants</strong>, dont
+    <strong>15 piliers structurels</strong> tirés des rapports annuels Loro&nbsp;:
+    pour la plupart, ils reçoivent un soutien
     <em>chaque année depuis treize ans au moins</em>. Cinéforom : 37 M cumulés
     sur 2013-2025. Le Tour de Romandie : 13,4 M. Le Verbier Festival : 11,8 M.
     Vaud Promotion : 13 M en treize subventions annuelles d'1 M. <strong>La
@@ -669,6 +676,19 @@
     derrière la stabilité du bénéfice annuel se cache une stabilité des
     destinataires.</strong>
   </p>
+  <p class="dek" style="font-size: 0.92em; color: var(--ink-mute); margin-top: 16px;">
+    <strong>Note méthodologique sur les fusions de noms.</strong> Les
+    <em>sections cantonales</em> d'une même organisation faîtière restent
+    distinctes dans nos comptages — par exemple <em>Pro Senectute Vaud</em>,
+    <em>Pro Senectute Fribourg</em>, <em>Pro Senectute Valais-Wallis</em>,
+    <em>Pro Senectute Genève</em> et <em>Pro Senectute Arc Jurassien</em> sont
+    cinq entités juridiquement séparées qui ne sont pas additionnées.
+    Idem pour <em>Caritas</em> (Suisse, Vaud, Genève, Fribourg, Valais,
+    Neuchâtel, Jura), <em>Pro Infirmis</em>, <em>OSEO</em>,
+    <em>Croix-Rouge</em> et <em>AVIVO</em>. En revanche, les variantes
+    purement orthographiques (<em>Fond. du Tour de Romandie</em> vs
+    <em>Fond. Tour de Romandie</em> vs <em>Tour de Romandie</em>) sont
+    fusionnées sous le nom canonique.</p>
 </section>
 
 <!-- ============================================================
@@ -753,7 +773,7 @@
     Tous les rapports financiers de la Loro depuis 2013 sont publics —
     13 PDFs de 60 pages, audités par Deloitte puis BDO. Une fois
     compilés, ils racontent une histoire que le bénéfice annuel cache&nbsp;:
-    <strong>2,98 milliards de francs distribués</strong>, des
+    <strong>2,95 milliards de francs distribués</strong>, des
     capitaux propres qui ont grossi de 252 à 319 M malgré la
     redistribution intégrale, et un actif logiciel multiplié par 2,4.
     La Loro 2025 n'est plus la Loro 2013.
@@ -898,14 +918,15 @@
           <a href="https://ra.loro.ch/documents/BRB2024.pdf" target="_blank" rel="noopener">BRB 2024</a> et
           <a href="https://soutien-loro.ch/sites/default/files/2026-05/BRB2025.pdf" target="_blank" rel="noopener">BRB 2025</a>.
           Chaque BRB liste exhaustivement les ~5'000 attributions de l'année par canton et secteur.
-          Total Vaud 2024 : 63,6 M CHF (Fondation aide sociale et culturelle 37,1 M + Fonds sport 10,6 M + Fonds utilité publique CE 16,0 M).
+          Total Vaud 2024 : 86,8 M CHF de bénéfice attribué au canton (source soutien-loro.ch), distribué par la Fondation d'aide sociale et culturelle (FASC), le Fonds du sport vaudois et le Fonds d'utilité publique du Conseil d'État.
         </span>
       </div>
     </div>
 
     <p class="citation reveal" style="margin-top: 24px;">
-      Théâtre du Jorat 2,5 M CHF en 2024, Hermitage 2,5 M CHF en 2025
-      (rénovation), FAJE 1,5 M deux années de suite. Ces chiffres ne
+      Théâtre du Jorat 2,5 M CHF en 2024, Hermitage 4 M CHF en 2025
+      (don exceptionnel pour la rénovation pilotée par la Ville de Lausanne),
+      FAJE 1,5 M chaque année. Ces chiffres ne
       racontent pas le nombre de spectacles ni d'enfants accueillis,
       mais ils tracent une <span class="highlight">cartographie de
       l'écosystème associatif vaudois</span> qui dépend, pour partie,
@@ -1009,8 +1030,8 @@
     Le canton du Jura est entré dans la Confédération le 1<sup>er</sup>&nbsp;janvier
     1979 comme 23<sup>e</sup>&nbsp;canton. La même année, il touche pour la
     première fois sa part du bénéfice Loro&nbsp;: <strong>145&nbsp;786&nbsp;francs</strong>.
-    47 ans plus tard, cette part atteint <strong>8,7&nbsp;millions</strong>. Le cumul
-    depuis 1979 dépasse les <strong>100&nbsp;millions de francs</strong>.
+    47 ans plus tard, cette part atteint <strong>7,5&nbsp;millions</strong> (2025, RFJ).
+    Le cumul depuis 1979 dépasse les <strong>100&nbsp;millions de francs</strong>.
   </p>
 </section>
 
@@ -1024,7 +1045,7 @@
         (~180'000 habitants), mais en proportion par tête, le Jura touche
         davantage. Les annotations marquent l'entrée du Jura dans la
         Confédération en 1979, le premier million, l'inauguration du
-        Théâtre du Jura (8 octobre 2021), le record 2025 à 8,7&nbsp;M
+        Théâtre du Jura (8 octobre 2021), le pic 2024 à 7,6&nbsp;M
         et l'arrivée de Moutier au 1.1.2026.
       </p>
       <div id="viz-jura-histoire" class="viz"></div>
@@ -1061,7 +1082,7 @@
   <h2>L'<em>annuaire complet</em> de la redistribution.</h2>
   <p class="dek">
     Jusqu'ici on a vu des moyennes, des tendances, des cas. Mais la Loro
-    publie chaque année un document de 80 pages qui liste, ligne par ligne,
+    publie chaque année un document de 118 pages qui liste, ligne par ligne,
     qui touche combien. C'est le <strong>BRB 2025</strong> — la Répartition
     officielle des bénéfices. On y trouve la pulse réelle&nbsp;: des dons
     de 100 francs aux camps sportifs comme des virements de 2,5 millions
@@ -1263,6 +1284,40 @@
         taggé « Action sociale »), la classification s'appuie uniquement sur le contenu textuel
         nom + description. Voir
         <a href="METHODOLOGY.html#social-classification" target="_blank" rel="noopener">METHODOLOGY · Social classification</a>.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter-intro">
+  <h2 style="font-size: 36px; line-height: 1.2;" class="reveal">
+    Et les <em>6 autres secteurs</em>&nbsp;?
+    Jeunesse, santé, environnement, patrimoine, formation, tourisme.
+  </h2>
+  <p class="dek">
+    On a parlé du sport (28,9 M), de la culture (88,6 M) et de l'action sociale
+    (25 M). Mais la Loterie Romande soutient officiellement <strong>neuf secteurs</strong>.
+    Voici les six restants, avec leurs sous-domaines. Chaque secteur a son propre
+    paysage&nbsp;: le patrimoine est dominé par le religieux, la formation par
+    la recherche, le tourisme par les manifestations régionales.
+  </p>
+</section>
+
+<section class="standalone">
+  <div class="col-xl">
+    <div class="viz-card">
+      <h3 class="viz-title">Les 6 secteurs « secondaires » en un coup d'œil</h3>
+      <p class="viz-subtitle">
+        Top 6 sous-domaines par secteur · 2025 · Cliquer sur « Top bénéficiaires »
+        pour voir le détail des principaux soutenus.
+      </p>
+      <div id="viz-secteurs-secondaires" class="viz"></div>
+      <div class="viz-footer">
+        <span>Méthode&nbsp;: 6 classifications dédiées par mots-clés sur nom + description.
+        Jeunesse (11 sous-domaines, 10,4&nbsp;M), Santé (13 sous-domaines, 9,5&nbsp;M),
+        Environnement (11 sous-domaines, 4,2&nbsp;M), Patrimoine (11 sous-domaines, 10,3&nbsp;M),
+        Formation (6 sous-domaines, 7,8&nbsp;M), Promotion (6 sous-domaines, 7,4&nbsp;M).
+        Voir <a href="METHODOLOGY.html#classifications" target="_blank" rel="noopener">METHODOLOGY · classifications</a>.</span>
       </div>
     </div>
   </div>
@@ -1563,6 +1618,32 @@
         (Cinéforom, Tour de Romandie, Verbier Festival, Lanterne Magique, Théâtre du Jorat,
         Hermitage, FAJE, Plateforme 10, Vaud Promotion, Équilibre &amp; Nuithonie, etc.).
         Données 2021 issues du parser BRB 2021 dédié (format VaudVaud, classification 85 %).</span>
+        <details style="margin-top: 12px; font-size: 12px; color: var(--ink-mute)">
+          <summary style="cursor: pointer; color: var(--c-loro); font-weight: 500">📖 Glossaire des principales abréviations</summary>
+          <div style="padding: 10px 0 0 16px; line-height: 1.7;">
+            <strong>FAJE</strong> = Fondation pour l'Accueil de Jour des Enfants (vaudoise) ·
+            <strong>OSR</strong> = Orchestre de la Suisse Romande ·
+            <strong>FIFF</strong> = Festival International du Film de Fribourg ·
+            <strong>NIFFF</strong> = Neuchâtel International Fantastic Film Festival ·
+            <strong>CORODIS</strong> = Commission Romande de Diffusion des Spectacles ·
+            <strong>FOJ</strong> = Fondation Officielle de la Jeunesse (Genève) ·
+            <strong>EMS</strong> = Établissement Médico-Social ·
+            <strong>OSEO</strong> = Œuvre Suisse d'Entraide Ouvrière ·
+            <strong>CSP</strong> = Centre Social Protestant ·
+            <strong>AVIVO</strong> = Association suisse des aînés, rentiers et futurs retraités ·
+            <strong>CAS</strong> = Club Alpin Suisse ·
+            <strong>CHUV</strong> = Centre Hospitalier Universitaire Vaudois ·
+            <strong>EPFL</strong> = École Polytechnique Fédérale de Lausanne ·
+            <strong>EHC</strong> = Ensemble Hospitalier de la Côte ·
+            <strong>FSG</strong> = Fédération Suisse de Gymnastique ·
+            <strong>AFF/FFV</strong> = Association Fribourgeoise de Football / Freiburger Fussballverband (nom bilingue, une seule entité) ·
+            <strong>UCI</strong> = Union Cycliste Internationale ·
+            <strong>PMU</strong> = Pari Mutuel Urbain (paris hippiques) ·
+            <strong>LJAr</strong> = Loi sur les Jeux d'Argent ·
+            <strong>BRB</strong> = Bulletin de Répartition des Bénéfices ·
+            <strong>PBJ</strong> = Produit Brut des Jeux.
+          </div>
+        </details>
       </div>
     </div>
   </div>
@@ -1674,8 +1755,8 @@
       <dt>258 M CHF</dt>
       <dd>Bénéfice net <strong>2024</strong>, pic historique. La baisse 2024 → 2025 vient d'un effet jackpots et d'un reflux de la loterie électronique. <em>(Rapport financier Loro 2024)</em></dd>
 
-      <dt>1,7 milliard CHF</dt>
-      <dd>Chiffre d'affaires (mises) <strong>2024</strong>. C'est l'argent qui rentre dans la machine&nbsp;; le bénéfice est ce qui reste après gains versés aux joueurs, commissions points-de-vente, coûts opérationnels.</dd>
+      <dt>~1,5 milliard CHF</dt>
+      <dd>Chiffre d'affaires (mises) <strong>2024</strong>. C'est l'argent qui rentre dans la machine&nbsp;; le bénéfice est ce qui reste après gains versés aux joueurs (~1 milliard), commissions points-de-vente, coûts opérationnels.</dd>
 
       <dt>438 M CHF — le PBJ</dt>
       <dd><strong>Produit brut des jeux</strong>&nbsp;: chiffre d'affaires − gains versés. Le PBJ 2024 est de 438 M, dont 59% (258 M) deviennent du bénéfice.</dd>
@@ -1689,7 +1770,7 @@
       <dt>206 M ≠ 252 M&nbsp;: pourquoi l'écart&nbsp;?</dt>
       <dd>Le BRB 2025 totalise <strong>206 M CHF</strong> alors que la Loro annonce <strong>252 M</strong> de bénéfice 2025. L'écart (~46 M) n'est pas une erreur : le BRB ne capture que les attributions nominatives directes aux organisations. En sont exclus&nbsp;: <strong>(a)</strong> les versements aux <em>sous-fonds cantonaux</em> (FAC, fonds sport, fonds dépendance) redistribués ensuite localement, <strong>(b)</strong> les attributions effectuées <em>après</em> la clôture du document, <strong>(c)</strong> les soutiens sportifs liés à des manifestations (Tour de Romandie, FFG…) qui passent par d'autres canaux.</dd>
 
-      <dt>2,98 Mrd CHF (cumul 2013-2025)</dt>
+      <dt>2,95 Mrd CHF (cumul 2013-2025)</dt>
       <dd>Total redistribué sur 13 ans, calculé en sommant les bénéfices annuels des rapports financiers Loro 2013-2025.</dd>
     </dl>
   </div>
@@ -1700,7 +1781,7 @@
 <footer class="site-foot">
   <div class="signoff">
     87 ans, 6 cantons, 9 secteurs, ~5'000 projets soutenus chaque année,<br>
-    et un seul fil rouge&nbsp;: <em>1,7 milliard de francs misés</em> chaque année.
+    et un seul fil rouge&nbsp;: <em>~1,5 milliard de francs misés</em> chaque année.
   </div>
   <div>Données : rapports annuels Loterie Romande, Office fédéral de la justice, presse romande 1937–2000.</div>
   <div class="last-updated" id="last-updated">Dernière mise à jour : <span id="build-date">—</span></div>
@@ -1711,10 +1792,64 @@
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-<script src="https://unpkg.com/scrollama@3.2.0/build/scrollama.min.js"></script>
+<!-- ============================================================
+     Vendor libs : tentative jsdelivr/unpkg, fallback unpkg/jsdelivr
+     ============================================================ -->
+<script>
+// Fallback CDN : si jsdelivr échoue, retry depuis unpkg
+(function loadLib(url, fallback) {
+  function tryLoad(src, onError) {
+    const s = document.createElement('script');
+    s.src = src;
+    s.async = false;
+    s.onerror = onError;
+    document.head.appendChild(s);
+  }
+  window._loadLibFallback = function(primary, secondary) {
+    tryLoad(primary, () => {
+      console.warn('CDN primary échoué, fallback :', secondary);
+      tryLoad(secondary, () => console.error('CDN fallback échoué aussi :', secondary));
+    });
+  };
+})();
+window._loadLibFallback('https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js', 'https://unpkg.com/d3@7.8.5/dist/d3.min.js');
+window._loadLibFallback('https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js', 'https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js');
+window._loadLibFallback('https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js', 'https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js');
+window._loadLibFallback('https://unpkg.com/scrollama@3.2.0/build/scrollama.min.js', 'https://cdn.jsdelivr.net/npm/scrollama@3.2.0/build/scrollama.min.js');
+</script>
+
+<!-- ============================================================
+     A11y utility : ajoute role="img" + <title> + <desc> aux SVG des viz
+     Appelé en post-load une fois toutes les viz rendues
+     ============================================================ -->
+<script>
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.querySelectorAll('.viz svg').forEach(svg => {
+      if (svg.getAttribute('role')) return; // déjà décoré
+      const vizCard = svg.closest('.viz-card');
+      const titleEl = vizCard ? vizCard.querySelector('.viz-title, h3') : null;
+      const subEl   = vizCard ? vizCard.querySelector('.viz-subtitle') : null;
+      const title = titleEl ? titleEl.textContent.trim() : 'Visualisation';
+      const desc  = subEl ? subEl.textContent.trim() : '';
+      svg.setAttribute('role', 'img');
+      svg.setAttribute('aria-label', title);
+      // Add SVG <title> + <desc> for full a11y compatibility
+      if (!svg.querySelector(':scope > title')) {
+        const t = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+        t.textContent = title;
+        svg.insertBefore(t, svg.firstChild);
+      }
+      if (desc && !svg.querySelector(':scope > desc')) {
+        const d = document.createElementNS('http://www.w3.org/2000/svg', 'desc');
+        d.textContent = desc;
+        svg.insertBefore(d, svg.firstChild.nextSibling);
+      }
+    });
+  }, 1500); // attendre que les viz soient rendues
+});
+</script>
+
 <script src="js/utils.js"></script>
 <script src="js/year_selector.js"></script>
 <script src="js/app.js"></script>
@@ -1722,6 +1857,7 @@
 <script src="js/sports.js"></script>
 <script src="js/culture.js"></script>
 <script src="js/social.js"></script>
+<script src="js/secondary_sectors.js"></script>
 <script src="js/sectors.js"></script>
 <script src="js/aggregations.js"></script>
 <script src="js/compare_2024_2025.js"></script>
@@ -1729,6 +1865,7 @@
 <script src="js/trajectories.js"></script>
 <script src="js/marquants_50.js"></script>
 <script src="js/beneficiaires_cumul.js"></script>
+<script src="js/viz-enhancements.js"></script>
 
 </body>
 </html>
