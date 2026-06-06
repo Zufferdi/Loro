@@ -88,8 +88,24 @@
       },
       "v20_ville_canton": {
         "count": 9
+      },
+      "v30_2023_systematic": {
+        "count": 31
+      },
+      "v32_2023_trailing_prep": {
+        "count": 14
+      },
+      "v32_2021_2024_more": {
+        "count": 2
+      },
+      "v33_strict_dups_removed": {
+        "count": 92
+      },
+      "v34_non_consec_dups": {
+        "count": 4
       }
-    }
+    },
+    "total_brut": 202024910
   },
   "entries": [
     {
@@ -1038,7 +1054,7 @@
       "annee": 2023
     },
     {
-      "nom": "AFIRO",
+      "nom": "AFIRO - Atelier de formation, recherche et orientation",
       "ville": "Ecublens",
       "description": "Acquisition matériel et équipement et Travaux / Aménagements",
       "canton": "VD",
@@ -1491,15 +1507,6 @@
       "nom": "Artefax",
       "ville": "Lausanne",
       "description": "Saison artistique 2023",
-      "canton": "VD",
-      "secteur": "Culture",
-      "montant_CHF": 3000,
-      "annee": 2023
-    },
-    {
-      "nom": "Artefax",
-      "ville": "Lausanne",
-      "description": "Saison artistique 2024",
       "canton": "VD",
       "secteur": "Culture",
       "montant_CHF": 3000,
@@ -2895,15 +2902,6 @@
       "nom": "Chœur Ardito",
       "ville": "Grandvaux",
       "description": "Manifestation 2023",
-      "canton": "VD",
-      "secteur": "Culture",
-      "montant_CHF": 8000,
-      "annee": 2023
-    },
-    {
-      "nom": "Chœur Ardito",
-      "ville": "Grandvaux",
-      "description": "Manifestation 2024",
       "canton": "VD",
       "secteur": "Culture",
       "montant_CHF": 8000,
@@ -6843,8 +6841,8 @@
       "annee": 2023
     },
     {
-      "nom": "Commune de Chavannes-près-",
-      "ville": "Renens",
+      "nom": "Commune de Chavannes-près-Renens",
+      "ville": null,
       "description": "Réaménagement d'un terrrain multisports sur le site du collège de la Plaine",
       "canton": "VD",
       "secteur": "Sport",
@@ -6852,8 +6850,8 @@
       "annee": 2023
     },
     {
-      "nom": "Commune de Corcelles-près-",
-      "ville": "Payerne",
+      "nom": "Commune de Corcelles-près-Payerne",
+      "ville": null,
       "description": "Installation d'un terrain multisports",
       "canton": "VD",
       "secteur": "Sport",
@@ -8652,15 +8650,6 @@
       "annee": 2023
     },
     {
-      "nom": "Assoc. APCL",
-      "ville": null,
-      "description": "20KM Lausanne 2023",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 4000,
-      "annee": 2023
-    },
-    {
       "nom": "Assoc. Cantonale Vaudoise",
       "ville": "Amis du Hockey",
       "description": "Coupe des Bains 2023",
@@ -8682,15 +8671,6 @@
       "nom": "Assoc. Cantonale Vaudoise, Gymnastique",
       "ville": "Gymnastique",
       "description": "Championnat Romand de Gymnastique",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Assoc. Cantonale Vaudoise, Gymnastique",
-      "ville": "Gymnastique",
-      "description": "Championnat vaudois Gymnastique Tests",
       "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 500,
@@ -8994,27 +8974,9 @@
       "annee": 2023
     },
     {
-      "nom": "Badminton Club Vevey",
-      "ville": "Badminton",
-      "description": "Vevey Junior Doubles Open",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
       "nom": "Badminton Club Yverdon-les- Bains",
       "ville": "Yverdon-les- Bains",
       "description": "Tournoi - SBJS 2023",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 1000,
-      "annee": 2023
-    },
-    {
-      "nom": "Badminton Club Yverdon-les- Bains",
-      "ville": "Yverdon-les- Bains",
-      "description": "Tournoi de décembre 2023",
       "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 1000,
@@ -9069,15 +9031,6 @@
       "nom": "Care Vevey Orientation",
       "ville": "Vevey",
       "description": "Coupe vaudoise",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 300,
-      "annee": 2023
-    },
-    {
-      "nom": "Care Vevey Orientation",
-      "ville": "Vevey",
-      "description": "Coupe vaudoise - Chailly-sur- Montreux",
       "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 300,
@@ -9195,15 +9148,6 @@
       "nom": "Cercle des Armes de Lausanne",
       "ville": "Lausanne",
       "description": "Circuit Européen U14 2023",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 1000,
-      "annee": 2023
-    },
-    {
-      "nom": "Cercle des Armes de Lausanne",
-      "ville": "Lausanne",
-      "description": "Circuit Européen U23 2023",
       "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 1000,
@@ -9417,8 +9361,8 @@
       "annee": 2023
     },
     {
-      "nom": "Club Équestre du Mont-sur-",
-      "ville": "Lausanne",
+      "nom": "Club Équestre du Mont-sur-Lausanne",
+      "ville": null,
       "description": "Concours hippique",
       "canton": "VD",
       "secteur": "Sport",
@@ -9426,8 +9370,8 @@
       "annee": 2023
     },
     {
-      "nom": "Club Équestre du Mont-sur-",
-      "ville": "Lausanne",
+      "nom": "Club Équestre du Mont-sur-Lausanne",
+      "ville": null,
       "description": "Smile et Jump concours hippique de saut d'obstacle",
       "canton": "VD",
       "secteur": "Sport",
@@ -9534,24 +9478,6 @@
       "annee": 2023
     },
     {
-      "nom": "Commission des Vélodromes Romands",
-      "ville": null,
-      "description": "Grand Prix",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Commission des Vélodromes Romands",
-      "ville": null,
-      "description": "Grand Prix de la Ville d'Aigle",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
       "nom": "Commune de Crissier",
       "ville": "Crissier",
       "description": "Départ du Tour de Romandie",
@@ -9651,15 +9577,6 @@
       "annee": 2023
     },
     {
-      "nom": "Compagnie des Archers, Lausanne",
-      "ville": "Lausanne",
-      "description": "Indoor Lausanne 2023",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 1000,
-      "annee": 2023
-    },
-    {
       "nom": "Coupe Landolt",
       "ville": null,
       "description": "Coupe Landolt - 2023",
@@ -9732,24 +9649,6 @@
       "annee": 2023
     },
     {
-      "nom": "Curling Club de Morges",
-      "ville": "Morges",
-      "description": "Tournoi de printemps 2023",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Curling Club de Morges",
-      "ville": "Morges",
-      "description": "Tournoi juniors",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
       "nom": "Curling Club Leysin",
       "ville": "Leysin",
       "description": "Tournoi de Leysin 2023",
@@ -9762,33 +9661,6 @@
       "nom": "Cyclophile Aigle",
       "ville": "Aigle",
       "description": "1ère manche de l'Omnium Romand de Cyclocross 2023",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Cyclophile Aigle",
-      "ville": "Aigle",
-      "description": "2e étape Tour du Léman Junior",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Cyclophile Aigle",
-      "ville": "Aigle",
-      "description": "Giron du Rhône : St-Triphon",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Cyclophile Aigle",
-      "ville": "Aigle",
-      "description": "Giron du Rhône : Aigle - Corbeyrier 2023",
       "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 500,
@@ -9852,15 +9724,6 @@
       "nom": "DGM & CR Lausanne",
       "ville": "Lausanne",
       "description": "Concours de saut - Chalet-à- Gobet",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 1500,
-      "annee": 2023
-    },
-    {
-      "nom": "DGM & CR Lausanne",
-      "ville": "Lausanne",
-      "description": "Concours dressage 2023",
       "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 1500,
@@ -10551,33 +10414,6 @@
       "annee": 2023
     },
     {
-      "nom": "La Pédale Romande",
-      "ville": null,
-      "description": "Women's Night Critérium #1",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "La Pédale Romande",
-      "ville": null,
-      "description": "Women's Night Critérium #2",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "La Pédale Romande",
-      "ville": null,
-      "description": "Women's Night Critérium #3",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
       "nom": "La Twinbike",
       "ville": null,
       "description": "Organisation de la TwinBike",
@@ -10599,15 +10435,6 @@
       "nom": "Lausanne Aquatique",
       "ville": "Lausanne",
       "description": "Championnat Romand Artistique",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 300,
-      "annee": 2023
-    },
-    {
-      "nom": "Lausanne Aquatique",
-      "ville": "Lausanne",
-      "description": "Championnat Romand Natation Artistique 2023",
       "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 300,
@@ -10695,15 +10522,6 @@
       "annee": 2023
     },
     {
-      "nom": "Lausanne Aquatique",
-      "ville": "Lausanne",
-      "description": "Winter Cup Plongeon 2023",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
       "nom": "Lausanne Billard Masters",
       "ville": "Lausanne",
       "description": "Lausanne Billard Masters 2022 - Solde",
@@ -10725,24 +10543,6 @@
       "nom": "Lausanne Club de Tennis de Table",
       "ville": "Lausanne",
       "description": "Finale Suisse Junior Challenge",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Lausanne Club de Tennis de Table",
-      "ville": "Lausanne",
-      "description": "Gubler School Trophy 2023",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Lausanne Club de Tennis de Table",
-      "ville": "Lausanne",
-      "description": "Tournoi Tennis de Table de Bellerive-Plage",
       "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 500,
@@ -10797,15 +10597,6 @@
       "nom": "Lausanne-Sports Athlétisme",
       "ville": "Athlétisme",
       "description": "Finale vaudoise UBS Kids Cup",
-      "canton": "VS",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Lausanne-Sports Athlétisme",
-      "ville": "Athlétisme",
-      "description": "Meeting National de courses et sauts",
       "canton": "VS",
       "secteur": "Sport",
       "montant_CHF": 500,
@@ -11019,36 +10810,9 @@
       "annee": 2023
     },
     {
-      "nom": "Pétanque de Crissier",
-      "ville": "Crissier",
-      "description": "10h de Crissier 2023 - concours de doublettes femmes",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 300,
-      "annee": 2023
-    },
-    {
-      "nom": "Pétanque de Crissier",
-      "ville": "Crissier",
-      "description": "Concours doublettes 2023",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 300,
-      "annee": 2023
-    },
-    {
-      "nom": "Pétanque Le Mont-sur-",
-      "ville": "Lausanne",
+      "nom": "Pétanque Le Mont-sur-Lausanne",
+      "ville": null,
       "description": "Mini marathon de pétanque",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 300,
-      "annee": 2023
-    },
-    {
-      "nom": "Pétanque Le Mont-sur-",
-      "ville": "Lausanne",
-      "description": "Tournoi de l'Ascension 2023",
       "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 300,
@@ -11058,60 +10822,6 @@
       "nom": "Pétanque Nyonnaise",
       "ville": null,
       "description": "Tournoi doublette février 2023",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 300,
-      "annee": 2023
-    },
-    {
-      "nom": "Pétanque Nyonnaise",
-      "ville": null,
-      "description": "Tournoi doublette janvier 2023",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 300,
-      "annee": 2023
-    },
-    {
-      "nom": "Pétanque Nyonnaise",
-      "ville": null,
-      "description": "Tournoi doublette mars 2023",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 300,
-      "annee": 2023
-    },
-    {
-      "nom": "Pétanque Nyonnaise",
-      "ville": null,
-      "description": "Tournoi doublette mixte février",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 300,
-      "annee": 2023
-    },
-    {
-      "nom": "Pétanque Nyonnaise",
-      "ville": null,
-      "description": "Tournoi triplette février 2023",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 300,
-      "annee": 2023
-    },
-    {
-      "nom": "Pétanque Nyonnaise",
-      "ville": null,
-      "description": "Tournoi triplette mars 2023",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 300,
-      "annee": 2023
-    },
-    {
-      "nom": "Pétanque Nyonnaise",
-      "ville": null,
-      "description": "Tournoi triplette mixte janvier",
       "canton": "SR",
       "secteur": "Sport",
       "montant_CHF": 300,
@@ -11202,15 +10912,6 @@
       "nom": "Rugby Club Yverdon-les-Bains",
       "ville": "Yverdon-les-Bains",
       "description": "Match international Suisse- Suède, CE Rugby Europe Trophy Division",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 5000,
-      "annee": 2023
-    },
-    {
-      "nom": "Rugby Club Yverdon-les-Bains",
-      "ville": "Yverdon-les-Bains",
-      "description": "Swiss Rugby Finals Day 2023",
       "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 5000,
@@ -11453,24 +11154,6 @@
     {
       "nom": "Stade-Lausanne Tennis Club",
       "ville": null,
-      "description": "Circuit de doubles seniors de la Côte",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Stade-Lausanne Tennis Club",
-      "ville": null,
-      "description": "Circuit junior Le Coq Sportif Etape 1",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Stade-Lausanne Tennis Club",
-      "ville": null,
       "description": "Le Coq Sportif Open de Vidy",
       "canton": "SR",
       "secteur": "Sport",
@@ -11568,24 +11251,6 @@
       "annee": 2023
     },
     {
-      "nom": "Tennis Club de Gland",
-      "ville": "Gland",
-      "description": "Tournoi Actifs et 35+",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Tennis Club de Gland",
-      "ville": "Gland",
-      "description": "Tournoi Michel Erb Senior Challenge",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
       "nom": "Tennis Club de Lucens",
       "ville": "Lucens",
       "description": "Tournoi du Maréchal 2023",
@@ -11604,24 +11269,6 @@
       "annee": 2023
     },
     {
-      "nom": "Tennis Club Epalinges",
-      "ville": "Epalinges",
-      "description": "Tournoi des Jars 2023",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 300,
-      "annee": 2023
-    },
-    {
-      "nom": "Tennis Club Epalinges",
-      "ville": "Epalinges",
-      "description": "Tournoi juniors du Jeûne 2023",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 300,
-      "annee": 2023
-    },
-    {
       "nom": "Tennis Club La Venoge",
       "ville": null,
       "description": "Tournoi Dames d'été de La Venoge",
@@ -11634,15 +11281,6 @@
       "nom": "Tennis Club Lutry",
       "ville": "Lutry",
       "description": "Monkey Juniors Trophy",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Tennis Club Lutry",
-      "ville": "Lutry",
-      "description": "Tournoi des Singes",
       "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 500,
@@ -11670,33 +11308,6 @@
       "nom": "Tennis-Club Echallens",
       "ville": "Echallens",
       "description": "Circuit Head - Tournoi du Chêne 2023",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Tennis-Club Echallens",
-      "ville": "Echallens",
-      "description": "Tournoi d'automne 2023",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Tennis-Club Echallens",
-      "ville": "Echallens",
-      "description": "Tournoi de début de saison",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Tennis-Club Echallens",
-      "ville": "Echallens",
-      "description": "Tournoi de fin de saison",
       "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 500,
@@ -12425,15 +12036,6 @@
     {
       "nom": "Assoc. Cantonale Vaudoise pour la Natation",
       "ville": "Natation",
-      "description": "Natation - Soutien Centre Régional de Performance",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 10600,
-      "annee": 2023
-    },
-    {
-      "nom": "Assoc. Cantonale Vaudoise pour la Natation",
-      "ville": "Natation",
       "description": "Plongeon - Soutien Centre Régional de Performance",
       "canton": "VD",
       "secteur": "Sport",
@@ -12462,15 +12064,6 @@
       "nom": "Assoc. Cycliste Cantonale Vaudoise",
       "ville": null,
       "description": "Cyclisme sur piste - Soutien Centre Régional de Performance",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 5000,
-      "annee": 2023
-    },
-    {
-      "nom": "Assoc. Cycliste Cantonale Vaudoise",
-      "ville": null,
-      "description": "Cyclisme sur route - Soutien Centre Régional de Performance",
       "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 5000,
@@ -12927,8 +12520,8 @@
       "annee": 2023
     },
     {
-      "nom": "HESAV, Assoc. La paix du Soir, Lausanne, Le Mont-sur-",
-      "ville": "Lausanne",
+      "nom": "HESAV, Assoc. La paix du Soir, Lausanne, Le Mont-sur-Lausanne",
+      "ville": null,
       "description": "Projet Les transitions de fin de vie",
       "canton": "VD",
       "secteur": "Action sociale et personnes âgées",
@@ -13683,7 +13276,7 @@
       "annee": 2023
     },
     {
-      "nom": "wier häufe Plaffeien und Umgebung",
+      "nom": "Vereinigung Wier häufe Plaffeien und Umgebung",
       "ville": "Brünisried",
       "description": "Aide pour la formation continue",
       "canton": "SR",
@@ -14124,8 +13717,8 @@
       "annee": 2023
     },
     {
-      "nom": "Crèche La Marelle, Farvagny-le-",
-      "ville": "Grand",
+      "nom": "Crèche La Marelle, Farvagny-le-Grand",
+      "ville": null,
       "description": "Activités pédagogiques 2023",
       "canton": "GE",
       "secteur": "Jeunesse et éducation",
@@ -14142,8 +13735,8 @@
       "annee": 2023
     },
     {
-      "nom": "Crèche les Poussins, Avry-sur-",
-      "ville": "Matran",
+      "nom": "Crèche les Poussins, Avry-sur-Matran",
+      "ville": null,
       "description": "Activités pédagogiques 2023",
       "canton": "FR",
       "secteur": "Jeunesse et éducation",
@@ -14754,7 +14347,7 @@
       "annee": 2023
     },
     {
-      "nom": "AFAAP",
+      "nom": "AFAAP - Assoc. fribourgeoise pour l'accompagnement à domicile",
       "ville": "Fribourg",
       "description": "Activités 2023",
       "canton": "FR",
@@ -14916,8 +14509,8 @@
       "annee": 2023
     },
     {
-      "nom": "PARA-DIGME, Moléson-sur-",
-      "ville": "Gruyères",
+      "nom": "PARA-DIGME, Moléson-sur-Gruyères",
+      "ville": null,
       "description": "Fauteuil Handivol",
       "canton": "FR",
       "secteur": "Santé et handicap",
@@ -15699,8 +15292,8 @@
       "annee": 2023
     },
     {
-      "nom": "Chœur-Mixte Paroissial La Châtelard, Le Châtelard-près-",
-      "ville": "Romont",
+      "nom": "Chœur-Mixte Paroissial La Châtelard, Le Châtelard-près-Romont",
+      "ville": null,
       "description": "Anima",
       "canton": "FR",
       "secteur": "Culture",
@@ -16005,7 +15598,7 @@
       "annee": 2023
     },
     {
-      "nom": "Festival International du Film de",
+      "nom": "Festival International du Film de Fribourg - FIFF",
       "ville": null,
       "description": "Édition 2023",
       "canton": "SR",
@@ -16032,7 +15625,7 @@
       "annee": 2023
     },
     {
-      "nom": "Fond. Académie d'Orgue de",
+      "nom": "Fond. Académie d'Orgue de Fribourg",
       "ville": null,
       "description": "26 e Festival International d’Orgue de Fribourg",
       "canton": "SR",
@@ -16752,7 +16345,7 @@
       "annee": 2023
     },
     {
-      "nom": "Université populaire du canton de",
+      "nom": "Université populaire du canton de Fribourg",
       "ville": null,
       "description": "Activités 2023",
       "canton": "SR",
@@ -16995,7 +16588,7 @@
       "annee": 2023
     },
     {
-      "nom": "Sté d'histoire du canton de",
+      "nom": "Sté d'histoire du canton de Fribourg",
       "ville": null,
       "description": "Activités 2023",
       "canton": "SR",
@@ -17670,7 +17263,7 @@
       "annee": 2023
     },
     {
-      "nom": "Groupe des Aérostiers de",
+      "nom": "Groupe des Aérostiers de Fribourg",
       "ville": null,
       "description": "Nouvelle enveloppe de montgolfière",
       "canton": "SR",
@@ -17841,15 +17434,6 @@
       "annee": 2023
     },
     {
-      "nom": "Mérite sportif fribourgeois",
-      "ville": null,
-      "description": "Mérite sportif 2023",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 10000,
-      "annee": 2023
-    },
-    {
       "nom": "Rugby-Club Fribourg",
       "ville": "Fribourg",
       "description": "Contribution ordinaire, part extraordinaire 2022",
@@ -17915,15 +17499,6 @@
     {
       "nom": "Assoc. Fribourgeoise, Badminton",
       "ville": "Badminton",
-      "description": "Championnat fribourgeois 2023",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Assoc. Fribourgeoise, Badminton",
-      "ville": "Badminton",
       "description": "Coupes fribourgeoises",
       "canton": "VD",
       "secteur": "Sport",
@@ -17949,54 +17524,9 @@
       "annee": 2023
     },
     {
-      "nom": "Assoc. fribourgeoise de football",
-      "ville": null,
-      "description": "Cupfinal der Junioren D/C/B/A und Frauenfussball 2023",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
       "nom": "Assoc. Fribourgeoise de Hockey-sur-Glace",
       "ville": null,
       "description": "Tournoi national U13 août 2022",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 1000,
-      "annee": 2023
-    },
-    {
-      "nom": "Assoc. Fribourgeoise de Hockey-sur-Glace",
-      "ville": null,
-      "description": "Tournoi national U15 2022",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 1000,
-      "annee": 2023
-    },
-    {
-      "nom": "Assoc. Fribourgeoise de Hockey-sur-Glace",
-      "ville": null,
-      "description": "Tournoi national U13 novembre",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 1000,
-      "annee": 2023
-    },
-    {
-      "nom": "Assoc. Fribourgeoise de Hockey-sur-Glace",
-      "ville": null,
-      "description": "Tournoi Hockey Crosse d'Or U9",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 1000,
-      "annee": 2023
-    },
-    {
-      "nom": "Assoc. Fribourgeoise de Hockey-sur-Glace",
-      "ville": null,
-      "description": "Tournoi national U13 août 2023",
       "canton": "FR",
       "secteur": "Sport",
       "montant_CHF": 1000,
@@ -18147,15 +17677,6 @@
       "annee": 2023
     },
     {
-      "nom": "Club Athlétique Fribourg",
-      "ville": "Fribourg",
-      "description": "Course Morat-Fribourg 2023",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 4000,
-      "annee": 2023
-    },
-    {
       "nom": "Club de patinage artistique Fribourg et Romont",
       "ville": "Fribourg",
       "description": "Zaehringer-Cup",
@@ -18231,15 +17752,6 @@
       "nom": "Corrida Bulloise",
       "ville": null,
       "description": "Corrida Bulloise 2022",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 2500,
-      "annee": 2023
-    },
-    {
-      "nom": "Corrida Bulloise",
-      "ville": null,
-      "description": "Corrida Bulloise 2023",
       "canton": "SR",
       "secteur": "Sport",
       "montant_CHF": 2500,
@@ -18455,24 +17967,6 @@
     {
       "nom": "La Pédale Romande",
       "ville": null,
-      "description": "4 e Chrono de la Sionge",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 1500,
-      "annee": 2023
-    },
-    {
-      "nom": "La Pédale Romande",
-      "ville": null,
-      "description": "2e GP de Villaz",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 1500,
-      "annee": 2023
-    },
-    {
-      "nom": "La Pédale Romande",
-      "ville": null,
       "description": "Groupe E - 2e GP de la Pédale Romande",
       "canton": "SR",
       "secteur": "Sport",
@@ -18510,24 +18004,6 @@
       "nom": "Minigolf Club Bulle",
       "ville": "Bulle",
       "description": "Tournoi de minigolf, libre sur 4 tours, avril 2023",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Minigolf Club Bulle",
-      "ville": "Bulle",
-      "description": "Tournoi de minigolf, libre sur 4 tours, juin 2023",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Minigolf Club Bulle",
-      "ville": "Bulle",
-      "description": "Tournoi de minigolf, libre sur 3 tours, juillet 2023",
       "canton": "FR",
       "secteur": "Sport",
       "montant_CHF": 500,
@@ -18579,15 +18055,6 @@
       "annee": 2023
     },
     {
-      "nom": "Open Bike Haute-Gruyère",
-      "ville": null,
-      "description": "Open Bike Haute-Gruyère 2023",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 1500,
-      "annee": 2023
-    },
-    {
       "nom": "Pistolenschiessverein Düdingen",
       "ville": "Düdingen",
       "description": "Röschtigrabenschiessen 2022",
@@ -18599,25 +18066,7 @@
     {
       "nom": "Pistolenschiessverein Düdingen",
       "ville": "Düdingen",
-      "description": "Luftpistolen - St. Martinsschiessen 2022",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 1000,
-      "annee": 2023
-    },
-    {
-      "nom": "Pistolenschiessverein Düdingen",
-      "ville": "Düdingen",
       "description": "Röschtigrabenschiessen 2023",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 1500,
-      "annee": 2023
-    },
-    {
-      "nom": "Pistolenschiessverein Düdingen",
-      "ville": "Düdingen",
-      "description": "Luftpistolen - St. Martinsschiessen 2023",
       "canton": "FR",
       "secteur": "Sport",
       "montant_CHF": 1500,
@@ -18786,27 +18235,9 @@
       "annee": 2023
     },
     {
-      "nom": "Sté de Cavalerie de la Broye",
-      "ville": null,
-      "description": "Concours hippique saut d'obstacles",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 1000,
-      "annee": 2023
-    },
-    {
       "nom": "Sté de tir de la Ville",
       "ville": null,
       "description": "Tir des Zaehringen 2022",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 1000,
-      "annee": 2023
-    },
-    {
-      "nom": "Sté de tir de la Ville",
-      "ville": null,
-      "description": "Tir des Zaehringen 2023",
       "canton": "SR",
       "secteur": "Sport",
       "montant_CHF": 1000,
@@ -18858,36 +18289,9 @@
       "annee": 2023
     },
     {
-      "nom": "Sport Handicap Fribourg",
-      "ville": "Fribourg",
-      "description": "Tournoi de basket",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Sport Handicap Fribourg",
-      "ville": "Fribourg",
-      "description": "Tournoi de Rafroball",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
       "nom": "Sporting Golf Club Fribourg",
       "ville": "Golf",
       "description": "Tournoi libre de minigolf",
-      "canton": "VD",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Sporting Golf Club Fribourg",
-      "ville": "Golf",
-      "description": "Team-Golf",
       "canton": "VD",
       "secteur": "Sport",
       "montant_CHF": 500,
@@ -19020,15 +18424,6 @@
       "annee": 2023
     },
     {
-      "nom": "Twirling club de Fribourg",
-      "ville": "Fribourg",
-      "description": "Champ. Suisses : 1e manche des disciplines de danse de twirling bâton",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 1500,
-      "annee": 2023
-    },
-    {
       "nom": "Union cycliste fribourgeoise",
       "ville": null,
       "description": "1 e étape du Tour du canton de",
@@ -19068,15 +18463,6 @@
       "nom": "Volley Düdingen",
       "ville": "Düdingen",
       "description": "CEV Europacup 1/32-Final Heimspiel",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 7500,
-      "annee": 2023
-    },
-    {
-      "nom": "Volley Düdingen",
-      "ville": "Düdingen",
-      "description": "CEV Europacup 1/16-Final Heimspiel",
       "canton": "FR",
       "secteur": "Sport",
       "montant_CHF": 7500,
@@ -19587,7 +18973,7 @@
       "annee": 2023
     },
     {
-      "nom": "Assoc. d'Aviron du canton de",
+      "nom": "Assoc. d'Aviron du canton de Fribourg",
       "ville": null,
       "description": "Contribution ordinaire",
       "canton": "SR",
@@ -19751,15 +19137,6 @@
     {
       "nom": "Canoë-Club Fribourg",
       "ville": "Fribourg",
-      "description": "Contribution ordinaire 2022",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 1660,
-      "annee": 2023
-    },
-    {
-      "nom": "Canoë-Club Fribourg",
-      "ville": "Fribourg",
       "description": "Contribution ordinaire",
       "canton": "FR",
       "secteur": "Sport",
@@ -19773,15 +19150,6 @@
       "canton": "SR",
       "secteur": "Sport",
       "montant_CHF": 3710,
-      "annee": 2023
-    },
-    {
-      "nom": "Club Fribourgeois d'Aviation",
-      "ville": null,
-      "description": "Contribution ordinaire 2022",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 1700,
       "annee": 2023
     },
     {
@@ -19908,15 +19276,6 @@
       "canton": "FR",
       "secteur": "Sport",
       "montant_CHF": 39640,
-      "annee": 2023
-    },
-    {
-      "nom": "Rugby-Club Fribourg",
-      "ville": "Fribourg",
-      "description": "Contribution ordinaire 2022",
-      "canton": "FR",
-      "secteur": "Sport",
-      "montant_CHF": 1320,
       "annee": 2023
     },
     {
@@ -20127,7 +19486,7 @@
       "annee": 2023
     },
     {
-      "nom": "Sté d’histoire du canton de",
+      "nom": "Sté d’histoire du canton de Fribourg",
       "ville": null,
       "description": "Projet d'étude historique sur l'administration des communes du canton de Fribourg",
       "canton": "SR",
@@ -20163,9 +19522,9 @@
       "annee": 2023
     },
     {
-      "nom": "le Conseil d’État ou par un service de l’État FriJuNe Fribourg Tennis",
+      "nom": "FriJuNe Festival",
       "ville": "Fribourg",
-      "description": "Centre cantonal de formation",
+      "description": "Reconnu par le Conseil d'État FR · Centre cantonal de formation",
       "canton": "FR",
       "secteur": "Sport",
       "montant_CHF": 8000,
@@ -20220,24 +19579,6 @@
       "nom": "Start-up box-up.ch",
       "ville": null,
       "description": "Part LoRo sur la station BoxUp à Châtel-St-Denis",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 7408,
-      "annee": 2023
-    },
-    {
-      "nom": "Start-up box-up.ch",
-      "ville": null,
-      "description": "Part LoRo sur la station BoxUp à Belfaux",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 7408,
-      "annee": 2023
-    },
-    {
-      "nom": "Start-up box-up.ch",
-      "ville": null,
-      "description": "Part LoRo sur la station BoxUp à Neyruz",
       "canton": "SR",
       "secteur": "Sport",
       "montant_CHF": 7408,
@@ -20694,7 +20035,7 @@
       "annee": 2023
     },
     {
-      "nom": "EMEF",
+      "nom": "EMEF - École de musique et expression française",
       "ville": null,
       "description": "Plateforme gestion SAF",
       "canton": "SR",
@@ -26535,15 +25876,6 @@
       "annee": 2023
     },
     {
-      "nom": "Verein Matterhorn Cervino Speed Opening",
-      "ville": null,
-      "description": "Women's World Cup Downhill",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 60000,
-      "annee": 2023
-    },
-    {
       "nom": "Verein Zermatt Marathon",
       "ville": "Zermatt",
       "description": "Gornergrat Zermatt Marathon",
@@ -29145,7 +28477,7 @@
       "annee": 2023
     },
     {
-      "nom": "L'AMUSE - Sté des Amis du Muséum d'histoire naturelle de",
+      "nom": "L'AMUSE - Sté des Amis du Muséum d'histoire naturelle",
       "ville": null,
       "description": "Publication",
       "canton": "SR",
@@ -30027,15 +29359,6 @@
       "annee": 2023
     },
     {
-      "nom": "Assoc. Cantonale Neuchâteloise de Gymnastique Artistique",
-      "ville": "Gymnastique",
-      "description": "Concours de printemps GAM",
-      "canton": "NE",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
       "nom": "Assoc. Neuchâteloise de Football",
       "ville": "Football",
       "description": "Finales coupes neuchâteloises",
@@ -30153,15 +29476,6 @@
       "annee": 2023
     },
     {
-      "nom": "BMX Club La Béroche",
-      "ville": null,
-      "description": "Championnat romand de BMX 7e manche 2023",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
       "nom": "Boxing Club Val-de-Travers",
       "ville": null,
       "description": "Championnat suisse de Light contact 2022",
@@ -30192,24 +29506,6 @@
       "nom": "Club de pétanque La Bricole",
       "ville": "Colombier",
       "description": "Coupe Vaudoise 2023",
-      "canton": "NE",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Club de pétanque La Bricole",
-      "ville": "Colombier",
-      "description": "Championnat cantonal doublettes dames et seniors",
-      "canton": "NE",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Club de pétanque La Bricole",
-      "ville": "Colombier",
-      "description": "Concours de la fête nationale",
       "canton": "NE",
       "secteur": "Sport",
       "montant_CHF": 500,
@@ -30453,33 +29749,6 @@
       "nom": "Red-Fish Neuchâtel",
       "ville": "Neuchâtel",
       "description": "Meeting Futura étape 2 de la Région Suisse Romande 2023",
-      "canton": "NE",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Red-Fish Neuchâtel",
-      "ville": "Neuchâtel",
-      "description": "Talent Cup 2023",
-      "canton": "NE",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Red-Fish Neuchâtel",
-      "ville": "Neuchâtel",
-      "description": "Red-Fish Cup Artistic Swimming",
-      "canton": "NE",
-      "secteur": "Sport",
-      "montant_CHF": 500,
-      "annee": 2023
-    },
-    {
-      "nom": "Red-Fish Neuchâtel",
-      "ville": "Neuchâtel",
-      "description": "Triathlon regio League 2023",
       "canton": "NE",
       "secteur": "Sport",
       "montant_CHF": 500,
@@ -31035,7 +30304,7 @@
       "annee": 2023
     },
     {
-      "nom": "Groupe de vol à voile de",
+      "nom": "Groupe de vol à voile",
       "ville": null,
       "description": "Système de prévention anti- collision 2022",
       "canton": "SR",
@@ -33465,15 +32734,6 @@
       "annee": 2023
     },
     {
-      "nom": "Assoc. Ensemble Batida",
-      "ville": null,
-      "description": "Saison crAsh-test/crAsh-son #4",
-      "canton": "SR",
-      "secteur": "Culture",
-      "montant_CHF": 20000,
-      "annee": 2023
-    },
-    {
       "nom": "Assoc. Ensemble Vide",
       "ville": "Genève",
       "description": "Concerts - Places",
@@ -34752,15 +34012,6 @@
       "annee": 2023
     },
     {
-      "nom": "Baraka Compagnie",
-      "ville": "Genève",
-      "description": "Le Mec de la tombe d’à côté, d’après le roman de Katarina Mazetti - spectacle théâtral",
-      "canton": "GE",
-      "secteur": "Culture",
-      "montant_CHF": 20000,
-      "annee": 2023
-    },
-    {
       "nom": "Blues Assoc. de Genève",
       "ville": "Bernex",
       "description": "Deux Concerts Exceptionnels au BAG",
@@ -34773,15 +34024,6 @@
       "nom": "Cappella Genevensis",
       "ville": "Genève",
       "description": "Quatre concerts de musique classique en Vieille-Ville 2023",
-      "canton": "GE",
-      "secteur": "Culture",
-      "montant_CHF": 15000,
-      "annee": 2023
-    },
-    {
-      "nom": "Cappella Genevensis",
-      "ville": "Genève",
-      "description": "4 événements artistiques en Vieille-Ville",
       "canton": "GE",
       "secteur": "Culture",
       "montant_CHF": 15000,
@@ -35142,15 +34384,6 @@
       "nom": "Compagnie Les Faiseurs de rêves",
       "ville": "Genève",
       "description": "Délivrez la constellation Beauté - projet pilote théâtral de réalité augmentée",
-      "canton": "GE",
-      "secteur": "Culture",
-      "montant_CHF": 45000,
-      "annee": 2023
-    },
-    {
-      "nom": "Compagnie Les Faiseurs de rêves",
-      "ville": "Genève",
-      "description": "Constellation ou Sainte Arthéna du Cosmos - spectacle itinérant",
       "canton": "GE",
       "secteur": "Culture",
       "montant_CHF": 45000,
@@ -35616,15 +34849,6 @@
       "annee": 2023
     },
     {
-      "nom": "Fond. Orchestre symphonique Bande-Son",
-      "ville": "Crissier",
-      "description": "The Fantastic Worlds of Elmer Bernstein 2024 - concert",
-      "canton": "VD",
-      "secteur": "Culture",
-      "montant_CHF": 5000,
-      "annee": 2023
-    },
-    {
       "nom": "Fond. Pavillon Sicli, Architecture et Arts du Bâti",
       "ville": "Les Acacias",
       "description": "Architects at Play - exposition",
@@ -35742,7 +34966,7 @@
       "annee": 2023
     },
     {
-      "nom": "Les Amis du Chœur de la Cathédrale Saint-Pierre de",
+      "nom": "Les Amis du Chœur de la Cathédrale Saint-Pierre",
       "ville": null,
       "description": "Concert du Vendredi-Saint 29.3.24",
       "canton": "SR",
@@ -35832,7 +35056,7 @@
       "annee": 2023
     },
     {
-      "nom": "L'Orchestre International de",
+      "nom": "L'Orchestre International",
       "ville": null,
       "description": "Concert Voyage en Italie à",
       "canton": "SR",
@@ -36012,7 +35236,7 @@
       "annee": 2023
     },
     {
-      "nom": "Théâtre des Marionnettes de",
+      "nom": "Théâtre des Marionnettes",
       "ville": null,
       "description": "La Première Fois - spectacle de marionnettes",
       "canton": "SR",
@@ -36147,7 +35371,7 @@
       "annee": 2023
     },
     {
-      "nom": "Conservatoire de musique de",
+      "nom": "Conservatoire de musique",
       "ville": null,
       "description": "Intégration et développement de l'enfant au sein de l'orchestre MusicEnsemble",
       "canton": "SR",
@@ -36255,7 +35479,7 @@
       "annee": 2023
     },
     {
-      "nom": "Fond. de l'Encyclopédie de",
+      "nom": "Fond. de l'Encyclopédie",
       "ville": null,
       "description": "Une édition sémantique et multilingue en ligne des registres du Conseil de Genève (1545-1550) - numérisation d'archives",
       "canton": "SR",
@@ -36396,15 +35620,6 @@
       "canton": "GE",
       "secteur": "Environnement",
       "montant_CHF": 48000,
-      "annee": 2023
-    },
-    {
-      "nom": "Assoc. Speak in Silence",
-      "ville": null,
-      "description": "Création chorégraphique The Fast Fashion Industry Part 3",
-      "canton": "SR",
-      "secteur": "Environnement",
-      "montant_CHF": 15000,
       "annee": 2023
     },
     {
@@ -36813,7 +36028,7 @@
       "annee": 2023
     },
     {
-      "nom": "Assoc. ATLETICAGENEVE -",
+      "nom": "Assoc. ATLETICAGENEVE",
       "ville": "Athlétisme",
       "description": "Atleticageneve",
       "canton": "VS",
@@ -36966,7 +36181,7 @@
       "annee": 2023
     },
     {
-      "nom": "Club Nautique de Versoix -",
+      "nom": "Club Nautique de Versoix",
       "ville": "Section Ski nautique",
       "description": "Chicken Cup 2023 #7",
       "canton": "GE",
@@ -36984,7 +36199,7 @@
       "annee": 2023
     },
     {
-      "nom": "Cross Pour Tous, Genève -",
+      "nom": "Cross Pour Tous, Genève",
       "ville": "Athlétisme",
       "description": "Cross Pour Tous",
       "canton": "VS",
@@ -36993,7 +36208,7 @@
       "annee": 2023
     },
     {
-      "nom": "CTT ZZ-Lancy, Grand-Lancy -",
+      "nom": "CTT ZZ-Lancy, Grand-Lancy",
       "ville": "Tennis de table",
       "description": "Super Finales LNA Dames et Hommes de Tennis de table",
       "canton": "GE",
@@ -37047,7 +36262,7 @@
       "annee": 2023
     },
     {
-      "nom": "Écuries du Courtil, Avully -",
+      "nom": "Écuries du Courtil, Avully",
       "ville": "Équitation",
       "description": "Concours de dressage du Courtil",
       "canton": "GE",
@@ -37236,7 +36451,7 @@
       "annee": 2023
     },
     {
-      "nom": "RunninGeneva, Carouge -",
+      "nom": "RunninGeneva, Carouge",
       "ville": "Athlétisme",
       "description": "Run Evasion Rhône 2023",
       "canton": "VS",
@@ -37245,7 +36460,7 @@
       "annee": 2023
     },
     {
-      "nom": "RunninGeneva, Carouge -",
+      "nom": "RunninGeneva, Carouge",
       "ville": "Athlétisme",
       "description": "Course des Ponts 2023",
       "canton": "VS",
@@ -37254,7 +36469,7 @@
       "annee": 2023
     },
     {
-      "nom": "RunninGeneva, Carouge -",
+      "nom": "RunninGeneva, Carouge",
       "ville": "Athlétisme",
       "description": "Ecotrail Genève 2023",
       "canton": "VS",
@@ -37263,7 +36478,7 @@
       "annee": 2023
     },
     {
-      "nom": "RunninGeneva, Carouge -",
+      "nom": "RunninGeneva, Carouge",
       "ville": "Athlétisme",
       "description": "Geneva Urban Trail",
       "canton": "VS",
@@ -37272,7 +36487,7 @@
       "annee": 2023
     },
     {
-      "nom": "RunninGeneva, Carouge -",
+      "nom": "RunninGeneva, Carouge",
       "ville": "Athlétisme",
       "description": "Nocturne des Evaux",
       "canton": "VS",
@@ -37344,15 +36559,6 @@
       "annee": 2023
     },
     {
-      "nom": "Vélo-Club Lancy",
-      "ville": "Grand-Lancy - Cyclisme Route",
-      "description": "Omnium Genevois de Cyclo- Cross et VTT 2023",
-      "canton": "SR",
-      "secteur": "Sport",
-      "montant_CHF": 2000,
-      "annee": 2023
-    },
-    {
       "nom": "Assoc. Genevoise de Tennis de Table (AGTT)",
       "ville": "Genève",
       "description": "En avant les Filles !",
@@ -37362,7 +36568,7 @@
       "annee": 2023
     },
     {
-      "nom": "Assoc. Gennecy Bricks, Avully -",
+      "nom": "Assoc. Gennecy Bricks, Avully",
       "ville": "Football",
       "description": "Street Youth League 2023",
       "canton": "GE",
@@ -37398,18 +36604,9 @@
       "annee": 2023
     },
     {
-      "nom": "Chênois Genève Volley -",
+      "nom": "Chênois Genève Volley",
       "ville": "volleyball",
       "description": "Coupe d'Europe 8 e de Finale",
-      "canton": "GE",
-      "secteur": "Sport",
-      "montant_CHF": 5000,
-      "annee": 2023
-    },
-    {
-      "nom": "Chênois Genève Volley -",
-      "ville": "volleyball",
-      "description": "Coupe d'Europe 16 e de Finale",
       "canton": "GE",
       "secteur": "Sport",
       "montant_CHF": 5000,
@@ -37425,7 +36622,7 @@
       "annee": 2023
     },
     {
-      "nom": "CTT ZZ-Lancy, Grand-Lancy -",
+      "nom": "CTT ZZ-Lancy, Grand-Lancy",
       "ville": "Tennis de table",
       "description": "Développement de la pratique féminine",
       "canton": "GE",
@@ -37434,7 +36631,7 @@
       "annee": 2023
     },
     {
-      "nom": "Curved Lines Crew, Thônex -",
+      "nom": "Curved Lines Crew, Thônex",
       "ville": "Ski alpin",
       "description": "Poursuite des activités de l'association",
       "canton": "VD",
@@ -37569,7 +36766,7 @@
       "annee": 2023
     },
     {
-      "nom": "Winram William, Petit-Lancy -",
+      "nom": "Winram William, Petit-Lancy",
       "ville": "Plongée",
       "description": "Tentatives de records du monde de plongée en apnée",
       "canton": "GE",
@@ -37785,7 +36982,7 @@
       "annee": 2023
     },
     {
-      "nom": "Veyrier Hockey5 Club (VH5C) -",
+      "nom": "Veyrier Hockey5 Club (VH5C)",
       "ville": "Hockey sur gazon",
       "description": "Hockey5 École primaire",
       "canton": "GE",
@@ -39945,15 +39142,6 @@
       "annee": 2023
     },
     {
-      "nom": "Club équestre de Chevenez",
-      "ville": "Chevenez",
-      "description": "Concours hippique pour la relève",
-      "canton": "JU",
-      "secteur": "Promotion, tourisme et développement",
-      "montant_CHF": 1000,
-      "annee": 2023
-    },
-    {
       "nom": "Club équestre St-Hubert",
       "ville": "Bassecourt",
       "description": "Concours hippique",
@@ -40245,15 +39433,6 @@
       "nom": "Promoskate Events",
       "ville": "Rossemaison",
       "description": "Coupe d'Europe dames",
-      "canton": "JU",
-      "secteur": "Promotion, tourisme et développement",
-      "montant_CHF": 3000,
-      "annee": 2023
-    },
-    {
-      "nom": "Promoskate Events",
-      "ville": "Rossemaison",
-      "description": "Coupe d'Europe M16",
       "canton": "JU",
       "secteur": "Promotion, tourisme et développement",
       "montant_CHF": 3000,
@@ -41745,15 +40924,6 @@
       "annee": 2023
     },
     {
-      "nom": "Sté jurassienne d'émulation",
-      "ville": "Porrentruy",
-      "description": "Concours d'écriture TransJura",
-      "canton": "JU",
-      "secteur": "Culture",
-      "montant_CHF": 1500,
-      "annee": 2023
-    },
-    {
       "nom": "Steen Jacqueline",
       "ville": "Vicques",
       "description": "Festival international de piano",
@@ -43014,15 +42184,6 @@
       "annee": 2023
     },
     {
-      "nom": "Reso Danse",
-      "ville": "Zurich",
-      "description": "Fête de la danse 2024",
-      "canton": "JU",
-      "secteur": "Culture",
-      "montant_CHF": 80000,
-      "annee": 2023
-    },
-    {
       "nom": "Revue Musicale de Suisse Romande",
       "ville": "Fully",
       "description": "Activités 2023",
@@ -43206,15 +42367,6 @@
       "nom": "Assoc. cycliste cantonale vaudoise",
       "ville": null,
       "description": "Talent Romandie 2022",
-      "canton": "VD",
-      "secteur": "Promotion, tourisme et développement",
-      "montant_CHF": 1750,
-      "annee": 2023
-    },
-    {
-      "nom": "Assoc. cycliste cantonale vaudoise",
-      "ville": null,
-      "description": "Talent Romandie 2023",
       "canton": "VD",
       "secteur": "Promotion, tourisme et développement",
       "montant_CHF": 1750,

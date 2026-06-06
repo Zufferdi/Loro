@@ -5,27 +5,27 @@
     "source": "brb2021_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 1194,
-    "total_chf": 64598256,
+    "total_entries": 1192,
+    "total_chf": 64560256,
     "precise_classified_entries": 482,
-    "precise_classified_chf": 36341440,
-    "pct_chf_precisely_classified": 56.3,
+    "precise_classified_chf": 36385390,
+    "pct_chf_precisely_classified": 56.4,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 1194,
-    "total_chf_classified": 64598256,
-    "catchall_chf": 28256816,
-    "cross_year_recovered": 419
+    "total_entries_classified": 1192,
+    "total_chf_classified": 64560256,
+    "catchall_chf": 28174866,
+    "cross_year_recovered": 420
   },
   "categories": [
     {
       "name": "Soutien général à la culture",
-      "count": 712,
-      "total_chf": 28256816,
-      "mean_chf": 39686,
+      "count": 710,
+      "total_chf": 28174866,
+      "mean_chf": 39682,
       "cantons": {
         "VD": {
-          "count": 203,
-          "total_chf": 7217000
+          "count": 202,
+          "total_chf": 7172000
         },
         "GE": {
           "count": 118,
@@ -36,8 +36,8 @@
           "total_chf": 5782375
         },
         "NE": {
-          "count": 76,
-          "total_chf": 2169250
+          "count": 75,
+          "total_chf": 2132300
         },
         "JU": {
           "count": 98,
@@ -224,7 +224,7 @@
           "montant_CHF": 175000
         },
         {
-          "nom": "et investissement Nouvel Ensemble Contemporain - NEC",
+          "nom": "Nouvel Ensemble Contemporain - NEC",
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
           "montant_CHF": 175000
@@ -590,7 +590,7 @@
           "montant_CHF": 80000
         },
         {
-          "nom": "sensibilisation du diabète ESCA CancerSupport",
+          "nom": "ESCA CancerSupport",
           "ville": "Le Grand-Saconnex",
           "canton": "GE",
           "montant_CHF": 80000
@@ -608,7 +608,7 @@
           "montant_CHF": 75000
         },
         {
-          "nom": "relative à la cohésion sociale en milieu urbain (LCSMU A 2 70)",
+          "nom": "LCSMU - Loi sur la cohésion sociale en milieu urbain GE",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 75000
@@ -716,7 +716,7 @@
           "montant_CHF": 70000
         },
         {
-          "nom": "projet Ensemble. Soutien pour la traduction en langage simplifié de textes pour personnes en situation de handicap Sport scolaire facultatif / Freiwilliger Schulsport (50%) 95'006.05 Ecolages hors cantons pour les élèves du programme SAF hors conventions scolaires",
+          "nom": "Ensemble. Soutien pour la traduction en langage simplifié de textes pour personnes en situation de handicap Sport scolaire facultatif / Freiwilliger Schulsport (50%) 95'006.05 Ecolages hors cantons pour les élèves du programme SAF hors conventions scolaires",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 69400
@@ -884,7 +884,7 @@
           "montant_CHF": 50000
         },
         {
-          "nom": "d'architecture Transports publics fribourgeois Holding (TPF) SA",
+          "nom": "Transports publics fribourgeois Holding (TPF) SA",
           "ville": "Givisiez",
           "canton": "FR",
           "montant_CHF": 50000
@@ -948,12 +948,6 @@
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 46000
-        },
-        {
-          "nom": "Les Amis des éditions Infolio - Vaud, Gollion",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 45000
         },
         {
           "nom": "Jamais sans lui mais tout sur mammaire Compagnie Fabienne Berger, Promasens - Rue",
@@ -1148,7 +1142,7 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "dessine, destiné aux écoles primaires Zurich",
+          "nom": "Aide à l'édition (Zurich) - écoles primaires",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 40000
@@ -1190,12 +1184,6 @@
           "montant_CHF": 37500
         },
         {
-          "nom": "divers albums",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 36950
-        },
-        {
           "nom": "Assoc. Fargue",
           "ville": "Lausanne",
           "canton": "VD",
@@ -1226,7 +1214,7 @@
           "montant_CHF": 35000
         },
         {
-          "nom": "ème édition de la Bataille des Livres La Revue musicale de Suisse romande",
+          "nom": "Bataille des Livres La Revue musicale de Suisse romande",
           "ville": "Fully",
           "canton": "VS",
           "montant_CHF": 35000
@@ -1281,6 +1269,18 @@
         },
         {
           "nom": "Assoc. Arts Mouvementés - Yasmine Hugonnet",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. des Ami.e.s des Editions Antipodes",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Assoc. La Fête du Slip",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 30000
@@ -1394,14 +1394,10 @@
           "montant_CHF": 270000
         },
         {
-          "nom": "Théâtre du Jorat",
-          "montant_CHF": 255000,
-          "canton": "VD",
+          "nom": "Fond. du Théâtre du Jorat",
           "ville": "Mézières",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Fond. du Théâtre du Jorat",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VD",
+          "montant_CHF": 255000
         },
         {
           "nom": "Théâtre du Crochetan",
@@ -1440,14 +1436,10 @@
           "montant_CHF": 150000
         },
         {
-          "nom": "Théâtre du Jura",
-          "montant_CHF": 150000,
-          "canton": "JU",
+          "nom": "Delémont'BD 2021 Fond. pour le Théâtre du Jura",
           "ville": "Delémont",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Delémont'BD 2021 Fond. pour le Théâtre du Jura",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "JU",
+          "montant_CHF": 150000
         },
         {
           "nom": "Théâtre Les Halles - Sierre",
@@ -1630,7 +1622,7 @@
           "montant_CHF": 30000
         },
         {
-          "nom": "et démocratie The Three Monkeys compagnie",
+          "nom": "The Three Monkeys compagnie",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 30000
@@ -1648,7 +1640,7 @@
           "montant_CHF": 25000
         },
         {
-          "nom": "pesado, une histoire de pétrole Assoc. 3615 Dakota",
+          "nom": "Assoc. 3615 Dakota",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 25000
@@ -1684,7 +1676,7 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "Assoc. Le Théâtre de la",
+          "nom": "Assoc. Le Théâtre",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 20000
@@ -1720,7 +1712,7 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "théâtre dans la guerre froide YTS Production",
+          "nom": "YTS Production",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 20000
@@ -1864,7 +1856,7 @@
           "montant_CHF": 8000
         },
         {
-          "nom": "redux Tigre - Faîtière genevoise des producteur·ice·x·s de théâtre indépendant et professionnel",
+          "nom": "Tigre - Faîtière genevoise des producteur·ice·x·s de théâtre indépendant et professionnel",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 8000
@@ -1876,7 +1868,7 @@
           "montant_CHF": 7000
         },
         {
-          "nom": "concerts B.A.C.H. Le Moment Baroque",
+          "nom": "B.A.C.H. Le Moment Baroque",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 7000
@@ -1906,7 +1898,7 @@
           "montant_CHF": 5000
         },
         {
-          "nom": "ni Brel, ni Barbara (truck tour 2021) Le Moment Baroque",
+          "nom": "Brel, ni Barbara (truck tour 2021) Le Moment Baroque",
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 5000
@@ -1969,9 +1961,9 @@
     },
     {
       "name": "Festival multi-disciplinaire",
-      "count": 116,
-      "total_chf": 6929300,
-      "mean_chf": 59735,
+      "count": 115,
+      "total_chf": 6921300,
+      "mean_chf": 60185,
       "cantons": {
         "VD": {
           "count": 19,
@@ -1994,23 +1986,19 @@
           "total_chf": 68000
         },
         "GE": {
-          "count": 43,
-          "total_chf": 1941400
+          "count": 42,
+          "total_chf": 1933400
         }
       },
       "samples": [
         {
-          "nom": "Verbier Festival",
-          "montant_CHF": 975000,
-          "canton": "VS",
+          "nom": "Fond. du Verbier Festival",
           "ville": "Verbier",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Fond. du Verbier Festival",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VS",
+          "montant_CHF": 975000
         },
         {
-          "nom": "culturelle 2021-2022 Fribourg",
+          "nom": "Fribourg",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 580000
@@ -2036,17 +2024,13 @@
       ],
       "all_entries": [
         {
-          "nom": "Verbier Festival",
-          "montant_CHF": 975000,
-          "canton": "VS",
+          "nom": "Fond. du Verbier Festival",
           "ville": "Verbier",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Fond. du Verbier Festival",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VS",
+          "montant_CHF": 975000
         },
         {
-          "nom": "culturelle 2021-2022 Fribourg",
+          "nom": "Fribourg",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 580000
@@ -2070,14 +2054,10 @@
           "montant_CHF": 250000
         },
         {
-          "nom": "Belluard Bollwerk Festival",
-          "montant_CHF": 230000,
-          "canton": "FR",
+          "nom": "Free Art Sunday Belluard Bollwerk",
           "ville": "Fribourg",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Free Art Sunday Belluard Bollwerk",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "FR",
+          "montant_CHF": 230000
         },
         {
           "nom": "Festival de Genève",
@@ -2272,7 +2252,7 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "e Rencontres cinématographiques Palestine : Filmer C'est Exister Scène Vagabonde Festival",
+          "nom": "Rencontres cinématographiques Palestine : Filmer C'est Exister Scène Vagabonde Festival",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 40000
@@ -2308,7 +2288,7 @@
           "montant_CHF": 30000
         },
         {
-          "nom": "investissements techniques Estivale Open Air",
+          "nom": "Estivale Open Air",
           "ville": "Estavayer-le-Lac",
           "canton": "FR",
           "montant_CHF": 30000
@@ -2410,7 +2390,7 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "musique Be You Network",
+          "nom": "Be You Network",
           "ville": "Les Acacias",
           "canton": "GE",
           "montant_CHF": 20000
@@ -2572,21 +2552,21 @@
           "montant_CHF": 12000
         },
         {
-          "nom": "e édition - 2021 Les Concerts du Cœur Genevois",
+          "nom": "Les Concerts du Cœur Genevois",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 12000
         },
         {
-          "nom": "Assoc. Esprit du Cercle",
-          "ville": "Sion",
-          "canton": "VS",
-          "montant_CHF": 10000
-        },
-        {
           "nom": "AVIFFF - Assoc. du Vevey International Funny Film Festival",
           "ville": "Vevey",
           "canton": "VD",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. Esprit du Cercle",
+          "ville": "Sion",
+          "canton": "VS",
           "montant_CHF": 10000
         },
         {
@@ -2599,12 +2579,6 @@
           "nom": "Assoc. Guinness Irish Festival",
           "ville": "Sion",
           "canton": "VS",
-          "montant_CHF": 8000
-        },
-        {
-          "nom": "Assoc. Alliance Créative",
-          "ville": "Genève",
-          "canton": "GE",
           "montant_CHF": 8000
         },
         {
@@ -2778,14 +2752,16 @@
       },
       "samples": [
         {
-          "nom": "Cinéforom — Fond. romande pour le cinéma",
-          "montant_CHF": 2951800,
-          "canton": "GE",
+          "nom": "Fond. Cinéforom",
           "ville": "Genève",
-          "secteur": "",
-          "description": "Consolidation de 6 attributions : Diffusion créations fribourgeoises 2021 Cinéforom - Fond. romande pour le cinéma, Fond. Cinéforom",
-          "_consolidated": true,
-          "_count": 6
+          "canton": "GE",
+          "montant_CHF": 1700000
+        },
+        {
+          "nom": "Fond. Cinéforom",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 700000
         },
         {
           "nom": "Festival du film et forum international sur les droits humains Fond. GIFF - Geneva Interna",
@@ -2794,38 +2770,30 @@
           "montant_CHF": 300000
         },
         {
-          "nom": "NIFFF — Neuchâtel Int. Fantastic Film Festival",
-          "montant_CHF": 283000,
-          "canton": "NE",
+          "nom": "Neuchâtel International Fantastic Film Festival - NIFFF",
           "ville": "Neuchâtel",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Neuchâtel International Fantastic Film Festival - NIFFF",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "NE",
+          "montant_CHF": 283000
         },
         {
           "nom": "Cinémathèque suisse",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 230000
-        },
-        {
-          "nom": "Fond. Visions du Réel",
-          "ville": "Nyon",
-          "canton": "VD",
-          "montant_CHF": 220000
         }
       ],
       "all_entries": [
         {
-          "nom": "Cinéforom — Fond. romande pour le cinéma",
-          "montant_CHF": 2951800,
-          "canton": "GE",
+          "nom": "Fond. Cinéforom",
           "ville": "Genève",
-          "secteur": "",
-          "description": "Consolidation de 6 attributions : Diffusion créations fribourgeoises 2021 Cinéforom - Fond. romande pour le cinéma, Fond. Cinéforom",
-          "_consolidated": true,
-          "_count": 6
+          "canton": "GE",
+          "montant_CHF": 1700000
+        },
+        {
+          "nom": "Fond. Cinéforom",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 700000
         },
         {
           "nom": "Festival du film et forum international sur les droits humains Fond. GIFF - Geneva Interna",
@@ -2834,14 +2802,10 @@
           "montant_CHF": 300000
         },
         {
-          "nom": "NIFFF — Neuchâtel Int. Fantastic Film Festival",
-          "montant_CHF": 283000,
-          "canton": "NE",
+          "nom": "Neuchâtel International Fantastic Film Festival - NIFFF",
           "ville": "Neuchâtel",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Neuchâtel International Fantastic Film Festival - NIFFF",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "NE",
+          "montant_CHF": 283000
         },
         {
           "nom": "Cinémathèque suisse",
@@ -2854,12 +2818,36 @@
           "ville": "Nyon",
           "canton": "VD",
           "montant_CHF": 220000
+        },
+        {
+          "nom": "Diffusion créations fribourgeoises 2021 Cinéforom - Fond. romande pour le cinéma",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 185000
+        },
+        {
+          "nom": "Fond. Cinéforom",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 156800
+        },
+        {
+          "nom": "Fond. Cinéforom",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 130000
         },
         {
           "nom": "Assoc. culturelle des mines d’asphalte de la presta, Traver s",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 105000
+        },
+        {
+          "nom": "Fond. Cinéforom",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 80000
         },
         {
           "nom": "Formation et acquisition d'instruments Fond. Fellini pour le cinéma",
@@ -3000,7 +2988,7 @@
           "montant_CHF": 10000
         },
         {
-          "nom": "e Genève F-Information",
+          "nom": "Genève F-Information",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 10000
@@ -3036,7 +3024,7 @@
           "montant_CHF": 4000
         },
         {
-          "nom": "jurassiens Nuit du court métrage, Winterthour",
+          "nom": "Nuit du court métrage, Winterthour",
           "ville": null,
           "canton": "JU",
           "montant_CHF": 1000
@@ -3045,9 +3033,9 @@
     },
     {
       "name": "Musique classique",
-      "count": 73,
-      "total_chf": 4283100,
-      "mean_chf": 58672,
+      "count": 72,
+      "total_chf": 4253100,
+      "mean_chf": 59070,
       "cantons": {
         "VD": {
           "count": 21,
@@ -3070,8 +3058,8 @@
           "total_chf": 709000
         },
         "GE": {
-          "count": 14,
-          "total_chf": 889000
+          "count": 13,
+          "total_chf": 859000
         }
       },
       "samples": [
@@ -3088,14 +3076,10 @@
           "montant_CHF": 410000
         },
         {
-          "nom": "OSR — Orchestre de la Suisse Romande",
-          "montant_CHF": 400000,
-          "canton": "GE",
+          "nom": "Programme de formation 2021 OSR - Orchestre de la Suisse Romande",
           "ville": "Genève",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Programme de formation 2021 OSR - Orchestre de la Suisse Romande",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "GE",
+          "montant_CHF": 400000
         },
         {
           "nom": "Opéra décentralisé",
@@ -3104,7 +3088,7 @@
           "montant_CHF": 390000
         },
         {
-          "nom": "virtuel Limelight Nouvel Opéra Fribourg",
+          "nom": "Limelight Nouvel Opéra Fribourg",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 350000
@@ -3124,14 +3108,10 @@
           "montant_CHF": 410000
         },
         {
-          "nom": "OSR — Orchestre de la Suisse Romande",
-          "montant_CHF": 400000,
-          "canton": "GE",
+          "nom": "Programme de formation 2021 OSR - Orchestre de la Suisse Romande",
           "ville": "Genève",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Programme de formation 2021 OSR - Orchestre de la Suisse Romande",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "GE",
+          "montant_CHF": 400000
         },
         {
           "nom": "Opéra décentralisé",
@@ -3140,7 +3120,7 @@
           "montant_CHF": 390000
         },
         {
-          "nom": "virtuel Limelight Nouvel Opéra Fribourg",
+          "nom": "Limelight Nouvel Opéra Fribourg",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 350000
@@ -3244,12 +3224,6 @@
         {
           "nom": "Assoc. l'Horizon Chimérique",
           "ville": "Vessy",
-          "canton": "GE",
-          "montant_CHF": 30000
-        },
-        {
-          "nom": "Cappella Genevensis",
-          "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 30000
         },
@@ -3404,7 +3378,7 @@
           "montant_CHF": 10000
         },
         {
-          "nom": "mein Bitten de Mendelssohn Ensemble vocal DeMusica",
+          "nom": "Bitten de Mendelssohn Ensemble vocal DeMusica",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 9000
@@ -3458,7 +3432,7 @@
           "montant_CHF": 6000
         },
         {
-          "nom": "démarrage Ensemble Vocal Mon Pays Fribourg",
+          "nom": "Ensemble Vocal Mon Pays Fribourg",
           "ville": "Le Mouret",
           "canton": "FR",
           "montant_CHF": 6000
@@ -3656,14 +3630,10 @@
           "montant_CHF": 130000
         },
         {
-          "nom": "Montreux Jazz Festival",
-          "montant_CHF": 120000,
-          "canton": "VD",
+          "nom": "Montreux Jazz Artists Foundation",
           "ville": "Montreux",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Montreux Jazz Artists Foundation",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VD",
+          "montant_CHF": 120000
         },
         {
           "nom": "Assoc. du Cully Jazz Festival",
@@ -3768,7 +3738,7 @@
           "montant_CHF": 10000
         },
         {
-          "nom": "ère édition du festival Mont Noir Jazz fOrum culture",
+          "nom": "Mont Noir Jazz fOrum culture",
           "ville": "Tavannes",
           "canton": "JU",
           "montant_CHF": 10000
@@ -3889,23 +3859,15 @@
       "samples": [
         {
           "nom": "Fond. Pierre Gianadda",
-          "montant_CHF": 625000,
-          "canton": "VS",
           "ville": "Martigny",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Fond. Pierre Gianadda",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VS",
+          "montant_CHF": 625000
         },
         {
-          "nom": "Plateforme 10",
-          "montant_CHF": 600000,
-          "canton": "VD",
+          "nom": "Fond. Plateforme 10",
           "ville": "Lausanne",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Fond. Plateforme 10",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VD",
+          "montant_CHF": 600000
         },
         {
           "nom": "Fond. Pro Urba",
@@ -3929,23 +3891,15 @@
       "all_entries": [
         {
           "nom": "Fond. Pierre Gianadda",
-          "montant_CHF": 625000,
-          "canton": "VS",
           "ville": "Martigny",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Fond. Pierre Gianadda",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VS",
+          "montant_CHF": 625000
         },
         {
-          "nom": "Plateforme 10",
-          "montant_CHF": 600000,
-          "canton": "VD",
+          "nom": "Fond. Plateforme 10",
           "ville": "Lausanne",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Fond. Plateforme 10",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VD",
+          "montant_CHF": 600000
         },
         {
           "nom": "Fond. Pro Urba",
@@ -3973,13 +3927,9 @@
         },
         {
           "nom": "Fond. de l'Hermitage",
-          "montant_CHF": 100000,
-          "canton": "VD",
           "ville": "Lausanne",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Fond. de l'Hermitage",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VD",
+          "montant_CHF": 100000
         },
         {
           "nom": "Fond. des Amis du Musée Jenisch Vevey",
@@ -4431,13 +4381,9 @@
       "samples": [
         {
           "nom": "CORODIS",
-          "montant_CHF": 774500,
-          "canton": "VD+VS",
           "ville": "Lausanne",
-          "secteur": "",
-          "description": "Consolidation de 3 attributions : Exercice 2021 (part fribourgeoise) Corodis, Fonds de soutien à la diffusion de spectacles CORODIS-LOTERIE 2021 Fond. Ateliers d’artiste, CORODIS",
-          "_consolidated": true,
-          "_count": 3
+          "canton": "VD",
+          "montant_CHF": 700000
         },
         {
           "nom": "Assoc. DreamAgo Swiss",
@@ -4456,18 +4402,20 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 44000
+        },
+        {
+          "nom": "Fonds de soutien à la diffusion de spectacles CORODIS-LOTERIE 2021 Fond. Ateliers d’artiste",
+          "ville": "St-Maurice",
+          "canton": "VS",
+          "montant_CHF": 40000
         }
       ],
       "all_entries": [
         {
           "nom": "CORODIS",
-          "montant_CHF": 774500,
-          "canton": "VD+VS",
           "ville": "Lausanne",
-          "secteur": "",
-          "description": "Consolidation de 3 attributions : Exercice 2021 (part fribourgeoise) Corodis, Fonds de soutien à la diffusion de spectacles CORODIS-LOTERIE 2021 Fond. Ateliers d’artiste, CORODIS",
-          "_consolidated": true,
-          "_count": 3
+          "canton": "VD",
+          "montant_CHF": 700000
         },
         {
           "nom": "Assoc. DreamAgo Swiss",
@@ -4486,22 +4434,34 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 44000
+        },
+        {
+          "nom": "Fonds de soutien à la diffusion de spectacles CORODIS-LOTERIE 2021 Fond. Ateliers d’artiste",
+          "ville": "St-Maurice",
+          "canton": "VS",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Exercice 2021 (part fribourgeoise) Corodis",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 34500
         }
       ]
     },
     {
       "name": "Littérature / Édition",
-      "count": 8,
-      "total_chf": 760000,
-      "mean_chf": 95000,
+      "count": 10,
+      "total_chf": 841950,
+      "mean_chf": 84195,
       "cantons": {
         "VD": {
-          "count": 4,
-          "total_chf": 103000
+          "count": 5,
+          "total_chf": 148000
         },
         "NE": {
-          "count": 1,
-          "total_chf": 150000
+          "count": 2,
+          "total_chf": 186950
         },
         "GE": {
           "count": 2,
@@ -4532,16 +4492,16 @@
           "montant_CHF": 80000
         },
         {
-          "nom": "Amis des Editions d'En Bas",
-          "ville": "Lausanne",
+          "nom": "Les Amis des éditions Infolio - Vaud, Gollion",
+          "ville": null,
           "canton": "VD",
-          "montant_CHF": 15000
+          "montant_CHF": 45000
         },
         {
-          "nom": "Assoc. Livres sans Frontières- Bibliothèque Globlivres",
-          "ville": "Renens",
-          "canton": "VD",
-          "montant_CHF": 6000
+          "nom": "Aide à l'édition - divers albums",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 36950
         }
       ],
       "all_entries": [
@@ -4562,6 +4522,18 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 80000
+        },
+        {
+          "nom": "Les Amis des éditions Infolio - Vaud, Gollion",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 45000
+        },
+        {
+          "nom": "Aide à l'édition - divers albums",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 36950
         },
         {
           "nom": "Amis des Editions d'En Bas",
@@ -4760,7 +4732,7 @@
           "montant_CHF": 100000
         },
         {
-          "nom": "fonds du photographe Robert Hofer",
+          "nom": "Robert Hofer",
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 100000
@@ -4792,7 +4764,7 @@
           "montant_CHF": 100000
         },
         {
-          "nom": "fonds du photographe Robert Hofer",
+          "nom": "Robert Hofer",
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 100000

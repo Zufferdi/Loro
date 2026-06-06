@@ -250,8 +250,30 @@
       },
       "v21_sport_culture": {
         "count": 51
+      },
+      "v25_2025_cleanup": {
+        "count": 28
+      },
+      "v26_2025_deeper": {
+        "count": 14
+      },
+      "v27_2025_polish": {
+        "count": 37
+      },
+      "v28_2025_anomalies": {
+        "count": 4
+      },
+      "v29_2025_fragments": {
+        "count": 14
+      },
+      "v32_2021_2024_more": {
+        "count": 1
+      },
+      "v33_strict_dups_removed": {
+        "count": 3
       }
-    }
+    },
+    "total_brut": 206435681
   },
   "entries": [
     {
@@ -1397,7 +1419,7 @@
       "lng": null
     },
     {
-      "nom": "AFIRO",
+      "nom": "AFIRO - Atelier de formation, recherche et orientation",
       "ville": "Ecublens",
       "description": "Acquisition matériel / essiuS Équipement",
       "montant_CHF": 260000,
@@ -2695,9 +2717,9 @@
       "note_parser": "split-from-glued"
     },
     {
-      "nom": "Manifestation Assoc. Ensemble enScène",
+      "nom": "Assoc. Ensemble enScène",
       "ville": "Lausanne",
-      "description": "Assoc. des Amis du Festival",
+      "description": "Manifestation · Assoc. des Amis du Festival",
       "montant_CHF": 30000,
       "canton": "VD",
       "secteur": "Culture",
@@ -2707,9 +2729,9 @@
       "lng": 6.6323
     },
     {
-      "nom": "Manifestation Assoc. EPS",
+      "nom": "Assoc. EPS",
       "ville": null,
-      "description": "Isabelle-de-Montolieu, Lausanne Assoc. des Amis du",
+      "description": "Manifestation · Isabelle-de-Montolieu, Lausanne Assoc. des Amis du",
       "montant_CHF": 10000,
       "canton": "VD",
       "secteur": "Culture",
@@ -4378,9 +4400,9 @@
       "lng": null
     },
     {
-      "nom": "Saison artistique / Acquisition Compagnie Via Leopardi de matériel / Équipement Lausanne",
+      "nom": "/ Acquisition Compagnie Via Leopardi de matériel / Équipement Lausanne",
       "ville": null,
-      "description": "Création artistique",
+      "description": "Saison artistique · Création artistique",
       "montant_CHF": 15000,
       "canton": "VD",
       "secteur": "Culture",
@@ -4464,9 +4486,9 @@
       "lng": null
     },
     {
-      "nom": "artistique Dénominateurs Communs",
+      "nom": "Dénominateurs Communs",
       "ville": "Genève",
-      "description": "Création. Compagnie de Théâtre Gianni",
+      "description": "Saison artistique · Création. Compagnie de Théâtre Gianni",
       "montant_CHF": 7000,
       "canton": "VD",
       "secteur": "Culture",
@@ -4476,9 +4498,9 @@
       "lng": 6.1432
     },
     {
-      "nom": "artistique Diabolo Festival",
+      "nom": "Diabolo Festival",
       "ville": "Morges",
-      "description": "Création. Manifestation",
+      "description": "Saison artistique · Création. Manifestation",
       "montant_CHF": 60000,
       "canton": "VD",
       "secteur": "Culture",
@@ -5818,9 +5840,9 @@
       "lng": 6.1583
     },
     {
-      "nom": "artistique Les amis des éditions Infolio",
+      "nom": "Les amis des éditions Infolio",
       "ville": null,
-      "description": "Création. Vaud, Gollion La Limonade Littéraire,",
+      "description": "Saison artistique · Création. Vaud, Gollion La Limonade Littéraire,",
       "montant_CHF": 70000,
       "canton": "VD",
       "secteur": "Culture",
@@ -6712,7 +6734,7 @@
       "lng": 6.6614
     },
     {
-      "nom": "TAP Assoc. pour la création & la",
+      "nom": "TAP Assoc. pour la création &",
       "ville": null,
       "description": "diffusion d'œuvres musicales expérimentales, Lausanne Manifestation",
       "montant_CHF": 8000,
@@ -10002,9 +10024,9 @@
       "lng": null
     },
     {
-      "nom": "tremplins Lausanne Sports Section Aviron",
+      "nom": "Lausanne Sports Section Aviron",
       "ville": null,
-      "description": "Achat bateaux",
+      "description": "tremplins · Achat bateaux",
       "montant_CHF": 17805,
       "canton": "VD",
       "secteur": "Sport",
@@ -10026,9 +10048,9 @@
       "lng": null
     },
     {
-      "nom": "trois tapis de Lausanne Sports Section Aviron",
+      "nom": "Lausanne Sports Section Aviron",
       "ville": null,
-      "description": "gymnastique légers Achat ergomètres",
+      "description": "trois tapis de · gymnastique légers Achat ergomètres",
       "montant_CHF": 1200,
       "canton": "VD",
       "secteur": "Sport",
@@ -10418,9 +10440,9 @@
       "lng": null
     },
     {
-      "nom": "damage de pistes de ski de fond Stade-Lausanne Athlétisme",
+      "nom": "Stade-Lausanne Athlétisme",
       "ville": null,
-      "description": "Achat perches de compétition",
+      "description": "damage de pistes de ski de fond · Achat perches de compétition",
       "montant_CHF": 435,
       "canton": "VD",
       "secteur": "Sport",
@@ -10466,9 +10488,9 @@
       "lng": null
     },
     {
-      "nom": "lignes de natation USY Athlétisme",
+      "nom": "USY Athlétisme",
       "ville": null,
-      "description": "Achat javelots",
+      "description": "lignes de natation · Achat javelots",
       "montant_CHF": 1515,
       "canton": "VD",
       "secteur": "Sport",
@@ -10490,9 +10512,9 @@
       "lng": null
     },
     {
-      "nom": "matériel de musculation USY Athlétisme",
+      "nom": "USY Athlétisme",
       "ville": null,
-      "description": "Achat matériel entraînement et compétition",
+      "description": "matériel de musculation · Achat matériel entraînement et compétition",
       "montant_CHF": 240,
       "canton": "VD",
       "secteur": "Sport",
@@ -11610,33 +11632,9 @@
       "note_parser": "split-from-glued"
     },
     {
-      "nom": "Club d'Échecs de Payerne",
-      "ville": null,
-      "description": "annuel d'échecs 2025. Cercle d'échecs de Nyon",
-      "montant_CHF": 500,
-      "canton": "VD",
-      "secteur": "Sport",
-      "organe": "Fonds du sport",
-      "sous_section": "Manifestations sportives",
-      "lat": null,
-      "lng": null
-    },
-    {
       "nom": "Club de Course d'Orientation",
       "ville": null,
       "description": "d'Europe - Grèce 2025. Lausanne-Jorat Cercle des Armes de Lausanne",
-      "montant_CHF": 300,
-      "canton": "VD",
-      "secteur": "Sport",
-      "organe": "Fonds du sport",
-      "sous_section": "Manifestations sportives",
-      "lat": null,
-      "lng": null
-    },
-    {
-      "nom": "Club de Course d'Orientation",
-      "ville": null,
-      "description": "Cercle des Armes de Lausanne 500.- Lausanne-Jorat Coupe de l'Avenir 2025 Course d'orientation de St-George",
       "montant_CHF": 300,
       "canton": "VD",
       "secteur": "Sport",
@@ -11756,18 +11754,6 @@
       "lat": null,
       "lng": null,
       "note_parser": "split-from-glued"
-    },
-    {
-      "nom": "Club des Lutteurs",
-      "ville": null,
-      "description": "de sabre et de fleuret. Mont-sur-Rolle - Nyon Cercle d'Escrime de Founex 500.- Fête cantonale de lutte suisse Tournoi Jeunesse et Senior",
-      "montant_CHF": 3000,
-      "canton": "VD",
-      "secteur": "Sport",
-      "organe": "Fonds du sport",
-      "sous_section": "Manifestations sportives",
-      "lat": null,
-      "lng": null
     },
     {
       "nom": "Club des Patineurs de Lausanne",
@@ -16360,7 +16346,7 @@
       "ville": "Fribourg",
       "description": "Soutien pour la migration vers la technologie laser de 22 cinémas situés dans le Canton de Vaud",
       "montant_CHF": 1725000,
-      "canton": "VD",
+      "canton": "SR",
       "secteur": "Culture",
       "organe": "Fondation d'aide 45'000.- aux sportifs vaudois Soutien annuel",
       "sous_section": null,
@@ -16452,8 +16438,8 @@
       "lng": 6.55
     },
     {
-      "nom": "Fond. de l'Hermitage",
-      "ville": null,
+      "nom": "Fond. de l'Hermitage / Domaine Bugnion",
+      "ville": "Lausanne",
       "description": "Famille Bugnion, Lausanne Soutien pour la conservation des collections de La Fondation de l'Hermitage, les mises aux normes techniques dans les espaces d'exposition et les travaux permettant de rendre le bâtiment accessible au public à mobilité réduite",
       "montant_CHF": 1500000,
       "canton": "VD",
@@ -17140,9 +17126,9 @@
       "lng": 7.162
     },
     {
-      "nom": "Activités 2025 LA FAMILLE AU JARDIN",
+      "nom": "LA FAMILLE AU JARDIN",
       "ville": "St-Ursen",
-      "description": "Formation",
+      "description": "Activités 2025 · Formation",
       "montant_CHF": 10000,
       "canton": "FR",
       "secteur": "Action sociale et personnes âgées",
@@ -17164,9 +17150,9 @@
       "lng": null
     },
     {
-      "nom": "Activités 2025 Les Concerts du Cœur",
+      "nom": "Les Concerts du Cœur",
       "ville": null,
-      "description": "Fribourgeois, Fribourg Caritas Fribourg",
+      "description": "Activités 2025 · Fribourgeois, Fribourg Caritas Fribourg",
       "montant_CHF": 6000,
       "canton": "FR",
       "secteur": "Action sociale et personnes âgées",
@@ -17176,9 +17162,9 @@
       "lng": null
     },
     {
-      "nom": "du surendettement LivrEchange bibliothèque",
+      "nom": "LivrEchange bibliothèque",
       "ville": null,
-      "description": "interculturelle, Fribourg Caritas Suisse, Fribourg",
+      "description": "du surendettement · interculturelle, Fribourg Caritas Suisse, Fribourg",
       "montant_CHF": 190000,
       "canton": "FR",
       "secteur": "Action sociale et personnes âgées",
@@ -17278,9 +17264,9 @@
       "lng": 7.162
     },
     {
-      "nom": "Beschaffung eines Fahrzeugs Solidarité femmes Fribourg /",
+      "nom": "Solidarité femmes Fribourg /",
       "ville": null,
-      "description": "mit Rollstuhltransport Frauenhaus Freiburg Aide pour 2025 et soutien espacefemmes-frauenraum,",
+      "description": "Beschaffung eines Fahrzeugs · mit Rollstuhltransport Frauenhaus Freiburg Aide pour 2025 et soutien espacefemmes-frauenraum,",
       "montant_CHF": 350000,
       "canton": "FR",
       "secteur": "Action sociale et personnes âgées",
@@ -17290,9 +17276,9 @@
       "lng": null
     },
     {
-      "nom": "Activités 2025 SucréSalé Coopérative",
+      "nom": "SucréSalé Coopérative",
       "ville": "Bulle",
-      "description": "Revalorisation du site de EX-pression, Fribourg",
+      "description": "Activités 2025 · Revalorisation du site de EX-pression, Fribourg",
       "montant_CHF": 50000,
       "canton": "FR",
       "secteur": "Culture",
@@ -17302,9 +17288,9 @@
       "lng": 7.0567
     },
     {
-      "nom": "charge allophone 2025 Valm Veiller",
+      "nom": "Valm Veiller",
       "ville": "Accompagner Là et",
-      "description": "Maintenant, Givisiez Fond. Compétences Bénévoles,",
+      "description": "charge allophone 2025 · Maintenant, Givisiez Fond. Compétences Bénévoles,",
       "montant_CHF": 55000,
       "canton": "FR",
       "secteur": "Action sociale et personnes âgées",
@@ -18689,7 +18675,7 @@
       "lng": null
     },
     {
-      "nom": "AFAAP",
+      "nom": "AFAAP - Assoc. fribourgeoise pour l'accompagnement à domicile",
       "ville": "Fribourg",
       "description": "Activités 2025",
       "montant_CHF": 240000,
@@ -18785,7 +18771,7 @@
       "lng": null
     },
     {
-      "nom": "diabètefribourg - Assoc.",
+      "nom": "Assoc. fribourgeoise du diabète",
       "ville": null,
       "description": "fribourgeoise du diabète, Fribourg Activités 2025",
       "montant_CHF": 250000,
@@ -18833,7 +18819,7 @@
       "lng": null
     },
     {
-      "nom": "Ligue fribourgeoise",
+      "nom": "Ligue fribourgeoise contre le cancer",
       "ville": null,
       "description": "contre le cancer, Fribourg Conseil et soutien, dépistage du cancer du côlon en 2025, Voltigo",
       "montant_CHF": 778000,
@@ -21822,7 +21808,7 @@
       "lng": null
     },
     {
-      "nom": "Fond. pour la Rénovation et, Conservation du Couvent des",
+      "nom": "Fond. pour la Rénovation et, Conservation du Couvent",
       "ville": "Conservation du Couvent des",
       "description": "Cordeliers, Fribourg Erhaltung und Vermittlung der Kulturgüter des Franziskanerklosters Freiburg",
       "montant_CHF": 139000,
@@ -22488,7 +22474,7 @@
       "lng": null
     },
     {
-      "nom": "Reper",
+      "nom": "Assoc. REPER",
       "ville": null,
       "description": "Délégué-e de l’éthique dans le sport fribourgeois 2025",
       "montant_CHF": 28000,
@@ -23504,9 +23490,9 @@
       "agg_count": 9
     },
     {
-      "nom": "partie 1, octobre 2024 FriSpike Volleyball Development",
+      "nom": "FriSpike Volleyball Development",
       "ville": "Volleyball groupe GER_",
-      "description": "Féd. Fribourgeoise 240.- RTG Sek2 Athletik de Gymnastique",
+      "description": "partie 1, octobre 2024 · Féd. Fribourgeoise 240.- RTG Sek2 Athletik de Gymnastique",
       "montant_CHF": 1448,
       "canton": "FR",
       "secteur": "Sport",
@@ -23560,9 +23546,9 @@
       "agg_count": 9
     },
     {
-      "nom": "tests en Gym-Danse, janvier 2025 FriSpike Volleyball Development",
+      "nom": "Gym-Danse, janvier 2025 FriSpike Volleyball Development",
       "ville": null,
-      "description": "",
+      "description": "tests en",
       "montant_CHF": 3640,
       "canton": "FR",
       "secteur": "Sport",
@@ -23584,9 +23570,9 @@
       "lng": null
     },
     {
-      "nom": "de Gymnastique FriSpike Volleyball Development",
+      "nom": "Gymnastique FriSpike Volleyball Development",
       "ville": null,
-      "description": "Journée Fribourgeoise de Volleyball groupe SAR F Perfectionnement, février 2025",
+      "description": "de · Journée Fribourgeoise de Volleyball groupe SAR F Perfectionnement, février 2025",
       "montant_CHF": 1052,
       "canton": "FR",
       "secteur": "Sport",
@@ -23664,9 +23650,9 @@
       "lng": null
     },
     {
-      "nom": "cantonal, octobre 2025 Team AFF-FFV",
+      "nom": "Team AFF-FFV",
       "ville": null,
-      "description": "Team AFF-FFV / Secteur Fribourg-Natation 1925 432.- FE-13/FE-14 Camp d'entraînement du",
+      "description": "cantonal, octobre 2025 · Team AFF-FFV / Secteur Fribourg-Natation 1925 432.- FE-13/FE-14 Camp d'entraînement du",
       "montant_CHF": 19200,
       "canton": "FR",
       "secteur": "Sport",
@@ -23676,9 +23662,9 @@
       "lng": null
     },
     {
-      "nom": "centre cantonal, octobre 2024 Team AFF-FFV",
+      "nom": "Team AFF-FFV",
       "ville": null,
-      "description": "Team AFF-FFV / Secteur Féminin Élite",
+      "description": "centre cantonal, octobre 2024 · Team AFF-FFV / Secteur Féminin Élite",
       "montant_CHF": 14860,
       "canton": "FR",
       "secteur": "Sport",
@@ -23688,7 +23674,7 @@
       "lng": null
     },
     {
-      "nom": "Assoc. Fribourgeoise de Basket 6'232.",
+      "nom": "Assoc. Fribourgeoise de Basket",
       "ville": null,
       "description": "(AFBB)",
       "montant_CHF": 329000,
@@ -24130,7 +24116,7 @@
       "note_parser": "split-from-glued"
     },
     {
-      "nom": "FTSU",
+      "nom": "FTSU - Freiburgische Turnvereinigung",
       "ville": "Freiburgische Turn",
       "description": "Club Olympic Domdidier",
       "montant_CHF": 500,
@@ -25063,7 +25049,7 @@
       "lng": null
     },
     {
-      "nom": "AFEPS",
+      "nom": "AFEPS - Assoc. fribourgeoise d'éducation physique scolaire",
       "ville": null,
       "description": "et de loisirs 2025",
       "montant_CHF": 1420,
@@ -25447,7 +25433,7 @@
       "lng": null
     },
     {
-      "nom": "Féd. Fribourgeoise Natation 16'610.",
+      "nom": "Féd. Fribourgeoise Natation",
       "ville": null,
       "description": "",
       "montant_CHF": 6400,
@@ -25459,9 +25445,9 @@
       "lng": null
     },
     {
-      "nom": "et de loisirs 2025 FOLV (Freiburger OL Verband)",
+      "nom": "FOLV (Freiburger OL Verband)",
       "ville": null,
-      "description": "OL-Trainings für alle 2025",
+      "description": "et de loisirs 2025 · OL-Trainings für alle 2025",
       "montant_CHF": 1400,
       "canton": "FR",
       "secteur": "Sport",
@@ -25483,9 +25469,9 @@
       "lng": null
     },
     {
-      "nom": "des Sports Équestres Fribourg Rando",
+      "nom": "Sports Équestres Fribourg Rando",
       "ville": null,
-      "description": "et de loisirs 2025",
+      "description": "des · et de loisirs 2025",
       "montant_CHF": 5000,
       "canton": "FR",
       "secteur": "Sport",
@@ -25585,7 +25571,7 @@
       "agg_count": 3
     },
     {
-      "nom": "FTSU",
+      "nom": "FTSU - Freiburgische Turnvereinigung",
       "ville": "Freiburgische Turn",
       "description": "und Sportunion Leistungs - und Freizeitsport 2025",
       "montant_CHF": 23870,
@@ -25927,7 +25913,7 @@
       "lng": 7.1108
     },
     {
-      "nom": "Le Prix du Social 2025",
+      "nom": "Le Prix du Social",
       "ville": "Fribourg",
       "description": "Frais d'organisation par le Service de l'action sociale, Fribourg",
       "montant_CHF": 12062,
@@ -25975,7 +25961,7 @@
       "lng": null
     },
     {
-      "nom": "Fribourg 2026",
+      "nom": "Fribourg",
       "ville": "Association",
       "description": "Events & Legacy, Switzerland Soutien au Championnat du Monde de hockey sur glace 2026 1’929’142.-",
       "montant_CHF": 300000,
@@ -26575,7 +26561,7 @@
       "lng": null
     },
     {
-      "nom": "EMEF",
+      "nom": "EMEF - École de musique et d'expression française",
       "ville": "Plateforme gestion SAF",
       "description": "",
       "montant_CHF": 3655,
@@ -26665,7 +26651,7 @@
       "agg_count": 9
     },
     {
-      "nom": "Tournoi Pee-Wee 2025",
+      "nom": "Tournoi Pee-Wee",
       "ville": null,
       "description": "ednamor Soutien aux athlètes essiuS",
       "montant_CHF": 5200,
@@ -28782,7 +28768,7 @@
       "lng": null
     },
     {
-      "nom": "Assoc. Canal 9/Kanal 9",
+      "nom": "Assoc. Canal 9/Kanal",
       "ville": "Sierre",
       "description": "Projet et investissement",
       "montant_CHF": 854000,
@@ -29255,9 +29241,9 @@
       "lng": 7.3589
     },
     {
-      "nom": "Manifestation Assoc. Jazz é-tap",
+      "nom": "Assoc. Jazz é-tap",
       "ville": "Lausanne",
-      "description": "Création artistique",
+      "description": "Manifestation · Création artistique",
       "montant_CHF": 4000,
       "canton": "VS",
       "secteur": "Culture",
@@ -29303,9 +29289,9 @@
       "lng": null
     },
     {
-      "nom": "Projet Assoc. Jazz Station",
+      "nom": "Assoc. Jazz Station",
       "ville": "Sierre",
-      "description": "Saison artistique",
+      "description": "Projet · Saison artistique",
       "montant_CHF": 4000,
       "canton": "VS",
       "secteur": "Culture",
@@ -29503,9 +29489,9 @@
       "lng": null
     },
     {
-      "nom": "Projet Assoc. Label Rapace",
+      "nom": "Assoc. Label Rapace",
       "ville": "Mervelier",
-      "description": "Publication",
+      "description": "Projet · Publication",
       "montant_CHF": 3000,
       "canton": "VS",
       "secteur": "Culture",
@@ -29601,9 +29587,9 @@
       "lng": 7.1175
     },
     {
-      "nom": "Manifestation Assoc. Le Rosegorge",
+      "nom": "Assoc. Le Rosegorge",
       "ville": "Martigny",
-      "description": "Création artistique",
+      "description": "Manifestation · Création artistique",
       "montant_CHF": 10000,
       "canton": "VS",
       "secteur": "Culture",
@@ -29971,7 +29957,7 @@
       "lng": null
     },
     {
-      "nom": "Assoc. OSE 2020",
+      "nom": "Assoc. OSE",
       "ville": "Monthey",
       "description": "Projet",
       "montant_CHF": 20000,
@@ -30019,7 +30005,7 @@
       "lng": null
     },
     {
-      "nom": "Assoc. Point 11",
+      "nom": "Assoc. Point",
       "ville": "Sion",
       "description": "Saison artistique",
       "montant_CHF": 13000,
@@ -30307,7 +30293,7 @@
       "lng": 7.4625
     },
     {
-      "nom": "Assoc. Studio 13",
+      "nom": "Assoc. Studio",
       "ville": "Sion",
       "description": "Investissement",
       "montant_CHF": 115000,
@@ -31241,9 +31227,9 @@
       "lng": null
     },
     {
-      "nom": "le cinéma - Cinéforom, Genève Musée d'art du Valais",
+      "nom": "Musée d'art du Valais",
       "ville": "Sion",
-      "description": "Soutien à la diversité de la Publication production audiovisuelle",
+      "description": "fusion parser avec Fond. romande pour le cinéma - Cinéforom · Soutien à la diversité de la Publication production audiovisuelle",
       "montant_CHF": 38000,
       "canton": "VS",
       "secteur": "Culture",
@@ -31265,9 +31251,9 @@
       "lng": null
     },
     {
-      "nom": "Saison artistique Oberwalliser Blasorchester",
+      "nom": "Oberwalliser Blasorchester",
       "ville": "Brig",
-      "description": "Fond. Sion Violon Musique",
+      "description": "Saison artistique · Fond. Sion Violon Musique",
       "montant_CHF": 3500,
       "canton": "VS",
       "secteur": "Culture",
@@ -31965,7 +31951,7 @@
       "lng": null
     },
     {
-      "nom": "Saison artistique",
+      "nom": "Saison artistique [bénéficiaire non identifié]",
       "ville": null,
       "description": "",
       "montant_CHF": 681000,
@@ -32079,9 +32065,9 @@
       "lng": null
     },
     {
-      "nom": "Saison artistique et résidence Fond. IPT",
+      "nom": "Fond. IPT",
       "ville": "Sion",
-      "description": "Projet",
+      "description": "et résidence · Saison artistique · Projet",
       "montant_CHF": 30000,
       "canton": "VS",
       "secteur": "Formation et recherche",
@@ -32103,9 +32089,9 @@
       "lng": 7.5333
     },
     {
-      "nom": "Projet Fond. pour une École",
+      "nom": "Fond. pour une École",
       "ville": null,
-      "description": "de théâtre, Martigny Verein Oberwalliser",
+      "description": "Projet · de théâtre, Martigny Verein Oberwalliser",
       "montant_CHF": 40000,
       "canton": "VS",
       "secteur": "Culture",
@@ -32115,9 +32101,9 @@
       "lng": null
     },
     {
-      "nom": "Saison artistique Kurt Bösch Stiftung KBS",
+      "nom": "Kurt Bösch Stiftung KBS",
       "ville": "Sion",
-      "description": "Investissement",
+      "description": "Saison artistique · Investissement",
       "montant_CHF": 450000,
       "canton": "VS",
       "secteur": "Culture",
@@ -32139,9 +32125,9 @@
       "lng": null
     },
     {
-      "nom": "von Artichoc und Oberwalliser Volkshochschule Oberwallis",
+      "nom": "Volkshochschule Oberwallis",
       "ville": null,
-      "description": "Mittelschule St. Ursula, Brig-Glis Mörel-Filet Cours Création artistique",
+      "description": "fusion parser avec Verein Artichoc Brig · von · Mittelschule St. Ursula, Brig-Glis Mörel-Filet Cours Création artistique",
       "montant_CHF": 3000,
       "canton": "VS",
       "secteur": "Formation et recherche",
@@ -32175,9 +32161,9 @@
       "lng": null
     },
     {
-      "nom": "für Liedkunst, Brig Archives de l'État du Valais",
+      "nom": "Archives de l'État du Valais",
       "ville": "Sion",
-      "description": "Saison artistique Publication",
+      "description": "fusion parser avec Verein für Liedkunst, Brig · für · Saison artistique Publication",
       "montant_CHF": 10000,
       "canton": "VS",
       "secteur": "Formation et recherche",
@@ -34357,7 +34343,7 @@
       "lng": null
     },
     {
-      "nom": "Assoc. CM MTB UCI VS 2025",
+      "nom": "Assoc. CM MTB UCI VS",
       "ville": null,
       "description": "Contribution exceptionnelle Championnats du Monde de Moutain Bike UCI 2025",
       "montant_CHF": 100000,
@@ -35261,7 +35247,7 @@
       "lng": 7.4953
     },
     {
-      "nom": "Mattmark Memorial 1965",
+      "nom": "Mattmark Memorial",
       "ville": null,
       "description": "CroquetVS, Sion",
       "montant_CHF": 1238,
@@ -35321,7 +35307,7 @@
       "lng": null
     },
     {
-      "nom": "ol norska VS",
+      "nom": "Ol Norska VS",
       "ville": "Bettmeralp",
       "description": "OL-SM 2024",
       "montant_CHF": 4202,
@@ -36197,7 +36183,7 @@
       "lng": 6.9319
     },
     {
-      "nom": "Assoc. Pouvoir 4",
+      "nom": "Assoc. Pouvoir",
       "ville": "Neuchâtel",
       "description": "Activités annuelles",
       "montant_CHF": 13000,
@@ -37108,7 +37094,7 @@
       "lng": 6.9319
     },
     {
-      "nom": "Assoc. 1065",
+      "nom": "Assoc.",
       "ville": "Les Planchettes",
       "description": "Événement",
       "montant_CHF": 1600,
@@ -38590,7 +38576,7 @@
       "lng": null
     },
     {
-      "nom": "Assoc. Théâtre Tumulte Acte 2",
+      "nom": "Assoc. Théâtre Tumulte Acte",
       "ville": "Peseux",
       "description": "Saison artistique et investissement",
       "montant_CHF": 45000,
@@ -38974,7 +38960,7 @@
       "lng": 6.8264
     },
     {
-      "nom": "Club 44",
+      "nom": "Club",
       "ville": "La Chaux-de-Fonds",
       "description": "Activités annuelles aruJ",
       "montant_CHF": 135000,
@@ -39268,7 +39254,7 @@
       "lng": 7.05
     },
     {
-      "nom": "Fond. Arc en Scène - centre",
+      "nom": "Fond. Arc en Scène - centre neuchâtelois des arts vivants",
       "ville": null,
       "description": "neuchâtelois des arts vivants - TPR, La Chaux-de-Fonds Saison artistique et investissement",
       "montant_CHF": 1345000,
@@ -40510,7 +40496,7 @@
       "lng": null
     },
     {
-      "nom": "Amis de la Nature - Section la",
+      "nom": "Amis de la Nature - Section",
       "ville": null,
       "description": "CdF/St-Imier, La Chaux-de-Fonds Invertissement sialaV",
       "montant_CHF": 20000,
@@ -41069,9 +41055,9 @@
       "note_parser": "split-from-glued"
     },
     {
-      "nom": "championnats des clubs + Neuchâtel Hockey Academy",
+      "nom": "Neuchâtel Hockey Academy",
       "ville": null,
-      "description": "Meeting de formation Kids/futura Tournoi des Hirondelles U14 2025",
+      "description": "championnats des clubs + · Meeting de formation Kids/futura Tournoi des Hirondelles U14 2025",
       "montant_CHF": 500,
       "canton": "NE",
       "secteur": "Sport",
@@ -41225,9 +41211,9 @@
       "lng": null
     },
     {
-      "nom": "de unihockey 2025 Service des Sports de la Ville",
+      "nom": "Service des Sports de la Ville",
       "ville": null,
-      "description": "de Neuchâtel FSG Les Geneveys-et-Coffrane 500.- Festival des sports 2024 Fête régionale de gymnastique",
+      "description": "de unihockey 2025 · de Neuchâtel FSG Les Geneveys-et-Coffrane 500.- Festival des sports 2024 Fête régionale de gymnastique",
       "montant_CHF": 5580,
       "canton": "NE",
       "secteur": "Sport",
@@ -41237,9 +41223,9 @@
       "lng": null
     },
     {
-      "nom": "du Val-de-Ruz Service des Sports de la Ville",
+      "nom": "Service des Sports de la Ville",
       "ville": null,
-      "description": "de Neuchâtel Gebsonn Club, La Chaux-de-Fonds",
+      "description": "du Val-de-Ruz · de Neuchâtel Gebsonn Club, La Chaux-de-Fonds",
       "montant_CHF": 6300,
       "canton": "NE",
       "secteur": "Sport",
@@ -41261,7 +41247,7 @@
       "lng": null
     },
     {
-      "nom": "Gymnastique Rythmique de Neuchâtel Tour de Sagnard 2025",
+      "nom": "Gymnastique Rythmique de Neuchâtel Tour de Sagnard",
       "ville": null,
       "description": "Championnat Romand de",
       "montant_CHF": 560,
@@ -41280,7 +41266,7 @@
       "agg_count": 2
     },
     {
-      "nom": "Ski Club La Sagne de Neuchâtel Tour de Sagnard 2025",
+      "nom": "Ski Club La Sagne de Neuchâtel Tour de Sagnard",
       "ville": null,
       "description": "Championnat Romand de",
       "montant_CHF": 775,
@@ -45883,7 +45869,7 @@
       "lng": 6.145
     },
     {
-      "nom": "Assoc. Atelier 101",
+      "nom": "Assoc. Atelier",
       "ville": "Genève",
       "description": "Passé Composé - création théâtrale",
       "montant_CHF": 30000,
@@ -48080,9 +48066,9 @@
       "note_parser": "split-from-glued"
     },
     {
-      "nom": "création théâtrale Ateliers d'Ethnomusicologie",
+      "nom": "Ateliers d'Ethnomusicologie",
       "ville": "Genève",
-      "description": "Assoc. Théâtre sans artifice,",
+      "description": "création théâtrale · Assoc. Théâtre sans artifice,",
       "montant_CHF": 50000,
       "canton": "GE",
       "secteur": "Culture",
@@ -48092,9 +48078,9 @@
       "lng": 6.1432
     },
     {
-      "nom": "spectacle théâtral Besogne Activité Résultat",
+      "nom": "Besogne Activité Résultat",
       "ville": null,
-      "description": "Ouvrage, Bernex Assoc. Théâtre Spirale,",
+      "description": "spectacle théâtral · Ouvrage, Bernex Assoc. Théâtre Spirale,",
       "montant_CHF": 6000,
       "canton": "GE",
       "secteur": "Culture",
@@ -48616,9 +48602,9 @@
       "lng": 6.1432
     },
     {
-      "nom": "création pluridisciplinaire Daïana Action Culturelle",
+      "nom": "Daïana Action Culturelle",
       "ville": null,
-      "description": "Chêne-Bougeries Compagnie Fauve, Genève",
+      "description": "création pluridisciplinaire · Chêne-Bougeries Compagnie Fauve, Genève",
       "montant_CHF": 8000,
       "canton": "GE",
       "secteur": "Culture",
@@ -48628,9 +48614,9 @@
       "lng": null
     },
     {
-      "nom": "qui n'existent qu'à moitié - Daïkokucho productions",
+      "nom": "Daïkokucho productions",
       "ville": null,
-      "description": "création théâtrale Genève PORTRAIT - création théâtrale",
+      "description": "qui n'existent qu'à moitié - · création théâtrale Genève PORTRAIT - création théâtrale",
       "montant_CHF": 45000,
       "canton": "GE",
       "secteur": "Culture",
@@ -48652,9 +48638,9 @@
       "lng": 6.1432
     },
     {
-      "nom": "chorégraphique Don't Stop Me Now",
+      "nom": "Don't Stop Me Now",
       "ville": "Bernex",
-      "description": "Création. 2026 - Titre en cours Trois mecs au bol - création théâtrale",
+      "description": "chorégraphique · Création. 2026 - Titre en cours Trois mecs au bol - création théâtrale",
       "montant_CHF": 30000,
       "canton": "GE",
       "secteur": "Culture",
@@ -48720,9 +48706,9 @@
       "note_parser": "split-from-glued"
     },
     {
-      "nom": "création théâtrale Ensemble Bernini",
+      "nom": "Ensemble Bernini",
       "ville": "Carouge",
-      "description": "Étoiles du baroque concert",
+      "description": "création théâtrale · Étoiles du baroque concert",
       "montant_CHF": 3000,
       "canton": "GE",
       "secteur": "Culture",
@@ -49263,9 +49249,9 @@
       "note_parser": "split-from-glued"
     },
     {
-      "nom": "en 4 épisodes) > demande Pilote Documents d'artistes de soutien pour l'épisode 3 Genève",
+      "nom": "Documents d'artistes de soutien pour l'épisode 3 Genève",
       "ville": null,
-      "description": "Édition 2026 - 5 ans de Le Collectif Imaginaire, Genève",
+      "description": "en 4 épisodes) > demande Pilote · Édition 2026 - 5 ans de Le Collectif Imaginaire, Genève",
       "montant_CHF": 70000,
       "canton": "GE",
       "secteur": "Culture",
@@ -49349,7 +49335,7 @@
       "lng": 6.1432
     },
     {
-      "nom": "Les Concerts de l'Athénée 4",
+      "nom": "Les Concerts de l'Athénée",
       "ville": null,
       "description": "",
       "montant_CHF": 120000,
@@ -49775,7 +49761,7 @@
       "lng": 6.1432
     },
     {
-      "nom": "Fond. pour la conservation des temples genevois construits avant 1907",
+      "nom": "Fond. pour la conservation des temples genevois construits avant",
       "ville": null,
       "description": "temples genevois construits avant 1907, Les Acacias Restauration temple de la Fusterie - Demande complémentaire",
       "montant_CHF": 3300000,
@@ -51644,7 +51630,7 @@
       "agg_count": 2
     },
     {
-      "nom": "Genève Natation 1885",
+      "nom": "Genève Natation",
       "ville": null,
       "description": "",
       "montant_CHF": 23700,
@@ -54296,7 +54282,7 @@
       "lng": null
     },
     {
-      "nom": "Assoc.WEURO GENEVE 2025",
+      "nom": "Assoc.WEURO GENEVE",
       "ville": null,
       "description": "Payerne - Football UEFA Women's EURO 2025",
       "montant_CHF": 200000,
@@ -54380,7 +54366,7 @@
       "lng": null
     },
     {
-      "nom": "CdN 1934",
+      "nom": "CdN",
       "ville": "Genève - Natation",
       "description": "Coupe de Noël 2025",
       "montant_CHF": 25000,
@@ -54574,9 +54560,9 @@
       "lng": 6.1369
     },
     {
-      "nom": "de Genève - Palexpo Rock Dance Company",
+      "nom": "Rock Dance Company",
       "ville": "Petit-Lancy",
-      "description": "- Rock'n'roll acrobatique Geneva International Seven's,",
+      "description": "de Genève - Palexpo · - Rock'n'roll acrobatique Geneva International Seven's,",
       "montant_CHF": 5000,
       "canton": "GE",
       "secteur": "Culture",
@@ -54718,7 +54704,7 @@
       "lng": null
     },
     {
-      "nom": "Genève Natation 1885",
+      "nom": "Genève Natation",
       "ville": null,
       "description": "",
       "montant_CHF": 6000,
@@ -54754,9 +54740,9 @@
       "lng": null
     },
     {
-      "nom": "de Natation artistique Swiss Juniors Cup",
+      "nom": "Swiss Juniors Cup",
       "ville": "Petit-Lancy",
-      "description": "Futsal Genève Natation 1885",
+      "description": "de Natation artistique · Futsal Genève Natation 1885",
       "montant_CHF": 10000,
       "canton": "GE",
       "secteur": "Sport",
@@ -55018,7 +55004,7 @@
       "lng": null
     },
     {
-      "nom": "Centre d'Entraînement à la",
+      "nom": "Centre d'Entraînement à",
       "ville": null,
       "description": "Régate (CER), Genève - Voile Tour Voile",
       "montant_CHF": 25000,
@@ -55300,7 +55286,7 @@
       "lng": null
     },
     {
-      "nom": "Team Genève 2025",
+      "nom": "Team Genève",
       "ville": null,
       "description": "43 athlètes genevois - 1re partie",
       "montant_CHF": 140000,
@@ -55312,7 +55298,7 @@
       "lng": null
     },
     {
-      "nom": "Team Genève 2025",
+      "nom": "Team Genève",
       "ville": null,
       "description": "43 athlètes genevois - 2e partie",
       "montant_CHF": 86000,
@@ -59902,7 +59888,7 @@
       "lng": null
     },
     {
-      "nom": "CAJU 2025",
+      "nom": "CAJU",
       "ville": "Jubaca",
       "description": "",
       "montant_CHF": 2000,
@@ -60732,9 +60718,9 @@
       "note_parser": "split-from-glued"
     },
     {
-      "nom": "à Buenos Aires Municipalité de Delémont",
+      "nom": "Municipalité de Delémont",
       "ville": null,
-      "description": "",
+      "description": "à Buenos Aires",
       "montant_CHF": 78000,
       "canton": "JU",
       "secteur": "Sport",
@@ -62643,9 +62629,9 @@
       "lng": null
     },
     {
-      "nom": "t. Professions du spectacle suisse",
+      "nom": "Professions du spectacle suisse",
       "ville": "Berne",
-      "description": "Bourse Suisse aux spectacles 2025",
+      "description": "t. · Bourse Suisse aux spectacles 2025",
       "montant_CHF": 1055,
       "canton": "JU",
       "secteur": "Culture",
@@ -63371,7 +63357,7 @@
       "lng": 6.1432
     },
     {
-      "nom": "La Chouette Assoc.pour la",
+      "nom": "La Chouette Assoc.pour",
       "ville": null,
       "description": "production de beaux livres qui font rire et réfléchir, Berne Livre À la découverte de l'infini",
       "montant_CHF": 10000,
