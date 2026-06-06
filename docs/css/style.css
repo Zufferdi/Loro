@@ -2792,3 +2792,89 @@ html { scroll-behavior: smooth; }
   position: relative;
   min-height: 80px;
 }
+
+/* ============================================================
+   v13.43 — Améliorations UX/A11y/Mobile
+   ============================================================ */
+
+/* Tooltips touch-friendly : visible au tap sur mobile */
+@media (hover: none) and (pointer: coarse) {
+  /* Sur mobile/tactile, augmenter la cible des points/cellules cliquables */
+  .viz svg circle, .viz svg rect.bar { 
+    cursor: pointer;
+  }
+  /* Tooltip à position fixe en bas d'écran sur très petit écran */
+  .brb-tooltip, .tooltip {
+    position: fixed !important;
+    bottom: 16px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: auto !important;
+    max-width: calc(100vw - 32px);
+    z-index: 9999;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+}
+
+/* Focus visible amélioré pour navigation clavier */
+button:focus-visible, a:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--c-accent, #c8102e);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* SVG focus visible pour viz interactives */
+.viz svg :focus-visible {
+  outline: 2px solid var(--c-accent, #c8102e);
+  outline-offset: 1px;
+}
+
+/* Skeleton loading pour viz pas encore initialisées */
+.viz:empty {
+  background: linear-gradient(90deg, 
+    var(--bg-soft, #f5f3ed) 0%, 
+    var(--bg, #fafaf7) 50%, 
+    var(--bg-soft, #f5f3ed) 100%);
+  background-size: 200% 100%;
+  animation: skeletonPulse 1.5s ease-in-out infinite;
+  min-height: 200px;
+  border-radius: 8px;
+}
+@keyframes skeletonPulse {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .viz:empty { animation: none; opacity: 0.6; }
+}
+
+/* Disable skeleton si la viz a son propre loader */
+.viz[data-loaded] { background: none; animation: none; min-height: 0; }
+
+/* Mobile : réduire les marges des viz pour gagner de la place */
+@media (max-width: 600px) {
+  .viz { margin-left: -4px; margin-right: -4px; }
+  .viz-card { padding-left: 12px; padding-right: 12px; }
+  .stat-row { gap: 12px; }
+  .stat .value { font-size: 1.5rem; }
+}
+
+/* Améliorer la lisibilité du top nav pour assistive tech */
+.topnav a[aria-current="page"] { 
+  font-weight: 600; 
+  border-bottom: 2px solid var(--c-accent, #c8102e); 
+}
+
+/* Erreur viz : style distinctif */
+.viz-error {
+  padding: 24px 16px;
+  text-align: center;
+  background: rgba(200, 16, 46, 0.05);
+  border: 1px dashed rgba(200, 16, 46, 0.3);
+  border-radius: 8px;
+  color: var(--ink-mute, #666);
+  font-style: italic;
+  font-size: 13px;
+}
+.viz-error strong { color: #c8102e; font-style: normal; }
+
