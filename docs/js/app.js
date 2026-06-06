@@ -6,6 +6,35 @@
 let DATA = {};
 
 document.addEventListener('DOMContentLoaded', async () => {
+  // Pre-check : si d3 manque, afficher message d'erreur clair
+  if (typeof d3 === 'undefined') {
+    console.error('d3.js n\'a pas pu être chargé. Vérifiez votre connexion réseau.');
+    const errEl = document.getElementById('app-error');
+    if (errEl) {
+      errEl.innerHTML = '<strong>Erreur de chargement</strong>: les bibliothèques de visualisation (d3.js, topojson) n\'ont pas pu être chargées depuis le CDN. <br>Vérifiez votre connexion ou réessayez plus tard.';
+      errEl.style.display = 'block';
+    }
+    return;
+  }
+
+  // Helper pour appel résilient : une viz qui crash n'arrête pas les suivantes
+  function safeRun(name, fn) {
+    try {
+      fn();
+    } catch (e) {
+      console.error(`[viz:${name}] ${e.message}`, e);
+      // Affichage local d'erreur dans le container correspondant si présent
+      const guessId = '#viz-' + name.toLowerCase().replace(/^init/, '').replace(/scrolly$/i, '');
+      const el = document.querySelector(guessId);
+      if (el) {
+        const note = document.createElement('div');
+        note.style.cssText = 'padding:16px;color:#c8102e;font-size:13px;font-style:italic;text-align:center;';
+        note.textContent = `Cette visualisation n'a pas pu se charger. (${e.message})`;
+        el.appendChild(note);
+      }
+    }
+  }
+
   try {
     DATA.summary    = await loadJSON('summary.json');
     DATA.historique = await loadJSON('historique.json');
@@ -22,49 +51,53 @@ document.addEventListener('DOMContentLoaded', async () => {
     DATA.dependance = await loadJSON('dependance_cantons.json');
     DATA.juraHistoire = await loadJSON('jura_histoire.json');
     // brb2025_full.json (1.7 MB) — load lazily when Acte IX nears the viewport.
-    // We don't await here — the initial paint stays fast.
     DATA.brb2025      = null;
     DATA.brb2025_loading = null;
-
-    initHero();
-    initComparisons();
-    initTimelineScrolly();
-    initFranc();
-    initBeneficeEvol();
-    initAnomaly();
-    initRealMap();
-    initTilegram();
-    initGovernance();
-    initPrelevementEvol();
-    initMixScrolly();
-    initMixByCanton();
-    initOpCosts();
-    initCapital();
-    initPrevention();
-    initProblematic();
-    initTreemap();
-    initDependency();
-    initHexBenefs();
-    initTopBenefs();
-    initEvenements();
-    initShareSuisse();
-    initTopBenefsVD();
-    initLoroVsSwisslos();
-    initEcosystemeJeux();
-    initEditorialTimeline();
-    initJuraHistoire();
-    initBrbLazyTrigger();   // BRB viz (1.7 MB) — loaded on demand via IntersectionObserver
-    initJourney();
-    initSankey();
-    initReadingProgress();
-    initRevealOnScroll();
-    initBuildDate();
-    initA11yDecoration();
   } catch (e) {
-    console.error(e);
+    console.error('[data-load]', e);
     const errEl = document.getElementById('app-error');
-    if (errEl) { errEl.textContent = e.message; errEl.style.display = 'block'; }
+    if (errEl) {
+      errEl.innerHTML = `<strong>Erreur de chargement des données</strong> : ${e.message}<br>Réessayez ou contactez le mainteneur.`;
+      errEl.style.display = 'block';
+    }
+    return;
   }
+
+  // Init de chaque viz indépendamment : une erreur n'affecte pas les autres
+  safeRun('Hero',                () => initHero());
+  safeRun('Comparisons',         () => initComparisons());
+  safeRun('TimelineScrolly',     () => initTimelineScrolly());
+  safeRun('Franc',               () => initFranc());
+  safeRun('BeneficeEvol',        () => initBeneficeEvol());
+  safeRun('Anomaly',             () => initAnomaly());
+  safeRun('RealMap',             () => initRealMap());
+  safeRun('Tilegram',            () => initTilegram());
+  safeRun('Governance',          () => initGovernance());
+  safeRun('PrelevementEvol',     () => initPrelevementEvol());
+  safeRun('MixScrolly',          () => initMixScrolly());
+  safeRun('MixByCanton',         () => initMixByCanton());
+  safeRun('OpCosts',             () => initOpCosts());
+  safeRun('Capital',             () => initCapital());
+  safeRun('Prevention',          () => initPrevention());
+  safeRun('Problematic',         () => initProblematic());
+  safeRun('Treemap',             () => initTreemap());
+  safeRun('Dependency',          () => initDependency());
+  safeRun('HexBenefs',           () => initHexBenefs());
+  safeRun('TopBenefs',           () => initTopBenefs());
+  safeRun('Evenements',          () => initEvenements());
+  safeRun('ShareSuisse',         () => initShareSuisse());
+  safeRun('TopBenefsVD',         () => initTopBenefsVD());
+  safeRun('LoroVsSwisslos',      () => initLoroVsSwisslos());
+  safeRun('EcosystemeJeux',      () => initEcosystemeJeux());
+  safeRun('EditorialTimeline',   () => initEditorialTimeline());
+  safeRun('JuraHistoire',        () => initJuraHistoire());
+  safeRun('BrbLazyTrigger',      () => initBrbLazyTrigger());
+  safeRun('Journey',             () => initJourney());
+  safeRun('Sankey',              () => initSankey());
+  safeRun('ReadingProgress',     () => initReadingProgress());
+  safeRun('RevealOnScroll',      () => initRevealOnScroll());
+  safeRun('BuildDate',           () => initBuildDate());
+  safeRun('A11yDecoration',      () => initA11yDecoration());
 });
 
 /* ============================================================
@@ -2223,12 +2256,12 @@ function initAnomaly() {
   // === Données : bénéfices réels et décompositions narratives ===
   // benef en M CHF, sourcé rapports annuels Loro
   const benefs = {
-    2017: 215.0, // baseline avant Covid
-    2018: 221.4, // PBJ 388 M ; LJAr votée
-    2019: 244.3, // PBJ 408 M record, 1ère année LJAr
-    2020: 216.4, // Covid, PBJ -8%
-    2021: 229.0, // CORJA en vigueur, rebond
-    2022: 246.4, // Vaud bascule à 25%, Coupe du Monde
+    2017: 216.2, // baseline avant Covid (RA Loro 2020)
+    2018: 216.4, // PBJ 388 M ; LJAr votée (RA Loro 2020)
+    2019: 224.3, // PBJ 408 M record, 1ère année LJAr (RA Loro 2020)
+    2020: 224.7, // Covid, PBJ -8% mais total redistribué incluant 8,3 M de réserve (RA Loro 2020)
+    2021: 235.0, // CORJA en vigueur, rebond (RA Loro 2023)
+    2022: 243.4, // Vaud bascule à 25%, Coupe du Monde (RA Loro 2023)
     2023: 243.7, // bond IT, EuroDreams
     2024: 258.2, // record : jackpot + Euro + JO
     2025: 252.0, // reflux : cycles EuroMillions plus courts
@@ -2258,7 +2291,7 @@ function initAnomaly() {
         { label: 'Loterie électronique -30 %',               v: -8.0,  color: '#c8102e' },
         { label: 'Gestion serrée des coûts',                  v: 2.1,   color: '#5b8def' },
       ],
-      narratif: "Pandémie. PBJ -8 %, mais bénéfice tenu à 216 M grâce à des coûts comprimés. Obtention de l'autorisation Gespa pour 20 ans.",
+      narratif: "Pandémie. PBJ -8 %, mais bénéfice tenu à 224,7 M (216,4 M résultat opérationnel + 8,3 M de réserve) pour maintenir le soutien aux associations. Obtention de l'autorisation Gespa pour 20 ans.",
     },
     2021: {
       facteurs: [
@@ -2266,7 +2299,7 @@ function initAnomaly() {
         { label: 'CORJA en vigueur (1.1.2021)',              v: 2.0,   color: '#5b8def' },
         { label: 'Soutien spécifique cafés-restaurants',     v: -2.4,  color: '#7c5bc7' },
       ],
-      narratif: "Nouveau système CORJA. Lancement Live Betting en ligne. Soutien spécifique 3,3 M aux 800 cafés-restaurants qui exploitent les Tactilo.",
+      narratif: "Nouveau système CORJA. Live Betting existe en ligne depuis 2019. Soutien spécifique 3,5 M aux 800 cafés-restaurants qui exploitent les Tactilo (loro.ch officiel + arcinfo).",
     },
     2022: {
       facteurs: [
