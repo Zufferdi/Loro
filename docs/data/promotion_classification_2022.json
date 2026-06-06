@@ -5,56 +5,56 @@
     "source": "brb2022_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 818,
-    "total_chf": 17364730,
+    "total_entries": 769,
+    "total_chf": 17185960,
     "precise_classified_entries": 40,
     "precise_classified_chf": 3851397,
-    "pct_chf_precisely_classified": 22.2,
+    "pct_chf_precisely_classified": 22.4,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 818,
-    "total_chf_classified": 17364730,
-    "catchall_chf": 13513333,
+    "total_entries_classified": 769,
+    "total_chf_classified": 17185960,
+    "catchall_chf": 13334563,
     "cross_year_recovered": 8,
     "sector": "Promotion, tourisme et développement",
     "sector_slug": "promotion",
-    "total_entries_sector": 818,
-    "total_chf_sector": 17364730,
+    "total_entries_sector": 769,
+    "total_chf_sector": 17185960,
     "pct_entries_classified": 100.0
   },
   "categories": [
     {
       "name": "Soutien général à la promotion / tourisme",
-      "count": 778,
-      "total_chf": 13513333,
-      "mean_chf": 17369,
+      "count": 729,
+      "total_chf": 13334563,
+      "mean_chf": 18291,
       "cantons": {
         "SR": {
-          "count": 314,
-          "total_chf": 4307410
+          "count": 291,
+          "total_chf": 4236510
         },
         "VD": {
-          "count": 246,
-          "total_chf": 5282335
+          "count": 230,
+          "total_chf": 5272435
         },
         "VS": {
-          "count": 68,
-          "total_chf": 1992850
+          "count": 64,
+          "total_chf": 1911050
         },
         "NE": {
           "count": 11,
           "total_chf": 309500
         },
         "FR": {
-          "count": 21,
-          "total_chf": 136777
+          "count": 18,
+          "total_chf": 135107
         },
         "GE": {
-          "count": 53,
-          "total_chf": 1297356
+          "count": 51,
+          "total_chf": 1285856
         },
         "JU": {
-          "count": 65,
-          "total_chf": 187105
+          "count": 64,
+          "total_chf": 184105
         }
       },
       "samples": [
@@ -247,7 +247,7 @@
           "montant_CHF": 100000
         },
         {
-          "nom": "Féd. genevoise de coopération,",
+          "nom": "Féd. genevoise de coopération",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 100000
@@ -298,12 +298,6 @@
           "nom": "Numerik Games",
           "ville": "Yverdon-les-Bains",
           "canton": "VD",
-          "montant_CHF": 80000
-        },
-        {
-          "nom": "Assoc. Nendaz Freeride, Haute-",
-          "ville": "Nendaz",
-          "canton": "VS",
           "montant_CHF": 80000
         },
         {
@@ -445,12 +439,6 @@
           "montant_CHF": 55000
         },
         {
-          "nom": "Evidanse",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 55000
-        },
-        {
           "nom": "Centre Nordique Vallée de Joux",
           "ville": null,
           "canton": "SR",
@@ -473,12 +461,6 @@
           "ville": "Genolier",
           "canton": "VD",
           "montant_CHF": 51100
-        },
-        {
-          "nom": "Walliser Skiverband - Ski Valais",
-          "ville": null,
-          "canton": "VS",
-          "montant_CHF": 50000
         },
         {
           "nom": "Commune de Lutry",
@@ -508,6 +490,12 @@
           "nom": "Fond. NLZ - Centre national",
           "ville": null,
           "canton": "SR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Walliser Skiverband - Ski Valais",
+          "ville": null,
+          "canton": "VS",
           "montant_CHF": 50000
         },
         {
@@ -661,7 +649,7 @@
           "montant_CHF": 35000
         },
         {
-          "nom": "Féd. des Patoisants du Canton du",
+          "nom": "Féd. des Patoisants du Canton",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 34700
@@ -709,8 +697,8 @@
           "montant_CHF": 30160
         },
         {
-          "nom": "Commune de Corcelles-près-",
-          "ville": "Payerne",
+          "nom": "Commune de Corcelles-près-Payerne",
+          "ville": null,
           "canton": "VD",
           "montant_CHF": 30000
         },
@@ -769,7 +757,7 @@
           "montant_CHF": 28040
         },
         {
-          "nom": "Assoc. ATLETICAGENEVE, Genève -",
+          "nom": "Assoc. ATLETICAGENEVE, Genève",
           "ville": "Athlétisme",
           "canton": "VS",
           "montant_CHF": 28000
@@ -847,7 +835,7 @@
           "montant_CHF": 25000
         },
         {
-          "nom": "Genève Marathon / 20km de Genève -",
+          "nom": "Genève Marathon / 20km de Genève",
           "ville": "Athlétisme",
           "canton": "VS",
           "montant_CHF": 25000
@@ -871,7 +859,7 @@
           "montant_CHF": 25000
         },
         {
-          "nom": "Assoc. Sfair Management, Meyrin -",
+          "nom": "Assoc. Sfair Management, Meyrin",
           "ville": "Football",
           "canton": "GE",
           "montant_CHF": 24500
@@ -937,12 +925,6 @@
           "montant_CHF": 20517
         },
         {
-          "nom": "Visarte-Jura",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 20000
-        },
-        {
           "nom": "Assoc. 3x3 Basket",
           "ville": "Basket",
           "canton": "VD",
@@ -963,6 +945,12 @@
         {
           "nom": "Signe Production",
           "ville": "Claude Stadelmann",
+          "canton": "SR",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Visarte-Jura",
+          "ville": null,
           "canton": "SR",
           "montant_CHF": 20000
         },
@@ -1015,13 +1003,13 @@
           "montant_CHF": 17200
         },
         {
-          "nom": "CS Stella Alpina, Plan-les-Ouates -",
+          "nom": "CS Stella Alpina, Plan-les-Ouates",
           "ville": "Ski de fond",
           "canton": "VD",
           "montant_CHF": 17200
         },
         {
-          "nom": "Amis Montagnards Genève, Genève -",
+          "nom": "Amis Montagnards Genève, Genève",
           "ville": "Ski alpin",
           "canton": "VD",
           "montant_CHF": 16000
@@ -1045,18 +1033,6 @@
           "montant_CHF": 15500
         },
         {
-          "nom": "Golf de Lavaux",
-          "ville": "Golf",
-          "canton": "VD",
-          "montant_CHF": 15000
-        },
-        {
-          "nom": "Genève Natation 1885",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 15000
-        },
-        {
           "nom": "Assoc. 56e Tir Cantonal Vaudois Payerne 2022",
           "ville": "Payerne",
           "canton": "VD",
@@ -1075,6 +1051,12 @@
           "montant_CHF": 15000
         },
         {
+          "nom": "Golf de Lavaux",
+          "ville": "Golf",
+          "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
           "nom": "Villars Roule",
           "ville": null,
           "canton": "SR",
@@ -1087,8 +1069,14 @@
           "montant_CHF": 15000
         },
         {
-          "nom": "Assoc. Coupe Fred Fellay, Thônex -",
+          "nom": "Assoc. Coupe Fred Fellay, Thônex",
           "ville": "Volleyball",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Genève Natation 1885",
+          "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 15000
         },
@@ -1201,7 +1189,7 @@
           "montant_CHF": 12000
         },
         {
-          "nom": "Winram William, Petit-Lancy -",
+          "nom": "Winram William, Petit-Lancy",
           "ville": "Plongée",
           "canton": "GE",
           "montant_CHF": 12000
@@ -1219,14 +1207,14 @@
           "montant_CHF": 12000
         },
         {
-          "nom": "Assoc. Cantonale Vaudoise pour, Natation",
-          "ville": "Natation",
+          "nom": "Montreux Hockey",
+          "ville": "Montreux",
           "canton": "VD",
           "montant_CHF": 11600
         },
         {
-          "nom": "Montreux Hockey",
-          "ville": "Montreux",
+          "nom": "Assoc. Cantonale Vaudoise pour, Natation",
+          "ville": "Natation",
           "canton": "VD",
           "montant_CHF": 11600
         },
@@ -1289,6 +1277,18 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 10606
+        },
+        {
+          "nom": "Assoc. Vaudoise de Basketball",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 10500
+        },
+        {
+          "nom": "Rowing-Club Lausanne",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 10390
         }
       ]
     },
@@ -1318,13 +1318,9 @@
       "samples": [
         {
           "nom": "Assoc. Vaud Promotion",
-          "montant_CHF": 1000000,
-          "canton": "VD",
           "ville": "Lausanne",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Assoc. Vaud Promotion",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VD",
+          "montant_CHF": 1000000
         },
         {
           "nom": "Valais/Wallis Promotion",
@@ -1354,13 +1350,9 @@
       "all_entries": [
         {
           "nom": "Assoc. Vaud Promotion",
-          "montant_CHF": 1000000,
-          "canton": "VD",
           "ville": "Lausanne",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Assoc. Vaud Promotion",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VD",
+          "montant_CHF": 1000000
         },
         {
           "nom": "Valais/Wallis Promotion",
@@ -1479,15 +1471,15 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Fond. rurale interjurassienne",
-          "ville": "Courtételle",
-          "canton": "JU",
-          "montant_CHF": 10000
-        },
-        {
           "nom": "Assoc. du pain de seigle valaisan AOP",
           "ville": "Châteauneuf-Conthey",
           "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Fond. rurale interjurassienne",
+          "ville": "Courtételle",
+          "canton": "JU",
           "montant_CHF": 10000
         }
       ]

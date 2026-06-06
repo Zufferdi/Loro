@@ -5,35 +5,35 @@
     "source": "brb2022_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 916,
-    "total_chf": 18825439,
-    "precise_classified_entries": 700,
-    "precise_classified_chf": 13481197,
-    "pct_chf_precisely_classified": 71.6,
+    "total_entries": 831,
+    "total_chf": 17582054,
+    "precise_classified_entries": 637,
+    "precise_classified_chf": 12415537,
+    "pct_chf_precisely_classified": 70.6,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 916,
-    "total_chf_classified": 18825439,
-    "catchall_chf": 5344242,
-    "cross_year_recovered": 666
+    "total_entries_classified": 831,
+    "total_chf_classified": 17582054,
+    "catchall_chf": 5166517,
+    "cross_year_recovered": 647
   },
   "sports": [
     {
       "name": "Soutien général au sport",
-      "count": 216,
-      "total_chf": 5344242,
-      "mean_chf": 24741,
+      "count": 194,
+      "total_chf": 5166517,
+      "mean_chf": 26631,
       "cantons": {
         "VD": {
-          "count": 16,
-          "total_chf": 701619
+          "count": 14,
+          "total_chf": 671099
         },
         "SR": {
-          "count": 85,
-          "total_chf": 1841831
+          "count": 76,
+          "total_chf": 1774786
         },
         "FR": {
-          "count": 51,
-          "total_chf": 498123
+          "count": 40,
+          "total_chf": 417963
         },
         "VS": {
           "count": 28,
@@ -72,7 +72,7 @@
           "montant_CHF": 350000
         },
         {
-          "nom": "Fond. Au Cœur des Grottes,",
+          "nom": "Fond. Au Cœur des Grottes",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 250000
@@ -104,7 +104,7 @@
           "montant_CHF": 350000
         },
         {
-          "nom": "Fond. Au Cœur des Grottes,",
+          "nom": "Fond. Au Cœur des Grottes",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 250000
@@ -128,13 +128,13 @@
           "montant_CHF": 150000
         },
         {
-          "nom": "Fond. Carrefour-Rue & Coulou,",
+          "nom": "Fond. Carrefour-Rue & Coulou",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 130000
         },
         {
-          "nom": "Norwegian Refugee Council,",
+          "nom": "Norwegian Refugee Council",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 120000
@@ -146,7 +146,7 @@
           "montant_CHF": 100000
         },
         {
-          "nom": "Fond. internationale pour la population et le développement,",
+          "nom": "Fond. internationale pour la population et le développement",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 100000
@@ -212,7 +212,7 @@
           "montant_CHF": 60677
         },
         {
-          "nom": "Réseau Bénévolat Netzwerk,",
+          "nom": "Réseau Bénévolat Netzwerk",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 60000
@@ -332,7 +332,7 @@
           "montant_CHF": 29350
         },
         {
-          "nom": "Université Populaire Albanaise,",
+          "nom": "Université Populaire Albanaise",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 29000
@@ -374,18 +374,6 @@
           "montant_CHF": 22970
         },
         {
-          "nom": "Freiburger Unihockey Verband FUHV",
-          "ville": "FUHV",
-          "canton": "FR",
-          "montant_CHF": 22970
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Badminton",
-          "ville": "Badminton",
-          "canton": "VD",
-          "montant_CHF": 20520
-        },
-        {
           "nom": "Assoc. Fribourgeoise de Badminton",
           "ville": "Badminton",
           "canton": "VD",
@@ -401,18 +389,6 @@
           "nom": "Urumuri",
           "ville": "Fribourg",
           "canton": "FR",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "AFS-FVS",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Team AFF / FFV",
-          "ville": null,
-          "canton": "SR",
           "montant_CHF": 20000
         },
         {
@@ -452,12 +428,6 @@
           "montant_CHF": 17740
         },
         {
-          "nom": "Assoc. Fribourgeoise Inline & Skater",
-          "ville": "Hockey",
-          "canton": "FR",
-          "montant_CHF": 17740
-        },
-        {
           "nom": "Sté d'histoire du Valais romand",
           "ville": "Martigny",
           "canton": "VS",
@@ -479,12 +449,6 @@
           "nom": "Elfic",
           "ville": null,
           "canton": "SR",
-          "montant_CHF": 15000
-        },
-        {
-          "nom": "Europa Hockey Tour",
-          "ville": "Hockey",
-          "canton": "FR",
           "montant_CHF": 15000
         },
         {
@@ -518,12 +482,6 @@
           "montant_CHF": 14815
         },
         {
-          "nom": "Start-up box-up.ch",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 14815
-        },
-        {
           "nom": "Fond. Les Castors",
           "ville": "Porrentruy",
           "canton": "JU",
@@ -534,12 +492,6 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 14101
-        },
-        {
-          "nom": "Union cycliste fribourgeoise",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 12040
         },
         {
           "nom": "Union cycliste fribourgeoise",
@@ -574,12 +526,6 @@
         {
           "nom": "Assoc. Vaudoise d'Education",
           "ville": "Physique Scolaire | AVEPS",
-          "canton": "VD",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Badminton",
-          "ville": "Badminton",
           "canton": "VD",
           "montant_CHF": 10000
         },
@@ -716,12 +662,6 @@
           "montant_CHF": 4890
         },
         {
-          "nom": "Assoc. Fribourgeoise de Motocyclisme",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 4890
-        },
-        {
           "nom": "Freiburger Billardverband",
           "ville": null,
           "canton": "FR",
@@ -734,13 +674,13 @@
           "montant_CHF": 4500
         },
         {
-          "nom": "Le Collectif des Vernets (CdV),",
+          "nom": "Le Collectif des Vernets (CdV)",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 4500
         },
         {
-          "nom": "EMEF",
+          "nom": "EMEF - École de musique et expression française",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 4476
@@ -753,12 +693,6 @@
         },
         {
           "nom": "Assoc. Cantonale de Lutte Amateur - ACLA",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 3950
-        },
-        {
-          "nom": "Assoc. Cantonale de Lutte Amateur ACLA",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 3950
@@ -800,12 +734,6 @@
           "montant_CHF": 3110
         },
         {
-          "nom": "Freiburger Sportkegler-Verband",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 3110
-        },
-        {
           "nom": "ToutEnSoi",
           "ville": "Domdidier",
           "canton": "FR",
@@ -828,18 +756,6 @@
           "ville": null,
           "canton": "FR",
           "montant_CHF": 2880
-        },
-        {
-          "nom": "Féd. Fribourgeoise de Boccia",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 2880
-        },
-        {
-          "nom": "Club de Vol libre de la Gruyère",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 2850
         },
         {
           "nom": "Club de Vol libre de la Gruyère",
@@ -962,18 +878,6 @@
           "montant_CHF": 1500
         },
         {
-          "nom": "La Pédale Romande",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 1500
-        },
-        {
-          "nom": "La Pédale Romande",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 1500
-        },
-        {
           "nom": "OLC Omström Sense",
           "ville": null,
           "canton": "SR",
@@ -1020,12 +924,6 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 1500
-        },
-        {
-          "nom": "Swiss Pops",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 1430
         },
         {
           "nom": "Swiss Pops",
@@ -1091,12 +989,6 @@
           "nom": "Badminton Club Villars-sur-Glâne",
           "ville": "Badminton",
           "canton": "VD",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "La Pédale Romande",
-          "ville": null,
-          "canton": "SR",
           "montant_CHF": 1000
         },
         {
@@ -1214,12 +1106,6 @@
           "montant_CHF": 620
         },
         {
-          "nom": "Segelfluggruppe Freiburg",
-          "ville": "Freiburg",
-          "canton": "FR",
-          "montant_CHF": 620
-        },
-        {
           "nom": "Assoc. Fribourgeoise de Badminton",
           "ville": "Badminton",
           "canton": "VD",
@@ -1284,26 +1170,104 @@
           "ville": "Naters",
           "canton": "VS",
           "montant_CHF": 471
+        },
+        {
+          "nom": "HCC Mouvement Juniors",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 380
+        },
+        {
+          "nom": "Billard Club Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 350
+        },
+        {
+          "nom": "Club Athlétique Bas-Valais",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 333
+        },
+        {
+          "nom": "Fond. St-Germain",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 330
+        },
+        {
+          "nom": "FRIBOURGFRIBOURG Minigolf Club Bulle",
+          "ville": "Bulle",
+          "canton": "FR",
+          "montant_CHF": 280
+        },
+        {
+          "nom": "Twirling club de Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 210
+        },
+        {
+          "nom": "Spéléo-Club des Montagnes Neuchâteloises",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 200
+        },
+        {
+          "nom": "Spéléo-Club des Montagnes Neuchâteloises",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 182
+        },
+        {
+          "nom": "Union cycliste fribourgeoise",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 140
+        },
+        {
+          "nom": "Spéléo-Club des Montagnes Neuchâteloises",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 130
+        },
+        {
+          "nom": "Groupe de marche Insieme-Jura",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 110
+        },
+        {
+          "nom": "Spéléo-Club des Montagnes Neuchâteloises",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 85
+        },
+        {
+          "nom": "Spéléo-Club des Montagnes Neuchâteloises",
+          "ville": null,
+          "canton": "NE",
+          "montant_CHF": 70
         }
       ]
     },
     {
       "name": "Multi-sports",
-      "count": 83,
-      "total_chf": 2982658,
-      "mean_chf": 35935,
+      "count": 76,
+      "total_chf": 2872548,
+      "mean_chf": 37796,
       "cantons": {
         "SR": {
-          "count": 29,
-          "total_chf": 651156
+          "count": 27,
+          "total_chf": 642726
         },
         "VD": {
           "count": 27,
           "total_chf": 1550097
         },
         "FR": {
-          "count": 15,
-          "total_chf": 225078
+          "count": 11,
+          "total_chf": 123898
         },
         "VS": {
           "count": 4,
@@ -1318,8 +1282,8 @@
           "total_chf": 91000
         },
         "JU": {
-          "count": 3,
-          "total_chf": 2000
+          "count": 2,
+          "total_chf": 1500
         }
       },
       "samples": [
@@ -1410,12 +1374,6 @@
           "montant_CHF": 66130
         },
         {
-          "nom": "Assoc. Fribourgeoise des sections du CAS",
-          "ville": "CAS",
-          "canton": "FR",
-          "montant_CHF": 66130
-        },
-        {
           "nom": "Contribution sportifs de pointe",
           "ville": null,
           "canton": "SR",
@@ -1444,12 +1402,6 @@
           "ville": null,
           "canton": "VS",
           "montant_CHF": 25000
-        },
-        {
-          "nom": "Féd. Fribourgeoise des Sports Équestres",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 23780
         },
         {
           "nom": "Féd. Fribourgeoise des Sports Équestres",
@@ -1506,12 +1458,6 @@
           "montant_CHF": 8260
         },
         {
-          "nom": "Fribourg Rando",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 8260
-        },
-        {
           "nom": "Service de l'Education Physique et des Sports",
           "ville": null,
           "canton": "SR",
@@ -1527,12 +1473,6 @@
           "nom": "Assoc. Pro Junior Fribourg",
           "ville": "Fribourg",
           "canton": "FR",
-          "montant_CHF": 5000
-        },
-        {
-          "nom": "Sportifs méritants",
-          "ville": null,
-          "canton": "SR",
           "montant_CHF": 5000
         },
         {
@@ -1570,18 +1510,6 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 3430
-        },
-        {
-          "nom": "Aéro-Gruyère - Sté d'aviation sportive",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 3430
-        },
-        {
-          "nom": "Sport Handicap Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 3010
         },
         {
           "nom": "Sport Handicap Fribourg",
@@ -1728,12 +1656,6 @@
           "montant_CHF": 500
         },
         {
-          "nom": "Groupe Sportif Ajoie",
-          "ville": "Porrentruy",
-          "canton": "JU",
-          "montant_CHF": 500
-        },
-        {
           "nom": "Tryverdon",
           "ville": null,
           "canton": "SR",
@@ -1857,17 +1779,17 @@
     },
     {
       "name": "Cyclisme / VTT",
-      "count": 34,
-      "total_chf": 2393112,
-      "mean_chf": 70385,
+      "count": 33,
+      "total_chf": 2387112,
+      "mean_chf": 72336,
       "cantons": {
         "SR": {
           "count": 21,
           "total_chf": 1585712
         },
         "VD": {
-          "count": 7,
-          "total_chf": 715535
+          "count": 6,
+          "total_chf": 709535
         },
         "FR": {
           "count": 3,
@@ -2042,12 +1964,6 @@
           "montant_CHF": 6000
         },
         {
-          "nom": "Assoc. Courses Cyclistes Lausanne",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 6000
-        },
-        {
           "nom": "BerGiBike",
           "ville": null,
           "canton": "SR",
@@ -2123,25 +2039,25 @@
     },
     {
       "name": "Football",
-      "count": 70,
-      "total_chf": 1655184,
-      "mean_chf": 23645,
+      "count": 66,
+      "total_chf": 1415034,
+      "mean_chf": 21439,
       "cantons": {
         "VD": {
           "count": 20,
           "total_chf": 802915
         },
         "SR": {
-          "count": 32,
-          "total_chf": 327342
+          "count": 31,
+          "total_chf": 326262
         },
         "FR": {
-          "count": 9,
-          "total_chf": 495362
+          "count": 7,
+          "total_chf": 257062
         },
         "GE": {
-          "count": 8,
-          "total_chf": 29365
+          "count": 7,
+          "total_chf": 28595
         },
         "JU": {
           "count": 1,
@@ -2168,16 +2084,16 @@
           "montant_CHF": 233070
         },
         {
-          "nom": "Assoc. Fribourgeoise de football",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 233070
-        },
-        {
           "nom": "FC Grandson Tuileries",
           "ville": "Grandson",
           "canton": "VD",
           "montant_CHF": 96700
+        },
+        {
+          "nom": "FC SLO SA",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 86840
         }
       ],
       "all_entries": [
@@ -2192,12 +2108,6 @@
           "ville": "Prilly",
           "canton": "VD",
           "montant_CHF": 255000
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de football",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 233070
         },
         {
           "nom": "Assoc. Fribourgeoise de football",
@@ -2312,12 +2222,6 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 6180
-        },
-        {
-          "nom": "Freiburger Orientierungslauf Verband",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 5230
         },
         {
           "nom": "Freiburger Orientierungslauf Verband",
@@ -2482,12 +2386,6 @@
           "montant_CHF": 1080
         },
         {
-          "nom": "FC Bursins-Rolle-Perroy",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 1080
-        },
-        {
           "nom": "FC Rapid Montreux",
           "ville": "Montreux",
           "canton": "VD",
@@ -2516,12 +2414,6 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 814
-        },
-        {
-          "nom": "American Football Club Fribourg Cardinals",
-          "ville": "Football Club",
-          "canton": "GE",
-          "montant_CHF": 770
         },
         {
           "nom": "American Football Club Fribourg Cardinals",
@@ -2605,9 +2497,9 @@
     },
     {
       "name": "Ski / Snowboard",
-      "count": 68,
-      "total_chf": 1106068,
-      "mean_chf": 16265,
+      "count": 64,
+      "total_chf": 1005528,
+      "mean_chf": 15711,
       "cantons": {
         "SR": {
           "count": 23,
@@ -2618,12 +2510,12 @@
           "total_chf": 36413
         },
         "VS": {
-          "count": 12,
-          "total_chf": 586124
+          "count": 10,
+          "total_chf": 487304
         },
         "FR": {
-          "count": 9,
-          "total_chf": 11080
+          "count": 7,
+          "total_chf": 9360
         },
         "NE": {
           "count": 5,
@@ -2658,16 +2550,16 @@
           "montant_CHF": 73820
         },
         {
-          "nom": "Assoc. Fribourgeoise de ski, snowboard",
-          "ville": "snowboard",
-          "canton": "VS",
-          "montant_CHF": 73820
-        },
-        {
           "nom": "Assoc. org. Manifestations Crans- Montana",
           "ville": "Crans- Montana",
           "canton": "VS",
           "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. World Cup Veysonnaz",
+          "ville": "Veysonnaz",
+          "canton": "VS",
+          "montant_CHF": 57800
         }
       ],
       "all_entries": [
@@ -2682,12 +2574,6 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 157000
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de ski, snowboard",
-          "ville": "snowboard",
-          "canton": "VS",
-          "montant_CHF": 73820
         },
         {
           "nom": "Assoc. Fribourgeoise de ski, snowboard",
@@ -2730,12 +2616,6 @@
           "ville": "Crans- Montana",
           "canton": "VS",
           "montant_CHF": 30261
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de ski, snowboard",
-          "ville": "snowboard",
-          "canton": "VS",
-          "montant_CHF": 25000
         },
         {
           "nom": "Assoc. Fribourgeoise de ski, snowboard",
@@ -2978,18 +2858,6 @@
           "montant_CHF": 860
         },
         {
-          "nom": "Club Ski Nautique Estavayer-le-Lac",
-          "ville": "Estavayer-le-Lac",
-          "canton": "FR",
-          "montant_CHF": 860
-        },
-        {
-          "nom": "Club Ski Nautique Estavayer-le-Lac",
-          "ville": "Estavayer-le-Lac",
-          "canton": "FR",
-          "montant_CHF": 860
-        },
-        {
           "nom": "Ski Club Les Diablerets",
           "ville": "Les Diablerets",
           "canton": "VD",
@@ -3083,13 +2951,13 @@
     },
     {
       "name": "Natation",
-      "count": 35,
-      "total_chf": 989839,
-      "mean_chf": 28281,
+      "count": 30,
+      "total_chf": 949949,
+      "mean_chf": 31664,
       "cantons": {
         "SR": {
-          "count": 10,
-          "total_chf": 73060
+          "count": 9,
+          "total_chf": 63060
         },
         "VD": {
           "count": 6,
@@ -3100,12 +2968,12 @@
           "total_chf": 502000
         },
         "VS": {
-          "count": 3,
-          "total_chf": 57028
+          "count": 2,
+          "total_chf": 28638
         },
         "NE": {
-          "count": 11,
-          "total_chf": 46215
+          "count": 8,
+          "total_chf": 44715
         },
         "JU": {
           "count": 2,
@@ -3138,10 +3006,10 @@
           "montant_CHF": 28390
         },
         {
-          "nom": "Féd. Fribourgeoise de Natation",
-          "ville": "Natation",
-          "canton": "VS",
-          "montant_CHF": 28390
+          "nom": "Red-Fish Neuchâtel",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 22000
         }
       ],
       "all_entries": [
@@ -3170,12 +3038,6 @@
           "montant_CHF": 28390
         },
         {
-          "nom": "Féd. Fribourgeoise de Natation",
-          "ville": "Natation",
-          "canton": "VS",
-          "montant_CHF": 28390
-        },
-        {
           "nom": "Red-Fish Neuchâtel",
           "ville": "Neuchâtel",
           "canton": "NE",
@@ -3192,12 +3054,6 @@
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 20000
-        },
-        {
-          "nom": "Fribourg-Natation",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 10000
         },
         {
           "nom": "Fribourg-Natation",
@@ -3302,24 +3158,6 @@
           "montant_CHF": 500
         },
         {
-          "nom": "Red-Fish Neuchâtel",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Red-Fish Neuchâtel",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Red-Fish Neuchâtel",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 500
-        },
-        {
           "nom": "Club de natation Delémont",
           "ville": "Delémont",
           "canton": "JU",
@@ -3359,9 +3197,9 @@
     },
     {
       "name": "Judo / Karaté",
-      "count": 23,
-      "total_chf": 730442,
-      "mean_chf": 31758,
+      "count": 20,
+      "total_chf": 693222,
+      "mean_chf": 34661,
       "cantons": {
         "VD": {
           "count": 8,
@@ -3372,8 +3210,8 @@
           "total_chf": 10867
         },
         "FR": {
-          "count": 12,
-          "total_chf": 85446
+          "count": 9,
+          "total_chf": 48226
         }
       },
       "samples": [
@@ -3396,16 +3234,16 @@
           "montant_CHF": 16340
         },
         {
-          "nom": "Assoc. Fribourgeoise de Judo",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 16340
-        },
-        {
           "nom": "Assoc. Vaudoise de Judo et Ju-Jitsu",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 14850
+        },
+        {
+          "nom": "Assoc. Vaud-Fribourg de Karaté",
+          "ville": "Section Fribourg",
+          "canton": "FR",
+          "montant_CHF": 12880
         }
       ],
       "all_entries": [
@@ -3428,25 +3266,13 @@
           "montant_CHF": 16340
         },
         {
-          "nom": "Assoc. Fribourgeoise de Judo",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 16340
-        },
-        {
           "nom": "Assoc. Vaudoise de Judo et Ju-Jitsu",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 14850
         },
         {
-          "nom": "Assoc. Vaud-Fribourg de Karaté -",
-          "ville": "Section Fribourg",
-          "canton": "FR",
-          "montant_CHF": 12880
-        },
-        {
-          "nom": "Assoc. Vaud-Fribourg de Karaté -",
+          "nom": "Assoc. Vaud-Fribourg de Karaté",
           "ville": "Section Fribourg",
           "canton": "FR",
           "montant_CHF": 12880
@@ -3470,19 +3296,13 @@
           "montant_CHF": 8000
         },
         {
-          "nom": "Assoc. Fribourgeoise de Judo",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 8000
-        },
-        {
           "nom": "Assoc. Vaudoise de Judo et Ju-Jitsu",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 4530
         },
         {
-          "nom": "Assoc. Vaud-Fribourg de Karaté -",
+          "nom": "Assoc. Vaud-Fribourg de Karaté",
           "ville": "Section Fribourg",
           "canton": "FR",
           "montant_CHF": 3965
@@ -3500,7 +3320,7 @@
           "montant_CHF": 2500
         },
         {
-          "nom": "Assoc. Vaud-Fribourg de Karaté -",
+          "nom": "Assoc. Vaud-Fribourg de Karaté",
           "ville": "Section Fribourg",
           "canton": "FR",
           "montant_CHF": 1696
@@ -3512,7 +3332,7 @@
           "montant_CHF": 1625
         },
         {
-          "nom": "Assoc. Vaud-Fribourg de Karaté -",
+          "nom": "Assoc. Vaud-Fribourg de Karaté",
           "ville": "Section Fribourg",
           "canton": "FR",
           "montant_CHF": 1500
@@ -3551,21 +3371,21 @@
     },
     {
       "name": "Tennis / Padel",
-      "count": 44,
-      "total_chf": 574984,
-      "mean_chf": 13067,
+      "count": 41,
+      "total_chf": 514924,
+      "mean_chf": 12559,
       "cantons": {
         "VD": {
           "count": 9,
           "total_chf": 49231
         },
         "SR": {
-          "count": 13,
-          "total_chf": 205640
+          "count": 12,
+          "total_chf": 187640
         },
         "FR": {
-          "count": 11,
-          "total_chf": 247770
+          "count": 9,
+          "total_chf": 205710
         },
         "GE": {
           "count": 1,
@@ -3648,12 +3468,6 @@
           "montant_CHF": 34060
         },
         {
-          "nom": "FriJuNe Fribourg Tennis",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 34060
-        },
-        {
           "nom": "Montchoisi Tennis Club",
           "ville": null,
           "canton": "SR",
@@ -3678,12 +3492,6 @@
           "montant_CHF": 18000
         },
         {
-          "nom": "Partner Academy Swiss tennis",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 18000
-        },
-        {
           "nom": "Commune d'Yvonand",
           "ville": "Yvonand",
           "canton": "VD",
@@ -3700,12 +3508,6 @@
           "ville": "Le Landeron",
           "canton": "NE",
           "montant_CHF": 8380
-        },
-        {
-          "nom": "FriJuNe Fribourg Tennis",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 8000
         },
         {
           "nom": "FriJuNe Fribourg Tennis",
@@ -3885,17 +3687,17 @@
     },
     {
       "name": "Basketball",
-      "count": 35,
-      "total_chf": 552471,
-      "mean_chf": 15784,
+      "count": 30,
+      "total_chf": 440561,
+      "mean_chf": 14685,
       "cantons": {
         "VD": {
           "count": 6,
           "total_chf": 178791
         },
         "FR": {
-          "count": 24,
-          "total_chf": 326680
+          "count": 19,
+          "total_chf": 214770
         },
         "SR": {
           "count": 4,
@@ -3920,12 +3722,6 @@
           "montant_CHF": 70000
         },
         {
-          "nom": "Fribourg 3x3 - Basketball",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 70000
-        },
-        {
           "nom": "Espérance Sportive Pully Basket",
           "ville": "Pully",
           "canton": "VD",
@@ -3936,6 +3732,12 @@
           "ville": null,
           "canton": "FR",
           "montant_CHF": 23410
+        },
+        {
+          "nom": "Fribourg Olympic basket",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 20925
         }
       ],
       "all_entries": [
@@ -3952,22 +3754,10 @@
           "montant_CHF": 70000
         },
         {
-          "nom": "Fribourg 3x3 - Basketball",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 70000
-        },
-        {
           "nom": "Espérance Sportive Pully Basket",
           "ville": "Pully",
           "canton": "VD",
           "montant_CHF": 41560
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de basketball",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 23410
         },
         {
           "nom": "Assoc. Fribourgeoise de basketball",
@@ -4006,12 +3796,6 @@
           "montant_CHF": 10000
         },
         {
-          "nom": "Assoc. Fribourgeoise de basketball",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 10000
-        },
-        {
           "nom": "Fribourg Olympic - Basketball",
           "ville": "Fribourg",
           "canton": "FR",
@@ -4022,12 +3806,6 @@
           "ville": null,
           "canton": "FR",
           "montant_CHF": 8368
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de basketball",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 8000
         },
         {
           "nom": "Assoc. Fribourgeoise de basketball",
@@ -4132,12 +3910,6 @@
           "montant_CHF": 798
         },
         {
-          "nom": "Sport Handicap Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 500
-        },
-        {
           "nom": "DEL Basket",
           "ville": "Basket",
           "canton": "VD",
@@ -4152,22 +3924,234 @@
       ]
     },
     {
+      "name": "Volleyball",
+      "count": 25,
+      "total_chf": 338738,
+      "mean_chf": 13549,
+      "cantons": {
+        "VD": {
+          "count": 6,
+          "total_chf": 43409
+        },
+        "SR": {
+          "count": 7,
+          "total_chf": 105645
+        },
+        "FR": {
+          "count": 9,
+          "total_chf": 114184
+        },
+        "NE": {
+          "count": 2,
+          "total_chf": 50500
+        },
+        "GE": {
+          "count": 1,
+          "total_chf": 25000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Ansermet Pauline, Rock'n'Roll acrobatique Audétat Eileen, Ski de fond Balmer Alexandre, VTT Baumann Chrystelle, VTT Baumann Lisa, VTT Béguin Antoine, Ski de fond Béguin Maxime, Ski de fond Berger Inès, Course orientation Berger Loïc, Course orientation Billeter Line, Tennis Blanc Loïc, VTT Bonjour Pauline, Karaté Bornand Eugénie, Équitation Bovet Julie, Beach Volley Briancourt Nicolas, Badminton Brochard Théo, Escrime Brunner Pauline, Escrime Buchs Pascal, Course d'orientation Buwe Rayan, Patinage artistique Cartillier Quentin, Cyclisme Chervet Aurélian, Patinage artistique Cuche Quentin, Ski alpin Cuche Rémi, Ski alpin De Almeida Tess, VTT Dubois Chloé, Ski alpin Erne Raphaël, Échecs Fatton Marianne, Ski alpinisme Fernandez Anaïs, Patinage artistique Gagnebin Ilan, Natation Germann Agathe, Gymnastique artistique Ghezzi Emma, Patinage artistique Gindraux Loukian, Ski alpin Herzog Justine, Ski alpin Heubi Pauline, Escrime Huguenin Chloé, Planche à voile Huguenin Loïc, Planche à voile Inversin Ernestine, Planche à voile Inversin Gaspar, Planche à voile Kobel Noam, Planche à voile Kok Kilian, Tennis Laborde Arthur, Tennis Lambercier Bastien, Triathlon Lauenstein Wilma, Ski de fond Lestrade Bradley, Athlétisme Luong Charles-Eric, Parkour Martinez Mirko, Tennis Mauris Ismaël, Tennis Morel Timéo, Judo Mosset Alexi, Télémark Mosset Maxime, Télémark Moullet Barish, Tennis de table Odot Kai, Ski alpin Oswald Charles-Eric, Escrime Pellaton Erine, Ski nordique Pellaton Lisa, Ski nordique Pennisi Angela, Gymnastique artistique Perroud Alexis, Athlétisme Pirazzi Leana, Karaté Pittier Ilan, Ski de fond Python Elodie, VTT Richard Loane, Natation Richard Manon, Natation NEUCHÂTELNEUCHÂTEL Assoc. Swiss Canyon Trail",
+          "ville": "Hauterive",
+          "canton": "NE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "VBC Cheseaux",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 49520
+        },
+        {
+          "nom": "Swiss Volley Région Vaud",
+          "ville": "Vaud",
+          "canton": "VD",
+          "montant_CHF": 34900
+        },
+        {
+          "nom": "Swiss Volley Region Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 33450
+        },
+        {
+          "nom": "Swiss Volley Région Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 33450
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Ansermet Pauline, Rock'n'Roll acrobatique Audétat Eileen, Ski de fond Balmer Alexandre, VTT Baumann Chrystelle, VTT Baumann Lisa, VTT Béguin Antoine, Ski de fond Béguin Maxime, Ski de fond Berger Inès, Course orientation Berger Loïc, Course orientation Billeter Line, Tennis Blanc Loïc, VTT Bonjour Pauline, Karaté Bornand Eugénie, Équitation Bovet Julie, Beach Volley Briancourt Nicolas, Badminton Brochard Théo, Escrime Brunner Pauline, Escrime Buchs Pascal, Course d'orientation Buwe Rayan, Patinage artistique Cartillier Quentin, Cyclisme Chervet Aurélian, Patinage artistique Cuche Quentin, Ski alpin Cuche Rémi, Ski alpin De Almeida Tess, VTT Dubois Chloé, Ski alpin Erne Raphaël, Échecs Fatton Marianne, Ski alpinisme Fernandez Anaïs, Patinage artistique Gagnebin Ilan, Natation Germann Agathe, Gymnastique artistique Ghezzi Emma, Patinage artistique Gindraux Loukian, Ski alpin Herzog Justine, Ski alpin Heubi Pauline, Escrime Huguenin Chloé, Planche à voile Huguenin Loïc, Planche à voile Inversin Ernestine, Planche à voile Inversin Gaspar, Planche à voile Kobel Noam, Planche à voile Kok Kilian, Tennis Laborde Arthur, Tennis Lambercier Bastien, Triathlon Lauenstein Wilma, Ski de fond Lestrade Bradley, Athlétisme Luong Charles-Eric, Parkour Martinez Mirko, Tennis Mauris Ismaël, Tennis Morel Timéo, Judo Mosset Alexi, Télémark Mosset Maxime, Télémark Moullet Barish, Tennis de table Odot Kai, Ski alpin Oswald Charles-Eric, Escrime Pellaton Erine, Ski nordique Pellaton Lisa, Ski nordique Pennisi Angela, Gymnastique artistique Perroud Alexis, Athlétisme Pirazzi Leana, Karaté Pittier Ilan, Ski de fond Python Elodie, VTT Richard Loane, Natation Richard Manon, Natation NEUCHÂTELNEUCHÂTEL Assoc. Swiss Canyon Trail",
+          "ville": "Hauterive",
+          "canton": "NE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "VBC Cheseaux",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 49520
+        },
+        {
+          "nom": "Swiss Volley Région Vaud",
+          "ville": "Vaud",
+          "canton": "VD",
+          "montant_CHF": 34900
+        },
+        {
+          "nom": "Swiss Volley Region Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 33450
+        },
+        {
+          "nom": "Swiss Volley Région Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 33450
+        },
+        {
+          "nom": "Assoc. Swiss Canyon Trail",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Swiss Volleyball Final Four",
+          "ville": "Volleyball",
+          "canton": "GE",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Swiss Volley Région Genève - SVRG",
+          "ville": "Genève - Volleyball",
+          "canton": "SR",
+          "montant_CHF": 18000
+        },
+        {
+          "nom": "Volley Düdingen",
+          "ville": "Düdingen",
+          "canton": "FR",
+          "montant_CHF": 14400
+        },
+        {
+          "nom": "Swiss Volley Region Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Swiss Volley Région Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Swiss Volley Région Vaud",
+          "ville": "Vaud",
+          "canton": "VD",
+          "montant_CHF": 6750
+        },
+        {
+          "nom": "VBC Cheseaux",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 5100
+        },
+        {
+          "nom": "Volley Düdingen",
+          "ville": "Düdingen",
+          "canton": "FR",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Swiss Volley Région Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Cheseaux VBC",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1334
+        },
+        {
+          "nom": "VBC La Côte",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1236
+        },
+        {
+          "nom": "Cossonay VBC",
+          "ville": "Cossonay",
+          "canton": "VD",
+          "montant_CHF": 780
+        },
+        {
+          "nom": "Bussigny VBC",
+          "ville": "Bussigny",
+          "canton": "VD",
+          "montant_CHF": 699
+        },
+        {
+          "nom": "Volley Düdingen",
+          "ville": "Düdingen",
+          "canton": "FR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "FSG Savagnier",
+          "ville": "Savagnier",
+          "canton": "NE",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Lutry-Lavaux VBC",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 455
+        },
+        {
+          "nom": "Swiss Volley Region Fribourg",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 384
+        },
+        {
+          "nom": "VBC Cossonay",
+          "ville": "Cossonay",
+          "canton": "VD",
+          "montant_CHF": 150
+        },
+        {
+          "nom": "VBC Cossonay",
+          "ville": "Cossonay",
+          "canton": "VD",
+          "montant_CHF": 130
+        }
+      ]
+    },
+    {
       "name": "Gymnastique",
-      "count": 83,
-      "total_chf": 450227,
-      "mean_chf": 5424,
+      "count": 79,
+      "total_chf": 315657,
+      "mean_chf": 3995,
       "cantons": {
         "VD": {
           "count": 29,
           "total_chf": 71774
         },
         "SR": {
-          "count": 14,
-          "total_chf": 80186
+          "count": 13,
+          "total_chf": 47976
         },
         "GE": {
-          "count": 18,
-          "total_chf": 270877
+          "count": 16,
+          "total_chf": 169017
         },
         "FR": {
           "count": 5,
@@ -4178,8 +4162,8 @@
           "total_chf": 3521
         },
         "NE": {
-          "count": 8,
-          "total_chf": 7310
+          "count": 7,
+          "total_chf": 6810
         },
         "JU": {
           "count": 2,
@@ -4197,12 +4181,6 @@
           "nom": "Féd. Fribourgeoise de Gymnastique",
           "ville": "Gymnastique",
           "canton": "GE",
-          "montant_CHF": 101740
-        },
-        {
-          "nom": "Féd. Fribourgeoise de Gymnastique",
-          "ville": "Gymnastique",
-          "canton": "GE",
           "montant_CHF": 45000
         },
         {
@@ -4212,10 +4190,16 @@
           "montant_CHF": 32210
         },
         {
-          "nom": "Freiburgischer Turn- und Sportunion FTSU",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 32210
+          "nom": "Fête cantonale vaudoise de gymnastique",
+          "ville": "Yverdon-les-Bains",
+          "canton": "VD",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Féd. Fribourgeoise de Gymnastique",
+          "ville": "Gymnastique",
+          "canton": "GE",
+          "montant_CHF": 8221
         }
       ],
       "all_entries": [
@@ -4229,19 +4213,7 @@
           "nom": "Féd. Fribourgeoise de Gymnastique",
           "ville": "Gymnastique",
           "canton": "GE",
-          "montant_CHF": 101740
-        },
-        {
-          "nom": "Féd. Fribourgeoise de Gymnastique",
-          "ville": "Gymnastique",
-          "canton": "GE",
           "montant_CHF": 45000
-        },
-        {
-          "nom": "Freiburgischer Turn- und Sportunion FTSU",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 32210
         },
         {
           "nom": "Freiburgischer Turn- und Sportunion FTSU",
@@ -4538,12 +4510,6 @@
           "montant_CHF": 500
         },
         {
-          "nom": "Assoc. Cantonale Neuchâteloise de Gymnastique Artistique",
-          "ville": "Gymnastique",
-          "canton": "NE",
-          "montant_CHF": 500
-        },
-        {
           "nom": "FSG Les Ponts-de-Martel",
           "ville": "Les Ponts-de-Martel",
           "canton": "NE",
@@ -4685,12 +4651,6 @@
           "nom": "Féd. Fribourgeoise de Gymnastique",
           "ville": "Gymnastique",
           "canton": "GE",
-          "montant_CHF": 120
-        },
-        {
-          "nom": "Féd. Fribourgeoise de Gymnastique",
-          "ville": "Gymnastique",
-          "canton": "GE",
           "montant_CHF": 84
         },
         {
@@ -4720,222 +4680,198 @@
       ]
     },
     {
-      "name": "Volleyball",
-      "count": 25,
-      "total_chf": 338738,
-      "mean_chf": 13549,
+      "name": "Patinage",
+      "count": 17,
+      "total_chf": 217459,
+      "mean_chf": 12791,
       "cantons": {
         "VD": {
-          "count": 6,
-          "total_chf": 43409
-        },
-        "SR": {
-          "count": 7,
-          "total_chf": 105645
+          "count": 4,
+          "total_chf": 4744
         },
         "FR": {
-          "count": 9,
-          "total_chf": 114184
+          "count": 4,
+          "total_chf": 17200
+        },
+        "SR": {
+          "count": 2,
+          "total_chf": 20610
         },
         "NE": {
-          "count": 2,
-          "total_chf": 50500
-        },
-        "GE": {
-          "count": 1,
-          "total_chf": 25000
+          "count": 7,
+          "total_chf": 174905
         }
       },
       "samples": [
         {
-          "nom": "Ansermet Pauline, Rock'n'Roll acrobatique Audétat Eileen, Ski de fond Balmer Alexandre, VTT Baumann Chrystelle, VTT Baumann Lisa, VTT Béguin Antoine, Ski de fond Béguin Maxime, Ski de fond Berger Inès, Course orientation Berger Loïc, Course orientation Billeter Line, Tennis Blanc Loïc, VTT Bonjour Pauline, Karaté Bornand Eugénie, Équitation Bovet Julie, Beach Volley Briancourt Nicolas, Badminton Brochard Théo, Escrime Brunner Pauline, Escrime Buchs Pascal, Course d'orientation Buwe Rayan, Patinage artistique Cartillier Quentin, Cyclisme Chervet Aurélian, Patinage artistique Cuche Quentin, Ski alpin Cuche Rémi, Ski alpin De Almeida Tess, VTT Dubois Chloé, Ski alpin Erne Raphaël, Échecs Fatton Marianne, Ski alpinisme Fernandez Anaïs, Patinage artistique Gagnebin Ilan, Natation Germann Agathe, Gymnastique artistique Ghezzi Emma, Patinage artistique Gindraux Loukian, Ski alpin Herzog Justine, Ski alpin Heubi Pauline, Escrime Huguenin Chloé, Planche à voile Huguenin Loïc, Planche à voile Inversin Ernestine, Planche à voile Inversin Gaspar, Planche à voile Kobel Noam, Planche à voile Kok Kilian, Tennis Laborde Arthur, Tennis Lambercier Bastien, Triathlon Lauenstein Wilma, Ski de fond Lestrade Bradley, Athlétisme Luong Charles-Eric, Parkour Martinez Mirko, Tennis Mauris Ismaël, Tennis Morel Timéo, Judo Mosset Alexi, Télémark Mosset Maxime, Télémark Moullet Barish, Tennis de table Odot Kai, Ski alpin Oswald Charles-Eric, Escrime Pellaton Erine, Ski nordique Pellaton Lisa, Ski nordique Pennisi Angela, Gymnastique artistique Perroud Alexis, Athlétisme Pirazzi Leana, Karaté Pittier Ilan, Ski de fond Python Elodie, VTT Richard Loane, Natation Richard Manon, Natation NEUCHÂTELNEUCHÂTEL Assoc. Swiss Canyon Trail",
-          "ville": "Hauterive",
+          "nom": "Union Sportive Les Ponts-de-Martel",
+          "ville": "Les Ponts-de-Martel",
           "canton": "NE",
-          "montant_CHF": 50000
+          "montant_CHF": 96665
         },
         {
-          "nom": "VBC Cheseaux",
+          "nom": "Club des Patineurs Fleurier",
+          "ville": "Fleurier",
+          "canton": "NE",
+          "montant_CHF": 31400
+        },
+        {
+          "nom": "Clubs des patineurs de Neuchâtel- Sports",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Tissot Neuchâtel Trophy",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Service des sports de la Chaux-de-Fonds",
           "ville": null,
           "canton": "SR",
-          "montant_CHF": 49520
-        },
-        {
-          "nom": "Swiss Volley Région Vaud",
-          "ville": "Vaud",
-          "canton": "VD",
-          "montant_CHF": 34900
-        },
-        {
-          "nom": "Swiss Volley Region Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 33450
-        },
-        {
-          "nom": "Swiss Volley Région Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 33450
+          "montant_CHF": 18610
         }
       ],
       "all_entries": [
         {
-          "nom": "Ansermet Pauline, Rock'n'Roll acrobatique Audétat Eileen, Ski de fond Balmer Alexandre, VTT Baumann Chrystelle, VTT Baumann Lisa, VTT Béguin Antoine, Ski de fond Béguin Maxime, Ski de fond Berger Inès, Course orientation Berger Loïc, Course orientation Billeter Line, Tennis Blanc Loïc, VTT Bonjour Pauline, Karaté Bornand Eugénie, Équitation Bovet Julie, Beach Volley Briancourt Nicolas, Badminton Brochard Théo, Escrime Brunner Pauline, Escrime Buchs Pascal, Course d'orientation Buwe Rayan, Patinage artistique Cartillier Quentin, Cyclisme Chervet Aurélian, Patinage artistique Cuche Quentin, Ski alpin Cuche Rémi, Ski alpin De Almeida Tess, VTT Dubois Chloé, Ski alpin Erne Raphaël, Échecs Fatton Marianne, Ski alpinisme Fernandez Anaïs, Patinage artistique Gagnebin Ilan, Natation Germann Agathe, Gymnastique artistique Ghezzi Emma, Patinage artistique Gindraux Loukian, Ski alpin Herzog Justine, Ski alpin Heubi Pauline, Escrime Huguenin Chloé, Planche à voile Huguenin Loïc, Planche à voile Inversin Ernestine, Planche à voile Inversin Gaspar, Planche à voile Kobel Noam, Planche à voile Kok Kilian, Tennis Laborde Arthur, Tennis Lambercier Bastien, Triathlon Lauenstein Wilma, Ski de fond Lestrade Bradley, Athlétisme Luong Charles-Eric, Parkour Martinez Mirko, Tennis Mauris Ismaël, Tennis Morel Timéo, Judo Mosset Alexi, Télémark Mosset Maxime, Télémark Moullet Barish, Tennis de table Odot Kai, Ski alpin Oswald Charles-Eric, Escrime Pellaton Erine, Ski nordique Pellaton Lisa, Ski nordique Pennisi Angela, Gymnastique artistique Perroud Alexis, Athlétisme Pirazzi Leana, Karaté Pittier Ilan, Ski de fond Python Elodie, VTT Richard Loane, Natation Richard Manon, Natation NEUCHÂTELNEUCHÂTEL Assoc. Swiss Canyon Trail",
-          "ville": "Hauterive",
+          "nom": "Union Sportive Les Ponts-de-Martel",
+          "ville": "Les Ponts-de-Martel",
           "canton": "NE",
-          "montant_CHF": 50000
+          "montant_CHF": 96665
         },
         {
-          "nom": "VBC Cheseaux",
+          "nom": "Club des Patineurs Fleurier",
+          "ville": "Fleurier",
+          "canton": "NE",
+          "montant_CHF": 31400
+        },
+        {
+          "nom": "Clubs des patineurs de Neuchâtel- Sports",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Tissot Neuchâtel Trophy",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Service des sports de la Chaux-de-Fonds",
           "ville": null,
           "canton": "SR",
-          "montant_CHF": 49520
+          "montant_CHF": 18610
         },
         {
-          "nom": "Swiss Volley Région Vaud",
-          "ville": "Vaud",
-          "canton": "VD",
-          "montant_CHF": 34900
-        },
-        {
-          "nom": "Swiss Volley Region Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 33450
-        },
-        {
-          "nom": "Swiss Volley Région Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 33450
-        },
-        {
-          "nom": "Assoc. Swiss Canyon Trail",
+          "nom": "Nuit du mérite fribourgeois",
           "ville": null,
-          "canton": "SR",
-          "montant_CHF": 30000
-        },
-        {
-          "nom": "Swiss Volleyball Final Four",
-          "ville": "Volleyball",
-          "canton": "GE",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Swiss Volley Région Genève - SVRG",
-          "ville": "Genève - Volleyball",
-          "canton": "SR",
-          "montant_CHF": 18000
-        },
-        {
-          "nom": "Volley Düdingen",
-          "ville": "Düdingen",
           "canton": "FR",
-          "montant_CHF": 14400
+          "montant_CHF": 8000
         },
         {
-          "nom": "Swiss Volley Region Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 12000
-        },
-        {
-          "nom": "Swiss Volley Région Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 12000
-        },
-        {
-          "nom": "Swiss Volley Région Vaud",
-          "ville": "Vaud",
-          "canton": "VD",
-          "montant_CHF": 6750
-        },
-        {
-          "nom": "VBC Cheseaux",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 5100
-        },
-        {
-          "nom": "Volley Düdingen",
-          "ville": "Düdingen",
-          "canton": "FR",
-          "montant_CHF": 5000
-        },
-        {
-          "nom": "Swiss Volley Région Fribourg",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 3000
-        },
-        {
-          "nom": "Cheseaux VBC",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 1334
-        },
-        {
-          "nom": "VBC La Côte",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 1236
-        },
-        {
-          "nom": "Cossonay VBC",
-          "ville": "Cossonay",
-          "canton": "VD",
-          "montant_CHF": 780
-        },
-        {
-          "nom": "Bussigny VBC",
-          "ville": "Bussigny",
-          "canton": "VD",
-          "montant_CHF": 699
-        },
-        {
-          "nom": "Volley Düdingen",
-          "ville": "Düdingen",
-          "canton": "FR",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "FSG Savagnier",
+          "nom": "Les Amis de la Patinoire de Savagnier",
           "ville": "Savagnier",
           "canton": "NE",
-          "montant_CHF": 500
+          "montant_CHF": 6170
         },
         {
-          "nom": "Lutry-Lavaux VBC",
+          "nom": "Assoc. Fribourgeoise de Patinage artistique",
           "ville": null,
-          "canton": "SR",
-          "montant_CHF": 455
+          "canton": "FR",
+          "montant_CHF": 5400
         },
         {
-          "nom": "Swiss Volley Region Fribourg",
+          "nom": "Assoc. Vaudoise de Patinage",
+          "ville": null,
+          "canton": "VD",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Club de patinage artistique Fribourg et Romont",
           "ville": "Fribourg",
           "canton": "FR",
-          "montant_CHF": 384
+          "montant_CHF": 2000
         },
         {
-          "nom": "VBC Cossonay",
-          "ville": "Cossonay",
-          "canton": "VD",
-          "montant_CHF": 150
+          "nom": "Club de patinage de la Gruyère",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2000
         },
         {
-          "nom": "VBC Cossonay",
-          "ville": "Cossonay",
+          "nom": "Assoc. Fribourgeoise de Patinage artistique",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1800
+        },
+        {
+          "nom": "Club des Patineurs de Morges",
+          "ville": "Morges",
           "canton": "VD",
-          "montant_CHF": 130
+          "montant_CHF": 1369
+        },
+        {
+          "nom": "Club de Patinage Artistique",
+          "ville": "Yverdon",
+          "canton": "VD",
+          "montant_CHF": 1237
+        },
+        {
+          "nom": "Club des Patineurs Fleurier",
+          "ville": "Fleurier",
+          "canton": "NE",
+          "montant_CHF": 560
+        },
+        {
+          "nom": "Club des Patineurs Lausanne et Malley",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 138
+        },
+        {
+          "nom": "Club des Patineurs Fleurier",
+          "ville": "Fleurier",
+          "canton": "NE",
+          "montant_CHF": 110
+        }
+      ]
+    },
+    {
+      "name": "Cyclisme",
+      "count": 1,
+      "total_chf": 195000,
+      "mean_chf": 195000,
+      "cantons": {
+        "JU": {
+          "count": 1,
+          "total_chf": 195000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Fond. Jura Bike Park",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 195000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Fond. Jura Bike Park",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 195000
         }
       ]
     },
     {
       "name": "Tir",
-      "count": 25,
-      "total_chf": 259560,
-      "mean_chf": 10382,
+      "count": 24,
+      "total_chf": 175020,
+      "mean_chf": 7292,
       "cantons": {
         "VD": {
           "count": 9,
@@ -4946,8 +4882,8 @@
           "total_chf": 21880
         },
         "FR": {
-          "count": 5,
-          "total_chf": 171580
+          "count": 4,
+          "total_chf": 87040
         },
         "VS": {
           "count": 1,
@@ -4959,12 +4895,6 @@
         }
       },
       "samples": [
-        {
-          "nom": "Sté cantonale des Tireurs Fribourgeois",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 84540
-        },
         {
           "nom": "Sté cantonale des Tireurs Fribourgeois",
           "ville": null,
@@ -4988,15 +4918,15 @@
           "ville": "Cornol",
           "canton": "JU",
           "montant_CHF": 7690
+        },
+        {
+          "nom": "Sté de Tir à Air comprimé La Mouche",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 7150
         }
       ],
       "all_entries": [
-        {
-          "nom": "Sté cantonale des Tireurs Fribourgeois",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 84540
-        },
         {
           "nom": "Sté cantonale des Tireurs Fribourgeois",
           "ville": null,
@@ -5144,416 +5074,126 @@
       ]
     },
     {
-      "name": "Patinage",
-      "count": 18,
-      "total_chf": 222859,
-      "mean_chf": 12381,
+      "name": "Escalade / Montagne",
+      "count": 11,
+      "total_chf": 149640,
+      "mean_chf": 13603,
       "cantons": {
-        "VD": {
-          "count": 4,
-          "total_chf": 4744
+        "SR": {
+          "count": 8,
+          "total_chf": 118710
         },
         "FR": {
-          "count": 5,
-          "total_chf": 22600
-        },
-        "SR": {
-          "count": 2,
-          "total_chf": 20610
-        },
-        "NE": {
-          "count": 7,
-          "total_chf": 174905
+          "count": 3,
+          "total_chf": 30930
         }
       },
       "samples": [
         {
-          "nom": "Union Sportive Les Ponts-de-Martel",
-          "ville": "Les Ponts-de-Martel",
-          "canton": "NE",
-          "montant_CHF": 96665
-        },
-        {
-          "nom": "Club des Patineurs Fleurier",
-          "ville": "Fleurier",
-          "canton": "NE",
-          "montant_CHF": 31400
-        },
-        {
-          "nom": "Clubs des patineurs de Neuchâtel- Sports",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Tissot Neuchâtel Trophy",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Service des sports de la Chaux-de-Fonds",
+          "nom": "Centre régional d'escalade sportive Romandie Centrale",
           "ville": null,
           "canton": "SR",
-          "montant_CHF": 18610
+          "montant_CHF": 54700
+        },
+        {
+          "nom": "GenèvEscalade - Escalade sportive",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Centre régional d'escalade sportive du CAS Romandie Centrale",
+          "ville": "CAS",
+          "canton": "FR",
+          "montant_CHF": 18587
+        },
+        {
+          "nom": "Centre régional d'escalade sportive Romandie Centrale",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 11460
+        },
+        {
+          "nom": "Centre régional d'escalade sportive du CAS Romandie Centrale",
+          "ville": "CAS",
+          "canton": "FR",
+          "montant_CHF": 8000
         }
       ],
       "all_entries": [
         {
-          "nom": "Union Sportive Les Ponts-de-Martel",
-          "ville": "Les Ponts-de-Martel",
-          "canton": "NE",
-          "montant_CHF": 96665
-        },
-        {
-          "nom": "Club des Patineurs Fleurier",
-          "ville": "Fleurier",
-          "canton": "NE",
-          "montant_CHF": 31400
-        },
-        {
-          "nom": "Clubs des patineurs de Neuchâtel- Sports",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Tissot Neuchâtel Trophy",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Service des sports de la Chaux-de-Fonds",
+          "nom": "Centre régional d'escalade sportive Romandie Centrale",
           "ville": null,
           "canton": "SR",
-          "montant_CHF": 18610
+          "montant_CHF": 54700
         },
         {
-          "nom": "Nuit du mérite fribourgeois",
+          "nom": "GenèvEscalade - Escalade sportive",
           "ville": null,
+          "canton": "SR",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Centre régional d'escalade sportive du CAS Romandie Centrale",
+          "ville": "CAS",
+          "canton": "FR",
+          "montant_CHF": 18587
+        },
+        {
+          "nom": "Centre régional d'escalade sportive Romandie Centrale",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 11460
+        },
+        {
+          "nom": "Centre régional d'escalade sportive du CAS Romandie Centrale",
+          "ville": "CAS",
           "canton": "FR",
           "montant_CHF": 8000
         },
         {
-          "nom": "Les Amis de la Patinoire de Savagnier",
-          "ville": "Savagnier",
-          "canton": "NE",
-          "montant_CHF": 6170
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Patinage artistique",
+          "nom": "Centre régional d'escalade sportive Romandie Centrale",
           "ville": null,
-          "canton": "FR",
-          "montant_CHF": 5400
+          "canton": "SR",
+          "montant_CHF": 6050
         },
         {
-          "nom": "Assoc. Fribourgeoise de Patinage artistique",
+          "nom": "Centre régional d'escalade sportive du CAS Romandie Centrale",
+          "ville": "CAS",
+          "canton": "FR",
+          "montant_CHF": 4343
+        },
+        {
+          "nom": "VAUDVAUDManifestations sportives • suite Assoc. Villars Escalade",
           "ville": null,
-          "canton": "FR",
-          "montant_CHF": 5400
+          "canton": "SR",
+          "montant_CHF": 2500
         },
         {
-          "nom": "Assoc. Vaudoise de Patinage",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 2000
-        },
-        {
-          "nom": "Club de patinage artistique Fribourg et Romont",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 2000
-        },
-        {
-          "nom": "Club de patinage de la Gruyère",
+          "nom": "CS Neirivue",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 2000
         },
         {
-          "nom": "Assoc. Fribourgeoise de Patinage artistique",
+          "nom": "Centre régional d'escalade sportive Romandie Centrale",
           "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1800
+          "canton": "SR",
+          "montant_CHF": 1500
         },
         {
-          "nom": "Club des Patineurs de Morges",
-          "ville": "Morges",
-          "canton": "VD",
-          "montant_CHF": 1369
-        },
-        {
-          "nom": "Club de Patinage Artistique",
-          "ville": "Yverdon",
-          "canton": "VD",
-          "montant_CHF": 1237
-        },
-        {
-          "nom": "Club des Patineurs Fleurier",
-          "ville": "Fleurier",
-          "canton": "NE",
-          "montant_CHF": 560
-        },
-        {
-          "nom": "Club des Patineurs Lausanne et Malley",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 138
-        },
-        {
-          "nom": "Club des Patineurs Fleurier",
-          "ville": "Fleurier",
-          "canton": "NE",
-          "montant_CHF": 110
-        }
-      ]
-    },
-    {
-      "name": "Cyclisme",
-      "count": 1,
-      "total_chf": 195000,
-      "mean_chf": 195000,
-      "cantons": {
-        "JU": {
-          "count": 1,
-          "total_chf": 195000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Fond. Jura Bike Park",
-          "ville": "Porrentruy",
-          "canton": "JU",
-          "montant_CHF": 195000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Fond. Jura Bike Park",
-          "ville": "Porrentruy",
-          "canton": "JU",
-          "montant_CHF": 195000
-        }
-      ]
-    },
-    {
-      "name": "Hockey sur glace",
-      "count": 25,
-      "total_chf": 184606,
-      "mean_chf": 7384,
-      "cantons": {
-        "VD": {
-          "count": 8,
-          "total_chf": 71304
-        },
-        "SR": {
-          "count": 5,
-          "total_chf": 2260
-        },
-        "FR": {
-          "count": 10,
-          "total_chf": 104160
-        },
-        "VS": {
-          "count": 1,
-          "total_chf": 2882
-        },
-        "NE": {
-          "count": 1,
-          "total_chf": 4000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
-          "ville": "Hockey",
-          "canton": "VD",
-          "montant_CHF": 34000
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 23480
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 23480
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
-          "ville": "Hockey",
-          "canton": "VD",
-          "montant_CHF": 34000
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 25000
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 23480
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 23480
-        },
-        {
-          "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
-          "ville": "Hockey",
-          "canton": "VD",
-          "montant_CHF": 19050
-        },
-        {
-          "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
-          "ville": "Hockey",
-          "canton": "VD",
-          "montant_CHF": 15240
-        },
-        {
-          "nom": "Neuchâtel Hockey Academy",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 4000
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 3000
-        },
-        {
-          "nom": "Nachwuchs EHC Visp",
-          "ville": "Visp",
-          "canton": "VS",
-          "montant_CHF": 2882
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1200
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "HC Yverdon",
-          "ville": "Yverdon",
-          "canton": "VD",
-          "montant_CHF": 990
-        },
-        {
-          "nom": "HC Yverdon-les-bains",
-          "ville": "Yverdon-les-bains",
-          "canton": "VD",
-          "montant_CHF": 904
-        },
-        {
-          "nom": "EHC SenSee Future",
+          "nom": "Les Défis du Niremont",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 500
-        },
-        {
-          "nom": "EHC SenSee Future",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "EHC SenSee Future",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "EHC SenSee Future",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Schweizer Freizeitreitverband HC",
-          "ville": "Düdingen",
-          "canton": "FR",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Schweizer Freizeitreitverband HC",
-          "ville": "Düdingen",
-          "canton": "FR",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "HC Yverdon",
-          "ville": "Yverdon",
-          "canton": "VD",
-          "montant_CHF": 430
-        },
-        {
-          "nom": "HC Yverdon",
-          "ville": "Yverdon",
-          "canton": "VD",
-          "montant_CHF": 430
-        },
-        {
-          "nom": "HC Vallée de Joux",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 260
-        },
-        {
-          "nom": "HC Vallorbe",
-          "ville": "Vallorbe",
-          "canton": "VD",
-          "montant_CHF": 260
         }
       ]
     },
     {
       "name": "Athlétisme",
-      "count": 17,
-      "total_chf": 177413,
-      "mean_chf": 10436,
+      "count": 16,
+      "total_chf": 145233,
+      "mean_chf": 9077,
       "cantons": {
         "VD": {
           "count": 3,
@@ -5564,8 +5204,8 @@
           "total_chf": 2640
         },
         "VS": {
-          "count": 8,
-          "total_chf": 70557
+          "count": 7,
+          "total_chf": 38377
         },
         "NE": {
           "count": 2,
@@ -5593,12 +5233,6 @@
           "nom": "Féd. Fribourgeoise d'Athlétisme",
           "ville": "Athlétisme",
           "canton": "VS",
-          "montant_CHF": 32180
-        },
-        {
-          "nom": "Féd. Fribourgeoise d'Athlétisme",
-          "ville": "Athlétisme",
-          "canton": "VS",
           "montant_CHF": 2000
         },
         {
@@ -5606,6 +5240,12 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 1716
+        },
+        {
+          "nom": "FSG Forel-Savigny Amis-Gym",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1660
         }
       ],
       "all_entries": [
@@ -5614,12 +5254,6 @@
           "ville": "Cologny",
           "canton": "GE",
           "montant_CHF": 100000
-        },
-        {
-          "nom": "Féd. Fribourgeoise d'Athlétisme",
-          "ville": "Athlétisme",
-          "canton": "VS",
-          "montant_CHF": 32180
         },
         {
           "nom": "Féd. Fribourgeoise d'Athlétisme",
@@ -5714,136 +5348,14 @@
       ]
     },
     {
-      "name": "Escalade / Montagne",
-      "count": 12,
-      "total_chf": 157640,
-      "mean_chf": 13136,
-      "cantons": {
-        "SR": {
-          "count": 8,
-          "total_chf": 118710
-        },
-        "FR": {
-          "count": 4,
-          "total_chf": 38930
-        }
-      },
-      "samples": [
-        {
-          "nom": "Centre régional d'escalade sportive Romandie Centrale",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 54700
-        },
-        {
-          "nom": "GenèvEscalade - Escalade sportive",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "Centre régional d'escalade sportive du CAS Romandie Centrale",
-          "ville": "CAS",
-          "canton": "FR",
-          "montant_CHF": 18587
-        },
-        {
-          "nom": "Centre régional d'escalade sportive Romandie Centrale",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 11460
-        },
-        {
-          "nom": "Centre régional d'escalade sportive du CAS Romandie Centrale",
-          "ville": "CAS",
-          "canton": "FR",
-          "montant_CHF": 8000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Centre régional d'escalade sportive Romandie Centrale",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 54700
-        },
-        {
-          "nom": "GenèvEscalade - Escalade sportive",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 40000
-        },
-        {
-          "nom": "Centre régional d'escalade sportive du CAS Romandie Centrale",
-          "ville": "CAS",
-          "canton": "FR",
-          "montant_CHF": 18587
-        },
-        {
-          "nom": "Centre régional d'escalade sportive Romandie Centrale",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 11460
-        },
-        {
-          "nom": "Centre régional d'escalade sportive du CAS Romandie Centrale",
-          "ville": "CAS",
-          "canton": "FR",
-          "montant_CHF": 8000
-        },
-        {
-          "nom": "Centre régional d'escalade sportive du CAS Romandie Centrale",
-          "ville": "CAS",
-          "canton": "FR",
-          "montant_CHF": 8000
-        },
-        {
-          "nom": "Centre régional d'escalade sportive Romandie Centrale",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 6050
-        },
-        {
-          "nom": "Centre régional d'escalade sportive du CAS Romandie Centrale",
-          "ville": "CAS",
-          "canton": "FR",
-          "montant_CHF": 4343
-        },
-        {
-          "nom": "VAUDVAUDManifestations sportives • suite Assoc. Villars Escalade",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 2500
-        },
-        {
-          "nom": "CS Neirivue",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 2000
-        },
-        {
-          "nom": "Centre régional d'escalade sportive Romandie Centrale",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 1500
-        },
-        {
-          "nom": "Les Défis du Niremont",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 500
-        }
-      ]
-    },
-    {
       "name": "Lutte suisse",
-      "count": 6,
-      "total_chf": 140220,
-      "mean_chf": 23370,
+      "count": 5,
+      "total_chf": 132810,
+      "mean_chf": 26562,
       "cantons": {
         "FR": {
-          "count": 4,
-          "total_chf": 17320
+          "count": 3,
+          "total_chf": 9910
         },
         "SR": {
           "count": 2,
@@ -5856,44 +5368,6 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 121900
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de lutte suisse",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 7410
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de lutte suisse",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 7410
-        },
-        {
-          "nom": "Club des lutteurs de Cottens et env.",
-          "ville": "Cottens",
-          "canton": "FR",
-          "montant_CHF": 1500
-        },
-        {
-          "nom": "Club de lutte de Morat-Vully",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 1000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Schwingklub Oberwallis",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 121900
-        },
-        {
-          "nom": "Assoc. Fribourgeoise de lutte suisse",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 7410
         },
         {
           "nom": "Assoc. Fribourgeoise de lutte suisse",
@@ -5918,6 +5392,202 @@
           "ville": "Estavayer-le-Lac",
           "canton": "FR",
           "montant_CHF": 1000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Schwingklub Oberwallis",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 121900
+        },
+        {
+          "nom": "Assoc. Fribourgeoise de lutte suisse",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 7410
+        },
+        {
+          "nom": "Club des lutteurs de Cottens et env.",
+          "ville": "Cottens",
+          "canton": "FR",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Club de lutte de Morat-Vully",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Club des lutteurs Estavayer-le-Lac et environs",
+          "ville": "Estavayer-le-Lac",
+          "canton": "FR",
+          "montant_CHF": 1000
+        }
+      ]
+    },
+    {
+      "name": "Hockey sur glace",
+      "count": 17,
+      "total_chf": 132696,
+      "mean_chf": 7805,
+      "cantons": {
+        "VD": {
+          "count": 7,
+          "total_chf": 70874
+        },
+        "SR": {
+          "count": 2,
+          "total_chf": 760
+        },
+        "FR": {
+          "count": 6,
+          "total_chf": 54180
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 2882
+        },
+        "NE": {
+          "count": 1,
+          "total_chf": 4000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
+          "ville": "Hockey",
+          "canton": "VD",
+          "montant_CHF": 34000
+        },
+        {
+          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 23480
+        },
+        {
+          "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
+          "ville": "Hockey",
+          "canton": "VD",
+          "montant_CHF": 19050
+        },
+        {
+          "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
+          "ville": "Hockey",
+          "canton": "VD",
+          "montant_CHF": 15240
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
+          "ville": "Hockey",
+          "canton": "VD",
+          "montant_CHF": 34000
+        },
+        {
+          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 25000
+        },
+        {
+          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 23480
+        },
+        {
+          "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
+          "ville": "Hockey",
+          "canton": "VD",
+          "montant_CHF": 19050
+        },
+        {
+          "nom": "Assoc. Cantonale Vaudoise de Hockey sur Glace",
+          "ville": "Hockey",
+          "canton": "VD",
+          "montant_CHF": 15240
+        },
+        {
+          "nom": "Neuchâtel Hockey Academy",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Nachwuchs EHC Visp",
+          "ville": "Visp",
+          "canton": "VS",
+          "montant_CHF": 2882
+        },
+        {
+          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1200
+        },
+        {
+          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "HC Yverdon",
+          "ville": "Yverdon",
+          "canton": "VD",
+          "montant_CHF": 990
+        },
+        {
+          "nom": "HC Yverdon-les-bains",
+          "ville": "Yverdon-les-bains",
+          "canton": "VD",
+          "montant_CHF": 904
+        },
+        {
+          "nom": "EHC SenSee Future",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Schweizer Freizeitreitverband HC",
+          "ville": "Düdingen",
+          "canton": "FR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "HC Yverdon",
+          "ville": "Yverdon",
+          "canton": "VD",
+          "montant_CHF": 430
+        },
+        {
+          "nom": "HC Vallée de Joux",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 260
+        },
+        {
+          "nom": "HC Vallorbe",
+          "ville": "Vallorbe",
+          "canton": "VD",
+          "montant_CHF": 260
         }
       ]
     },
@@ -6096,22 +5766,62 @@
       ]
     },
     {
+      "name": "Handball",
+      "count": 2,
+      "total_chf": 39050,
+      "mean_chf": 19525,
+      "cantons": {
+        "VS": {
+          "count": 2,
+          "total_chf": 39050
+        }
+      },
+      "samples": [
+        {
+          "nom": "Assoc. Vaudoise de Handball",
+          "ville": "Handball",
+          "canton": "VS",
+          "montant_CHF": 25400
+        },
+        {
+          "nom": "Assoc. Vaudoise de Handball",
+          "ville": "Handball",
+          "canton": "VS",
+          "montant_CHF": 13650
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Assoc. Vaudoise de Handball",
+          "ville": "Handball",
+          "canton": "VS",
+          "montant_CHF": 25400
+        },
+        {
+          "nom": "Assoc. Vaudoise de Handball",
+          "ville": "Handball",
+          "canton": "VS",
+          "montant_CHF": 13650
+        }
+      ]
+    },
+    {
       "name": "Voile / Nautique",
-      "count": 25,
-      "total_chf": 45004,
-      "mean_chf": 1800,
+      "count": 21,
+      "total_chf": 33534,
+      "mean_chf": 1596,
       "cantons": {
         "VD": {
           "count": 1,
           "total_chf": 1000
         },
         "FR": {
-          "count": 5,
-          "total_chf": 3669
+          "count": 2,
+          "total_chf": 2169
         },
         "JU": {
-          "count": 2,
-          "total_chf": 19940
+          "count": 1,
+          "total_chf": 9970
         },
         "NE": {
           "count": 16,
@@ -6123,12 +5833,6 @@
         }
       },
       "samples": [
-        {
-          "nom": "Féd. de Voile des Lacs Jurassiens",
-          "ville": null,
-          "canton": "JU",
-          "montant_CHF": 9970
-        },
         {
           "nom": "Féd. de Voile des Lacs Jurassiens",
           "ville": null,
@@ -6152,15 +5856,15 @@
           "ville": "Neuchâtel",
           "canton": "NE",
           "montant_CHF": 3480
+        },
+        {
+          "nom": "Club Nautique Ichtus",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 2530
         }
       ],
       "all_entries": [
-        {
-          "nom": "Féd. de Voile des Lacs Jurassiens",
-          "ville": null,
-          "canton": "JU",
-          "montant_CHF": 9970
-        },
         {
           "nom": "Féd. de Voile des Lacs Jurassiens",
           "ville": null,
@@ -6234,24 +5938,6 @@
           "montant_CHF": 500
         },
         {
-          "nom": "Cercle de la Voile d'Estavayer-le-Lac",
-          "ville": "Estavayer-le-Lac",
-          "canton": "FR",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Cercle de la Voile d'Estavayer-le-Lac",
-          "ville": "Estavayer-le-Lac",
-          "canton": "FR",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Cercle de la Voile d'Estavayer-le-Lac",
-          "ville": "Estavayer-le-Lac",
-          "canton": "FR",
-          "montant_CHF": 500
-        },
-        {
           "nom": "Cercle de la Voile de Neuchâtel",
           "ville": "Neuchâtel",
           "canton": "NE",
@@ -6308,58 +5994,18 @@
       ]
     },
     {
-      "name": "Handball",
-      "count": 2,
-      "total_chf": 39050,
-      "mean_chf": 19525,
-      "cantons": {
-        "VS": {
-          "count": 2,
-          "total_chf": 39050
-        }
-      },
-      "samples": [
-        {
-          "nom": "Assoc. Vaudoise de Handball",
-          "ville": "Handball",
-          "canton": "VS",
-          "montant_CHF": 25400
-        },
-        {
-          "nom": "Assoc. Vaudoise de Handball",
-          "ville": "Handball",
-          "canton": "VS",
-          "montant_CHF": 13650
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Assoc. Vaudoise de Handball",
-          "ville": "Handball",
-          "canton": "VS",
-          "montant_CHF": 25400
-        },
-        {
-          "nom": "Assoc. Vaudoise de Handball",
-          "ville": "Handball",
-          "canton": "VS",
-          "montant_CHF": 13650
-        }
-      ]
-    },
-    {
       "name": "Aviron",
-      "count": 7,
-      "total_chf": 35048,
-      "mean_chf": 5006,
+      "count": 6,
+      "total_chf": 30068,
+      "mean_chf": 5011,
       "cantons": {
         "FR": {
           "count": 2,
           "total_chf": 21765
         },
         "SR": {
-          "count": 5,
-          "total_chf": 13283
+          "count": 4,
+          "total_chf": 8303
         }
       },
       "samples": [
@@ -6376,13 +6022,7 @@
           "montant_CHF": 6638
         },
         {
-          "nom": "Assoc. d'Aviron du canton de",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 4980
-        },
-        {
-          "nom": "Assoc. d'Aviron du canton de",
+          "nom": "Assoc. d'Aviron du canton de Fribourg",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 4980
@@ -6392,6 +6032,12 @@
           "ville": null,
           "canton": "SR",
           "montant_CHF": 2523
+        },
+        {
+          "nom": "Club Aviron Valais Léman",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 600
         }
       ],
       "all_entries": [
@@ -6408,13 +6054,7 @@
           "montant_CHF": 6638
         },
         {
-          "nom": "Assoc. d'Aviron du canton de",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 4980
-        },
-        {
-          "nom": "Assoc. d'Aviron du canton de",
+          "nom": "Assoc. d'Aviron du canton de Fribourg",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 4980
@@ -6441,17 +6081,17 @@
     },
     {
       "name": "Tennis de table",
-      "count": 13,
-      "total_chf": 34118,
-      "mean_chf": 2624,
+      "count": 10,
+      "total_chf": 22968,
+      "mean_chf": 2296,
       "cantons": {
         "VD": {
-          "count": 5,
-          "total_chf": 5560
+          "count": 3,
+          "total_chf": 4960
         },
         "FR": {
-          "count": 3,
-          "total_chf": 21600
+          "count": 2,
+          "total_chf": 11050
         },
         "VS": {
           "count": 1,
@@ -6478,12 +6118,6 @@
           "montant_CHF": 10550
         },
         {
-          "nom": "Assoc. Fribourgeoise de Tennis de Table",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 10550
-        },
-        {
           "nom": "Assoc. valaisanne de tennis de table",
           "ville": null,
           "canton": "VS",
@@ -6500,15 +6134,15 @@
           "ville": null,
           "canton": "GE",
           "montant_CHF": 2000
+        },
+        {
+          "nom": "Club de tennis de table de Crissier",
+          "ville": "Crissier",
+          "canton": "VD",
+          "montant_CHF": 1800
         }
       ],
       "all_entries": [
-        {
-          "nom": "Assoc. Fribourgeoise de Tennis de Table",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 10550
-        },
         {
           "nom": "Assoc. Fribourgeoise de Tennis de Table",
           "ville": null,
@@ -6568,34 +6202,22 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 300
-        },
-        {
-          "nom": "Lausanne Club de Tennis de Table",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 300
-        },
-        {
-          "nom": "Lausanne Club de Tennis de Table",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 300
         }
       ]
     },
     {
       "name": "Équitation",
-      "count": 14,
-      "total_chf": 23325,
-      "mean_chf": 1666,
+      "count": 10,
+      "total_chf": 19545,
+      "mean_chf": 1954,
       "cantons": {
         "SR": {
-          "count": 8,
-          "total_chf": 16995
+          "count": 6,
+          "total_chf": 13995
         },
         "FR": {
-          "count": 4,
-          "total_chf": 1560
+          "count": 2,
+          "total_chf": 780
         },
         "NE": {
           "count": 2,
@@ -6675,18 +6297,6 @@
           "nom": "Sté de Cavalerie de la Broye",
           "ville": null,
           "canton": "SR",
-          "montant_CHF": 1500
-        },
-        {
-          "nom": "Sté de Cavalerie de la Broye",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 1500
-        },
-        {
-          "nom": "Sté de Cavalerie de la Broye",
-          "ville": null,
-          "canton": "SR",
           "montant_CHF": 1000
         },
         {
@@ -6696,22 +6306,10 @@
           "montant_CHF": 500
         },
         {
-          "nom": "Minigolf Club Bulle",
-          "ville": "Bulle",
-          "canton": "FR",
-          "montant_CHF": 500
-        },
-        {
           "nom": "Sté de Cavalerie de la Broye",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 500
-        },
-        {
-          "nom": "Minigolf Club Bulle",
-          "ville": "Bulle",
-          "canton": "FR",
-          "montant_CHF": 280
         },
         {
           "nom": "Minigolf Club Bulle",
@@ -6723,17 +6321,17 @@
     },
     {
       "name": "Curling",
-      "count": 6,
-      "total_chf": 12800,
-      "mean_chf": 2133,
+      "count": 5,
+      "total_chf": 12610,
+      "mean_chf": 2522,
       "cantons": {
         "VD": {
           "count": 2,
           "total_chf": 11800
         },
         "FR": {
-          "count": 2,
-          "total_chf": 380
+          "count": 1,
+          "total_chf": 190
         },
         "SR": {
           "count": 2,
@@ -6766,10 +6364,10 @@
           "montant_CHF": 190
         },
         {
-          "nom": "Curling Club Fribourg - Düdingen",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 190
+          "nom": "Curling Neuchâtel-Sports",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 130
         }
       ],
       "all_entries": [
@@ -6798,12 +6396,6 @@
           "montant_CHF": 190
         },
         {
-          "nom": "Curling Club Fribourg - Düdingen",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 190
-        },
-        {
           "nom": "Curling Neuchâtel-Sports",
           "ville": null,
           "canton": "SR",
@@ -6813,26 +6405,20 @@
     },
     {
       "name": "Escrime",
-      "count": 5,
-      "total_chf": 12020,
-      "mean_chf": 2404,
+      "count": 4,
+      "total_chf": 7820,
+      "mean_chf": 1955,
       "cantons": {
         "VD": {
           "count": 3,
           "total_chf": 3620
         },
         "FR": {
-          "count": 2,
-          "total_chf": 8400
+          "count": 1,
+          "total_chf": 4200
         }
       },
       "samples": [
-        {
-          "nom": "Assoc. Fribourgeoise d'escrime",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 4200
-        },
         {
           "nom": "Assoc. Fribourgeoise d'escrime",
           "ville": null,
@@ -6859,12 +6445,6 @@
         }
       ],
       "all_entries": [
-        {
-          "nom": "Assoc. Fribourgeoise d'escrime",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 4200
-        },
         {
           "nom": "Assoc. Fribourgeoise d'escrime",
           "ville": null,

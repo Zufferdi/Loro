@@ -2,7 +2,7 @@
   "_meta": {
     "year": "2023",
     "consolidated_with_aliases": true,
-    "aliases_count": 10
+    "aliases_count": 11
   },
   "beneficiaires": [
     {
@@ -257,6 +257,17 @@
       "is_consolidated": false
     },
     {
+      "nom": "FIFF — Festival International du Film de Fribourg",
+      "total_CHF": 795000,
+      "count": 2,
+      "cantons": [
+        "FR",
+        "SR"
+      ],
+      "secteur_principal": "Culture",
+      "is_consolidated": true
+    },
+    {
       "nom": "Centre hospitalier universitaire vaudois (CHUV)",
       "total_CHF": 779680,
       "count": 4,
@@ -294,16 +305,6 @@
         "SR"
       ],
       "secteur_principal": "Conservation du patrimoine",
-      "is_consolidated": false
-    },
-    {
-      "nom": "Assoc. Jardin Urbain",
-      "total_CHF": 700000,
-      "count": 1,
-      "cantons": [
-        "VD"
-      ],
-      "secteur_principal": "Environnement",
       "is_consolidated": false
     }
   ]

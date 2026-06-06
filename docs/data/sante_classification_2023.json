@@ -77,7 +77,7 @@
           "montant_CHF": 350000
         },
         {
-          "nom": "AFIRO",
+          "nom": "AFIRO - Atelier de formation, recherche et orientation",
           "ville": "Ecublens",
           "canton": "VD",
           "montant_CHF": 240000
@@ -109,7 +109,7 @@
           "montant_CHF": 350000
         },
         {
-          "nom": "AFIRO",
+          "nom": "AFIRO - Atelier de formation, recherche et orientation",
           "ville": "Ecublens",
           "canton": "VD",
           "montant_CHF": 240000
@@ -295,12 +295,6 @@
           "montant_CHF": 33000
         },
         {
-          "nom": "Fond. As'trame",
-          "ville": "Carouge",
-          "canton": "GE",
-          "montant_CHF": 30000
-        },
-        {
           "nom": "Relax Culture",
           "ville": "Lausanne",
           "canton": "VD",
@@ -309,6 +303,12 @@
         {
           "nom": "Assoc. Genevoise de Foot fauteuil",
           "ville": "Bellevue",
+          "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Fond. As'trame",
+          "ville": "Carouge",
           "canton": "GE",
           "montant_CHF": 30000
         },
@@ -355,18 +355,6 @@
           "montant_CHF": 21000
         },
         {
-          "nom": "Fond. As'trame",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Fond. Le Copain",
-          "ville": "Granges",
-          "canton": "VS",
-          "montant_CHF": 20000
-        },
-        {
           "nom": "Assoc. Villars Escalade",
           "ville": "Villars-sur-Ollon",
           "canton": "VD",
@@ -397,6 +385,18 @@
           "montant_CHF": 20000
         },
         {
+          "nom": "Fond. Le Copain",
+          "ville": "Granges",
+          "canton": "VS",
+          "montant_CHF": 20000
+        },
+        {
+          "nom": "Fond. As'trame",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 20000
+        },
+        {
           "nom": "Assoc. re-pairs",
           "ville": "Lausanne",
           "canton": "VD",
@@ -415,12 +415,6 @@
           "montant_CHF": 16750
         },
         {
-          "nom": "Assoc. S5",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 15000
-        },
-        {
           "nom": "Schweizerische Bibliothek für Blinde, Seh- und Lesebehinderte-SBS, Étoile sonore",
           "ville": "Zurich",
           "canton": "JU",
@@ -430,6 +424,12 @@
           "nom": "Arcade Sages-Femmes, Sages-Femmes à domicile",
           "ville": null,
           "canton": "SR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. S5",
+          "ville": "Genève",
+          "canton": "GE",
           "montant_CHF": 15000
         },
         {
@@ -589,8 +589,8 @@
           "montant_CHF": 3000
         },
         {
-          "nom": "PARA-DIGME, Moléson-sur-",
-          "ville": "Gruyères",
+          "nom": "PARA-DIGME, Moléson-sur-Gruyères",
+          "ville": null,
           "canton": "FR",
           "montant_CHF": 2400
         },
@@ -703,26 +703,26 @@
           "montant_CHF": 229680
         },
         {
-          "nom": "Centre hospitalier universitaire vaudois (CHUV)",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 200000
-        },
-        {
-          "nom": "Centre hospitalier universitaire vaudois (CHUV)",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 200000
-        },
-        {
           "nom": "Pôle Santé du Pays-d'Enhaut",
           "ville": "Château-d'Œx",
           "canton": "VD",
           "montant_CHF": 200000
         },
         {
+          "nom": "Centre hospitalier universitaire vaudois (CHUV)",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
           "nom": "Réseau Santé Haut Léman",
           "ville": "Rennaz",
+          "canton": "VD",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "Centre hospitalier universitaire vaudois (CHUV)",
+          "ville": null,
           "canton": "VD",
           "montant_CHF": 200000
         },
@@ -1013,7 +1013,7 @@
       },
       "samples": [
         {
-          "nom": "AFAAP",
+          "nom": "AFAAP - Assoc. fribourgeoise pour l'accompagnement à domicile",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 230000
@@ -1045,7 +1045,7 @@
       ],
       "all_entries": [
         {
-          "nom": "AFAAP",
+          "nom": "AFAAP - Assoc. fribourgeoise pour l'accompagnement à domicile",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 230000

@@ -7,33 +7,33 @@
     "date": "2026-06-04",
     "total_entries": 319,
     "total_chf": 28255395,
-    "precise_classified_entries": 138,
-    "precise_classified_chf": 17166732,
-    "pct_chf_precisely_classified": 60.8,
+    "precise_classified_entries": 141,
+    "precise_classified_chf": 17196732,
+    "pct_chf_precisely_classified": 60.9,
     "pct_chf_classified": 100.0,
     "total_entries_classified": 319,
     "total_chf_classified": 28255395,
-    "catchall_chf": 11088663,
-    "cross_year_recovered": 77
+    "catchall_chf": 11058663,
+    "cross_year_recovered": 83
   },
   "categories": [
     {
       "name": "Précarité / Pauvreté",
-      "count": 38,
-      "total_chf": 10468170,
-      "mean_chf": 275478,
+      "count": 41,
+      "total_chf": 10498170,
+      "mean_chf": 256052,
       "cantons": {
         "VD": {
-          "count": 10,
-          "total_chf": 1866092
+          "count": 11,
+          "total_chf": 1881092
         },
         "SR": {
           "count": 2,
           "total_chf": 22852
         },
         "FR": {
-          "count": 10,
-          "total_chf": 1921122
+          "count": 12,
+          "total_chf": 1936122
         },
         "JU": {
           "count": 3,
@@ -55,13 +55,9 @@
       "samples": [
         {
           "nom": "Fond. Partage",
-          "montant_CHF": 2000000,
-          "canton": "GE",
           "ville": "Plan-les-Ouates",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Fond. Partage",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "GE",
+          "montant_CHF": 2000000
         },
         {
           "nom": "Assoc. Vestiaire social",
@@ -91,13 +87,9 @@
       "all_entries": [
         {
           "nom": "Fond. Partage",
-          "montant_CHF": 2000000,
-          "canton": "GE",
           "ville": "Plan-les-Ouates",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Fond. Partage",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "GE",
+          "montant_CHF": 2000000
         },
         {
           "nom": "Assoc. Vestiaire social",
@@ -280,6 +272,12 @@
           "montant_CHF": 17000
         },
         {
+          "nom": "Les Concerts du Cœur Vaudois",
+          "ville": "Vucherens",
+          "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
           "nom": "La Tuile",
           "ville": "Fribourg",
           "canton": "FR",
@@ -292,10 +290,22 @@
           "montant_CHF": 10000
         },
         {
+          "nom": "Les Concerts du Cœur Fribourgeois",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 10000
+        },
+        {
           "nom": "Assoc. Samedi du partage",
           "ville": "Plan-les-Ouates",
           "canton": "GE",
           "montant_CHF": 8500
+        },
+        {
+          "nom": "Les Concerts du Cœur fribourgeois",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 5000
         },
         {
           "nom": "Caritas Suisse",
@@ -325,21 +335,21 @@
     },
     {
       "name": "Soutien général à l'action sociale",
-      "count": 180,
-      "total_chf": 9288663,
-      "mean_chf": 51603,
+      "count": 177,
+      "total_chf": 9258663,
+      "mean_chf": 52308,
       "cantons": {
         "VD": {
-          "count": 60,
-          "total_chf": 3392647
+          "count": 59,
+          "total_chf": 3377647
         },
         "SR": {
           "count": 17,
           "total_chf": 1388100
         },
         "FR": {
-          "count": 20,
-          "total_chf": 718546
+          "count": 18,
+          "total_chf": 703546
         },
         "JU": {
           "count": 9,
@@ -992,12 +1002,6 @@
           "montant_CHF": 15000
         },
         {
-          "nom": "Les Concerts du Cœur Vaudois",
-          "ville": "Vucherens",
-          "canton": "VD",
-          "montant_CHF": 15000
-        },
-        {
           "nom": "Plurielles",
           "ville": "Lausanne",
           "canton": "VD",
@@ -1103,12 +1107,6 @@
           "nom": "KOMKAR Assoc. des travailleurs et de la culture du Kurdistan en Suisse",
           "ville": "Renens",
           "canton": "VD",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Les Concerts du Cœur Fribourgeois",
-          "ville": "Fribourg",
-          "canton": "FR",
           "montant_CHF": 10000
         },
         {
@@ -1247,12 +1245,6 @@
           "nom": "Survival Firefighter Challenge Apollo SFCA",
           "ville": "Gland",
           "canton": "VD",
-          "montant_CHF": 5000
-        },
-        {
-          "nom": "Les Concerts du Cœur fribourgeois",
-          "ville": "Fribourg",
-          "canton": "FR",
           "montant_CHF": 5000
         },
         {
@@ -1460,7 +1452,7 @@
           "montant_CHF": 980
         },
         {
-          "nom": "wier häufe Plaffeien und Umgebung",
+          "nom": "Vereinigung Wier häufe Plaffeien und Umgebung",
           "ville": "Brünisried",
           "canton": "SR",
           "montant_CHF": 600
@@ -1566,16 +1558,6 @@
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 149680
-        },
-        {
-          "nom": "Tertianum (groupe d'EMS — 4 résidences)",
-          "montant_CHF": 124000,
-          "canton": "VS",
-          "ville": "Saxon",
-          "secteur": "",
-          "description": "Consolidation de 4 attributions : Tertianum Les Sources, Tertianum La Venise, Tertianum Les Tourelles, Tertianum Les Marronniers",
-          "_consolidated": true,
-          "_count": 4
         },
         {
           "nom": "Assoc. Vogay",
@@ -1692,6 +1674,12 @@
           "montant_CHF": 39000
         },
         {
+          "nom": "Tertianum Les Sources",
+          "ville": "Saxon",
+          "canton": "VS",
+          "montant_CHF": 39000
+        },
+        {
           "nom": "Fond. du Home de Zambotte",
           "ville": "Savièse",
           "canton": "VS",
@@ -1728,10 +1716,22 @@
           "montant_CHF": 33000
         },
         {
+          "nom": "Tertianum Les Tourelles",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 32000
+        },
+        {
           "nom": "Pro Senectute Vaud",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 31500
+        },
+        {
+          "nom": "Tertianum Les Marronniers",
+          "ville": "Martigny",
+          "canton": "VS",
+          "montant_CHF": 30000
         },
         {
           "nom": "Pro Senectute Arc Jurassien",
@@ -1761,6 +1761,12 @@
           "nom": "EMS Cottier Boys",
           "ville": "Orny",
           "canton": "VD",
+          "montant_CHF": 23000
+        },
+        {
+          "nom": "Tertianum La Venise",
+          "ville": "Monthey",
+          "canton": "VS",
           "montant_CHF": 23000
         },
         {
@@ -2416,8 +2422,8 @@
       },
       "samples": [
         {
-          "nom": "HESAV, Assoc. La paix du Soir, Lausanne, Le Mont-sur-",
-          "ville": "Lausanne",
+          "nom": "HESAV, Assoc. La paix du Soir, Lausanne, Le Mont-sur-Lausanne",
+          "ville": null,
           "canton": "VD",
           "montant_CHF": 180000
         },
@@ -2448,8 +2454,8 @@
       ],
       "all_entries": [
         {
-          "nom": "HESAV, Assoc. La paix du Soir, Lausanne, Le Mont-sur-",
-          "ville": "Lausanne",
+          "nom": "HESAV, Assoc. La paix du Soir, Lausanne, Le Mont-sur-Lausanne",
+          "ville": null,
           "canton": "VD",
           "montant_CHF": 180000
         },

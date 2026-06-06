@@ -5,28 +5,28 @@
     "source": "brb2024_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 221,
-    "total_chf": 3438934,
+    "total_entries": 219,
+    "total_chf": 3424118,
     "precise_classified_entries": 32,
     "precise_classified_chf": 1388698,
-    "pct_chf_precisely_classified": 40.4,
+    "pct_chf_precisely_classified": 40.6,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 221,
-    "total_chf_classified": 3438934,
-    "catchall_chf": 2050236,
+    "total_entries_classified": 219,
+    "total_chf_classified": 3424118,
+    "catchall_chf": 2035420,
     "cross_year_recovered": 11,
     "sector": "Environnement",
     "sector_slug": "environnement",
-    "total_entries_sector": 221,
-    "total_chf_sector": 3438934,
+    "total_entries_sector": 219,
+    "total_chf_sector": 3424118,
     "pct_entries_classified": 100.0
   },
   "categories": [
     {
       "name": "Soutien général à l'environnement",
-      "count": 189,
-      "total_chf": 2050236,
-      "mean_chf": 10847,
+      "count": 187,
+      "total_chf": 2035420,
+      "mean_chf": 10884,
       "cantons": {
         "GE": {
           "count": 14,
@@ -45,8 +45,8 @@
           "total_chf": 125920
         },
         "NE": {
-          "count": 5,
-          "total_chf": 48224
+          "count": 3,
+          "total_chf": 33408
         },
         "VS": {
           "count": 7,
@@ -427,18 +427,6 @@
           "montant_CHF": 7408
         },
         {
-          "nom": "BoxUp SA Part LoRo-Sport sur la station",
-          "ville": "BoxUp",
-          "canton": "NE",
-          "montant_CHF": 7408
-        },
-        {
-          "nom": "BoxUp SA Part LoRo-Sport sur la station",
-          "ville": "BoxUp",
-          "canton": "NE",
-          "montant_CHF": 7408
-        },
-        {
           "nom": "Assoc. La Nef",
           "ville": "Le Noirmont",
           "canton": "JU",
@@ -481,12 +469,6 @@
           "montant_CHF": 5200
         },
         {
-          "nom": "Assoc. La Nef",
-          "ville": "Le Noirmont",
-          "canton": "JU",
-          "montant_CHF": 5000
-        },
-        {
           "nom": "Féd. Jurassienne d'Apiculture",
           "ville": "Soyhières",
           "canton": "JU",
@@ -496,6 +478,12 @@
           "nom": "Fond. suisse pour la pratique environnementale Pusch",
           "ville": "Sion",
           "canton": "VS",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. La Nef",
+          "ville": "Le Noirmont",
+          "canton": "JU",
           "montant_CHF": 5000
         },
         {
@@ -535,14 +523,10 @@
           "montant_CHF": 4500
         },
         {
-          "nom": "La Lanterne Magique",
-          "montant_CHF": 4000,
-          "canton": "SR",
+          "nom": "Assoc. La Lanterne Magique",
           "ville": null,
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Assoc. La Lanterne Magique",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "SR",
+          "montant_CHF": 4000
         },
         {
           "nom": "Commune de Develier",
@@ -581,12 +565,6 @@
           "montant_CHF": 3220
         },
         {
-          "nom": "Skater Hockey Club Rossemaison",
-          "ville": "Hockey",
-          "canton": "FR",
-          "montant_CHF": 3000
-        },
-        {
           "nom": "Visarte.Valais",
           "ville": "Sion",
           "canton": "VS",
@@ -602,6 +580,12 @@
           "nom": "Promoskate Events",
           "ville": "Rossemaison",
           "canton": "JU",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Skater Hockey Club Rossemaison",
+          "ville": "Hockey",
+          "canton": "FR",
           "montant_CHF": 3000
         },
         {
@@ -749,7 +733,7 @@
           "montant_CHF": 1820
         },
         {
-          "nom": "e Fête Romande de Lutte Suisse à Riaz",
+          "nom": "Fête Romande de Lutte Suisse à Riaz",
           "ville": "Fête",
           "canton": "VS",
           "montant_CHF": 1685
@@ -839,12 +823,6 @@
           "montant_CHF": 1050
         },
         {
-          "nom": "Club équestre Chevenez",
-          "ville": "Chevenez",
-          "canton": "JU",
-          "montant_CHF": 1000
-        },
-        {
           "nom": "Assoc. Regards Croisés",
           "ville": "Savagnier",
           "canton": "NE",
@@ -905,6 +883,12 @@
           "montant_CHF": 1000
         },
         {
+          "nom": "Club équestre Chevenez",
+          "ville": "Chevenez",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
           "nom": "Club équestre St-Hubert",
           "ville": "Bassecourt",
           "canton": "JU",
@@ -953,12 +937,6 @@
           "montant_CHF": 925
         },
         {
-          "nom": "Assoc. cycliste cantonale Vaudoise",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 800
-        },
-        {
           "nom": "Vélo Club Franches-Montagnes",
           "ville": null,
           "canton": "SR",
@@ -968,6 +946,12 @@
           "nom": "Sté de Cavalerie Delémont et environs",
           "ville": "Delémont",
           "canton": "JU",
+          "montant_CHF": 800
+        },
+        {
+          "nom": "Assoc. cycliste cantonale Vaudoise",
+          "ville": null,
+          "canton": "VD",
           "montant_CHF": 800
         },
         {
@@ -1007,12 +991,6 @@
           "montant_CHF": 600
         },
         {
-          "nom": "Vélo Club Franches-Montagnes",
-          "ville": "Les Genevez",
-          "canton": "JU",
-          "montant_CHF": 500
-        },
-        {
           "nom": "Assoc. Vaudoise de Billard",
           "ville": null,
           "canton": "VD",
@@ -1040,6 +1018,12 @@
           "nom": "Club de pétanque Les Poissonnets",
           "ville": null,
           "canton": "SR",
+          "montant_CHF": 500
+        },
+        {
+          "nom": "Vélo Club Franches-Montagnes",
+          "ville": "Les Genevez",
+          "canton": "JU",
           "montant_CHF": 500
         },
         {
@@ -1169,12 +1153,6 @@
           "montant_CHF": 240
         },
         {
-          "nom": "Domoniak Triathlon",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 200
-        },
-        {
           "nom": "Unihockey Club Ajoie",
           "ville": "Bure",
           "canton": "JU",
@@ -1184,6 +1162,12 @@
           "nom": "Volleyball Club Porrentruy",
           "ville": "Volleyball",
           "canton": "GE",
+          "montant_CHF": 200
+        },
+        {
+          "nom": "Domoniak Triathlon",
+          "ville": "Delémont",
+          "canton": "JU",
           "montant_CHF": 200
         },
         {
@@ -1337,7 +1321,7 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "Pro Natura Genève Éducation à la nature -",
+          "nom": "Pro Natura Genève Éducation à la nature",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 20000

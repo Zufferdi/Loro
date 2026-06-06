@@ -5,35 +5,35 @@
     "source": "brb2025_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 2382,
-    "total_chf": 44170378,
-    "precise_classified_entries": 1687,
-    "precise_classified_chf": 34625920,
-    "pct_chf_precisely_classified": 78.4,
+    "total_entries": 2379,
+    "total_chf": 44166578,
+    "precise_classified_entries": 1688,
+    "precise_classified_chf": 34863480,
+    "pct_chf_precisely_classified": 78.9,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 2382,
-    "total_chf_classified": 44170378,
-    "catchall_chf": 9544458,
-    "cross_year_recovered": 666
+    "total_entries_classified": 2379,
+    "total_chf_classified": 44166578,
+    "catchall_chf": 9303098,
+    "cross_year_recovered": 647
   },
   "sports": [
     {
       "name": "Soutien général au sport",
-      "count": 695,
-      "total_chf": 9544458,
-      "mean_chf": 13733,
+      "count": 691,
+      "total_chf": 9303098,
+      "mean_chf": 13463,
       "cantons": {
         "VD": {
-          "count": 218,
-          "total_chf": 3562429
+          "count": 217,
+          "total_chf": 3561929
         },
         "GE": {
-          "count": 83,
-          "total_chf": 1028680
+          "count": 81,
+          "total_chf": 802680
         },
         "FR": {
-          "count": 134,
-          "total_chf": 1905576
+          "count": 133,
+          "total_chf": 1890716
         },
         "VS": {
           "count": 124,
@@ -152,12 +152,6 @@
           "montant_CHF": 140000
         },
         {
-          "nom": "Team Genève 2025",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 140000
-        },
-        {
           "nom": "Assoc. HopHopHop",
           "ville": "Gingins",
           "canton": "VD",
@@ -194,7 +188,7 @@
           "montant_CHF": 101000
         },
         {
-          "nom": "Assoc. CM MTB UCI VS 2025",
+          "nom": "Assoc. CM MTB UCI VS",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 100000
@@ -222,12 +216,6 @@
           "ville": null,
           "canton": "VS",
           "montant_CHF": 89241
-        },
-        {
-          "nom": "Team Genève 2025",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 86000
         },
         {
           "nom": "Le Bilboquet",
@@ -272,7 +260,7 @@
           "montant_CHF": 79162
         },
         {
-          "nom": "à Buenos Aires Municipalité de Delémont",
+          "nom": "Municipalité de Delémont",
           "ville": null,
           "canton": "JU",
           "montant_CHF": 78000
@@ -644,7 +632,7 @@
           "montant_CHF": 25000
         },
         {
-          "nom": "CdN 1934",
+          "nom": "CdN",
           "ville": "Genève - Natation",
           "canton": "GE",
           "montant_CHF": 25000
@@ -680,7 +668,7 @@
           "montant_CHF": 24013
         },
         {
-          "nom": "FTSU",
+          "nom": "FTSU - Freiburgische Turnvereinigung",
           "ville": "Freiburgische Turn",
           "canton": "FR",
           "montant_CHF": 23870
@@ -960,12 +948,6 @@
           "ville": "Porrentruy",
           "canton": "JU",
           "montant_CHF": 15000
-        },
-        {
-          "nom": "centre cantonal, octobre 2024 Team AFF-FFV",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 14860
         },
         {
           "nom": "Assoc. Équestre Neuchâteloise",
@@ -1284,14 +1266,32 @@
           "ville": null,
           "canton": "FR",
           "montant_CHF": 9485
+        },
+        {
+          "nom": "Soutiens pédagogiques",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 9076
+        },
+        {
+          "nom": "Minuit moins une",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 9000
+        },
+        {
+          "nom": "Assoc. Bénévoles Valais",
+          "ville": null,
+          "canton": "VS",
+          "montant_CHF": 9000
         }
       ]
     },
     {
       "name": "Multi-sports",
-      "count": 160,
-      "total_chf": 5150493,
-      "mean_chf": 32190,
+      "count": 162,
+      "total_chf": 5376493,
+      "mean_chf": 33188,
       "cantons": {
         "VD": {
           "count": 55,
@@ -1310,8 +1310,8 @@
           "total_chf": 106985
         },
         "GE": {
-          "count": 21,
-          "total_chf": 582400
+          "count": 23,
+          "total_chf": 808400
         },
         "JU": {
           "count": 30,
@@ -1416,6 +1416,12 @@
           "montant_CHF": 150000
         },
         {
+          "nom": "Team Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 140000
+        },
+        {
           "nom": "Assoc. Swiss Inclusive Sport",
           "ville": null,
           "canton": "SR",
@@ -1456,6 +1462,12 @@
           "ville": null,
           "canton": "FR",
           "montant_CHF": 92000
+        },
+        {
+          "nom": "Team Genève",
+          "ville": null,
+          "canton": "GE",
+          "montant_CHF": 86000
         },
         {
           "nom": "SwissMedPro Health Services SA",
@@ -1542,7 +1554,7 @@
           "montant_CHF": 29200
         },
         {
-          "nom": "Reper",
+          "nom": "Assoc. REPER",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 28000
@@ -1776,7 +1788,7 @@
           "montant_CHF": 8800
         },
         {
-          "nom": "TAP Assoc. pour la création & la",
+          "nom": "TAP Assoc. pour la création &",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 8000
@@ -1800,7 +1812,7 @@
           "montant_CHF": 6500
         },
         {
-          "nom": "du Val-de-Ruz Service des Sports de la Ville",
+          "nom": "Service des Sports de la Ville",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 6300
@@ -1854,7 +1866,7 @@
           "montant_CHF": 5000
         },
         {
-          "nom": "des Sports Équestres Fribourg Rando",
+          "nom": "Sports Équestres Fribourg Rando",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 5000
@@ -2548,7 +2560,7 @@
           "montant_CHF": 5650
         },
         {
-          "nom": "de unihockey 2025 Service des Sports de la Ville",
+          "nom": "Service des Sports de la Ville",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 5580
@@ -2806,7 +2818,7 @@
           "montant_CHF": 1310
         },
         {
-          "nom": "trois tapis de Lausanne Sports Section Aviron",
+          "nom": "Lausanne Sports Section Aviron",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1200
@@ -3392,7 +3404,7 @@
           "montant_CHF": 248838
         },
         {
-          "nom": "Assoc.WEURO GENEVE 2025",
+          "nom": "Assoc.WEURO GENEVE",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 200000
@@ -4908,7 +4920,7 @@
           "montant_CHF": 800
         },
         {
-          "nom": "Ski Club La Sagne de Neuchâtel Tour de Sagnard 2025",
+          "nom": "Ski Club La Sagne de Neuchâtel Tour de Sagnard",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 775
@@ -6014,7 +6026,7 @@
           "montant_CHF": 600
         },
         {
-          "nom": "Gymnastique Rythmique de Neuchâtel Tour de Sagnard 2025",
+          "nom": "Gymnastique Rythmique de Neuchâtel Tour de Sagnard",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 560
@@ -6118,7 +6130,7 @@
       },
       "samples": [
         {
-          "nom": "Assoc. Fribourgeoise de Basket 6'232.",
+          "nom": "Assoc. Fribourgeoise de Basket",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 329000
@@ -6150,7 +6162,7 @@
       ],
       "all_entries": [
         {
-          "nom": "Assoc. Fribourgeoise de Basket 6'232.",
+          "nom": "Assoc. Fribourgeoise de Basket",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 329000
@@ -6938,7 +6950,7 @@
       },
       "samples": [
         {
-          "nom": "Fribourg 2026",
+          "nom": "Fribourg",
           "ville": "Association",
           "canton": "FR",
           "montant_CHF": 300000
@@ -6970,7 +6982,7 @@
       ],
       "all_entries": [
         {
-          "nom": "Fribourg 2026",
+          "nom": "Fribourg",
           "ville": "Association",
           "canton": "FR",
           "montant_CHF": 300000
@@ -7492,7 +7504,7 @@
           "montant_CHF": 500
         },
         {
-          "nom": "championnats des clubs + Neuchâtel Hockey Academy",
+          "nom": "Neuchâtel Hockey Academy",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 500
@@ -8414,7 +8426,7 @@
           "montant_CHF": 4000
         },
         {
-          "nom": "tests en Gym-Danse, janvier 2025 FriSpike Volleyball Development",
+          "nom": "Gym-Danse, janvier 2025 FriSpike Volleyball Development",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 3640
@@ -8486,7 +8498,7 @@
           "montant_CHF": 1600
         },
         {
-          "nom": "partie 1, octobre 2024 FriSpike Volleyball Development",
+          "nom": "FriSpike Volleyball Development",
           "ville": "Volleyball groupe GER_",
           "canton": "FR",
           "montant_CHF": 1448
@@ -8504,7 +8516,7 @@
           "montant_CHF": 1200
         },
         {
-          "nom": "de Gymnastique FriSpike Volleyball Development",
+          "nom": "Gymnastique FriSpike Volleyball Development",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 1052
@@ -8972,7 +8984,7 @@
           "montant_CHF": 1600
         },
         {
-          "nom": "lignes de natation USY Athlétisme",
+          "nom": "USY Athlétisme",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1515
@@ -9134,7 +9146,7 @@
           "montant_CHF": 500
         },
         {
-          "nom": "damage de pistes de ski de fond Stade-Lausanne Athlétisme",
+          "nom": "Stade-Lausanne Athlétisme",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 435
@@ -9164,7 +9176,7 @@
           "montant_CHF": 257
         },
         {
-          "nom": "matériel de musculation USY Athlétisme",
+          "nom": "USY Athlétisme",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 240
@@ -9179,17 +9191,17 @@
     },
     {
       "name": "Natation",
-      "count": 85,
-      "total_chf": 852619,
-      "mean_chf": 10030,
+      "count": 86,
+      "total_chf": 867479,
+      "mean_chf": 10086,
       "cantons": {
         "VD": {
           "count": 32,
           "total_chf": 190888
         },
         "FR": {
-          "count": 13,
-          "total_chf": 193404
+          "count": 14,
+          "total_chf": 208264
         },
         "VS": {
           "count": 3,
@@ -9308,7 +9320,7 @@
           "montant_CHF": 24000
         },
         {
-          "nom": "Genève Natation 1885",
+          "nom": "Genève Natation",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 23700
@@ -9338,7 +9350,7 @@
           "montant_CHF": 19600
         },
         {
-          "nom": "cantonal, octobre 2025 Team AFF-FFV",
+          "nom": "Team AFF-FFV",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 19200
@@ -9348,6 +9360,12 @@
           "ville": null,
           "canton": "VD",
           "montant_CHF": 18000
+        },
+        {
+          "nom": "Team AFF-FFV",
+          "ville": null,
+          "canton": "FR",
+          "montant_CHF": 14860
         },
         {
           "nom": "Lausanne Aquatique",
@@ -9392,7 +9410,7 @@
           "montant_CHF": 10000
         },
         {
-          "nom": "de Natation artistique Swiss Juniors Cup",
+          "nom": "Swiss Juniors Cup",
           "ville": "Petit-Lancy",
           "canton": "GE",
           "montant_CHF": 10000
@@ -9452,13 +9470,13 @@
           "montant_CHF": 6400
         },
         {
-          "nom": "Féd. Fribourgeoise Natation 16'610.",
+          "nom": "Féd. Fribourgeoise Natation",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 6400
         },
         {
-          "nom": "Genève Natation 1885",
+          "nom": "Genève Natation",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 6000
@@ -11062,7 +11080,7 @@
           "montant_CHF": 25000
         },
         {
-          "nom": "Centre d'Entraînement à la",
+          "nom": "Centre d'Entraînement à",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 25000
@@ -11094,7 +11112,7 @@
           "montant_CHF": 25000
         },
         {
-          "nom": "Centre d'Entraînement à la",
+          "nom": "Centre d'Entraînement à",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 25000
@@ -12023,13 +12041,13 @@
     },
     {
       "name": "Course d'orientation",
-      "count": 17,
-      "total_chf": 132620,
-      "mean_chf": 7801,
+      "count": 16,
+      "total_chf": 132320,
+      "mean_chf": 8270,
       "cantons": {
         "VD": {
-          "count": 8,
-          "total_chf": 4155
+          "count": 7,
+          "total_chf": 3855
         },
         "FR": {
           "count": 2,
@@ -12152,12 +12170,6 @@
           "ville": null,
           "canton": "VD",
           "montant_CHF": 500
-        },
-        {
-          "nom": "Club de Course d'Orientation",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 300
         },
         {
           "nom": "Club de Course d'Orientation",
@@ -12539,13 +12551,13 @@
     },
     {
       "name": "Escrime",
-      "count": 19,
-      "total_chf": 76340,
-      "mean_chf": 4017,
+      "count": 18,
+      "total_chf": 73340,
+      "mean_chf": 4074,
       "cantons": {
         "VD": {
-          "count": 8,
-          "total_chf": 28990
+          "count": 7,
+          "total_chf": 25990
         },
         "FR": {
           "count": 2,
@@ -12652,12 +12664,6 @@
           "montant_CHF": 3000
         },
         {
-          "nom": "Club des Lutteurs",
-          "ville": null,
-          "canton": "VD",
-          "montant_CHF": 3000
-        },
-        {
           "nom": "Sté d'escrime Sarine Fribourg",
           "ville": null,
           "canton": "FR",
@@ -12744,7 +12750,7 @@
           "montant_CHF": 17929
         },
         {
-          "nom": "tremplins Lausanne Sports Section Aviron",
+          "nom": "Lausanne Sports Section Aviron",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 17805
@@ -12776,7 +12782,7 @@
           "montant_CHF": 17929
         },
         {
-          "nom": "tremplins Lausanne Sports Section Aviron",
+          "nom": "Lausanne Sports Section Aviron",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 17805

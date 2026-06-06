@@ -5,35 +5,35 @@
     "source": "brb2023_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 1927,
-    "total_chf": 77612415,
-    "precise_classified_entries": 774,
-    "precise_classified_chf": 48474813,
-    "pct_chf_precisely_classified": 62.5,
+    "total_entries": 1918,
+    "total_chf": 77414915,
+    "precise_classified_entries": 767,
+    "precise_classified_chf": 48345313,
+    "pct_chf_precisely_classified": 62.4,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 1927,
-    "total_chf_classified": 77612415,
-    "catchall_chf": 29137602,
-    "cross_year_recovered": 419
+    "total_entries_classified": 1918,
+    "total_chf_classified": 77414915,
+    "catchall_chf": 29069602,
+    "cross_year_recovered": 420
   },
   "categories": [
     {
       "name": "Soutien général à la culture",
-      "count": 1153,
-      "total_chf": 29137602,
-      "mean_chf": 25271,
+      "count": 1151,
+      "total_chf": 29069602,
+      "mean_chf": 25255,
       "cantons": {
         "VD": {
-          "count": 299,
-          "total_chf": 9605300
+          "count": 298,
+          "total_chf": 9602300
         },
         "VS": {
           "count": 168,
           "total_chf": 4895796
         },
         "SR": {
-          "count": 144,
-          "total_chf": 2742770
+          "count": 143,
+          "total_chf": 2677770
         },
         "GE": {
           "count": 163,
@@ -686,12 +686,6 @@
           "montant_CHF": 68400
         },
         {
-          "nom": "Les amis des éditions Infolio - Vaud",
-          "ville": "Gollion",
-          "canton": "SR",
-          "montant_CHF": 65000
-        },
-        {
           "nom": "Visarte.Wallis",
           "ville": "Brig",
           "canton": "VS",
@@ -702,12 +696,6 @@
           "ville": "Les Acacias",
           "canton": "GE",
           "montant_CHF": 65000
-        },
-        {
-          "nom": "Fond. CMA",
-          "ville": "Nyon",
-          "canton": "VD",
-          "montant_CHF": 60000
         },
         {
           "nom": "Assoc. Eustache",
@@ -830,6 +818,12 @@
           "montant_CHF": 60000
         },
         {
+          "nom": "Fond. CMA",
+          "ville": "Nyon",
+          "canton": "VD",
+          "montant_CHF": 60000
+        },
+        {
           "nom": "Assoc. smem",
           "ville": "Fribourg",
           "canton": "FR",
@@ -852,12 +846,6 @@
           "ville": "Martigny",
           "canton": "VS",
           "montant_CHF": 51000
-        },
-        {
-          "nom": "Fond. Pavillon Sicli, Architecture et Arts du Bâti",
-          "ville": "Les Acacias",
-          "canton": "GE",
-          "montant_CHF": 50000
         },
         {
           "nom": "Assoc. Aliénor",
@@ -994,6 +982,12 @@
         {
           "nom": "Fond. Cie Gilles Jobin",
           "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Fond. Pavillon Sicli, Architecture et Arts du Bâti",
+          "ville": "Les Acacias",
           "canton": "GE",
           "montant_CHF": 50000
         },
@@ -1284,26 +1278,32 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 40000
+        },
+        {
+          "nom": "Assoc. Salle Recto/Verso",
+          "ville": "Grône",
+          "canton": "VS",
+          "montant_CHF": 40000
         }
       ]
     },
     {
       "name": "Théâtre",
-      "count": 148,
-      "total_chf": 9357490,
-      "mean_chf": 63226,
+      "count": 144,
+      "total_chf": 9270990,
+      "mean_chf": 64381,
       "cantons": {
         "VD": {
           "count": 22,
           "total_chf": 2385000
         },
         "GE": {
-          "count": 43,
-          "total_chf": 1607740
+          "count": 41,
+          "total_chf": 1542740
         },
         "SR": {
-          "count": 22,
-          "total_chf": 776000
+          "count": 21,
+          "total_chf": 756000
         },
         "FR": {
           "count": 17,
@@ -1318,8 +1318,8 @@
           "total_chf": 886000
         },
         "JU": {
-          "count": 18,
-          "total_chf": 492000
+          "count": 17,
+          "total_chf": 490500
         }
       },
       "samples": [
@@ -1386,14 +1386,10 @@
           "montant_CHF": 460000
         },
         {
-          "nom": "Théâtre du Jura",
-          "montant_CHF": 344000,
-          "canton": "JU",
+          "nom": "Fond. pour le Théâtre du Jura",
           "ville": "Delémont",
-          "secteur": "",
-          "description": "Consolidation de 2 attributions : Evidanse - Théâtre du Jura, Fond. pour le Théâtre du Jura",
-          "_consolidated": true,
-          "_count": 2
+          "canton": "JU",
+          "montant_CHF": 289000
         },
         {
           "nom": "Fond. du Théâtre Kléber- Méleau TKM",
@@ -1402,14 +1398,10 @@
           "montant_CHF": 280000
         },
         {
-          "nom": "Théâtre du Jorat",
-          "montant_CHF": 250000,
-          "canton": "VD",
+          "nom": "Fond. du Théâtre du Jorat",
           "ville": "Mézières",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Fond. du Théâtre du Jorat",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VD",
+          "montant_CHF": 250000
         },
         {
           "nom": "Usine à Gaz",
@@ -1568,7 +1560,7 @@
           "montant_CHF": 60000
         },
         {
-          "nom": "Théâtre des Marionnettes de",
+          "nom": "Théâtre des Marionnettes",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 60000
@@ -1589,6 +1581,12 @@
           "nom": "Théâtre de l'Arbanel",
           "ville": "Treyvaux",
           "canton": "FR",
+          "montant_CHF": 55000
+        },
+        {
+          "nom": "Evidanse - Théâtre du Jura",
+          "ville": "Delémont",
+          "canton": "JU",
           "montant_CHF": 55000
         },
         {
@@ -1613,12 +1611,6 @@
           "nom": "Collectif Berzerk",
           "ville": "Lausanne",
           "canton": "VD",
-          "montant_CHF": 50000
-        },
-        {
-          "nom": "Collectif Berzerk",
-          "ville": "Carouge",
-          "canton": "GE",
           "montant_CHF": 50000
         },
         {
@@ -1664,6 +1656,12 @@
           "montant_CHF": 50000
         },
         {
+          "nom": "Collectif Berzerk",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 50000
+        },
+        {
           "nom": "Assoc. Théâtre Silo du Lac",
           "ville": "Lausanne",
           "canton": "VD",
@@ -1682,22 +1680,10 @@
           "montant_CHF": 45000
         },
         {
-          "nom": "Compagnie Les Faiseurs de rêves",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 45000
-        },
-        {
           "nom": "Assoc. La compagnie du Boudu",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 45000
-        },
-        {
-          "nom": "Fond. Delémont'BD",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 40000
         },
         {
           "nom": "ZigZag - Théâtre et jeune public dans l'ouest lausannois",
@@ -1727,6 +1713,12 @@
           "nom": "Live Your Musical Passion Assoc.",
           "ville": "Genève",
           "canton": "GE",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Fond. Delémont'BD",
+          "ville": "Delémont",
+          "canton": "JU",
           "montant_CHF": 40000
         },
         {
@@ -1844,12 +1836,6 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "Assoc. Ensemble Batida",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 20000
-        },
-        {
           "nom": "Assoc. Lied & Mélodie",
           "ville": "Genève",
           "canton": "GE",
@@ -1864,12 +1850,6 @@
         {
           "nom": "Assoc. Temps Zéro",
           "ville": "Les Acacias",
-          "canton": "GE",
-          "montant_CHF": 20000
-        },
-        {
-          "nom": "Baraka Compagnie",
-          "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 20000
         },
@@ -2162,14 +2142,14 @@
           "montant_CHF": 5000
         },
         {
-          "nom": "Compagnie Maramande",
-          "ville": "Courgenay",
+          "nom": "Théâtre à 1000 mètres",
+          "ville": "Les Breuleux",
           "canton": "JU",
           "montant_CHF": 4000
         },
         {
-          "nom": "Théâtre à 1000 mètres",
-          "ville": "Les Breuleux",
+          "nom": "Compagnie Maramande",
+          "ville": "Courgenay",
           "canton": "JU",
           "montant_CHF": 4000
         },
@@ -2180,14 +2160,14 @@
           "montant_CHF": 3750
         },
         {
-          "nom": "Sté des Amis du Théâtre",
-          "ville": "Porrentruy",
+          "nom": "Groupe théâtral Les Gremôds",
+          "ville": "Les Bois",
           "canton": "JU",
           "montant_CHF": 3500
         },
         {
-          "nom": "Groupe théâtral Les Gremôds",
-          "ville": "Les Bois",
+          "nom": "Sté des Amis du Théâtre",
+          "ville": "Porrentruy",
           "canton": "JU",
           "montant_CHF": 3500
         },
@@ -2214,12 +2194,6 @@
           "ville": "Mettembert",
           "canton": "JU",
           "montant_CHF": 2000
-        },
-        {
-          "nom": "Sté jurassienne d'émulation",
-          "ville": "Porrentruy",
-          "canton": "JU",
-          "montant_CHF": 1500
         },
         {
           "nom": "Sté jurassienne d'émulation",
@@ -2284,14 +2258,10 @@
       },
       "samples": [
         {
-          "nom": "Verbier Festival",
-          "montant_CHF": 975000,
-          "canton": "VS",
+          "nom": "Fond. du Verbier Festival",
           "ville": "Bagnes",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Fond. du Verbier Festival",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VS",
+          "montant_CHF": 975000
         },
         {
           "nom": "Assoc. Les Saisons Bleues",
@@ -2320,14 +2290,10 @@
       ],
       "all_entries": [
         {
-          "nom": "Verbier Festival",
-          "montant_CHF": 975000,
-          "canton": "VS",
+          "nom": "Fond. du Verbier Festival",
           "ville": "Bagnes",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Fond. du Verbier Festival",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VS",
+          "montant_CHF": 975000
         },
         {
           "nom": "Assoc. Les Saisons Bleues",
@@ -2354,24 +2320,16 @@
           "montant_CHF": 250000
         },
         {
-          "nom": "La Bâtie — Festival de Genève",
-          "montant_CHF": 225000,
-          "canton": "GE",
+          "nom": "La Bâtie - Festival de Genève",
           "ville": "Genève",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : La Bâtie - Festival de Genève",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "GE",
+          "montant_CHF": 225000
         },
         {
-          "nom": "Belluard Bollwerk Festival",
-          "montant_CHF": 220000,
-          "canton": "FR",
+          "nom": "Belluard Bollwerk",
           "ville": "Fribourg",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Belluard Bollwerk",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "FR",
+          "montant_CHF": 220000
         },
         {
           "nom": "Assoc. Les Saisons Bleues",
@@ -2638,7 +2596,7 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Fond. Académie d'Orgue de",
+          "nom": "Fond. Académie d'Orgue de Fribourg",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 40000
@@ -2698,12 +2656,6 @@
           "montant_CHF": 35000
         },
         {
-          "nom": "Festival du Jura",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 30000
-        },
-        {
           "nom": "AVIFFF - Assoc. du Vevey International Funny Film Festival - VIFFF",
           "ville": "Vevey",
           "canton": "VD",
@@ -2761,6 +2713,12 @@
           "nom": "Studio d'Action Théâtrale",
           "ville": "Les Acacias",
           "canton": "GE",
+          "montant_CHF": 30000
+        },
+        {
+          "nom": "Festival du Jura",
+          "ville": "Delémont",
+          "canton": "JU",
           "montant_CHF": 30000
         },
         {
@@ -2974,12 +2932,6 @@
           "montant_CHF": 11000
         },
         {
-          "nom": "Assoc. Zic Zag Zoug",
-          "ville": "Carouge",
-          "canton": "GE",
-          "montant_CHF": 10000
-        },
-        {
           "nom": "Assoc. des Amis du Festival des artistes de Rue",
           "ville": "Vevey",
           "canton": "VD",
@@ -3040,6 +2992,12 @@
           "montant_CHF": 10000
         },
         {
+          "nom": "Assoc. Zic Zag Zoug",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
           "nom": "Fond. Dance Area",
           "ville": "Genève",
           "canton": "GE",
@@ -3070,12 +3028,6 @@
           "montant_CHF": 9000
         },
         {
-          "nom": "Assoc. Jura'Zic",
-          "ville": "Courgenay",
-          "canton": "JU",
-          "montant_CHF": 8000
-        },
-        {
           "nom": "Compagnie des Arts du Récit Professionnels En Sarine",
           "ville": "Fribourg",
           "canton": "FR",
@@ -3097,6 +3049,12 @@
           "nom": "Assoc. L'été au verger",
           "ville": "Veyrier",
           "canton": "GE",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. Jura'Zic",
+          "ville": "Courgenay",
+          "canton": "JU",
           "montant_CHF": 8000
         },
         {
@@ -3250,21 +3208,15 @@
           "montant_CHF": 2500
         },
         {
-          "nom": "Assoc. des Amis du Patchwork Festival",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 2000
-        },
-        {
-          "nom": "Vully Blues Club",
-          "ville": "Cudrefin",
-          "canton": "FR",
-          "montant_CHF": 2000
-        },
-        {
           "nom": "L'Improvisible Festival",
           "ville": "La Tour-de-Peilz",
           "canton": "VD",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Assoc. des Amis du Patchwork Festival",
+          "ville": "Delémont",
+          "canton": "JU",
           "montant_CHF": 2000
         },
         {
@@ -3282,6 +3234,12 @@
         {
           "nom": "Femmes à Fribourg - Tours de ville",
           "ville": "Villars-sur-Glâne",
+          "canton": "FR",
+          "montant_CHF": 2000
+        },
+        {
+          "nom": "Vully Blues Club",
+          "ville": "Cudrefin",
           "canton": "FR",
           "montant_CHF": 2000
         },
@@ -3372,30 +3330,22 @@
           "montant_CHF": 625000
         },
         {
-          "nom": "Plateforme 10",
-          "montant_CHF": 550000,
-          "canton": "VD",
+          "nom": "Fond. Plateforme 10",
           "ville": "Lausanne",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Fond. Plateforme 10",
-          "_consolidated": true,
-          "_count": 1
-        },
-        {
-          "nom": "Fond. de l'Hermitage",
-          "montant_CHF": 400000,
           "canton": "VD",
-          "ville": "Lausanne",
-          "secteur": "",
-          "description": "Consolidation de 2 attributions : Fond. de l'Hermitage",
-          "_consolidated": true,
-          "_count": 2
+          "montant_CHF": 550000
         },
         {
           "nom": "Fond. le musée",
           "ville": "Sainte-Croix",
           "canton": "JU",
           "montant_CHF": 310000
+        },
+        {
+          "nom": "Fond. de l'Hermitage",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 300000
         }
       ],
       "all_entries": [
@@ -3412,30 +3362,22 @@
           "montant_CHF": 625000
         },
         {
-          "nom": "Plateforme 10",
-          "montant_CHF": 550000,
-          "canton": "VD",
+          "nom": "Fond. Plateforme 10",
           "ville": "Lausanne",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Fond. Plateforme 10",
-          "_consolidated": true,
-          "_count": 1
-        },
-        {
-          "nom": "Fond. de l'Hermitage",
-          "montant_CHF": 400000,
           "canton": "VD",
-          "ville": "Lausanne",
-          "secteur": "",
-          "description": "Consolidation de 2 attributions : Fond. de l'Hermitage",
-          "_consolidated": true,
-          "_count": 2
+          "montant_CHF": 550000
         },
         {
           "nom": "Fond. le musée",
           "ville": "Sainte-Croix",
           "canton": "JU",
           "montant_CHF": 310000
+        },
+        {
+          "nom": "Fond. de l'Hermitage",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 300000
         },
         {
           "nom": "Fond. La Maison d'Ailleurs",
@@ -3466,6 +3408,12 @@
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
           "montant_CHF": 113000
+        },
+        {
+          "nom": "Fond. de l'Hermitage",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 100000
         },
         {
           "nom": "Fond. des Amis du Musée",
@@ -3596,70 +3544,60 @@
       },
       "samples": [
         {
-          "nom": "Cinéforom — Fond. romande pour le cinéma",
-          "montant_CHF": 2750935,
-          "canton": "GE",
+          "nom": "Fond. Cinéforom",
           "ville": "Genève",
-          "secteur": "",
-          "description": "Consolidation de 5 attributions : Cinéforom - Fond. romande pour le cinéma, Fond. romande pour le cinéma - Cinéforom, Fond. Cinéforom",
-          "_consolidated": true,
-          "_count": 5
+          "canton": "GE",
+          "montant_CHF": 1700000
         },
         {
-          "nom": "Festival International du Film de",
+          "nom": "Fond. romande pour le cinéma - Cinéforom",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 700000
+        },
+        {
+          "nom": "Festival International du Film de Fribourg - FIFF",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 580000
         },
         {
-          "nom": "NIFFF — Neuchâtel Int. Fantastic Film Festival",
-          "montant_CHF": 369000,
-          "canton": "NE",
+          "nom": "Festival International du Film Fantastique de Neuchâtel (NIFFF), Neuchâtel",
           "ville": "Neuchâtel",
-          "secteur": "",
-          "description": "Consolidation de 2 attributions : Neuchâtel International Fantastic Film Festival - NIFFF, Festival International du Film Fantastique de Neuchâtel (NIFFF), Neuchâtel",
-          "_consolidated": true,
-          "_count": 2
+          "canton": "NE",
+          "montant_CHF": 350000
         },
         {
           "nom": "Cinémathèque suisse",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 300000
-        },
-        {
-          "nom": "Fond. GIFF - Geneva International Film Festival",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 300000
         }
       ],
       "all_entries": [
         {
-          "nom": "Cinéforom — Fond. romande pour le cinéma",
-          "montant_CHF": 2750935,
-          "canton": "GE",
+          "nom": "Fond. Cinéforom",
           "ville": "Genève",
-          "secteur": "",
-          "description": "Consolidation de 5 attributions : Cinéforom - Fond. romande pour le cinéma, Fond. romande pour le cinéma - Cinéforom, Fond. Cinéforom",
-          "_consolidated": true,
-          "_count": 5
+          "canton": "GE",
+          "montant_CHF": 1700000
         },
         {
-          "nom": "Festival International du Film de",
+          "nom": "Fond. romande pour le cinéma - Cinéforom",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 700000
+        },
+        {
+          "nom": "Festival International du Film de Fribourg - FIFF",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 580000
         },
         {
-          "nom": "NIFFF — Neuchâtel Int. Fantastic Film Festival",
-          "montant_CHF": 369000,
-          "canton": "NE",
+          "nom": "Festival International du Film Fantastique de Neuchâtel (NIFFF), Neuchâtel",
           "ville": "Neuchâtel",
-          "secteur": "",
-          "description": "Consolidation de 2 attributions : Neuchâtel International Fantastic Film Festival - NIFFF, Festival International du Film Fantastique de Neuchâtel (NIFFF), Neuchâtel",
-          "_consolidated": true,
-          "_count": 2
+          "canton": "NE",
+          "montant_CHF": 350000
         },
         {
           "nom": "Cinémathèque suisse",
@@ -3686,14 +3624,16 @@
           "montant_CHF": 240000
         },
         {
-          "nom": "FIFF — Festival International du Film de Fribourg",
-          "montant_CHF": 215000,
-          "canton": "FR",
+          "nom": "Festival International du Film de Fribourg - FIFF",
           "ville": "Fribourg",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Festival International du Film de Fribourg - FIFF",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "FR",
+          "montant_CHF": 215000
+        },
+        {
+          "nom": "Cinéforom - Fond. romande pour le cinéma",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 185200
         },
         {
           "nom": "Fond. Trigon-Film",
@@ -3702,9 +3642,21 @@
           "montant_CHF": 100000
         },
         {
+          "nom": "Fond. Cinéforom",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 85735
+        },
+        {
           "nom": "Assoc. des Amis du Festival International du Film Alpin des Diablerets FIFAD",
           "ville": null,
           "canton": "SR",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Fond. romande pour le cinéma - Cinéforom",
+          "ville": "Genève",
+          "canton": "GE",
           "montant_CHF": 80000
         },
         {
@@ -3834,6 +3786,12 @@
           "montant_CHF": 20000
         },
         {
+          "nom": "Neuchâtel International Fantastic Film Festival - NIFFF",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 19000
+        },
+        {
           "nom": "Galactica Production",
           "ville": "Belmont- sur-Lausanne",
           "canton": "SR",
@@ -3900,15 +3858,15 @@
           "montant_CHF": 5000
         },
         {
-          "nom": "Assoc. Ciné-Doc",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 3000
-        },
-        {
           "nom": "Doc'it Yourself - Festival Cinéma Tout Terrain",
           "ville": "Couvet",
           "canton": "NE",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Assoc. Ciné-Doc",
+          "ville": "Lausanne",
+          "canton": "VD",
           "montant_CHF": 3000
         },
         {
@@ -3939,13 +3897,13 @@
     },
     {
       "name": "Musique classique",
-      "count": 174,
-      "total_chf": 5509030,
-      "mean_chf": 31661,
+      "count": 171,
+      "total_chf": 5481030,
+      "mean_chf": 32052,
       "cantons": {
         "VD": {
-          "count": 47,
-          "total_chf": 1380500
+          "count": 45,
+          "total_chf": 1367500
         },
         "SR": {
           "count": 26,
@@ -3964,8 +3922,8 @@
           "total_chf": 1283500
         },
         "GE": {
-          "count": 24,
-          "total_chf": 978200
+          "count": 23,
+          "total_chf": 963200
         },
         "JU": {
           "count": 19,
@@ -3998,14 +3956,10 @@
           "montant_CHF": 350000
         },
         {
-          "nom": "OSR — Orchestre de la Suisse Romande",
-          "montant_CHF": 290000,
-          "canton": "GE+VD",
-          "ville": "Genève",
-          "secteur": "",
-          "description": "Consolidation de 2 attributions : AVAOSR Assoc. Vaudoise des Amis de l'Orchestre de la Suisse Romande, OSR - Orchestre de la Suisse Romande",
-          "_consolidated": true,
-          "_count": 2
+          "nom": "Fond. Hainard",
+          "ville": "Bernex",
+          "canton": "GE",
+          "montant_CHF": 260000
         }
       ],
       "all_entries": [
@@ -4034,16 +3988,6 @@
           "montant_CHF": 350000
         },
         {
-          "nom": "OSR — Orchestre de la Suisse Romande",
-          "montant_CHF": 290000,
-          "canton": "GE+VD",
-          "ville": "Genève",
-          "secteur": "",
-          "description": "Consolidation de 2 attributions : AVAOSR Assoc. Vaudoise des Amis de l'Orchestre de la Suisse Romande, OSR - Orchestre de la Suisse Romande",
-          "_consolidated": true,
-          "_count": 2
-        },
-        {
           "nom": "Fond. Hainard",
           "ville": "Bernex",
           "canton": "GE",
@@ -4065,6 +4009,12 @@
           "nom": "Musique des Lumières",
           "ville": "Bienne",
           "canton": "JU",
+          "montant_CHF": 200000
+        },
+        {
+          "nom": "OSR - Orchestre de la Suisse Romande",
+          "ville": "Genève",
+          "canton": "GE",
           "montant_CHF": 200000
         },
         {
@@ -4096,6 +4046,12 @@
           "ville": "Conches",
           "canton": "GE",
           "montant_CHF": 100000
+        },
+        {
+          "nom": "AVAOSR Assoc. Vaudoise des Amis de l'Orchestre de la Suisse Romande",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 90000
         },
         {
           "nom": "Orchestre des Nations",
@@ -4170,7 +4126,7 @@
           "montant_CHF": 40000
         },
         {
-          "nom": "Conservatoire de musique de",
+          "nom": "Conservatoire de musique",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 40000
@@ -4272,12 +4228,6 @@
           "montant_CHF": 17000
         },
         {
-          "nom": "Ensemble Vocal de Lausanne",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 15000
-        },
-        {
           "nom": "Ensemble Vocal Arpège",
           "ville": "Vallorbe",
           "canton": "VD",
@@ -4320,12 +4270,6 @@
           "montant_CHF": 15000
         },
         {
-          "nom": "Cappella Genevensis",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 15000
-        },
-        {
           "nom": "Fond. Nexus",
           "ville": "Genève",
           "canton": "GE",
@@ -4339,6 +4283,12 @@
         },
         {
           "nom": "Assoc. OPHI - Orchestre Pré- HEM Intercantonal",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Ensemble Vocal de Lausanne",
           "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 15000
@@ -4386,12 +4336,6 @@
           "montant_CHF": 12500
         },
         {
-          "nom": "Assoc. Cantus Laetus",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 12000
-        },
-        {
           "nom": "Chorale Concinimus",
           "ville": "Bussigny",
           "canton": "VD",
@@ -4437,6 +4381,12 @@
           "nom": "La Croche Chœur",
           "ville": "La Chaux-de-Fonds",
           "canton": "NE",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Assoc. Cantus Laetus",
+          "ville": "Genève",
+          "canton": "GE",
           "montant_CHF": 12000
         },
         {
@@ -4542,7 +4492,7 @@
           "montant_CHF": 10000
         },
         {
-          "nom": "L'Orchestre International de",
+          "nom": "L'Orchestre International",
           "ville": null,
           "canton": "SR",
           "montant_CHF": 10000
@@ -4572,32 +4522,20 @@
           "montant_CHF": 9000
         },
         {
-          "nom": "Chœur Cantabile",
-          "ville": "Tannay",
-          "canton": "VD",
-          "montant_CHF": 8000
-        },
-        {
           "nom": "Assoc. Chœur Laudate",
           "ville": "Carrouge",
           "canton": "SR",
           "montant_CHF": 8000
         },
         {
-          "nom": "Assoc. Chœur Laudate",
-          "ville": "Carrouge VD",
-          "canton": "SR",
-          "montant_CHF": 8000
-        },
-        {
           "nom": "Chœur Ardito",
           "ville": "Grandvaux",
           "canton": "VD",
           "montant_CHF": 8000
         },
         {
-          "nom": "Chœur Ardito",
-          "ville": "Grandvaux",
+          "nom": "Chœur Cantabile",
+          "ville": "Tannay",
           "canton": "VD",
           "montant_CHF": 8000
         },
@@ -4617,6 +4555,12 @@
           "nom": "Chœur de May",
           "ville": "Riaz",
           "canton": "FR",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. Chœur Laudate",
+          "ville": "Carrouge VD",
+          "canton": "SR",
           "montant_CHF": 8000
         },
         {
@@ -4746,12 +4690,6 @@
           "montant_CHF": 5000
         },
         {
-          "nom": "Fond. Orchestre symphonique Bande-Son",
-          "ville": "Crissier",
-          "canton": "VD",
-          "montant_CHF": 5000
-        },
-        {
           "nom": "Chœur de chambre jurassien",
           "ville": "Delémont",
           "canton": "JU",
@@ -4762,18 +4700,6 @@
           "ville": "Echichens",
           "canton": "VD",
           "montant_CHF": 4500
-        },
-        {
-          "nom": "Chœur de chambre jurassien",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 4000
-        },
-        {
-          "nom": "Chœur de chambre jurassien",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 4000
         },
         {
           "nom": "Ensemble vocal DeMusica",
@@ -4800,6 +4726,18 @@
           "montant_CHF": 4000
         },
         {
+          "nom": "Chœur de chambre jurassien",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Chœur de chambre jurassien",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 4000
+        },
+        {
           "nom": "Chœur paroissial Ste Cécile",
           "ville": "Cœuve",
           "canton": "JU",
@@ -4810,12 +4748,6 @@
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 3200
-        },
-        {
-          "nom": "Chœur des Emibois",
-          "ville": "Les Bois",
-          "canton": "JU",
-          "montant_CHF": 3000
         },
         {
           "nom": "Lè Grijon - chœur d'enfants et de jeunes",
@@ -4857,6 +4789,12 @@
           "nom": "Chœur Arte Musica Thônex",
           "ville": "Choulex",
           "canton": "GE",
+          "montant_CHF": 3000
+        },
+        {
+          "nom": "Chœur des Emibois",
+          "ville": "Les Bois",
+          "canton": "JU",
           "montant_CHF": 3000
         },
         {
@@ -5040,8 +4978,8 @@
           "montant_CHF": 500
         },
         {
-          "nom": "Chœur-Mixte Paroissial La Châtelard, Le Châtelard-près-",
-          "ville": "Romont",
+          "nom": "Chœur-Mixte Paroissial La Châtelard, Le Châtelard-près-Romont",
+          "ville": null,
           "canton": "FR",
           "montant_CHF": 500
         },
@@ -5158,14 +5096,10 @@
           "montant_CHF": 130000
         },
         {
-          "nom": "Montreux Jazz Festival",
-          "montant_CHF": 120000,
-          "canton": "VD",
+          "nom": "Montreux Jazz Artists",
           "ville": null,
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Montreux Jazz Artists",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VD",
+          "montant_CHF": 120000
         },
         {
           "nom": "Assoc. du Cully Jazz Festival",
@@ -5513,9 +5447,9 @@
     },
     {
       "name": "Danse",
-      "count": 34,
-      "total_chf": 1740068,
-      "mean_chf": 51178,
+      "count": 33,
+      "total_chf": 1660068,
+      "mean_chf": 50305,
       "cantons": {
         "VD": {
           "count": 8,
@@ -5542,8 +5476,8 @@
           "total_chf": 209768
         },
         "JU": {
-          "count": 9,
-          "total_chf": 211500
+          "count": 8,
+          "total_chf": 131500
         }
       },
       "samples": [
@@ -5607,12 +5541,6 @@
           "nom": "Assoc. Art'O'Danse",
           "ville": "Les Acacias",
           "canton": "GE",
-          "montant_CHF": 80000
-        },
-        {
-          "nom": "Reso Danse",
-          "ville": "Zurich",
-          "canton": "JU",
           "montant_CHF": 80000
         },
         {
@@ -5719,13 +5647,9 @@
         },
         {
           "nom": "Théâtre du Jura",
-          "montant_CHF": 9000,
-          "canton": "JU",
           "ville": "Delémont",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Théâtre du Jura",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "JU",
+          "montant_CHF": 9000
         },
         {
           "nom": "Assoc. mdw Kulturproduktionen",
@@ -5920,12 +5844,6 @@
           "montant_CHF": 6000
         },
         {
-          "nom": "Orchestre de chambre jurassien",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 4000
-        },
-        {
           "nom": "Orchestre de Chambre des Étudiant.e.s de Lausanne OChE",
           "ville": "Lausanne",
           "canton": "VD",
@@ -5935,6 +5853,12 @@
           "nom": "Sinfonietta de Genève",
           "ville": "Genève",
           "canton": "GE",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Orchestre de chambre jurassien",
+          "ville": "Delémont",
+          "canton": "JU",
           "montant_CHF": 4000
         },
         {
@@ -5948,6 +5872,292 @@
           "ville": "Coppet",
           "canton": "VD",
           "montant_CHF": 2000
+        }
+      ]
+    },
+    {
+      "name": "Littérature / Édition",
+      "count": 36,
+      "total_chf": 1104200,
+      "mean_chf": 30672,
+      "cantons": {
+        "VD": {
+          "count": 7,
+          "total_chf": 214500
+        },
+        "SR": {
+          "count": 10,
+          "total_chf": 310500
+        },
+        "FR": {
+          "count": 3,
+          "total_chf": 206500
+        },
+        "NE": {
+          "count": 2,
+          "total_chf": 166000
+        },
+        "GE": {
+          "count": 5,
+          "total_chf": 130400
+        },
+        "JU": {
+          "count": 8,
+          "total_chf": 66300
+        },
+        "VS": {
+          "count": 1,
+          "total_chf": 10000
+        }
+      },
+      "samples": [
+        {
+          "nom": "Bibliothèque interculturelle, LivrEchange",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 180000
+        },
+        {
+          "nom": "Poésie en Arrosoir",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 140000
+        },
+        {
+          "nom": "Cercle de la Librairie et de l'Édition de Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 80400
+        },
+        {
+          "nom": "Fond. de la Maison de Rousseau et de la Littérature",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "La Bataille des Livres",
+          "ville": "Bretonnières",
+          "canton": "VD",
+          "montant_CHF": 80000
+        }
+      ],
+      "all_entries": [
+        {
+          "nom": "Bibliothèque interculturelle, LivrEchange",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 180000
+        },
+        {
+          "nom": "Poésie en Arrosoir",
+          "ville": "Neuchâtel",
+          "canton": "NE",
+          "montant_CHF": 140000
+        },
+        {
+          "nom": "Cercle de la Librairie et de l'Édition de Genève",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 80400
+        },
+        {
+          "nom": "Fond. de la Maison de Rousseau et de la Littérature",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "La Bataille des Livres",
+          "ville": "Bretonnières",
+          "canton": "VD",
+          "montant_CHF": 80000
+        },
+        {
+          "nom": "Art & Fiction",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 70000
+        },
+        {
+          "nom": "Les amis des éditions Infolio - Vaud",
+          "ville": "Gollion",
+          "canton": "SR",
+          "montant_CHF": 65000
+        },
+        {
+          "nom": "Fond. pour l'Écrit",
+          "ville": "Le Grand Saconnex",
+          "canton": "SR",
+          "montant_CHF": 60000
+        },
+        {
+          "nom": "Assoc. Florides helvètes",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Assoc. Roman des Romands",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 50000
+        },
+        {
+          "nom": "Éditions D+P",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 31800
+        },
+        {
+          "nom": "Assoc. pour l'aide à la création littéraire",
+          "ville": "Cernier",
+          "canton": "NE",
+          "montant_CHF": 26000
+        },
+        {
+          "nom": "Assoc. Erasme",
+          "ville": "Fribourg",
+          "canton": "FR",
+          "montant_CHF": 19000
+        },
+        {
+          "nom": "Le Cabaret Littéraire",
+          "ville": "Chavannes-Renens",
+          "canton": "SR",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. L'état de poésie",
+          "ville": "Carouge",
+          "canton": "GE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Assoc. Semaines de la lecture",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 13000
+        },
+        {
+          "nom": "Assoc. Wenger&Cie",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 13000
+        },
+        {
+          "nom": "Assoc. des Amis de la bibliothèque de la ville du Locle",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "The Library in English",
+          "ville": "Genève",
+          "canton": "GE",
+          "montant_CHF": 12000
+        },
+        {
+          "nom": "Assoc. sourire aux livres",
+          "ville": "Collonge-Bellerive",
+          "canton": "GE",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Assoc. des amis de l'Espace Courant d'Art",
+          "ville": "Chevenez",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Éditions D+P",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Polar Suisse - Assoc. pour la littérature policière suisse",
+          "ville": "Sierre",
+          "canton": "VS",
+          "montant_CHF": 10000
+        },
+        {
+          "nom": "Centre d'impression Le Pays SA",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 8000
+        },
+        {
+          "nom": "Assoc. Prix d’écriture et d’encouragement littéraire",
+          "ville": "Charmey",
+          "canton": "FR",
+          "montant_CHF": 7500
+        },
+        {
+          "nom": "Assoc. Livres sans Frontières - Bibliothèque Globlivres",
+          "ville": "Renens",
+          "canton": "VD",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Assoc. Le corbeau qui lit",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 7000
+        },
+        {
+          "nom": "Assoc. Ekphrasis - Les Amis du Café littéraire de Vevey",
+          "ville": "Vevey",
+          "canton": "VD",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Assoc. Caroline Boissier-Butini",
+          "ville": "Vandœuvres",
+          "canton": "SR",
+          "montant_CHF": 5000
+        },
+        {
+          "nom": "Centre d'impression Le Pays",
+          "ville": "Porrentruy",
+          "canton": "JU",
+          "montant_CHF": 4000
+        },
+        {
+          "nom": "Assoc. Le Roman des Romands",
+          "ville": null,
+          "canton": "SR",
+          "montant_CHF": 3500
+        },
+        {
+          "nom": "Florides Helvètes",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1500
+        },
+        {
+          "nom": "Club littéraire jurassien",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Club littéraire jurassien",
+          "ville": "Delémont",
+          "canton": "JU",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Service de presse suisse",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 1000
+        },
+        {
+          "nom": "Éditions d'artiste art & fiction",
+          "ville": "Berne",
+          "canton": "JU",
+          "montant_CHF": 500
         }
       ]
     },
@@ -6103,13 +6313,9 @@
       "samples": [
         {
           "nom": "CORODIS",
-          "montant_CHF": 734500,
-          "canton": "VD",
           "ville": "Lausanne",
-          "secteur": "",
-          "description": "Consolidation de 2 attributions : Corodis, CORODIS",
-          "_consolidated": true,
-          "_count": 2
+          "canton": "VD",
+          "montant_CHF": 700000
         },
         {
           "nom": "Assoc. Culture Valais",
@@ -6128,18 +6334,20 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 54000
+        },
+        {
+          "nom": "Corodis",
+          "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 34500
         }
       ],
       "all_entries": [
         {
           "nom": "CORODIS",
-          "montant_CHF": 734500,
-          "canton": "VD",
           "ville": "Lausanne",
-          "secteur": "",
-          "description": "Consolidation de 2 attributions : Corodis, CORODIS",
-          "_consolidated": true,
-          "_count": 2
+          "canton": "VD",
+          "montant_CHF": 700000
         },
         {
           "nom": "Assoc. Culture Valais",
@@ -6158,286 +6366,12 @@
           "ville": "Sion",
           "canton": "VS",
           "montant_CHF": 54000
-        }
-      ]
-    },
-    {
-      "name": "Littérature / Édition",
-      "count": 35,
-      "total_chf": 1039200,
-      "mean_chf": 29691,
-      "cantons": {
-        "VD": {
-          "count": 7,
-          "total_chf": 214500
-        },
-        "SR": {
-          "count": 9,
-          "total_chf": 245500
-        },
-        "FR": {
-          "count": 3,
-          "total_chf": 206500
-        },
-        "NE": {
-          "count": 2,
-          "total_chf": 166000
-        },
-        "GE": {
-          "count": 5,
-          "total_chf": 130400
-        },
-        "JU": {
-          "count": 8,
-          "total_chf": 66300
-        },
-        "VS": {
-          "count": 1,
-          "total_chf": 10000
-        }
-      },
-      "samples": [
-        {
-          "nom": "Bibliothèque interculturelle, LivrEchange",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 180000
         },
         {
-          "nom": "Poésie en Arrosoir",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 140000
-        },
-        {
-          "nom": "Cercle de la Librairie et de l'Édition de Genève",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 80400
-        },
-        {
-          "nom": "Fond. de la Maison de Rousseau et de la Littérature",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 80000
-        },
-        {
-          "nom": "La Bataille des Livres",
-          "ville": "Bretonnières",
-          "canton": "VD",
-          "montant_CHF": 80000
-        }
-      ],
-      "all_entries": [
-        {
-          "nom": "Bibliothèque interculturelle, LivrEchange",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 180000
-        },
-        {
-          "nom": "Poésie en Arrosoir",
-          "ville": "Neuchâtel",
-          "canton": "NE",
-          "montant_CHF": 140000
-        },
-        {
-          "nom": "Cercle de la Librairie et de l'Édition de Genève",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 80400
-        },
-        {
-          "nom": "Fond. de la Maison de Rousseau et de la Littérature",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 80000
-        },
-        {
-          "nom": "La Bataille des Livres",
-          "ville": "Bretonnières",
-          "canton": "VD",
-          "montant_CHF": 80000
-        },
-        {
-          "nom": "Art & Fiction",
+          "nom": "Corodis",
           "ville": "Lausanne",
           "canton": "VD",
-          "montant_CHF": 70000
-        },
-        {
-          "nom": "Fond. pour l'Écrit",
-          "ville": "Le Grand Saconnex",
-          "canton": "SR",
-          "montant_CHF": 60000
-        },
-        {
-          "nom": "Assoc. Florides helvètes",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 50000
-        },
-        {
-          "nom": "Assoc. Roman des Romands",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 50000
-        },
-        {
-          "nom": "Éditions D+P",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 31800
-        },
-        {
-          "nom": "Assoc. pour l'aide à la création littéraire",
-          "ville": "Cernier",
-          "canton": "NE",
-          "montant_CHF": 26000
-        },
-        {
-          "nom": "Assoc. Erasme",
-          "ville": "Fribourg",
-          "canton": "FR",
-          "montant_CHF": 19000
-        },
-        {
-          "nom": "Le Cabaret Littéraire",
-          "ville": "Chavannes-Renens",
-          "canton": "SR",
-          "montant_CHF": 15000
-        },
-        {
-          "nom": "Assoc. L'état de poésie",
-          "ville": "Carouge",
-          "canton": "GE",
-          "montant_CHF": 15000
-        },
-        {
-          "nom": "Assoc. Semaines de la lecture",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 13000
-        },
-        {
-          "nom": "Assoc. Wenger&Cie",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 13000
-        },
-        {
-          "nom": "Assoc. des Amis de la bibliothèque de la ville du Locle",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 12000
-        },
-        {
-          "nom": "The Library in English",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 12000
-        },
-        {
-          "nom": "Éditions D+P",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Assoc. sourire aux livres",
-          "ville": "Collonge-Bellerive",
-          "canton": "GE",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Assoc. des amis de l'Espace Courant d'Art",
-          "ville": "Chevenez",
-          "canton": "JU",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Polar Suisse - Assoc. pour la littérature policière suisse",
-          "ville": "Sierre",
-          "canton": "VS",
-          "montant_CHF": 10000
-        },
-        {
-          "nom": "Centre d'impression Le Pays SA",
-          "ville": "Porrentruy",
-          "canton": "JU",
-          "montant_CHF": 8000
-        },
-        {
-          "nom": "Assoc. Prix d’écriture et d’encouragement littéraire",
-          "ville": "Charmey",
-          "canton": "FR",
-          "montant_CHF": 7500
-        },
-        {
-          "nom": "Assoc. Livres sans Frontières - Bibliothèque Globlivres",
-          "ville": "Renens",
-          "canton": "VD",
-          "montant_CHF": 7000
-        },
-        {
-          "nom": "Assoc. Le corbeau qui lit",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 7000
-        },
-        {
-          "nom": "Assoc. Ekphrasis - Les Amis du Café littéraire de Vevey",
-          "ville": "Vevey",
-          "canton": "VD",
-          "montant_CHF": 5000
-        },
-        {
-          "nom": "Assoc. Caroline Boissier-Butini",
-          "ville": "Vandœuvres",
-          "canton": "SR",
-          "montant_CHF": 5000
-        },
-        {
-          "nom": "Centre d'impression Le Pays",
-          "ville": "Porrentruy",
-          "canton": "JU",
-          "montant_CHF": 4000
-        },
-        {
-          "nom": "Assoc. Le Roman des Romands",
-          "ville": null,
-          "canton": "SR",
-          "montant_CHF": 3500
-        },
-        {
-          "nom": "Florides Helvètes",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 1500
-        },
-        {
-          "nom": "Club littéraire jurassien",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Club littéraire jurassien",
-          "ville": "Delémont",
-          "canton": "JU",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Service de presse suisse",
-          "ville": "Lausanne",
-          "canton": "VD",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "Éditions d'artiste art & fiction",
-          "ville": "Berne",
-          "canton": "JU",
-          "montant_CHF": 500
+          "montant_CHF": 34500
         }
       ]
     },
@@ -6560,15 +6494,15 @@
           "montant_CHF": 50000
         },
         {
-          "nom": "Centre d'Art Contemporain Genève",
-          "ville": "Genève",
-          "canton": "GE",
-          "montant_CHF": 15000
-        },
-        {
           "nom": "Smallville - Espace d'art contemporain",
           "ville": "Neuchâtel",
           "canton": "NE",
+          "montant_CHF": 15000
+        },
+        {
+          "nom": "Centre d'Art Contemporain Genève",
+          "ville": "Genève",
+          "canton": "GE",
           "montant_CHF": 15000
         },
         {

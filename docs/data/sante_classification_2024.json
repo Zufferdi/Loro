@@ -5,20 +5,20 @@
     "source": "brb2024_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 570,
-    "total_chf": 28131390,
-    "precise_classified_entries": 61,
-    "precise_classified_chf": 15593000,
+    "total_entries": 569,
+    "total_chf": 28129390,
+    "precise_classified_entries": 60,
+    "precise_classified_chf": 15591000,
     "pct_chf_precisely_classified": 55.4,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 570,
-    "total_chf_classified": 28131390,
+    "total_entries_classified": 569,
+    "total_chf_classified": 28129390,
     "catchall_chf": 12538390,
     "cross_year_recovered": 12,
     "sector": "Santé et handicap",
     "sector_slug": "sante",
-    "total_entries_sector": 570,
-    "total_chf_sector": 28131390,
+    "total_entries_sector": 569,
+    "total_chf_sector": 28129390,
     "pct_entries_classified": 100.0
   },
   "categories": [
@@ -83,14 +83,10 @@
           "montant_CHF": 130000
         },
         {
-          "nom": "Montreux Jazz Festival",
-          "montant_CHF": 130000,
-          "canton": "VD",
+          "nom": "Montreux Jazz Artists Foundation",
           "ville": "Montreux",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Montreux Jazz Artists Foundation",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VD",
+          "montant_CHF": 130000
         }
       ],
       "all_entries": [
@@ -119,14 +115,10 @@
           "montant_CHF": 130000
         },
         {
-          "nom": "Montreux Jazz Festival",
-          "montant_CHF": 130000,
-          "canton": "VD",
+          "nom": "Montreux Jazz Artists Foundation",
           "ville": "Montreux",
-          "secteur": "",
-          "description": "Consolidation de 1 attributions : Montreux Jazz Artists Foundation",
-          "_consolidated": true,
-          "_count": 1
+          "canton": "VD",
+          "montant_CHF": 130000
         },
         {
           "nom": "Estivale Open Air",
@@ -447,14 +439,14 @@
           "montant_CHF": 62000
         },
         {
-          "nom": "Assoc. GAME Salle Amalgame",
-          "ville": "Yverdon-les-Bains",
+          "nom": "Assoc. Eustache",
+          "ville": "Lausanne",
           "canton": "VD",
           "montant_CHF": 60000
         },
         {
-          "nom": "Assoc. Eustache",
-          "ville": "Lausanne",
+          "nom": "Assoc. GAME Salle Amalgame",
+          "ville": "Yverdon-les-Bains",
           "canton": "VD",
           "montant_CHF": 60000
         },
@@ -693,12 +685,6 @@
           "montant_CHF": 44000
         },
         {
-          "nom": "Fond. Françoise Siegfried Meier - La Becque",
-          "ville": "La Tour-de-Peilz",
-          "canton": "VD",
-          "montant_CHF": 40000
-        },
-        {
           "nom": "Assoc. Autrement-Aujourd'hui",
           "ville": null,
           "canton": "SR",
@@ -749,6 +735,12 @@
         {
           "nom": "Cie Les Intempéries",
           "ville": "Lausanne",
+          "canton": "VD",
+          "montant_CHF": 40000
+        },
+        {
+          "nom": "Fond. Françoise Siegfried Meier - La Becque",
+          "ville": "La Tour-de-Peilz",
           "canton": "VD",
           "montant_CHF": 40000
         },
@@ -1251,19 +1243,19 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "Assoc. Le Relais de Genève Montagne Le Relais De Genève Montagne -",
+          "nom": "Assoc. Le Relais de Genève Montagne Le Relais De Genève Montagne",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 20000
         },
         {
-          "nom": "Assoc. l'Écrin des mômes, Genève Reprends Tes Rênes -",
+          "nom": "Assoc. l'Écrin des mômes, Genève Reprends Tes Rênes",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 20000
         },
         {
-          "nom": "Assoc. Santescalade, Genève Entrainements 6-15 ans -",
+          "nom": "Assoc. Santescalade, Genève Entrainements 6-15 ans",
           "ville": "Genève",
           "canton": "GE",
           "montant_CHF": 20000
@@ -1302,9 +1294,9 @@
     },
     {
       "name": "Aide & assistance médicale",
-      "count": 21,
-      "total_chf": 9214000,
-      "mean_chf": 438761,
+      "count": 20,
+      "total_chf": 9212000,
+      "mean_chf": 460600,
       "cantons": {
         "SR": {
           "count": 3,
@@ -1327,8 +1319,8 @@
           "total_chf": 605000
         },
         "JU": {
-          "count": 3,
-          "total_chf": 18000
+          "count": 2,
+          "total_chf": 16000
         }
       },
       "samples": [
@@ -1345,7 +1337,7 @@
           "montant_CHF": 1170000
         },
         {
-          "nom": "fond'IMAD, Grand-Lancy Nouvelle Unité d'accueil temporaire",
+          "nom": "Grand-Lancy Nouvelle Unité d'accueil temporaire",
           "ville": "Grand-Lancy",
           "canton": "GE",
           "montant_CHF": 350000
@@ -1377,7 +1369,7 @@
           "montant_CHF": 1170000
         },
         {
-          "nom": "fond'IMAD, Grand-Lancy Nouvelle Unité d'accueil temporaire",
+          "nom": "Grand-Lancy Nouvelle Unité d'accueil temporaire",
           "ville": "Grand-Lancy",
           "canton": "GE",
           "montant_CHF": 350000
@@ -1479,12 +1471,6 @@
           "montant_CHF": 2000
         },
         {
-          "nom": "Croix-Rouge Suisse",
-          "ville": "Berne",
-          "canton": "JU",
-          "montant_CHF": 2000
-        },
-        {
           "nom": "Fond. Aigues-Vertes",
           "ville": "Bernex - Football",
           "canton": "SR",
@@ -1519,7 +1505,7 @@
           "montant_CHF": 2000000
         },
         {
-          "nom": "AFAAP",
+          "nom": "AFAAP - Assoc. fribourgeoise pour l'accompagnement à domicile",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 240000
@@ -1551,7 +1537,7 @@
           "montant_CHF": 2000000
         },
         {
-          "nom": "AFAAP",
+          "nom": "AFAAP - Assoc. fribourgeoise pour l'accompagnement à domicile",
           "ville": "Fribourg",
           "canton": "FR",
           "montant_CHF": 240000

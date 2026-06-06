@@ -5,16 +5,16 @@
     "source": "brb2021_full.json",
     "method": "Pattern matching (PASS 1) + cross-year memo (PASS 2) + sector catch-all (PASS 3)",
     "date": "2026-06-04",
-    "total_entries": 1230,
-    "total_chf": 29666913,
-    "precise_classified_entries": 963,
-    "precise_classified_chf": 20528819,
+    "total_entries": 1224,
+    "total_chf": 29661913,
+    "precise_classified_entries": 957,
+    "precise_classified_chf": 20523819,
     "pct_chf_precisely_classified": 69.2,
     "pct_chf_classified": 100.0,
-    "total_entries_classified": 1230,
-    "total_chf_classified": 29666913,
+    "total_entries_classified": 1224,
+    "total_chf_classified": 29661913,
     "catchall_chf": 9138094,
-    "cross_year_recovered": 666
+    "cross_year_recovered": 647
   },
   "sports": [
     {
@@ -268,7 +268,7 @@
           "montant_CHF": 55000
         },
         {
-          "nom": "au sein des activités sportives de RESPIRE CREAHM Fribourg",
+          "nom": "RESPIRE CREAHM Fribourg",
           "ville": "Villars-sur-Glâne",
           "canton": "FR",
           "montant_CHF": 50000
@@ -568,7 +568,7 @@
           "montant_CHF": 16400
         },
         {
-          "nom": "installations tirs SAC-Ortsgruppe St. Niklaus",
+          "nom": "SAC-Ortsgruppe St. Niklaus",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 16301
@@ -850,7 +850,7 @@
           "montant_CHF": 5000
         },
         {
-          "nom": "profondeur 2021 Matthias Gribi",
+          "nom": "Matthias Gribi",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 5000
@@ -1066,7 +1066,7 @@
           "montant_CHF": 2500
         },
         {
-          "nom": "actuelles CTT Forward Morges",
+          "nom": "CTT Forward Morges",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 2490
@@ -1322,7 +1322,7 @@
           "montant_CHF": 789700
         },
         {
-          "nom": "d’aide aux sportifs vaudois et aux sportifs d’élite en sport individuel",
+          "nom": "Fonds vaudois d'aide aux sportifs",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 550000
@@ -1354,7 +1354,7 @@
           "montant_CHF": 789700
         },
         {
-          "nom": "d’aide aux sportifs vaudois et aux sportifs d’élite en sport individuel",
+          "nom": "Fonds vaudois d'aide aux sportifs",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 550000
@@ -1390,7 +1390,7 @@
           "montant_CHF": 254400
         },
         {
-          "nom": "d'un terrain de sports",
+          "nom": "Aménagement d'un terrain de sports",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 240000
@@ -1420,7 +1420,7 @@
           "montant_CHF": 78753
         },
         {
-          "nom": "sportif / Kauf von Sportmaterial",
+          "nom": "Kauf von Sportmaterial",
           "ville": null,
           "canton": "VS",
           "montant_CHF": 65605
@@ -1468,7 +1468,7 @@
           "montant_CHF": 26000
         },
         {
-          "nom": "Participation aux frais inhérants à la cérémonie 2021 des Mérites sportifs vaudois Service des sports UNIL-EPFL",
+          "nom": "Service des sports UNIL-EPFL",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 25000
@@ -1804,7 +1804,7 @@
           "montant_CHF": 700
         },
         {
-          "nom": "accessoires Cercle des Armes de Lausanne",
+          "nom": "Cercle des Armes de Lausanne",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 650
@@ -2338,7 +2338,7 @@
           "montant_CHF": 1700
         },
         {
-          "nom": "table FC Crissier",
+          "nom": "FC Crissier",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1610
@@ -2476,7 +2476,7 @@
           "montant_CHF": 920
         },
         {
-          "nom": "entièrement soudés FC Sainte-Croix-La Sagne",
+          "nom": "FC Sainte-Croix-La Sagne",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 900
@@ -2488,7 +2488,7 @@
           "montant_CHF": 890
         },
         {
-          "nom": "avec filets Forward Morges Hockey Club",
+          "nom": "Forward Morges Hockey Club",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 880
@@ -2599,9 +2599,9 @@
     },
     {
       "name": "Ski / Snowboard",
-      "count": 77,
-      "total_chf": 2076111,
-      "mean_chf": 26962,
+      "count": 76,
+      "total_chf": 2074111,
+      "mean_chf": 27290,
       "cantons": {
         "VD": {
           "count": 17,
@@ -2620,8 +2620,8 @@
           "total_chf": 159160
         },
         "GE": {
-          "count": 18,
-          "total_chf": 132700
+          "count": 17,
+          "total_chf": 130700
         },
         "JU": {
           "count": 3,
@@ -2960,12 +2960,6 @@
           "ville": null,
           "canton": "VD",
           "montant_CHF": 2270
-        },
-        {
-          "nom": "Club Nautique de Versoix - Section Ski nautique",
-          "ville": null,
-          "canton": "GE",
-          "montant_CHF": 2000
         },
         {
           "nom": "Club Nautique de Versoix - Section Ski nautique",
@@ -3554,7 +3548,7 @@
           "montant_CHF": 20000
         },
         {
-          "nom": "ème Challenge International de Genève Genève Natation 1885",
+          "nom": "Challenge International de Genève Genève Natation 1885",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 18000
@@ -3650,7 +3644,7 @@
           "montant_CHF": 2525
         },
         {
-          "nom": "et d'une armoire de rangement pour le matériel Lausanne Natation",
+          "nom": "Lausanne Natation",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 2470
@@ -4445,9 +4439,9 @@
     },
     {
       "name": "Gymnastique",
-      "count": 97,
-      "total_chf": 856983,
-      "mean_chf": 8834,
+      "count": 95,
+      "total_chf": 855983,
+      "mean_chf": 9010,
       "cantons": {
         "VD": {
           "count": 32,
@@ -4462,8 +4456,8 @@
           "total_chf": 802
         },
         "NE": {
-          "count": 14,
-          "total_chf": 170235
+          "count": 12,
+          "total_chf": 169235
         },
         "GE": {
           "count": 20,
@@ -4562,7 +4556,7 @@
           "montant_CHF": 7300
         },
         {
-          "nom": "assemblables (12 x 12 m) FSG Yverdon-Ancienne",
+          "nom": "FSG Yverdon-Ancienne",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 6790
@@ -4616,7 +4610,7 @@
           "montant_CHF": 4100
         },
         {
-          "nom": "ème Dolly Cup 2021 FSG Aïre le Lignon Gymnastique Rythmique",
+          "nom": "Dolly Cup 2021 FSG Aïre le Lignon Gymnastique Rythmique",
           "ville": null,
           "canton": "GE",
           "montant_CHF": 4000
@@ -4634,7 +4628,7 @@
           "montant_CHF": 3280
         },
         {
-          "nom": "d'évolution repliable FSG Vevey-Ancienne",
+          "nom": "FSG Vevey-Ancienne",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 3070
@@ -4652,7 +4646,7 @@
           "montant_CHF": 2740
         },
         {
-          "nom": "gymnastique FSG Morges",
+          "nom": "FSG Morges",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 2650
@@ -4760,7 +4754,7 @@
           "montant_CHF": 1390
         },
         {
-          "nom": "gymnastique aux agrès FSG Blonay",
+          "nom": "FSG Blonay",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1310
@@ -4790,7 +4784,7 @@
           "montant_CHF": 1100
         },
         {
-          "nom": "gymnastique FSG St-Cierges",
+          "nom": "FSG St-Cierges",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1090
@@ -4808,7 +4802,7 @@
           "montant_CHF": 1050
         },
         {
-          "nom": "avec soufflerie FSG Château-d'Oex400.- Premium FSG La Sarraz",
+          "nom": "FSG Château-d'Oex400.- Premium FSG La Sarraz",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1040
@@ -4850,7 +4844,7 @@
           "montant_CHF": 1000
         },
         {
-          "nom": "à Puidoux FSG Chernex",
+          "nom": "Puidoux FSG Chernex",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1000
@@ -4862,13 +4856,13 @@
           "montant_CHF": 1000
         },
         {
-          "nom": "artistique à Montreux FSG Morges",
+          "nom": "Montreux FSG Morges",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1000
         },
         {
-          "nom": "individuel et par équipes à Roche FSG St-Cierges",
+          "nom": "Roche FSG St-Cierges",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1000
@@ -4991,18 +4985,6 @@
           "nom": "Pre-Season-Cup U17-U20 Féd. Fribourgeoise de Gymnastique",
           "ville": null,
           "canton": "FR",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Assoc. Cantonale Neuchâteloise de Gymnastique Artistique",
-          "ville": null,
-          "canton": "NE",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "Assoc. Cantonale Neuchâteloise de Gymnastique Artistique",
-          "ville": null,
-          "canton": "NE",
           "montant_CHF": 500
         },
         {
@@ -5527,17 +5509,17 @@
     },
     {
       "name": "Hockey sur glace",
-      "count": 59,
-      "total_chf": 743552,
-      "mean_chf": 12602,
+      "count": 58,
+      "total_chf": 742552,
+      "mean_chf": 12802,
       "cantons": {
         "VD": {
           "count": 7,
           "total_chf": 66187
         },
         "FR": {
-          "count": 13,
-          "total_chf": 54980
+          "count": 12,
+          "total_chf": 53980
         },
         "VS": {
           "count": 5,
@@ -5564,7 +5546,7 @@
           "montant_CHF": 136000
         },
         {
-          "nom": "e HC Ajoie SA",
+          "nom": "HC Ajoie SA",
           "ville": "Porrentruy",
           "canton": "JU",
           "montant_CHF": 90000
@@ -5596,7 +5578,7 @@
           "montant_CHF": 136000
         },
         {
-          "nom": "e HC Ajoie SA",
+          "nom": "HC Ajoie SA",
           "ville": "Porrentruy",
           "canton": "JU",
           "montant_CHF": 90000
@@ -5782,13 +5764,13 @@
           "montant_CHF": 2710
         },
         {
-          "nom": "gardien junior de hockey sur glace Lausanne Natation",
+          "nom": "Lausanne Natation",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 2330
         },
         {
-          "nom": "filets et de 10 séparations Lausanne Hockey Club",
+          "nom": "Lausanne Hockey Club",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1840
@@ -5854,13 +5836,7 @@
           "montant_CHF": 1000
         },
         {
-          "nom": "Assoc. Fribourgeoise de Hockey- sur-Glace",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 1000
-        },
-        {
-          "nom": "annulé) EHC SenSee Future",
+          "nom": "EHC SenSee Future",
           "ville": null,
           "canton": "FR",
           "montant_CHF": 1000
@@ -6247,25 +6223,25 @@
     },
     {
       "name": "Voile / Nautique",
-      "count": 42,
-      "total_chf": 564915,
-      "mean_chf": 13450,
+      "count": 40,
+      "total_chf": 563915,
+      "mean_chf": 14097,
       "cantons": {
         "VD": {
           "count": 21,
           "total_chf": 130260
         },
         "FR": {
-          "count": 2,
-          "total_chf": 1000
+          "count": 1,
+          "total_chf": 500
         },
         "VS": {
           "count": 1,
           "total_chf": 9155
         },
         "NE": {
-          "count": 10,
-          "total_chf": 32200
+          "count": 9,
+          "total_chf": 31700
         },
         "GE": {
           "count": 8,
@@ -6474,7 +6450,7 @@
           "montant_CHF": 2000
         },
         {
-          "nom": "places Union Nautique Yverdon",
+          "nom": "Union Nautique Yverdon",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1810
@@ -6504,7 +6480,7 @@
           "montant_CHF": 1250
         },
         {
-          "nom": "tremplin de saut et d'un tapis Groupe Vaudois de Vol à Voile de Montricher",
+          "nom": "Groupe Vaudois de Vol à Voile de Montricher",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 1000
@@ -6522,7 +6498,7 @@
           "montant_CHF": 930
         },
         {
-          "nom": "triplettes FSG Assens",
+          "nom": "FSG Assens",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 650
@@ -6537,18 +6513,6 @@
           "nom": "(Covid-19 annulé) Cercle de la Voile d'Estavayer- le-Lac",
           "ville": null,
           "canton": "FR",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "(Covid-19 annulé) Cercle de la Voile d'Estavayer- le-Lac",
-          "ville": null,
-          "canton": "FR",
-          "montant_CHF": 500
-        },
-        {
-          "nom": "ème manche championnat romand 2021 Cercle de la Voile de Neuchâtel",
-          "ville": null,
-          "canton": "NE",
           "montant_CHF": 500
         },
         {
@@ -6646,7 +6610,7 @@
           "montant_CHF": 20020
         },
         {
-          "nom": "Assoc. Neuchâteloise de Course d'Orientation -",
+          "nom": "Assoc. Neuchâteloise de Course d'Orientation",
           "ville": null,
           "canton": "NE",
           "montant_CHF": 17000
@@ -6664,7 +6628,7 @@
           "montant_CHF": 8720
         },
         {
-          "nom": "l'extérieur Jorat",
+          "nom": "Théâtre du Jorat",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 3490
@@ -7134,7 +7098,7 @@
           "montant_CHF": 6270
         },
         {
-          "nom": "pour gardiens juniors Judo Kwai Lausanne",
+          "nom": "Judo Kwai Lausanne",
           "ville": null,
           "canton": "VD",
           "montant_CHF": 6000
