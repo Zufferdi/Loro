@@ -22,7 +22,7 @@ import json
 import re
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 
 # ─── Override rules ──────────────────────────────────────────────────────
 # Each rule: (regex pattern on text, target sector)
@@ -176,7 +176,7 @@ def main():
 
     for y in years:
         p = DATA / f'brb{y}_full.json'
-        d = json.load(open(p))
+        d = json.load(open(p, encoding='utf-8'))
         entries = d['entries']
 
         overrides_log = []
@@ -201,7 +201,7 @@ def main():
         }
 
         # Write back
-        p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+        p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
 
         # Summary by source sector
         by_change = {}

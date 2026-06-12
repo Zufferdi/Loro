@@ -4,7 +4,7 @@ import json
 import re
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 
 # Patterns : (regex_nom, secteur_courant_à_corriger, secteur_cible)
 SECTOR_FIXES = [
@@ -35,7 +35,7 @@ def main():
     total = 0
     for y in ['2021', '2022', '2023', '2024', '2025']:
         p = DATA / f'brb{y}_full.json'
-        d = json.load(open(p))
+        d = json.load(open(p, encoding='utf-8'))
         fixed = 0
         for e in d['entries']:
             nom = e['nom'] or ''
@@ -49,7 +49,7 @@ def main():
                     break
         if fixed:
             d['_meta'].setdefault('fixes', {})['v19_sector_swaps'] = {'count': fixed}
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
         print(f"  {y}: {fixed} secteurs corrigés (Hockey/Volleyball/etc.)")
         total += fixed
     print(f"\n  Total : {total}")

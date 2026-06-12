@@ -4,7 +4,7 @@ import json
 import re
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 
 RULES = [
     # ─── CULTURE — compagnies, théâtres, festivals ───
@@ -61,7 +61,7 @@ def find_sector(entry):
 
 def main():
     p = DATA / 'brb2021_full.json'
-    d = json.load(open(p))
+    d = json.load(open(p, encoding='utf-8'))
     fixed = 0
     by_sector = {}
     for e in d['entries']:
@@ -78,7 +78,7 @@ def main():
     remaining = sum(1 for e in d['entries'] if not e.get('secteur'))
     remaining_chf = sum(e['montant_CHF'] for e in d['entries'] if not e.get('secteur'))
     print(f"\n  Restants : {remaining} ({remaining_chf/1e6:.1f} M)")
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
 
 
 if __name__ == '__main__':

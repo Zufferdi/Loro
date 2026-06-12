@@ -8,7 +8,7 @@ bénéficiaires" qui sont en réalité des en-têtes de section / récaps.
 import json
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 
 # Patterns à exclure (vraies récap de fin de section)
 EXCLUDE_NAME_PATTERNS = [
@@ -23,7 +23,7 @@ def main():
     total_excluded_count = 0
     for y in ['2021', '2022', '2023', '2024', '2025']:
         p = DATA / f'brb{y}_full.json'
-        d = json.load(open(p))
+        d = json.load(open(p, encoding='utf-8'))
         
         original_count = len(d['entries'])
         original_total = sum(e['montant_CHF'] for e in d['entries'])
@@ -50,7 +50,7 @@ def main():
         if len(excluded):
             d['entries'] = new_entries
             d['_meta'].setdefault('fixes', {})['v18_aggregates'] = {'count': len(excluded), 'total_chf': sum(e['montant_CHF'] for e in excluded)}
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
             new_total = sum(e['montant_CHF'] for e in new_entries)
             print(f"  {y}: {len(excluded)} agrégats exclus ({(original_total-new_total)/1e6:.2f}M retiré) — Total BRB {y} : {original_total/1e6:.1f}M → {new_total/1e6:.1f}M")
             for e in excluded:

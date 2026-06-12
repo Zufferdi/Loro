@@ -102,13 +102,13 @@
     });
     container.appendChild(grid);
 
-    // Notable beneficiary movements (élargi 2022→2025)
+    // Notable beneficiary movements (5 ans : 2021 → 2025)
     const movers = document.createElement('div');
     movers.className = 'compare-movers';
     movers.innerHTML = `
-      <div class="compare-movers-title">Bénéficiaires marquants 2022 → 2025</div>
+      <div class="compare-movers-title">Bénéficiaires marquants 2021 → 2025</div>
       <div class="compare-movers-list">
-        <div class="compare-mover"><span class="compare-mover-icon up">▲</span><span class="compare-mover-name">Fond. de l'Hermitage</span><span class="compare-mover-vals">140 k → 4 M (×29 sur 4 ans)</span></div>
+        <div class="compare-mover"><span class="compare-mover-icon up">▲</span><span class="compare-mover-name">Fond. de l'Hermitage</span><span class="compare-mover-vals">140 k → 4 M (×29 sur 5 ans)</span></div>
         <div class="compare-mover"><span class="compare-mover-icon up">▲</span><span class="compare-mover-name">Vaud (total canton)</span><span class="compare-mover-vals">46,6 M → 74,7 M (+60 %)</span></div>
         <div class="compare-mover"><span class="compare-mover-icon up">▲</span><span class="compare-mover-name">Jura (total canton)</span><span class="compare-mover-vals">5,9 M → 8,6 M (+46 %)</span></div>
         <div class="compare-mover"><span class="compare-mover-icon flat">→</span><span class="compare-mover-name">Verbier Festival, Gianadda</span><span class="compare-mover-vals">stables</span></div>

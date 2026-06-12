@@ -16,13 +16,14 @@ Entry parsing:
       or with a separate '## Ville' line)
     - description (lines from the first known description prefix to bottom)
 """
+import sys
 import json
 import re
 import unicodedata
 from pathlib import Path
 
-ROOT = Path('/home/claude/audit2/Loro-main')
-INPUT = Path('/mnt/user-data/uploads/BRB2024.md')
+ROOT = Path(__file__).resolve().parent.parent
+INPUT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path('/mnt/user-data/uploads/BRB2024.md')
 OUTPUT = ROOT / 'docs' / 'data' / 'brb2024_full.json'
 BACKUP = ROOT / 'docs' / 'data' / 'brb2024_full.backup_pre_reparse.json'
 
@@ -251,7 +252,7 @@ def build_ville_to_canton():
         p = ROOT / 'docs' / 'data' / f'brb{year}_full.json'
         if not p.exists():
             continue
-        d = json.load(open(p))
+        d = json.load(open(p, encoding='utf-8'))
         for e in d['entries']:
             v = e.get('ville')
             c = e.get('canton')
@@ -612,7 +613,7 @@ def main():
         return
 
     if OUTPUT.exists():
-        BACKUP.write_text(OUTPUT.read_text())
+        BACKUP.write_text(OUTPUT.read_text(encoding='utf-8'), encoding='utf-8')
         print(f"📦 Backup of existing brb2024_full.json → {BACKUP.name}")
 
     text = INPUT.read_text(encoding='utf-8')

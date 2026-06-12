@@ -1,7 +1,7 @@
 /* ============================================================
-   trajectories.js — Pass 13 (v13.13)
-   3-year trajectories (2023→2024→2025) for top beneficiaries.
-   Sparklines showing growth/decline/one-shots per beneficiary.
+   trajectories.js — Pass 13 (v13.14)
+   Trajectoires 5 ans (2021 → 2025) pour les top bénéficiaires.
+   Sparklines montrant croissance/déclin/one-shots par bénéficiaire.
    ============================================================ */
 (function() {
   function init() {
@@ -41,15 +41,20 @@
     container.innerHTML = '';
 
     // Stats banner
-    const counts = { growth: 0, decline: 0, stable: 0, one_shot_2022: 0, one_shot_2023: 0, one_shot_2024: 0, one_shot_2025: 0 };
+    const counts = {
+      growth: 0, decline: 0, stable: 0, sparse: 0,
+      one_shot_2021: 0, one_shot_2022: 0, one_shot_2023: 0,
+      one_shot_2024: 0, one_shot_2025: 0,
+    };
     items.forEach(t => { if (counts[t.trajectory_cat] !== undefined) counts[t.trajectory_cat]++; });
+    const oneShotsPasses = counts.one_shot_2021 + counts.one_shot_2022 + counts.one_shot_2023 + counts.one_shot_2024;
     const stats = document.createElement('div');
     stats.className = 'traj-stats';
     stats.innerHTML = `
       <div class="traj-stat"><div class="traj-stat-val">${items.length}</div><div class="traj-stat-lbl">bénéficiaires</div></div>
-      <div class="traj-stat"><div class="traj-stat-val">${meta.count_4year || meta.count_3year || 0}</div><div class="traj-stat-lbl">avec 4 années complètes</div></div>
+      <div class="traj-stat"><div class="traj-stat-val">${meta.count_5year || meta.count_4year || meta.count_3year || 0}</div><div class="traj-stat-lbl">avec 5 années complètes</div></div>
       <div class="traj-stat"><div class="traj-stat-val" style="color:#2a7c2a">${counts.growth + counts.one_shot_2025}</div><div class="traj-stat-lbl">📈 hausses + one-shots&nbsp;2025</div></div>
-      <div class="traj-stat"><div class="traj-stat-val" style="color:#b8923a">${counts.one_shot_2024 + counts.one_shot_2023 + counts.one_shot_2022}</div><div class="traj-stat-lbl">⚡ one-shots passés</div></div>
+      <div class="traj-stat"><div class="traj-stat-val" style="color:#b8923a">${oneShotsPasses}</div><div class="traj-stat-lbl">⚡ one-shots passés</div></div>
       <div class="traj-stat"><div class="traj-stat-val" style="color:#888">${counts.stable + counts.decline}</div><div class="traj-stat-lbl">→ stables / 📉 baisses</div></div>
     `;
     container.appendChild(stats);

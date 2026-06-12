@@ -13,7 +13,7 @@ import json
 import re
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 
 # Préfixes à retirer (description polluant le nom)
 PREFIX_TO_STRIP = [
@@ -75,7 +75,7 @@ def main():
     total_changed = 0
     for y in ['2021', '2022', '2023', '2024', '2025']:
         p = DATA / f'brb{y}_full.json'
-        d = json.load(open(p))
+        d = json.load(open(p, encoding='utf-8'))
         changed = 0
         for e in d['entries']:
             old = e['nom']
@@ -94,7 +94,7 @@ def main():
                 changed += 1
         if changed:
             d['_meta'].setdefault('fixes', {})['v14_names'] = {'count': changed}
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
         print(f"  {y}: {changed} noms nettoyés")
         total_changed += changed
     print(f"\n  Total : {total_changed} entries nettoyées")

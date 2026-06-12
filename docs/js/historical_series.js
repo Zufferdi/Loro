@@ -47,8 +47,8 @@
         .replace(/^Fondation\s+/, 'Fond. ')
         .replace(/^Festival International du Film de Fribourg \(FIFF\)/, 'FIFF Fribourg')
         .replace(/\s*\(.+\)$/, '');
-      head.innerHTML = `<div class="hist-series-name">${name}</div>
-                       <div class="hist-series-meta">${c.canton_principal} · ${c.secteur}</div>`;
+      head.innerHTML = `<div class="hist-series-name">${escapeHtmlLocal(name)}</div>
+                       <div class="hist-series-meta">${escapeHtmlLocal(c.canton_principal)} · ${escapeHtmlLocal(c.secteur)}</div>`;
       card.appendChild(head);
 
       // Mini chart: series of bars per year
@@ -90,6 +90,11 @@
     if (v >= 1e6) return (v/1e6).toFixed(2).replace(/\.?0+$/, '') + ' M';
     if (v >= 1e3) return Math.round(v/1e3) + ' k';
     return String(v);
+  }
+  function escapeHtmlLocal(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({
+      '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+    }[c]));
   }
 
   // Trigger on page load + on intersection observer

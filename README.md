@@ -123,12 +123,27 @@ cd docs/
 python3 -m http.server 8000
 # → http://localhost:8000/
 
-# 2. Rebuild pipeline (depuis un PDF BRB téléchargé)
-python3 scripts/parse_brb2025.py
-python3 scripts/fix_sectors_via_keywords_v12.py  # toutes versions
+# 2. Pipeline complète (depuis un PDF BRB téléchargé en .md)
+# Tous les scripts utilisent maintenant Path(__file__).resolve().parent.parent,
+# aucune édition de chemin nécessaire.
+
+# Parser un nouveau BRB (le chemin du .md peut être passé en argv) :
+python3 scripts/parse_brb2025.py /chemin/vers/BRB2025.md
+
+# Appliquer toutes les passes de correction de secteur (v1 → v12 dans l'ordre) :
+for v in "" _v2 _v3 _v4 _v5 _v6 _v7 _v8 _v9 _v10 _v11 _v12; do
+  python3 "scripts/fix_sectors_via_keywords${v}.py"
+done
+
+# Régénérer les classifications par secteur (avec mémoire cross-année) :
 python3 scripts/build_classifications_with_cross_year_memo.py
-python3 scripts/build_aggregations_2025.py
+
+# Régénérer les agrégations finales (top30, villes, treemap, per_capita) :
+python3 scripts/build_aggregations.py        # année courante (2025)
+python3 scripts/build_aggregations_2024.py   # idem pour les autres années
 ```
+
+> **Note** — Le pipeline a beaucoup évolué (v13.10+). Les douze scripts `fix_sectors_via_keywords_v{1..12}.py` sont des *passes cumulatives* : chacune ajoute des règles d'override aux précédentes. Une future refactorisation consolidant ces règles dans un seul fichier YAML est envisagée.
 
 ---
 

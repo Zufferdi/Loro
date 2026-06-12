@@ -13,7 +13,7 @@ Détecte 11 catégories d'anomalies sans rien modifier (read-only).
 import json, re, unicodedata
 from collections import defaultdict, Counter
 
-with open('docs/data/brb2025_full.json') as f:
+with open('docs/data/brb2025_full.json', encoding='utf-8') as f:
     d = json.load(f)
 entries = d['entries']
 N = len(entries)
@@ -181,6 +181,6 @@ out = {
         'encoding_issues': [{'i': i, 'field': k, 'value': e[k]} for i, e, k in suspicious_chars[:10]],
     }
 }
-with open('audit_report.json', 'w') as f:
+with open('audit_report.json', 'w', encoding='utf-8') as f:
     json.dump(out, f, ensure_ascii=False, indent=2)
-print(f"\n✓ Rapport sauvegardé: /home/claude/Loro-live/Loro-main/audit_report.json")
+print(f"\n✓ Rapport sauvegardé: audit_report.json")

@@ -2,7 +2,7 @@
 """fix_sectors_via_keywords_v10.py — corrections après audit Passe 3."""
 import json, re
 from pathlib import Path
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 
 RULES = [
     # ─── Sport mal classés (entries actuellement en Sport sont CULTURE / SOCIAL) ───
@@ -51,7 +51,7 @@ def find_override(entry):
 total = 0
 for y in ['2021', '2022', '2023', '2024', '2025']:
     p = DATA / f'brb{y}_full.json'
-    d = json.load(open(p))
+    d = json.load(open(p, encoding='utf-8'))
     n = 0
     for e in d['entries']:
         t = find_override(e)
@@ -59,7 +59,7 @@ for y in ['2021', '2022', '2023', '2024', '2025']:
             e['secteur'] = t
             n += 1
     d['_meta']['sector_overrides_v10'] = {'count': n, 'date': '2026-06-04'}
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
     print(f"brb{y}: {n} overrides v10")
     total += n
 print(f"Total: {total}")

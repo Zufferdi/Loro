@@ -25,7 +25,7 @@ import re
 from pathlib import Path
 from collections import defaultdict
 
-DATA = Path('/home/claude/audit2/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 YEARS = ['2022', '2023', '2024', '2025']
 
 # Cantonal adjectives that sometimes leak into the `ville` field
@@ -107,7 +107,7 @@ def main():
     
     for y in YEARS:
         p = DATA / f'brb{y}_full.json'
-        d = json.load(open(p))
+        d = json.load(open(p, encoding='utf-8'))
         entries = d['entries']
         
         n_villes_fixed = 0
@@ -165,7 +165,7 @@ def main():
             'names_reconstructed_via_ville': n_via_ville,
             'artifacts_dropped': n_dropped,
         }
-        p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+        p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
         
         print(f"─── BRB {y} ───")
         print(f"  Villes-adjectifs nettoyés:        {n_villes_fixed}")

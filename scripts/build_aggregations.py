@@ -33,7 +33,7 @@ def normalize_name(name):
 
 
 def main():
-    with open(INPUT) as f:
+    with open(INPUT, encoding='utf-8') as f:
         data = json.load(f)
     entries = data['entries']
     total_all = sum(e.get('montant_CHF', 0) for e in entries)
@@ -74,7 +74,7 @@ def main():
     top30 = benefs[:30]
     top30_total = sum(b['total_chf'] for b in top30)
 
-    with open(OUT / 'top30_beneficiaires.json', 'w') as f:
+    with open(OUT / 'top30_beneficiaires.json', 'w', encoding='utf-8') as f:
         json.dump({
             '_meta': {
                 'description': 'Top 30 bénéficiaires distincts par montant cumulé en 2025',
@@ -120,7 +120,7 @@ def main():
     villes_list.sort(key=lambda x: -x['total_chf'])
     top20_villes = villes_list[:20]
 
-    with open(OUT / 'top20_villes.json', 'w') as f:
+    with open(OUT / 'top20_villes.json', 'w', encoding='utf-8') as f:
         json.dump({
             '_meta': {
                 'description': 'Top 20 villes destinataires par montant cumulé en 2025',
@@ -160,7 +160,7 @@ def main():
         treemap_data.append(c_entry)
     treemap_data.sort(key=lambda x: -x['total_chf'])
 
-    with open(OUT / 'treemap_canton_secteur.json', 'w') as f:
+    with open(OUT / 'treemap_canton_secteur.json', 'w', encoding='utf-8') as f:
         json.dump({
             '_meta': {
                 'description': 'Treemap canton × secteur : où va chaque CHF par canton',
@@ -193,7 +193,7 @@ def main():
         })
     per_cap.sort(key=lambda x: -x['chf_per_capita'])
 
-    with open(OUT / 'per_capita_v2.json', 'w') as f:
+    with open(OUT / 'per_capita_v2.json', 'w', encoding='utf-8') as f:
         json.dump({
             '_meta': {
                 'description': 'CHF reçus par habitant et par canton en 2025',

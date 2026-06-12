@@ -25,8 +25,8 @@ function initFilters() {
     const id = 'cat_' + c.replace(/\W+/g, '_');
     const lbl = document.createElement('label');
     lbl.innerHTML = `
-      <input type="checkbox" data-cat="${c.replace(/"/g, '&quot;')}" id="${id}">
-      <span>${c}</span>
+      <input type="checkbox" data-cat="${escapeHtml(c)}" id="${id}">
+      <span>${escapeHtml(c)}</span>
       <span style="color:var(--ink-mute); margin-left:auto;">${cnt}</span>`;
     cBox.appendChild(lbl);
   });
@@ -44,8 +44,8 @@ function initFilters() {
     const cnt = BENEFS.filter(b => b.canton === c).length;
     const lbl = document.createElement('label');
     lbl.innerHTML = `
-      <input type="checkbox" data-canton="${c.replace(/"/g, '&quot;')}">
-      <span>${c}</span>
+      <input type="checkbox" data-canton="${escapeHtml(c)}">
+      <span>${escapeHtml(c)}</span>
       <span style="color:var(--ink-mute); margin-left:auto;">${cnt}</span>`;
     ctBox.appendChild(lbl);
   });
@@ -81,11 +81,15 @@ function filterAndSort() {
   if (state.categories.size) out = out.filter(b => state.categories.has(b.categorie));
   if (state.cantons.size)    out = out.filter(b => state.cantons.has(b.canton));
 
+  const latestKey = b => {
+    const keys = b.series ? Object.keys(b.series) : [];
+    return keys.length ? keys.sort().pop() : '0';
+  };
   const sorters = {
-    'total-desc': (a, b) => b.total - a.total,
-    'total-asc':  (a, b) => a.total - b.total,
+    'total-desc': (a, b) => (b.total || 0) - (a.total || 0),
+    'total-asc':  (a, b) => (a.total || 0) - (b.total || 0),
     'alpha':      (a, b) => (a.nom || '').localeCompare(b.nom || ''),
-    'latest':     (a, b) => Object.keys(b.series).sort().pop().localeCompare(Object.keys(a.series).sort().pop()),
+    'latest':     (a, b) => latestKey(b).localeCompare(latestKey(a)),
   };
   out.sort(sorters[state.sort] || sorters['total-desc']);
   return out;
@@ -125,11 +129,11 @@ function renderCard(b) {
 
   const left = document.createElement('div');
   left.innerHTML = `
-    <div class="name">${escape(b.nom)}</div>
+    <div class="name">${escapeHtml(b.nom)}</div>
     <div class="meta">
-      ${escape(b.categorie || '—')}
-      ${b.canton ? ' · ' + escape(b.canton) : ''}
-      ${b.sous_categorie ? ' · ' + escape(b.sous_categorie) : ''}
+      ${escapeHtml(b.categorie || '—')}
+      ${b.canton ? ' · ' + escapeHtml(b.canton) : ''}
+      ${b.sous_categorie ? ' · ' + escapeHtml(b.sous_categorie) : ''}
     </div>`;
   card.appendChild(left);
 
@@ -194,6 +198,5 @@ function buildSpark(b) {
   return sv.node();
 }
 
-function escape(s) {
-  return String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-}
+// escapeHtml est exposé globalement par utils.js
+

@@ -36,20 +36,23 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   try {
-    DATA.summary    = await loadJSON('summary.json');
-    DATA.historique = await loadJSON('historique.json');
-    DATA.metrics    = await loadJSON('metrics_annuels.json');
-    DATA.detail     = await loadJSON('repartition_canton_jeu.json');
-    DATA.secteurs   = await loadJSON('repartition_secteur.json');
-    DATA.percapita  = await loadJSON('per_capita.json');
-    DATA.benefs     = await loadJSON('beneficiaires.json');
-    DATA.population = await loadJSON('population.json');
-    DATA.rf         = await loadJSON('rapports_financiers.json');
-    DATA.benefsVD   = await loadJSON('beneficiaires_top_vd.json');
-    DATA.swisslos   = await loadJSON('swisslos.json');
-    DATA.editorial  = await loadJSON('editorial_loro.json');
-    DATA.dependance = await loadJSON('dependance_cantons.json');
-    DATA.juraHistoire = await loadJSON('jura_histoire.json');
+    // Parallélisation : 13 fetchs en parallèle au lieu de séquentiel
+    // (gain de ~1-2s sur le first paint, surtout mobile)
+    const dataFiles = [
+      'summary.json', 'historique.json', 'metrics_annuels.json',
+      'repartition_canton_jeu.json', 'repartition_secteur.json',
+      'per_capita.json', 'beneficiaires.json', 'population.json',
+      'rapports_financiers.json', 'beneficiaires_top_vd.json',
+      'swisslos.json', 'editorial_loro.json', 'dependance_cantons.json',
+      'jura_histoire.json',
+    ];
+    const dataKeys = [
+      'summary', 'historique', 'metrics', 'detail', 'secteurs',
+      'percapita', 'benefs', 'population', 'rf', 'benefsVD',
+      'swisslos', 'editorial', 'dependance', 'juraHistoire',
+    ];
+    const loaded = await Promise.all(dataFiles.map(f => loadJSON(f)));
+    dataKeys.forEach((k, i) => { DATA[k] = loaded[i]; });
     // brb2025_full.json (1.7 MB) — load lazily when Acte IX nears the viewport.
     DATA.brb2025      = null;
     DATA.brb2025_loading = null;
@@ -3619,17 +3622,19 @@ function initTopBenefsVD() {
   // State: année sélectionnée
   let year = '2025';
 
-  // Couleurs par secteur (réutilisables et lisibles)
+  // Couleurs par secteur — clés alignées sur les NOMS COMPLETS utilisés
+  // dans les JSON sources (sinon plusieurs secteurs tombent sur le gris fallback).
+  // Couleurs alignées sur la palette principale utils.js.
   const SECTOR_COLORS = {
-    'Culture':                  '#c8102e',
-    'Action sociale':           '#5b8def',
-    'Sport':                    '#5a8a3d',
-    'Jeunesse et éducation':    '#f0a93d',
-    'Santé et handicap':        '#7c5bc7',
-    'Formation et recherche':   '#1a1917',
-    'Conservation patrimoine':  '#c89a2e',
-    'Environnement':            '#3aa37a',
-    'Promotion et tourisme':    '#e44d4d',
+    'Culture':                              '#c8102e',
+    'Action sociale et personnes âgées':    '#5b8def',
+    'Sport':                                '#f0a93d',
+    'Jeunesse et éducation':                '#7c5bc7',
+    'Conservation du patrimoine':           '#c97b3a',
+    'Promotion, tourisme et développement': '#2ea08a',
+    'Santé et handicap':                    '#e44d4d',
+    'Formation et recherche':               '#8a8a8a',
+    'Environnement':                        '#5fa052',
   };
 
   // Contrôles
@@ -4413,16 +4418,19 @@ const BRB_CANTON_LABELS = {
   VD: 'Vaud', FR: 'Fribourg', VS: 'Valais',
   NE: 'Neuchâtel', GE: 'Genève', JU: 'Jura', R: 'Suisse rom.'
 };
+// Palette secteurs pour le BRB explorer : doit utiliser les NOMS COMPLETS
+// (ceux qui apparaissent réellement dans les JSON brbXXXX_full.json).
+// Sinon les 6 secteurs sur 9 dont la clé est longue tombent sur le gris fallback.
 const BRB_SECTEUR_COLORS = {
-  'Action sociale': '#e44d4d',
-  'Jeunesse': '#5b8def',
-  'Santé': '#2ea08a',
-  'Culture': '#f0a93d',
-  'Formation': '#7c5bc7',
-  'Patrimoine': '#c97b3a',
-  'Environnement': '#7fb069',
-  'Tourisme': '#d96b9a',
-  'Sport': '#3d5a80'
+  'Action sociale et personnes âgées':    '#e44d4d',
+  'Jeunesse et éducation':                '#5b8def',
+  'Santé et handicap':                    '#2ea08a',
+  'Culture':                              '#f0a93d',
+  'Formation et recherche':               '#7c5bc7',
+  'Conservation du patrimoine':           '#c97b3a',
+  'Environnement':                        '#7fb069',
+  'Promotion, tourisme et développement': '#d96b9a',
+  'Sport':                                '#3d5a80',
 };
 
 // Helper local : couleur canton (gère "R" + 6 cantons)
@@ -4529,9 +4537,7 @@ function initBrbExplorer() {
   // Si le hash change après chargement (clic sur lien interne)
   window.addEventListener('hashchange', () => {
     applyHashFilter();
-    // Re-trigger render
-    const renderBtn = container.querySelector('.brb-pill[data-value="' + Array.from(state.cantons)[0] + '"]');
-    // Force update : recliquer mentalement (re-build pills active state)
+    // Re-trigger render : reconstruire l'état actif des pills
     container.querySelectorAll('.brb-pill[data-filter], .brb-pills .brb-pill').forEach(b => b.classList.remove('active'));
     state.cantons.forEach(c => {
       const btn = container.querySelector(`.brb-pill[data-value="${c}"]`);
@@ -4553,7 +4559,7 @@ function initBrbExplorer() {
       <div class="brb-filter-group">
         <span class="brb-filter-label">Secteur :</span>
         <div class="brb-pills" data-filter="secteur">
-          ${allSecteurs.map(s => `<button class="brb-pill${state.secteurs.has(s) ? ' active' : ''}" data-value="${s}" style="--pill-color:${BRB_SECTEUR_COLORS[s] || '#888'}">${s}</button>`).join('')}
+          ${allSecteurs.map(s => `<button class="brb-pill${state.secteurs.has(s) ? ' active' : ''}" data-value="${escapeHtml(s)}" style="--pill-color:${BRB_SECTEUR_COLORS[s] || '#888'}">${escapeHtml(s)}</button>`).join('')}
         </div>
       </div>
       <div class="brb-filter-group">
@@ -4611,21 +4617,21 @@ function initBrbExplorer() {
       const cColor = brbCantonColor(e.canton) || '#888';
       // Cross-canton aggregate badge: this beneficiary appears in multiple cantons
       const aggBadge = (e.agg_cantons && e.agg_cantons.length >= 2)
-        ? `<span class="brb-agg-badge" title="Aussi présent dans : ${e.agg_cantons.filter(c => c !== e.canton).join(', ')}. Cumul ${e.agg_count} entrées = ${(e.agg_total_CHF/1000).toFixed(0)}'000 CHF">+${e.agg_cantons.length - 1}↗</span>`
+        ? `<span class="brb-agg-badge" title="Aussi présent dans : ${escapeHtml(e.agg_cantons.filter(c => c !== e.canton).join(', '))}. Cumul ${e.agg_count} entrées = ${(e.agg_total_CHF/1000).toFixed(0)}'000 CHF">+${e.agg_cantons.length - 1}↗</span>`
         : '';
       return `
         <div class="brb-row">
           <div class="brb-row-bar" style="background: ${cColor}; width: ${widthPct}%;"></div>
           <div class="brb-row-content">
             <div class="brb-row-main">
-              <span class="brb-canton-tag" style="background:${cColor}">${e.canton}</span>
-              <span class="brb-row-name">${e.nom}</span>
+              <span class="brb-canton-tag" style="background:${cColor}">${escapeHtml(e.canton)}</span>
+              <span class="brb-row-name">${escapeHtml(e.nom)}</span>
               ${aggBadge}
-              ${e.ville ? `<span class="brb-row-ville">· ${e.ville}</span>` : ''}
+              ${e.ville ? `<span class="brb-row-ville">· ${escapeHtml(e.ville)}</span>` : ''}
             </div>
             <div class="brb-row-meta">
-              <span class="brb-row-secteur">${e.secteur}</span>
-              ${e.description ? `<span class="brb-row-desc">— ${e.description}</span>` : ''}
+              <span class="brb-row-secteur">${escapeHtml(e.secteur)}</span>
+              ${e.description ? `<span class="brb-row-desc">— ${escapeHtml(e.description)}</span>` : ''}
               ${e.agg_cantons && e.agg_cantons.length >= 2 ? `<span class="brb-row-agg">Cumul tous cantons : <strong>${e.agg_total_CHF.toLocaleString('fr-CH').replace(/,/g, "'")} CHF</strong> (${e.agg_cantons.length} cantons)</span>` : ''}
             </div>
           </div>
@@ -4832,9 +4838,9 @@ function initBrbMulticantons() {
       .replace(/[\s\-—–]+$/, '')   // strip trailing dash/whitespace (PDF truncation)
       .trim();
     nameCell.innerHTML = `
-      <div class="brb-multi-name">${cleanName}</div>
+      <div class="brb-multi-name">${escapeHtml(cleanName)}</div>
       <div class="brb-multi-meta">
-        ${row.sample_secteur || '—'} ·
+        ${escapeHtml(row.sample_secteur || '—')} ·
         ${row.cantons.size} cantons · ${row.count} attribution${row.count > 1 ? 's' : ''}
       </div>`;
     rowEl.appendChild(nameCell);
@@ -4869,7 +4875,7 @@ function initBrbMulticantons() {
       seg.addEventListener('mouseenter', (ev) => {
         const r = seg.getBoundingClientRect();
         showTip(
-          `<div class="t-title">${cleanName}</div>
+          `<div class="t-title">${escapeHtml(cleanName)}</div>
            <div><span style="display:inline-block;width:9px;height:9px;background:${brbCantonColor(s.canton)};border-radius:2px;vertical-align:1px;margin-right:6px"></span>${BRB_CANTON_LABELS[s.canton]}</div>
            <div><strong>${brbFmtAmt(s.amount)} CHF</strong> · ${((s.amount / row.total) * 100).toFixed(0)}% du cumul</div>`,
           r.left + r.width / 2, r.top
@@ -4923,9 +4929,9 @@ function initBrbMulticantons() {
                 ${cantonEntries.map(e => `
                   <div style="display:flex;gap:10px;align-items:flex-start;font-size:12px;padding:5px 8px;background:var(--bg,#fff);border-radius:4px">
                     <div style="flex:1">
-                      <div style="color:var(--ink)">${escapeBrb(e.nom || '')}</div>
-                      ${e.description ? `<div style="color:var(--ink-mute);font-size:11px;font-style:italic;margin-top:1px">› ${escapeBrb((e.description || '').slice(0, 140))}</div>` : ''}
-                      ${e.ville ? `<div style="color:var(--ink-mute);font-size:11px;margin-top:1px">📍 ${escapeBrb(e.ville)}</div>` : ''}
+                      <div style="color:var(--ink)">${escapeHtml(e.nom || '')}</div>
+                      ${e.description ? `<div style="color:var(--ink-mute);font-size:11px;font-style:italic;margin-top:1px">› ${escapeHtml((e.description || '').slice(0, 140))}</div>` : ''}
+                      ${e.ville ? `<div style="color:var(--ink-mute);font-size:11px;margin-top:1px">📍 ${escapeHtml(e.ville)}</div>` : ''}
                     </div>
                     <span style="font-family:'Source Serif Pro',serif;font-weight:600;color:var(--ink);min-width:80px;text-align:right">${brbFmtAmt(e.montant_CHF || 0)}</span>
                   </div>`).join('')}
@@ -4934,7 +4940,7 @@ function initBrbMulticantons() {
         }).join('');
         detail.innerHTML = `
           <div style="font-family:'Source Serif Pro',serif;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:12px">
-            Détail des ${row.count} attributions à ${cleanName} (2025)
+            Détail des ${row.count} attributions à ${escapeHtml(cleanName)} (2025)
           </div>
           ${html}
         `;
@@ -4943,10 +4949,7 @@ function initBrbMulticantons() {
   });
 }
 
-// Helper escape pour le drill-down inter-cantonal
-function escapeBrb(s) {
-  return (s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
-}
+// (escapeHtml est maintenant exporté globalement depuis utils.js)
 
 /* ============================================================
    ACTE IX — BRB LONG-TAIL : histogramme à bins logarithmiques
@@ -5062,7 +5065,7 @@ function initBrbLongtail() {
       const pctCount = (d.count / totalCount * 100).toFixed(1);
       const pctChf = (d.total / totalChf * 100).toFixed(1);
       const samples = d.samples.map(s =>
-        `<div style="margin-top:4px"><span style="opacity:.7">${s.nom.slice(0, 45)}</span> · <strong>${(s.montant_CHF/1000).toFixed(1)} k</strong></div>`
+        `<div style="margin-top:4px"><span style="opacity:.7">${escapeHtml((s.nom || '').slice(0, 45))}</span> · <strong>${(s.montant_CHF/1000).toFixed(1)} k</strong></div>`
       ).join('');
       const rect = container.getBoundingClientRect();
       tooltip.style('display', 'block')
@@ -5262,13 +5265,14 @@ async function initBrbGeomap() {
     .on('mouseenter', function(event, d) {
       d3.select(this).attr('fill-opacity', 0.85).attr('stroke-width', 2.2);
       const rect = container.getBoundingClientRect();
-      const topList = d.entries.slice(0, 5).map(e =>
-        `<div style="font-size:11px;margin-top:3px"><span style="opacity:.6">${e.secteur}</span> · ${e.nom.length > 45 ? e.nom.slice(0, 43) + '…' : e.nom} <strong>${brbFmtAmt(e.montant_CHF)} CHF</strong></div>`
-      ).join('');
+      const topList = d.entries.slice(0, 5).map(e => {
+        const shortNom = e.nom && e.nom.length > 45 ? e.nom.slice(0, 43) + '…' : (e.nom || '');
+        return `<div style="font-size:11px;margin-top:3px"><span style="opacity:.6">${escapeHtml(e.secteur)}</span> · ${escapeHtml(shortNom)} <strong>${brbFmtAmt(e.montant_CHF)} CHF</strong></div>`;
+      }).join('');
       tooltip.style('display', 'block')
         .style('left', (event.clientX - rect.left + 12) + 'px')
         .style('top', (event.clientY - rect.top + 12) + 'px')
-        .html(`<strong>${d.ville}</strong> · ${BRB_CANTON_LABELS[d.canton]}<br><strong>${brbFmtAmt(d.total)} CHF</strong> · ${d.count} bénéficiaire${d.count > 1 ? 's' : ''}<hr style="margin:6px 0; border-color: rgba(255,255,255,.15)">${topList}${d.entries.length > 5 ? `<div style="font-size:10px;opacity:.5;margin-top:4px">+ ${d.entries.length - 5} autres</div>` : ''}`);
+        .html(`<strong>${escapeHtml(d.ville)}</strong> · ${BRB_CANTON_LABELS[d.canton]}<br><strong>${brbFmtAmt(d.total)} CHF</strong> · ${d.count} bénéficiaire${d.count > 1 ? 's' : ''}<hr style="margin:6px 0; border-color: rgba(255,255,255,.15)">${topList}${d.entries.length > 5 ? `<div style="font-size:10px;opacity:.5;margin-top:4px">+ ${d.entries.length - 5} autres</div>` : ''}`);
     })
     .on('mouseleave', function() {
       d3.select(this).attr('fill-opacity', 0.55).attr('stroke-width', 1.4);

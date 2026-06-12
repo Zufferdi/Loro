@@ -18,16 +18,16 @@ Run AFTER parse_brb2023_v3.py + pipeline_brb.py.
 import json
 from pathlib import Path
 
-INPUT = Path('/home/claude/audit2/Loro-main/docs/data/brb2023_full.json')
-BACKUP = Path('/home/claude/audit2/Loro-main/docs/data/brb2023_full.backup_pre_fix.json')
+INPUT = (Path(__file__).resolve().parent.parent / 'docs' / 'data' / 'brb2023_full.json')
+BACKUP = (Path(__file__).resolve().parent.parent / 'docs' / 'data' / 'brb2023_full.backup_pre_fix.json')
 
 
 def main():
-    d = json.load(open(INPUT))
+    d = json.load(open(INPUT, encoding='utf-8'))
     entries = d['entries']
 
     # Save backup
-    BACKUP.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+    BACKUP.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
     print(f"📦 Backup: {BACKUP.name}")
 
     n_sec_assigned = 0
@@ -79,7 +79,7 @@ def main():
                 "fixed corrupted 'Section' ville entries; dropped trivial artifacts.",
     }
 
-    INPUT.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+    INPUT.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
 
     print(f"\n✅ Patched {INPUT.name}")
     print(f"   • {n_sec_assigned} entries assignées 'Action sociale et personnes âgées'")

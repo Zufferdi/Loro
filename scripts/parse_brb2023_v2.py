@@ -12,12 +12,13 @@ Solution: pre-scan to find all (canton-header, sector-header) positions.
 Then each entry's (canton, sector) is determined by the markers that follow it
 (canton) and that precede it (sector).
 """
+import sys
 import json
 import re
 from pathlib import Path
 
-INPUT = Path('/mnt/user-data/uploads/BRB2023.md')
-OUTPUT = Path('/home/claude/audit2/Loro-main/docs/data/brb2023_full.json')
+INPUT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path('/mnt/user-data/uploads/BRB2023.md')
+OUTPUT = (Path(__file__).resolve().parent.parent / 'docs' / 'data' / 'brb2023_full.json')
 
 CANTON_NAMES = {
     'Vaud': 'VD', 'Fribourg': 'FR', 'Valais': 'VS', 'Wallis': 'VS',

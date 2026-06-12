@@ -3,10 +3,10 @@
 import json
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 
 # Charger trajectoires consolidées
-trajs = json.load(open(DATA / 'trajectories_2021_2025.json'))['beneficiaires']
+trajs = json.load(open(DATA / 'trajectories_2021_2025.json', encoding='utf-8'))['beneficiaires']
 
 # Filtre : présence ≥4 années + total ≥1M
 piliers = [t for t in trajs if t['nb_years_active'] >= 4 and t['total'] >= 1_000_000]
@@ -41,7 +41,7 @@ result = {
     'candidats': out_candidats,
     'beneficiaires': out_candidats,  # double key pour compat
 }
-open(DATA / 'beneficiaires_series_2021_2025.json', 'w').write(json.dumps(result, ensure_ascii=False, indent=2))
+open(DATA / 'beneficiaires_series_2021_2025.json', 'w', encoding='utf-8').write(json.dumps(result, ensure_ascii=False, indent=2))
 print(f"  ✓ beneficiaires_series_2021_2025 — {len(out_candidats)} piliers structurels")
 print(f"\n  15 piliers :")
 for i, c in enumerate(out_candidats, 1):

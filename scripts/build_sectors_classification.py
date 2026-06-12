@@ -316,7 +316,7 @@ def classify_entry(entry: dict, compiled_patterns: list) -> str | None:
 def build_classification(sector_name: str, slug: str, patterns: list,
                          input_path: Path, output_path: Path) -> dict:
     """Build classification for one sector + one year."""
-    with open(input_path) as f:
+    with open(input_path, encoding='utf-8') as f:
         data = json.load(f)
     entries = data['entries']
 
@@ -385,7 +385,7 @@ def build_classification(sector_name: str, slug: str, patterns: list,
         'categories': categories,
     }
 
-    with open(output_path, 'w') as f:
+    with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
     return out['_meta']
 

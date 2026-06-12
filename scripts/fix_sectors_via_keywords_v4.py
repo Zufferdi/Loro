@@ -7,7 +7,7 @@ Final-pass corrections for 2024 catch-all entries.
 import json, re
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 
 OVERRIDE_RULES_V4 = [
     # Culture (théâtres et orchestres encore mal classés)
@@ -47,7 +47,7 @@ def main():
     total = 0
     for y in ['2021', '2022', '2023', '2024', '2025']:
         p = DATA / f'brb{y}_full.json'
-        d = json.load(open(p))
+        d = json.load(open(p, encoding='utf-8'))
         n = 0
         for e in d['entries']:
             t = find_override(e)
@@ -56,7 +56,7 @@ def main():
                 n += 1
         if n:
             d['_meta']['sector_overrides_v4'] = {'count': n, 'date': '2026-06-04'}
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
         print(f"  brb{y}: {n} overrides v4")
         total += n
     
@@ -64,7 +64,7 @@ def main():
     print(f"\n  Cleanup fragments orphelins (Va la is, etc.)")
     for y in ['2021', '2022', '2023', '2024', '2025']:
         p = DATA / f'brb{y}_full.json'
-        d = json.load(open(p))
+        d = json.load(open(p, encoding='utf-8'))
         n_drop = 0
         new_entries = []
         for e in d['entries']:
@@ -81,7 +81,7 @@ def main():
             d['entries'] = new_entries
             d['_meta']['total_entries'] = len(new_entries)
             d['_meta']['total_chf'] = sum(e['montant_CHF'] for e in new_entries)
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
             print(f"    brb{y}: {n_drop} fragments orphelins droppés")
     
     print(f"\nTotal v4: {total}")

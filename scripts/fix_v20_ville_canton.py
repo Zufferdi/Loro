@@ -9,7 +9,7 @@ On corrige uniquement les villes secondaires non ambiguës.
 import json
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 
 # Villes secondaires non ambiguës (UNIQUEMENT dans un canton)
 # Exclus : Lausanne, Genève, Fribourg, Sion, Neuchâtel, Delémont, Bulle, Sierre, Martigny, Yverdon (peuvent avoir orgs intercantonales)
@@ -60,7 +60,7 @@ def main():
     examples = []
     for y in ['2021', '2022', '2023', '2024', '2025']:
         p = DATA / f'brb{y}_full.json'
-        d = json.load(open(p))
+        d = json.load(open(p, encoding='utf-8'))
         fixed = 0
         for e in d['entries']:
             ville = (e.get('ville') or '').strip()
@@ -74,7 +74,7 @@ def main():
                 fixed += 1
         if fixed:
             d['_meta'].setdefault('fixes', {})['v20_ville_canton'] = {'count': fixed}
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
         print(f"  {y}: {fixed} cantons fixés via ville")
         total += fixed
     print(f"\n  Total : {total}")

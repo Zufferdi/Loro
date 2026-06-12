@@ -156,7 +156,7 @@ EXTRA_CITY_COORDS = {
 
 
 def main():
-    with open(INPUT) as f:
+    with open(INPUT, encoding='utf-8') as f:
         data = json.load(f)
     entries = data['entries']
 
@@ -220,7 +220,7 @@ def main():
     backup = INPUT.with_suffix('.backup_geoloc_v13_10.json')
     if not backup.exists():
         shutil.copy(INPUT, backup)
-    with open(INPUT, 'w') as f:
+    with open(INPUT, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     print(f"✅ Written {INPUT}")
     print(f"💾 Backup: {backup}")

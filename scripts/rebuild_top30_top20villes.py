@@ -8,7 +8,7 @@ import unicodedata
 from collections import defaultdict, Counter
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 YEARS = ['2021', '2022', '2023', '2024', '2025']
 
 # Aliases (extrait de rebuild_all_with_aliases.py)
@@ -127,7 +127,7 @@ def build_top30_for_year(year_or_all):
     by_key = defaultdict(lambda: {'entries': [], 'is_alias': False, 'cantons': set(), 'secteurs': set(), 'villes': set()})
     
     for y in years:
-        d = json.load(open(DATA / f'brb{y}_full.json'))
+        d = json.load(open(DATA / f'brb{y}_full.json', encoding='utf-8'))
         for e in d['entries']:
             key_info = get_canonical_key(e['nom'])
             if not key_info: continue
@@ -173,7 +173,7 @@ def build_top20_villes_for_year(year_or_all):
         years = [year_or_all]
     by_ville = defaultdict(lambda: {'total_CHF': 0, 'count': 0, 'cantons': set(), 'beneficiaires': set()})
     for y in years:
-        d = json.load(open(DATA / f'brb{y}_full.json'))
+        d = json.load(open(DATA / f'brb{y}_full.json', encoding='utf-8'))
         for e in d['entries']:
             ville = e.get('ville') or ''
             if not ville: continue
@@ -203,14 +203,14 @@ for y in YEARS:
         '_meta': {'year': y, 'consolidated_with_aliases': True, 'aliases_count': sum(1 for r in rows if r['is_consolidated'])},
         'beneficiaires': rows,
     }
-    open(DATA / f'top30_beneficiaires_{y}.json', 'w').write(json.dumps(out, ensure_ascii=False, indent=2))
+    open(DATA / f'top30_beneficiaires_{y}.json', 'w', encoding='utf-8').write(json.dumps(out, ensure_ascii=False, indent=2))
     
     villes = build_top20_villes_for_year(y)
     out_v = {
         '_meta': {'year': y, 'count': len(villes)},
         'villes': villes,
     }
-    open(DATA / f'top20_villes_{y}.json', 'w').write(json.dumps(out_v, ensure_ascii=False, indent=2))
+    open(DATA / f'top20_villes_{y}.json', 'w', encoding='utf-8').write(json.dumps(out_v, ensure_ascii=False, indent=2))
     print(f"  ✓ {y}: top30 ({sum(1 for r in rows if r['is_consolidated'])} consolidés) + top20 villes")
 
 # Default (= 2025)
@@ -221,7 +221,7 @@ print(f"  ✓ Default (2025) copié")
 
 # Show top 10 of 2025
 print("\n  ─── Top 10 absolus 2025 (avec consolidation) ───")
-top_2025 = json.load(open(DATA / 'top30_beneficiaires_2025.json'))['beneficiaires']
+top_2025 = json.load(open(DATA / 'top30_beneficiaires_2025.json', encoding='utf-8'))['beneficiaires']
 for i, b in enumerate(top_2025[:10], 1):
     mark = '⊕' if b['is_consolidated'] else ' '
     print(f"   {i:>2}. {mark} {b['nom'][:55]:<55} {b['total_CHF']/1e6:>5.2f}M ({b['count']}×)")

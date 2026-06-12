@@ -10,7 +10,7 @@ import statistics
 from collections import defaultdict, Counter
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 YEARS = ['2021', '2022', '2023', '2024', '2025']
 
 # Aliases pour fusion explicite (clé canonique → patterns à matcher)
@@ -167,7 +167,7 @@ beneficiaires = defaultdict(lambda: {
 })
 
 for year in YEARS:
-    d = json.load(open(DATA / f'brb{year}_full.json'))
+    d = json.load(open(DATA / f'brb{year}_full.json', encoding='utf-8'))
     for e in d['entries']:
         key_info = get_canonical_key(e['nom'])
         if not key_info: continue
@@ -231,7 +231,7 @@ result = {
     },
     'beneficiaires': out_top,
 }
-open(DATA / 'beneficiaires_cumul_2021_2025.json', 'w').write(json.dumps(result, ensure_ascii=False, indent=2))
+open(DATA / 'beneficiaires_cumul_2021_2025.json', 'w', encoding='utf-8').write(json.dumps(result, ensure_ascii=False, indent=2))
 print(f"  ✓ beneficiaires_cumul_2021_2025 — {len(out_top)} top, dont {sum(1 for b in out_top if b['is_consolidated'])} consolidés via aliases")
 
 # Show top 10 with consolidation info

@@ -23,12 +23,22 @@ function fmtCompact(v) {
 const CANTON_COLORS = {
   VD: '#e44d4d', FR: '#5b8def', VS: '#f0a93d',
   NE: '#7c5bc7', GE: '#2ea08a', JU: '#c97b3a',
+  R:  '#888888',   // Suisse romande / inter-cantonal
 };
 const CANTON_NAMES = {
   VD: 'Vaud', FR: 'Fribourg', VS: 'Valais',
   NE: 'Neuchâtel', GE: 'Genève', JU: 'Jura',
+  R:  'Suisse romande',
 };
 const CANTONS_ORDER = ['VD', 'GE', 'VS', 'FR', 'NE', 'JU'];
+
+/** Échappe les caractères HTML — à utiliser PARTOUT où l'on inject des données
+ *  utilisateur / JSON dans innerHTML / template strings. */
+function escapeHtml(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
 
 /** Couleurs secteurs (palette éditoriale) */
 const SECTOR_COLORS = {

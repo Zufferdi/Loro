@@ -21,18 +21,20 @@
     '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
   }[c]));
 
-  // Sector palette (matches existing viz where possible)
+  // Palette secteurs — clés alignées sur les NOMS COMPLETS utilisés dans les JSON sources.
+  // (Auparavant, les clés courtes 'Action sociale' / 'Santé' / etc. faisaient
+  //  tomber 6 secteurs sur 9 sur le gris fallback dans le treemap.)
   const SECTEUR_COLORS = {
-    'Culture':         '#d04a4a',
-    'Sport':           '#3a8acc',
-    'Action sociale':  '#e08840',
-    'Environnement':   '#5aa05a',
-    'Santé':           '#a85ab8',
-    'Patrimoine':      '#b8923a',
-    'Jeunesse':        '#3a9aa8',
-    'Formation':       '#7e5ab8',
-    'Tourisme':        '#888888',
-    'n/a':             '#bbbbbb',
+    'Culture':                              '#c8102e',
+    'Sport':                                '#f0a93d',
+    'Action sociale et personnes âgées':    '#5b8def',
+    'Jeunesse et éducation':                '#7c5bc7',
+    'Santé et handicap':                    '#e44d4d',
+    'Conservation du patrimoine':           '#c97b3a',
+    'Formation et recherche':               '#8a8a8a',
+    'Promotion, tourisme et développement': '#2ea08a',
+    'Environnement':                        '#5fa052',
+    'n/a':                                  '#bbbbbb',
   };
 
   function lazyInit(id, renderer) {
@@ -80,7 +82,11 @@
       .then(data => {
         const benefs = data.beneficiaires || [];
         const meta = data._meta || {};
-        const maxAmt = Math.max(...benefs.map(b => b.total_chf), 1);
+        // Le JSON utilise total_CHF (majuscule) et secteur_principal — pas total_chf / top_secteur.
+        const maxAmt = Math.max(...benefs.map(b => b.total_CHF || 0), 1);
+        const cumulTotal = benefs.reduce((s, b) => s + (b.total_CHF || 0), 0);
+        const yearTotal = (YEAR_TOTALS && YEAR_TOTALS[year]) || 0;
+        const pctOfBrb = yearTotal > 0 ? Math.round((cumulTotal / yearTotal) * 100) : '?';
         container.innerHTML = '';
         addYearSelector(container, year, renderTop30);
 
@@ -89,8 +95,8 @@
         banner.className = 'top30-banner';
         banner.innerHTML = `
           <div class="top30-stat">
-            <div class="top30-stat-val">${fmtCHF(meta.top30_total_chf || 0)}</div>
-            <div class="top30-stat-lbl">cumul top 30 — soit ${meta.top30_pct_of_brb}&nbsp;% du BRB ${year}</div>
+            <div class="top30-stat-val">${fmtCHF(cumulTotal)}</div>
+            <div class="top30-stat-lbl">cumul top 30 — soit ${pctOfBrb}&nbsp;% du BRB ${year}</div>
           </div>
         `;
         container.appendChild(banner);
@@ -98,26 +104,28 @@
         const list = document.createElement('div');
         list.className = 'top30-list';
         benefs.forEach((b, i) => {
-          const w = Math.max(2, (b.total_chf / maxAmt) * 100);
-          const cantonsHTML = b.cantons.map(c => `<span class="top30-canton ${cantonClass(c)}">${c}</span>`).join('');
+          const w = Math.max(2, ((b.total_CHF || 0) / maxAmt) * 100);
+          const cantonsArr = b.cantons || [];
+          const cantonsHTML = cantonsArr.map(c => `<span class="top30-canton ${cantonClass(c)}">${escapeHtml(c)}</span>`).join('');
+          const isMulti = b.is_multi_canton != null ? b.is_multi_canton : (cantonsArr.length > 1);
           const row = document.createElement('div');
           row.className = 'top30-row';
           row.innerHTML = `
             <div class="top30-rank">${i + 1}</div>
             <div class="top30-body">
               <div class="top30-head">
-                <div class="top30-nom">${escapeHtml(b.nom)}${b.is_multi_canton ? '<span class="top30-multi" title="Multi-canton">⇆</span>' : ''}</div>
+                <div class="top30-nom">${escapeHtml(b.nom)}${isMulti ? '<span class="top30-multi" title="Multi-canton">⇆</span>' : ''}</div>
                 <div class="top30-meta">
                   ${b.ville ? `<span class="top30-ville">${escapeHtml(b.ville)}</span>` : ''}
                   <span class="top30-cantons">${cantonsHTML}</span>
-                  <span class="top30-secteur">${escapeHtml(b.top_secteur || '')}</span>
-                  <span class="top30-amt">${fmtCHF(b.total_chf)}</span>
+                  <span class="top30-secteur">${escapeHtml(b.secteur_principal || '')}</span>
+                  <span class="top30-amt">${fmtCHF(b.total_CHF || 0)}</span>
                 </div>
               </div>
               <div class="top30-bar-wrap">
                 <div class="top30-bar" style="width:${w}%"></div>
               </div>
-              ${b.attributions > 1 ? `<div class="top30-note">${b.attributions} attributions distinctes${b.is_multi_canton ? ` · réparties sur ${b.cantons.length} cantons` : ''}</div>` : ''}
+              ${b.count > 1 ? `<div class="top30-note">${b.count} attributions distinctes${isMulti ? ` · réparties sur ${cantonsArr.length} cantons` : ''}</div>` : ''}
             </div>
           `;
           list.appendChild(row);
@@ -139,7 +147,10 @@
       .then(data => {
         const villes = data.villes || [];
         const meta = data._meta || {};
-        const maxAmt = Math.max(...villes.map(v => v.total_chf), 1);
+        const maxAmt = Math.max(...villes.map(v => v.total_CHF || 0), 1);
+        const cumulTotal = villes.reduce((s, v) => s + (v.total_CHF || 0), 0);
+        const yearTotal = (YEAR_TOTALS && YEAR_TOTALS[year]) || 0;
+        const pctOfBrb = yearTotal > 0 ? Math.round((cumulTotal / yearTotal) * 100) : '?';
         container.innerHTML = '';
         addYearSelector(container, year, renderTop20Villes);
 
@@ -147,8 +158,8 @@
         banner.className = 'top30-banner';
         banner.innerHTML = `
           <div class="top30-stat">
-            <div class="top30-stat-val">${fmtCHF(meta.top20_total_chf || 0)}</div>
-            <div class="top30-stat-lbl">cumul top 20 villes — soit ${Math.round(100*meta.top20_total_chf/YEAR_TOTALS[year])}&nbsp;% du BRB ${year}</div>
+            <div class="top30-stat-val">${fmtCHF(cumulTotal)}</div>
+            <div class="top30-stat-lbl">cumul top 20 villes — soit ${pctOfBrb}&nbsp;% du BRB ${year}</div>
           </div>
         `;
         container.appendChild(banner);
@@ -156,9 +167,9 @@
         const list = document.createElement('div');
         list.className = 'top30-list villes-list';
         villes.forEach((v, i) => {
-          const w = Math.max(2, (v.total_chf / maxAmt) * 100);
-          const cantonsHTML = v.cantons.filter(Boolean).map(c => `<span class="top30-canton ${cantonClass(c)}">${c}</span>`).join('');
-          const nbBenefs = v.nb_beneficiaires || (v.top_beneficiaires && v.top_beneficiaires.length) || 0;
+          const w = Math.max(2, ((v.total_CHF || 0) / maxAmt) * 100);
+          const cantonsHTML = (v.cantons || []).filter(Boolean).map(c => `<span class="top30-canton ${cantonClass(c)}">${escapeHtml(c)}</span>`).join('');
+          const nbBenefs = v.nb_beneficiaires || (v.top_beneficiaires && v.top_beneficiaires.length) || v.count || 0;
           const row = document.createElement('div');
           row.className = 'top30-row villes-row';
           row.style.cssText = 'cursor:pointer';
@@ -169,8 +180,8 @@
                 <div class="top30-nom">${escapeHtml(v.ville)}${v.lat ? '<span class="top30-geo" title="Géolocalisée">📍</span>' : ''}</div>
                 <div class="top30-meta">
                   <span class="top30-cantons">${cantonsHTML}</span>
-                  <span class="top30-secteur">${nbBenefs || v.count} bénéficiaires</span>
-                  <span class="top30-amt">${fmtCHF(v.total_chf)}</span>
+                  <span class="top30-secteur">${nbBenefs} bénéficiaires</span>
+                  <span class="top30-amt">${fmtCHF(v.total_CHF || 0)}</span>
                   <span class="top30-expand" style="font-size:12px;color:var(--ink-mute);width:14px;text-align:center">▸</span>
                 </div>
               </div>
@@ -201,12 +212,12 @@
               const showing = benefs.length >= 30 ? 'Top 30' : `${benefs.length}`;
               detail.innerHTML = `
                 <div style="font-family:'Source Serif Pro',serif;font-size:12.5px;font-weight:600;color:var(--ink);margin-bottom:10px">
-                  ${showing} bénéficiaires à ${escapeHtml(v.ville)} en ${year} · cumul ${fmtCHF(v.total_chf)}
+                  ${showing} bénéficiaires à ${escapeHtml(v.ville)} en ${year} · cumul ${fmtCHF(v.total_CHF || 0)}
                 </div>
                 <div style="display:flex;flex-direction:column;gap:3px;max-height:400px;overflow-y:auto">
                   ${benefs.map(b => `
                     <div style="display:flex;gap:10px;align-items:flex-start;font-size:12px;padding:5px 8px;background:var(--bg,#fff);border-radius:4px">
-                      <span class="top30-canton ${cantonClass(b.canton)}" style="font-size:10px">${b.canton}</span>
+                      <span class="top30-canton ${cantonClass(b.canton)}" style="font-size:10px">${escapeHtml(b.canton)}</span>
                       <div style="flex:1">
                         <div style="color:var(--ink)">${escapeHtml(b.nom)}</div>
                         ${b.description ? `<div style="color:var(--ink-mute);font-size:11px;font-style:italic;margin-top:1px">› ${escapeHtml(b.description)}</div>` : ''}

@@ -8,7 +8,7 @@ Beaucoup d'entries mal classées au niveau du SECTEUR officiel.
 import json, re
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 
 RULES = [
     # ─── CULTURE (entries actuellement social/sante/jeunesse/promotion)
@@ -70,7 +70,7 @@ def main():
     by_year = {}
     for y in ['2021', '2022', '2023', '2024', '2025']:
         p = DATA / f'brb{y}_full.json'
-        d = json.load(open(p))
+        d = json.load(open(p, encoding='utf-8'))
         log = []
         for e in d['entries']:
             t = find_override(e)
@@ -78,7 +78,7 @@ def main():
                 log.append((e['secteur'], t, e['montant_CHF'], e['nom'][:50]))
                 e['secteur'] = t
         d['_meta']['sector_overrides_v8'] = {'count': len(log), 'date': '2026-06-04'}
-        p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+        p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
         by_year[y] = log
         total += len(log)
     

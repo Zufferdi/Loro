@@ -69,7 +69,7 @@ def classify(entry: dict) -> str | None:
 
 
 def main():
-    with open(INPUT) as f:
+    with open(INPUT, encoding='utf-8') as f:
         data = json.load(f)
     entries = data['entries']
     total_chf_all = sum(e.get('montant_CHF', 0) for e in entries)
@@ -138,7 +138,7 @@ def main():
         'sports': sports,
     }
 
-    with open(OUTPUT, 'w') as f:
+    with open(OUTPUT, 'w', encoding='utf-8') as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
 
     print(f"Classified {total_classified_count} entries ({out['_meta']['pct_entries_classified']}%)")

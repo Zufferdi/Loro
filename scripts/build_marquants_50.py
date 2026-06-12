@@ -3,7 +3,7 @@
 import json
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 
 # Citations/sources/texte par bénéficiaire (croisé manuellement avec recherches web)
 EDITORIAL = {
@@ -234,8 +234,8 @@ EDITORIAL = {
 }
 
 # Reuse cross_2021_2025_top + beneficiaires_cumul to build the 50
-cross_data = json.load(open(DATA / 'cross_2021_2025_top.json'))
-cumul_data = json.load(open(DATA / 'beneficiaires_cumul_2021_2025.json'))
+cross_data = json.load(open(DATA / 'cross_2021_2025_top.json', encoding='utf-8'))
+cumul_data = json.load(open(DATA / 'beneficiaires_cumul_2021_2025.json', encoding='utf-8'))
 
 # Build 50 from cumul (top 50 by total)
 marquants = []
@@ -281,7 +281,7 @@ result = {
     },
     'marquants': marquants,
 }
-open(DATA / 'marquants_2021_2025_top50.json', 'w').write(json.dumps(result, ensure_ascii=False, indent=2))
+open(DATA / 'marquants_2021_2025_top50.json', 'w', encoding='utf-8').write(json.dumps(result, ensure_ascii=False, indent=2))
 print(f"  ✓ marquants_2021_2025_top50.json — {len(marquants)} bénéficiaires, dont {sum(1 for m in marquants if m['editorial'])} avec citation/source")
 print(f"\n  Premiers 10 :")
 for i, m in enumerate(marquants[:10], 1):

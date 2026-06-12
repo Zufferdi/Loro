@@ -118,8 +118,8 @@
 
     document.addEventListener('touchstart', (e) => {
       const target = e.target;
-      // Si on tape sur un élément interactif d'une viz
-      if (target.closest('.viz') && (target.tagName === 'circle' || 
+      // Si on tape sur un élément interactif d'une viz-card
+      if (target.closest('.viz-card') && (target.tagName === 'circle' || 
           target.tagName === 'rect' || target.tagName === 'path')) {
         if (lastTouchedEl && lastTouchedEl !== target) {
           dispatchMouse(lastTouchedEl, 'mouseleave');
@@ -420,38 +420,32 @@
      de référence dans :root pour cohérence future et dark mode.
      ============================================================ */
   function setupColorVars() {
+    // Note: ces CSS vars sont alignées sur la palette canonique de utils.js
+    // (SECTOR_COLORS / CANTON_COLORS). Elles servent de référence pour les
+    // futures viz qui voudraient utiliser var(--sec-xxx) au lieu de hex.
     const style = document.createElement('style');
     style.textContent = `
       :root {
-        --sec-culture:    #c8102e;
-        --sec-sport:      #5b8def;
-        --sec-social:     #7c5bc7;
-        --sec-sante:      #2da565;
-        --sec-jeunesse:   #f0a93d;
-        --sec-patrimoine: #8b6f47;
-        --sec-environnement: #4a7c4e;
-        --sec-promotion:  #d9534f;
-        --sec-formation:  #4a90e2;
-        --sec-autre:      #9b9b9b;
-        --canton-vd: #28a745;
-        --canton-ge: #fd7e14;
-        --canton-vs: #c8102e;
-        --canton-fr: #6f42c1;
-        --canton-ne: #20c997;
-        --canton-ju: #ffc107;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --sec-culture:    #e84a5f;
-          --sec-sport:      #7da5ff;
-          --sec-social:     #9b7fd9;
-          --sec-sante:      #4dc77f;
-          --sec-jeunesse:   #ffc15a;
-        }
+        --sec-culture:       #c8102e;
+        --sec-sport:         #f0a93d;
+        --sec-social:        #5b8def;
+        --sec-jeunesse:      #7c5bc7;
+        --sec-patrimoine:    #c97b3a;
+        --sec-promotion:     #2ea08a;
+        --sec-sante:         #e44d4d;
+        --sec-formation:     #8a8a8a;
+        --sec-environnement: #5fa052;
+        --sec-autre:         #9b9b9b;
+        --canton-vd: #e44d4d;
+        --canton-ge: #2ea08a;
+        --canton-vs: #f0a93d;
+        --canton-fr: #5b8def;
+        --canton-ne: #7c5bc7;
+        --canton-ju: #c97b3a;
       }
     `;
     document.head.appendChild(style);
-    console.log('[viz-enh] CSS vars sectorielles définies (référence future)');
+    console.log('[viz-enh] CSS vars sectorielles définies (alignées sur utils.js)');
   }
 
   /* ============================================================

@@ -33,7 +33,7 @@ import unicodedata
 from pathlib import Path
 from collections import defaultdict, Counter
 
-DATA = Path('/home/claude/audit2/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 YEARS = ['2023', '2024', '2025']
 SUFFIX = {y: '' if y == '2025' else f'_{y}' for y in YEARS}
 
@@ -65,7 +65,7 @@ def load_classification(classif_name: str, year: str):
     p = DATA / f'{classif_name}_classification{SUFFIX[year]}.json'
     if not p.exists():
         return None
-    return json.load(open(p))
+    return json.load(open(p, encoding='utf-8'))
 
 
 def get_categories(d: dict) -> list:
@@ -219,7 +219,7 @@ def re_classify(classif: str, mapping: dict):
         
         # Save
         p = DATA / f'{classif}_classification{SUFFIX[y]}.json'
-        p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+        p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
     
     return reclassified_count, moved_chf
 

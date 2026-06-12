@@ -35,11 +35,26 @@
   }
 
   const fmt = n => {
+    if (n == null) return '—';
     if (n === 0) return '—';
     if (n >= 1e6) return (n / 1e6).toFixed(2) + ' M';
     if (n >= 1e3) return Math.round(n / 1e3) + ' k';
-    return n.toString();
+    return String(n);
   };
+
+  function escapeHtml(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[c]));
+  }
+
+  // Filtre les URLs : autorise http(s) et chemins relatifs, rejette javascript: / data: / etc.
+  function safeUrl(u) {
+    if (!u) return '';
+    const s = String(u).trim();
+    if (/^(https?:|\/|\.\/|\.\.\/)/i.test(s)) return s;
+    return '';
+  }
 
   function makeSparkline(amts, w, h) {
     const max = Math.max(...amts.filter(x => x > 0), 1);
@@ -110,8 +125,8 @@
         row.innerHTML = `
           <div style="font-size:12px; color:var(--ink-mute); text-align:right">${idx + 1}.</div>
           <div>
-            <div style="font-weight:600; font-size:13px; color:var(--ink); display:flex; align-items:center; gap:6px">${mark} ${m.nom}</div>
-            <div style="font-size:11px; color:var(--ink-mute); margin-top:2px">${m.secteur || ''} · ${cantons}</div>
+            <div style="font-weight:600; font-size:13px; color:var(--ink); display:flex; align-items:center; gap:6px">${mark} ${escapeHtml(m.nom)}</div>
+            <div style="font-size:11px; color:var(--ink-mute); margin-top:2px">${escapeHtml(m.secteur || '')} · ${escapeHtml(cantons)}</div>
           </div>
           <div style="font-size:12px; color:var(--ink); font-weight:600">${fmt(m.total_cumul)} <span style="color:var(--ink-mute); font-weight:normal">/${m.count_cumul}×</span></div>
           <div style="font-size:11px; color:var(--ink-mute); text-align:right">${fmt(m.amount_2021)}</div>
@@ -161,12 +176,13 @@
       det.className = 'marquant-details';
       det.style.cssText = 'padding:16px 18px; background:var(--bg); border-left:4px solid var(--c-loro); margin:2px 0 8px 0; border-radius:0 6px 6px 0;';
       const ed = m.editorial;
+      const safeCitationUrl = safeUrl(ed.citation_url);
       det.innerHTML = `
-        <div style="font-weight:600; font-size:14px; color:var(--ink); margin-bottom:4px">${ed.titre_court}</div>
-        <p style="margin:0 0 10px 0; font-size:13px; color:var(--ink); line-height:1.5">${ed.texte}</p>
+        <div style="font-weight:600; font-size:14px; color:var(--ink); margin-bottom:4px">${escapeHtml(ed.titre_court)}</div>
+        <p style="margin:0 0 10px 0; font-size:13px; color:var(--ink); line-height:1.5">${escapeHtml(ed.texte)}</p>
         <blockquote style="border-left:3px solid var(--c-loro); padding:8px 14px; margin:10px 0; font-style:italic; font-family:'Source Serif Pro',serif; font-size:14px; color:var(--ink)">
-          ${ed.citation}
-          <footer style="font-size:11px; color:var(--ink-mute); margin-top:4px; font-style:normal">— <strong>${ed.citation_source}</strong>${ed.citation_date ? ' · ' + ed.citation_date : ''}${ed.citation_url ? ' · <a href="' + ed.citation_url + '" target="_blank" rel="noopener" style="color:var(--c-loro)">source ↗</a>' : ''}</footer>
+          ${escapeHtml(ed.citation)}
+          <footer style="font-size:11px; color:var(--ink-mute); margin-top:4px; font-style:normal">— <strong>${escapeHtml(ed.citation_source)}</strong>${ed.citation_date ? ' · ' + escapeHtml(ed.citation_date) : ''}${safeCitationUrl ? ' · <a href="' + escapeHtml(safeCitationUrl) + '" target="_blank" rel="noopener" style="color:var(--c-loro)">source ↗</a>' : ''}</footer>
         </blockquote>
       `;
       row.insertAdjacentElement('afterend', det);

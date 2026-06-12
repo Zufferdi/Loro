@@ -431,7 +431,7 @@ def run_pipeline(
 
     if verbose:
         print(f"📂 Reading {input_path}")
-    with open(input_path) as f:
+    with open(input_path, encoding='utf-8') as f:
         data = json.load(f)
     entries = data.get('entries', [])
     n_initial = len(entries)
@@ -525,7 +525,7 @@ def run_pipeline(
         data['_meta'] = meta
         data['entries'] = entries
         # Write
-        with open(output_path, 'w') as f:
+        with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
         if verbose:
             print(f"✅ Written: {output_path}")
@@ -569,10 +569,14 @@ def main():
         verbose=not args.quiet,
     )
 
-    # Exit code: 0 if clean, 1 if any unresolved issues
-    has_issues = any(v > 0 for v in report['audit_after'].values() if not v == report['audit_after'].get('exact_duplicates_remaining'))
-    # exact_duplicates_remaining > 0 is OK (legitimate multi-attribution)
-    raise SystemExit(0)
+    # Exit code: 0 if clean, 1 if any unresolved issues (hors duplicats légitimes).
+    # exact_duplicates_remaining > 0 est OK (vraies multi-attributions).
+    audit = report.get('audit_after', {})
+    has_issues = any(
+        v > 0 for k, v in audit.items()
+        if k != 'exact_duplicates_remaining'
+    )
+    raise SystemExit(1 if has_issues else 0)
 
 
 if __name__ == '__main__':

@@ -8,7 +8,7 @@ import json
 import re
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 
 # Patterns à reclassifier (Sport → Culture)
 SPORT_TO_CULTURE = [
@@ -49,7 +49,7 @@ def main():
     total = 0
     for y in ['2021', '2022', '2023', '2024', '2025']:
         p = DATA / f'brb{y}_full.json'
-        d = json.load(open(p))
+        d = json.load(open(p, encoding='utf-8'))
         fixed = 0
         for e in d['entries']:
             if e.get('secteur') != 'Sport': continue
@@ -89,7 +89,7 @@ def main():
         
         if fixed:
             d['_meta'].setdefault('fixes', {})['v21_sport_culture'] = {'count': fixed}
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
         print(f"  {y}: {fixed} entries Sport → Culture reclassifiées")
         total += fixed
     print(f"\n  Total : {total}")

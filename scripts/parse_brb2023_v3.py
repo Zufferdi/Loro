@@ -11,13 +11,14 @@ Approach (after v2 failed):
     just sub-totals scattered through the document, sometimes at the start
     of a block (Genève), sometimes at the end (Vaud).
 """
+import sys
 import json
 import re
 import unicodedata
 from pathlib import Path
 
-ROOT = Path('/home/claude/audit2/Loro-main')
-INPUT = Path('/mnt/user-data/uploads/BRB2023.md')
+ROOT = Path(__file__).resolve().parent.parent
+INPUT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path('/mnt/user-data/uploads/BRB2023.md')
 OUTPUT = ROOT / 'docs' / 'data' / 'brb2023_full.json'
 
 CANTON_NAMES = {
@@ -199,7 +200,7 @@ def build_ville_to_canton():
         p = ROOT / 'docs' / 'data' / f'brb{year}_full.json'
         if not p.exists():
             continue
-        d = json.load(open(p))
+        d = json.load(open(p, encoding='utf-8'))
         for e in d['entries']:
             v = e.get('ville')
             c = e.get('canton')

@@ -2,23 +2,17 @@
 """build_aggregations_2022.py — version 2022 du builder d'agrégations.
 Génère top30/villes/treemap/per_capita avec suffixe _2022 depuis brb2022_full.json.
 """
-import sys, importlib.util
+# (Bloc importlib.exec_module supprimé : il écrasait les JSON 2025 à chaque run.
+# Ce script fait sa propre computation en dessous, c'est suffisant.)
+import json, re, unicodedata
 from pathlib import Path
+from collections import defaultdict
 
 ROOT = Path(__file__).resolve().parent.parent
-spec = importlib.util.spec_from_file_location("ba", ROOT / 'scripts' / 'build_aggregations.py')
-ba = importlib.util.module_from_spec(spec)
-# Override paths before exec
-ba.INPUT = ROOT / 'docs' / 'data' / 'brb2022_full.json'
-ba.OUT   = ROOT / 'docs' / 'data'
-spec.loader.exec_module(ba)
-# Re-monkeypatch after load
-import json, re, unicodedata
-from collections import defaultdict
 INPUT = ROOT / 'docs' / 'data' / 'brb2022_full.json'
 OUT   = ROOT / 'docs' / 'data'
 
-data = json.load(open(INPUT))
+data = json.load(open(INPUT, encoding='utf-8'))
 entries = data['entries']
 total_all = sum(e.get('montant_CHF', 0) for e in entries)
 
@@ -55,17 +49,17 @@ for key, r in by_name.items():
         'nom': r['nom'], 'ville': r['ville'],
         'cantons': sorted([c for c in r['cantons'] if c]),
         'is_multi_canton': len(r['cantons']) > 1,
-        'attributions': r['count'],
-        'total_chf': int(r['total']), 'top_secteur': top_sec,
+        'count': r['count'],
+        'total_CHF': int(r['total']), 'secteur_principal': top_sec, 'is_consolidated': False,
     })
-top30.sort(key=lambda x: -x['total_chf'])
+top30.sort(key=lambda x: -x['total_CHF'])
 top30 = top30[:30]
-top30_total = sum(x['total_chf'] for x in top30)
+top30_total = sum(x['total_CHF'] for x in top30)
 out = {
     '_meta': {'description': 'Top 30 (2022)', 'method': 'normalized', 'top30_total_chf': top30_total, 'top30_pct_of_brb': round(100*top30_total/total_all, 1)},
     'beneficiaires': top30
 }
-json.dump(out, open(OUT / 'top30_beneficiaires_2022.json', 'w'), indent=2, ensure_ascii=False)
+json.dump(out, open(OUT / 'top30_beneficiaires_2022.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
 print(f"✓ top30_beneficiaires_2022.json")
 
 # Top 20 villes
@@ -83,15 +77,15 @@ villes = []
 for v, r in by_ville.items():
     r['top3'].sort(key=lambda x: -x['chf'])
     villes.append({
-        'ville': v, 'count': r['count'], 'total_chf': int(r['total']),
+        'ville': v, 'count': r['count'], 'total_CHF': int(r['total']),
         'cantons': sorted([c for c in r['cantons'] if c]),
         'top_3_beneficiaires': r['top3'][:3],
     })
-villes.sort(key=lambda x: -x['total_chf'])
+villes.sort(key=lambda x: -x['total_CHF'])
 villes = villes[:20]
-villes_total = sum(x['total_chf'] for x in villes)
+villes_total = sum(x['total_CHF'] for x in villes)
 out = {'_meta': {'description': 'Top 20 villes (2022)', 'method': 'group by ville', 'top20_total_chf': villes_total}, 'villes': villes}
-json.dump(out, open(OUT / 'top20_villes_2022.json', 'w'), indent=2, ensure_ascii=False)
+json.dump(out, open(OUT / 'top20_villes_2022.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
 print(f"✓ top20_villes_2022.json")
 
 # Treemap canton x secteur
@@ -110,13 +104,13 @@ for c, sec_dict in by_canton_sec.items():
     total_c = 0
     for s, r in sec_dict.items():
         r['top3'].sort(key=lambda x: -x['chf'])
-        sec_list.append({'secteur': s, 'count': r['count'], 'total_chf': int(r['total']), 'top_3': r['top3'][:3]})
+        sec_list.append({'secteur': s, 'count': r['count'], 'total_CHF': int(r['total']), 'top_3': r['top3'][:3]})
         total_c += r['total']
-    sec_list.sort(key=lambda x: -x['total_chf'])
-    cantons_out.append({'canton': c, 'total_chf': int(total_c), 'secteurs': sec_list})
-cantons_out.sort(key=lambda x: -x['total_chf'])
+    sec_list.sort(key=lambda x: -x['total_CHF'])
+    cantons_out.append({'canton': c, 'total_CHF': int(total_c), 'secteurs': sec_list})
+cantons_out.sort(key=lambda x: -x['total_CHF'])
 out = {'_meta': {'description': 'Treemap canton×secteur (2022)'}, 'cantons': cantons_out}
-json.dump(out, open(OUT / 'treemap_canton_secteur_2022.json', 'w'), indent=2, ensure_ascii=False)
+json.dump(out, open(OUT / 'treemap_canton_secteur_2022.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
 print(f"✓ treemap_canton_secteur_2022.json")
 
 # Per capita
@@ -127,9 +121,9 @@ for e in entries:
 out_pc = []
 for c, total in by_c.items():
     pop = POP.get(c, 0)
-    out_pc.append({'canton': c, 'population': pop, 'total_chf': int(total),
+    out_pc.append({'canton': c, 'population': pop, 'total_CHF': int(total),
                    'chf_per_capita': round(total/pop, 1) if pop else 0})
 out_pc.sort(key=lambda x: -x['chf_per_capita'])
 out = {'_meta': {'description': 'CHF par habitant (2022)'}, 'cantons': out_pc}
-json.dump(out, open(OUT / 'per_capita_2022.json', 'w'), indent=2, ensure_ascii=False)
+json.dump(out, open(OUT / 'per_capita_2022.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
 print(f"✓ per_capita_2022.json")

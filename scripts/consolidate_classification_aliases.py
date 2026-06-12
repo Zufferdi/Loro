@@ -8,7 +8,7 @@ import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 
 # Aliases (sous-ensemble principal pour affichage dans samples)
 ALIASES = [
@@ -91,7 +91,7 @@ def consolidate_entries(entries):
 
 
 def process_file(path):
-    d = json.load(open(path))
+    d = json.load(open(path, encoding='utf-8'))
     if 'categories' not in d: return False
     changed = False
     for cat in d['categories']:
@@ -108,7 +108,7 @@ def process_file(path):
         cat['samples'] = new_samples
         changed = True
     if changed:
-        path.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+        path.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
     return changed
 
 
@@ -129,7 +129,7 @@ for sec in SECTORS:
 print(f"  ✓ {n} fichiers de classification consolidés (Cinéforom, FIFF, TDR, etc.)")
 
 # Vérification finale : culture default
-d = json.load(open(DATA / 'culture_classification.json'))
+d = json.load(open(DATA / 'culture_classification.json', encoding='utf-8'))
 cinema_cat = next((c for c in d['categories'] if c['name'] == 'Cinéma / Audiovisuel'), None)
 if cinema_cat:
     print(f"\n  Top 5 Cinéma 2025 (consolidé) :")

@@ -69,7 +69,7 @@ OUT = {
 
 import os
 os.makedirs("docs/data", exist_ok=True)
-with open("docs/data/beneficiaires_series_2023_2025.json", "w") as f:
+with open("docs/data/beneficiaires_series_2023_2025.json", "w", encoding='utf-8') as f:
     json.dump(OUT, f, ensure_ascii=False, indent=2)
 
 print(f"Wrote {len(CANDIDATS)} candidats")

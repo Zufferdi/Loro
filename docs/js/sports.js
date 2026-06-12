@@ -95,7 +95,7 @@
 
       row.innerHTML = `
         <div class="sports-row-head">
-          <div class="sports-name">${s.name}</div>
+          <div class="sports-name">${escapeHtml(s.name)}</div>
           <div class="sports-meta">
             <span class="sports-count">${s.count} attributions</span>
             <span class="sports-cantons">${topCantons}</span>

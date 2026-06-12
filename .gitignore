@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Backups intermédiaires de la pipeline (ne pas commiter — les vraies données vivent dans docs/data/)
+*.backup_*.json
+*.backup.json
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs / tmp
+tmp/
+*.log
+
+# Build artifacts (le HTML final est commité, mais pas le scratchpad)
+.cache/
+node_modules/

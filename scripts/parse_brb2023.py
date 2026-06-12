@@ -5,13 +5,14 @@ parse_brb2023.py — Parse BRB 2023 markdown into brb2023_full.json
 
 Same output schema as brb2024_full.json / brb2025_full.json.
 """
+import sys
 import json
 import re
 import unicodedata
 from pathlib import Path
 
-INPUT = Path('/mnt/user-data/uploads/BRB2023.md')
-OUTPUT = Path('/home/claude/audit2/Loro-main/docs/data/brb2023_full.json')
+INPUT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path('/mnt/user-data/uploads/BRB2023.md')
+OUTPUT = (Path(__file__).resolve().parent.parent / 'docs' / 'data' / 'brb2023_full.json')
 
 # ─── Canton header detection ──────────────────────────────────────────────
 # Matches lines like "Vaud CHF 39'892'080.-" or "Genève CHF 46'510'288.-"
@@ -318,7 +319,7 @@ def main():
         },
         'entries': entries,
     }
-    OUTPUT.write_text(json.dumps(out, ensure_ascii=False, indent=2))
+    OUTPUT.write_text(json.dumps(out, ensure_ascii=False, indent=2, encoding='utf-8'))
     print(f"\nWrote {OUTPUT}")
 
 

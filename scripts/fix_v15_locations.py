@@ -10,7 +10,7 @@ import json
 import re
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 
 # Patterns CLAIRS de section cantonale + canton attendu
 CANTON_PATTERNS = [
@@ -91,7 +91,7 @@ def main():
     total = 0
     for y in ['2021', '2022', '2023', '2024', '2025']:
         p = DATA / f'brb{y}_full.json'
-        d = json.load(open(p))
+        d = json.load(open(p, encoding='utf-8'))
         fixed = 0
         for e in d['entries']:
             target = fix_canton(e['nom'], e.get('canton'))
@@ -100,7 +100,7 @@ def main():
                 fixed += 1
         if fixed:
             d['_meta'].setdefault('fixes', {})['v15_locations'] = {'count': fixed}
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
         print(f"  {y}: {fixed} cantons corrigés")
         total += fixed
     print(f"\n  Total : {total} corrections de canton")

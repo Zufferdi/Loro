@@ -2,14 +2,15 @@
 """
 parse_brb2021.py — Parser BRB 2021 v2 (gestion section multi-ligne + sous-totaux)
 """
+import sys
 import json
 import re
 import unicodedata
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path('/home/claude/audit3/Loro-main')
-INPUT = Path('/mnt/user-data/uploads/BRB2021.md')
+ROOT = Path(__file__).resolve().parent.parent
+INPUT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path('/mnt/user-data/uploads/BRB2021.md')
 OUTPUT = ROOT / 'docs' / 'data' / 'brb2021_full.json'
 
 CANTON_NAMES = {
@@ -104,7 +105,7 @@ def build_v2c():
     for year in [2022, 2023, 2024, 2025]:
         p = ROOT / 'docs' / 'data' / f'brb{year}_full.json'
         if not p.exists(): continue
-        d = json.load(open(p))
+        d = json.load(open(p, encoding='utf-8'))
         for e in d['entries']:
             v, c = e.get('ville'), e.get('canton')
             if not v or not c or c == 'SR': continue
@@ -343,7 +344,7 @@ def parse():
         },
         'entries': entries,
     }
-    OUTPUT.write_text(json.dumps(output, ensure_ascii=False, indent=2))
+    OUTPUT.write_text(json.dumps(output, ensure_ascii=False, indent=2, encoding='utf-8'))
     print(f"\n  ✓ Wrote {OUTPUT}")
 
 

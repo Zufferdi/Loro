@@ -33,7 +33,7 @@ import unicodedata
 from pathlib import Path
 from collections import defaultdict, Counter
 
-ROOT = Path('/home/claude/audit3/Loro-main')
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / 'docs' / 'data'
 sys.path.insert(0, str(ROOT / 'scripts'))
 
@@ -79,7 +79,7 @@ def get_entries_for_classif(classif: str, year: str) -> list:
     """Get entries to classify for (classif, year). Filter by official secteur
     to get meaningful coverage percentages (an entry in Sport secteur isn't
     supposed to be classified by culture patterns)."""
-    d = json.load(open(DATA / f'brb{year}_full.json'))
+    d = json.load(open(DATA / f'brb{year}_full.json', encoding='utf-8'))
     entries = d['entries']
     
     SECTOR_NAMES = {
@@ -653,12 +653,12 @@ def build_classifications():
             # Compute before/after for display (load old if exists)
             old_p = DATA / f'{classif}_classification{SUFFIX[y]}.json'
             if old_p.exists():
-                old_d = json.load(open(old_p))
+                old_d = json.load(open(old_p, encoding='utf-8'))
                 old_pct = old_d.get('_meta', {}).get('pct_chf_classified', 0)
                 before_pct[y] = old_pct if isinstance(old_pct, (int, float)) else float(str(old_pct).replace('%', '').strip())
             after_pct[y] = meta['pct_chf_classified']
             
-            old_p.write_text(json.dumps(output, ensure_ascii=False, indent=2))
+            old_p.write_text(json.dumps(output, ensure_ascii=False, indent=2, encoding='utf-8'))
         
         # Print summary
         print(f"  Memo cross-year: {len(memo)} noms  ({len(memo_substrings)} discriminants ≥10 chars)")

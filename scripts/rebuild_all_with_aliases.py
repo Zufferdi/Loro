@@ -8,7 +8,7 @@ import unicodedata
 from collections import defaultdict, Counter
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 YEARS = ['2021', '2022', '2023', '2024', '2025']
 
 # Same aliases as in build_unified_aggregations
@@ -133,7 +133,7 @@ def get_canonical_key(name):
 # Load all BRBs
 all_entries = []
 for y in YEARS:
-    d = json.load(open(DATA / f'brb{y}_full.json'))
+    d = json.load(open(DATA / f'brb{y}_full.json', encoding='utf-8'))
     for e in d['entries']:
         all_entries.append({**e, 'annee': int(y)})
 
@@ -192,7 +192,7 @@ cross_result = {
     },
     'beneficiaires': out_cross_top100,
 }
-open(DATA / 'cross_2021_2025_top.json', 'w').write(json.dumps(cross_result, ensure_ascii=False, indent=2))
+open(DATA / 'cross_2021_2025_top.json', 'w', encoding='utf-8').write(json.dumps(cross_result, ensure_ascii=False, indent=2))
 print(f"  ✓ cross_2021_2025_top — {len(out_cross_top100)} inter-cantonaux (post-aliases)")
 
 # ============================================================
@@ -269,7 +269,7 @@ traj_result = {
     },
     'beneficiaires': out_traj[:300],
 }
-open(DATA / 'trajectories_2021_2025.json', 'w').write(json.dumps(traj_result, ensure_ascii=False, indent=2))
+open(DATA / 'trajectories_2021_2025.json', 'w', encoding='utf-8').write(json.dumps(traj_result, ensure_ascii=False, indent=2))
 print(f"  ✓ trajectories_2021_2025 — {len(out_traj)} (5y: {count_5y}, 4y+: {count_4y})")
 print(f"    Catégories: {dict(counts)}")
 

@@ -24,7 +24,7 @@ import json
 import re
 from pathlib import Path
 
-DATA = Path('/home/claude/audit2/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 YEARS = ['2022', '2023', '2024', '2025']
 
 # Villes that are actually REGIONS or artifacts — to null out
@@ -66,7 +66,7 @@ def main():
     summary = []
     for y in YEARS:
         p = DATA / f'brb{y}_full.json'
-        d = json.load(open(p))
+        d = json.load(open(p, encoding='utf-8'))
         n_villes = 0
         n_names = 0
         for e in d['entries']:
@@ -85,7 +85,7 @@ def main():
             'region_artifact_villes_nulled': n_villes,
             'specific_names_fixed': n_names,
         }
-        p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+        p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
         print(f"  ─── BRB {y} ───")
         print(f"  Villes 'région/artefact' nullifiées: {n_villes}")
         print(f"  Noms tronqués spécifiques fixés:     {n_names}")

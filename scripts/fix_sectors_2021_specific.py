@@ -4,7 +4,7 @@ import json
 import re
 from pathlib import Path
 
-DATA = Path('/home/claude/audit3/Loro-main/docs/data')
+DATA = Path(__file__).resolve().parent.parent / 'docs' / 'data'
 
 # Patterns spécifiques au BRB 2021 (organisations identifiées dans le top 50 sans secteur)
 RULES_2021 = [
@@ -92,7 +92,7 @@ def find_sector(entry):
 
 def main():
     p = DATA / 'brb2021_full.json'
-    d = json.load(open(p))
+    d = json.load(open(p, encoding='utf-8'))
     fixed = 0
     by_sector = {}
     for e in d['entries']:
@@ -120,7 +120,7 @@ def main():
         'remaining_unclassified': remaining,
         'remaining_chf': remaining_chf,
     }
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
     print(f"  ✓ brb2021_full.json updated")
 
 
