@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Variante "maskable" : safe zone à 10% pour adaptive icons Android (PWA).
+       Le contenu utile est dans le carré central, le bord peut être croppé en cercle. -->
+  <rect width="512" height="512" fill="#c8102e"/>
+  <!-- 'L' centré dans la zone safe (102 → 410) -->
+  <text x="256" y="370" text-anchor="middle"
+        font-family="Source Serif Pro, Georgia, serif"
+        font-size="320" font-weight="600" fill="#fbfaf6">L</text>
+</svg>

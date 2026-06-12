@@ -78,7 +78,7 @@ def main():
     remaining = sum(1 for e in d['entries'] if not e.get('secteur'))
     remaining_chf = sum(e['montant_CHF'] for e in d['entries'] if not e.get('secteur'))
     print(f"\n  Restants : {remaining} ({remaining_chf/1e6:.1f} M)")
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
 
 
 if __name__ == '__main__':

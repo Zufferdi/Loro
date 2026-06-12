@@ -344,7 +344,7 @@ def parse():
         },
         'entries': entries,
     }
-    OUTPUT.write_text(json.dumps(output, ensure_ascii=False, indent=2, encoding='utf-8'))
+    OUTPUT.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding='utf-8')
     print(f"\n  ✓ Wrote {OUTPUT}")
 
 

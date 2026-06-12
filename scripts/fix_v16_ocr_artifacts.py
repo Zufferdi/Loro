@@ -68,7 +68,7 @@ def main():
         
         if fixed:
             d['_meta'].setdefault('fixes', {})['v16_ocr'] = {'count': fixed}
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
         print(f"  {y}: {fixed} artifacts OCR nettoyés")
         total += fixed
     print(f"\n  Total : {total}")

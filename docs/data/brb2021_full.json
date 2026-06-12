@@ -3,12 +3,12 @@
     "source": "BRB2021.pdf (ra.loro.ch/documents/BRB2021.pdf)",
     "parsed_from": "BRB2021.md",
     "annee": 2021,
-    "total_entries": 4076,
+    "total_entries": 4051,
     "total_CHF": 221273867,
     "parser_version": "parse_brb2021.py v2",
     "sector_overrides": {
       "date": "2026-06-04",
-      "count": 0,
+      "count": 20,
       "method": "Keyword-based override of `secteur` field when nom/desc contains an unambiguous indicator of a different sector. Conservative — only high-confidence patterns."
     },
     "cross_year_enrichment": {
@@ -81,7 +81,60 @@
         "count": 9
       }
     },
-    "total_brut": 182523243
+    "total_brut": 182523243,
+    "sector_overrides_v12": {
+      "count": 0,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v2": {
+      "count": 5,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v3": {
+      "count": 1,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v4": {
+      "count": 2,
+      "date": "2026-06-04"
+    },
+    "total_chf": 182103333,
+    "sector_overrides_v5": {
+      "count": 0,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v6": {
+      "count": 1,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v7": {
+      "count": 17,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v8": {
+      "count": 0,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v9": {
+      "count": 1,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v10": {
+      "count": 0,
+      "date": "2026-06-04"
+    },
+    "sector_overrides_v11": {
+      "count": 3,
+      "date": "2026-06-04"
+    },
+    "retro_classify_2021": {
+      "date": "2026-06-12",
+      "lookup_canonical": 58,
+      "knn_majority": 527,
+      "remaining_na": 10,
+      "threshold": 0.3,
+      "k": 5
+    }
   },
   "entries": [
     {
@@ -96,7 +149,7 @@
       "nom": "Assoc. Alma",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Action sociale et personnes âgées",
       "description": "Manifestation",
       "montant_CHF": 5000
     },
@@ -112,7 +165,7 @@
       "nom": "Assoc. Kalam",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Action sociale et personnes âgées",
       "description": "Acquisition matériel et équipement",
       "montant_CHF": 3000
     },
@@ -296,7 +349,7 @@
       "nom": "Ensemble Hospitalier de la Côte (EHC)",
       "ville": "Aubonne",
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "description": "Acquisition matériel et équipement",
       "montant_CHF": 70000
     },
@@ -616,7 +669,7 @@
       "nom": "Assoc. de l'école Rudolf Steiner de Lausanne",
       "ville": "Crissier",
       "canton": "VD",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Formation et recherche",
       "description": "Travaux et aménagements",
       "montant_CHF": 150000
     },
@@ -1096,7 +1149,7 @@
       "nom": "Amis des Musées de Pully",
       "ville": "Pully",
       "canton": "VD",
-      "secteur": "Culture",
+      "secteur": "Conservation du patrimoine",
       "description": "Publication",
       "montant_CHF": 60000
     },
@@ -1496,7 +1549,7 @@
       "nom": "Assoc. des Amis des Musée et Jardin Botaniques de Lausanne",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": "Culture",
+      "secteur": "Conservation du patrimoine",
       "description": "Publication",
       "montant_CHF": 40000
     },
@@ -2064,7 +2117,7 @@
       "nom": "Assoc. Voix de Femmes, Daillens",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Santé et handicap",
       "description": "Exposition",
       "montant_CHF": 15000
     },
@@ -2144,7 +2197,7 @@
       "nom": "Burlesque and Co",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Manifestation",
       "montant_CHF": 10000
     },
@@ -2560,7 +2613,7 @@
       "nom": "Confrérie du Loup, Corbeyrier",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Santé et handicap",
       "description": "Création artistique",
       "montant_CHF": 15000
     },
@@ -2592,7 +2645,7 @@
       "nom": "Ecole de Musique de Cossonay, Cossonay-Ville",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création artistique",
       "montant_CHF": 15000
     },
@@ -2600,7 +2653,7 @@
       "nom": "Ecole de Musique de Leysin - Les Ormonts",
       "ville": "Leysin",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Acquisition matériel et équipement",
       "montant_CHF": 17000
     },
@@ -3160,7 +3213,7 @@
       "nom": "La Fête du Cinéma - Cine Qua Non",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Manifestation",
       "montant_CHF": 25000
     },
@@ -3176,7 +3229,7 @@
       "nom": "La Micro-Harmonie, Féchy",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Création artistique",
       "montant_CHF": 4000
     },
@@ -3192,7 +3245,7 @@
       "nom": "La Vieille Catherine",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création artistique",
       "montant_CHF": 30000
     },
@@ -3200,7 +3253,7 @@
       "nom": "L'Assoc. des Concerts de St-Saphorin, Monts-de-Corsier",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Santé et handicap",
       "description": "Publication",
       "montant_CHF": 4000
     },
@@ -3208,7 +3261,7 @@
       "nom": "Le Cabaret Littéraire (anc. Cabaret littéraire Tastemot), Chavannes-Renens",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Manifestation",
       "montant_CHF": 20000
     },
@@ -3232,7 +3285,7 @@
       "nom": "Les Amateurs de bon son",
       "ville": "Etagnières",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Publication",
       "montant_CHF": 8000
     },
@@ -3240,7 +3293,7 @@
       "nom": "Les Amis de Jack",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Manifestation",
       "montant_CHF": 50000
     },
@@ -3272,7 +3325,7 @@
       "nom": "Les Sommets Musicaux de Gstaad",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "création artistique · Acquisition matériel, équipement et",
       "montant_CHF": 20000
     },
@@ -3296,7 +3349,7 @@
       "nom": "Melk Prod",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Exposition",
       "montant_CHF": 25000
     },
@@ -3304,7 +3357,7 @@
       "nom": "Mémoires Folk",
       "ville": "Torgon",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création artistique",
       "montant_CHF": 5000
     },
@@ -3312,7 +3365,7 @@
       "nom": "Midi Théâtre",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Publication",
       "montant_CHF": 20000
     },
@@ -3344,7 +3397,7 @@
       "nom": "Musique à l'Eglise en Terre Sainte - Concerts de Coppet",
       "ville": "Commugny",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Exposition",
       "montant_CHF": 8000
     },
@@ -3392,7 +3445,7 @@
       "nom": "Orient 'Alp",
       "ville": "Château-d'Œx",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Manifestation",
       "montant_CHF": 5000
     },
@@ -3440,7 +3493,7 @@
       "nom": "Pro Livres Nature",
       "ville": "Orbe",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Environnement",
       "description": "Activité",
       "montant_CHF": 10000
     },
@@ -3464,7 +3517,7 @@
       "nom": "Rencontres Internationales de Chœurs d'Hommes de la Vallée de Joux, Le Brassus",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Conservation du patrimoine",
       "description": "Manifestation",
       "montant_CHF": 60000
     },
@@ -3544,7 +3597,7 @@
       "nom": "Strates",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Exposition",
       "montant_CHF": 5000
     },
@@ -3568,7 +3621,7 @@
       "nom": "The Sargo Swiss Association",
       "ville": "Pully",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création artistique",
       "montant_CHF": 5000
     },
@@ -3776,7 +3829,7 @@
       "nom": "Fond. du Centre Historique de l'Agriculture et du Musée de la Machine Agricole",
       "ville": "Gingins",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "description": "Publication",
       "montant_CHF": 10000
     },
@@ -4032,7 +4085,7 @@
       "nom": "Contribution annuelle 2022 Assoc. cantonale vaudoise d'athlétisme",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 17100
     },
@@ -4096,7 +4149,7 @@
       "nom": "Contribution annuelle 2022 Assoc. cantonale vaudoise de lutte suisse",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 3800
     },
@@ -4104,7 +4157,7 @@
       "nom": "Contribution annuelle 2022 Assoc. cantonale vaudoise pour la natation",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 53000
     },
@@ -4112,7 +4165,7 @@
       "nom": "Contribution annuelle 2022 Assoc. cycliste cantonale vaudoise",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Environnement",
       "description": "",
       "montant_CHF": 11100
     },
@@ -4120,7 +4173,7 @@
       "nom": "Contribution annuelle 2022 Assoc. des clubs de voile de la région lémanique",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 29500
     },
@@ -4128,7 +4181,7 @@
       "nom": "Contribution annuelle 2022 Assoc. du scoutisme vaudois",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 20000
     },
@@ -4136,7 +4189,7 @@
       "nom": "Contribution annuelle 2022 Assoc. romande d'aviron - Section vaudoise",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 11500
     },
@@ -4152,7 +4205,7 @@
       "nom": "Contribution annuelle 2022 Assoc. suisse des sous-officiers Vaud",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 2000
     },
@@ -4176,7 +4229,7 @@
       "nom": "Contribution annuelle 2022 Assoc. Vaudoise de Badminton",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 29900
     },
@@ -4184,7 +4237,7 @@
       "nom": "Contribution annuelle 2022 Assoc. vaudoise de basketball",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 66500
     },
@@ -4192,7 +4245,7 @@
       "nom": "Contribution annuelle 2022 Assoc. vaudoise de basketball",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1820
     },
@@ -4200,7 +4253,7 @@
       "nom": "Participation location bureaux de Maillefer 35 en 2021 Assoc. Vaudoise de Billard",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 800
     },
@@ -4264,7 +4317,7 @@
       "nom": "Contribution annuelle 2022 Assoc. vaudoise des sociétés hippiques",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 25900
     },
@@ -4272,7 +4325,7 @@
       "nom": "Contribution annuelle 2022 Assoc. vaudoise et fribourgeoise de karaté",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 3600
     },
@@ -4280,7 +4333,7 @@
       "nom": "Contribution annuelle 2022 Assoc. Vaud-Valais-Fribourg de tennis de table",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 27300
     },
@@ -4296,7 +4349,7 @@
       "nom": "Contribution annuelle 2022 Faisceau cadet vaudois et valaisan",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 4000
     },
@@ -4304,7 +4357,7 @@
       "nom": "Contribution annuelle 2022 Féd. vaudoise d'échecs",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2200
     },
@@ -4312,7 +4365,7 @@
       "nom": "Contribution annuelle 2022 Féd. vaudoise d'escrime",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 6400
     },
@@ -4320,7 +4373,7 @@
       "nom": "Contribution annuelle 2022 Sté Internationale de sauvetage du Lac Léman",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 8000
     },
@@ -4336,7 +4389,7 @@
       "nom": "Contribution annuelle 2022 Swiss Volley Région Vaud",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 36900
     },
@@ -4344,7 +4397,7 @@
       "nom": "Contribution annuelle 2022 Vaud Rando",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 10000
     },
@@ -4352,7 +4405,7 @@
       "nom": "Contribution annuelle 2022 Vaud Unihockey - Assoc. Cantonale Vaudoise d'Unihockey",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 17100
     },
@@ -4504,7 +4557,7 @@
       "nom": "Amicale de Voile du Coulet",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 6110
     },
@@ -4552,7 +4605,7 @@
       "nom": "Centre Mondial du Cyclisme UCI",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "de la piste de BMX. Rénovation",
       "montant_CHF": 2130
     },
@@ -4560,7 +4613,7 @@
       "nom": "Club Veveysan de Tennis",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "de la zone de sécurité de la piste du vélodrome. Rénovation",
       "montant_CHF": 18880
     },
@@ -4728,7 +4781,7 @@
       "nom": "Homologation FIS de la piste de Super G de la Jorasse Compagnie des Archers de Vevey-La Tour-de-Peilz",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 680
     },
@@ -4736,7 +4789,7 @@
       "nom": "Théâtre du Jorat",
       "ville": null,
       "canton": "VD",
-      "secteur": "Sport",
+      "secteur": "Culture",
       "description": "Travaux extérieurs · Achat de nouveaux supports de cibles pour Course d'Orientation Lausanne-",
       "montant_CHF": 3490
     },
@@ -4784,7 +4837,7 @@
       "nom": "Remplacement de la bulle n° 4 (courts n° 9 et 10) Tennis Centre Fairplay-Puidoux",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 30000
     },
@@ -5544,7 +5597,7 @@
       "nom": "Jeunesse Assoc. Crêtes de Villars",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Championnat vaudois Agrès de Sté",
       "montant_CHF": 5000
     },
@@ -5552,7 +5605,7 @@
       "nom": "Organisation de Villars Ultraks 2021 Assoc. Cycliste Cantonale Vaudoise",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Environnement",
       "description": "",
       "montant_CHF": 1500
     },
@@ -5560,7 +5613,7 @@
       "nom": "Organisation de la 1ère étape du Tour du Léman juniors à Aigle Assoc. Cyclosportive La Favorite",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 3500
     },
@@ -5568,7 +5621,7 @@
       "nom": "Organisation de La Favorite 2021 à Yverdon- les-Bains Assoc. de Soutien Carrefour-Sud",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 900
     },
@@ -5584,7 +5637,7 @@
       "nom": "Edition 2019 du Triathlon de Lausanne (solde) Assoc. du Triathlon de Lausanne",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 6400
     },
@@ -5592,7 +5645,7 @@
       "nom": "Edition 2021 du Triathlon de Lausanne (acompte) Assoc. du Triathlon d'Yverdon- les-Bains",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 10000
     },
@@ -5600,7 +5653,7 @@
       "nom": "Edition 2021 du Triathlon d'Yverdon-les- Bains Assoc. Ladies open",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 19000
     },
@@ -5608,7 +5661,7 @@
       "nom": "Organisation des Ladies open de Tennis à Lausanne Assoc. Léman Sports310.- Organisation de la Run Mate 2020 à Pully (Annulée COVID-19) Assoc. Montreux Tennis Open",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2000
     },
@@ -5616,7 +5669,7 @@
       "nom": "Organisation du Junior Spirit Open Assoc. Montreux Tennis Open",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 4000
     },
@@ -5640,7 +5693,7 @@
       "nom": "Edition 2021 de la Sommer Bike Marathon à Château-d'Œx Assoc. Tour Freestyle Romand",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -5664,7 +5717,7 @@
       "nom": "Edition 2020 du meeting Athlétissima (Annulée COVID-19) Athlétissima",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 10000
     },
@@ -5672,7 +5725,7 @@
       "nom": "Organisation du City event d'Athlétissima à Lausanne Bachelin Maxime280.- Participation au Forward Wip European Championship 49er Badminton Club Yverdon-les- Bains",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -5688,7 +5741,7 @@
       "nom": "Organisation de la Swiss Badminton Junior Series Badminton Club Yverdon-les- Bains",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 800
     },
@@ -5704,7 +5757,7 @@
       "nom": "Organisation de trois courses d'orientation populaires à Vevey Centre Equestre d'Yverdon-les- Bains",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 3800
     },
@@ -5712,7 +5765,7 @@
       "nom": "Organisation de quatre concours hippiques officiels de saut en 2021 à Yverdon Centre Nordique de Froideville",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -5736,7 +5789,7 @@
       "nom": "Organisation du Triathlon de la Vallée de Joux et de l'édition 2021 Xterra Switzerland Cercle de la Voile de Vidy",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 600
     },
@@ -5744,7 +5797,7 @@
       "nom": "Organisation de la Swiss Sailing Promotion League ACT III à Lausanne Cercle de la Voile de Vidy",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2500
     },
@@ -5752,7 +5805,7 @@
       "nom": "Organisation des 5 Jours du Léman à Lausanne-Vidy Cercle d'échecs de Nyon",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 600
     },
@@ -5760,7 +5813,7 @@
       "nom": "Organisation d'un tournoi d'échecs à Nyon Cercle des Armes de Lausanne300.- Cercle des Armes de Lausanne",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Championnats suisses des vétérans",
       "montant_CHF": 500
     },
@@ -5768,7 +5821,7 @@
       "nom": "International Lausanne Fencing Challenge, circuit européen d'épée U23 en 2019 Cercle des Armes de Lausanne",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -5776,7 +5829,7 @@
       "nom": "U17-U20 à Prilly Cercle des nageurs Yverdon400.- Meeting des rives du lac Cercle d'escrime de Morges400.- Organisation d'un tournoi de sélection Club Athlétique Montreux",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Tournoi de sélection et de qualification",
       "montant_CHF": 7500
     },
@@ -5832,7 +5885,7 @@
       "nom": "Coupe du Chablais à Villeneuve Club d'échecs de Payerne",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 600
     },
@@ -5840,7 +5893,7 @@
       "nom": "Club des Patineurs de Lausanne et Malley",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "suisse 2021 U10-U16 à Payerne. Tournoi de qualification du Championnat",
       "montant_CHF": 500
     },
@@ -5848,7 +5901,7 @@
       "nom": "Coupe Lausanne Ville Olympique Club Equestre de Lausanne",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 5500
     },
@@ -5856,7 +5909,7 @@
       "nom": "Organisation d'un concours hippique officiel de saut au Chalet-à-Gobet Club Equestre Saint-Georges",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -5864,7 +5917,7 @@
       "nom": "Organisation d'un concours officiel de dressage à Cheseaux Club Hippique d'Apples",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 3750
     },
@@ -5872,7 +5925,7 @@
       "nom": "Organisation d'un concours hippique officiel de saut Summer Challenge Apples Club Nautique de Pully",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2000
     },
@@ -5888,7 +5941,7 @@
       "nom": "Bol d'Or du Lac de Joux Commission des vélodromes romands",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 400
     },
@@ -5904,7 +5957,7 @@
       "nom": "Féminines à Aigle Commission des vélodromes romands",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Championnats suisses Juniors et Elite",
       "montant_CHF": 2000
     },
@@ -5944,7 +5997,7 @@
       "nom": "Organisation de la manifestation Morges Bouge Commune d'Yverdon-les-Bains",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -5968,7 +6021,7 @@
       "nom": "Organisation du 45e Challenge de Lausanne Compagnie des Archers de Lausanne",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 800
     },
@@ -5976,7 +6029,7 @@
       "nom": "Compagnie des Archers de Vevey - La Tour-de-Peilz",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Tournoi Indoor de Lausanne",
       "montant_CHF": 700
     },
@@ -5984,7 +6037,7 @@
       "nom": "FITA et Coupe Suisse des Jeunes Course des Taleines",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -5992,7 +6045,7 @@
       "nom": "Organisation de la 33 e à Vulliens Course pédestre Aigle Leysin",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Course des Taleines",
       "montant_CHF": 1000
     },
@@ -6000,7 +6053,7 @@
       "nom": "Demi-marathon des Alpes Aigle-Leysin Cross des Ronge-Talons250.- Cross des Ronge-Talons à Goumœns-la-Ville (Annulée COVID-19) Curling Club de Morges400.- Organisation du swisscurling qualification B/C juniors Curling Club de Morges300.- Organisation d'un tournoi juniors à Morges Curling Club de Morges",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -6032,7 +6085,7 @@
       "nom": "Féd. d'élevage du cheval de sport",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "e e Edition du Meeting international Equissima en 2020 (Annulée COVID-19)",
       "montant_CHF": 3000
     },
@@ -6048,7 +6101,7 @@
       "nom": "Organisation du Trophée des relais Final",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Action sociale et personnes âgées",
       "description": "",
       "montant_CHF": 65000
     },
@@ -6056,7 +6109,7 @@
       "nom": "Lausanne (cyclisme) Footing Vallée de Joux",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "à · Championnats suisses de contre-la-montre",
       "montant_CHF": 1000
     },
@@ -6176,7 +6229,7 @@
       "nom": "Coupe de Noël aux agrès à la Tour-de- Peilz Golf de Lavaux",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "e",
       "montant_CHF": 15000
     },
@@ -6184,7 +6237,7 @@
       "nom": "Organisation d'un LETaccess à Puidoux Gym Rolle",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -6192,7 +6245,7 @@
       "nom": "Organisation d'un Challenge test de gymnastique à Gilly Handball Club Crissier",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 1500
     },
@@ -6200,7 +6253,7 @@
       "nom": "Hockey Club Vallorbe Futur300.- Hockey Club Vallorbe Futur300.- Hockey Club Vallorbe Futur300.- IENA promotion Sàrl",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Tournoi Superlimax à Crissier Tournoi U11 - 2 groupe 6 à Vallorbe Tournoi U13-A - 2 groupe 2 à Vallorbe Tournoi U9 - 2 groupe 7 à Vallorbe",
       "montant_CHF": 1500
     },
@@ -6208,7 +6261,7 @@
       "nom": "Organisation d'un concours officiel de dressage ITTF Europe Top 16 Montreux",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2000
     },
@@ -6216,7 +6269,7 @@
       "nom": "Organisation du Tournoi CCB ITTF Europe Top 16 Cup Montreux en 2020 (solde) ITTF Europe Top 16 Montreux",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 8000
     },
@@ -6224,7 +6277,7 @@
       "nom": "Organisation du Tournoi CCB ITTF Europe Top 16 Cup Montreux en 2021 (acompte) Jayet Maud230.- Participation au Laser Senior European Championship 2020 en Pologne Jeunesse de la Sorge",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -6240,7 +6293,7 @@
       "nom": "Organisation de la Journée Lausannoise du Vélo Jura Team Bike & Run",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 3000
     },
@@ -6248,7 +6301,7 @@
       "nom": "Organisation du Jura Bike marathon Jura Team Bike & Run",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2500
     },
@@ -6256,7 +6309,7 @@
       "nom": "Organisation du Trail de la Vallée de Joux Lausanne Amis Gymnastes",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -6264,7 +6317,7 @@
       "nom": "Organisation du Challenge des tests individuels en gymnastique à Lausanne Lausanne Billard Masters",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 6800
     },
@@ -6272,7 +6325,7 @@
       "nom": "Organisation du Lausanne Billard Masters 2021 (acompte) Lausanne Marathon",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 10000
     },
@@ -6280,7 +6333,7 @@
       "nom": "Organisation du Lausanne Marathon en Lausanne Natation300.- Lausanne Natation300.- Lausanne Natation300.- Lausanne Natation",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Championnat romand des Clubs à Lausanne Championnat suisse Tournoi U13/U15 Championnat vaudois à Lausanne",
       "montant_CHF": 1000
     },
@@ -6288,7 +6341,7 @@
       "nom": "Critériums romands d'hiver Lausanne Natation",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -6296,7 +6349,7 @@
       "nom": "Finale RSR Kids Ligue 2021 à Lausanne Lausanne Natation300.- Finale U13 de Swiss Waterpolo à Lausanne Lausanne Natation",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -6304,7 +6357,7 @@
       "nom": "Organisation du Championnat Suisse des Clubs - Finale Espoirs Lausanne Natation300.- Organisation de la Kids Ligue et Futura à Lausanne Lausanne Natation",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1200
     },
@@ -6312,7 +6365,7 @@
       "nom": "Organisation des 24 heures de natation 2021 à Lausanne Lausanne Natation300.- Organisation du Petit Nouvel-An 2021 du plongeon Lausanne Natation300.- Lausanne Natation300.- Lausanne-Sports Athlétisme",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Tournoi de waterpolo juniors U15 à Lausanne Tournoi Inter Regio U15 à Lausanne",
       "montant_CHF": 1500
     },
@@ -6320,7 +6373,7 @@
       "nom": "Lausanne-Sports Athlétisme400.- Meeting d'ouverture Mémorial P. Luginbühl Leysin Freestyle Events",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Championnats Régionaux Ouest Jeunesse",
       "montant_CHF": 5000
     },
@@ -6328,7 +6381,7 @@
       "nom": "Leysin Leysin Freestyle Events",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "à · Championnats suisses de VTT de descente",
       "montant_CHF": 12800
     },
@@ -6336,7 +6389,7 @@
       "nom": "Leysin 2022 FIS Snowboard & Freeski Junior World Mikami Judo Club Lausanne",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -6344,7 +6397,7 @@
       "nom": "Tournoi d'automne Montreux-Natation",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "et · Championnats vaudois individuels de judo",
       "montant_CHF": 1000
     },
@@ -6352,7 +6405,7 @@
       "nom": "Montreux-Natation300.- Meeting Lémanique - Jeunes nageurs à Montreux Montreux-Natation",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "natation artistique · Championnat vaudois de natation et de",
       "montant_CHF": 500
     },
@@ -6360,7 +6413,7 @@
       "nom": "Organisation du Meeting Riviera à Montreux Morges-Natation",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 750
     },
@@ -6368,7 +6421,7 @@
       "nom": "Organisation du 35 e Meeting de la Côte à Morges Moto Club Broye",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 750
     },
@@ -6376,7 +6429,7 @@
       "nom": "Panathlon Club Lausanne",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 5000
     },
@@ -6408,7 +6461,7 @@
       "nom": "Organisation du Rallye du Chablais 2021 Renens-Natation400.- Organisation du Meeting Come-Back à Renens Renens-Natation",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 800
     },
@@ -6416,7 +6469,7 @@
       "nom": "Organisation du Meeting Renens-Jeunesse Riviera Barracudas300.- Vevey Rougemont Videmanette Run",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Championnat vaudois de Water Polo à",
       "montant_CHF": 1000
     },
@@ -6424,7 +6477,7 @@
       "nom": "Organisation de la Rougemont Videmanette Run Semi-Marathon des Côtes de l'Orbe",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2000
     },
@@ -6448,7 +6501,7 @@
       "nom": "Organisation d'un Pump track contest à Leysin Ski Nautique Club de Lausanne",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -6488,7 +6541,7 @@
       "nom": "Slalom des Pléiades SLAGEP (Annulé COVID-19) Sté Vaudoise d'Attelage",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 8000
     },
@@ -6504,7 +6557,7 @@
       "nom": "Organisation de l'édition 2021 du Supertrail du Barlatay Swiss Basketball",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2500
     },
@@ -6512,7 +6565,7 @@
       "nom": "3x3 Swiss Tour 2021 - Stage 2 à Mies Swiss Basketball",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2500
     },
@@ -6520,7 +6573,7 @@
       "nom": "3x3 Swiss Tour 2021 - Stage 3 à Mies Swiss Basketball",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 8000
     },
@@ -6528,7 +6581,7 @@
       "nom": "FIBA 3x3 Women's Series - Stop 1 à Mies Swiss Basketball",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 7500
     },
@@ -6536,7 +6589,7 @@
       "nom": "Swiss Basketball League Cup 2021 à Montreux Swiss Wushu Federation",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -6560,7 +6613,7 @@
       "nom": "Organisation du Triathlon de Nyon Twirling club nord-vaudois300.- Union Patrouilleurs Alpins - UPA 10",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Championnat suisse de twirling",
       "montant_CHF": 900
     },
@@ -6568,7 +6621,7 @@
       "nom": "Coupe suisse de biathlon U15 - (Annulée COVID-19) USY Basketball",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2500
     },
@@ -6576,7 +6629,7 @@
       "nom": "Organisation de la Coupe Landolt à Yverdon (Annulée COVID-19) Vallée de Joux - Nordics Events",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2800
     },
@@ -6584,7 +6637,7 @@
       "nom": "Organisation de la Swiss-Cup powered by BKW au Chenit Vélo Club Orbe",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -6592,7 +6645,7 @@
       "nom": "Prix Wanner Cycles - Course contre la montre à Saubraz Vélo Club Vevey",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 1500
     },
@@ -6616,7 +6669,7 @@
       "nom": "Participation à l'European Championship under 21 Vevey Natation",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -6624,7 +6677,7 @@
       "nom": "Organisation du Meeting du Lac à Vevey Vol Libre Suchet",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -6632,7 +6685,7 @@
       "nom": "Organisation de la Jura Hike & Fly à Baulmes VTT Balcon du Jura",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2000
     },
@@ -6640,7 +6693,7 @@
       "nom": "Organisation de la Coupe du Chasseron à Bullet VTT La Barillette",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 3000
     },
@@ -6648,7 +6701,7 @@
       "nom": "Organisation de la course de VTT La Barillette à Chéserex VullyRun",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -6656,7 +6709,7 @@
       "nom": "Organisation de la Course VullyRun à Vully- les-lacs Wasimolo",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 800
     },
@@ -6680,7 +6733,7 @@
       "nom": "Centre National Basket Suisse",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Soutien aux clubs élites en sport collectif - Saisons 2020-2021 (20%) et 2021-2022 (80%)",
       "montant_CHF": 20800
     },
@@ -6736,7 +6789,7 @@
       "nom": "Lausanne Natation - Waterpolo",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Soutien aux clubs élites en sport collectif - Saison 2021-2022 (80%)",
       "montant_CHF": 2000
     },
@@ -6768,7 +6821,7 @@
       "nom": "2021-2022 (80%) Lutry-Lavaux Volleyball",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Soutien aux clubs élites en sport collectif",
       "montant_CHF": 26200
     },
@@ -6776,7 +6829,7 @@
       "nom": "Morges St-Prex Red Devils Basket Club",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Soutien aux clubs élites en sport collectif - Saisons 2020-2021 (20%) et 2021-2022 (80%)",
       "montant_CHF": 31200
     },
@@ -6784,7 +6837,7 @@
       "nom": "2021-2022 (80%) Nyon Basket Féminin",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Soutien aux clubs élites en sport collectif",
       "montant_CHF": 32800
     },
@@ -6792,7 +6845,7 @@
       "nom": "2021-2022 (80%) Nyon Rugby Club",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Soutien aux clubs élites en sport collectif",
       "montant_CHF": 40300
     },
@@ -6872,7 +6925,7 @@
       "nom": "2021-2022 (80%) Vevey Riviera basket",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Soutien aux clubs élites en sport collectif",
       "montant_CHF": 34400
     },
@@ -6944,7 +6997,7 @@
       "nom": "Artistic swimming Assoc. cantonale vaudoise pour la natation",
       "ville": null,
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Soutien Centres régionaux de Performance -",
       "montant_CHF": 11080
     },
@@ -7144,7 +7197,7 @@
       "nom": "Service des sports UNIL-EPFL",
       "ville": null,
       "canton": "VD",
-      "secteur": "Sport",
+      "secteur": "Formation et recherche",
       "description": "Participation aux frais inhérants à la cérémonie 2021 des Mérites sportifs vaudois",
       "montant_CHF": 25000
     },
@@ -7256,7 +7309,7 @@
       "nom": "Bibliothèque interculturelle, LivrEchange",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Culture",
       "description": "Activités 2021",
       "montant_CHF": 180000
     },
@@ -7624,7 +7677,7 @@
       "nom": "Prise en charge des enfants en 2021 Assoc. de l'école maternelle Cococinel",
       "ville": "Châtonnaye",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "",
       "montant_CHF": 1600
     },
@@ -7664,7 +7717,7 @@
       "nom": "Au théâââtre ! - Médiation culturelle théâtrale numérique Assoc. l'Arbre Magique & Les Renardeaux",
       "ville": "Romont",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "",
       "montant_CHF": 6133
     },
@@ -7688,7 +7741,7 @@
       "nom": "Assoc. Le Ptit Moulin, Nuvilly",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Activités 2021",
       "montant_CHF": 4800
     },
@@ -7720,7 +7773,7 @@
       "nom": "Assoc. MEA - Arts du Cirque et de la Scène, Grolley",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "Cours 2021 et projet Parlez-moi d'amour",
       "montant_CHF": 2000
     },
@@ -7744,7 +7797,7 @@
       "nom": "Assoc. Solid'Art",
       "ville": "Bulle",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Action sociale et personnes âgées",
       "description": "Activités 2021",
       "montant_CHF": 2000
     },
@@ -7760,7 +7813,7 @@
       "nom": "Assoc. groupe de jeux les lutins, Avry-devant-Pont",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "Saison jeune public 2021-2022",
       "montant_CHF": 3040
     },
@@ -7768,7 +7821,7 @@
       "nom": "Riaz",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "Activités pédagogiques en 2020-2021 Atelier de Jeux Au Petit Soleil,",
       "montant_CHF": 3000
     },
@@ -7792,7 +7845,7 @@
       "nom": "Application Prodent Cirque-en-Ciel",
       "ville": "Prez-vers-Noréaz",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "",
       "montant_CHF": 15000
     },
@@ -7888,7 +7941,7 @@
       "nom": "Formation des cadets à l'école de musique Multisite de Granges-Marnand Elternverein Giffers-Tentlingen / Ludothek",
       "ville": "Giffers",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "",
       "montant_CHF": 600
     },
@@ -7912,7 +7965,7 @@
       "nom": "Prise en charge des enfants en 2021 Famylieträff Tafers",
       "ville": "Tafers",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "",
       "montant_CHF": 780
     },
@@ -7928,7 +7981,7 @@
       "nom": "Fribourg élit Ferienpass Murten",
       "ville": "Murten",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "",
       "montant_CHF": 2000
     },
@@ -7936,7 +7989,7 @@
       "nom": "Ferienpass Murten 2021 Fond. de la petite enfance de Granges-Paccot",
       "ville": "Granges-Paccot",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "",
       "montant_CHF": 7000
     },
@@ -7968,7 +8021,7 @@
       "nom": "Edition 2022 de Forum des métiers START ! Groupe de jeux Les P'tits Amis",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "",
       "montant_CHF": 2222
     },
@@ -7976,7 +8029,7 @@
       "nom": "Haute école d’ingénierie et d'architecture",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Formation et recherche",
       "description": "Activités pédagogiques en 2020-2021",
       "montant_CHF": 10000
     },
@@ -7984,7 +8037,7 @@
       "nom": "Programme culturel lors des 125 ans de la HEIA Kibelac - accueil d'enfants du district du Lac",
       "ville": "Morat",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "",
       "montant_CHF": 65250
     },
@@ -7992,7 +8045,7 @@
       "nom": "Prise en charge des enfants en 2021 Kinderkrippe Storchenäscht",
       "ville": "Kerzers",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "",
       "montant_CHF": 12000
     },
@@ -8008,7 +8061,7 @@
       "nom": "Formation vocale 2020-2021 La Coccinelle Jardins d'enfants intégratif",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "",
       "montant_CHF": 20000
     },
@@ -8016,7 +8069,7 @@
       "nom": "Le Square",
       "ville": "Marly",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "Activités 2021",
       "montant_CHF": 8000
     },
@@ -8032,7 +8085,7 @@
       "nom": "La Volière Libérée Les Zéphyrs",
       "ville": "Châtonnaye",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "",
       "montant_CHF": 1200
     },
@@ -8040,7 +8093,7 @@
       "nom": "Formation des choristes en 2020-2021 Ludothek Düdingen",
       "ville": "Düdingen",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "",
       "montant_CHF": 2490
     },
@@ -8408,7 +8461,7 @@
       "nom": "EX-pression",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Culture",
       "description": "Activités 2021",
       "montant_CHF": 10000
     },
@@ -8480,7 +8533,7 @@
       "nom": "Ligue Fribourgeoise contre le Rhumatisme",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Santé et handicap",
       "description": "du cancer du côlon · Activités 2021 Voltigo et dépistage organisé",
       "montant_CHF": 15000
     },
@@ -8584,7 +8637,7 @@
       "nom": "La Cavalletta Assoc. Capella Concertata",
       "ville": "Villars-sur-Glâne",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 8000
     },
@@ -8592,7 +8645,7 @@
       "nom": "Assoc. Caroline Charrière",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Concerts de la Toussaint 2021",
       "montant_CHF": 7000
     },
@@ -8600,7 +8653,7 @@
       "nom": "Le Livre de Job Assoc. CO2",
       "ville": "Bulle",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Environnement",
       "description": "",
       "montant_CHF": 68500
     },
@@ -8608,7 +8661,7 @@
       "nom": "Assoc. Crème solaire",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "Saison 2021-2022",
       "montant_CHF": 4000
     },
@@ -8656,7 +8709,7 @@
       "nom": "Assoc. des Amis de la Schubertiade",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Exposition Là-Haut",
       "montant_CHF": 60000
     },
@@ -8664,7 +8717,7 @@
       "nom": "La Schubertiade d’Espace 2 à Fribourg Assoc. des Amis des Concerts de la Semaine sainte",
       "ville": "Villars-sur-Glâne",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 6000
     },
@@ -8672,7 +8725,7 @@
       "nom": "Oratorio CRISTO NELL'ORTO Assoc. des Concerts de l'Avent de Villars-sur-Glâne",
       "ville": "Villars-sur-Glâne",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 40000
     },
@@ -8712,7 +8765,7 @@
       "nom": "Contribution annuelle 2021 Assoc. Espace-Temps",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 7500
     },
@@ -8728,7 +8781,7 @@
       "nom": "Edition 2021 Assoc. Festiwald",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 3000
     },
@@ -8736,7 +8789,7 @@
       "nom": "La nuit des lumières et Le festiwald Assoc. Festycharme",
       "ville": "Charmey",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 4000
     },
@@ -8744,7 +8797,7 @@
       "nom": "Assoc. Fête de la Musique de Fribourg",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Santé et handicap",
       "description": "ème édition",
       "montant_CHF": 25000
     },
@@ -8752,7 +8805,7 @@
       "nom": "Edition 2021 Assoc. FriMuse",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 6000
     },
@@ -8760,7 +8813,7 @@
       "nom": "Giulia Noto Project Assoc. Gustav Akademie | Académie",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 30000
     },
@@ -8768,7 +8821,7 @@
       "nom": "Edition 2022 de La Gustav Académie Assoc. La Monade, Grangettes-près-Romont",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Environnement",
       "description": "",
       "montant_CHF": 1500
     },
@@ -8832,7 +8885,7 @@
       "nom": "Assoc. PEG",
       "ville": "Charmey",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Saison 21/22",
       "montant_CHF": 10000
     },
@@ -8840,7 +8893,7 @@
       "nom": "Prix d'Ecriture décerné à Gruyère-travail du jury Assoc. Racont'art de Rire",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 5000
     },
@@ -8848,7 +8901,7 @@
       "nom": "Contes sous la yourte saison 21/22 Assoc. Rue et Vous",
       "ville": "Bulle",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 10000
     },
@@ -8864,7 +8917,7 @@
       "nom": "Textures-Rencontres littéraires Assoc. Si J'aurais Su J'aurais Pas Venu",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 5000
     },
@@ -8872,7 +8925,7 @@
       "nom": "Assoc. smem - schweizer museum und zentrum für elektronische musikinstrumente",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Acquisition d'un véhicule",
       "montant_CHF": 30000
     },
@@ -8880,7 +8933,7 @@
       "nom": "Assoc. Solid'Art",
       "ville": "Bulle",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Action sociale et personnes âgées",
       "description": "Activités 2021",
       "montant_CHF": 18000
     },
@@ -8904,7 +8957,7 @@
       "nom": "TRNSTN RADIO en 2021 Assoc. UpJazz",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 3000
     },
@@ -8912,7 +8965,7 @@
       "nom": "Assoc. Wallriss / WallStreet",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Saison de 6 concerts en 2021",
       "montant_CHF": 13000
     },
@@ -8920,7 +8973,7 @@
       "nom": "Programme d'expositions temporaires 2021 Villars-sur-Glâne",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Atelier Tramway,",
       "montant_CHF": 3000
     },
@@ -8944,7 +8997,7 @@
       "nom": "Contribution annuelle pour les bibliothèques en 2021, Samedi des bibliothèques et Lecture Académie Borderline Experience",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 4000
     },
@@ -8952,7 +9005,7 @@
       "nom": "Borderline Experience Bouillon de Culture",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 8000
     },
@@ -8960,7 +9013,7 @@
       "nom": "Demande de soutien 2021 Brass Band La Lyre paroissiale de Courtion, Courtion",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 5000
     },
@@ -8968,7 +9021,7 @@
       "nom": "La Malédiction d'Aragne Broye Lumina, Montbrelloz",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 20000
     },
@@ -9000,7 +9053,7 @@
       "nom": "Chanson du Pays de Gruyère",
       "ville": "Riaz",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "Saison 2021-22",
       "montant_CHF": 2000
     },
@@ -9016,7 +9069,7 @@
       "nom": "Nous sommes nature et la nature est culture. Geflechte, Verbindungen & Kreisläufe Château Bohème, Tentlingen",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 20000
     },
@@ -9032,7 +9085,7 @@
       "nom": "W. A. Mozart-Requiem Chœur de Chambre de l'Université de Fribourg",
       "ville": "Ferpicloz",
       "canton": "FR",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "description": "",
       "montant_CHF": 10000
     },
@@ -9640,7 +9693,7 @@
       "nom": "Pont-Covid Sté de développement d'Estavayer-le-Lac et région",
       "ville": "Estavayer-le-Lac",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 5000
     },
@@ -9712,7 +9765,7 @@
       "nom": "Verein Compagnie Drift, Küsnacht",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Spectacle et investissements",
       "montant_CHF": 10000
     },
@@ -9720,7 +9773,7 @@
       "nom": "SHAKE BEFORE USE Performance mit Wetter, Projektionen, Explosionen, 2 Frauen und Musik Verein KellerPoche",
       "ville": "Freiburg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 15000
     },
@@ -9736,7 +9789,7 @@
       "nom": "Verein Schweizerisches Theatermuseum",
       "ville": "Zürich",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Saison 2021/22",
       "montant_CHF": 15000
     },
@@ -9768,7 +9821,7 @@
       "nom": "Médiation culturelle Vully Aujourd'hui, Môtier-Vully",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 1000
     },
@@ -9808,7 +9861,7 @@
       "nom": "Registre fribourgeois des tumeurs - contribution 2021 Seeländische Volkshochschule Kerzers, Ulmiz",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Formation et recherche",
       "description": "",
       "montant_CHF": 1000
     },
@@ -9864,7 +9917,7 @@
       "nom": "Rencontres Internationales d'Oldtimers 2021 Assoc. pour la reconstruction du centre de Villars-sous-Mont",
       "ville": "Bulle",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 30000
     },
@@ -9872,7 +9925,7 @@
       "nom": "Assoc. Transhumance",
       "ville": "Charmey",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "reconstruction du centre de Villars-sous- Mont. Concours d'architecture pour la",
       "montant_CHF": 20000
     },
@@ -9976,7 +10029,7 @@
       "nom": "Préservation et mise en valeur du patrimoine culturel FONSART",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 2000
     },
@@ -9984,7 +10037,7 @@
       "nom": "Mémoires de Val-de-Charmey Genossenschaft Stroh - Atelier Sense - Oberland, Rechthalten",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 5000
     },
@@ -9992,7 +10045,7 @@
       "nom": "Frais déménagement dans de nouveaux locaux GFM Historique",
       "ville": "Bulle",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Action sociale et personnes âgées",
       "description": "",
       "montant_CHF": 10000
     },
@@ -10000,7 +10053,7 @@
       "nom": "Mouvement Pro Fribourg",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Conservation du patrimoine",
       "description": "de 1948 · Restauration de la voiture-pilote BDt 273",
       "montant_CHF": 15000
     },
@@ -10008,7 +10061,7 @@
       "nom": "Eglise de Torny-le-Grand",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Conservation du patrimoine",
       "description": "Activités 2021",
       "montant_CHF": 12000
     },
@@ -10024,7 +10077,7 @@
       "nom": "Pro Ethnographica",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Conservation du patrimoine",
       "description": "des façades · Rénovation",
       "montant_CHF": 10000
     },
@@ -10160,7 +10213,7 @@
       "nom": "Sanierung der bestehenden Fussballplatzbeleuchtung Romont Gym19'505.80 Sarine Basket",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Construction d'un terrain de beach-volley",
       "montant_CHF": 2000
     },
@@ -10168,7 +10221,7 @@
       "nom": "Avry SHC Dogs of War Gletterens",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Santé et handicap",
       "description": "basket à · Mise au norme des lignes des terrains de",
       "montant_CHF": 40690
     },
@@ -10192,7 +10245,7 @@
       "nom": "Aussensportplatz Ville de Fribourg, service des sports",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 8600
     },
@@ -10208,7 +10261,7 @@
       "nom": "Table de billard Cercle de la Voile d'Estavayer- le-Lac",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 5355
     },
@@ -10232,7 +10285,7 @@
       "nom": "OL-Karten Freiburgischer Turn- und Sportunion FTSU 2'869.65 Booster Board, Piste Acrobat Freiburgischer Turn- und Sportunion FTSU 978.10 Ringermatte, LA Startblock, Fitness-Geräte Fribourg Rando1'738.40 Brochures randonnées 2021 Groupe de vol à voile de la Gruyère 14'513.60 Avion école voltige Judo Club Villars-sur-Glâne- Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2257
     },
@@ -10240,7 +10293,7 @@
       "nom": "165 m2 de tatamis La Pédale Romande",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1558
     },
@@ -10256,7 +10309,7 @@
       "nom": "4 courts de badminton Ville de Fribourg, service des sports 13'239.80 Matériel acheté en faveur des clubs utilisateurs Actions extraordinaires / Ausserordentliche Aktionen",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 57400
     },
@@ -10272,7 +10325,7 @@
       "nom": "Réalisation d'un nouveau site internet Elfic",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 10000
     },
@@ -10280,7 +10333,7 @@
       "nom": "EuroCup 2020-2021 (bulles sanitaires) Fribourg Olympic basket",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 10000
     },
@@ -10288,7 +10341,7 @@
       "nom": "Aventure européenne 2020-2021, 2 tours supplémentaires Fribourg Olympic basket",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 5000
     },
@@ -10320,7 +10373,7 @@
       "nom": "Participation à l'administration 2020 Veranstaltungen",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Manifestations /",
       "montant_CHF": 143500
     },
@@ -10328,7 +10381,7 @@
       "nom": "Amicale de Voile de Portalban",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -10336,7 +10389,7 @@
       "nom": "Régates juniors C3L (Covid-19 annulé) Amis du Petit Calibre Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -10344,7 +10397,7 @@
       "nom": "Tir des Trois Tours Arc Club Moléson sur Gruyère",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -10352,7 +10405,7 @@
       "nom": "Grand Prix du Moléson (Covid-19 annulé) Assoc. courses automobiles Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -10360,7 +10413,7 @@
       "nom": "Slalom de Drognens (Covid-19 annulé) Assoc. Fribourgeoise de Badminton",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 500
     },
@@ -10368,7 +10421,7 @@
       "nom": "Assoc. Fribourgeoise de Badminton",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "cantonal pour non-licenciés. Championnats fribourgeois et tournoi",
       "montant_CHF": 2000
     },
@@ -10376,7 +10429,7 @@
       "nom": "Coupes fribourgeoises Assoc. Fribourgeoise de basketball",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2500
     },
@@ -10456,7 +10509,7 @@
       "nom": "Assoc. TEM (Trail Event du Mouret)",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Championnat romand de minigolf",
       "montant_CHF": 1500
     },
@@ -10464,7 +10517,7 @@
       "nom": "Préalpes Trail du Mouret Assoc. Vaud-Fribourg de Karaté - Section Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -10480,7 +10533,7 @@
       "nom": "Bull'minton cup (Covid-19 annulé) Badminton Club Bulle",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -10488,7 +10541,7 @@
       "nom": "Bull'minton cup Bikeclub Sense Oberland",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -10496,7 +10549,7 @@
       "nom": "Schwyberg Bike Billard Club Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -10504,7 +10557,7 @@
       "nom": "Finale A la bande LR Billard Club Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -10512,7 +10565,7 @@
       "nom": "Finale Libre LR2 CA Rosé",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 4000
     },
@@ -10520,7 +10573,7 @@
       "nom": "Club Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "suisse de relais et course nationale Canoé-. Courses d'orientation avec championnat",
       "montant_CHF": 1000
     },
@@ -10536,7 +10589,7 @@
       "nom": "100 Milles de Pentecôte (Covid-19 annulé) Cercle de la Voile d'Estavayer- le-Lac",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -10544,7 +10597,7 @@
       "nom": "Racing Tour FVLJ (Covid-19 annulé) CHFE (Club hippique de Fribourg et environs)",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 1000
     },
@@ -10552,7 +10605,7 @@
       "nom": "Corminbœuf CHFE (Club hippique de Fribourg et environs)",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Concours hippique de saut poneys de",
       "montant_CHF": 1500
     },
@@ -10560,7 +10613,7 @@
       "nom": "Corminbœuf Club Athlétique Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Concours hippique de saut poneys de",
       "montant_CHF": 4000
     },
@@ -10576,7 +10629,7 @@
       "nom": "Club des lutteurs de Cottens et environs",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Championnat suisse interclub de deltaplane",
       "montant_CHF": 1500
     },
@@ -10584,7 +10637,7 @@
       "nom": "Fête régionale de lutte suisse Club des lutteurs de Fribourg et environs",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -10592,7 +10645,7 @@
       "nom": "Fête cantonale de lutte suisse des espoirs (Covid-19 annulé) Club des lutteurs de Fribourg et environs",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -10600,7 +10653,7 @@
       "nom": "Fête cantonale de lutte suisse des espoirs Club des lutteurs de la Haute- Sarine",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -10608,7 +10661,7 @@
       "nom": "Fête cantonale fribourgeoise de lutte 2021 Club des lutteurs Estavayer-le- Lac et environs",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -10616,7 +10669,7 @@
       "nom": "Fête de lutte suisse du Péchau Châbles (y compris champ. Romand U20) Club équestre de Bulle",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -10632,7 +10685,7 @@
       "nom": "Bulle indoors tennis en fauteuils roulants Club Olympic Domdidier",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -10656,7 +10709,7 @@
       "nom": "La Glèbe'Bike VTT Corrida Bulloise",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2500
     },
@@ -10664,7 +10717,7 @@
       "nom": "Corrida Bulloise (Covid-19 annulé) Berra",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Course de côte La Roche-La",
       "montant_CHF": 1000
     },
@@ -10672,7 +10725,7 @@
       "nom": "Ecurie Sporting de Romont",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "annulé) · Course de côte La Roche-La Berra (Covid-19",
       "montant_CHF": 1500
     },
@@ -10720,7 +10773,7 @@
       "nom": "Finale du championnat de dressage Fribourg-Natation",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2000
     },
@@ -10736,7 +10789,7 @@
       "nom": "Grand Prix Tennis Gruyère Triathlon",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -10744,7 +10797,7 @@
       "nom": "Gruyère Triathlon (Covid-19 annulé) Judo Club Hara Sport Murten",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2500
     },
@@ -10752,7 +10805,7 @@
       "nom": "Judo Ranking Turnier und Judo Masterturnier (Covid-19 abgesagt) Judo Club Hara Sport Murten",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2500
     },
@@ -10760,7 +10813,7 @@
       "nom": "Judo Ranking Turnier und Judo Schülerturnier Judo Club Marly/Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -10768,7 +10821,7 @@
       "nom": "LittleKano (Covid-19 annulé) La Pédale Romande",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -10776,7 +10829,7 @@
       "nom": "Devil Trophy #1, caserne de Drognens (Covid-19 annulé) La Pédale Romande",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2000
     },
@@ -10784,7 +10837,7 @@
       "nom": "Chrono de la Sionge MCR Belfaux",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -10800,7 +10853,7 @@
       "nom": "Club Bulle",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "glace (Covid-19 annulé) Minigolf. Tournoi international junior de hockey sur",
       "montant_CHF": 500
     },
@@ -10816,7 +10869,7 @@
       "nom": "Sensler OL OLG Murten",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -10824,7 +10877,7 @@
       "nom": "Murtner-OL Open Bike Haute-Gruyère",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2500
     },
@@ -10832,7 +10885,7 @@
       "nom": "Open Bike Haute-Gruyère (Covid-19 annulé) Open Bike Haute-Gruyère",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2500
     },
@@ -10840,7 +10893,7 @@
       "nom": "Open Bike Haute-Gruyère Pistolenschiessverein Düdingen",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -10848,7 +10901,7 @@
       "nom": "Röschtigrabenschiessen (Covid-19 abgesagt) Pistolenschiessverein Düdingen",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -10856,7 +10909,7 @@
       "nom": "Röschtigrabenschiessen Regattaverein Freiburg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2000
     },
@@ -10864,7 +10917,7 @@
       "nom": "Herbst-Ruderregatta und Rodertrophy Reitklub Buecha",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -10872,7 +10925,7 @@
       "nom": "Pferdesporttage Plaffeien Reitverein Sense",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -10888,7 +10941,7 @@
       "nom": "Internationales Ringer Jugend Turnier (Covid-19 abgesagt) Rugby-Club Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -10920,7 +10973,7 @@
       "nom": "Schweizer Freizeitreitverband Horsechallenge Düdingen Segelclub Murten",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -10960,7 +11013,7 @@
       "nom": "La Glânoise Mifroma Trophy (Covid-19 annulé) Sté de Cavalerie de la Broye",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -10984,7 +11037,7 @@
       "nom": "Contre de Sixte (Covid-19 annulé) Sté d'Escrime Sarine-Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -10992,7 +11045,7 @@
       "nom": "Marathon d'escrime de Fribourg (Covid-19 annulé) Sté pistolet Villeneuve",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -11000,7 +11053,7 @@
       "nom": "Tir de la St-Nicolas (Covid-19 annulé) Sporting Golf Club Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -11016,7 +11069,7 @@
       "nom": "Aergerameisterschaft (Covid-19 abgesagt) TC Givisiez",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -11072,7 +11125,7 @@
       "nom": "Tennis Open de Marly TEP Organisation",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -11080,7 +11133,7 @@
       "nom": "Trail des Paccots (Covid-19 annulé) Time 4 Sport (T4S)",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 2500
     },
@@ -11088,7 +11141,7 @@
       "nom": "Murtentriathlon Murten (Covid-19 annulé) Triclub Esta-Broye",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -11096,7 +11149,7 @@
       "nom": "Triathlon pour les jeunes de 7 à 18 ans Twirling club de Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -11104,7 +11157,7 @@
       "nom": "Critérium international des Ducs de Zaehringen de Twirling Bâton (Covid-19 annulé) Twirling club de Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -11112,7 +11165,7 @@
       "nom": "Champ. Suisses - 1 ère manche des disciplines de danse de twirling bâton (Covid-19 annulé) Twirling club de Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -11120,7 +11173,7 @@
       "nom": "Champ. Suisses - 2 ème manche des disciplines de danse de twirling bâton Twirling club de Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -11128,7 +11181,7 @@
       "nom": "Champ. Suisses-3ème manche des disciplines de danse de twirling bâton Union cycliste fribourgeoise",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -11136,7 +11189,7 @@
       "nom": "Tour du canton de Fribourg Union cycliste fribourgeoise",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -11144,7 +11197,7 @@
       "nom": "Tour du canton de Fribourg Vélo-Club Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -11176,7 +11229,7 @@
       "nom": "Féd. Fribourgeoise d'Athlétisme480.- Trainingslager-Mehrkampf Féd. Fribourgeoise d'Athlétisme288.- cantonaux jeunesse Féd. Fribourgeoise d'Athlétisme",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Camp d'entraînement cantonal Elite Camp d'entraînement des cadres",
       "montant_CHF": 840
     },
@@ -11272,7 +11325,7 @@
       "nom": "Entraînements fractionnés benjamines (U15) Assoc. Fribourgeoise de basketball",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 8628
     },
@@ -11280,7 +11333,7 @@
       "nom": "Entraînements fractionnés benjamins (U15), équipe A Assoc. Fribourgeoise de basketball",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2364
     },
@@ -11288,7 +11341,7 @@
       "nom": "Entraînements fractionnés cadettes (U17) Assoc. Fribourgeoise de basketball",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 10004
     },
@@ -11304,7 +11357,7 @@
       "nom": "Entraînements fractionnés GAF Freiburger Orientierungslauf Verband",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 576
     },
@@ -11320,7 +11373,7 @@
       "nom": "Entraînements meilleurs joueurs Team AFF / FFV",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 6400
     },
@@ -11328,7 +11381,7 @@
       "nom": "Entraînement secteur FE-12 Team AFF / FFV",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 8696
     },
@@ -11336,7 +11389,7 @@
       "nom": "Entraînement SAF Team AFF / FFV",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 10616
     },
@@ -11344,7 +11397,7 @@
       "nom": "Entraînement secteur féminin Team AFF / FFV",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 36228
     },
@@ -11352,7 +11405,7 @@
       "nom": "Entraînement M15 / M16 / M18 Veranstaltungen (Fortsetzung) Sports et loisirs (sport pour tous) / Freizeitsport (sport für alle)",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Manifestations (suite) /",
       "montant_CHF": 5800
     },
@@ -11376,7 +11429,7 @@
       "nom": "OL-Trainings für alle Fribourg Rando",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2000
     },
@@ -11408,7 +11461,7 @@
       "nom": "Contribution ordinaire AFS-FVS",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 20000
     },
@@ -11416,7 +11469,7 @@
       "nom": "Contribution ordinaire American Football Club Fribourg Cardinals",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 770
     },
@@ -11424,7 +11477,7 @@
       "nom": "Contribution ordinaire Assoc. d'Aviron du canton de Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 4980
     },
@@ -11440,7 +11493,7 @@
       "nom": "Contribution ordinaire Assoc. Fribourgeoise de Badminton",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 20520
     },
@@ -11448,7 +11501,7 @@
       "nom": "Contribution ordinaire Assoc. Fribourgeoise de basketball",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 23410
     },
@@ -11456,7 +11509,7 @@
       "nom": "Contribution ordinaire Assoc. Fribourgeoise d'Education Physique et Sport scolaire",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1590
     },
@@ -11488,7 +11541,7 @@
       "nom": "Contribution ordinaire Assoc. fribourgeoise de lutte suisse",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 7410
     },
@@ -11496,7 +11549,7 @@
       "nom": "Contribution ordinaire Assoc. Fribourgeoise de Motocyclisme",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 4890
     },
@@ -11544,7 +11597,7 @@
       "nom": "Contribution ordinaire Assoc. fribourgeoise des sections du CAS",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 57880
     },
@@ -11552,7 +11605,7 @@
       "nom": "Contribution ordinaire Assoc. fribourgeoise d'escrime",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 4200
     },
@@ -11560,7 +11613,7 @@
       "nom": "Contribution ordinaire Assoc. Fribourgeoise Inline et Skater Hockey",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 17740
     },
@@ -11568,7 +11621,7 @@
       "nom": "Contribution ordinaire Assoc. Vaud-Fribourg de Karaté - Section Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 12880
     },
@@ -11584,7 +11637,7 @@
       "nom": "Contribution ordinaire Curling Club Fribourg-Düdingen190.- Contribution ordinaire Féd. de Voile des Lacs Jurassiens",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 7470
     },
@@ -11592,7 +11645,7 @@
       "nom": "Contribution ordinaire 2020, révision Féd. de Voile des Lacs Jurassiens",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 9970
     },
@@ -11600,7 +11653,7 @@
       "nom": "Contribution ordinaire Féd. Fribourgeoise d'Athlétisme",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 32180
     },
@@ -11608,7 +11661,7 @@
       "nom": "Contribution ordinaire Féd. Fribourgeoise de Boccia",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2880
     },
@@ -11624,7 +11677,7 @@
       "nom": "Contribution ordinaire Féd. Fribourgeoise de Natation",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 28390
     },
@@ -11632,7 +11685,7 @@
       "nom": "Contribution ordinaire Féd. Fribourgeoise des Sports Equestres",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 23780
     },
@@ -11640,7 +11693,7 @@
       "nom": "Contribution ordinaire Freiburger Orientierungslauf Verband",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 5230
     },
@@ -11648,7 +11701,7 @@
       "nom": "Contribution ordinaire Freiburger Sportkegler-Verband",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 3110
     },
@@ -11656,7 +11709,7 @@
       "nom": "Contribution ordinaire Freiburger Unihockey Verband FUHV",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 22970
     },
@@ -11664,7 +11717,7 @@
       "nom": "Contribution ordinaire Freiburgischer Turn- und Sportunion FTSU",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 32210
     },
@@ -11672,7 +11725,7 @@
       "nom": "Contribution ordinaire Fribourg Rando",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 8260
     },
@@ -11680,7 +11733,7 @@
       "nom": "Contribution ordinaire FriJuNe Fribourg Tennis",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 34060
     },
@@ -11688,7 +11741,7 @@
       "nom": "Contribution ordinaire Segelfluggruppe Freiburg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 620
     },
@@ -11704,7 +11757,7 @@
       "nom": "Contribution ordinaire Sté de Sauvetage du Lac Gruyère",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 620
     },
@@ -11712,7 +11765,7 @@
       "nom": "Contribution ordinaire Sport Handicap Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 3010
     },
@@ -11720,7 +11773,7 @@
       "nom": "Contribution ordinaire Swiss Pops",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1430
     },
@@ -11728,7 +11781,7 @@
       "nom": "Contribution ordinaire Swiss Volley Region Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 33450
     },
@@ -11736,7 +11789,7 @@
       "nom": "Contribution ordinaire Twirling club de Fribourg210.- Contribution ordinaire Union cycliste fribourgeoise",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 12040
     },
@@ -11848,7 +11901,7 @@
       "nom": "Reconnaissance cantonale de centre de formation de tennis Swiss Volley Region Fribourg",
       "ville": null,
       "canton": "FR",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 10000
     },
@@ -11880,7 +11933,7 @@
       "nom": "Athlètes aux JO",
       "ville": null,
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 20000
     },
@@ -12088,7 +12141,7 @@
       "nom": "Pro Junior Fribourg",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Sport",
       "description": "bénévoles qui hébergent à leur domicile un ou plusieurs requérants d'asile · Soutien à l'installation pour les familles",
       "montant_CHF": 5500
     },
@@ -12904,7 +12957,7 @@
       "nom": "Réédition en portugais du livre La Genèse de Nova Friburgo NOF - Nouvel Opéra Fribourg",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 19000
     },
@@ -12944,7 +12997,7 @@
       "nom": "Animations Résidence Beaulieu",
       "ville": "Sion",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 29250
     },
@@ -12952,7 +13005,7 @@
       "nom": "Animations Résidence La Charmaie, Muraz-Collombey",
       "ville": null,
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 42250
     },
@@ -12960,7 +13013,7 @@
       "nom": "Animations Résidence Les Jasmins",
       "ville": "Chalais",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Action sociale et personnes âgées",
       "description": "",
       "montant_CHF": 25350
     },
@@ -12968,7 +13021,7 @@
       "nom": "Animations Résidence Les Marronniers",
       "ville": "Martigny",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Action sociale et personnes âgées",
       "description": "",
       "montant_CHF": 27300
     },
@@ -12976,7 +13029,7 @@
       "nom": "Animations Résidence Les Tourelles",
       "ville": "Martigny",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Action sociale et personnes âgées",
       "description": "",
       "montant_CHF": 29900
     },
@@ -13008,7 +13061,7 @@
       "nom": "Sozialmedizinisches Regionalzentrum OW",
       "ville": "Brig",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "Rénovation",
       "montant_CHF": 17022
     },
@@ -13032,7 +13085,7 @@
       "nom": "Animations Stiftung St. Josef, OW Alters, Pflege- und Behindertenheim St. Josef",
       "ville": "Susten",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Santé et handicap",
       "description": "",
       "montant_CHF": 39650
     },
@@ -13040,7 +13093,7 @@
       "nom": "Animations Stiftung Wohnheim St. Sebastian Brig-Glis",
       "ville": "Brig-Glis",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 7000
     },
@@ -13056,7 +13109,7 @@
       "nom": "Verein Altershilfe Leukerbad",
       "ville": "Leukerbad",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Investissement",
       "montant_CHF": 6500
     },
@@ -13064,7 +13117,7 @@
       "nom": "Animations Verein Forum Migration Oberwallis",
       "ville": "Visp",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Action sociale et personnes âgées",
       "description": "",
       "montant_CHF": 3000
     },
@@ -13080,7 +13133,7 @@
       "nom": "Assoc. DEVI",
       "ville": "Sion",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Manifestation",
       "montant_CHF": 3000
     },
@@ -13088,7 +13141,7 @@
       "nom": "Assoc. Hérisson sous gazon",
       "ville": "Charrat",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "Publication",
       "montant_CHF": 13000
     },
@@ -13120,7 +13173,7 @@
       "nom": "Assoc. Music4all, Montana",
       "ville": null,
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Projets",
       "montant_CHF": 3000
     },
@@ -13152,7 +13205,7 @@
       "nom": "Assoc. valaisanne des ludothèques, Brignon-Nendaz",
       "ville": null,
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "Projets",
       "montant_CHF": 30000
     },
@@ -13160,7 +13213,7 @@
       "nom": "Concours de solistes",
       "ville": "Grône",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "Solistes d'instruments de cuivre · Projets Championnat valaisan des",
       "montant_CHF": 16000
     },
@@ -13168,7 +13221,7 @@
       "nom": "Colonie de Vacances de Martigny à Ravoire - Camp Plein Soleil",
       "ville": "Martigny",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "Manifestation",
       "montant_CHF": 7000
     },
@@ -13176,7 +13229,7 @@
       "nom": "Tra vau x Fond. Organisation des Suisses de l'étranger",
       "ville": "Berne",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Action sociale et personnes âgées",
       "description": "",
       "montant_CHF": 4000
     },
@@ -13184,7 +13237,7 @@
       "nom": "Fond. Rosyl, Roland Mex et Sylvia Martinoli",
       "ville": "Chermignon",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Environnement",
       "description": "Manifestation",
       "montant_CHF": 20000
     },
@@ -13192,7 +13245,7 @@
       "nom": "Tra vau x Fond. valaisanne Action Jeunesse",
       "ville": "Sion",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Santé et handicap",
       "description": "",
       "montant_CHF": 60000
     },
@@ -13200,7 +13253,7 @@
       "nom": "Interprofession des fruits et légumes du Valais",
       "ville": "Conthey",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "Investissement",
       "montant_CHF": 35000
     },
@@ -13312,7 +13365,7 @@
       "nom": "Fond. Foyers-Ateliers St-Hubert",
       "ville": "Sion",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "Projet",
       "montant_CHF": 16000
     },
@@ -13336,7 +13389,7 @@
       "nom": "La Cyclosportive des Vins du Valais",
       "ville": "Sion",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "et exposition · Rénovation",
       "montant_CHF": 8000
     },
@@ -13888,7 +13941,7 @@
       "nom": "Assoc. Helvètes Underground Compagnie, Prafirmin (Savièse)",
       "ville": null,
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 72000
     },
@@ -13904,7 +13957,7 @@
       "nom": "Assoc. ItalieValais",
       "ville": "Sion",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création",
       "montant_CHF": 1000
     },
@@ -13936,7 +13989,7 @@
       "nom": "Assoc. Johannis On Stage, St-Pierre-de-Clages",
       "ville": null,
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Manifestation",
       "montant_CHF": 18000
     },
@@ -13968,7 +14021,7 @@
       "nom": "Assoc. La ConFrères Rires Revue 2020, Vernayaz",
       "ville": null,
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création",
       "montant_CHF": 5000
     },
@@ -13992,7 +14045,7 @@
       "nom": "Assoc. Label C",
       "ville": "Vétroz",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création",
       "montant_CHF": 3000
     },
@@ -14008,7 +14061,7 @@
       "nom": "Assoc. L'Aérienne Compagnie",
       "ville": "Sion",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Projet",
       "montant_CHF": 40500
     },
@@ -14064,7 +14117,7 @@
       "nom": "Assoc. Les Amis de Fernand Dubuis",
       "ville": "Lens",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création",
       "montant_CHF": 20000
     },
@@ -14072,7 +14125,7 @@
       "nom": "Assoc. Les Amis de Josette Taramarcaz",
       "ville": "Fully",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Action sociale et personnes âgées",
       "description": "Publication",
       "montant_CHF": 18000
     },
@@ -14080,7 +14133,7 @@
       "nom": "Assoc. Les Amis du Village du Livre St-Pierre-de-Clages, St-Pierre-de-Clages",
       "ville": null,
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Action sociale et personnes âgées",
       "description": "Publication",
       "montant_CHF": 42000
     },
@@ -14088,7 +14141,7 @@
       "nom": "Assoc. Les Chercheurs de joie, Sembrancher",
       "ville": null,
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Manifestation",
       "montant_CHF": 30000
     },
@@ -14096,7 +14149,7 @@
       "nom": "Assoc. Les Concerts de Chandolin, Chandolin",
       "ville": null,
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Projet",
       "montant_CHF": 2000
     },
@@ -14136,7 +14189,7 @@
       "nom": "Assoc. Liensenculture",
       "ville": "Sion",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Manifestation",
       "montant_CHF": 4000
     },
@@ -14144,7 +14197,7 @@
       "nom": "Assoc. L'itinérante",
       "ville": "Sion",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Publication",
       "montant_CHF": 10500
     },
@@ -14168,7 +14221,7 @@
       "nom": "Assoc. Mélosphère",
       "ville": "Puidoux",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Manifestation",
       "montant_CHF": 2000
     },
@@ -14176,7 +14229,7 @@
       "nom": "Assoc. Moop, Salvan",
       "ville": null,
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création",
       "montant_CHF": 3000
     },
@@ -14192,7 +14245,7 @@
       "nom": "Assoc. Orgues, Musiques et Cimes, Finhaut",
       "ville": null,
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Projets",
       "montant_CHF": 7500
     },
@@ -14304,7 +14357,7 @@
       "nom": "Assoc. StromSound",
       "ville": "Conthey",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Manifestation",
       "montant_CHF": 12500
     },
@@ -14368,7 +14421,7 @@
       "nom": "Blasorchester Stadtmusik Saltina",
       "ville": "Brig",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Expositions",
       "montant_CHF": 15000
     },
@@ -14384,7 +14437,7 @@
       "nom": "Comité d'organisation des 200 ans de l'Eglise St-Hippolyte",
       "ville": "Vouvry",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Environnement",
       "description": "Concert",
       "montant_CHF": 6500
     },
@@ -14464,7 +14517,7 @@
       "nom": "Fond. de Soutien à l'École de Design et Haute École d'Art du Valais (S.EDHEA)",
       "ville": "Sierre",
       "canton": "VS",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "description": "Manifestation",
       "montant_CHF": 39000
     },
@@ -14480,7 +14533,7 @@
       "nom": "Fond. du Conservatoire cantonal de musique",
       "ville": "Sion",
       "canton": "VS",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "description": "Expositions",
       "montant_CHF": 474900
     },
@@ -14560,7 +14613,7 @@
       "nom": "Fond. Opale",
       "ville": "Lens",
       "canton": "VS",
-      "secteur": "Culture",
+      "secteur": "Conservation du patrimoine",
       "description": "Saison artistique",
       "montant_CHF": 135000
     },
@@ -14568,7 +14621,7 @@
       "nom": "Fond. Pierre Gianadda",
       "ville": "Martigny",
       "canton": "VS",
-      "secteur": "Culture",
+      "secteur": "Conservation du patrimoine",
       "description": "Exposition",
       "montant_CHF": 625000
     },
@@ -14984,7 +15037,7 @@
       "nom": "Verein kulturerbe, tanz! / patrimoine culturel, danse ! / patrimonio culturale, danza!",
       "ville": "Zürich",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 12000
     },
@@ -14992,7 +15045,7 @@
       "nom": "Verein Movement Matters, Ritzingen",
       "ville": null,
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Manifestation",
       "montant_CHF": 2000
     },
@@ -15088,7 +15141,7 @@
       "nom": "Visarte.Valais",
       "ville": "Sion",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Publication",
       "montant_CHF": 4000
     },
@@ -15112,7 +15165,7 @@
       "nom": "Centre Régional d'Etudes des Populations Alpines - CREPA, Sembrancher",
       "ville": null,
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Formation et recherche",
       "description": "Cours",
       "montant_CHF": 32000
     },
@@ -15120,7 +15173,7 @@
       "nom": "École professionnelle artisanat et service communautaire",
       "ville": "Martigny",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "Projets",
       "montant_CHF": 50000
     },
@@ -15128,7 +15181,7 @@
       "nom": "Fond. IPT",
       "ville": "Sion",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Formation et recherche",
       "description": "Manifestation",
       "montant_CHF": 50000
     },
@@ -15176,7 +15229,7 @@
       "nom": "Assoc. pour la sauvegarde des constructions rurales en Anniviers - ASCRA",
       "ville": "Vissoie",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Projets",
       "montant_CHF": 15000
     },
@@ -15184,7 +15237,7 @@
       "nom": "Assoc. pour la sauvegarde des fresques des Caves Henri Carron",
       "ville": "Fully",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Rénovation",
       "montant_CHF": 40000
     },
@@ -15192,7 +15245,7 @@
       "nom": "Assoc. Saint-Luc Générations",
       "ville": "St-Luc",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Restauration",
       "montant_CHF": 30000
     },
@@ -15200,7 +15253,7 @@
       "nom": "Assoc. valaisanne des musées",
       "ville": "Sion",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Conservation du patrimoine",
       "description": "Rénovation",
       "montant_CHF": 25000
     },
@@ -15216,7 +15269,7 @@
       "nom": "Assoc. Vallis Triensis, Finhaut",
       "ville": null,
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Projets",
       "montant_CHF": 55000
     },
@@ -15264,7 +15317,7 @@
       "nom": "Fond. du Bienheureux Maurice Tornay et Ass. des Amis de la Fond. du Bx Maurice Tornay",
       "ville": "Orsières",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Conservation du patrimoine",
       "description": "Rénovation",
       "montant_CHF": 20000
     },
@@ -15288,7 +15341,7 @@
       "nom": "Fond. pour le développement et la promotion du patois",
       "ville": "Sion",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Conservation du patrimoine",
       "description": "Rénovation",
       "montant_CHF": 30000
     },
@@ -15312,7 +15365,7 @@
       "nom": "Groupe folklorique Le Vieux- Salvan, Salvan",
       "ville": null,
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Projets",
       "montant_CHF": 6000
     },
@@ -15344,7 +15397,7 @@
       "nom": "Sté d’histoire du Valais romand",
       "ville": "Martigny",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "Rénovation",
       "montant_CHF": 17000
     },
@@ -15408,7 +15461,7 @@
       "nom": "Assoc. Bike Freeride",
       "ville": "Verbier",
       "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 100000
     },
@@ -15568,7 +15621,7 @@
       "nom": "SPA Valais",
       "ville": "Ardon",
       "canton": "VS",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Environnement",
       "description": "Publication",
       "montant_CHF": 15000
     },
@@ -17200,7 +17253,7 @@
       "nom": "Circo Bello",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "description": "Investissement",
       "montant_CHF": 87000
     },
@@ -17371,14 +17424,6 @@
       "secteur": "Culture",
       "description": "Investissement",
       "montant_CHF": 13000
-    },
-    {
-      "nom": "ABC",
-      "ville": "La Chaux-de-Fonds",
-      "canton": "NE",
-      "secteur": "Culture",
-      "description": "Evénement",
-      "montant_CHF": 280000
     },
     {
       "nom": "Académie de cor",
@@ -18056,7 +18101,7 @@
       "nom": "Assoc. Théâtre Pro NE",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "description": "Publication",
       "montant_CHF": 30000
     },
@@ -18096,7 +18141,7 @@
       "nom": "Café-théâtre La Grange et Casino",
       "ville": "Le Locle",
       "canton": "NE",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "description": "Evénement",
       "montant_CHF": 50000
     },
@@ -18112,7 +18157,7 @@
       "nom": "Centre Culturel Neuchâtelois - CCN",
       "ville": "Neuchâtel",
       "canton": "NE",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "description": "Saison artistique",
       "montant_CHF": 310000
     },
@@ -18120,7 +18165,7 @@
       "nom": "Choeur de l'Université de Neuchâtel",
       "ville": "Fontaines",
       "canton": "NE",
-      "secteur": "Santé et handicap",
+      "secteur": "Formation et recherche",
       "description": "Saison artistique",
       "montant_CHF": 3000
     },
@@ -18240,7 +18285,7 @@
       "nom": "Club 44",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "description": "Création artistique",
       "montant_CHF": 132000
     },
@@ -18264,7 +18309,7 @@
       "nom": "Corbak Festival",
       "ville": "La Chaux-du-Milieu",
       "canton": "NE",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "description": "Création artistique",
       "montant_CHF": 25000
     },
@@ -18336,7 +18381,7 @@
       "nom": "Ensemble Symphonique Neuchâtel - ESN",
       "ville": "Neuchâtel",
       "canton": "NE",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "description": "Création artistique",
       "montant_CHF": 375000
     },
@@ -18376,7 +18421,7 @@
       "nom": "Fond. Arc en Scène - centre neuchâtelois des arts vivants - TPR",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "description": "Evénement",
       "montant_CHF": 450000
     },
@@ -18424,7 +18469,7 @@
       "nom": "FUR compagnie",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 15000
     },
@@ -18456,7 +18501,7 @@
       "nom": "i-lirédition",
       "ville": "Cressier",
       "canton": "NE",
-      "secteur": null,
+      "secteur": "Environnement",
       "description": "Evénement",
       "montant_CHF": 6500
     },
@@ -18464,7 +18509,7 @@
       "nom": "Institut Ferdinand Hodler - Archives Jura Brüschweiler",
       "ville": "Delémont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Environnement",
       "description": "Publication",
       "montant_CHF": 10000
     },
@@ -18480,7 +18525,7 @@
       "nom": "La Boîte à Swing",
       "ville": "Le Locle",
       "canton": "NE",
-      "secteur": null,
+      "secteur": "Environnement",
       "description": "Publication",
       "montant_CHF": 3000
     },
@@ -18560,7 +18605,7 @@
       "nom": "Les Chemins de Traverse",
       "ville": "Peseux",
       "canton": "NE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Evénement",
       "montant_CHF": 45000
     },
@@ -18616,7 +18661,7 @@
       "nom": "Mamours Production",
       "ville": "Crans-Montana",
       "canton": "VS",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Activités annuelles",
       "montant_CHF": 50000
     },
@@ -18624,7 +18669,7 @@
       "nom": "Marathon Acousmatique",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Création artistique",
       "montant_CHF": 3000
     },
@@ -18664,7 +18709,7 @@
       "nom": "NZZ Libro",
       "ville": "Bâle",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Publication",
       "montant_CHF": 2000
     },
@@ -18680,7 +18725,7 @@
       "nom": "Onirique Propagande",
       "ville": "Colombier",
       "canton": "NE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création artistique",
       "montant_CHF": 15000
     },
@@ -18696,7 +18741,7 @@
       "nom": "Passion cinéma",
       "ville": "Neuchâtel",
       "canton": "NE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Evénement",
       "montant_CHF": 60000
     },
@@ -18720,7 +18765,7 @@
       "nom": "Réhabilitation Education Aide sociale - REA - Cameroun",
       "ville": "Le Locle",
       "canton": "NE",
-      "secteur": null,
+      "secteur": "Formation et recherche",
       "description": "Evénement",
       "montant_CHF": 7000
     },
@@ -18728,7 +18773,7 @@
       "nom": "Rust Roest Kollectif - RRK",
       "ville": "Neuchâtel",
       "canton": "NE",
-      "secteur": null,
+      "secteur": "Formation et recherche",
       "description": "Evénement",
       "montant_CHF": 40000
     },
@@ -18824,7 +18869,7 @@
       "nom": "Visarte.neuchâtel, Chambrelien",
       "ville": null,
       "canton": "NE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Publication",
       "montant_CHF": 2000
     },
@@ -18920,7 +18965,7 @@
       "nom": "Musée de la vigne et du vin au Château de Boudry",
       "ville": "Boudry",
       "canton": "NE",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "description": "Evénement",
       "montant_CHF": 12000
     },
@@ -19680,7 +19725,7 @@
       "nom": "Kit de cubes Multi et Miroir de correction léger Spéléo-Club des Montagnes Neuchâteloises",
       "ville": null,
       "canton": "NE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 95
     },
@@ -19688,7 +19733,7 @@
       "nom": "4 lampes frontales Team Aviron Neuchâtel",
       "ville": null,
       "canton": "NE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1240
     },
@@ -20832,7 +20877,7 @@
       "nom": "Relève ta manœuvre Assoc. scène active",
       "ville": "Carouge",
       "canton": "GE",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 30000
     },
@@ -20968,7 +21013,7 @@
       "nom": "Regroupement Ecole Sgipa (Surélévation) Fond. Trajets",
       "ville": "Les Acacias",
       "canton": "GE",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "description": "",
       "montant_CHF": 150000
     },
@@ -21104,7 +21149,7 @@
       "nom": "Réalisation d'une bande dessinée exodes dessinés Assoc. de Soutien aux Scouts Nautiques",
       "ville": "Chêne-Bourg",
       "canton": "GE",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 15000
     },
@@ -21344,7 +21389,7 @@
       "nom": "Masterclass Dessine-moi un refuge Fond. Officielle de la jeunesse",
       "ville": "Petit-Lancy",
       "canton": "GE",
-      "secteur": "Santé et handicap",
+      "secteur": "Jeunesse et éducation",
       "description": "",
       "montant_CHF": 70000
     },
@@ -21496,7 +21541,7 @@
       "nom": "Réalisation d'une bande dessinée sur la santé Vie en Ville Assoc. Un Brin Créatif",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": "Santé et handicap",
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 100000
     },
@@ -21552,7 +21597,7 @@
       "nom": "Fond. Aigues-Vertes",
       "ville": "Bernex",
       "canton": "GE",
-      "secteur": "Culture",
+      "secteur": "Santé et handicap",
       "description": "les résidents. Achat d'un véhicule utilitaire électrique pour",
       "montant_CHF": 550000
     },
@@ -22456,7 +22501,7 @@
       "nom": "Renouvellement des infrastructures technique-Lumières Assoc. Kavecs",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 20000
     },
@@ -22464,7 +22509,7 @@
       "nom": "Performance pluridisciplinaire Diagnostic Imaginaire Assoc. Kepos",
       "ville": "Conches",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 2000
     },
@@ -22472,7 +22517,7 @@
       "nom": "Edition de l'ouvrage Henry Correvon et le jardin alpin Assoc. Konnekt",
       "ville": "Chêne-Bougeries",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 30000
     },
@@ -22480,7 +22525,7 @@
       "nom": "Assoc. La Cueva Flamenca",
       "ville": "Petit-Lancy",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Saison 2021-2022 Konnekt On Sound",
       "montant_CHF": 6000
     },
@@ -22488,7 +22533,7 @@
       "nom": "Assoc. La division de la joie",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "matériel de sonorisation et de captation. Construction d'un plancher, achat de",
       "montant_CHF": 15000
     },
@@ -22496,7 +22541,7 @@
       "nom": "Assoc. La Micro-Harmonie, Féchy",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Spectacle théâtral jeune public",
       "montant_CHF": 5000
     },
@@ -22512,7 +22557,7 @@
       "nom": "Durch The Crisis artistic alternative digital campaign Assoc. Labo",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 8000
     },
@@ -22520,7 +22565,7 @@
       "nom": "Enseigne pour support visuel La Box Assoc. Laminae",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 25000
     },
@@ -22536,7 +22581,7 @@
       "nom": "Lancéennes et Genevoises à l'honneur, exposition, édition d'un catalogue et d'un roman historique Assoc. L'Animalerie",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 22000
     },
@@ -22544,7 +22589,7 @@
       "nom": "Transformation de la salle Assoc. Laurence and Friends",
       "ville": "Chambésy",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 10000
     },
@@ -22560,7 +22605,7 @@
       "nom": "Développement et renouvellement du parc technique de La Gravière Assoc. Le Projet T",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 21000
     },
@@ -22568,7 +22613,7 @@
       "nom": "Assoc. le Salto de l'Escargot",
       "ville": "Meyrin",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création théâtrale Felix for ever Walser",
       "montant_CHF": 26000
     },
@@ -22576,7 +22621,7 @@
       "nom": "Le Salto fête ses 10 ans ! Assoc. Le Social en lecture",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 2500
     },
@@ -22584,7 +22629,7 @@
       "nom": "Le Social en lecture : rencontres littéraires Assoc. Le Voisin",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 5000
     },
@@ -22600,7 +22645,7 @@
       "nom": "Un nouveau pôle artistique et pluridisciplinaire au coeur des Charmilles Assoc. Les Amis de la Guitare",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 15000
     },
@@ -22632,7 +22677,7 @@
       "nom": "Fête médiévale de Compesières Assoc. Les Menteuses",
       "ville": "Bernex",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 10000
     },
@@ -22640,7 +22685,7 @@
       "nom": "Assoc. les Rencontres Lyriques de Genève",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Exposition Je suis la menteuse",
       "montant_CHF": 25000
     },
@@ -22648,7 +22693,7 @@
       "nom": "Assoc. LesConcerts.ch",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "lyriques de Genève 2021. Ateliers et concerts gratuits, les Rencontres",
       "montant_CHF": 20000
     },
@@ -22680,7 +22725,7 @@
       "nom": "Marie Assoc. Maison de l'architecture",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création de l'oratorio La Passion selon",
       "montant_CHF": 70000
     },
@@ -22688,7 +22733,7 @@
       "nom": "Assoc. Matzaproduction",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Exposition AQUA",
       "montant_CHF": 15000
     },
@@ -22712,7 +22757,7 @@
       "nom": "Assoc. New Helvetic Shakespeare Company",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "à Genève. Spectacles interactifs de danse L'été indien",
       "montant_CHF": 35000
     },
@@ -22720,7 +22765,7 @@
       "nom": "Mayenburg Assoc. Ondine Genevoise",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Spectacle théâtral Le Moche De Marius von",
       "montant_CHF": 59500
     },
@@ -22728,7 +22773,7 @@
       "nom": "Instruments de musique - Percussions Assoc. One Gee In Fog",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 10000
     },
@@ -22752,7 +22797,7 @@
       "nom": "Assoc. Other Nature",
       "ville": "Carouge",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "soucoupe est pleine. Projet d'action culturelle et de médiation La",
       "montant_CHF": 10000
     },
@@ -22760,7 +22805,7 @@
       "nom": "Performances We want you here, and it's out of love Assoc. Ouvrir les yeux",
       "ville": "Chambésy",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 20000
     },
@@ -22768,7 +22813,7 @@
       "nom": "Edition d'un ouvrage photographique 2020 de Didier Ruef Assoc. Overseas Culture Interchange",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Conservation du patrimoine",
       "description": "",
       "montant_CHF": 25000
     },
@@ -22776,7 +22821,7 @@
       "nom": "Assoc. Pacifique",
       "ville": "Carouge",
       "canton": "GE",
-      "secteur": "Culture",
+      "secteur": "Action sociale et personnes âgées",
       "description": "jeunes genevois Danse (in). Ateliers participatifs pour jeunes migrants et",
       "montant_CHF": 100000
     },
@@ -22784,7 +22829,7 @@
       "nom": "Edition de Sillages en 5 tomes Assoc. Permacriture(s)",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 20000
     },
@@ -22792,7 +22837,7 @@
       "nom": "Permacriture Assoc. Piz Palü",
       "ville": "La Croix-de-Rozon",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création de la plateforme numérique",
       "montant_CHF": 10000
     },
@@ -22824,7 +22869,7 @@
       "nom": "Renouvellement d’une partie du parc technique lumière et son Assoc. pour la Création de Onex",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Spectacles Originaux Genevois,",
       "montant_CHF": 10000
     },
@@ -22832,7 +22877,7 @@
       "nom": "Revue et non corrigée 14 ! Assoc. pour les musiciens adultes amateurs - AMA",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 25000
     },
@@ -22840,7 +22885,7 @@
       "nom": "Assoc. pour l'étude de l'histoire du mouvement ouvrier",
       "ville": "Petit-Lancy",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "la saison 2021-22. Soutien aux activités de l'AMAmusique pour",
       "montant_CHF": 25000
     },
@@ -22856,7 +22901,7 @@
       "nom": "KIDMAPPING ateliers workshops Assoc. Privilège",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 20000
     },
@@ -22864,7 +22909,7 @@
       "nom": "Assoc. Projet H107",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création théâtrale 36 chambres par jour",
       "montant_CHF": 6000
     },
@@ -22896,7 +22941,7 @@
       "nom": "Tournage et mise en ligne de six vidéos Dessine-moi La Fontaine Assoc. Retrorama",
       "ville": "Carouge",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 10000
     },
@@ -22952,7 +22997,7 @@
       "nom": "Assoc. syndicat d'initiatives",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "pour la saison 2021-2022. Concerts de musique classique Lux Musica",
       "montant_CHF": 35000
     },
@@ -22960,7 +23005,7 @@
       "nom": "Assoc. Tacite",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création théâtrale Théâtre-Panique",
       "montant_CHF": 10000
     },
@@ -22968,7 +23013,7 @@
       "nom": "Assoc. Tako",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création d'un solo théâtral Monochrome",
       "montant_CHF": 10000
     },
@@ -23000,7 +23045,7 @@
       "nom": "Amulette Assoc. Touz'Azimuts",
       "ville": "Dardagny",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Ateliers théâtre, tables rondes et spectacle",
       "montant_CHF": 10000
     },
@@ -23008,7 +23053,7 @@
       "nom": "100 ans de la naissance de Jean-François Liegme Assoc. Trio Ernest",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 10000
     },
@@ -23024,7 +23069,7 @@
       "nom": "Initiation à la réalisation de films Usine de Films Amateurs Assoc. Velours Avoine",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 15000
     },
@@ -23032,7 +23077,7 @@
       "nom": "Comédie musicale en création Star Local World Tour Assoc. Velvet Blues",
       "ville": "Bernex",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 35000
     },
@@ -23040,7 +23085,7 @@
       "nom": "Melissa Cascarino Assoc. Vernier sur Rock",
       "ville": "Le Lignon",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Création chorégraphique Wild Rose de",
       "montant_CHF": 15000
     },
@@ -23064,7 +23109,7 @@
       "nom": "Assoc. Walkorn",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "possibilities. Création chorégraphique Dwelling in",
       "montant_CHF": 3400
     },
@@ -23080,7 +23125,7 @@
       "nom": "Assoc. WOMB",
       "ville": "Carouge",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création chorégraphique Stéréo-Genre",
       "montant_CHF": 6000
     },
@@ -23088,7 +23133,7 @@
       "nom": "Joyfully Waiting VI Assoc. Zanco",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 30000
     },
@@ -23096,7 +23141,7 @@
       "nom": "Assoc. ZIC Zag Zoug",
       "ville": "Carouge",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "er volet. Création théâtrale Ourse, 1",
       "montant_CHF": 20000
     },
@@ -23104,7 +23149,7 @@
       "nom": "Mai au Parc (MAP) Assoc. Zikids",
       "ville": "Carouge",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 10000
     },
@@ -23112,7 +23157,7 @@
       "nom": "Clips de chansons destinés à la jeunesse - Totem Assoc. Zonoff",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 7000
     },
@@ -23120,7 +23165,7 @@
       "nom": "Sonore Assoc. Telomeres S tudio",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Projet de médiation culturelle Belvédère",
       "montant_CHF": 8900
     },
@@ -23128,7 +23173,7 @@
       "nom": "CityColor 2 Genève",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Ateliers d'Ethnomusicologie,",
       "montant_CHF": 45000
     },
@@ -23160,7 +23205,7 @@
       "nom": "Centre d'édition contemporaine",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "poésie. Exposition de livres d'artistes et récital de",
       "montant_CHF": 50000
     },
@@ -23168,7 +23213,7 @@
       "nom": "Programmation 2022 du Centre d'édition contemporaine Centre d'Expression Numérique et Corporelle - CENC",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 12000
     },
@@ -23176,7 +23221,7 @@
       "nom": "Choeur Ars Vocalis",
       "ville": "Echichens",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création chorégraphique RGB",
       "montant_CHF": 12000
     },
@@ -23320,7 +23365,7 @@
       "nom": "David Ciemulator Dance Theatre",
       "ville": "Plan-les-Ouates",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "couple d'Eva · Création théâtrale Les douze travaux du",
       "montant_CHF": 6500
     },
@@ -23328,7 +23373,7 @@
       "nom": "Performances chorégraphiques Burning Giraffe ClassiCosy",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 15000
     },
@@ -23336,7 +23381,7 @@
       "nom": "Collectif AJAR",
       "ville": "Plan-les-Ouates",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Conservation du patrimoine",
       "description": "Saison de concerts",
       "montant_CHF": 2000
     },
@@ -23344,7 +23389,7 @@
       "nom": "Lectures Canap 2021 à Genève Collectif Beaulieu",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 15000
     },
@@ -23352,7 +23397,7 @@
       "nom": "Animations estivales 2021 Beaulieu en été Collectif Détente",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 15000
     },
@@ -23360,7 +23405,7 @@
       "nom": "Collectif Diorama",
       "ville": "Onex",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Exposition When the subversive stitches",
       "montant_CHF": 1000
     },
@@ -23368,7 +23413,7 @@
       "nom": "Collectif du Feu de dieu",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Exposition collective octobre 2021",
       "montant_CHF": 7000
     },
@@ -23376,7 +23421,7 @@
       "nom": "La Vie : le plus beau des voyages spectacle intergénérationnel et participatif Collectif Hoy",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 10000
     },
@@ -23384,7 +23429,7 @@
       "nom": "Espace 3353 - programmation 2021 Collectif MV",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 10000
     },
@@ -23408,7 +23453,7 @@
       "nom": "Jonction Collectif Sentimental Crétin",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "socio-culturelle de l’Ecoquartier de la · Aménagement et équipement de la salle",
       "montant_CHF": 30000
     },
@@ -23416,7 +23461,7 @@
       "nom": "Compagnie 94",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création théâtrale Montrer les dents",
       "montant_CHF": 25000
     },
@@ -23424,7 +23469,7 @@
       "nom": "Conférence théâtrale Eloge de l’oisiveté Compagnie À l'Emporter",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 17000
     },
@@ -23432,7 +23477,7 @@
       "nom": "Compagnie à verse",
       "ville": "Chêne-Bougeries",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 35000
     },
@@ -23440,7 +23485,7 @@
       "nom": "Adaptation théâtrale La Faim de Knut Hamsun Compagnie Beaver Dam",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 35000
     },
@@ -23456,7 +23501,7 @@
       "nom": "Bartlett Compagnie Cap10",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Spectacle théâtral Love Love Love de Mike",
       "montant_CHF": 35000
     },
@@ -23488,7 +23533,7 @@
       "nom": "Melquiot Compagnie du bord",
       "ville": "Petit-Lancy",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création théâtrale Le Bizarre de Fabrice",
       "montant_CHF": 8000
     },
@@ -23504,7 +23549,7 @@
       "nom": "La Boîte à Images Compagnie Équation Masquée",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 16000
     },
@@ -23512,7 +23557,7 @@
       "nom": "Correspondances, lectures théâtralisées dans l'espace public Compagnie Homologue",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 20000
     },
@@ -23528,7 +23573,7 @@
       "nom": "Compagnie Le Casse-Routine, Meinier",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Spectacle théâtral Qui est Charlie ?",
       "montant_CHF": 10000
     },
@@ -23536,7 +23581,7 @@
       "nom": "Compagnie Les Associés de l'Ombre",
       "ville": "Choulex",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création pluridisciplinaire Mamaille",
       "montant_CHF": 30000
     },
@@ -23544,7 +23589,7 @@
       "nom": "Dominique Ziegler Compagnie Les Faiseurs de rêves",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création théâtrale Morrisson's Blues de",
       "montant_CHF": 50000
     },
@@ -23552,7 +23597,7 @@
       "nom": "Supplément d'âme / Don d'orgasme Compagnie lesArts",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Spectacle itinérant le Vaisseau d'Art",
       "montant_CHF": 20000
     },
@@ -23560,7 +23605,7 @@
       "nom": "Mondial de Catch Impro Compagnie Métamorphoses",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 70000
     },
@@ -23568,7 +23613,7 @@
       "nom": "Mayenburg Compagnie Mokett",
       "ville": "Aïre",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Spectacle théâtral Martyr de Marius von",
       "montant_CHF": 35000
     },
@@ -23576,7 +23621,7 @@
       "nom": "Compagnie Passacaille",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "adaptation de quatre contes d'E. Zola. Création théâtrale Le paradis des chats,",
       "montant_CHF": 15000
     },
@@ -23592,7 +23637,7 @@
       "nom": "Compagnie Pré-Scriptum",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "pas pingouins. Création théâtrale Tous les parents ne sont",
       "montant_CHF": 15000
     },
@@ -23608,7 +23653,7 @@
       "nom": "Rallonge suite au report de la création théâtrale Manuel d'exil Compagnie vidARciTa",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 10000
     },
@@ -23616,7 +23661,7 @@
       "nom": "Deux concerts jazz-classique Mauris rencontre Maddeford - Edition 2021 Germain",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Concerts d'été de Saint-",
       "montant_CHF": 20000
     },
@@ -23632,7 +23677,7 @@
       "nom": "Programme de soutien aux lauréats, pédagogie, diffusion, enregistrement Cyparis Circus",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 25000
     },
@@ -23640,7 +23685,7 @@
       "nom": "Don't Stop Me Now",
       "ville": "Bernex",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Création théâtrale E la nave va",
       "montant_CHF": 45000
     },
@@ -23648,7 +23693,7 @@
       "nom": "Éditions Encre Fraîche",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "provisoire) · Création théâtrale Biais aller-retour (titre",
       "montant_CHF": 3500
     },
@@ -23656,7 +23701,7 @@
       "nom": "Sur le pont de Charlotte Frossard Eklekto Geneva Percussion Center",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "du roman · Publication",
       "montant_CHF": 45000
     },
@@ -23664,7 +23709,7 @@
       "nom": "Résidence et deux dates pour plusieurs concerts House Music Ensemble Cantatio",
       "ville": "Chêne-Bourg",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 30000
     },
@@ -23672,7 +23717,7 @@
       "nom": "Deux concerts en 2021 La Création de Haydn, Vénus et Adonis de Blow & Didon et Enée de Purcell Ensemble Cantatio",
       "ville": "Chêne-Bourg",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 35000
     },
@@ -23680,7 +23725,7 @@
       "nom": "Deux concerts en 2022 Œuvres sacrées de Purcell et Trauer Kantate et Messe en do majeur de Beethoven Ensemble Eole",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 15000
     },
@@ -23688,7 +23733,7 @@
       "nom": "Les Matinées Musicales du Musicobus, e édition Ensemble Variante, la musique racontée",
       "ville": "Thônex",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 10000
     },
@@ -23696,7 +23741,7 @@
       "nom": "Et si la musique classique s'écoutait autrement - Saison 2021-2022 Ensemble vocal Séquence",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 20000
     },
@@ -23704,7 +23749,7 @@
       "nom": "Salvatore Sciarrino EPI - Espace de Pratique Instrumentale",
       "ville": "Carouge",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Santé et handicap",
       "description": "ème de · Concerts Madrigaux XX",
       "montant_CHF": 9000
     },
@@ -23720,7 +23765,7 @@
       "nom": "Biennale 2021 des artistes de Kugler et de leurs invité.e.s Féd. Suisse des Architectes- Paysagistes",
       "ville": "Les Acacias",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 20000
     },
@@ -23728,7 +23773,7 @@
       "nom": "Sites et paysages genevois 1919-2019 Féd. Suisse pour le Mondial junior",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 6000
     },
@@ -23776,7 +23821,7 @@
       "nom": "Accessibilité et médiation culturelle de la bibliothèque Filigrane Fond. Autrefois Genève",
       "ville": "Plan-les-Ouates",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 30000
     },
@@ -23792,7 +23837,7 @@
       "nom": "Studios 44 - Mocap Lab Fond. de la Maison de Rousseau et de la Littérature",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 30000
     },
@@ -23808,7 +23853,7 @@
       "nom": "Edition Les sources du droit genevois en plusieurs tomes et version électronique Fond. FIFDH",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 300000
     },
@@ -23840,7 +23885,7 @@
       "nom": "Fond. Visions du Réel",
       "ville": "Nyon",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "e e édition du Salon du livre de Genève",
       "montant_CHF": 70000
     },
@@ -23872,7 +23917,7 @@
       "nom": "Portes Ouvertes des Ateliers d'Artistes de Genève Helvetas Swiss Intercooperation",
       "ville": "Châtelaine",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 4000
     },
@@ -23880,7 +23925,7 @@
       "nom": "Global Happiness Impro Suisse",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 40000
     },
@@ -23920,7 +23965,7 @@
       "nom": "Monsieur Leclair Le Fesses-tival",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Concerts et lectures Dans le salon de",
       "montant_CHF": 10000
     },
@@ -23936,7 +23981,7 @@
       "nom": "Trilogie Vinaver Le Motet de Genève",
       "ville": "La Tour-de-Trême",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "e volet de la · Création théâtrale 11 septembre 2001,",
       "montant_CHF": 20000
     },
@@ -23952,7 +23997,7 @@
       "nom": "Claude Grumberg Les Cinémas du Grütli",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Spectacle théâtral Si ça va, Bravo ! de Jean-",
       "montant_CHF": 18000
     },
@@ -23960,7 +24005,7 @@
       "nom": "Covid et la reconquête du public Les Concerts de l'Athénée 4",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Projet de transformation en lien avec le",
       "montant_CHF": 40000
     },
@@ -24040,7 +24085,7 @@
       "nom": "Genève Programme Indépendant",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "d'artistes · Création d'un site web autour de Documents Recherche, Cologny",
       "montant_CHF": 15175
     },
@@ -24048,7 +24093,7 @@
       "nom": "Rencontres cinématographiques Palestine : filmer c'est exister",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "l'humain et repenser le monde - 2 e édition · Ateliers et performance Réparation, réparer",
       "montant_CHF": 20000
     },
@@ -24080,7 +24125,7 @@
       "nom": "Sixièmes Journées suisses d'histoire Studio d'Action Théâtrale",
       "ville": "Les Acacias",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 40000
     },
@@ -24096,7 +24141,7 @@
       "nom": "Renaissance Teatro due Punti",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Exposition d'arts numériques et interactifs",
       "montant_CHF": 20000
     },
@@ -24208,7 +24253,7 @@
       "nom": "Quand tu ouvres i A Verein Schweizerisches Theatermuseum",
       "ville": "Zürich",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Publication",
       "montant_CHF": 30000
     },
@@ -24464,7 +24509,7 @@
       "nom": "Parole de Plastique Féd. Genevoise des Jardins Familiaux",
       "ville": "Vernier",
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Culture",
       "description": "Création et impression Bande dessinée",
       "montant_CHF": 20000
     },
@@ -24600,7 +24645,7 @@
       "nom": "Assoc. Cantonale Genevoise Football (ACGF)",
       "ville": null,
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 150000
     },
@@ -24624,7 +24669,7 @@
       "nom": "Assoc. Genevoise d'Athlétisme (AGA)",
       "ville": null,
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 47500
     },
@@ -24696,7 +24741,7 @@
       "nom": "Assoc. Régionale Genève Tennis (ARGT)",
       "ville": null,
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 150000
     },
@@ -24728,7 +24773,7 @@
       "nom": "Genève Snowsports",
       "ville": null,
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 61900
     },
@@ -24744,7 +24789,7 @@
       "nom": "Swiss Volley Région Genève (SVRG)",
       "ville": null,
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 83800
     },
@@ -24760,7 +24805,7 @@
       "nom": "Clubs - sports individuels",
       "ville": null,
       "canton": "GE",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 628300
     },
@@ -25080,7 +25125,7 @@
       "nom": "Equitation (suite) Passion Pony Games Sézenove",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 800
     },
@@ -25096,7 +25141,7 @@
       "nom": "Escrime CHC Escrime",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 800
     },
@@ -25232,7 +25277,7 @@
       "nom": "Sté féminine de gymnastique des Eaux-Vives",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2400
     },
@@ -25240,7 +25285,7 @@
       "nom": "Gymnastique artistique Ecole de Gymnastique Artistique Genève (EGAG)",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1500
     },
@@ -25264,7 +25309,7 @@
       "nom": "Judo Budo Club Trois-Chêne",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2800
     },
@@ -25328,7 +25373,7 @@
       "nom": "Shinbudo Martial Arts Academy Onex",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 1800
     },
@@ -25344,7 +25389,7 @@
       "nom": "Jujitsu Chôku Miyabi Jujutsu Ryu Meyrin",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1600
     },
@@ -25368,7 +25413,7 @@
       "nom": "Karaté Ippon Karaté Club Tivoli",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 4000
     },
@@ -25376,7 +25421,7 @@
       "nom": "Kyokushin Karaté Club Genève",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 7400
     },
@@ -26592,7 +26637,7 @@
       "nom": "Hockey sur glace Club des Patineurs de Meyrin",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 11200
     },
@@ -26600,7 +26645,7 @@
       "nom": "Genève-Servette Hockey Club Association",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 12000
     },
@@ -26624,7 +26669,7 @@
       "nom": "Rink hockey Genève Rink Hockey",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 11700
     },
@@ -26680,7 +26725,7 @@
       "nom": "Tchoukball Tchoukball Club Carouge",
       "ville": null,
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 4100
     },
@@ -27128,7 +27173,7 @@
       "nom": "Geneva Trophy Promotion Sàrl",
       "ville": null,
       "canton": "GE",
-      "secteur": "Sport",
+      "secteur": "Promotion, tourisme et développement",
       "description": "Championnat suisse 2021",
       "montant_CHF": 100000
     },
@@ -27880,7 +27925,7 @@
       "nom": "Assoc. Interjurassienne des Centres Culturels",
       "ville": "Les Breuleux",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Projet interdisciplinaire : Bijoux d'Intérieur",
       "montant_CHF": 15000
     },
@@ -27888,7 +27933,7 @@
       "nom": "Evidanse-année 2021 Assoc. Jeanne de la Bosse, Le Bémont",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 3000
     },
@@ -27896,7 +27941,7 @@
       "nom": "Dans les bras de Dieu. Jeanne de la Bosse Assoc. La Nef",
       "ville": "Le Noirmont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Publication",
       "montant_CHF": 8500
     },
@@ -27904,7 +27949,7 @@
       "nom": "Programme 2021 Assoc. Label Rapace",
       "ville": "Mervelier",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 7000
     },
@@ -27912,7 +27957,7 @@
       "nom": "True advices for friends d'Augustin Rebetez Assoc. Les Estivades",
       "ville": "St-Ursanne",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Publication",
       "montant_CHF": 2000
     },
@@ -27920,7 +27965,7 @@
       "nom": "Estivades 2021 Assoc. Midi théâtre",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 7500
     },
@@ -27936,7 +27981,7 @@
       "nom": "Assoc. RED",
       "ville": "Courrendlin",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Environnement",
       "description": "Saisons 2020-2021 et 2021-2022",
       "montant_CHF": 20000
     },
@@ -27968,7 +28013,7 @@
       "nom": "WAMA VOLA : projet éditorial & vinyle Assoc. KoHalition Productions",
       "ville": "Delémont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 3000
     },
@@ -27984,7 +28029,7 @@
       "nom": "Le Chant du P'tit-2021 Assoc. pour la Promotion des Artistes Réunis",
       "ville": "Delémont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 6000
     },
@@ -27992,7 +28037,7 @@
       "nom": "Mouttet CCDP - Centre Culturel du District de Porrentruy",
       "ville": "Porrentruy",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Spectacle Manon Brammeier et Jérôme",
       "montant_CHF": 20000
     },
@@ -28000,7 +28045,7 @@
       "nom": "Scènes en ville - édition 2021 CCDP - Centre Culturel du District de Porrentruy",
       "ville": "Porrentruy",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 70000
     },
@@ -28008,7 +28053,7 @@
       "nom": "Programmation 2021-2022 CCRD - Centre culturel régional Delémont",
       "ville": "Delémont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 39000
     },
@@ -28016,7 +28061,7 @@
       "nom": "Programmation 2021-2022 Centre d'impression Le Pays",
       "ville": "Porrentruy",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 4500
     },
@@ -28024,7 +28069,7 @@
       "nom": "Edition de deux ouvrages Choeur de chambre jurassien",
       "ville": "Delémont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 9000
     },
@@ -28056,7 +28101,7 @@
       "nom": "Compagnie La Dérive",
       "ville": "Soyhières",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "Saison 2021-2022",
       "montant_CHF": 6000
     },
@@ -28064,7 +28109,7 @@
       "nom": "L'Autre Conquête : spectacle / expositions Compagnie Provisoire",
       "ville": "Le Noirmont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 20000
     },
@@ -28080,7 +28125,7 @@
       "nom": "Piano à Porrentruy et à Saint-Ursanne 2021 Denis Tcheskiss",
       "ville": "Delémont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 7000
     },
@@ -28088,7 +28133,7 @@
       "nom": "Drinker's Soul, Courroux",
       "ville": "Courroux",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Création d'une peinture murale Une Fleur",
       "montant_CHF": 3000
     },
@@ -28096,7 +28141,7 @@
       "nom": "Enregistrement d'un album Ensemble de Cuivres Jurassien",
       "ville": "Porrentruy",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 7000
     },
@@ -28112,7 +28157,7 @@
       "nom": "Beatles Editions D+P",
       "ville": "Delémont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Spectacle : Emmenez-moi... Aznavour & The",
       "montant_CHF": 20000
     },
@@ -28120,7 +28165,7 @@
       "nom": "L'Univers de la Tête de Moine Editions du goudron et des plumes, Chenevez",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Publication",
       "montant_CHF": 11500
     },
@@ -28128,7 +28173,7 @@
       "nom": "Publications 2021 Ensemble des Cadets de la Fanfare de Cornol",
       "ville": "Cornol",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 6700
     },
@@ -28136,7 +28181,7 @@
       "nom": "Equinox Music",
       "ville": "Delémont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Acquisition d'instruments",
       "montant_CHF": 12000
     },
@@ -28144,7 +28189,7 @@
       "nom": "Studio professionnel d'enregistrement EREM dance / Tommy Cattin",
       "ville": "Delémont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 17000
     },
@@ -28168,7 +28213,7 @@
       "nom": "Programme culturel 2021 Espace d'art contemporain (les halles)",
       "ville": "Porrentruy",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 10000
     },
@@ -28176,7 +28221,7 @@
       "nom": "Programmation 2021 Express Therapy",
       "ville": "Cornol",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 3000
     },
@@ -28184,7 +28229,7 @@
       "nom": "Enregistrement d'un EP Fanfare de Courcelon",
       "ville": "Courcelon",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 7000
     },
@@ -28200,7 +28245,7 @@
       "nom": "Fanfare l'Ancienne de Courgenay",
       "ville": "Courgenay",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "ensembles 2021 · Concours jurassien pour solistes et",
       "montant_CHF": 6790
     },
@@ -28240,7 +28285,7 @@
       "nom": "Programmation 1 er semestre 2022 Fond. rurale interjurassienne",
       "ville": "Courtételle",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 65000
     },
@@ -28248,7 +28293,7 @@
       "nom": "Ecole d'agriculture Fond. Sur-la-Velle",
       "ville": "Le Noirmont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "de 2 livres pour les 125 ans de l'. Publication",
       "montant_CHF": 2000
     },
@@ -28264,7 +28309,7 @@
       "nom": "CulturoscoPe 2021 Free Mountains Records",
       "ville": "Lajoux",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 1000
     },
@@ -28272,7 +28317,7 @@
       "nom": "Enregistrement d'un album Galactica Productions",
       "ville": "Porrentruy",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 3000
     },
@@ -28280,7 +28325,7 @@
       "nom": "Réalisation d'un long métrage jurassien : Au fond des bois Galerie du Sauvage",
       "ville": "Porrentruy",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 6000
     },
@@ -28288,7 +28333,7 @@
       "nom": "Groupe philam",
       "ville": "Delémont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Exposition C'est les vacances ! de Guznag",
       "montant_CHF": 1500
     },
@@ -28296,7 +28341,7 @@
       "nom": "Enregistrement d'un album Harmonie Shostakovich",
       "ville": "Delémont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 2000
     },
@@ -28304,7 +28349,7 @@
       "nom": "Flash mob dans trois localités jurassiennes Jurassica",
       "ville": "Porrentruy",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 20000
     },
@@ -28328,7 +28373,7 @@
       "nom": "Programmation 2021 et rénovation de la salle L'Harmonie Courtemaîche",
       "ville": "Courtemaîche",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 5000
     },
@@ -28336,7 +28381,7 @@
       "nom": "Fête des Jeunes Musiciens Jurassiens - JMJ 2021 Magazine Les Planches",
       "ville": "Delémont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 8000
     },
@@ -28344,7 +28389,7 @@
       "nom": "Edition du magazine Les Planches - année 2021 Maxi Puch Rodeo Club",
       "ville": "Delémont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 3000
     },
@@ -28400,7 +28445,7 @@
       "nom": "Pascal Lovis",
       "ville": "Delémont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Concerts annuels 2021",
       "montant_CHF": 1000
     },
@@ -28408,7 +28453,7 @@
       "nom": "Edition d'un diptyque intitulé Terre hantée Passion Cinéma",
       "ville": "Neuchâtel",
       "canton": "NE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 6000
     },
@@ -28432,7 +28477,7 @@
       "nom": "Contribution covid-culture pour l'année Signe Productions",
       "ville": "Delémont",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 6500
     },
@@ -28448,7 +28493,7 @@
       "nom": "Programme 2021 Sté jurassienne d'émulation",
       "ville": "Porrentruy",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 22000
     },
@@ -28456,7 +28501,7 @@
       "nom": "Publications 2021 et Refonte du site web Sté jurassienne des officiers",
       "ville": "Porrentruy",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 54000
     },
@@ -28496,7 +28541,7 @@
       "nom": "Delémont-Hollywood : Edition 2021 Ursinia",
       "ville": "St-Ursanne",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 10000
     },
@@ -28592,7 +28637,7 @@
       "nom": "Musée de la poterie Université de Bâle",
       "ville": "Bâle",
       "canton": "JU",
-      "secteur": "Promotion, tourisme et développement",
+      "secteur": "Culture",
       "description": "charpente · Rénovation",
       "montant_CHF": 26000
     },
@@ -28848,7 +28893,7 @@
       "nom": "Volleyball Club Delémont",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 2000
     },
@@ -28872,7 +28917,7 @@
       "nom": "Assoc. jurassienne d’athlétisme",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 700
     },
@@ -28920,7 +28965,7 @@
       "nom": "Tennis Performance Team",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 15800
     },
@@ -29027,14 +29072,6 @@
       "secteur": "Sport",
       "description": "",
       "montant_CHF": 960
-    },
-    {
-      "nom": "Entités (activité générale)",
-      "ville": null,
-      "canton": "JU",
-      "secteur": "Sport",
-      "description": "",
-      "montant_CHF": 139910
     },
     {
       "nom": "Aikido Club Boncourt230.- Ajoie Badminton Club",
@@ -29880,7 +29917,7 @@
       "nom": "Sté suisse de sauvetage, section Delémont",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Environnement",
       "description": "",
       "montant_CHF": 1140
     },
@@ -29888,7 +29925,7 @@
       "nom": "Sté suisse de sauvetage, section Franches-Montagnes",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Environnement",
       "description": "",
       "montant_CHF": 640
     },
@@ -29936,7 +29973,7 @@
       "nom": "Triumph Moto Club Viques",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Environnement",
       "description": "",
       "montant_CHF": 910
     },
@@ -29944,7 +29981,7 @@
       "nom": "Unihockey Club Ajoie280.- Union Jura Rugby",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 540
     },
@@ -29976,7 +30013,7 @@
       "nom": "Vol libre Jura",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1130
     },
@@ -29984,7 +30021,7 @@
       "nom": "Volleyball Club Develier190.- Volleyball Club Porrentruy",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1880
     },
@@ -29992,7 +30029,7 @@
       "nom": "Volleyball Club Rossemaison410.- Volleyball Club Val Terbi",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 750
     },
@@ -30008,7 +30045,7 @@
       "nom": "Assoc. Jardin del Eden",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Jeunesse et éducation",
       "description": "",
       "montant_CHF": 500
     },
@@ -30024,7 +30061,7 @@
       "nom": "Tour du Jura cycliste BoldaiR Event",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 1000
     },
@@ -30032,7 +30069,7 @@
       "nom": "Défi BoldaiR Budo-Kan Porrentruy",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Environnement",
       "description": "",
       "montant_CHF": 500
     },
@@ -30040,7 +30077,7 @@
       "nom": "Club d’athlétisme de Fontenaus",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Championnat jurassien",
       "montant_CHF": 2500
     },
@@ -30064,7 +30101,7 @@
       "nom": "Coupe des Franches-Montagnes Club équestre de Chevenez",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 1000
     },
@@ -30080,7 +30117,7 @@
       "nom": "Challenges de Chevenez",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "Manifestations",
       "montant_CHF": 48250
     },
@@ -30088,7 +30125,7 @@
       "nom": "Curling Club Ajoie400.- Curling Club Ajoie350.- Domoniak Triathlon",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Tournoi populaire Tournoi de la Saint-Marting",
       "montant_CHF": 500
     },
@@ -30112,7 +30149,7 @@
       "nom": "Manches jurassiennes du champ. suisse Fémina Sport Glovelier",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -30120,7 +30157,7 @@
       "nom": "Femina-Club Develier",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Courses du Tabeillon",
       "montant_CHF": 500
     },
@@ -30160,7 +30197,7 @@
       "nom": "Champ. romand de gymnastique aux agrès Judo Club Boécourt250.- Champ. Jurassien par équipes Jura Challenges",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 2000
     },
@@ -30176,7 +30213,7 @@
       "nom": "Jura Défi Manège Pré-Mo Delémont",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 1000
     },
@@ -30192,7 +30229,7 @@
       "nom": "Coupe d’Europe seniors Skater-Hockey Club Courroux",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 500
     },
@@ -30200,7 +30237,7 @@
       "nom": "Sté de cavalerie d’Ajoie",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Tournoi final novices",
       "montant_CHF": 1000
     },
@@ -30216,7 +30253,7 @@
       "nom": "Sté de cavalerie des Franches-Montagnes",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "S. Concours d’attelage",
       "montant_CHF": 1000
     },
@@ -30232,7 +30269,7 @@
       "nom": "Trophée jurassien Valterbimania Sports",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Promotion, tourisme et développement",
       "description": "",
       "montant_CHF": 1000
     },
@@ -30240,7 +30277,7 @@
       "nom": "Tour du Val Terbi et Valterbimania Vélo Club Jurassia",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1000
     },
@@ -30280,7 +30317,7 @@
       "nom": "Football Club Bonfol",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Aménagement d’une place de basketball",
       "montant_CHF": 8690
     },
@@ -30288,7 +30325,7 @@
       "nom": "Football Club Franches-Montagnes",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "F. Mise aux normes de l’éclairage",
       "montant_CHF": 47077
     },
@@ -30304,7 +30341,7 @@
       "nom": "Golf Club Les Bois",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "Aménagement d’un terrain d’entraînement",
       "montant_CHF": 40290
     },
@@ -30312,7 +30349,7 @@
       "nom": "Agrandissement des vestiaires Skater-Hockey Club Bassecourt",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 6020
     },
@@ -30368,7 +30405,7 @@
       "nom": "Participation à la Coupe d’Europe dames Team Ortajoie",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 1200
     },
@@ -30392,7 +30429,7 @@
       "nom": "Convention Obstacles pour les concours hippiques",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 270
     },
@@ -30400,7 +30437,7 @@
       "nom": "Dépôt et entretien Office des sports",
       "ville": null,
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Sport",
       "description": "",
       "montant_CHF": 50000
     },
@@ -31904,7 +31941,7 @@
       "nom": "Assoc. abc.21",
       "ville": "Genève",
       "canton": "GE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "Soutien à l’édition de trois ouvrages",
       "montant_CHF": 10000
     },
@@ -31912,7 +31949,7 @@
       "nom": "Photographies de murs de pierres sèches dans l’arc jurassien, projet de livre, médiation et exposition Assoc. Agora - La Plage des Six Pompes",
       "ville": "La Chaux-de-Fonds",
       "canton": "NE",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 20000
     },
@@ -31920,7 +31957,7 @@
       "nom": "Six Pompes Summer Tour 2021 Assoc. Black Milonga",
       "ville": "Granges-Paccot",
       "canton": "FR",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 10000
     },
@@ -31936,7 +31973,7 @@
       "nom": "50 ans de droit de vote des femmes en Suisse Assoc. Boulimie Anorexie",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 9000
     },
@@ -31944,7 +31981,7 @@
       "nom": "Modernisation de la ligne graphique Assoc. des Fibromyalgiques",
       "ville": "Yverdon-les-Bains",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Santé et handicap",
       "description": "",
       "montant_CHF": 25000
     },
@@ -31976,7 +32013,7 @@
       "nom": "Journées de la Schizophrénie 2022 Assoc. suisse de l’Epilepsie",
       "ville": "Zurich",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "",
       "montant_CHF": 4000
     },
@@ -31984,7 +32021,7 @@
       "nom": "Suisse romande - réalisation d'une BD Autisme Suisse Romande",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "d'épilepsie en · Projet en faveur des jeunes atteints",
       "montant_CHF": 30000
     },
@@ -31992,7 +32029,7 @@
       "nom": "Distribution d’un kit en autisme Forum écoute",
       "ville": "Pully",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Santé et handicap",
       "description": "",
       "montant_CHF": 20000
     },
@@ -32000,7 +32037,7 @@
       "nom": "Réseau des parcs suisses",
       "ville": "Berne",
       "canton": "JU",
-      "secteur": null,
+      "secteur": "Culture",
       "description": "malentendants · Projet Une vie de qualité pour les",
       "montant_CHF": 40000
     },
@@ -32008,7 +32045,7 @@
       "nom": "Un accès pour tous, pour personnes en situation de handicap SEP - Sté suisse de sclérose en plaques",
       "ville": "Lausanne",
       "canton": "VD",
-      "secteur": null,
+      "secteur": "Santé et handicap",
       "description": "",
       "montant_CHF": 25000
     },
@@ -32184,7 +32221,7 @@
       "nom": "Bands 2021 Assoc. t.",
       "ville": "Bienne",
       "canton": "JU",
-      "secteur": "Culture",
+      "secteur": "Sport",
       "description": "Soutien au Championnat suisse des Brass",
       "montant_CHF": 90000
     },
@@ -32312,7 +32349,7 @@
       "nom": "Pro Junior Fribourg",
       "ville": "Fribourg",
       "canton": "FR",
-      "secteur": "Culture",
+      "secteur": "Sport",
       "description": "Activités 2021",
       "montant_CHF": 45000
     },

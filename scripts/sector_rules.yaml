@@ -1,0 +1,1127 @@
+# ============================================================
+# sector_rules.yaml — règles regex de classification de secteur
+# ============================================================
+#
+# Consolidation des 232 règles des 12 fichiers fix_sectors_via_keywords_v*.py.
+# L'ordre d'application reste v1 → v12 (chaque passe écrase la précédente).
+# Pour appliquer : python3 scripts/apply_sectors_from_yaml.py
+#
+# Format :
+#   <secteur cible> :
+#     - pattern: <regex>   # appliqué case-insensitive sur nom + description
+#       from_pass: v<N>    # passe d'origine (préserve l'ordre historique)
+# ============================================================
+
+_meta:
+  total_rules: 358
+  sectors: 9
+  generated_by: extract_sector_rules_to_yaml.py
+  source: 12 fichiers fix_sectors_via_keywords_v*.py
+
+Culture:
+  - pattern: '\bCinéforom\b'
+    from_pass: v1
+    order: 68
+  - pattern: '\bThéâtre\s+du\s+Jorat\b'
+    from_pass: v1
+    order: 69
+  - pattern: '\bThéâtre\s+de\s+(?:Vidy|Carouge|l''Octogone|Beaulieu)'
+    from_pass: v1
+    order: 70
+  - pattern: '\bFond(?:ation)?\.?\s+pour\s+l''art\s+dramatique\b'
+    from_pass: v1
+    order: 71
+  - pattern: '\bOrchestre\s+(?:de\s+(?:Chambre|chambre|la\s+Suisse)|symphonique)'
+    from_pass: v1
+    order: 72
+  - pattern: '\bOpéra\s+de\b'
+    from_pass: v1
+    order: 73
+  - pattern: '\bConservatoire\s+de\s+musique\b'
+    from_pass: v1
+    order: 74
+  - pattern: '\bSAMEN\b'
+    from_pass: v1
+    order: 75
+  - pattern: '\bCinémathèque\b'
+    from_pass: v1
+    order: 76
+  - pattern: '\bCinéma\s+(?:des|du|le|la|Spoutnik|REX|Bio)\b'
+    from_pass: v1
+    order: 77
+  - pattern: '\bCompagnie\s+(?:théâtrale|de\s+(?:danse|théâtre|cirque))'
+    from_pass: v1
+    order: 78
+  - pattern: '\bChœur\s+(?:de|d'')'
+    from_pass: v1
+    order: 79
+  - pattern: '\bMaîtrise\s+de\b'
+    from_pass: v1
+    order: 80
+  - pattern: '\bAssoc(?:iation)?\.?\s+(?:des\s+)?[Cc]inémas\b'
+    from_pass: v1
+    order: 81
+  - pattern: '\bFestival\s+(?:du\s+(?:film|jazz)|de\s+(?:musique|danse|musiques|jazz)|international\s+du\s+(?:film|jazz)|Verbier)'
+    from_pass: v1
+    order: 82
+  - pattern: '\bVerbier\s+Festival\b'
+    from_pass: v1
+    order: 83
+  - pattern: '\bCapitale\s+culturelle\s+suisse\b'
+    from_pass: v10
+    order: 1
+  - pattern: '\bFond\.\s+la\s+Tour\s+Vagabonde\b|\bTour\s+Vagabonde\b'
+    from_pass: v10
+    order: 4
+  - pattern: '\bPetit\s+Théâtre\s+de\s+Lausanne\b'
+    from_pass: v10
+    order: 5
+  - pattern: '\bPrix\s+de\s+Lausanne\b|\bArt\s+chorégraphique\b'
+    from_pass: v10
+    order: 6
+  - pattern: '\bKultur\s+im\s+Podium\b'
+    from_pass: v10
+    order: 7
+  - pattern: '\bFond\.\s+Bex\s+&\s+Arts\b|\bBex\s+&\s+Arts\b'
+    from_pass: v10
+    order: 8
+  - pattern: '\bAssoc\.\s+Grand\s+Mirific\b|\bGrand\s+Mirific\b'
+    from_pass: v10
+    order: 9
+  - pattern: '\bCORODIS\b'
+    from_pass: v10
+    order: 10
+  - pattern: '\bEva\s+Prod\b|\bLuxor\s+Factory\b'
+    from_pass: v11
+    order: 0
+  - pattern: '\bRock\s+Altitude\s+Festival\b|\bCorbak\s+Festival\b'
+    from_pass: v11
+    order: 1
+  - pattern: '\bCirco\s+Bello\b'
+    from_pass: v11
+    order: 2
+  - pattern: '\bCafé-théâtre\s+La\s+Grange\b'
+    from_pass: v11
+    order: 3
+  - pattern: '\bEspace\s+Culturel\s+Le\s+Nouveau\s+Monde\b'
+    from_pass: v11
+    order: 5
+  - pattern: '\bMagnifique\s+Théâtre\b'
+    from_pass: v11
+    order: 6
+  - pattern: '\bBDFIL\b|\bbande\s+dessinée\b'
+    from_pass: v11
+    order: 7
+  - pattern: '\bMaison\s+Visinand\b'
+    from_pass: v11
+    order: 8
+  - pattern: '\bSeptembre\s+Musical\b|\bMontreux-Vevey\b'
+    from_pass: v11
+    order: 9
+  - pattern: '\bFond\.\s+Jean\s+Monnet\b'
+    from_pass: v11
+    order: 10
+  - pattern: '\bAssoc\.\s+scène\s+active\b'
+    from_pass: v11
+    order: 11
+  - pattern: '\bEnsemble\s+Vocal\s+de\s+Lausanne\b|\bEVL\b'
+    from_pass: v12
+    order: 0
+  - pattern: '\bFAR\s+Festival\b'
+    from_pass: v12
+    order: 1
+  - pattern: '\bJazzOnze\s*\+\s*Festival\b|\bJazz\s+Onze\s*\+\b'
+    from_pass: v12
+    order: 2
+  - pattern: '\bAssoc\.\s+Les\s+Francomanias\b|\bFrancomanias\b'
+    from_pass: v12
+    order: 3
+  - pattern: '\bL[''\u2019]?Ensemble\s+Vocal\b'
+    from_pass: v12
+    order: 4
+  - pattern: '\bNouvel\s+Opéra\b'
+    from_pass: v2
+    order: 0
+  - pattern: '\bOpéra\s+décentralisé\b'
+    from_pass: v2
+    order: 1
+  - pattern: '\bMusée\s+de\s+la\s+Bande\s+Dessinée\b'
+    from_pass: v2
+    order: 2
+  - pattern: '\bMusée\s+BD\b'
+    from_pass: v2
+    order: 3
+  - pattern: '\bMusée\s+de?\s+l[ae]?'
+    from_pass: v2
+    order: 4
+  - pattern: '\bMaison\s+des\s+Amériques\b'
+    from_pass: v2
+    order: 5
+  - pattern: '\bMôtiers\s*-?\s*Art\s+en\s+plein\s+air\b'
+    from_pass: v2
+    order: 6
+  - pattern: '\bFond\.\s+Hainard\b'
+    from_pass: v2
+    order: 7
+  - pattern: '\bETM\s+(?:-\s+)?École\s+des\s+musiques\b'
+    from_pass: v2
+    order: 8
+  - pattern: '\bARSENIC\b'
+    from_pass: v2
+    order: 9
+  - pattern: '\bFond\.\s+Cinéforom\b'
+    from_pass: v2
+    order: 10
+  - pattern: '\bFond\.\s+pour\s+le\s+développement\s+des\s+arts\b'
+    from_pass: v2
+    order: 11
+  - pattern: '\bMaison\s+d[''\u2019]?Ailleurs\b'
+    from_pass: v2
+    order: 12
+  - pattern: '\bGalerie\s+\w'
+    from_pass: v2
+    order: 13
+  - pattern: '\bFond\.\s+Equilibre\s+et\s+Nuithonie\b'
+    from_pass: v2
+    order: 32
+  - pattern: '\bSté\s+Vaudoise\s+d[''\u2019]?Astronomie\b'
+    from_pass: v2
+    order: 53
+  - pattern: '\bFond\.\s+Plateforme\s+10\b'
+    from_pass: v3
+    order: 0
+  - pattern: '\bFond\.\s+du\s+Festival\s+de\s+la\s+Cité\b'
+    from_pass: v3
+    order: 1
+  - pattern: '\bThéâtre\s+Le\s+Reflet\b'
+    from_pass: v3
+    order: 2
+  - pattern: '\bArts\s+et\s+Spectacles\s+de\s+Vevey\b'
+    from_pass: v3
+    order: 3
+  - pattern: '\bFond\.\s+FIFDH\b'
+    from_pass: v3
+    order: 4
+  - pattern: '\bL''avant-scène\s+Opéra\b|\bL\u2019avant-scène\s+Opéra\b'
+    from_pass: v3
+    order: 5
+  - pattern: '\bmarionNEttes\b'
+    from_pass: v3
+    order: 6
+  - pattern: '\bStandard\s+Deluxe\b'
+    from_pass: v3
+    order: 7
+  - pattern: '\bMaison\s+du\s+dessin\s+de\s+presse\b'
+    from_pass: v3
+    order: 8
+  - pattern: '\bMaison\s+Tavel\b'
+    from_pass: v3
+    order: 9
+  - pattern: '\bTKM\b|\bThéâtre\s+Kléber[\s-]Méleau\b'
+    from_pass: v4
+    order: 0
+  - pattern: '\bFond\.\s+pour\s+le\s+Théâtre\s+du\s+Jura\b'
+    from_pass: v4
+    order: 1
+  - pattern: '\bSinfonietta\s+de\s+Lausanne\b'
+    from_pass: v4
+    order: 2
+  - pattern: '\bFond\.\s+OSR\b|\bOrchestre\s+de\s+la\s+Suisse\s+Romande\b'
+    from_pass: v4
+    order: 3
+  - pattern: '\bPoésie\s+en\s+Arrosoir\b'
+    from_pass: v4
+    order: 4
+  - pattern: '\bRFI\b.*Folklore|\bRencontres\s+Internationales\s+de\s+Folklore\b'
+    from_pass: v4
+    order: 5
+  - pattern: '\bFolklore\s+international\b'
+    from_pass: v4
+    order: 6
+  - pattern: '\bAssoc\.\s+(?:du\s+)?Théâtre\b'
+    from_pass: v4
+    order: 7
+  - pattern: '\bCentre\s+dramatique\b'
+    from_pass: v5
+    order: 0
+  - pattern: '\bBéjart\s+Ballet\b|\bBBL\b'
+    from_pass: v5
+    order: 1
+  - pattern: '\bFond\.\s+de\s+l[''\u2019]?Hermitage\b'
+    from_pass: v5
+    order: 2
+  - pattern: '\bFri[\s-]Son\b'
+    from_pass: v5
+    order: 3
+  - pattern: '\bUsine\s+à\s+Gaz\b'
+    from_pass: v5
+    order: 4
+  - pattern: '\bMusique\s+des\s+Lumières\b'
+    from_pass: v5
+    order: 5
+  - pattern: '\bAssoc\.\s+CORODIS\b'
+    from_pass: v5
+    order: 6
+  - pattern: '\bSalopard\b|\b\.\.\.\s*e\s+la\s+nave\s+va\b'
+    from_pass: v5
+    order: 7
+  - pattern: '\bBibliothèque\s+interculturelle\b|\bLivrEchange\b'
+    from_pass: v5
+    order: 8
+  - pattern: '\bLe\s+Temple\s+du\s+Polar\b'
+    from_pass: v6
+    order: 0
+  - pattern: '\bBelluard\s+Bollwerk\b'
+    from_pass: v6
+    order: 1
+  - pattern: '\bVisions\s+du\s+Réel\b'
+    from_pass: v6
+    order: 2
+  - pattern: '\bFond\.\s+pour\s+les\s+musiques\s+actuelles\b|\bFMA\b.*Docks|\bLes\s+Docks\b'
+    from_pass: v6
+    order: 3
+  - pattern: '\bSté\s+Cantonale\s+des\s+Musiques?\s+Vaudoises\b|\bSCMV\b'
+    from_pass: v6
+    order: 4
+  - pattern: '\bFond\.\s+CMA\b'
+    from_pass: v6
+    order: 5
+  - pattern: '\bAssoc\.\s+Culture\s+Valais\b'
+    from_pass: v6
+    order: 6
+  - pattern: '\bDreamAgo\b'
+    from_pass: v6
+    order: 7
+  - pattern: '\bFerme[\s-]Asile\b'
+    from_pass: v6
+    order: 8
+  - pattern: '\bAssoc\.\s+CORODIS\b|\bCORODIS\b'
+    from_pass: v6
+    order: 9
+  - pattern: '\b\.\.\.e\s+la\s+nave\s+va\b'
+    from_pass: v6
+    order: 10
+  - pattern: '\bSalopard\b'
+    from_pass: v6
+    order: 11
+  - pattern: '\bPôle\s+Musique\s+Sion\b'
+    from_pass: v8
+    order: 0
+  - pattern: '\bKunsthalle\s+Friart\b'
+    from_pass: v8
+    order: 1
+  - pattern: '\bFond\.\s+Barnabé\b'
+    from_pass: v8
+    order: 2
+  - pattern: '\bBiblioFR\b|\bbibliothèques?\s+fribourgeoises?\b'
+    from_pass: v8
+    order: 3
+  - pattern: '\bCrans-Montana\s+Classics\b'
+    from_pass: v8
+    order: 4
+  - pattern: '\bArc\s+en\s+Scène\b'
+    from_pass: v8
+    order: 5
+  - pattern: '\bCentre\s+culturel\s+ABC\b'
+    from_pass: v8
+    order: 6
+  - pattern: '\bEX-pression\b|\bEx-pression\b'
+    from_pass: v8
+    order: 7
+  - pattern: '\bCentre\s+Culturel\s+Neuchâtelois\b|\bCCN\b'
+    from_pass: v9
+    order: 0
+  - pattern: '\bEnsemble\s+Symphonique\s+Neuchâtel\b|\bESN\b'
+    from_pass: v9
+    order: 1
+  - pattern: '\bClub\s+44\b'
+    from_pass: v9
+    order: 2
+
+Sport:
+  - pattern: '\bFC[\s-]\w'
+    from_pass: v1
+    order: 0
+  - pattern: '\bHC[\s-]\w'
+    from_pass: v1
+    order: 1
+  - pattern: '\bEHC[\s-]\w'
+    from_pass: v1
+    order: 2
+  - pattern: '\bUHC[\s-]\w'
+    from_pass: v1
+    order: 3
+  - pattern: '\bBC[\s-][A-Z]'
+    from_pass: v1
+    order: 4
+  - pattern: '\bVBC[\s-]?'
+    from_pass: v1
+    order: 5
+  - pattern: '\bBBC[\s-]?'
+    from_pass: v1
+    order: 6
+  - pattern: '\bTennis[\s-]?Club\b'
+    from_pass: v1
+    order: 7
+  - pattern: '\bSki[\s-]?Club\b'
+    from_pass: v1
+    order: 8
+  - pattern: '\bClub\s+Sportif\b'
+    from_pass: v1
+    order: 9
+  - pattern: '\bclub\s+(?:de\s+)?(?:football|hockey|tennis|ski|natation|basket|volley|gymnastique|cyclisme|escrime|judo|karaté|boxe|rugby|équitation|handball)\b'
+    from_pass: v1
+    order: 10
+  - pattern: '\b(?:Société|Soc|Sté)\s+(?:de\s+)?(?:gymnastique|tir|escrime|cyclisme|natation)\b'
+    from_pass: v1
+    order: 11
+  - pattern: '\bFSG[\s-][A-Z]'
+    from_pass: v1
+    order: 12
+  - pattern: '\bAssoc(?:iation)?\.?\s+(?:cantonale\s+)?(?:vaudoise|valaisanne|fribourgeoise|genevoise|neuchâteloise|jurassienne|romande)\s+de\s+(?:football|hockey|tennis|ski|natation|basket|gymnastique|cyclisme|tir|escrime|judo|équitation|patinage|curling|athlétisme|volleyball|handball|rugby)\b'
+    from_pass: v1
+    order: 13
+  - pattern: '\bChampionnat\s+(?:du\s+)?Monde\s+(?:MTB|UCI|de\s+ski|de\s+hockey|de\s+football|de\s+gym|cycl|VTT)'
+    from_pass: v1
+    order: 14
+  - pattern: '\bTour\s+de\s+Romandie\b'
+    from_pass: v1
+    order: 15
+  - pattern: '\bSierre[\s-]Zinal\b'
+    from_pass: v1
+    order: 16
+  - pattern: '\bPatrouille\s+des\s+Glaciers\b'
+    from_pass: v1
+    order: 17
+  - pattern: '\bMorat[\s-]Fribourg\b'
+    from_pass: v1
+    order: 18
+  - pattern: '\bGrand[\s-]Raid\b'
+    from_pass: v1
+    order: 19
+  - pattern: '\bsporti(?:f|fs|ve|ves)\b'
+    from_pass: v1
+    order: 20
+  - pattern: '\bAssoc\.\s+Cantonale\s+(?:Vaudoise|Genevoise|Valaisanne|Fribourgeoise|Neuchâteloise|Jurassienne)\s*,?\s+Football\b'
+    from_pass: v10
+    order: 11
+  - pattern: '\bSwiss\s+Bike\s+Park\b'
+    from_pass: v12
+    order: 6
+  - pattern: '\bAssoc\.\s+JuraCycles\b|\bJuraCycles\.ch\b'
+    from_pass: v12
+    order: 10
+  - pattern: '\bClubs?\s*[-–]\s*Sports?\s+(?:collectifs|individuels)\b'
+    from_pass: v2
+    order: 14
+  - pattern: '\bRelève\s+athlètes\s*[-–]\s*Sports?\b'
+    from_pass: v2
+    order: 15
+  - pattern: '\bChampionnat[s]?\s+(?:du\s+)?Monde\s+(?:MTB|UCI|cycl)'
+    from_pass: v2
+    order: 16
+  - pattern: '\bChampionnats?\s+(?:de\s+)?Suisse\b'
+    from_pass: v2
+    order: 17
+  - pattern: '\bMTB\b'
+    from_pass: v2
+    order: 18
+  - pattern: '\bcrosshockey\b'
+    from_pass: v2
+    order: 19
+  - pattern: '\b(?:Maison|Centre)\s+du\s+sport\b'
+    from_pass: v2
+    order: 20
+  - pattern: '\bAssoc\.\s+Cantonale\s+Genevoise\s+(?:Football|Tennis|Volleyball|Basketball|Athlétisme)\b'
+    from_pass: v3
+    order: 25
+  - pattern: '\bAssoc\.\s+Régionale\s+Genève\s+(?:Tennis|Football|Volleyball)\b'
+    from_pass: v3
+    order: 26
+  - pattern: '\bSwiss\s+Volley\b'
+    from_pass: v3
+    order: 27
+  - pattern: '\bAssoc\.\s+Bike\s+Freeride\b'
+    from_pass: v3
+    order: 28
+  - pattern: '\bFIS\s+Ski\s+Alpin\b|\bChampionnats?\s+du\s+monde\s+(?:de\s+)?Ski\b'
+    from_pass: v3
+    order: 29
+  - pattern: '\bAssoc\.\s+FIS\b'
+    from_pass: v3
+    order: 30
+  - pattern: '\bAssoc\.\s+Cantonale\s+Genevoise\s*$'
+    from_pass: v4
+    order: 12
+  - pattern: '\bWorldcup\s+Veysonnaz\b|\bAssoc\.\s+Genevoise\s+d[''\u2019]?Athlétisme\b'
+    from_pass: v6
+    order: 14
+  - pattern: '\bLions\s+de\s+Genève\b'
+    from_pass: v6
+    order: 15
+  - pattern: '\bGenève\s+Snowsports\b'
+    from_pass: v6
+    order: 16
+  - pattern: '\bJura\s+Bike\s+Park\b'
+    from_pass: v8
+    order: 23
+  - pattern: '\bPro\s+Junior\s+(?:Fribourg|Vaud|Valais|Genève)\b'
+    from_pass: v8
+    order: 24
+
+'Action sociale et personnes âgées':
+  - pattern: '\bPro\s+Senectute\b'
+    from_pass: v1
+    order: 40
+  - pattern: '\bCaritas\b'
+    from_pass: v1
+    order: 41
+  - pattern: '\bEmmaüs\b'
+    from_pass: v1
+    order: 42
+  - pattern: '\b(?:CSP|Centre\s+Social\s+Protestant)\b'
+    from_pass: v1
+    order: 43
+  - pattern: '\bSecours\s+catholique\b'
+    from_pass: v1
+    order: 44
+  - pattern: '\bAVIVO\b'
+    from_pass: v1
+    order: 45
+  - pattern: '\bSoupe\s+populaire\b'
+    from_pass: v1
+    order: 46
+  - pattern: '\bVestiaire\s+social\b'
+    from_pass: v1
+    order: 47
+  - pattern: '\bColis\s+du\s+[Cc]œur\b'
+    from_pass: v1
+    order: 48
+  - pattern: '\bArmée\s+du\s+Salut\b'
+    from_pass: v1
+    order: 49
+  - pattern: '\bEntraide\s+Familiale\b'
+    from_pass: v1
+    order: 50
+  - pattern: '\bMaison\s+de\s+retraite\b'
+    from_pass: v1
+    order: 51
+  - pattern: '\bRésidence.*(?:aînés|seniors|3e\s+âge|3ème\s+âge)\b'
+    from_pass: v1
+    order: 52
+  - pattern: '\bFond\.\s+Partage\b'
+    from_pass: v10
+    order: 0
+  - pattern: '\bUnions\s+Chrétiennes\s+de\s+Genève\b|\bUCG\b'
+    from_pass: v10
+    order: 2
+  - pattern: '\bLa\s+Rozavère\b'
+    from_pass: v10
+    order: 12
+  - pattern: '\bFond\.\s+de\s+l[''\u2019]?Orme\b'
+    from_pass: v10
+    order: 13
+  - pattern: '\bEducation\s+Familiale\b'
+    from_pass: v10
+    order: 15
+  - pattern: '\bCollectif\s+d[''\u2019]?Associations\s+pour\s+l[''\u2019]?urgence\s+sociale\b'
+    from_pass: v12
+    order: 7
+  - pattern: '\bAssoc\.\s+Pacifique\b'
+    from_pass: v12
+    order: 8
+  - pattern: '\bFond\.\s+Phénix\b'
+    from_pass: v2
+    order: 33
+  - pattern: '\bUNHCR\b'
+    from_pass: v2
+    order: 34
+  - pattern: '\bFond\.\s+ATD\s+Quart\s+Monde\b'
+    from_pass: v2
+    order: 35
+  - pattern: '\bAccueil\s+à\s+Bas\s+Seuil\b|\bABS\b'
+    from_pass: v2
+    order: 36
+  - pattern: '\bFond\.\s+Officielle\s+de\s+la\s+jeunesse\b'
+    from_pass: v2
+    order: 37
+  - pattern: '\bFEA\b'
+    from_pass: v2
+    order: 38
+  - pattern: '\bMaison\s+d[''\u2019]?enfants\b'
+    from_pass: v2
+    order: 39
+  - pattern: '\bAssoc\.\s+La\s+Chaloupe\b'
+    from_pass: v2
+    order: 40
+  - pattern: '\bEspacefemmes\b|\bfrauenraum\b'
+    from_pass: v3
+    order: 23
+  - pattern: '\bFond\.\s+Morija\b'
+    from_pass: v3
+    order: 24
+  - pattern: '\bSwitzerland\s+for\s+UNHCR\b'
+    from_pass: v3
+    order: 38
+  - pattern: '\bFond\.\s+Immobilière\s+Privée\s+pour\s+l[''\u2019]?Insertion\s+Sociale\b'
+    from_pass: v5
+    order: 9
+  - pattern: '\bATD[\s-]?Quart\s+Monde\b'
+    from_pass: v5
+    order: 10
+  - pattern: '\bAssoc\.\s+Argos\b'
+    from_pass: v5
+    order: 11
+  - pattern: '\bAccueil\s+à\s+Bas\s+Seuil\b|\bABS\b'
+    from_pass: v5
+    order: 12
+  - pattern: '\bCoopérative\s+Cité\s+Derrière\b'
+    from_pass: v5
+    order: 18
+  - pattern: '\bSolidarité\s+Femmes\b'
+    from_pass: v6
+    order: 17
+  - pattern: '\bCCSI\b|\bCentre\s+de\s+Contact\s+Suisses[\s-]Immigrés\b'
+    from_pass: v6
+    order: 18
+  - pattern: '\bEMS\s+[A-Z]\w|\bEMS\s+(?:Les?|La|du|de|St|Saint)\b|\bRésidence\s+(?:Jean|Les?)'
+    from_pass: v7
+    order: 0
+  - pattern: '\bFond\.\s+Jeanne-Milloud\b'
+    from_pass: v7
+    order: 1
+  - pattern: '\ble\s+C\.A\.R\.É\b|\bC\.A\.R\.É\b'
+    from_pass: v8
+    order: 25
+  - pattern: '\bHome\s+Saint\s+Pierre\s+Petershöfli\b|\bSaint\s+Pierre\s+Petershöfli\b'
+    from_pass: v8
+    order: 26
+  - pattern: '\bAssoc\.\s+SemoNord\b|\bSEMO\b'
+    from_pass: v8
+    order: 27
+
+'Conservation du patrimoine':
+  - pattern: '\bÉglise\s+(?:catholique|protestante|réformée|anglicane|évangélique)\b'
+    from_pass: v1
+    order: 53
+    search_field: name
+  - pattern: '\bÉglise\s+de\s+\w'
+    from_pass: v1
+    order: 54
+    search_field: name
+  - pattern: '\bParoisse\b'
+    from_pass: v1
+    order: 55
+    search_field: name
+  - pattern: '\bChapelle\b(?!\s+[Aa]rt)'
+    from_pass: v1
+    order: 56
+    search_field: name
+  - pattern: '\bAbbaye\b'
+    from_pass: v1
+    order: 57
+    search_field: name
+  - pattern: '\bCathédral'
+    from_pass: v1
+    order: 58
+    search_field: name
+  - pattern: '\bMonastère\b'
+    from_pass: v1
+    order: 59
+    search_field: name
+  - pattern: '\bCouvent\b'
+    from_pass: v1
+    order: 60
+    search_field: name
+  - pattern: '\bKirchen'
+    from_pass: v1
+    order: 61
+    search_field: name
+  - pattern: '\bPfarrei\b'
+    from_pass: v1
+    order: 62
+    search_field: name
+  - pattern: '\bArchéolog'
+    from_pass: v1
+    order: 63
+    search_field: name
+  - pattern: '\bAventicum\b'
+    from_pass: v1
+    order: 64
+    search_field: name
+  - pattern: '\bSauvegarde\s+du\s+patrimoine\b'
+    from_pass: v1
+    order: 65
+    search_field: name
+  - pattern: '\bChâteau\s+(?:de|d'')'
+    from_pass: v1
+    order: 66
+    search_field: name
+  - pattern: '\bMusée\s+d[''\u2019]?(?:histoire|art\s+et\s+d[''\u2019]histoire)'
+    from_pass: v1
+    order: 67
+    search_field: name
+  - pattern: '\bPanorama\s+de\s+la\s+Bataille\s+de\s+Morat\b'
+    from_pass: v10
+    order: 3
+  - pattern: '\bCathédrale\s+de\b'
+    from_pass: v2
+    order: 42
+  - pattern: '\bLavaux\s+Patrimoine\b'
+    from_pass: v2
+    order: 43
+  - pattern: '\bAvenches?\s+Romaine?\b'
+    from_pass: v2
+    order: 44
+  - pattern: '\bAventicum\b'
+    from_pass: v2
+    order: 45
+  - pattern: '\bFond\.\s+Portail\s+des\s+Nations\b'
+    from_pass: v2
+    order: 46
+  - pattern: '\bFort\s+de\s+Chillon\b'
+    from_pass: v2
+    order: 47
+  - pattern: '\bSauvegarde\s+du\s+Patrimoine\b'
+    from_pass: v2
+    order: 48
+  - pattern: '\bSauvetage\s+de\s+la\s+Belotte[\s-]Bellerive\b'
+    from_pass: v4
+    order: 10
+  - pattern: '\bEspace\s+du\s+Blé\s+au\s+Pain\b'
+    from_pass: v5
+    order: 13
+  - pattern: '\bASPAM\b|\bprotection\s+du\s+patrimoine\s+des\s+Montagnes\b'
+    from_pass: v5
+    order: 14
+  - pattern: '\bFond\.\s+Jean\s+Monnet\b'
+    from_pass: v6
+    order: 12
+  - pattern: '\bVitrocentre\s+Romont\b|\brecherche\s+sur\s+le\s+vitrail\b'
+    from_pass: v6
+    order: 13
+  - pattern: '\bMusée\s+international\s+de\s+la\s+Croix-Rouge\b'
+    from_pass: v7
+    order: 2
+  - pattern: '\bAmis\s+(?:des\s+)?Musées?\b'
+    from_pass: v7
+    order: 3
+  - pattern: '\bMusée\s+(?:Cantonal\s+)?(?:de\s+)?Zoologie\b'
+    from_pass: v7
+    order: 4
+  - pattern: '\bMusée\s+suisse\s+du\s+Cheval\b'
+    from_pass: v7
+    order: 5
+  - pattern: '\bMusée\s+suisse\s+de\s+l[''\u2019]?appareil\s+photographique\b'
+    from_pass: v7
+    order: 6
+  - pattern: '\bNuit\s+des\s+Musées\b'
+    from_pass: v7
+    order: 7
+  - pattern: '\bMusée\s+(?:cantonal\s+)?(?:des\s+|d[''\u2019])?Beaux-Arts\b'
+    from_pass: v7
+    order: 8
+  - pattern: '\bFond\.\s+Martin\s+Bodmer\b'
+    from_pass: v8
+    order: 8
+  - pattern: '\bFond\.\s+Opale\b'
+    from_pass: v8
+    order: 9
+  - pattern: '\bFond\.\s+Pierre\s+Gianadda\b'
+    from_pass: v8
+    order: 10
+  - pattern: '\bFond\.\s+Maurice\s+Favre\b'
+    from_pass: v8
+    order: 11
+  - pattern: '\bMusée\s+Bodmer\b|\bBibliothèque\s+Bodmer\b'
+    from_pass: v8
+    order: 12
+  - pattern: '\bFond\.\s+La\s+Tour\s+de\s+Choully\b'
+    from_pass: v8
+    order: 13
+  - pattern: '\bVallée\s+des\s+dinosaures\b'
+    from_pass: v8
+    order: 14
+
+'Santé et handicap':
+  - pattern: '\bEMS[\s-]\w'
+    from_pass: v1
+    order: 21
+  - pattern: '\bEMS\b(?:''|\s)'
+    from_pass: v1
+    order: 22
+  - pattern: '\bHôpital\b'
+    from_pass: v1
+    order: 23
+  - pattern: '\bH[oô]pitaux\b'
+    from_pass: v1
+    order: 24
+  - pattern: '\bCHUV\b'
+    from_pass: v1
+    order: 25
+  - pattern: '\bHUG\b'
+    from_pass: v1
+    order: 26
+  - pattern: '\bHRC\b'
+    from_pass: v1
+    order: 27
+  - pattern: '\bClinique\b'
+    from_pass: v1
+    order: 28
+  - pattern: '\bLigue\b.*\b(?:cancer|oncologie|diabète|alzheimer)'
+    from_pass: v1
+    order: 29
+  - pattern: '\bPro\s+Infirmis\b'
+    from_pass: v1
+    order: 30
+  - pattern: '\bInsieme\b'
+    from_pass: v1
+    order: 31
+  - pattern: '\bCap\s+Loisirs\b'
+    from_pass: v1
+    order: 32
+  - pattern: '\bFAH\s+Foyer-Handicap\b'
+    from_pass: v1
+    order: 33
+  - pattern: '\b(?:soins?\s+(?:à\s+)?domicile|aide.*soins?.*domicile)\b'
+    from_pass: v1
+    order: 34
+  - pattern: '\bAVASAD\b'
+    from_pass: v1
+    order: 35
+  - pattern: '\bSamaritains?\b'
+    from_pass: v1
+    order: 36
+  - pattern: '\bCroix[\s-]Rouge\b'
+    from_pass: v1
+    order: 37
+  - pattern: '\bspecial\s+olympics?\b'
+    from_pass: v1
+    order: 38
+  - pattern: '\bAFAAP\b'
+    from_pass: v1
+    order: 39
+  - pattern: '\bSwiss\s+Aware\b'
+    from_pass: v12
+    order: 5
+  - pattern: '\beHnv\b'
+    from_pass: v2
+    order: 21
+  - pattern: '\b(?:Établissements?|Etablissements?)\s+hospitalier'
+    from_pass: v2
+    order: 22
+  - pattern: '\bAVASAD\b'
+    from_pass: v2
+    order: 23
+  - pattern: '\bEnsemble\s+hospitalier\b'
+    from_pass: v2
+    order: 24
+  - pattern: '\bRéseau\s+santé\b'
+    from_pass: v2
+    order: 25
+  - pattern: '\bFond\.\s+Trajets\b'
+    from_pass: v2
+    order: 26
+  - pattern: '\bAigues-Vertes\b'
+    from_pass: v2
+    order: 27
+  - pattern: '\bÉtablissements?\s+publics\s+pour\s+l[''\u2019]intégration'
+    from_pass: v2
+    order: 28
+  - pattern: '\bEPI\b(?:,\s+Genève)?'
+    from_pass: v2
+    order: 29
+  - pattern: '\bFoyers?\s+Valais\s+de\s+cœur\b'
+    from_pass: v2
+    order: 30
+  - pattern: '\bFond\.\s+Foyer-Handicap\b'
+    from_pass: v2
+    order: 31
+  - pattern: '\bFond\.\s+Transport\s+Handicap\b|\bTHV\b'
+    from_pass: v3
+    order: 20
+  - pattern: '\bfond[''\u2019]?IMAD\b|\bIMAD\b'
+    from_pass: v3
+    order: 21
+  - pattern: '\bLe\s+Foyer.*aveugles\b|\baveugles\s+ou\s+malvoyants\b'
+    from_pass: v3
+    order: 22
+  - pattern: '\bPôle\s+Santé\b'
+    from_pass: v5
+    order: 17
+
+'Formation et recherche':
+  - pattern: '\bJobtrek\b'
+    from_pass: v10
+    order: 14
+  - pattern: '\bVitrocentre\s+Romont\b'
+    from_pass: v11
+    order: 15
+  - pattern: '\bCERN\b'
+    from_pass: v2
+    order: 54
+  - pattern: '\bFernfachhochschule\b'
+    from_pass: v2
+    order: 55
+  - pattern: '\bIdiap\b'
+    from_pass: v2
+    order: 56
+  - pattern: '\bISREC\b'
+    from_pass: v2
+    order: 57
+  - pattern: '\bFond\.\s+pour\s+la\s+recherche\b'
+    from_pass: v2
+    order: 58
+  - pattern: '\bUniversité\s+de\s+\w'
+    from_pass: v2
+    order: 59
+  - pattern: '\bHaute\s+école\b'
+    from_pass: v2
+    order: 60
+  - pattern: '\bHES[\s-]?SO\b'
+    from_pass: v2
+    order: 61
+  - pattern: '\bEPFL\b'
+    from_pass: v2
+    order: 62
+  - pattern: '\bCSEM\b'
+    from_pass: v2
+    order: 63
+  - pattern: '\bFond\.\s+Pathologie\s+2000\b'
+    from_pass: v2
+    order: 64
+  - pattern: '\bNeurocelliA\b'
+    from_pass: v2
+    order: 65
+  - pattern: '\bAssoc\.\s+Salon\s+des\s+Métiers\b'
+    from_pass: v2
+    order: 66
+  - pattern: '\bCité\s+des\s+Métiers\b'
+    from_pass: v2
+    order: 67
+  - pattern: '\bÉcole\s+Suisse\s+d[''\u2019]?Archéologie\b'
+    from_pass: v2
+    order: 68
+  - pattern: '\bCité\s+universitaire\s+de\s+Genève\b'
+    from_pass: v3
+    order: 10
+  - pattern: '\bMaison\s+d[''\u2019]?Albert\b'
+    from_pass: v3
+    order: 11
+  - pattern: '\bFond\.\s+pour\s+le\s+soutien\s+de\s+la\s+recherche\b'
+    from_pass: v3
+    order: 12
+  - pattern: '\bNeurocelliA\b'
+    from_pass: v3
+    order: 13
+  - pattern: '\bSwiss\s+Solar\s+Boat\b'
+    from_pass: v3
+    order: 14
+  - pattern: '\bdéveloppement\s+de\s+l[''\u2019]?on(?:co|to)logie\b'
+    from_pass: v3
+    order: 15
+  - pattern: '\bBIBEL\+ORIENT\b|\bBIBEL\s+und\s+ORIENT\b'
+    from_pass: v4
+    order: 8
+  - pattern: '\bUniversität\s+Fribourg\b|\bUniversität\s+Freiburg\b'
+    from_pass: v4
+    order: 9
+  - pattern: '\bInstitut\s+de\s+Hautes\s+Études\s+Internationales\b|\bIHEID\b'
+    from_pass: v8
+    order: 16
+  - pattern: '\bDind\s+Cottier\b'
+    from_pass: v8
+    order: 17
+  - pattern: '\bEuroVacc\b'
+    from_pass: v8
+    order: 18
+  - pattern: '\bSwiss\s+Biobanking\s+Platform\b'
+    from_pass: v8
+    order: 19
+  - pattern: '\bFond\.\s+EspeRare\b'
+    from_pass: v8
+    order: 20
+  - pattern: '\bécole\s+Rudolf\s+Steiner\b'
+    from_pass: v8
+    order: 21
+  - pattern: '\bInstallateurs?\s+en\s+chauffage\b|\bApprentissage\s+du\s+chauffage\b'
+    from_pass: v8
+    order: 22
+  - pattern: '\bConservatoire\s+(?:cantonal\s+)?de\s+musique\b'
+    from_pass: v9
+    order: 3
+
+'Promotion, tourisme et développement':
+  - pattern: '\bValais[/\s]?Wallis\s+Promotion\b'
+    from_pass: v1
+    order: 90
+  - pattern: '\bVaud\s+Promotion\b'
+    from_pass: v1
+    order: 91
+  - pattern: '\bFribourg\s+Région\b'
+    from_pass: v1
+    order: 92
+  - pattern: '\bJura\s+Tourisme\b'
+    from_pass: v1
+    order: 93
+  - pattern: '\bValrando\b'
+    from_pass: v1
+    order: 94
+  - pattern: '\bSlowUp\b'
+    from_pass: v1
+    order: 95
+  - pattern: '\bCommune\s+de\s+Lucens\b'
+    from_pass: v10
+    order: 16
+  - pattern: '\bFond\.\s+rurale\s+interjurassienne\b'
+    from_pass: v11
+    order: 14
+  - pattern: '\bSechseläuten\b'
+    from_pass: v12
+    order: 11
+  - pattern: '\bgîte\s+EL\s+JIRE\b|\bEl\s+Jire\b'
+    from_pass: v12
+    order: 12
+  - pattern: '\bFond\.\s+The\s+Ark\b'
+    from_pass: v2
+    order: 69
+  - pattern: '\bGrandson[\s-]Murten\b'
+    from_pass: v2
+    order: 70
+  - pattern: '\bVaud\s+Promotion\b'
+    from_pass: v2
+    order: 71
+  - pattern: '\bValais[/\s]?Wallis\s+Promotion\b'
+    from_pass: v2
+    order: 72
+  - pattern: '\bFribourg\s+Région\b'
+    from_pass: v2
+    order: 73
+  - pattern: '\bSAC\s+Sektion\b'
+    from_pass: v3
+    order: 31
+  - pattern: '\bClub\s+Alpin\s+Suisse\s+CAS\b'
+    from_pass: v3
+    order: 32
+  - pattern: '\bCabane\s+du?\s+Vélan\b|\bCabane\s+du?\s+Schönbiel\b|\bCabane\s+du?\s+Trient\b'
+    from_pass: v3
+    order: 33
+  - pattern: '\bAssoc\.\s+Stand[''\u2019]?été\b'
+    from_pass: v3
+    order: 34
+  - pattern: '\bGeneva\s+Trophy\s+Promotion\b'
+    from_pass: v4
+    order: 11
+  - pattern: '\bIVV\b|\bInterprofession\s+de\s+la\s+Vigne\s+et\s+du\s+Vin\b'
+    from_pass: v5
+    order: 15
+  - pattern: '\bVapeur\s+Val[\s-]de[\s-]Travers\b|\bVVT\b'
+    from_pass: v5
+    order: 16
+  - pattern: '\bBy\s+Grevin\s+SA\b|\bGrevin\b'
+    from_pass: v8
+    order: 28
+
+Environnement:
+  - pattern: '\bPro\s+Natura\b'
+    from_pass: v1
+    order: 84
+  - pattern: '\bWWF\b'
+    from_pass: v1
+    order: 85
+  - pattern: '\bGreenpeace\b'
+    from_pass: v1
+    order: 86
+  - pattern: '\bMurithienne\b'
+    from_pass: v1
+    order: 87
+  - pattern: '\bBiodiversit'
+    from_pass: v1
+    order: 88
+  - pattern: '\bSalamandre\b'
+    from_pass: v1
+    order: 89
+  - pattern: '\bAssoc\.\s+CO2\b|\bCO2\s+Fribourg\b'
+    from_pass: v11
+    order: 4
+  - pattern: '\bSté\s+d[''\u2019]?apiculture\b'
+    from_pass: v11
+    order: 12
+  - pattern: '\bAlpage\s+de\s+Serin\b'
+    from_pass: v11
+    order: 13
+  - pattern: '\bNatureCulture\b'
+    from_pass: v12
+    order: 13
+  - pattern: '\bJardin\s+Urbain\b'
+    from_pass: v2
+    order: 49
+  - pattern: '\bFond\.\s+des\s+Grangettes\b'
+    from_pass: v2
+    order: 50
+  - pattern: '\bGrangettes\b'
+    from_pass: v2
+    order: 51
+  - pattern: '\bRéserve\s+naturelle\b'
+    from_pass: v2
+    order: 52
+  - pattern: '\bErminea\b'
+    from_pass: v3
+    order: 35
+  - pattern: '\bSPA\s+(?:de\s+|du\s+)?(?:Valais|Vaud|Genève|Fribourg|Neuchâtel|Jura)\b'
+    from_pass: v3
+    order: 36
+  - pattern: '\bLa\s+Vaux-Lierre\b|\bGarenne\b'
+    from_pass: v3
+    order: 37
+  - pattern: '\bPapiliorama\b'
+    from_pass: v8
+    order: 15
+
+'Jeunesse et éducation':
+  - pattern: '\bFAJE\b'
+    from_pass: v1
+    order: 96
+  - pattern: '\bCrèche\b'
+    from_pass: v1
+    order: 97
+  - pattern: '\bGarderie\b'
+    from_pass: v1
+    order: 98
+  - pattern: '\bUAPE\b'
+    from_pass: v1
+    order: 99
+  - pattern: '\bScouts?\b'
+    from_pass: v1
+    order: 100
+  - pattern: '\bLudothèque\b'
+    from_pass: v1
+    order: 101
+  - pattern: '\bPasseport[\s-]?Vacances\b'
+    from_pass: v1
+    order: 102
+  - pattern: '\bPro\s+Juventute\b'
+    from_pass: v1
+    order: 103
+  - pattern: '\bLa\s+Rouvraie\b'
+    from_pass: v12
+    order: 9
+  - pattern: '\bFond\.\s+Le\s+Camp\b'
+    from_pass: v2
+    order: 41
+  - pattern: '\bFond\.\s+officielle\s+de\s+la\s+jeunesse\b'
+    from_pass: v3
+    order: 16
+  - pattern: '\bFond\.\s+de\s+l[''\u2019]?Enfance\s+et\s+de\s+la\s+Jeunesse\b'
+    from_pass: v3
+    order: 17
+  - pattern: '\bYverdonnoise\s+pour\s+l[''\u2019]?Accueil\s+de\s+l[''\u2019]?Enfance\b|\bFYAE\b'
+    from_pass: v3
+    order: 18
+  - pattern: '\bAssoc\.\s+REPER\b'
+    from_pass: v3
+    order: 19
+  - pattern: '\bCrèche\s+(?:le|la|du|de|des|saint)\w*\s'
+    from_pass: v7
+    order: 9
+

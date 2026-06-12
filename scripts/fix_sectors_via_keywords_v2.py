@@ -148,7 +148,7 @@ def main():
             'count': len(overrides_log),
             'date': '2026-06-04',
         }
-        p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+        p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
         
         # Summary
         from collections import Counter

@@ -86,7 +86,7 @@ def main():
                 fixed += 1
         if fixed:
             d['_meta'].setdefault('fixes', {})['v13_ems'] = {'count': fixed}
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
         print(f"  {y}: {fixed} entries reclassées en Action sociale (EMS/Senior)")
         total_fixed += fixed
     print(f"\n  Total : {total_fixed} entries fixées")

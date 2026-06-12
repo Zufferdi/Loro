@@ -219,7 +219,7 @@ def re_classify(classif: str, mapping: dict):
         
         # Save
         p = DATA / f'{classif}_classification{SUFFIX[y]}.json'
-        p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+        p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
     
     return reclassified_count, moved_chf
 

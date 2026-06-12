@@ -56,7 +56,7 @@ def main():
                 n += 1
         if n:
             d['_meta']['sector_overrides_v4'] = {'count': n, 'date': '2026-06-04'}
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
         print(f"  brb{y}: {n} overrides v4")
         total += n
     
@@ -81,7 +81,7 @@ def main():
             d['entries'] = new_entries
             d['_meta']['total_entries'] = len(new_entries)
             d['_meta']['total_chf'] = sum(e['montant_CHF'] for e in new_entries)
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
             print(f"    brb{y}: {n_drop} fragments orphelins droppés")
     
     print(f"\nTotal v4: {total}")

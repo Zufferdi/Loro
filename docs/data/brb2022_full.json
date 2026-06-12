@@ -8,15 +8,15 @@
     "canton_attribution": "via ville→canton mapping from brb2024/brb2025",
     "sector_overrides": {
       "date": "2026-06-04",
-      "count": 0,
+      "count": 14,
       "method": "Keyword-based override of `secteur` field when nom/desc contains an unambiguous indicator of a different sector. Conservative — only high-confidence patterns."
     },
     "sector_overrides_v2": {
-      "count": 34,
+      "count": 4,
       "date": "2026-06-04"
     },
     "sector_overrides_v3": {
-      "count": 9,
+      "count": 0,
       "date": "2026-06-04"
     },
     "sector_overrides_v4": {
@@ -24,15 +24,15 @@
       "date": "2026-06-04"
     },
     "sector_overrides_v5": {
-      "count": 2,
+      "count": 0,
       "date": "2026-06-04"
     },
     "sector_overrides_v6": {
-      "count": 5,
+      "count": 1,
       "date": "2026-06-04"
     },
     "sector_overrides_v7": {
-      "count": 11,
+      "count": 8,
       "date": "2026-06-04"
     },
     "name_fixes": {
@@ -51,23 +51,23 @@
       "note": "Entries pre-first-section → Action sociale"
     },
     "sector_overrides_v8": {
-      "count": 12,
+      "count": 1,
       "date": "2026-06-04"
     },
     "sector_overrides_v9": {
-      "count": 5,
+      "count": 1,
       "date": "2026-06-04"
     },
     "sector_overrides_v10": {
-      "count": 10,
+      "count": 1,
       "date": "2026-06-04"
     },
     "sector_overrides_v11": {
-      "count": 12,
+      "count": 2,
       "date": "2026-06-04"
     },
     "sector_overrides_v12": {
-      "count": 3,
+      "count": 0,
       "date": "2026-06-04"
     },
     "fixes": {
@@ -6551,7 +6551,7 @@
       "ville": "Lucens",
       "description": "Construction de nouvelles installations sportives communales (Solde)",
       "canton": "VD",
-      "secteur": "Sport",
+      "secteur": "Promotion, tourisme et développement",
       "montant_CHF": 510200,
       "annee": 2022
     },
@@ -13724,7 +13724,7 @@
       "ville": "Fribourg",
       "description": "Saison musicale 2022",
       "canton": "FR",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 15000,
       "annee": 2022
     },
@@ -23543,7 +23543,7 @@
       "ville": null,
       "description": "Bourse 2021-2022 Bruchez Virginie Bourse 2021-2022 Caloz Timo et Annaëlle Bourse 2021-2022 Darbellay Delphine Lauréate Mérites sportifs 2022 Darbellay Estelle Mérites sportifs 2022 de Preux Amélie Bourse 2021-2022 de Preux Cécilia Bourse 2021-2022 Défago Baptiste Bourse 2021-2022 Djordjevic Stefan Bourse 2020/2021 Dubuis Charlotte Mérites sportifs 2022 Farquet Yoann Bourse 2021-2022 Favre Matteo Mérites sportifs 2022 Fontaine Anthony Mérites sportifs 2022 Forny Séverine Mérites sportifs 2022 Fournier Illan Bourse 2021-2022 Fumeaux Vivian Bourse 2020/2021 Fux Gaëlle Mérites sportifs 2022 Gay Aurélien Bourse 2021-2022 George Kyshawn Bourse 2021-2022 Granger Kilian Bourse 2021-2022 Jashari Diena Mérites sportifs 2022 Luyet Naomi Bourse 2021-2022 Maitin Stevan Bourse 2021-2022 Métrailler Clément Bourse 2021-2022 Normand Matthieu Mérites sportifs 2022 Oberholzer Solan Mérites sportifs 2022 O'Donnell Sorica Mérites sportifs 2022 Ozüpekçe Zilan Bourse 2021-2022 Perruchoud Pierre Mérites sportifs 2022 Pichonnaz Maxine Bourse 2020/2021 Rebetez Vanessa Bourse 2021-2022 Richard Lucas Mérites sportifs 2022 Roduit Luc Bourse 2021-2022 Roh Nadine Mérites sportifs 2022 Soltermann Hannah Mérites sportifs 2022 Souto Ebiner Hermès Mérites sportifs 2022 Torrent Rémy Mérites sportifs 2022 Vannay Simon Mérites sportifs 2022 Vaudan Alexandre Soutien Dakar 2022 Verly Maurane Bourse 2021-2022 Verly Sévane Bourse 2021-2022 Vouardoux Nathan Mérites sportifs 2022 Wicky Célia Bourse 2021-2022 Bourses sportives • suite Kauf von Sportmaterial • Fortsetzung NEUCHÂTEL VALAIS Assoc. des Amis Flous, Neuchâtel Création artistique",
       "canton": "SR",
-      "secteur": "Culture",
+      "secteur": "Sport",
       "montant_CHF": 15000,
       "annee": 2022
     },
@@ -24920,7 +24920,7 @@
       "ville": "Boudry",
       "description": "Evènement",
       "canton": "NE",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Culture",
       "montant_CHF": 10000,
       "annee": 2022
     },
@@ -25451,7 +25451,7 @@
       "ville": "Fontaines",
       "description": "Création artistique",
       "canton": "NE",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 6000,
       "annee": 2022
     },
@@ -28979,7 +28979,7 @@
       "ville": "Genève",
       "description": "Mise en place d'une halte- garderie Horizon académique",
       "canton": "GE",
-      "secteur": "Jeunesse et éducation",
+      "secteur": "Formation et recherche",
       "montant_CHF": 80000,
       "annee": 2022
     },
@@ -31661,7 +31661,7 @@
       "ville": "Genève",
       "description": "Permettre de compléter l’essai clinique en cours en fournissant trois appareils d’imagerie VivaScope",
       "canton": "GE",
-      "secteur": "Santé et handicap",
+      "secteur": "Formation et recherche",
       "montant_CHF": 150000,
       "annee": 2022
     },

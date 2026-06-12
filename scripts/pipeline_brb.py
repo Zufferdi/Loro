@@ -569,12 +569,14 @@ def main():
         verbose=not args.quiet,
     )
 
-    # Exit code: 0 if clean, 1 if any unresolved issues (hors duplicats légitimes).
-    # exact_duplicates_remaining > 0 est OK (vraies multi-attributions).
+    # Exit code: 0 if clean, 1 if any unresolved issues.
+    # Conventions :
+    #  - keys finissant en '_INFO' = informationnel (n'affecte pas exit code)
+    #  - exact_duplicates_remaining > 0 = OK (vraies multi-attributions)
     audit = report.get('audit_after', {})
     has_issues = any(
         v > 0 for k, v in audit.items()
-        if k != 'exact_duplicates_remaining'
+        if k != 'exact_duplicates_remaining' and not k.endswith('_INFO')
     )
     raise SystemExit(1 if has_issues else 0)
 

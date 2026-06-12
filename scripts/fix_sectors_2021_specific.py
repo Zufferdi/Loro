@@ -120,7 +120,7 @@ def main():
         'remaining_unclassified': remaining,
         'remaining_chf': remaining_chf,
     }
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
     print(f"  ✓ brb2021_full.json updated")
 
 

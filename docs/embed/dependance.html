@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loro · Cas de dépendance des bénéficiaires</title>
+<meta name="description" content="Pour 11 organisations, quelle part de leur budget vient de la Loterie Romande ?">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="embed.css">
+</head>
+<body>
+
+<div class="embed-wrap">
+  <header class="embed-head">
+    <span class="embed-kicker">Loro · Dépendance</span>
+    <h1 class="embed-title">Quelle part du budget vient de la Loro ?</h1>
+    <p class="embed-sub">Pour 11 organisations bénéficiaires, le rapport entre subvention Loro et budget total annuel — l'angle « ce que ça représente pour elles ».</p>
+  </header>
+
+  <div class="embed-viz">
+    <div id="viz-cas-dependance" class="viz"></div>
+  </div>
+
+  <footer class="embed-foot">
+    <span class="embed-source">Sources : rapports d'activité 2024 des organisations, BRB Loro 2021–2025</span>
+    <a class="embed-link" href="https://zufferdi.github.io/Loro/#acte-6" target="_blank" rel="noopener">Voir l'analyse complète →</a>
+  </footer>
+</div>
+
+<!-- cas_dependance.js fetch 'data/cas_dependance.json' — redirigé vers ../data -->
+<script>
+(function () {
+  const origFetch = window.fetch;
+  window.fetch = function (input, init) {
+    if (typeof input === 'string' && input.startsWith('data/')) {
+      input = '../' + input;
+    }
+    return origFetch(input, init);
+  };
+})();
+</script>
+<script src="../js/utils.js"></script>
+<script src="../js/cas_dependance.js"></script>
+<script src="embed.js"></script>
+</body>
+</html>

@@ -27,7 +27,7 @@ def main():
     entries = d['entries']
 
     # Save backup
-    BACKUP.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+    BACKUP.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
     print(f"📦 Backup: {BACKUP.name}")
 
     n_sec_assigned = 0
@@ -79,7 +79,7 @@ def main():
                 "fixed corrupted 'Section' ville entries; dropped trivial artifacts.",
     }
 
-    INPUT.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+    INPUT.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
 
     print(f"\n✅ Patched {INPUT.name}")
     print(f"   • {n_sec_assigned} entries assignées 'Action sociale et personnes âgées'")

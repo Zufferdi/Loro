@@ -100,7 +100,7 @@ def main():
                 fixed += 1
         if fixed:
             d['_meta'].setdefault('fixes', {})['v15_locations'] = {'count': fixed}
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
         print(f"  {y}: {fixed} cantons corrigés")
         total += fixed
     print(f"\n  Total : {total} corrections de canton")

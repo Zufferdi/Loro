@@ -89,7 +89,7 @@ def main():
         
         if fixed:
             d['_meta'].setdefault('fixes', {})['v21_sport_culture'] = {'count': fixed}
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
         print(f"  {y}: {fixed} entries Sport → Culture reclassifiées")
         total += fixed
     print(f"\n  Total : {total}")

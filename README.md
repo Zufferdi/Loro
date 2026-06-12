@@ -130,10 +130,8 @@ python3 -m http.server 8000
 # Parser un nouveau BRB (le chemin du .md peut être passé en argv) :
 python3 scripts/parse_brb2025.py /chemin/vers/BRB2025.md
 
-# Appliquer toutes les passes de correction de secteur (v1 → v12 dans l'ordre) :
-for v in "" _v2 _v3 _v4 _v5 _v6 _v7 _v8 _v9 _v10 _v11 _v12; do
-  python3 "scripts/fix_sectors_via_keywords${v}.py"
-done
+# Appliquer toutes les passes de correction de secteur (v1 → v12) :
+python3 scripts/fix_sectors_run_all.py
 
 # Régénérer les classifications par secteur (avec mémoire cross-année) :
 python3 scripts/build_classifications_with_cross_year_memo.py
@@ -155,3 +153,18 @@ python3 scripts/build_aggregations_2024.py   # idem pour les autres années
 - **v13.7** (mai 2026) — 82 inter-cantonaux ; cross-year memo classification
 - **v13.6** (avril 2026) — Nettoyage parser qualité approfondi (186 fusions, 237 noms tronqués, 228 descriptions polluées)
 
+---
+
+## 🔒 Sécurité : SRI sur les CDN
+
+Le projet charge d3, d3-sankey, topojson-client, scrollama depuis jsdelivr/unpkg.
+Pour activer la vérification d'intégrité (protection supply-chain), calcule
+les hashes SHA-384 :
+
+```bash
+bash scripts/compute_sri.sh
+```
+
+Puis colle les valeurs `sha384-…` dans le 3ᵉ argument de chaque appel
+`_loadLibFallback` au bas de `docs/index.html` (et dans `integrity="…"` sur
+`docs/explorer.html`).

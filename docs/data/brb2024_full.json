@@ -8,7 +8,7 @@
     "canton_attribution": "via ville→canton mapping from brb2023/brb2025",
     "sector_overrides": {
       "date": "2026-06-04",
-      "count": 0,
+      "count": 15,
       "method": "Keyword-based override of `secteur` field when nom/desc contains an unambiguous indicator of a different sector. Conservative — only high-confidence patterns."
     },
     "name_fixes": {
@@ -39,7 +39,7 @@
       "date": "2026-06-04"
     },
     "sector_overrides_v6": {
-      "count": 0,
+      "count": 3,
       "date": "2026-06-04"
     },
     "sector_overrides_v7": {
@@ -47,23 +47,23 @@
       "date": "2026-06-04"
     },
     "sector_overrides_v8": {
-      "count": 12,
+      "count": 0,
       "date": "2026-06-04"
     },
     "sector_overrides_v9": {
-      "count": 4,
+      "count": 2,
       "date": "2026-06-04"
     },
     "sector_overrides_v10": {
-      "count": 11,
+      "count": 0,
       "date": "2026-06-04"
     },
     "sector_overrides_v11": {
-      "count": 18,
+      "count": 4,
       "date": "2026-06-04"
     },
     "sector_overrides_v12": {
-      "count": 5,
+      "count": 0,
       "date": "2026-06-04"
     },
     "fixes": {
@@ -3611,7 +3611,7 @@
       "ville": "Lausanne",
       "description": "Manifestation",
       "canton": "VD",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 10000,
       "annee": 2024
     },
@@ -10523,7 +10523,7 @@
       "ville": null,
       "description": "Tour final du championnat suisse catégorie novices (M16)",
       "canton": "SR",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Sport",
       "montant_CHF": 2000,
       "annee": 2024
     },
@@ -12242,7 +12242,7 @@
       "ville": "Lausanne",
       "description": "Soutien à l'acquisition et aux transformations d’un bâtiment à Athènes pour l’ESAG",
       "canton": "VD",
-      "secteur": "Conservation du patrimoine",
+      "secteur": "Formation et recherche",
       "montant_CHF": 500000,
       "annee": 2024
     },
@@ -12287,7 +12287,7 @@
       "ville": null,
       "description": "Soutien à la création d'unités d’attente de placement en EMS dans les hôpitaux",
       "canton": "VD",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "montant_CHF": 6323000,
       "annee": 2024
     },
@@ -15077,7 +15077,7 @@
       "ville": "Fribourg",
       "description": "Saison musicale 2024",
       "canton": "FR",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 8000,
       "annee": 2024
     },
@@ -27884,7 +27884,7 @@
       "ville": "Fontaines",
       "description": "Événement",
       "canton": "NE",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 15000,
       "annee": 2024
     },
@@ -31169,7 +31169,7 @@
       "ville": "Genève",
       "description": "Acquisition d'un piano à queue Steinway & Sons pour la salle Franz Liszt",
       "canton": "GE",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "montant_CHF": 70000,
       "annee": 2024
     },

@@ -108,7 +108,7 @@ def main():
         d['_meta']['sector_overrides_v3'] = {
             'count': len(overrides_log), 'date': '2026-06-04',
         }
-        p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+        p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
         
         from collections import Counter
         changes = Counter(f"{op['old']} → {op['new']}" for op in overrides_log)

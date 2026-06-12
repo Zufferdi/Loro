@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Icone source : monogramme "L" Loro
+       Pour générer les variantes PNG :
+         rsvg-convert -w 192 -h 192 icon-source.svg -o icon-192.png
+         rsvg-convert -w 512 -h 512 icon-source.svg -o icon-512.png
+         rsvg-convert -w 180 -h 180 icon-source.svg -o apple-touch-icon.png
+         rsvg-convert -w 32  -h 32  icon-source.svg -o favicon-32.png
+         rsvg-convert -w 16  -h 16  icon-source.svg -o favicon-16.png
+       Pour la version "maskable" (PWA Android), ajoute du padding 10% :
+         rsvg-convert -w 192 -h 192 icon-source-maskable.svg -o icon-192-maskable.png
+  -->
+  <rect width="512" height="512" rx="64" fill="#c8102e"/>
+  <text x="256" y="370" text-anchor="middle"
+        font-family="Source Serif Pro, Georgia, serif"
+        font-size="380" font-weight="600" fill="#fbfaf6">L</text>
+  <!-- Petit accent : barre rouge sombre en bas droit -->
+  <rect x="380" y="380" width="100" height="6" fill="#8a0a1f"/>
+</svg>

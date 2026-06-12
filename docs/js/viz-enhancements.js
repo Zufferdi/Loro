@@ -449,6 +449,37 @@
   }
 
   /* ============================================================
+     8. PAUSE AUTO sur changement de visibilité d'onglet
+     ------------------------------------------------------------
+     Quand l'utilisateur change d'onglet ou minimise, les 3 animations
+     setInterval (Tilegram, Treemap, RealMap) continuaient à tourner et
+     consomment CPU/batterie. On utilise visibilitychange + click() sur
+     les boutons Pause pour les arrêter, et on retient l'état pour
+     pouvoir reprendre au retour.
+     ============================================================ */
+  function setupAutoPause() {
+    let wasPlaying = [];
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        // L'onglet devient invisible : cliquer sur les boutons Pause actifs
+        wasPlaying = [];
+        document.querySelectorAll('button.btn').forEach(btn => {
+          if (btn.textContent && btn.textContent.includes('⏸')) {
+            wasPlaying.push(btn);
+            btn.click();
+          }
+        });
+        if (wasPlaying.length) {
+          console.log('[viz-enh] Pause auto :', wasPlaying.length, 'animation(s) arrêtée(s)');
+        }
+      } else {
+        // Retour sur l'onglet : ne pas re-démarrer automatiquement (UX
+        // potentiellement surprenante). L'utilisateur reclique s'il veut.
+      }
+    });
+  }
+
+  /* ============================================================
      INITIALISATION — wait load + delay pour laisser app.js rendre
      ============================================================ */
   function init() {
@@ -463,6 +494,9 @@
 
     // 4. Content-visibility lazy (immédiat, pur CSS)
     safeCall('setupLazyContentVisibility', setupLazyContentVisibility);
+
+    // 5. Pause auto (immédiat, n'attend pas les viz)
+    safeCall('setupAutoPause', setupAutoPause);
 
     // Attendre que les viz soient rendues (≈ 1500ms en pratique)
     setTimeout(() => {

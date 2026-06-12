@@ -6,15 +6,124 @@
 <title>Loro · 88 ans en chiffres</title>
 <meta name="description" content="252 millions redistribués en 2025. Comment on en arrive là ? Voyage en neuf actes dans les données de la Loterie Romande, 1937—2025.">
 
+<!-- Canonique + theme color -->
+<link rel="canonical" href="https://zufferdi.github.io/Loro/">
+<meta name="theme-color" content="#c8102e">
+<meta name="color-scheme" content="light dark">
+
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fr_CH">
+<meta property="og:site_name" content="Loro Dataviz">
+<meta property="og:title" content="Loro · Anatomie de la Loterie Romande en 88 ans">
+<meta property="og:description" content="252 millions redistribués en 2025. Une exploration en neuf actes des 88 années de données de la Loterie Romande — 12 363 organisations distinctes, 6 cantons, 9 secteurs.">
+<meta property="og:url" content="https://zufferdi.github.io/Loro/">
+<meta property="og:image" content="https://zufferdi.github.io/Loro/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Loro Dataviz — visualisation de 88 ans de Loterie Romande">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Loro · Anatomie de la Loterie Romande en 88 ans">
+<meta name="twitter:description" content="252 millions redistribués en 2025. Une exploration en neuf actes des 88 années de données — 12 363 organisations distinctes, 6 cantons.">
+<meta name="twitter:image" content="https://zufferdi.github.io/Loro/og-image.png">
+<meta name="twitter:image:alt" content="Loro Dataviz — visualisation de 88 ans de Loterie Romande">
+
+<!-- Robots / SEO -->
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Loro Dataviz">
+
+<!-- PWA manifest + icons -->
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
+<!-- Styles : screen + print -->
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/print.css" media="print">
+
+<!-- Données structurées : Dataset + Article schema.org (pour Google Dataset Search) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Loro · Anatomie de la Loterie Romande en 88 ans",
+      "description": "Une dataviz éditoriale longue en neuf actes racontant 88 ans de Loterie Romande, de la convention intercantonale du 26 juillet 1937 jusqu'au bénéfice 2025 de 252 M CHF.",
+      "inLanguage": "fr-CH",
+      "datePublished": "2026-06-01",
+      "dateModified": "2026-06-12",
+      "url": "https://zufferdi.github.io/Loro/",
+      "image": "https://zufferdi.github.io/Loro/og-image.png",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Loro Dataviz",
+        "url": "https://zufferdi.github.io/Loro/"
+      },
+      "isAccessibleForFree": true,
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "keywords": "Loterie Romande, Loro, dataviz, bénéficiaires, cantons romands, BRB, jeux d'argent"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Bulletin de Répartition des Bénéfices (BRB) de la Loterie Romande, 2021–2025",
+      "description": "22 877 attributions nominatives à 12 363 organisations distinctes, sur 5 années (2021–2025), parsées depuis les BRB officiels de la Loterie Romande.",
+      "url": "https://zufferdi.github.io/Loro/#acte-9",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "creator": {
+        "@type": "Organization",
+        "name": "Loro Dataviz"
+      },
+      "sourceOrganization": {
+        "@type": "Organization",
+        "name": "Loterie Romande",
+        "url": "https://www.loro.ch/"
+      },
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Suisse romande",
+        "containedInPlace": [
+          { "@type": "AdministrativeArea", "name": "Vaud" },
+          { "@type": "AdministrativeArea", "name": "Genève" },
+          { "@type": "AdministrativeArea", "name": "Valais" },
+          { "@type": "AdministrativeArea", "name": "Fribourg" },
+          { "@type": "AdministrativeArea", "name": "Neuchâtel" },
+          { "@type": "AdministrativeArea", "name": "Jura" }
+        ]
+      },
+      "temporalCoverage": "2021/2025",
+      "variableMeasured": ["Montant CHF", "Canton", "Secteur", "Ville", "Description"],
+      "encodingFormat": "application/json",
+      "isAccessibleForFree": true
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
-<a class="skip-link" href="#main-content">Aller directement au contenu</a>
+<!-- Skip-links : navigation clavier / lecteur d'écran. Visible uniquement au focus. -->
+<nav class="skip-links" aria-label="Accès rapide">
+  <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+  <a class="skip-link" href="#acte-1">Acte I — Histoire</a>
+  <a class="skip-link" href="#acte-2">Acte II — Anatomie du franc</a>
+  <a class="skip-link" href="#acte-3">Acte III — Géographie cantonale</a>
+  <a class="skip-link" href="#acte-4">Acte IV — Mix de jeux</a>
+  <a class="skip-link" href="#acte-prevention">Intermède — Prévention</a>
+  <a class="skip-link" href="#acte-5">Acte V — Redistribution par secteur</a>
+  <a class="skip-link" href="#acte-6">Acte VI — Bénéficiaires (visages)</a>
+  <a class="skip-link" href="#acte-7">Acte VII — Transformation invisible</a>
+  <a class="skip-link" href="#acte-8">Acte VIII — Argent à visages humains</a>
+  <a class="skip-link" href="#acte-9">Acte IX — Inventaire BRB</a>
+</nav>
 
 <header class="topnav">
   <a class="brand" href="#" aria-label="Retour en haut">LORO · 1937—2025</a>
@@ -22,14 +131,56 @@
   <nav aria-label="Actes du récit">
     <a href="#acte-1" data-anchor aria-label="Acte I — Histoire">I</a>
     <a href="#acte-2" data-anchor aria-label="Acte II — Anatomie du franc">II</a>
-    <a href="#acte-3" data-anchor aria-label="Acte III — Géographie">III</a>
+    <a href="#acte-3" data-anchor aria-label="Acte III — Géographie cantonale">III</a>
     <a href="#acte-4" data-anchor aria-label="Acte IV — Mix de jeux">IV</a>
-    <a href="#acte-5" data-anchor aria-label="Acte V — Prévention">V</a>
-    <a href="#acte-6" data-anchor aria-label="Acte VI — Bénéficiaires">VI</a>
-    <a href="#acte-9" data-anchor aria-label="Acte IX — Inventaire complet (BRB)">IX</a>
+    <a href="#acte-prevention" data-anchor aria-label="Intermède — Prévention" class="intermede">Prév</a>
+    <a href="#acte-5" data-anchor aria-label="Acte V — Redistribution par secteur">V</a>
+    <a href="#acte-6" data-anchor aria-label="Acte VI — Bénéficiaires (visages)">VI</a>
+    <a href="#acte-7" data-anchor aria-label="Acte VII — Transformation invisible">VII</a>
+    <a href="#acte-8" data-anchor aria-label="Acte VIII — Argent à visages humains">VIII</a>
+    <a href="#acte-9" data-anchor aria-label="Acte IX — Inventaire BRB">IX</a>
     <a href="explorer.html" class="always" aria-label="Explorer les données en profondeur">Explorer →</a>
   </nav>
+  <button class="theme-toggle" type="button"
+          aria-label="Changer de thème (clair/sombre)"
+          title="Changer de thème"
+          data-theme-toggle>
+    <span class="icon-sun" aria-hidden="true">☀</span><span class="icon-moon" aria-hidden="true">☾</span>
+  </button>
 </header>
+
+<!-- Bootstrap thème : appliqué AVANT le rendu pour éviter le flash -->
+<script>
+(function () {
+  try {
+    const stored = localStorage.getItem('loro-theme');
+    if (stored === 'dark' || stored === 'light') {
+      document.documentElement.setAttribute('data-theme', stored);
+    }
+  } catch (e) { /* localStorage indispo : fallback OS */ }
+  document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.querySelector('[data-theme-toggle]');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      // Cycle: undefined (=OS) → light → dark → undefined
+      let next;
+      if (!current) {
+        // Premier clic : on inverse l'OS
+        const osDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        next = osDark ? 'light' : 'dark';
+      } else if (current === 'light') {
+        next = 'dark';
+      } else {
+        next = 'light';
+      }
+      html.setAttribute('data-theme', next);
+      try { localStorage.setItem('loro-theme', next); } catch (e) {}
+    });
+  });
+})();
+</script>
 
 <div id="app-error" class="col" role="alert" style="display:none; padding:80px 24px; color:#c8102e; text-align:center;"></div>
 
@@ -52,6 +203,91 @@
   </p>
 
   <div class="scroll-hint">↓ scroller pour commencer</div>
+</section>
+
+<!-- ============================================================
+     TOUR GUIDÉ — 60 secondes pour les pressés
+     Résumé visuel avec ancres vers chaque acte du récit
+     ============================================================ -->
+<section class="tour-guide" id="tour-guide" aria-label="Résumé en 60 secondes">
+  <div class="col-wide">
+    <div class="tour-header">
+      <span class="tour-kicker">60 secondes</span>
+      <h2>L'essentiel, en un coup d'œil</h2>
+      <p class="tour-lede">
+        Pas le temps de tout lire&nbsp;? Chaque chiffre est un raccourci vers l'acte qui le détaille.
+      </p>
+    </div>
+
+    <div class="tour-grid">
+      <a href="#acte-1" class="tour-card" data-anchor>
+        <div class="tour-num">×121</div>
+        <div class="tour-stat">multiplication du bénéfice net</div>
+        <div class="tour-context">de 2,1 M (1937) à 252 M (2025) annoncés par Loro sur 88 ans</div>
+        <div class="tour-link">Acte I — l'histoire →</div>
+      </a>
+
+      <a href="#acte-2" class="tour-card" data-anchor>
+        <div class="tour-num">57<small>%</small></div>
+        <div class="tour-stat">du PBJ va aux cantons</div>
+        <div class="tour-context">le reste : commissions, personnel, IT, marketing</div>
+        <div class="tour-link">Acte II — anatomie d'un franc →</div>
+      </a>
+
+      <a href="#acte-3" class="tour-card" data-anchor>
+        <div class="tour-num">VD</div>
+        <div class="tour-stat">856 k habitants, ~75 M reçus</div>
+        <div class="tour-context">le Valaisan dépense 50 % de plus que le Fribourgeois</div>
+        <div class="tour-link">Acte III — géographie →</div>
+      </a>
+
+      <a href="#acte-4" class="tour-card" data-anchor>
+        <div class="tour-num">+1129<small>%</small></div>
+        <div class="tour-stat">paris sportifs depuis 2013</div>
+        <div class="tour-context">le portefeuille a complètement changé de visage</div>
+        <div class="tour-link">Acte IV — mix de jeux →</div>
+      </a>
+
+      <a href="#acte-prevention" class="tour-card tour-card-warn" data-anchor>
+        <div class="tour-num">4,3<small>%</small></div>
+        <div class="tour-stat">de la population à risque</div>
+        <div class="tour-context">contre 0,5 % du PBJ alloué à la prévention</div>
+        <div class="tour-link">Intermède — prévention →</div>
+      </a>
+
+      <a href="#acte-5" class="tour-card" data-anchor>
+        <div class="tour-num">76<small>%</small></div>
+        <div class="tour-stat">vont à 3 secteurs</div>
+        <div class="tour-context">culture, sport, action sociale captent l'essentiel</div>
+        <div class="tour-link">Acte V — redistribution →</div>
+      </a>
+
+      <a href="#acte-6" class="tour-card" data-anchor>
+        <div class="tour-num">~5 000</div>
+        <div class="tour-stat">projets soutenus par an</div>
+        <div class="tour-context">12 363 organisations distinctes sur 5 ans (2021–2025)</div>
+        <div class="tour-link">Acte VI — visages →</div>
+      </a>
+
+      <a href="#acte-7" class="tour-card" data-anchor>
+        <div class="tour-num">2,95<small> Mrd</small></div>
+        <div class="tour-stat">distribués depuis 2013</div>
+        <div class="tour-context">13 ans de comptes audités, ligne par ligne</div>
+        <div class="tour-link">Acte VII — transformation →</div>
+      </a>
+
+      <a href="#acte-9" class="tour-card" data-anchor>
+        <div class="tour-num">22 877</div>
+        <div class="tour-stat">attributions nominatives</div>
+        <div class="tour-context">l'inventaire BRB complet 2021–2025, filtrable</div>
+        <div class="tour-link">Acte IX — l'inventaire →</div>
+      </a>
+    </div>
+
+    <div class="tour-foot">
+      <a href="#acte-1" class="btn-deep" data-anchor>Lire le récit complet ↓</a>
+    </div>
+  </div>
 </section>
 
 <!-- ============================================================
@@ -690,6 +926,27 @@
 </section>
 
 <!-- ============================================================
+     SOUS-SECTION : Trouvez votre organisation (find_org)
+     Recherche full-text sur 12 363 organisations dédupliquées
+     ============================================================ -->
+<section class="standalone">
+  <div class="col-wide">
+    <div class="viz-card">
+      <h3 class="viz-title">Trouvez votre organisation</h3>
+      <p class="viz-subtitle">
+        Une association, un festival, un club, une fondation que vous connaissez&nbsp;? Tapez son nom et voyez ce qu'elle a reçu de la Loterie Romande année par année depuis 2021. La recherche couvre <strong>12&nbsp;363 organisations distinctes</strong>, et tolère les variantes orthographiques courantes.
+      </p>
+      <div id="viz-find-org" class="viz"></div>
+      <div class="viz-footer">
+        <span>
+          Index construit à partir des BRB 2021-2025. Dédoublonnage par nom canonique normalisé&nbsp;: les variantes orthographiques sont fusionnées, mais les <em>sections cantonales</em> d'une même organisation faîtière restent distinctes (voir la note méthodologique ci-dessus).
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
      SOUS-SECTION : la dépendance — angle C
      ============================================================ -->
 <section class="standalone">
@@ -716,6 +973,17 @@
           <a href="https://www.rfj.ch/rfj/Actualite/Region/20260526-La-Loterie-romande-a-redistribue-252-millions-de-francs-en-2025.html" target="_blank" rel="noopener">RFJ (JU 2025)</a> ; Rhône FM (VS 2025).
         </span>
       </div>
+    </div>
+
+    <!-- ============================================================
+         Vue détaillée : 12 cas avec sources, contexte, tri interactif
+         ============================================================ -->
+    <div class="viz-card" style="margin-top: 32px;">
+      <h3 class="viz-title">Le détail, cas par cas — avec sources</h3>
+      <p class="viz-subtitle">
+        Pour chaque organisation&nbsp;: le montant Loro reçu, son budget total et ce que ça représente en pourcentage. Triez par dépendance, montant, budget ou canton. Cas <em>documenté</em> = chiffre publié dans un rapport d'activité ou cité directement par la direction&nbsp;; <em>estimation</em> = part calculée à partir de sources publiques quand le budget exhaustif n'est pas disponible.
+      </p>
+      <div id="viz-cas-dependance" class="viz"></div>
     </div>
 
     <p class="citation reveal" style="margin-top: 24px;">
@@ -764,7 +1032,7 @@
      ACTE VII — LA TRANSFORMATION INVISIBLE
      (Basé sur 13 ans de rapports financiers, 2013-2025)
      ============================================================ -->
-<section class="chapter-intro">
+<section class="chapter-intro" id="acte-7">
   <div class="num">Acte VII — la transformation invisible</div>
   <h2>Treize ans de <em>comptes audités</em>, ligne par ligne.</h2>
   <p class="dek">
@@ -888,7 +1156,7 @@
      ACTE VIII — comparaisons et incarnation
      (BRB top bénéficiaires VD + Loro vs Swisslos + Récit éditorial)
      ============================================================ -->
-<section class="chapter-intro">
+<section class="chapter-intro" id="acte-8">
   <div class="num">Acte VIII — l'argent prend des visages</div>
   <h2>D'un côté <em>5'000 projets</em>, de l'autre <em>une cousine alémanique</em>.</h2>
   <p class="dek">
@@ -1582,7 +1850,7 @@
       <p class="viz-subtitle">
         Chaque canton affiche les 5 années (2021 beige, 2022 gris clair, 2023 gris foncé, 2024 bleu, 2025 rouge).
         La taille des cantons varie d'une année à l'autre selon les grands projets ponctuels
-        (rénovations, festivals, urgences). Vaud monte de +15 % sur 5 ans (et +60 % depuis 2022), le Jura de +46 %.
+        (rénovations, festivals, urgences). Vaud monte de +65 % sur 5 ans (2021&nbsp;→&nbsp;2025), tiré par le Théâtre du Jorat, l'Hermitage et la Vaudoise Aréna&nbsp;; le Jura recule de −3 % sur la même période, mais rattrape +47 % depuis 2022 — preuve que la base annuelle (~9 M) est très sensible aux gros projets ponctuels.
       </p>
       <div id="viz-compare-2024-2025" class="viz"></div>
       <div class="viz-footer">
@@ -1762,7 +2030,7 @@
       <dt>~5 000 projets / an</dt>
       <dd>Nombre approximatif d'attributions annuelles d'utilité publique (Loro 2024-2025). Tous ne sont pas listés nommément dans les Bénéficiaires des Répartitions des Bénéfices&nbsp;; les plus petites attributions passent par des fondations cantonales.</dd>
 
-      <dt>5'291 entrées BRB 2025 · 206 M CHF</dt>
+      <dt>5'287 entrées BRB 2025 · 206 M CHF</dt>
       <dd>Nombre exact d'attributions <strong>nommées et localisées</strong> dans le PDF officiel <em>Bénéficiaires des Répartitions des Bénéfices 2025</em> (118 pages), après nettoyage du parser en v13.6 puis audit complémentaire en v13.7. C'est ce qu'explore l'Acte IX. Les <em>~5 000 projets</em> du discours officiel correspondent à ce niveau de granularité.</dd>
 
       <dt>206 M ≠ 252 M&nbsp;: pourquoi l'écart&nbsp;?</dt>
@@ -1770,6 +2038,27 @@
 
       <dt>2,95 Mrd CHF (cumul 2013-2025)</dt>
       <dd>Total redistribué sur 13 ans, calculé en sommant les bénéfices annuels des rapports financiers Loro 2013-2025.</dd>
+
+      <dt>57 % du PBJ va aux cantons</dt>
+      <dd>Part du Produit Brut des Jeux qui devient bénéfice redistribué (le reste : commissions points-de-vente, coûts opérationnels, marketing, frais IT, taxes). <em>Source à vérifier dans le rapport financier Loro 2024 / présentation aux médias.</em></dd>
+
+      <dt>+1129 % paris sportifs depuis 2013</dt>
+      <dd>Croissance du segment <em>Paris sportifs</em> dans le portefeuille Loro entre 2013 et 2025. <em>Source à vérifier dans la série historique Loro / Commission fédérale des maisons de jeu (CFMJ).</em></dd>
+
+      <dt>4,3 % de la population à risque</dt>
+      <dd>Proportion de personnes adultes en Suisse présentant un comportement de jeu problématique ou pathologique. <em>Source : OFSP, Enquête suisse sur la santé 2017 (à confirmer : peut-être actualisée par la révision de 2022).</em></dd>
+
+      <dt>0,5 % du PBJ alloué à la prévention</dt>
+      <dd>Part du Produit Brut des Jeux fléchée vers la prévention du jeu excessif (par contrat avec les cantons depuis la LJAr 2018). <em>Source : LJAr art. 85 + convention intercantonale ; chiffre exact à vérifier.</em></dd>
+
+      <dt>72,9 % oui · vote populaire LJAr (10 juin 2018)</dt>
+      <dd>Acceptation par le peuple suisse de la Loi fédérale sur les jeux d'argent. <em>Source : Chancellerie fédérale, votations populaires.</em></dd>
+
+      <dt>×121 : croissance du bénéfice 1937 → 2025</dt>
+      <dd>Multiplication du bénéfice net annoncé entre le premier exercice (2,1 M CHF, 1937-1938) et l'exercice 2025 (252 M CHF annoncés par Loro). Si on prend la somme du BRB 2025 (206 M, voir entrée précédente), le multiplicateur tombe à ×98. Si on prend le pic 2024 (258 M), il atteint ×123.</dd>
+
+      <dt>22 877 attributions · 12 363 organisations</dt>
+      <dd>Décompte exact des entrées des BRB 2021-2025 après parsing (22 877 lignes nominatives) puis dédoublonnage par nom canonique normalisé (12 363 organisations distinctes — voir module de recherche dans l'Acte VI). Les variantes orthographiques (<em>Fond. du Tour de Romandie</em> vs <em>Tour de Romandie</em>) sont fusionnées, mais les <em>sections cantonales</em> d'une même organisation faîtière (Pro Senectute Vaud / Fribourg / Genève...) restent distinctes.</dd>
     </dl>
   </div>
 </section>
@@ -1791,29 +2080,56 @@
 </footer>
 
 <!-- ============================================================
-     Vendor libs : tentative jsdelivr/unpkg, fallback unpkg/jsdelivr
+     Vendor libs : loader CDN avec fallback (jsdelivr ↔ unpkg) + SRI
+     ============================================================
+     Les hashes SHA-384 protègent contre une compromission CDN.
+     Pour les calculer/mettre à jour, voir : scripts/compute_sri.sh
      ============================================================ -->
 <script>
-// Fallback CDN : si jsdelivr échoue, retry depuis unpkg
-(function loadLib(url, fallback) {
-  function tryLoad(src, onError) {
+(function () {
+  function tryLoad(src, integrity, onError) {
     const s = document.createElement('script');
     s.src = src;
     s.async = false;
+    s.crossOrigin = 'anonymous';
+    if (integrity) s.integrity = integrity;
     s.onerror = onError;
     document.head.appendChild(s);
   }
-  window._loadLibFallback = function(primary, secondary) {
-    tryLoad(primary, () => {
+  // Charge primary, fallback sur secondary si erreur réseau OU mismatch SRI.
+  // Les deux URLs doivent pointer sur le MÊME fichier (donc le même hash).
+  window._loadLibFallback = function (primary, secondary, integrity) {
+    tryLoad(primary, integrity, () => {
       console.warn('CDN primary échoué, fallback :', secondary);
-      tryLoad(secondary, () => console.error('CDN fallback échoué aussi :', secondary));
+      tryLoad(secondary, integrity, () =>
+        console.error('CDN fallback échoué aussi :', secondary)
+      );
     });
   };
 })();
-window._loadLibFallback('https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js', 'https://unpkg.com/d3@7.8.5/dist/d3.min.js');
-window._loadLibFallback('https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js', 'https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js');
-window._loadLibFallback('https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js', 'https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js');
-window._loadLibFallback('https://unpkg.com/scrollama@3.2.0/build/scrollama.min.js', 'https://cdn.jsdelivr.net/npm/scrollama@3.2.0/build/scrollama.min.js');
+// Les hashes ci-dessous sont vides par défaut — le code fonctionne sans SRI.
+// Pour activer la protection supply-chain, calcule-les via scripts/compute_sri.sh
+// puis copie-les dans le 3ᵉ argument (laisse '' = pas de vérification).
+window._loadLibFallback(
+  'https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js',
+  'https://unpkg.com/d3@7.8.5/dist/d3.min.js',
+  ''  // sha384-XXXX (cf. scripts/compute_sri.sh)
+);
+window._loadLibFallback(
+  'https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js',
+  'https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js',
+  ''
+);
+window._loadLibFallback(
+  'https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js',
+  'https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js',
+  ''
+);
+window._loadLibFallback(
+  'https://unpkg.com/scrollama@3.2.0/build/scrollama.min.js',
+  'https://cdn.jsdelivr.net/npm/scrollama@3.2.0/build/scrollama.min.js',
+  ''
+);
 </script>
 
 <!-- ============================================================
@@ -1823,7 +2139,7 @@ window._loadLibFallback('https://unpkg.com/scrollama@3.2.0/build/scrollama.min.j
 <script>
 window.addEventListener('load', () => {
   setTimeout(() => {
-    document.querySelectorAll('.viz svg').forEach(svg => {
+    document.querySelectorAll('.viz-card svg').forEach(svg => {
       if (svg.getAttribute('role')) return; // déjà décoré
       const vizCard = svg.closest('.viz-card');
       const titleEl = vizCard ? vizCard.querySelector('.viz-title, h3') : null;
@@ -1863,6 +2179,8 @@ window.addEventListener('load', () => {
 <script src="js/trajectories.js"></script>
 <script src="js/marquants_50.js"></script>
 <script src="js/beneficiaires_cumul.js"></script>
+<script src="js/cas_dependance.js"></script>
+<script src="js/find_org.js"></script>
 <script src="js/viz-enhancements.js"></script>
 
 </body>

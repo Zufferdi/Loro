@@ -165,7 +165,7 @@ def main():
             'names_reconstructed_via_ville': n_via_ville,
             'artifacts_dropped': n_dropped,
         }
-        p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+        p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
         
         print(f"─── BRB {y} ───")
         print(f"  Villes-adjectifs nettoyés:        {n_villes_fixed}")

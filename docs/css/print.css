@@ -1,0 +1,86 @@
+/* ============================================================
+   print.css — feuille de style pour l'impression
+   Activée via <link rel="stylesheet" href="css/print.css" media="print">
+   Objectif : un PDF lisible et archivable de la dataviz, sans
+   éléments interactifs ni navigation.
+   ============================================================ */
+
+@media print {
+  /* Cacher la chrome non utile : navigation, boutons, footer-scroll */
+  .topnav, .scroll-hint, .reading-progress, #reading-progress,
+  .theme-toggle, .viz-export-btn, .skip-link,
+  .franc-year-tabs, .year-selector, .controls, .brb-controls,
+  .cumul-ctrls, .cross-controls, button {
+    display: none !important;
+  }
+
+  /* Forcer fond blanc + texte noir, sinon les couleurs CSS variables noirs ne sortent pas en print */
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt !important;
+    line-height: 1.45 !important;
+  }
+  :root {
+    --bg: #fff;
+    --bg-card: #fff;
+    --bg-soft: #f6f6f6;
+    --bg-mute: #f6f6f6;
+    --ink: #000;
+    --ink-soft: #222;
+    --ink-mute: #555;
+    --rule: #ccc;
+    --c-loro: #b30022;  /* contraste papier */
+  }
+
+  /* Page break sensible entre actes */
+  .chapter-intro, .acte, section[id^="acte-"] {
+    page-break-before: always;
+    break-before: page;
+  }
+  h1, h2, h3 { page-break-after: avoid; break-after: avoid-page; }
+  .viz-card  { page-break-inside: avoid; break-inside: avoid-page; }
+
+  /* SVG : forcer rendu vectoriel + bordures visibles */
+  svg { max-width: 100% !important; height: auto !important; }
+  svg text { fill: #000 !important; }
+  svg .grid, svg [class*="rule"] { stroke: #999 !important; }
+
+  /* Liens : afficher l'URL en pied (sauf liens internes) */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #555;
+    word-break: break-all;
+  }
+  a[href^="#"]::after, a[href^="mailto:"]::after { content: ""; }
+
+  /* Hero : compact */
+  .hero { padding: 1cm 0 !important; }
+  .hero .huge { font-size: 80pt !important; }
+
+  /* Cacher les viz interactives qui ne fonctionnent pas en print */
+  #viz-explorer, #viz-multicantons, #viz-longtail, #viz-geomap,
+  #viz-marquants-50, #viz-cumul-multi, #viz-trajectories,
+  #viz-cross-2024-2025, #viz-compare-2024-2025, #viz-cas-dependance {
+    /* Remplacer par un placeholder texte */
+    display: block !important;
+  }
+  #viz-explorer::before { content: "[Visualisation interactive : voir la version en ligne]"; font-style: italic; color: #777; display: block; padding: 1em; border: 1px dashed #ccc; }
+  #viz-multicantons::before { content: "[Visualisation interactive : voir la version en ligne]"; font-style: italic; color: #777; display: block; padding: 1em; border: 1px dashed #ccc; }
+  #viz-longtail::before { content: "[Visualisation interactive : voir la version en ligne]"; font-style: italic; color: #777; display: block; padding: 1em; border: 1px dashed #ccc; }
+  #viz-geomap::before { content: "[Carte interactive : voir la version en ligne]"; font-style: italic; color: #777; display: block; padding: 1em; border: 1px dashed #ccc; }
+
+  /* Footer : URL canonical à la fin */
+  body::after {
+    content: "Source : Loro Dataviz · https://zufferdi.github.io/Loro/";
+    display: block;
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid #ccc;
+    font-size: 9pt;
+    color: #555;
+    text-align: center;
+    font-style: italic;
+  }
+}

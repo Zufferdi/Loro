@@ -50,7 +50,7 @@ def main():
         if len(excluded):
             d['entries'] = new_entries
             d['_meta'].setdefault('fixes', {})['v18_aggregates'] = {'count': len(excluded), 'total_chf': sum(e['montant_CHF'] for e in excluded)}
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
             new_total = sum(e['montant_CHF'] for e in new_entries)
             print(f"  {y}: {len(excluded)} agrégats exclus ({(original_total-new_total)/1e6:.2f}M retiré) — Total BRB {y} : {original_total/1e6:.1f}M → {new_total/1e6:.1f}M")
             for e in excluded:

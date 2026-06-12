@@ -94,7 +94,7 @@ def main():
                 changed += 1
         if changed:
             d['_meta'].setdefault('fixes', {})['v14_names'] = {'count': changed}
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
         print(f"  {y}: {changed} noms nettoyés")
         total_changed += changed
     print(f"\n  Total : {total_changed} entries nettoyées")

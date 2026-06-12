@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Image hero pour Open Graph / Twitter Card (1200×630, ratio 1.91:1) -->
+  <!-- Pour générer le PNG depuis ce SVG :
+       rsvg-convert -w 1200 -h 630 og-image.svg -o og-image.png
+       ou via Inkscape, ou n'importe quel outil SVG→PNG -->
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbfaf6"/>
+      <stop offset="100%" stop-color="#f1efe7"/>
+    </linearGradient>
+    <linearGradient id="loro-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c8102e"/>
+      <stop offset="100%" stop-color="#8a0a1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-grad)"/>
+
+  <!-- Kicker -->
+  <text x="80" y="100" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600"
+        letter-spacing="3" fill="#c8102e" text-transform="uppercase">
+    LORO · 1937 — 2025
+  </text>
+
+  <!-- Hero number -->
+  <text x="80" y="280" font-family="Source Serif Pro, Georgia, serif"
+        font-size="220" font-weight="500" fill="url(#loro-grad)" letter-spacing="-4">
+    252
+  </text>
+  <text x="80" y="335" font-family="Source Serif Pro, Georgia, serif"
+        font-size="32" font-style="italic" fill="#5c5a52">
+    millions redistribués en 2025
+  </text>
+
+  <!-- Title -->
+  <text x="80" y="430" font-family="Source Serif Pro, Georgia, serif"
+        font-size="48" font-weight="500" fill="#1a1917">
+    Anatomie de la Loterie Romande
+  </text>
+  <text x="80" y="475" font-family="Source Serif Pro, Georgia, serif"
+        font-size="32" font-style="italic" fill="#5c5a52">
+    en 88 ans de données
+  </text>
+
+  <!-- Stats bar -->
+  <g transform="translate(80, 540)">
+    <g transform="translate(0,0)">
+      <text font-family="Source Serif Pro, serif" font-size="28" font-weight="600" fill="#1a1917">17 600</text>
+      <text y="22" font-family="Inter, sans-serif" font-size="12" fill="#908d82" letter-spacing="1.5">ORGANISATIONS</text>
+    </g>
+    <g transform="translate(230,0)">
+      <text font-family="Source Serif Pro, serif" font-size="28" font-weight="600" fill="#1a1917">6</text>
+      <text y="22" font-family="Inter, sans-serif" font-size="12" fill="#908d82" letter-spacing="1.5">CANTONS</text>
+    </g>
+    <g transform="translate(310,0)">
+      <text font-family="Source Serif Pro, serif" font-size="28" font-weight="600" fill="#1a1917">9</text>
+      <text y="22" font-family="Inter, sans-serif" font-size="12" fill="#908d82" letter-spacing="1.5">SECTEURS</text>
+    </g>
+    <g transform="translate(390,0)">
+      <text font-family="Source Serif Pro, serif" font-size="28" font-weight="600" fill="#1a1917">9</text>
+      <text y="22" font-family="Inter, sans-serif" font-size="12" fill="#908d82" letter-spacing="1.5">ACTES NARRATIFS</text>
+    </g>
+  </g>
+
+  <!-- Décoration : courbe simplifiée du bénéfice -->
+  <g transform="translate(680, 80)" opacity="0.85">
+    <path d="M 0 240 Q 80 200, 120 180 T 240 140 T 360 90 T 460 60"
+          fill="none" stroke="#c8102e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="0"   cy="240" r="5" fill="#c8102e"/>
+    <circle cx="240" cy="140" r="5" fill="#c8102e"/>
+    <circle cx="460" cy="60"  r="9" fill="#c8102e"/>
+    <text x="460" y="40" text-anchor="middle" font-family="Source Serif Pro, serif"
+          font-size="18" font-weight="600" fill="#c8102e">258 M (pic 2024)</text>
+    <text x="0" y="270" text-anchor="middle" font-family="Inter, sans-serif"
+          font-size="12" fill="#908d82">1937</text>
+    <text x="460" y="290" text-anchor="middle" font-family="Inter, sans-serif"
+          font-size="12" fill="#908d82">2025</text>
+  </g>
+</svg>

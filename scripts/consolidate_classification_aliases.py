@@ -108,7 +108,7 @@ def process_file(path):
         cat['samples'] = new_samples
         changed = True
     if changed:
-        path.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+        path.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
     return changed
 
 

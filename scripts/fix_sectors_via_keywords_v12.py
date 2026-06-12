@@ -48,7 +48,7 @@ for y in ['2021', '2022', '2023', '2024', '2025']:
             e['secteur'] = t
             n += 1
     d['_meta']['sector_overrides_v12'] = {'count': n, 'date': '2026-06-04'}
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
     print(f"brb{y}: {n} overrides v12")
     total += n
 print(f"Total: {total}")

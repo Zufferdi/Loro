@@ -658,7 +658,7 @@ def build_classifications():
                 before_pct[y] = old_pct if isinstance(old_pct, (int, float)) else float(str(old_pct).replace('%', '').strip())
             after_pct[y] = meta['pct_chf_classified']
             
-            old_p.write_text(json.dumps(output, ensure_ascii=False, indent=2, encoding='utf-8'))
+            old_p.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding='utf-8')
         
         # Print summary
         print(f"  Memo cross-year: {len(memo)} noms  ({len(memo_substrings)} discriminants ≥10 chars)")

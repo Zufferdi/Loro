@@ -1,0 +1,118 @@
+/* ============================================================
+   embed.css — feuille de style minimale pour les pages embed
+   ============================================================
+   Les pages embed sont conçues pour être intégrées dans un iframe
+   externe (médias, blogs). Pas de nav, pas de footer, pas de hero.
+   Une viz par page, layout minimal, responsive 100% width.
+   ============================================================ */
+
+:root {
+  --bg:        #fbfaf6;
+  --bg-card:   #ffffff;
+  --bg-soft:   #f1efe7;
+  --ink:       #1a1917;
+  --ink-soft:  #5c5a52;
+  --ink-mute:  #908d82;
+  --rule:      #e0ddd2;
+  --c-loro:    #c8102e;
+  --c-loro-dark: #8a0a1f;
+  --serif: 'Source Serif Pro', Georgia, serif;
+  --sans:  'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:        #15140f;
+    --bg-card:   #1f1d18;
+    --bg-soft:   #25231d;
+    --ink:       #f1efe7;
+    --ink-soft:  #b6b2a4;
+    --ink-mute:  #7f7c70;
+    --rule:      #322f27;
+    --c-loro:    #ed5a72;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a { color: var(--c-loro); text-decoration: none; }
+
+.embed-wrap {
+  padding: 18px 18px 14px;
+  max-width: 100%;
+}
+
+.embed-head {
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+}
+.embed-kicker {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--c-loro);
+  margin-bottom: 6px;
+}
+.embed-title {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 0 0 6px;
+}
+.embed-sub {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.embed-viz {
+  width: 100%;
+}
+
+.embed-foot {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid var(--rule);
+  font-size: 11px;
+  color: var(--ink-mute);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.embed-source {
+  font-style: italic;
+}
+.embed-link {
+  color: var(--c-loro);
+  font-weight: 600;
+  border-bottom: 1px solid currentColor;
+}
+
+/* Cacher la chrome interactive habituelle quand intégrée en embed */
+.viz-export-btn { display: none !important; }
+
+/* En mobile / petit iframe : alléger */
+@media (max-width: 480px) {
+  .embed-wrap { padding: 12px; }
+  .embed-title { font-size: 16px; }
+  .embed-sub { font-size: 12px; }
+}

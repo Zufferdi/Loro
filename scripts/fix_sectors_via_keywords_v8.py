@@ -78,7 +78,7 @@ def main():
                 log.append((e['secteur'], t, e['montant_CHF'], e['nom'][:50]))
                 e['secteur'] = t
         d['_meta']['sector_overrides_v8'] = {'count': len(log), 'date': '2026-06-04'}
-        p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+        p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
         by_year[y] = log
         total += len(log)
     

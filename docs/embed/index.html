@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loro · Embeds disponibles</title>
+<meta name="description" content="Visualisations embarquables (iframe) de Loro Dataviz, à intégrer dans vos articles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="embed.css">
+<style>
+  body { background: var(--bg); color: var(--ink); padding: 0; }
+  .embed-index { max-width: 880px; margin: 0 auto; padding: 60px 24px 80px; }
+  .embed-index h1 {
+    font-family: var(--serif); font-size: 36px; font-weight: 500;
+    margin: 0 0 16px; line-height: 1.15;
+  }
+  .embed-index .lede {
+    font-size: 18px; color: var(--ink-soft);
+    line-height: 1.5; margin: 0 0 48px;
+    border-bottom: 1px solid var(--rule); padding-bottom: 32px;
+  }
+  .embed-grid {
+    display: grid; grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .embed-card {
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 28px;
+  }
+  .embed-card h2 {
+    font-family: var(--serif); font-size: 22px; font-weight: 500;
+    margin: 0 0 8px;
+  }
+  .embed-card .embed-desc {
+    color: var(--ink-soft); font-size: 14px; margin: 0 0 18px;
+    line-height: 1.5;
+  }
+  .embed-preview {
+    display: block; margin: 18px 0;
+    border: 1px solid var(--rule); border-radius: 6px; overflow: hidden;
+    background: var(--bg-soft);
+    font-size: 12px; color: var(--ink-mute);
+    text-align: center; padding: 28px 14px;
+    font-style: italic;
+  }
+  .embed-preview a { color: var(--c-loro); font-style: normal; }
+  .embed-code {
+    background: #0c0b08;
+    color: #f1efe7;
+    border-radius: 6px; padding: 12px 14px;
+    font-family: 'JetBrains Mono', Consolas, monospace;
+    font-size: 12px; line-height: 1.55;
+    white-space: pre; overflow-x: auto;
+    margin: 0 0 12px;
+    position: relative;
+  }
+  .embed-code-label {
+    font-size: 11px; color: var(--ink-mute);
+    text-transform: uppercase; letter-spacing: 0.06em;
+    margin: 14px 0 6px; font-weight: 600;
+  }
+  .copy-btn {
+    position: absolute; top: 8px; right: 8px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #f1efe7;
+    padding: 4px 10px; border-radius: 4px;
+    cursor: pointer; font-size: 11px;
+    font-family: inherit;
+    transition: background 0.15s;
+  }
+  .copy-btn:hover { background: rgba(255,255,255,0.2); }
+  .copy-btn.copied { background: #2a7c2a; border-color: #2a7c2a; }
+  .embed-options {
+    color: var(--ink-mute); font-size: 12px;
+    margin-top: 8px; line-height: 1.5;
+  }
+  .embed-options code {
+    background: var(--bg-soft); padding: 1px 6px; border-radius: 3px;
+    color: var(--ink); font-size: 11.5px;
+  }
+  .embed-foot-cta {
+    margin-top: 48px; padding-top: 28px;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+  }
+  .embed-foot-cta a {
+    display: inline-block; padding: 12px 24px;
+    background: var(--ink); color: var(--bg);
+    border-radius: 24px; font-weight: 600; font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<div class="embed-index">
+  <h1>Embeds disponibles</h1>
+  <p class="lede">
+    Visualisations standalone à intégrer dans vos articles. Chaque embed est une iframe responsive qui adapte sa hauteur automatiquement (via <code>postMessage</code>). Licence&nbsp;: CC BY-SA 4.0 — attribution requise.
+  </p>
+
+  <div class="embed-grid">
+
+    <!-- TOP 30 -->
+    <article class="embed-card">
+      <h2>Top 30 bénéficiaires par année</h2>
+      <p class="embed-desc">Les 30 plus grandes attributions de la Loterie Romande, par année (2021–2025), avec sélecteur d'année interactif et bandeau de cumul.</p>
+      <div class="embed-preview"><a href="top30.html" target="_blank">→ Prévisualiser top30.html</a></div>
+      <div class="embed-code-label">Code à intégrer (copier-coller)</div>
+      <pre class="embed-code"><button class="copy-btn" data-target="code-top30">Copier</button><code id="code-top30">&lt;iframe src="https://zufferdi.github.io/Loro/embed/top30.html"
+        width="100%" height="900"
+        style="border:0;border-radius:8px"
+        loading="lazy"
+        title="Loro · Top 30 bénéficiaires"&gt;
+&lt;/iframe&gt;</code></pre>
+      <div class="embed-options">
+        Options via query string&nbsp;: <code>?compact=1</code> (chrome minimale), <code>?theme=dark</code> ou <code>?theme=light</code> (force le thème).
+      </div>
+    </article>
+
+    <!-- FIND ORG -->
+    <article class="embed-card">
+      <h2>Recherche d'organisation</h2>
+      <p class="embed-desc">Champ de recherche full-text sur 12 363 organisations bénéficiaires 2021–2025. Les lecteurs tapent un nom et voient les montants par année, sparkline 5 ans, tendance.</p>
+      <div class="embed-preview"><a href="find-org.html" target="_blank">→ Prévisualiser find-org.html</a></div>
+      <div class="embed-code-label">Code à intégrer</div>
+      <pre class="embed-code"><button class="copy-btn" data-target="code-find">Copier</button><code id="code-find">&lt;iframe src="https://zufferdi.github.io/Loro/embed/find-org.html"
+        width="100%" height="600"
+        style="border:0;border-radius:8px"
+        loading="lazy"
+        title="Loro · Trouvez votre organisation"&gt;
+&lt;/iframe&gt;</code></pre>
+      <div class="embed-options">
+        Au premier focus, l'embed charge ~2 MB d'index (lazy). Bien adapté à un article avec contexte.
+      </div>
+    </article>
+
+    <!-- DÉPENDANCE -->
+    <article class="embed-card">
+      <h2>Cas de dépendance Loro</h2>
+      <p class="embed-desc">Pour 11 organisations (Verbier Festival, Cinéforom, FIFF, Lanterne magique, Hermitage, etc.), la part de leur budget qui vient de la Loterie Romande. L'angle journalistique le plus fort.</p>
+      <div class="embed-preview"><a href="dependance.html" target="_blank">→ Prévisualiser dependance.html</a></div>
+      <div class="embed-code-label">Code à intégrer</div>
+      <pre class="embed-code"><button class="copy-btn" data-target="code-dep">Copier</button><code id="code-dep">&lt;iframe src="https://zufferdi.github.io/Loro/embed/dependance.html"
+        width="100%" height="2200"
+        style="border:0;border-radius:8px"
+        loading="lazy"
+        title="Loro · Cas de dépendance"&gt;
+&lt;/iframe&gt;</code></pre>
+    </article>
+
+    <!-- TRAJECTOIRES -->
+    <article class="embed-card">
+      <h2>Trajectoires 5 ans</h2>
+      <p class="embed-desc">300 plus grands bénéficiaires avec leur évolution annuelle. Filtres par catégorie (hausses, baisses, one-shots, stables).</p>
+      <div class="embed-preview"><a href="trajectories.html" target="_blank">→ Prévisualiser trajectories.html</a></div>
+      <div class="embed-code-label">Code à intégrer</div>
+      <pre class="embed-code"><button class="copy-btn" data-target="code-traj">Copier</button><code id="code-traj">&lt;iframe src="https://zufferdi.github.io/Loro/embed/trajectories.html"
+        width="100%" height="3000"
+        style="border:0;border-radius:8px"
+        loading="lazy"
+        title="Loro · Trajectoires 5 ans"&gt;
+&lt;/iframe&gt;</code></pre>
+    </article>
+
+  </div>
+
+  <div class="embed-foot-cta">
+    <p style="color: var(--ink-soft); margin-bottom: 18px;">
+      Auto-resize de la hauteur via <code>postMessage</code>&nbsp;: si l'iframe écoute
+      <code>'loro:embed:resize'</code>, elle reçoit la hauteur exacte du contenu.
+      Voir un script d'exemple côté parent dans la
+      <a href="https://github.com/zufferdi/Loro" style="color:var(--c-loro);font-weight:600">documentation GitHub</a>.
+    </p>
+    <a href="https://zufferdi.github.io/Loro/">Retour à la dataviz complète</a>
+  </div>
+</div>
+
+<script>
+// Bouton copier
+document.querySelectorAll('.copy-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const code = document.getElementById(btn.dataset.target);
+    if (!code) return;
+    navigator.clipboard.writeText(code.textContent).then(() => {
+      btn.textContent = 'Copié ✓';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.textContent = 'Copier';
+        btn.classList.remove('copied');
+      }, 2000);
+    });
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loro · Top 30 bénéficiaires 2025</title>
+<meta name="description" content="Les 30 plus grands bénéficiaires de la Loterie Romande en 2025. Données BRB officielles.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="embed.css">
+</head>
+<body>
+
+<div class="embed-wrap">
+  <header class="embed-head">
+    <span class="embed-kicker">Loro · BRB 2025</span>
+    <h1 class="embed-title">Top 30 bénéficiaires de la Loterie Romande</h1>
+    <p class="embed-sub">Les 30 organisations qui ont reçu le plus de la Loterie Romande en 2025. Cliquez sur l'année pour explorer 2021–2024. Les pourcentages affichés sont calculés sur la somme du BRB de l'année (~206 M en 2025), pas sur le bénéfice net communiqué par Loro (252 M en 2025 — voir glossaire de l'analyse complète).</p>
+  </header>
+
+  <div class="embed-viz">
+    <div id="viz-top30" class="viz"></div>
+  </div>
+
+  <footer class="embed-foot">
+    <span class="embed-source">Source : BRB officiel 2025 (Loterie Romande)</span>
+    <a class="embed-link" href="https://zufferdi.github.io/Loro/#acte-9" target="_blank" rel="noopener">Voir l'analyse complète →</a>
+  </footer>
+</div>
+
+<script>
+window.YEAR_TOTALS = {
+  '2021': 175900000, '2022': 198500000, '2023': 218600000,
+  '2024': 257600000, '2025': 252300000,
+};
+// aggregations.js fetch 'data/top30_*.json' — redirigé vers ../data
+(function () {
+  const origFetch = window.fetch;
+  window.fetch = function (input, init) {
+    if (typeof input === 'string' && input.startsWith('data/')) {
+      input = '../' + input;
+    }
+    return origFetch(input, init);
+  };
+})();
+</script>
+<script src="../js/utils.js"></script>
+<script src="../js/year_selector.js"></script>
+<script src="../js/aggregations.js"></script>
+<script src="embed.js"></script>
+</body>
+</html>

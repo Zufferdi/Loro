@@ -169,11 +169,11 @@
     "secteur_fix_note": "Champ 'secteur' réécrit depuis les classifications culture/sport/social pour corriger les erreurs upstream du parser BRB",
     "sector_overrides": {
       "date": "2026-06-04",
-      "count": 0,
+      "count": 12,
       "method": "Keyword-based override of `secteur` field when nom/desc contains an unambiguous indicator of a different sector. Conservative — only high-confidence patterns."
     },
-    "total_entries": 5291,
-    "total_chf": 206439481,
+    "total_entries": 5287,
+    "total_chf": 206410681,
     "name_fixes": {
       "villes_adjectifs_fixed": 0,
       "names_reconstructed_from_rules": 1,
@@ -202,7 +202,7 @@
       "date": "2026-06-04"
     },
     "sector_overrides_v6": {
-      "count": 0,
+      "count": 1,
       "date": "2026-06-04"
     },
     "sector_overrides_v7": {
@@ -210,23 +210,23 @@
       "date": "2026-06-04"
     },
     "sector_overrides_v8": {
-      "count": 7,
+      "count": 0,
       "date": "2026-06-04"
     },
     "sector_overrides_v9": {
-      "count": 3,
+      "count": 2,
       "date": "2026-06-04"
     },
     "sector_overrides_v10": {
-      "count": 4,
+      "count": 0,
       "date": "2026-06-04"
     },
     "sector_overrides_v11": {
-      "count": 13,
+      "count": 2,
       "date": "2026-06-04"
     },
     "sector_overrides_v12": {
-      "count": 5,
+      "count": 0,
       "date": "2026-06-04"
     },
     "fixes": {
@@ -1526,7 +1526,7 @@
       "description": "Travaux / Aménagements",
       "montant_CHF": 100000,
       "canton": "VD",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Santé et handicap",
       "organe": "Fondation d’aide et culturelle",
       "sous_section": null,
       "lat": 46.6694,
@@ -16815,7 +16815,7 @@
       "description": "Sport Santé UNIL + EPFL Soutien au projet visant à pérenniser l’héritage des Jeux Olympiques de la Jeunesse Lausanne 2020 par le maintien et l’actualisation d’expériences innovantes sport-santé, profitant tant aux sportifs que non sportifs",
       "montant_CHF": 100000,
       "canton": "VD",
-      "secteur": "Sport",
+      "secteur": "Formation et recherche",
       "organe": "Fondation d'aide 45'000.- aux sportifs vaudois Soutien annuel",
       "sous_section": null,
       "lat": null,
@@ -17167,7 +17167,7 @@
       "description": "du surendettement · interculturelle, Fribourg Caritas Suisse, Fribourg",
       "montant_CHF": 190000,
       "canton": "FR",
-      "secteur": "Action sociale et personnes âgées",
+      "secteur": "Culture",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
       "lat": null,
@@ -19877,7 +19877,7 @@
       "description": "l'Université de Fribourg (CCUF), Fribourg Saison musicale 2025",
       "montant_CHF": 8000,
       "canton": "FR",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
       "lat": null,
@@ -22479,7 +22479,7 @@
       "description": "Délégué-e de l’éthique dans le sport fribourgeois 2025",
       "montant_CHF": 28000,
       "canton": "FR",
-      "secteur": "Sport",
+      "secteur": "Jeunesse et éducation",
       "organe": "Fonds du Conseil d’État Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": "Actions extraordinaires Ausserordentliche Aktionen",
       "lat": null,
@@ -27089,7 +27089,7 @@
       "description": "EMS Le Christ Roi,",
       "montant_CHF": 196266,
       "canton": "VS",
-      "secteur": "Santé et handicap",
+      "secteur": "Action sociale et personnes âgées",
       "organe": "Fonds du sport Valais Pour tous les projets dans le domaine du Sport",
       "sous_section": null,
       "lat": null,
@@ -38719,7 +38719,7 @@
       "description": "Création artistique",
       "montant_CHF": 20000,
       "canton": "NE",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "organe": null,
       "sous_section": null,
       "lat": null,
@@ -54366,18 +54366,6 @@
       "lng": null
     },
     {
-      "nom": "CdN",
-      "ville": "Genève - Natation",
-      "description": "Coupe de Noël 2025",
-      "montant_CHF": 25000,
-      "canton": "GE",
-      "secteur": "Sport",
-      "organe": "Fonds du sport",
-      "sous_section": "Manifestations sportives",
-      "lat": null,
-      "lng": null
-    },
-    {
       "nom": "Centre Sportif Sous-Moulin",
       "ville": null,
       "description": "Thônex - Multisports Festi'Sport",
@@ -56689,7 +56677,7 @@
       "description": "de musique, Delémont essiuS Concours jurassien de piano",
       "montant_CHF": 3500,
       "canton": "JU",
-      "secteur": "Culture",
+      "secteur": "Formation et recherche",
       "organe": "Fonds d’utilité publique Contributions de la Loterie Romande distribuées par le Conseil d’État ou par un service de l’État",
       "sous_section": null,
       "lat": null,

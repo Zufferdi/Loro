@@ -201,7 +201,7 @@ def main():
         }
 
         # Write back
-        p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+        p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
 
         # Summary by source sector
         by_change = {}

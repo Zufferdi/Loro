@@ -85,7 +85,7 @@ def main():
             'region_artifact_villes_nulled': n_villes,
             'specific_names_fixed': n_names,
         }
-        p.write_text(json.dumps(d, ensure_ascii=False, indent=2, encoding='utf-8'))
+        p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding='utf-8')
         print(f"  ─── BRB {y} ───")
         print(f"  Villes 'région/artefact' nullifiées: {n_villes}")
         print(f"  Noms tronqués spécifiques fixés:     {n_names}")

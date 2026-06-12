@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loro · Trouvez votre organisation</title>
+<meta name="description" content="Recherche full-text sur 12 363 organisations bénéficiaires de la Loterie Romande, 2021-2025.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="embed.css">
+</head>
+<body>
+
+<div class="embed-wrap">
+  <header class="embed-head">
+    <span class="embed-kicker">Loro · 12 363 organisations</span>
+    <h1 class="embed-title">Trouvez votre organisation</h1>
+    <p class="embed-sub">Tapez le nom d'une association, festival, club, fondation pour voir ce qu'elle a reçu de la Loterie Romande année par année depuis 2021.</p>
+  </header>
+
+  <div class="embed-viz">
+    <div id="viz-find-org" class="viz"></div>
+  </div>
+
+  <footer class="embed-foot">
+    <span class="embed-source">Source : BRB officiels 2021–2025, dédoublonnage par nom canonique</span>
+    <a class="embed-link" href="https://zufferdi.github.io/Loro/#acte-6" target="_blank" rel="noopener">Voir l'analyse complète →</a>
+  </footer>
+</div>
+
+<!-- find_org.js fetch data/search_index.json — qui se trouve à ../data/ depuis embed/ -->
+<script>
+// Patch fetch() pour rediriger les chemins relatifs vers le parent
+(function () {
+  const origFetch = window.fetch;
+  window.fetch = function (input, init) {
+    if (typeof input === 'string' && input.startsWith('data/')) {
+      input = '../' + input;
+    }
+    return origFetch(input, init);
+  };
+})();
+</script>
+<script src="../js/utils.js"></script>
+<script src="../js/find_org.js"></script>
+<script src="embed.js"></script>
+</body>
+</html>
